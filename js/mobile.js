@@ -30,10 +30,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const channelsCountEl = document.getElementById('channels-count');
     
     const playerFrame = document.getElementById('player-frame');
+    const nativeVideoPlayer = document.getElementById('native-video-player');
     const noStreamOverlay = document.getElementById('no-stream-overlay');
     const playerChTitle = document.getElementById('player-ch-title');
     const playerChEpg = document.getElementById('player-ch-epg');
     const playerFavBtn = document.getElementById('player-fav-btn');
+    
+    const isAndroid = /Android/i.test(navigator.userAgent);
+    let dashPlayer = null;
     
     const btnSettings = document.getElementById('btn-settings');
     const settingsModal = document.getElementById('settings-modal');
@@ -46,6 +50,22 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!timeStr || !timeStr.includes(':')) return 0;
         const [hours, minutes] = timeStr.split(':').map(Number);
         return (hours * 60) + minutes;
+    }
+
+    // Convert hex string to Base64URL without padding (required for dash.js ClearKey DRM)
+    function hexToBase64Url(hex) {
+        const cleanHex = hex.trim().replace(/^0x/i, '');
+        const pairs = cleanHex.match(/.{1,2}/g);
+        if (!pairs) return "";
+        const bytes = new Uint8Array(pairs.map(byte => parseInt(byte, 16)));
+        let binString = "";
+        for (let i = 0; i < bytes.length; i++) {
+            binString += String.fromCharCode(bytes[i]);
+        }
+        return btoa(binString)
+            .replace(/\+/g, '-')
+            .replace(/\//g, '_')
+            .replace(/=/g, '');
     }
 
     function buildEpgMap() {
@@ -320,9 +340,75 @@ document.addEventListener('DOMContentLoaded', () => {
             else card.classList.remove('active');
         });
 
-        // Imposta Iframe stream
+        // Imposta Iframe/Video stream
         noStreamOverlay.style.display = 'none';
-        playerFrame.src = getStreamUrl(ch);
+
+        if (isAndroid) {
+            // Android: usa il player nativo dash.js
+            playerFrame.style.display = 'none';
+            playerFrame.src = 'about:blank';
+            nativeVideoPlayer.style.display = 'block';
+
+            if (dashPlayer) {
+                dashPlayer.destroy();
+                dashPlayer = null;
+            }
+            nativeVideoPlayer.src = '';
+
+            let streamUrl = ch.code;
+            let clearkeys = null;
+
+            if (streamUrl && streamUrl.includes('ck=')) {
+                try {
+                    let ckVal = null;
+                    const match = streamUrl.match(/[?&]ck=([^&]+)/);
+                    if (match) {
+                        ckVal = decodeURIComponent(match[1]);
+                    }
+                    if (ckVal) {
+                        const decoded = atob(ckVal);
+                        const parts = decoded.split(':');
+                        if (parts.length === 2) {
+                            const keyIdHex = parts[0].trim();
+                            const keyHex = parts[1].trim();
+                            const keyIdB64 = hexToBase64Url(keyIdHex);
+                            const keyB64 = hexToBase64Url(keyHex);
+                            if (keyIdB64 && keyB64) {
+                                clearkeys = {};
+                                clearkeys[keyIdB64] = keyB64;
+                            }
+                        }
+                    }
+                } catch (e) {
+                    console.error("Errore nel parsing ClearKey:", e);
+                }
+            }
+
+            try {
+                dashPlayer = dashjs.MediaPlayer().create();
+                if (clearkeys) {
+                    dashPlayer.setProtectionData({
+                        "org.w3.clearkey": {
+                            "clearkeys": clearkeys
+                        }
+                    });
+                }
+                dashPlayer.initialize(nativeVideoPlayer, streamUrl, true);
+            } catch (err) {
+                console.error("Errore di inizializzazione dashPlayer:", err);
+            }
+        } else {
+            // Altri OS: usa il player estensione iframe
+            nativeVideoPlayer.style.display = 'none';
+            if (dashPlayer) {
+                dashPlayer.destroy();
+                dashPlayer = null;
+            }
+            nativeVideoPlayer.src = '';
+            
+            playerFrame.style.display = 'block';
+            playerFrame.src = getStreamUrl(ch);
+        }
 
         // Aggiorna metadati player
         playerChTitle.textContent = ch.name;
@@ -562,7 +648,14 @@ document.addEventListener('DOMContentLoaded', () => {
             // Deseleziona
             currentChannel = null;
             noStreamOverlay.style.display = 'flex';
+            if (dashPlayer) {
+                dashPlayer.destroy();
+                dashPlayer = null;
+            }
+            nativeVideoPlayer.src = '';
+            nativeVideoPlayer.style.display = 'none';
             playerFrame.src = 'about:blank';
+            playerFrame.style.display = 'none';
             playerChTitle.textContent = 'Nessun Canale';
             playerChEpg.textContent = 'Seleziona un canale dalla lista qui sotto';
             playerFavBtn.style.display = 'none';
