@@ -247,7 +247,6 @@ $is_kids_profile = (
             <div id="btn-agenda" class="drawer-item"><i class="ph ph-clock"></i> Agenda Eventi</div>
           <?php endif; ?>
           <div id="btn-settings" class="drawer-item"><i class="ph ph-gear"></i> Impostazioni</div>
-          <a href="mobile.php?view_mode=pc" class="drawer-item"><i class="ph ph-desktop"></i> Versione PC</a>
           <a href="select_profile.php" class="drawer-item"><i class="ph ph-users"></i> Cambia Profilo</a>
           <a href="logout.php" class="drawer-item" style="color: var(--danger);"><i class="ph ph-sign-out"></i> Esci dall'Account</a>
         </nav>
