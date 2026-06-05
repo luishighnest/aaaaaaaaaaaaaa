@@ -6,6 +6,7 @@ let player = null;
 let uiTimeout = null;
 
 const videoElement = document.getElementById('tv-video');
+const iframeElement = document.getElementById('tv-iframe');
 const uiOverlay = document.getElementById('tv-ui');
 const loadingOverlay = document.getElementById('tv-loading');
 
@@ -109,8 +110,6 @@ function onErrorEvent(event) {
 }
 
 function playChannel(ch) {
-    if (!player) return;
-    
     currentChannel = ch;
     resetUiTimeout();
     
@@ -120,7 +119,7 @@ function playChannel(ch) {
     if (epgInfo.now) {
         document.getElementById('tv-channel-epg').textContent = `In onda: ${epgInfo.now.titolo}`;
     } else {
-        document.getElementById('tv-channel-epg').textContent = 'Programmazione in diretta';
+        document.getElementById('tv-channel-epg').textContent = 'Programmazione live continua';
     }
 
     // Refresh active states in grid
@@ -132,38 +131,78 @@ function playChannel(ch) {
     });
 
     loadingOverlay.classList.add('show');
-    
     const streamUrl = getStreamUrl(ch);
-    
-    player.unload().then(() => {
-        const config = {
-            drm: { clearKeys: {} },
-            streaming: {
-                bufferingGoal: 30,
-                rebufferingGoal: 2,
-                bufferBehind: 10
-            }
-        };
 
+    if (ch.link.includes('.mpd') && !ch.link.includes('{{EXT_PLAYER}}')) {
+        // Usa Shaka Player per i flussi MPD nativi
+        videoElement.style.display = 'block';
+        iframeElement.style.display = 'none';
+        iframeElement.src = '';
+
+        let clearkeys = null;
         if (ch.key) {
-            // Parsiamo ck= KID:KEY
-            const ckMatch = ch.key.match(/ck=([^:]+):([a-zA-Z0-9]+)/);
-            if (ckMatch) {
-                const kidHex = ckMatch[1];
-                const keyHex = ckMatch[2];
-                config.drm.clearKeys[kidHex] = keyHex;
+            try {
+                let ckVal = "";
+                const match = ch.key.match(/ck=([^;]+)/);
+                if (match) {
+                    ckVal = decodeURIComponent(match[1]);
+                }
+                if (ckVal) {
+                    const decoded = atob(ckVal);
+                    const parts = decoded.split(':');
+                    if (parts.length === 2) {
+                        clearkeys = {};
+                        clearkeys[parts[0].trim()] = parts[1].trim();
+                    }
+                }
+            } catch (e) {
+                console.error("Errore nel parsing ClearKey:", e);
             }
         }
-        player.configure(config);
+
+        if (clearkeys && !window.isSecureContext) {
+            console.error("Errore DRM: La decrittografia dei flussi richiede HTTPS.");
+            loadingOverlay.classList.remove('show');
+            return;
+        }
+
+        if (!player) {
+            console.error("Shaka player non inizializzato");
+            loadingOverlay.classList.remove('show');
+            return;
+        }
+
+        player.unload().then(() => {
+            if (clearkeys) {
+                player.configure({ drm: { clearKeys: clearkeys } });
+            } else {
+                player.configure({ drm: { clearKeys: {} } });
+            }
+            
+            return player.load(streamUrl);
+        }).then(() => {
+            console.log('Stream caricato:', ch.name);
+            videoElement.play();
+        }).catch(err => {
+            console.error('Error loading stream:', err);
+            loadingOverlay.classList.remove('show');
+        });
+    } else {
+        // Usa iframe per flussi esterni o non DASH
+        videoElement.style.display = 'none';
+        if (player) {
+            player.unload();
+        }
+        videoElement.src = '';
         
-        return player.load(streamUrl);
-    }).then(() => {
-        console.log('Stream caricato:', ch.name);
-        videoElement.play();
-    }).catch(err => {
-        console.error('Error loading stream:', err);
-        loadingOverlay.classList.remove('show');
-    });
+        iframeElement.style.display = 'block';
+        iframeElement.src = streamUrl;
+        
+        // Simula caricamento
+        setTimeout(() => {
+            loadingOverlay.classList.remove('show');
+        }, 1500);
+    }
 }
 
 function getStreamUrl(ch) {
