@@ -13,10 +13,15 @@ header("Cache-Control: post-check=0, pre-check=0", false);
 header("Pragma: no-cache");
 header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
 
-// Gestione della modalità di visualizzazione (PC vs Mobile/TV)
-function isMobileOrTV() {
+// Gestione della modalità di visualizzazione (PC vs Mobile vs TV)
+function isSmartTV() {
     $ua = $_SERVER['HTTP_USER_AGENT'] ?? '';
-    return preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino|smarttv|smart-tv|hbbtv|appletv|googletv|tizen|webos|chromecast|roku|philips|sony|panasonic|lg-tv/i', $ua);
+    return preg_match('/smarttv|smart-tv|hbbtv|appletv|googletv|tizen|webos|chromecast|roku|philips|sony|panasonic|lg-tv/i', $ua);
+}
+
+function isMobile() {
+    $ua = $_SERVER['HTTP_USER_AGENT'] ?? '';
+    return preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i', $ua);
 }
 
 $view_mode = $_GET['view_mode'] ?? $_COOKIE['pz8_view_mode'] ?? null;
@@ -33,21 +38,18 @@ if (isset($_GET['view_mode'])) {
     $view_mode = $_GET['view_mode'];
 }
 
-// Se l'utente visita mobile.php, forziamo il cookie a 'mobile' in modo che sia persistente.
-if ($view_mode !== 'pc') {
-    $view_mode = 'mobile';
-    if (!isset($_COOKIE['pz8_view_mode']) || $_COOKIE['pz8_view_mode'] !== 'mobile') {
-        $secure_cookie = isset($_SERVER['HTTPS']) || (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https');
-        setcookie('pz8_view_mode', 'mobile', [
-            'expires' => time() + (365 * 24 * 3600),
-            'path' => '/',
-            'secure' => $secure_cookie,
-            'httponly' => true,
-            'samesite' => 'Strict'
-        ]);
+if ($view_mode === null) {
+    if (isSmartTV()) {
+        $view_mode = 'tv';
+    } elseif (isMobile()) {
+        $view_mode = 'mobile';
+    } else {
+        $view_mode = 'pc';
     }
 }
 
+// Se l'utente visita mobile.php, ma il view mode non è mobile e non ha specificato nulla, lo rispettiamo,
+// ma se è costretto ad essere reindirizzato:
 if ($view_mode === 'pc') {
     $redirect_url = 'index.php';
     if (isset($_GET['id'])) {
@@ -55,6 +57,25 @@ if ($view_mode === 'pc') {
     }
     header('Location: ' . $redirect_url);
     exit;
+} elseif ($view_mode === 'tv') {
+    $redirect_url = 'tv.php';
+    if (isset($_GET['id'])) {
+        $redirect_url .= '?id=' . urlencode($_GET['id']);
+    }
+    header('Location: ' . $redirect_url);
+    exit;
+}
+
+// Altrimenti resta in mobile
+if (!isset($_COOKIE['pz8_view_mode']) || $_COOKIE['pz8_view_mode'] !== 'mobile') {
+    $secure_cookie = isset($_SERVER['HTTPS']) || (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https');
+    setcookie('pz8_view_mode', 'mobile', [
+        'expires' => time() + (365 * 24 * 3600),
+        'path' => '/',
+        'secure' => $secure_cookie,
+        'httponly' => true,
+        'samesite' => 'Strict'
+    ]);
 }
 
 $config_file = __DIR__ . '/users_config.php';

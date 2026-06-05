@@ -531,7 +531,13 @@ $last_update = file_exists($epg_file) ? date('H:i', filemtime($epg_file)) : '--:
     window.__ACTIVE_PROFILE_ID__   = "<?= isset($active_profile['id']) ? addslashes($active_profile['id']) : '' ?>";
     window.__ACTIVE_PROFILE_FAVORITES__ = <?= json_encode($active_profile['favorites'] ?? []) ?>;
     window.__CSRF_TOKEN__          = "<?= $_SESSION['csrf_token'] ?? '' ?>";
-    window.__BACK_URL_BASE__       = "<?= (($_COOKIE['pz8_view_mode'] ?? '') === 'mobile') ? 'mobile.php' : 'index.php' ?>";
+    <?php
+    $view_mode_cookie = $_COOKIE['pz8_view_mode'] ?? '';
+    $back_url = 'index.php';
+    if ($view_mode_cookie === 'mobile') $back_url = 'mobile.php';
+    if ($view_mode_cookie === 'tv') $back_url = 'tv.php';
+    ?>
+    window.__BACK_URL_BASE__       = "<?= $back_url ?>";
   </script>
 
   <div class="guida-layout">
@@ -569,7 +575,7 @@ $last_update = file_exists($epg_file) ? date('H:i', filemtime($epg_file)) : '--:
             <i class="ph ph-star"></i>
           </button>
         </div>
-        <a id="btn-back" href="<?= (($_COOKIE['pz8_view_mode'] ?? '') === 'mobile') ? 'mobile.php' : 'index.php' ?>" class="guida-btn-back">
+        <a id="btn-back" href="<?= $back_url ?>" class="guida-btn-back">
           <i class="ph ph-play"></i> <span>Guarda Ora</span>
         </a>
       </header>
