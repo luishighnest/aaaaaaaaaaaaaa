@@ -556,7 +556,10 @@ $last_update = file_exists($epg_file) ? date('H:i', filemtime($epg_file)) : '--:
             <i class="ph ph-star"></i>
           </button>
         </div>
-        <a id="btn-back" href="index.php" class="guida-btn-back">
+        <?php
+        $back_url = (($_COOKIE['pz8_view_mode'] ?? '') === 'mobile') ? 'mobile.php' : 'index.php';
+        ?>
+        <a id="btn-back" href="<?= $back_url ?>" class="guida-btn-back">
           <i class="ph ph-arrow-left"></i> Torna al Player
         </a>
       </header>
@@ -977,15 +980,23 @@ $last_update = file_exists($epg_file) ? date('H:i', filemtime($epg_file)) : '--:
       }
     }
 
-    // Ã¢â€â‚¬Ã¢â€â‚¬ Fetch aggiornamento in background Ã¢â€â‚¬Ã¢â€â‚¬
+    // ── Fetch aggiornamento in background ──
     async function fetchEpgData() {
       try {
         const response = await fetch('epg.php');
-        if (!response.ok) throw new Error('EPG fetch failed');
-        epgData = await response.json();
-        buildEpgMap();
-        renderSidebar(document.getElementById('ch-search').value);
-        renderSchedule();
+        if (!response.ok) throw new Error('EPG fetch failed: ' + response.status);
+        const newData = await response.json();
+        // Aggiorna SOLO se la risposta è un array valido e non vuoto
+        // (protegge da errori/timeout che restituiscono oggetti vuoti)
+        if (Array.isArray(newData) && newData.length > 0) {
+          epgData = newData;
+          buildEpgMap();
+          renderSidebar(document.getElementById('ch-search').value);
+          renderSchedule();
+          console.log('EPG aggiornato: ' + newData.length + ' canali');
+        } else {
+          console.warn('EPG fetch: risposta non valida, uso dati esistenti', newData);
+        }
       } catch(err) {
         console.warn('Aggiornamento EPG fallito, uso dati esistenti:', err);
       }
