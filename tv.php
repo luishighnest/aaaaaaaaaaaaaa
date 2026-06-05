@@ -112,34 +112,38 @@ if (!isset($_SESSION['csrf_token'])) {
 
   <!-- TV Overlay UI -->
   <div class="tv-ui-overlay" id="tv-ui">
-    <aside class="tv-sidebar">
-      <div class="tv-brand"><i class="ph ph-television"></i> <span>8</span> PZ</div>
-      <div class="tv-nav-menu" id="tv-categories">
+    
+    <!-- Top Bar (Informazioni Canale e Ricerca) -->
+    <header class="tv-top-bar">
+      <div class="tv-top-left">
+        <div class="tv-brand"><i class="ph ph-television"></i> <span>8</span> PZ</div>
+        <div class="tv-current-info">
+          <div class="tv-current-channel" id="tv-channel-name">PZ8 TV</div>
+          <div class="tv-current-epg" id="tv-channel-epg">Scegli un canale per iniziare</div>
+        </div>
+      </div>
+      <div class="tv-top-right">
+        <div class="tv-search-bar">
+          <i class="ph ph-magnifying-glass"></i>
+          <input type="text" id="tv-search" placeholder="Cerca canale...">
+        </div>
+        <div class="tv-clock" id="tv-clock">00:00</div>
+      </div>
+    </header>
+
+    <!-- Bottom Panel (Categorie e Canali) -->
+    <div class="tv-bottom-panel">
+      <!-- Riga Categorie (Scorrimento Orizzontale) -->
+      <div class="tv-categories-row" id="tv-categories">
         <!-- Generato dinamicamente -->
       </div>
-    </aside>
-
-    <main class="tv-content-area">
-      <header class="tv-header">
-        <div class="tv-header-left">
-          <div class="tv-current-info">
-            <div class="tv-current-channel" id="tv-channel-name">PZ8 TV</div>
-            <div class="tv-current-epg" id="tv-channel-epg">Scegli un canale per iniziare</div>
-          </div>
-        </div>
-        <div class="tv-header-right">
-          <div class="tv-search-bar">
-            <i class="ph ph-magnifying-glass"></i>
-            <input type="text" id="tv-search" placeholder="Cerca canale...">
-          </div>
-          <div class="tv-clock" id="tv-clock">00:00</div>
-        </div>
-      </header>
-
-      <div class="tv-channels-grid" id="tv-channels-grid">
+      
+      <!-- Riga Canali (Scorrimento Orizzontale) -->
+      <div class="tv-channels-row" id="tv-channels-row">
         <!-- Generato dinamicamente -->
       </div>
-    </main>
+    </div>
+    
   </div>
 
   <!-- Librerie -->
