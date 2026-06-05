@@ -453,6 +453,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
 
                 if (clearkeys) {
+                    // Intercettiamo la risposta del manifest per rimpiazzare i SystemID di Widevine e PlayReady
+                    // con quello standard di ClearKey, forzando la decrittografia nativa ClearKey in dash.js.
+                    dashPlayer.addResponseInterceptor(function(response) {
+                        if (response.url && response.url.includes('.mpd') && typeof response.data === 'string') {
+                            response.data = response.data
+                                .replace(/edef8ba9-79d6-4ace-a3c8-27dcd51d21ed/gi, "1077efec-c0b2-4d02-ace3-3c1e52e2fb4b")
+                                .replace(/9a04f079-9840-4286-ab92-e65be0885f95/gi, "1077efec-c0b2-4d02-ace3-3c1e52e2fb4b");
+                        }
+                        return Promise.resolve(response);
+                    });
+
                     dashPlayer.setProtectionData({
                         "org.w3.clearkey": {
                             "clearkeys": clearkeys
