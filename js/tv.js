@@ -252,7 +252,7 @@ function selectCategory(catKey) {
 }
 
 function renderChannels(searchQuery = '') {
-    const container = document.getElementById('tv-channels-grid');
+    const container = document.getElementById('tv-channels-row');
     container.innerHTML = '';
     
     let filtered = CHANNELS;
@@ -279,7 +279,7 @@ function renderChannels(searchQuery = '') {
         const epgInfo = getChannelEpg(ch.name);
         let epgText = epgInfo.now ? epgInfo.now.titolo : 'Diretta continua';
         
-        // Progress bar calcolo (simile a mobile/guida)
+        // Progress bar calcolo
         let progressHtml = '';
         if (epgInfo.now) {
             const now = new Date();
@@ -322,7 +322,7 @@ function updateLiveEpg() {
     }
 }
 
-// ─── CLOCK & SEARCH ───
+// ─── CLOCK & SEARCH & SCROLL ───
 function updateClock() {
     const now = new Date();
     document.getElementById('tv-clock').textContent = now.toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit' });
@@ -334,12 +334,56 @@ document.getElementById('tv-search').addEventListener('input', (e) => {
     renderChannels(e.target.value);
 });
 
+// Aggiungi scorrimento con rotellina del mouse ai caroselli orizzontali
+function setupHorizontalScroll(elId) {
+    const el = document.getElementById(elId);
+    if (!el) return;
+    
+    // Supporto rotellina
+    el.addEventListener('wheel', (e) => {
+        if (e.deltaY !== 0) {
+            e.preventDefault();
+            el.scrollLeft += e.deltaY * 2;
+        }
+    });
+
+    // Supporto Drag to Scroll per il puntatore TV
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    el.addEventListener('mousedown', (e) => {
+        isDown = true;
+        el.classList.add('active');
+        startX = e.pageX - el.offsetLeft;
+        scrollLeft = el.scrollLeft;
+    });
+    el.addEventListener('mouseleave', () => {
+        isDown = false;
+        el.classList.remove('active');
+    });
+    el.addEventListener('mouseup', () => {
+        isDown = false;
+        el.classList.remove('active');
+    });
+    el.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - el.offsetLeft;
+        const walk = (x - startX) * 2; // Velocità
+        el.scrollLeft = scrollLeft - walk;
+    });
+}
+
 // ─── BOOTSTRAP ───
 window.addEventListener('DOMContentLoaded', () => {
     initShakaPlayer().then(() => {
         renderCategories();
         renderChannels();
         resetUiTimeout();
+        
+        setupHorizontalScroll('tv-categories');
+        setupHorizontalScroll('tv-channels-row');
         
         // Auto play channel from URL if any
         const params = new URLSearchParams(window.location.search);
