@@ -369,7 +369,7 @@ $is_kids_profile = (
         }
     }
   </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/dashjs/4.7.1/dash.all.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/shaka-player/4.7.6/shaka-player.compiled.js"></script>
   <script src="js/mobile.js?v=<?= time() ?>"></script>
 </body>
 </html>
