@@ -2,10 +2,10 @@
 
 :root {
   --bg-base: #000000;
-  --bg-overlay: rgba(10, 10, 15, 0.75);
-  --bg-sidebar: rgba(15, 15, 20, 0.85);
+  --bg-overlay: rgba(0, 0, 0, 0.5);
+  --bg-panel: rgba(15, 15, 20, 0.85);
   --bg-card: rgba(30, 30, 40, 0.6);
-  --bg-card-hover: rgba(50, 50, 65, 0.8);
+  --bg-card-hover: rgba(50, 50, 65, 0.9);
   --border-subtle: rgba(255, 255, 255, 0.08);
   --border-strong: rgba(255, 255, 255, 0.2);
   --accent: #00f2fe;
@@ -54,46 +54,47 @@ body {
   object-fit: contain;
 }
 
-/* UI Overlay */
+/* UI Overlay Container */
 .tv-ui-overlay {
   position: absolute;
   inset: 0;
   z-index: 10;
   display: flex;
-  background: linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.6) 30%, rgba(0,0,0,0) 60%, rgba(0,0,0,0.6) 100%);
+  flex-direction: column;
+  justify-content: space-between;
   opacity: 1;
   transition: opacity 0.6s ease-in-out;
   pointer-events: auto;
+  /* Gradiente delicato sopra e sotto */
+  background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 20%, rgba(0,0,0,0) 60%, rgba(0,0,0,0.9) 100%);
 }
 
-/* Quando l'interfaccia si nasconde per inattività */
 .tv-ui-overlay.idle {
   opacity: 0;
   pointer-events: none;
 }
 
-/* Sidebar */
-.tv-sidebar {
-  width: 280px;
-  background: var(--bg-sidebar);
-  backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur(30px);
-  border-right: 1px solid var(--border-subtle);
+/* ─── TOP BAR ─── */
+.tv-top-bar {
   display: flex;
-  flex-direction: column;
-  padding: 2rem 1rem;
-  z-index: 20;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2.5rem 4rem;
+}
+
+.tv-top-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
 }
 
 .tv-brand {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 800;
   letter-spacing: -1px;
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  margin-bottom: 3rem;
-  padding: 0 1rem;
 }
 
 .tv-brand span {
@@ -102,99 +103,31 @@ body {
   font-style: italic;
 }
 
-.tv-nav-menu {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  flex: 1;
-  overflow-y: auto;
-}
-
-.tv-nav-menu::-webkit-scrollbar { width: 0; }
-
-.tv-nav-item {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem 1.2rem;
-  border-radius: var(--radius-sm);
-  color: var(--text-secondary);
-  font-size: 1.2rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: var(--transition);
-  border: 2px solid transparent;
-}
-
-.tv-nav-item i {
-  font-size: 1.6rem;
-}
-
-.tv-nav-item:hover, .tv-nav-item.focused {
-  background: rgba(255, 255, 255, 0.05);
-  color: var(--text-primary);
-  border-color: rgba(255, 255, 255, 0.1);
-  transform: translateX(10px);
-}
-
-.tv-nav-item.active {
-  background: linear-gradient(90deg, rgba(0, 242, 254, 0.1) 0%, transparent 100%);
-  color: var(--text-primary);
-  border-left: 4px solid var(--accent);
-  box-shadow: inset 4px 0 0 var(--accent);
-}
-
-.tv-nav-item.active i {
-  color: var(--accent);
-}
-
-/* Content Area */
-.tv-content-area {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  padding: 2rem 4rem;
-  overflow: hidden;
-}
-
-/* Header (Top Bar) */
-.tv-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 2rem;
-}
-
-.tv-header-left {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
-
 .tv-current-info {
   display: flex;
   flex-direction: column;
 }
 
 .tv-current-channel {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 800;
   color: var(--text-primary);
-  text-shadow: 0 4px 20px rgba(0,0,0,0.5);
-  margin-bottom: 0.2rem;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.8);
+  line-height: 1.1;
 }
 
 .tv-current-epg {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #00e676;
   font-weight: 600;
-  text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  text-shadow: 0 2px 10px rgba(0,0,0,0.8);
+  margin-top: 0.5rem;
 }
 
-.tv-header-right {
+.tv-top-right {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .tv-search-bar {
@@ -224,7 +157,7 @@ body {
 
 .tv-clock {
   font-family: var(--font-alt);
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
   background: rgba(0, 0, 0, 0.4);
   border: 1px solid var(--border-strong);
@@ -233,25 +166,82 @@ body {
   backdrop-filter: blur(10px);
 }
 
-/* Channels Grid */
-.tv-channels-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+/* ─── BOTTOM PANEL ─── */
+.tv-bottom-panel {
+  padding: 0 0 3rem 4rem;
+  display: flex;
+  flex-direction: column;
   gap: 1.5rem;
-  overflow-y: auto;
-  padding-bottom: 4rem;
-  padding-right: 1rem;
-  align-content: start;
 }
 
-.tv-channels-grid::-webkit-scrollbar {
-  width: 8px;
+/* Riga Categorie */
+.tv-categories-row {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  padding-right: 4rem;
+  /* Nascondi scrollbar */
+  scrollbar-width: none; 
 }
-.tv-channels-grid::-webkit-scrollbar-thumb {
+.tv-categories-row::-webkit-scrollbar { display: none; }
+
+.tv-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: var(--radius-lg);
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  border: 1px solid var(--border-subtle);
+  white-space: nowrap;
+}
+
+.tv-nav-item i {
+  font-size: 1.5rem;
+}
+
+.tv-nav-item:hover {
+  background: rgba(255,255,255,0.15);
+  color: var(--text-primary);
+  transform: translateY(-2px);
+}
+
+.tv-nav-item.active {
+  background: var(--accent);
+  color: #000;
+  border-color: var(--accent);
+  box-shadow: 0 0 20px var(--accent-glow);
+}
+.tv-nav-item.active i {
+  color: #000;
+}
+
+/* Riga Canali */
+.tv-channels-row {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding-bottom: 2rem;
+  padding-right: 4rem;
+  /* Scrollbar orizzontale visibile e stilizzata */
+}
+.tv-channels-row::-webkit-scrollbar {
+  height: 8px;
+}
+.tv-channels-row::-webkit-scrollbar-thumb {
   background: var(--border-strong);
   border-radius: 4px;
 }
 
+/* Card Canale Orizzontale */
 .tv-channel-card {
   background: var(--bg-card);
   backdrop-filter: blur(20px);
@@ -261,35 +251,40 @@ body {
   padding: 1.5rem;
   display: flex;
   align-items: center;
-  gap: 1.2rem;
+  gap: 1.5rem;
   cursor: pointer;
   transition: var(--transition);
   position: relative;
   overflow: hidden;
+  /* Dimensioni fisse per le card orizzontali */
+  min-width: 380px;
+  max-width: 380px;
+  flex-shrink: 0;
 }
 
-.tv-channel-card:hover, .tv-channel-card.focused {
+.tv-channel-card:hover {
   background: var(--bg-card-hover);
   border-color: var(--text-primary);
-  transform: scale(1.05);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.6);
   z-index: 2;
 }
 
 .tv-channel-card.active {
   border-color: var(--accent);
   box-shadow: 0 0 20px var(--accent-glow);
+  background: rgba(0, 242, 254, 0.1);
 }
 
 .tv-card-icon {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   border-radius: 16px;
   background: rgba(255, 255, 255, 0.05);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: var(--text-secondary);
   flex-shrink: 0;
 }
@@ -307,7 +302,7 @@ body {
 }
 
 .tv-card-name {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--text-primary);
   white-space: nowrap;
@@ -316,18 +311,19 @@ body {
 }
 
 .tv-card-epg {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   color: var(--text-secondary);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  margin-top: 4px;
+  margin-top: 6px;
 }
 
 .tv-channel-card.active .tv-card-epg {
   color: #00e676;
 }
 
+/* Barra progresso canale */
 .tv-progress-bar {
   position: absolute;
   bottom: 0;
