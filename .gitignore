@@ -1,0 +1,21 @@
+# File da ignorare su GitHub (non caricarli nel repo)
+
+# Cache e dati utente (sensibili)
+desc_cache.json
+user_profiles.json
+
+# File temporanei
+*.ps1
+*.pyc
+__pycache__/
+.gemini/
+rollback_test/
+scratch/
+
+# File di sistema
+.DS_Store
+Thumbs.db
+*.log
+
+# FTP sync state
+.ftp-deploy-sync-state.json
