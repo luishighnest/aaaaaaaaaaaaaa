@@ -189,7 +189,8 @@ $is_kids_profile = (
 
     <!-- Player Area -->
     <div id="player-container" class="player-container">
-      <iframe id="player-frame" src="about:blank" allowfullscreen allow="autoplay; encrypted-media; fullscreen"></iframe>
+      <iframe id="player-frame" src="about:blank" allowfullscreen allow="autoplay; encrypted-media; fullscreen" style="display: none; width: 100%; height: 100%; border: none;"></iframe>
+      <video id="native-video-player" controls autoplay playsinline style="display: none; width: 100%; height: 100%; background: #000; z-index: 4; position: absolute; inset: 0;"></video>
       
       <!-- Overlay di stato inizializzazione / nessun canale -->
       <div id="no-stream-overlay" class="no-stream-overlay">
@@ -368,6 +369,7 @@ $is_kids_profile = (
         }
     }
   </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dashjs/4.7.1/dash.all.min.js"></script>
   <script src="js/mobile.js?v=<?= time() ?>"></script>
 </body>
 </html>
