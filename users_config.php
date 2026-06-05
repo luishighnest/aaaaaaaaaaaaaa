@@ -1,0 +1,25 @@
+<?php
+// Impedisci l'accesso diretto via URL
+if (count(get_included_files()) === 1) {
+    http_response_code(403);
+    die('Accesso diretto non consentito.');
+}
+
+/**
+ * users_config.php
+ * Configurazione degli account e dei profili.
+ * Contiene gli utenti reali con i rispettivi profili e hash delle password.
+ */
+return [
+    'subscription_expiry' => '2027-12-31',
+    'users' => [
+        'Alecs' => [
+            'password' => '$2y$12$4sEoAqC8JBywteFYHpqsBu4VjyWp6X44DCjtpIw76MsmW4DLtNDGi',
+            'profiles' => [
+                ['id' => 'ale_main', 'name' => 'ale', 'avatar' => 'ph-user-circle', 'color' => '#00f2fe'],
+                ['id' => 'ale_kids', 'name' => 'Bambini', 'avatar' => 'ph-smiley', 'color' => '#00e676'],
+                ['id' => 'ale_guest', 'name' => 'Ospiti', 'avatar' => 'ph-users', 'color' => '#ff9800']
+            ]
+        ]
+    ]
+];

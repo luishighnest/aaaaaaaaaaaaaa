@@ -1,0 +1,87 @@
+{
+    "Ale": [
+        {
+            "id": "Ale_main",
+            "name": "Ale",
+            "avatar": "ph-alien",
+            "color": "#ff5722",
+            "allowed_categories": [
+                "*"
+            ],
+            "allowed_channels": [],
+            "favorites": [
+                50
+            ]
+        },
+        {
+            "id": "Ale_6a1ec9cf15b55",
+            "name": "Bambini",
+            "avatar": "ph-basketball",
+            "color": "#ffffff",
+            "allowed_categories": [
+                "kids"
+            ],
+            "allowed_channels": [],
+            "favorites": [
+                71
+            ]
+        },
+        {
+            "id": "Ale_6a1ece1f4b925",
+            "name": "Luca",
+            "avatar": "ph-robot",
+            "color": "#e91e63",
+            "allowed_categories": [
+                "sky_sport",
+                "sky_intrattenimento",
+                "eurosport"
+            ],
+            "allowed_channels": [],
+            "favorites": [
+                51,
+                50
+            ]
+        }
+    ],
+    "luca": [
+        {
+            "id": "luc_main",
+            "name": "Luca",
+            "avatar": "ph-user-circle",
+            "color": "#26a69a"
+        }
+    ],
+    "Alecs": [
+        {
+            "id": "ale_main",
+            "name": "Ale",
+            "avatar": "ph-user-circle",
+            "color": "#00f2fe",
+            "favorites": [
+                122,
+                1,
+                51
+            ]
+        },
+        {
+            "id": "ale_kids",
+            "name": "Bambini",
+            "avatar": "ph-smiley",
+            "color": "#00e676",
+            "allowed_categories": [
+                "kids"
+            ],
+            "allowed_channels": []
+        },
+        {
+            "id": "ale_guest",
+            "name": "Ospiti",
+            "avatar": "ph-users",
+            "color": "#ff9800",
+            "allowed_categories": [
+                "sky_sport"
+            ],
+            "allowed_channels": []
+        }
+    ]
+}

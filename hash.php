@@ -1,0 +1,12 @@
+<?php
+$user_passwords = [
+    'Alecs' => 'Alepezzotto01' // La tua nuova password
+];
+
+// Configuro le opzioni per forzare il costo a 12
+$options = ['cost' => 12];
+
+foreach ($user_passwords as $u => $p) {
+    // Ora usiamo PASSWORD_BCRYPT con il costo esatto richiesto dal tuo sistema
+    echo $u . ' => ' . $p . ' => ' . password_hash($p, PASSWORD_BCRYPT, $options) . "\n";
+}

@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>PZ8</title>
+  <meta name="description" content="Dashboard StreamHub Premium">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* animations removed for performance */
+    
+    /* OVERRIDE CACHED STYLES PER EVITARE CHE IL RIQUADRO SI ALLARGHI */
+    .dashboard-layout .dash-info-area {
+      position: relative !important;
+      height: 100% !important; /* Forza l'altezza a non dipendere dal contenuto */
+      min-height: 0 !important;
+      display: block !important;
+    }
+    
+    .dashboard-layout .dash-info-card {
+      position: absolute !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      bottom: 0 !important;
+      overflow-y: auto !important;
+      margin: 0 !important;
+      height: auto !important;
+      flex: none !important;
+    }
+    
+    /* Personalizzazione scrollbar */
+    .dashboard-layout .dash-info-card::-webkit-scrollbar {
+      width: 6px;
+    }
+    .dashboard-layout .dash-info-card::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 3px;
+    }
+  </style>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body class="dashboard-body">
+
+  <div class="dashboard-layout">
+    <script>
+      (function() {
+        const sidebarHidden = localStorage.getItem('sidebar_hidden') === 'true';
+        const guideExpanded = localStorage.getItem('guide_expanded') === 'true';
+        const layout = document.querySelector('.dashboard-layout');
+        if (sidebarHidden) layout.classList.add('sidebar-hidden');
+        if (guideExpanded) layout.classList.add('guide-expanded');
+      })();
+    </script>
+    <!-- Sidebar -->
+    <aside class="dash-sidebar">
+      <div class="dash-brand">
+        <div class="dash-brand-icon"><i class="ph ph-play-circle"></i></div>
+        <div class="dash-brand-text">PZ<span>8</span></div>
+      </div>
+      <div class="dash-clock" id="dash-clock">--:--:--</div>
+      <div class="dash-clock-date" id="dash-clock-date"></div>
+      <div class="dash-clock-divider"></div>
+      <div class="dash-cat-title">Categorie</div>
+      <div class="dash-cat-list" id="dash-cat-list">
+        <!-- Categories injected here -->
+      </div>
+      <a id="btn-guida-tv" href="guida.html" class="dash-exit"><i class="ph ph-calendar"></i> GUIDA TV</a>
+    </aside>
+
+    <!-- Sidebar Toggle Button -->
+    <button id="sidebar-toggle" class="sidebar-toggle" title="Nascondi/Mostra Sidebar">
+      <i class="ph ph-caret-left"></i>
+    </button>
+
+    <!-- Player Area -->
+    <div class="dash-player-area">
+      <div class="dash-player-loader" id="player-loader">
+        <div class="spinner"></div>
+        <div class="loader-text">Connessione al flusso...</div>
+      </div>
+      <iframe id="player-frame" src="about:blank" allowfullscreen
+        allow="autoplay; encrypted-media; fullscreen"></iframe>
+    </div>
+
+    <!-- Info Area -->
+    <div class="dash-info-area">
+      <div class="dash-info-card">
+        <h1 class="dash-info-title" id="player-ch-name">Caricamento...</h1>
+        <div class="dash-info-meta" id="player-ch-meta"></div>
+
+        <!-- IN ONDA container -->
+        <div id="player-ch-now-container">
+          <div class="dash-info-now-box">
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+              <span
+                style="color: #00e676; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; font-size: 0.7rem; background: rgba(0, 230, 118, 0.1); padding: 2px 8px; border-radius: 4px;">IN
+                ONDA LIVE</span>
+              <span
+                style="font-family: var(--font-alt); font-size: 0.8rem; color: #8ca3ba; font-weight: 700;">--:--</span>
+            </div>
+            <div style="font-size: 1.1rem; font-weight: 800; color: #fff; line-height: 1.3;">Programmazione in corso
+            </div>
+          </div>
+        </div>
+
+        <!-- A SEGUIRE container -->
+        <div id="player-ch-next-container">
+          <div class="dash-info-next-box">
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+              <span
+                style="color: #60a5fa; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; font-size: 0.7rem; background: rgba(96, 165, 250, 0.1); padding: 2px 8px; border-radius: 4px;">A
+                SEGUIRE</span>
+              <span
+                style="font-family: var(--font-alt); font-size: 0.8rem; color: #8ca3ba; font-weight: 700;">--:--</span>
+            </div>
+            <div style="font-size: 0.95rem; font-weight: 700; color: #e2e8f0; line-height: 1.3;">Programma successivo in
+              arrivo</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Panels -->
+    <!-- Unified Live TV Guide & Channel Streamer Panel -->
+    <div class="dash-panel dash-guide-panel" style="grid-column: 2 / -1;">
+      <div class="dash-panel-header guide"
+        style="display: flex; justify-content: space-between; align-items: center; padding: 0.8rem 1.5rem; border-bottom: 1px solid var(--border-subtle);">
+        <div style="display: flex; align-items: center; gap: 0.8rem;">
+          <span class="dot"
+            style="background: #ef4444; width: 10px; height: 10px; border-radius: 50%; display: inline-block;"></span>
+          <span id="panel-cat-title" style="color: #60a5fa; font-weight: 900; font-size: 0.85rem; letter-spacing: 0.5px; text-transform: uppercase;">CANALI LIVE</span>
+          <span
+            style="background: rgba(255,255,255,0.08); padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; font-weight: 700; color: var(--text-secondary);"
+            id="ch-count">0</span>
+        </div>
+
+        <!-- Right section: Search bar + Expand toggle button -->
+        <div style="display: flex; align-items: center; gap: 1rem;">
+          <!-- Live Search Bar inside the Header -->
+          <div class="dash-search-container" style="position: relative; width: 300px;">
+            <i class="ph ph-magnifying-glass"
+              style="position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--text-muted); font-size: 1rem; pointer-events: none;"></i>
+            <input type="text" id="dash-search" placeholder="Cerca canale,categoria o evento..."
+              style="width: 100%; background: #1a1a24; border: 1px solid var(--border-subtle); border-radius: 8px; padding: 6px 12px 6px 36px; color: #fff; font-size: 0.85rem;" />
+          </div>
+
+          <!-- Expand Toggle Button -->
+          <button id="guide-expand-toggle" class="dash-btn-toggle" title="Espandi/Riduci Guida TV"
+            style="background: rgba(255, 255, 255, 0.05); border: 1px solid var(--border-subtle); color: var(--text-secondary); padding: 6px 14px; border-radius: 8px; cursor: pointer; font-size: 0.8rem; font-weight: 700; display: flex; align-items: center; gap: 6px; transition: all 0.2s;">
+            <i class="ph ph-arrows-out-simple"></i> <span>Espandi</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="dash-panel-content" id="dash-ch-list"
+        style="padding: 1rem; gap: 0.5rem;">
+        <!-- Channels & EPG items injected dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <script src="js/channels.js?v=ClearCacheGuidaV5"></script>
+  <script>
+    // Clock + Date
+    function updateClock() {
+      const now = new Date();
+      document.getElementById('dash-clock').textContent = now.toLocaleTimeString('it-IT', { hour12: false });
+      const dateEl = document.getElementById('dash-clock-date');
+      if (dateEl) {
+        dateEl.textContent = now.toLocaleDateString('it-IT', { weekday: 'short', day: 'numeric', month: 'short' });
+      }
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+
+    // Ripristina gli stati salvati da localStorage all'avvio
+    const layout = document.querySelector('.dashboard-layout');
+    const sidebarHidden = localStorage.getItem('sidebar_hidden') === 'true';
+    const guideExpanded = localStorage.getItem('guide_expanded') === 'true';
+
+    if (sidebarHidden) {
+      layout.classList.add('sidebar-hidden');
+    }
+    if (guideExpanded) {
+      layout.classList.add('guide-expanded');
+      const guideToggle = document.getElementById('guide-expand-toggle');
+      if (guideToggle) {
+        const icon = guideToggle.querySelector('i');
+        const text = guideToggle.querySelector('span');
+        if (icon && text) {
+          icon.className = 'ph ph-arrows-in-simple';
+          text.textContent = 'Compatta';
+        }
+      }
+    }
+
+    // Sidebar Toggle Logic
+    document.getElementById('sidebar-toggle').addEventListener('click', function() {
+      const isHidden = layout.classList.toggle('sidebar-hidden');
+      localStorage.setItem('sidebar_hidden', isHidden ? 'true' : 'false');
+    });
+
+    // Guide Expand Toggle Logic
+    const guideToggle = document.getElementById('guide-expand-toggle');
+    if (guideToggle) {
+      guideToggle.addEventListener('click', function() {
+        const isExpanded = layout.classList.toggle('guide-expanded');
+        localStorage.setItem('guide_expanded', isExpanded ? 'true' : 'false');
+        
+        // Aggiorna l'icona e il testo del pulsante
+        const icon = guideToggle.querySelector('i');
+        const text = guideToggle.querySelector('span');
+        if (isExpanded) {
+          icon.className = 'ph ph-arrows-in-simple';
+          text.textContent = 'Compatta';
+        } else {
+          icon.className = 'ph ph-arrows-out-simple';
+          text.textContent = 'Espandi';
+        }
+      });
+    }
+
+    const params = new URLSearchParams(window.location.search);
+    let currentChId = parseInt(params.get('id'));
+    let currentChannel = currentChId ? getChannelById(currentChId) : null;
+    let currentCat = currentChannel ? currentChannel.cat : 'tivusat';
+
+    if (!currentChannel) {
+      // Fallback se id non valido o assente
+      const sportChannels = getChannelsByCategory('tivusat');
+      currentChannel = sportChannels.length > 0 ? sportChannels[0] : CHANNELS[0];
+      currentCat = currentChannel.cat;
+    }
+
+    // Set initial GUIDA TV button link
+    const btnGuidaTv = document.getElementById('btn-guida-tv');
+    if (btnGuidaTv) {
+      btnGuidaTv.href = `guida.html?id=${currentChannel.id}`;
+    }
+
+    // Imposta le info in alto a destra
+    document.title = currentChannel.name + ' ';
+    document.getElementById('player-ch-name').textContent = currentChannel.name;
+
+    // Punto 5: Mostra numero canale e badge categoria nel pannello info
+    const chMeta = CATEGORIES[currentChannel.cat];
+    const metaEl = document.getElementById('player-ch-meta');
+    if (metaEl && chMeta) {
+      metaEl.innerHTML = `
+        <span class="dash-info-ch-num">CH ${currentChannel.id}</span>
+        <span class="dash-info-cat-badge" style="background: ${chMeta.color}20; color: ${chMeta.color}; border: 1px solid ${chMeta.color}40;">
+          <i class="ph ${chMeta.icon}" style="margin-right: 3px; vertical-align: middle;"></i>${chMeta.label}
+        </span>
+      `;
+    }
+
+    // Carica il video (iframe)
+    const frame = document.getElementById('player-frame');
+    const loader = document.getElementById('player-loader');
+    frame.src = getStreamUrl(currentChannel);
+    frame.onload = () => { loader.style.display = 'none'; };
+    setTimeout(() => { loader.style.display = 'none'; }, 5000); // Timeout fallback
+
+    // Popola le Categorie (Sidebar) — Punto 3: icone specifiche + Punto 4: contatori
+    const catList = document.getElementById('dash-cat-list');
+
+    // Funzione condivisa: ripristina i colori originali delle icone
+    function restoreIconColors() {
+      document.querySelectorAll('.dash-cat-item').forEach(el => {
+        el.classList.remove('active');
+        const icon = el.querySelector('i');
+        if (icon) icon.style.color = el.dataset.color || '';
+      });
+    }
+
+    Object.keys(CATEGORIES).forEach(key => {
+      if (key === 'all') return;
+      const c = CATEGORIES[key];
+      const count = getChannelsByCategory(key).length;
+      const a = document.createElement('a');
+      a.href = '#';
+      a.dataset.color = c.color; // salva il colore originale
+      a.className = 'dash-cat-item' + (key === currentCat ? ' active' : '');
+      a.innerHTML = `<i class="ph ${c.icon}" style="color: ${key === currentCat ? '#fff' : c.color}"></i> ${c.label} <span class="dash-cat-count">${count}</span>`;
+
+      a.onclick = (e) => {
+        e.preventDefault();
+        renderChannels(key);
+        restoreIconColors();
+        a.classList.add('active');
+        const activeIcon = a.querySelector('i');
+        if (activeIcon) activeIcon.style.color = '#fff';
+        currentCat = key;
+      };
+      catList.appendChild(a);
+    });
+
+    // Tab "Tutte" in cima con icona specifica e contatore totale
+    const aAll = document.createElement('a');
+    aAll.href = '#';
+    aAll.dataset.color = '#FFFF00'; // colore originale per "Tutte"
+    aAll.className = 'dash-cat-item' + ('all' === currentCat ? ' active' : '');
+    const allCount = CHANNELS.length;
+    aAll.innerHTML = `<i class="ph ph-squares-four" style="color: ${'all' === currentCat ? '#fff' : '#FFFF00'}"></i> Tutte <span class="dash-cat-count">${allCount}</span>`;
+    aAll.onclick = (e) => {
+      e.preventDefault();
+      renderChannels('all');
+      restoreIconColors();
+      aAll.classList.add('active');
+      const activeIcon = aAll.querySelector('i');
+      if (activeIcon) activeIcon.style.color = '#fff';
+      currentCat = 'all';
+    };
+    catList.insertBefore(aAll, catList.firstChild);
+
+    // Renderizza i Canali con Guida TV Integrata — Punto 16: batch rendering con DocumentFragment
+    function renderChannels(catKey, searchQuery = '') {
+      const list = document.getElementById('dash-ch-list');
+      if (!list) return;
+      list.innerHTML = '';
+
+      let filtered = getChannelsByCategory(catKey);
+
+      const query = searchQuery.toLowerCase().trim();
+      if (query) {
+        filtered = filtered.filter(ch => {
+          const chNameMatch = ch.name.toLowerCase().includes(query);
+          const chCatMatch = ch.cat.toLowerCase().includes(query);
+          const catLabelMatch = (CATEGORIES[ch.cat] && CATEGORIES[ch.cat].label.toLowerCase().includes(query));
+          
+          if (chNameMatch || chCatMatch || catLabelMatch) return true;
+          
+          // Cerca nei programmi EPG
+          const channelEpgObj = epgMap ? epgMap.get(ch.name.toUpperCase()) : null;
+          if (channelEpgObj && channelEpgObj.programmi) {
+            return channelEpgObj.programmi.some(p => p.titolo.toLowerCase().includes(query));
+          }
+          return false;
+        });
+      }
+
+      document.getElementById('ch-count').textContent = filtered.length;
+
+      const panelTitleEl = document.getElementById('panel-cat-title');
+      if (panelTitleEl) {
+        if (catKey === 'all') {
+          panelTitleEl.textContent = 'TUTTI I CANALI';
+        } else if (CATEGORIES[catKey]) {
+          panelTitleEl.textContent = 'CANALI ' + CATEGORIES[catKey].label.toUpperCase();
+        }
+      }
+
+      // Punto 8: Feedback "nessun risultato"
+      if (filtered.length === 0) {
+        const emptyDiv = document.createElement('div');
+        emptyDiv.className = 'dash-empty-state';
+        emptyDiv.innerHTML = `
+          <i class="ph ph-magnifying-glass"></i>
+          <div class="dash-empty-title">Nessun canale trovato</div>
+          <div class="dash-empty-hint">${query ? 'Nessun risultato per "' + query + '"' : 'Nessun canale in questa categoria'}</div>
+        `;
+        list.appendChild(emptyDiv);
+        return;
+      }
+
+      // Punto 16: Build all rows in a DocumentFragment, then append once
+      const fragment = document.createDocumentFragment();
+      const nowDate = new Date();
+      const nowMinutes = (nowDate.getHours() * 60) + nowDate.getMinutes();
+
+      for (let i = 0; i < filtered.length; i++) {
+        const ch = filtered[i];
+        const isPlaying = ch.id === currentChannel.id;
+        const a = document.createElement('a');
+        a.href = `?id=${ch.id}`;
+        a.className = 'dash-ch-row' + (isPlaying ? ' active' : '');
+
+        a.addEventListener('click', (e) => {
+          e.preventDefault();
+          selectChannel(ch);
+        });
+
+        const channelEpg = getChannelEpg(ch.name);
+        const currentProgram = channelEpg.now;
+
+        const cMeta = CATEGORIES[ch.cat];
+        const catColor = cMeta ? cMeta.color : '#888';
+
+        // Punto 10: hover accent color per categoria
+        a.style.setProperty('--ch-hover-accent', catColor);
+
+        // Build search match badge if matching a program in guide
+        let searchMatchHtml = '';
+        const channelEpgObj = epgMap ? epgMap.get(ch.name.toUpperCase()) : null;
+        if (query && channelEpgObj && channelEpgObj.programmi) {
+          const isChNameMatch = ch.name.toLowerCase().includes(query);
+          const isChCatMatch = ch.cat.toLowerCase().includes(query) || (cMeta && cMeta.label.toLowerCase().includes(query));
+          const isCurrentMatch = currentProgram && currentProgram.titolo.toLowerCase().includes(query);
+          const isNextMatch = channelEpg.next && channelEpg.next.titolo.toLowerCase().includes(query);
+          
+          if (!isChNameMatch && !isChCatMatch && !isCurrentMatch && !isNextMatch) {
+            const matchedProg = channelEpgObj.programmi.find(p => p.titolo.toLowerCase().includes(query));
+            if (matchedProg) {
+              searchMatchHtml = `<div class="dash-ch-search-match" style="font-size:0.75rem; color:#10b981; font-weight:700; margin-top:3px; display:inline-flex; align-items:center; gap:3px;">
+                <i class="ph ph-calendar-check" style="font-size:0.85rem"></i>
+                In Guida: ${matchedProg.ora} - ${matchedProg.titolo}
+              </div>`;
+            }
+          }
+        }
+
+        // Build HTML string in one go
+        let html = `<div class="dash-ch-num">${ch.id}</div>`;
+        html += `<div class="dash-ch-icon" style="background:${catColor}15;color:${catColor}"><i class="ph ${ch.icon}"></i></div>`;
+        html += `<div class="dash-ch-col-info"><div class="dash-ch-name">`;
+
+        if (isPlaying) {
+          html += `<span class="dash-ch-live-badge">▶ IN ONDA</span>`;
+        }
+
+        html += `${ch.name}</div><div class="dash-ch-cat" style="color:${catColor}">${cMeta ? cMeta.label : ch.cat}</div>${searchMatchHtml}</div>`;
+
+        if (currentProgram) {
+          let startMin = timeToMinutes(currentProgram.ora);
+          let endMin = channelEpg.next ? timeToMinutes(channelEpg.next.ora) : startMin + 120;
+          if (endMin < startMin) endMin += 1440;
+          let adjNow = nowMinutes;
+          if (adjNow < startMin && startMin > 1000) adjNow += 1440;
+
+          const dur = endMin - startMin;
+          const rem = Math.max(0, endMin - adjNow);
+          const pct = dur > 0 ? Math.min(100, Math.max(0, ((adjNow - startMin) / dur) * 100)) : 100;
+
+          html += `<div class="dash-ch-col-epg">`;
+          html += `<div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px">`;
+          html += `<span style="font-weight:700;font-size:0.95rem;color:${isPlaying ? '#ef4444' : '#fff'};white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${currentProgram.titolo}</span>`;
+          html += `<span style="font-family:var(--font-alt);font-size:0.8rem;color:#60a5fa;font-weight:700;flex-shrink:0">${currentProgram.ora}</span></div>`;
+          html += `<div style="display:flex;align-items:center;gap:10px;margin-top:2px">`;
+          html += `<div style="flex:1;height:4px;background:#1a1a24;border-radius:99px;overflow:hidden"><div style="width:${pct}%;height:100%;background:linear-gradient(90deg,#ef4444,#b91c1c);border-radius:99px"></div></div>`;
+          html += `<span style="font-size:0.72rem;color:var(--text-muted);flex-shrink:0;font-weight:600">${rem > 0 ? 'Mancano ' + rem + ' min' : 'In conclusione'}</span></div></div>`;
+
+          if (channelEpg.next) {
+            html += `<div class="dash-ch-col-next"><div style="display:flex;align-items:center;gap:6px">`;
+            html += `<span style="font-size:0.65rem;font-weight:800;padding:1px 5px;border-radius:3px;background:rgba(96,165,250,0.1);color:#60a5fa;border:1px solid rgba(96,165,250,0.2);letter-spacing:0.5px">DOPO</span>`;
+            html += `<span style="font-family:var(--font-alt);font-size:0.72rem;color:var(--text-muted);font-weight:700">${channelEpg.next.ora}</span></div>`;
+            html += `<div style="font-size:0.8rem;font-weight:600;color:var(--text-secondary);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:1px">${channelEpg.next.titolo}</div></div>`;
+          } else {
+            html += `<div class="dash-ch-col-next" style="display:flex;align-items:center;justify-content:flex-start"><span style="font-size:0.75rem;color:var(--text-muted);font-style:italic"><i class="ph ph-info" style="margin-right:4px;vertical-align:middle"></i>Fine trasmissioni</span></div>`;
+          }
+        } else {
+          html += `<div class="dash-ch-col-epg" style="justify-content:center;display:flex;flex-direction:column"><div style="font-size:0.85rem;color:var(--text-muted);font-style:italic;font-weight:500">Nessuna informazione guida disponibile</div><div style="font-size:0.72rem;color:var(--text-muted);margin-top:2px">Trasmissione live continua</div></div>`;
+          html += `<div class="dash-ch-col-next" style="display:flex;align-items:center;justify-content:flex-start"><span style="font-size:0.75rem;color:var(--text-muted);font-style:italic"><i class="ph ph-calendar" style="margin-right:4px;vertical-align:middle"></i>Canale Live Continuo</span></div>`;
+        }
+
+        a.innerHTML = html;
+        fragment.appendChild(a);
+      }
+
+      // Single DOM write
+      list.appendChild(fragment);
+    }
+
+    // =======================================================
+    // LOGICA DI CARICAMENTO E PARSING GUIDA TV (DA PZ8)
+    // Punto 17: Cache EPG in sessionStorage
+    // =======================================================
+    let epgData = [];
+    let epgMap = null; // Map<upperCaseName, channelEpgObject> for O(1) lookup
+    const EPG_CACHE_KEY = 'pz8_epg_cache';
+    const EPG_CACHE_TS_KEY = 'pz8_epg_cache_ts';
+    const EPG_CACHE_MAX_AGE = 120000; // 2 minuti in ms
+
+    function timeToMinutes(timeStr) {
+      if (!timeStr || !timeStr.includes(':')) return 0;
+      const [hours, minutes] = timeStr.split(':').map(Number);
+      return (hours * 60) + minutes;
+    }
+
+    // Costruisce la mappa EPG per lookup O(1)
+    function buildEpgMap() {
+      epgMap = new Map();
+      if (!epgData || epgData.length === 0) return;
+      for (let i = 0; i < epgData.length; i++) {
+        const item = epgData[i];
+        if (item.canale) {
+          epgMap.set(item.canale.toUpperCase(), item);
+        }
+      }
+    }
+
+    // Carica EPG dalla cache se valida
+    function loadEpgFromCache() {
+      try {
+        const cached = sessionStorage.getItem(EPG_CACHE_KEY);
+        const ts = sessionStorage.getItem(EPG_CACHE_TS_KEY);
+        if (cached && ts) {
+          const age = Date.now() - parseInt(ts);
+          if (age < EPG_CACHE_MAX_AGE) {
+            epgData = JSON.parse(cached);
+            buildEpgMap();
+            return true;
+          }
+        }
+      } catch (e) { /* sessionStorage non disponibile */ }
+      return false;
+    }
+
+    // Salva EPG nella cache
+    function saveEpgToCache() {
+      try {
+        sessionStorage.setItem(EPG_CACHE_KEY, JSON.stringify(epgData));
+        sessionStorage.setItem(EPG_CACHE_TS_KEY, String(Date.now()));
+      } catch (e) { /* quota exceeded o non disponibile */ }
+    }
+
+    async function fetchEpgData() {
+      try {
+        let response;
+        try {
+          response = await fetch('guida_tv_sky.json');
+          if (!response.ok) throw new Error("Local file not found");
+        } catch (localErr) {
+          // Fallback robusto al repository GitHub Pages
+          response = await fetch('https://raw.githubusercontent.com/alex8online/scaisprot/main/guida_tv_sky.json');
+          if (!response.ok) throw new Error("Remote fallback failed");
+        }
+
+        epgData = await response.json();
+        buildEpgMap();
+        saveEpgToCache();
+
+        // Aggiorna la visualizzazione
+        renderChannels(currentCat);
+        updatePlayerEpg();
+      } catch (err) {
+        console.warn("Errore caricamento EPG:", err);
+      }
+    }
+
+    function getChannelEpg(channelName) {
+      if (!epgMap || epgMap.size === 0) return { now: null, next: null };
+
+      const channelEpg = epgMap.get(channelName.toUpperCase());
+      if (!channelEpg || !channelEpg.programmi || channelEpg.programmi.length === 0) return { now: null, next: null };
+
+      const now = new Date();
+      const currentMinutes = (now.getHours() * 60) + now.getMinutes();
+
+      let activeIndex = -1;
+      for (let i = 0; i < channelEpg.programmi.length; i++) {
+        if (timeToMinutes(channelEpg.programmi[i].ora) <= currentMinutes) {
+          activeIndex = i;
+        } else {
+          break;
+        }
+      }
+
+      if (activeIndex === -1 && channelEpg.programmi.length > 0) activeIndex = 0;
+
+      return {
+        now: channelEpg.programmi[activeIndex],
+        next: activeIndex + 1 < channelEpg.programmi.length ? channelEpg.programmi[activeIndex + 1] : null
+      };
+    }
+
+    function updatePlayerEpg() {
+      if (!currentChannel) return;
+
+      const epg = getChannelEpg(currentChannel.name);
+      const nowContainer = document.getElementById('player-ch-now-container');
+      const nextContainer = document.getElementById('player-ch-next-container');
+
+      if (!nowContainer || !nextContainer) return;
+
+      if (!epg.now) {
+        const catMeta = CATEGORIES[currentChannel.cat];
+        nowContainer.innerHTML = `
+              <div class="dash-info-now-box">
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                  <span style="color: #00e676; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; font-size: 0.7rem; background: rgba(0, 230, 118, 0.1); padding: 2px 8px; border-radius: 4px;">LIVE</span>
+                  <span style="font-family: var(--font-alt); font-size: 0.8rem; color: #8ca3ba; font-weight: 700;">Live</span>
+                </div>
+                <div style="font-size: 1.1rem; font-weight: 800; color: #fff; line-height: 1.3; margin-top: 2px;">Eventi ${catMeta ? catMeta.label : currentChannel.cat}</div>
+              </div>
+            `;
+
+        nextContainer.innerHTML = `
+              <div class="dash-info-next-box">
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                  <span style="color: #60a5fa; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; font-size: 0.7rem; background: rgba(96, 165, 250, 0.1); padding: 2px 8px; border-radius: 4px;">A SEGUIRE</span>
+                  <span style="font-family: var(--font-alt); font-size: 0.8rem; color: #8ca3ba; font-weight: 700;">Live</span>
+                </div>
+                <div style="font-size: 0.95rem; font-weight: 700; color: #e2e8f0; line-height: 1.3; margin-top: 2px;">Programmazione live continua</div>
+              </div>
+            `;
+        return;
+      }
+
+      // Calcolo minuti progresso e tempo rimanente per il programma in onda
+      const now = new Date();
+      let nowMinutes = (now.getHours() * 60) + now.getMinutes();
+      let startMinutes = timeToMinutes(epg.now.ora);
+      let endMinutes = epg.next ? timeToMinutes(epg.next.ora) : startMinutes + 120;
+
+      if (endMinutes < startMinutes) endMinutes += 1440;
+      if (nowMinutes < startMinutes && startMinutes > 1000) nowMinutes += 1440;
+
+      const duration = endMinutes - startMinutes;
+      let elapsed = nowMinutes - startMinutes;
+      if (elapsed < 0) elapsed = 0;
+      let remaining = endMinutes - nowMinutes;
+      if (remaining < 0) remaining = 0;
+
+      const progressPercent = duration > 0 ? Math.min(100, Math.max(0, (elapsed / duration) * 100)) : 100;
+
+      nowContainer.innerHTML = `
+          <div class="dash-info-now-box">
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+              <span style="color: #00e676; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; font-size: 0.7rem; background: rgba(0, 230, 118, 0.1); padding: 2px 8px; border-radius: 4px; display: inline-flex; align-items: center; gap: 4px;">
+                <span style="width: 6px; height: 6px; border-radius: 50%; background: #00e676; display: inline-block;"></span>
+                 LIVE
+              </span>
+              <span style="font-family: var(--font-alt); font-size: 0.8rem; color: #60a5fa; font-weight: 700;">${epg.now.ora}</span>
+            </div>
+            <div style="font-size: 1.1rem; font-weight: 800; color: #fff; line-height: 1.3; margin-top: 4px;">${epg.now.titolo}</div>
+            ${epg.now.descrizione ? `<div style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 8px; line-height: 1.4;">${epg.now.descrizione}</div>` : ''}
+            <div style="display: flex; align-items: center; gap: 10px; margin-top: 8px;">
+              <div style="flex: 1; height: 4px; background: rgba(255,255,255,0.06); border-radius: 99px; overflow: hidden;">
+                <div style="width: ${progressPercent}%; height: 100%; background: linear-gradient(90deg, #00e676, #00b0ff); border-radius: 99px; box-shadow: 0 0 6px rgba(0, 230, 118, 0.3);"></div>
+              </div>
+              <span style="font-size: 0.72rem; color: var(--text-muted); font-weight: 600; flex-shrink: 0;">${remaining > 0 ? 'Mancano ' + remaining + ' min' : 'In conclusione'}</span>
+            </div>
+          </div>
+        `;
+
+      if (epg.next) {
+        nextContainer.innerHTML = `
+              <div class="dash-info-next-box">
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                  <span style="color: #60a5fa; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; font-size: 0.7rem; background: rgba(96, 165, 250, 0.1); padding: 2px 8px; border-radius: 4px;">A SEGUIRE</span>
+                  <span style="font-family: var(--font-alt); font-size: 0.8rem; color: #8ca3ba; font-weight: 700;">${epg.next.ora}</span>
+                </div>
+                <div style="font-size: 0.95rem; font-weight: 700; color: #e2e8f0; line-height: 1.3; margin-top: 4px;">${epg.next.titolo}</div>
+                ${epg.next.descrizione ? `<div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 6px; line-height: 1.3;">${epg.next.descrizione}</div>` : ''}
+              </div>
+            `;
+      } else {
+        nextContainer.innerHTML = `
+              <div class="dash-info-next-box">
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                  <span style="color: var(--text-muted); font-weight: 800; text-transform: uppercase; letter-spacing: 1px; font-size: 0.7rem; background: rgba(255,255,255,0.05); padding: 2px 8px; border-radius: 4px;">A SEGUIRE</span>
+                  <span style="font-family: var(--font-alt); font-size: 0.8rem; color: #8ca3ba; font-weight: 700;">--:--</span>
+                </div>
+                <div style="font-size: 0.95rem; font-weight: 700; color: var(--text-muted); font-style: italic; line-height: 1.3; margin-top: 4px;">Nessun programma successivo</div>
+              </div>
+            `;
+      }
+    }
+
+    // Search Listener
+    document.getElementById('dash-search').addEventListener('input', (e) => {
+      renderChannels(currentCat, e.target.value);
+    });
+
+    // Chiamate iniziali e timer
+    // Punto 17: Carica dalla cache per rendering istantaneo, poi aggiorna in background
+    const hadCache = loadEpgFromCache();
+    renderChannels(currentCat);
+    if (hadCache) {
+      updatePlayerEpg();
+    }
+    fetchEpgData(); // Aggiorna sempre in background
+
+    setInterval(async () => {
+      await fetchEpgData();
+    }, 60000);
+
+    // Gestione cambio canale dinamico (SPA - Single Page Application)
+    function selectChannel(ch) {
+      if (currentChannel && currentChannel.id === ch.id) return; // Canale già in onda
+
+      // 1. Rimuovi la classe active dal canale precedente nella lista
+      document.querySelectorAll('.dash-ch-row').forEach(row => {
+        row.classList.remove('active');
+        const badge = row.querySelector('.dash-ch-live-badge');
+        if (badge) badge.remove();
+      });
+
+      // 2. Aggiorna il canale corrente in memoria
+      currentChannel = ch;
+
+      // 3. Aggiungi classe active e badge ▶ IN ONDA al canale cliccato
+      const activeRows = document.querySelectorAll(`.dash-ch-row`);
+      activeRows.forEach(row => {
+        // Confronto basato sul nome o ID per sicurezza
+        if (row.getAttribute('href') === `?id=${ch.id}`) {
+          row.classList.add('active');
+          const nameEl = row.querySelector('.dash-ch-name');
+          if (nameEl && !nameEl.querySelector('.dash-ch-live-badge')) {
+            const badgeSpan = document.createElement('span');
+            badgeSpan.className = 'dash-ch-live-badge';
+            badgeSpan.textContent = '▶ IN ONDA';
+            nameEl.insertBefore(badgeSpan, nameEl.firstChild);
+          }
+        }
+      });
+
+      // 4. Aggiorna titolo della scheda e info principali del player
+      document.title = ch.name + ' ';
+      document.getElementById('player-ch-name').textContent = ch.name;
+
+      const chMeta = CATEGORIES[ch.cat];
+      const metaEl = document.getElementById('player-ch-meta');
+      if (metaEl && chMeta) {
+        metaEl.innerHTML = `
+          <span class="dash-info-ch-num">CH ${ch.id}</span>
+          <span class="dash-info-cat-badge" style="background: ${chMeta.color}20; color: ${chMeta.color}; border: 1px solid ${chMeta.color}40;">
+            <i class="ph ${chMeta.icon}" style="margin-right: 3px; vertical-align: middle;"></i>${chMeta.label}
+          </span>
+        `;
+      }
+
+      // 5. Riavvia loader e aggiorna src del player (iframe)
+      const loader = document.getElementById('player-loader');
+      const frame = document.getElementById('player-frame');
+      if (loader) loader.style.display = 'flex';
+      if (frame) {
+        frame.src = getStreamUrl(ch);
+      }
+
+      // 6. Aggiorna la programmazione EPG del player in alto a destra
+      updatePlayerEpg();
+
+      // 7. Modifica l'URL del browser in tempo reale senza ricaricare la pagina!
+      history.pushState({ id: ch.id }, '', `?id=${ch.id}`);
+      
+      // Aggiorna link GUIDA TV
+      const btnGuidaTv = document.getElementById('btn-guida-tv');
+      if (btnGuidaTv) {
+        btnGuidaTv.href = `guida.html?id=${ch.id}`;
+      }
+    }
+
+    // Supporto per il tasto "Indietro" e "Avanti" del browser
+    window.addEventListener('popstate', (e) => {
+      const params = new URLSearchParams(window.location.search);
+      const id = parseInt(params.get('id'));
+      if (id) {
+        const ch = getChannelById(id);
+        if (ch) {
+          // Esegui il cambio canale
+          selectChannel(ch);
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>
