@@ -13,8 +13,8 @@ if (count(get_included_files()) === 1) {
 return [
     'subscription_expiry' => '2027-12-31',
     'users' => [
-        'Alecs' => [
-            'password' => '$2y$12$4sEoAqC8JBywteFYHpqsBu4VjyWp6X44DCjtpIw76MsmW4DLtNDGi',
+        'a' => [
+            'password' => '$2y$12$5SbJLnbGLVzLwUTTrFjBi.WlgKiFPlYeEb8uvhWJyN0zA2nsA26MK',
             'profiles' => [
                 ['id' => 'ale_main', 'name' => 'ale', 'avatar' => 'ph-user-circle', 'color' => '#00f2fe'],
                 ['id' => 'ale_kids', 'name' => 'Bambini', 'avatar' => 'ph-smiley', 'color' => '#00e676'],
