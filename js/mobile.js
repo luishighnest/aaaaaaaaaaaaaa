@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const playerFavBtn = document.getElementById('player-fav-btn');
     
     const isAndroid = /Android/i.test(navigator.userAgent);
-    let dashPlayer = null;
+    let shakaPlayer = null;
 
     if (nativeVideoPlayer) {
         nativeVideoPlayer.addEventListener('error', function(e) {
@@ -70,27 +70,10 @@ document.addEventListener('DOMContentLoaded', () => {
         return (hours * 60) + minutes;
     }
 
-    // Convert hex string to Base64URL without padding (required for dash.js ClearKey DRM)
-    function hexToBase64Url(hex) {
-        const cleanHex = hex.trim().replace(/^0x/i, '');
-        const pairs = cleanHex.match(/.{1,2}/g);
-        if (!pairs) return "";
-        const bytes = new Uint8Array(pairs.map(byte => parseInt(byte, 16)));
-        let binString = "";
-        for (let i = 0; i < bytes.length; i++) {
-            binString += String.fromCharCode(bytes[i]);
-        }
-        return btoa(binString)
-            .replace(/\+/g, '-')
-            .replace(/\//g, '_')
-            .replace(/=/g, '');
-    }
-
     // --- ERRORE RIPRODUTTORE ---
     function showPlayerError(msg) {
-        if (dashPlayer) {
-            try { dashPlayer.destroy(); } catch(e) {}
-            dashPlayer = null;
+        if (shakaPlayer) {
+            try { shakaPlayer.unload(); } catch(e) {}
         }
         nativeVideoPlayer.style.display = 'none';
         playerFrame.style.display = 'none';
@@ -382,16 +365,10 @@ document.addEventListener('DOMContentLoaded', () => {
         noStreamOverlay.style.display = 'none';
 
         if (isAndroid) {
-            // Android: usa il player nativo dash.js
+            // Android: usa il player nativo Shaka
             playerFrame.style.display = 'none';
             playerFrame.src = 'about:blank';
             nativeVideoPlayer.style.display = 'block';
-
-            if (dashPlayer) {
-                dashPlayer.destroy();
-                dashPlayer = null;
-            }
-            nativeVideoPlayer.src = '';
 
             let streamUrl = ch.code;
             let clearkeys = null;
@@ -407,14 +384,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         const decoded = atob(ckVal);
                         const parts = decoded.split(':');
                         if (parts.length === 2) {
-                            const keyIdHex = parts[0].trim();
-                            const keyHex = parts[1].trim();
-                            const keyIdB64 = hexToBase64Url(keyIdHex);
-                            const keyB64 = hexToBase64Url(keyHex);
-                            if (keyIdB64 && keyB64) {
-                                clearkeys = {};
-                                clearkeys[keyIdB64] = keyB64;
-                            }
+                            clearkeys = {};
+                            clearkeys[parts[0].trim()] = parts[1].trim();
                         }
                     }
                 } catch (e) {
@@ -422,65 +393,53 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
 
-            // Controllo del contesto sicuro (HTTPS) per EME
+            // Controllo del contesto sicuro (HTTPS) per EME se ci sono chiavi
             if (clearkeys && !window.isSecureContext) {
-                showPlayerError("Errore DRM: La decrittografia dei flussi su Android richiede HTTPS. Carica la pagina tramite un indirizzo HTTPS sicuro.");
+                showPlayerError("Errore DRM: La decrittografia dei flussi richiede HTTPS.");
                 return;
             }
 
             try {
-                dashPlayer = dashjs.MediaPlayer().create();
-                
-                const logLevel = (window.dashjs && dashjs.Debug) ? dashjs.Debug.LOG_LEVEL_WARNING : 3;
-                dashPlayer.updateSettings({
-                    'debug': {
-                        'logLevel': logLevel
+                if (!shakaPlayer) {
+                    shaka.polyfill.installAll();
+                    if (!shaka.Player.isBrowserSupported()) {
+                        showPlayerError("Browser non supportato per DASH nativo.");
+                        return;
                     }
-                });
-
-                // Gestione errori dash.js
-                dashPlayer.on(dashjs.MediaPlayer.events.ERROR, function(e) {
-                    console.error("Errore dash.js:", e);
-                    let msg = "Errore nel caricamento del flusso DASH.";
-                    if (e.error) {
-                        if (e.error.message) msg = e.error.message;
-                        else if (typeof e.error === 'string') msg = e.error;
-                    }
-                    if (e.event && e.event.message) {
-                        msg += " (Dettaglio: " + e.event.message + ")";
-                    }
-                    showPlayerError(msg);
-                });
-
-                if (clearkeys) {
-                    // Intercettiamo la risposta del manifest per rimpiazzare i SystemID di Widevine e PlayReady
-                    // con quello standard di ClearKey, forzando la decrittografia nativa ClearKey in dash.js.
-                    dashPlayer.addResponseInterceptor(function(response) {
-                        if (response.url && response.url.includes('.mpd') && typeof response.data === 'string') {
-                            response.data = response.data
-                                .replace(/edef8ba9-79d6-4ace-a3c8-27dcd51d21ed/gi, "1077efec-c0b2-4d02-ace3-3c1e52e2fb4b")
-                                .replace(/9a04f079-9840-4286-ab92-e65be0885f95/gi, "1077efec-c0b2-4d02-ace3-3c1e52e2fb4b");
+                    shakaPlayer = new shaka.Player(nativeVideoPlayer);
+                    shakaPlayer.addEventListener('error', (event) => {
+                        console.error('Errore Shaka Player:', event.detail);
+                        let msg = "Errore nel caricamento del flusso DASH.";
+                        if (event.detail && event.detail.message) {
+                            msg += " " + event.detail.message;
                         }
-                        return Promise.resolve(response);
-                    });
-
-                    dashPlayer.setProtectionData({
-                        "org.w3.clearkey": {
-                            "clearkeys": clearkeys
-                        }
+                        showPlayerError(msg);
                     });
                 }
-                dashPlayer.initialize(nativeVideoPlayer, streamUrl, true);
+
+                if (clearkeys) {
+                    shakaPlayer.configure({
+                        drm: { clearKeys: clearkeys }
+                    });
+                } else {
+                    shakaPlayer.configure({
+                        drm: { clearKeys: {} }
+                    });
+                }
+                
+                shakaPlayer.load(streamUrl).catch(e => {
+                    console.error("Errore shaka load:", e);
+                    showPlayerError("Errore caricamento: " + (e.message || e));
+                });
             } catch (err) {
-                console.error("Errore di inizializzazione dashPlayer:", err);
+                console.error("Errore di inizializzazione shakaPlayer:", err);
                 showPlayerError("Impossibile inizializzare il player DASH: " + (err.message || err));
             }
         } else {
             // Altri OS: usa il player estensione iframe
             nativeVideoPlayer.style.display = 'none';
-            if (dashPlayer) {
-                dashPlayer.destroy();
-                dashPlayer = null;
+            if (shakaPlayer) {
+                shakaPlayer.unload();
             }
             nativeVideoPlayer.src = '';
             
@@ -727,9 +686,8 @@ document.addEventListener('DOMContentLoaded', () => {
             currentChannel = null;
             noStreamOverlay.innerHTML = originalNoStreamHtml;
             noStreamOverlay.style.display = 'flex';
-            if (dashPlayer) {
-                dashPlayer.destroy();
-                dashPlayer = null;
+            if (shakaPlayer) {
+                shakaPlayer.unload();
             }
             nativeVideoPlayer.src = '';
             nativeVideoPlayer.style.display = 'none';
