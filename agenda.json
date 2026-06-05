@@ -1,8 +1,134 @@
 [
   {
-    "channel_id": 53,
-    "time": "OGGI 20:45",
-    "title": "Galles - Ghana",
-    "desc": "Amichevole"
+    "channel_id": [
+      53
+    ],
+    "time": "19:45",
+    "title": "AMICHEVOLI",
+    "desc": "Ungheria - Finlandia"
+  },
+  {
+    "channel_id": [
+      58,
+      122
+    ],
+    "time": "20:00",
+    "title": "LBA SERIE A, SEMIFINALI (GARA 4)",
+    "desc": "EA7 Milano - Germani Brescia"
+  },
+  {
+    "channel_id": [
+      55
+    ],
+    "time": "10:10",
+    "title": "MOTOMONDIALE, GP HUNGHERIA",
+    "desc": "MotoGP, Prove Libere 2"
+  },
+  {
+    "channel_id": [
+      55
+    ],
+    "time": "10:50",
+    "title": "MOTOMONDIALE, GP HUNGHERIA",
+    "desc": "MotoGP, Qualifiche"
+  },
+  {
+    "channel_id": [
+      52
+    ],
+    "time": "12:30",
+    "title": "FORMULA 1, GP MONACO",
+    "desc": "Prove Libere (3)"
+  },
+  {
+    "channel_id": [
+      7,
+      1,
+      2
+    ],
+    "time": "15:00",
+    "title": "WTA ROLAND GARROS, FINALE",
+    "desc": "Chwalinska - Andreeva"
+  },
+  {
+    "channel_id": [
+      53
+    ],
+    "time": "15:00",
+    "title": "AMICHEVOLI",
+    "desc": "Belgio - Tunisia"
+  },
+  {
+    "channel_id": [
+      55
+    ],
+    "time": "15:00",
+    "title": "MOTOMONDIALE, GP HUNGHERIA",
+    "desc": "MotoGP, Sprint Race"
+  },
+  {
+    "channel_id": [
+      52
+    ],
+    "time": "15:00",
+    "title": "FORMULA 1, GP MONACO",
+    "desc": "Qualifiche"
+  },
+  {
+    "channel_id": [
+      53
+    ],
+    "time": "19:45",
+    "title": "AMICHEVOLI",
+    "desc": "Portogallo - Chile"
+  },
+  {
+    "channel_id": [
+      58,
+      122
+    ],
+    "time": "20:00",
+    "title": "LBA SERIE A, SEMIFINALI (GARA 4)",
+    "desc": "Umana Venezia - Virtus Bologna"
+  },
+  {
+    "channel_id": [
+      116
+    ],
+    "time": "20:30",
+    "title": "AMICHEVOLI",
+    "desc": "USA - Germania"
+  },
+  {
+    "channel_id": [
+      202
+    ],
+    "time": "21:00",
+    "title": "AMICHEVOLI",
+    "desc": "Australia - Svizzera"
+  },
+  {
+    "channel_id": [
+      16
+    ],
+    "time": "21:00",
+    "title": "SEGUNDA DIVISION, SEMIFINALI (A)",
+    "desc": "Castellon vs Almería"
+  },
+  {
+    "channel_id": [
+      53
+    ],
+    "time": "22:00",
+    "title": "AMICHEVOLI",
+    "desc": "Inghilterra - Nuova Zelanda"
+  },
+  {
+    "channel_id": [
+      8
+    ],
+    "time": "01:00",
+    "title": "AMICHEVOLI",
+    "desc": "Brasile - Egitto"
   }
 ]
