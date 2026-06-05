@@ -23,7 +23,19 @@ if (isset($_GET['view_mode'])) {
 }
 
 if ($view_mode === null) {
-    $view_mode = isMobileOrTV() ? 'mobile' : 'pc';
+    if (isMobileOrTV()) {
+        $view_mode = 'mobile';
+        $secure_cookie = isset($_SERVER['HTTPS']) || (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https');
+        setcookie('pz8_view_mode', 'mobile', [
+            'expires' => time() + (365 * 24 * 3600),
+            'path' => '/',
+            'secure' => $secure_cookie,
+            'httponly' => true,
+            'samesite' => 'Strict'
+        ]);
+    } else {
+        $view_mode = 'pc';
+    }
 }
 
 if ($view_mode === 'mobile') {
@@ -143,6 +155,15 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
         if (accent && glow) {
           document.documentElement.style.setProperty('--accent', accent);
           document.documentElement.style.setProperty('--accent-glow', glow);
+        }
+        
+        // Rilevamento client-side per schermi piccoli (mobile)
+        const cookieMode = document.cookie.split('; ').find(row => row.startsWith('pz8_view_mode='));
+        const viewMode = cookieMode ? cookieMode.split('=')[1] : null;
+        if (viewMode !== 'pc' && window.innerWidth <= 900) {
+          const urlParams = new URLSearchParams(window.location.search);
+          const chId = urlParams.get('id');
+          window.location.href = 'mobile.php' + (chId ? '?id=' + chId : '');
         }
       })();
     </script>
