@@ -1,6 +1,6 @@
 <?php
 $user_passwords = [
-    'Alecs' => 'Alepezzotto01' // La tua nuova password
+    'a' => 'a' // La tua nuova password
 ];
 
 // Configuro le opzioni per forzare il costo a 12
