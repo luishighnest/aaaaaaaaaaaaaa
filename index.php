@@ -2,6 +2,40 @@
 // Avvia sessione e verifica autenticazione
 session_start();
 
+// Gestione della modalità di visualizzazione (PC vs Mobile/TV)
+function isMobileOrTV() {
+    $ua = $_SERVER['HTTP_USER_AGENT'] ?? '';
+    return preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino|smarttv|smart-tv|hbbtv|appletv|googletv|tizen|webos|chromecast|roku|philips|sony|panasonic|lg-tv/i', $ua);
+}
+
+$view_mode = $_GET['view_mode'] ?? $_COOKIE['pz8_view_mode'] ?? null;
+
+if (isset($_GET['view_mode'])) {
+    $secure_cookie = isset($_SERVER['HTTPS']) || (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https');
+    setcookie('pz8_view_mode', $_GET['view_mode'], [
+        'expires' => time() + (365 * 24 * 3600),
+        'path' => '/',
+        'secure' => $secure_cookie,
+        'httponly' => true,
+        'samesite' => 'Strict'
+    ]);
+    $view_mode = $_GET['view_mode'];
+}
+
+if ($view_mode === null) {
+    $view_mode = isMobileOrTV() ? 'mobile' : 'pc';
+}
+
+if ($view_mode === 'mobile') {
+    $redirect_url = 'mobile.php';
+    if (isset($_GET['id'])) {
+        $redirect_url .= '?id=' . urlencode($_GET['id']);
+    }
+    header('Location: ' . $redirect_url);
+    exit;
+}
+
+
 // Genera il token CSRF se non presente in sessione
 if (!isset($_SESSION['csrf_token'])) {
     $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
@@ -1097,6 +1131,13 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
                 <option value="24">24 Ore</option>
                 <option value="12">12 Ore (AM/PM)</option>
               </select>
+            </div>
+            
+            <div class="settings-row" style="margin-top: 1rem; border-top: 1px solid var(--border-subtle); padding-top: 1rem;">
+              <span>Dispositivo / Interfaccia</span>
+              <a href="index.php?view_mode=mobile" class="settings-theme-btn" style="display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none; text-align: center; justify-content: center; font-weight: 700; color: var(--accent); border-color: var(--accent);">
+                <i class="ph ph-phone"></i> Passa a Versione Mobile/TV
+              </a>
             </div>
           </div>
         </div>
