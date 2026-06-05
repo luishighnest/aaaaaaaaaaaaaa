@@ -1,29 +1,17 @@
 Options -Indexes
 DirectoryIndex index.php index.html
 
-# Forza PHP su index.php invece di index.html
+# Priorità a index.php rispetto a index.html
 <IfModule mod_rewrite.c>
     RewriteEngine On
-
-    # Se esiste index.php, usalo al posto di index.html
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^$ index.php [L]
+    RewriteBase /
+    # Root del sito: usa index.php
+    RewriteCond %{THE_REQUEST} ^GET\ /index\.html
+    RewriteRule ^index\.html$ /index.php [R=301,L]
 </IfModule>
 
 # Header di sicurezza
 <IfModule mod_headers.c>
     Header always set X-Content-Type-Options nosniff
     Header always set X-Frame-Options SAMEORIGIN
-    Header always set X-XSS-Protection "1; mode=block"
 </IfModule>
-
-# Proteggi file sensibili
-<FilesMatch "\.(json|py|ps1|txt|log)$">
-    <RequireAll>
-        Require all denied
-    </RequireAll>
-</FilesMatch>
-
-# Consenti accesso ai JSON pubblici necessari (nessuno in questo caso)
-# I JSON EPG vengono serviti solo via epg.php (autenticato)
