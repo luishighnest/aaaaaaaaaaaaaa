@@ -29,7 +29,7 @@ jobs:
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        git add guida_tv_sky.json desc_cache.json
+        git add -f guida_tv_sky.json desc_cache.json
         # Esegui il commit solo se ci sono modifiche effettive
         if git diff --quiet && git diff --staged --quiet; then
           echo "Nessuna modifica rilevata nei dati EPG."
