@@ -401,23 +401,63 @@ document.addEventListener('DOMContentLoaded', () => {
         if (events.length === 0) {
             agendaEventsList.innerHTML = `
                 <div style="text-align: center; padding: 2rem 1rem; color: var(--text-muted);">
-                    <i class="ph ph-calendar-blank" style="font-size: 2rem; margin-bottom: 0.5rem; display: block;"></i>
-                    Nessun evento registrato in agenda.
+                    <i class="ph ph-calendar-blank" style="font-size: 2.2rem; margin-bottom: 0.5rem; display: block; color: var(--text-muted);"></i>
+                    <span style="font-weight: 700;">Nessun evento in agenda</span>
                 </div>`;
             return;
         }
 
-        // Ordina eventi per ora
-        const sorted = [...events].sort((a, b) => a.ora.localeCompare(b.ora));
+        // Ordina eventi per tempo
+        const sorted = [...events].sort((a, b) => (a.time || '').localeCompare(b.time || ''));
 
         sorted.forEach(ev => {
+            let channelIds = [];
+            if (Array.isArray(ev.channel_id)) {
+                channelIds = ev.channel_id;
+            } else if (ev.channel_id) {
+                channelIds = [ev.channel_id];
+            }
+
+            const channels = channelIds.map(id => getChannelById(id)).filter(Boolean);
+            const primaryColor = channels.length > 0 ? (CATEGORIES[channels[0].cat] ? CATEGORIES[channels[0].cat].color : '#eab308') : '#eab308';
+
             const card = document.createElement('div');
             card.className = 'mobile-event-card';
+            card.style.borderLeft = `3px solid ${primaryColor}`;
+            if (channels.length > 0) {
+                card.style.cursor = 'pointer';
+            }
+
+            let badgesHtml = '';
+            channels.forEach(ch => {
+                const catColor = (CATEGORIES[ch.cat]) ? CATEGORIES[ch.cat].color : '#eab308';
+                badgesHtml += `
+                    <span style="background: ${catColor}15; color: ${catColor}; border: 1px solid ${catColor}40; padding: 2px 6px; border-radius: 4px; font-size: 0.68rem; font-weight: 800; text-transform: uppercase; display: inline-flex; align-items: center; gap: 3px;">
+                        <i class="ph ${ch.icon}" style="font-size: 0.75rem;"></i> ${ch.name}
+                    </span>
+                `;
+            });
+
+            if (badgesHtml === '') {
+                badgesHtml = `<span style="color: #eab308; font-size: 0.68rem; font-weight: 800; text-transform: uppercase;">${ev.channel_name || 'Sport'}</span>`;
+            }
+
             card.innerHTML = `
-                <div class="event-time-badge">${ev.ora}</div>
-                <div class="event-title">${ev.titolo}</div>
-                <div class="event-desc">${ev.descrizione || ''}</div>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem; flex-wrap: wrap; gap: 0.4rem;">
+                    <div style="display: flex; gap: 0.3rem; flex-wrap: wrap;">${badgesHtml}</div>
+                    <div class="event-time-badge">${ev.time}</div>
+                </div>
+                <div class="event-title">${ev.title}</div>
+                <div class="event-desc">${ev.desc || ''}</div>
             `;
+
+            if (channels.length > 0) {
+                card.addEventListener('click', () => {
+                    selectChannel(channels[0]);
+                    closeModal('agenda-modal');
+                });
+            }
+
             agendaEventsList.appendChild(card);
         });
     }
