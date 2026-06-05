@@ -32,12 +32,30 @@ document.addEventListener('DOMContentLoaded', () => {
     const playerFrame = document.getElementById('player-frame');
     const nativeVideoPlayer = document.getElementById('native-video-player');
     const noStreamOverlay = document.getElementById('no-stream-overlay');
+    const originalNoStreamHtml = noStreamOverlay ? noStreamOverlay.innerHTML : '';
     const playerChTitle = document.getElementById('player-ch-title');
     const playerChEpg = document.getElementById('player-ch-epg');
     const playerFavBtn = document.getElementById('player-fav-btn');
     
     const isAndroid = /Android/i.test(navigator.userAgent);
     let dashPlayer = null;
+
+    if (nativeVideoPlayer) {
+        nativeVideoPlayer.addEventListener('error', function(e) {
+            if (nativeVideoPlayer.error) {
+                console.error("Errore tag video nativo:", nativeVideoPlayer.error);
+                let msg = "Errore riproduzione video: ";
+                switch (nativeVideoPlayer.error.code) {
+                    case 1: msg += "Riproduzione interrotta dall'utente."; break;
+                    case 2: msg += "Errore di rete."; break;
+                    case 3: msg += "Errore di decodifica dei media (potrebbe trattarsi di un problema di codec o DRM)."; break;
+                    case 4: msg += "Formato video o codec non supportato."; break;
+                    default: msg += nativeVideoPlayer.error.message || "Errore sconosciuto."; break;
+                }
+                showPlayerError(msg);
+            }
+        });
+    }
     
     const btnSettings = document.getElementById('btn-settings');
     const settingsModal = document.getElementById('settings-modal');
@@ -66,6 +84,25 @@ document.addEventListener('DOMContentLoaded', () => {
             .replace(/\+/g, '-')
             .replace(/\//g, '_')
             .replace(/=/g, '');
+    }
+
+    // --- ERRORE RIPRODUTTORE ---
+    function showPlayerError(msg) {
+        if (dashPlayer) {
+            try { dashPlayer.destroy(); } catch(e) {}
+            dashPlayer = null;
+        }
+        nativeVideoPlayer.style.display = 'none';
+        playerFrame.style.display = 'none';
+        
+        noStreamOverlay.innerHTML = `
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.6rem; padding: 1rem; text-align: center; width: 100%; height: 100%;">
+                <i class="ph ph-warning-circle" style="color: var(--danger); font-size: 2.5rem;"></i>
+                <span style="color: var(--danger); font-weight: 700; font-size: 0.95rem;">Errore di riproduzione</span>
+                <span style="font-size: 0.8rem; color: var(--text-secondary); max-width: 90%; line-height: 1.3;">${msg}</span>
+            </div>
+        `;
+        noStreamOverlay.style.display = 'flex';
     }
 
     function buildEpgMap() {
@@ -341,6 +378,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         // Imposta Iframe/Video stream
+        noStreamOverlay.innerHTML = originalNoStreamHtml;
         noStreamOverlay.style.display = 'none';
 
         if (isAndroid) {
@@ -384,8 +422,36 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
 
+            // Controllo del contesto sicuro (HTTPS) per EME
+            if (clearkeys && !window.isSecureContext) {
+                showPlayerError("Errore DRM: La decrittografia dei flussi su Android richiede HTTPS. Carica la pagina tramite un indirizzo HTTPS sicuro.");
+                return;
+            }
+
             try {
                 dashPlayer = dashjs.MediaPlayer().create();
+                
+                const logLevel = (window.dashjs && dashjs.Debug) ? dashjs.Debug.LOG_LEVEL_WARNING : 3;
+                dashPlayer.updateSettings({
+                    'debug': {
+                        'logLevel': logLevel
+                    }
+                });
+
+                // Gestione errori dash.js
+                dashPlayer.on(dashjs.MediaPlayer.events.ERROR, function(e) {
+                    console.error("Errore dash.js:", e);
+                    let msg = "Errore nel caricamento del flusso DASH.";
+                    if (e.error) {
+                        if (e.error.message) msg = e.error.message;
+                        else if (typeof e.error === 'string') msg = e.error;
+                    }
+                    if (e.event && e.event.message) {
+                        msg += " (Dettaglio: " + e.event.message + ")";
+                    }
+                    showPlayerError(msg);
+                });
+
                 if (clearkeys) {
                     dashPlayer.setProtectionData({
                         "org.w3.clearkey": {
@@ -396,6 +462,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 dashPlayer.initialize(nativeVideoPlayer, streamUrl, true);
             } catch (err) {
                 console.error("Errore di inizializzazione dashPlayer:", err);
+                showPlayerError("Impossibile inizializzare il player DASH: " + (err.message || err));
             }
         } else {
             // Altri OS: usa il player estensione iframe
@@ -647,6 +714,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             // Deseleziona
             currentChannel = null;
+            noStreamOverlay.innerHTML = originalNoStreamHtml;
             noStreamOverlay.style.display = 'flex';
             if (dashPlayer) {
                 dashPlayer.destroy();
