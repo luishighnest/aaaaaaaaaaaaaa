@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: pz8-site
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: PHP_ENV
+        value: production
