@@ -33,16 +33,19 @@ if (isset($_GET['view_mode'])) {
     $view_mode = $_GET['view_mode'];
 }
 
-if ($view_mode === null) {
-    $view_mode = isMobileOrTV() ? 'mobile' : 'pc';
-    $secure_cookie = isset($_SERVER['HTTPS']) || (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https');
-    setcookie('pz8_view_mode', $view_mode, [
-        'expires' => time() + (365 * 24 * 3600),
-        'path' => '/',
-        'secure' => $secure_cookie,
-        'httponly' => true,
-        'samesite' => 'Strict'
-    ]);
+// Se l'utente visita mobile.php, forziamo il cookie a 'mobile' in modo che sia persistente.
+if ($view_mode !== 'pc') {
+    $view_mode = 'mobile';
+    if (!isset($_COOKIE['pz8_view_mode']) || $_COOKIE['pz8_view_mode'] !== 'mobile') {
+        $secure_cookie = isset($_SERVER['HTTPS']) || (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https');
+        setcookie('pz8_view_mode', 'mobile', [
+            'expires' => time() + (365 * 24 * 3600),
+            'path' => '/',
+            'secure' => $secure_cookie,
+            'httponly' => true,
+            'samesite' => 'Strict'
+        ]);
+    }
 }
 
 if ($view_mode === 'pc') {
