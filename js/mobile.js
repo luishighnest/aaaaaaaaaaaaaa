@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const playerFrame = document.getElementById('player-frame');
     const nativeVideoPlayer = document.getElementById('native-video-player');
+    const shakaContainer = document.getElementById('shaka-container');
     const noStreamOverlay = document.getElementById('no-stream-overlay');
     const originalNoStreamHtml = noStreamOverlay ? noStreamOverlay.innerHTML : '';
     const playerChTitle = document.getElementById('player-ch-title');
@@ -76,6 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
             try { shakaPlayer.unload(); } catch(e) {}
         }
         nativeVideoPlayer.style.display = 'none';
+        if (shakaContainer) shakaContainer.style.display = 'none';
         playerFrame.style.display = 'none';
         
         noStreamOverlay.innerHTML = `
@@ -369,6 +371,7 @@ document.addEventListener('DOMContentLoaded', () => {
             playerFrame.style.display = 'none';
             playerFrame.src = 'about:blank';
             nativeVideoPlayer.style.display = 'block';
+            if (shakaContainer) shakaContainer.style.display = 'block';
 
             let streamUrl = ch.code;
             let clearkeys = null;
@@ -415,6 +418,14 @@ document.addEventListener('DOMContentLoaded', () => {
                         }
                         showPlayerError(msg);
                     });
+
+                    if (shakaContainer) {
+                        const ui = new shaka.ui.Overlay(shakaPlayer, shakaContainer, nativeVideoPlayer);
+                        ui.configure({
+                            controlPanelElements: ['play_pause', 'time_and_duration', 'spacer', 'mute', 'volume', 'quality', 'fullscreen'],
+                            addSeekBar: true
+                        });
+                    }
                 }
 
                 if (clearkeys) {
@@ -438,6 +449,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             // Altri OS: usa il player estensione iframe
             nativeVideoPlayer.style.display = 'none';
+            if (shakaContainer) shakaContainer.style.display = 'none';
             if (shakaPlayer) {
                 shakaPlayer.unload();
             }
@@ -691,6 +703,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             nativeVideoPlayer.src = '';
             nativeVideoPlayer.style.display = 'none';
+            if (shakaContainer) shakaContainer.style.display = 'none';
             playerFrame.src = 'about:blank';
             playerFrame.style.display = 'none';
             playerChTitle.textContent = 'Nessun Canale';
