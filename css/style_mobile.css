@@ -43,13 +43,12 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-body {
+html, body {
   background: var(--bg-base);
   color: var(--text-primary);
-  min-height: 100vh;
-  overflow-x: hidden;
-  display: flex;
-  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; /* Blocca lo scroll della pagina intera */
 }
 
 :root:not(.light-mode) body {
@@ -65,7 +64,8 @@ a {
 .mobile-app-container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
+  height: 100dvh; /* Altezza dinamica che esclude la barra di navigazione mobile */
   position: relative;
   overflow: hidden;
 }
