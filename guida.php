@@ -506,10 +506,18 @@ $last_update = file_exists($epg_file) ? date('H:i', filemtime($epg_file)) : '--:
     .guida-no-data p   { font-size: 1.1rem; font-weight: 600; color: var(--text-secondary); margin: 0; }
 
     @media (max-width: 900px) { .guida-layout { grid-template-columns: 280px 1fr; } }
+    .btn-show-sidebar-mobile { display: none; }
+    .btn-close-sidebar-mobile { display: none !important; }
     @media (max-width: 768px) {
       .guida-layout { grid-template-columns: 1fr; }
       .guida-sidebar { display: none; }
-      .guida-sidebar.show-mobile { display: flex; position: fixed; inset: 0; z-index: 1000; }
+      .guida-sidebar.show-mobile { display: flex; position: fixed; inset: 0; z-index: 1000; width: 100%; max-width: 100%; background: var(--bg-base); }
+      .btn-show-sidebar-mobile { display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 12px; background: var(--bg-input); border: 1px solid var(--border-subtle); color: var(--text-primary); cursor: pointer; font-size: 1.4rem; }
+      .btn-close-sidebar-mobile { display: block !important; }
+      .guida-header { padding: 0 1rem; }
+      .guida-btn-back span { display: none; } /* nasconde testo Guarda Ora su mobile */
+      .guida-btn-back { padding: 0.6rem; border-radius: 12px; }
+      .guida-header-ch-name { font-size: 1.1rem; }
     }
   </style>
 </head>
@@ -523,14 +531,18 @@ $last_update = file_exists($epg_file) ? date('H:i', filemtime($epg_file)) : '--:
     window.__ACTIVE_PROFILE_ID__   = "<?= isset($active_profile['id']) ? addslashes($active_profile['id']) : '' ?>";
     window.__ACTIVE_PROFILE_FAVORITES__ = <?= json_encode($active_profile['favorites'] ?? []) ?>;
     window.__CSRF_TOKEN__          = "<?= $_SESSION['csrf_token'] ?? '' ?>";
+    window.__BACK_URL_BASE__       = "<?= (($_COOKIE['pz8_view_mode'] ?? '') === 'mobile') ? 'mobile.php' : 'index.php' ?>";
   </script>
 
   <div class="guida-layout">
     <!-- Sidebar -->
     <aside class="guida-sidebar" id="guida-sidebar">
-      <div class="guida-brand">
-        <div class="guida-brand-icon"><i class="ph ph-calendar"></i></div>
-        <div class="guida-brand-text"><span></span> Guida TV</div>
+      <div class="guida-brand" style="display:flex; justify-content:space-between; align-items:center;">
+        <div style="display:flex; align-items:center; gap:0.6rem;">
+          <div class="guida-brand-icon"><i class="ph ph-calendar"></i></div>
+          <div class="guida-brand-text"><span></span> Guida TV</div>
+        </div>
+        <button id="btn-close-sidebar" class="btn-close-sidebar-mobile" style="background:none; border:none; color:var(--text-muted); font-size:1.5rem; cursor:pointer;"><i class="ph ph-x"></i></button>
       </div>
       <div class="guida-search-wrapper">
         <div class="guida-search-container">
@@ -549,18 +561,16 @@ $last_update = file_exists($epg_file) ? date('H:i', filemtime($epg_file)) : '--:
     <!-- Main Schedule Panel -->
     <main class="guida-main">
       <header class="guida-header">
-        <div class="guida-header-left" style="display:flex;align-items:center;gap:1rem;">
+        <div class="guida-header-left" style="display:flex;align-items:center;gap:0.8rem;">
+          <button id="btn-show-sidebar" class="btn-show-sidebar-mobile"><i class="ph ph-list"></i></button>
           <div class="guida-header-ch-icon" id="header-ch-icon"></div>
           <h1 class="guida-header-ch-name" id="header-ch-name">Seleziona Canale</h1>
           <button id="btn-toggle-favorite" class="btn-favorite-toggle" style="display:none;" title="Aggiungi ai preferiti">
             <i class="ph ph-star"></i>
           </button>
         </div>
-        <?php
-        $back_url = (($_COOKIE['pz8_view_mode'] ?? '') === 'mobile') ? 'mobile.php' : 'index.php';
-        ?>
-        <a id="btn-back" href="<?= $back_url ?>" class="guida-btn-back">
-          <i class="ph ph-arrow-left"></i> Torna al Player
+        <a id="btn-back" href="<?= (($_COOKIE['pz8_view_mode'] ?? '') === 'mobile') ? 'mobile.php' : 'index.php' ?>" class="guida-btn-back">
+          <i class="ph ph-play"></i> <span>Guarda Ora</span>
         </a>
       </header>
 
@@ -625,7 +635,7 @@ $last_update = file_exists($epg_file) ? date('H:i', filemtime($epg_file)) : '--:
     if (urlChId) currentChannel = getChannelById(urlChId);
     if (!currentChannel) currentChannel = CHANNELS[0];
 
-    document.getElementById('btn-back').href = `index.php?id=${currentChannel.id}`;
+    document.getElementById('btn-back').href = `${window.__BACK_URL_BASE__}?id=${currentChannel.id}`;
 
     // Costruisce mappa EPG per lookup O(1)
     function buildEpgMap() {
@@ -845,7 +855,8 @@ $last_update = file_exists($epg_file) ? date('H:i', filemtime($epg_file)) : '--:
     function selectChannel(ch) {
       currentChannel = ch;
       history.pushState({ id: ch.id }, '', `?id=${ch.id}`);
-      document.getElementById('btn-back').href = `index.php?id=${ch.id}`;
+      document.getElementById('btn-back').href = `${window.__BACK_URL_BASE__}?id=${ch.id}`;
+      document.getElementById('guida-sidebar').classList.remove('show-mobile');
 
       // Configura pulsante preferito in header
       const btnFav = document.getElementById('btn-toggle-favorite');
@@ -1012,6 +1023,16 @@ $last_update = file_exists($epg_file) ? date('H:i', filemtime($epg_file)) : '--:
       const params = new URLSearchParams(window.location.search);
       const id = parseInt(params.get('id'));
       if (id) { const ch = getChannelById(id); if (ch) selectChannel(ch); }
+    });
+
+    // Mobile sidebar toggle
+    const btnShowSidebar = document.getElementById('btn-show-sidebar');
+    if (btnShowSidebar) btnShowSidebar.addEventListener('click', () => {
+        document.getElementById('guida-sidebar').classList.add('show-mobile');
+    });
+    const btnCloseSidebar = document.getElementById('btn-close-sidebar');
+    if (btnCloseSidebar) btnCloseSidebar.addEventListener('click', () => {
+        document.getElementById('guida-sidebar').classList.remove('show-mobile');
     });
 
     // Avvio: rendering immediato con dati PHP
