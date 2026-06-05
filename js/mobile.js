@@ -1,378 +1,744 @@
-<?php
-// Avvia sessione e verifica autenticazione
-session_start();
+document.addEventListener('DOMContentLoaded', () => {
+    // --- STATO DELL'APPLICAZIONE ---
+    let currentChannel = null;
+    let currentCat = 'favorites'; // Di default mostra i Preferiti (se presenti) o cade su 'all'
+    let epgData = window.__EPG_DATA__ || [];
+    let epgMap = new Map();
+    let favorites = window.__ACTIVE_PROFILE_FAVORITES__ || [];
+    let searchQuery = '';
 
-// Genera il token CSRF se non presente in sessione
-if (!isset($_SESSION['csrf_token'])) {
-    $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
-}
+    // Colori Accent Preimpostati (coerenti con index.php)
+    const accentPresets = [
+        { name: 'Ciano', hex: '#00f2fe', glow: 'rgba(0, 242, 254, 0.35)' },
+        { name: 'Rosso Netflix', hex: '#e50914', glow: 'rgba(229, 9, 20, 0.35)' },
+        { name: 'Oro Premium', hex: '#eab308', glow: 'rgba(234, 179, 8, 0.35)' },
+        { name: 'Smeraldo', hex: '#10b981', glow: 'rgba(16, 185, 129, 0.35)' },
+        { name: 'Viola', hex: '#a855f7', glow: 'rgba(168, 85, 247, 0.35)' },
+        { name: 'Rosa', hex: '#ec4899', glow: 'rgba(236, 72, 153, 0.35)' }
+    ];
 
-// Previeni il caching della pagina
-header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
-header("Cache-Control: post-check=0, pre-check=0", false);
-header("Pragma: no-cache");
-header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
-
-// Gestione della modalità di visualizzazione (PC vs Mobile/TV)
-function isMobileOrTV() {
-    $ua = $_SERVER['HTTP_USER_AGENT'] ?? '';
-    return preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino|smarttv|smart-tv|hbbtv|appletv|googletv|tizen|webos|chromecast|roku|philips|sony|panasonic|lg-tv/i', $ua);
-}
-
-$view_mode = $_GET['view_mode'] ?? $_COOKIE['pz8_view_mode'] ?? null;
-
-if (isset($_GET['view_mode'])) {
-    $secure_cookie = isset($_SERVER['HTTPS']) || (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https');
-    setcookie('pz8_view_mode', $_GET['view_mode'], [
-        'expires' => time() + (365 * 24 * 3600),
-        'path' => '/',
-        'secure' => $secure_cookie,
-        'httponly' => true,
-        'samesite' => 'Strict'
-    ]);
-    $view_mode = $_GET['view_mode'];
-}
-
-// Se l'utente visita mobile.php, forziamo il cookie a 'mobile' in modo che sia persistente.
-if ($view_mode !== 'pc') {
-    $view_mode = 'mobile';
-    if (!isset($_COOKIE['pz8_view_mode']) || $_COOKIE['pz8_view_mode'] !== 'mobile') {
-        $secure_cookie = isset($_SERVER['HTTPS']) || (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https');
-        setcookie('pz8_view_mode', 'mobile', [
-            'expires' => time() + (365 * 24 * 3600),
-            'path' => '/',
-            'secure' => $secure_cookie,
-            'httponly' => true,
-            'samesite' => 'Strict'
-        ]);
-    }
-}
-
-if ($view_mode === 'pc') {
-    $redirect_url = 'index.php';
-    if (isset($_GET['id'])) {
-        $redirect_url .= '?id=' . urlencode($_GET['id']);
-    }
-    header('Location: ' . $redirect_url);
-    exit;
-}
-
-$config_file = __DIR__ . '/users_config.php';
-$config = file_exists($config_file) ? require $config_file : [];
-$subscription_expiry = $config['subscription_expiry'] ?? '2027-12-31';
-
-if (time() > strtotime($subscription_expiry . ' 23:59:59')) {
-    $secure_cookie = isset($_SERVER['HTTPS']) || (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https');
-    if (isset($_COOKIE['remember_user'])) {
-        setcookie('remember_user', '', time() - 3600, '/', '', $secure_cookie, true);
-    }
-    if (isset($_COOKIE['remember_token'])) {
-        setcookie('remember_token', '', time() - 3600, '/', '', $secure_cookie, true);
-    }
-    session_destroy();
-    header('Location: expired.php');
-    exit;
-}
-
-if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
-    header('Location: login.php');
-    exit;
-}
-
-if (!isset($_SESSION['active_profile'])) {
-    header('Location: select_profile.php');
-    exit;
-}
-
-$active_profile = $_SESSION['active_profile'];
-$username = $_SESSION['username'] ?? '';
-
-// Carica profili dell'utente
-$all_profiles = [];
-$custom_profiles_file = __DIR__ . '/user_profiles.json';
-if (file_exists($custom_profiles_file)) {
-    $custom_data = json_decode(file_get_contents($custom_profiles_file), true);
-    if (isset($custom_data[$username]) && is_array($custom_data[$username])) {
-        $all_profiles = $custom_data[$username];
-    }
-}
-if (empty($all_profiles)) {
-    $all_profiles = $config['users'][$username]['profiles'] ?? [];
-}
-$all_profiles_json = json_encode($all_profiles, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
-
-// Carica EPG
-$epg_file = __DIR__ . '/guida_tv_sky.json';
-$epg_data = [];
-if (file_exists($epg_file)) {
-    $json_raw = file_get_contents($epg_file);
-    $epg_data = json_decode($json_raw, true) ?? [];
-}
-$epg_json = json_encode($epg_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
-$last_update = file_exists($epg_file) ? date('H:i', filemtime($epg_file)) : '--:--';
-
-// Carica Agenda
-$agenda_file = __DIR__ . '/agenda.json';
-$agenda_data = [];
-if (file_exists($agenda_file)) {
-    $agenda_raw = file_get_contents($agenda_file);
-    $agenda_data = json_decode($agenda_raw, true) ?? [];
-}
-$agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
-
-// Rileva se profilo bambini
-$pname_check = isset($active_profile['name']) ? strtolower($active_profile['name']) : '';
-$pid_check = isset($active_profile['id']) ? strtolower($active_profile['id']) : '';
-$is_kids_profile = (
-    strpos($pname_check, 'bambini') !== false || 
-    strpos($pname_check, 'kids') !== false || 
-    strpos($pid_check, 'bambini') !== false || 
-    strpos($pid_check, 'kids') !== false
-);
-?>
-<!DOCTYPE html>
-<html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>PZ8 Mobile</title>
-  <meta name="description" content="Dashboard StreamHub Mobile">
-  <link rel="stylesheet" href="css/style_mobile.css?v=<?= time() ?>">
-  <script src="https://unpkg.com/@phosphor-icons/web"></script>
-  <script>
-    // Iniezione preventiva colore principale e tema
-    (function() {
-      const accent = localStorage.getItem('accent_color');
-      const glow = localStorage.getItem('accent_glow');
-      if (accent && glow) {
-        document.documentElement.style.setProperty('--accent', accent);
-        document.documentElement.style.setProperty('--accent-glow', glow);
-      }
-      if (localStorage.getItem('theme') === 'light') {
-        document.documentElement.classList.add('light-mode');
-      }
-    })();
-  </script>
-</head>
-<body>
-
-  <!-- Dati iniettati per JS -->
-  <script>
-    window.__EPG_DATA__    = <?= $epg_json ?>;
-    window.__EPG_UPDATED__ = "<?= $last_update ?>";
-    window.__AGENDA_DATA__ = <?= $agenda_json ?>;
-    window.__ACTIVE_PROFILE_NAME__ = "<?= isset($active_profile['name']) ? addslashes($active_profile['name']) : '' ?>";
-    window.__ACTIVE_PROFILE_ID__   = "<?= isset($active_profile['id']) ? addslashes($active_profile['id']) : '' ?>";
-    window.__ACTIVE_PROFILE_FAVORITES__ = <?= json_encode($active_profile['favorites'] ?? []) ?>;
-    window.__ALL_PROFILES__        = <?= $all_profiles_json ?>;
-    window.__CSRF_TOKEN__          = "<?= $_SESSION['csrf_token'] ?>";
-    window.__IS_KIDS_PROFILE__     = <?= $is_kids_profile ? 'true' : 'false' ?>;
-  </script>
-
-  <div class="mobile-app-container">
+    // --- ELEMENTI DOM ---
+    const menuBtn = document.getElementById('menu-btn');
+    const drawerOverlay = document.getElementById('drawer-overlay');
+    const drawerMenu = document.getElementById('drawer-menu');
+    const drawerClose = document.getElementById('drawer-close');
+    const drawerCategories = document.getElementById('drawer-categories');
     
-    <!-- Header -->
-    <header class="mobile-header">
-      <div class="header-left">
-        <button id="menu-btn" class="menu-trigger" aria-label="Apri menu">
-          <i class="ph ph-list"></i>
-        </button>
-        <div class="mobile-brand">PZ<span>8</span></div>
-      </div>
-      <div class="header-right">
-        <div id="mobile-clock" class="mobile-clock">00:00</div>
-        <button id="profile-btn" class="profile-avatar-btn" style="border-color: <?= $active_profile['color'] ?>; background: <?= $active_profile['color'] ?>15;">
-          <i class="ph <?= htmlspecialchars($active_profile['avatar']) ?>" style="color: <?= $active_profile['color'] ?>;"></i>
-        </button>
-      </div>
-    </header>
+    const searchInput = document.getElementById('ch-search');
+    const channelsListContainer = document.getElementById('channels-list-container');
+    const categoryTitleEl = document.getElementById('category-title');
+    const channelsCountEl = document.getElementById('channels-count');
+    
+    const playerFrame = document.getElementById('player-frame');
+    const nativeVideoPlayer = document.getElementById('native-video-player');
+    const noStreamOverlay = document.getElementById('no-stream-overlay');
+    const originalNoStreamHtml = noStreamOverlay ? noStreamOverlay.innerHTML : '';
+    const playerChTitle = document.getElementById('player-ch-title');
+    const playerChEpg = document.getElementById('player-ch-epg');
+    const playerFavBtn = document.getElementById('player-fav-btn');
+    
+    const isAndroid = /Android/i.test(navigator.userAgent);
+    let dashPlayer = null;
 
-    <!-- Player Area -->
-    <div id="player-container" class="player-container">
-      <iframe id="player-frame" src="about:blank" allowfullscreen allow="autoplay; encrypted-media; fullscreen" style="display: none; width: 100%; height: 100%; border: none;"></iframe>
-      <div id="shaka-container" style="display: none; width: 100%; height: 100%; z-index: 4; position: absolute; inset: 0; background: #000;">
-        <video id="native-video-player" autoplay playsinline style="width: 100%; height: 100%;"></video>
-      </div>
-      
-      <!-- Overlay di stato inizializzazione / nessun canale -->
-      <div id="no-stream-overlay" class="no-stream-overlay">
-        <i class="ph ph-television-simple"></i>
-        <span>Scegli un canale per iniziare la visione</span>
-      </div>
-    </div>
-
-    <!-- Player Meta Bar -->
-    <div class="player-meta-bar">
-      <div class="player-meta-info">
-        <div id="player-ch-title" class="player-meta-title">Nessun Canale</div>
-        <div id="player-ch-epg" class="player-meta-epg">Seleziona un canale dalla lista qui sotto</div>
-      </div>
-      <div class="player-actions">
-        <button id="player-fav-btn" class="player-fav-btn" style="display: none;" title="Aggiungi ai preferiti">
-          <i class="ph ph-star"></i>
-        </button>
-      </div>
-    </div>
-
-    <!-- Main Content Area -->
-    <main class="app-content-area">
-      <!-- Cerca -->
-      <div class="search-container">
-        <i class="ph ph-magnifying-glass"></i>
-        <input type="text" id="ch-search" placeholder="Cerca canale o programma...">
-      </div>
-
-      <!-- Category info banner -->
-      <div class="category-header">
-        <div id="category-title" class="category-title">Tutti i Canali</div>
-        <div id="channels-count" class="channels-count-badge">0</div>
-      </div>
-
-      <!-- Channels list -->
-      <div id="channels-list-container" class="channels-list">
-        <!-- Inseriti dinamicamente via JS -->
-      </div>
-    </main>
-
-  </div>
-
-  <!-- MENU A TENDINA A SINISTRA (Drawer) -->
-  <div id="drawer-overlay" class="drawer-overlay"></div>
-  <aside id="drawer-menu" class="drawer-menu">
-    <div class="drawer-header">
-      <div class="drawer-logo">PZ<span>8</span> Menu</div>
-      <button id="drawer-close" class="drawer-close-btn"><i class="ph ph-x"></i></button>
-    </div>
-    <div class="drawer-content">
-      
-      <!-- Sezione Categorie -->
-      <div>
-        <div class="drawer-section-title">Categorie Canali</div>
-        <nav class="drawer-list" id="drawer-categories">
-          <!-- Inseriti dinamicamente da JS basandosi sulle categorie abilitate -->
-        </nav>
-      </div>
-
-      <!-- Sezione Generica / Collegamenti -->
-      <div>
-        <div class="drawer-section-title">Navigazione</div>
-        <nav class="drawer-list">
-          <?php if (!$is_kids_profile): ?>
-            <div id="btn-agenda" class="drawer-item"><i class="ph ph-clock"></i> Agenda Eventi</div>
-          <?php endif; ?>
-          <a href="guida.php" class="drawer-item"><i class="ph ph-calendar"></i> Guida TV</a>
-          <div id="btn-settings" class="drawer-item"><i class="ph ph-gear"></i> Impostazioni</div>
-          <a href="select_profile.php" class="drawer-item"><i class="ph ph-users"></i> Cambia Profilo</a>
-          <a href="logout.php" class="drawer-item" style="color: var(--danger);"><i class="ph ph-sign-out"></i> Esci dall'Account</a>
-        </nav>
-      </div>
-
-    </div>
-    <div class="drawer-footer">
-      <div style="font-size: 0.75rem; color: var(--text-muted); text-align: center;">PZ8 Mobile v1.6 &bull; EPG: <span id="epg-last-update"><?= $last_update ?></span></div>
-    </div>
-  </aside>
-
-  <!-- MODAL AGENDA EVENTI -->
-  <div id="agenda-modal" class="mobile-modal-overlay">
-    <div class="mobile-modal-content">
-      <div class="modal-header">
-        <h2><i class="ph ph-clock" style="color:#eab308;"></i> Agenda Eventi</h2>
-        <button class="modal-close-btn" onclick="closeModal('agenda-modal')">&times;</button>
-      </div>
-      <div class="modal-body" id="agenda-events-list">
-        <!-- Popolato via JS -->
-      </div>
-    </div>
-  </div>
-
-  <!-- MODAL IMPOSTAZIONI -->
-  <div id="settings-modal" class="mobile-modal-overlay">
-    <div class="mobile-modal-content">
-      <div class="modal-header">
-        <h2><i class="ph ph-gear" style="color:var(--accent);"></i> Impostazioni</h2>
-        <button class="modal-close-btn" onclick="closeModal('settings-modal')">&times;</button>
-      </div>
-      <div class="modal-body">
-        
-        <!-- Aspetto -->
-        <div class="settings-color-row">
-          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4rem;">
-            <span style="font-weight:700; font-size:0.95rem;">Tema dell'Interfaccia</span>
-            <button id="theme-toggle" class="profile-avatar-btn" style="width:auto; padding:0 12px; border-radius:10px; font-size:0.8rem; font-weight:700; height:32px; display:flex; gap:6px;">
-              <i class="ph ph-sun"></i> Tema
-            </button>
-          </div>
-          
-          <div style="margin-top:0.8rem;">
-            <span style="font-weight:700; font-size:0.95rem; display:block; margin-bottom:0.5rem;">Colore Principale</span>
-            <div class="color-option-grid" id="mobile-color-picker">
-              <!-- Inseriti via JS -->
-            </div>
-          </div>
-        </div>
-
-        <!-- Profilo Attivo -->
-        <div style="background: var(--bg-input); border: 1px solid var(--border-subtle); border-radius: 12px; padding: 1rem; margin-top: 1.5rem; display: flex; align-items: center; gap: 1rem;">
-          <div style="width:48px; height:48px; border-radius:50%; background:<?= $active_profile['color'] ?>15; border:1px solid <?= $active_profile['color'] ?>40; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-            <i class="ph <?= htmlspecialchars($active_profile['avatar']) ?>" style="color:<?= $active_profile['color'] ?>; font-size:1.6rem;"></i>
-          </div>
-          <div style="display:flex; flex-direction:column; flex:1; min-width:0;">
-            <span style="font-weight:700; font-size:1rem;"><?= htmlspecialchars($active_profile['name']) ?></span>
-            <span style="font-size:0.75rem; color:var(--text-muted);">Profilo attivo</span>
-          </div>
-          <a href="select_profile.php" class="profile-avatar-btn" style="border-radius:10px; width:auto; padding:0 12px; height:32px; font-size:0.8rem; font-weight:700; color:var(--text-secondary);"><i class="ph ph-users" style="margin-right:4px;"></i> Cambia</a>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <!-- Script JS -->
-  <script src="js/channels.js?v=<?= time() ?>"></script>
-  <?php 
-    $pname_check = isset($active_profile['name']) ? strtolower($active_profile['name']) : '';
-    $pid_check = isset($active_profile['id']) ? strtolower($active_profile['id']) : '';
-    $is_kids_profile = (
-        strpos($pname_check, 'bambini') !== false || 
-        strpos($pname_check, 'kids') !== false || 
-        strpos($pid_check, 'bambini') !== false || 
-        strpos($pid_check, 'kids') !== false
-    );
-  ?>
-  <script>
-    if (typeof CHANNELS !== 'undefined') {
-        const _activeProf = <?= json_encode($active_profile) ?>;
-        let allowedCats = _activeProf.allowed_categories || [];
-        let allowedChs = _activeProf.allowed_channels || [];
-
-        if (allowedCats.length === 0 && allowedChs.length === 0) {
-            if (<?= $is_kids_profile ? 'true' : 'false' ?>) {
-                allowedCats = ['kids']; // Retrocompatibilità profili bambini vecchi
-            } else {
-                allowedCats = ['*'];
+    if (nativeVideoPlayer) {
+        nativeVideoPlayer.addEventListener('error', function(e) {
+            if (nativeVideoPlayer.error) {
+                console.error("Errore tag video nativo:", nativeVideoPlayer.error);
+                let msg = "Errore riproduzione video: ";
+                switch (nativeVideoPlayer.error.code) {
+                    case 1: msg += "Riproduzione interrotta dall'utente."; break;
+                    case 2: msg += "Errore di rete."; break;
+                    case 3: msg += "Errore di decodifica dei media (potrebbe trattarsi di un problema di codec o DRM)."; break;
+                    case 4: msg += "Formato video o codec non supportato."; break;
+                    default: msg += nativeVideoPlayer.error.message || "Errore sconosciuto."; break;
+                }
+                showPlayerError(msg);
             }
+        });
+    }
+    
+    const btnSettings = document.getElementById('btn-settings');
+    const settingsModal = document.getElementById('settings-modal');
+    const btnAgenda = document.getElementById('btn-agenda');
+    const agendaModal = document.getElementById('agenda-modal');
+    const agendaEventsList = document.getElementById('agenda-events-list');
+
+    // --- FUNZIONI UTILI ---
+    function timeToMinutes(timeStr) {
+        if (!timeStr || !timeStr.includes(':')) return 0;
+        const [hours, minutes] = timeStr.split(':').map(Number);
+        return (hours * 60) + minutes;
+    }
+
+    // Convert hex string to Base64URL without padding (required for dash.js ClearKey DRM)
+    function hexToBase64Url(hex) {
+        const cleanHex = hex.trim().replace(/^0x/i, '');
+        const pairs = cleanHex.match(/.{1,2}/g);
+        if (!pairs) return "";
+        const bytes = new Uint8Array(pairs.map(byte => parseInt(byte, 16)));
+        let binString = "";
+        for (let i = 0; i < bytes.length; i++) {
+            binString += String.fromCharCode(bytes[i]);
+        }
+        return btoa(binString)
+            .replace(/\+/g, '-')
+            .replace(/\//g, '_')
+            .replace(/=/g, '');
+    }
+
+    // --- ERRORE RIPRODUTTORE ---
+    function showPlayerError(msg) {
+        if (dashPlayer) {
+            try { dashPlayer.destroy(); } catch(e) {}
+            dashPlayer = null;
+        }
+        nativeVideoPlayer.style.display = 'none';
+        playerFrame.style.display = 'none';
+        
+        noStreamOverlay.innerHTML = `
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.6rem; padding: 1rem; text-align: center; width: 100%; height: 100%;">
+                <i class="ph ph-warning-circle" style="color: var(--danger); font-size: 2.5rem;"></i>
+                <span style="color: var(--danger); font-weight: 700; font-size: 0.95rem;">Errore di riproduzione</span>
+                <span style="font-size: 0.8rem; color: var(--text-secondary); max-width: 90%; line-height: 1.3;">${msg}</span>
+            </div>
+        `;
+        noStreamOverlay.style.display = 'flex';
+    }
+
+    function buildEpgMap() {
+        epgMap = new Map();
+        if (!epgData || epgData.length === 0) return;
+        for (let i = 0; i < epgData.length; i++) {
+            const item = epgData[i];
+            if (item.canale) epgMap.set(item.canale.toUpperCase(), item);
+        }
+    }
+
+    // Inizializza mappa EPG
+    buildEpgMap();
+
+    // Gestione Orario
+    function updateClock() {
+        const now = new Date();
+        const clockEl = document.getElementById('mobile-clock');
+        if (clockEl) {
+            clockEl.textContent = now.toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit' });
+        }
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+
+    // --- DRAWER MENU & MODALS LOGIC ---
+    function openDrawer() {
+        drawerOverlay.classList.add('open');
+        drawerMenu.classList.add('open');
+    }
+
+    function closeDrawer() {
+        drawerOverlay.classList.remove('open');
+        drawerMenu.classList.remove('open');
+    }
+
+    menuBtn.addEventListener('click', openDrawer);
+    drawerClose.addEventListener('click', closeDrawer);
+    drawerOverlay.addEventListener('click', closeDrawer);
+
+    window.openModal = function(modalId) {
+        const modal = document.getElementById(modalId);
+        if (modal) modal.classList.add('open');
+        closeDrawer();
+    };
+
+    window.closeModal = function(modalId) {
+        const modal = document.getElementById(modalId);
+        if (modal) modal.classList.remove('open');
+    };
+
+    if (btnSettings) {
+        btnSettings.addEventListener('click', () => openModal('settings-modal'));
+    }
+    if (btnAgenda) {
+        btnAgenda.addEventListener('click', () => {
+            renderAgenda();
+            openModal('agenda-modal');
+        });
+    }
+
+    // --- CARICAMENTO CATEGORIE NEL DRAWER ---
+    function renderCategories() {
+        if (!drawerCategories) return;
+        drawerCategories.innerHTML = '';
+
+        // Categoria Preferiti
+        const favCount = favorites.length;
+        const aFav = document.createElement('div');
+        aFav.className = 'drawer-item category-link' + (currentCat === 'favorites' ? ' active' : '');
+        aFav.style.setProperty('--cat-color', '#ffc107');
+        aFav.innerHTML = `<i class="ph ph-star" style="color: #ffc107"></i> Preferiti <span style="margin-left: auto; font-size: 0.75rem; background: rgba(255,255,255,0.06); padding: 2px 6px; border-radius: 8px;">${favCount}</span>`;
+        aFav.addEventListener('click', () => {
+            selectCategory('favorites');
+        });
+        drawerCategories.appendChild(aFav);
+
+        // Categoria "Tutte" se non è un profilo Bambini
+        if (!window.__IS_KIDS_PROFILE__) {
+            const aAll = document.createElement('div');
+            aAll.className = 'drawer-item category-link' + (currentCat === 'all' ? ' active' : '');
+            aAll.style.setProperty('--cat-color', '#FFFF00');
+            aAll.innerHTML = `<i class="ph ph-squares-four" style="color: #FFFF00"></i> Tutte <span style="margin-left: auto; font-size: 0.75rem; background: rgba(255,255,255,0.06); padding: 2px 6px; border-radius: 8px;">${CHANNELS.length}</span>`;
+            aAll.addEventListener('click', () => {
+                selectCategory('all');
+            });
+            drawerCategories.appendChild(aAll);
         }
 
-        // Se un vecchio profilo ha salvato 'bambini', mappiamo a 'kids'
-        if (allowedCats.includes('bambini')) {
-            allowedCats = allowedCats.map(c => c === 'bambini' ? 'kids' : c);
+        // Altre categorie da CATEGORIES
+        Object.keys(CATEGORIES).forEach(key => {
+            if (key === 'all') return;
+            const c = CATEGORIES[key];
+            const count = getChannelsByCategory(key).length;
+            
+            // Non aggiungere categorie vuote per questo profilo
+            if (count === 0) return;
+
+            const a = document.createElement('div');
+            a.className = 'drawer-item category-link' + (currentCat === key ? ' active' : '');
+            a.style.setProperty('--cat-color', c.color);
+            a.innerHTML = `<i class="ph ${c.icon}" style="color: ${c.color}"></i> ${c.label} <span style="margin-left: auto; font-size: 0.75rem; background: rgba(255,255,255,0.06); padding: 2px 6px; border-radius: 8px;">${count}</span>`;
+            a.addEventListener('click', () => {
+                selectCategory(key);
+            });
+            drawerCategories.appendChild(a);
+        });
+    }
+
+    function selectCategory(catKey) {
+        currentCat = catKey;
+        closeDrawer();
+        renderCategories();
+        renderChannels();
+    }
+
+    // Se non ci sono preferiti e non è in cookies, parti da 'all'
+    if (favorites.length === 0) {
+        currentCat = window.__IS_KIDS_PROFILE__ ? 'kids' : 'all';
+    }
+
+    // --- RENDER CANALI ---
+    function renderChannels() {
+        if (!channelsListContainer) return;
+        channelsListContainer.innerHTML = '';
+
+        let filtered = getChannelsByCategory(currentCat);
+        const query = searchQuery.toLowerCase().trim();
+
+        if (query) {
+            filtered = filtered.filter(ch => {
+                const chNameMatch = ch.name.toLowerCase().includes(query);
+                const chCatMatch = ch.cat.toLowerCase().includes(query);
+                const catLabelMatch = (CATEGORIES[ch.cat] && CATEGORIES[ch.cat].label.toLowerCase().includes(query));
+                if (chNameMatch || chCatMatch || catLabelMatch) return true;
+                
+                // Cerca nei programmi EPG
+                const channelEpgObj = epgMap ? epgMap.get(ch.name.toUpperCase()) : null;
+                if (channelEpgObj && channelEpgObj.programmi) {
+                    return channelEpgObj.programmi.some(p => p.titolo.toLowerCase().includes(query));
+                }
+                return false;
+            });
         }
 
-        if (!allowedCats.includes('*')) {
-            CHANNELS = CHANNELS.filter(c => allowedCats.includes(c.cat) || allowedChs.includes(c.id));
+        // Aggiorna titolo e contatore
+        categoryTitleEl.textContent = currentCat === 'all' ? 'Tutti i Canali' 
+            : (currentCat === 'favorites' ? 'I Miei Preferiti' 
+            : (CATEGORIES[currentCat] ? CATEGORIES[currentCat].label : 'Canali Live'));
+        channelsCountEl.textContent = filtered.length;
 
-            for (let k in CATEGORIES) {
-                if (k === 'all') continue;
-                if (!CHANNELS.some(c => c.cat === k)) {
-                    delete CATEGORIES[k];
+        if (filtered.length === 0) {
+            channelsListContainer.innerHTML = `
+                <div style="text-align: center; padding: 3rem 1rem; color: var(--text-muted);">
+                    <i class="ph ph-magnifying-glass" style="font-size: 2.2rem; margin-bottom: 0.5rem; display: block;"></i>
+                    <span style="font-weight: 700;">Nessun canale trovato</span>
+                </div>`;
+            return;
+        }
+
+        const nowDate = new Date();
+        const nowMinutes = (nowDate.getHours() * 60) + nowDate.getMinutes();
+
+        filtered.forEach(ch => {
+            const isPlaying = currentChannel && ch.id === currentChannel.id;
+            const channelEpg = getChannelEpg(ch.name);
+            const currentProgram = channelEpg.now;
+            const cMeta = CATEGORIES[ch.cat];
+            const catColor = cMeta ? cMeta.color : '#888';
+            const isFav = favorites.includes(ch.id);
+
+            const card = document.createElement('div');
+            card.className = 'channel-card' + (isPlaying ? ' active' : '');
+            
+            // Costruzione HTML
+            let html = `
+                <div class="channel-card-top">
+                    <div class="channel-icon" style="background: ${catColor}15; color: ${catColor}">
+                        <i class="ph ${ch.icon}"></i>
+                    </div>
+                    <div class="channel-meta">
+                        <div class="channel-name">${ch.name}</div>
+            `;
+
+            if (currentProgram) {
+                html += `<div class="channel-now-playing">${currentProgram.titolo}</div>`;
+            } else {
+                html += `<div class="channel-now-playing" style="font-style: italic; color: var(--text-muted);">Programmazione non disponibile</div>`;
+            }
+
+            html += `
+                    </div>
+                    <button class="channel-card-fav" data-id="${ch.id}" aria-label="Preferito">
+                        <i class="${isFav ? 'ph-fill ph-star' : 'ph ph-star'}" style="color: ${isFav ? '#eab308' : 'var(--text-muted)'}"></i>
+                    </button>
+                </div>
+            `;
+
+            // Progress bar se c'è programma live
+            if (currentProgram) {
+                let startMin = timeToMinutes(currentProgram.ora);
+                let endMin = channelEpg.next ? timeToMinutes(channelEpg.next.ora) : startMin + 120;
+                if (endMin < startMin) endMin += 1440;
+                let adjNow = nowMinutes;
+                if (adjNow < startMin && startMin > 1000) adjNow += 1440;
+
+                const dur = endMin - startMin;
+                const pct = dur > 0 ? Math.min(100, Math.max(0, ((adjNow - startMin) / dur) * 100)) : 100;
+
+                html += `
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" style="width: ${pct}%; background: ${catColor};"></div>
+                    </div>
+                `;
+            }
+
+            // Programma successivo
+            if (channelEpg.next) {
+                html += `<div class="channel-card-next">A seguire: <b>${channelEpg.next.ora}</b> - ${channelEpg.next.titolo}</div>`;
+            }
+
+            card.innerHTML = html;
+
+            // Click evento sulla card
+            card.addEventListener('click', (e) => {
+                // Se ha cliccato la stella
+                if (e.target.closest('.channel-card-fav')) {
+                    e.stopPropagation();
+                    toggleFavorite(ch.id);
+                    return;
+                }
+                selectChannel(ch);
+            });
+
+            channelsListContainer.appendChild(card);
+        });
+    }
+
+    // --- ACCESSO EPG CANALI ---
+    function getChannelEpg(channelName) {
+        if (!epgMap || epgMap.size === 0) return { now: null, next: null };
+        const channelEpg = epgMap.get(channelName.toUpperCase());
+        if (!channelEpg || !channelEpg.programmi || channelEpg.programmi.length === 0) return { now: null, next: null };
+
+        const now = new Date();
+        const currentMinutes = (now.getHours() * 60) + now.getMinutes();
+        let activeIndex = -1;
+
+        for (let i = 0; i < channelEpg.programmi.length; i++) {
+            if (timeToMinutes(channelEpg.programmi[i].ora) <= currentMinutes) {
+                activeIndex = i;
+            } else break;
+        }
+        if (activeIndex === -1 && channelEpg.programmi.length > 0) activeIndex = 0;
+
+        return {
+            now: channelEpg.programmi[activeIndex],
+            next: activeIndex + 1 < channelEpg.programmi.length ? channelEpg.programmi[activeIndex + 1] : null
+        };
+    }
+
+    // --- CAMBIO CANALE ---
+    function selectChannel(ch) {
+        currentChannel = ch;
+        
+        // Evidenzia canale attivo nella lista
+        document.querySelectorAll('.channel-card').forEach((card, index) => {
+            const filteredList = getChannelsByCategory(currentCat);
+            // Cerca se corrisponde
+            const isMatch = filteredList[index] && filteredList[index].id === ch.id;
+            if (isMatch) card.classList.add('active');
+            else card.classList.remove('active');
+        });
+
+        // Imposta Iframe/Video stream
+        noStreamOverlay.innerHTML = originalNoStreamHtml;
+        noStreamOverlay.style.display = 'none';
+
+        if (isAndroid) {
+            // Android: usa il player nativo dash.js
+            playerFrame.style.display = 'none';
+            playerFrame.src = 'about:blank';
+            nativeVideoPlayer.style.display = 'block';
+
+            if (dashPlayer) {
+                dashPlayer.destroy();
+                dashPlayer = null;
+            }
+            nativeVideoPlayer.src = '';
+
+            let streamUrl = ch.code;
+            let clearkeys = null;
+
+            if (streamUrl && streamUrl.includes('ck=')) {
+                try {
+                    let ckVal = null;
+                    const match = streamUrl.match(/[?&]ck=([^&]+)/);
+                    if (match) {
+                        ckVal = decodeURIComponent(match[1]);
+                    }
+                    if (ckVal) {
+                        const decoded = atob(ckVal);
+                        const parts = decoded.split(':');
+                        if (parts.length === 2) {
+                            const keyIdHex = parts[0].trim();
+                            const keyHex = parts[1].trim();
+                            const keyIdB64 = hexToBase64Url(keyIdHex);
+                            const keyB64 = hexToBase64Url(keyHex);
+                            if (keyIdB64 && keyB64) {
+                                clearkeys = {};
+                                clearkeys[keyIdB64] = keyB64;
+                            }
+                        }
+                    }
+                } catch (e) {
+                    console.error("Errore nel parsing ClearKey:", e);
                 }
             }
+
+            // Controllo del contesto sicuro (HTTPS) per EME
+            if (clearkeys && !window.isSecureContext) {
+                showPlayerError("Errore DRM: La decrittografia dei flussi su Android richiede HTTPS. Carica la pagina tramite un indirizzo HTTPS sicuro.");
+                return;
+            }
+
+            try {
+                dashPlayer = dashjs.MediaPlayer().create();
+                
+                const logLevel = (window.dashjs && dashjs.Debug) ? dashjs.Debug.LOG_LEVEL_WARNING : 3;
+                dashPlayer.updateSettings({
+                    'debug': {
+                        'logLevel': logLevel
+                    }
+                });
+
+                // Gestione errori dash.js
+                dashPlayer.on(dashjs.MediaPlayer.events.ERROR, function(e) {
+                    console.error("Errore dash.js:", e);
+                    let msg = "Errore nel caricamento del flusso DASH.";
+                    if (e.error) {
+                        if (e.error.message) msg = e.error.message;
+                        else if (typeof e.error === 'string') msg = e.error;
+                    }
+                    if (e.event && e.event.message) {
+                        msg += " (Dettaglio: " + e.event.message + ")";
+                    }
+                    showPlayerError(msg);
+                });
+
+                if (clearkeys) {
+                    // Intercettiamo la risposta del manifest per rimpiazzare i SystemID di Widevine e PlayReady
+                    // con quello standard di ClearKey, forzando la decrittografia nativa ClearKey in dash.js.
+                    dashPlayer.addResponseInterceptor(function(response) {
+                        if (response.url && response.url.includes('.mpd') && typeof response.data === 'string') {
+                            response.data = response.data
+                                .replace(/edef8ba9-79d6-4ace-a3c8-27dcd51d21ed/gi, "1077efec-c0b2-4d02-ace3-3c1e52e2fb4b")
+                                .replace(/9a04f079-9840-4286-ab92-e65be0885f95/gi, "1077efec-c0b2-4d02-ace3-3c1e52e2fb4b");
+                        }
+                        return Promise.resolve(response);
+                    });
+
+                    dashPlayer.setProtectionData({
+                        "org.w3.clearkey": {
+                            "clearkeys": clearkeys
+                        }
+                    });
+                }
+                dashPlayer.initialize(nativeVideoPlayer, streamUrl, true);
+            } catch (err) {
+                console.error("Errore di inizializzazione dashPlayer:", err);
+                showPlayerError("Impossibile inizializzare il player DASH: " + (err.message || err));
+            }
+        } else {
+            // Altri OS: usa il player estensione iframe
+            nativeVideoPlayer.style.display = 'none';
+            if (dashPlayer) {
+                dashPlayer.destroy();
+                dashPlayer = null;
+            }
+            nativeVideoPlayer.src = '';
+            
+            playerFrame.style.display = 'block';
+            playerFrame.src = getStreamUrl(ch);
+        }
+
+        // Aggiorna metadati player
+        playerChTitle.textContent = ch.name;
+        
+        // Aggiorna EPG
+        const epg = getChannelEpg(ch.name);
+        if (epg.now) {
+            playerChEpg.innerHTML = `Ora: <span>${epg.now.ora} - ${epg.now.titolo}</span>`;
+        } else {
+            playerChEpg.textContent = 'Programmazione live continua';
+        }
+
+        // Mostra e gestisci stella preferito nel player
+        playerFavBtn.style.display = 'flex';
+        const isFav = favorites.includes(ch.id);
+        if (isFav) {
+            playerFavBtn.classList.add('active');
+            playerFavBtn.innerHTML = '<i class="ph-fill ph-star"></i>';
+        } else {
+            playerFavBtn.classList.remove('active');
+            playerFavBtn.innerHTML = '<i class="ph ph-star"></i>';
+        }
+
+        // PushState URL per poter ricaricare sullo stesso canale
+        history.pushState({ id: ch.id }, '', `?id=${ch.id}`);
+    }
+
+    playerFavBtn.addEventListener('click', () => {
+        if (currentChannel) toggleFavorite(currentChannel.id);
+    });
+
+    // --- GESTIONE PREFERITI ---
+    async function toggleFavorite(channelId) {
+        try {
+            const response = await fetch('toggle_favorite.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRF-Token': window.__CSRF_TOKEN__ || ''
+                },
+                body: JSON.stringify({ channel_id: channelId })
+            });
+            if (!response.ok) throw new Error('Toggle favorite fallito');
+            const resData = await response.json();
+            
+            if (resData.success) {
+                favorites = resData.favorites || [];
+                
+                // Aggiorna icona player se il canale modificato è quello sintonizzato
+                if (currentChannel && currentChannel.id === channelId) {
+                    const isFav = favorites.includes(channelId);
+                    if (isFav) {
+                        playerFavBtn.classList.add('active');
+                        playerFavBtn.innerHTML = '<i class="ph-fill ph-star"></i>';
+                    } else {
+                        playerFavBtn.classList.remove('active');
+                        playerFavBtn.innerHTML = '<i class="ph ph-star"></i>';
+                    }
+                }
+
+                // Aggiorna contatore e lista
+                renderCategories();
+                renderChannels();
+            }
+        } catch (e) {
+            console.error(e);
         }
     }
-  </script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.6/controls.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.6/shaka-player.ui.js"></script>
-  <script src="js/mobile.js?v=<?= time() ?>"></script>
-</body>
-</html>
+
+    // --- CARICAMENTO ED ESECUZIONE AGENDA ---
+    function renderAgenda() {
+        if (!agendaEventsList) return;
+        agendaEventsList.innerHTML = '';
+
+        try {
+            const events = window.__AGENDA_DATA__ || [];
+            if (events.length === 0) {
+                agendaEventsList.innerHTML = `
+                    <div style="text-align: center; padding: 2rem 1rem; color: var(--text-muted);">
+                        <i class="ph ph-calendar-blank" style="font-size: 2.2rem; margin-bottom: 0.5rem; display: block; color: var(--text-muted);"></i>
+                        <span style="font-weight: 700;">Nessun evento in agenda</span>
+                    </div>`;
+                return;
+            }
+
+            // Ordina eventi per tempo
+            const sorted = [...events].sort((a, b) => (a.time || '').localeCompare(b.time || ''));
+
+            sorted.forEach(ev => {
+                let channelIds = [];
+                if (Array.isArray(ev.channel_id)) {
+                    channelIds = ev.channel_id;
+                } else if (ev.channel_id) {
+                    channelIds = [ev.channel_id];
+                }
+
+                const channels = channelIds.map(id => getChannelById(id)).filter(Boolean);
+                const primaryColor = channels.length > 0 ? (CATEGORIES[channels[0].cat] ? CATEGORIES[channels[0].cat].color : '#eab308') : '#eab308';
+
+                const card = document.createElement('div');
+                card.className = 'mobile-event-card';
+                card.style.borderLeft = `3px solid ${primaryColor}`;
+                if (channels.length > 0) {
+                    card.style.cursor = 'pointer';
+                }
+
+                let badgesHtml = '';
+                channels.forEach(ch => {
+                    const catColor = (CATEGORIES[ch.cat]) ? CATEGORIES[ch.cat].color : '#eab308';
+                    badgesHtml += `
+                        <span style="background: ${catColor}15; color: ${catColor}; border: 1px solid ${catColor}40; padding: 2px 6px; border-radius: 4px; font-size: 0.68rem; font-weight: 800; text-transform: uppercase; display: inline-flex; align-items: center; gap: 3px;">
+                            <i class="ph ${ch.icon}" style="font-size: 0.75rem;"></i> ${ch.name}
+                        </span>
+                    `;
+                });
+
+                if (badgesHtml === '') {
+                    badgesHtml = `<span style="color: #eab308; font-size: 0.68rem; font-weight: 800; text-transform: uppercase;">${ev.channel_name || 'Sport'}</span>`;
+                }
+
+                card.innerHTML = `
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem; flex-wrap: wrap; gap: 0.4rem;">
+                        <div style="display: flex; gap: 0.3rem; flex-wrap: wrap;">${badgesHtml}</div>
+                        <div class="event-time-badge">${ev.time}</div>
+                    </div>
+                    <div class="event-title">${ev.title}</div>
+                    <div class="event-desc">${ev.desc || ''}</div>
+                `;
+
+                if (channels.length > 0) {
+                    card.addEventListener('click', () => {
+                        selectChannel(channels[0]);
+                        closeModal('agenda-modal');
+                    });
+                }
+
+                agendaEventsList.appendChild(card);
+            });
+        } catch (error) {
+            console.error("Errore nel rendering dell'agenda:", error);
+            agendaEventsList.innerHTML = `<div style="color: var(--danger); text-align: center; padding: 1.5rem 0; font-weight: 700;">Errore durante il caricamento dell'agenda. Controlla la console per i dettagli.</div>`;
+        }
+    }
+
+    // --- IMPOSTAZIONI: CAMBIO TEMA & ACCENT PICKER ---
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    if (themeToggleBtn) {
+        themeToggleBtn.addEventListener('click', () => {
+            const isLight = document.documentElement.classList.toggle('light-mode');
+            localStorage.setItem('theme', isLight ? 'light' : 'dark');
+        });
+    }
+
+    const mobileColorPicker = document.getElementById('mobile-color-picker');
+    let currentAccent = localStorage.getItem('accent_color') || '#00f2fe';
+
+    function renderAccentPicker() {
+        if (!mobileColorPicker) return;
+        mobileColorPicker.innerHTML = '';
+        accentPresets.forEach(preset => {
+            const isSelected = currentAccent.toLowerCase() === preset.hex.toLowerCase();
+            const dot = document.createElement('div');
+            dot.className = 'color-option' + (isSelected ? ' active' : '');
+            dot.style.background = preset.hex;
+            dot.style.setProperty('--accent-glow', preset.glow);
+            dot.title = preset.name;
+            
+            dot.onclick = () => {
+                currentAccent = preset.hex;
+                localStorage.setItem('accent_color', preset.hex);
+                localStorage.setItem('accent_glow', preset.glow);
+                document.documentElement.style.setProperty('--accent', preset.hex);
+                document.documentElement.style.setProperty('--accent-glow', preset.glow);
+                renderAccentPicker();
+                // Rerender dei canali per aggiornare il colore della card attiva se necessario
+                renderChannels();
+            };
+            mobileColorPicker.appendChild(dot);
+        });
+    }
+
+    // Inizializza Picker Colore
+    renderAccentPicker();
+
+    // --- RICERCA CANALE ---
+    searchInput.addEventListener('input', (e) => {
+        searchQuery = e.target.value;
+        renderChannels();
+    });
+
+    // --- RECUPERO EPG PERIODICO ---
+    async function fetchEpgData() {
+        try {
+            const response = await fetch('epg.php');
+            if (!response.ok) return;
+            const data = await response.json();
+            if (data && Array.isArray(data)) {
+                epgData = data;
+                buildEpgMap();
+                renderChannels();
+                
+                // Aggiorna player epg se c'è canale attivo
+                if (currentChannel) {
+                    const epg = getChannelEpg(currentChannel.name);
+                    if (epg.now) {
+                        playerChEpg.innerHTML = `Ora: <span>${epg.now.ora} - ${epg.now.titolo}</span>`;
+                    }
+                }
+            }
+        } catch (e) {}
+    }
+    // Esegui aggiornamento EPG ogni 60 secondi
+    setInterval(fetchEpgData, 60000);
+
+    // --- INIZIALIZZAZIONE ---
+    renderCategories();
+    renderChannels();
+
+    // Gestione parametro ?id= nella URL all'avvio
+    const params = new URLSearchParams(window.location.search);
+    const initialId = parseInt(params.get('id'));
+    if (initialId) {
+        const ch = getChannelById(initialId);
+        if (ch) {
+            selectChannel(ch);
+        }
+    }
+
+    // Gestione tasto indietro/avanti browser
+    window.addEventListener('popstate', (e) => {
+        const params = new URLSearchParams(window.location.search);
+        const id = parseInt(params.get('id'));
+        if (id) {
+            const ch = getChannelById(id);
+            if (ch) selectChannel(ch);
+        } else {
+            // Deseleziona
+            currentChannel = null;
+            noStreamOverlay.innerHTML = originalNoStreamHtml;
+            noStreamOverlay.style.display = 'flex';
+            if (dashPlayer) {
+                dashPlayer.destroy();
+                dashPlayer = null;
+            }
+            nativeVideoPlayer.src = '';
+            nativeVideoPlayer.style.display = 'none';
+            playerFrame.src = 'about:blank';
+            playerFrame.style.display = 'none';
+            playerChTitle.textContent = 'Nessun Canale';
+            playerChEpg.textContent = 'Seleziona un canale dalla lista qui sotto';
+            playerFavBtn.style.display = 'none';
+            renderChannels();
+        }
+    });
+});
