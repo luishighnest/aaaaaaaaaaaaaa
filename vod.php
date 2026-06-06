@@ -1023,8 +1023,8 @@ if (!isset($_SESSION['active_profile'])) {
       transform: translateY(0);
     }
     .vod-player-next-ep {
-      bottom: 20px;
-      right: 74px;
+      top: 20px;
+      right: 20px;
       display: none;
     }
     .vod-player-next-ep:hover {
@@ -1050,11 +1050,7 @@ if (!isset($_SESSION['active_profile'])) {
       transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1);
       width: 80%;
       max-width: 600px;
-      display: none; /* Nascosto fuori dal fullscreen per impostazione predefinita */
-    }
-    /* Mostra il titolo solo quando l'overlay ha la classe .is-fullscreen */
-    .vod-player-overlay.is-fullscreen .vod-player-title-header {
-      display: block;
+      display: block; /* Sempre visibile quando i controlli sono attivi */
     }
     #vod-player-title {
       font-size: 1.9rem;
@@ -1342,9 +1338,8 @@ if (!isset($_SESSION['active_profile'])) {
         font-size: 1.1rem;
       }
       .vod-player-next-ep {
-        bottom: 15px;
-        right: 63px;
-        top: auto;
+        top: 15px;
+        right: 15px;
         width: 38px;
         height: 38px;
         font-size: 1.1rem;
