@@ -408,7 +408,6 @@ function changeChannel(direction) {
 }
 
 // ─── SPATIAL NAVIGATION (D-PAD) ───
-// ─── SPATIAL NAVIGATION (D-PAD) ───
 let currentFocusedElement = null;
 
 // Gestione visibilità cursore
@@ -448,7 +447,9 @@ function findNearestFocusable(dirKey) {
     focusables.forEach(el => {
         if (el === currentFocusedElement) return;
         
-        // Controlla se visibile e in viewport approssimativo
+        // Elemento deve essere visibile e non nascosto da CSS display:none
+        if (el.offsetParent === null) return; 
+
         const rect = el.getBoundingClientRect();
         if (rect.width === 0 || rect.height === 0) return;
         
@@ -464,44 +465,6 @@ function findNearestFocusable(dirKey) {
             const dist = Math.sqrt(Math.pow(c2.x - c1.x, 2) + Math.pow(c2.y - c1.y, 2));
             let penalty = 0;
             if (dirKey === 'RIGHT' || dirKey === 'LEFT') {
-                penalty = Math.abs(c2.y - c1.y) * 2;
-            } else {
-                penalty = Math.abs(c2.x - c1.x) * 2;
-            }
-            
-            const score = dist + penalty;
-            if (score < minDistance) {
-                minDistance = score;
-                bestMatch = el;
-            }
-        }
-    });
-    
-    return bestMatch;
-}
-    
-    let bestMatch = null;
-    let minDistance = Infinity;
-    
-    focusables.forEach(el => {
-        if (el === currentFocusedElement) return;
-        
-        // Elemento deve essere visibile e non nascosto da CSS display:none
-        if (el.offsetParent === null) return; 
-
-        const rect = el.getBoundingClientRect();
-        const c2 = { x: rect.left + rect.width / 2, y: rect.top + rect.height / 2 };
-        
-        let isEligible = false;
-        if (direction === 'ArrowRight' && c2.x > c1.x + 10) isEligible = true;
-        if (direction === 'ArrowLeft' && c2.x < c1.x - 10) isEligible = true;
-        if (direction === 'ArrowDown' && c2.y > c1.y + 10) isEligible = true;
-        if (direction === 'ArrowUp' && c2.y < c1.y - 10) isEligible = true;
-        
-        if (isEligible) {
-            const dist = Math.sqrt(Math.pow(c2.x - c1.x, 2) + Math.pow(c2.y - c1.y, 2));
-            let penalty = 0;
-            if (direction === 'ArrowRight' || direction === 'ArrowLeft') {
                 penalty = Math.abs(c2.y - c1.y) * 2;
             } else {
                 penalty = Math.abs(c2.x - c1.x) * 2;
