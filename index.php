@@ -164,7 +164,7 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>PZ8</title>
     <meta name="description" content="Dashboard StreamHub Premium">
-    <link rel="stylesheet" href="css/style.css?v=1.13">
+    <link rel="stylesheet" href="css/style.css?v=1.14">
     <script>
       (function() {
         const accent = localStorage.getItem('accent_color');
@@ -1146,6 +1146,14 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
 
     if (btnCustomFs) {
       btnCustomFs.addEventListener('click', toggleCustomFullscreen);
+    }
+    if (topShield) {
+      topShield.addEventListener('click', () => {
+        // Rendi lo scudo superiore cliccabile per uscire se siamo a schermo intero
+        if (document.fullscreenElement === playerAreaContainer) {
+          toggleCustomFullscreen();
+        }
+      });
     }
     
     // Gestisci timeout per far scomparire l'overlay quando il mouse Ã¨ fermo a schermo intero
