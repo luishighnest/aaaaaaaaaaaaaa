@@ -1024,19 +1024,10 @@ if (!isset($_SESSION['active_profile'])) {
       transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1);
       width: 80%;
       max-width: 600px;
-      display: none; /* Nascosto fuori dal fullscreen */
+      display: none; /* Nascosto fuori dal fullscreen per impostazione predefinita */
     }
-    /* Mostra il titolo solo quando l'overlay è in modalità fullscreen */
-    .vod-player-overlay:fullscreen .vod-player-title-header {
-      display: block;
-    }
-    .vod-player-overlay:-webkit-full-screen .vod-player-title-header {
-      display: block;
-    }
-    .vod-player-overlay:-moz-full-screen .vod-player-title-header {
-      display: block;
-    }
-    .vod-player-overlay:-ms-fullscreen .vod-player-title-header {
+    /* Mostra il titolo solo quando l'overlay ha la classe .is-fullscreen */
+    .vod-player-overlay.is-fullscreen .vod-player-title-header {
       display: block;
     }
     #vod-player-title {
@@ -1093,6 +1084,16 @@ if (!isset($_SESSION['active_profile'])) {
     .vod-player-overlay.controls-hidden .vod-player-title-header {
       opacity: 0;
       pointer-events: none;
+    }
+    .vod-player-mouse-tracker {
+      position: absolute;
+      inset: 0;
+      z-index: 10000;
+      background: transparent;
+      pointer-events: none;
+    }
+    .vod-player-overlay.controls-hidden .vod-player-mouse-tracker {
+      pointer-events: auto;
     }
     .vod-player-wrapper {
       flex: 1;
@@ -1608,6 +1609,7 @@ if (!isset($_SESSION['active_profile'])) {
   <div class="vod-player-overlay" id="vod-player-overlay">
     <button class="vod-player-close" onclick="closePlayer()"><i class="ph ph-arrow-left"></i> <span class="close-text">Torna ai Dettagli</span></button>
     <button class="vod-player-fullscreen" id="vod-player-fullscreen-btn" onclick="togglePlayerFullscreen()"><i class="ph ph-corners-out"></i> <span class="fullscreen-text">Schermo Intero</span></button>
+    <div class="vod-player-mouse-tracker" id="vod-player-mouse-tracker"></div>
     <div class="vod-player-title-header" id="vod-player-title-header">
       <h2 id="vod-player-title"></h2>
       <div id="vod-player-subtitle"></div>
