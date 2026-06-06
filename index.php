@@ -164,7 +164,7 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>PZ8</title>
     <meta name="description" content="Dashboard StreamHub Premium">
-    <link rel="stylesheet" href="css/style.css?v=1.14">
+    <link rel="stylesheet" href="css/style.css?v=1.15">
     <script>
       (function() {
         const accent = localStorage.getItem('accent_color');
@@ -320,9 +320,14 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
       <div class="dash-info-card">
         <h1 class="dash-info-title" style="display:flex;align-items:center;justify-content:space-between;width:100%;gap:1rem;">
           <span id="player-ch-name">Caricamento...</span>
-          <button id="btn-toggle-favorite" class="btn-favorite-toggle" style="display:none;" title="Aggiungi ai preferiti">
-            <i class="ph ph-star"></i>
-          </button>
+          <div style="display:flex; align-items:center; gap: 4px;">
+            <button id="btn-pc-fullscreen" class="btn-favorite-toggle" title="Schermo intero">
+              <i class="ph ph-corners-out"></i>
+            </button>
+            <button id="btn-toggle-favorite" class="btn-favorite-toggle" style="display:none;" title="Aggiungi ai preferiti">
+              <i class="ph ph-star"></i>
+            </button>
+          </div>
         </h1>
         <div class="dash-info-meta" id="player-ch-meta"></div>
 
@@ -1120,7 +1125,8 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
 
     // ─── GESTIONE FULLSCREEN CUSTOM PER OVERLAY ───
     const playerAreaContainer = document.getElementById('dash-player-area');
-    const btnCustomFs = document.getElementById('btn-custom-fullscreen');
+    const btnCustomFs = document.getElementById('btn-custom-fullscreen'); // Tasto invisibile sul player
+    const btnInfoFs = document.getElementById('btn-pc-fullscreen'); // Tasto visibile nel riquadro
 
     function toggleCustomFullscreen() {
       if (!document.fullscreenElement) {
@@ -1141,20 +1147,21 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
     if (btnCustomFs) {
       btnCustomFs.addEventListener('click', toggleCustomFullscreen);
     }
+    if (btnInfoFs) {
+      btnInfoFs.addEventListener('click', toggleCustomFullscreen);
+    }
     
-    // Gestisci timeout per far scomparire l'overlay quando il mouse Ã¨ fermo a schermo intero
+    // Gestisci timeout per far scomparire l'overlay quando il mouse è fermo a schermo intero
     let pcFsTimeout;
     const pcOverlay = document.getElementById('pc-fullscreen-overlay');
     playerAreaContainer.addEventListener('mousemove', () => {
       if (document.fullscreenElement === playerAreaContainer) {
         pcOverlay.classList.remove('hidden');
         document.body.style.cursor = 'default';
-        btnCustomFs.style.opacity = '1';
         clearTimeout(pcFsTimeout);
         pcFsTimeout = setTimeout(() => {
           pcOverlay.classList.add('hidden');
           document.body.style.cursor = 'none';
-          btnCustomFs.style.opacity = '0';
         }, 4000);
       }
     });
@@ -1163,17 +1170,17 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
       if (document.fullscreenElement === playerAreaContainer) {
         // Appena entrati a schermo intero
         pcOverlay.classList.remove('hidden');
+        btnCustomFs.style.display = 'block'; // Mostra il tasto invisibile per poter uscire
         clearTimeout(pcFsTimeout);
         pcFsTimeout = setTimeout(() => {
           pcOverlay.classList.add('hidden');
           document.body.style.cursor = 'none';
-          btnCustomFs.style.opacity = '0';
         }, 4000);
       } else {
         // Usciti dallo schermo intero
         pcOverlay.classList.remove('hidden'); // Reset per via del CSS
+        btnCustomFs.style.display = 'none'; // Nascondi tasto invisibile
         document.body.style.cursor = 'default';
-        btnCustomFs.style.opacity = '';
         clearTimeout(pcFsTimeout);
       }
     });
