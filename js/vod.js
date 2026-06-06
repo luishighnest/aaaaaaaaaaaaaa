@@ -129,16 +129,6 @@ document.addEventListener('DOMContentLoaded', () => {
         playerOverlay.addEventListener('mousemove', showPlayerControls);
         playerOverlay.addEventListener('click', showPlayerControls);
     }
-
-    // Protezione anti-hijack (impedisce all'iframe di reindirizzare la scheda del nostro portale)
-    window.addEventListener('beforeunload', (e) => {
-        const overlay = document.getElementById('vod-player-overlay');
-        if (overlay && overlay.classList.contains('open')) {
-            e.preventDefault();
-            e.returnValue = 'Vuoi lasciare la pagina?';
-            return 'Vuoi lasciare la pagina?';
-        }
-    });
     
     const searchClear = document.getElementById('vod-search-clear');
     if (searchClear) {
@@ -664,6 +654,7 @@ async function closePlayer() {
         }
     }
 
+    const overlay = document.getElementById('vod-player-overlay');
     const frame = document.getElementById('vod-player-frame');
     frame.src = 'about:blank';
     overlay.classList.remove('open');
