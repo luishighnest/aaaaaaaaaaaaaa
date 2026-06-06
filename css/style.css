@@ -1070,7 +1070,7 @@ a {
 
 .custom-fullscreen-btn {
   position: absolute;
-  bottom: 0;
+  top: 0;
   right: 0;
   z-index: 20;
   background: transparent;
@@ -1083,20 +1083,6 @@ a {
 
 .custom-fullscreen-btn:hover {
   background: transparent;
-}
-
-.player-top-shield {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 25%;
-  z-index: 10;
-  cursor: default;
-}
-.dash-player-area:fullscreen .player-top-shield,
-.dash-player-area:-webkit-full-screen .player-top-shield {
-  height: 85%; /* Copre molto schermo per catturare il mousemove! */
 }
 
 .pc-fullscreen-overlay {
