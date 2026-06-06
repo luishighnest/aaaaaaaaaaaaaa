@@ -1,185 +1,368 @@
-<?php
-session_start();
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap');
 
-$config_file = __DIR__ . '/users_config.php';
-$config = file_exists($config_file) ? require $config_file : [];
-$subscription_expiry = $config['subscription_expiry'] ?? '2027-12-31';
-
-if (time() > strtotime($subscription_expiry . ' 23:59:59')) {
-    $secure_cookie = isset($_SERVER['HTTPS']) || (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https');
-    if (isset($_COOKIE['remember_user'])) {
-        setcookie('remember_user', '', time() - 3600, '/', '', $secure_cookie, true);
-    }
-    if (isset($_COOKIE['remember_token'])) {
-        setcookie('remember_token', '', time() - 3600, '/', '', $secure_cookie, true);
-    }
-    session_destroy();
-    header('Location: expired.php');
-    exit;
+:root {
+  --bg-base: #000000;
+  --bg-overlay: rgba(0, 0, 0, 0.5);
+  --bg-panel: rgba(15, 15, 20, 0.85);
+  --bg-card: rgba(30, 30, 40, 0.6);
+  --bg-card-hover: rgba(50, 50, 65, 0.9);
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.2);
+  --accent: #00f2fe;
+  --accent-glow: rgba(0, 242, 254, 0.5);
+  --text-primary: #ffffff;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --font-main: 'Outfit', sans-serif;
+  --font-alt: 'Inter', sans-serif;
+  --radius-sm: 12px;
+  --radius-md: 20px;
+  --radius-lg: 30px;
+  --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
-    header('Location: login.php');
-    exit;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-main);
+  -webkit-font-smoothing: antialiased;
 }
 
-if (!isset($_SESSION['active_profile'])) {
-    header('Location: select_profile.php');
-    exit;
+body {
+  background: var(--bg-base);
+  color: var(--text-primary);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  user-select: none;
 }
 
-$active_profile = $_SESSION['active_profile'];
-$username = $_SESSION['username'] ?? '';
-
-// Carica profili dell'utente
-$all_profiles = [];
-$custom_profiles_file = __DIR__ . '/user_profiles.json';
-if (file_exists($custom_profiles_file)) {
-    $custom_data = json_decode(file_get_contents($custom_profiles_file), true);
-    if (isset($custom_data[$username]) && is_array($custom_data[$username])) {
-        $all_profiles = $custom_data[$username];
-    }
+/* Nasconde il cursore quando si usa la tastiera/telecomando */
+body.hide-cursor,
+body.hide-cursor * {
+  cursor: none !important;
 }
-if (empty($all_profiles)) {
-    $all_profiles = $config['users'][$username]['profiles'] ?? [];
+
+/* Fullscreen Video Player */
+.tv-player-container {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 1;
 }
-$all_profiles_json = json_encode($all_profiles, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
 
-// Carica EPG
-$epg_file = __DIR__ . '/guida_tv_sky.json';
-$epg_data = [];
-if (file_exists($epg_file)) {
-    $json_raw = file_get_contents($epg_file);
-    $epg_data = json_decode($json_raw, true) ?? [];
+.tv-player-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
-$epg_json = json_encode($epg_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
-$last_update = file_exists($epg_file) ? date('H:i', filemtime($epg_file)) : '--:--';
 
-// Rileva se profilo bambini
-$pname_check = isset($active_profile['name']) ? strtolower($active_profile['name']) : '';
-$pid_check = isset($active_profile['id']) ? strtolower($active_profile['id']) : '';
-$is_kids_profile = (
-    strpos($pname_check, 'bambini') !== false || 
-    strpos($pname_check, 'kids') !== false || 
-    strpos($pid_check, 'bambini') !== false || 
-    strpos($pid_check, 'kids') !== false
-);
-
-// Genera token CSRF se mancante
-if (!isset($_SESSION['csrf_token'])) {
-    $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+/* UI Overlay Container */
+.tv-ui-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 1;
+  transition: opacity 0.6s ease-in-out;
+  pointer-events: auto;
+  /* Gradiente delicato sopra e sotto */
+  background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 20%, rgba(0,0,0,0) 60%, rgba(0,0,0,0.9) 100%);
 }
-?>
-<!DOCTYPE html>
-<html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>PZ8 Smart TV</title>
-  <meta name="description" content="Dashboard StreamHub Smart TV">
-  <link rel="stylesheet" href="css/style_tv.css?v=<?= time() ?>">
-  <script src="https://unpkg.com/@phosphor-icons/web"></script>
-  <script>
-    (function() {
-      const accent = localStorage.getItem('accent_color');
-      const glow = localStorage.getItem('accent_glow');
-      if (accent && glow) {
-        document.documentElement.style.setProperty('--accent', accent);
-        document.documentElement.style.setProperty('--accent-glow', glow);
-      }
-    })();
-  </script>
-</head>
-<body>
 
-  <script>
-    window.__EPG_DATA__    = <?= $epg_json ?>;
-    window.__EPG_UPDATED__ = "<?= $last_update ?>";
-    window.__ACTIVE_PROFILE_NAME__ = "<?= isset($active_profile['name']) ? addslashes($active_profile['name']) : '' ?>";
-    window.__ACTIVE_PROFILE_ID__   = "<?= isset($active_profile['id']) ? addslashes($active_profile['id']) : '' ?>";
-    window.__ACTIVE_PROFILE_FAVORITES__ = <?= json_encode($active_profile['favorites'] ?? []) ?>;
-    window.__ALL_PROFILES__        = <?= $all_profiles_json ?>;
-    window.__CSRF_TOKEN__          = "<?= $_SESSION['csrf_token'] ?>";
-    window.__IS_KIDS_PROFILE__     = <?= $is_kids_profile ? 'true' : 'false' ?>;
-  </script>
+.tv-ui-overlay.idle {
+  opacity: 0;
+  pointer-events: none;
+}
 
-  <!-- Player Background -->
-  <div class="tv-player-container">
-    <video id="tv-video" autoplay playsinline></video>
-    <iframe id="tv-iframe" style="display:none; width:100%; height:100%; border:none; background:#000;"></iframe>
-  </div>
+/* ─── TOP BAR ─── */
+.tv-top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2.5rem 4rem;
+}
 
-  <!-- TV Overlay UI -->
-  <div class="tv-ui-overlay" id="tv-ui">
-    
-    <!-- Top Bar (Informazioni Canale e Ricerca) -->
-    <header class="tv-top-bar">
-      <div class="tv-top-left">
-        <div class="tv-brand"><i class="ph ph-television"></i> <span>8</span> PZ</div>
-        <div class="tv-current-info">
-          <div class="tv-current-channel" id="tv-channel-name">PZ8 TV</div>
-          <div class="tv-current-epg" id="tv-channel-epg">Scegli un canale per iniziare</div>
-        </div>
-      </div>
-      <div class="tv-top-right">
-        <div class="tv-search-bar">
-          <i class="ph ph-magnifying-glass"></i>
-          <input type="text" id="tv-search" placeholder="Cerca canale...">
-        </div>
-        <div class="tv-clock" id="tv-clock">00:00</div>
-      </div>
-    </header>
+.tv-top-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
 
-    <!-- Bottom Panel (Categorie e Canali) -->
-    <div class="tv-bottom-panel">
-      <!-- Riga Categorie (Scorrimento Orizzontale) -->
-      <div class="tv-categories-row" id="tv-categories">
-        <!-- Generato dinamicamente -->
-      </div>
-      
-      <!-- Riga Canali (Scorrimento Orizzontale) -->
-      <div class="tv-channels-row" id="tv-channels-row">
-        <!-- Generato dinamicamente -->
-      </div>
-    </div>
-    
-  </div>
+.tv-brand {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
 
-  <!-- Librerie -->
-  <script src="js/channels.js?v=<?= time() ?>"></script>
-  <script>
-    if (typeof CHANNELS !== 'undefined') {
-        const _activeProf = <?= json_encode($active_profile) ?>;
-        let allowedCats = _activeProf.allowed_categories || [];
-        let allowedChs = _activeProf.allowed_channels || [];
+.tv-brand span {
+  color: var(--accent);
+  text-shadow: 0 0 20px var(--accent-glow);
+  font-style: italic;
+}
 
-        if (allowedCats.length === 0 && allowedChs.length === 0) {
-            if (window.__IS_KIDS_PROFILE__) {
-                allowedCats = ['kids'];
-            } else {
-                allowedCats = ['*'];
-            }
-        }
+.tv-current-info {
+  display: flex;
+  flex-direction: column;
+}
 
-        if (allowedCats.includes('bambini')) {
-            allowedCats = allowedCats.map(c => c === 'bambini' ? 'kids' : c);
-        }
+.tv-current-channel {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  text-shadow: 0 4px 20px rgba(0,0,0,0.8);
+  line-height: 1.1;
+}
 
-        if (!allowedCats.includes('*')) {
-            CHANNELS = CHANNELS.filter(c => allowedCats.includes(c.cat) || allowedChs.includes(c.id));
+.tv-current-epg {
+  font-size: 1.4rem;
+  color: #00e676;
+  font-weight: 600;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.8);
+  margin-top: 0.5rem;
+}
 
-            for (let k in CATEGORIES) {
-                if (k === 'all') continue;
-                if (!CHANNELS.some(c => c.cat === k)) {
-                    delete CATEGORIES[k];
-                }
-            }
-        }
-    }
-  </script>
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.6/shaka-player.compiled.js"></script>
-  <script src="js/tv.js?v=<?= time() ?>"></script>
+.tv-top-right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
 
-</body>
-</html>
+.tv-search-bar {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 1.5rem;
+  backdrop-filter: blur(10px);
+}
+
+.tv-search-bar i {
+  font-size: 1.5rem;
+  color: var(--text-muted);
+  margin-right: 1rem;
+}
+
+.tv-search-bar input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--text-primary);
+  font-size: 1.2rem;
+  width: 250px;
+}
+
+.tv-search-bar input:focus {
+  border-bottom: 2px solid var(--accent);
+}
+
+.tv-clock {
+  font-family: var(--font-alt);
+  font-size: 2rem;
+  font-weight: 700;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--border-strong);
+  padding: 0.8rem 1.5rem;
+  border-radius: var(--radius-md);
+  backdrop-filter: blur(10px);
+}
+
+/* ─── BOTTOM PANEL ─── */
+.tv-bottom-panel {
+  padding: 0 0 3rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Riga Categorie */
+.tv-categories-row {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  padding-right: 4rem;
+  /* Nascondi scrollbar */
+  scrollbar-width: none; 
+}
+.tv-categories-row::-webkit-scrollbar { display: none; }
+
+.tv-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: var(--radius-lg);
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  border: 1px solid var(--border-subtle);
+  white-space: nowrap;
+}
+
+.tv-nav-item i {
+  font-size: 1.5rem;
+}
+
+.tv-nav-item:hover,
+.tv-nav-item:focus {
+  background: rgba(255,255,255,0.15);
+  color: var(--text-primary);
+  transform: translateY(-2px);
+  outline: none;
+}
+
+.tv-nav-item:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 15px var(--accent-glow);
+}
+
+.tv-nav-item.active {
+  background: var(--accent);
+  color: #000;
+  border-color: var(--accent);
+  box-shadow: 0 0 20px var(--accent-glow);
+}
+.tv-nav-item.active i {
+  color: #000;
+}
+
+/* Riga Canali */
+.tv-channels-row {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding-bottom: 2rem;
+  padding-right: 4rem;
+  /* Scrollbar orizzontale visibile e stilizzata */
+}
+.tv-channels-row::-webkit-scrollbar {
+  height: 8px;
+}
+.tv-channels-row::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 4px;
+}
+
+/* Card Canale Orizzontale */
+.tv-channel-card {
+  background: var(--bg-card);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 2px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  cursor: pointer;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+  /* Dimensioni fisse per le card orizzontali */
+  min-width: 380px;
+  max-width: 380px;
+  flex-shrink: 0;
+}
+
+.tv-channel-card:hover,
+.tv-channel-card:focus {
+  background: var(--bg-card-hover);
+  border-color: var(--text-primary);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.6);
+  z-index: 2;
+  outline: none;
+}
+
+.tv-channel-card:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 25px var(--accent-glow);
+  background: rgba(0, 242, 254, 0.05);
+}
+
+.tv-channel-card.active {
+  border-color: var(--accent);
+  box-shadow: 0 0 20px var(--accent-glow);
+  background: rgba(0, 242, 254, 0.1);
+}
+
+.tv-card-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: var(--text-secondary);
+  flex-shrink: 0;
+}
+
+.tv-channel-card.active .tv-card-icon {
+  background: var(--accent);
+  color: #000;
+}
+
+.tv-card-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+.tv-card-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tv-card-epg {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 6px;
+}
+
+.tv-channel-card.active .tv-card-epg {
+  color: #00e676;
+}
+
+/* Barra progresso canale */
+.tv-progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  background: rgba(255,255,255,0.1);
+  width: 100%;
+}
+
+.tv-progress-fill {
+  height: 100%;
+  background: var(--accent);
+  width: 0%;
+  transition: width 0.3s;
+}
+
+
