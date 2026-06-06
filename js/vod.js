@@ -618,6 +618,17 @@ function getAccentHex() {
 }
 
 async function closePlayer() {
+    // Esci dallo schermo intero se attivo
+    if (document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement) {
+        if (document.exitFullscreen) {
+            document.exitFullscreen().catch(err => console.log("Errore exit fullscreen:", err));
+        } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+        } else if (document.mozCancelFullScreen) {
+            document.mozCancelFullScreen();
+        }
+    }
+
     const overlay = document.getElementById('vod-player-overlay');
     const frame = document.getElementById('vod-player-frame');
     frame.src = 'about:blank';
@@ -706,6 +717,14 @@ function playMovie(tmdbId, resume = false) {
     overlay.style.display = 'flex';
     setTimeout(() => {
         overlay.classList.add('open');
+        // Forza lo schermo intero all'avvio
+        if (overlay.requestFullscreen) {
+            overlay.requestFullscreen().catch(err => console.log("Errore fullscreen:", err));
+        } else if (overlay.webkitRequestFullscreen) {
+            overlay.webkitRequestFullscreen();
+        } else if (overlay.mozRequestFullScreen) {
+            overlay.mozRequestFullScreen();
+        }
     }, 50);
 }
 
@@ -743,6 +762,14 @@ function playShowEpisode(tmdbId, season, episode, resume = false) {
     overlay.style.display = 'flex';
     setTimeout(() => {
         overlay.classList.add('open');
+        // Forza lo schermo intero all'avvio
+        if (overlay.requestFullscreen) {
+            overlay.requestFullscreen().catch(err => console.log("Errore fullscreen:", err));
+        } else if (overlay.webkitRequestFullscreen) {
+            overlay.webkitRequestFullscreen();
+        } else if (overlay.mozRequestFullScreen) {
+            overlay.mozRequestFullScreen();
+        }
     }, 50);
 }
 
@@ -824,9 +851,9 @@ async function loadTvEpisodes(tvId, seasonNumber) {
             }
             
             let readMoreHtml = '';
-            if (ep.overview && ep.overview.length > 120) {
+            if (ep.overview && ep.overview.length > 220) {
                 readMoreHtml = `
-                    <div class="vod-episode-readmore" style="font-size: 0.75rem; color: var(--accent); font-weight: 700; cursor: pointer; margin-top: 4px; display: inline-block; width: fit-content; text-transform: uppercase; letter-spacing: 0.5px;">Leggi tutto</div>
+                    <button class="vod-episode-readmore" title="Espandi descrizione" style="background: none; border: none; color: var(--text-muted); cursor: pointer; padding: 2px; font-size: 1rem; display: inline-flex; align-items: center; justify-content: center; margin-top: 2px; outline: none;"><i class="ph ph-caret-down"></i></button>
                 `;
             }
             
@@ -844,18 +871,21 @@ async function loadTvEpisodes(tvId, seasonNumber) {
                 playShowEpisode(tvId, seasonNumber, ep.episode_number, isLastPlayed);
             };
             
-            if (ep.overview && ep.overview.length > 120) {
+            if (ep.overview && ep.overview.length > 220) {
                 const readMoreBtn = row.querySelector('.vod-episode-readmore');
                 const overviewDiv = row.querySelector(`#ep-overview-${ep.episode_number}`);
                 if (readMoreBtn && overviewDiv) {
                     readMoreBtn.addEventListener('click', (e) => {
                         e.stopPropagation(); // Evita l'avvio del player
+                        const icon = readMoreBtn.querySelector('i');
                         if (overviewDiv.classList.contains('expanded')) {
                             overviewDiv.classList.remove('expanded');
-                            readMoreBtn.textContent = 'Leggi tutto';
+                            icon.className = 'ph ph-caret-down';
+                            readMoreBtn.title = 'Espandi descrizione';
                         } else {
                             overviewDiv.classList.add('expanded');
-                            readMoreBtn.textContent = 'Leggi meno';
+                            icon.className = 'ph ph-caret-up';
+                            readMoreBtn.title = 'Riduci descrizione';
                         }
                     });
                 }
