@@ -164,7 +164,7 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>PZ8</title>
     <meta name="description" content="Dashboard StreamHub Premium">
-    <link rel="stylesheet" href="css/style.css?v=1.13">
+    <link rel="stylesheet" href="css/style.css?v=1.14">
     <script>
       (function() {
         const accent = localStorage.getItem('accent_color');
@@ -304,12 +304,7 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
     <!-- Player Area -->
     <div class="dash-player-area" id="dash-player-area">
       <!-- Tasto Fullscreen Custom (visibile al passaggio del mouse) -->
-      <button id="btn-custom-fullscreen" class="custom-fullscreen-btn" title="Schermo intero (doppio clic qui)">
-        <i class="ph ph-corners-out"></i>
-      </button>
-
-      <!-- Scudo trasparente per catturare il mousemove senza bloccare i controlli video in basso -->
-      <div id="player-top-shield" class="player-top-shield"></div>
+      <button id="btn-custom-fullscreen" class="custom-fullscreen-btn" title="Schermo intero"></button>
 
       <!-- OVERLAY IN STILE TV PREMIUM (visibile solo a schermo intero) -->
       <div id="pc-fullscreen-overlay" class="pc-fullscreen-overlay">
@@ -1125,7 +1120,6 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
 
     // ─── GESTIONE FULLSCREEN CUSTOM PER OVERLAY ───
     const playerAreaContainer = document.getElementById('dash-player-area');
-    const topShield = document.getElementById('player-top-shield');
     const btnCustomFs = document.getElementById('btn-custom-fullscreen');
 
     function toggleCustomFullscreen() {
