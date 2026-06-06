@@ -2941,3 +2941,18 @@ body.tv-mode-active .pc-only-flex-btn { display: none !important; }
   transform: translateX(4px);
 }
 
+.vod-episode-overview.expanded {
+  display: block !important;
+  overflow: visible !important;
+  -webkit-line-clamp: none !important;
+}
+
+.vod-episode-readmore {
+  transition: var(--transition);
+}
+
+.vod-episode-readmore:hover {
+  color: #fff !important;
+  text-shadow: 0 0 8px var(--accent-glow);
+}
+
