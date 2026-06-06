@@ -262,9 +262,9 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
 
     <!-- Sidebar -->
     <aside class="dash-sidebar">
-      <div class="dash-brand">
-        <div class="dash-brand-icon"><i class="ph ph-play-circle"></i></div>
-        <div class="dash-brand-text">PZ<span>8</span></div>
+      <div class="dash-brand" onclick="window.location.reload()">
+        <div class="dash-brand-icon"><i class="ph-fill ph-play"></i></div>
+        <div class="dash-brand-text">PZ<span>8</span><span class="dash-brand-badge">LIVE</span></div>
       </div>
       <div class="dash-clock" id="dash-clock">--:--:--</div>
       <div class="dash-clock-date" id="dash-clock-date"></div>
