@@ -1024,6 +1024,20 @@ if (!isset($_SESSION['active_profile'])) {
       transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1);
       width: 80%;
       max-width: 600px;
+      display: none; /* Nascosto fuori dal fullscreen */
+    }
+    /* Mostra il titolo solo quando l'overlay è in modalità fullscreen */
+    .vod-player-overlay:fullscreen .vod-player-title-header {
+      display: block;
+    }
+    .vod-player-overlay:-webkit-full-screen .vod-player-title-header {
+      display: block;
+    }
+    .vod-player-overlay:-moz-full-screen .vod-player-title-header {
+      display: block;
+    }
+    .vod-player-overlay:-ms-fullscreen .vod-player-title-header {
+      display: block;
     }
     #vod-player-title {
       font-size: 1.9rem;
@@ -1039,7 +1053,43 @@ if (!isset($_SESSION['active_profile'])) {
       color: var(--text-secondary);
       margin-top: 4px;
     }
+    .vod-player-fullscreen {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #fff;
+      padding: 0.6rem 1.4rem;
+      border-radius: 99px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      z-index: 10001;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: var(--transition) !important;
+      backdrop-filter: blur(10px);
+    }
+    .vod-player-fullscreen:hover {
+      background: var(--accent);
+      border-color: var(--accent);
+      box-shadow: 0 4px 20px var(--accent-glow);
+      transform: translateY(-2px);
+    }
+    .vod-player-fullscreen:active {
+      transform: translateY(0);
+    }
+    .vod-player-close,
+    .vod-player-fullscreen {
+      opacity: 1;
+      transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    }
     .vod-player-overlay.controls-hidden .vod-player-close,
+    .vod-player-overlay.controls-hidden .vod-player-fullscreen,
     .vod-player-overlay.controls-hidden .vod-player-title-header {
       opacity: 0;
       pointer-events: none;
@@ -1296,6 +1346,19 @@ if (!isset($_SESSION['active_profile'])) {
       .vod-player-close .close-text {
         display: none;
       }
+      .vod-player-fullscreen {
+        top: 15px;
+        right: 15px;
+        padding: 0 !important;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        justify-content: center;
+        gap: 0;
+      }
+      .vod-player-fullscreen .fullscreen-text {
+        display: none;
+      }
       .vod-player-title-header {
         top: 15px;
         width: 65%;
@@ -1544,6 +1607,7 @@ if (!isset($_SESSION['active_profile'])) {
   <!-- PLAYER OVERLAY -->
   <div class="vod-player-overlay" id="vod-player-overlay">
     <button class="vod-player-close" onclick="closePlayer()"><i class="ph ph-arrow-left"></i> <span class="close-text">Torna ai Dettagli</span></button>
+    <button class="vod-player-fullscreen" id="vod-player-fullscreen-btn" onclick="togglePlayerFullscreen()"><i class="ph ph-corners-out"></i> <span class="fullscreen-text">Schermo Intero</span></button>
     <div class="vod-player-title-header" id="vod-player-title-header">
       <h2 id="vod-player-title"></h2>
       <div id="vod-player-subtitle"></div>
