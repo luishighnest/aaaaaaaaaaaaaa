@@ -206,6 +206,7 @@ function renderCategories() {
     // Aggiungi "Tutti"
     const allItem = document.createElement('div');
     allItem.className = `tv-nav-item tv-focusable ${currentCategory === 'all' ? 'active' : ''}`;
+    allItem.tabIndex = 0;
     allItem.innerHTML = `<i class="ph ph-squares-four"></i> Tutti`;
     allItem.onclick = () => selectCategory('all');
     container.appendChild(allItem);
@@ -214,6 +215,7 @@ function renderCategories() {
     if (favorites.length > 0) {
         const favItem = document.createElement('div');
         favItem.className = `tv-nav-item tv-focusable ${currentCategory === 'favorites' ? 'active' : ''}`;
+        favItem.tabIndex = 0;
         favItem.innerHTML = `<i class="ph-fill ph-star" style="color:#ffc107"></i> Preferiti`;
         favItem.onclick = () => selectCategory('favorites');
         container.appendChild(favItem);
@@ -224,6 +226,7 @@ function renderCategories() {
         const cat = CATEGORIES[key];
         const item = document.createElement('div');
         item.className = `tv-nav-item tv-focusable ${currentCategory === key ? 'active' : ''}`;
+        item.tabIndex = 0;
         item.innerHTML = `<i class="ph ${cat.icon}"></i> ${cat.label}`;
         item.onclick = () => selectCategory(key);
         container.appendChild(item);
@@ -260,6 +263,7 @@ function renderChannels(searchQuery = '') {
         const card = document.createElement('div');
         card.className = `tv-channel-card tv-focusable ${isActive ? 'active' : ''}`;
         card.dataset.id = ch.id;
+        card.tabIndex = 0;
         
         const epgInfo = getChannelEpg(ch.name);
         let epgText = epgInfo.now ? epgInfo.now.titolo : 'Diretta continua';
@@ -430,7 +434,15 @@ function setFocus(el) {
     currentFocusedElement = el;
     currentFocusedElement.classList.add('tv-focus');
     currentFocusedElement.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+    el.focus(); // Forza il focus nativo del browser
 }
+
+// Intercetta il focus nativo della TV
+document.addEventListener('focusin', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('tv-focusable')) {
+        setFocus(e.target);
+    }
+});
 
 function findNearestFocusable(dirKey) {
     if (!currentFocusedElement) {
@@ -524,7 +536,7 @@ document.addEventListener('keydown', (e) => {
             if (isLeft || isRight) return;
         }
         
-        e.preventDefault();
+        // Tenta prima il fallback custom
         let dir = '';
         if (isUp) dir = 'UP';
         if (isDown) dir = 'DOWN';
@@ -533,11 +545,14 @@ document.addEventListener('keydown', (e) => {
         
         const nextEl = findNearestFocusable(dir);
         if (nextEl) {
+            e.preventDefault(); // Blocca scroll default
             setFocus(nextEl);
         } else if (!currentFocusedElement) {
-            // Focus di default se nullo
+            e.preventDefault();
             setFocus(document.querySelector('.tv-channel-card.active') || document.querySelector('.tv-channel-card'));
         }
+        // Se nextEl non si trova (limite dello schermo), NON facciamo preventDefault, 
+        // così la TV può magari scorrere o usare la sua navigazione nativa.
     }
     
     // AZIONE ENTER
