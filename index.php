@@ -164,7 +164,7 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>PZ8</title>
     <meta name="description" content="Dashboard StreamHub Premium">
-    <link rel="stylesheet" href="css/style.css?v=1.8">
+    <link rel="stylesheet" href="css/style.css?v=1.9">
     <script>
       (function() {
         const accent = localStorage.getItem('accent_color');
