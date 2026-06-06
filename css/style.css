@@ -1113,14 +1113,12 @@ a {
   left: 40px;
   z-index: 30;
   display: none; /* Nasconde istantaneamente fuori dal fullscreen */
-  align-items: flex-start;
-  gap: 16px;
   pointer-events: none;
 }
 /* Mostra l'overlay SOLO se il contenitore è in fullscreen */
 .dash-player-area:fullscreen .pc-fullscreen-overlay,
 .dash-player-area:-webkit-full-screen .pc-fullscreen-overlay {
-  display: flex;
+  display: block;
   opacity: 1;
 }
 
@@ -1128,41 +1126,71 @@ a {
 .dash-player-area:fullscreen .pc-fullscreen-overlay.hidden,
 .dash-player-area:-webkit-full-screen .pc-fullscreen-overlay.hidden {
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.4s ease-out;
+}
+
+.pc-glass-pill {
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 12px 28px 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  transform-origin: top left;
+  animation: pillSlideIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes pillSlideIn {
+  0% { opacity: 0; transform: scale(0.95) translateY(-10px); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
 }
 
 .pc-overlay-icon {
-  font-size: 2.8rem;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), #4facfe);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
   color: #fff;
-  line-height: 1;
-  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.8));
-  margin-top: 2px;
+  box-shadow: 0 4px 15px rgba(0, 242, 254, 0.4);
 }
 
 .pc-overlay-info {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 2px;
 }
 
 .pc-overlay-name {
   font-family: var(--font-alt), sans-serif;
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   font-weight: 800;
   letter-spacing: -0.5px;
   color: #ffffff;
   line-height: 1;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
 }
 
 .pc-overlay-epg {
-  font-family: var(--font-alt), sans-serif;
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: #00e676;
-  letter-spacing: 0;
+  font-family: var(--font-main), sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #cbd5e1;
   line-height: 1;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
+  margin-top: 2px;
+}
+.pc-overlay-epg .epg-label {
+  color: var(--accent);
+  font-weight: 700;
+  margin-right: 4px;
+}
+.pc-overlay-epg .epg-title {
+  color: #f8fafc;
 }
 
 
