@@ -111,17 +111,17 @@ function playChannel(ch) {
 
     const streamUrl = getStreamUrl(ch);
 
-    if (ch.link.includes('.mpd') && !ch.link.includes('{{EXT_PLAYER}}')) {
+    if (streamUrl && streamUrl.includes('.mpd')) {
         // Usa Shaka Player per i flussi MPD nativi
         videoElement.style.display = 'block';
         iframeElement.style.display = 'none';
         iframeElement.src = '';
 
         let clearkeys = null;
-        if (ch.key) {
+        if (streamUrl && streamUrl.includes('ck=')) {
             try {
                 let ckVal = "";
-                const match = ch.key.match(/ck=([^;]+)/);
+                const match = streamUrl.match(/[?&]ck=([^&]+)/);
                 if (match) {
                     ckVal = decodeURIComponent(match[1]);
                 }
@@ -169,12 +169,19 @@ function playChannel(ch) {
         } catch (err) {
             console.error("Errore di inizializzazione shakaPlayer:", err);
         }
+    } else if (streamUrl && streamUrl.includes('.m3u8')) {
+        // Usa il player nativo per flussi HLS/M3U8 (le TV li supportano nativamente)
+        if (player) player.unload();
+        videoElement.style.display = 'block';
+        iframeElement.style.display = 'none';
+        iframeElement.src = '';
+
+        videoElement.src = streamUrl;
+        videoElement.play().catch(e => console.error("Errore playback M3U8:", e));
     } else {
-        // Usa iframe per flussi esterni o non DASH
+        // Usa iframe per link a pagine web esterne
         videoElement.style.display = 'none';
-        if (player) {
-            player.unload();
-        }
+        if (player) player.unload();
         videoElement.src = '';
         
         iframeElement.style.display = 'block';
@@ -183,10 +190,11 @@ function playChannel(ch) {
 }
 
 function getStreamUrl(ch) {
-    if (ch.link.includes('{{EXT_PLAYER}}')) {
-        return ch.link.replace('{{EXT_PLAYER}}', '').trim();
+    let url = ch.code || '';
+    if (url.includes('{{EXT_PLAYER}}')) {
+        return url.replace('{{EXT_PLAYER}}', '').trim();
     }
-    return ch.link;
+    return url;
 }
 
 
