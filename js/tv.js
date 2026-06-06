@@ -147,9 +147,8 @@ function playChannel(ch) {
             if (!player) {
                 shaka.polyfill.installAll();
                 if (!shaka.Player.isBrowserSupported()) {
-                    console.warn("Browser non supportato per DASH nativo, uso fallback HTML5.");
-                    videoElement.src = streamUrl;
-                    videoElement.play().catch(e => console.error(e));
+                    console.error("Browser non supportato per DASH nativo.");
+                    document.getElementById('tv-channel-epg').textContent = 'Browser TV non supportato per questo flusso.';
                     return;
                 }
                 player = new shaka.Player(videoElement);
@@ -166,17 +165,12 @@ function playChannel(ch) {
                 console.log('Stream caricato con Shaka:', ch.name);
                 videoElement.play();
             }).catch(e => {
-                console.warn("Shaka load fallito, tento player nativo HTML5...", e);
-                // Fallback vitale per le Smart TV: se Shaka non digerisce l'M3U8, il tag <video> nativo spesso ci riesce
-                player.unload().then(() => {
-                    videoElement.src = streamUrl;
-                    videoElement.play().catch(err => console.error("Errore playback nativo:", err));
-                });
+                console.warn("Shaka load fallito:", e);
+                document.getElementById('tv-channel-epg').textContent = 'Errore di caricamento: formato non supportato o CORS.';
             });
         } catch (err) {
             console.error("Errore di inizializzazione shakaPlayer:", err);
-            videoElement.src = streamUrl;
-            videoElement.play().catch(e => console.error(e));
+            document.getElementById('tv-channel-epg').textContent = 'Errore inizializzazione player.';
         }
     } else {
         console.error("Nessun link valido per il canale.");
