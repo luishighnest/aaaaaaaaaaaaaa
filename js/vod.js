@@ -123,6 +123,13 @@ document.addEventListener('DOMContentLoaded', () => {
     loadNetflixRows();
     renderContinueWatching();
     
+    const overlay = document.getElementById('vod-player-overlay');
+    if (overlay) {
+        overlay.addEventListener('mousemove', showPlayerControls);
+        overlay.addEventListener('click', showPlayerControls);
+        overlay.addEventListener('touchstart', showPlayerControls);
+    }
+    
     const searchClear = document.getElementById('vod-search-clear');
     if (searchClear) {
         searchClear.addEventListener('click', () => {
@@ -617,18 +624,22 @@ function getAccentHex() {
     return accent.replace('#', '');
 }
 
-async function closePlayer() {
-    // Esci dallo schermo intero se attivo
-    if (document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement) {
-        if (document.exitFullscreen) {
-            document.exitFullscreen().catch(err => console.log("Errore exit fullscreen:", err));
-        } else if (document.webkitExitFullscreen) {
-            document.webkitExitFullscreen();
-        } else if (document.mozCancelFullScreen) {
-            document.mozCancelFullScreen();
+let playerControlsTimeout;
+function showPlayerControls() {
+    const overlay = document.getElementById('vod-player-overlay');
+    if (!overlay) return;
+    
+    overlay.classList.remove('controls-hidden');
+    clearTimeout(playerControlsTimeout);
+    
+    playerControlsTimeout = setTimeout(() => {
+        if (overlay.classList.contains('open')) {
+            overlay.classList.add('controls-hidden');
         }
-    }
+    }, 3000);
+}
 
+async function closePlayer() {
     const overlay = document.getElementById('vod-player-overlay');
     const frame = document.getElementById('vod-player-frame');
     frame.src = 'about:blank';
@@ -700,6 +711,12 @@ function playMovie(tmdbId, resume = false) {
         startTime: Date.now()
     };
     
+    // Mostra titolo in alto al centro dell'overlay
+    const titleEl = document.getElementById('vod-player-title');
+    const subtitleEl = document.getElementById('vod-player-subtitle');
+    if (titleEl) titleEl.textContent = title;
+    if (subtitleEl) subtitleEl.textContent = '';
+    
     const overlay = document.getElementById('vod-player-overlay');
     const frame = document.getElementById('vod-player-frame');
     const accent = getAccentHex();
@@ -717,14 +734,7 @@ function playMovie(tmdbId, resume = false) {
     overlay.style.display = 'flex';
     setTimeout(() => {
         overlay.classList.add('open');
-        // Forza lo schermo intero all'avvio
-        if (overlay.requestFullscreen) {
-            overlay.requestFullscreen().catch(err => console.log("Errore fullscreen:", err));
-        } else if (overlay.webkitRequestFullscreen) {
-            overlay.webkitRequestFullscreen();
-        } else if (overlay.mozRequestFullScreen) {
-            overlay.mozRequestFullScreen();
-        }
+        showPlayerControls();
     }, 50);
 }
 
@@ -745,6 +755,25 @@ function playShowEpisode(tmdbId, season, episode, resume = false) {
         startTime: Date.now()
     };
     
+    // Mostra titolo e info provvisorie
+    const titleEl = document.getElementById('vod-player-title');
+    const subtitleEl = document.getElementById('vod-player-subtitle');
+    if (titleEl) titleEl.textContent = title;
+    if (subtitleEl) subtitleEl.textContent = `S${season}:E${episode}`;
+    
+    // Recupera asincronamente il nome dell'episodio da TMDB
+    fetch(`${BASE_URL}/tv/${tmdbId}/season/${season}?api_key=${API_KEY}&language=it-IT`)
+        .then(r => r.json())
+        .then(data => {
+            if (data.episodes) {
+                const ep = data.episodes.find(e => parseInt(e.episode_number, 10) === parseInt(episode, 10));
+                if (ep && ep.name && subtitleEl) {
+                    subtitleEl.textContent = `S${season}:E${episode} -> ${ep.name}`;
+                }
+            }
+        })
+        .catch(err => console.log("Errore recupero dettagli episodio:", err));
+        
     const overlay = document.getElementById('vod-player-overlay');
     const frame = document.getElementById('vod-player-frame');
     const accent = getAccentHex();
@@ -762,14 +791,7 @@ function playShowEpisode(tmdbId, season, episode, resume = false) {
     overlay.style.display = 'flex';
     setTimeout(() => {
         overlay.classList.add('open');
-        // Forza lo schermo intero all'avvio
-        if (overlay.requestFullscreen) {
-            overlay.requestFullscreen().catch(err => console.log("Errore fullscreen:", err));
-        } else if (overlay.webkitRequestFullscreen) {
-            overlay.webkitRequestFullscreen();
-        } else if (overlay.mozRequestFullScreen) {
-            overlay.mozRequestFullScreen();
-        }
+        showPlayerControls();
     }, 50);
 }
 
