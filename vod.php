@@ -1491,7 +1491,7 @@ if (!isset($_SESSION['active_profile'])) {
   <div class="vod-player-overlay" id="vod-player-overlay">
     <button class="vod-player-close" onclick="closePlayer()"><i class="ph ph-arrow-left"></i> Torna ai Dettagli</button>
     <div class="vod-player-wrapper">
-      <iframe id="vod-player-frame" src="about:blank" allow="autoplay; fullscreen" allowfullscreen sandbox="allow-scripts allow-same-origin allow-presentation"></iframe>
+      <iframe id="vod-player-frame" src="about:blank" allow="autoplay; fullscreen" allowfullscreen></iframe>
     </div>
   </div>
 
