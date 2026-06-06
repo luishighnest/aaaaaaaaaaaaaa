@@ -54,6 +54,18 @@ if (!isset($_SESSION['active_profile'])) {
       }, 50);
     });
   </script>
+  <!-- Iniezione CSRF e Preferiti VOD da PHP -->
+  <?php
+  if (!isset($_SESSION['csrf_token'])) {
+      $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+  }
+  $active_profile = $_SESSION['active_profile'] ?? [];
+  $vod_favs = $active_profile['vod_favorites'] ?? [];
+  ?>
+  <script>
+    window.__CSRF_TOKEN__ = "<?= $_SESSION['csrf_token'] ?>";
+    window.__ACTIVE_PROFILE_VOD_FAVORITES__ = <?= json_encode($vod_favs) ?>;
+  </script>
   <style>
     body {
       margin: 0;
@@ -83,16 +95,17 @@ if (!isset($_SESSION['active_profile'])) {
       align-items: center;
       justify-content: space-between;
       padding: 0 40px;
-      background: transparent;
+      background: linear-gradient(to bottom, rgba(2, 6, 23, 0.9) 0%, rgba(2, 6, 23, 0) 100%);
       border-bottom: 1px solid transparent;
       z-index: 100;
-      transition: all 0.3s ease;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     }
     .vod-navbar.scrolled {
       background: rgba(10, 10, 15, 0.85);
       backdrop-filter: blur(24px) saturate(1.4);
       -webkit-backdrop-filter: blur(24px) saturate(1.4);
       border-bottom: 1px solid var(--border-subtle);
+      box-shadow: 0 4px 30px rgba(0,0,0,0.5);
     }
     
     .vod-brand {
@@ -179,7 +192,10 @@ if (!isset($_SESSION['active_profile'])) {
       width: 240px;
       flex-shrink: 0;
       margin-right: 15px;
-      transition: var(--transition);
+      transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .vod-navbar .nav-search:focus-within {
+      width: 320px;
     }
     .vod-navbar .nav-search input {
       width: 100%;
@@ -189,16 +205,16 @@ if (!isset($_SESSION['active_profile'])) {
       padding: 0.5rem 2.6rem 0.5rem 2.6rem; /* Padding a destra per fare spazio alla X */
       color: var(--text-primary);
       font-size: 0.85rem;
-      transition: var(--transition);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
       backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
       font-family: var(--font-main);
     }
     .vod-navbar .nav-search input:focus {
       outline: none;
-      background: rgba(0, 0, 0, 0.35);
+      background: rgba(0, 0, 0, 0.45);
       border-color: var(--accent);
-      box-shadow: 0 0 0 3px var(--accent-glow);
-      width: 300px;
+      box-shadow: 0 0 0 3px var(--accent-glow), inset 0 2px 4px rgba(0,0,0,0.5);
     }
     .vod-navbar .nav-search .search-icon {
       position: absolute;
@@ -246,6 +262,7 @@ if (!isset($_SESSION['active_profile'])) {
       cursor: pointer;
       transition: var(--transition);
       backdrop-filter: blur(10px);
+      flex-shrink: 0;
     }
     .vod-back-btn:hover {
       background: #ef4444;
@@ -452,19 +469,10 @@ if (!isset($_SESSION['active_profile'])) {
       overflow-x: auto;
       padding: 10px 40px 20px 0;
       scroll-behavior: smooth;
+      scrollbar-width: none; /* Firefox */
     }
     .vod-row::-webkit-scrollbar {
-      height: 6px;
-    }
-    .vod-row::-webkit-scrollbar-track {
-      background: rgba(255, 255, 255, 0.01);
-    }
-    .vod-row::-webkit-scrollbar-thumb {
-      background: rgba(255, 255, 255, 0.08);
-      border-radius: 10px;
-    }
-    .vod-row::-webkit-scrollbar-thumb:hover {
-      background: var(--accent);
+      display: none; /* Chrome, Safari, Edge */
     }
 
     /* Poster Card */
@@ -473,7 +481,7 @@ if (!isset($_SESSION['active_profile'])) {
       border-radius: 10px;
       overflow: hidden;
       cursor: pointer;
-      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      transition: all 0.15s cubic-bezier(0.16, 1, 0.3, 1);
       background: var(--bg-surface);
       flex-shrink: 0;
       border: 1px solid rgba(255,255,255,0.03);
@@ -493,7 +501,7 @@ if (!isset($_SESSION['active_profile'])) {
       height: 100%;
       object-fit: cover;
       display: block;
-      transition: transform 0.5s ease;
+      transition: transform 0.2s ease;
     }
     .vod-card:hover img {
       transform: scale(1.03);
@@ -527,7 +535,7 @@ if (!isset($_SESSION['active_profile'])) {
       flex-direction: column;
       justify-content: flex-end;
       opacity: 0;
-      transition: opacity 0.3s ease;
+      transition: opacity 0.15s ease;
       z-index: 2;
     }
     .vod-card:hover .vod-card-overlay {
@@ -756,6 +764,147 @@ if (!isset($_SESSION['active_profile'])) {
       background: rgba(255, 255, 255, 0.08);
       border-color: rgba(255, 255, 255, 0.15);
     }
+
+    /* Theater Video Player Overlay */
+    .vod-player-overlay {
+      position: fixed;
+      inset: 0;
+      background: #000;
+      z-index: 10000;
+      display: flex;
+      flex-direction: column;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.4s ease;
+    }
+    .vod-player-overlay.open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .vod-player-close {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #fff;
+      padding: 0.6rem 1.4rem;
+      border-radius: 99px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      z-index: 10001;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: var(--transition);
+      backdrop-filter: blur(10px);
+    }
+    .vod-player-close:hover {
+      background: #ef4444;
+      border-color: #ef4444;
+      box-shadow: 0 4px 20px rgba(239, 68, 68, 0.45);
+      transform: translateY(-2px);
+    }
+    .vod-player-close:active {
+      transform: translateY(0);
+    }
+    .vod-player-wrapper {
+      flex: 1;
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+    .vod-player-wrapper iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* Serie TV Stagioni ed Episodi */
+    #vod-season-select:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 10px var(--accent-glow);
+    }
+    #vod-season-select option {
+      background: #1e293b;
+      color: #fff;
+    }
+    #vod-episodes-list::-webkit-scrollbar {
+      width: 6px;
+    }
+    #vod-episodes-list::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+    }
+    #vod-episodes-list::-webkit-scrollbar-thumb:hover {
+      background: var(--accent);
+    }
+
+    .vod-episode-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      padding: 0.8rem 1.2rem;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.04);
+      border-radius: 12px;
+      transition: var(--transition);
+      cursor: pointer;
+    }
+    .vod-episode-row:hover {
+      background: rgba(255, 255, 255, 0.06);
+      border-color: rgba(255, 255, 255, 0.1);
+      transform: translateX(4px);
+    }
+    .vod-episode-info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      min-width: 0;
+    }
+    .vod-episode-title {
+      font-weight: 700;
+      font-size: 0.92rem;
+      color: #fff;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .vod-episode-overview {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      line-height: 1.4;
+    }
+    .vod-episode-play-btn {
+      width: 36px;
+      height: 36px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: var(--transition);
+      flex-shrink: 0;
+    }
+    .vod-episode-row:hover .vod-episode-play-btn {
+      background: var(--accent);
+      color: #000;
+      border-color: var(--accent);
+      box-shadow: 0 0 10px var(--accent-glow);
+    }
   </style>
 </head>
 <body>
@@ -768,7 +917,10 @@ if (!isset($_SESSION['active_profile'])) {
         <div class="vod-brand-text">PZ<span>8</span><span class="vod-brand-sub">VOD</span></div>
       </div>
       <nav class="vod-nav-links">
-        <div class="nav-link active" id="nav-item-home" onclick="resetSearch()"><i class="ph ph-house"></i> Home</div>
+        <div class="nav-link active" id="nav-item-home" onclick="changeSection('home')"><i class="ph ph-house"></i> Home</div>
+        <div class="nav-link" id="nav-item-movies" onclick="changeSection('movies')"><i class="ph ph-film-strip"></i> Film</div>
+        <div class="nav-link" id="nav-item-tv" onclick="changeSection('tv')"><i class="ph ph-television"></i> Serie TV</div>
+        <div class="nav-link" id="nav-item-library" onclick="changeSection('library')"><i class="ph ph-heart"></i> Libreria</div>
       </nav>
       <div class="nav-search">
         <i class="ph ph-magnifying-glass search-icon"></i>
@@ -799,6 +951,7 @@ if (!isset($_SESSION['active_profile'])) {
           <div class="vod-hero-buttons">
             <button class="vod-hero-btn play" id="vod-hero-play-btn"><i class="ph-fill ph-play"></i> Guarda Ora</button>
             <button class="vod-hero-btn info" id="vod-hero-info-btn"><i class="ph ph-info"></i> Dettagli</button>
+            <button class="vod-hero-btn info" id="vod-hero-fav-btn" style="padding: 0.75rem 1rem;"><i class="ph ph-heart" style="font-size: 1.2rem; color: var(--danger);"></i></button>
           </div>
         </div>
       </div>
@@ -812,6 +965,19 @@ if (!isset($_SESSION['active_profile'])) {
       <div id="vod-search-container" style="display: none;">
         <h2 class="vod-search-section-title" id="vod-search-title">Risultati della Ricerca</h2>
         <div class="vod-grid" id="vod-search-grid"></div>
+      </div>
+
+      <!-- Container Libreria -->
+      <div id="vod-library-container" style="display: none;">
+        <h2 class="vod-search-section-title"><i class="ph-fill ph-heart" style="color: var(--danger);"></i> La Mia Libreria</h2>
+        <div class="vod-grid" id="vod-library-grid"></div>
+        
+        <!-- Stato Vuoto Libreria -->
+        <div class="dash-empty-state" id="vod-library-empty" style="display: none; padding: 6rem 1rem;">
+          <i class="ph ph-heart-break" style="color: var(--danger); font-size: 3.5rem; opacity: 0.8;"></i>
+          <div class="dash-empty-title" style="font-family: var(--font-main); font-size: 1.3rem; font-weight: 800; color: #fff; margin-top: 10px;">La tua Libreria è vuota</div>
+          <div class="dash-empty-hint" style="color: var(--text-muted); font-size: 0.95rem; margin-top: 5px;">Aggiungi film e serie TV ai preferiti per ritrovarli rapidamente qui.</div>
+        </div>
       </div>
       
     </main>
@@ -836,9 +1002,34 @@ if (!isset($_SESSION['active_profile'])) {
         </div>
 
         <div class="vod-modal-genres" id="vod-modal-genres"></div>
+        <div style="display: flex; gap: 10px; align-items: center; margin-top: 10px;">
+          <button class="vod-hero-btn play" id="vod-modal-play-btn" style="display: none; margin-top: 0; width: fit-content;"><i class="ph-fill ph-play"></i> Guarda Ora</button>
+          <button class="vod-hero-btn info" id="vod-modal-fav-btn" style="padding: 0.75rem 1.1rem; display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 0.85rem;"><i class="ph ph-heart" style="font-size: 1.1rem; color: var(--danger);"></i> <span>Aggiungi ai Preferiti</span></button>
+        </div>
 
         <p class="vod-modal-desc" id="vod-modal-overview">Caricamento dettagli...</p>
+
+        <!-- Sezione Serie TV: Stagioni ed Episodi -->
+        <div id="vod-modal-tv-section" style="display: none; margin-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 1.5rem;">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+            <h3 style="font-family: var(--font-main); font-size: 1.25rem; font-weight: 800; color: #fff; margin: 0; text-transform: uppercase; letter-spacing: -0.5px;">Episodi</h3>
+            <select id="vod-season-select">
+              <!-- Popolato via JS -->
+            </select>
+          </div>
+          <div id="vod-episodes-list">
+            <!-- Popolato via JS -->
+          </div>
+        </div>
       </div>
+    </div>
+  </div>
+
+  <!-- PLAYER OVERLAY -->
+  <div class="vod-player-overlay" id="vod-player-overlay">
+    <button class="vod-player-close" onclick="closePlayer()"><i class="ph ph-arrow-left"></i> Torna ai Dettagli</button>
+    <div class="vod-player-wrapper">
+      <iframe id="vod-player-frame" src="about:blank" allow="autoplay; fullscreen" allowfullscreen></iframe>
     </div>
   </div>
 
