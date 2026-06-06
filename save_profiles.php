@@ -37,7 +37,15 @@ if (count($new_profiles) === 0) {
     exit;
 }
 
-// Assicuriamoci che ogni profilo abbia i campi necessari
+$profiles_file = __DIR__ . '/user_profiles.json';
+$all_profiles = [];
+
+if (file_exists($profiles_file)) {
+    $raw = file_get_contents($profiles_file);
+    $all_profiles = json_decode($raw, true) ?? [];
+}
+
+// Assicuriamoci che ogni profilo abbia i campi necessari e preserviamo i dati esistenti
 foreach ($new_profiles as &$profile) {
     if (empty($profile['id'])) {
         $profile['id'] = substr($username, 0, 3) . '_' . uniqid();
@@ -51,16 +59,29 @@ foreach ($new_profiles as &$profile) {
     if (empty($profile['color'])) {
         $profile['color'] = '#00f2fe';
     }
+
+    // Cerca se il profilo esisteva già nel database per preservare i suoi dati (preferiti, cronologia, ecc.)
+    $existing_profile = null;
+    if (isset($all_profiles[$username]) && is_array($all_profiles[$username])) {
+        foreach ($all_profiles[$username] as $existing) {
+            if ($existing['id'] === $profile['id']) {
+                $existing_profile = $existing;
+                break;
+            }
+        }
+    }
+
+    if ($existing_profile) {
+        foreach (['favorites', 'vod_favorites', 'watch_history'] as $key) {
+            if (isset($existing_profile[$key]) && !empty($existing_profile[$key])) {
+                if (!isset($profile[$key]) || empty($profile[$key])) {
+                    $profile[$key] = $existing_profile[$key];
+                }
+            }
+        }
+    }
 }
 unset($profile);
-
-$profiles_file = __DIR__ . '/user_profiles.json';
-$all_profiles = [];
-
-if (file_exists($profiles_file)) {
-    $raw = file_get_contents($profiles_file);
-    $all_profiles = json_decode($raw, true) ?? [];
-}
 
 $all_profiles[$username] = $new_profiles;
 
