@@ -83,58 +83,6 @@ window.addEventListener('mousemove', resetUiTimeout);
 window.addEventListener('keydown', resetUiTimeout);
 window.addEventListener('click', resetUiTimeout);
 
-// ─── ZAPPING CON TELECOMANDO ───
-function handleZapping(direction) {
-    if (!currentChannel) return;
-    
-    let filtered = CHANNELS;
-    if (currentCategory === 'favorites') {
-        filtered = CHANNELS.filter(ch => favorites.includes(ch.id));
-    } else if (currentCategory !== 'all') {
-        filtered = CHANNELS.filter(ch => ch.cat === currentCategory);
-    }
-    
-    const searchQuery = document.getElementById('tv-search').value.toLowerCase();
-    if (searchQuery) {
-        filtered = filtered.filter(ch => ch.name.toLowerCase().includes(searchQuery) || ch.cat.toLowerCase().includes(searchQuery));
-    }
-    
-    if (filtered.length === 0) return;
-    
-    let currentIndex = filtered.findIndex(ch => ch.id === currentChannel.id);
-    if (currentIndex === -1) currentIndex = 0;
-    
-    let nextIndex = currentIndex + direction;
-    if (nextIndex >= filtered.length) nextIndex = 0;
-    if (nextIndex < 0) nextIndex = filtered.length - 1;
-    
-    const nextChannel = filtered[nextIndex];
-    playChannel(nextChannel);
-    
-    // Scrolla la barra orizzontale per centrare la nuova card
-    setTimeout(() => {
-        const card = document.querySelector(`.tv-channel-card[data-id="${nextChannel.id}"]`);
-        if (card) {
-            card.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
-        }
-    }, 100);
-}
-
-window.addEventListener('keydown', (e) => {
-    // Ignora se l'utente sta scrivendo nella barra di ricerca
-    if (document.activeElement && document.activeElement.id === 'tv-search') {
-        return;
-    }
-
-    if (e.key === 'ArrowUp' || e.key === 'ChannelUp') {
-        e.preventDefault();
-        handleZapping(1); // Canale successivo
-    } else if (e.key === 'ArrowDown' || e.key === 'ChannelDown') {
-        e.preventDefault();
-        handleZapping(-1); // Canale precedente
-    }
-});
-
 // ─── SHAKA PLAYER ───
 function onErrorEvent(event) {
     console.error('Shaka Error:', event.detail);
@@ -411,6 +359,64 @@ function setupHorizontalScroll(elId) {
         el.scrollLeft = scrollLeft - walk;
     });
 }
+
+// ─── CAMBIO CANALE DA TELECOMANDO ───
+function changeChannel(direction) {
+    // Ricalcola la lista corrente filtrata
+    let filtered = CHANNELS;
+    if (currentCategory === 'favorites') {
+        filtered = CHANNELS.filter(ch => favorites.includes(ch.id));
+    } else if (currentCategory !== 'all') {
+        filtered = CHANNELS.filter(ch => ch.cat === currentCategory);
+    }
+    const searchInput = document.getElementById('tv-search');
+    if (searchInput && searchInput.value) {
+        const query = searchInput.value.toLowerCase();
+        filtered = filtered.filter(ch => ch.name.toLowerCase().includes(query) || ch.cat.toLowerCase().includes(query));
+    }
+    
+    if (filtered.length === 0) return;
+    
+    let currentIndex = -1;
+    if (currentChannel) {
+        currentIndex = filtered.findIndex(ch => ch.id === currentChannel.id);
+    }
+    
+    if (currentIndex === -1) {
+        playChannel(filtered[0]);
+        return;
+    }
+    
+    let nextIndex = currentIndex + direction;
+    if (nextIndex >= filtered.length) {
+        nextIndex = 0; // Torna all'inizio
+    } else if (nextIndex < 0) {
+        nextIndex = filtered.length - 1; // Vai alla fine
+    }
+    
+    playChannel(filtered[nextIndex]);
+    
+    // Assicurati che la riga dei canali scroli per mostrare il canale attivo
+    setTimeout(() => {
+        const activeCard = document.querySelector('.tv-channel-card.active');
+        const container = document.getElementById('tv-channels-row');
+        if (activeCard && container) {
+            const scrollPos = activeCard.offsetLeft - container.offsetLeft - (container.clientWidth / 2) + (activeCard.clientWidth / 2);
+            container.scrollTo({ left: scrollPos, behavior: 'smooth' });
+        }
+    }, 100);
+}
+
+document.addEventListener('keydown', (e) => {
+    // Gestione tasti per il cambio canale
+    if (e.key === 'ArrowUp' || e.key === 'ChannelUp' || e.key === 'PageUp') {
+        changeChannel(1); // Canale successivo
+        e.preventDefault();
+    } else if (e.key === 'ArrowDown' || e.key === 'ChannelDown' || e.key === 'PageDown') {
+        changeChannel(-1); // Canale precedente
+        e.preventDefault();
+    }
+});
 
 // ─── BOOTSTRAP E FULLSCREEN ───
 function requestFullScreen() {
