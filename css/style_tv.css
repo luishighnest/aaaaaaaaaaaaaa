@@ -38,12 +38,6 @@ body {
   user-select: none;
 }
 
-/* Nasconde il cursore quando si usa la tastiera/telecomando */
-body.hide-cursor,
-body.hide-cursor * {
-  cursor: none !important;
-}
-
 /* Fullscreen Video Player */
 .tv-player-container {
   position: absolute;
@@ -161,10 +155,6 @@ body.hide-cursor * {
   width: 250px;
 }
 
-.tv-search-bar input:focus {
-  border-bottom: 2px solid var(--accent);
-}
-
 .tv-clock {
   font-family: var(--font-alt);
   font-size: 2rem;
@@ -218,17 +208,10 @@ body.hide-cursor * {
   font-size: 1.5rem;
 }
 
-.tv-nav-item:hover,
-.tv-nav-item:focus {
+.tv-nav-item:hover {
   background: rgba(255,255,255,0.15);
   color: var(--text-primary);
   transform: translateY(-2px);
-  outline: none;
-}
-
-.tv-nav-item:focus {
-  border-color: var(--accent);
-  box-shadow: 0 0 15px var(--accent-glow);
 }
 
 .tv-nav-item.active {
@@ -279,20 +262,12 @@ body.hide-cursor * {
   flex-shrink: 0;
 }
 
-.tv-channel-card:hover,
-.tv-channel-card:focus {
+.tv-channel-card:hover {
   background: var(--bg-card-hover);
   border-color: var(--text-primary);
   transform: translateY(-5px);
   box-shadow: 0 15px 30px rgba(0,0,0,0.6);
   z-index: 2;
-  outline: none;
-}
-
-.tv-channel-card:focus {
-  border-color: var(--accent);
-  box-shadow: 0 0 25px var(--accent-glow);
-  background: rgba(0, 242, 254, 0.05);
 }
 
 .tv-channel-card.active {
