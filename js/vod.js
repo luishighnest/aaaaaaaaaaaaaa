@@ -56,14 +56,23 @@ async function loadCategory(cat, element) {
 
     let endpoint = '';
     if (cat === 'trending') {
-        sectionTitle.textContent = 'In Tendenza (Film & Serie)';
+        sectionTitle.innerHTML = '<i class="ph ph-fire"></i> In Tendenza';
         endpoint = `/trending/all/week?api_key=${API_KEY}&language=it-IT`;
+    } else if (cat === 'upcoming') {
+        sectionTitle.innerHTML = '<i class="ph ph-calendar-star"></i> Prossime Uscite';
+        endpoint = `/movie/upcoming?api_key=${API_KEY}&language=it-IT`;
     } else if (cat === 'movie') {
-        sectionTitle.textContent = 'Film Popolari';
+        sectionTitle.innerHTML = '<i class="ph ph-film-strip"></i> Film Popolari';
         endpoint = `/movie/popular?api_key=${API_KEY}&language=it-IT`;
+    } else if (cat === 'top_movie') {
+        sectionTitle.innerHTML = '<i class="ph ph-star"></i> Film più Votati';
+        endpoint = `/movie/top_rated?api_key=${API_KEY}&language=it-IT`;
     } else if (cat === 'tv') {
-        sectionTitle.textContent = 'Serie TV Popolari';
+        sectionTitle.innerHTML = '<i class="ph ph-television"></i> Serie TV Popolari';
         endpoint = `/tv/popular?api_key=${API_KEY}&language=it-IT`;
+    } else if (cat === 'top_tv') {
+        sectionTitle.innerHTML = '<i class="ph ph-star-half"></i> Serie TV più Votate';
+        endpoint = `/tv/top_rated?api_key=${API_KEY}&language=it-IT`;
     }
 
     grid.innerHTML = '<div class="vod-loading">Caricamento...</div>';
@@ -74,7 +83,7 @@ async function loadCategory(cat, element) {
 // Cerca Film/Serie
 async function searchContent(query) {
     document.querySelectorAll('.dash-cat-item').forEach(el => el.classList.remove('active'));
-    sectionTitle.textContent = `Risultati per: "${query}"`;
+    sectionTitle.innerHTML = `<i class="ph ph-magnifying-glass"></i> Risultati per: "${query}"`;
     grid.innerHTML = '<div class="vod-loading">Ricerca in corso...</div>';
     
     const endpoint = `/search/multi?api_key=${API_KEY}&language=it-IT&query=${encodeURIComponent(query)}`;
@@ -87,7 +96,17 @@ function renderGrid(items) {
     grid.innerHTML = '';
     if (!items || items.length === 0) {
         grid.innerHTML = '<div class="vod-empty">Nessun contenuto trovato.</div>';
+        document.getElementById('vod-hero-bg').style.backgroundImage = 'none';
         return;
+    }
+
+    // Set Hero Background using the first valid item
+    const heroBg = document.getElementById('vod-hero-bg');
+    const heroItem = items.find(i => i.backdrop_path);
+    if (heroItem) {
+        heroBg.style.backgroundImage = `url(${IMG_BASE_URL.replace('w500', 'original')}${heroItem.backdrop_path})`;
+    } else {
+        heroBg.style.backgroundImage = 'none';
     }
 
     items.forEach(item => {
