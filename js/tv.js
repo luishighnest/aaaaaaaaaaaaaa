@@ -85,25 +85,6 @@ window.addEventListener('keydown', resetUiTimeout);
 window.addEventListener('click', resetUiTimeout);
 
 // ─── SHAKA PLAYER ───
-async function initShakaPlayer() {
-    shaka.polyfill.installAll();
-    if (!shaka.Player.isBrowserSupported()) {
-        console.error('Browser non supportato per Shaka Player');
-        return;
-    }
-
-    player = new shaka.Player();
-    await player.attach(videoElement);
-
-    player.addEventListener('error', onErrorEvent);
-    videoElement.addEventListener('playing', () => {
-        loadingOverlay.classList.remove('show');
-    });
-    videoElement.addEventListener('waiting', () => {
-        loadingOverlay.classList.add('show');
-    });
-}
-
 function onErrorEvent(event) {
     console.error('Shaka Error:', event.detail);
     loadingOverlay.classList.remove('show');
@@ -166,27 +147,42 @@ function playChannel(ch) {
             return;
         }
 
-        if (!player) {
-            console.error("Shaka player non inizializzato");
-            loadingOverlay.classList.remove('show');
-            return;
-        }
+        try {
+            if (!player) {
+                shaka.polyfill.installAll();
+                if (!shaka.Player.isBrowserSupported()) {
+                    console.error("Browser non supportato per DASH nativo.");
+                    loadingOverlay.classList.remove('show');
+                    return;
+                }
+                player = new shaka.Player(videoElement);
+                player.addEventListener('error', onErrorEvent);
+                
+                videoElement.addEventListener('playing', () => {
+                    loadingOverlay.classList.remove('show');
+                });
+                videoElement.addEventListener('waiting', () => {
+                    loadingOverlay.classList.add('show');
+                });
+            }
 
-        player.unload().then(() => {
             if (clearkeys) {
                 player.configure({ drm: { clearKeys: clearkeys } });
             } else {
                 player.configure({ drm: { clearKeys: {} } });
             }
             
-            return player.load(streamUrl);
-        }).then(() => {
-            console.log('Stream caricato:', ch.name);
-            videoElement.play();
-        }).catch(err => {
-            console.error('Error loading stream:', err);
+            player.load(streamUrl).then(() => {
+                console.log('Stream caricato:', ch.name);
+                videoElement.play();
+            }).catch(e => {
+                console.error("Errore shaka load:", e);
+                loadingOverlay.classList.remove('show');
+            });
+        } catch (err) {
+            console.error("Errore di inizializzazione shakaPlayer:", err);
             loadingOverlay.classList.remove('show');
-        });
+        }
     } else {
         // Usa iframe per flussi esterni o non DASH
         videoElement.style.display = 'none';
@@ -377,20 +373,18 @@ function setupHorizontalScroll(elId) {
 
 // ─── BOOTSTRAP ───
 window.addEventListener('DOMContentLoaded', () => {
-    initShakaPlayer().then(() => {
-        renderCategories();
-        renderChannels();
-        resetUiTimeout();
-        
-        setupHorizontalScroll('tv-categories');
-        setupHorizontalScroll('tv-channels-row');
-        
-        // Auto play channel from URL if any
-        const params = new URLSearchParams(window.location.search);
-        const urlId = parseInt(params.get('id'));
-        if (urlId) {
-            const ch = CHANNELS.find(c => c.id === urlId);
-            if (ch) playChannel(ch);
-        }
-    });
+    renderCategories();
+    renderChannels();
+    resetUiTimeout();
+    
+    setupHorizontalScroll('tv-categories');
+    setupHorizontalScroll('tv-channels-row');
+    
+    // Auto play channel from URL if any
+    const params = new URLSearchParams(window.location.search);
+    const urlId = parseInt(params.get('id'));
+    if (urlId) {
+        const ch = CHANNELS.find(c => c.id === urlId);
+        if (ch) playChannel(ch);
+    }
 });
