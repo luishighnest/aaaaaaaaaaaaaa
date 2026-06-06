@@ -666,6 +666,53 @@ function togglePlayerFullscreen() {
     }
 }
 
+async function saveCurrentProgress() {
+    if (!window.__PLAYBACK_CONTEXT__) return;
+    const context = window.__PLAYBACK_CONTEXT__;
+    window.__PLAYBACK_CONTEXT__ = null; // evita chiamate duplicate
+    
+    const timeSpent = (Date.now() - context.startTime) / 1000;
+    if (timeSpent >= 10) {
+        const duration = context.type === 'movie' ? (120 * 60) : (45 * 60); // secondi stimati
+        const gained = (timeSpent / duration) * 100;
+        let newProgress = Math.round(context.prevProgress + gained);
+        if (newProgress > 95) newProgress = 95;
+        
+        try {
+            const bodyData = {
+                id: context.id,
+                type: context.type,
+                title: context.title,
+                poster_path: context.poster_path,
+                progress: newProgress,
+                csrf_token: window.__CSRF_TOKEN__
+            };
+            if (context.type === 'tv') {
+                bodyData.season = context.season;
+                bodyData.episode = context.episode;
+            }
+            
+            const response = await fetch('save_watch_progress.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRF-Token': window.__CSRF_TOKEN__
+                },
+                body: JSON.stringify(bodyData)
+            });
+            const result = await response.json();
+            if (result.success) {
+                window.__ACTIVE_PROFILE_VOD_HISTORY__ = result.watch_history;
+                renderContinueWatching();
+            } else {
+                console.error('Errore backend progresso:', result.error);
+            }
+        } catch (err) {
+            console.error('Errore rete salvataggio progresso:', err);
+        }
+    }
+}
+
 async function closePlayer() {
     const overlay = document.getElementById('vod-player-overlay');
     
@@ -685,52 +732,7 @@ async function closePlayer() {
         overlay.style.display = 'none';
     }, 400);
 
-    // Salva progresso se il player è rimasto aperto per almeno 10 secondi
-    if (window.__PLAYBACK_CONTEXT__) {
-        const context = window.__PLAYBACK_CONTEXT__;
-        window.__PLAYBACK_CONTEXT__ = null; // evita chiamate duplicate
-        
-        const timeSpent = (Date.now() - context.startTime) / 1000;
-        if (timeSpent >= 10) {
-            const duration = context.type === 'movie' ? (120 * 60) : (45 * 60); // secondi stimati
-            const gained = (timeSpent / duration) * 100;
-            let newProgress = Math.round(context.prevProgress + gained);
-            if (newProgress > 95) newProgress = 95;
-            
-            try {
-                const bodyData = {
-                    id: context.id,
-                    type: context.type,
-                    title: context.title,
-                    poster_path: context.poster_path,
-                    progress: newProgress,
-                    csrf_token: window.__CSRF_TOKEN__
-                };
-                if (context.type === 'tv') {
-                    bodyData.season = context.season;
-                    bodyData.episode = context.episode;
-                }
-                
-                const response = await fetch('save_watch_progress.php', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        'X-CSRF-Token': window.__CSRF_TOKEN__
-                    },
-                    body: JSON.stringify(bodyData)
-                });
-                const result = await response.json();
-                if (result.success) {
-                    window.__ACTIVE_PROFILE_VOD_HISTORY__ = result.watch_history;
-                    renderContinueWatching();
-                } else {
-                    console.error('Errore backend progresso:', result.error);
-                }
-            } catch (err) {
-                console.error('Errore rete salvataggio progresso:', err);
-            }
-        }
-    }
+    await saveCurrentProgress();
 }
 
 function playMovie(tmdbId, resume = false) {
@@ -747,6 +749,10 @@ function playMovie(tmdbId, resume = false) {
         prevProgress: prevProgress,
         startTime: Date.now()
     };
+    
+    const nextBtn = document.getElementById('vod-player-next-btn');
+    if (nextBtn) nextBtn.style.display = 'none';
+    window.__NEXT_EPISODE__ = null;
     
     // Mostra titolo in alto al centro dell'overlay
     const titleEl = document.getElementById('vod-player-title');
@@ -799,6 +805,47 @@ function playShowEpisode(tmdbId, season, episode, resume = false) {
     if (titleEl) titleEl.textContent = title;
     if (subtitleEl) subtitleEl.textContent = `S${season}:E${episode}`;
     
+    const nextBtn = document.getElementById('vod-player-next-btn');
+    if (nextBtn) nextBtn.style.display = 'none';
+    window.__NEXT_EPISODE__ = null;
+
+    // Recupera la struttura dello show da TMDB per determinare il prossimo episodio
+    fetch(`${BASE_URL}/tv/${tmdbId}?api_key=${API_KEY}&language=it-IT`)
+        .then(r => r.json())
+        .then(data => {
+            if (data && data.seasons) {
+                const currentSeasonNum = parseInt(season, 10);
+                const currentEpisodeNum = parseInt(episode, 10);
+                const currentSeasonObj = data.seasons.find(s => parseInt(s.season_number, 10) === currentSeasonNum);
+                
+                if (currentSeasonObj) {
+                    if (currentEpisodeNum < currentSeasonObj.episode_count) {
+                        window.__NEXT_EPISODE__ = {
+                            id: tmdbId,
+                            season: currentSeasonNum,
+                            episode: currentEpisodeNum + 1
+                        };
+                        if (nextBtn) nextBtn.style.display = 'flex';
+                    } else {
+                        // Cerca la prossima stagione valida (> season corrente con episodi)
+                        const nextSeasonObj = data.seasons
+                            .filter(s => parseInt(s.season_number, 10) > currentSeasonNum && s.episode_count > 0)
+                            .sort((a, b) => parseInt(a.season_number, 10) - parseInt(b.season_number, 10))[0];
+                        
+                        if (nextSeasonObj) {
+                            window.__NEXT_EPISODE__ = {
+                                id: tmdbId,
+                                season: parseInt(nextSeasonObj.season_number, 10),
+                                episode: 1
+                            };
+                            if (nextBtn) nextBtn.style.display = 'flex';
+                        }
+                    }
+                }
+            }
+        })
+        .catch(err => console.error("Errore verifica prossimo episodio:", err));
+        
     // Recupera asincronamente il nome dell'episodio da TMDB
     fetch(`${BASE_URL}/tv/${tmdbId}/season/${season}?api_key=${API_KEY}&language=it-IT`)
         .then(r => r.json())
@@ -1281,6 +1328,14 @@ async function loadNextCatalogPage() {
     }
 }
 
+async function playNextEpisode() {
+    if (window.__NEXT_EPISODE__) {
+        const next = window.__NEXT_EPISODE__;
+        await saveCurrentProgress();
+        playShowEpisode(next.id, next.season, next.episode);
+    }
+}
+
 function resetCatalogAndLoad() {
     catalogPage = 1;
     hasMoreCatalog = true;
@@ -1295,6 +1350,7 @@ function resetCatalogAndLoad() {
 window.resetCatalogAndLoad = resetCatalogAndLoad;
 window.changeSection = changeSection;
 window.togglePlayerFullscreen = togglePlayerFullscreen;
+window.playNextEpisode = playNextEpisode;
 
 // Funzione per rilevare se siamo in fullscreen (incluso F11 o pulsante overlay)
 function updateFullscreenClass() {
@@ -1318,13 +1374,10 @@ function updateFullscreenClass() {
     const isOverlayFS = document.fullscreenElement === overlay;
     if (btn) {
         const icon = btn.querySelector('i');
-        const text = btn.querySelector('.fullscreen-text');
         if (isOverlayFS) {
             if (icon) icon.className = 'ph ph-corners-in';
-            if (text) text.textContent = 'Finestra';
         } else {
             if (icon) icon.className = 'ph ph-corners-out';
-            if (text) text.textContent = 'Schermo Intero';
         }
     }
 }
