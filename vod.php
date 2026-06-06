@@ -115,17 +115,19 @@ if (!isset($_SESSION['active_profile'])) {
       }, 50);
     });
   </script>
-  <!-- Iniezione CSRF e Preferiti VOD da PHP -->
+  <!-- Iniezione CSRF, Preferiti e Cronologia VOD da PHP -->
   <?php
   if (!isset($_SESSION['csrf_token'])) {
       $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
   }
   $active_profile = $_SESSION['active_profile'] ?? [];
   $vod_favs = $active_profile['vod_favorites'] ?? [];
+  $vod_history = $active_profile['watch_history'] ?? [];
   ?>
   <script>
     window.__CSRF_TOKEN__ = "<?= $_SESSION['csrf_token'] ?>";
     window.__ACTIVE_PROFILE_VOD_FAVORITES__ = <?= json_encode($vod_favs) ?>;
+    window.__ACTIVE_PROFILE_VOD_HISTORY__ = <?= json_encode($vod_history) ?>;
   </script>
   <style>
     body {
@@ -1321,6 +1323,9 @@ if (!isset($_SESSION['active_profile'])) {
         </div>
       </div>
 
+      <!-- Container Continua a Guardare -->
+      <div id="vod-continue-container" style="display: none; margin-bottom: 2rem;"></div>
+
       <!-- Container Home (Righe Netflix) -->
       <div id="vod-home-container">
         <!-- Righe generate via JS -->
@@ -1452,6 +1457,7 @@ if (!isset($_SESSION['active_profile'])) {
         <div class="vod-modal-genres" id="vod-modal-genres"></div>
         <div style="display: flex; gap: 10px; align-items: center; margin-top: 10px;">
           <button class="vod-hero-btn play" id="vod-modal-play-btn" style="display: none; margin-top: 0; width: fit-content;"><i class="ph-fill ph-play"></i> Guarda Ora</button>
+          <button class="vod-hero-btn play" id="vod-modal-resume-btn" style="display: none; margin-top: 0; width: fit-content;"><i class="ph-fill ph-play"></i> Riprendi</button>
           <button class="vod-hero-btn info" id="vod-modal-fav-btn" style="padding: 0.75rem 1.1rem; display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 0.85rem;"><i class="ph ph-heart" style="font-size: 1.1rem; color: var(--danger);"></i> <span>Aggiungi ai Preferiti</span></button>
         </div>
 
