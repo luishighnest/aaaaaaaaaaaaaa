@@ -8,7 +8,6 @@ let uiTimeout = null;
 const videoElement = document.getElementById('tv-video');
 const iframeElement = document.getElementById('tv-iframe');
 const uiOverlay = document.getElementById('tv-ui');
-const loadingOverlay = document.getElementById('tv-loading');
 
 // ─── EPG ───
 let epgData = window.__EPG_DATA__ || [];
@@ -87,7 +86,6 @@ window.addEventListener('click', resetUiTimeout);
 // ─── SHAKA PLAYER ───
 function onErrorEvent(event) {
     console.error('Shaka Error:', event.detail);
-    loadingOverlay.classList.remove('show');
 }
 
 function playChannel(ch) {
@@ -111,7 +109,6 @@ function playChannel(ch) {
         }
     });
 
-    loadingOverlay.classList.add('show');
     const streamUrl = getStreamUrl(ch);
 
     if (ch.link.includes('.mpd') && !ch.link.includes('{{EXT_PLAYER}}')) {
@@ -143,7 +140,6 @@ function playChannel(ch) {
 
         if (clearkeys && !window.isSecureContext) {
             console.error("Errore DRM: La decrittografia dei flussi richiede HTTPS.");
-            loadingOverlay.classList.remove('show');
             return;
         }
 
@@ -152,18 +148,10 @@ function playChannel(ch) {
                 shaka.polyfill.installAll();
                 if (!shaka.Player.isBrowserSupported()) {
                     console.error("Browser non supportato per DASH nativo.");
-                    loadingOverlay.classList.remove('show');
                     return;
                 }
                 player = new shaka.Player(videoElement);
                 player.addEventListener('error', onErrorEvent);
-                
-                videoElement.addEventListener('playing', () => {
-                    loadingOverlay.classList.remove('show');
-                });
-                videoElement.addEventListener('waiting', () => {
-                    loadingOverlay.classList.add('show');
-                });
             }
 
             if (clearkeys) {
@@ -177,11 +165,9 @@ function playChannel(ch) {
                 videoElement.play();
             }).catch(e => {
                 console.error("Errore shaka load:", e);
-                loadingOverlay.classList.remove('show');
             });
         } catch (err) {
             console.error("Errore di inizializzazione shakaPlayer:", err);
-            loadingOverlay.classList.remove('show');
         }
     } else {
         // Usa iframe per flussi esterni o non DASH
@@ -193,11 +179,6 @@ function playChannel(ch) {
         
         iframeElement.style.display = 'block';
         iframeElement.src = streamUrl;
-        
-        // Simula caricamento
-        setTimeout(() => {
-            loadingOverlay.classList.remove('show');
-        }, 1500);
     }
 }
 
