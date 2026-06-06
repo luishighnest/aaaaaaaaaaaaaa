@@ -360,7 +360,30 @@ function setupHorizontalScroll(elId) {
     });
 }
 
-// ─── BOOTSTRAP ───
+// ─── BOOTSTRAP E FULLSCREEN ───
+function requestFullScreen() {
+    const docElm = document.documentElement;
+    if (docElm.requestFullscreen) {
+        docElm.requestFullscreen().catch(e => console.warn("Fullscreen API Error:", e));
+    } else if (docElm.mozRequestFullScreen) { /* Firefox */
+        docElm.mozRequestFullScreen().catch(e => console.warn("Fullscreen API Error:", e));
+    } else if (docElm.webkitRequestFullScreen) { /* Chrome, Safari and Opera */
+        docElm.webkitRequestFullScreen().catch(e => console.warn("Fullscreen API Error:", e));
+    } else if (docElm.msRequestFullscreen) { /* IE/Edge */
+        docElm.msRequestFullscreen().catch(e => console.warn("Fullscreen API Error:", e));
+    }
+}
+
+// Su Smart TV il fullscreen automatico è spesso bloccato senza un'interazione utente.
+// Lo forziamo al primo click o tasto premuto.
+const triggerFullscreen = () => {
+    requestFullScreen();
+    document.removeEventListener('click', triggerFullscreen);
+    document.removeEventListener('keydown', triggerFullscreen);
+};
+document.addEventListener('click', triggerFullscreen);
+document.addEventListener('keydown', triggerFullscreen);
+
 window.addEventListener('DOMContentLoaded', () => {
     renderCategories();
     renderChannels();
