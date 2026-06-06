@@ -121,6 +121,7 @@ function populateCard(card, item, type, title, poster) {
 
 document.addEventListener('DOMContentLoaded', () => {
     loadNetflixRows();
+    renderContinueWatching();
     
     const searchClear = document.getElementById('vod-search-clear');
     if (searchClear) {
@@ -300,6 +301,8 @@ async function searchContent(query) {
     homeContainer.style.display = 'none';
     document.getElementById('vod-hero-banner').style.display = 'none';
     document.getElementById('vod-library-container').style.display = 'none';
+    const continueCont = document.getElementById('vod-continue-container');
+    if (continueCont) continueCont.style.display = 'none';
     searchContainer.style.display = 'block';
     
     document.querySelectorAll('.vod-navbar .nav-link').forEach(el => el.classList.remove('active'));
@@ -334,13 +337,15 @@ async function openModal(item) {
     window.__CURRENT_MODAL_ITEM__ = item;
     const title = item.title || item.name;
     const poster = item.poster_path ? `${IMG_BASE_URL}${item.poster_path}` : 'https://via.placeholder.com/500x750?text=No+Poster';
-    const type = item.media_type || (item.title ? 'movie' : 'tv');
+    const type = item.media_type || item.type || (item.title ? 'movie' : 'tv');
     
     const playBtn = document.getElementById('vod-modal-play-btn');
     const tvSection = document.getElementById('vod-modal-tv-section');
+    const resumeBtn = document.getElementById('vod-modal-resume-btn');
     
     // Reset viste modal
     playBtn.style.display = 'none';
+    if (resumeBtn) resumeBtn.style.display = 'none';
     tvSection.style.display = 'none';
     
     // Inizializza Modal con info base
@@ -361,16 +366,41 @@ async function openModal(item) {
 
     // Gestione visualizzazione bottoni/sezioni in base al tipo
     playBtn.style.display = 'inline-flex';
+    
+    // Cerca progresso nella cronologia
+    const historyItem = (window.__ACTIVE_PROFILE_VOD_HISTORY__ || []).find(
+        x => parseInt(x.id, 10) === parseInt(item.id, 10) && x.type === type
+    );
+
     if (type === 'movie') {
         playBtn.onclick = () => {
             playMovie(item.id);
         };
+        if (historyItem && historyItem.progress > 0) {
+            if (resumeBtn) {
+                resumeBtn.style.display = 'inline-flex';
+                resumeBtn.innerHTML = `<i class="ph-fill ph-play"></i> Riprendi (${historyItem.progress}%)`;
+                resumeBtn.onclick = () => {
+                    playMovie(item.id);
+                };
+            }
+        }
     } else if (type === 'tv') {
         playBtn.onclick = () => {
             playShowEpisode(item.id, 1, 1);
         };
         tvSection.style.display = 'block';
         loadTvSeasons(item.id);
+        
+        if (historyItem && historyItem.progress > 0 && historyItem.season && historyItem.episode) {
+            if (resumeBtn) {
+                resumeBtn.style.display = 'inline-flex';
+                resumeBtn.innerHTML = `<i class="ph-fill ph-play"></i> Riprendi da S${historyItem.season}:E${historyItem.episode}`;
+                resumeBtn.onclick = () => {
+                    playShowEpisode(item.id, historyItem.season, historyItem.episode);
+                };
+            }
+        }
     }
 
     // Aggiorna lo stato del pulsante dei preferiti del modal
@@ -427,6 +457,155 @@ modal.addEventListener('click', (e) => {
     }
 });
 
+function resolveVODItem(tmdbId, type) {
+    const id = parseInt(tmdbId, 10);
+    if (window.__CURRENT_MODAL_ITEM__ && parseInt(window.__CURRENT_MODAL_ITEM__.id, 10) === id) {
+        return window.__CURRENT_MODAL_ITEM__;
+    }
+    if (window.__CURRENT_HERO_ITEM__ && parseInt(window.__CURRENT_HERO_ITEM__.id, 10) === id) {
+        return window.__CURRENT_HERO_ITEM__;
+    }
+    if (window.__ACTIVE_PROFILE_VOD_HISTORY__) {
+        const found = window.__ACTIVE_PROFILE_VOD_HISTORY__.find(x => parseInt(x.id, 10) === id && x.type === type);
+        if (found) {
+            return {
+                id: found.id,
+                title: found.title,
+                name: found.title,
+                poster_path: found.poster_path,
+                media_type: found.type,
+                type: found.type
+            };
+        }
+    }
+    if (window.__ACTIVE_PROFILE_VOD_FAVORITES__) {
+        const found = window.__ACTIVE_PROFILE_VOD_FAVORITES__.find(x => parseInt(x.id, 10) === id && x.type === type);
+        if (found) {
+            return {
+                id: found.id,
+                title: found.title,
+                name: found.title,
+                poster_path: found.poster_path,
+                media_type: found.type,
+                type: found.type
+            };
+        }
+    }
+    return null;
+}
+
+function getPreviousProgress(id, type, season = null, episode = null) {
+    const history = window.__ACTIVE_PROFILE_VOD_HISTORY__ || [];
+    const found = history.find(x => parseInt(x.id, 10) === parseInt(id, 10) && x.type === type);
+    if (found) {
+        if (type === 'tv') {
+            if (parseInt(found.season, 10) === parseInt(season, 10) && parseInt(found.episode, 10) === parseInt(episode, 10)) {
+                return parseInt(found.progress, 10) || 0;
+            }
+            return 0;
+        }
+        return parseInt(found.progress, 10) || 0;
+    }
+    return 0;
+}
+
+function renderContinueWatching() {
+    const continueCont = document.getElementById('vod-continue-container');
+    if (!continueCont) return;
+    
+    const history = window.__ACTIVE_PROFILE_VOD_HISTORY__ || [];
+    if (history.length === 0 || currentSection !== 'home' || (searchInput && searchInput.value.trim().length > 0)) {
+        continueCont.style.display = 'none';
+        continueCont.innerHTML = '';
+        return;
+    }
+    
+    continueCont.style.display = 'block';
+    continueCont.innerHTML = `
+        <div class="vod-row-container" style="margin-top: 1.5rem;">
+            <div class="vod-row-title">Continua a Guardare</div>
+            <div class="vod-row" id="vod-continue-row"></div>
+        </div>
+    `;
+    
+    const rowDiv = document.getElementById('vod-continue-row');
+    if (!rowDiv) return;
+    
+    history.forEach(item => {
+        const card = document.createElement('div');
+        card.className = 'vod-card portrait';
+        
+        const title = item.title;
+        const type = item.type;
+        const poster = item.poster_path ? `${IMG_BASE_URL}${item.poster_path}` : 'https://via.placeholder.com/500x750?text=No+Img';
+        const progress = item.progress || 0;
+        
+        const isFav = isFavorite(item.id, type);
+        const favIcon = isFav ? 'ph-fill ph-heart' : 'ph ph-heart';
+        
+        const itemObj = {
+            id: item.id,
+            media_type: type,
+            type: type,
+            title: type === 'movie' ? title : undefined,
+            name: type === 'tv' ? title : undefined,
+            poster_path: item.poster_path
+        };
+        
+        card.innerHTML = `
+            <img src="${poster}" alt="${title}" loading="lazy">
+            ${type === 'tv' && item.season && item.episode ? `<div class="vod-card-episode-badge">S${item.season}:E${item.episode}</div>` : ''}
+            <div class="vod-card-progress-container">
+                <div class="vod-card-progress-bar" style="width: ${progress}%;"></div>
+            </div>
+            <div class="vod-card-overlay">
+                <div class="vod-card-title">${title}</div>
+                <div class="vod-card-actions">
+                    <button class="vod-card-btn play" title="Guarda ora"><i class="ph-fill ph-play"></i></button>
+                    <button class="vod-card-btn info" title="Dettagli"><i class="ph ph-info"></i></button>
+                    <button class="vod-card-btn fav" data-id="${item.id}" data-type="${type}" title="Preferiti"><i class="${favIcon}"></i></button>
+                </div>
+            </div>
+        `;
+        
+        card.addEventListener('click', () => {
+            openModal(itemObj);
+        });
+        
+        const playBtn = card.querySelector('.vod-card-btn.play');
+        playBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            openModal(itemObj);
+            if (type === 'movie') {
+                playMovie(item.id);
+            } else {
+                playShowEpisode(item.id, item.season || 1, item.episode || 1);
+            }
+        });
+        
+        const infoBtn = card.querySelector('.vod-card-btn.info');
+        infoBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            openModal(itemObj);
+        });
+        
+        const favBtn = card.querySelector('.vod-card-btn.fav');
+        favBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            toggleVodFavorite(itemObj);
+        });
+        
+        rowDiv.appendChild(card);
+    });
+    
+    rowDiv.addEventListener('wheel', (e) => {
+        if (e.deltaY !== 0) {
+            e.preventDefault();
+            rowDiv.scrollLeft += e.deltaY * 2;
+        }
+    });
+}
+
 // ==========================================
 // SEZIONE STREAMING VIDEO & EPISODI (vixsrc.to)
 // ==========================================
@@ -436,7 +615,7 @@ function getAccentHex() {
     return accent.replace('#', '');
 }
 
-function closePlayer() {
+async function closePlayer() {
     const overlay = document.getElementById('vod-player-overlay');
     const frame = document.getElementById('vod-player-frame');
     frame.src = 'about:blank';
@@ -444,9 +623,70 @@ function closePlayer() {
     setTimeout(() => {
         overlay.style.display = 'none';
     }, 400);
+
+    // Salva progresso se il player è rimasto aperto per almeno 10 secondi
+    if (window.__PLAYBACK_CONTEXT__) {
+        const context = window.__PLAYBACK_CONTEXT__;
+        window.__PLAYBACK_CONTEXT__ = null; // evita chiamate duplicate
+        
+        const timeSpent = (Date.now() - context.startTime) / 1000;
+        if (timeSpent >= 10) {
+            const duration = context.type === 'movie' ? (120 * 60) : (45 * 60); // secondi stimati
+            const gained = (timeSpent / duration) * 100;
+            let newProgress = Math.round(context.prevProgress + gained);
+            if (newProgress > 95) newProgress = 95;
+            
+            try {
+                const bodyData = {
+                    id: context.id,
+                    type: context.type,
+                    title: context.title,
+                    poster_path: context.poster_path,
+                    progress: newProgress,
+                    csrf_token: window.__CSRF_TOKEN__
+                };
+                if (context.type === 'tv') {
+                    bodyData.season = context.season;
+                    bodyData.episode = context.episode;
+                }
+                
+                const response = await fetch('save_watch_progress.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRF-Token': window.__CSRF_TOKEN__
+                    },
+                    body: JSON.stringify(bodyData)
+                });
+                const result = await response.json();
+                if (result.success) {
+                    window.__ACTIVE_PROFILE_VOD_HISTORY__ = result.watch_history;
+                    renderContinueWatching();
+                } else {
+                    console.error('Errore backend progresso:', result.error);
+                }
+            } catch (err) {
+                console.error('Errore rete salvataggio progresso:', err);
+            }
+        }
+    }
 }
 
 function playMovie(tmdbId) {
+    const item = resolveVODItem(tmdbId, 'movie');
+    const title = item ? (item.title || item.name) : 'Film';
+    const poster_path = item ? item.poster_path : '';
+    const prevProgress = getPreviousProgress(tmdbId, 'movie');
+    
+    window.__PLAYBACK_CONTEXT__ = {
+        id: tmdbId,
+        type: 'movie',
+        title: title,
+        poster_path: poster_path,
+        prevProgress: prevProgress,
+        startTime: Date.now()
+    };
+    
     const overlay = document.getElementById('vod-player-overlay');
     const frame = document.getElementById('vod-player-frame');
     const accent = getAccentHex();
@@ -458,6 +698,22 @@ function playMovie(tmdbId) {
 }
 
 function playShowEpisode(tmdbId, season, episode) {
+    const item = resolveVODItem(tmdbId, 'tv');
+    const title = item ? (item.title || item.name) : 'Serie TV';
+    const poster_path = item ? item.poster_path : '';
+    const prevProgress = getPreviousProgress(tmdbId, 'tv', season, episode);
+    
+    window.__PLAYBACK_CONTEXT__ = {
+        id: tmdbId,
+        type: 'tv',
+        title: title,
+        poster_path: poster_path,
+        season: parseInt(season, 10),
+        episode: parseInt(episode, 10),
+        prevProgress: prevProgress,
+        startTime: Date.now()
+    };
+    
     const overlay = document.getElementById('vod-player-overlay');
     const frame = document.getElementById('vod-player-frame');
     const accent = getAccentHex();
@@ -520,13 +776,36 @@ async function loadTvEpisodes(tvId, seasonNumber) {
             return;
         }
         
+        // Trova se questo show ha una cronologia per evidenziare l'episodio
+        const historyItem = (window.__ACTIVE_PROFILE_VOD_HISTORY__ || []).find(
+            x => parseInt(x.id, 10) === parseInt(tvId, 10) && x.type === 'tv'
+        );
+        
         data.episodes.forEach(ep => {
+            const isLastPlayed = historyItem && 
+                                 parseInt(historyItem.season, 10) === parseInt(seasonNumber, 10) && 
+                                 parseInt(historyItem.episode, 10) === parseInt(ep.episode_number, 10);
+            
             const row = document.createElement('div');
-            row.className = 'vod-episode-row';
+            row.className = 'vod-episode-row' + (isLastPlayed ? ' last-played' : '');
+            
+            let progressHtml = '';
+            if (isLastPlayed && historyItem.progress > 0) {
+                progressHtml = `
+                    <div style="font-size: 0.75rem; color: var(--accent); font-weight: 600; margin-top: 4px; display: flex; align-items: center; gap: 8px;">
+                        <span style="display:inline-block; width: 60px; height: 4px; background: rgba(255,255,255,0.2); border-radius: 2px; overflow:hidden;">
+                            <span style="display:block; width: ${historyItem.progress}%; height: 100%; background: var(--accent);"></span>
+                        </span>
+                        <span>${historyItem.progress}% completato</span>
+                    </div>
+                `;
+            }
+            
             row.innerHTML = `
                 <div class="vod-episode-info">
                     <div class="vod-episode-title">${ep.episode_number}. ${ep.name || 'Episodio ' + ep.episode_number}</div>
                     <div class="vod-episode-overview">${ep.overview || 'Nessuna descrizione disponibile.'}</div>
+                    ${progressHtml}
                 </div>
                 <button class="vod-episode-play-btn"><i class="ph-fill ph-play"></i></button>
             `;
@@ -769,6 +1048,9 @@ function changeSection(sectionName) {
             }
         }
     }
+    
+    // Aggiorna la riga Continua a Guardare
+    renderContinueWatching();
 }
 
 async function loadNextCatalogPage() {
