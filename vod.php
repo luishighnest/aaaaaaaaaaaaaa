@@ -976,14 +976,6 @@ if (!isset($_SESSION['active_profile'])) {
       opacity: 1;
       pointer-events: auto;
     }
-    .vod-player-overlay.inactive-user {
-      cursor: none;
-    }
-    .vod-player-overlay.inactive-user .vod-player-close {
-      opacity: 0;
-      pointer-events: none;
-      transform: translateY(-10px);
-    }
     .vod-player-close {
       position: absolute;
       top: 20px;
@@ -1002,7 +994,7 @@ if (!isset($_SESSION['active_profile'])) {
       display: flex;
       align-items: center;
       gap: 8px;
-      transition: opacity 0.4s ease, transform 0.4s ease, background 0.2s, border-color 0.2s, box-shadow 0.2s;
+      transition: var(--transition);
       backdrop-filter: blur(10px);
     }
     .vod-player-close:hover {
@@ -1013,6 +1005,44 @@ if (!isset($_SESSION['active_profile'])) {
     }
     .vod-player-close:active {
       transform: translateY(0);
+    }
+    .vod-player-close {
+      opacity: 1;
+      transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    }
+    .vod-player-title-header {
+      position: absolute;
+      top: 25px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      z-index: 10001;
+      pointer-events: none;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.95), 0 1px 4px rgba(0, 0, 0, 0.8);
+      font-family: var(--font-main);
+      opacity: 1;
+      transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      width: 80%;
+      max-width: 600px;
+    }
+    #vod-player-title {
+      font-size: 1.9rem;
+      font-weight: 800;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: -0.5px;
+      margin: 0;
+    }
+    #vod-player-subtitle {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      margin-top: 4px;
+    }
+    .vod-player-overlay.controls-hidden .vod-player-close,
+    .vod-player-overlay.controls-hidden .vod-player-title-header {
+      opacity: 0;
+      pointer-events: none;
     }
     .vod-player-wrapper {
       flex: 1;
@@ -1252,6 +1282,30 @@ if (!isset($_SESSION['active_profile'])) {
         gap: 1rem;
         padding: 15px;
       }
+      /* Player Overlay Mobile adjustments */
+      .vod-player-close {
+        top: 15px;
+        left: 15px;
+        padding: 0 !important;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        justify-content: center;
+        gap: 0;
+      }
+      .vod-player-close .close-text {
+        display: none;
+      }
+      .vod-player-title-header {
+        top: 15px;
+        width: 65%;
+      }
+      #vod-player-title {
+        font-size: 1.15rem;
+      }
+      #vod-player-subtitle {
+        font-size: 0.75rem;
+      }
     }
 
     @media (min-width: 769px) and (max-width: 1024px) {
@@ -1489,7 +1543,11 @@ if (!isset($_SESSION['active_profile'])) {
 
   <!-- PLAYER OVERLAY -->
   <div class="vod-player-overlay" id="vod-player-overlay">
-    <button class="vod-player-close" onclick="closePlayer()"><i class="ph ph-arrow-left"></i> Torna ai Dettagli</button>
+    <button class="vod-player-close" onclick="closePlayer()"><i class="ph ph-arrow-left"></i> <span class="close-text">Torna ai Dettagli</span></button>
+    <div class="vod-player-title-header" id="vod-player-title-header">
+      <h2 id="vod-player-title"></h2>
+      <div id="vod-player-subtitle"></div>
+    </div>
     <div class="vod-player-wrapper">
       <iframe id="vod-player-frame" src="about:blank" allow="autoplay; fullscreen" allowfullscreen></iframe>
     </div>
