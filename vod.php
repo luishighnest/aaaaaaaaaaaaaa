@@ -33,10 +33,7 @@ if (!isset($_SESSION['active_profile'])) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Film & Serie TV - VOD</title>
-  <link rel="stylesheet" href="css/style.css?v=1.18">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=<?= time() ?>">
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
   <script>
     (function() {
@@ -58,77 +55,174 @@ if (!isset($_SESSION['active_profile'])) {
     });
   </script>
   <style>
-    body { margin: 0; height: 100vh; overflow: hidden; background: #050505; font-family: 'Montserrat', sans-serif; }
+    body {
+      margin: 0;
+      height: 100vh;
+      overflow: hidden;
+      background: var(--bg-base);
+      background-image: radial-gradient(circle at top right, rgba(15, 23, 42, 0.4) 0%, transparent 40%),
+                        radial-gradient(circle at bottom left, rgba(2, 6, 23, 0.7) 0%, transparent 40%);
+      color: var(--text-primary);
+      font-family: var(--font-main);
+    }
     
     .vod-page-layout {
       display: flex;
       flex-direction: column;
       height: 100vh;
-      padding-top: 80px; /* Spazio per la navbar fissa */
     }
 
     /* Top Navbar Fissa e Premium */
     .vod-navbar {
-      position: fixed; top: 0; left: 0; right: 0; height: 80px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 70px;
       display: flex;
       align-items: center;
+      justify-content: space-between;
       padding: 0 40px;
-      background: rgba(10, 15, 30, 0.8);
-      backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
-      border-bottom: 1px solid rgba(255,255,255,0.05);
-      gap: 30px;
+      background: rgba(10, 10, 15, 0.85);
+      backdrop-filter: blur(24px) saturate(1.4);
+      -webkit-backdrop-filter: blur(24px) saturate(1.4);
+      border-bottom: 1px solid var(--border-subtle);
       z-index: 100;
       transition: background 0.3s ease;
     }
-    .vod-nav-brand {
-      color: var(--accent); font-weight: 900; font-size: 1.8rem; text-transform: uppercase; letter-spacing: 1px; display: flex; align-items: center; gap: 8px; text-shadow: 0 0 15px var(--accent-glow);
+    
+    .vod-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      cursor: pointer;
     }
-    .vod-nav-links {
-      display: flex; gap: 25px; flex: 1; margin-left: 20px;
-    }
-    .vod-nav-item {
-      color: #94a3b8; font-weight: 600; font-size: 1.05rem; cursor: pointer; transition: all 0.2s; position: relative;
-    }
-    .vod-nav-item:hover, .vod-nav-item.active {
+    .vod-brand-icon {
+      width: 36px;
+      height: 36px;
+      background: linear-gradient(135deg, #ef4444, #b91c1c);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
       color: #fff;
+      box-shadow: 0 0 12px rgba(239, 68, 68, 0.35);
     }
-    .vod-nav-item.active::after {
-      content: ''; position: absolute; bottom: -8px; left: 50%; transform: translateX(-50%); width: 20px; height: 3px; background: var(--accent); border-radius: 50px; box-shadow: 0 0 10px var(--accent);
+    .vod-brand-text {
+      font-size: 1.25rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: #fff;
+      text-transform: uppercase;
+    }
+    .vod-brand-text span {
+      color: #ef4444;
+    }
+    .vod-brand-sub {
+      font-size: 0.8rem;
+      font-weight: 700;
+      opacity: 0.9;
+      letter-spacing: 1px;
+      color: var(--accent) !important;
+      margin-left: 4px;
+      text-shadow: 0 0 10px var(--accent-glow);
     }
     
-    /* Barra di Ricerca */
-    .vod-search-bar {
-      display: flex; align-items: center;
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 50px; 
-      padding: 0.6rem 1.2rem; 
+    .vod-nav-links {
+      display: flex;
       gap: 10px;
-      transition: all 0.3s ease;
-      width: 220px;
+      margin-left: 20px;
+      flex: 1;
     }
-    .vod-search-bar:focus-within {
-      background: rgba(0,0,0,0.7);
+    
+    .vod-navbar .nav-link {
+      padding: 0.5rem 1.2rem;
+      border-radius: 99px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      white-space: nowrap;
+      transition: var(--transition);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      border: 1px solid transparent;
+      background: transparent;
+      cursor: pointer;
+    }
+    .vod-navbar .nav-link:hover {
+      color: var(--text-primary);
+      background: rgba(255, 255, 255, 0.05);
+      border-color: rgba(255, 255, 255, 0.1);
+    }
+    .vod-navbar .nav-link.active {
+      color: #000;
+      background: var(--accent);
+      font-weight: 700;
       border-color: var(--accent);
-      box-shadow: 0 0 20px rgba(0,0,0,0.5), 0 0 10px var(--accent-glow);
-      width: 320px;
+      box-shadow: 0 4px 15px var(--accent-glow);
     }
-    .vod-search-bar i { color: #cbd5e1; font-size: 1.2rem; }
-    .vod-search-bar input {
-      flex: 1; background: transparent; border: none; color: #fff; outline: none; font-size: 1rem; font-family: 'Montserrat', sans-serif;
+    
+    /* Barra di Ricerca Premium */
+    .vod-navbar .nav-search {
+      position: relative;
+      width: 240px;
+      flex-shrink: 0;
+      margin-right: 15px;
     }
-    .vod-search-bar input::placeholder { color: rgba(255,255,255,0.5); }
+    .vod-navbar .nav-search input {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-subtle);
+      border-radius: 99px;
+      padding: 0.5rem 1.2rem 0.5rem 2.6rem;
+      color: var(--text-primary);
+      font-size: 0.85rem;
+      transition: var(--transition);
+      backdrop-filter: blur(10px);
+      font-family: var(--font-main);
+    }
+    .vod-navbar .nav-search input:focus {
+      outline: none;
+      background: rgba(255, 255, 255, 0.08);
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-glow);
+      width: 300px;
+    }
+    .vod-navbar .nav-search i {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      font-size: 1rem;
+      pointer-events: none;
+    }
 
     /* Bottone Torna Live TV (Fisso a destra) */
     .vod-back-btn {
-      background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
-      border: 1px solid rgba(255,255,255,0.2);
-      color: #fff; text-decoration: none; font-weight: 700; font-size: 0.95rem;
-      padding: 0.6rem 1.2rem; border-radius: 50px; display: flex; align-items: center; gap: 8px;
-      transition: all 0.3s ease; backdrop-filter: blur(5px); margin-left: 20px;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1.2rem;
+      background: rgba(239, 68, 68, 0.1);
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      border-radius: 99px;
+      color: #ef4444;
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      transition: var(--transition);
     }
     .vod-back-btn:hover {
-      background: #fff; color: #000; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(255,255,255,0.2);
+      background: #ef4444;
+      color: #fff;
+      border-color: #ef4444;
+      box-shadow: 0 4px 15px rgba(239, 68, 68, 0.4);
+      transform: translateY(-1px);
     }
 
     /* VOD Main Area (Scrollable) */
@@ -136,194 +230,499 @@ if (!isset($_SESSION['active_profile'])) {
       flex: 1;
       overflow-y: auto;
       overflow-x: hidden;
-      padding-bottom: 40px;
+      padding-top: 70px; /* Spazio per navbar fissa */
       scroll-behavior: smooth;
     }
-    .dash-main::-webkit-scrollbar { width: 8px; }
-    .dash-main::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 10px; }
-
-    /* Stile Righe Netflix */
-    .vod-row-container { margin-bottom: 3rem; margin-top: 1rem; padding-left: 30px; }
-    .vod-row-title { 
-      font-size: 1.4rem; font-weight: 800; color: #e2e8f0; margin-bottom: 12px; 
-      display: flex; align-items: center; gap: 8px;
+    .dash-main::-webkit-scrollbar {
+      width: 8px;
     }
-    .vod-row-title i { color: var(--accent); font-size: 1.6rem; }
-    .vod-row {
-      display: flex; gap: 15px; overflow-x: auto; padding-bottom: 15px; padding-right: 30px;
-      scroll-behavior: smooth; scroll-snap-type: x mandatory;
+    .dash-main::-webkit-scrollbar-track {
+      background: rgba(0, 0, 0, 0.1);
     }
-    .vod-row::-webkit-scrollbar { height: 6px; }
-    .vod-row::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 10px; }
-    .vod-row::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+    .dash-main::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+    }
+    .dash-main::-webkit-scrollbar-thumb:hover {
+      background: rgba(255, 255, 255, 0.15);
+    }
 
-    /* Griglia Ricerca */
-    .vod-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 1.5rem; padding: 20px 30px; }
+    /* Hero Banner Premium */
+    .vod-hero-banner {
+      position: relative;
+      width: 100%;
+      height: 55vh;
+      min-height: 380px;
+      max-height: 600px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      padding: 0 40px;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid var(--border-subtle);
+    }
     
-    /* VOD Main Area */
-    .dash-main {
-      flex: 1;
-      min-width: 0;
+    .vod-hero-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      background: #000;
+    }
+    .vod-hero-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.65;
+    }
+    
+    .vod-hero-overlay-horizontal {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, rgba(2, 6, 23, 0.95) 0%, rgba(2, 6, 23, 0.75) 30%, rgba(2, 6, 23, 0.3) 65%, transparent 100%);
+      z-index: 1;
+    }
+    
+    .vod-hero-overlay-vertical {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, var(--bg-base) 0%, transparent 60%, rgba(2, 6, 23, 0.2) 100%);
+      z-index: 1;
+    }
+    
+    .vod-hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 650px;
       display: flex;
       flex-direction: column;
-      background: linear-gradient(145deg, #111827 0%, #030712 100%);
-      border: 1px solid rgba(255,255,255,0.04);
-      border-radius: 24px;
-      overflow: hidden;
-      position: relative;
-      box-shadow: 0 15px 40px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.05);
+      gap: 1.1rem;
+      animation: fadeInHero 0.8s ease-out;
     }
-
-    /* Stili Sidebar Items Premium */
-    .dash-cat-list { display: flex; flex-direction: column; gap: 8px; margin-top: 10px; }
-    .dash-cat-item {
-      padding: 14px 18px; border-radius: 14px; color: var(--text-secondary);
-      display: flex; align-items: center; gap: 12px; cursor: pointer;
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      font-weight: 500; font-size: 1.05rem; border: 1px solid transparent;
+    
+    @keyframes fadeInHero {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
-    .dash-cat-item i { font-size: 1.4rem; transition: transform 0.3s ease; }
-    .dash-cat-item:hover {
-      background: rgba(255,255,255,0.04); color: #fff;
-    }
-    .dash-cat-item:hover i { transform: scale(1.1); }
-    .dash-cat-item.active {
-      background: linear-gradient(90deg, rgba(255,255,255,0.08) 0%, transparent 100%);
-      border-left: 4px solid var(--accent);
-      color: #fff; font-weight: 700;
-      box-shadow: inset 1px 0 10px rgba(255,255,255,0.02);
-    }
-    .dash-cat-item.active i { color: var(--accent); }
-
-    /* Barra di Ricerca Premium */
-    .vod-search-bar {
-      display: flex; align-items: center;
-      background: rgba(255, 255, 255, 0.03);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 50px; 
-      padding: 1.2rem 2rem; 
-      margin: 2.5rem 2.5rem 1.5rem 2.5rem; 
-      gap: 1rem;
-      transition: all 0.3s ease;
-    }
-    .vod-search-bar:focus-within {
-      border-color: var(--accent);
-      box-shadow: 0 0 25px rgba(0,0,0,0.5), inset 0 2px 4px rgba(0,0,0,0.5);
-      background: rgba(0, 0, 0, 0.4);
-    }
-    .vod-search-bar i { color: var(--text-muted); font-size: 1.5rem; transition: color 0.3s ease; }
-    .vod-search-bar:focus-within i { color: var(--accent); }
-    .vod-search-bar input {
-      flex: 1; background: transparent; border: none; color: #fff; outline: none; font-size: 1.15rem;
+    
+    .vod-hero-title {
       font-family: var(--font-main);
+      font-size: 3.2rem;
+      font-weight: 900;
+      line-height: 1.1;
+      color: #fff;
+      text-shadow: 0 4px 15px rgba(0,0,0,0.5);
+      letter-spacing: -1.5px;
     }
-    .vod-search-bar input::placeholder { color: var(--text-muted); }
-
-    /* Area Scorrimento e Griglia */
-    .vod-scroll-area { flex: 1; overflow-y: auto; padding: 0 2.5rem 2.5rem 2.5rem; scroll-behavior: smooth; }
-    .vod-scroll-area::-webkit-scrollbar { width: 8px; }
-    .vod-scroll-area::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 10px; }
-    .vod-scroll-area::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.2); }
-
-    .vod-section-title { 
-      font-family: var(--font-alt); font-size: 2.2rem; margin: 0 0 2rem 0; 
-      font-weight: 800; letter-spacing: -0.5px;
-      display: flex; align-items: center; gap: 12px;
-      background: linear-gradient(to right, #ffffff, #94a3b8);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+    
+    .vod-hero-desc {
+      font-size: 1.02rem;
+      line-height: 1.5;
+      color: var(--text-secondary);
+      text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
     }
-    .vod-section-title i { -webkit-text-fill-color: var(--accent); }
     
-    .vod-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 1.8rem; }
+    .vod-hero-meta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
     
+    .vod-hero-type-badge {
+      background: var(--border-strong);
+      color: var(--text-primary);
+      font-weight: 700;
+      font-size: 0.75rem;
+      padding: 3px 8px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    
+    .vod-hero-buttons {
+      display: flex;
+      gap: 15px;
+      margin-top: 0.4rem;
+    }
+    
+    .vod-hero-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0.75rem 1.6rem;
+      border-radius: 99px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: var(--transition);
+      border: none;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    
+    .vod-hero-btn.play {
+      background: linear-gradient(135deg, var(--accent) 0%, #00b0ff 100%);
+      color: #000;
+      box-shadow: 0 4px 15px var(--accent-glow);
+    }
+    .vod-hero-btn.play:hover {
+      box-shadow: 0 8px 25px var(--accent-glow);
+      transform: translateY(-2px);
+    }
+    
+    .vod-hero-btn.info {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid var(--border-subtle);
+      color: #fff;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+    .vod-hero-btn.info:hover {
+      background: rgba(255, 255, 255, 0.15);
+      border-color: rgba(255, 255, 255, 0.2);
+      transform: translateY(-2px);
+    }
+
+    /* Stile Righe Netflix */
+    .vod-row-container {
+      margin-bottom: 2.5rem;
+      padding-left: 40px;
+    }
+    
+    .vod-row-title { 
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 15px; 
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      letter-spacing: -0.5px;
+      text-transform: uppercase;
+    }
+    .vod-row-title::before {
+      content: '';
+      display: block;
+      width: 4px;
+      height: 1.35rem;
+      background: var(--accent);
+      border-radius: 2px;
+      box-shadow: 0 0 8px var(--accent-glow);
+    }
+    
+    .vod-row {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      padding: 10px 40px 20px 0;
+      scroll-behavior: smooth;
+    }
+    .vod-row::-webkit-scrollbar {
+      height: 6px;
+    }
+    .vod-row::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.01);
+    }
+    .vod-row::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+    }
+    .vod-row::-webkit-scrollbar-thumb:hover {
+      background: var(--accent);
+    }
+
     /* Poster Card */
     .vod-card {
-      position: relative; border-radius: 8px; overflow: hidden; cursor: pointer;
-      transition: all 0.3s ease; background: #111; flex-shrink: 0;
-      scroll-snap-align: start;
+      position: relative;
+      border-radius: 10px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      background: var(--bg-surface);
+      flex-shrink: 0;
+      border: 1px solid rgba(255,255,255,0.03);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     }
-    /* Dimensione orizzontale (Landscape) per la prima riga */
-    .vod-card.landscape { width: 300px; aspect-ratio: 16 / 9; }
-    /* Dimensione verticale (Portrait) per le altre */
+    .vod-card.landscape { width: 280px; aspect-ratio: 16 / 9; }
     .vod-card.portrait { width: 160px; aspect-ratio: 2 / 3; }
-
+    
     .vod-card:hover { 
-      transform: scale(1.05); z-index: 10;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.8); 
-      border-radius: 12px;
+      transform: scale(1.06) translateY(-4px);
+      z-index: 10;
+      border-color: var(--accent);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6), 0 0 15px var(--accent-glow);
     }
-    .vod-card img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .vod-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+    .vod-card:hover img {
+      transform: scale(1.03);
+    }
     
     .vod-card-badge {
-      position: absolute; top: 8px; right: 8px;
-      background: rgba(0, 0, 0, 0.7); backdrop-filter: blur(4px);
-      padding: 3px 6px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1);
-      color: #fbbf24; font-weight: 800; font-size: 0.8rem;
-      display: flex; align-items: center; gap: 4px; z-index: 2;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: rgba(10, 10, 15, 0.75);
+      backdrop-filter: blur(8px);
+      padding: 4px 8px;
+      border-radius: 6px;
+      border: 1px solid rgba(255,255,255,0.1);
+      color: #fbbf24;
+      font-weight: 800;
+      font-size: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      z-index: 2;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
     }
 
     .vod-card-overlay {
-      position: absolute; bottom: 0; left: 0; right: 0;
-      background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
-      padding: 30px 10px 10px 10px; display: flex; flex-direction: column; 
-      opacity: 0; transition: opacity 0.3s ease; z-index: 2;
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(2, 6, 23, 0.95) 0%, rgba(2, 6, 23, 0.4) 60%, transparent 100%);
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      z-index: 2;
     }
-    .vod-card:hover .vod-card-overlay { opacity: 1; }
-    .vod-card-title { font-weight: 800; font-size: 0.95rem; color: #fff; line-height: 1.2; text-shadow: 0 2px 4px rgba(0,0,0,0.8); text-align: center; }
+    .vod-card:hover .vod-card-overlay {
+      opacity: 1;
+    }
+    .vod-card-title {
+      font-weight: 800;
+      font-size: 0.9rem;
+      color: #fff;
+      line-height: 1.3;
+      text-align: center;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+      font-family: var(--font-main);
+    }
     
-    .vod-loading, .vod-empty { grid-column: 1 / -1; text-align: center; padding: 4rem; color: var(--text-muted); font-size: 1.3rem; font-weight: 600; }
-
-    /* VOD MODAL PREMIUM */
-    .vod-modal {
-      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-      background: rgba(0,0,0,0.7); backdrop-filter: blur(15px); z-index: 9999;
-      display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none; transition: all 0.4s ease;
+    .vod-loading, .vod-empty {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 4rem;
+      color: var(--text-muted);
+      font-size: 1.2rem;
+      font-weight: 600;
+      font-family: var(--font-main);
     }
-    .vod-modal.open { opacity: 1; pointer-events: auto; }
+
+    /* Griglia Ricerca */
+    .vod-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 1.8rem;
+      padding: 20px 40px;
+    }
+    
+    .vod-search-section-title {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: #fff;
+      padding: 20px 40px 0 40px;
+      font-family: var(--font-main);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .vod-search-section-title::before {
+      content: '';
+      display: block;
+      width: 4px;
+      height: 1.8rem;
+      background: var(--accent);
+      border-radius: 2px;
+      box-shadow: 0 0 8px var(--accent-glow);
+    }
+
+    /* VOD MODAL ULTRA-PREMIUM */
+    .vod-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(2, 6, 23, 0.6);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.4s ease;
+    }
+    .vod-modal.open {
+      opacity: 1;
+      pointer-events: auto;
+    }
     
     .vod-modal-content {
-      background: linear-gradient(135deg, rgba(30, 41, 59, 0.9) 0%, rgba(15, 23, 42, 0.95) 100%);
-      border: 1px solid rgba(255,255,255,0.1); border-radius: 24px;
-      width: 90%; max-width: 900px; position: relative; 
-      transform: scale(0.95) translateY(20px); transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      overflow: hidden; box-shadow: 0 30px 60px rgba(0,0,0,0.8), inset 0 1px 0 rgba(255,255,255,0.1); 
-      display: flex; max-height: 85vh;
+      background: rgba(15, 23, 42, 0.75);
+      backdrop-filter: blur(30px);
+      -webkit-backdrop-filter: blur(30px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 24px;
+      width: 90%;
+      max-width: 900px;
+      position: relative; 
+      transform: scale(0.95) translateY(20px);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      overflow: hidden;
+      box-shadow: 0 30px 60px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.05); 
+      display: flex;
+      max-height: 85vh;
     }
-    .vod-modal.open .vod-modal-content { transform: scale(1) translateY(0); }
+    .vod-modal.open .vod-modal-content {
+      transform: scale(1) translateY(0);
+    }
     
     .vod-modal-close {
-      position: absolute; top: 20px; right: 20px; background: rgba(0,0,0,0.4); border: 1px solid rgba(255,255,255,0.1); color: #fff;
-      width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
-      cursor: pointer; font-size: 1.5rem; z-index: 10; transition: all 0.2s; backdrop-filter: blur(4px);
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: var(--text-secondary);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 1.3rem;
+      z-index: 10;
+      transition: var(--transition);
+      backdrop-filter: blur(10px);
     }
-    .vod-modal-close:hover { background: rgba(255,255,255,0.2); transform: scale(1.1); }
+    .vod-modal-close:hover {
+      background: var(--accent);
+      color: #000;
+      border-color: var(--accent);
+      transform: rotate(90deg) scale(1.05);
+      box-shadow: 0 0 15px var(--accent-glow);
+    }
     
-    .vod-modal-poster { width: 300px; flex-shrink: 0; padding: 2rem; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.2); }
-    .vod-modal-poster img { width: 100%; border-radius: 16px; box-shadow: 0 15px 35px rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.05); }
+    .vod-modal-poster {
+      width: 300px;
+      flex-shrink: 0;
+      padding: 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0, 0, 0, 0.15);
+      border-right: 1px solid rgba(255,255,255,0.03);
+    }
+    .vod-modal-poster img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+      border: 1px solid rgba(255,255,255,0.05);
+    }
     
-    .vod-modal-info { padding: 3rem 3rem 3rem 1rem; flex: 1; display: flex; flex-direction: column; gap: 1rem; overflow-y: auto; }
-    .vod-modal-info::-webkit-scrollbar { width: 6px; }
-    .vod-modal-info::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 10px; }
+    .vod-modal-info {
+      padding: 3rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      overflow-y: auto;
+    }
+    .vod-modal-info::-webkit-scrollbar {
+      width: 6px;
+    }
+    .vod-modal-info::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+    }
     
-    #vod-modal-title { font-family: var(--font-alt); font-size: 2.2rem; margin: 0; line-height: 1.1; color: #fff; text-shadow: 0 2px 10px rgba(0,0,0,0.5); font-weight: 800; letter-spacing: -1px; }
+    #vod-modal-title {
+      font-family: var(--font-main);
+      font-size: 2.2rem;
+      margin: 0;
+      line-height: 1.1;
+      color: #fff;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+      font-weight: 800;
+      letter-spacing: -1px;
+    }
     
-    #vod-modal-tagline { font-style: italic; color: var(--accent); font-size: 1.1rem; margin-top: -5px; }
-
-    .vod-modal-meta-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
-
+    #vod-modal-tagline {
+      font-style: italic;
+      color: var(--accent);
+      font-size: 1.05rem;
+      margin-top: -5px;
+      font-weight: 500;
+    }
+    
+    .vod-modal-meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+    
     .vod-meta-badge { 
-      background: rgba(255,255,255,0.08); padding: 4px 12px; border-radius: 30px; 
-      font-size: 0.85rem; font-weight: 700; display: inline-flex; align-items: center; gap: 6px; 
-      border: 1px solid rgba(255,255,255,0.05); color: #e2e8f0;
+      background: rgba(255,255,255,0.04);
+      padding: 5px 12px;
+      border-radius: 30px; 
+      font-size: 0.8rem;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px; 
+      border: 1px solid rgba(255,255,255,0.05);
+      color: var(--text-secondary);
+      font-family: var(--font-alt);
     }
-    .vod-meta-badge.rating { color: #fbbf24; background: rgba(251, 191, 36, 0.15); border-color: rgba(251, 191, 36, 0.3); }
+    .vod-meta-badge.rating {
+      color: #fbbf24;
+      background: rgba(251, 191, 36, 0.12);
+      border-color: rgba(251, 191, 36, 0.25);
+    }
     
-    .vod-modal-desc { font-size: 1rem; line-height: 1.6; color: #cbd5e1; margin-top: 10px; }
+    .vod-modal-desc {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: var(--text-secondary);
+      margin-top: 5px;
+    }
     
-    .vod-modal-genres { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
-    .vod-genre-tag { background: rgba(255,255,255,0.1); padding: 3px 10px; border-radius: 6px; font-size: 0.8rem; color: #fff; border: 1px solid rgba(255,255,255,0.1); }
+    .vod-modal-genres {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 5px;
+    }
+    .vod-genre-tag {
+      background: rgba(255,255,255,0.03);
+      padding: 4px 12px;
+      border-radius: 8px;
+      font-size: 0.8rem;
+      color: var(--text-primary);
+      border: 1px solid rgba(255,255,255,0.05);
+      font-weight: 500;
+      transition: var(--transition);
+    }
+    .vod-genre-tag:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(255, 255, 255, 0.15);
+    }
   </style>
 </head>
 <body>
@@ -331,21 +730,46 @@ if (!isset($_SESSION['active_profile'])) {
     
     <!-- Navbar Superiore Stile Netflix -->
     <header class="vod-navbar">
-      <div class="vod-nav-brand"><i class="ph-fill ph-play-circle"></i> VOD</div>
+      <div class="vod-brand" onclick="window.location.reload()">
+        <div class="vod-brand-icon"><i class="ph-fill ph-play-circle"></i></div>
+        <div class="vod-brand-text">PZ<span>8</span><span class="vod-brand-sub">VOD</span></div>
+      </div>
       <nav class="vod-nav-links">
-        <div class="vod-nav-item active" onclick="window.location.reload()">Home</div>
-        <div class="vod-nav-item" onclick="document.getElementById('vod-search-input').focus()">Cerca</div>
+        <div class="nav-link active" id="nav-item-home" onclick="resetSearch()">Home</div>
+        <div class="nav-link" id="nav-item-search" onclick="document.getElementById('vod-search-input').focus()">Cerca</div>
       </nav>
-      <div class="vod-search-bar">
+      <div class="nav-search">
         <i class="ph ph-magnifying-glass"></i>
-        <input type="text" id="vod-search-input" placeholder="Titoli, generi...">
+        <input type="text" id="vod-search-input" placeholder="Cerca film o serie tv...">
       </div>
       <a href="index.php" class="vod-back-btn"><i class="ph-bold ph-monitor-play"></i> Live TV</a>
     </header>
 
-    <!-- Main Content -->
+    <!-- Main Content (Vertical Scroll) -->
     <main class="dash-main" id="dash-main">
       
+      <!-- Hero Banner -->
+      <div class="vod-hero-banner" id="vod-hero-banner" style="display: none;">
+        <div class="vod-hero-bg">
+          <img id="vod-hero-backdrop" src="" alt="Backdrop">
+          <div class="vod-hero-overlay-horizontal"></div>
+          <div class="vod-hero-overlay-vertical"></div>
+        </div>
+        <div class="vod-hero-content">
+          <div class="vod-hero-meta">
+            <span class="vod-meta-badge rating" id="vod-hero-rating"><i class="ph-fill ph-star"></i> N/A</span>
+            <span class="vod-meta-badge" id="vod-hero-year"><i class="ph ph-calendar"></i> N/A</span>
+            <span class="vod-hero-type-badge" id="vod-hero-type">Film</span>
+          </div>
+          <h1 class="vod-hero-title" id="vod-hero-title">Titolo in Evidenza</h1>
+          <p class="vod-hero-desc" id="vod-hero-desc">Descrizione del film o serie TV...</p>
+          <div class="vod-hero-buttons">
+            <button class="vod-hero-btn play" id="vod-hero-play-btn"><i class="ph-fill ph-play"></i> Guarda Ora</button>
+            <button class="vod-hero-btn info" id="vod-hero-info-btn"><i class="ph ph-info"></i> Dettagli</button>
+          </div>
+        </div>
+      </div>
+
       <!-- Container Home (Righe Netflix) -->
       <div id="vod-home-container">
         <!-- Righe generate via JS -->
@@ -353,7 +777,7 @@ if (!isset($_SESSION['active_profile'])) {
 
       <!-- Container Ricerca -->
       <div id="vod-search-container" style="display: none;">
-        <h2 style="color: #fff; padding: 0 30px;" id="vod-search-title">Risultati della Ricerca</h2>
+        <h2 class="vod-search-section-title" id="vod-search-title">Risultati della Ricerca</h2>
         <div class="vod-grid" id="vod-search-grid"></div>
       </div>
       
@@ -385,6 +809,6 @@ if (!isset($_SESSION['active_profile'])) {
     </div>
   </div>
 
-  <script src="js/vod.js?v=1.26"></script>
+  <script src="js/vod.js?v=<?= time() ?>"></script>
 </body>
 </html>
