@@ -22,6 +22,7 @@ window.__CURRENT_MODAL_ITEM__ = null;
 let catalogPage = 1;
 let isLoadingCatalog = false;
 let hasMoreCatalog = true;
+let playerInactivityTimeout = null;
 
 const homePool = [
     { id: 'trending_day', title: 'In Tendenza Oggi', endpoint: '/trending/all/day', type: 'landscape' },
@@ -122,6 +123,12 @@ function populateCard(card, item, type, title, poster) {
 document.addEventListener('DOMContentLoaded', () => {
     loadNetflixRows();
     renderContinueWatching();
+    
+    const playerOverlay = document.getElementById('vod-player-overlay');
+    if (playerOverlay) {
+        playerOverlay.addEventListener('mousemove', showPlayerControls);
+        playerOverlay.addEventListener('click', showPlayerControls);
+    }
     
     const searchClear = document.getElementById('vod-search-clear');
     if (searchClear) {
@@ -617,7 +624,25 @@ function getAccentHex() {
     return accent.replace('#', '');
 }
 
+function showPlayerControls() {
+    const overlay = document.getElementById('vod-player-overlay');
+    if (!overlay) return;
+    
+    overlay.classList.remove('inactive-user');
+    
+    clearTimeout(playerInactivityTimeout);
+    playerInactivityTimeout = setTimeout(() => {
+        if (overlay.classList.contains('open')) {
+            overlay.classList.add('inactive-user');
+        }
+    }, 3000);
+}
+
 async function closePlayer() {
+    const overlay = document.getElementById('vod-player-overlay');
+    overlay.classList.remove('inactive-user');
+    clearTimeout(playerInactivityTimeout);
+
     // Esci dallo schermo intero se attivo
     if (document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement) {
         if (document.exitFullscreen) {
@@ -717,6 +742,7 @@ function playMovie(tmdbId, resume = false) {
     overlay.style.display = 'flex';
     setTimeout(() => {
         overlay.classList.add('open');
+        showPlayerControls();
         // Forza lo schermo intero all'avvio
         if (overlay.requestFullscreen) {
             overlay.requestFullscreen().catch(err => console.log("Errore fullscreen:", err));
@@ -762,6 +788,7 @@ function playShowEpisode(tmdbId, season, episode, resume = false) {
     overlay.style.display = 'flex';
     setTimeout(() => {
         overlay.classList.add('open');
+        showPlayerControls();
         // Forza lo schermo intero all'avvio
         if (overlay.requestFullscreen) {
             overlay.requestFullscreen().catch(err => console.log("Errore fullscreen:", err));
