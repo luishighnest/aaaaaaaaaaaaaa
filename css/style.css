@@ -1109,16 +1109,22 @@ a {
 
 .pc-fullscreen-overlay {
   position: absolute;
-  top: 40px;
-  left: 40px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 40px 80px 40px;
   z-index: 30;
   display: none; /* Nasconde istantaneamente fuori dal fullscreen */
+  flex-direction: column;
+  gap: 12px;
   pointer-events: none;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0) 100%);
 }
+
 /* Mostra l'overlay SOLO se il contenitore è in fullscreen */
 .dash-player-area:fullscreen .pc-fullscreen-overlay,
 .dash-player-area:-webkit-full-screen .pc-fullscreen-overlay {
-  display: block;
+  display: flex;
   opacity: 1;
 }
 
@@ -1126,71 +1132,26 @@ a {
 .dash-player-area:fullscreen .pc-fullscreen-overlay.hidden,
 .dash-player-area:-webkit-full-screen .pc-fullscreen-overlay.hidden {
   opacity: 0;
-  transition: opacity 0.4s ease-out;
+  transition: opacity 0.3s ease;
 }
 
-.pc-glass-pill {
-  background: rgba(15, 23, 42, 0.65);
-  backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  padding: 12px 28px 12px 16px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
-  transform-origin: top left;
-  animation: pillSlideIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-@keyframes pillSlideIn {
-  0% { opacity: 0; transform: scale(0.95) translateY(-10px); }
-  100% { opacity: 1; transform: scale(1) translateY(0); }
-}
-
-.pc-overlay-icon {
-  width: 54px;
-  height: 54px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--accent), #4facfe);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.8rem;
-  color: #fff;
-  box-shadow: 0 4px 15px rgba(0, 242, 254, 0.4);
-}
-
-.pc-overlay-info {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.pc-overlay-name {
+.pc-overlay-title {
   font-family: var(--font-alt), sans-serif;
-  font-size: 2.2rem;
-  font-weight: 800;
-  letter-spacing: -0.5px;
+  font-size: 3.2rem;
+  font-weight: 900;
   color: #ffffff;
-  line-height: 1;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
-.pc-overlay-epg {
-  font-family: var(--font-main), sans-serif;
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: #cbd5e1;
-  line-height: 1;
-  margin-top: 2px;
-}
-.pc-overlay-epg .epg-label {
-  color: var(--accent);
+.pc-overlay-subtitle {
+  font-family: var(--font-alt), sans-serif;
+  font-size: 1.4rem;
   font-weight: 700;
-  margin-right: 4px;
-}
-.pc-overlay-epg .epg-title {
-  color: #f8fafc;
+  color: #b3b3b3;
+  line-height: 1;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.5);
 }
 
 
