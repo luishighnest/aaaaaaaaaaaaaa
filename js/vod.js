@@ -747,6 +747,14 @@ async function sendProgressPayload(context, seconds, progress, isCompleted = fal
     const finalProgress = isCompleted ? 100 : progress;
     const finalSeconds = isCompleted ? 0 : seconds;
     
+    console.log('[VOD PROGRESS DEBUG] sendProgressPayload: preparing payload', {
+        id: context.id,
+        type: context.type,
+        title: context.title,
+        progress: finalProgress,
+        seconds: Math.round(finalSeconds)
+    });
+    
     try {
         const bodyData = {
             id: context.id,
@@ -770,13 +778,30 @@ async function sendProgressPayload(context, seconds, progress, isCompleted = fal
             },
             body: JSON.stringify(bodyData)
         });
-        const result = await response.json();
+        
+        if (!response.ok) {
+            console.error('[VOD PROGRESS DEBUG] sendProgressPayload: HTTP error status:', response.status);
+            return;
+        }
+        
+        const text = await response.text();
+        let result;
+        try {
+            result = JSON.parse(text);
+        } catch (jsonErr) {
+            console.error('[VOD PROGRESS DEBUG] sendProgressPayload: Failed to parse server response as JSON. Raw text:', text, jsonErr);
+            return;
+        }
+        
+        console.log('[VOD PROGRESS DEBUG] sendProgressPayload: Server response received:', result);
         if (result.success) {
             window.__ACTIVE_PROFILE_VOD_HISTORY__ = result.watch_history;
             renderContinueWatching();
+        } else {
+            console.error('[VOD PROGRESS DEBUG] sendProgressPayload: Save failed on server:', result.error);
         }
     } catch (err) {
-        console.error('Errore invio payload progresso:', err);
+        console.error('[VOD PROGRESS DEBUG] sendProgressPayload: Fetch exception:', err);
     }
 }
 
@@ -786,26 +811,42 @@ async function saveProgressToServer(seconds, progress, isCompleted = false) {
 }
 
 async function saveCurrentProgress() {
-    if (!window.__PLAYBACK_CONTEXT__) return;
+    console.log('[VOD PROGRESS DEBUG] saveCurrentProgress called.');
+    if (!window.__PLAYBACK_CONTEXT__) {
+        console.log('[VOD PROGRESS DEBUG] saveCurrentProgress: No active context to save.');
+        return;
+    }
     const context = window.__PLAYBACK_CONTEXT__;
     window.__PLAYBACK_CONTEXT__ = null; // evita chiamate duplicate
     
     let seconds = context.currentTime || 0;
     let progress = 0;
     
+    console.log('[VOD PROGRESS DEBUG] saveCurrentProgress: Current context state:', {
+        id: context.id,
+        type: context.type,
+        prevSeconds: context.prevSeconds,
+        currentTime: context.currentTime,
+        duration: context.duration,
+        startTime: context.startTime
+    });
+    
     if (seconds <= 0 || seconds === context.prevSeconds) {
         const timeSpent = (Date.now() - context.startTime) / 1000;
+        console.log('[VOD PROGRESS DEBUG] saveCurrentProgress: Fallback triggered. timeSpent:', timeSpent);
         if (timeSpent >= 10) {
-            const duration = context.type === 'movie' ? (120 * 60) : (45 * 60);
-            const gained = (timeSpent / duration) * 100;
-            progress = Math.round(context.prevProgress + gained);
-            seconds = (progress / 100) * duration;
+            seconds = (context.prevSeconds || 0) + timeSpent;
+            const duration = context.duration || (context.type === 'movie' ? 120 * 60 : 45 * 60);
+            progress = Math.min(95, Math.round((seconds / duration) * 100));
+            console.log('[VOD PROGRESS DEBUG] saveCurrentProgress: Fallback progress computed:', { seconds, progress });
         } else {
+            console.log('[VOD PROGRESS DEBUG] saveCurrentProgress: Playback session too short (< 10s), skipping save.');
             return;
         }
     } else {
-        const duration = context.type === 'movie' ? (120 * 60) : (45 * 60);
+        const duration = context.duration || (context.type === 'movie' ? 120 * 60 : 45 * 60);
         progress = Math.min(95, Math.round((seconds / duration) * 100));
+        console.log('[VOD PROGRESS DEBUG] saveCurrentProgress: Using player currentTime:', { seconds, progress });
     }
     
     if (progress > 95) progress = 95;
@@ -814,6 +855,7 @@ async function saveCurrentProgress() {
 }
 
 async function closePlayer() {
+    console.log('[VOD PROGRESS DEBUG] closePlayer triggered.');
     const overlay = document.getElementById('vod-player-overlay');
     
     // Esci dal fullscreen se attivo
@@ -825,14 +867,15 @@ async function closePlayer() {
         }
     }
     
+    // Salva il progresso prima di scaricare l'iframe
+    await saveCurrentProgress();
+    
     const frame = document.getElementById('vod-player-frame');
     frame.src = 'about:blank';
     overlay.classList.remove('open');
     setTimeout(() => {
         overlay.style.display = 'none';
     }, 400);
-
-    await saveCurrentProgress();
 }
 
 function playMovie(tmdbId, resume = false) {
@@ -1546,22 +1589,50 @@ let lastSaveTime = 0;
 let lastLoggedSeconds = 0;
 
 window.addEventListener('message', (event) => {
-    if (!event.origin.includes('vixsrc.to')) return;
-    
     const msg = event.data;
     if (!msg) return;
     
     let type = '';
-    let payload = null;
+    let seconds = null;
+    let duration = null;
+    
+    // Logga tutti i messaggi ricevuti per permettere la diagnostica da console
+    console.log('[VOD MESSAGE DEBUG] Origin:', event.origin, 'Data:', msg);
     
     if (typeof msg === 'string') {
         type = msg;
     } else if (typeof msg === 'object') {
-        type = msg.type || '';
-        payload = msg.data !== undefined ? msg.data : null;
+        type = msg.type || msg.event || '';
+        
+        // Estrazione robusta di currentTime / seconds
+        if (typeof msg.currentTime === 'number') {
+            seconds = msg.currentTime;
+        } else if (typeof msg.time === 'number') {
+            seconds = msg.time;
+        } else if (typeof msg.position === 'number') {
+            seconds = msg.position;
+        } else if (typeof msg.seconds === 'number') {
+            seconds = msg.seconds;
+        } else if (msg.data !== undefined && msg.data !== null) {
+            if (typeof msg.data === 'number') {
+                seconds = msg.data;
+            } else if (typeof msg.data === 'object') {
+                seconds = msg.data.currentTime || msg.data.position || msg.data.time || null;
+            }
+        }
+        
+        // Estrazione robusta di duration
+        if (typeof msg.duration === 'number') {
+            duration = msg.duration;
+        } else if (msg.data && typeof msg.data.duration === 'number') {
+            duration = msg.data.duration;
+        }
     }
     
     if (!type || !window.__PLAYBACK_CONTEXT__) return;
+    
+    const validTypes = ['play', 'pause', 'ended', 'timeupdate', 'seeked'];
+    if (!validTypes.includes(type)) return;
     
     switch (type) {
         case 'play':
@@ -1570,8 +1641,8 @@ window.addEventListener('message', (event) => {
             
         case 'pause':
             if (window.__PLAYBACK_CONTEXT__.currentTime > 0) {
-                const duration = window.__PLAYBACK_CONTEXT__.type === 'movie' ? (120 * 60) : (45 * 60);
-                const progress = Math.min(95, Math.round((window.__PLAYBACK_CONTEXT__.currentTime / duration) * 100));
+                const mediaDuration = window.__PLAYBACK_CONTEXT__.duration || (window.__PLAYBACK_CONTEXT__.type === 'movie' ? (120 * 60) : (45 * 60));
+                const progress = Math.min(95, Math.round((window.__PLAYBACK_CONTEXT__.currentTime / mediaDuration) * 100));
                 saveProgressToServer(window.__PLAYBACK_CONTEXT__.currentTime, progress);
             }
             break;
@@ -1584,27 +1655,23 @@ window.addEventListener('message', (event) => {
             }
             break;
             
+        case 'seeked':
         case 'timeupdate':
-            if (payload !== null) {
-                let seconds = 0;
-                if (typeof payload === 'number') {
-                    seconds = payload;
-                } else if (typeof payload === 'object') {
-                    seconds = payload.currentTime || payload.position || 0;
+            if (seconds !== null && seconds > 0) {
+                window.__PLAYBACK_CONTEXT__.currentTime = seconds;
+                if (duration !== null && duration > 0) {
+                    window.__PLAYBACK_CONTEXT__.duration = duration;
                 }
                 
-                if (seconds > 0) {
-                    window.__PLAYBACK_CONTEXT__.currentTime = seconds;
-                    const now = Date.now();
-                    const duration = window.__PLAYBACK_CONTEXT__.type === 'movie' ? (120 * 60) : (45 * 60);
-                    const progress = Math.min(95, Math.round((seconds / duration) * 100));
-                    
-                    // Throttling: salva al massimo ogni 15 secondi se avanzato di 10s
-                    if (now - lastSaveTime >= 15000 && Math.abs(seconds - lastLoggedSeconds) >= 10) {
-                        lastSaveTime = now;
-                        lastLoggedSeconds = seconds;
-                        saveProgressToServer(seconds, progress);
-                    }
+                const now = Date.now();
+                const mediaDuration = window.__PLAYBACK_CONTEXT__.duration || (window.__PLAYBACK_CONTEXT__.type === 'movie' ? (120 * 60) : (45 * 60));
+                const progress = Math.min(95, Math.round((seconds / mediaDuration) * 100));
+                
+                // Throttling: salva al massimo ogni 15 secondi se avanzato di 10s
+                if (now - lastSaveTime >= 15000 && Math.abs(seconds - lastLoggedSeconds) >= 10) {
+                    lastSaveTime = now;
+                    lastLoggedSeconds = seconds;
+                    saveProgressToServer(seconds, progress);
                 }
             }
             break;
