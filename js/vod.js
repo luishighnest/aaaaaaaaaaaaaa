@@ -639,8 +639,37 @@ function showPlayerControls() {
     }, 3000);
 }
 
+function togglePlayerFullscreen() {
+    const overlay = document.getElementById('vod-player-overlay');
+    if (!overlay) return;
+    
+    if (!document.fullscreenElement) {
+        if (overlay.requestFullscreen) {
+            overlay.requestFullscreen().catch(err => console.error("Errore avvio fullscreen:", err));
+        } else if (overlay.webkitRequestFullscreen) {
+            overlay.webkitRequestFullscreen();
+        } else if (overlay.msRequestFullscreen) {
+            overlay.msRequestFullscreen();
+        }
+    } else {
+        if (document.exitFullscreen) {
+            document.exitFullscreen().catch(err => console.error("Errore uscita fullscreen:", err));
+        }
+    }
+}
+
 async function closePlayer() {
     const overlay = document.getElementById('vod-player-overlay');
+    
+    // Esci dal fullscreen se attivo
+    if (document.fullscreenElement === overlay) {
+        try {
+            await document.exitFullscreen();
+        } catch (e) {
+            console.warn("Errore uscita fullscreen:", e);
+        }
+    }
+    
     const frame = document.getElementById('vod-player-frame');
     frame.src = 'about:blank';
     overlay.classList.remove('open');
@@ -768,7 +797,7 @@ function playShowEpisode(tmdbId, season, episode, resume = false) {
             if (data.episodes) {
                 const ep = data.episodes.find(e => parseInt(e.episode_number, 10) === parseInt(episode, 10));
                 if (ep && ep.name && subtitleEl) {
-                    subtitleEl.textContent = `S${season}:E${episode} -> ${ep.name}`;
+                    subtitleEl.textContent = `S${season}:E${episode} ${ep.name}`;
                 }
             }
         })
@@ -1255,3 +1284,40 @@ function resetCatalogAndLoad() {
 
 window.resetCatalogAndLoad = resetCatalogAndLoad;
 window.changeSection = changeSection;
+window.togglePlayerFullscreen = togglePlayerFullscreen;
+
+// Gestione fullscreen per l'overlay VOD e l'iframe player
+document.addEventListener('fullscreenchange', () => {
+    const overlay = document.getElementById('vod-player-overlay');
+    const iframe = document.getElementById('vod-player-frame');
+    const btn = document.getElementById('vod-player-fullscreen-btn');
+    if (!overlay || !iframe) return;
+    
+    // Se l'iframe ha richiesto il fullscreen (es. dal player interno)
+    if (document.fullscreenElement === iframe) {
+        // Trasferiamo il fullscreen all'overlay per poter mostrare la barra dei controlli e titolo sopra
+        document.exitFullscreen().then(() => {
+            if (overlay.requestFullscreen) {
+                overlay.requestFullscreen().catch(err => {});
+            } else if (overlay.webkitRequestFullscreen) {
+                overlay.webkitRequestFullscreen();
+            }
+        }).catch(err => {});
+        return;
+    }
+    
+    const isFullscreen = document.fullscreenElement === overlay;
+    
+    // Aggiorna l'icona e il testo del pulsante fullscreen
+    if (btn) {
+        const icon = btn.querySelector('i');
+        const text = btn.querySelector('.fullscreen-text');
+        if (isFullscreen) {
+            if (icon) icon.className = 'ph ph-corners-in';
+            if (text) text.textContent = 'Finestra';
+        } else {
+            if (icon) icon.className = 'ph ph-corners-out';
+            if (text) text.textContent = 'Schermo Intero';
+        }
+    }
+});
