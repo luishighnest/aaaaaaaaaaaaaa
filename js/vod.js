@@ -128,6 +128,14 @@ document.addEventListener('DOMContentLoaded', () => {
         overlay.addEventListener('mousemove', showPlayerControls);
         overlay.addEventListener('click', showPlayerControls);
         overlay.addEventListener('touchstart', showPlayerControls);
+        
+        // Tracker per catturare i movimenti del mouse quando i controlli sono nascosti
+        const tracker = document.getElementById('vod-player-mouse-tracker');
+        if (tracker) {
+            tracker.addEventListener('mousemove', showPlayerControls);
+            tracker.addEventListener('click', showPlayerControls);
+            tracker.addEventListener('touchstart', showPlayerControls);
+        }
     }
     
     const searchClear = document.getElementById('vod-search-clear');
@@ -636,7 +644,7 @@ function showPlayerControls() {
         if (overlay.classList.contains('open')) {
             overlay.classList.add('controls-hidden');
         }
-    }, 3000);
+    }, 5000);
 }
 
 function togglePlayerFullscreen() {
@@ -763,6 +771,7 @@ function playMovie(tmdbId, resume = false) {
     overlay.style.display = 'flex';
     setTimeout(() => {
         overlay.classList.add('open');
+        updateFullscreenClass();
         showPlayerControls();
     }, 50);
 }
@@ -820,6 +829,7 @@ function playShowEpisode(tmdbId, season, episode, resume = false) {
     overlay.style.display = 'flex';
     setTimeout(() => {
         overlay.classList.add('open');
+        updateFullscreenClass();
         showPlayerControls();
     }, 50);
 }
@@ -1286,33 +1296,30 @@ window.resetCatalogAndLoad = resetCatalogAndLoad;
 window.changeSection = changeSection;
 window.togglePlayerFullscreen = togglePlayerFullscreen;
 
-// Gestione fullscreen per l'overlay VOD e l'iframe player
-document.addEventListener('fullscreenchange', () => {
+// Funzione per rilevare se siamo in fullscreen (incluso F11 o pulsante overlay)
+function updateFullscreenClass() {
     const overlay = document.getElementById('vod-player-overlay');
-    const iframe = document.getElementById('vod-player-frame');
     const btn = document.getElementById('vod-player-fullscreen-btn');
-    if (!overlay || !iframe) return;
+    if (!overlay) return;
     
-    // Se l'iframe ha richiesto il fullscreen (es. dal player interno)
-    if (document.fullscreenElement === iframe) {
-        // Trasferiamo il fullscreen all'overlay per poter mostrare la barra dei controlli e titolo sopra
-        document.exitFullscreen().then(() => {
-            if (overlay.requestFullscreen) {
-                overlay.requestFullscreen().catch(err => {});
-            } else if (overlay.webkitRequestFullscreen) {
-                overlay.webkitRequestFullscreen();
-            }
-        }).catch(err => {});
-        return;
+    // Rileva fullscreen DOM o F11 (se le dimensioni del viewport corrispondono allo schermo)
+    const isFS = !!(
+        document.fullscreenElement ||
+        (window.innerWidth >= screen.width - 5 && window.innerHeight >= screen.height - 5)
+    );
+    
+    if (isFS) {
+        overlay.classList.add('is-fullscreen');
+    } else {
+        overlay.classList.remove('is-fullscreen');
     }
     
-    const isFullscreen = document.fullscreenElement === overlay;
-    
-    // Aggiorna l'icona e il testo del pulsante fullscreen
+    // Aggiorna l'icona del pulsante fullscreen se l'elemento fullscreen è proprio l'overlay
+    const isOverlayFS = document.fullscreenElement === overlay;
     if (btn) {
         const icon = btn.querySelector('i');
         const text = btn.querySelector('.fullscreen-text');
-        if (isFullscreen) {
+        if (isOverlayFS) {
             if (icon) icon.className = 'ph ph-corners-in';
             if (text) text.textContent = 'Finestra';
         } else {
@@ -1320,4 +1327,9 @@ document.addEventListener('fullscreenchange', () => {
             if (text) text.textContent = 'Schermo Intero';
         }
     }
-});
+}
+
+// Gestione eventi per fullscreen
+document.addEventListener('fullscreenchange', updateFullscreenClass);
+window.addEventListener('resize', updateFullscreenClass);
+window.updateFullscreenClass = updateFullscreenClass;
