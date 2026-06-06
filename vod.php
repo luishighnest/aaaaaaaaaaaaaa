@@ -131,15 +131,24 @@ if (!isset($_SESSION['active_profile'])) {
       top: 0;
       left: 0;
       right: 0;
-      height: 70px;
+      height: 72px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 0 40px;
-      background: linear-gradient(to bottom, rgba(2, 6, 23, 0.9) 0%, rgba(2, 6, 23, 0) 100%);
+      background: linear-gradient(to bottom, rgba(2, 6, 23, 0.95) 0%, rgba(2, 6, 23, 0.8) 25%, rgba(2, 6, 23, 0.4) 60%, rgba(2, 6, 23, 0) 100%);
       border-bottom: 1px solid transparent;
       z-index: 100;
-      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    
+    .vod-navbar.scrolled {
+      background: rgba(2, 6, 23, 0.65);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+      height: 66px; /* Leggermente ridotta per un effetto dinamico premium */
     }
 
     .vod-brand {
@@ -197,9 +206,9 @@ if (!isset($_SESSION['active_profile'])) {
       border-radius: 99px;
       font-size: 0.85rem;
       font-weight: 600;
-      color: var(--text-secondary);
+      color: rgba(255, 255, 255, 0.75);
       white-space: nowrap;
-      transition: var(--transition);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
       display: flex;
       align-items: center;
       gap: 0.5rem;
@@ -208,9 +217,9 @@ if (!isset($_SESSION['active_profile'])) {
       cursor: pointer;
     }
     .vod-navbar .nav-link:hover {
-      color: var(--text-primary);
-      background: rgba(255, 255, 255, 0.05);
-      border-color: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(255, 255, 255, 0.12);
     }
     .vod-navbar .nav-link.active {
       color: #000;
@@ -512,33 +521,33 @@ if (!isset($_SESSION['active_profile'])) {
     /* Poster Card */
     .vod-card {
       position: relative;
-      border-radius: 10px;
+      border-radius: 12px;
       overflow: hidden;
       cursor: pointer;
-      transition: all 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
       background: var(--bg-surface);
       flex-shrink: 0;
-      border: 1px solid rgba(255,255,255,0.03);
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
     }
     .vod-card.landscape { width: 280px; aspect-ratio: 16 / 9; }
     .vod-card.portrait { width: 160px; aspect-ratio: 2 / 3; }
     
     .vod-card:hover { 
-      transform: scale(1.06) translateY(-4px);
+      transform: scale(1.02) translateY(-2px);
       z-index: 10;
-      border-color: var(--accent);
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6), 0 0 15px var(--accent-glow);
+      border-color: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.55), 0 0 10px var(--accent-glow);
     }
     .vod-card img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       display: block;
-      transition: transform 0.2s ease;
+      transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
     }
     .vod-card:hover img {
-      transform: scale(1.03);
+      transform: scale(1.015);
     }
     
     .vod-card-badge {
@@ -563,26 +572,32 @@ if (!isset($_SESSION['active_profile'])) {
     .vod-card-overlay {
       position: absolute;
       inset: 0;
-      background: linear-gradient(to top, rgba(2, 6, 23, 0.95) 0%, rgba(2, 6, 23, 0.4) 60%, transparent 100%);
-      padding: 15px;
+      background: linear-gradient(to top, rgba(2, 6, 23, 0.95) 0%, rgba(2, 6, 23, 0.3) 50%, transparent 100%);
+      padding: 12px;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
       opacity: 0;
-      transition: opacity 0.15s ease;
+      transition: opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1);
       z-index: 2;
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
     }
     .vod-card:hover .vod-card-overlay {
       opacity: 1;
     }
     .vod-card-title {
-      font-weight: 800;
-      font-size: 0.9rem;
+      font-weight: 700;
+      font-size: 0.85rem;
       color: #fff;
-      line-height: 1.3;
-      text-align: center;
-      text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+      line-height: 1.25;
+      text-align: left;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
       font-family: var(--font-main);
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
     }
     
     .vod-loading, .vod-empty {
