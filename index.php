@@ -870,8 +870,7 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
       const pcOverlayTitle = document.getElementById('pc-overlay-title');
       const pcOverlaySubtitle = document.getElementById('pc-overlay-subtitle');
       if (pcOverlayTitle && pcOverlaySubtitle) {
-        const activeChName = document.querySelector('.channel-item.active .ch-name')?.textContent || '';
-        pcOverlayTitle.textContent = activeChName;
+        pcOverlayTitle.textContent = currentChannel ? currentChannel.name : 'Nessun Canale';
         if (epg.now) {
           pcOverlaySubtitle.textContent = `In onda: ${epg.now.titolo}`;
         } else {
