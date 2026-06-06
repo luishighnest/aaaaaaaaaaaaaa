@@ -33,7 +33,7 @@ if (!isset($_SESSION['active_profile'])) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Film & Serie TV - VOD</title>
-  <link rel="stylesheet" href="css/style.css?v=1.17">
+  <link rel="stylesheet" href="css/style.css?v=1.18">
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
   <script>
     (function() {
@@ -128,6 +128,6 @@ if (!isset($_SESSION['active_profile'])) {
     </div>
   </div>
 
-  <script src="js/vod.js?v=1.17"></script>
+  <script src="js/vod.js?v=1.18"></script>
 </body>
 </html>
