@@ -68,13 +68,14 @@ if (!isset($_SESSION['active_profile'])) {
       width: 280px;
       flex-shrink: 0;
       height: 100%;
-      background: rgba(15, 23, 42, 0.4);
-      backdrop-filter: blur(12px);
+      background: linear-gradient(180deg, rgba(15, 23, 42, 0.7) 0%, rgba(10, 15, 30, 0.9) 100%);
+      backdrop-filter: blur(20px);
       border: 1px solid rgba(255,255,255,0.05);
       border-radius: 24px;
-      padding: 20px;
+      padding: 24px;
       display: flex;
       flex-direction: column;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     }
     
     /* VOD Main Area */
@@ -83,69 +84,77 @@ if (!isset($_SESSION['active_profile'])) {
       min-width: 0;
       display: flex;
       flex-direction: column;
-      background: rgba(10, 15, 30, 0.7);
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(255,255,255,0.05);
+      background: linear-gradient(145deg, #111827 0%, #030712 100%);
+      border: 1px solid rgba(255,255,255,0.04);
       border-radius: 24px;
       overflow: hidden;
       position: relative;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.05);
     }
-    
-    /* Sfondo Dinamico Hero */
-    .vod-hero-bg {
-      position: absolute;
-      top: 0; left: 0; right: 0; height: 60vh;
-      background-size: cover;
-      background-position: center 10%;
-      z-index: 0;
-      opacity: 0.25;
-      mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
-      -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
-      transition: background-image 1s ease-in-out;
+
+    /* Stili Sidebar Items Premium */
+    .dash-cat-list { display: flex; flex-direction: column; gap: 8px; margin-top: 10px; }
+    .dash-cat-item {
+      padding: 14px 18px; border-radius: 14px; color: var(--text-secondary);
+      display: flex; align-items: center; gap: 12px; cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      font-weight: 500; font-size: 1.05rem; border: 1px solid transparent;
     }
+    .dash-cat-item i { font-size: 1.4rem; transition: transform 0.3s ease; }
+    .dash-cat-item:hover {
+      background: rgba(255,255,255,0.04); color: #fff;
+    }
+    .dash-cat-item:hover i { transform: scale(1.1); }
+    .dash-cat-item.active {
+      background: linear-gradient(90deg, rgba(255,255,255,0.08) 0%, transparent 100%);
+      border-left: 4px solid var(--accent);
+      color: #fff; font-weight: 700;
+      box-shadow: inset 1px 0 10px rgba(255,255,255,0.02);
+    }
+    .dash-cat-item.active i { color: var(--accent); }
 
     /* Barra di Ricerca Premium */
     .vod-search-bar {
-      position: relative; z-index: 2;
       display: flex; align-items: center;
-      background: rgba(0, 0, 0, 0.4);
-      backdrop-filter: blur(8px);
-      border: 1px solid rgba(255,255,255,0.15);
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.08);
       border-radius: 50px; 
       padding: 1.2rem 2rem; 
-      margin: 2rem 2rem 1rem 2rem; 
+      margin: 2.5rem 2.5rem 1.5rem 2.5rem; 
       gap: 1rem;
       transition: all 0.3s ease;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.5), inset 0 2px 4px rgba(255,255,255,0.05);
     }
     .vod-search-bar:focus-within {
       border-color: var(--accent);
-      box-shadow: 0 0 20px var(--accent-glow), inset 0 2px 4px rgba(0,0,0,0.5);
-      background: rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0 25px rgba(0,0,0,0.5), inset 0 2px 4px rgba(0,0,0,0.5);
+      background: rgba(0, 0, 0, 0.4);
     }
-    .vod-search-bar i { color: var(--text-muted); font-size: 1.4rem; transition: color 0.3s ease; }
+    .vod-search-bar i { color: var(--text-muted); font-size: 1.5rem; transition: color 0.3s ease; }
     .vod-search-bar:focus-within i { color: var(--accent); }
     .vod-search-bar input {
-      flex: 1; background: transparent; border: none; color: #fff; outline: none; font-size: 1.1rem;
+      flex: 1; background: transparent; border: none; color: #fff; outline: none; font-size: 1.15rem;
       font-family: var(--font-main);
     }
     .vod-search-bar input::placeholder { color: var(--text-muted); }
 
     /* Area Scorrimento e Griglia */
-    .vod-scroll-area { position: relative; z-index: 2; flex: 1; overflow-y: auto; padding: 0 2rem 2rem 2rem; scroll-behavior: smooth; }
+    .vod-scroll-area { flex: 1; overflow-y: auto; padding: 0 2.5rem 2.5rem 2.5rem; scroll-behavior: smooth; }
     .vod-scroll-area::-webkit-scrollbar { width: 8px; }
     .vod-scroll-area::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 10px; }
     .vod-scroll-area::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.2); }
 
     .vod-section-title { 
-      font-family: var(--font-alt); font-size: 2rem; margin: 0 0 2rem 0; 
-      color: #fff; font-weight: 800; letter-spacing: -0.5px;
-      text-shadow: 0 4px 15px rgba(0,0,0,0.8);
-      display: flex; align-items: center; gap: 10px;
+      font-family: var(--font-alt); font-size: 2.2rem; margin: 0 0 2rem 0; 
+      font-weight: 800; letter-spacing: -0.5px;
+      display: flex; align-items: center; gap: 12px;
+      background: linear-gradient(to right, #ffffff, #94a3b8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
-    .vod-section-title i { color: var(--accent); }
+    .vod-section-title i { -webkit-text-fill-color: var(--accent); }
     
-    .vod-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 2.5rem; }
+    .vod-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 2.5rem; }
     
     /* Poster Card: Effetto 3D e Vetro */
     .vod-card {
@@ -176,12 +185,14 @@ if (!isset($_SESSION['active_profile'])) {
     /* Overlay Titolo Hover */
     .vod-card-overlay {
       position: absolute; bottom: 0; left: 0; right: 0;
-      background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6) 50%, rgba(0,0,0,0) 100%);
-      padding: 40px 15px 15px 15px; display: flex; flex-direction: column; gap: 5px; 
+      background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 100%);
+      padding: 50px 15px 15px 15px; display: flex; flex-direction: column; gap: 6px; 
       opacity: 0; transition: opacity 0.3s ease; z-index: 2;
     }
     .vod-card:hover .vod-card-overlay { opacity: 1; }
-    .vod-card-title { font-family: var(--font-alt); font-weight: 800; font-size: 1.1rem; color: #fff; line-height: 1.2; text-shadow: 0 2px 4px rgba(0,0,0,0.8); }
+    .vod-card-title { font-family: var(--font-alt); font-weight: 800; font-size: 1.1rem; color: #fff; line-height: 1.2; text-shadow: 0 2px 4px rgba(0,0,0,0.8); margin-bottom: 2px; }
+    .vod-card-meta { font-size: 0.8rem; color: #94a3b8; display: flex; align-items: center; gap: 4px; font-weight: 600; }
+    .vod-card-snippet { font-size: 0.8rem; color: #cbd5e1; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; margin-top: 4px; }
     
     .vod-loading, .vod-empty { grid-column: 1 / -1; text-align: center; padding: 4rem; color: var(--text-muted); font-size: 1.3rem; font-weight: 600; }
 
@@ -273,9 +284,6 @@ if (!isset($_SESSION['active_profile'])) {
 
     <!-- Main Content -->
     <main class="dash-main">
-      
-      <!-- HERO BACKGROUND DINAMICO -->
-      <div id="vod-hero-bg" class="vod-hero-bg"></div>
 
       <!-- Barra di ricerca -->
       <div class="vod-search-bar">
@@ -314,6 +322,6 @@ if (!isset($_SESSION['active_profile'])) {
     </div>
   </div>
 
-  <script src="js/vod.js?v=1.20"></script>
+  <script src="js/vod.js?v=1.22"></script>
 </body>
 </html>
