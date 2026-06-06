@@ -1079,6 +1079,7 @@ a {
   width: 100px;
   height: 100px;
   cursor: pointer;
+  display: none; /* Visibile solo in fullscreen tramite JS */
 }
 
 .custom-fullscreen-btn:hover {
