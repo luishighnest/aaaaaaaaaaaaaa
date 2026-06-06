@@ -206,7 +206,6 @@ function renderCategories() {
     // Aggiungi "Tutti"
     const allItem = document.createElement('div');
     allItem.className = `tv-nav-item tv-focusable ${currentCategory === 'all' ? 'active' : ''}`;
-    allItem.tabIndex = 0;
     allItem.innerHTML = `<i class="ph ph-squares-four"></i> Tutti`;
     allItem.onclick = () => selectCategory('all');
     container.appendChild(allItem);
@@ -215,7 +214,6 @@ function renderCategories() {
     if (favorites.length > 0) {
         const favItem = document.createElement('div');
         favItem.className = `tv-nav-item tv-focusable ${currentCategory === 'favorites' ? 'active' : ''}`;
-        favItem.tabIndex = 0;
         favItem.innerHTML = `<i class="ph-fill ph-star" style="color:#ffc107"></i> Preferiti`;
         favItem.onclick = () => selectCategory('favorites');
         container.appendChild(favItem);
@@ -226,7 +224,6 @@ function renderCategories() {
         const cat = CATEGORIES[key];
         const item = document.createElement('div');
         item.className = `tv-nav-item tv-focusable ${currentCategory === key ? 'active' : ''}`;
-        item.tabIndex = 0;
         item.innerHTML = `<i class="ph ${cat.icon}"></i> ${cat.label}`;
         item.onclick = () => selectCategory(key);
         container.appendChild(item);
@@ -263,7 +260,6 @@ function renderChannels(searchQuery = '') {
         const card = document.createElement('div');
         card.className = `tv-channel-card tv-focusable ${isActive ? 'active' : ''}`;
         card.dataset.id = ch.id;
-        card.tabIndex = 0;
         
         const epgInfo = getChannelEpg(ch.name);
         let epgText = epgInfo.now ? epgInfo.now.titolo : 'Diretta continua';
@@ -411,7 +407,7 @@ function changeChannel(direction) {
     }, 100);
 }
 
-// ─── SPATIAL NAVIGATION NATIVA (TV HARDWARE) ───
+// ─── SPATIAL NAVIGATION NATIVA (JS CUSTOM OVERRIDE) ───
 let currentFocusedElement = null;
 
 // Gestione visibilità cursore
@@ -426,28 +422,64 @@ function showCursor() {
 }
 window.addEventListener('mousemove', showCursor);
 
-// Ascoltiamo gli eventi di focus nativi che la TV genera usando il D-Pad
-document.addEventListener('focusin', (e) => {
-    if (e.target && e.target.classList && e.target.classList.contains('tv-focusable')) {
-        if (currentFocusedElement) {
-            currentFocusedElement.classList.remove('tv-focus');
-        }
-        currentFocusedElement = e.target;
-        currentFocusedElement.classList.add('tv-focus');
-        
-        // Centra l'elemento nello schermo
-        currentFocusedElement.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+function setFocus(el) {
+    if (!el) return;
+    if (currentFocusedElement) {
+        currentFocusedElement.classList.remove('tv-focus');
     }
-});
+    currentFocusedElement = el;
+    currentFocusedElement.classList.add('tv-focus');
+    currentFocusedElement.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+}
 
-document.addEventListener('focusout', (e) => {
-    if (e.target && e.target.classList && e.target.classList.contains('tv-focusable')) {
-        e.target.classList.remove('tv-focus');
-        if (currentFocusedElement === e.target) {
-            currentFocusedElement = null;
-        }
+function findNearestFocusable(dirKey) {
+    if (!currentFocusedElement) {
+        return document.querySelector('.tv-channel-card') || document.querySelector('.tv-focusable');
     }
-});
+    
+    const focusables = Array.from(document.querySelectorAll('.tv-focusable'));
+    const currentRect = currentFocusedElement.getBoundingClientRect();
+    const c1 = { x: currentRect.left + currentRect.width / 2, y: currentRect.top + currentRect.height / 2 };
+    
+    let bestMatch = null;
+    let minDistance = Infinity;
+    
+    focusables.forEach(el => {
+        if (el === currentFocusedElement) return;
+        
+        // Elemento deve essere visibile e non nascosto da CSS display:none
+        if (el.offsetParent === null) return; 
+
+        const rect = el.getBoundingClientRect();
+        if (rect.width === 0 || rect.height === 0) return;
+        
+        const c2 = { x: rect.left + rect.width / 2, y: rect.top + rect.height / 2 };
+        
+        let isEligible = false;
+        if (dirKey === 'RIGHT' && c2.x > c1.x + 10) isEligible = true;
+        if (dirKey === 'LEFT' && c2.x < c1.x - 10) isEligible = true;
+        if (dirKey === 'DOWN' && c2.y > c1.y + 10) isEligible = true;
+        if (dirKey === 'UP' && c2.y < c1.y - 10) isEligible = true;
+        
+        if (isEligible) {
+            const dist = Math.sqrt(Math.pow(c2.x - c1.x, 2) + Math.pow(c2.y - c1.y, 2));
+            let penalty = 0;
+            if (dirKey === 'RIGHT' || dirKey === 'LEFT') {
+                penalty = Math.abs(c2.y - c1.y) * 2;
+            } else {
+                penalty = Math.abs(c2.x - c1.x) * 2;
+            }
+            
+            const score = dist + penalty;
+            if (score < minDistance) {
+                minDistance = score;
+                bestMatch = el;
+            }
+        }
+    });
+    
+    return bestMatch;
+}
 
 window.addEventListener('keydown', (e) => {
     hideCursor(); // Tenta di nascondere il cursore CSS come fallback
@@ -488,6 +520,29 @@ window.addEventListener('keydown', (e) => {
     if (isChUp) { changeChannel(1); e.preventDefault(); return; }
     if (isChDown) { changeChannel(-1); e.preventDefault(); return; }
     
+    // SPATIAL NAVIGATION CUSTOM
+    if (isUp || isDown || isLeft || isRight) {
+        // Ignora se siamo dentro l'input di testo
+        if (document.activeElement && document.activeElement.tagName === 'INPUT') {
+            if (isLeft || isRight) return;
+        }
+        
+        e.preventDefault(); // Blocca sempre l'azione nativa della TV
+        
+        let dir = '';
+        if (isUp) dir = 'UP';
+        if (isDown) dir = 'DOWN';
+        if (isLeft) dir = 'LEFT';
+        if (isRight) dir = 'RIGHT';
+        
+        const nextEl = findNearestFocusable(dir);
+        if (nextEl) {
+            setFocus(nextEl);
+        } else if (!currentFocusedElement) {
+            setFocus(document.querySelector('.tv-channel-card.active') || document.querySelector('.tv-channel-card'));
+        }
+    }
+    
     // AZIONE ENTER (Simula il click sull'elemento focheggiato)
     if (isEnter) {
         if (currentFocusedElement) {
@@ -499,10 +554,6 @@ window.addEventListener('keydown', (e) => {
             }
         }
     }
-    
-    // NON facciamo e.preventDefault() per le frecce direzionali quando la UI è aperta,
-    // così permettiamo all'algoritmo nativo della Smart TV di spostare il focus
-    // sull'elemento tabindex="0" più vicino!
 }, true);
 
 // ─── BOOTSTRAP E FULLSCREEN ───
@@ -528,7 +579,7 @@ const triggerFullscreen = () => {
     setTimeout(() => {
         if (!currentFocusedElement) {
             const firstCard = document.querySelector('.tv-channel-card.active') || document.querySelector('.tv-channel-card');
-            if (firstCard) firstCard.focus();
+            setFocus(firstCard);
         }
     }, 500);
 };
