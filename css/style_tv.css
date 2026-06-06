@@ -340,34 +340,4 @@ body {
   transition: width 0.3s;
 }
 
-/* Spinner overlay */
-.tv-loading-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.6);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 5;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s;
-}
 
-.tv-loading-overlay.show {
-  opacity: 1;
-  visibility: visible;
-}
-
-.tv-spinner {
-  width: 60px;
-  height: 60px;
-  border: 5px solid rgba(255,255,255,0.1);
-  border-top-color: var(--accent);
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-  to { transform: rotate(360deg); }
-}
