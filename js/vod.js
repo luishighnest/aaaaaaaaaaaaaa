@@ -105,6 +105,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 showHome();
             }
         }, 500);
+    });
+
     // Gestione scorrimento infinito per il Catalogo
     const scrollArea = document.getElementById('dash-main');
     if (scrollArea) {
