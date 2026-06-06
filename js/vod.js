@@ -851,7 +851,7 @@ async function loadTvEpisodes(tvId, seasonNumber) {
             }
             
             let readMoreHtml = '';
-            if (ep.overview && ep.overview.length > 220) {
+            if (ep.overview && ep.overview.length > 120) {
                 readMoreHtml = `
                     <button class="vod-episode-readmore" title="Espandi descrizione" style="background: none; border: none; color: var(--text-muted); cursor: pointer; padding: 2px; font-size: 1rem; display: inline-flex; align-items: center; justify-content: center; margin-top: 2px; outline: none;"><i class="ph ph-caret-down"></i></button>
                 `;
@@ -871,7 +871,7 @@ async function loadTvEpisodes(tvId, seasonNumber) {
                 playShowEpisode(tvId, seasonNumber, ep.episode_number, isLastPlayed);
             };
             
-            if (ep.overview && ep.overview.length > 220) {
+            if (ep.overview && ep.overview.length > 120) {
                 const readMoreBtn = row.querySelector('.vod-episode-readmore');
                 const overviewDiv = row.querySelector(`#ep-overview-${ep.episode_number}`);
                 if (readMoreBtn && overviewDiv) {
