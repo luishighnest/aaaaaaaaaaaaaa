@@ -39,6 +39,7 @@ $poster_path = isset($data['poster_path']) ? trim($data['poster_path']) : '';
 $season = isset($data['season']) ? intval($data['season']) : 0;
 $episode = isset($data['episode']) ? intval($data['episode']) : 0;
 $progress = isset($data['progress']) ? intval($data['progress']) : 0;
+$seconds = isset($data['seconds']) ? intval($data['seconds']) : 0;
 
 if ($id <= 0 || !in_array($type, ['movie', 'tv']) || empty($title)) {
     echo json_encode(['success' => false, 'error' => 'Dati in input non validi']);
@@ -88,6 +89,7 @@ foreach ($user_profiles as &$profile) {
             'title' => $title,
             'poster_path' => $poster_path,
             'progress' => $progress,
+            'seconds' => $seconds,
             'timestamp' => time()
         ];
         
