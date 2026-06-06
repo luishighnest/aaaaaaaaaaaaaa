@@ -1,6 +1,26 @@
 <?php
 session_start();
 
+// Sincronizza il profilo attivo in sessione con user_profiles.json se esiste
+if (isset($_SESSION['username']) && isset($_SESSION['active_profile']['id'])) {
+    $username = $_SESSION['username'];
+    $profile_id = $_SESSION['active_profile']['id'];
+    $profiles_file = file_exists(__DIR__ . '/user_profiles.json') 
+        ? __DIR__ . '/user_profiles.json' 
+        : (file_exists(dirname(__DIR__) . '/user_profiles.json') ? dirname(__DIR__) . '/user_profiles.json' : '');
+    if ($profiles_file && file_exists($profiles_file)) {
+        $profiles_data = json_decode(file_get_contents($profiles_file), true);
+        if (isset($profiles_data[$username]) && is_array($profiles_data[$username])) {
+            foreach ($profiles_data[$username] as $p) {
+                if ($p['id'] === $profile_id) {
+                    $_SESSION['active_profile'] = $p;
+                    break;
+                }
+            }
+        }
+    }
+}
+
 $config_file = __DIR__ . '/users_config.php';
 $config = file_exists($config_file) ? require $config_file : [];
 $subscription_expiry = $config['subscription_expiry'] ?? '2027-12-31';
@@ -115,7 +135,7 @@ if (!isset($_SESSION['csrf_token'])) {
     <!-- Top Bar (Informazioni Canale e Ricerca) -->
     <header class="tv-top-bar">
       <div class="tv-top-left">
-        <div class="tv-brand"><i class="ph ph-television"></i> <span></span></div>
+        <div class="tv-brand"><i class="ph ph-television"></i> <span>8</span> PZ</div>
         <div class="tv-current-info">
           <div class="tv-current-channel" id="tv-channel-name">PZ8 TV</div>
           <div class="tv-current-epg" id="tv-channel-epg">Scegli un canale per iniziare</div>

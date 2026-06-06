@@ -2,6 +2,26 @@
 // Avvia sessione e verifica autenticazione
 session_start();
 
+// Sincronizza il profilo attivo in sessione con user_profiles.json se esiste
+if (isset($_SESSION['username']) && isset($_SESSION['active_profile']['id'])) {
+    $username = $_SESSION['username'];
+    $profile_id = $_SESSION['active_profile']['id'];
+    $profiles_file = file_exists(__DIR__ . '/user_profiles.json') 
+        ? __DIR__ . '/user_profiles.json' 
+        : (file_exists(dirname(__DIR__) . '/user_profiles.json') ? dirname(__DIR__) . '/user_profiles.json' : '');
+    if ($profiles_file && file_exists($profiles_file)) {
+        $profiles_data = json_decode(file_get_contents($profiles_file), true);
+        if (isset($profiles_data[$username]) && is_array($profiles_data[$username])) {
+            foreach ($profiles_data[$username] as $p) {
+                if ($p['id'] === $profile_id) {
+                    $_SESSION['active_profile'] = $p;
+                    break;
+                }
+            }
+        }
+    }
+}
+
 // Previeni il caching della pagina da parte del browser
 header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
 header("Cache-Control: post-check=0, pre-check=0", false);
