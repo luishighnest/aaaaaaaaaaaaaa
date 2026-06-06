@@ -16,12 +16,12 @@ const modalRating = document.getElementById('vod-modal-rating');
 const modalOverview = document.getElementById('vod-modal-overview');
 
 const rowsConfig = [
-    { id: 'trending', title: '<i class="ph-fill ph-fire"></i> In Tendenza Ora', endpoint: '/trending/all/day', type: 'landscape' },
-    { id: 'upcoming', title: '<i class="ph-fill ph-calendar-star"></i> Prossime Uscite', endpoint: '/movie/upcoming', type: 'portrait' },
-    { id: 'pop_movie', title: '<i class="ph-fill ph-film-strip"></i> Film Popolari', endpoint: '/movie/popular', type: 'portrait' },
-    { id: 'top_movie', title: '<i class="ph-fill ph-star"></i> Film Acclamati', endpoint: '/movie/top_rated', type: 'portrait' },
-    { id: 'pop_tv', title: '<i class="ph-fill ph-television"></i> Serie TV del Momento', endpoint: '/tv/popular', type: 'portrait' },
-    { id: 'top_tv', title: '<i class="ph-fill ph-star-half"></i> Serie TV Capolavoro', endpoint: '/tv/top_rated', type: 'portrait' }
+    { id: 'trending', title: 'In Tendenza Ora', endpoint: '/trending/all/day', type: 'landscape' },
+    { id: 'upcoming', title: 'Prossime Uscite', endpoint: '/movie/upcoming', type: 'portrait' },
+    { id: 'pop_movie', title: 'Film Popolari', endpoint: '/movie/popular', type: 'portrait' },
+    { id: 'top_movie', title: 'Film Acclamati', endpoint: '/movie/top_rated', type: 'portrait' },
+    { id: 'pop_tv', title: 'Serie TV del Momento', endpoint: '/tv/popular', type: 'portrait' },
+    { id: 'top_tv', title: 'Serie TV Capolavoro', endpoint: '/tv/top_rated', type: 'portrait' }
 ];
 
 async function fetchTMDB(endpoint) {
@@ -56,6 +56,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 async function loadNetflixRows() {
     homeContainer.innerHTML = '';
+    
+    // Fetch and initialize the Hero Banner using the first item of Trending
+    fetchTMDB('/trending/all/day').then(items => {
+        if (items && items.length > 0) {
+            initHero(items[0]);
+        }
+    });
     
     for (const row of rowsConfig) {
         // Crea il container della riga
@@ -102,14 +109,76 @@ async function loadNetflixRows() {
     }
 }
 
+async function initHero(item) {
+    if (!item) return;
+    
+    const type = item.media_type || (item.title ? 'movie' : 'tv');
+    const title = item.title || item.name;
+    const desc = item.overview || 'Nessuna descrizione disponibile.';
+    const rating = item.vote_average ? item.vote_average.toFixed(1) : 'N/A';
+    const date = item.release_date || item.first_air_date || '';
+    const year = date ? date.split('-')[0] : 'N/A';
+    
+    const heroSection = document.getElementById('vod-hero-banner');
+    const heroBackdrop = document.getElementById('vod-hero-backdrop');
+    const heroRating = document.getElementById('vod-hero-rating');
+    const heroYear = document.getElementById('vod-hero-year');
+    const heroType = document.getElementById('vod-hero-type');
+    const heroTitle = document.getElementById('vod-hero-title');
+    const heroDesc = document.getElementById('vod-hero-desc');
+    const playBtn = document.getElementById('vod-hero-play-btn');
+    const infoBtn = document.getElementById('vod-hero-info-btn');
+    
+    if (item.backdrop_path) {
+        heroBackdrop.src = `https://image.tmdb.org/t/p/original${item.backdrop_path}`;
+    } else {
+        heroBackdrop.src = 'https://via.placeholder.com/1920x1080?text=No+Backdrop';
+    }
+    
+    heroRating.innerHTML = `<i class="ph-fill ph-star"></i> ${rating}`;
+    heroYear.innerHTML = `<i class="ph ph-calendar"></i> ${year}`;
+    heroType.textContent = type === 'movie' ? 'Film' : 'Serie TV';
+    heroTitle.textContent = title;
+    heroDesc.textContent = desc;
+    
+    // Indica che la sezione Hero ha dati caricati
+    heroSection.dataset.hasData = 'true';
+    
+    // Associa click
+    playBtn.onclick = () => openModal(item);
+    infoBtn.onclick = () => openModal(item);
+    
+    // Mostra se siamo sulla home
+    if (searchContainer.style.display !== 'block') {
+        heroSection.style.display = 'flex';
+    }
+}
+
 function showHome() {
     searchContainer.style.display = 'none';
     homeContainer.style.display = 'block';
+    
+    const heroSection = document.getElementById('vod-hero-banner');
+    if (heroSection.dataset.hasData === 'true') {
+        heroSection.style.display = 'flex';
+    }
+    
+    document.getElementById('nav-item-home').classList.add('active');
+    document.getElementById('nav-item-search').classList.remove('active');
+    searchInput.value = '';
+}
+
+function resetSearch() {
+    showHome();
 }
 
 async function searchContent(query) {
     homeContainer.style.display = 'none';
+    document.getElementById('vod-hero-banner').style.display = 'none';
     searchContainer.style.display = 'block';
+    
+    document.getElementById('nav-item-home').classList.remove('active');
+    document.getElementById('nav-item-search').classList.add('active');
     
     document.getElementById('vod-search-title').innerHTML = `Risultati per: "${query}"`;
     searchGrid.innerHTML = '<div class="vod-loading">Ricerca in corso...</div>';
