@@ -144,7 +144,7 @@
                 "descrizione": "TG1 Sera"
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:56"
     },
     {
         "canale": "Rai 2",
@@ -156,7 +156,7 @@
                 "descrizione": "Serie televisiva tedesca dal titolo originale Um Himmels Willen (Per amor del cielo). I protagonisti sono il sindaco di Kaltenthal Wolfgang Wller, che vuole trasformare il convento del paese in un moderno centro congressi, e la sorella Lotte Albers, che lotta per salvare l'antico convento."
             },
             {
-                "ora": "06:27",
+                "ora": "06:28",
                 "titolo": "Un ciclone in convento",
                 "descrizione": "Serie televisiva tedesca dal titolo originale Um Himmels Willen (Per amor del cielo). I protagonisti sono il sindaco di Kaltenthal Wolfgang Wller, che vuole trasformare il convento del paese in un moderno centro congressi, e la sorella Lotte Albers, che lotta per salvare l'antico convento."
             },
@@ -172,6 +172,11 @@
             },
             {
                 "ora": "08:15",
+                "titolo": "Gli Imperdibili",
+                "descrizione": "RUBRICA - Backstage, anteprime, eventi e curiosit� dentro lo schermo. E' il programma che offre informazione e approfondimento sulla programmazione dei canali che compongono il bouquet RAI. - Regia di Francesco Pennacchia Autrici Gabriella Belloni, Cinzia De Ponti, Rita Iocchi Produttore esecutivo Clelia Fasano"
+            },
+            {
+                "ora": "08:20",
                 "titolo": "Il Meglio Di Radio2 Social Club",
                 "descrizione": "Una selezione dei momenti più significativi della settimana di Radio2 Social Club."
             },
@@ -213,7 +218,7 @@
             {
                 "ora": "14:00",
                 "titolo": "Dribbling",
-                "descrizione": "Lo storico rotocalco sportivo a cura di RaiSport, in una versione ampiamente rinnovata che d� ampio spazio a grandi storie di sport."
+                "descrizione": "RUBRICA - Una serie di mini documentari prodotti dalla FIFA, dedicati a commenti ed approfondimenti sugli incontri dei Mondiali FIFA 2026.. - A cura di Rai Sport Supervisione di Marco Mazzocchi, Massimo Proietto A cura di Fabrizio Failla Coordinamento giornalistico Francesca Diana Conduce Paolo Paganini Regia di Marco Spoletini"
             },
             {
                 "ora": "14:40",
@@ -226,19 +231,14 @@
                 "descrizione": "Giro d'Italia Women 2026 37a edizione - 8a tappa: Rivoli - Sestriere"
             },
             {
-                "ora": "17:50",
-                "titolo": "Gli Imperdibili",
-                "descrizione": "Backstage, anteprime, eventi e curiosit� dentro lo schermo. È il programma che offre informazione e approfondimento sulla programmazione dei canali che compongono il bouquet Rai."
+                "ora": "17:53",
+                "titolo": "Meteo 2",
+                "descrizione": "Meteo 2"
             },
             {
                 "ora": "17:55",
                 "titolo": "TG2 L.I.S.",
                 "descrizione": "TG2 L.I.S."
-            },
-            {
-                "ora": "17:58",
-                "titolo": "Meteo 2",
-                "descrizione": "Meteo 2"
             },
             {
                 "ora": "18:00",
@@ -256,7 +256,7 @@
                 "descrizione": "La serie è incentrata sul funzionamento interno dell'ufficio dell'FBI di New York, che mette a frutto tutta la capacit� , l'intelletto e la tecnologia strabiliante del Bureau per mantenere la citt� e gli Stati Uniti al sicuro."
             },
             {
-                "ora": "19:41",
+                "ora": "19:40",
                 "titolo": "F.B.I.",
                 "descrizione": "La serie è incentrata sul funzionamento interno dell'ufficio dell'FBI di New York, che mette a frutto tutta la capacit� , l'intelletto e la tecnologia strabiliante del Bureau per mantenere la citt� e gli Stati Uniti al sicuro."
             },
@@ -291,7 +291,7 @@
                 "descrizione": "Le storie e i protagonisti di fatti di cronaca e di costume che si raccontano nella loro quotidianit� . Direttore Antonio Preziosi Vicedirettore Alfonso Samengo Curato e condotto da Adriana Pannitteri"
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:56"
     },
     {
         "canale": "Rai 3",
@@ -304,8 +304,8 @@
             },
             {
                 "ora": "08:00",
-                "titolo": "I Giganti - Campania Con Giampaolo Morelli",
-                "descrizione": "Raccontare le nostre regioni italiane e le loro eccellenze in ambito artistico, imprenditoriale, storico e culturale attraverso un originale punto di partenza: i giganti verdi."
+                "titolo": "I Giganti - Campania Con Giampaolo Morel",
+                "descrizione": "I Giganti - Campania Con Giampaolo Morelli - DOCUMENTARIO - Il viaggio comincia nel Bosco di Capodimonte accanto a una maestosissima Canfora. Prima tappa, la Vista con il Parco Sommerso di Baia, nel Golfo - di Pozzuoli, museo a cielo aperto, con resti archeologici incredibili... - (2015) Con Giampaolo Morelli"
             },
             {
                 "ora": "08:30",
@@ -346,16 +346,6 @@
                 "ora": "12:25",
                 "titolo": "TGR Il Settimanale Estate",
                 "descrizione": "Direttore Roberto Pacchetti. Vicedirettore Roberto Gueli. A cura della TGR Trento"
-            },
-            {
-                "ora": "13:00",
-                "titolo": "Amazing stories - Storie incredibili",
-                "descrizione": "Un uomo anziano si stabilisce in una nuova casa insieme al figlio e alla sua famiglia. L'entusiasmo iniziale non è destinato a durare; egli si rende conto, infatti, che l'abitazione è stata edificata esattamente nel luogo in cui, settantacinque anni prima, avvenne il tragico deragliamento del treno 407, che causò la morte di tutti i passeggeri."
-            },
-            {
-                "ora": "13:30",
-                "titolo": "Amazing stories - Storie incredibili",
-                "descrizione": "Brad Bender è un attraente ed atletico adolescente, completamente al di fuori della portata della sua compagna di studi Shirley, che è pazza di lui. Ma un giorno l'energia scatenata da una pioggia di meteoriti improvvisamente lo trasforma in un magnete umano, rendendo la sua vita impossibile."
             },
             {
                 "ora": "14:00",
@@ -428,7 +418,7 @@
                 "descrizione": "L'uomo, la natura, lo spazio, la Terra e il futuro dei Sapiens: Mario Tozzi esplora i grandi interrogativi del nostro tempo con un'indagine lucida e originale, che intreccia scienza, sistema e conoscenza."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:56"
     },
     {
         "canale": "Rai 4",
@@ -480,7 +470,7 @@
                 "descrizione": "Criminal Minds è una serie poliziesca incentrata sull'Unit� di analisi criminale (BAU) che ha sede presso l'accademia dell'FBI a Quantico, in Virginia. L'unit� è composta da psichiatri, psicologi e criminologi in grado di “pensare” come gli S.I., sigla che utilizzano per indicare i “soggetti ignoti” che compiono delitti seriali sui quali sono chiamati ad indagare. La squadra interviene in ogni localit� degli Stati Uniti ogni qual volta si sospetti che i delitti possano essere opera di un serial killer, lavora stilando un profilo psicologico del S.I. in modo da anticiparne le mosse e catturarlo. La squadra è formata da diversi elementi, ognuno con un suo ruolo ben preciso: c'è chi ha l'incarico di indagare sul campo parlando con le famiglie e relazionandosi con le forze di polizia locale, chi si immedesima nel killer per comprenderlo, chi fa ricerche sui soggetti coinvolti. Ovviamente vengono analizzate anche le relazioni tra i vari personaggi."
             },
             {
-                "ora": "12:47",
+                "ora": "12:46",
                 "titolo": "Criminal Minds",
                 "descrizione": "Criminal Minds è una serie poliziesca incentrata sull'Unit� di analisi criminale (BAU) che ha sede presso l'accademia dell'FBI a Quantico, in Virginia. L'unit� è composta da psichiatri, psicologi e criminologi in grado di “pensare” come gli S.I., sigla che utilizzano per indicare i “soggetti ignoti” che compiono delitti seriali sui quali sono chiamati ad indagare. La squadra interviene in ogni localit� degli Stati Uniti ogni qual volta si sospetti che i delitti possano essere opera di un serial killer, lavora stilando un profilo psicologico del S.I. in modo da anticiparne le mosse e catturarlo. La squadra è formata da diversi elementi, ognuno con un suo ruolo ben preciso: c'è chi ha l'incarico di indagare sul campo parlando con le famiglie e relazionandosi con le forze di polizia locale, chi si immedesima nel killer per comprenderlo, chi fa ricerche sui soggetti coinvolti. Ovviamente vengono analizzate anche le relazioni tra i vari personaggi."
             },
@@ -520,7 +510,7 @@
                 "descrizione": "Cinque poliziotti di Toronto, appena usciti dall’Accademia, mettono alla prova il loro coraggio dedicandosi a un mestiere nel quale anche il più piccolo errore può costargli la vita. La 26enne Andy McNally è il cuore del gruppo: una ragazza empatica che vuole rendere il mondo un posto migliore. Nonostante la cattiva influenza del padre, Andy ha sempre sognato di diventare un poliziotto. Con lei lavorano Dov (un ragazzo simpatico ma troppo impulsivo), Chris, Gail e Traci."
             },
             {
-                "ora": "19:04",
+                "ora": "19:03",
                 "titolo": "Rookie Blue",
                 "descrizione": "Cinque poliziotti di Toronto, appena usciti dall’Accademia, mettono alla prova il loro coraggio dedicandosi a un mestiere nel quale anche il più piccolo errore può costargli la vita. La 26enne Andy McNally è il cuore del gruppo: una ragazza empatica che vuole rendere il mondo un posto migliore. Nonostante la cattiva influenza del padre, Andy ha sempre sognato di diventare un poliziotto. Con lei lavorano Dov (un ragazzo simpatico ma troppo impulsivo), Chris, Gail e Traci."
             },
@@ -545,7 +535,7 @@
                 "descrizione": "Banklady racconta la storia vera di Gisela Werler, un'operaia rispettosa della legge di Amburgo, che si innamora di un ladro e diventa una beniamina dei media come la prima e più famosa rapinatrice di banche tedesca. Astuta, sexy ed eccitante, Gisela e il suo amato Hermann portano a termine un'audace rapina dopo l'altra. Banklady segue questo fuorilegge che ha catturato l'immaginazione della Germania, sfidando coraggiosamente le aspettative di genere e vivendo una storia d'amore decennale tra Bonnie e Clyde."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:56"
     },
     {
         "canale": "Rai 5",
@@ -652,12 +642,12 @@
                 "descrizione": "DOCUMENTARIO - documentario. - 2019 GBR"
             },
             {
-                "ora": "20:30",
+                "ora": "20:31",
                 "titolo": "Overland 17 - L'Estremo Sud-Est Asiatico - Malesia, Armonia Di Culture Nella Natura Incontaminata",
                 "descrizione": "Overland fa tappa nella periferia di Kuala Lumpur, dove si incontra la minoranza induista più autentica, che si manifesta con autoflagellazioni e riti legati al tempo passato. Nella Grotta Tempurung si trovano tracce della guerra civile, conosciuta come Emergenza Malese, periodo buio ormai lasciato al passato."
             },
             {
-                "ora": "21:22",
+                "ora": "21:23",
                 "titolo": "Sei Pezzi Facili - Il Teatro Di Mattia Torre - 456",
                 "descrizione": "La storia di una famiglia che vive in mezzo a una valle. Padre, madre e figlio sono ignoranti, diffidenti, nervosi. Si lanciano accuse, litigano, pregano, si odiano. Tuttavia occorre una tregua perché sta arrivando un ospite inatteso che può cambiare il loro futuro. Tutto è perfetto, ma la tregua non durer� ."
             },
@@ -672,7 +662,7 @@
                 "descrizione": "Il documentario del Campania Teatro Festival, firmato da Nadia Baldi, narra la ricchezza delle proposte drammaturgiche nazionali ed internazionali che hanno debuttato a Napoli attraverso i protagonisti dell'edizione 2025."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:56"
     },
     {
         "canale": "Rete 4",
@@ -764,7 +754,7 @@
                 "descrizione": "Tornano gli appuntamenti con i grandi reportage di Retequattro condotti da Stella Pende."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:56"
     },
     {
         "canale": "Canale 5",
@@ -896,7 +886,7 @@
                 "descrizione": "Divertente show-antropologico, ripropone la \"selezione naturale\" fra 2 categorie di persone antitetiche che gareggiano al fine di scoprire chi e' destinato alla sopravvivenza."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:56"
     },
     {
         "canale": "Italia 1",
@@ -1033,7 +1023,7 @@
                 "descrizione": "Per il terzo episodio della saga, la regia passa a John Landis. Il detective Axel Foley (Eddie Murphy) st� indagando su un traffico di macchine rubate quando scopre qualcosa di molto molto grosso."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:56"
     },
     {
         "canale": "La7",
@@ -1105,7 +1095,7 @@
                 "descrizione": "I sette giorni appena trascorsi attraverso lo sguardo e il pensiero di Massimo Gramellini. 3a Edizione"
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:56"
     },
     {
         "canale": "TV8",
@@ -1167,22 +1157,22 @@
                 "descrizione": "Ottavo appuntamento del mondiale 2026: al Balaton Ring, in Ungheria, si accendono i motori per le qualifiche della MotoGP. Telecronaca Meda - Sanchini"
             },
             {
-                "ora": "11:40",
+                "ora": "11:55",
                 "titolo": "MotoGP Paddock",
                 "descrizione": "Le ultime notizie dalla pit lane e dal paddock attraverso il racconto degli inviati di Sky Sport MotoGP."
             },
             {
-                "ora": "12:00",
+                "ora": "12:10",
                 "titolo": "Diggia: La sfida più grande",
                 "descrizione": "Diggia: La sfida piu' grande"
             },
             {
-                "ora": "12:10",
+                "ora": "12:15",
                 "titolo": "Brivio - back to Japan",
                 "descrizione": "Brivio - Back To Japan"
             },
             {
-                "ora": "12:30",
+                "ora": "12:35",
                 "titolo": "MotoGP Paddock",
                 "descrizione": "Le ultime notizie dalla pit lane e dal paddock attraverso il racconto degli inviati di Sky Sport MotoGP."
             },
@@ -1252,7 +1242,7 @@
                 "descrizione": "Ep1 di 8 Calabria - Protagonista della puntata sara' l'emblema della cucina calabrese, il piccante. Quattro ristoranti si sfidano per il titolo di miglior ristorante di cucina piccante della Calabria."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:56"
     },
     {
         "canale": "Nove",
@@ -1309,7 +1299,7 @@
                 "descrizione": "Luca Sommi e Andrea Scanzi conducono il talk show di informazione e attualita'."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:56"
     },
     {
         "canale": "20 Mediaset",
@@ -1411,7 +1401,7 @@
                 "descrizione": "Finn e il suo aiutante Alfonz sono a caccia di tesori e proprio per questo i guai non mancano. Finn è convinto che sia possibile individuare la localizzazione di un antico galeone spagnolo carico di preziosi. Per fare questo però deve convincere qualcuno ad aiutarlo. Ci prova con l'ex moglie Tess con scarsi risultati fino a quando, per una rocambolesca vicenda, la incontra nuovamente sullo yacht di un riccone, Nigel Honeycut, il quale si interessa al possibile ritrovamento anche per movimentare un po' le giornate della figlia Gemma che è andata a trovarlo non certo di buon grado. La caccia può avere inizio. Ma ci sono altri interessati ai forzieri."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:56"
     },
     {
         "canale": "Twentyseven",
@@ -1508,7 +1498,7 @@
                 "descrizione": "In una Los Angeles devastata dalla criminalit� , un poliziotto violento si mette nei guai con un efferato malvivente. Entrambi vengono ibernati per subire un programma di rieducazione. Nel 2032 il criminale riesce a fuggire e semina morte in citt� . Giovane poliziotta fa allora scongelare anche il collega per farsi aiutare nella caccia. Esordio a Hollywood dell'italiano Brambilla con un film d'avventure non privo d'ironia (quando il protagonista si sveglia, scopre che il presidente USA è Schwarzenegger), ma imperniato soprattutto sullo spettacolo acrobatico e sulla suspense delle azioni. Credibile, poco; reazionario, molto."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:56"
     },
     {
         "canale": "IRIS",
@@ -1565,34 +1555,34 @@
                 "descrizione": "L'atletica Charly vive tranquilla in un paesino dove il Natale è alle porte, cercando di ricordare un passato dalle lunghe ombre. La donna, infatti, non rammenta nulla dei suoi anni vissuti pericolosamente alle dipendenze dei servizi segreti americani. I quali, tra l'altro, la pensano definitivamente morta e sepolta. Ma una televisione locale riprende la sua sfilate nei panni di Santa Claus, mentre un ladruncolo è sulle sue tracce per tutt'altri motivi."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:56"
     },
     {
         "canale": "Rai Movie",
         "categoria": "Digitale Terrestre",
         "programmi": [
             {
-                "ora": "06:30",
+                "ora": "06:25",
                 "titolo": "I fichissimi",
                 "descrizione": "Romeo (Jerry Cal� ) e Felice (Diego Abatantuono), sono due ragazzi a capo di due band rivali che si sbeffeggiano di continuo. Il primo lavora con l'amico Renato (Mauro Di Francesco) in un garage dove l'avvocato Colombo (Ugo Bologna) lascia in custodia la sua Ferrari, Felice invece fornisce i fruttivendoli di Milano a bordo di un'Ape. Un giorno Romeo conosce Giulietta (Simona Mariani) in metropolitana, la ragazza fa la cassiera in un bar ed è la sorella di Felice, ma questo Romeo lo scoprir� solo dopo. Quando Felice, ad una festa mascherata, scoprir� la tresca, scoppier� il pandemonio: mentre Felice cercher� di far sposare la sorella col il proprietario del bar dove lavora (Renato Cecchetto), Romeo finir� in carcere per tentata rapina. Sar� l'avvocato Colombo a togliere dai guai Romeo durante il processo e quindi a permettergli di precipitarsi in chiesa per impedire il matrimonio della sua amata."
             },
             {
-                "ora": "08:00",
+                "ora": "07:55",
                 "titolo": "Anica - Appuntamento Al Cinema",
                 "descrizione": "Rubrica per la promozione della cultura cinematografica in Italia."
             },
             {
-                "ora": "08:05",
+                "ora": "08:00",
                 "titolo": "Il tuo ex non muore mai",
                 "descrizione": "Audrey (Mila Kunis) e Morgan (Kate McKinnon) sono due migliori amiche trentenni che vivono a Los Angeles e vengono improvvisamente coinvolte in una cospirazione internazionale quando l'ex-fidanzato di Audrey si presenta al loro appartamento inseguito da un gruppi di letali killer che lo stanno inseguendo. Sorprendendo anche loro stesse, le due amiche entrano in azione, scappando in tutta Europa e dovendo fare i conti con i killer e un agente segreto britannico, affascinante ma sospettoso. Nel frattempo dovranno salvare il mondo."
             },
             {
-                "ora": "10:00",
+                "ora": "09:55",
                 "titolo": "Piccole Donne",
                 "descrizione": "Dopo la fine della guerra di secessione americana le sorelle March dovranno affrontare problemi economici, sentimentali e sociali. Tra tutte spicca la figura di Jo, determinata a trovare la propria libert� e indipendenza, spronando anche le sorelle a dare spazio al proprio talento, nonostante le rigide imposizioni della societ� di quel periodo."
             },
             {
-                "ora": "12:20",
+                "ora": "12:15",
                 "titolo": "L'implacabile",
                 "descrizione": "Entro il 2017, l'economia globale è crollata e la societ� americana è diventata uno stato di polizia totalitario, censurando ogni attivit� culturale. Il governo tranquillizza la popolazione trasmettendo una serie di programmi televisivi in cui criminali condannati lottano per la vita, tra cui The Running Man, in stile gladiatore, condotto dallo spietato Damon Killian, in cui i \"corridori\" tentano di sfuggire agli \"stalker\" e alla morte certa per avere la possibilit� di essere graziati e liberati."
             },
@@ -1624,7 +1614,7 @@
             {
                 "ora": "21:10",
                 "titolo": "Promises",
-                "descrizione": "Sandro, libraio italo-inglese sposato, perde la testa per Laura durante una festa. Sebbene lei stia per sposarsi e i due provino a rispettare i propri legami, l'attrazione reciproca condizioner� inevitabilmente i loro destini. La passione si trasforma così in una continua rincorsa, segnata da una cronica mancanza di tempismo simmetrico."
+                "descrizione": "Quando arriva, il grande amore travolge tutto quello che incontra. Alexander è un uomo con un’infanzia difficile alle spalle, finalmente felice con sua moglie e la loro bambina. Laura è una gallerista d’arte in procinto di sposarsi. Quando si incontrano a una festa, capiscono al primo sguardo che non avranno scampo. Ma la vita sembra avere altri piani per loro. Tra scelte che non riusciranno a compiere e un destino ripetutamente beffardo, attraverseranno tutta la loro esistenza tormentati da un sentimento che li divora. Perché un amore mai vissuto è un amore che non potr� mai morire."
             },
             {
                 "ora": "23:05",
@@ -1632,7 +1622,7 @@
                 "descrizione": "Una storia di passione e sogni che da un basso di Napoli diventa un’incredibile avventura internazionale. Nel magico capoluogo campano degli anni ’80, dove Maradona è una divinit� , Enrico “Erry” Frattasio trasforma i mixtape che fa per i suoi amici in un impero, grazie all’aiuto dei suoi fratelli Peppe e Angelo. Una clamorosa impresa che cambier� le loro esistenze, reinventer� il concetto di pirateria in Italia e porter� la musica nelle vite di tutti."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:56"
     },
     {
         "canale": "Rai Premium",
@@ -1714,7 +1704,7 @@
                 "descrizione": "Domenico Dodaro è un ispettore del lavoro dedito e incorruttibile. Dopo la prematura morte della moglie fa ritorno nella sua Lucca insieme alla piccola Mimì, sua figlia. Lì ritrova parte della sua famiglia, l'amico Alessandro e tante cose da fare per migliorare la sicurezza di chi lavora e per rimettersi in carreggiata dopo un periodo difficile."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:56"
     },
     {
         "canale": "La 5",
@@ -1811,7 +1801,7 @@
                 "descrizione": "Ines, 42 anni, in un momento difficile della sua vita si tuffa in mare per farla finita. Viene salvata da un adolescente, Hugo, di cui la donna si innamora in maniera ossessiva. Ines cercher� di impedire a chiunque di interferire in questa relazione proibita, finché, accecata dalla passione, non esiter� a prendere decisioni che avranno un dirompente impatto su tutti coloro che la circondano."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:56"
     },
     {
         "canale": "Real Time",
@@ -1898,7 +1888,7 @@
                 "descrizione": "Michael cerca di riprendersi dopo un intervento. L'incontro di Lucas non va come previsto."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:56"
     },
     {
         "canale": "Food Network",
@@ -2055,7 +2045,7 @@
                 "descrizione": "Simone Rugiati e' in viaggio per il Bel Paese alla ricerca dei migliori food advisor."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:56"
     },
     {
         "canale": "Focus",
@@ -2157,7 +2147,7 @@
                 "descrizione": "Nel giugno del 1944, un'unit� segreta dell'esercito americano entrò in azione in Normandia. Le armi schierate erano decisamente insolite. La loro missione era usare il bluff, l'inganno e l'astuzia per salvare vite umane. Perchè il Pentagono mise a tacere la storia di ciò che questi uomini realizzarono per più di quarant'anni?"
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:56"
     },
     {
         "canale": "Giallo",
@@ -2239,7 +2229,7 @@
                 "descrizione": "L'Ispettore capo Vera Stanhope (Brenda Blethyn) è una detective alla soglia della pensione della fittizia Northumberland & City Police, che indaga sui delitti che avvengono nella sua giurisdizione. Lei è appassionata del suo lavoro e, nonostante un aspetto costantemente trasandato e una personalit� irascibile, ha una mente calcolatrice e si impegna profondamente nel suo lavoro. Suoi compagni di lavoro sono i sergenti Joe Ashworth (David Leon) e Aiden Healy (Kenny Doughty)."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:56"
     },
     {
         "canale": "Boing",
@@ -2396,7 +2386,7 @@
                 "descrizione": "Per sbaglio Uncle Grandpa manda un bambino in un'altra dimensione, cosi' parte per recuperarlo, ma lo ritrova nei panni di un imperatore dispotico."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:56"
     },
     {
         "canale": "K2",
@@ -2553,7 +2543,7 @@
                 "descrizione": "2' Stagione Ep.28 - Le avventure di tre scoiattoli dalla voce incredibile, 'adottati' da Dave Seville, che diventano un fenomeno musicale."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:56"
     },
     {
         "canale": "Rai Gulp",
@@ -2710,7 +2700,7 @@
                 "descrizione": "Su Prometia, le Winx cadono nella trappola orchestrata da Orion e Valtor. Per fortuna, Stella e Flora riescono a liberare appena in tempo le loro amiche. Intanto, su Iridia, Obscurum trasforma tutte le Lumen, tra cui Lumilla, in Staryummy. Le Winx arrivano appena in tempo per salvare Orion, ma non possono fare niente per le Lumen trasformate..."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:57"
     },
     {
         "canale": "Frisbee",
@@ -2867,7 +2857,7 @@
                 "descrizione": "1' Stagione Ep.13 - Le mille avventure di Tag, una cucciola di 6 anni che vive a Pawston, curiosa di scoprire il mondo in cui vive."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:57"
     },
     {
         "canale": "DMAX",
@@ -2974,7 +2964,7 @@
                 "descrizione": "Luigi Pelazza ci porta nella prigione in cui e' impossibile fuggire."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:57"
     },
     {
         "canale": "Rai Sport",
@@ -2982,8 +2972,8 @@
         "programmi": [
             {
                 "ora": "06:00",
-                "titolo": "Rally. C.To Italiano Sparco: Rally Due Valli - Gara 1",
-                "descrizione": "Rally. C.to Italiano Sparco: Rally Due Valli - gara 1"
+                "titolo": "Automobilismo Rally: Camp. Italiano 2026",
+                "descrizione": "Automobilismo Rally: Camp. Italiano 2026 Rally Due Valli - gara 1"
             },
             {
                 "ora": "07:00",
@@ -2997,61 +2987,56 @@
             },
             {
                 "ora": "09:00",
-                "titolo": "Tiro Con L'Arco. Europei Targa Antalya",
-                "descrizione": "Tiro con l'Arco. Europei Targa Antalya"
+                "titolo": "Scherma: Camp. Italiani Paralimpici Roma",
+                "descrizione": "Scherma: Camp. Italiani Paralimpici Roma 2026 Finali 1a giornata"
             },
             {
-                "ora": "10:00",
-                "titolo": "Automobilismo. C.To Europeo Formula Regional: Spa-Francorchamps",
-                "descrizione": "Automobilismo. C.to Europeo Formula Regional: Spa-Francorchamps"
-            },
-            {
-                "ora": "11:00",
-                "titolo": "Scherma. Camp. Italiani Paralimpici Roma - 1a G.Ta",
-                "descrizione": "Fioretto, spada e sciabola. La sport olimpico azzurro per eccellenza da guardare sui canali Rai e da rivedere su RaiPlay."
-            },
-            {
-                "ora": "13:30",
-                "titolo": "Taekwondo. Grand Prix Roma - 2a Giornata",
-                "descrizione": "Taekwondo. Grand Prix Roma - 2a giornata"
+                "ora": "11:30",
+                "titolo": "Taekwondo 2a Giornata: Grand Prix Roma",
+                "descrizione": "Taekwondo 2a giornata: Grand Prix Roma"
             },
             {
                 "ora": "14:10",
+                "titolo": "Automobilismo Rally: Camp. Italiano 2026",
+                "descrizione": "Automobilismo Rally: Camp. Italiano 2026 Rally Due Valli - gara 2"
+            },
+            {
+                "ora": "14:55",
                 "titolo": "Gli Imperdibili",
                 "descrizione": "Backstage, anteprime, eventi e curiosit� dentro lo schermo. È il programma che offre informazione e approfondimento sulla programmazione dei canali che compongono il bouquet Rai."
             },
             {
-                "ora": "14:15",
-                "titolo": "Rally. C.To Italiano Sparco: Rally Due Valli - Gara 2",
-                "descrizione": "Rally. C.to Italiano Sparco: Rally Due Valli - gara 2"
-            },
-            {
-                "ora": "15:15",
-                "titolo": "Scherma. C.Ti Italiani Paralimpici Roma - 2a G.Ta",
-                "descrizione": "Fioretto, spada e sciabola. La sport olimpico azzurro per eccellenza da guardare sui canali Rai e da rivedere su RaiPlay."
+                "ora": "15:00",
+                "titolo": "Scherma: Camp. Italiani Paralimpici Roma",
+                "descrizione": "Scherma: Camp. Italiani Paralimpici Roma 2026 Finali 2a giornata"
             },
             {
                 "ora": "17:45",
-                "titolo": "Taekwondo. Grand Prix Roma - 3a Giornata",
-                "descrizione": "Taekwondo. Grand Prix Roma - 3a giornata"
+                "titolo": "Taekwondo 3a Giornata: Grand Prix Roma",
+                "descrizione": "Taekwondo 3a giornata: Grand Prix Roma"
             },
             {
                 "ora": "20:25",
-                "titolo": "Pallanuoto. Serie A1 Femminile Semifinale: Roma-Trieste - Gara 1",
-                "descrizione": "Pallanuoto. Serie A1 femminile Semifinale: Roma-Trieste - gara 1"
+                "titolo": "Pallanuoto Femminile: Camp. Italiano Ser",
+                "descrizione": "Pallanuoto Femminile: Camp. Italiano serie A1 2025\/26 Semifinale gara 1: Roma - Trieste"
             },
             {
                 "ora": "21:40",
                 "titolo": "Scherma. Camp. Italiani Paralimpici Roma - 2a G.Ta",
-                "descrizione": "Fioretto, spada e sciabola. La sport olimpico azzurro per eccellenza da guardare sui canali Rai e da rivedere su RaiPlay."
+                "descrizione": "Scherma: Camp. Italiani Paralimpici Roma 2026 Finali 2a giornata"
             },
             {
                 "ora": "23:45",
                 "titolo": "TG Sport Notte",
                 "descrizione": "TG Sport Notte"
+            },
+            {
+                "ora": "23:55",
+                "titolo": "Magazine FIFA - Le Città Mondiali Rubric",
+                "descrizione": "Magazine FIFA - le citt� Mondiali rubrica - puntata 6 San Francisco"
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:57"
     },
     {
         "canale": "Sportitalia",
@@ -3084,13 +3069,13 @@
             },
             {
                 "ora": "09:00",
-                "titolo": "Tutti in campo",
-                "descrizione": "Tutti in campo"
+                "titolo": "Play weekend",
+                "descrizione": "Play weekend"
             },
             {
                 "ora": "10:00",
-                "titolo": "Tutti in campo",
-                "descrizione": "Tutti in campo"
+                "titolo": "Play weekend",
+                "descrizione": "Play weekend"
             },
             {
                 "ora": "11:00",
@@ -3119,38 +3104,38 @@
             },
             {
                 "ora": "14:00",
-                "titolo": "Blab",
-                "descrizione": "Blab Live"
+                "titolo": "Ruote in pista",
+                "descrizione": "Ruote in pista"
             },
             {
                 "ora": "14:30",
-                "titolo": "Si Live 24",
-                "descrizione": "Un'informazione veloce, affidabile e aggiornata h24. “SI Live24” nasce per dare la possibilit� a tutti gli appassionati di sport di essere informati tutto il giorno"
+                "titolo": "Speciale CUN",
+                "descrizione": "Speciale CUN"
             },
             {
                 "ora": "15:00",
-                "titolo": "Si Cafe'",
-                "descrizione": "Si Cafe'"
-            },
-            {
-                "ora": "16:00",
-                "titolo": "Si Live 24",
-                "descrizione": "Un'informazione veloce, affidabile e aggiornata h24. “SI Live24” nasce per dare la possibilit� a tutti gli appassionati di sport di essere informati tutto il giorno"
-            },
-            {
-                "ora": "16:30",
-                "titolo": "Si Live 24",
-                "descrizione": "Un'informazione veloce, affidabile e aggiornata h24. “SI Live24” nasce per dare la possibilit� a tutti gli appassionati di sport di essere informati tutto il giorno"
+                "titolo": "Calcio Weekend",
+                "descrizione": "Calcio Weekend Live"
             },
             {
                 "ora": "17:00",
-                "titolo": "Calcio Today",
-                "descrizione": "Calcio Today"
+                "titolo": "SoloCalcio",
+                "descrizione": "SoloCalcio"
+            },
+            {
+                "ora": "18:00",
+                "titolo": "Si Motori",
+                "descrizione": "Trasmissione ideata per gli appassionati dei motori, interviste in esclusiva,uno spazio dedicato alla presentazione dei nuovi modelli con le ultime news dal mondo delle quattro ruote. Condotto da Filippo Gherardi"
             },
             {
                 "ora": "18:30",
-                "titolo": "Presentazione Calendario Serie A 2026\/27",
-                "descrizione": "Presentazione Calendario Serie A 2026\/27"
+                "titolo": "Mondo Crociera",
+                "descrizione": "Mondo Crociera"
+            },
+            {
+                "ora": "19:00",
+                "titolo": "S4 Talk",
+                "descrizione": "S4 Talk"
             },
             {
                 "ora": "20:00",
@@ -3164,21 +3149,16 @@
             },
             {
                 "ora": "21:00",
-                "titolo": "Zona Fontana",
-                "descrizione": "Zona Fontana"
-            },
-            {
-                "ora": "22:00",
-                "titolo": "Calcio Tonight",
-                "descrizione": "Calcio Tonight"
+                "titolo": "Calcio Weekend",
+                "descrizione": "Calcio Weekend Live"
             },
             {
                 "ora": "23:00",
-                "titolo": "Sportitaliamercato",
-                "descrizione": "Il programma tratta le vicende del calciomercato sia nella sessione estiva che in quella invernale e va in onda alle ore 23.00 dal lunedì al venerdì"
+                "titolo": "Calcio Weekend",
+                "descrizione": "Calcio Weekend Live"
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:57"
     },
     {
         "canale": "HGTV",
@@ -3280,7 +3260,7 @@
                 "descrizione": "Jonathan e Drew aiutano un'addestratrice di cavalli a realizzare i suoi sogni."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:57"
     },
     {
         "canale": "RSI LA 1",
@@ -3437,7 +3417,7 @@
                 "descrizione": "Il programma tutto a disegni animati"
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:57"
     },
     {
         "canale": "RSI LA 2",
@@ -3539,7 +3519,7 @@
                 "descrizione": "da San Diego (USA)"
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:57"
     },
     {
         "canale": "DAZN 1",
@@ -3631,7 +3611,7 @@
                 "descrizione": "Vanja Milinkovic-Savic - Insieme al Profeta Hernanes, il protagonista del terzo episodio della nuova stagione di MySkills e' il portiere del Napoli, Vanja Milinkovic-Savic! Scopri i segreti del gigante serbo, alto 2.03 m."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:57"
     },
     {
         "canale": "Sky Sport 24",
@@ -3689,13 +3669,8 @@
             },
             {
                 "ora": "11:30",
-                "titolo": "News Line",
-                "descrizione": "Tutto quello che è accaduto nel panorama sportivo delle ultime 24 ore, con analisi, notizie, e una lettura dei giornali che troveremo in edicola."
-            },
-            {
-                "ora": "12:00",
-                "titolo": "Sport 24 Calciomercato",
-                "descrizione": "Gli ultimi aggiornamenti sul Calciomercato. Tutte le novita' e le indiscrezioni su trattative e trasferimenti del mercato calciatori in Italia e all'estero. Le notizie esclusive della \"squadra mercato\" di SkySport."
+                "titolo": "Sport 24 Today",
+                "descrizione": "Le notizie e i commenti del giorno, le anteprime e l'attualita' con servizi, commenti, interviste e collegamenti."
             },
             {
                 "ora": "12:30",
@@ -3786,9 +3761,14 @@
                 "ora": "21:00",
                 "titolo": "Sport 24 Today",
                 "descrizione": "Le notizie e i commenti del giorno, le anteprime e l'attualita' con servizi, commenti, interviste e collegamenti."
+            },
+            {
+                "ora": "21:30",
+                "titolo": "Sport 24 Today",
+                "descrizione": "Le notizie e i commenti del giorno, le anteprime e l'attualita' con servizi, commenti, interviste e collegamenti."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:57"
     },
     {
         "canale": "Sky Sport Uno",
@@ -3830,7 +3810,7 @@
                 "descrizione": "Ottavo appuntamento del mondiale 2026: al Balaton Ring, in Ungheria, si accendono i motori per le qualifiche della MotoGP. Telecronaca Meda - Sanchini"
             },
             {
-                "ora": "11:40",
+                "ora": "11:55",
                 "titolo": "Roland Garros",
                 "descrizione": "Bertolucci Tennis Heroes. - Tennis Heroes racconta il mito di Adriano Panatta. Dai trionfi di Roma e Parigi alla Coppa Davis, tutto nel '76. Quando il tennis italiano sembrava un'eccezione romantica"
             },
@@ -3905,7 +3885,7 @@
                 "descrizione": "Continental Tour Gold. - Le gare del World Athletics Continental Tour Gold."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:57"
     },
     {
         "canale": "Sky Sport Calcio",
@@ -3992,7 +3972,7 @@
                 "descrizione": "Zelanda UEFA Amichevoli. - Nelle 2 precedenti amichevoli del 1991, entrambe in Nuova Zelanda, inglesi sempre vittoriosi: 1-0 e 2-0. TC: Federico Zancan"
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:57"
     },
     {
         "canale": "Sky Sport Tennis",
@@ -4054,7 +4034,7 @@
                 "descrizione": "Diurna Premier Padel. - Seguiamo le gare del Premier Padel Major."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:57"
     },
     {
         "canale": "Sky Sport F1",
@@ -4104,16 +4084,6 @@
                 "ora": "10:40",
                 "titolo": "Motori Formula 3 2026 [F3 Monaco S.Race '26]",
                 "descrizione": "Dal Circuito di Monaco."
-            },
-            {
-                "ora": "11:45",
-                "titolo": "Charles per Sempre Si",
-                "descrizione": "Un giro di pista e poi l'intervista a Charles Leclerc nella sua Monaco, subito dopo aver annunciato il rinnovo con la Ferrari. Con Carlo Vanzini."
-            },
-            {
-                "ora": "12:00",
-                "titolo": "Kimi Ferma",
-                "descrizione": "Intervista di Carlo Vanzini a Kimi Antonelli, reduce da quattro vittorie consecutive e sempre piu' leader del mondiale."
             },
             {
                 "ora": "12:15",
@@ -4196,7 +4166,7 @@
                 "descrizione": "Rischiare ma senza sbagliare e colpire i muri: e' la sfida per la pole, decisiva a Monte-Carlo dove superare e' difficilissimo. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:57"
     },
     {
         "canale": "Sky Sport Legend",
@@ -4283,7 +4253,7 @@
                 "descrizione": "Gemelli del gol, fratelli granata - Il Torino sogna il sorpasso alla Juve con i 36 gol di Pulici e Graziani, trascinati dagli assist di Claudio Sala, il \"Poeta del gol\"."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:57"
     },
     {
         "canale": "Sky Sport MotoGP",
@@ -4330,22 +4300,22 @@
                 "descrizione": "Ottavo appuntamento del mondiale 2026: al Balaton Ring, in Ungheria, si accendono i motori per le qualifiche della MotoGP. Telecronaca Meda - Sanchini"
             },
             {
-                "ora": "11:40",
+                "ora": "11:55",
                 "titolo": "MotoGP Paddock",
                 "descrizione": "Le ultime notizie dalla pit lane e dal paddock attraverso il racconto degli inviati di Sky Sport MotoGP."
             },
             {
-                "ora": "12:00",
+                "ora": "12:10",
                 "titolo": "MotoGP Paddock Pass",
                 "descrizione": "Il magazine dedicato all'approfondimento del weekend di gara e di anticipazione del prossimo GP: tecnica, colore, statistiche, storia, curiosita'. Il mondo delle gare visto dai box."
             },
             {
-                "ora": "12:10",
+                "ora": "12:15",
                 "titolo": "Manu Gonzalez, Calma Apparente...",
                 "descrizione": "Manu Gonzalez, Calma Apparente..."
             },
             {
-                "ora": "12:30",
+                "ora": "12:35",
                 "titolo": "MotoGP Paddock",
                 "descrizione": "Le ultime notizie dalla pit lane e dal paddock attraverso il racconto degli inviati di Sky Sport MotoGP."
             },
@@ -4430,7 +4400,7 @@
                 "descrizione": "Ottavo appuntamento del mondiale 2026: al Balaton Ring, in Ungheria, si accendono i motori per le qualifiche della MotoGP. Telecronaca Meda - Sanchini"
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:57"
     },
     {
         "canale": "Sky Sport Basket",
@@ -4472,22 +4442,12 @@
                 "descrizione": "Finals 2026. - Guidati da Brunson, i Knicks si sono presi il vantaggio del fattore campo nella serie vincendo gara-1 in Texas. Ora San Antonio deve reagire. Telecronaca di Flavio Tranquillo e Davide Pessina"
             },
             {
-                "ora": "13:50",
-                "titolo": "Basket Room Nba Finals",
-                "descrizione": "Il programma di approfondimento sul basket italiano e internazionale, con video esclusivi, interviste e ospiti in studio."
-            },
-            {
-                "ora": "14:10",
+                "ora": "14:15",
                 "titolo": "Lost Dream Team Voci A Confronto,...",
                 "descrizione": "Djordjevic, Pessina, Tranquillo, Condo' e Riva con Mauro Bevacqua danno voce alla memoria della ex Jugoslavia del basket. Ricordi, storie e analisi di una nazione poi divisa."
             },
             {
-                "ora": "15:05",
-                "titolo": "When Basketball Meets Business: Ettore Messina A New York",
-                "descrizione": "Ettore Messina A New York. - Ettore Messina A New York 03\/06\/2026."
-            },
-            {
-                "ora": "15:30",
+                "ora": "15:20",
                 "titolo": "Semifinale 1",
                 "descrizione": "Nazionale Under 19. - Basket Finale Nazionale Under 19."
             },
@@ -4517,7 +4477,7 @@
                 "descrizione": "Finals 2026. - Guidati da Brunson, i Knicks si sono presi il vantaggio del fattore campo nella serie vincendo gara-1 in Texas. Ora San Antonio deve reagire. Telecronaca di Flavio Tranquillo e Davide Pessina"
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:57"
     },
     {
         "canale": "Sky Sport Arena",
@@ -4614,7 +4574,7 @@
                 "descrizione": "Continental Tour Gold. - Le gare del World Athletics Continental Tour Gold."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:57"
     },
     {
         "canale": "Sky Sport Max",
@@ -4706,7 +4666,7 @@
                 "descrizione": "Semifinale 1 United Rugby Championship. - Partita secca per andare in finale tra Glasgow, primo posto nella regular season, e i Bulls sudafricani di Pretoria col miglior attacco del torneo. Telecronaca Pierantozzi-De Rossi"
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:57"
     },
     {
         "canale": "Sky Sport Mix",
@@ -4793,7 +4753,7 @@
                 "descrizione": "Sintesi e highlights della piu' spettacolare competizione velica internazionale dedicata ai catamarani foiling F50."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:57"
     },
     {
         "canale": "Sky Sport Golf",
@@ -4865,7 +4825,7 @@
                 "descrizione": "Da L'Internazionale di Amsterdam, Paesi Bassi."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:57"
     },
     {
         "canale": "Sky Sport 251",
@@ -5040,7 +5000,7 @@
                 "descrizione": "La trama segue Millie, una donna che cerca un nuovo inizio e trova lavoro come domestica per una coppia benestante ed elitaria. Ma come spesso accade nei thriller, le apparenze ingannano. Millie scoprir� presto che dietro la facciata di questa ricca famiglia perfetta si nascondono segreti oscuri e pericolosi."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:57"
     },
     {
         "canale": "Sky Cinema Uno +24",
@@ -5102,7 +5062,7 @@
                 "descrizione": "Terry, un ex ladro proprietario di una rivendita di auto d’epoca, viene avvicinato da una vecchia conoscenza, la bella Martine, che gli propone di fare “il colpo della vita”: una rapina nel cuore di Londra, più precisamente nel caveau della Lloyd Bank, dove sono depositate centinaia di cassette di sicurezza. In realt� la donna non svela del tutto le sue carte: è stata infatti costretta a stringere un accordo con un agente dei Servizi Segreti Britannici..."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:57"
     },
     {
         "canale": "Sky Cinema Due",
@@ -5159,7 +5119,7 @@
                 "descrizione": "Un’avvincente ed entusiasmante storia vera che inizia alla vigilia della Seconda Guerra Mondiale e che vede Winston Churchill, pochi giorni dopo la sua elezione a Primo Ministro della Gran Bretagna, affrontare una delle sfide più turbolente e determinanti della sua carriera: l’armistizio con la Germania nazista, oppure resistere per poter combattere per gli ideali, la libert� e l’autonomia di una nazione. Mentre le inarrestabili forze naziste si propagano per l’Europa occidentale e la minaccia di un’invasione si rivela imminente, con un pubblico impreparato, un re scettico ed il suo stesso partito che trama contro di lui, Churchill deve far fronte alla sua ora più buia, unire una nazione e tentare di cambiare il corso della storia mondiale."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:57"
     },
     {
         "canale": "Sky Cinema Due +24",
@@ -5176,7 +5136,7 @@
                 "descrizione": "L'attacco alla base americana di Pearl Harbor apre un nuovo fronte delle ostilit� in Giappone. Desmond Doss, cresciuto sulle montagne della Virginia e in una famiglia vessata da un padre alcolizzato, decide di arruolarsi e di servire il suo Paese. Ma Desmond non è come gli altri. Cristiano avventista e obiettore di coscienza, il ragazzo rifiuta di impugnare il fucile e uccidere un uomo. Fosse anche nemico. In un mondo dilaniato dalla guerra, Desmond ha deciso di rimettere assieme i pezzi. Arruolato come soccorritore medico e spedito sull'isola di Okinawa combatter� contro l'esercito nipponico, contro il pregiudizio dei compagni e contro i fantasmi di dentro che urlano più forte nel clangore della battaglia."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:57"
     },
     {
         "canale": "Sky Cinema Collection",
@@ -5233,7 +5193,7 @@
                 "descrizione": "Ad Amity, cittadina balneare del New England, si sparge il terrore per gli attacchi di un terribile squalo bianco. Un poliziotto, un ittiologo e un cacciatore di squali si mettono in mare per dargli la caccia."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:57"
     },
     {
         "canale": "Sky Cinema Family",
@@ -5300,7 +5260,7 @@
                 "descrizione": "Un giovane orfano di nome Lewis Barnavelt va a vivere insieme allo zio. Presto scopre che lo zio non è chi dice di essere e deve fare i conti con una realt� inaspettata dove un misterioso orologio nascosto nei muri di casa sembra avere il potere di cambiare il destino del mondo."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:57"
     },
     {
         "canale": "Sky Cinema Action",
@@ -5357,7 +5317,7 @@
                 "descrizione": "Quando un gruppo terrorista rapisce l'ex agente della Cia Leonard Turner (Bruce Willis), suo figlio Harry (Kellan Lutz), un analista del governo che è stato ripetutamente declassato in servizio, mette in atto la sua personalissima operazione di salvataggio non autorizzata. Mentre tenta di eludere agenti altamente qualificati, letali assassini e terroristi internazionali, Harry ha modo di mettere finalmente in atto i suoi addestramenti per ritrovare il genitore e porre fine a un complotto terroristico internazionale."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:57"
     },
     {
         "canale": "Sky Cinema Suspense",
@@ -5419,7 +5379,7 @@
                 "descrizione": "Blake eredita la casa d'infanzia nell'Oregon dopo la scomparsa di suo padre, che viene dato per morto. Con il logorarsi del suo matrimonio con la potente moglie Charlotte, Blake la convince a prendersi una pausa dalla citt� e andare a visitare la propriet� con la loro giovane figlia, Ginger. Ma quando la famiglia si avvicina alla fattoria nel cuore della notte, viene attaccata da un animale invisibile e, in una fuga disperata, si barrica all'interno della casa mentre la creatura si aggira attorno al perimetro. Con il passare della notte, però, Blake inizia a comportarsi in modo strano, trasformandosi in qualcosa di irriconoscibile, e Charlotte sar� costretta a decidere se il terrore all'interno della casa sia più letale di quello all’esterno."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:57"
     },
     {
         "canale": "Sky Cinema Romance",
@@ -5481,7 +5441,7 @@
                 "descrizione": "Aurelio ha ereditato il mestiere di wedding-planner dal padre: guida l’azienda di famiglia, “Il giorno più bello”, e per tutta la vita ha sacrificato i propri sogni in nome di una missione: regalare la felicit� . Oggi, però, complice la crisi e un divorzio alle spalle, sente il bisogno di un cambiamento radicale. È innamorato di Serena, una sua collaboratrice, e con lei sogna di iniziare una nuova vita, mollando tutto per solcare gli oceani in barca a vela. Prima di assaporare la libert� , però, Aurelio deve risolvere due questioni non di poco conto: vendere “Il giorno più bello” e convincere Serena a divorziare da Giorgio, che di Aurelio è amico fraterno dai tempi del liceo."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:57"
     },
     {
         "canale": "Sky Cinema Drama",
@@ -5538,7 +5498,7 @@
                 "descrizione": "Siamo all'inizio del XX secolo e tutto scorre come sempre in casa di Manuel Roca, medico che vive con i suoi due figli in una fattoria isolata, nella campagna bruciata dal sole di una terra di frontiera. Quando quattro uomini armati imboccano la strada sterrata che conduce alla loro casa, in cerca vendetta. Roca tenta disperatamente di proteggere i suoi figli, ma nulla può contro la ferocia degli aggressori.Molti anni dopo, Nina, ormai adulta e unica sopravvissuta della famiglia, incontra Tito, un venditore ambulante. L'incontro potrebbe sembrare casuale, ma entrambi sanno che non lo è: Tito conosce il motivo della visita di Nina, e lei lo stava cercando. Mentre tra i due si accende un confronto carico di tensione, diventa chiaro che la guerra è finita per molti, ma non per tutti. Il passato continua a bruciare nel presente, e la vendetta, come un’ombra lunga e ineluttabile, assume forme inaspettate."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:57"
     },
     {
         "canale": "Sky Cinema Comedy",
@@ -5605,7 +5565,7 @@
                 "descrizione": "Il trentenne Ottone conosce uno psicanalista alle Maldive e comincia ad assillarlo con domande pressanti. Perché si sceglie una ragazza piuttosto che un'altra? Perché quando la si presenta agli altri si cerca in ogni modo il loro consenso? Ottone racconter� la sua storia con la speranza che lo psicanalista lo aiuti a fargli capire perché ha preso determinate decisioni."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:57"
     },
     {
         "canale": "Sky Uno",
@@ -5677,7 +5637,7 @@
                 "descrizione": "Tra sapori esotici e trekking nel fango, nella giungla arriva un'ospite d'eccezione: Orietta Berti."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:57"
     },
     {
         "canale": "Sky Atlantic",
@@ -5789,7 +5749,7 @@
                 "descrizione": "Kathleen e i suoi figli Billy e Joe vanno a Santa Fe per cambiare vita. È dura, ma presto incontra e sposa un uomo che potrebbe riuscire a cambiare le cose in meglio, ma il problema è che le cambia, invece, in peggio."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:57"
     },
     {
         "canale": "Sky Serie",
@@ -5916,7 +5876,7 @@
                 "descrizione": "Considerata un'immigrata, comune e semplice, Caterina de' Medici è sposata alla corte francese del XVI secolo da adolescente orfana che dovrebbe portare una fortuna in dote e produrre molti eredi, solo per scoprire che suo marito è innamorato di una donna anziana, la sua la dote non è pagata e lei non riesce a concepire. Eppure, solo con la sua intelligenza e determinazione, riesce a mantenere vivo il suo matrimonio e padroneggia meglio di chiunque altro lo sport sanguinario che è la monarchia, governando la Francia per 50 anni."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:57"
     },
     {
         "canale": "Sky Investigation",
@@ -6043,7 +6003,7 @@
                 "descrizione": "Law & Order è un media franchise creato da Dick Wolf per la NBC Universal e formato da varie serie televisive poliziesco-giudiziarie e un film per la televisione, trasmessi sul network NBC dal 13 settembre 1990. Il franchise Law & Order nel tempo ha ispirato anche una serie di adattamenti televisivi stranieri, un docu-reality e videogiochi ufficiali, oltre a generare una serie di crossover con altre serie tv statunitensi."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:57"
     },
     {
         "canale": "Sky Crime",
@@ -6170,7 +6130,7 @@
                 "descrizione": "S1 Ep2 di 2 Parte 2 - Sul banco degli imputati si alternano personaggi importanti dello sport. Si analizzano partite falsate, in tutti gli aspetti. L'8 novembre 2011 arriva la sentenza."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:57"
     },
     {
         "canale": "Sky Adventure",
@@ -6292,7 +6252,7 @@
                 "descrizione": "Survival mode: sopravvissuti"
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:57"
     },
     {
         "canale": "MTV",
@@ -6449,7 +6409,7 @@
                 "descrizione": "Ep2 di 15 - Damon affronta la tela Jazmine mentre Caroline affronta la tela Anthony."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:57"
     },
     {
         "canale": "Comedy Central",
@@ -6606,7 +6566,7 @@
                 "descrizione": "Stanley \"Stan\" Marsh, Eric Cartman e Kyle Broflosky e Kenneth \"Kenny\" McCormick, quattro ragazzi che frequentano la scuola elementare e vivono nella cittadina di South Park, in Colorado. Pestiferi, osceni e sfacciatamente intelligenti i ragazzacci affrontano temi di attualit� con immediatezza e sana cattiveria sfatando tabù e demonizzando la societ� americana. Le loro \"armi\" sono la parodia, la commedia nera e il linguaggio scurrile."
             }
         ],
-        "aggiornato": "08:42"
+        "aggiornato": "13:57"
     },
     {
         "canale": "Sky Arte",
@@ -6708,7 +6668,7 @@
                 "descrizione": "All'interno di un limbo ambientato nelle suggestive Cave di Marmo di Carrara, Michelangelo rievoca gli snodi principali della sua vita e dei suoi tormenti più intimi. A raccontare la dimensione storica e artistica è Giorgio Vasari, narratore qualificato, appassionato e famigliare, della vita e delle opere del Buonarroti. I loro ricordi conducono lo spettatore nel \"mondo\" di Michelangelo attraverso coinvolgenti ricostruzioni storiche, sino ad arrivare al cuore del film: le sue opere immortali ed \"infinite\"."
             }
         ],
-        "aggiornato": "08:42"
+        "aggiornato": "13:57"
     },
     {
         "canale": "Sky Documentaries",
@@ -6825,7 +6785,7 @@
                 "descrizione": "A bordo della Geely, Anna Zhang ci porta a scoprire la Design Week con i Dotdotdot e la loro installazione all'Istituto dei Ciechi di Milano"
             }
         ],
-        "aggiornato": "08:42"
+        "aggiornato": "13:57"
     },
     {
         "canale": "Sky Nature",
@@ -6937,7 +6897,7 @@
                 "descrizione": "Durante l'inverno e la selvaggia Alaska si trasforma. I mari si congelano e gli animali fanno del loro meglio per superare questa stagione difficile."
             }
         ],
-        "aggiornato": "08:42"
+        "aggiornato": "13:57"
     },
     {
         "canale": "Discovery Channel",
@@ -7044,7 +7004,7 @@
                 "descrizione": "Come vengono prodotti milioni di tonnellate di acciaio inossidabile? Come vengono tenuti al sicuro i contanti e come viene prodotto lo zucchero tradizionale in India?"
             }
         ],
-        "aggiornato": "08:42"
+        "aggiornato": "13:57"
     },
     {
         "canale": "History Channel",
@@ -7141,7 +7101,7 @@
                 "descrizione": "La ricostruzione di uno degli eventi che hanno cambiato il corso della Seconda Guerra Mondiale, raccontato attraverso le parole e le testimonianze degli ultimi sopravvissuti."
             }
         ],
-        "aggiornato": "08:42"
+        "aggiornato": "13:57"
     },
     {
         "canale": "Cartoon Network",
@@ -7298,7 +7258,7 @@
                 "descrizione": "Craig e i suoi due amici Kelsey e JP vivono bellissime avventure nella natura selvaggia conosciuta come Creek: un posto pieno di azione e incredibili storie."
             }
         ],
-        "aggiornato": "08:42"
+        "aggiornato": "13:57"
     },
     {
         "canale": "Dea Kids",
@@ -7455,7 +7415,7 @@
                 "descrizione": "Ep3 di 52 - Gwen scopre che il suo evento preferito, la Marcia degli Zombie, cade lo stesso giorno che per Beth rappresenta un incubo, ovvero l'appuntamento col dentista. Come fare?"
             }
         ],
-        "aggiornato": "08:42"
+        "aggiornato": "13:57"
     },
     {
         "canale": "Nick Jr",
@@ -7612,7 +7572,7 @@
                 "descrizione": "S4 Ep4 La squadra prepara una zuppa - Visto che nonno Gravel non si sente bene, la squadra di Rubble prepara la zuppa al suo posto."
             }
         ],
-        "aggiornato": "08:42"
+        "aggiornato": "13:57"
     },
     {
         "canale": "Boomerang",
@@ -7769,7 +7729,7 @@
                 "descrizione": "Ep43 Lemming mille luci - I Lemming danno una festa di compleanno piena di luci, ma Grizzy ha giocato troppo ai videogiochi, e ora i suoi occhi sopportano solo il buio."
             }
         ],
-        "aggiornato": "08:42"
+        "aggiornato": "13:57"
     },
     {
         "canale": "Sky TG 24",
@@ -7926,7 +7886,7 @@
                 "descrizione": "Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo."
             }
         ],
-        "aggiornato": "08:42"
+        "aggiornato": "13:57"
     },
     {
         "canale": "Rai News 24",
@@ -8083,7 +8043,7 @@
                 "descrizione": "News + Titoli"
             }
         ],
-        "aggiornato": "08:42"
+        "aggiornato": "13:57"
     },
     {
         "canale": "Sky Meteo 24",
@@ -8240,6 +8200,6 @@
                 "descrizione": "Previsioni meteo dettagliate e sempre aggiornate 24 ore al giorno. Le previsioni regionali, nazionali ed internazionali."
             }
         ],
-        "aggiornato": "08:41"
+        "aggiornato": "13:57"
     }
 ]
