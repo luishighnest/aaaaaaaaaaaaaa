@@ -96,17 +96,7 @@ function renderGrid(items) {
     grid.innerHTML = '';
     if (!items || items.length === 0) {
         grid.innerHTML = '<div class="vod-empty">Nessun contenuto trovato.</div>';
-        document.getElementById('vod-hero-bg').style.backgroundImage = 'none';
         return;
-    }
-
-    // Set Hero Background using the first valid item
-    const heroBg = document.getElementById('vod-hero-bg');
-    const heroItem = items.find(i => i.backdrop_path);
-    if (heroItem) {
-        heroBg.style.backgroundImage = `url(${IMG_BASE_URL.replace('w500', 'original')}${heroItem.backdrop_path})`;
-    } else {
-        heroBg.style.backgroundImage = 'none';
     }
 
     items.forEach(item => {
@@ -116,8 +106,11 @@ function renderGrid(items) {
         const title = item.title || item.name;
         const poster = item.poster_path ? `${IMG_BASE_URL}${item.poster_path}` : 'https://via.placeholder.com/500x750?text=No+Poster';
         const date = item.release_date || item.first_air_date || 'N/A';
+        const year = date !== 'N/A' ? date.split('-')[0] : '';
         const rating = item.vote_average ? item.vote_average.toFixed(1) : 'N/A';
         const type = item.media_type || (item.title ? 'movie' : 'tv'); // fallback per le sezioni specifiche
+        const typeStr = type === 'tv' ? 'Serie TV' : 'Film';
+        const overviewSnippet = item.overview ? (item.overview.length > 70 ? item.overview.substring(0, 70) + '...' : item.overview) : '';
 
         const card = document.createElement('div');
         card.className = 'vod-card';
@@ -126,6 +119,8 @@ function renderGrid(items) {
             <img src="${poster}" alt="${title}" loading="lazy">
             <div class="vod-card-overlay">
                 <div class="vod-card-title">${title}</div>
+                <div class="vod-card-meta"><i class="ph ph-calendar"></i> ${year} <span style="margin: 0 4px; color: var(--accent);">•</span> ${typeStr}</div>
+                <div class="vod-card-snippet">${overviewSnippet}</div>
             </div>
         `;
 
