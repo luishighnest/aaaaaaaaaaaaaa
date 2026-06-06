@@ -1178,21 +1178,6 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
       }
     });
 
-    // ─── Scorciatoia tastiera 'I' per mostrare info a schermo intero ───
-    document.addEventListener('keydown', (e) => {
-      if ((e.key === 'i' || e.key === 'I') && document.fullscreenElement === playerAreaContainer) {
-        pcOverlay.classList.remove('hidden');
-        document.body.style.cursor = 'default';
-        btnCustomFs.style.opacity = '1';
-        clearTimeout(pcFsTimeout);
-        pcFsTimeout = setTimeout(() => {
-          pcOverlay.classList.add('hidden');
-          document.body.style.cursor = 'none';
-          btnCustomFs.style.opacity = '0';
-        }, 4000);
-      }
-    });
-
   </script>
   <!-- Settings Modal -->
   <div id="settings-modal" class="settings-modal-overlay">
