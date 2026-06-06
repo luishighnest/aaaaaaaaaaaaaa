@@ -976,26 +976,29 @@ if (!isset($_SESSION['active_profile'])) {
       opacity: 1;
       pointer-events: auto;
     }
-    .vod-player-close {
+    .vod-player-close,
+    .vod-player-fullscreen,
+    .vod-player-next-ep {
       position: absolute;
-      top: 20px;
-      left: 20px;
       background: rgba(255, 255, 255, 0.05);
       border: 1px solid rgba(255, 255, 255, 0.1);
       color: #fff;
-      padding: 0.6rem 1.4rem;
-      border-radius: 99px;
-      font-size: 0.85rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
       cursor: pointer;
       z-index: 10001;
       display: flex;
       align-items: center;
-      gap: 8px;
-      transition: var(--transition);
+      justify-content: center;
+      font-size: 1.25rem;
+      transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.2s, background-color 0.2s, border-color 0.2s, box-shadow 0.2s !important;
       backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+    .vod-player-close {
+      top: 20px;
+      left: 20px;
     }
     .vod-player-close:hover {
       background: #ef4444;
@@ -1006,9 +1009,32 @@ if (!isset($_SESSION['active_profile'])) {
     .vod-player-close:active {
       transform: translateY(0);
     }
-    .vod-player-close {
-      opacity: 1;
-      transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    .vod-player-fullscreen {
+      bottom: 20px;
+      right: 20px;
+    }
+    .vod-player-fullscreen:hover {
+      background: var(--accent);
+      border-color: var(--accent);
+      box-shadow: 0 4px 20px var(--accent-glow);
+      transform: translateY(-2px);
+    }
+    .vod-player-fullscreen:active {
+      transform: translateY(0);
+    }
+    .vod-player-next-ep {
+      bottom: 20px;
+      right: 74px;
+      display: none;
+    }
+    .vod-player-next-ep:hover {
+      background: var(--accent);
+      border-color: var(--accent);
+      box-shadow: 0 4px 20px var(--accent-glow);
+      transform: translateY(-2px);
+    }
+    .vod-player-next-ep:active {
+      transform: translateY(0);
     }
     .vod-player-title-header {
       position: absolute;
@@ -1044,43 +1070,9 @@ if (!isset($_SESSION['active_profile'])) {
       color: var(--text-secondary);
       margin-top: 4px;
     }
-    .vod-player-fullscreen {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      color: #fff;
-      padding: 0.6rem 1.4rem;
-      border-radius: 99px;
-      font-size: 0.85rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      cursor: pointer;
-      z-index: 10001;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      transition: var(--transition) !important;
-      backdrop-filter: blur(10px);
-    }
-    .vod-player-fullscreen:hover {
-      background: var(--accent);
-      border-color: var(--accent);
-      box-shadow: 0 4px 20px var(--accent-glow);
-      transform: translateY(-2px);
-    }
-    .vod-player-fullscreen:active {
-      transform: translateY(0);
-    }
-    .vod-player-close,
-    .vod-player-fullscreen {
-      opacity: 1;
-      transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
-    }
     .vod-player-overlay.controls-hidden .vod-player-close,
     .vod-player-overlay.controls-hidden .vod-player-fullscreen,
+    .vod-player-overlay.controls-hidden .vod-player-next-ep,
     .vod-player-overlay.controls-hidden .vod-player-title-header {
       opacity: 0;
       pointer-events: none;
@@ -1337,28 +1329,25 @@ if (!isset($_SESSION['active_profile'])) {
       .vod-player-close {
         top: 15px;
         left: 15px;
-        padding: 0 !important;
         width: 38px;
         height: 38px;
-        border-radius: 50%;
-        justify-content: center;
-        gap: 0;
-      }
-      .vod-player-close .close-text {
-        display: none;
+        font-size: 1.1rem;
       }
       .vod-player-fullscreen {
-        top: 15px;
+        bottom: 15px;
         right: 15px;
-        padding: 0 !important;
+        top: auto;
         width: 38px;
         height: 38px;
-        border-radius: 50%;
-        justify-content: center;
-        gap: 0;
+        font-size: 1.1rem;
       }
-      .vod-player-fullscreen .fullscreen-text {
-        display: none;
+      .vod-player-next-ep {
+        bottom: 15px;
+        right: 63px;
+        top: auto;
+        width: 38px;
+        height: 38px;
+        font-size: 1.1rem;
       }
       .vod-player-title-header {
         top: 15px;
@@ -1607,8 +1596,9 @@ if (!isset($_SESSION['active_profile'])) {
 
   <!-- PLAYER OVERLAY -->
   <div class="vod-player-overlay" id="vod-player-overlay">
-    <button class="vod-player-close" onclick="closePlayer()"><i class="ph ph-arrow-left"></i> <span class="close-text">Torna ai Dettagli</span></button>
-    <button class="vod-player-fullscreen" id="vod-player-fullscreen-btn" onclick="togglePlayerFullscreen()"><i class="ph ph-corners-out"></i> <span class="fullscreen-text">Schermo Intero</span></button>
+    <button class="vod-player-close" onclick="closePlayer()"><i class="ph ph-arrow-left"></i></button>
+    <button class="vod-player-fullscreen" id="vod-player-fullscreen-btn" onclick="togglePlayerFullscreen()"><i class="ph ph-corners-out"></i></button>
+    <button class="vod-player-next-ep" id="vod-player-next-btn" onclick="playNextEpisode()" style="display: none;"><i class="ph ph-skip-forward"></i></button>
     <div class="vod-player-mouse-tracker" id="vod-player-mouse-tracker"></div>
     <div class="vod-player-title-header" id="vod-player-title-header">
       <h2 id="vod-player-title"></h2>
