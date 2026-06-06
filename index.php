@@ -164,7 +164,7 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>PZ8</title>
     <meta name="description" content="Dashboard StreamHub Premium">
-    <link rel="stylesheet" href="css/style.css?v=1.11">
+    <link rel="stylesheet" href="css/style.css?v=1.12">
     <script>
       (function() {
         const accent = localStorage.getItem('accent_color');
@@ -314,7 +314,7 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
       <!-- OVERLAY IN STILE TV PREMIUM (visibile solo a schermo intero) -->
       <div id="pc-fullscreen-overlay" class="pc-fullscreen-overlay">
          <div class="pc-overlay-title" id="pc-overlay-title">Nessun Canale</div>
-         <div class="pc-overlay-subtitle" id="pc-overlay-subtitle">In onda</div>
+         <div class="pc-overlay-subtitle" id="pc-overlay-subtitle">In onda: Programmazione in corso</div>
       </div>
 
       <iframe id="player-frame" src="about:blank" allow="autoplay; encrypted-media"></iframe>
@@ -871,12 +871,11 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
       const pcOverlaySubtitle = document.getElementById('pc-overlay-subtitle');
       if (pcOverlayTitle && pcOverlaySubtitle) {
         const activeChName = document.querySelector('.channel-item.active .ch-name')?.textContent || '';
+        pcOverlayTitle.textContent = activeChName;
         if (epg.now) {
-          pcOverlayTitle.textContent = epg.now.titolo;
-          pcOverlaySubtitle.textContent = `In onda • ${activeChName}`;
+          pcOverlaySubtitle.textContent = `In onda: ${epg.now.titolo}`;
         } else {
-          pcOverlayTitle.textContent = activeChName;
-          pcOverlaySubtitle.textContent = `Diretta continua`;
+          pcOverlaySubtitle.textContent = `In onda: Diretta continua`;
         }
       }
     }
@@ -1081,7 +1080,7 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
       const pcOverlayTitle = document.getElementById('pc-overlay-title');
       if (pcOverlayTitle) pcOverlayTitle.textContent = ch.name;
       const pcOverlaySubtitle = document.getElementById('pc-overlay-subtitle');
-      if (pcOverlaySubtitle) pcOverlaySubtitle.textContent = "Caricamento...";
+      if (pcOverlaySubtitle) pcOverlaySubtitle.textContent = "In onda: Caricamento...";
 
       // Aggiorna bottone preferiti del player
       const btnFav = document.getElementById('btn-toggle-favorite');
