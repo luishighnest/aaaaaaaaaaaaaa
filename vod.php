@@ -515,6 +515,7 @@ if (!isset($_SESSION['active_profile'])) {
     .vod-row-container {
       margin-bottom: 2.5rem;
       padding-left: 40px;
+      position: relative; /* per posizionare le frecce assolute */
     }
     
     .vod-row-title { 
@@ -541,13 +542,59 @@ if (!isset($_SESSION['active_profile'])) {
     .vod-row {
       display: flex;
       gap: 20px;
-      overflow-x: auto;
+      overflow-x: hidden; /* Annulla lo scrolling orizzontale manuale */
       padding: 10px 40px 20px 0;
       scroll-behavior: smooth;
-      scrollbar-width: none; /* Firefox */
     }
-    .vod-row::-webkit-scrollbar {
-      display: none; /* Chrome, Safari, Edge */
+    
+    /* Frecce di navigazione per le righe */
+    .vod-row-arrow-left,
+    .vod-row-arrow-right {
+      position: absolute;
+      background: rgba(15, 23, 42, 0.6);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      color: #fff;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      opacity: 0;
+      transition: opacity 0.3s, background-color 0.2s, color 0.2s, transform 0.2s;
+      z-index: 5;
+    }
+    .vod-row-arrow-left {
+      left: 40px;
+      top: 45px;
+      bottom: 20px;
+      width: 44px;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border-left: none;
+    }
+    .vod-row-arrow-right {
+      right: 0;
+      top: 45px;
+      bottom: 20px;
+      width: 44px;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+      border-right: none;
+    }
+    .vod-row-container:hover .vod-row-arrow-left,
+    .vod-row-container:hover .vod-row-arrow-right {
+      opacity: 1;
+    }
+    .vod-row-arrow-left:hover,
+    .vod-row-arrow-right:hover {
+      background: rgba(15, 23, 42, 0.9);
+      color: var(--accent);
+    }
+    .vod-row-arrow-left:active,
+    .vod-row-arrow-right:active {
+      transform: scale(0.95);
     }
 
     /* Poster Card */
@@ -1010,8 +1057,11 @@ if (!isset($_SESSION['active_profile'])) {
       transform: translateY(0);
     }
     .vod-player-fullscreen {
-      bottom: 20px;
+      bottom: 15px;
       right: 20px;
+      width: 38px;
+      height: 38px;
+      font-size: 1.1rem;
     }
     .vod-player-fullscreen:hover {
       background: var(--accent);
@@ -1264,6 +1314,22 @@ if (!isset($_SESSION['active_profile'])) {
         padding-left: 15px;
         margin-bottom: 1.5rem;
       }
+      .vod-row-arrow-left,
+      .vod-row-arrow-right {
+        opacity: 0.8; /* Sempre visibile su mobile */
+        width: 38px;
+        font-size: 1.25rem;
+      }
+      .vod-row-arrow-left {
+        left: 15px;
+        top: 35px;
+        bottom: 20px;
+      }
+      .vod-row-arrow-right {
+        right: 0;
+        top: 35px;
+        bottom: 20px;
+      }
       .vod-row-title {
         font-size: 1.1rem;
       }
@@ -1330,12 +1396,12 @@ if (!isset($_SESSION['active_profile'])) {
         font-size: 1.1rem;
       }
       .vod-player-fullscreen {
-        bottom: 15px;
+        bottom: 10px;
         right: 15px;
         top: auto;
-        width: 38px;
-        height: 38px;
-        font-size: 1.1rem;
+        width: 32px;
+        height: 32px;
+        font-size: 0.95rem;
       }
       .vod-player-next-ep {
         top: 15px;
