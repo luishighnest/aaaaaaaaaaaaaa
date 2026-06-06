@@ -239,9 +239,7 @@ async function initHero(item) {
     
     // Mostra se la sezione corrente è compatibile con il tipo dell'Hero
     if (searchContainer.style.display !== 'block' && currentSection !== 'library') {
-        const matchesSection = (currentSection === 'home') || 
-                               (currentSection === 'movies' && type === 'movie') || 
-                               (currentSection === 'tv' && type === 'tv');
+        const matchesSection = (currentSection === 'home');
         heroSection.style.display = matchesSection ? 'flex' : 'none';
     }
 }
@@ -722,13 +720,10 @@ function changeSection(sectionName) {
         
         // Filtra visualizzazione Hero Banner
         if (heroSection.dataset.hasData === 'true') {
-            const heroType = heroSection.dataset.type;
             if (sectionName === 'home') {
                 heroSection.style.display = 'flex';
-            } else if (sectionName === 'movies') {
-                heroSection.style.display = heroType === 'movie' ? 'flex' : 'none';
-            } else if (sectionName === 'tv') {
-                heroSection.style.display = heroType === 'tv' ? 'flex' : 'none';
+            } else {
+                heroSection.style.display = 'none';
             }
         }
     }
