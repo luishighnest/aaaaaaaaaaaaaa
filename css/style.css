@@ -1043,7 +1043,94 @@ a {
   width: 100%;
   height: 100%;
   border: none;
+  z-index: 1;
 }
+
+/* ─── FULLSCREEN CUSTOM PER PC ─── */
+.dash-player-area:fullscreen {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99999;
+  border-radius: 0;
+  border: none;
+  background: #000;
+}
+.dash-player-area:-webkit-full-screen {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99999;
+  border-radius: 0;
+  border: none;
+  background: #000;
+}
+
+.custom-fullscreen-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 20;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border-radius: 8px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s, background 0.2s, transform 0.2s;
+  backdrop-filter: blur(4px);
+}
+.dash-player-area:hover .custom-fullscreen-btn {
+  opacity: 1;
+}
+.custom-fullscreen-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: scale(1.05);
+}
+
+.player-top-shield {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 25%;
+  z-index: 10;
+  cursor: default;
+}
+
+.pc-fullscreen-overlay {
+  position: absolute;
+  top: 40px;
+  left: 50px;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease-in-out;
+}
+/* Mostra l'overlay SOLO se il contenitore è in fullscreen */
+.dash-player-area:fullscreen .pc-fullscreen-overlay {
+  opacity: 1;
+}
+.dash-player-area:-webkit-full-screen .pc-fullscreen-overlay {
+  opacity: 1;
+}
+
+.dash-player-area:fullscreen .pc-fullscreen-overlay.hidden,
+.dash-player-area:-webkit-full-screen .pc-fullscreen-overlay.hidden {
+  opacity: 0;
+}
+
 
 
 /* Loader specific to dashboard */
