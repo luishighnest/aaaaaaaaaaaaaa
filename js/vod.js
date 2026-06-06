@@ -1601,31 +1601,37 @@ window.addEventListener('message', (event) => {
     
     if (typeof msg === 'string') {
         type = msg;
-    } else if (typeof msg === 'object') {
-        type = msg.type || msg.event || '';
-        
-        // Estrazione robusta di currentTime / seconds
-        if (typeof msg.currentTime === 'number') {
-            seconds = msg.currentTime;
-        } else if (typeof msg.time === 'number') {
-            seconds = msg.time;
-        } else if (typeof msg.position === 'number') {
-            seconds = msg.position;
-        } else if (typeof msg.seconds === 'number') {
-            seconds = msg.seconds;
-        } else if (msg.data !== undefined && msg.data !== null) {
-            if (typeof msg.data === 'number') {
-                seconds = msg.data;
-            } else if (typeof msg.data === 'object') {
-                seconds = msg.data.currentTime || msg.data.position || msg.data.time || null;
+    } else if (typeof msg === 'object' && msg !== null) {
+        if (msg.type === 'PLAYER_EVENT' && typeof msg.data === 'object' && msg.data !== null) {
+            type = msg.data.event || '';
+            seconds = msg.data.currentTime !== undefined ? msg.data.currentTime : null;
+            duration = msg.data.duration !== undefined ? msg.data.duration : null;
+        } else {
+            type = msg.type || msg.event || '';
+            
+            // Estrazione di riserva
+            if (typeof msg.currentTime === 'number') {
+                seconds = msg.currentTime;
+            } else if (typeof msg.time === 'number') {
+                seconds = msg.time;
+            } else if (typeof msg.position === 'number') {
+                seconds = msg.position;
+            } else if (typeof msg.seconds === 'number') {
+                seconds = msg.seconds;
+            } else if (msg.data !== undefined && msg.data !== null) {
+                if (typeof msg.data === 'number') {
+                    seconds = msg.data;
+                } else if (typeof msg.data === 'object') {
+                    seconds = msg.data.currentTime || msg.data.position || msg.data.time || null;
+                }
             }
-        }
-        
-        // Estrazione robusta di duration
-        if (typeof msg.duration === 'number') {
-            duration = msg.duration;
-        } else if (msg.data && typeof msg.data.duration === 'number') {
-            duration = msg.data.duration;
+            
+            // Estrazione di riserva di duration
+            if (typeof msg.duration === 'number') {
+                duration = msg.duration;
+            } else if (msg.data && typeof msg.data.duration === 'number') {
+                duration = msg.data.duration;
+            }
         }
     }
     
