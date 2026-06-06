@@ -154,44 +154,54 @@ if (!isset($_SESSION['active_profile'])) {
     .vod-brand {
       display: flex;
       align-items: center;
-      gap: 0.6rem;
+      gap: 0.7rem;
       cursor: pointer;
     }
     .vod-brand-icon {
-      width: 36px;
-      height: 36px;
-      background: linear-gradient(135deg, #ef4444, #b91c1c);
-      border-radius: 50%;
+      width: 38px;
+      height: 38px;
+      background: rgba(15, 23, 42, 0.55);
+      border: 1.5px solid var(--accent);
+      border-radius: 11px;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.2rem;
-      color: #fff;
-      box-shadow: 0 0 12px rgba(239, 68, 68, 0.35);
-      transition: var(--transition);
+      font-size: 1.15rem;
+      color: var(--accent);
+      box-shadow: 0 0 12px var(--accent-glow);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     }
     .vod-brand:hover .vod-brand-icon {
-      transform: scale(1.08);
-      box-shadow: 0 0 20px rgba(239, 68, 68, 0.65);
+      transform: scale(1.08) rotate(8deg);
+      background: var(--accent);
+      color: #000;
+      box-shadow: 0 0 22px var(--accent-glow);
     }
     .vod-brand-text {
-      font-size: 1.25rem;
-      font-weight: 800;
-      letter-spacing: -0.5px;
+      font-size: 1.35rem;
+      font-weight: 900;
+      letter-spacing: -1px;
       color: #fff;
+      display: flex;
+      align-items: center;
       text-transform: uppercase;
+      font-family: var(--font-main);
     }
-    .vod-brand-text span {
-      color: #ef4444;
-    }
-    .vod-brand-sub {
-      font-size: 0.8rem;
-      font-weight: 700;
-      opacity: 0.9;
-      letter-spacing: 1px;
-      color: var(--accent) !important;
-      margin-left: 4px;
+    .vod-brand-text span.brand-num {
+      color: var(--accent);
       text-shadow: 0 0 10px var(--accent-glow);
+    }
+    .vod-brand-text span.brand-sub {
+      font-size: 0.7rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+      background: var(--accent);
+      color: #000 !important;
+      padding: 2px 7px;
+      border-radius: 5px;
+      margin-left: 7px;
+      box-shadow: 0 2px 10px var(--accent-glow);
+      text-shadow: none;
     }
     
     .vod-nav-links {
@@ -598,6 +608,55 @@ if (!isset($_SESSION['active_profile'])) {
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
       overflow: hidden;
+    }
+    
+    .vod-card-actions {
+      display: flex;
+      gap: 6px;
+      justify-content: flex-start;
+      margin-top: 8px;
+    }
+    
+    .vod-card-btn {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: rgba(15, 23, 42, 0.75);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      padding: 0;
+    }
+    
+    .vod-card-btn:hover {
+      background: #fff;
+      color: #000;
+      border-color: #fff;
+      transform: scale(1.1);
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+    
+    .vod-card-btn.play {
+      background: var(--accent);
+      color: #000;
+      border-color: var(--accent);
+    }
+    .vod-card-btn.play:hover {
+      background: #fff;
+      color: #000;
+      border-color: #fff;
+      box-shadow: 0 0 10px var(--accent-glow);
+    }
+    
+    .vod-card-btn.fav i {
+      color: var(--danger);
     }
     
     .vod-loading, .vod-empty {
@@ -1192,8 +1251,8 @@ if (!isset($_SESSION['active_profile'])) {
     <!-- Navbar Superiore Stile Netflix -->
     <header class="vod-navbar">
       <div class="vod-brand" onclick="window.location.reload()">
-        <div class="vod-brand-icon"><i class="ph-fill ph-play-circle"></i></div>
-        <div class="vod-brand-text">PZ<span>8</span><span class="vod-brand-sub">VOD</span></div>
+        <div class="vod-brand-icon"><i class="ph-fill ph-play"></i></div>
+        <div class="vod-brand-text">PZ<span class="brand-num">8</span><span class="brand-sub">VOD</span></div>
       </div>
       <nav class="vod-nav-links">
         <div class="nav-link active" id="nav-item-home" onclick="changeSection('home')"><i class="ph ph-house"></i> Home</div>
