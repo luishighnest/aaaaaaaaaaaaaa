@@ -572,14 +572,14 @@ function renderContinueWatching() {
             openModal(itemObj);
         });
         
-        const playBtn = card.querySelector('.vod-card-btn.play');
+                const playBtn = card.querySelector('.vod-card-btn.play');
         playBtn.addEventListener('click', (e) => {
             e.stopPropagation();
             openModal(itemObj);
             if (type === 'movie') {
-                playMovie(item.id);
+                playMovie(item.id, true);
             } else {
-                playShowEpisode(item.id, item.season || 1, item.episode || 1);
+                playShowEpisode(item.id, item.season || 1, item.episode || 1, true);
             }
         });
         
@@ -672,7 +672,7 @@ async function closePlayer() {
     }
 }
 
-function playMovie(tmdbId) {
+function playMovie(tmdbId, resume = false) {
     const item = resolveVODItem(tmdbId, 'movie');
     const title = item ? (item.title || item.name) : 'Film';
     const poster_path = item ? item.poster_path : '';
@@ -690,14 +690,24 @@ function playMovie(tmdbId) {
     const overlay = document.getElementById('vod-player-overlay');
     const frame = document.getElementById('vod-player-frame');
     const accent = getAccentHex();
-    frame.src = `https://vixsrc.to/movie/${tmdbId}?lang=it&primaryColor=${accent}`;
+    
+    let startAtParam = '';
+    if (resume && prevProgress > 0) {
+        const movieDuration = 120 * 60; // 120 minuti in secondi
+        const startSeconds = Math.round((prevProgress / 100) * movieDuration);
+        if (startSeconds > 0) {
+            startAtParam = `&startAt=${startSeconds}`;
+        }
+    }
+    
+    frame.src = `https://vixsrc.to/movie/${tmdbId}?lang=it&primaryColor=${accent}${startAtParam}`;
     overlay.style.display = 'flex';
     setTimeout(() => {
         overlay.classList.add('open');
     }, 50);
 }
 
-function playShowEpisode(tmdbId, season, episode) {
+function playShowEpisode(tmdbId, season, episode, resume = false) {
     const item = resolveVODItem(tmdbId, 'tv');
     const title = item ? (item.title || item.name) : 'Serie TV';
     const poster_path = item ? item.poster_path : '';
@@ -717,7 +727,17 @@ function playShowEpisode(tmdbId, season, episode) {
     const overlay = document.getElementById('vod-player-overlay');
     const frame = document.getElementById('vod-player-frame');
     const accent = getAccentHex();
-    frame.src = `https://vixsrc.to/tv/${tmdbId}/${season}/${episode}?lang=it&primaryColor=${accent}`;
+    
+    let startAtParam = '';
+    if (resume && prevProgress > 0) {
+        const tvDuration = 45 * 60; // 45 minuti in secondi
+        const startSeconds = Math.round((prevProgress / 100) * tvDuration);
+        if (startSeconds > 0) {
+            startAtParam = `&startAt=${startSeconds}`;
+        }
+    }
+    
+    frame.src = `https://vixsrc.to/tv/${tmdbId}/${season}/${episode}?lang=it&primaryColor=${accent}${startAtParam}`;
     overlay.style.display = 'flex';
     setTimeout(() => {
         overlay.classList.add('open');
@@ -811,7 +831,7 @@ async function loadTvEpisodes(tvId, seasonNumber) {
             `;
             
             row.onclick = () => {
-                playShowEpisode(tvId, seasonNumber, ep.episode_number);
+                playShowEpisode(tvId, seasonNumber, ep.episode_number, isLastPlayed);
             };
             
             episodesList.appendChild(row);
