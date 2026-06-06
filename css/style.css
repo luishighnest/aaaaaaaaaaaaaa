@@ -1096,8 +1096,7 @@ a {
 }
 .dash-player-area:fullscreen .player-top-shield,
 .dash-player-area:-webkit-full-screen .player-top-shield {
-  height: 100%; /* Copre TUTTO lo schermo a schermo intero per renderlo cliccabile */
-  cursor: pointer;
+  height: 85%; /* Copre molto schermo per catturare il mousemove! */
 }
 
 .pc-fullscreen-overlay {
