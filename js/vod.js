@@ -381,7 +381,7 @@ async function openModal(item) {
                 resumeBtn.style.display = 'inline-flex';
                 resumeBtn.innerHTML = `<i class="ph-fill ph-play"></i> Riprendi (${historyItem.progress}%)`;
                 resumeBtn.onclick = () => {
-                    playMovie(item.id);
+                    playMovie(item.id, true);
                 };
             }
         }
@@ -397,8 +397,10 @@ async function openModal(item) {
                 resumeBtn.style.display = 'inline-flex';
                 resumeBtn.innerHTML = `<i class="ph-fill ph-play"></i> Riprendi da S${historyItem.season}:E${historyItem.episode}`;
                 resumeBtn.onclick = () => {
-                    playShowEpisode(item.id, historyItem.season, historyItem.episode);
+                    playShowEpisode(item.id, historyItem.season, historyItem.episode, true);
                 };
+                // Nascondi "Guarda Ora" se c'è progresso
+                playBtn.style.display = 'none';
             }
         }
     }
@@ -821,10 +823,18 @@ async function loadTvEpisodes(tvId, seasonNumber) {
                 `;
             }
             
+            let readMoreHtml = '';
+            if (ep.overview && ep.overview.length > 120) {
+                readMoreHtml = `
+                    <div class="vod-episode-readmore" style="font-size: 0.75rem; color: var(--accent); font-weight: 700; cursor: pointer; margin-top: 4px; display: inline-block; width: fit-content; text-transform: uppercase; letter-spacing: 0.5px;">Leggi tutto</div>
+                `;
+            }
+            
             row.innerHTML = `
                 <div class="vod-episode-info">
                     <div class="vod-episode-title">${ep.episode_number}. ${ep.name || 'Episodio ' + ep.episode_number}</div>
-                    <div class="vod-episode-overview">${ep.overview || 'Nessuna descrizione disponibile.'}</div>
+                    <div class="vod-episode-overview" id="ep-overview-${ep.episode_number}">${ep.overview || 'Nessuna descrizione disponibile.'}</div>
+                    ${readMoreHtml}
                     ${progressHtml}
                 </div>
                 <button class="vod-episode-play-btn"><i class="ph-fill ph-play"></i></button>
@@ -833,6 +843,23 @@ async function loadTvEpisodes(tvId, seasonNumber) {
             row.onclick = () => {
                 playShowEpisode(tvId, seasonNumber, ep.episode_number, isLastPlayed);
             };
+            
+            if (ep.overview && ep.overview.length > 120) {
+                const readMoreBtn = row.querySelector('.vod-episode-readmore');
+                const overviewDiv = row.querySelector(`#ep-overview-${ep.episode_number}`);
+                if (readMoreBtn && overviewDiv) {
+                    readMoreBtn.addEventListener('click', (e) => {
+                        e.stopPropagation(); // Evita l'avvio del player
+                        if (overviewDiv.classList.contains('expanded')) {
+                            overviewDiv.classList.remove('expanded');
+                            readMoreBtn.textContent = 'Leggi tutto';
+                        } else {
+                            overviewDiv.classList.add('expanded');
+                            readMoreBtn.textContent = 'Leggi meno';
+                        }
+                    });
+                }
+            }
             
             episodesList.appendChild(row);
         });
