@@ -34,6 +34,9 @@ if (!isset($_SESSION['active_profile'])) {
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Film & Serie TV - VOD</title>
   <link rel="stylesheet" href="css/style.css?v=1.18">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
   <script>
     (function() {
@@ -55,28 +58,87 @@ if (!isset($_SESSION['active_profile'])) {
     });
   </script>
   <style>
-    body { margin: 0; height: 100vh; overflow: hidden; background: #050505; }
+    body { margin: 0; height: 100vh; overflow: hidden; background: #050505; font-family: 'Montserrat', sans-serif; }
     
     .vod-page-layout {
       display: flex;
-      height: calc(100vh - 70px);
-      gap: 20px;
-      padding: 20px;
-      padding-top: 0;
-    }
-    .dash-sidebar {
-      width: 280px;
-      flex-shrink: 0;
-      height: 100%;
-      background: linear-gradient(180deg, rgba(15, 23, 42, 0.7) 0%, rgba(10, 15, 30, 0.9) 100%);
-      backdrop-filter: blur(20px);
-      border: 1px solid rgba(255,255,255,0.05);
-      border-radius: 24px;
-      padding: 24px;
-      display: flex;
       flex-direction: column;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      height: calc(100vh - 60px); /* header height approx */
     }
+
+    /* Top Navbar */
+    .vod-navbar {
+      display: flex;
+      align-items: center;
+      padding: 15px 30px;
+      background: linear-gradient(180deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+      gap: 30px;
+      z-index: 50;
+    }
+    .vod-nav-brand {
+      color: var(--accent); font-weight: 900; font-size: 1.5rem; text-transform: uppercase; letter-spacing: 1px; display: flex; align-items: center; gap: 8px;
+    }
+    .vod-nav-links {
+      display: flex; gap: 20px; flex: 1;
+    }
+    .vod-nav-item {
+      color: #cbd5e1; font-weight: 500; font-size: 1rem; cursor: pointer; transition: color 0.2s;
+    }
+    .vod-nav-item:hover, .vod-nav-item.active {
+      color: #fff; font-weight: 700;
+    }
+    
+    /* Barra di Ricerca Premium nell'header */
+    .vod-search-bar {
+      display: flex; align-items: center;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 50px; 
+      padding: 0.6rem 1.2rem; 
+      gap: 10px;
+      transition: all 0.3s ease;
+      width: 250px;
+    }
+    .vod-search-bar:focus-within {
+      background: rgba(0,0,0,0.6);
+      border-color: var(--accent);
+      box-shadow: 0 0 15px var(--accent-glow);
+      width: 350px;
+    }
+    .vod-search-bar i { color: #fff; font-size: 1.2rem; }
+    .vod-search-bar input {
+      flex: 1; background: transparent; border: none; color: #fff; outline: none; font-size: 1rem; font-family: 'Montserrat', sans-serif;
+    }
+    .vod-search-bar input::placeholder { color: rgba(255,255,255,0.6); }
+
+    /* VOD Main Area (Scrollable) */
+    .dash-main {
+      flex: 1;
+      overflow-y: auto;
+      overflow-x: hidden;
+      padding-bottom: 40px;
+      scroll-behavior: smooth;
+    }
+    .dash-main::-webkit-scrollbar { width: 8px; }
+    .dash-main::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 10px; }
+
+    /* Stile Righe Netflix */
+    .vod-row-container { margin-bottom: 3rem; margin-top: 1rem; padding-left: 30px; }
+    .vod-row-title { 
+      font-size: 1.4rem; font-weight: 800; color: #e2e8f0; margin-bottom: 12px; 
+      display: flex; align-items: center; gap: 8px;
+    }
+    .vod-row-title i { color: var(--accent); font-size: 1.6rem; }
+    .vod-row {
+      display: flex; gap: 15px; overflow-x: auto; padding-bottom: 15px; padding-right: 30px;
+      scroll-behavior: smooth; scroll-snap-type: x mandatory;
+    }
+    .vod-row::-webkit-scrollbar { height: 6px; }
+    .vod-row::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 10px; }
+    .vod-row::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+
+    /* Griglia Ricerca */
+    .vod-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 1.5rem; padding: 20px 30px; }
     
     /* VOD Main Area */
     .dash-main {
@@ -154,45 +216,42 @@ if (!isset($_SESSION['active_profile'])) {
     }
     .vod-section-title i { -webkit-text-fill-color: var(--accent); }
     
-    .vod-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 2.5rem; }
+    .vod-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 1.8rem; }
     
-    /* Poster Card: Effetto 3D e Vetro */
+    /* Poster Card */
     .vod-card {
-      position: relative; border-radius: 16px; overflow: hidden; cursor: pointer;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.5); 
-      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      aspect-ratio: 2 / 3; background: #111;
-      border: 1px solid rgba(255,255,255,0.05);
+      position: relative; border-radius: 8px; overflow: hidden; cursor: pointer;
+      transition: all 0.3s ease; background: #111; flex-shrink: 0;
+      scroll-snap-align: start;
     }
+    /* Dimensione orizzontale (Landscape) per la prima riga */
+    .vod-card.landscape { width: 300px; aspect-ratio: 16 / 9; }
+    /* Dimensione verticale (Portrait) per le altre */
+    .vod-card.portrait { width: 160px; aspect-ratio: 2 / 3; }
+
     .vod-card:hover { 
-      transform: translateY(-10px) scale(1.05); 
-      box-shadow: 0 20px 40px rgba(0,0,0,0.8), 0 0 20px rgba(255,255,255,0.1); 
-      border-color: rgba(255,255,255,0.2);
-      z-index: 10;
+      transform: scale(1.05); z-index: 10;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.8); 
+      border-radius: 12px;
     }
-    .vod-card img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s ease; }
-    .vod-card:hover img { transform: scale(1.08); }
+    .vod-card img { width: 100%; height: 100%; object-fit: cover; display: block; }
     
-    /* Badge Voto Fisso sulla Card */
     .vod-card-badge {
-      position: absolute; top: 10px; right: 10px;
-      background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(8px);
-      padding: 4px 8px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);
-      color: #fbbf24; font-weight: 800; font-size: 0.85rem;
+      position: absolute; top: 8px; right: 8px;
+      background: rgba(0, 0, 0, 0.7); backdrop-filter: blur(4px);
+      padding: 3px 6px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1);
+      color: #fbbf24; font-weight: 800; font-size: 0.8rem;
       display: flex; align-items: center; gap: 4px; z-index: 2;
     }
 
-    /* Overlay Titolo Hover */
     .vod-card-overlay {
       position: absolute; bottom: 0; left: 0; right: 0;
-      background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 100%);
-      padding: 50px 15px 15px 15px; display: flex; flex-direction: column; gap: 6px; 
+      background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+      padding: 30px 10px 10px 10px; display: flex; flex-direction: column; 
       opacity: 0; transition: opacity 0.3s ease; z-index: 2;
     }
     .vod-card:hover .vod-card-overlay { opacity: 1; }
-    .vod-card-title { font-family: var(--font-alt); font-weight: 800; font-size: 1.1rem; color: #fff; line-height: 1.2; text-shadow: 0 2px 4px rgba(0,0,0,0.8); margin-bottom: 2px; }
-    .vod-card-meta { font-size: 0.8rem; color: #94a3b8; display: flex; align-items: center; gap: 4px; font-weight: 600; }
-    .vod-card-snippet { font-size: 0.8rem; color: #cbd5e1; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; margin-top: 4px; }
+    .vod-card-title { font-weight: 800; font-size: 0.95rem; color: #fff; line-height: 1.2; text-shadow: 0 2px 4px rgba(0,0,0,0.8); text-align: center; }
     
     .vod-loading, .vod-empty { grid-column: 1 / -1; text-align: center; padding: 4rem; color: var(--text-muted); font-size: 1.3rem; font-weight: 600; }
 
@@ -221,107 +280,95 @@ if (!isset($_SESSION['active_profile'])) {
     }
     .vod-modal-close:hover { background: rgba(255,255,255,0.2); transform: scale(1.1); }
     
-    .vod-modal-poster { width: 320px; flex-shrink: 0; padding: 2rem; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.2); }
+    .vod-modal-poster { width: 300px; flex-shrink: 0; padding: 2rem; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.2); }
     .vod-modal-poster img { width: 100%; border-radius: 16px; box-shadow: 0 15px 35px rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.05); }
     
-    .vod-modal-info { padding: 3rem 3rem 3rem 1rem; flex: 1; display: flex; flex-direction: column; gap: 1.5rem; overflow-y: auto; }
+    .vod-modal-info { padding: 3rem 3rem 3rem 1rem; flex: 1; display: flex; flex-direction: column; gap: 1rem; overflow-y: auto; }
     .vod-modal-info::-webkit-scrollbar { width: 6px; }
     .vod-modal-info::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 10px; }
     
-    #vod-modal-title { font-family: var(--font-alt); font-size: 2.8rem; margin: 0; line-height: 1.1; color: #fff; text-shadow: 0 2px 10px rgba(0,0,0,0.5); font-weight: 800; letter-spacing: -1px; }
+    #vod-modal-title { font-family: var(--font-alt); font-size: 2.2rem; margin: 0; line-height: 1.1; color: #fff; text-shadow: 0 2px 10px rgba(0,0,0,0.5); font-weight: 800; letter-spacing: -1px; }
     
+    #vod-modal-tagline { font-style: italic; color: var(--accent); font-size: 1.1rem; margin-top: -5px; }
+
+    .vod-modal-meta-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+
     .vod-meta-badge { 
-      background: rgba(255,255,255,0.08); padding: 6px 16px; border-radius: 30px; 
-      font-size: 0.95rem; font-weight: 700; display: inline-flex; align-items: center; gap: 6px; 
+      background: rgba(255,255,255,0.08); padding: 4px 12px; border-radius: 30px; 
+      font-size: 0.85rem; font-weight: 700; display: inline-flex; align-items: center; gap: 6px; 
       border: 1px solid rgba(255,255,255,0.05); color: #e2e8f0;
     }
     .vod-meta-badge.rating { color: #fbbf24; background: rgba(251, 191, 36, 0.15); border-color: rgba(251, 191, 36, 0.3); }
     
-    .vod-modal-desc { font-size: 1.1rem; line-height: 1.7; color: #cbd5e1; margin: 0; }
+    .vod-modal-desc { font-size: 1rem; line-height: 1.6; color: #cbd5e1; margin-top: 10px; }
+    
+    .vod-modal-genres { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+    .vod-genre-tag { background: rgba(255,255,255,0.1); padding: 3px 10px; border-radius: 6px; font-size: 0.8rem; color: #fff; border: 1px solid rgba(255,255,255,0.1); }
   </style>
 </head>
 <body>
   <!-- Header Mobile -->
   <header class="dash-header">
     <div class="dash-logo" style="display:flex;align-items:center;gap:0.5rem;">
-        <i class="ph-fill ph-film-strip"></i> FILM & SERIE
-    </div>
-  </header>
 
   <div class="vod-page-layout">
-    <!-- Sidebar / Navigazione -->
-    <aside class="dash-sidebar" id="dash-sidebar">
-      <div class="dash-cat-title">
-        Menu VOD
-        <button id="sidebar-toggle" class="sidebar-toggle" title="Nascondi sidebar">
-          <i class="ph ph-sidebar-simple"></i>
-        </button>
-      </div>
-      <div class="dash-cat-list" id="vod-menu-list">
-        <div class="dash-cat-item active" data-category="trending" onclick="loadCategory('trending', this)">
-          <i class="ph ph-fire"></i> In Tendenza
-        </div>
-        <div class="dash-cat-item" data-category="upcoming" onclick="loadCategory('upcoming', this)">
-          <i class="ph ph-calendar-star"></i> Prossime Uscite
-        </div>
-        <div class="dash-cat-item" data-category="movie" onclick="loadCategory('movie', this)">
-          <i class="ph ph-film-strip"></i> Film Popolari
-        </div>
-        <div class="dash-cat-item" data-category="top_movie" onclick="loadCategory('top_movie', this)">
-          <i class="ph ph-star"></i> Film più Votati
-        </div>
-        <div class="dash-cat-item" data-category="tv" onclick="loadCategory('tv', this)">
-          <i class="ph ph-television"></i> Serie TV Popolari
-        </div>
-        <div class="dash-cat-item" data-category="top_tv" onclick="loadCategory('top_tv', this)">
-          <i class="ph ph-star-half"></i> Serie TV più Votate
-        </div>
-      </div>
-      
-      <!-- Back to Live TV -->
-      <a href="index.php" class="dash-exit" style="margin-top: auto;"><i class="ph ph-monitor-play"></i> LIVE TV</a>
-    </aside>
-
-    <!-- Main Content -->
-    <main class="dash-main">
-
-      <!-- Barra di ricerca -->
+    
+    <!-- Navbar Superiore Stile Netflix -->
+    <header class="vod-navbar">
+      <div class="vod-nav-brand"><i class="ph-fill ph-play-circle"></i> VOD</div>
+      <nav class="vod-nav-links">
+        <div class="vod-nav-item active" onclick="window.location.reload()">Home</div>
+        <div class="vod-nav-item" onclick="document.getElementById('vod-search-input').focus()">Cerca</div>
+        <a class="vod-nav-item" href="index.php" style="text-decoration:none; margin-left: auto;">Torna a Live TV</a>
+      </nav>
       <div class="vod-search-bar">
         <i class="ph ph-magnifying-glass"></i>
-        <input type="text" id="vod-search-input" placeholder="Cerca film o serie tv...">
+        <input type="text" id="vod-search-input" placeholder="Titoli, persone, generi...">
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="dash-main" id="dash-main">
+      
+      <!-- Container Home (Righe Netflix) -->
+      <div id="vod-home-container">
+        <!-- Righe generate via JS -->
       </div>
 
-      <!-- Griglia Contenuti -->
-      <div class="vod-scroll-area">
-        <h2 id="vod-section-title" class="vod-section-title">In Tendenza</h2>
-        <div id="vod-grid" class="vod-grid">
-           <!-- Popolato via JS -->
-        </div>
+      <!-- Container Ricerca -->
+      <div id="vod-search-container" style="display: none;">
+        <h2 style="color: #fff; padding: 0 30px;" id="vod-search-title">Risultati della Ricerca</h2>
+        <div class="vod-grid" id="vod-search-grid"></div>
       </div>
-
+      
     </main>
   </div>
 
-  <!-- Modal Dettaglio Film/Serie -->
-  <div id="vod-modal" class="vod-modal">
+  <!-- MODAL VOD -->
+  <div class="vod-modal" id="vod-modal">
     <div class="vod-modal-content">
       <button class="vod-modal-close" onclick="closeVodModal()"><i class="ph ph-x"></i></button>
-      <div class="vod-modal-body">
-        <div class="vod-modal-poster">
-           <img id="vod-modal-img" src="" alt="Poster">
+      <div class="vod-modal-poster">
+        <img id="vod-modal-img" src="" alt="Poster">
+      </div>
+      <div class="vod-modal-info">
+        <h2 id="vod-modal-title">Titolo</h2>
+        <div id="vod-modal-tagline"></div>
+        
+        <div class="vod-modal-meta-row">
+          <span class="vod-meta-badge rating" id="vod-modal-rating"><i class="ph-fill ph-star"></i> N/A</span>
+          <span class="vod-meta-badge" id="vod-modal-date"><i class="ph ph-calendar"></i> N/A</span>
+          <span class="vod-meta-badge" id="vod-modal-duration"><i class="ph ph-clock"></i> N/A</span>
+          <span class="vod-meta-badge" id="vod-modal-status"><i class="ph ph-info"></i> N/A</span>
         </div>
-        <div class="vod-modal-info">
-           <h2 id="vod-modal-title">Titolo</h2>
-           <div class="vod-modal-meta">
-              <span id="vod-modal-date" class="vod-meta-badge"><i class="ph ph-calendar"></i> 2023</span>
-              <span id="vod-modal-rating" class="vod-meta-badge rating"><i class="ph-fill ph-star"></i> 8.5</span>
-           </div>
-           <p id="vod-modal-overview" class="vod-modal-desc">Descrizione in arrivo...</p>
-        </div>
+
+        <div class="vod-modal-genres" id="vod-modal-genres"></div>
+
+        <p class="vod-modal-desc" id="vod-modal-overview">Caricamento dettagli...</p>
       </div>
     </div>
   </div>
 
-  <script src="js/vod.js?v=1.22"></script>
+  <script src="js/vod.js?v=1.24"></script>
 </body>
 </html>
