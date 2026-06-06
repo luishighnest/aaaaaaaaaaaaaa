@@ -2,8 +2,9 @@ const API_KEY = '2e0b38cfb2936cec8ab1ce48e4335ac3';
 const BASE_URL = 'https://api.themoviedb.org/3';
 const IMG_BASE_URL = 'https://image.tmdb.org/t/p/w500';
 
-const grid = document.getElementById('vod-grid');
-const sectionTitle = document.getElementById('vod-section-title');
+const homeContainer = document.getElementById('vod-home-container');
+const searchContainer = document.getElementById('vod-search-container');
+const searchGrid = document.getElementById('vod-search-grid');
 const searchInput = document.getElementById('vod-search-input');
 const modal = document.getElementById('vod-modal');
 
@@ -14,10 +15,19 @@ const modalDate = document.getElementById('vod-modal-date');
 const modalRating = document.getElementById('vod-modal-rating');
 const modalOverview = document.getElementById('vod-modal-overview');
 
-// Funzione base per Fetch TMDB
+const rowsConfig = [
+    { id: 'trending', title: '<i class="ph-fill ph-fire"></i> In Tendenza Ora', endpoint: '/trending/all/day', type: 'landscape' },
+    { id: 'upcoming', title: '<i class="ph-fill ph-calendar-star"></i> Prossime Uscite', endpoint: '/movie/upcoming', type: 'portrait' },
+    { id: 'pop_movie', title: '<i class="ph-fill ph-film-strip"></i> Film Popolari', endpoint: '/movie/popular', type: 'portrait' },
+    { id: 'top_movie', title: '<i class="ph-fill ph-star"></i> Film Acclamati', endpoint: '/movie/top_rated', type: 'portrait' },
+    { id: 'pop_tv', title: '<i class="ph-fill ph-television"></i> Serie TV del Momento', endpoint: '/tv/popular', type: 'portrait' },
+    { id: 'top_tv', title: '<i class="ph-fill ph-star-half"></i> Serie TV Capolavoro', endpoint: '/tv/top_rated', type: 'portrait' }
+];
+
 async function fetchTMDB(endpoint) {
     try {
-        const response = await fetch(`${BASE_URL}${endpoint}`);
+        const sep = endpoint.includes('?') ? '&' : '?';
+        const response = await fetch(`${BASE_URL}${endpoint}${sep}api_key=${API_KEY}&language=it-IT`);
         const data = await response.json();
         return data.results;
     } catch (error) {
@@ -26,11 +36,10 @@ async function fetchTMDB(endpoint) {
     }
 }
 
-// Inizializza
 document.addEventListener('DOMContentLoaded', () => {
-    loadCategory('trending', document.querySelector('.dash-cat-item.active'));
+    loadNetflixRows();
     
-    // Gestione Search (Debounce basico)
+    // Gestione Search (Debounce)
     let searchTimeout;
     searchInput.addEventListener('input', (e) => {
         const query = e.target.value.trim();
@@ -39,118 +48,167 @@ document.addEventListener('DOMContentLoaded', () => {
             if (query.length > 2) {
                 searchContent(query);
             } else if (query.length === 0) {
-                // Ritorna all'ultima categoria
-                const activeCat = document.querySelector('.dash-cat-item.active').dataset.category;
-                loadCategory(activeCat, document.querySelector('.dash-cat-item.active'));
+                showHome();
             }
         }, 500);
     });
 });
 
-// Carica Categorie (Sidebar)
-async function loadCategory(cat, element) {
-    // Gestione UI Menu
-    document.querySelectorAll('.dash-cat-item').forEach(el => el.classList.remove('active'));
-    if (element) element.classList.add('active');
-    searchInput.value = '';
-
-    let endpoint = '';
-    if (cat === 'trending') {
-        sectionTitle.innerHTML = '<i class="ph ph-fire"></i> In Tendenza';
-        endpoint = `/trending/all/week?api_key=${API_KEY}&language=it-IT`;
-    } else if (cat === 'upcoming') {
-        sectionTitle.innerHTML = '<i class="ph ph-calendar-star"></i> Prossime Uscite';
-        endpoint = `/movie/upcoming?api_key=${API_KEY}&language=it-IT`;
-    } else if (cat === 'movie') {
-        sectionTitle.innerHTML = '<i class="ph ph-film-strip"></i> Film Popolari';
-        endpoint = `/movie/popular?api_key=${API_KEY}&language=it-IT`;
-    } else if (cat === 'top_movie') {
-        sectionTitle.innerHTML = '<i class="ph ph-star"></i> Film più Votati';
-        endpoint = `/movie/top_rated?api_key=${API_KEY}&language=it-IT`;
-    } else if (cat === 'tv') {
-        sectionTitle.innerHTML = '<i class="ph ph-television"></i> Serie TV Popolari';
-        endpoint = `/tv/popular?api_key=${API_KEY}&language=it-IT`;
-    } else if (cat === 'top_tv') {
-        sectionTitle.innerHTML = '<i class="ph ph-star-half"></i> Serie TV più Votate';
-        endpoint = `/tv/top_rated?api_key=${API_KEY}&language=it-IT`;
-    }
-
-    grid.innerHTML = '<div class="vod-loading">Caricamento...</div>';
-    const results = await fetchTMDB(endpoint);
-    renderGrid(results);
-}
-
-// Cerca Film/Serie
-async function searchContent(query) {
-    document.querySelectorAll('.dash-cat-item').forEach(el => el.classList.remove('active'));
-    sectionTitle.innerHTML = `<i class="ph ph-magnifying-glass"></i> Risultati per: "${query}"`;
-    grid.innerHTML = '<div class="vod-loading">Ricerca in corso...</div>';
+async function loadNetflixRows() {
+    homeContainer.innerHTML = '';
     
-    const endpoint = `/search/multi?api_key=${API_KEY}&language=it-IT&query=${encodeURIComponent(query)}`;
-    const results = await fetchTMDB(endpoint);
-    renderGrid(results);
+    for (const row of rowsConfig) {
+        // Crea il container della riga
+        const rowCont = document.createElement('div');
+        rowCont.className = 'vod-row-container';
+        rowCont.innerHTML = `<div class="vod-row-title">${row.title}</div><div class="vod-row" id="row-${row.id}"></div>`;
+        homeContainer.appendChild(rowCont);
+        
+        // Fetch Dati
+        fetchTMDB(row.endpoint).then(items => {
+            const rowDiv = document.getElementById(`row-${row.id}`);
+            if (!items || items.length === 0) return;
+            
+            items.forEach(item => {
+                if (item.media_type === 'person') return;
+                const title = item.title || item.name;
+                
+                // Per landscape uso backdrop_path, per portrait uso poster_path
+                const imgPath = (row.type === 'landscape' && item.backdrop_path) ? item.backdrop_path : item.poster_path;
+                const poster = imgPath ? `${IMG_BASE_URL}${imgPath}` : 'https://via.placeholder.com/500x750?text=No+Img';
+                const rating = item.vote_average ? item.vote_average.toFixed(1) : 'N/A';
+                
+                const card = document.createElement('div');
+                card.className = `vod-card ${row.type}`;
+                card.innerHTML = `
+                    <div class="vod-card-badge"><i class="ph-fill ph-star"></i> ${rating}</div>
+                    <img src="${poster}" alt="${title}" loading="lazy">
+                    <div class="vod-card-overlay">
+                        <div class="vod-card-title">${title}</div>
+                    </div>
+                `;
+                card.addEventListener('click', () => openModal(item));
+                rowDiv.appendChild(card);
+            });
+            
+            // Mouse wheel orizzontale sulla riga
+            rowDiv.addEventListener('wheel', (e) => {
+                if(e.deltaY !== 0) {
+                    e.preventDefault();
+                    rowDiv.scrollLeft += e.deltaY * 2;
+                }
+            });
+        });
+    }
 }
 
-// Render Griglia
-function renderGrid(items) {
-    grid.innerHTML = '';
-    if (!items || items.length === 0) {
-        grid.innerHTML = '<div class="vod-empty">Nessun contenuto trovato.</div>';
+function showHome() {
+    searchContainer.style.display = 'none';
+    homeContainer.style.display = 'block';
+}
+
+async function searchContent(query) {
+    homeContainer.style.display = 'none';
+    searchContainer.style.display = 'block';
+    
+    document.getElementById('vod-search-title').innerHTML = `Risultati per: "${query}"`;
+    searchGrid.innerHTML = '<div class="vod-loading">Ricerca in corso...</div>';
+    
+    const results = await fetchTMDB(`/search/multi?query=${encodeURIComponent(query)}`);
+    
+    searchGrid.innerHTML = '';
+    if (!results || results.length === 0) {
+        searchGrid.innerHTML = '<div class="vod-empty">Nessun contenuto trovato.</div>';
         return;
     }
 
-    items.forEach(item => {
-        // Ignora le persone
+    results.forEach(item => {
         if (item.media_type === 'person') return;
-
         const title = item.title || item.name;
-        const poster = item.poster_path ? `${IMG_BASE_URL}${item.poster_path}` : 'https://via.placeholder.com/500x750?text=No+Poster';
-        const date = item.release_date || item.first_air_date || 'N/A';
-        const year = date !== 'N/A' ? date.split('-')[0] : '';
+        const poster = item.poster_path ? `${IMG_BASE_URL}${item.poster_path}` : 'https://via.placeholder.com/500x750?text=No+Img';
         const rating = item.vote_average ? item.vote_average.toFixed(1) : 'N/A';
-        const type = item.media_type || (item.title ? 'movie' : 'tv'); // fallback per le sezioni specifiche
-        const typeStr = type === 'tv' ? 'Serie TV' : 'Film';
-        const overviewSnippet = item.overview ? (item.overview.length > 70 ? item.overview.substring(0, 70) + '...' : item.overview) : '';
-
+        
         const card = document.createElement('div');
-        card.className = 'vod-card';
+        card.className = 'vod-card portrait';
+        card.style.width = '100%'; // in grid si adatta alla cella
         card.innerHTML = `
             <div class="vod-card-badge"><i class="ph-fill ph-star"></i> ${rating}</div>
             <img src="${poster}" alt="${title}" loading="lazy">
             <div class="vod-card-overlay">
                 <div class="vod-card-title">${title}</div>
-                <div class="vod-card-meta"><i class="ph ph-calendar"></i> ${year} <span style="margin: 0 4px; color: var(--accent);">•</span> ${typeStr}</div>
-                <div class="vod-card-snippet">${overviewSnippet}</div>
             </div>
         `;
-
         card.addEventListener('click', () => openModal(item));
-        grid.appendChild(card);
+        searchGrid.appendChild(card);
     });
 }
 
-// Pop-up Modal
-function openModal(item) {
+// Pop-up Modal Avanzato
+async function openModal(item) {
     const title = item.title || item.name;
     const poster = item.poster_path ? `${IMG_BASE_URL}${item.poster_path}` : 'https://via.placeholder.com/500x750?text=No+Poster';
-    const date = item.release_date || item.first_air_date || 'N/A';
-    const rating = item.vote_average ? item.vote_average.toFixed(1) : 'N/A';
-    const overview = item.overview || 'Nessuna trama disponibile per questo contenuto.';
-
+    const type = item.media_type || (item.title ? 'movie' : 'tv');
+    
+    // Inizializza Modal con info base
     modalImg.src = poster;
     modalTitle.textContent = title;
-    modalDate.innerHTML = `<i class="ph ph-calendar"></i> ${date.split('-')[0]}`;
+    document.getElementById('vod-modal-tagline').textContent = '';
+    document.getElementById('vod-modal-duration').innerHTML = `<i class="ph ph-clock"></i> ...`;
+    document.getElementById('vod-modal-status').innerHTML = `<i class="ph ph-info"></i> ...`;
+    document.getElementById('vod-modal-genres').innerHTML = '';
+    
+    const date = item.release_date || item.first_air_date || 'N/A';
+    const rating = item.vote_average ? item.vote_average.toFixed(1) : 'N/A';
+    modalDate.innerHTML = `<i class="ph ph-calendar"></i> ${date !== 'N/A' ? date.split('-')[0] : 'N/A'}`;
     modalRating.innerHTML = `<i class="ph-fill ph-star"></i> ${rating}`;
-    modalOverview.textContent = overview;
-
+    modalOverview.textContent = 'Caricamento dettagli completi...';
+    
     modal.classList.add('open');
+
+    // Fetch Dettagli Completi
+    try {
+        const detResp = await fetch(`${BASE_URL}/${type}/${item.id}?api_key=${API_KEY}&language=it-IT`);
+        const details = await detResp.json();
+
+        if (details.tagline) {
+            document.getElementById('vod-modal-tagline').textContent = `"${details.tagline}"`;
+        }
+
+        let runtime = '';
+        if (type === 'movie' && details.runtime) {
+            runtime = `${details.runtime} min`;
+        } else if (type === 'tv' && details.episode_run_time && details.episode_run_time.length > 0) {
+            runtime = `${details.episode_run_time[0]} min/ep`;
+        } else {
+            runtime = 'N/D';
+        }
+        document.getElementById('vod-modal-duration').innerHTML = `<i class="ph ph-clock"></i> ${runtime}`;
+
+        let statusStr = details.status || 'N/A';
+        if (statusStr === 'Released' || statusStr === 'Ended') statusStr = 'Concluso';
+        if (statusStr === 'Returning Series') statusStr = 'In Corso';
+        if (statusStr === 'Post Production') statusStr = 'In Arrivo';
+        document.getElementById('vod-modal-status').innerHTML = `<i class="ph ph-info"></i> ${statusStr}`;
+
+        if (details.genres) {
+            const genresHtml = details.genres.map(g => `<span class="vod-genre-tag">${g.name}</span>`).join('');
+            document.getElementById('vod-modal-genres').innerHTML = genresHtml;
+        }
+
+        modalOverview.textContent = details.overview || item.overview || 'Nessuna trama disponibile in italiano per questo contenuto.';
+
+    } catch(err) {
+        console.error("Errore recupero dettagli", err);
+        modalOverview.textContent = item.overview || 'Nessuna trama disponibile.';
+        document.getElementById('vod-modal-duration').innerHTML = `<i class="ph ph-clock"></i> N/D`;
+        document.getElementById('vod-modal-status').innerHTML = `<i class="ph ph-info"></i> N/D`;
+    }
 }
 
 function closeVodModal() {
     modal.classList.remove('open');
 }
 
-// Chiudi cliccando fuori dal contenuto
 modal.addEventListener('click', (e) => {
     if (e.target === modal) {
         closeVodModal();
