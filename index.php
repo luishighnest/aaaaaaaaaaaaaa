@@ -164,7 +164,7 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>PZ8</title>
     <meta name="description" content="Dashboard StreamHub Premium">
-    <link rel="stylesheet" href="css/style.css?v=1.10">
+    <link rel="stylesheet" href="css/style.css?v=1.11">
     <script>
       (function() {
         const accent = localStorage.getItem('accent_color');
@@ -313,15 +313,8 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
 
       <!-- OVERLAY IN STILE TV PREMIUM (visibile solo a schermo intero) -->
       <div id="pc-fullscreen-overlay" class="pc-fullscreen-overlay">
-        <div class="pc-glass-pill">
-            <div class="pc-overlay-icon" id="pc-overlay-icon">
-               <i class="ph-fill ph-television"></i>
-            </div>
-            <div class="pc-overlay-info">
-                <div class="pc-overlay-name" id="pc-overlay-name">Nessun Canale</div>
-                <div class="pc-overlay-epg" id="pc-overlay-epg"><span class="epg-label">In onda:</span> Programmazione in corso</div>
-            </div>
-        </div>
+         <div class="pc-overlay-title" id="pc-overlay-title">Nessun Canale</div>
+         <div class="pc-overlay-subtitle" id="pc-overlay-subtitle">In onda</div>
       </div>
 
       <iframe id="player-frame" src="about:blank" allow="autoplay; encrypted-media"></iframe>
@@ -874,9 +867,17 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
       }
 
       // Aggiorna anche l'overlay fullscreen del PC
-      const pcOverlayEpg = document.getElementById('pc-overlay-epg');
-      if (pcOverlayEpg) {
-        pcOverlayEpg.innerHTML = epg.now ? `<span class="epg-label">In onda:</span> <span class="epg-title">${epg.now.titolo}</span>` : '<span class="epg-label">In onda:</span> <span class="epg-title">Diretta continua</span>';
+      const pcOverlayTitle = document.getElementById('pc-overlay-title');
+      const pcOverlaySubtitle = document.getElementById('pc-overlay-subtitle');
+      if (pcOverlayTitle && pcOverlaySubtitle) {
+        const activeChName = document.querySelector('.channel-item.active .ch-name')?.textContent || '';
+        if (epg.now) {
+          pcOverlayTitle.textContent = epg.now.titolo;
+          pcOverlaySubtitle.textContent = `In onda • ${activeChName}`;
+        } else {
+          pcOverlayTitle.textContent = activeChName;
+          pcOverlaySubtitle.textContent = `Diretta continua`;
+        }
       }
     }
 
@@ -1077,10 +1078,10 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
       document.getElementById('player-ch-name').textContent = ch.name;
 
       // Aggiorna l'overlay fullscreen del PC
-      const pcOverlayName = document.getElementById('pc-overlay-name');
-      if (pcOverlayName) pcOverlayName.textContent = ch.name;
-      const pcOverlayEpg = document.getElementById('pc-overlay-epg');
-      if (pcOverlayEpg) pcOverlayEpg.innerHTML = "<span class='epg-label'>In onda:</span> <span class='epg-title'>Caricamento...</span>";
+      const pcOverlayTitle = document.getElementById('pc-overlay-title');
+      if (pcOverlayTitle) pcOverlayTitle.textContent = ch.name;
+      const pcOverlaySubtitle = document.getElementById('pc-overlay-subtitle');
+      if (pcOverlaySubtitle) pcOverlaySubtitle.textContent = "Caricamento...";
 
       // Aggiorna bottone preferiti del player
       const btnFav = document.getElementById('btn-toggle-favorite');
