@@ -207,6 +207,64 @@ async function loadNetflixRows() {
     renderSectionRows(activeTvRows, tvContainer);
 }
 
+function attachRowArrows(rowCont) {
+    if (!rowCont) return;
+    
+    const rowDiv = rowCont.querySelector('.vod-row');
+    if (!rowDiv) return;
+    
+    const existingLeft = rowCont.querySelector('.vod-row-arrow-left');
+    const existingRight = rowCont.querySelector('.vod-row-arrow-right');
+    if (existingLeft) existingLeft.remove();
+    if (existingRight) existingRight.remove();
+    
+    const leftArrow = document.createElement('button');
+    leftArrow.className = 'vod-row-arrow-left';
+    leftArrow.innerHTML = '<i class="ph ph-caret-left"></i>';
+    leftArrow.style.display = 'none';
+    
+    const rightArrow = document.createElement('button');
+    rightArrow.className = 'vod-row-arrow-right';
+    rightArrow.innerHTML = '<i class="ph ph-caret-right"></i>';
+    rightArrow.style.display = 'none';
+    
+    rowCont.appendChild(leftArrow);
+    rowCont.appendChild(rightArrow);
+    
+    rowDiv.addEventListener('scroll', () => {
+        if (rowDiv.scrollLeft > 10) {
+            leftArrow.style.display = 'flex';
+        } else {
+            leftArrow.style.display = 'none';
+        }
+    });
+    
+    rightArrow.onclick = (e) => {
+        e.stopPropagation();
+        if (rowDiv.scrollLeft + rowDiv.clientWidth >= rowDiv.scrollWidth - 15) {
+            rowDiv.scrollTo({ left: 0, behavior: 'smooth' });
+        } else {
+            rowDiv.scrollBy({ left: rowDiv.clientWidth * 0.75, behavior: 'smooth' });
+        }
+    };
+    
+    leftArrow.onclick = (e) => {
+        e.stopPropagation();
+        rowDiv.scrollBy({ left: -rowDiv.clientWidth * 0.75, behavior: 'smooth' });
+    };
+    
+    const checkOverflow = () => {
+        if (rowDiv.scrollWidth > rowDiv.clientWidth) {
+            rightArrow.style.display = 'flex';
+        } else {
+            rightArrow.style.display = 'none';
+        }
+    };
+    
+    setTimeout(checkOverflow, 400);
+    window.addEventListener('resize', checkOverflow);
+}
+
 function renderSectionRows(rowsList, container) {
     if (!container) return;
     rowsList.forEach(row => {
@@ -214,6 +272,7 @@ function renderSectionRows(rowsList, container) {
         rowCont.className = 'vod-row-container';
         rowCont.innerHTML = `<div class="vod-row-title">${row.title}</div><div class="vod-row" id="row-${row.id}"></div>`;
         container.appendChild(rowCont);
+        attachRowArrows(rowCont);
         
         fetchTMDB(row.endpoint).then(items => {
             const rowDiv = document.getElementById(`row-${row.id}`);
@@ -230,13 +289,6 @@ function renderSectionRows(rowsList, container) {
                 card.className = `vod-card ${row.type}`;
                 populateCard(card, item, type, title, poster);
                 rowDiv.appendChild(card);
-            });
-            
-            rowDiv.addEventListener('wheel', (e) => {
-                if(e.deltaY !== 0) {
-                    e.preventDefault();
-                    rowDiv.scrollLeft += e.deltaY * 2;
-                }
             });
         });
     });
@@ -615,12 +667,10 @@ function renderContinueWatching() {
         rowDiv.appendChild(card);
     });
     
-    rowDiv.addEventListener('wheel', (e) => {
-        if (e.deltaY !== 0) {
-            e.preventDefault();
-            rowDiv.scrollLeft += e.deltaY * 2;
-        }
-    });
+    const continueRowCont = continueCont.querySelector('.vod-row-container');
+    if (continueRowCont) {
+        attachRowArrows(continueRowCont);
+    }
 }
 
 // ==========================================
