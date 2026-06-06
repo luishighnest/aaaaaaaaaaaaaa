@@ -83,12 +83,16 @@ if (!isset($_SESSION['active_profile'])) {
       align-items: center;
       justify-content: space-between;
       padding: 0 40px;
+      background: transparent;
+      border-bottom: 1px solid transparent;
+      z-index: 100;
+      transition: all 0.3s ease;
+    }
+    .vod-navbar.scrolled {
       background: rgba(10, 10, 15, 0.85);
       backdrop-filter: blur(24px) saturate(1.4);
       -webkit-backdrop-filter: blur(24px) saturate(1.4);
       border-bottom: 1px solid var(--border-subtle);
-      z-index: 100;
-      transition: background 0.3s ease;
     }
     
     .vod-brand {
@@ -108,6 +112,11 @@ if (!isset($_SESSION['active_profile'])) {
       font-size: 1.2rem;
       color: #fff;
       box-shadow: 0 0 12px rgba(239, 68, 68, 0.35);
+      transition: var(--transition);
+    }
+    .vod-brand:hover .vod-brand-icon {
+      transform: scale(1.08);
+      box-shadow: 0 0 20px rgba(239, 68, 68, 0.65);
     }
     .vod-brand-text {
       font-size: 1.25rem;
@@ -146,7 +155,7 @@ if (!isset($_SESSION['active_profile'])) {
       transition: var(--transition);
       display: flex;
       align-items: center;
-      gap: 0.4rem;
+      gap: 0.5rem;
       border: 1px solid transparent;
       background: transparent;
       cursor: pointer;
@@ -170,13 +179,14 @@ if (!isset($_SESSION['active_profile'])) {
       width: 240px;
       flex-shrink: 0;
       margin-right: 15px;
+      transition: var(--transition);
     }
     .vod-navbar .nav-search input {
       width: 100%;
       background: rgba(255, 255, 255, 0.03);
       border: 1px solid var(--border-subtle);
       border-radius: 99px;
-      padding: 0.5rem 1.2rem 0.5rem 2.6rem;
+      padding: 0.5rem 2.6rem 0.5rem 2.6rem; /* Padding a destra per fare spazio alla X */
       color: var(--text-primary);
       font-size: 0.85rem;
       transition: var(--transition);
@@ -185,12 +195,12 @@ if (!isset($_SESSION['active_profile'])) {
     }
     .vod-navbar .nav-search input:focus {
       outline: none;
-      background: rgba(255, 255, 255, 0.08);
+      background: rgba(0, 0, 0, 0.35);
       border-color: var(--accent);
       box-shadow: 0 0 0 3px var(--accent-glow);
       width: 300px;
     }
-    .vod-navbar .nav-search i {
+    .vod-navbar .nav-search .search-icon {
       position: absolute;
       left: 1rem;
       top: 50%;
@@ -198,6 +208,25 @@ if (!isset($_SESSION['active_profile'])) {
       color: var(--text-muted);
       font-size: 1rem;
       pointer-events: none;
+      transition: var(--transition);
+    }
+    .vod-navbar .nav-search input:focus ~ .search-icon {
+      color: var(--accent);
+    }
+    .vod-navbar .nav-search .clear-icon {
+      position: absolute;
+      right: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      cursor: pointer;
+      font-size: 1rem;
+      transition: var(--transition);
+      display: none; /* Gestito via JS */
+    }
+    .vod-navbar .nav-search .clear-icon:hover {
+      color: var(--danger);
+      transform: translateY(-50%) scale(1.15);
     }
 
     /* Bottone Torna Live TV (Fisso a destra) */
@@ -206,23 +235,27 @@ if (!isset($_SESSION['active_profile'])) {
       align-items: center;
       gap: 0.5rem;
       padding: 0.5rem 1.2rem;
-      background: rgba(239, 68, 68, 0.1);
-      border: 1px solid rgba(239, 68, 68, 0.3);
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
       border-radius: 99px;
-      color: #ef4444;
+      color: var(--text-primary);
       font-size: 0.85rem;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.5px;
       cursor: pointer;
       transition: var(--transition);
+      backdrop-filter: blur(10px);
     }
     .vod-back-btn:hover {
       background: #ef4444;
       color: #fff;
       border-color: #ef4444;
-      box-shadow: 0 4px 15px rgba(239, 68, 68, 0.4);
-      transform: translateY(-1px);
+      box-shadow: 0 4px 20px rgba(239, 68, 68, 0.45);
+      transform: translateY(-2px);
+    }
+    .vod-back-btn:active {
+      transform: translateY(0);
     }
 
     /* VOD Main Area (Scrollable) */
@@ -735,12 +768,12 @@ if (!isset($_SESSION['active_profile'])) {
         <div class="vod-brand-text">PZ<span>8</span><span class="vod-brand-sub">VOD</span></div>
       </div>
       <nav class="vod-nav-links">
-        <div class="nav-link active" id="nav-item-home" onclick="resetSearch()">Home</div>
-        <div class="nav-link" id="nav-item-search" onclick="document.getElementById('vod-search-input').focus()">Cerca</div>
+        <div class="nav-link active" id="nav-item-home" onclick="resetSearch()"><i class="ph ph-house"></i> Home</div>
       </nav>
       <div class="nav-search">
-        <i class="ph ph-magnifying-glass"></i>
+        <i class="ph ph-magnifying-glass search-icon"></i>
         <input type="text" id="vod-search-input" placeholder="Cerca film o serie tv...">
+        <i class="ph ph-x clear-icon" id="vod-search-clear"></i>
       </div>
       <a href="index.php" class="vod-back-btn"><i class="ph-bold ph-monitor-play"></i> Live TV</a>
     </header>
