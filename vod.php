@@ -1110,6 +1110,12 @@ if (!isset($_SESSION['active_profile'])) {
 
     /* --- RESPONSIVE MEDIA QUERIES --- */
     @media (max-width: 768px) {
+      .vod-card-overlay {
+        opacity: 1 !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+        background: linear-gradient(to top, rgba(2, 6, 23, 0.95) 0%, rgba(2, 6, 23, 0.15) 70%, transparent 100%) !important;
+      }
       .vod-navbar {
         height: auto;
         min-height: 100px;

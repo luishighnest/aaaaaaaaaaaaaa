@@ -61,6 +61,14 @@
                 122,
                 1,
                 51
+            ],
+            "vod_favorites": [
+                {
+                    "id": 500,
+                    "type": "movie",
+                    "title": "Test Movie",
+                    "poster_path": "\/test.jpg"
+                }
             ]
         },
         {
