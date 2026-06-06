@@ -493,11 +493,11 @@ function findNearestFocusable(dirKey) {
     return bestMatch;
 }
 
-document.addEventListener('keydown', (e) => {
-    hideCursor(); // Se usa la tastiera/frecce, nascondiamo il cursore a schermo
+window.addEventListener('keydown', (e) => {
+    hideCursor(); // Tenta di nascondere il cursore
     
     const isUiHidden = uiOverlay.classList.contains('idle');
-    resetUiTimeout(); // Assicura che la UI si mostri
+    resetUiTimeout(); // Risveglia sempre la UI al tocco di un tasto
     
     const key = e.key;
     const code = e.keyCode;
@@ -510,7 +510,8 @@ document.addEventListener('keydown', (e) => {
     const isChUp = (key === 'ChannelUp' || key === 'PageUp' || code === 427 || code === 33);
     const isChDown = (key === 'ChannelDown' || key === 'PageDown' || code === 428 || code === 34);
 
-    // Se la UI era nascosta, ArrowUp/ArrowDown fanno ZAPPING
+    // Se la UI era nascosta, i tasti direzionali risvegliano la UI,
+    // mentre Su/Giù o CH+/CH- possono fare zapping.
     if (isUiHidden) {
         if (isUp || isChUp) {
             changeChannel(1);
@@ -518,9 +519,10 @@ document.addEventListener('keydown', (e) => {
         } else if (isDown || isChDown) {
             changeChannel(-1);
             e.preventDefault();
-        } else if (!currentFocusedElement && isEnter) {
-            // Se preme invio a vuoto, diamo il focus al primo canale
+        } else {
+            // Se preme Sx/Dx o Enter, diamo il focus al canale corrente
             setFocus(document.querySelector('.tv-channel-card.active') || document.querySelector('.tv-channel-card'));
+            e.preventDefault();
         }
         return;
     }
@@ -532,7 +534,7 @@ document.addEventListener('keydown', (e) => {
     // SPATIAL NAVIGATION
     if (isUp || isDown || isLeft || isRight) {
         // Ignora se siamo dentro l'input di testo
-        if (document.activeElement.tagName === 'INPUT') {
+        if (document.activeElement && document.activeElement.tagName === 'INPUT') {
             if (isLeft || isRight) return;
         }
         
@@ -551,8 +553,7 @@ document.addEventListener('keydown', (e) => {
             e.preventDefault();
             setFocus(document.querySelector('.tv-channel-card.active') || document.querySelector('.tv-channel-card'));
         }
-        // Se nextEl non si trova (limite dello schermo), NON facciamo preventDefault, 
-        // così la TV può magari scorrere o usare la sua navigazione nativa.
+        // Se nextEl non si trova, NON facciamo preventDefault per permettere il native spatial navigation.
     }
     
     // AZIONE ENTER
@@ -564,9 +565,12 @@ document.addEventListener('keydown', (e) => {
             } else {
                 currentFocusedElement.click();
             }
+        } else {
+            // Fallback: apri UI
+            setFocus(document.querySelector('.tv-channel-card.active') || document.querySelector('.tv-channel-card'));
         }
     }
-});
+}, true); // Use capture phase per bypassare il video player
 
 // ─── BOOTSTRAP E FULLSCREEN ───
 function requestFullScreen() {
