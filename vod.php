@@ -83,29 +83,40 @@ if (!isset($_SESSION['active_profile'])) {
       min-width: 0;
       display: flex;
       flex-direction: column;
-      background: rgba(15, 23, 42, 0.4);
+      background: rgba(10, 15, 30, 0.7);
       backdrop-filter: blur(12px);
       border: 1px solid rgba(255,255,255,0.05);
       border-radius: 24px;
       overflow: hidden;
       position: relative;
     }
-    .dash-main::before {
-      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 150px;
-      background: linear-gradient(to bottom, rgba(255,255,255,0.03), transparent); pointer-events: none;
+    
+    /* Sfondo Dinamico Hero */
+    .vod-hero-bg {
+      position: absolute;
+      top: 0; left: 0; right: 0; height: 60vh;
+      background-size: cover;
+      background-position: center 10%;
+      z-index: 0;
+      opacity: 0.25;
+      mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
+      -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
+      transition: background-image 1s ease-in-out;
     }
 
     /* Barra di Ricerca Premium */
     .vod-search-bar {
+      position: relative; z-index: 2;
       display: flex; align-items: center;
-      background: rgba(0, 0, 0, 0.3);
-      border: 1px solid rgba(255,255,255,0.1);
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.15);
       border-radius: 50px; 
-      padding: 1rem 1.5rem; 
+      padding: 1.2rem 2rem; 
       margin: 2rem 2rem 1rem 2rem; 
       gap: 1rem;
       transition: all 0.3s ease;
-      box-shadow: inset 0 2px 4px rgba(0,0,0,0.5);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5), inset 0 2px 4px rgba(255,255,255,0.05);
     }
     .vod-search-bar:focus-within {
       border-color: var(--accent);
@@ -121,18 +132,20 @@ if (!isset($_SESSION['active_profile'])) {
     .vod-search-bar input::placeholder { color: var(--text-muted); }
 
     /* Area Scorrimento e Griglia */
-    .vod-scroll-area { flex: 1; overflow-y: auto; padding: 0 2rem 2rem 2rem; scroll-behavior: smooth; }
+    .vod-scroll-area { position: relative; z-index: 2; flex: 1; overflow-y: auto; padding: 0 2rem 2rem 2rem; scroll-behavior: smooth; }
     .vod-scroll-area::-webkit-scrollbar { width: 8px; }
     .vod-scroll-area::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 10px; }
     .vod-scroll-area::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.2); }
 
     .vod-section-title { 
-      font-family: var(--font-alt); font-size: 1.8rem; margin: 0 0 1.5rem 0; 
+      font-family: var(--font-alt); font-size: 2rem; margin: 0 0 2rem 0; 
       color: #fff; font-weight: 800; letter-spacing: -0.5px;
-      text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+      text-shadow: 0 4px 15px rgba(0,0,0,0.8);
+      display: flex; align-items: center; gap: 10px;
     }
+    .vod-section-title i { color: var(--accent); }
     
-    .vod-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 2rem; }
+    .vod-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 2.5rem; }
     
     /* Poster Card: Effetto 3D e Vetro */
     .vod-card {
@@ -235,13 +248,22 @@ if (!isset($_SESSION['active_profile'])) {
       </div>
       <div class="dash-cat-list" id="vod-menu-list">
         <div class="dash-cat-item active" data-category="trending" onclick="loadCategory('trending', this)">
-          <i class="ph ph-trend-up"></i> In Tendenza
+          <i class="ph ph-fire"></i> In Tendenza
+        </div>
+        <div class="dash-cat-item" data-category="upcoming" onclick="loadCategory('upcoming', this)">
+          <i class="ph ph-calendar-star"></i> Prossime Uscite
         </div>
         <div class="dash-cat-item" data-category="movie" onclick="loadCategory('movie', this)">
-          <i class="ph ph-film-strip"></i> Film
+          <i class="ph ph-film-strip"></i> Film Popolari
+        </div>
+        <div class="dash-cat-item" data-category="top_movie" onclick="loadCategory('top_movie', this)">
+          <i class="ph ph-star"></i> Film più Votati
         </div>
         <div class="dash-cat-item" data-category="tv" onclick="loadCategory('tv', this)">
-          <i class="ph ph-television"></i> Serie TV
+          <i class="ph ph-television"></i> Serie TV Popolari
+        </div>
+        <div class="dash-cat-item" data-category="top_tv" onclick="loadCategory('top_tv', this)">
+          <i class="ph ph-star-half"></i> Serie TV più Votate
         </div>
       </div>
       
@@ -250,8 +272,11 @@ if (!isset($_SESSION['active_profile'])) {
     </aside>
 
     <!-- Main Content -->
-    <main class="dash-main" style="display: flex; flex-direction: column;">
+    <main class="dash-main">
       
+      <!-- HERO BACKGROUND DINAMICO -->
+      <div id="vod-hero-bg" class="vod-hero-bg"></div>
+
       <!-- Barra di ricerca -->
       <div class="vod-search-bar">
         <i class="ph ph-magnifying-glass"></i>
@@ -289,6 +314,6 @@ if (!isset($_SESSION['active_profile'])) {
     </div>
   </div>
 
-  <script src="js/vod.js?v=1.19"></script>
+  <script src="js/vod.js?v=1.20"></script>
 </body>
 </html>
