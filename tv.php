@@ -1,368 +1,490 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap');
+// Variabili globali
+let currentChannel = null;
+let currentCategory = 'all';
+let favorites = window.__ACTIVE_PROFILE_FAVORITES__ || [];
+let player = null;
+let uiTimeout = null;
 
-:root {
-  --bg-base: #000000;
-  --bg-overlay: rgba(0, 0, 0, 0.5);
-  --bg-panel: rgba(15, 15, 20, 0.85);
-  --bg-card: rgba(30, 30, 40, 0.6);
-  --bg-card-hover: rgba(50, 50, 65, 0.9);
-  --border-subtle: rgba(255, 255, 255, 0.08);
-  --border-strong: rgba(255, 255, 255, 0.2);
-  --accent: #00f2fe;
-  --accent-glow: rgba(0, 242, 254, 0.5);
-  --text-primary: #ffffff;
-  --text-secondary: #94a3b8;
-  --text-muted: #64748b;
-  --font-main: 'Outfit', sans-serif;
-  --font-alt: 'Inter', sans-serif;
-  --radius-sm: 12px;
-  --radius-md: 20px;
-  --radius-lg: 30px;
-  --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+const videoElement = document.getElementById('tv-video');
+const iframeElement = document.getElementById('tv-iframe');
+const uiOverlay = document.getElementById('tv-ui');
+
+// ─── EPG ───
+let epgData = window.__EPG_DATA__ || [];
+let epgMap = new Map();
+
+function buildEpgMap() {
+    epgMap.clear();
+    epgData.forEach(item => {
+        if (item.canale) epgMap.set(item.canale.toUpperCase(), item);
+    });
 }
+buildEpgMap();
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: var(--font-main);
-  -webkit-font-smoothing: antialiased;
+function timeToMinutes(timeStr) {
+    if (!timeStr || !timeStr.includes(':')) return 0;
+    const [hours, minutes] = timeStr.split(':').map(Number);
+    return (hours * 60) + minutes;
 }
 
-body {
-  background: var(--bg-base);
-  color: var(--text-primary);
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  user-select: none;
+function getChannelEpg(channelName) {
+    if (!epgMap || epgMap.size === 0) return { now: null, next: null };
+    const channelEpg = epgMap.get(channelName.toUpperCase());
+    if (!channelEpg || !channelEpg.programmi || channelEpg.programmi.length === 0) return { now: null, next: null };
+
+    const now = new Date();
+    const currentMinutes = (now.getHours() * 60) + now.getMinutes();
+    let activeIndex = -1;
+
+    for (let i = 0; i < channelEpg.programmi.length; i++) {
+        if (timeToMinutes(channelEpg.programmi[i].ora) <= currentMinutes) { activeIndex = i; }
+        else break;
+    }
+    if (activeIndex === -1 && channelEpg.programmi.length > 0) activeIndex = 0;
+
+    return {
+        now: channelEpg.programmi[activeIndex],
+        activeIndex: activeIndex,
+        next: activeIndex + 1 < channelEpg.programmi.length ? channelEpg.programmi[activeIndex + 1] : null
+    };
 }
 
-/* Nasconde il cursore quando si usa la tastiera/telecomando */
-body.hide-cursor,
-body.hide-cursor * {
-  cursor: none !important;
+async function fetchEpgData() {
+    try {
+        const response = await fetch('epg.php');
+        if (!response.ok) return;
+        const newData = await response.json();
+        if (Array.isArray(newData) && newData.length > 0) {
+            epgData = newData;
+            buildEpgMap();
+            updateLiveEpg();
+        }
+    } catch(err) {
+        console.warn('Aggiornamento EPG fallito:', err);
+    }
+}
+setInterval(fetchEpgData, 5 * 60 * 1000); // 5 minuti
+
+// ─── INATTIVITA' UI ───
+function resetUiTimeout() {
+    uiOverlay.classList.remove('idle');
+    clearTimeout(uiTimeout);
+    
+    // Se c'è un canale in riproduzione, nascondi l'UI dopo 6 secondi di inattività
+    if (currentChannel) {
+        uiTimeout = setTimeout(() => {
+            uiOverlay.classList.add('idle');
+        }, 6000);
+    }
 }
 
-/* Fullscreen Video Player */
-.tv-player-container {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  background: #000;
-  z-index: 1;
+// Intercetta movimento mouse o tastiera per mostrare la UI
+window.addEventListener('mousemove', resetUiTimeout);
+window.addEventListener('keydown', resetUiTimeout);
+window.addEventListener('click', resetUiTimeout);
+
+// ─── SHAKA PLAYER ───
+function onErrorEvent(event) {
+    console.error('Shaka Error:', event.detail);
 }
 
-.tv-player-container video {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+function playChannel(ch) {
+    currentChannel = ch;
+    resetUiTimeout();
+    
+    // UI Update Header
+    document.getElementById('tv-channel-name').textContent = ch.name;
+    const epgInfo = getChannelEpg(ch.name);
+    if (epgInfo.now) {
+        document.getElementById('tv-channel-epg').textContent = `In onda: ${epgInfo.now.titolo}`;
+    } else {
+        document.getElementById('tv-channel-epg').textContent = 'Programmazione live continua';
+    }
+
+    // Refresh active states in grid
+    document.querySelectorAll('.tv-channel-card').forEach(card => {
+        card.classList.remove('active');
+        if (parseInt(card.dataset.id) === ch.id) {
+            card.classList.add('active');
+        }
+    });
+
+    const streamUrl = getStreamUrl(ch);
+
+    if (streamUrl && streamUrl.includes('.mpd')) {
+        // Usa Shaka Player per i flussi MPD nativi
+        videoElement.style.display = 'block';
+        iframeElement.style.display = 'none';
+        iframeElement.src = '';
+
+        let clearkeys = null;
+        if (streamUrl && streamUrl.includes('ck=')) {
+            try {
+                let ckVal = "";
+                const match = streamUrl.match(/[?&]ck=([^&]+)/);
+                if (match) {
+                    ckVal = decodeURIComponent(match[1]);
+                }
+                if (ckVal) {
+                    const decoded = atob(ckVal);
+                    const parts = decoded.split(':');
+                    if (parts.length === 2) {
+                        clearkeys = {};
+                        clearkeys[parts[0].trim()] = parts[1].trim();
+                    }
+                }
+            } catch (e) {
+                console.error("Errore nel parsing ClearKey:", e);
+            }
+        }
+
+        if (clearkeys && !window.isSecureContext) {
+            console.error("Errore DRM: La decrittografia dei flussi richiede HTTPS.");
+            return;
+        }
+
+        try {
+            if (!player) {
+                shaka.polyfill.installAll();
+                if (!shaka.Player.isBrowserSupported()) {
+                    console.error("Browser non supportato per DASH nativo.");
+                    return;
+                }
+                player = new shaka.Player(videoElement);
+                player.addEventListener('error', onErrorEvent);
+            }
+
+            if (clearkeys) {
+                player.configure({ drm: { clearKeys: clearkeys } });
+            } else {
+                player.configure({ drm: { clearKeys: {} } });
+            }
+            
+            player.load(streamUrl).then(() => {
+                console.log('Stream caricato:', ch.name);
+                videoElement.play();
+            }).catch(e => {
+                console.error("Errore shaka load:", e);
+            });
+        } catch (err) {
+            console.error("Errore di inizializzazione shakaPlayer:", err);
+        }
+    } else if (streamUrl && streamUrl.includes('.m3u8')) {
+        // Usa il player nativo per flussi HLS/M3U8 (le TV li supportano nativamente)
+        if (player) player.unload();
+        videoElement.style.display = 'block';
+        iframeElement.style.display = 'none';
+        iframeElement.src = '';
+
+        videoElement.src = streamUrl;
+        videoElement.play().catch(e => console.error("Errore playback M3U8:", e));
+    } else {
+        // Usa iframe per link a pagine web esterne
+        videoElement.style.display = 'none';
+        if (player) player.unload();
+        videoElement.src = '';
+        
+        iframeElement.style.display = 'block';
+        iframeElement.src = streamUrl;
+    }
 }
 
-/* UI Overlay Container */
-.tv-ui-overlay {
-  position: absolute;
-  inset: 0;
-  z-index: 10;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  opacity: 1;
-  transition: opacity 0.6s ease-in-out;
-  pointer-events: auto;
-  /* Gradiente delicato sopra e sotto */
-  background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 20%, rgba(0,0,0,0) 60%, rgba(0,0,0,0.9) 100%);
-}
-
-.tv-ui-overlay.idle {
-  opacity: 0;
-  pointer-events: none;
-}
-
-/* ─── TOP BAR ─── */
-.tv-top-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 2.5rem 4rem;
-}
-
-.tv-top-left {
-  display: flex;
-  align-items: flex-start;
-  gap: 2rem;
-}
-
-.tv-brand {
-  font-size: 2.5rem;
-  font-weight: 800;
-  letter-spacing: -1px;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.tv-brand span {
-  color: var(--accent);
-  text-shadow: 0 0 20px var(--accent-glow);
-  font-style: italic;
-}
-
-.tv-current-info {
-  display: flex;
-  flex-direction: column;
-}
-
-.tv-current-channel {
-  font-size: 3rem;
-  font-weight: 800;
-  color: var(--text-primary);
-  text-shadow: 0 4px 20px rgba(0,0,0,0.8);
-  line-height: 1.1;
-}
-
-.tv-current-epg {
-  font-size: 1.4rem;
-  color: #00e676;
-  font-weight: 600;
-  text-shadow: 0 2px 10px rgba(0,0,0,0.8);
-  margin-top: 0.5rem;
-}
-
-.tv-top-right {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-
-.tv-search-bar {
-  background: rgba(0, 0, 0, 0.4);
-  border: 1px solid var(--border-strong);
-  border-radius: var(--radius-md);
-  display: flex;
-  align-items: center;
-  padding: 0.8rem 1.5rem;
-  backdrop-filter: blur(10px);
-}
-
-.tv-search-bar i {
-  font-size: 1.5rem;
-  color: var(--text-muted);
-  margin-right: 1rem;
-}
-
-.tv-search-bar input {
-  background: transparent;
-  border: none;
-  outline: none;
-  color: var(--text-primary);
-  font-size: 1.2rem;
-  width: 250px;
-}
-
-.tv-search-bar input:focus {
-  border-bottom: 2px solid var(--accent);
-}
-
-.tv-clock {
-  font-family: var(--font-alt);
-  font-size: 2rem;
-  font-weight: 700;
-  background: rgba(0, 0, 0, 0.4);
-  border: 1px solid var(--border-strong);
-  padding: 0.8rem 1.5rem;
-  border-radius: var(--radius-md);
-  backdrop-filter: blur(10px);
-}
-
-/* ─── BOTTOM PANEL ─── */
-.tv-bottom-panel {
-  padding: 0 0 3rem 4rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-/* Riga Categorie */
-.tv-categories-row {
-  display: flex;
-  gap: 1rem;
-  overflow-x: auto;
-  padding-bottom: 1rem;
-  padding-right: 4rem;
-  /* Nascondi scrollbar */
-  scrollbar-width: none; 
-}
-.tv-categories-row::-webkit-scrollbar { display: none; }
-
-.tv-nav-item {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-  padding: 0.8rem 1.5rem;
-  border-radius: var(--radius-lg);
-  background: rgba(255,255,255,0.05);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  color: var(--text-secondary);
-  font-size: 1.2rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: var(--transition);
-  border: 1px solid var(--border-subtle);
-  white-space: nowrap;
-}
-
-.tv-nav-item i {
-  font-size: 1.5rem;
-}
-
-.tv-nav-item:hover,
-.tv-nav-item:focus {
-  background: rgba(255,255,255,0.15);
-  color: var(--text-primary);
-  transform: translateY(-2px);
-  outline: none;
-}
-
-.tv-nav-item:focus {
-  border-color: var(--accent);
-  box-shadow: 0 0 15px var(--accent-glow);
-}
-
-.tv-nav-item.active {
-  background: var(--accent);
-  color: #000;
-  border-color: var(--accent);
-  box-shadow: 0 0 20px var(--accent-glow);
-}
-.tv-nav-item.active i {
-  color: #000;
-}
-
-/* Riga Canali */
-.tv-channels-row {
-  display: flex;
-  gap: 1.5rem;
-  overflow-x: auto;
-  padding-bottom: 2rem;
-  padding-right: 4rem;
-  /* Scrollbar orizzontale visibile e stilizzata */
-}
-.tv-channels-row::-webkit-scrollbar {
-  height: 8px;
-}
-.tv-channels-row::-webkit-scrollbar-thumb {
-  background: var(--border-strong);
-  border-radius: 4px;
-}
-
-/* Card Canale Orizzontale */
-.tv-channel-card {
-  background: var(--bg-card);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 2px solid var(--border-subtle);
-  border-radius: var(--radius-md);
-  padding: 1.5rem;
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  cursor: pointer;
-  transition: var(--transition);
-  position: relative;
-  overflow: hidden;
-  /* Dimensioni fisse per le card orizzontali */
-  min-width: 380px;
-  max-width: 380px;
-  flex-shrink: 0;
-}
-
-.tv-channel-card:hover,
-.tv-channel-card:focus {
-  background: var(--bg-card-hover);
-  border-color: var(--text-primary);
-  transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.6);
-  z-index: 2;
-  outline: none;
-}
-
-.tv-channel-card:focus {
-  border-color: var(--accent);
-  box-shadow: 0 0 25px var(--accent-glow);
-  background: rgba(0, 242, 254, 0.05);
-}
-
-.tv-channel-card.active {
-  border-color: var(--accent);
-  box-shadow: 0 0 20px var(--accent-glow);
-  background: rgba(0, 242, 254, 0.1);
-}
-
-.tv-card-icon {
-  width: 70px;
-  height: 70px;
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.05);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.5rem;
-  color: var(--text-secondary);
-  flex-shrink: 0;
-}
-
-.tv-channel-card.active .tv-card-icon {
-  background: var(--accent);
-  color: #000;
-}
-
-.tv-card-info {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  min-width: 0;
-}
-
-.tv-card-name {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.tv-card-epg {
-  font-size: 1.1rem;
-  color: var(--text-secondary);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  margin-top: 6px;
-}
-
-.tv-channel-card.active .tv-card-epg {
-  color: #00e676;
-}
-
-/* Barra progresso canale */
-.tv-progress-bar {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 4px;
-  background: rgba(255,255,255,0.1);
-  width: 100%;
-}
-
-.tv-progress-fill {
-  height: 100%;
-  background: var(--accent);
-  width: 0%;
-  transition: width 0.3s;
+function getStreamUrl(ch) {
+    let url = ch.code || '';
+    if (url.includes('{{EXT_PLAYER}}')) {
+        return url.replace('{{EXT_PLAYER}}', '').trim();
+    }
+    return url;
 }
 
 
+// ─── RENDERING UI ───
+function renderCategories() {
+    const container = document.getElementById('tv-categories');
+    container.innerHTML = '';
+
+    // Aggiungi "Tutti"
+    const allItem = document.createElement('div');
+    allItem.className = `tv-nav-item ${currentCategory === 'all' ? 'active' : ''}`;
+    allItem.tabIndex = 0;
+    allItem.innerHTML = `<i class="ph ph-squares-four"></i> Tutti`;
+    allItem.onclick = () => selectCategory('all');
+    container.appendChild(allItem);
+
+    // Aggiungi "Preferiti" se ci sono
+    if (favorites.length > 0) {
+        const favItem = document.createElement('div');
+        favItem.className = `tv-nav-item ${currentCategory === 'favorites' ? 'active' : ''}`;
+        favItem.tabIndex = 0;
+        favItem.innerHTML = `<i class="ph-fill ph-star" style="color:#ffc107"></i> Preferiti`;
+        favItem.onclick = () => selectCategory('favorites');
+        container.appendChild(favItem);
+    }
+
+    Object.keys(CATEGORIES).forEach(key => {
+        if (key === 'all') return;
+        const cat = CATEGORIES[key];
+        const item = document.createElement('div');
+        item.className = `tv-nav-item ${currentCategory === key ? 'active' : ''}`;
+        item.tabIndex = 0;
+        item.innerHTML = `<i class="ph ${cat.icon}"></i> ${cat.label}`;
+        item.onclick = () => selectCategory(key);
+        container.appendChild(item);
+    });
+}
+
+function selectCategory(catKey) {
+    currentCategory = catKey;
+    renderCategories();
+    renderChannels();
+}
+
+function renderChannels(searchQuery = '') {
+    const container = document.getElementById('tv-channels-row');
+    container.innerHTML = '';
+    
+    let filtered = CHANNELS;
+
+    if (currentCategory === 'favorites') {
+        filtered = CHANNELS.filter(ch => favorites.includes(ch.id));
+    } else if (currentCategory !== 'all') {
+        filtered = CHANNELS.filter(ch => ch.cat === currentCategory);
+    }
+
+    if (searchQuery) {
+        const query = searchQuery.toLowerCase();
+        filtered = filtered.filter(ch => ch.name.toLowerCase().includes(query) || ch.cat.toLowerCase().includes(query));
+    }
+
+    filtered.forEach(ch => {
+        const catMeta = CATEGORIES[ch.cat];
+        const isActive = currentChannel && currentChannel.id === ch.id;
+        
+        const card = document.createElement('div');
+        card.className = `tv-channel-card ${isActive ? 'active' : ''}`;
+        card.dataset.id = ch.id;
+        card.tabIndex = 0;
+        
+        const epgInfo = getChannelEpg(ch.name);
+        let epgText = epgInfo.now ? epgInfo.now.titolo : 'Diretta continua';
+        
+        // Progress bar calcolo
+        let progressHtml = '';
+        if (epgInfo.now) {
+            const now = new Date();
+            const nowMin = now.getHours() * 60 + now.getMinutes();
+            const startMin = timeToMinutes(epgInfo.now.ora);
+            let endMin = epgInfo.next ? timeToMinutes(epgInfo.next.ora) : startMin + 120;
+            if (endMin < startMin) endMin += 1440;
+            
+            let adjNow = nowMin;
+            if (adjNow < startMin && startMin > 1000) adjNow += 1440;
+            const duration = endMin - startMin;
+            const pct = duration > 0 ? Math.min(100, Math.max(0, ((adjNow - startMin) / duration) * 100)) : 100;
+            
+            progressHtml = `<div class="tv-progress-bar"><div class="tv-progress-fill" style="width:${pct}%"></div></div>`;
+        }
+
+        card.innerHTML = `
+            <div class="tv-card-icon" style="color: ${catMeta ? catMeta.color : '#fff'}; background: ${catMeta ? catMeta.color+'15' : 'rgba(255,255,255,0.1)'}">
+                <i class="ph ${ch.icon}"></i>
+            </div>
+            <div class="tv-card-info">
+                <div class="tv-card-name">${ch.name}</div>
+                <div class="tv-card-epg">${epgText}</div>
+            </div>
+            ${progressHtml}
+        `;
+        
+        card.onclick = () => playChannel(ch);
+        container.appendChild(card);
+    });
+}
+
+function updateLiveEpg() {
+    renderChannels(document.getElementById('tv-search').value);
+    if (currentChannel) {
+        const epgInfo = getChannelEpg(currentChannel.name);
+        if (epgInfo.now) {
+            document.getElementById('tv-channel-epg').textContent = `In onda: ${epgInfo.now.titolo}`;
+        }
+    }
+}
+
+// ─── CLOCK & SEARCH & SCROLL ───
+function updateClock() {
+    const now = new Date();
+    document.getElementById('tv-clock').textContent = now.toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit' });
+}
+setInterval(updateClock, 60000);
+updateClock();
+
+document.getElementById('tv-search').addEventListener('input', (e) => {
+    renderChannels(e.target.value);
+});
+
+// Aggiungi scorrimento con rotellina del mouse ai caroselli orizzontali
+function setupHorizontalScroll(elId) {
+    const el = document.getElementById(elId);
+    if (!el) return;
+    
+    // Supporto rotellina
+    el.addEventListener('wheel', (e) => {
+        if (e.deltaY !== 0) {
+            e.preventDefault();
+            el.scrollLeft += e.deltaY * 2;
+        }
+    });
+
+    // Supporto Drag to Scroll per il puntatore TV
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    el.addEventListener('mousedown', (e) => {
+        isDown = true;
+        el.classList.add('active');
+        startX = e.pageX - el.offsetLeft;
+        scrollLeft = el.scrollLeft;
+    });
+    el.addEventListener('mouseleave', () => {
+        isDown = false;
+        el.classList.remove('active');
+    });
+    el.addEventListener('mouseup', () => {
+        isDown = false;
+        el.classList.remove('active');
+    });
+    el.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - el.offsetLeft;
+        const walk = (x - startX) * 2; // Velocità
+        el.scrollLeft = scrollLeft - walk;
+    });
+}
+
+// ─── SPATIAL NAVIGATION (D-PAD) ───
+let isKeyboardMode = false;
+let currentFocusRow = 2; // 0: search, 1: categories, 2: channels
+let currentFocusCol = 0;
+
+function updateFocus() {
+    let rowElements = [];
+    if (currentFocusRow === 0) rowElements = [document.getElementById('tv-search')];
+    if (currentFocusRow === 1) rowElements = Array.from(document.querySelectorAll('#tv-categories .tv-nav-item'));
+    if (currentFocusRow === 2) rowElements = Array.from(document.querySelectorAll('#tv-channels-row .tv-channel-card'));
+    
+    if (rowElements.length === 0) return;
+    
+    if (currentFocusCol >= rowElements.length) currentFocusCol = rowElements.length - 1;
+    if (currentFocusCol < 0) currentFocusCol = 0;
+    
+    const target = rowElements[currentFocusCol];
+    if (target) {
+        target.focus();
+        target.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+    }
+}
+
+document.addEventListener('keydown', (e) => {
+    // Escludi input normali se si sta scrivendo
+    if (document.activeElement === document.getElementById('tv-search') && e.key !== 'ArrowDown' && e.key !== 'Enter') {
+        return;
+    }
+
+    const key = e.key;
+    if (['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'Enter'].includes(key)) {
+        if (!isKeyboardMode) {
+            isKeyboardMode = true;
+            document.body.classList.add('hide-cursor');
+            
+            // Trova dove siamo attualmente col focus o riparti dal basso
+            if (document.activeElement.classList.contains('tv-channel-card')) currentFocusRow = 2;
+            else if (document.activeElement.classList.contains('tv-nav-item')) currentFocusRow = 1;
+            else if (document.activeElement.id === 'tv-search') currentFocusRow = 0;
+            else currentFocusRow = 2;
+            
+            updateFocus();
+            e.preventDefault();
+            return;
+        }
+
+        e.preventDefault(); // Evita scrolling della pagina
+        
+        if (key === 'ArrowUp') {
+            if (currentFocusRow > 0) {
+                currentFocusRow--;
+                // Ricalcola colonna approssimativa
+                currentFocusCol = 0;
+                updateFocus();
+            }
+        } else if (key === 'ArrowDown') {
+            if (currentFocusRow < 2) {
+                currentFocusRow++;
+                currentFocusCol = 0;
+                updateFocus();
+            }
+        } else if (key === 'ArrowLeft') {
+            if (currentFocusCol > 0) {
+                currentFocusCol--;
+                updateFocus();
+            }
+        } else if (key === 'ArrowRight') {
+            currentFocusCol++;
+            updateFocus();
+        } else if (key === 'Enter') {
+            if (document.activeElement) {
+                document.activeElement.click();
+            }
+        }
+    }
+});
+
+document.addEventListener('mousemove', () => {
+    if (isKeyboardMode) {
+        isKeyboardMode = false;
+        document.body.classList.remove('hide-cursor');
+    }
+});
+
+// ─── BOOTSTRAP E FULLSCREEN ───
+function requestFullScreen() {
+    const docElm = document.documentElement;
+    if (docElm.requestFullscreen) {
+        docElm.requestFullscreen().catch(e => console.warn("Fullscreen API Error:", e));
+    } else if (docElm.mozRequestFullScreen) { /* Firefox */
+        docElm.mozRequestFullScreen().catch(e => console.warn("Fullscreen API Error:", e));
+    } else if (docElm.webkitRequestFullScreen) { /* Chrome, Safari and Opera */
+        docElm.webkitRequestFullScreen().catch(e => console.warn("Fullscreen API Error:", e));
+    } else if (docElm.msRequestFullscreen) { /* IE/Edge */
+        docElm.msRequestFullscreen().catch(e => console.warn("Fullscreen API Error:", e));
+    }
+}
+
+// Su Smart TV il fullscreen automatico è spesso bloccato senza un'interazione utente.
+// Lo forziamo al primo click o tasto premuto.
+const triggerFullscreen = () => {
+    requestFullScreen();
+    document.removeEventListener('click', triggerFullscreen);
+    document.removeEventListener('keydown', triggerFullscreen);
+};
+document.addEventListener('click', triggerFullscreen);
+document.addEventListener('keydown', triggerFullscreen);
+
+window.addEventListener('DOMContentLoaded', () => {
+    renderCategories();
+    renderChannels();
+    resetUiTimeout();
+    
+    setupHorizontalScroll('tv-categories');
+    setupHorizontalScroll('tv-channels-row');
+    
+    // Auto play channel from URL if any
+    const params = new URLSearchParams(window.location.search);
+    const urlId = parseInt(params.get('id'));
+    if (urlId) {
+        const ch = CHANNELS.find(c => c.id === urlId);
+        if (ch) playChannel(ch);
+    }
+});
