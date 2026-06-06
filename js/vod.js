@@ -19,15 +19,51 @@ const modalOverview = document.getElementById('vod-modal-overview');
 let currentSection = 'home';
 window.__CURRENT_HERO_ITEM__ = null;
 window.__CURRENT_MODAL_ITEM__ = null;
+let catalogPage = 1;
+let isLoadingCatalog = false;
+let hasMoreCatalog = true;
 
-const rowsConfig = [
-    { id: 'trending', title: 'In Tendenza Ora', endpoint: '/trending/all/day', type: 'landscape', section: 'all' },
-    { id: 'upcoming', title: 'Prossime Uscite', endpoint: '/movie/upcoming', type: 'portrait', section: 'movie' },
-    { id: 'pop_movie', title: 'Film Popolari', endpoint: '/movie/popular', type: 'portrait', section: 'movie' },
-    { id: 'top_movie', title: 'Film Acclamati', endpoint: '/movie/top_rated', type: 'portrait', section: 'movie' },
-    { id: 'pop_tv', title: 'Serie TV del Momento', endpoint: '/tv/popular', type: 'portrait', section: 'tv' },
-    { id: 'top_tv', title: 'Serie TV Capolavoro', endpoint: '/tv/top_rated', type: 'portrait', section: 'tv' }
+const homePool = [
+    { id: 'trending_day', title: 'In Tendenza Oggi', endpoint: '/trending/all/day', type: 'landscape' },
+    { id: 'trending_week', title: 'I Più Votati della Settimana', endpoint: '/trending/all/week', type: 'portrait' },
+    { id: 'mixed_action', title: 'Azione & Avventura Consigliati', endpoint: '/discover/movie?with_genres=28,12', type: 'portrait' },
+    { id: 'mixed_comedy', title: 'Commedie del Momento', endpoint: '/discover/movie?with_genres=35', type: 'portrait' },
+    { id: 'mixed_pop_movie', title: 'Film da Non Perdere', endpoint: '/movie/popular', type: 'portrait' },
+    { id: 'mixed_upcoming', title: 'Anteprime & Novità', endpoint: '/movie/upcoming', type: 'portrait' },
+    { id: 'mixed_pop_tv', title: 'Serie TV sulla Bocca di Tutti', endpoint: '/tv/popular', type: 'portrait' },
+    { id: 'mixed_top_tv', title: 'Grandi Successi Televisivi', endpoint: '/tv/top_rated', type: 'portrait' }
 ];
+
+const moviePool = [
+    { id: 'movie_pop', title: 'Film Popolari', endpoint: '/movie/popular', type: 'portrait' },
+    { id: 'movie_top', title: 'Capolavori del Cinema', endpoint: '/movie/top_rated', type: 'portrait' },
+    { id: 'movie_upcoming', title: 'Nuove Uscite', endpoint: '/movie/upcoming', type: 'portrait' },
+    { id: 'movie_action', title: 'Cinema d\'Azione', endpoint: '/discover/movie?with_genres=28', type: 'portrait' },
+    { id: 'movie_comedy', title: 'Commedie Spassose', endpoint: '/discover/movie?with_genres=35', type: 'portrait' },
+    { id: 'movie_horror', title: 'Brivido & Horror', endpoint: '/discover/movie?with_genres=27', type: 'portrait' },
+    { id: 'movie_scifi', title: 'Fantascienza & Futuro', endpoint: '/discover/movie?with_genres=878', type: 'portrait' },
+    { id: 'movie_thriller', title: 'Thriller & Suspense', endpoint: '/discover/movie?with_genres=53', type: 'portrait' },
+    { id: 'movie_drama', title: 'Grandi Storie Drammatiche', endpoint: '/discover/movie?with_genres=18', type: 'portrait' }
+];
+
+const tvPool = [
+    { id: 'tv_pop', title: 'Serie TV Popolari', endpoint: '/tv/popular', type: 'portrait' },
+    { id: 'tv_top', title: 'Serie TV da Capolavoro', endpoint: '/tv/top_rated', type: 'portrait' },
+    { id: 'tv_scifi', title: 'Fantascienza & Fantasy', endpoint: '/discover/tv?with_genres=10765', type: 'portrait' },
+    { id: 'tv_action', title: 'Azione & Avventura TV', endpoint: '/discover/tv?with_genres=10759', type: 'portrait' },
+    { id: 'tv_drama', title: 'Drammi & Intrighi', endpoint: '/discover/tv?with_genres=18', type: 'portrait' },
+    { id: 'tv_comedy', title: 'Commedie TV', endpoint: '/discover/tv?with_genres=35', type: 'portrait' },
+    { id: 'tv_mystery', title: 'Giallo & Mistero', endpoint: '/discover/tv?with_genres=9648', type: 'portrait' },
+    { id: 'tv_anime', title: 'Anime & Animazione Giapponese', endpoint: '/discover/tv?with_genres=16', type: 'portrait' }
+];
+
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
 
 async function fetchTMDB(endpoint) {
     try {
@@ -69,34 +105,28 @@ document.addEventListener('DOMContentLoaded', () => {
                 showHome();
             }
         }, 500);
-    });
-
-    // Gestione Navbar Trasparente su scroll con requestAnimationFrame
-    const navbar = document.querySelector('.vod-navbar');
+    // Gestione scorrimento infinito per il Catalogo
     const scrollArea = document.getElementById('dash-main');
-    if (scrollArea && navbar) {
-        let lastScrollTop = 0;
-        let ticking = false;
-
+    if (scrollArea) {
         scrollArea.addEventListener('scroll', () => {
-            lastScrollTop = scrollArea.scrollTop;
-            if (!ticking) {
-                window.requestAnimationFrame(() => {
-                    if (lastScrollTop > 30) {
-                        navbar.classList.add('scrolled');
-                    } else {
-                        navbar.classList.remove('scrolled');
-                    }
-                    ticking = false;
-                });
-                ticking = true;
+            if (currentSection === 'catalog' && !isLoadingCatalog) {
+                const nearBottom = scrollArea.scrollHeight - scrollArea.scrollTop - scrollArea.clientHeight < 300;
+                if (nearBottom) {
+                    loadNextCatalogPage();
+                }
             }
         });
     }
 });
 
 async function loadNetflixRows() {
-    homeContainer.innerHTML = '';
+    const homeContainer = document.getElementById('vod-home-container');
+    const moviesContainer = document.getElementById('vod-movies-container');
+    const tvContainer = document.getElementById('vod-tv-container');
+    
+    if (homeContainer) homeContainer.innerHTML = '';
+    if (moviesContainer) moviesContainer.innerHTML = '';
+    if (tvContainer) tvContainer.innerHTML = '';
     
     // Fetch and initialize the Hero Banner using a random item from Trending
     fetchTMDB('/trending/all/day').then(items => {
@@ -106,23 +136,32 @@ async function loadNetflixRows() {
         }
     });
     
-    for (const row of rowsConfig) {
-        // Crea il container della riga
+    // Mescola e seleziona 5 righe casuali per ogni sezione
+    const activeHomeRows = shuffleArray([...homePool]).slice(0, 5);
+    const activeMovieRows = shuffleArray([...moviePool]).slice(0, 5);
+    const activeTvRows = shuffleArray([...tvPool]).slice(0, 5);
+    
+    // Renderizza nei rispettivi container
+    renderSectionRows(activeHomeRows, homeContainer);
+    renderSectionRows(activeMovieRows, moviesContainer);
+    renderSectionRows(activeTvRows, tvContainer);
+}
+
+function renderSectionRows(rowsList, container) {
+    if (!container) return;
+    rowsList.forEach(row => {
         const rowCont = document.createElement('div');
-        rowCont.className = `vod-row-container row-section-${row.section}`;
+        rowCont.className = 'vod-row-container';
         rowCont.innerHTML = `<div class="vod-row-title">${row.title}</div><div class="vod-row" id="row-${row.id}"></div>`;
-        homeContainer.appendChild(rowCont);
+        container.appendChild(rowCont);
         
-        // Fetch Dati
         fetchTMDB(row.endpoint).then(items => {
             const rowDiv = document.getElementById(`row-${row.id}`);
-            if (!items || items.length === 0) return;
+            if (!rowDiv || !items || items.length === 0) return;
             
             items.forEach(item => {
                 if (item.media_type === 'person') return;
                 const title = item.title || item.name;
-                
-                // Per landscape uso backdrop_path, per portrait uso poster_path
                 const imgPath = (row.type === 'landscape' && item.backdrop_path) ? item.backdrop_path : item.poster_path;
                 const poster = imgPath ? `${IMG_BASE_URL}${imgPath}` : 'https://via.placeholder.com/500x750?text=No+Img';
                 
@@ -138,7 +177,6 @@ async function loadNetflixRows() {
                 rowDiv.appendChild(card);
             });
             
-            // Mouse wheel orizzontale sulla riga
             rowDiv.addEventListener('wheel', (e) => {
                 if(e.deltaY !== 0) {
                     e.preventDefault();
@@ -146,7 +184,7 @@ async function loadNetflixRows() {
                 }
             });
         });
-    }
+    });
 }
 
 async function initHero(item) {
@@ -552,7 +590,8 @@ async function toggleVodFavorite(item) {
                 id: id,
                 type: type,
                 title: title,
-                poster_path: poster_path
+                poster_path: poster_path,
+                csrf_token: window.__CSRF_TOKEN__
             })
         });
         
@@ -610,6 +649,17 @@ function renderLibrary() {
     });
 }
 
+const genreMap = {
+    action: { movie: 28, tv: 10759 },
+    comedy: { movie: 35, tv: 35 },
+    drama: { movie: 18, tv: 18 },
+    scifi: { movie: 878, tv: 10765 },
+    horror: { movie: 27, tv: 9648 },
+    thriller: { movie: 53, tv: 80 },
+    romance: { movie: 10749, tv: 10766 },
+    animation: { movie: 16, tv: 16 }
+};
+
 function changeSection(sectionName) {
     currentSection = sectionName;
     
@@ -626,6 +676,7 @@ function changeSection(sectionName) {
         'home': 'nav-item-home',
         'movies': 'nav-item-movies',
         'tv': 'nav-item-tv',
+        'catalog': 'nav-item-catalog',
         'library': 'nav-item-library'
     };
     
@@ -636,27 +687,36 @@ function changeSection(sectionName) {
     
     const heroSection = document.getElementById('vod-hero-banner');
     const homeCont = document.getElementById('vod-home-container');
+    const moviesCont = document.getElementById('vod-movies-container');
+    const tvCont = document.getElementById('vod-tv-container');
+    const catalogCont = document.getElementById('vod-catalog-container');
     const libCont = document.getElementById('vod-library-container');
+    
+    // Nascondi tutti i container
+    homeCont.style.display = 'none';
+    moviesCont.style.display = 'none';
+    tvCont.style.display = 'none';
+    catalogCont.style.display = 'none';
+    libCont.style.display = 'none';
     
     if (sectionName === 'library') {
         heroSection.style.display = 'none';
-        homeCont.style.display = 'none';
         libCont.style.display = 'block';
         renderLibrary();
+    } else if (sectionName === 'catalog') {
+        heroSection.style.display = 'none';
+        catalogCont.style.display = 'block';
+        if (catalogPage === 1) {
+            loadNextCatalogPage();
+        }
     } else {
-        libCont.style.display = 'none';
-        homeCont.style.display = 'block';
-        
-        // Filtra le righe visibili
-        document.querySelectorAll('.vod-row-container').forEach(el => {
-            if (sectionName === 'home') {
-                el.style.display = 'block';
-            } else if (sectionName === 'movies') {
-                el.style.display = (el.classList.contains('row-section-movie') || el.classList.contains('row-section-all')) ? 'block' : 'none';
-            } else if (sectionName === 'tv') {
-                el.style.display = (el.classList.contains('row-section-tv') || el.classList.contains('row-section-all')) ? 'block' : 'none';
-            }
-        });
+        if (sectionName === 'home') {
+            homeCont.style.display = 'block';
+        } else if (sectionName === 'movies') {
+            moviesCont.style.display = 'block';
+        } else if (sectionName === 'tv') {
+            tvCont.style.display = 'block';
+        }
         
         // Filtra visualizzazione Hero Banner
         if (heroSection.dataset.hasData === 'true') {
@@ -671,3 +731,112 @@ function changeSection(sectionName) {
         }
     }
 }
+
+async function loadNextCatalogPage() {
+    if (isLoadingCatalog || !hasMoreCatalog) return;
+    isLoadingCatalog = true;
+    
+    const indicator = document.getElementById('vod-catalog-loading-indicator');
+    if (indicator) indicator.style.display = 'block';
+    
+    const grid = document.getElementById('vod-catalog-grid');
+    
+    const filterType = document.getElementById('filter-type').value;
+    const filterGenre = document.getElementById('filter-genre').value;
+    const filterYear = document.getElementById('filter-year').value;
+    const filterSort = document.getElementById('filter-sort').value;
+    
+    try {
+        let results = [];
+        
+        if (filterType === 'all') {
+            let movieEndpoint = `/discover/movie?sort_by=${filterSort}&page=${catalogPage}`;
+            let tvEndpoint = `/discover/tv?sort_by=${filterSort}&page=${catalogPage}`;
+            
+            if (filterGenre && genreMap[filterGenre]) {
+                movieEndpoint += `&with_genres=${genreMap[filterGenre].movie}`;
+                tvEndpoint += `&with_genres=${genreMap[filterGenre].tv}`;
+            }
+            if (filterYear) {
+                movieEndpoint += `&primary_release_year=${filterYear}`;
+                tvEndpoint += `&first_air_date_year=${filterYear}`;
+            }
+            
+            const [movies, tvs] = await Promise.all([
+                fetchTMDB(movieEndpoint),
+                fetchTMDB(tvEndpoint)
+            ]);
+            
+            // Interlacciamento dei risultati Film e Serie TV
+            const maxLen = Math.max(movies.length, tvs.length);
+            for (let i = 0; i < maxLen; i++) {
+                if (movies[i]) {
+                    movies[i].media_type = 'movie';
+                    results.push(movies[i]);
+                }
+                if (tvs[i]) {
+                    tvs[i].media_type = 'tv';
+                    results.push(tvs[i]);
+                }
+            }
+        } else if (filterType === 'movie') {
+            let movieEndpoint = `/discover/movie?sort_by=${filterSort}&page=${catalogPage}`;
+            if (filterGenre && genreMap[filterGenre]) movieEndpoint += `&with_genres=${genreMap[filterGenre].movie}`;
+            if (filterYear) movieEndpoint += `&primary_release_year=${filterYear}`;
+            
+            results = await fetchTMDB(movieEndpoint);
+            results.forEach(r => r.media_type = 'movie');
+        } else if (filterType === 'tv') {
+            let tvEndpoint = `/discover/tv?sort_by=${filterSort}&page=${catalogPage}`;
+            if (filterGenre && genreMap[filterGenre]) tvEndpoint += `&with_genres=${genreMap[filterGenre].tv}`;
+            if (filterYear) tvEndpoint += `&first_air_date_year=${filterYear}`;
+            
+            results = await fetchTMDB(tvEndpoint);
+            results.forEach(r => r.media_type = 'tv');
+        }
+        
+        if (!results || results.length === 0) {
+            hasMoreCatalog = false;
+            if (catalogPage === 1) {
+                grid.innerHTML = '<div class="vod-empty">Nessun contenuto corrisponde ai filtri selezionati.</div>';
+            }
+        } else {
+            results.forEach(item => {
+                const title = item.title || item.name;
+                const poster = item.poster_path ? `${IMG_BASE_URL}${item.poster_path}` : 'https://via.placeholder.com/500x750?text=No+Img';
+                
+                const card = document.createElement('div');
+                card.className = 'vod-card portrait';
+                card.style.width = '100%';
+                card.innerHTML = `
+                    <img src="${poster}" alt="${title}" loading="lazy">
+                    <div class="vod-card-overlay">
+                        <div class="vod-card-title">${title}</div>
+                    </div>
+                `;
+                card.addEventListener('click', () => openModal(item));
+                grid.appendChild(card);
+            });
+            catalogPage++;
+        }
+    } catch (err) {
+        console.error("Errore nel caricamento della pagina del catalogo", err);
+    } finally {
+        isLoadingCatalog = false;
+        if (indicator) indicator.style.display = 'none';
+    }
+}
+
+function resetCatalogAndLoad() {
+    catalogPage = 1;
+    hasMoreCatalog = true;
+    isLoadingCatalog = false;
+    
+    const grid = document.getElementById('vod-catalog-grid');
+    if (grid) grid.innerHTML = '';
+    
+    loadNextCatalogPage();
+}
+
+window.resetCatalogAndLoad = resetCatalogAndLoad;
+window.changeSection = changeSection;
