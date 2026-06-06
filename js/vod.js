@@ -98,6 +98,7 @@ function populateCard(card, item, type, title, poster) {
     const playBtn = card.querySelector('.vod-card-btn.play');
     playBtn.addEventListener('click', (e) => {
         e.stopPropagation();
+        openModal(item);
         if (type === 'movie') {
             playMovie(item.id);
         } else {
@@ -264,9 +265,15 @@ async function initHero(item) {
     
     // Associa click
     if (type === 'movie') {
-        playBtn.onclick = () => playMovie(item.id);
+        playBtn.onclick = () => {
+            openModal(item);
+            playMovie(item.id);
+        };
     } else {
-        playBtn.onclick = () => playShowEpisode(item.id, 1, 1);
+        playBtn.onclick = () => {
+            openModal(item);
+            playShowEpisode(item.id, 1, 1);
+        };
     }
     infoBtn.onclick = () => openModal(item);
     
@@ -356,12 +363,10 @@ async function openModal(item) {
     playBtn.style.display = 'inline-flex';
     if (type === 'movie') {
         playBtn.onclick = () => {
-            closeVodModal();
             playMovie(item.id);
         };
     } else if (type === 'tv') {
         playBtn.onclick = () => {
-            closeVodModal();
             playShowEpisode(item.id, 1, 1);
         };
         tvSection.style.display = 'block';
@@ -527,7 +532,6 @@ async function loadTvEpisodes(tvId, seasonNumber) {
             `;
             
             row.onclick = () => {
-                closeVodModal();
                 playShowEpisode(tvId, seasonNumber, ep.episode_number);
             };
             
@@ -578,15 +582,11 @@ function updateModalFavButton(item) {
     if (!favBtn) return;
     const type = item.media_type || (item.title ? 'movie' : 'tv');
     const isFav = isFavorite(item.id, type);
-    const icon = favBtn.querySelector('i');
-    const text = favBtn.querySelector('span');
     
     if (isFav) {
-        icon.className = 'ph-fill ph-heart';
-        text.textContent = 'Rimuovi dai Preferiti';
+        favBtn.innerHTML = '<i class="ph-fill ph-heart" style="font-size: 1.1rem; color: var(--danger);"></i> <span>Rimuovi dai Preferiti</span>';
     } else {
-        icon.className = 'ph ph-heart';
-        text.textContent = 'Aggiungi ai Preferiti';
+        favBtn.innerHTML = '<i class="ph ph-heart" style="font-size: 1.1rem; color: var(--danger);"></i> <span>Aggiungi ai Preferiti</span>';
     }
     
     favBtn.onclick = (e) => {
