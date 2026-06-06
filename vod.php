@@ -905,6 +905,123 @@ if (!isset($_SESSION['active_profile'])) {
       border-color: var(--accent);
       box-shadow: 0 0 10px var(--accent-glow);
     }
+
+    /* --- RESPONSIVE MEDIA QUERIES --- */
+    @media (max-width: 768px) {
+      .vod-navbar {
+        height: auto;
+        min-height: 100px;
+        flex-wrap: wrap;
+        padding: 10px 15px;
+        gap: 10px;
+        background: rgba(10, 10, 15, 0.95);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+      }
+      .vod-brand-text {
+        display: none; /* Nascondi logo di testo su schermi piccoli */
+      }
+      .vod-nav-links {
+        order: 3;
+        width: 100%;
+        margin-left: 0;
+        justify-content: space-around;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+        padding-top: 8px;
+        margin-top: 2px;
+      }
+      .vod-navbar .nav-link {
+        padding: 0.4rem 0.6rem;
+        font-size: 0.8rem;
+        gap: 0.3rem;
+      }
+      .vod-navbar .nav-search {
+        order: 1;
+        width: 150px;
+        margin-right: 0;
+        flex: 1;
+      }
+      .vod-navbar .nav-search:focus-within {
+        width: 180px;
+      }
+      .vod-back-btn {
+        order: 2;
+        padding: 0.4rem 0.9rem;
+        font-size: 0.8rem;
+      }
+      .dash-main {
+        padding-top: 115px; /* Più spazio per la navbar responsive a 2 righe */
+      }
+      .vod-row-container {
+        padding-left: 15px;
+        margin-bottom: 1.5rem;
+      }
+      .vod-row-title {
+        font-size: 1.1rem;
+      }
+      .vod-grid {
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        gap: 1rem;
+        padding: 15px;
+      }
+      .vod-search-section-title {
+        padding: 15px 15px 0 15px;
+        font-size: 1.4rem;
+      }
+      .vod-hero-banner {
+        padding: 0 15px;
+        height: 45vh;
+        min-height: 300px;
+      }
+      .vod-hero-title {
+        font-size: 2rem;
+      }
+      .vod-hero-desc {
+        font-size: 0.9rem;
+        -webkit-line-clamp: 2;
+      }
+      .vod-modal-content {
+        flex-direction: column;
+        max-height: 90vh;
+      }
+      .vod-modal-poster {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        padding: 1.5rem;
+      }
+      .vod-modal-poster img {
+        max-width: 130px;
+      }
+      .vod-modal-info {
+        padding: 1.5rem;
+      }
+      #vod-modal-title {
+        font-size: 1.6rem;
+      }
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+      .vod-navbar {
+        padding: 0 20px;
+      }
+      .vod-brand-text {
+        font-size: 1.1rem;
+      }
+      .vod-brand-sub {
+        display: none;
+      }
+      .vod-navbar .nav-link {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+      }
+      .vod-navbar .nav-search {
+        width: 180px;
+      }
+      .vod-navbar .nav-search:focus-within {
+        width: 220px;
+      }
+    }
   </style>
 </head>
 <body>
