@@ -63,53 +63,73 @@ if (!isset($_SESSION['active_profile'])) {
     .vod-page-layout {
       display: flex;
       flex-direction: column;
-      height: calc(100vh - 60px); /* header height approx */
+      height: 100vh;
+      padding-top: 80px; /* Spazio per la navbar fissa */
     }
 
-    /* Top Navbar */
+    /* Top Navbar Fissa e Premium */
     .vod-navbar {
+      position: fixed; top: 0; left: 0; right: 0; height: 80px;
       display: flex;
       align-items: center;
-      padding: 15px 30px;
-      background: linear-gradient(180deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+      padding: 0 40px;
+      background: rgba(10, 15, 30, 0.8);
+      backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(255,255,255,0.05);
       gap: 30px;
-      z-index: 50;
+      z-index: 100;
+      transition: background 0.3s ease;
     }
     .vod-nav-brand {
-      color: var(--accent); font-weight: 900; font-size: 1.5rem; text-transform: uppercase; letter-spacing: 1px; display: flex; align-items: center; gap: 8px;
+      color: var(--accent); font-weight: 900; font-size: 1.8rem; text-transform: uppercase; letter-spacing: 1px; display: flex; align-items: center; gap: 8px; text-shadow: 0 0 15px var(--accent-glow);
     }
     .vod-nav-links {
-      display: flex; gap: 20px; flex: 1;
+      display: flex; gap: 25px; flex: 1; margin-left: 20px;
     }
     .vod-nav-item {
-      color: #cbd5e1; font-weight: 500; font-size: 1rem; cursor: pointer; transition: color 0.2s;
+      color: #94a3b8; font-weight: 600; font-size: 1.05rem; cursor: pointer; transition: all 0.2s; position: relative;
     }
     .vod-nav-item:hover, .vod-nav-item.active {
-      color: #fff; font-weight: 700;
+      color: #fff;
+    }
+    .vod-nav-item.active::after {
+      content: ''; position: absolute; bottom: -8px; left: 50%; transform: translateX(-50%); width: 20px; height: 3px; background: var(--accent); border-radius: 50px; box-shadow: 0 0 10px var(--accent);
     }
     
-    /* Barra di Ricerca Premium nell'header */
+    /* Barra di Ricerca */
     .vod-search-bar {
       display: flex; align-items: center;
-      background: rgba(255, 255, 255, 0.1);
-      border: 1px solid rgba(255,255,255,0.2);
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255,255,255,0.1);
       border-radius: 50px; 
       padding: 0.6rem 1.2rem; 
       gap: 10px;
       transition: all 0.3s ease;
-      width: 250px;
+      width: 220px;
     }
     .vod-search-bar:focus-within {
-      background: rgba(0,0,0,0.6);
+      background: rgba(0,0,0,0.7);
       border-color: var(--accent);
-      box-shadow: 0 0 15px var(--accent-glow);
-      width: 350px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5), 0 0 10px var(--accent-glow);
+      width: 320px;
     }
-    .vod-search-bar i { color: #fff; font-size: 1.2rem; }
+    .vod-search-bar i { color: #cbd5e1; font-size: 1.2rem; }
     .vod-search-bar input {
       flex: 1; background: transparent; border: none; color: #fff; outline: none; font-size: 1rem; font-family: 'Montserrat', sans-serif;
     }
-    .vod-search-bar input::placeholder { color: rgba(255,255,255,0.6); }
+    .vod-search-bar input::placeholder { color: rgba(255,255,255,0.5); }
+
+    /* Bottone Torna Live TV (Fisso a destra) */
+    .vod-back-btn {
+      background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: #fff; text-decoration: none; font-weight: 700; font-size: 0.95rem;
+      padding: 0.6rem 1.2rem; border-radius: 50px; display: flex; align-items: center; gap: 8px;
+      transition: all 0.3s ease; backdrop-filter: blur(5px); margin-left: 20px;
+    }
+    .vod-back-btn:hover {
+      background: #fff; color: #000; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(255,255,255,0.2);
+    }
 
     /* VOD Main Area (Scrollable) */
     .dash-main {
@@ -307,10 +327,6 @@ if (!isset($_SESSION['active_profile'])) {
   </style>
 </head>
 <body>
-  <!-- Header Mobile -->
-  <header class="dash-header">
-    <div class="dash-logo" style="display:flex;align-items:center;gap:0.5rem;">
-
   <div class="vod-page-layout">
     
     <!-- Navbar Superiore Stile Netflix -->
@@ -319,12 +335,12 @@ if (!isset($_SESSION['active_profile'])) {
       <nav class="vod-nav-links">
         <div class="vod-nav-item active" onclick="window.location.reload()">Home</div>
         <div class="vod-nav-item" onclick="document.getElementById('vod-search-input').focus()">Cerca</div>
-        <a class="vod-nav-item" href="index.php" style="text-decoration:none; margin-left: auto;">Torna a Live TV</a>
       </nav>
       <div class="vod-search-bar">
         <i class="ph ph-magnifying-glass"></i>
-        <input type="text" id="vod-search-input" placeholder="Titoli, persone, generi...">
+        <input type="text" id="vod-search-input" placeholder="Titoli, generi...">
       </div>
+      <a href="index.php" class="vod-back-btn"><i class="ph-bold ph-monitor-play"></i> Live TV</a>
     </header>
 
     <!-- Main Content -->
@@ -369,6 +385,6 @@ if (!isset($_SESSION['active_profile'])) {
     </div>
   </div>
 
-  <script src="js/vod.js?v=1.24"></script>
+  <script src="js/vod.js?v=1.26"></script>
 </body>
 </html>
