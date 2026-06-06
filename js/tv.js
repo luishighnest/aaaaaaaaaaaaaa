@@ -205,7 +205,7 @@ function renderCategories() {
 
     // Aggiungi "Tutti"
     const allItem = document.createElement('div');
-    allItem.className = `tv-nav-item ${currentCategory === 'all' ? 'active' : ''}`;
+    allItem.className = `tv-nav-item tv-focusable ${currentCategory === 'all' ? 'active' : ''}`;
     allItem.innerHTML = `<i class="ph ph-squares-four"></i> Tutti`;
     allItem.onclick = () => selectCategory('all');
     container.appendChild(allItem);
@@ -213,7 +213,7 @@ function renderCategories() {
     // Aggiungi "Preferiti" se ci sono
     if (favorites.length > 0) {
         const favItem = document.createElement('div');
-        favItem.className = `tv-nav-item ${currentCategory === 'favorites' ? 'active' : ''}`;
+        favItem.className = `tv-nav-item tv-focusable ${currentCategory === 'favorites' ? 'active' : ''}`;
         favItem.innerHTML = `<i class="ph-fill ph-star" style="color:#ffc107"></i> Preferiti`;
         favItem.onclick = () => selectCategory('favorites');
         container.appendChild(favItem);
@@ -223,7 +223,7 @@ function renderCategories() {
         if (key === 'all') return;
         const cat = CATEGORIES[key];
         const item = document.createElement('div');
-        item.className = `tv-nav-item ${currentCategory === key ? 'active' : ''}`;
+        item.className = `tv-nav-item tv-focusable ${currentCategory === key ? 'active' : ''}`;
         item.innerHTML = `<i class="ph ${cat.icon}"></i> ${cat.label}`;
         item.onclick = () => selectCategory(key);
         container.appendChild(item);
@@ -258,7 +258,7 @@ function renderChannels(searchQuery = '') {
         const isActive = currentChannel && currentChannel.id === ch.id;
         
         const card = document.createElement('div');
-        card.className = `tv-channel-card ${isActive ? 'active' : ''}`;
+        card.className = `tv-channel-card tv-focusable ${isActive ? 'active' : ''}`;
         card.dataset.id = ch.id;
         
         const epgInfo = getChannelEpg(ch.name);
@@ -407,14 +407,117 @@ function changeChannel(direction) {
     }, 100);
 }
 
+// ─── SPATIAL NAVIGATION (D-PAD) ───
+let currentFocusedElement = null;
+
+function setFocus(el) {
+    if (currentFocusedElement) {
+        currentFocusedElement.classList.remove('tv-focus');
+    }
+    currentFocusedElement = el;
+    if (currentFocusedElement) {
+        currentFocusedElement.classList.add('tv-focus');
+        currentFocusedElement.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+    }
+}
+
+function findNearestFocusable(direction) {
+    if (!currentFocusedElement) {
+        return document.querySelector('.tv-channel-card') || document.querySelector('.tv-focusable');
+    }
+    
+    const focusables = Array.from(document.querySelectorAll('.tv-focusable'));
+    const currentRect = currentFocusedElement.getBoundingClientRect();
+    const c1 = { x: currentRect.left + currentRect.width / 2, y: currentRect.top + currentRect.height / 2 };
+    
+    let bestMatch = null;
+    let minDistance = Infinity;
+    
+    focusables.forEach(el => {
+        if (el === currentFocusedElement) return;
+        
+        // Elemento deve essere visibile e non nascosto da CSS display:none
+        if (el.offsetParent === null) return; 
+
+        const rect = el.getBoundingClientRect();
+        const c2 = { x: rect.left + rect.width / 2, y: rect.top + rect.height / 2 };
+        
+        let isEligible = false;
+        if (direction === 'ArrowRight' && c2.x > c1.x + 10) isEligible = true;
+        if (direction === 'ArrowLeft' && c2.x < c1.x - 10) isEligible = true;
+        if (direction === 'ArrowDown' && c2.y > c1.y + 10) isEligible = true;
+        if (direction === 'ArrowUp' && c2.y < c1.y - 10) isEligible = true;
+        
+        if (isEligible) {
+            const dist = Math.sqrt(Math.pow(c2.x - c1.x, 2) + Math.pow(c2.y - c1.y, 2));
+            let penalty = 0;
+            if (direction === 'ArrowRight' || direction === 'ArrowLeft') {
+                penalty = Math.abs(c2.y - c1.y) * 2;
+            } else {
+                penalty = Math.abs(c2.x - c1.x) * 2;
+            }
+            
+            const score = dist + penalty;
+            if (score < minDistance) {
+                minDistance = score;
+                bestMatch = el;
+            }
+        }
+    });
+    
+    return bestMatch;
+}
+
 document.addEventListener('keydown', (e) => {
-    // Gestione tasti per il cambio canale
-    if (e.key === 'ArrowUp' || e.key === 'ChannelUp' || e.key === 'PageUp') {
-        changeChannel(1); // Canale successivo
+    const isUiHidden = uiOverlay.classList.contains('idle');
+    resetUiTimeout();
+    
+    // Se la UI è nascosta, usa ZAPPING
+    if (isUiHidden) {
+        if (['ArrowUp', 'ChannelUp', 'PageUp'].includes(e.key)) {
+            changeChannel(1);
+            e.preventDefault();
+        } else if (['ArrowDown', 'ChannelDown', 'PageDown'].includes(e.key)) {
+            changeChannel(-1);
+            e.preventDefault();
+        }
+        return;
+    }
+    
+    // ZAPPING esplicito a menu aperto
+    if (['ChannelUp', 'PageUp'].includes(e.key)) {
+        changeChannel(1); e.preventDefault(); return;
+    }
+    if (['ChannelDown', 'PageDown'].includes(e.key)) {
+        changeChannel(-1); e.preventDefault(); return;
+    }
+    
+    // SPATIAL NAVIGATION
+    if (['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(e.key)) {
+        // Ignora se siamo dentro l'input di testo
+        if (document.activeElement.tagName === 'INPUT') {
+            if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') return;
+        }
+        
         e.preventDefault();
-    } else if (e.key === 'ArrowDown' || e.key === 'ChannelDown' || e.key === 'PageDown') {
-        changeChannel(-1); // Canale precedente
+        const nextEl = findNearestFocusable(e.key);
+        if (nextEl) {
+            setFocus(nextEl);
+        } else if (!currentFocusedElement) {
+            setFocus(findNearestFocusable());
+        }
+    }
+    
+    // AZIONE ENTER
+    if (e.key === 'Enter') {
         e.preventDefault();
+        if (currentFocusedElement) {
+            if (currentFocusedElement.classList.contains('tv-search-bar')) {
+                document.getElementById('tv-search').focus();
+            } else {
+                currentFocusedElement.click();
+            }
+        }
     }
 });
 
