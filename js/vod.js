@@ -231,13 +231,24 @@ function attachRowArrows(rowCont) {
     rowCont.appendChild(leftArrow);
     rowCont.appendChild(rightArrow);
     
-    rowDiv.addEventListener('scroll', () => {
+    // Gestione visibilità frecce basata su scroll e overflow
+    const updateArrows = () => {
+        // Mostra freccia sinistra se abbiamo scorrito a destra
         if (rowDiv.scrollLeft > 10) {
             leftArrow.style.display = 'flex';
         } else {
             leftArrow.style.display = 'none';
         }
-    });
+        
+        // Mostra freccia destra se c'è contenuto da scorrere a destra
+        if (rowDiv.scrollWidth > rowDiv.clientWidth) {
+            rightArrow.style.display = 'flex';
+        } else {
+            rightArrow.style.display = 'none';
+        }
+    };
+    
+    rowDiv.addEventListener('scroll', updateArrows);
     
     rightArrow.onclick = (e) => {
         e.stopPropagation();
@@ -253,16 +264,15 @@ function attachRowArrows(rowCont) {
         rowDiv.scrollBy({ left: -rowDiv.clientWidth * 0.75, behavior: 'smooth' });
     };
     
-    const checkOverflow = () => {
-        if (rowDiv.scrollWidth > rowDiv.clientWidth) {
-            rightArrow.style.display = 'flex';
-        } else {
-            rightArrow.style.display = 'none';
-        }
-    };
+    // Monitora modifiche di layout, aggiunta di card o resize tramite ResizeObserver
+    const observer = new ResizeObserver(() => {
+        updateArrows();
+    });
+    observer.observe(rowDiv);
     
-    setTimeout(checkOverflow, 400);
-    window.addEventListener('resize', checkOverflow);
+    // Controlli di sicurezza ritardati (es. quando le immagini finiscono il rendering di layout)
+    setTimeout(updateArrows, 150);
+    setTimeout(updateArrows, 600);
 }
 
 function renderSectionRows(rowsList, container) {
@@ -578,6 +588,21 @@ function getPreviousProgress(id, type, season = null, episode = null) {
     return 0;
 }
 
+function getPreviousSeconds(id, type, season = null, episode = null) {
+    const history = window.__ACTIVE_PROFILE_VOD_HISTORY__ || [];
+    const found = history.find(x => parseInt(x.id, 10) === parseInt(id, 10) && x.type === type);
+    if (found) {
+        if (type === 'tv') {
+            if (parseInt(found.season, 10) === parseInt(season, 10) && parseInt(found.episode, 10) === parseInt(episode, 10)) {
+                return parseInt(found.seconds, 10) || 0;
+            }
+            return 0;
+        }
+        return parseInt(found.seconds, 10) || 0;
+    }
+    return 0;
+}
+
 function renderContinueWatching() {
     const continueCont = document.getElementById('vod-continue-container');
     if (!continueCont) return;
@@ -716,51 +741,76 @@ function togglePlayerFullscreen() {
     }
 }
 
+async function sendProgressPayload(context, seconds, progress, isCompleted = false) {
+    if (!context) return;
+    
+    const finalProgress = isCompleted ? 100 : progress;
+    const finalSeconds = isCompleted ? 0 : seconds;
+    
+    try {
+        const bodyData = {
+            id: context.id,
+            type: context.type,
+            title: context.title,
+            poster_path: context.poster_path,
+            progress: finalProgress,
+            seconds: Math.round(finalSeconds),
+            csrf_token: window.__CSRF_TOKEN__
+        };
+        if (context.type === 'tv') {
+            bodyData.season = context.season;
+            bodyData.episode = context.episode;
+        }
+        
+        const response = await fetch('save_watch_progress.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRF-Token': window.__CSRF_TOKEN__
+            },
+            body: JSON.stringify(bodyData)
+        });
+        const result = await response.json();
+        if (result.success) {
+            window.__ACTIVE_PROFILE_VOD_HISTORY__ = result.watch_history;
+            renderContinueWatching();
+        }
+    } catch (err) {
+        console.error('Errore invio payload progresso:', err);
+    }
+}
+
+async function saveProgressToServer(seconds, progress, isCompleted = false) {
+    if (!window.__PLAYBACK_CONTEXT__) return;
+    await sendProgressPayload(window.__PLAYBACK_CONTEXT__, seconds, progress, isCompleted);
+}
+
 async function saveCurrentProgress() {
     if (!window.__PLAYBACK_CONTEXT__) return;
     const context = window.__PLAYBACK_CONTEXT__;
     window.__PLAYBACK_CONTEXT__ = null; // evita chiamate duplicate
     
-    const timeSpent = (Date.now() - context.startTime) / 1000;
-    if (timeSpent >= 10) {
-        const duration = context.type === 'movie' ? (120 * 60) : (45 * 60); // secondi stimati
-        const gained = (timeSpent / duration) * 100;
-        let newProgress = Math.round(context.prevProgress + gained);
-        if (newProgress > 95) newProgress = 95;
-        
-        try {
-            const bodyData = {
-                id: context.id,
-                type: context.type,
-                title: context.title,
-                poster_path: context.poster_path,
-                progress: newProgress,
-                csrf_token: window.__CSRF_TOKEN__
-            };
-            if (context.type === 'tv') {
-                bodyData.season = context.season;
-                bodyData.episode = context.episode;
-            }
-            
-            const response = await fetch('save_watch_progress.php', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'X-CSRF-Token': window.__CSRF_TOKEN__
-                },
-                body: JSON.stringify(bodyData)
-            });
-            const result = await response.json();
-            if (result.success) {
-                window.__ACTIVE_PROFILE_VOD_HISTORY__ = result.watch_history;
-                renderContinueWatching();
-            } else {
-                console.error('Errore backend progresso:', result.error);
-            }
-        } catch (err) {
-            console.error('Errore rete salvataggio progresso:', err);
+    let seconds = context.currentTime || 0;
+    let progress = 0;
+    
+    if (seconds <= 0 || seconds === context.prevSeconds) {
+        const timeSpent = (Date.now() - context.startTime) / 1000;
+        if (timeSpent >= 10) {
+            const duration = context.type === 'movie' ? (120 * 60) : (45 * 60);
+            const gained = (timeSpent / duration) * 100;
+            progress = Math.round(context.prevProgress + gained);
+            seconds = (progress / 100) * duration;
+        } else {
+            return;
         }
+    } else {
+        const duration = context.type === 'movie' ? (120 * 60) : (45 * 60);
+        progress = Math.min(95, Math.round((seconds / duration) * 100));
     }
+    
+    if (progress > 95) progress = 95;
+    
+    await sendProgressPayload(context, seconds, progress, false);
 }
 
 async function closePlayer() {
@@ -790,6 +840,7 @@ function playMovie(tmdbId, resume = false) {
     const title = item ? (item.title || item.name) : 'Film';
     const poster_path = item ? item.poster_path : '';
     const prevProgress = getPreviousProgress(tmdbId, 'movie');
+    const prevSeconds = getPreviousSeconds(tmdbId, 'movie');
     
     window.__PLAYBACK_CONTEXT__ = {
         id: tmdbId,
@@ -797,6 +848,8 @@ function playMovie(tmdbId, resume = false) {
         title: title,
         poster_path: poster_path,
         prevProgress: prevProgress,
+        prevSeconds: prevSeconds,
+        currentTime: prevSeconds,
         startTime: Date.now()
     };
     
@@ -815,11 +868,15 @@ function playMovie(tmdbId, resume = false) {
     const accent = getAccentHex();
     
     let startAtParam = '';
-    if (resume && prevProgress > 0) {
-        const movieDuration = 120 * 60; // 120 minuti in secondi
-        const startSeconds = Math.round((prevProgress / 100) * movieDuration);
-        if (startSeconds > 0) {
-            startAtParam = `&startAt=${startSeconds}`;
+    if (resume) {
+        if (prevSeconds > 0) {
+            startAtParam = `&startAt=${prevSeconds}`;
+        } else if (prevProgress > 0) {
+            const movieDuration = 120 * 60; // 120 minuti in secondi
+            const startSeconds = Math.round((prevProgress / 100) * movieDuration);
+            if (startSeconds > 0) {
+                startAtParam = `&startAt=${startSeconds}`;
+            }
         }
     }
     
@@ -837,6 +894,7 @@ function playShowEpisode(tmdbId, season, episode, resume = false) {
     const title = item ? (item.title || item.name) : 'Serie TV';
     const poster_path = item ? item.poster_path : '';
     const prevProgress = getPreviousProgress(tmdbId, 'tv', season, episode);
+    const prevSeconds = getPreviousSeconds(tmdbId, 'tv', season, episode);
     
     window.__PLAYBACK_CONTEXT__ = {
         id: tmdbId,
@@ -846,6 +904,8 @@ function playShowEpisode(tmdbId, season, episode, resume = false) {
         season: parseInt(season, 10),
         episode: parseInt(episode, 10),
         prevProgress: prevProgress,
+        prevSeconds: prevSeconds,
+        currentTime: prevSeconds,
         startTime: Date.now()
     };
     
@@ -914,11 +974,15 @@ function playShowEpisode(tmdbId, season, episode, resume = false) {
     const accent = getAccentHex();
     
     let startAtParam = '';
-    if (resume && prevProgress > 0) {
-        const tvDuration = 45 * 60; // 45 minuti in secondi
-        const startSeconds = Math.round((prevProgress / 100) * tvDuration);
-        if (startSeconds > 0) {
-            startAtParam = `&startAt=${startSeconds}`;
+    if (resume) {
+        if (prevSeconds > 0) {
+            startAtParam = `&startAt=${prevSeconds}`;
+        } else if (prevProgress > 0) {
+            const tvDuration = 45 * 60; // 45 minuti in secondi
+            const startSeconds = Math.round((prevProgress / 100) * tvDuration);
+            if (startSeconds > 0) {
+                startAtParam = `&startAt=${startSeconds}`;
+            }
         }
     }
     
@@ -1386,6 +1450,46 @@ async function playNextEpisode() {
     }
 }
 
+async function handleEpisodeEnded() {
+    if (!window.__PLAYBACK_CONTEXT__ || window.__PLAYBACK_CONTEXT__.type !== 'tv') return;
+    const context = window.__PLAYBACK_CONTEXT__;
+    
+    if (window.__NEXT_EPISODE__) {
+        const next = window.__NEXT_EPISODE__;
+        try {
+            const bodyData = {
+                id: next.id,
+                type: 'tv',
+                title: context.title,
+                poster_path: context.poster_path,
+                progress: 0,
+                seconds: 0,
+                season: next.season,
+                episode: next.episode,
+                csrf_token: window.__CSRF_TOKEN__
+            };
+            
+            const response = await fetch('save_watch_progress.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRF-Token': window.__CSRF_TOKEN__
+                },
+                body: JSON.stringify(bodyData)
+            });
+            const result = await response.json();
+            if (result.success) {
+                window.__ACTIVE_PROFILE_VOD_HISTORY__ = result.watch_history;
+                renderContinueWatching();
+            }
+        } catch (err) {
+            console.error('Errore avanzamento automatico episodio:', err);
+        }
+    } else {
+        await saveProgressToServer(0, 100, true);
+    }
+}
+
 function resetCatalogAndLoad() {
     catalogPage = 1;
     hasMoreCatalog = true;
@@ -1436,3 +1540,73 @@ function updateFullscreenClass() {
 document.addEventListener('fullscreenchange', updateFullscreenClass);
 window.addEventListener('resize', updateFullscreenClass);
 window.updateFullscreenClass = updateFullscreenClass;
+
+// Gestione messaggi postMessage dal player iframe vixsrc.to per sincronizzazione real-time
+let lastSaveTime = 0;
+let lastLoggedSeconds = 0;
+
+window.addEventListener('message', (event) => {
+    if (!event.origin.includes('vixsrc.to')) return;
+    
+    const msg = event.data;
+    if (!msg) return;
+    
+    let type = '';
+    let payload = null;
+    
+    if (typeof msg === 'string') {
+        type = msg;
+    } else if (typeof msg === 'object') {
+        type = msg.type || '';
+        payload = msg.data !== undefined ? msg.data : null;
+    }
+    
+    if (!type || !window.__PLAYBACK_CONTEXT__) return;
+    
+    switch (type) {
+        case 'play':
+            window.__PLAYBACK_CONTEXT__.startTime = Date.now();
+            break;
+            
+        case 'pause':
+            if (window.__PLAYBACK_CONTEXT__.currentTime > 0) {
+                const duration = window.__PLAYBACK_CONTEXT__.type === 'movie' ? (120 * 60) : (45 * 60);
+                const progress = Math.min(95, Math.round((window.__PLAYBACK_CONTEXT__.currentTime / duration) * 100));
+                saveProgressToServer(window.__PLAYBACK_CONTEXT__.currentTime, progress);
+            }
+            break;
+            
+        case 'ended':
+            if (window.__PLAYBACK_CONTEXT__.type === 'tv') {
+                handleEpisodeEnded();
+            } else {
+                saveProgressToServer(0, 100, true);
+            }
+            break;
+            
+        case 'timeupdate':
+            if (payload !== null) {
+                let seconds = 0;
+                if (typeof payload === 'number') {
+                    seconds = payload;
+                } else if (typeof payload === 'object') {
+                    seconds = payload.currentTime || payload.position || 0;
+                }
+                
+                if (seconds > 0) {
+                    window.__PLAYBACK_CONTEXT__.currentTime = seconds;
+                    const now = Date.now();
+                    const duration = window.__PLAYBACK_CONTEXT__.type === 'movie' ? (120 * 60) : (45 * 60);
+                    const progress = Math.min(95, Math.round((seconds / duration) * 100));
+                    
+                    // Throttling: salva al massimo ogni 15 secondi se avanzato di 10s
+                    if (now - lastSaveTime >= 15000 && Math.abs(seconds - lastLoggedSeconds) >= 10) {
+                        lastSaveTime = now;
+                        lastLoggedSeconds = seconds;
+                        saveProgressToServer(seconds, progress);
+                    }
+                }
+            }
+            break;
+    }
+});
