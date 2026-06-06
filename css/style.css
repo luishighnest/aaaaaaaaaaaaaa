@@ -1110,6 +1110,10 @@ a {
   z-index: 10;
   cursor: default;
 }
+.dash-player-area:fullscreen .player-top-shield,
+.dash-player-area:-webkit-full-screen .player-top-shield {
+  height: 85%; /* Copre molto schermo per catturare il mousemove! */
+}
 
 .pc-fullscreen-overlay {
   position: absolute;
@@ -1137,29 +1141,29 @@ a {
 }
 
 .pc-overlay-icon {
-  width: 80px;
-  height: 80px;
-  background: rgba(255, 255, 255, 0.15);
+  width: 70px;
+  height: 70px;
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 2.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(8px);
   color: #fff;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
 .pc-overlay-info {
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.9), 0 1px 3px rgba(0,0,0,0.8);
+  gap: 2px;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.9), 0 1px 3px rgba(0,0,0,0.8);
 }
 
 .pc-overlay-name {
-  font-family: var(--font-alt), sans-serif;
+  font-family: var(--font-main), sans-serif;
   font-size: 3.5rem;
   font-weight: 900;
   letter-spacing: -1.5px;
@@ -1169,11 +1173,11 @@ a {
 }
 
 .pc-overlay-epg {
-  font-family: var(--font-main), sans-serif;
-  font-size: 1.6rem;
-  font-weight: 800;
+  font-family: var(--font-alt), sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
   color: #00e676;
-  letter-spacing: 0.5px;
+  letter-spacing: 0px;
 }
 
 
