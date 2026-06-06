@@ -39,10 +39,23 @@ async function fetchTMDB(endpoint) {
 document.addEventListener('DOMContentLoaded', () => {
     loadNetflixRows();
     
+    const searchClear = document.getElementById('vod-search-clear');
+    if (searchClear) {
+        searchClear.addEventListener('click', () => {
+            searchInput.value = '';
+            searchClear.style.display = 'none';
+            showHome();
+        });
+    }
+
     // Gestione Search (Debounce)
     let searchTimeout;
     searchInput.addEventListener('input', (e) => {
         const query = e.target.value.trim();
+        if (searchClear) {
+            searchClear.style.display = query.length > 0 ? 'block' : 'none';
+        }
+        
         clearTimeout(searchTimeout);
         searchTimeout = setTimeout(() => {
             if (query.length > 2) {
@@ -52,6 +65,29 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }, 500);
     });
+
+    // Gestione Navbar Trasparente su scroll con requestAnimationFrame
+    const navbar = document.querySelector('.vod-navbar');
+    const scrollArea = document.getElementById('dash-main');
+    if (scrollArea && navbar) {
+        let lastScrollTop = 0;
+        let ticking = false;
+
+        scrollArea.addEventListener('scroll', () => {
+            lastScrollTop = scrollArea.scrollTop;
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    if (lastScrollTop > 30) {
+                        navbar.classList.add('scrolled');
+                    } else {
+                        navbar.classList.remove('scrolled');
+                    }
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+    }
 });
 
 async function loadNetflixRows() {
@@ -164,8 +200,9 @@ function showHome() {
     }
     
     document.getElementById('nav-item-home').classList.add('active');
-    document.getElementById('nav-item-search').classList.remove('active');
     searchInput.value = '';
+    const searchClear = document.getElementById('vod-search-clear');
+    if (searchClear) searchClear.style.display = 'none';
 }
 
 function resetSearch() {
@@ -178,7 +215,6 @@ async function searchContent(query) {
     searchContainer.style.display = 'block';
     
     document.getElementById('nav-item-home').classList.remove('active');
-    document.getElementById('nav-item-search').classList.add('active');
     
     document.getElementById('vod-search-title').innerHTML = `Risultati per: "${query}"`;
     searchGrid.innerHTML = '<div class="vod-loading">Ricerca in corso...</div>';
