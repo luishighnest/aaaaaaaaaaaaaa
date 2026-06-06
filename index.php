@@ -302,7 +302,26 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
     </button>
 
     <!-- Player Area -->
-    <div class="dash-player-area">
+    <div class="dash-player-area" id="dash-player-area">
+      <!-- Tasto Fullscreen Custom (visibile al passaggio del mouse) -->
+      <button id="btn-custom-fullscreen" class="custom-fullscreen-btn" title="Schermo intero (doppio clic qui)">
+        <i class="ph ph-corners-out"></i>
+      </button>
+
+      <!-- Scudo trasparente sulla parte alta per catturare il doppio clic senza bloccare i controlli video in basso -->
+      <div id="player-top-shield" class="player-top-shield" title="Doppio clic per schermo intero"></div>
+
+      <!-- OVERLAY IN STILE TV (visibile solo a schermo intero) -->
+      <div id="pc-fullscreen-overlay" class="pc-fullscreen-overlay">
+        <div class="pc-overlay-icon" id="pc-overlay-icon">
+           <i class="ph ph-television"></i>
+        </div>
+        <div class="pc-overlay-info">
+            <div class="pc-overlay-name" id="pc-overlay-name">Nessun Canale</div>
+            <div class="pc-overlay-epg" id="pc-overlay-epg">In onda: Programmazione in corso</div>
+        </div>
+      </div>
+
       <iframe id="player-frame" src="about:blank" allowfullscreen
         allow="autoplay; encrypted-media; fullscreen"></iframe>
     </div>
@@ -852,6 +871,12 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
             <div style="font-size:0.95rem;font-weight:700;color:var(--text-muted);font-style:italic;line-height:1.3;margin-top:4px;">Nessun programma successivo</div>
           </div>`;
       }
+
+      // Aggiorna anche l'overlay fullscreen del PC
+      const pcOverlayEpg = document.getElementById('pc-overlay-epg');
+      if (pcOverlayEpg) {
+        pcOverlayEpg.textContent = epg.now ? `In onda: ${epg.now.titolo}` : 'In onda: Diretta continua';
+      }
     }
 
     // Ã¢â€â‚¬Ã¢â€â‚¬ Fetch in background (aggiorna ogni 60s) Ã¢â€â‚¬Ã¢â€â‚¬
@@ -1050,6 +1075,12 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
       document.title = ch.name + ' ';
       document.getElementById('player-ch-name').textContent = ch.name;
 
+      // Aggiorna l'overlay fullscreen del PC
+      const pcOverlayName = document.getElementById('pc-overlay-name');
+      if (pcOverlayName) pcOverlayName.textContent = ch.name;
+      const pcOverlayEpg = document.getElementById('pc-overlay-epg');
+      if (pcOverlayEpg) pcOverlayEpg.textContent = "In onda: Caricamento...";
+
       // Aggiorna bottone preferiti del player
       const btnFav = document.getElementById('btn-toggle-favorite');
       if (btnFav) {
@@ -1091,6 +1122,71 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
         deselectChannel();
       }
     });
+
+    // ─── GESTIONE FULLSCREEN CUSTOM PER OVERLAY ───
+    const playerAreaContainer = document.getElementById('dash-player-area');
+    const topShield = document.getElementById('player-top-shield');
+    const btnCustomFs = document.getElementById('btn-custom-fullscreen');
+
+    function toggleCustomFullscreen() {
+      if (!document.fullscreenElement) {
+        if (playerAreaContainer.requestFullscreen) {
+          playerAreaContainer.requestFullscreen();
+        } else if (playerAreaContainer.webkitRequestFullscreen) {
+          playerAreaContainer.webkitRequestFullscreen();
+        }
+      } else {
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) {
+          document.webkitExitFullscreen();
+        }
+      }
+    }
+
+    if (topShield) {
+      topShield.addEventListener('dblclick', toggleCustomFullscreen);
+    }
+    if (btnCustomFs) {
+      btnCustomFs.addEventListener('click', toggleCustomFullscreen);
+    }
+    
+    // Gestisci timeout per far scomparire l'overlay quando il mouse Ã¨ fermo a schermo intero
+    let pcFsTimeout;
+    const pcOverlay = document.getElementById('pc-fullscreen-overlay');
+    playerAreaContainer.addEventListener('mousemove', () => {
+      if (document.fullscreenElement === playerAreaContainer) {
+        pcOverlay.classList.remove('hidden');
+        document.body.style.cursor = 'default';
+        btnCustomFs.style.opacity = '1';
+        clearTimeout(pcFsTimeout);
+        pcFsTimeout = setTimeout(() => {
+          pcOverlay.classList.add('hidden');
+          document.body.style.cursor = 'none';
+          btnCustomFs.style.opacity = '0';
+        }, 4000);
+      }
+    });
+    
+    document.addEventListener('fullscreenchange', () => {
+      if (document.fullscreenElement === playerAreaContainer) {
+        // Appena entrati a schermo intero
+        pcOverlay.classList.remove('hidden');
+        clearTimeout(pcFsTimeout);
+        pcFsTimeout = setTimeout(() => {
+          pcOverlay.classList.add('hidden');
+          document.body.style.cursor = 'none';
+          btnCustomFs.style.opacity = '0';
+        }, 4000);
+      } else {
+        // Usciti dallo schermo intero
+        pcOverlay.classList.remove('hidden'); // Reset per via del CSS
+        document.body.style.cursor = 'default';
+        btnCustomFs.style.opacity = '';
+        clearTimeout(pcFsTimeout);
+      }
+    });
+
   </script>
   <!-- Settings Modal -->
   <div id="settings-modal" class="settings-modal-overlay">
