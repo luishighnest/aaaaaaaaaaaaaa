@@ -556,11 +556,26 @@ window.addEventListener('keydown', (e) => {
     }
 }, true);
 
-// Invece di usare la Fullscreen API (che causa il blocco hardware dei tasti sulla TV),
-// attiviamo solo il focus iniziale per la navigazione.
+// ─── BOOTSTRAP E FULLSCREEN ───
+function requestFullScreen() {
+    const docElm = document.documentElement;
+    if (docElm.requestFullscreen) {
+        docElm.requestFullscreen().catch(e => console.warn("Fullscreen API Error:", e));
+    } else if (docElm.mozRequestFullScreen) { /* Firefox */
+        docElm.mozRequestFullScreen().catch(e => console.warn("Fullscreen API Error:", e));
+    } else if (docElm.webkitRequestFullScreen) { /* Chrome, Safari and Opera */
+        docElm.webkitRequestFullScreen().catch(e => console.warn("Fullscreen API Error:", e));
+    } else if (docElm.msRequestFullscreen) { /* IE/Edge */
+        docElm.msRequestFullscreen().catch(e => console.warn("Fullscreen API Error:", e));
+    }
+}
+
+// Su Smart TV il fullscreen automatico è spesso bloccato senza un'interazione utente.
+// Lo forziamo al primo click o tasto premuto, e diamo un focus iniziale all'interfaccia.
 const triggerFullscreen = () => {
+    requestFullScreen();
     document.removeEventListener('click', triggerFullscreen);
-    // Attiva il primo focus sull'interfaccia
+    // Attiva il primo focus sull'interfaccia fissa una volta entrato a schermo intero
     setTimeout(() => {
         if (!currentFocusedElement) {
             const firstCard = document.querySelector('.tv-channel-card.active') || document.querySelector('.tv-channel-card');
