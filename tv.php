@@ -122,7 +122,7 @@ if (!isset($_SESSION['csrf_token'])) {
         </div>
       </div>
       <div class="tv-top-right">
-        <div class="tv-search-bar">
+        <div class="tv-search-bar tv-focusable" tabindex="-1">
           <i class="ph ph-magnifying-glass"></i>
           <input type="text" id="tv-search" placeholder="Cerca canale...">
         </div>
