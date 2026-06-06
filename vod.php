@@ -36,6 +36,47 @@ if (!isset($_SESSION['active_profile'])) {
   <link rel="stylesheet" href="css/style.css?v=<?= time() ?>">
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
   <script>
+    window.addEventListener('error', function(e) {
+      const msg = 'JS Error: ' + e.message + ' at ' + e.filename + ':' + e.lineno + ':' + e.colno;
+      const displayError = () => {
+        const div = document.createElement('div');
+        div.style.position = 'fixed';
+        div.style.top = '0';
+        div.style.left = '0';
+        div.style.width = '100%';
+        div.style.background = 'red';
+        div.style.color = 'white';
+        div.style.zIndex = '999999';
+        div.style.padding = '15px';
+        div.style.fontFamily = 'monospace';
+        div.style.whiteSpace = 'pre-wrap';
+        div.textContent = msg;
+        document.body.appendChild(div);
+      };
+      if (document.body) displayError();
+      else window.addEventListener('DOMContentLoaded', displayError);
+    });
+    window.addEventListener('unhandledrejection', function(e) {
+      const msg = 'Promise Rejection: ' + e.reason;
+      const displayError = () => {
+        const div = document.createElement('div');
+        div.style.position = 'fixed';
+        div.style.top = '60px';
+        div.style.left = '0';
+        div.style.width = '100%';
+        div.style.background = 'orange';
+        div.style.color = 'black';
+        div.style.zIndex = '999999';
+        div.style.padding = '15px';
+        div.style.fontFamily = 'monospace';
+        div.style.whiteSpace = 'pre-wrap';
+        div.textContent = msg;
+        document.body.appendChild(div);
+      };
+      if (document.body) displayError();
+      else window.addEventListener('DOMContentLoaded', displayError);
+    });
+
     (function() {
       const accent = localStorage.getItem('accent_color');
       const glow = localStorage.getItem('accent_glow');
