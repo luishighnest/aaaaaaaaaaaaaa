@@ -551,37 +551,36 @@ if (!isset($_SESSION['active_profile'])) {
     .vod-row-arrow-left,
     .vod-row-arrow-right {
       position: absolute;
-      background: rgba(15, 23, 42, 0.6);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, 0.05);
-      color: #fff;
+      top: calc(50% + 15px); /* Centrato in base alle locandine, considerando l'altezza del titolo */
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(15, 23, 42, 0.7);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: rgba(255, 255, 255, 0.8);
       cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       opacity: 0;
-      transition: opacity 0.3s, background-color 0.2s, color 0.2s, transform 0.2s;
-      z-index: 5;
+      z-index: 10;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+      transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
+                  transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), 
+                  background-color 0.2s, 
+                  color 0.2s, 
+                  box-shadow 0.2s;
     }
     .vod-row-arrow-left {
-      left: 40px;
-      top: 45px;
-      bottom: 20px;
-      width: 44px;
-      border-top-right-radius: 8px;
-      border-bottom-right-radius: 8px;
-      border-left: none;
+      left: 15px;
+      transform: translateY(-50%);
     }
     .vod-row-arrow-right {
-      right: 0;
-      top: 45px;
-      bottom: 20px;
-      width: 44px;
-      border-top-left-radius: 8px;
-      border-bottom-left-radius: 8px;
-      border-right: none;
+      right: 15px;
+      transform: translateY(-50%);
     }
     .vod-row-container:hover .vod-row-arrow-left,
     .vod-row-container:hover .vod-row-arrow-right {
@@ -589,12 +588,15 @@ if (!isset($_SESSION['active_profile'])) {
     }
     .vod-row-arrow-left:hover,
     .vod-row-arrow-right:hover {
-      background: rgba(15, 23, 42, 0.9);
-      color: var(--accent);
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+      box-shadow: 0 0 15px var(--accent-glow);
+      transform: translateY(-50%) scale(1.1);
     }
     .vod-row-arrow-left:active,
     .vod-row-arrow-right:active {
-      transform: scale(0.95);
+      transform: translateY(-50%) scale(0.92);
     }
 
     /* Poster Card */
@@ -1317,18 +1319,18 @@ if (!isset($_SESSION['active_profile'])) {
       .vod-row-arrow-left,
       .vod-row-arrow-right {
         opacity: 0.8; /* Sempre visibile su mobile */
-        width: 38px;
-        font-size: 1.25rem;
+        width: 32px;
+        height: 32px;
+        font-size: 1.1rem;
+        top: calc(50% + 10px);
       }
       .vod-row-arrow-left {
-        left: 15px;
-        top: 35px;
-        bottom: 20px;
+        left: 5px;
+        transform: translateY(-50%);
       }
       .vod-row-arrow-right {
-        right: 0;
-        top: 35px;
-        bottom: 20px;
+        right: 5px;
+        transform: translateY(-50%);
       }
       .vod-row-title {
         font-size: 1.1rem;
