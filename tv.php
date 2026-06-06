@@ -115,7 +115,7 @@ if (!isset($_SESSION['csrf_token'])) {
     <!-- Top Bar (Informazioni Canale e Ricerca) -->
     <header class="tv-top-bar">
       <div class="tv-top-left">
-        <div class="tv-brand"><i class="ph ph-television"></i> <span>8</span> PZ</div>
+        <div class="tv-brand"><i class="ph ph-television"></i> <span></span></div>
         <div class="tv-current-info">
           <div class="tv-current-channel" id="tv-channel-name">PZ8 TV</div>
           <div class="tv-current-epg" id="tv-channel-epg">Scegli un canale per iniziare</div>
