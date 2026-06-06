@@ -107,7 +107,6 @@ if (!isset($_SESSION['csrf_token'])) {
   <div class="tv-player-container">
     <video id="tv-video" autoplay playsinline></video>
     <iframe id="tv-iframe" style="display:none; width:100%; height:100%; border:none; background:#000;"></iframe>
-    <div class="tv-loading-overlay" id="tv-loading"><div class="tv-spinner"></div></div>
   </div>
 
   <!-- TV Overlay UI -->
