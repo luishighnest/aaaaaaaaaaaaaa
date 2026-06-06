@@ -164,7 +164,7 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>PZ8</title>
     <meta name="description" content="Dashboard StreamHub Premium">
-    <link rel="stylesheet" href="css/style.css?v=1.5">
+    <link rel="stylesheet" href="css/style.css?v=1.6">
     <script>
       (function() {
         const accent = localStorage.getItem('accent_color');
@@ -322,8 +322,7 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
         </div>
       </div>
 
-      <iframe id="player-frame" src="about:blank" allowfullscreen
-        allow="autoplay; encrypted-media; fullscreen"></iframe>
+      <iframe id="player-frame" src="about:blank" allow="autoplay; encrypted-media"></iframe>
     </div>
 
     <!-- Info Area -->
