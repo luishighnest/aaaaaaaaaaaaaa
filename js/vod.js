@@ -190,7 +190,7 @@ async function initHero(item) {
     if (type === 'movie') {
         playBtn.onclick = () => playMovie(item.id);
     } else {
-        playBtn.onclick = () => openModal(item);
+        playBtn.onclick = () => playShowEpisode(item.id, 1, 1);
     }
     infoBtn.onclick = () => openModal(item);
     
@@ -284,13 +284,17 @@ async function openModal(item) {
     modal.classList.add('open');
 
     // Gestione visualizzazione bottoni/sezioni in base al tipo
+    playBtn.style.display = 'inline-flex';
     if (type === 'movie') {
-        playBtn.style.display = 'inline-flex';
         playBtn.onclick = () => {
             closeVodModal();
             playMovie(item.id);
         };
     } else if (type === 'tv') {
+        playBtn.onclick = () => {
+            closeVodModal();
+            playShowEpisode(item.id, 1, 1);
+        };
         tvSection.style.display = 'block';
         loadTvSeasons(item.id);
     }
