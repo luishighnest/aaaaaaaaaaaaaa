@@ -1073,8 +1073,8 @@ a {
   top: 1rem;
   right: 1rem;
   z-index: 20;
-  background: rgba(0, 0, 0, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   color: #fff;
   border-radius: 8px;
   width: 44px;
@@ -1084,16 +1084,21 @@ a {
   justify-content: center;
   font-size: 1.5rem;
   cursor: pointer;
-  opacity: 0;
-  transition: opacity 0.3s, background 0.2s, transform 0.2s;
+  transition: background 0.2s, transform 0.2s;
   backdrop-filter: blur(4px);
+  animation: pulse-fs 2s infinite;
 }
-.dash-player-area:hover .custom-fullscreen-btn {
-  opacity: 1;
+
+@keyframes pulse-fs {
+  0% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(255, 255, 255, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); }
 }
+
 .custom-fullscreen-btn:hover {
-  background: rgba(255, 255, 255, 0.15);
-  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+  animation: none;
 }
 
 .player-top-shield {
