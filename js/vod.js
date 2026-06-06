@@ -664,7 +664,6 @@ async function closePlayer() {
         }
     }
 
-    const overlay = document.getElementById('vod-player-overlay');
     const frame = document.getElementById('vod-player-frame');
     frame.src = 'about:blank';
     overlay.classList.remove('open');
