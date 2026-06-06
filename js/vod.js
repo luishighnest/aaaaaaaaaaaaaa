@@ -77,6 +77,47 @@ async function fetchTMDB(endpoint) {
     }
 }
 
+function populateCard(card, item, type, title, poster) {
+    const isFav = isFavorite(item.id, type);
+    const favIcon = isFav ? 'ph-fill ph-heart' : 'ph ph-heart';
+    
+    card.innerHTML = `
+        <img src="${poster}" alt="${title}" loading="lazy">
+        <div class="vod-card-overlay">
+            <div class="vod-card-title">${title}</div>
+            <div class="vod-card-actions">
+                <button class="vod-card-btn play" title="Guarda ora"><i class="ph-fill ph-play"></i></button>
+                <button class="vod-card-btn info" title="Dettagli"><i class="ph ph-info"></i></button>
+                <button class="vod-card-btn fav" data-id="${item.id}" data-type="${type}" title="Preferiti"><i class="${favIcon}"></i></button>
+            </div>
+        </div>
+    `;
+    
+    card.addEventListener('click', () => openModal(item));
+    
+    const playBtn = card.querySelector('.vod-card-btn.play');
+    playBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (type === 'movie') {
+            playMovie(item.id);
+        } else {
+            playShowEpisode(item.id, 1, 1);
+        }
+    });
+    
+    const infoBtn = card.querySelector('.vod-card-btn.info');
+    infoBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        openModal(item);
+    });
+    
+    const favBtn = card.querySelector('.vod-card-btn.fav');
+    favBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        toggleVodFavorite(item);
+    });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     loadNetflixRows();
     
@@ -166,16 +207,11 @@ function renderSectionRows(rowsList, container) {
                 const title = item.title || item.name;
                 const imgPath = (row.type === 'landscape' && item.backdrop_path) ? item.backdrop_path : item.poster_path;
                 const poster = imgPath ? `${IMG_BASE_URL}${imgPath}` : 'https://via.placeholder.com/500x750?text=No+Img';
+                const type = item.media_type || (item.title ? 'movie' : 'tv');
                 
                 const card = document.createElement('div');
                 card.className = `vod-card ${row.type}`;
-                card.innerHTML = `
-                    <img src="${poster}" alt="${title}" loading="lazy">
-                    <div class="vod-card-overlay">
-                        <div class="vod-card-title">${title}</div>
-                    </div>
-                `;
-                card.addEventListener('click', () => openModal(item));
+                populateCard(card, item, type, title, poster);
                 rowDiv.appendChild(card);
             });
             
@@ -276,17 +312,12 @@ async function searchContent(query) {
         if (item.media_type === 'person') return;
         const title = item.title || item.name;
         const poster = item.poster_path ? `${IMG_BASE_URL}${item.poster_path}` : 'https://via.placeholder.com/500x750?text=No+Img';
+        const type = item.media_type || (item.title ? 'movie' : 'tv');
         
         const card = document.createElement('div');
         card.className = 'vod-card portrait';
         card.style.width = '100%'; // in grid si adatta alla cella
-        card.innerHTML = `
-            <img src="${poster}" alt="${title}" loading="lazy">
-            <div class="vod-card-overlay">
-                <div class="vod-card-title">${title}</div>
-            </div>
-        `;
-        card.addEventListener('click', () => openModal(item));
+        populateCard(card, item, type, title, poster);
         searchGrid.appendChild(card);
     });
 }
@@ -571,13 +602,25 @@ function updateFavoriteButtonsState(id, type) {
     if (window.__CURRENT_HERO_ITEM__ && intval(window.__CURRENT_HERO_ITEM__.id) === intval(id)) {
         updateHeroFavButton(window.__CURRENT_HERO_ITEM__);
     }
+    const isFav = isFavorite(id, type);
+    document.querySelectorAll(`.vod-card-btn.fav[data-id="${id}"][data-type="${type}"] i`).forEach(icon => {
+        icon.className = isFav ? 'ph-fill ph-heart' : 'ph ph-heart';
+    });
 }
 
 async function toggleVodFavorite(item) {
+    console.log('toggleVodFavorite called with item:', item);
+    if (!item) {
+        console.error('toggleVodFavorite: item is null');
+        alert('Errore preferiti: contenuto non valido.');
+        return;
+    }
     const id = item.id;
     const type = item.media_type || (item.title ? 'movie' : 'tv');
     const title = item.title || item.name;
     const poster_path = item.poster_path || '';
+    
+    console.log('Parameters resolved:', { id, type, title, poster_path });
     
     try {
         const response = await fetch('toggle_vod_favorite.php', {
@@ -596,6 +639,7 @@ async function toggleVodFavorite(item) {
         });
         
         const result = await response.json();
+        console.log('Server response:', result);
         if (result.success) {
             window.__ACTIVE_PROFILE_VOD_FAVORITES__ = result.vod_favorites;
             updateFavoriteButtonsState(id, type);
@@ -605,9 +649,11 @@ async function toggleVodFavorite(item) {
             }
         } else {
             console.error('Errore toggling favorite:', result.error);
+            alert('Errore preferiti VOD: ' + result.error);
         }
     } catch (err) {
         console.error("Errore salvataggio preferito VOD", err);
+        alert('Errore di connessione o salvataggio preferiti: ' + err.message);
     }
 }
 
@@ -625,26 +671,22 @@ function renderLibrary() {
     
     favs.forEach(fav => {
         const poster = fav.poster_path ? `${IMG_BASE_URL}${fav.poster_path}` : 'https://via.placeholder.com/500x750?text=No+Img';
+        const type = fav.type;
+        const title = fav.title;
+        
         const card = document.createElement('div');
         card.className = 'vod-card portrait';
         card.style.width = '100%';
-        card.innerHTML = `
-            <img src="${poster}" alt="${fav.title}" loading="lazy">
-            <div class="vod-card-overlay">
-                <div class="vod-card-title">${fav.title}</div>
-            </div>
-        `;
         
-        card.addEventListener('click', () => {
-            openModal({
-                id: fav.id,
-                media_type: fav.type,
-                title: fav.type === 'movie' ? fav.title : undefined,
-                name: fav.type === 'tv' ? fav.title : undefined,
-                poster_path: fav.poster_path
-            });
-        });
+        const itemObj = {
+            id: fav.id,
+            media_type: fav.type,
+            title: fav.type === 'movie' ? fav.title : undefined,
+            name: fav.type === 'tv' ? fav.title : undefined,
+            poster_path: fav.poster_path
+        };
         
+        populateCard(card, itemObj, type, title, poster);
         grid.appendChild(card);
     });
 }
@@ -801,17 +843,12 @@ async function loadNextCatalogPage() {
             results.forEach(item => {
                 const title = item.title || item.name;
                 const poster = item.poster_path ? `${IMG_BASE_URL}${item.poster_path}` : 'https://via.placeholder.com/500x750?text=No+Img';
+                const type = item.media_type || (item.title ? 'movie' : 'tv');
                 
                 const card = document.createElement('div');
                 card.className = 'vod-card portrait';
                 card.style.width = '100%';
-                card.innerHTML = `
-                    <img src="${poster}" alt="${title}" loading="lazy">
-                    <div class="vod-card-overlay">
-                        <div class="vod-card-title">${title}</div>
-                    </div>
-                `;
-                card.addEventListener('click', () => openModal(item));
+                populateCard(card, item, type, title, poster);
                 grid.appendChild(card);
             });
             catalogPage++;
