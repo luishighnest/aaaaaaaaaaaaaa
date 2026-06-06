@@ -83,6 +83,58 @@ window.addEventListener('mousemove', resetUiTimeout);
 window.addEventListener('keydown', resetUiTimeout);
 window.addEventListener('click', resetUiTimeout);
 
+// ─── ZAPPING CON TELECOMANDO ───
+function handleZapping(direction) {
+    if (!currentChannel) return;
+    
+    let filtered = CHANNELS;
+    if (currentCategory === 'favorites') {
+        filtered = CHANNELS.filter(ch => favorites.includes(ch.id));
+    } else if (currentCategory !== 'all') {
+        filtered = CHANNELS.filter(ch => ch.cat === currentCategory);
+    }
+    
+    const searchQuery = document.getElementById('tv-search').value.toLowerCase();
+    if (searchQuery) {
+        filtered = filtered.filter(ch => ch.name.toLowerCase().includes(searchQuery) || ch.cat.toLowerCase().includes(searchQuery));
+    }
+    
+    if (filtered.length === 0) return;
+    
+    let currentIndex = filtered.findIndex(ch => ch.id === currentChannel.id);
+    if (currentIndex === -1) currentIndex = 0;
+    
+    let nextIndex = currentIndex + direction;
+    if (nextIndex >= filtered.length) nextIndex = 0;
+    if (nextIndex < 0) nextIndex = filtered.length - 1;
+    
+    const nextChannel = filtered[nextIndex];
+    playChannel(nextChannel);
+    
+    // Scrolla la barra orizzontale per centrare la nuova card
+    setTimeout(() => {
+        const card = document.querySelector(`.tv-channel-card[data-id="${nextChannel.id}"]`);
+        if (card) {
+            card.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+        }
+    }, 100);
+}
+
+window.addEventListener('keydown', (e) => {
+    // Ignora se l'utente sta scrivendo nella barra di ricerca
+    if (document.activeElement && document.activeElement.id === 'tv-search') {
+        return;
+    }
+
+    if (e.key === 'ArrowUp' || e.key === 'ChannelUp') {
+        e.preventDefault();
+        handleZapping(1); // Canale successivo
+    } else if (e.key === 'ArrowDown' || e.key === 'ChannelDown') {
+        e.preventDefault();
+        handleZapping(-1); // Canale precedente
+    }
+});
+
 // ─── SHAKA PLAYER ───
 function onErrorEvent(event) {
     console.error('Shaka Error:', event.detail);
