@@ -100,14 +100,7 @@ if (!isset($_SESSION['active_profile'])) {
       z-index: 100;
       transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     }
-    .vod-navbar.scrolled {
-      background: rgba(10, 10, 15, 0.85);
-      backdrop-filter: blur(24px) saturate(1.4);
-      -webkit-backdrop-filter: blur(24px) saturate(1.4);
-      border-bottom: 1px solid var(--border-subtle);
-      box-shadow: 0 4px 30px rgba(0,0,0,0.5);
-    }
-    
+
     .vod-brand {
       display: flex;
       align-items: center;
@@ -568,6 +561,71 @@ if (!isset($_SESSION['active_profile'])) {
       gap: 1.8rem;
       padding: 20px 40px;
     }
+
+    /* Catalogo Filtri & Grid Styling */
+    .vod-catalog-header {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      padding: 20px 40px 0 40px;
+    }
+    .vod-filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border-subtle);
+      padding: 1rem 1.5rem;
+      border-radius: 16px;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+    .filter-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      flex: 1;
+      min-width: 150px;
+    }
+    .filter-group label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--text-secondary);
+    }
+    .filter-group select {
+      background: rgba(0, 0, 0, 0.35);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      padding: 0.55rem 0.8rem;
+      color: var(--text-primary);
+      font-family: var(--font-main);
+      font-size: 0.85rem;
+      font-weight: 600;
+      outline: none;
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .filter-group select:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 2px var(--accent-glow);
+    }
+    .filter-group select option {
+      background: #0f172a;
+      color: #fff;
+    }
+    .vod-catalog-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 1.5rem;
+      padding: 20px 40px;
+    }
+    @media (max-width: 1200px) {
+      .vod-catalog-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
     
     .vod-search-section-title {
       font-size: 1.8rem;
@@ -824,13 +882,42 @@ if (!isset($_SESSION['active_profile'])) {
     }
 
     /* Serie TV Stagioni ed Episodi */
+    #vod-season-select {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      padding: 0.55rem 2.2rem 0.55rem 1rem;
+      color: var(--text-primary);
+      font-family: var(--font-main);
+      font-size: 0.88rem;
+      font-weight: 700;
+      outline: none;
+      cursor: pointer;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      appearance: none;
+      -webkit-appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='rgba(255,255,255,0.75)' stroke-width='2.5'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M19.5 8.25l-7.5 7.5-7.5-7.5'%3E%3C/path%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.75rem center;
+      background-size: 0.95rem;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      min-width: 140px;
+    }
+    #vod-season-select:hover {
+      background-color: rgba(255, 255, 255, 0.08);
+      border-color: rgba(255, 255, 255, 0.2);
+      transform: translateY(-1px);
+    }
     #vod-season-select:focus {
       border-color: var(--accent);
-      box-shadow: 0 0 10px var(--accent-glow);
+      box-shadow: 0 0 15px var(--accent-glow);
     }
     #vod-season-select option {
-      background: #1e293b;
+      background: #0f172a;
       color: #fff;
+      font-weight: 600;
+      padding: 10px;
     }
     #vod-episodes-list::-webkit-scrollbar {
       width: 6px;
@@ -914,9 +1001,10 @@ if (!isset($_SESSION['active_profile'])) {
         flex-wrap: wrap;
         padding: 10px 15px;
         gap: 10px;
-        background: rgba(10, 10, 15, 0.95);
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
+        background: linear-gradient(to bottom, rgba(2, 6, 23, 0.95) 0%, rgba(2, 6, 23, 0.75) 100%);
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+        border-bottom: 1px solid transparent;
       }
       .vod-brand-text {
         display: none; /* Nascondi logo di testo su schermi piccoli */
@@ -996,8 +1084,22 @@ if (!isset($_SESSION['active_profile'])) {
       .vod-modal-info {
         padding: 1.5rem;
       }
-      #vod-modal-title {
-        font-size: 1.6rem;
+      .vod-catalog-header {
+        padding: 15px 15px 0 15px;
+        gap: 1rem;
+      }
+      .vod-filter-bar {
+        padding: 0.8rem;
+        gap: 0.8rem;
+        border-radius: 12px;
+      }
+      .filter-group {
+        min-width: 120px;
+      }
+      .vod-catalog-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        padding: 15px;
       }
     }
 
@@ -1021,6 +1123,10 @@ if (!isset($_SESSION['active_profile'])) {
       .vod-navbar .nav-search:focus-within {
         width: 220px;
       }
+      .vod-catalog-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.2rem;
+      }
     }
   </style>
 </head>
@@ -1037,6 +1143,7 @@ if (!isset($_SESSION['active_profile'])) {
         <div class="nav-link active" id="nav-item-home" onclick="changeSection('home')"><i class="ph ph-house"></i> Home</div>
         <div class="nav-link" id="nav-item-movies" onclick="changeSection('movies')"><i class="ph ph-film-strip"></i> Film</div>
         <div class="nav-link" id="nav-item-tv" onclick="changeSection('tv')"><i class="ph ph-television"></i> Serie TV</div>
+        <div class="nav-link" id="nav-item-catalog" onclick="changeSection('catalog')"><i class="ph ph-folder-open"></i> Catalogo</div>
         <div class="nav-link" id="nav-item-library" onclick="changeSection('library')"><i class="ph ph-heart"></i> Libreria</div>
       </nav>
       <div class="nav-search">
@@ -1078,10 +1185,93 @@ if (!isset($_SESSION['active_profile'])) {
         <!-- Righe generate via JS -->
       </div>
 
+      <!-- Container Film (Righe Netflix Film) -->
+      <div id="vod-movies-container" style="display: none;">
+        <!-- Righe generate via JS -->
+      </div>
+
+      <!-- Container Serie TV (Righe Netflix Serie TV) -->
+      <div id="vod-tv-container" style="display: none;">
+        <!-- Righe generate via JS -->
+      </div>
+
       <!-- Container Ricerca -->
       <div id="vod-search-container" style="display: none;">
         <h2 class="vod-search-section-title" id="vod-search-title">Risultati della Ricerca</h2>
         <div class="vod-grid" id="vod-search-grid"></div>
+      </div>
+
+      <!-- Container Catalogo Infinito -->
+      <div id="vod-catalog-container" style="display: none;">
+        <div class="vod-catalog-header">
+          <h2 class="vod-search-section-title" style="padding: 0;"><i class="ph-fill ph-folder-open" style="color: var(--accent);"></i> Catalogo Completo</h2>
+          
+          <!-- Filtri Catalogo -->
+          <div class="vod-filter-bar">
+            <div class="filter-group">
+              <label for="filter-type">Tipo</label>
+              <select id="filter-type" onchange="resetCatalogAndLoad()">
+                <option value="all">Tutti</option>
+                <option value="movie">Film</option>
+                <option value="tv">Serie TV</option>
+              </select>
+            </div>
+            
+            <div class="filter-group">
+              <label for="filter-genre">Genere</label>
+              <select id="filter-genre" onchange="resetCatalogAndLoad()">
+                <option value="">Tutti i generi</option>
+                <option value="action">Azione & Avventura</option>
+                <option value="comedy">Commedia</option>
+                <option value="drama">Dramma</option>
+                <option value="scifi">Fantascienza</option>
+                <option value="horror">Horror</option>
+                <option value="thriller">Thriller & Mistero</option>
+                <option value="romance">Romantico</option>
+                <option value="animation">Animazione</option>
+              </select>
+            </div>
+            
+            <div class="filter-group">
+              <label for="filter-year">Anno</label>
+              <select id="filter-year" onchange="resetCatalogAndLoad()">
+                <option value="">Qualsiasi anno</option>
+                <option value="2026">2026</option>
+                <option value="2025">2025</option>
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                <option value="2010">2010</option>
+                <option value="2005">2005</option>
+                <option value="2000">2000</option>
+                <option value="1995">1995</option>
+                <option value="1990">1990</option>
+                <option value="1980">1980</option>
+              </select>
+            </div>
+            
+            <div class="filter-group">
+              <label for="filter-sort">Ordina Per</label>
+              <select id="filter-sort" onchange="resetCatalogAndLoad()">
+                <option value="popularity.desc">Popolarità</option>
+                <option value="vote_average.desc">Più Votati</option>
+                <option value="primary_release_date.desc">Più Recenti</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        
+        <div class="vod-catalog-grid" id="vod-catalog-grid"></div>
+        <div id="vod-catalog-loading-indicator" style="text-align: center; padding: 2rem 0; display: none;">
+          <div class="vod-loading">Caricamento altri contenuti...</div>
+        </div>
       </div>
 
       <!-- Container Libreria -->
