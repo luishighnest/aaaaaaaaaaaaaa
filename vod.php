@@ -976,6 +976,14 @@ if (!isset($_SESSION['active_profile'])) {
       opacity: 1;
       pointer-events: auto;
     }
+    .vod-player-overlay.inactive-user {
+      cursor: none;
+    }
+    .vod-player-overlay.inactive-user .vod-player-close {
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(-10px);
+    }
     .vod-player-close {
       position: absolute;
       top: 20px;
@@ -994,7 +1002,7 @@ if (!isset($_SESSION['active_profile'])) {
       display: flex;
       align-items: center;
       gap: 8px;
-      transition: var(--transition);
+      transition: opacity 0.4s ease, transform 0.4s ease, background 0.2s, border-color 0.2s, box-shadow 0.2s;
       backdrop-filter: blur(10px);
     }
     .vod-player-close:hover {
@@ -1483,7 +1491,7 @@ if (!isset($_SESSION['active_profile'])) {
   <div class="vod-player-overlay" id="vod-player-overlay">
     <button class="vod-player-close" onclick="closePlayer()"><i class="ph ph-arrow-left"></i> Torna ai Dettagli</button>
     <div class="vod-player-wrapper">
-      <iframe id="vod-player-frame" src="about:blank" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      <iframe id="vod-player-frame" src="about:blank" allow="autoplay; fullscreen" allowfullscreen sandbox="allow-scripts allow-same-origin allow-presentation"></iframe>
     </div>
   </div>
 
