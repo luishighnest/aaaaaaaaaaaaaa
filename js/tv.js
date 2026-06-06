@@ -111,14 +111,14 @@ function playChannel(ch) {
 
     const streamUrl = getStreamUrl(ch);
 
-    if (streamUrl) {
-        // Disabilita iframe e attiva video
+    if (streamUrl && streamUrl.includes('.mpd')) {
+        // Usa Shaka Player per i flussi MPD nativi
         videoElement.style.display = 'block';
         iframeElement.style.display = 'none';
         iframeElement.src = '';
 
         let clearkeys = null;
-        if (streamUrl.includes('ck=')) {
+        if (streamUrl && streamUrl.includes('ck=')) {
             try {
                 let ckVal = "";
                 const match = streamUrl.match(/[?&]ck=([^&]+)/);
@@ -148,7 +148,6 @@ function playChannel(ch) {
                 shaka.polyfill.installAll();
                 if (!shaka.Player.isBrowserSupported()) {
                     console.error("Browser non supportato per DASH nativo.");
-                    document.getElementById('tv-channel-epg').textContent = 'Browser TV non supportato per questo flusso.';
                     return;
                 }
                 player = new shaka.Player(videoElement);
@@ -162,18 +161,31 @@ function playChannel(ch) {
             }
             
             player.load(streamUrl).then(() => {
-                console.log('Stream caricato con Shaka:', ch.name);
+                console.log('Stream caricato:', ch.name);
                 videoElement.play();
             }).catch(e => {
-                console.warn("Shaka load fallito:", e);
-                document.getElementById('tv-channel-epg').textContent = 'Errore di caricamento: formato non supportato o CORS.';
+                console.error("Errore shaka load:", e);
             });
         } catch (err) {
             console.error("Errore di inizializzazione shakaPlayer:", err);
-            document.getElementById('tv-channel-epg').textContent = 'Errore inizializzazione player.';
         }
+    } else if (streamUrl && streamUrl.includes('.m3u8')) {
+        // Usa il player nativo per flussi HLS/M3U8 (le TV li supportano nativamente)
+        if (player) player.unload();
+        videoElement.style.display = 'block';
+        iframeElement.style.display = 'none';
+        iframeElement.src = '';
+
+        videoElement.src = streamUrl;
+        videoElement.play().catch(e => console.error("Errore playback M3U8:", e));
     } else {
-        console.error("Nessun link valido per il canale.");
+        // Usa iframe per link a pagine web esterne
+        videoElement.style.display = 'none';
+        if (player) player.unload();
+        videoElement.src = '';
+        
+        iframeElement.style.display = 'block';
+        iframeElement.src = streamUrl;
     }
 }
 
@@ -194,7 +206,6 @@ function renderCategories() {
     // Aggiungi "Tutti"
     const allItem = document.createElement('div');
     allItem.className = `tv-nav-item ${currentCategory === 'all' ? 'active' : ''}`;
-    allItem.tabIndex = 0;
     allItem.innerHTML = `<i class="ph ph-squares-four"></i> Tutti`;
     allItem.onclick = () => selectCategory('all');
     container.appendChild(allItem);
@@ -203,7 +214,6 @@ function renderCategories() {
     if (favorites.length > 0) {
         const favItem = document.createElement('div');
         favItem.className = `tv-nav-item ${currentCategory === 'favorites' ? 'active' : ''}`;
-        favItem.tabIndex = 0;
         favItem.innerHTML = `<i class="ph-fill ph-star" style="color:#ffc107"></i> Preferiti`;
         favItem.onclick = () => selectCategory('favorites');
         container.appendChild(favItem);
@@ -214,7 +224,6 @@ function renderCategories() {
         const cat = CATEGORIES[key];
         const item = document.createElement('div');
         item.className = `tv-nav-item ${currentCategory === key ? 'active' : ''}`;
-        item.tabIndex = 0;
         item.innerHTML = `<i class="ph ${cat.icon}"></i> ${cat.label}`;
         item.onclick = () => selectCategory(key);
         container.appendChild(item);
@@ -251,7 +260,6 @@ function renderChannels(searchQuery = '') {
         const card = document.createElement('div');
         card.className = `tv-channel-card ${isActive ? 'active' : ''}`;
         card.dataset.id = ch.id;
-        card.tabIndex = 0;
         
         const epgInfo = getChannelEpg(ch.name);
         let epgText = epgInfo.now ? epgInfo.now.titolo : 'Diretta continua';
@@ -351,90 +359,6 @@ function setupHorizontalScroll(elId) {
         el.scrollLeft = scrollLeft - walk;
     });
 }
-
-// ─── SPATIAL NAVIGATION (D-PAD) ───
-let isKeyboardMode = false;
-let currentFocusRow = 2; // 0: search, 1: categories, 2: channels
-let currentFocusCol = 0;
-
-function updateFocus() {
-    let rowElements = [];
-    if (currentFocusRow === 0) rowElements = [document.getElementById('tv-search')];
-    if (currentFocusRow === 1) rowElements = Array.from(document.querySelectorAll('#tv-categories .tv-nav-item'));
-    if (currentFocusRow === 2) rowElements = Array.from(document.querySelectorAll('#tv-channels-row .tv-channel-card'));
-    
-    if (rowElements.length === 0) return;
-    
-    if (currentFocusCol >= rowElements.length) currentFocusCol = rowElements.length - 1;
-    if (currentFocusCol < 0) currentFocusCol = 0;
-    
-    const target = rowElements[currentFocusCol];
-    if (target) {
-        target.focus();
-        target.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
-    }
-}
-
-document.addEventListener('keydown', (e) => {
-    // Escludi input normali se si sta scrivendo
-    if (document.activeElement === document.getElementById('tv-search') && e.key !== 'ArrowDown' && e.key !== 'Enter') {
-        return;
-    }
-
-    const key = e.key;
-    if (['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'Enter'].includes(key)) {
-        if (!isKeyboardMode) {
-            isKeyboardMode = true;
-            document.body.classList.add('hide-cursor');
-            
-            // Trova dove siamo attualmente col focus o riparti dal basso
-            if (document.activeElement.classList.contains('tv-channel-card')) currentFocusRow = 2;
-            else if (document.activeElement.classList.contains('tv-nav-item')) currentFocusRow = 1;
-            else if (document.activeElement.id === 'tv-search') currentFocusRow = 0;
-            else currentFocusRow = 2;
-            
-            updateFocus();
-            e.preventDefault();
-            return;
-        }
-
-        e.preventDefault(); // Evita scrolling della pagina
-        
-        if (key === 'ArrowUp') {
-            if (currentFocusRow > 0) {
-                currentFocusRow--;
-                // Ricalcola colonna approssimativa
-                currentFocusCol = 0;
-                updateFocus();
-            }
-        } else if (key === 'ArrowDown') {
-            if (currentFocusRow < 2) {
-                currentFocusRow++;
-                currentFocusCol = 0;
-                updateFocus();
-            }
-        } else if (key === 'ArrowLeft') {
-            if (currentFocusCol > 0) {
-                currentFocusCol--;
-                updateFocus();
-            }
-        } else if (key === 'ArrowRight') {
-            currentFocusCol++;
-            updateFocus();
-        } else if (key === 'Enter') {
-            if (document.activeElement) {
-                document.activeElement.click();
-            }
-        }
-    }
-});
-
-document.addEventListener('mousemove', () => {
-    if (isKeyboardMode) {
-        isKeyboardMode = false;
-        document.body.classList.remove('hide-cursor');
-    }
-});
 
 // ─── BOOTSTRAP E FULLSCREEN ───
 function requestFullScreen() {
