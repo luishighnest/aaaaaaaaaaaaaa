@@ -164,7 +164,7 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>PZ8</title>
     <meta name="description" content="Dashboard StreamHub Premium">
-    <link rel="stylesheet" href="css/style.css?v=1.16">
+    <link rel="stylesheet" href="css/style.css?v=1.17">
     <script>
       (function() {
         const accent = localStorage.getItem('accent_color');
@@ -292,8 +292,11 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
         <!-- Categories injected here -->
       </div>
       <a id="btn-guida-tv" href="guida.php" class="dash-exit"><i class="ph ph-calendar"></i> GUIDA TV</a>
-      <!-- Settings Trigger -->
-      <button id="open-settings-btn" onclick="document.getElementById('settings-modal').classList.add('open')" class="dash-exit" style="margin-top: 0.8rem; margin-bottom: 0; padding: 0.6rem; background: var(--bg-input); border-color: var(--border-subtle); color: var(--text-primary); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; gap: 0.5rem; width: 100%;"><i class="ph ph-gear"></i> Impostazioni</button>
+      <!-- Settings Trigger & VOD Button -->
+      <div style="display: flex; gap: 0.5rem; width: 100%; margin-top: 0.8rem;">
+        <button id="open-settings-btn" onclick="document.getElementById('settings-modal').classList.add('open')" class="dash-exit" style="margin-top: 0; margin-bottom: 0; padding: 0.6rem; background: var(--bg-input); border-color: var(--border-subtle); color: var(--text-primary); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; gap: 0.5rem; flex: 1;"><i class="ph ph-gear"></i> Impostazioni</button>
+        <button id="open-vod-btn" onclick="window.location.href='vod.php'" class="dash-exit pc-only-flex-btn" style="margin-top: 0; margin-bottom: 0; padding: 0.6rem; background: var(--bg-input); border-color: var(--border-subtle); color: var(--text-primary); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; gap: 0.5rem; flex: 1;"><i class="ph ph-film-strip"></i> Film & Serie TV</button>
+      </div>
     </aside>
 
     <!-- Tasto per riaprire la sidebar (visibile solo quando ÃƒÂ¨ nascosta) -->
