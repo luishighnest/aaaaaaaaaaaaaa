@@ -164,7 +164,7 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>PZ8</title>
     <meta name="description" content="Dashboard StreamHub Premium">
-    <link rel="stylesheet" href="css/style.css?v=1.15">
+    <link rel="stylesheet" href="css/style.css?v=1.16">
     <script>
       (function() {
         const accent = localStorage.getItem('accent_color');
@@ -303,8 +303,9 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
 
     <!-- Player Area -->
     <div class="dash-player-area" id="dash-player-area">
-      <!-- Tasto Fullscreen Custom (visibile al passaggio del mouse) -->
-      <button id="btn-custom-fullscreen" class="custom-fullscreen-btn" title="Schermo intero"></button>
+      <!-- Tasti invisibili per uscire dal fullscreen (visibili solo in fullscreen tramite JS) -->
+      <button id="btn-custom-fullscreen" class="custom-fullscreen-btn" title="Esci da Schermo intero"></button>
+      <button id="btn-custom-fullscreen-br" class="custom-fullscreen-btn-br" title="Esci da Schermo intero"></button>
 
       <!-- OVERLAY IN STILE TV PREMIUM (visibile solo a schermo intero) -->
       <div id="pc-fullscreen-overlay" class="pc-fullscreen-overlay">
@@ -1125,7 +1126,8 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
 
     // ─── GESTIONE FULLSCREEN CUSTOM PER OVERLAY ───
     const playerAreaContainer = document.getElementById('dash-player-area');
-    const btnCustomFs = document.getElementById('btn-custom-fullscreen'); // Tasto invisibile sul player
+    const btnCustomFs = document.getElementById('btn-custom-fullscreen'); // Tasto invisibile alto-destra
+    const btnCustomFsBr = document.getElementById('btn-custom-fullscreen-br'); // Tasto invisibile basso-destra
     const btnInfoFs = document.getElementById('btn-pc-fullscreen'); // Tasto visibile nel riquadro
 
     function toggleCustomFullscreen() {
@@ -1146,6 +1148,9 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
 
     if (btnCustomFs) {
       btnCustomFs.addEventListener('click', toggleCustomFullscreen);
+    }
+    if (btnCustomFsBr) {
+      btnCustomFsBr.addEventListener('click', toggleCustomFullscreen);
     }
     if (btnInfoFs) {
       btnInfoFs.addEventListener('click', toggleCustomFullscreen);
@@ -1170,7 +1175,8 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
       if (document.fullscreenElement === playerAreaContainer) {
         // Appena entrati a schermo intero
         pcOverlay.classList.remove('hidden');
-        btnCustomFs.style.display = 'block'; // Mostra il tasto invisibile per poter uscire
+        if(btnCustomFs) btnCustomFs.style.display = 'block';
+        if(btnCustomFsBr) btnCustomFsBr.style.display = 'block'; // Mostra tasto basso-destra
         clearTimeout(pcFsTimeout);
         pcFsTimeout = setTimeout(() => {
           pcOverlay.classList.add('hidden');
@@ -1179,7 +1185,8 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
       } else {
         // Usciti dallo schermo intero
         pcOverlay.classList.remove('hidden'); // Reset per via del CSS
-        btnCustomFs.style.display = 'none'; // Nascondi tasto invisibile
+        if(btnCustomFs) btnCustomFs.style.display = 'none';
+        if(btnCustomFsBr) btnCustomFsBr.style.display = 'none'; // Nascondi tasto basso-destra
         document.body.style.cursor = 'default';
         clearTimeout(pcFsTimeout);
       }
