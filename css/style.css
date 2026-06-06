@@ -1086,6 +1086,24 @@ a {
   background: transparent;
 }
 
+.custom-fullscreen-btn-br {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 20;
+  background: transparent;
+  border: none;
+  color: transparent;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  display: none; /* Visibile solo in fullscreen tramite JS */
+}
+
+.custom-fullscreen-btn-br:hover {
+  background: transparent;
+}
+
 .pc-fullscreen-overlay {
   position: absolute;
   top: 0;
