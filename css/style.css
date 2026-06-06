@@ -1070,35 +1070,27 @@ a {
 
 .custom-fullscreen-btn {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  bottom: 15px;
+  right: 15px;
   z-index: 20;
-  background: rgba(0, 0, 0, 0.7);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   color: #fff;
-  border-radius: 8px;
-  width: 44px;
-  height: 44px;
+  border-radius: 6px;
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   cursor: pointer;
-  transition: background 0.2s, transform 0.2s;
+  transition: background 0.2s, transform 0.2s, opacity 0.3s;
   backdrop-filter: blur(4px);
-  animation: pulse-fs 2s infinite;
-}
-
-@keyframes pulse-fs {
-  0% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4); }
-  70% { box-shadow: 0 0 0 10px rgba(255, 255, 255, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); }
 }
 
 .custom-fullscreen-btn:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.25);
   transform: scale(1.1);
-  animation: none;
 }
 
 .player-top-shield {
@@ -1118,66 +1110,59 @@ a {
 .pc-fullscreen-overlay {
   position: absolute;
   top: 40px;
-  left: 50px;
+  left: 40px;
   z-index: 30;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  opacity: 0;
+  display: none; /* Nasconde istantaneamente fuori dal fullscreen */
+  align-items: flex-start;
+  gap: 16px;
   pointer-events: none;
-  transition: opacity 0.5s ease-in-out;
 }
 /* Mostra l'overlay SOLO se il contenitore è in fullscreen */
-.dash-player-area:fullscreen .pc-fullscreen-overlay {
-  opacity: 1;
-}
+.dash-player-area:fullscreen .pc-fullscreen-overlay,
 .dash-player-area:-webkit-full-screen .pc-fullscreen-overlay {
+  display: flex;
   opacity: 1;
 }
 
+/* Fade out morbido quando il mouse è fermo (tramite classe JS) */
 .dash-player-area:fullscreen .pc-fullscreen-overlay.hidden,
 .dash-player-area:-webkit-full-screen .pc-fullscreen-overlay.hidden {
   opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .pc-overlay-icon {
-  width: 70px;
-  height: 70px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.2rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(8px);
+  font-size: 2.8rem;
   color: #fff;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  line-height: 1;
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.8));
+  margin-top: 2px;
 }
 
 .pc-overlay-info {
   display: flex;
   flex-direction: column;
-  gap: 2px;
-  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.9), 0 1px 3px rgba(0,0,0,0.8);
+  gap: 6px;
 }
 
 .pc-overlay-name {
-  font-family: var(--font-main), sans-serif;
-  font-size: 3.5rem;
-  font-weight: 900;
-  letter-spacing: -1.5px;
-  text-transform: uppercase;
+  font-family: var(--font-alt), sans-serif;
+  font-size: 2.8rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
   color: #ffffff;
   line-height: 1;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
 }
 
 .pc-overlay-epg {
   font-family: var(--font-alt), sans-serif;
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 1.25rem;
+  font-weight: 600;
   color: #00e676;
-  letter-spacing: 0px;
+  letter-spacing: 0;
+  line-height: 1;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
 }
 
 
