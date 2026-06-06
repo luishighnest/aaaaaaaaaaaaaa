@@ -103,9 +103,9 @@ function renderGrid(items) {
         const card = document.createElement('div');
         card.className = 'vod-card';
         card.innerHTML = `
+            <div class="vod-card-badge"><i class="ph-fill ph-star"></i> ${rating}</div>
             <img src="${poster}" alt="${title}" loading="lazy">
             <div class="vod-card-overlay">
-                <div class="vod-card-rating"><i class="ph-fill ph-star"></i> ${rating}</div>
                 <div class="vod-card-title">${title}</div>
             </div>
         `;
