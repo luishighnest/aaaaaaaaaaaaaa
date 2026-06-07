@@ -1020,44 +1020,73 @@ if (!isset($_SESSION['active_profile'])) {
       color: var(--danger);
     }
 
-    /* Progress Bar sulla Card Premium */
+    /* Episode Badge sulla Card (Serie TV) - Redesign Premium */
+    .vod-card-episode-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(2, 6, 23, 0.7);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 8px;
+      font-size: 0.65rem;
+      font-weight: 900;
+      z-index: 10;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-left: 3px solid var(--accent);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .vod-card-episode-badge i {
+      font-size: 0.85rem;
+      color: var(--accent);
+    }
+    .vod-card:hover .vod-card-episode-badge {
+      transform: scale(1.05) translateX(3px);
+      background: rgba(2, 6, 23, 0.9);
+      border-color: rgba(0, 242, 254, 0.3);
+    }
+
+    /* Progress Bar sulla Card Premium - Refined */
     .vod-card-progress-container {
       position: absolute;
       bottom: 0;
       left: 0;
       right: 0;
-      height: 4px;
-      background: rgba(0, 0, 0, 0.6);
+      height: 3px;
+      background: rgba(255, 255, 255, 0.08);
       z-index: 15;
       overflow: hidden;
+      transition: height 0.3s ease;
     }
     .vod-card-progress-bar {
       height: 100%;
       background: var(--accent);
-      box-shadow: 0 0 12px var(--accent-glow);
+      box-shadow: 0 0 15px var(--accent-glow);
       transition: width 0.3s ease;
+      position: relative;
+    }
+    /* Effetto glow sulla punta della barra di progresso */
+    .vod-card-progress-bar::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 4px;
+      height: 100%;
+      background: #fff;
+      box-shadow: 0 0 10px #fff, 0 0 20px var(--accent);
+      filter: blur(1px);
     }
     .vod-card:hover .vod-card-progress-container {
-      height: 6px;
-    }
-
-    /* Episode Badge sulla Card (Serie TV) */
-    .vod-card-episode-badge {
-      position: absolute;
-      bottom: 12px;
-      right: 12px;
-      background: var(--accent);
-      color: #000;
-      padding: 3px 8px;
-      border-radius: 6px;
-      font-size: 0.7rem;
-      font-weight: 800;
-      z-index: 10;
-      box-shadow: 0 4px 10px var(--accent-glow);
-      transition: transform 0.3s ease;
-    }
-    .vod-card:hover .vod-card-episode-badge {
-      transform: translateY(-5px) scale(1.05);
+      height: 5px;
     }
 
     
