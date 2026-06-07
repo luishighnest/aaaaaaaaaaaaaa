@@ -856,6 +856,7 @@ async function sendProgressPayload(context, seconds, progress, isCompleted = fal
         if (context.type === 'tv') {
             bodyData.season = context.season;
             bodyData.episode = context.episode;
+            bodyData.watched_episodes = watched_episodes;
         }
         
         const response = await fetch('save_watch_progress.php', {
