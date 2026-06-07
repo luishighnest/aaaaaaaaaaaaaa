@@ -346,72 +346,129 @@ if (!isset($_SESSION['active_profile'])) {
     /* ─── AUTOCOMPLETE DROPDOWN ─── */
     .vod-search-dropdown {
       position: absolute;
-      top: calc(100% + 10px);
-      left: 0;
+      top: calc(100% + 15px);
       right: 0;
-      background: rgba(2, 6, 23, 0.92);
-      backdrop-filter: blur(28px) saturate(1.4);
-      -webkit-backdrop-filter: blur(28px) saturate(1.4);
-      border: 1px solid rgba(255, 255, 255, 0.09);
-      border-radius: 16px;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.03), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+      width: 360px;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(30px) saturate(1.6);
+      -webkit-backdrop-filter: blur(30px) saturate(1.6);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 20px;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.05);
       overflow: hidden;
-      z-index: 9999;
+      z-index: 1100;
       opacity: 0;
-      transform: translateY(-8px) scale(0.98);
+      transform: translateY(-10px) scale(0.98);
       pointer-events: none;
-      transition: opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1), transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-      max-height: 420px;
-      overflow-y: auto;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     }
     .vod-search-dropdown.open {
       opacity: 1;
       transform: translateY(0) scale(1);
       pointer-events: auto;
     }
-    .vod-search-dropdown::-webkit-scrollbar {
-      width: 4px;
-    }
-    .vod-search-dropdown::-webkit-scrollbar-thumb {
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 4px;
-    }
 
-    /* Header del dropdown con query */
     .vod-dropdown-header {
-      padding: 10px 14px 6px 14px;
-      font-size: 0.7rem;
+      padding: 14px 18px;
+      font-size: 0.72rem;
       font-weight: 800;
       text-transform: uppercase;
-      letter-spacing: 1px;
-      color: var(--text-muted);
-      display: flex;
-      align-items: center;
-      gap: 7px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
-    }
-    .vod-dropdown-header i {
+      letter-spacing: 1.2px;
       color: var(--accent);
-      font-size: 0.85rem;
+      background: rgba(255, 255, 255, 0.02);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     }
 
-    /* Riga suggerimento */
     .vod-suggestion-item {
       display: flex;
       align-items: center;
-      gap: 12px;
-      padding: 9px 14px;
+      gap: 15px;
+      padding: 10px 18px;
       cursor: pointer;
-      transition: background 0.15s ease;
+      transition: all 0.2s ease;
       border-bottom: 1px solid rgba(255, 255, 255, 0.03);
-      position: relative;
     }
-    .vod-suggestion-item:last-child {
-      border-bottom: none;
-    }
+    .vod-suggestion-item:last-child { border-bottom: none; }
     .vod-suggestion-item:hover {
-      background: rgba(255, 255, 255, 0.05);
+      background: rgba(255, 255, 255, 0.08);
+      padding-left: 22px;
     }
+
+    .vod-suggestion-thumb {
+      width: 42px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 6px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .vod-suggestion-thumb-placeholder {
+      width: 42px;
+      height: 60px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-muted);
+    }
+
+    .vod-suggestion-info {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .vod-suggestion-title {
+      font-weight: 700;
+      font-size: 0.88rem;
+      color: #fff;
+      margin-bottom: 4px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .vod-suggestion-meta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.72rem;
+      color: var(--text-muted);
+    }
+
+    .vod-suggestion-type {
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-weight: 800;
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      background: rgba(255,255,255,0.08);
+    }
+    .vod-suggestion-type.movie { color: var(--accent); }
+    .vod-suggestion-type.tv { color: #f43f5e; }
+
+    .vod-suggestion-rating {
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      color: #fbbf24;
+      font-weight: 800;
+    }
+
+    .vod-suggestion-arrow {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      opacity: 0;
+      transition: all 0.2s ease;
+      transform: translateX(-5px);
+    }
+    .vod-suggestion-item:hover .vod-suggestion-arrow {
+      opacity: 1;
+      transform: translateX(0);
+      color: var(--accent);
+    }
+
     .vod-suggestion-item.keyboard-active {
       background: rgba(255, 255, 255, 0.07);
     }
