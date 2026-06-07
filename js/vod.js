@@ -691,11 +691,55 @@ async function searchContent(query) {
     });
 }
 
+function getModalArtworkUrl(item) {
+    const imagePath = item.poster_path || item.backdrop_path;
+    return imagePath ? `${IMG_BASE_URL}${imagePath}` : 'https://via.placeholder.com/500x750?text=No+Poster';
+}
+
+function applyModalPosterShape() {
+    const posterWrap = modalImg.closest('.vod-modal-poster');
+    if (!posterWrap) return;
+
+    posterWrap.classList.remove('is-portrait', 'is-landscape', 'is-square');
+
+    const ratio = modalImg.naturalWidth && modalImg.naturalHeight
+        ? modalImg.naturalWidth / modalImg.naturalHeight
+        : 2 / 3;
+
+    if (ratio > 1.15) {
+        posterWrap.classList.add('is-landscape');
+    } else if (ratio < 0.85) {
+        posterWrap.classList.add('is-portrait');
+    } else {
+        posterWrap.classList.add('is-square');
+    }
+}
+
+function setModalPosterImage(src, title) {
+    const posterWrap = modalImg.closest('.vod-modal-poster');
+    if (posterWrap) {
+        posterWrap.classList.remove('is-portrait', 'is-landscape', 'is-square');
+    }
+
+    modalImg.alt = title || 'Poster';
+    modalImg.onload = applyModalPosterShape;
+    modalImg.onerror = () => {
+        modalImg.onerror = null;
+        modalImg.onload = applyModalPosterShape;
+        modalImg.src = 'https://via.placeholder.com/500x750?text=No+Poster';
+    };
+    modalImg.src = src;
+
+    if (modalImg.complete && modalImg.naturalWidth) {
+        applyModalPosterShape();
+    }
+}
+
 // Pop-up Modal Avanzato
 async function openModal(item, defaultSeasonNumber = null) {
     window.__CURRENT_MODAL_ITEM__ = item;
     const title = item.title || item.name;
-    const poster = item.poster_path ? `${IMG_BASE_URL}${item.poster_path}` : 'https://via.placeholder.com/500x750?text=No+Poster';
+    const poster = getModalArtworkUrl(item);
     const type = item.media_type || item.type || (item.title ? 'movie' : 'tv');
     
     const playBtn = document.getElementById('vod-modal-play-btn');
@@ -708,7 +752,7 @@ async function openModal(item, defaultSeasonNumber = null) {
     tvSection.style.display = 'none';
     
     // Inizializza Modal con info base
-    modalImg.src = poster;
+    setModalPosterImage(poster, title);
     modalTitle.textContent = title;
     document.getElementById('vod-modal-tagline').textContent = '';
     document.getElementById('vod-modal-duration').innerHTML = `<i class="ph ph-clock"></i> ...`;
