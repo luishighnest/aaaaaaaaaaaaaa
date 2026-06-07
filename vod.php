@@ -134,9 +134,9 @@ if (!isset($_SESSION['active_profile'])) {
       margin: 0;
       height: 100vh;
       overflow: hidden;
-      background: var(--bg-base);
-      background-image: radial-gradient(circle at top right, rgba(15, 23, 42, 0.4) 0%, transparent 40%),
-                        radial-gradient(circle at bottom left, rgba(2, 6, 23, 0.7) 0%, transparent 40%);
+      background: #0a0a0a;
+      background-image: radial-gradient(circle at top right, rgba(15, 23, 42, 0.5) 0%, transparent 40%),
+                        radial-gradient(circle at bottom left, rgba(2, 6, 23, 0.8) 0%, transparent 40%);
       color: var(--text-primary);
       font-family: var(--font-main);
     }
@@ -1577,7 +1577,7 @@ if (!isset($_SESSION['active_profile'])) {
     }
   </style>
 </head>
-<body>
+<body class="dashboard-body">
   <div class="vod-page-layout">
     
     <!-- Navbar Superiore Stile Netflix -->
