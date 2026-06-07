@@ -22,6 +22,9 @@ window.__CURRENT_MODAL_ITEM__ = null;
 let catalogPage = 1;
 let isLoadingCatalog = false;
 let hasMoreCatalog = true;
+let catalogGenresLoaded = false;
+let catalogGenreOptions = [];
+let catalogGenreMap = {};
 
 const homePool = [
     { id: 'trending_day', title: 'In Tendenza Oggi', endpoint: '/trending/all/day', type: 'landscape' },
@@ -70,7 +73,7 @@ async function fetchTMDB(endpoint) {
         const sep = endpoint.includes('?') ? '&' : '?';
         const response = await fetch(`${BASE_URL}${endpoint}${sep}api_key=${API_KEY}&language=it-IT`);
         const data = await response.json();
-        return data.results;
+        return data.results || data.genres || [];
     } catch (error) {
         console.error('Errore TMDB:', error);
         return [];
@@ -149,6 +152,7 @@ function populateCard(card, item, type, title, poster) {
 document.addEventListener('DOMContentLoaded', () => {
     loadNetflixRows();
     renderContinueWatching();
+    loadCatalogGenres();
     
     const overlay = document.getElementById('vod-player-overlay');
     if (overlay) {
@@ -177,6 +181,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ─── GESTIONE RICERCA: DEBOUNCE + AUTOCOMPLETE DROPDOWN ───
+    const catalogTypeFilter = document.getElementById('filter-type');
+    if (catalogTypeFilter) {
+        catalogTypeFilter.addEventListener('change', () => {
+            renderCatalogGenreOptions(catalogTypeFilter.value);
+        });
+    }
+
     const dropdown = document.getElementById('vod-search-dropdown');
     let searchTimeout;
     let suggestTimeout;
@@ -2116,16 +2127,80 @@ function renderLibrary() {
     });
 }
 
-const genreMap = {
-    action: { movie: 28, tv: 10759 },
-    comedy: { movie: 35, tv: 35 },
-    drama: { movie: 18, tv: 18 },
-    scifi: { movie: 878, tv: 10765 },
-    horror: { movie: 27, tv: 9648 },
-    thriller: { movie: 53, tv: 80 },
-    romance: { movie: 10749, tv: 10766 },
-    animation: { movie: 16, tv: 16 }
-};
+async function loadCatalogGenres() {
+    if (catalogGenresLoaded) return;
+
+    const genreSelect = document.getElementById('filter-genre');
+    if (!genreSelect) return;
+
+    genreSelect.innerHTML = '<option value="">Caricamento generi...</option>';
+
+    try {
+        const [movieData, tvData] = await Promise.all([
+            fetchTMDB('/genre/movie/list'),
+            fetchTMDB('/genre/tv/list')
+        ]);
+
+        const byName = new Map();
+        const addGenre = (genre, type) => {
+            if (!genre || !genre.id || !genre.name) return;
+            const key = genre.name.toLocaleLowerCase('it-IT');
+            const existing = byName.get(key) || {
+                label: genre.name,
+                value: key.replace(/[^a-z0-9]+/gi, '-').replace(/^-|-$/g, ''),
+                movie: null,
+                tv: null
+            };
+            existing[type] = genre.id;
+            byName.set(key, existing);
+        };
+
+        (movieData || []).forEach(genre => addGenre(genre, 'movie'));
+        (tvData || []).forEach(genre => addGenre(genre, 'tv'));
+
+        catalogGenreOptions = Array.from(byName.values()).sort((a, b) => a.label.localeCompare(b.label, 'it'));
+        catalogGenreMap = catalogGenreOptions.reduce((map, genre) => {
+            map[genre.value] = genre;
+            return map;
+        }, {});
+        catalogGenresLoaded = true;
+        renderCatalogGenreOptions(document.getElementById('filter-type')?.value || 'all');
+    } catch (err) {
+        console.error('Errore nel caricamento dei generi catalogo:', err);
+        genreSelect.innerHTML = '<option value="">Tutti i generi</option>';
+    }
+}
+
+function renderCatalogGenreOptions(type = 'all') {
+    const genreSelect = document.getElementById('filter-genre');
+    if (!genreSelect) return;
+
+    const currentValue = genreSelect.value;
+    const options = catalogGenreOptions.filter(genre => {
+        if (type === 'movie') return !!genre.movie;
+        if (type === 'tv') return !!genre.tv;
+        return genre.movie || genre.tv;
+    });
+
+    genreSelect.innerHTML = '<option value="">Tutti i generi</option>';
+    options.forEach(genre => {
+        const option = document.createElement('option');
+        option.value = genre.value;
+        option.textContent = genre.label;
+        genreSelect.appendChild(option);
+    });
+
+    if (currentValue && catalogGenreMap[currentValue]) {
+        const selectedGenre = catalogGenreMap[currentValue];
+        const isStillValid = type === 'all' || !!selectedGenre[type];
+        if (isStillValid) genreSelect.value = currentValue;
+    }
+}
+
+function getCatalogGenreIds(value) {
+    if (!value) return null;
+    return catalogGenreMap[value] || null;
+}
 
 function changeSection(sectionName) {
     currentSection = sectionName;
@@ -2212,6 +2287,7 @@ async function loadNextCatalogPage() {
     const filterGenre = document.getElementById('filter-genre').value;
     const filterYear = document.getElementById('filter-year').value;
     const filterSort = document.getElementById('filter-sort').value;
+    const selectedGenre = getCatalogGenreIds(filterGenre);
     
     // Nuovi filtri
     const filterLang = document.getElementById('filter-lang').value;
@@ -2224,26 +2300,26 @@ async function loadNextCatalogPage() {
             let movieEndpoint = `/discover/movie?sort_by=${filterSort}&page=${catalogPage}`;
             let tvEndpoint = `/discover/tv?sort_by=${filterSort}&page=${catalogPage}`;
             
-            if (filterGenre && genreMap[filterGenre]) {
-                movieEndpoint += `&with_genres=${genreMap[filterGenre].movie}`;
-                tvEndpoint += `&with_genres=${genreMap[filterGenre].tv}`;
+            if (selectedGenre) {
+                movieEndpoint = selectedGenre.movie ? `${movieEndpoint}&with_genres=${selectedGenre.movie}` : null;
+                tvEndpoint = selectedGenre.tv ? `${tvEndpoint}&with_genres=${selectedGenre.tv}` : null;
             }
             if (filterYear) {
-                movieEndpoint += `&primary_release_year=${filterYear}`;
-                tvEndpoint += `&first_air_date_year=${filterYear}`;
+                if (movieEndpoint) movieEndpoint += `&primary_release_year=${filterYear}`;
+                if (tvEndpoint) tvEndpoint += `&first_air_date_year=${filterYear}`;
             }
             if (filterLang) {
-                movieEndpoint += `&with_original_language=${filterLang}`;
-                tvEndpoint += `&with_original_language=${filterLang}`;
+                if (movieEndpoint) movieEndpoint += `&with_original_language=${filterLang}`;
+                if (tvEndpoint) tvEndpoint += `&with_original_language=${filterLang}`;
             }
             if (filterVote) {
-                movieEndpoint += `&vote_average.gte=${filterVote}&vote_count.gte=10`;
-                tvEndpoint += `&vote_average.gte=${filterVote}&vote_count.gte=10`;
+                if (movieEndpoint) movieEndpoint += `&vote_average.gte=${filterVote}&vote_count.gte=10`;
+                if (tvEndpoint) tvEndpoint += `&vote_average.gte=${filterVote}&vote_count.gte=10`;
             }
             
             const [movies, tvs] = await Promise.all([
-                fetchTMDB(movieEndpoint),
-                fetchTMDB(tvEndpoint)
+                movieEndpoint ? fetchTMDB(movieEndpoint) : Promise.resolve([]),
+                tvEndpoint ? fetchTMDB(tvEndpoint) : Promise.resolve([])
             ]);
             
             // Interlacciamento dei risultati Film e Serie TV
@@ -2260,7 +2336,7 @@ async function loadNextCatalogPage() {
             }
         } else if (filterType === 'movie') {
             let movieEndpoint = `/discover/movie?sort_by=${filterSort}&page=${catalogPage}`;
-            if (filterGenre && genreMap[filterGenre]) movieEndpoint += `&with_genres=${genreMap[filterGenre].movie}`;
+            if (selectedGenre && selectedGenre.movie) movieEndpoint += `&with_genres=${selectedGenre.movie}`;
             if (filterYear) movieEndpoint += `&primary_release_year=${filterYear}`;
             if (filterLang) movieEndpoint += `&with_original_language=${filterLang}`;
             if (filterVote) movieEndpoint += `&vote_average.gte=${filterVote}&vote_count.gte=10`;
@@ -2269,7 +2345,7 @@ async function loadNextCatalogPage() {
             results.forEach(r => r.media_type = 'movie');
         } else if (filterType === 'tv') {
             let tvEndpoint = `/discover/tv?sort_by=${filterSort}&page=${catalogPage}`;
-            if (filterGenre && genreMap[filterGenre]) tvEndpoint += `&with_genres=${genreMap[filterGenre].tv}`;
+            if (selectedGenre && selectedGenre.tv) tvEndpoint += `&with_genres=${selectedGenre.tv}`;
             if (filterYear) tvEndpoint += `&first_air_date_year=${filterYear}`;
             if (filterLang) tvEndpoint += `&with_original_language=${filterLang}`;
             if (filterVote) tvEndpoint += `&vote_average.gte=${filterVote}&vote_count.gte=10`;
