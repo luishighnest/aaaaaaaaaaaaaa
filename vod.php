@@ -296,13 +296,18 @@ if (!isset($_SESSION['active_profile'])) {
       background: rgba(255, 255, 255, 0.05);
       border-radius: 12px;
       border: 1px solid rgba(255, 255, 255, 0.08);
-      /* overflow: hidden;  <-- Rimosso per permettere al dropdown di uscire */
+      cursor: pointer; /* Ora risulta come tasto al passaggio del mouse */
+    }
+    .vod-navbar .nav-search:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.2);
     }
     .vod-navbar .nav-search:focus-within {
       width: 300px;
       background: rgba(0, 0, 0, 0.3);
       border-color: var(--accent);
       box-shadow: 0 0 15px var(--accent-glow);
+      cursor: default; /* Torna normale quando scrivi */
     }
     .vod-navbar .nav-search input {
       width: 100%;
@@ -316,6 +321,7 @@ if (!isset($_SESSION['active_profile'])) {
       outline: none;
       opacity: 0;
       transition: opacity 0.3s;
+      cursor: text;
     }
     .vod-navbar .nav-search:focus-within input {
       opacity: 1;
@@ -624,34 +630,41 @@ if (!isset($_SESSION['active_profile'])) {
       color: #fff;
     }
 
-    /* Bottone Torna Indietro (Fisso a destra) */
+    /* Bottone Torna Indietro (Fisso a destra) - Matching Style */
     .vod-back-btn {
       display: inline-flex;
       align-items: center;
-      gap: 0.4rem;
-      padding: 0.6rem 1rem;
-      background: rgba(15, 23, 42, 0.55);
+      gap: 0.6rem;
+      padding: 0.55rem 1.2rem;
+      background: rgba(15, 23, 42, 0.35);
       border: 1px solid rgba(255, 255, 255, 0.12);
-      border-radius: var(--radius-sm);
-      color: var(--text-primary);
+      border-radius: 11px;
+      color: rgba(255, 255, 255, 0.55);
       font-size: 0.8rem;
-      font-weight: 700;
+      font-weight: 800;
       text-transform: uppercase;
+      letter-spacing: 0.6px;
       text-decoration: none;
       cursor: pointer;
-      transition: var(--transition);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
       backdrop-filter: blur(10px);
       flex-shrink: 0;
     }
+    .vod-back-btn i {
+      font-size: 1.05rem;
+      transition: transform 0.3s ease;
+    }
     .vod-back-btn:hover {
-      background: rgba(15, 23, 42, 0.85);
-      color: var(--text-primary);
+      background: rgba(255, 255, 255, 0.06);
+      color: #fff;
       border-color: rgba(255, 255, 255, 0.25);
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-      transform: translateY(-1px);
+    }
+    .vod-back-btn:hover i {
+      transform: translateX(-3px);
     }
     .vod-back-btn:active {
-      transform: translateY(0);
+      transform: scale(0.96);
     }
 
     /* VOD Main Area (Scrollable) */
