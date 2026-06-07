@@ -1871,7 +1871,7 @@ if (!isset($_SESSION['active_profile'])) {
       .vod-modal-poster {
         width: 100%;
         border-right: none;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        border-bottom: none;
         padding: 1.5rem;
       }
       .vod-modal-poster.is-landscape,
