@@ -1238,10 +1238,20 @@ if (!isset($_SESSION['active_profile'])) {
       transition: var(--transition);
       cursor: pointer;
     }
-    .vod-episode-row:hover {
+     .vod-episode-row:hover {
       background: rgba(255, 255, 255, 0.06);
       border-color: rgba(255, 255, 255, 0.1);
       transform: translateX(4px);
+    }
+    .vod-episode-row.watched {
+      opacity: 0.6;
+    }
+    .vod-episode-row.watched:hover {
+      opacity: 1;
+    }
+    .vod-episode-row.last-played {
+      background: rgba(255, 255, 255, 0.04);
+      border-color: var(--accent);
     }
     .vod-episode-info {
       flex: 1;
