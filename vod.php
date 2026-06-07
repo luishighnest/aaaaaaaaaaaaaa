@@ -823,110 +823,153 @@ if (!isset($_SESSION['active_profile'])) {
       transform: translateY(-50%) scale(0.92);
     }
 
-    /* Poster Card */
+    /* Poster Card Premium */
     .vod-card {
       position: relative;
-      border-radius: 12px;
+      border-radius: 14px;
       overflow: hidden;
       cursor: pointer;
-      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-      background: var(--bg-surface);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      background: #0f172a;
       flex-shrink: 0;
       border: 1px solid rgba(255, 255, 255, 0.05);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      isolation: isolate;
     }
     .vod-card.landscape { width: 280px; aspect-ratio: 16 / 9; }
     .vod-card.portrait { width: 160px; aspect-ratio: 2 / 3; }
     
+    /* Effetto Riflesso di Luce (Shine) */
+    .vod-card::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -150%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.1),
+        transparent
+      );
+      transform: skewX(-25deg);
+      transition: left 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 5;
+      pointer-events: none;
+    }
+    
+    .vod-card:hover::after {
+      left: 150%;
+    }
+
     .vod-card:hover { 
-      transform: scale(1.02) translateY(-2px);
-      z-index: 10;
-      border-color: rgba(255, 255, 255, 0.2);
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.55), 0 0 10px var(--accent-glow);
+      transform: scale(1.06) translateY(-8px);
+      z-index: 50;
+      border-color: var(--accent);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7), 0 0 25px var(--accent-glow);
     }
     .vod-card img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       display: block;
-      transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
     }
     .vod-card:hover img {
-      transform: scale(1.015);
+      transform: scale(1.12);
+      filter: brightness(1.1);
     }
     
     .vod-card-badge {
       position: absolute;
       top: 10px;
       right: 10px;
-      background: rgba(10, 10, 15, 0.75);
-      backdrop-filter: blur(8px);
-      padding: 4px 8px;
-      border-radius: 6px;
-      border: 1px solid rgba(255,255,255,0.1);
+      background: rgba(10, 10, 15, 0.65);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      padding: 4px 10px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
       color: #fbbf24;
       font-weight: 800;
-      font-size: 0.75rem;
+      font-size: 0.78rem;
       display: flex;
       align-items: center;
-      gap: 4px;
-      z-index: 2;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      gap: 5px;
+      z-index: 10;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
+    }
+    .vod-card:hover .vod-card-badge {
+      transform: scale(1.1);
     }
 
     .vod-card-overlay {
       position: absolute;
       inset: 0;
-      background: linear-gradient(to top, rgba(2, 6, 23, 0.95) 0%, rgba(2, 6, 23, 0.3) 50%, transparent 100%);
-      padding: 12px;
+      background: linear-gradient(to top, rgba(2, 6, 23, 0.98) 0%, rgba(2, 6, 23, 0.4) 50%, transparent 100%);
+      padding: 16px;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
       opacity: 0;
-      transition: opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-      z-index: 2;
-      backdrop-filter: blur(4px);
-      -webkit-backdrop-filter: blur(4px);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 6;
+      backdrop-filter: blur(2px);
+      -webkit-backdrop-filter: blur(2px);
     }
     .vod-card:hover .vod-card-overlay {
       opacity: 1;
     }
     .vod-card-title {
-      font-weight: 700;
-      font-size: 0.85rem;
+      font-weight: 800;
+      font-size: 0.95rem;
       color: #fff;
-      line-height: 1.25;
+      line-height: 1.2;
       text-align: left;
-      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
       font-family: var(--font-main);
       display: -webkit-box;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
       overflow: hidden;
+      transform: translateY(10px);
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .vod-card:hover .vod-card-title {
+      transform: translateY(0);
     }
     
     .vod-card-actions {
       display: flex;
-      gap: 6px;
+      gap: 8px;
       justify-content: flex-start;
-      margin-top: 8px;
+      margin-top: 12px;
+      transform: translateY(15px);
+      opacity: 0;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0.05s;
+    }
+    .vod-card:hover .vod-card-actions {
+      transform: translateY(0);
+      opacity: 1;
     }
     
     .vod-card-btn {
-      width: 28px;
-      height: 28px;
+      width: 32px;
+      height: 32px;
       border-radius: 50%;
-      background: rgba(15, 23, 42, 0.75);
+      background: rgba(255, 255, 255, 0.1);
       border: 1px solid rgba(255, 255, 255, 0.15);
       color: #fff;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      font-size: 0.9rem;
+      font-size: 1rem;
       cursor: pointer;
-      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-      backdrop-filter: blur(4px);
-      -webkit-backdrop-filter: blur(4px);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
       padding: 0;
     }
     
@@ -934,25 +977,65 @@ if (!isset($_SESSION['active_profile'])) {
       background: #fff;
       color: #000;
       border-color: #fff;
-      transform: scale(1.1);
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+      transform: scale(1.15);
+      box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
     }
     
     .vod-card-btn.play {
       background: var(--accent);
       color: #000;
       border-color: var(--accent);
+      box-shadow: 0 0 10px var(--accent-glow);
     }
     .vod-card-btn.play:hover {
       background: #fff;
-      color: #000;
-      border-color: #fff;
-      box-shadow: 0 0 10px var(--accent-glow);
+      box-shadow: 0 0 20px var(--accent-glow);
     }
     
     .vod-card-btn.fav i {
       color: var(--danger);
     }
+
+    /* Progress Bar sulla Card Premium */
+    .vod-card-progress-container {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 15;
+      overflow: hidden;
+    }
+    .vod-card-progress-bar {
+      height: 100%;
+      background: var(--accent);
+      box-shadow: 0 0 12px var(--accent-glow);
+      transition: width 0.3s ease;
+    }
+    .vod-card:hover .vod-card-progress-container {
+      height: 6px;
+    }
+
+    /* Episode Badge sulla Card (Serie TV) */
+    .vod-card-episode-badge {
+      position: absolute;
+      bottom: 12px;
+      right: 12px;
+      background: var(--accent);
+      color: #000;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 0.7rem;
+      font-weight: 800;
+      z-index: 10;
+      box-shadow: 0 4px 10px var(--accent-glow);
+      transition: transform 0.3s ease;
+    }
+    .vod-card:hover .vod-card-episode-badge {
+      transform: translateY(-5px) scale(1.05);
+    }
+
     
     .vod-loading, .vod-empty {
       grid-column: 1 / -1;
