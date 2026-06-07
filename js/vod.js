@@ -171,11 +171,16 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const searchClear = document.getElementById('vod-search-clear');
     if (searchClear) {
-        searchClear.addEventListener('click', () => {
+        searchClear.addEventListener('click', (e) => {
+            e.stopPropagation(); // Evita conflitti con il focus dell'input
             searchInput.value = '';
             searchClear.style.display = 'none';
             const dd = document.getElementById('vod-search-dropdown');
-            if (dd) dd.classList.remove('open');
+            if (dd) {
+                dd.classList.remove('open');
+                dd.innerHTML = ''; // Svuota fisicamente i suggerimenti
+            }
+            searchInput.focus(); // Riporta il focus per permettere una nuova ricerca
             showHome();
         });
     }
