@@ -1481,6 +1481,33 @@ if (!isset($_SESSION['active_profile'])) {
       background: rgba(15, 23, 42, 0.45);
       border-color: var(--accent);
       box-shadow: 0 0 0 1px var(--accent-glow);
+      animation: ep-last-played-pulse 2.5s ease-in-out 1;
+    }
+    @keyframes ep-last-played-pulse {
+      0%   { box-shadow: 0 0 0 1px var(--accent-glow), 0 0 0px 0px var(--accent-glow); }
+      40%  { box-shadow: 0 0 0 1px var(--accent-glow), 0 0 20px 6px var(--accent-glow); }
+      100% { box-shadow: 0 0 0 1px var(--accent-glow); }
+    }
+
+    /* Badge "Riprendi qui" */
+    .vod-ep-resume-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.65rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--accent);
+      background: rgba(var(--accent-rgb, 0, 170, 255), 0.12);
+      border: 1px solid rgba(var(--accent-rgb, 0, 170, 255), 0.25);
+      padding: 2px 7px;
+      border-radius: 4px;
+      margin-top: 3px;
+      width: fit-content;
+    }
+    .vod-ep-resume-badge i {
+      font-size: 0.75rem;
     }
 
     /* Thumbnail Container */
@@ -2005,14 +2032,7 @@ if (!isset($_SESSION['active_profile'])) {
               <label for="filter-genre">Genere</label>
               <select id="filter-genre">
                 <option value="">Tutti i generi</option>
-                <option value="action">Azione & Avventura</option>
-                <option value="comedy">Commedia</option>
-                <option value="drama">Dramma</option>
-                <option value="scifi">Fantascienza</option>
-                <option value="horror">Horror</option>
-                <option value="thriller">Thriller & Mistero</option>
-                <option value="romance">Romantico</option>
-                <option value="animation">Animazione</option>
+                <!-- Popolato dinamicamente da TMDB via JS -->
               </select>
             </div>
             
