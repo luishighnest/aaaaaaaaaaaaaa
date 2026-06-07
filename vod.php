@@ -1172,12 +1172,34 @@ if (!isset($_SESSION['active_profile'])) {
       justify-content: center;
       background: rgba(0, 0, 0, 0.15);
       border-right: 1px solid rgba(255,255,255,0.03);
+      transition: width 0.25s ease;
+    }
+    .vod-modal-poster.is-landscape {
+      width: 380px;
+    }
+    .vod-modal-poster.is-square {
+      width: 320px;
     }
     .vod-modal-poster img {
-      width: 100%;
+      width: auto;
+      max-width: 100%;
+      height: auto;
+      max-height: calc(85vh - 5rem);
+      object-fit: contain;
       border-radius: 12px;
       box-shadow: 0 15px 35px rgba(0,0,0,0.5);
       border: 1px solid rgba(255,255,255,0.05);
+      display: block;
+      background: rgba(15, 23, 42, 0.35);
+    }
+    .vod-modal-poster.is-portrait img {
+      max-width: 230px;
+    }
+    .vod-modal-poster.is-landscape img {
+      max-width: 320px;
+    }
+    .vod-modal-poster.is-square img {
+      max-width: 260px;
     }
     
     .vod-modal-info {
@@ -1852,8 +1874,21 @@ if (!isset($_SESSION['active_profile'])) {
         border-bottom: 1px solid rgba(255, 255, 255, 0.05);
         padding: 1.5rem;
       }
+      .vod-modal-poster.is-landscape,
+      .vod-modal-poster.is-square {
+        width: 100%;
+      }
       .vod-modal-poster img {
+        max-height: 220px;
+      }
+      .vod-modal-poster.is-portrait img {
         max-width: 130px;
+      }
+      .vod-modal-poster.is-landscape img {
+        max-width: 260px;
+      }
+      .vod-modal-poster.is-square img {
+        max-width: 170px;
       }
       .vod-modal-info {
         padding: 1.5rem;
