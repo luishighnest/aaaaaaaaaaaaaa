@@ -1327,19 +1327,46 @@ async function loadTvEpisodes(tvId, seasonNumber) {
 function showEpisodeStatusMenu(e, tvId, seasonNumber, episodeNumber) {
     e.stopPropagation();
     
-    // Rimuovi eventuali menu aperti in precedenza
+    const sNum = parseInt(seasonNumber, 10);
+    const eNum = parseInt(episodeNumber, 10);
+    const tId = parseInt(tvId, 10);
+    
+    // Rimuovi eventuali menu aperti in precedenza e pulisci i listener
     const existingMenu = document.getElementById('vod-episode-status-menu');
+    const isSameEpisode = window.__ACTIVE_STATUS_MENU_EPISODE__ &&
+                          window.__ACTIVE_STATUS_MENU_EPISODE__.tvId === tId &&
+                          window.__ACTIVE_STATUS_MENU_EPISODE__.season === sNum &&
+                          window.__ACTIVE_STATUS_MENU_EPISODE__.episode === eNum;
+    
+    if (window.__CLEANUP_STATUS_MENU__) {
+        window.__CLEANUP_STATUS_MENU__();
+    }
+    
     if (existingMenu) {
         existingMenu.remove();
+        window.__ACTIVE_STATUS_MENU_EPISODE__ = null;
+        if (isSameEpisode) {
+            return;
+        }
     }
+    
+    // Salva l'episodio attivo per la gestione toggle
+    window.__ACTIVE_STATUS_MENU_EPISODE__ = { tvId: tId, season: sNum, episode: eNum };
     
     const menu = document.createElement('div');
     menu.id = 'vod-episode-status-menu';
     
-    // Posiziona il menu vicino al bottone cliccato
+    // Posiziona il menu vicino al bottone cliccato (in coordinate viewport stabili)
     const rect = e.currentTarget.getBoundingClientRect();
-    menu.style.top = `${rect.bottom + window.scrollY + 6}px`;
-    menu.style.left = `${Math.min(window.innerWidth - 190, rect.left + window.scrollX - 140)}px`;
+    menu.style.top = `${rect.bottom + 6}px`;
+    
+    const menuWidth = 190;
+    let menuLeft = rect.right - menuWidth;
+    if (menuLeft < 10) menuLeft = 10;
+    if (menuLeft + menuWidth > window.innerWidth - 10) {
+        menuLeft = window.innerWidth - menuWidth - 10;
+    }
+    menu.style.left = `${menuLeft}px`;
     
     menu.innerHTML = `
         <div class="menu-item" onclick="setEpisodeWatchStatus(${tvId}, ${seasonNumber}, ${episodeNumber}, 'watched')">
@@ -1355,22 +1382,46 @@ function showEpisodeStatusMenu(e, tvId, seasonNumber, episodeNumber) {
     
     document.body.appendChild(menu);
     
+    const statusBtn = e.currentTarget;
+    
     // Chiudi il menu al click esterno
     const closeMenu = (event) => {
-        if (!menu.contains(event.target) && event.target !== e.currentTarget) {
+        if (!menu.contains(event.target) && !statusBtn.contains(event.target)) {
             menu.remove();
-            document.removeEventListener('click', closeMenu);
+            window.__ACTIVE_STATUS_MENU_EPISODE__ = null;
+            cleanup();
         }
     };
+    
+    // Chiudi il menu allo scorrimento (sia del modal che della pagina) per evitare menu "appesi"
+    const handleScroll = () => {
+        menu.remove();
+        window.__ACTIVE_STATUS_MENU_EPISODE__ = null;
+        cleanup();
+    };
+    
+    const cleanup = () => {
+        document.removeEventListener('click', closeMenu);
+        document.removeEventListener('scroll', handleScroll, true);
+        window.__CLEANUP_STATUS_MENU__ = null;
+    };
+    
+    window.__CLEANUP_STATUS_MENU__ = cleanup;
+    
     setTimeout(() => {
         document.addEventListener('click', closeMenu);
+        document.addEventListener('scroll', handleScroll, true);
     }, 10);
 }
 
 async function setEpisodeWatchStatus(tvId, seasonNumber, episodeNumber, status) {
-    // Chiudi il menu
+    // Chiudi il menu e pulisci i listener
     const menu = document.getElementById('vod-episode-status-menu');
     if (menu) menu.remove();
+    if (window.__CLEANUP_STATUS_MENU__) {
+        window.__CLEANUP_STATUS_MENU__();
+    }
+    window.__ACTIVE_STATUS_MENU_EPISODE__ = null;
     
     const item = resolveVODItem(tvId, 'tv');
     if (!item) return;
