@@ -995,7 +995,7 @@ function renderContinueWatching() {
         
         card.innerHTML = `
             <img src="${poster}" alt="${title}" loading="lazy">
-            ${type === 'tv' && item.season && item.episode ? `<div class="vod-card-episode-badge"><i class="ph-fill ph-play-circle"></i> S${item.season}:E${item.episode}<span class="badge-label-resume">RIPRENDI</span></div>` : ''}
+            ${type === 'tv' && item.season && item.episode ? `<div class="vod-card-episode-badge"><i class="ph-fill ph-play"></i> S${item.season}:E${item.episode}</div>` : ''}
             <div class="vod-card-progress-container">
                 <div class="vod-card-progress-bar" style="width: ${progress}%;"></div>
             </div>
