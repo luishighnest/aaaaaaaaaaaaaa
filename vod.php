@@ -243,37 +243,32 @@ if (!isset($_SESSION['active_profile'])) {
     }
     
     .vod-navbar .nav-link {
-      padding: 0.5rem 1.1rem;
-      border-radius: 12px;
-      font-size: 0.85rem;
+      padding: 0.6rem 1rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.8rem;
       font-weight: 700;
-      color: rgba(255, 255, 255, 0.6);
+      text-transform: uppercase;
+      color: var(--text-primary);
+      white-space: nowrap;
       transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
       display: flex;
       align-items: center;
-      gap: 0.6rem;
+      gap: 0.5rem;
+      border: 1px solid var(--border-subtle);
+      background: rgba(15, 23, 42, 0.35);
       cursor: pointer;
-      position: relative;
     }
     .vod-navbar .nav-link:hover {
       color: #fff;
-      background: rgba(255, 255, 255, 0.05);
+      background: rgba(15, 23, 42, 0.75);
+      border-color: rgba(255, 255, 255, 0.15);
     }
     .vod-navbar .nav-link.active {
-      color: var(--accent);
-      background: rgba(0, 242, 254, 0.08);
-    }
-    .vod-navbar .nav-link.active::after {
-      content: '';
-      position: absolute;
-      bottom: 6px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 4px;
-      height: 4px;
-      border-radius: 50%;
+      color: #000;
       background: var(--accent);
-      box-shadow: 0 0 10px var(--accent-glow);
+      font-weight: 700;
+      border-color: var(--accent);
+      box-shadow: 0 4px 15px var(--accent-glow);
     }
     
     /* Barra di Ricerca High-End */
@@ -346,128 +341,116 @@ if (!isset($_SESSION['active_profile'])) {
     /* ─── AUTOCOMPLETE DROPDOWN ─── */
     .vod-search-dropdown {
       position: absolute;
-      top: calc(100% + 15px);
+      top: calc(100% + 10px);
+      left: 0;
       right: 0;
-      width: 360px;
-      background: rgba(15, 23, 42, 0.85);
-      backdrop-filter: blur(30px) saturate(1.6);
-      -webkit-backdrop-filter: blur(30px) saturate(1.6);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      border-radius: 20px;
-      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.05);
+      background: rgba(2, 6, 23, 0.92);
+      backdrop-filter: blur(28px) saturate(1.4);
+      -webkit-backdrop-filter: blur(28px) saturate(1.4);
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      border-radius: 16px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.03), inset 0 1px 0 rgba(255, 255, 255, 0.06);
       overflow: hidden;
-      z-index: 1100;
+      z-index: 9999;
       opacity: 0;
-      transform: translateY(-10px) scale(0.98);
+      transform: translateY(-8px) scale(0.98);
       pointer-events: none;
-      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      transition: opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1), transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      max-height: 420px;
+      overflow-y: auto;
     }
     .vod-search-dropdown.open {
       opacity: 1;
       transform: translateY(0) scale(1);
       pointer-events: auto;
     }
-
-    .vod-dropdown-header {
-      padding: 14px 18px;
-      font-size: 0.72rem;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 1.2px;
-      color: var(--accent);
-      background: rgba(255, 255, 255, 0.02);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    .vod-search-dropdown::-webkit-scrollbar {
+      width: 4px;
+    }
+    .vod-search-dropdown::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 4px;
     }
 
+    /* Header del dropdown con query */
+    .vod-dropdown-header {
+      padding: 10px 14px 6px 14px;
+      font-size: 0.7rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    }
+    .vod-dropdown-header i {
+      color: var(--accent);
+      font-size: 0.85rem;
+    }
+
+    /* Riga suggerimento */
     .vod-suggestion-item {
       display: flex;
       align-items: center;
-      gap: 15px;
-      padding: 10px 18px;
+      gap: 12px;
+      padding: 9px 14px;
       cursor: pointer;
-      transition: all 0.2s ease;
+      transition: background 0.15s ease;
       border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+      position: relative;
     }
-    .vod-suggestion-item:last-child { border-bottom: none; }
+    .vod-suggestion-item:last-child {
+      border-bottom: none;
+    }
     .vod-suggestion-item:hover {
-      background: rgba(255, 255, 255, 0.08);
-      padding-left: 22px;
+      background: rgba(255, 255, 255, 0.05);
     }
 
     .vod-suggestion-thumb {
-      width: 42px;
-      height: 60px;
+      width: 32px;
+      height: 48px;
       object-fit: cover;
-      border-radius: 6px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 4px;
+      background: #1a1a24;
     }
-
     .vod-suggestion-thumb-placeholder {
-      width: 42px;
-      height: 60px;
+      width: 32px;
+      height: 48px;
       background: rgba(255,255,255,0.05);
-      border-radius: 6px;
+      border-radius: 4px;
       display: flex;
       align-items: center;
       justify-content: center;
       color: var(--text-muted);
     }
-
-    .vod-suggestion-info {
-      flex: 1;
-      min-width: 0;
-    }
-
+    .vod-suggestion-info { flex: 1; min-width: 0; }
     .vod-suggestion-title {
       font-weight: 700;
-      font-size: 0.88rem;
+      font-size: 0.85rem;
       color: #fff;
-      margin-bottom: 4px;
+      margin-bottom: 2px;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
     }
-
     .vod-suggestion-meta {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
       font-size: 0.72rem;
       color: var(--text-muted);
     }
-
     .vod-suggestion-type {
-      padding: 1px 6px;
-      border-radius: 4px;
+      text-transform: uppercase;
       font-weight: 800;
       font-size: 0.65rem;
-      text-transform: uppercase;
-      background: rgba(255,255,255,0.08);
     }
     .vod-suggestion-type.movie { color: var(--accent); }
     .vod-suggestion-type.tv { color: #f43f5e; }
-
-    .vod-suggestion-rating {
-      display: flex;
-      align-items: center;
-      gap: 3px;
-      color: #fbbf24;
-      font-weight: 800;
-    }
-
-    .vod-suggestion-arrow {
-      font-size: 0.9rem;
-      color: var(--text-muted);
-      opacity: 0;
-      transition: all 0.2s ease;
-      transform: translateX(-5px);
-    }
-    .vod-suggestion-item:hover .vod-suggestion-arrow {
-      opacity: 1;
-      transform: translateX(0);
-      color: var(--accent);
-    }
+    .vod-suggestion-rating { color: #fbbf24; font-weight: 700; }
+    .vod-suggestion-arrow { font-size: 0.8rem; color: var(--text-muted); opacity: 0.5; }
 
     .vod-suggestion-item.keyboard-active {
       background: rgba(255, 255, 255, 0.07);
