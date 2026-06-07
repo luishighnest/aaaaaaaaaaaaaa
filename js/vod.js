@@ -741,19 +741,33 @@ function togglePlayerFullscreen() {
     }
 }
 
+async function sendClientDebug(message, contextObj = {}) {
+    console.log('[VOD DIAGNOSTICS]', message, contextObj);
+    try {
+        await fetch('log_debug.php', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ message: message, context: contextObj })
+        });
+    } catch (e) {
+        console.error('Failed to send debug log to server:', e);
+    }
+}
+
 async function sendProgressPayload(context, seconds, progress, isCompleted = false) {
     if (!context) return;
     
     const finalProgress = isCompleted ? 100 : progress;
     const finalSeconds = isCompleted ? 0 : seconds;
     
-    console.log('[VOD PROGRESS DEBUG] sendProgressPayload: preparing payload', {
+    const payloadInfo = {
         id: context.id,
         type: context.type,
         title: context.title,
         progress: finalProgress,
         seconds: Math.round(finalSeconds)
-    });
+    };
+    await sendClientDebug('sendProgressPayload: preparing payload', payloadInfo);
     
     try {
         const bodyData = {
@@ -780,7 +794,7 @@ async function sendProgressPayload(context, seconds, progress, isCompleted = fal
         });
         
         if (!response.ok) {
-            console.error('[VOD PROGRESS DEBUG] sendProgressPayload: HTTP error status:', response.status);
+            await sendClientDebug('sendProgressPayload: HTTP error status', { status: response.status });
             return;
         }
         
@@ -789,11 +803,11 @@ async function sendProgressPayload(context, seconds, progress, isCompleted = fal
         try {
             result = JSON.parse(text);
         } catch (jsonErr) {
-            console.error('[VOD PROGRESS DEBUG] sendProgressPayload: Failed to parse server response as JSON. Raw text:', text, jsonErr);
+            await sendClientDebug('sendProgressPayload: Failed to parse JSON response', { rawText: text, error: jsonErr.message });
             return;
         }
         
-        console.log('[VOD PROGRESS DEBUG] sendProgressPayload: Server response received:', result);
+        await sendClientDebug('sendProgressPayload: Server response received', result);
         if (result.success) {
             window.__ACTIVE_PROFILE_VOD_HISTORY__ = result.watch_history;
             renderContinueWatching();
@@ -801,7 +815,7 @@ async function sendProgressPayload(context, seconds, progress, isCompleted = fal
             console.error('[VOD PROGRESS DEBUG] sendProgressPayload: Save failed on server:', result.error);
         }
     } catch (err) {
-        console.error('[VOD PROGRESS DEBUG] sendProgressPayload: Fetch exception:', err);
+        await sendClientDebug('sendProgressPayload: Fetch exception', { error: err.message });
     }
 }
 
@@ -811,9 +825,9 @@ async function saveProgressToServer(seconds, progress, isCompleted = false) {
 }
 
 async function saveCurrentProgress() {
-    console.log('[VOD PROGRESS DEBUG] saveCurrentProgress called.');
+    await sendClientDebug('saveCurrentProgress called');
     if (!window.__PLAYBACK_CONTEXT__) {
-        console.log('[VOD PROGRESS DEBUG] saveCurrentProgress: No active context to save.');
+        await sendClientDebug('saveCurrentProgress: No active context to save');
         return;
     }
     const context = window.__PLAYBACK_CONTEXT__;
@@ -822,7 +836,7 @@ async function saveCurrentProgress() {
     let seconds = context.currentTime || 0;
     let progress = 0;
     
-    console.log('[VOD PROGRESS DEBUG] saveCurrentProgress: Current context state:', {
+    await sendClientDebug('saveCurrentProgress: Current context state', {
         id: context.id,
         type: context.type,
         prevSeconds: context.prevSeconds,
@@ -833,20 +847,20 @@ async function saveCurrentProgress() {
     
     if (seconds <= 0 || seconds === context.prevSeconds) {
         const timeSpent = (Date.now() - context.startTime) / 1000;
-        console.log('[VOD PROGRESS DEBUG] saveCurrentProgress: Fallback triggered. timeSpent:', timeSpent);
+        await sendClientDebug('saveCurrentProgress: Fallback triggered', { timeSpent });
         if (timeSpent >= 10) {
             seconds = (context.prevSeconds || 0) + timeSpent;
             const duration = context.duration || (context.type === 'movie' ? 120 * 60 : 45 * 60);
             progress = Math.min(95, Math.round((seconds / duration) * 100));
-            console.log('[VOD PROGRESS DEBUG] saveCurrentProgress: Fallback progress computed:', { seconds, progress });
+            await sendClientDebug('saveCurrentProgress: Fallback progress computed', { seconds, progress });
         } else {
-            console.log('[VOD PROGRESS DEBUG] saveCurrentProgress: Playback session too short (< 10s), skipping save.');
+            await sendClientDebug('saveCurrentProgress: Playback session too short (< 10s), skipping save');
             return;
         }
     } else {
         const duration = context.duration || (context.type === 'movie' ? 120 * 60 : 45 * 60);
         progress = Math.min(95, Math.round((seconds / duration) * 100));
-        console.log('[VOD PROGRESS DEBUG] saveCurrentProgress: Using player currentTime:', { seconds, progress });
+        await sendClientDebug('saveCurrentProgress: Using player currentTime', { seconds, progress });
     }
     
     if (progress > 95) progress = 95;
@@ -856,6 +870,7 @@ async function saveCurrentProgress() {
 
 async function closePlayer() {
     console.log('[VOD PROGRESS DEBUG] closePlayer triggered.');
+    await sendClientDebug('closePlayer triggered');
     const overlay = document.getElementById('vod-player-overlay');
     
     // Esci dal fullscreen se attivo
@@ -1596,7 +1611,8 @@ window.addEventListener('message', (event) => {
     let seconds = null;
     let duration = null;
     
-    // Logga tutti i messaggi ricevuti per permettere la diagnostica da console
+    // Logga tutti i messaggi ricevuti per permettere la diagnostica da console e server
+    sendClientDebug('postMessage received', { origin: event.origin, data: msg });
     console.log('[VOD MESSAGE DEBUG] Origin:', event.origin, 'Data:', msg);
     
     if (typeof msg === 'string') {
