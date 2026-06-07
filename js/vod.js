@@ -1250,11 +1250,26 @@ async function loadTvEpisodes(tvId, seasonNumber) {
                     ${readMoreHtml}
                     ${progressHtml}
                 </div>
-                <button class="vod-episode-play-btn"><i class="ph-fill ph-play"></i></button>
+                <div class="vod-episode-actions">
+                    <button class="vod-episode-status-btn" title="Stato visione"><i class="ph ph-eye"></i></button>
+                    <button class="vod-episode-play-btn" title="Riproduci"><i class="ph-fill ph-play"></i></button>
+                </div>
             `;
             
             row.onclick = () => {
                 playShowEpisode(tvId, seasonNumber, ep.episode_number, isLastPlayed);
+            };
+            
+            const playBtn = row.querySelector('.vod-episode-play-btn');
+            playBtn.onclick = (e) => {
+                e.stopPropagation();
+                playShowEpisode(tvId, seasonNumber, ep.episode_number, isLastPlayed);
+            };
+            
+            const statusBtn = row.querySelector('.vod-episode-status-btn');
+            statusBtn.onclick = (e) => {
+                e.stopPropagation();
+                showEpisodeStatusMenu(e, tvId, seasonNumber, ep.episode_number);
             };
             
             if (ep.overview && ep.overview.length > 120) {
@@ -1285,6 +1300,173 @@ async function loadTvEpisodes(tvId, seasonNumber) {
         episodesList.innerHTML = '<div style="color: var(--text-muted); padding: 10px;">Errore nel caricamento degli episodi.</div>';
     }
 }
+
+// Menu contestuale e logiche per gestire lo stato di visione degli episodi
+function showEpisodeStatusMenu(e, tvId, seasonNumber, episodeNumber) {
+    e.stopPropagation();
+    
+    // Rimuovi eventuali menu aperti in precedenza
+    const existingMenu = document.getElementById('vod-episode-status-menu');
+    if (existingMenu) {
+        existingMenu.remove();
+    }
+    
+    const menu = document.createElement('div');
+    menu.id = 'vod-episode-status-menu';
+    
+    // Posiziona il menu vicino al bottone cliccato
+    const rect = e.currentTarget.getBoundingClientRect();
+    menu.style.top = `${rect.bottom + window.scrollY + 6}px`;
+    menu.style.left = `${Math.min(window.innerWidth - 190, rect.left + window.scrollX - 140)}px`;
+    
+    menu.innerHTML = `
+        <div class="menu-item" onclick="setEpisodeWatchStatus(${tvId}, ${seasonNumber}, ${episodeNumber}, 'watched')">
+            <i class="ph-fill ph-check-circle" style="color: #22c55e;"></i> Già visto
+        </div>
+        <div class="menu-item" onclick="setEpisodeWatchStatus(${tvId}, ${seasonNumber}, ${episodeNumber}, 'unwatched')">
+            <i class="ph ph-eye-slash" style="color: #ef4444;"></i> Non visto
+        </div>
+        <div class="menu-item" onclick="setEpisodeWatchStatus(${tvId}, ${seasonNumber}, ${episodeNumber}, 'up_to_here')">
+            <i class="ph ph-arrow-circle-down" style="color: #3b82f6;"></i> Visto fino a qui
+        </div>
+    `;
+    
+    document.body.appendChild(menu);
+    
+    // Chiudi il menu al click esterno
+    const closeMenu = (event) => {
+        if (!menu.contains(event.target) && event.target !== e.currentTarget) {
+            menu.remove();
+            document.removeEventListener('click', closeMenu);
+        }
+    };
+    setTimeout(() => {
+        document.addEventListener('click', closeMenu);
+    }, 10);
+}
+
+async function setEpisodeWatchStatus(tvId, seasonNumber, episodeNumber, status) {
+    // Chiudi il menu
+    const menu = document.getElementById('vod-episode-status-menu');
+    if (menu) menu.remove();
+    
+    const item = resolveVODItem(tvId, 'tv');
+    if (!item) return;
+    
+    const title = item.title || item.name;
+    const poster_path = item.poster_path;
+    
+    let targetSeason = seasonNumber;
+    let targetEpisode = episodeNumber;
+    let progress = 100;
+    let seconds = 0;
+    let isCompleted = true;
+    
+    if (status === 'unwatched') {
+        // Se marchiamo come non visto, cerchiamo l'episodio precedente
+        if (episodeNumber > 1) {
+            targetEpisode = episodeNumber - 1;
+            progress = 100;
+            isCompleted = true;
+        } else if (seasonNumber > 1) {
+            targetSeason = seasonNumber - 1;
+            targetEpisode = 1;
+            progress = 100;
+            isCompleted = true;
+        } else {
+            // Se è S1:E1 che viene marchiato come non visto, rimuoviamo completamente lo show dalla cronologia!
+            targetSeason = 1;
+            targetEpisode = 1;
+            progress = 0;
+            seconds = 0;
+            isCompleted = false;
+        }
+    }
+    
+    // Aggiorna immediatamente lo stato locale per evitare latenze UI
+    if (!window.__ACTIVE_PROFILE_VOD_HISTORY__) {
+        window.__ACTIVE_PROFILE_VOD_HISTORY__ = [];
+    }
+    const existingIndex = window.__ACTIVE_PROFILE_VOD_HISTORY__.findIndex(
+        x => parseInt(x.id, 10) === parseInt(tvId, 10) && x.type === 'tv'
+    );
+    
+    // Se stiamo resettando S1:E1 a "non visto" (rimozione totale della cronologia):
+    if (status === 'unwatched' && seasonNumber === 1 && episodeNumber === 1) {
+        if (existingIndex !== -1) {
+            window.__ACTIVE_PROFILE_VOD_HISTORY__.splice(existingIndex, 1);
+        }
+    } else {
+        const localItem = {
+            id: parseInt(tvId, 10),
+            type: 'tv',
+            title: title,
+            poster_path: poster_path,
+            progress: progress,
+            seconds: seconds,
+            season: targetSeason,
+            episode: targetEpisode,
+            timestamp: Math.round(Date.now() / 1000)
+        };
+        
+        if (existingIndex !== -1) {
+            window.__ACTIVE_PROFILE_VOD_HISTORY__.splice(existingIndex, 1);
+        }
+        window.__ACTIVE_PROFILE_VOD_HISTORY__.unshift(localItem);
+    }
+    
+    renderContinueWatching();
+    
+    // Ricarica la visualizzazione degli episodi nella modale aperta
+    loadTvEpisodes(tvId, seasonNumber);
+    
+    // Aggiorna i bottoni della modale principale se necessario
+    if (window.__CURRENT_MODAL_ITEM__) {
+        openModal(window.__CURRENT_MODAL_ITEM__, seasonNumber);
+    }
+    
+    // Invia la richiesta al server per sincronizzare
+    try {
+        const bodyData = {
+            id: tvId,
+            type: 'tv',
+            title: title,
+            poster_path: poster_path,
+            progress: progress,
+            seconds: seconds,
+            season: targetSeason,
+            episode: targetEpisode,
+            csrf_token: window.__CSRF_TOKEN__
+        };
+        
+        if (status === 'unwatched' && seasonNumber === 1 && episodeNumber === 1) {
+            bodyData.progress = 0;
+            bodyData.seconds = 0;
+            bodyData.season = 0;
+            bodyData.episode = 0;
+        }
+        
+        const response = await fetch('save_watch_progress.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRF-Token': window.__CSRF_TOKEN__
+            },
+            body: JSON.stringify(bodyData)
+        });
+        const result = await response.json();
+        if (result.success) {
+            window.__ACTIVE_PROFILE_VOD_HISTORY__ = result.watch_history;
+            renderContinueWatching();
+            loadTvEpisodes(tvId, seasonNumber);
+        }
+    } catch (err) {
+        console.error('Errore nel salvataggio dello stato di visione:', err);
+    }
+}
+
+window.showEpisodeStatusMenu = showEpisodeStatusMenu;
+window.setEpisodeWatchStatus = setEpisodeWatchStatus;
 
 // ==========================================
 // SEZIONE LIBRERIA PREFERITI VOD
