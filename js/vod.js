@@ -81,8 +81,30 @@ function populateCard(card, item, type, title, poster) {
     const isFav = isFavorite(item.id, type);
     const favIcon = isFav ? 'ph-fill ph-heart' : 'ph ph-heart';
     
+    // Cerca progresso nella cronologia per questo specifico contenuto
+    const historyItem = (window.__ACTIVE_PROFILE_VOD_HISTORY__ || []).find(
+        x => parseInt(x.id, 10) === parseInt(item.id, 10) && x.type === type
+    );
+    const progress = (historyItem && historyItem.progress > 0) ? historyItem.progress : 0;
+    
+    let progressHtml = '';
+    let badgeHtml = '';
+    
+    if (progress > 0) {
+        progressHtml = `
+            <div class="vod-card-progress-container">
+                <div class="vod-card-progress-bar" style="width: ${progress}%;"></div>
+            </div>
+        `;
+        if (type === 'tv' && historyItem.season && historyItem.episode) {
+            badgeHtml = `<div class="vod-card-episode-badge">S${historyItem.season}:E${historyItem.episode}</div>`;
+        }
+    }
+    
     card.innerHTML = `
         <img src="${poster}" alt="${title}" loading="lazy">
+        ${badgeHtml}
+        ${progressHtml}
         <div class="vod-card-overlay">
             <div class="vod-card-title">${title}</div>
             <div class="vod-card-actions">
@@ -100,9 +122,14 @@ function populateCard(card, item, type, title, poster) {
         e.stopPropagation();
         openModal(item);
         if (type === 'movie') {
-            playMovie(item.id);
+            const hasHistory = progress > 0;
+            playMovie(item.id, hasHistory);
         } else {
-            playShowEpisode(item.id, 1, 1);
+            if (historyItem && historyItem.season && historyItem.episode) {
+                playShowEpisode(item.id, historyItem.season, historyItem.episode, true);
+            } else {
+                playShowEpisode(item.id, 1, 1);
+            }
         }
     });
     
