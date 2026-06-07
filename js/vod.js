@@ -1316,41 +1316,56 @@ async function loadTvEpisodes(tvId, seasonNumber) {
                 rowClass += ' watched';
             }
             row.className = rowClass;
-            
-            let progressHtml = '';
-            if (epProgress > 0 && !isWatched) {
-                progressHtml = `
-                    <div style="font-size: 0.75rem; color: var(--accent); font-weight: 600; margin-top: 4px; display: flex; align-items: center; gap: 8px;">
-                        <span style="display:inline-block; width: 60px; height: 4px; background: rgba(255,255,255,0.2); border-radius: 2px; overflow:hidden;">
-                            <span style="display:block; width: ${epProgress}%; height: 100%; background: var(--accent);"></span>
-                        </span>
-                        <span>${epProgress}% completato</span>
-                    </div>
-                `;
-            }
-            
+
+            // Thumbnail da TMDB (still_path)
+            const thumbUrl = ep.still_path
+                ? `https://image.tmdb.org/t/p/w300${ep.still_path}`
+                : null;
+
+            const thumbHtml = thumbUrl
+                ? `<img src="${thumbUrl}" alt="Ep. ${ep.episode_number}" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\\'vod-ep-thumb-placeholder\\'><i class=\\'ph ph-film-strip\\'></i></div>'">`
+                : `<div class="vod-ep-thumb-placeholder"><i class="ph ph-film-strip"></i></div>`;
+
+            const progressBarHtml = (epProgress > 0 && !isWatched)
+                ? `<div class="vod-ep-progress-bar"><div class="vod-ep-progress-fill" style="width:${epProgress}%"></div></div>`
+                : '';
+
+            const epTitle = ep.name || 'Episodio ' + ep.episode_number;
+            const titleWithBadge = isWatched
+                ? `${epTitle} <span class="vod-episode-watched-badge" title="Già visto" style="color: #22c55e; font-size: 0.9rem; margin-left: 6px; display: inline-flex; align-items: center; vertical-align: middle;"><i class="ph-fill ph-check-circle"></i></span>`
+                : epTitle;
+
             let readMoreHtml = '';
             if (ep.overview && ep.overview.length > 120) {
                 readMoreHtml = `
                     <button class="vod-episode-readmore" title="Espandi descrizione" style="background: none; border: none; color: var(--text-muted); cursor: pointer; padding: 2px; font-size: 1rem; display: inline-flex; align-items: center; justify-content: center; margin-top: 2px; outline: none;"><i class="ph ph-caret-down"></i></button>
                 `;
             }
-            
-            const epTitle = ep.name || 'Episodio ' + ep.episode_number;
-            const titleWithBadge = isWatched
-                ? `${ep.episode_number}. ${epTitle} <span class="vod-episode-watched-badge" title="Già visto" style="color: #22c55e; font-size: 0.9rem; margin-left: 6px; display: inline-flex; align-items: center; vertical-align: middle;"><i class="ph-fill ph-check-circle"></i></span>`
-                : `${ep.episode_number}. ${epTitle}`;
-            
+
+            // Testo progresso sotto il titolo (se in corso)
+            let progressTextHtml = '';
+            if (epProgress > 0 && !isWatched) {
+                progressTextHtml = `<span style="font-size:0.72rem; color:var(--accent); font-weight:600; margin-top:2px;">${epProgress}% completato</span>`;
+            }
+
             row.innerHTML = `
+                <div class="vod-ep-thumb">
+                    ${thumbHtml}
+                    <div class="vod-ep-thumb-overlay">
+                        <div class="vod-ep-play-icon"><i class="ph-fill ph-play"></i></div>
+                    </div>
+                    <div class="vod-ep-num-badge">Ep. ${ep.episode_number}</div>
+                    ${progressBarHtml}
+                </div>
                 <div class="vod-episode-info">
                     <div class="vod-episode-title">${titleWithBadge}</div>
                     <div class="vod-episode-overview" id="ep-overview-${ep.episode_number}">${ep.overview || 'Nessuna descrizione disponibile.'}</div>
                     ${readMoreHtml}
-                    ${progressHtml}
+                    ${progressTextHtml}
                 </div>
                 <div class="vod-episode-actions">
-                    <button class="vod-episode-status-btn" title="Opzioni visione"><i class="ph ph-dots-three-vertical"></i></button>
                     <button class="vod-episode-play-btn" title="Riproduci"><i class="ph-fill ph-play"></i></button>
+                    <button class="vod-episode-status-btn" title="Opzioni visione"><i class="ph ph-dots-three-vertical"></i></button>
                 </div>
             `;
             
