@@ -1128,36 +1128,44 @@ if (!isset($_SESSION['active_profile'])) {
       transform: scale(1) translateY(0);
     }
     
+    .vod-modal-topbar {
+      position: sticky;
+      top: 0;
+      z-index: 5;
+      display: flex;
+      justify-content: flex-end;
+      margin: -1rem -1rem 0.25rem -1rem;
+      padding: 0.25rem 0.25rem 0.45rem 1rem;
+      background: linear-gradient(to bottom, rgba(2, 6, 23, 0.96), rgba(2, 6, 23, 0.72) 72%, rgba(2, 6, 23, 0));
+      pointer-events: none;
+    }
     .vod-modal-close {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      background: rgba(2, 6, 23, 0.8);
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      color: var(--text-secondary);
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
+      background: rgba(15, 23, 42, 0.78);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: #fff;
+      width: 38px;
+      height: 38px;
+      border-radius: 12px;
       display: flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
-      font-size: 1.35rem;
-      z-index: 101;
+      font-size: 1.1rem;
+      pointer-events: auto;
       transition: var(--transition);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255,255,255,0.1);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.28), inset 0 1px 0 rgba(255,255,255,0.08);
     }
     .vod-modal-close:hover {
-      background: var(--accent);
-      color: #000;
-      border-color: var(--accent);
-      transform: rotate(90deg) scale(1.08);
-      box-shadow: 0 0 20px var(--accent-glow), 0 8px 24px rgba(0, 0, 0, 0.3);
+      background: rgba(255, 255, 255, 0.12);
+      color: var(--accent);
+      border-color: rgba(255, 255, 255, 0.22);
+      transform: translateY(-1px);
+      box-shadow: 0 14px 32px rgba(0, 0, 0, 0.36), 0 0 18px var(--accent-glow);
     }
     .vod-modal-close:active {
-      transform: scale(0.95);
+      transform: scale(0.96);
     }
     
     .vod-modal-poster {
@@ -2129,11 +2137,13 @@ if (!isset($_SESSION['active_profile'])) {
   <!-- MODAL VOD -->
   <div class="vod-modal" id="vod-modal">
     <div class="vod-modal-content">
-      <button class="vod-modal-close" onclick="closeVodModal()"><i class="ph ph-x"></i></button>
       <div class="vod-modal-poster">
         <img id="vod-modal-img" src="" alt="Poster">
       </div>
       <div class="vod-modal-info">
+        <div class="vod-modal-topbar">
+          <button class="vod-modal-close" onclick="closeVodModal()" aria-label="Chiudi dettagli"><i class="ph ph-arrow-left"></i></button>
+        </div>
         <h2 id="vod-modal-title">Titolo</h2>
         <div id="vod-modal-tagline"></div>
         
