@@ -410,7 +410,7 @@ async function searchContent(query) {
 }
 
 // Pop-up Modal Avanzato
-async function openModal(item) {
+async function openModal(item, defaultSeasonNumber = null) {
     window.__CURRENT_MODAL_ITEM__ = item;
     const title = item.title || item.name;
     const poster = item.poster_path ? `${IMG_BASE_URL}${item.poster_path}` : 'https://via.placeholder.com/500x750?text=No+Poster';
@@ -440,7 +440,7 @@ async function openModal(item) {
     modalOverview.textContent = 'Caricamento dettagli completi...';
     
     modal.classList.add('open');
-
+ 
     // Gestione visualizzazione bottoni/sezioni in base al tipo
     playBtn.style.display = 'inline-flex';
     
@@ -448,7 +448,7 @@ async function openModal(item) {
     const historyItem = (window.__ACTIVE_PROFILE_VOD_HISTORY__ || []).find(
         x => parseInt(x.id, 10) === parseInt(item.id, 10) && x.type === type
     );
-
+ 
     if (type === 'movie') {
         playBtn.onclick = () => {
             playMovie(item.id);
@@ -469,7 +469,12 @@ async function openModal(item) {
             playShowEpisode(item.id, 1, 1);
         };
         tvSection.style.display = 'block';
-        loadTvSeasons(item.id);
+        
+        let seasonToLoad = defaultSeasonNumber;
+        if (seasonToLoad === null && historyItem && historyItem.season) {
+            seasonToLoad = historyItem.season;
+        }
+        loadTvSeasons(item.id, seasonToLoad);
         
         if (historyItem && historyItem.progress > 0 && historyItem.season && historyItem.episode) {
             if (resumeBtn) {
@@ -930,8 +935,13 @@ async function closePlayer() {
         if (window.__CURRENT_MODAL_ITEM__) {
             openModal(window.__CURRENT_MODAL_ITEM__);
         }
+    } else if (context && context.type === 'tv') {
+        // Per le serie TV, rimaniamo sulla modale dei dettagli ed impostiamo la stagione corrente
+        if (window.__CURRENT_MODAL_ITEM__) {
+            openModal(window.__CURRENT_MODAL_ITEM__, context.season);
+        }
     } else {
-        // Per le serie TV, chiudi la modale ed imposta la sezione Home
+        // Fallback generico
         closeVodModal();
         changeSection('home');
     }
@@ -1097,7 +1107,7 @@ function playShowEpisode(tmdbId, season, episode, resume = false) {
     }, 50);
 }
 
-async function loadTvSeasons(tvId) {
+async function loadTvSeasons(tvId, defaultSeasonNumber = null) {
     const select = document.getElementById('vod-season-select');
     const episodesList = document.getElementById('vod-episodes-list');
     select.innerHTML = '<option>Caricamento...</option>';
@@ -1113,16 +1123,25 @@ async function loadTvSeasons(tvId) {
         }
         
         select.innerHTML = '';
+        let targetSeason = null;
+        
         details.seasons.forEach(season => {
             const option = document.createElement('option');
             option.value = season.season_number;
             option.textContent = season.name || `Stagione ${season.season_number}`;
             select.appendChild(option);
+            
+            if (defaultSeasonNumber !== null && parseInt(season.season_number, 10) === parseInt(defaultSeasonNumber, 10)) {
+                targetSeason = season.season_number;
+            }
         });
         
-        // Carica la prima stagione per impostazione predefinita
-        const firstSeasonNum = details.seasons[0].season_number;
-        loadTvEpisodes(tvId, firstSeasonNum);
+        if (targetSeason === null) {
+            targetSeason = details.seasons[0].season_number;
+        }
+        
+        select.value = targetSeason;
+        loadTvEpisodes(tvId, targetSeason);
         
         // Gestione cambio stagione
         select.onchange = (e) => {
@@ -1159,8 +1178,19 @@ async function loadTvEpisodes(tvId, seasonNumber) {
                                  parseInt(historyItem.season, 10) === parseInt(seasonNumber, 10) && 
                                  parseInt(historyItem.episode, 10) === parseInt(ep.episode_number, 10);
             
+            const isWatched = historyItem && (
+                parseInt(seasonNumber, 10) < parseInt(historyItem.season, 10) ||
+                (parseInt(seasonNumber, 10) === parseInt(historyItem.season, 10) && parseInt(ep.episode_number, 10) < parseInt(historyItem.episode, 10))
+            );
+            
             const row = document.createElement('div');
-            row.className = 'vod-episode-row' + (isLastPlayed ? ' last-played' : '');
+            let rowClass = 'vod-episode-row';
+            if (isLastPlayed) {
+                rowClass += ' last-played';
+            } else if (isWatched) {
+                rowClass += ' watched';
+            }
+            row.className = rowClass;
             
             let progressHtml = '';
             if (isLastPlayed && historyItem.progress > 0) {
@@ -1181,9 +1211,14 @@ async function loadTvEpisodes(tvId, seasonNumber) {
                 `;
             }
             
+            const epTitle = ep.name || 'Episodio ' + ep.episode_number;
+            const titleWithBadge = isWatched
+                ? `${ep.episode_number}. ${epTitle} <span class="vod-episode-watched-badge" title="Già visto" style="color: #22c55e; font-size: 0.9rem; margin-left: 6px; display: inline-flex; align-items: center; vertical-align: middle;"><i class="ph-fill ph-check-circle"></i></span>`
+                : `${ep.episode_number}. ${epTitle}`;
+            
             row.innerHTML = `
                 <div class="vod-episode-info">
-                    <div class="vod-episode-title">${ep.episode_number}. ${ep.name || 'Episodio ' + ep.episode_number}</div>
+                    <div class="vod-episode-title">${titleWithBadge}</div>
                     <div class="vod-episode-overview" id="ep-overview-${ep.episode_number}">${ep.overview || 'Nessuna descrizione disponibile.'}</div>
                     ${readMoreHtml}
                     ${progressHtml}
