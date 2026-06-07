@@ -234,24 +234,25 @@ if (!isset($_SESSION['active_profile'])) {
     }
     
     .vod-navbar .nav-link {
-      padding: 0.5rem 1.2rem;
-      border-radius: 99px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: rgba(255, 255, 255, 0.75);
+      padding: 0.6rem 1rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--text-primary);
       white-space: nowrap;
       transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
       display: flex;
       align-items: center;
       gap: 0.5rem;
-      border: 1px solid transparent;
-      background: transparent;
+      border: 1px solid var(--border-subtle);
+      background: rgba(15, 23, 42, 0.35);
       cursor: pointer;
     }
     .vod-navbar .nav-link:hover {
       color: #fff;
-      background: rgba(255, 255, 255, 0.08);
-      border-color: rgba(255, 255, 255, 0.12);
+      background: rgba(15, 23, 42, 0.75);
+      border-color: rgba(255, 255, 255, 0.15);
     }
     .vod-navbar .nav-link.active {
       color: #000;
@@ -276,10 +277,11 @@ if (!isset($_SESSION['active_profile'])) {
       width: 100%;
       background: rgba(15, 23, 42, 0.55);
       border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: 99px;
-      padding: 0.5rem 2.6rem 0.5rem 2.6rem; /* Padding a destra per fare spazio alla X */
+      border-radius: var(--radius-sm);
+      padding: 0.55rem 2.6rem 0.55rem 2.6rem; /* Padding a destra per fare spazio alla X */
       color: var(--text-primary);
-      font-size: 0.85rem;
+      font-size: 0.8rem;
+      font-weight: 700;
       transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
@@ -327,13 +329,14 @@ if (!isset($_SESSION['active_profile'])) {
       display: inline-flex;
       align-items: center;
       gap: 0.4rem;
-      padding: 0.45rem 0.9rem;
+      padding: 0.6rem 1rem;
       background: rgba(15, 23, 42, 0.55);
       border: 1px solid rgba(255, 255, 255, 0.12);
-      border-radius: 99px;
-      color: var(--text-secondary);
-      font-size: 0.85rem;
-      font-weight: 500;
+      border-radius: var(--radius-sm);
+      color: var(--text-primary);
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
       text-decoration: none;
       cursor: pointer;
       transition: var(--transition);
