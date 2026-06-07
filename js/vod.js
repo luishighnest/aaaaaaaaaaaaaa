@@ -1311,7 +1311,7 @@ async function loadTvEpisodes(tvId, seasonNumber) {
                     ${progressHtml}
                 </div>
                 <div class="vod-episode-actions">
-                    <button class="vod-episode-status-btn" title="Stato visione"><i class="ph ph-eye"></i></button>
+                    <button class="vod-episode-status-btn" title="Opzioni visione"><i class="ph ph-dots-three-vertical"></i></button>
                     <button class="vod-episode-play-btn" title="Riproduci"><i class="ph-fill ph-play"></i></button>
                 </div>
             `;
