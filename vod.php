@@ -307,6 +307,7 @@ if (!isset($_SESSION['active_profile'])) {
     .vod-navbar .nav-search .clear-icon {
       position: absolute;
       right: 1rem;
+      left: auto; /* Sovrascrive il left: 1rem di .nav-search i globale */
       top: 50%;
       transform: translateY(-50%);
       color: var(--text-muted);
@@ -314,37 +315,37 @@ if (!isset($_SESSION['active_profile'])) {
       font-size: 1rem;
       transition: var(--transition);
       display: none; /* Gestito via JS */
+      z-index: 2;
     }
     .vod-navbar .nav-search .clear-icon:hover {
       color: var(--danger);
       transform: translateY(-50%) scale(1.15);
     }
 
-    /* Bottone Torna Live TV (Fisso a destra) */
+    /* Bottone Torna Indietro (Fisso a destra) */
     .vod-back-btn {
       display: inline-flex;
       align-items: center;
-      gap: 0.5rem;
-      padding: 0.5rem 1.2rem;
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid rgba(255, 255, 255, 0.08);
+      gap: 0.4rem;
+      padding: 0.45rem 0.9rem;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.10);
       border-radius: 99px;
-      color: var(--text-primary);
+      color: var(--text-secondary);
       font-size: 0.85rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
+      font-weight: 500;
+      text-decoration: none;
       cursor: pointer;
       transition: var(--transition);
       backdrop-filter: blur(10px);
       flex-shrink: 0;
     }
     .vod-back-btn:hover {
-      background: #ef4444;
-      color: #fff;
-      border-color: #ef4444;
-      box-shadow: 0 4px 20px rgba(239, 68, 68, 0.45);
-      transform: translateY(-2px);
+      background: rgba(255, 255, 255, 0.12);
+      color: var(--text-primary);
+      border-color: rgba(255, 255, 255, 0.25);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      transform: translateY(-1px);
     }
     .vod-back-btn:active {
       transform: translateY(0);
@@ -514,7 +515,7 @@ if (!isset($_SESSION['active_profile'])) {
     /* Stile Righe Netflix */
     .vod-row-container {
       margin-bottom: 2.5rem;
-      padding-left: 40px;
+      padding-left: 0;
       position: relative; /* per posizionare le frecce assolute */
     }
     
@@ -528,6 +529,7 @@ if (!isset($_SESSION['active_profile'])) {
       gap: 10px;
       letter-spacing: -0.5px;
       text-transform: uppercase;
+      padding-left: 40px;
     }
     .vod-row-title::before {
       content: '';
@@ -543,7 +545,7 @@ if (!isset($_SESSION['active_profile'])) {
       display: flex;
       gap: 20px;
       overflow-x: hidden; /* Annulla lo scrolling orizzontale manuale */
-      padding: 10px 40px 20px 0;
+      padding: 10px 40px 20px 40px;
       scroll-behavior: smooth;
     }
     
@@ -800,6 +802,34 @@ if (!isset($_SESSION['active_profile'])) {
     .filter-group select option {
       background: #0f172a;
       color: #fff;
+    }
+    .vod-filter-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      background: var(--accent);
+      color: #000;
+      border: none;
+      border-radius: 8px;
+      padding: 0.55rem 1.2rem;
+      font-size: 0.85rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 0 10px var(--accent-glow);
+      height: 38px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .vod-filter-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 18px var(--accent-glow);
+      background: #fff;
+      color: #000;
+    }
+    .vod-filter-btn:active {
+      transform: translateY(0);
     }
     .vod-catalog-grid {
       display: grid;
@@ -1313,7 +1343,7 @@ if (!isset($_SESSION['active_profile'])) {
         padding-top: 115px; /* Più spazio per la navbar responsive a 2 righe */
       }
       .vod-row-container {
-        padding-left: 15px;
+        padding-left: 0;
         margin-bottom: 1.5rem;
       }
       .vod-row-arrow-left,
@@ -1334,6 +1364,10 @@ if (!isset($_SESSION['active_profile'])) {
       }
       .vod-row-title {
         font-size: 1.1rem;
+        padding-left: 15px;
+      }
+      .vod-row {
+        padding: 10px 15px 20px 15px;
       }
       .vod-grid {
         grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
@@ -1472,7 +1506,7 @@ if (!isset($_SESSION['active_profile'])) {
         <input type="text" id="vod-search-input" placeholder="Cerca film o serie tv...">
         <i class="ph ph-x clear-icon" id="vod-search-clear"></i>
       </div>
-      <a href="index.php" class="vod-back-btn"><i class="ph-bold ph-monitor-play"></i> Live TV</a>
+      <a href="index.php" class="vod-back-btn" title="Torna alla pagina precedente"><i class="ph ph-arrow-left"></i> Indietro</a>
     </header>
 
     <!-- Main Content (Vertical Scroll) -->
@@ -1534,7 +1568,7 @@ if (!isset($_SESSION['active_profile'])) {
           <div class="vod-filter-bar">
             <div class="filter-group">
               <label for="filter-type">Tipo</label>
-              <select id="filter-type" onchange="resetCatalogAndLoad()">
+              <select id="filter-type">
                 <option value="all">Tutti</option>
                 <option value="movie">Film</option>
                 <option value="tv">Serie TV</option>
@@ -1543,7 +1577,7 @@ if (!isset($_SESSION['active_profile'])) {
             
             <div class="filter-group">
               <label for="filter-genre">Genere</label>
-              <select id="filter-genre" onchange="resetCatalogAndLoad()">
+              <select id="filter-genre">
                 <option value="">Tutti i generi</option>
                 <option value="action">Azione & Avventura</option>
                 <option value="comedy">Commedia</option>
@@ -1558,7 +1592,7 @@ if (!isset($_SESSION['active_profile'])) {
             
             <div class="filter-group">
               <label for="filter-year">Anno</label>
-              <select id="filter-year" onchange="resetCatalogAndLoad()">
+              <select id="filter-year">
                 <option value="">Qualsiasi anno</option>
                 <option value="2026">2026</option>
                 <option value="2025">2025</option>
@@ -1582,12 +1616,44 @@ if (!isset($_SESSION['active_profile'])) {
             </div>
             
             <div class="filter-group">
+              <label for="filter-lang">Lingua Orig.</label>
+              <select id="filter-lang">
+                <option value="">Tutte</option>
+                <option value="it">Italiano</option>
+                <option value="en">Inglese</option>
+                <option value="es">Spagnolo</option>
+                <option value="fr">Francese</option>
+                <option value="de">Tedesco</option>
+                <option value="ja">Giapponese</option>
+                <option value="ko">Coreano</option>
+              </select>
+            </div>
+            
+            <div class="filter-group">
+              <label for="filter-vote">Voto Minimo</label>
+              <select id="filter-vote">
+                <option value="">Qualsiasi</option>
+                <option value="8">8+ (Eccezionale)</option>
+                <option value="7">7+ (Ottimo)</option>
+                <option value="6">6+ (Buono)</option>
+                <option value="5">5+ (Sufficiente)</option>
+              </select>
+            </div>
+            
+            <div class="filter-group">
               <label for="filter-sort">Ordina Per</label>
-              <select id="filter-sort" onchange="resetCatalogAndLoad()">
+              <select id="filter-sort">
                 <option value="popularity.desc">Popolarità</option>
                 <option value="vote_average.desc">Più Votati</option>
                 <option value="primary_release_date.desc">Più Recenti</option>
               </select>
+            </div>
+
+            <div class="filter-group submit-group" style="flex: 0; min-width: 130px; justify-content: flex-end;">
+              <label style="display: block;">&nbsp;</label>
+              <button class="vod-filter-btn" onclick="resetCatalogAndLoad()">
+                <i class="ph ph-magnifying-glass"></i> Cerca
+              </button>
             </div>
           </div>
         </div>
