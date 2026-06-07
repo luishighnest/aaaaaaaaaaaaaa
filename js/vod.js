@@ -802,7 +802,7 @@ async function openModal(item, defaultSeasonNumber = null) {
         }
         loadTvSeasons(item.id, seasonToLoad);
         
-        if (historyItem && historyItem.progress > 0 && historyItem.season && historyItem.episode) {
+        if (historyItem && historyItem.progress > 0 && historyItem.progress < 95 && historyItem.season && historyItem.episode) {
             if (resumeBtn) {
                 resumeBtn.style.display = 'inline-flex';
                 resumeBtn.innerHTML = `<i class="ph-fill ph-play"></i> Riprendi da S${historyItem.season}:E${historyItem.episode}`;
@@ -1568,10 +1568,11 @@ async function loadTvEpisodes(tvId, seasonNumber) {
             }
             
             const canResume = epProgress > 0 && epProgress < 95;
+            const shouldShowResumeState = isLastPlayed && canResume && !isWatched;
             
             const row = document.createElement('div');
             let rowClass = 'vod-episode-row';
-            if (isLastPlayed) {
+            if (shouldShowResumeState) {
                 rowClass += ' last-played';
             } else if (isWatched) {
                 rowClass += ' watched';
@@ -1610,7 +1611,7 @@ async function loadTvEpisodes(tvId, seasonNumber) {
             }
 
             // Badge "Riprendi qui" per l'episodio corrente
-            const resumeBadgeHtml = isLastPlayed
+            const resumeBadgeHtml = shouldShowResumeState
                 ? `<div class="vod-ep-resume-badge"><i class="ph-fill ph-play-circle"></i> Riprendi qui</div>`
                 : '';
 
@@ -1969,7 +1970,7 @@ async function setEpisodeWatchStatus(tvId, seasonNumber, episodeNumber, status) 
         const historyItem = (window.__ACTIVE_PROFILE_VOD_HISTORY__ || []).find(
             x => parseInt(x.id, 10) === tId && x.type === 'tv'
         );
-        if (historyItem && historyItem.progress > 0 && historyItem.season && historyItem.episode) {
+        if (historyItem && historyItem.progress > 0 && historyItem.progress < 95 && historyItem.season && historyItem.episode) {
             resumeBtn.style.display = 'inline-flex';
             resumeBtn.innerHTML = `<i class="ph-fill ph-play"></i> Riprendi da S${historyItem.season}:E${historyItem.episode}`;
             resumeBtn.onclick = () => {
