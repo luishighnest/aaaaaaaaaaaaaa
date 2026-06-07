@@ -243,32 +243,47 @@ if (!isset($_SESSION['active_profile'])) {
     }
     
     .vod-navbar .nav-link {
-      padding: 0.6rem 1rem;
-      border-radius: var(--radius-sm);
+      padding: 0.55rem 1.2rem;
+      border-radius: 11px;
       font-size: 0.8rem;
-      font-weight: 700;
+      font-weight: 800;
       text-transform: uppercase;
-      color: var(--text-primary);
-      white-space: nowrap;
-      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      letter-spacing: 0.6px;
+      color: rgba(255, 255, 255, 0.55);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
       display: flex;
       align-items: center;
-      gap: 0.5rem;
-      border: 1px solid var(--border-subtle);
-      background: rgba(15, 23, 42, 0.35);
+      gap: 0.6rem;
       cursor: pointer;
+      border: 1px solid transparent;
+      background: transparent;
     }
+    
+    .vod-navbar .nav-link i {
+      font-size: 1.05rem;
+      transition: transform 0.3s ease;
+    }
+    
     .vod-navbar .nav-link:hover {
       color: #fff;
-      background: rgba(15, 23, 42, 0.75);
-      border-color: rgba(255, 255, 255, 0.15);
+      background: rgba(255, 255, 255, 0.06);
+      border-color: rgba(255, 255, 255, 0.08);
     }
+    
+    .vod-navbar .nav-link:hover i {
+      transform: translateY(-1px) scale(1.1);
+    }
+    
     .vod-navbar .nav-link.active {
       color: #000;
-      background: var(--accent);
-      font-weight: 700;
+      background: linear-gradient(135deg, var(--accent) 0%, #4facfe 100%);
+      font-weight: 900;
       border-color: var(--accent);
-      box-shadow: 0 4px 15px var(--accent-glow);
+      box-shadow: 0 8px 25px rgba(0, 242, 254, 0.35), inset 0 2px 2px rgba(255, 255, 255, 0.3);
+    }
+    
+    .vod-navbar .nav-link.active i {
+      color: #000;
     }
     
     /* Barra di Ricerca High-End */
