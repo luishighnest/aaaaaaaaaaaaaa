@@ -7,8 +7,26 @@ session_start();
 
 header('Content-Type: application/json');
 
+// Helper per loggare eventi sul server
+function log_backend_debug($message) {
+    $log_file = __DIR__ . '/progress_debug.log';
+    $log_entry = sprintf(
+        "[%s] [SERVER] %s | Session: %s\n",
+        date('Y-m-d H:i:s'),
+        $message,
+        json_encode([
+            'logged_in' => $_SESSION['logged_in'] ?? null,
+            'username' => $_SESSION['username'] ?? null,
+            'active_profile_id' => $_SESSION['active_profile']['id'] ?? null,
+            'csrf_token' => $_SESSION['csrf_token'] ?? null
+        ])
+    );
+    file_put_contents($log_file, $log_entry, FILE_APPEND);
+}
+
 // 1. Verifica autenticazione
 if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
+    log_backend_debug("Autenticazione fallita: utente non loggato in sessione.");
     echo json_encode(['success' => false, 'error' => 'Non autorizzato']);
     exit;
 }
@@ -16,9 +34,12 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
 $input = file_get_contents('php://input');
 $data = json_decode($input, true);
 
+log_backend_debug("Richiesta ricevuta. Input raw: " . $input);
+
 // 2. Protezione anti-CSRF
 $csrf_token = $_SERVER['HTTP_X_CSRF_TOKEN'] ?? $data['csrf_token'] ?? '';
 if (empty($_SESSION['csrf_token']) || !hash_equals($_SESSION['csrf_token'], $csrf_token)) {
+    log_backend_debug("CSRF fallito. Atteso: " . ($_SESSION['csrf_token'] ?? 'none') . " | Ricevuto: " . $csrf_token);
     echo json_encode(['success' => false, 'error' => 'Richiesta non valida (CSRF fallito)']);
     exit;
 }
@@ -26,6 +47,7 @@ if (empty($_SESSION['csrf_token']) || !hash_equals($_SESSION['csrf_token'], $csr
 $username = $_SESSION['username'] ?? '';
 $active_profile = $_SESSION['active_profile'] ?? null;
 if (!$active_profile) {
+    log_backend_debug("Nessun profilo attivo selezionato in sessione.");
     echo json_encode(['success' => false, 'error' => 'Nessun profilo attivo selezionato']);
     exit;
 }
@@ -42,6 +64,7 @@ $progress = isset($data['progress']) ? intval($data['progress']) : 0;
 $seconds = isset($data['seconds']) ? intval($data['seconds']) : 0;
 
 if ($id <= 0 || !in_array($type, ['movie', 'tv']) || empty($title)) {
+    log_backend_debug("Parametri in input non validi. id: $id, type: $type, title: '$title'");
     echo json_encode(['success' => false, 'error' => 'Dati in input non validi']);
     exit;
 }
@@ -121,13 +144,16 @@ foreach ($user_profiles as &$profile) {
 unset($profile);
 
 if (!$found) {
+    log_backend_debug("Profilo non trovato nel database profili: ID " . $profile_id);
     echo json_encode(['success' => false, 'error' => 'Profilo non trovato']);
     exit;
 }
 
 // 4. Scrittura su user_profiles.json
 if (file_put_contents($profiles_file, json_encode($all_profiles, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE))) {
+    log_backend_debug("Scrittura su user_profiles.json avvenuta con successo. Elementi cronologia: " . count($updated_history));
     echo json_encode(['success' => true, 'watch_history' => $updated_history]);
 } else {
+    log_backend_debug("Scrittura su user_profiles.json fallita.");
     echo json_encode(['success' => false, 'error' => 'Impossibile salvare la cronologia nel file']);
 }
