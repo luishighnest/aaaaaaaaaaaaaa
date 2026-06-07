@@ -134,7 +134,7 @@ if (!isset($_SESSION['active_profile'])) {
       margin: 0;
       height: 100vh;
       overflow: hidden;
-      background: #0a0a0a;
+      background: #020617;
       background-image: radial-gradient(circle at top right, rgba(15, 23, 42, 0.5) 0%, transparent 40%),
                         radial-gradient(circle at bottom left, rgba(2, 6, 23, 0.8) 0%, transparent 40%);
       color: var(--text-primary);
@@ -274,8 +274,8 @@ if (!isset($_SESSION['active_profile'])) {
     }
     .vod-navbar .nav-search input {
       width: 100%;
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid var(--border-subtle);
+      background: rgba(15, 23, 42, 0.55);
+      border: 1px solid rgba(255, 255, 255, 0.08);
       border-radius: 99px;
       padding: 0.5rem 2.6rem 0.5rem 2.6rem; /* Padding a destra per fare spazio alla X */
       color: var(--text-primary);
@@ -287,7 +287,7 @@ if (!isset($_SESSION['active_profile'])) {
     }
     .vod-navbar .nav-search input:focus {
       outline: none;
-      background: rgba(0, 0, 0, 0.45);
+      background: rgba(2, 6, 23, 0.85);
       border-color: var(--accent);
       box-shadow: 0 0 0 3px var(--accent-glow), inset 0 2px 4px rgba(0,0,0,0.5);
     }
@@ -328,8 +328,8 @@ if (!isset($_SESSION['active_profile'])) {
       align-items: center;
       gap: 0.4rem;
       padding: 0.45rem 0.9rem;
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.10);
+      background: rgba(15, 23, 42, 0.55);
+      border: 1px solid rgba(255, 255, 255, 0.12);
       border-radius: 99px;
       color: var(--text-secondary);
       font-size: 0.85rem;
@@ -341,7 +341,7 @@ if (!isset($_SESSION['active_profile'])) {
       flex-shrink: 0;
     }
     .vod-back-btn:hover {
-      background: rgba(255, 255, 255, 0.12);
+      background: rgba(15, 23, 42, 0.85);
       color: var(--text-primary);
       border-color: rgba(255, 255, 255, 0.25);
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -890,7 +890,7 @@ if (!isset($_SESSION['active_profile'])) {
     }
     
     .vod-modal-content {
-      background: rgba(15, 23, 42, 0.75);
+      background: rgba(2, 6, 23, 0.88);
       backdrop-filter: blur(30px);
       -webkit-backdrop-filter: blur(30px);
       border: 1px solid rgba(255, 255, 255, 0.08);
@@ -913,7 +913,7 @@ if (!isset($_SESSION['active_profile'])) {
       position: absolute;
       top: 20px;
       right: 20px;
-      background: rgba(255, 255, 255, 0.03);
+      background: rgba(15, 23, 42, 0.55);
       border: 1px solid rgba(255, 255, 255, 0.08);
       color: var(--text-secondary);
       width: 40px;
@@ -1182,8 +1182,8 @@ if (!isset($_SESSION['active_profile'])) {
 
     /* Serie TV Stagioni ed Episodi */
     #vod-season-select {
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid var(--border-subtle);
+      background: rgba(15, 23, 42, 0.55);
+      border: 1px solid rgba(255, 255, 255, 0.08);
       border-radius: 8px;
       padding: 0.55rem 2.2rem 0.55rem 1rem;
       color: var(--text-primary);
@@ -1204,7 +1204,7 @@ if (!isset($_SESSION['active_profile'])) {
       min-width: 140px;
     }
     #vod-season-select:hover {
-      background-color: rgba(255, 255, 255, 0.08);
+      background-color: rgba(15, 23, 42, 0.85);
       border-color: rgba(255, 255, 255, 0.2);
       transform: translateY(-1px);
     }
@@ -1213,7 +1213,7 @@ if (!isset($_SESSION['active_profile'])) {
       box-shadow: 0 0 15px var(--accent-glow);
     }
     #vod-season-select option {
-      background: #0f172a;
+      background: #020617;
       color: #fff;
       font-weight: 600;
       padding: 10px;
@@ -1235,14 +1235,14 @@ if (!isset($_SESSION['active_profile'])) {
       justify-content: space-between;
       gap: 15px;
       padding: 0.8rem 1.2rem;
-      background: rgba(255, 255, 255, 0.02);
+      background: rgba(15, 23, 42, 0.25);
       border: 1px solid rgba(255, 255, 255, 0.04);
       border-radius: 12px;
       transition: var(--transition);
       cursor: pointer;
     }
      .vod-episode-row:hover {
-      background: rgba(255, 255, 255, 0.06);
+      background: rgba(15, 23, 42, 0.55);
       border-color: rgba(255, 255, 255, 0.1);
       transform: translateX(4px);
     }
@@ -1253,7 +1253,7 @@ if (!isset($_SESSION['active_profile'])) {
       opacity: 1;
     }
     .vod-episode-row.last-played {
-      background: rgba(255, 255, 255, 0.04);
+      background: rgba(15, 23, 42, 0.40);
       border-color: var(--accent);
     }
     .vod-episode-info {
