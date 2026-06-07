@@ -831,108 +831,81 @@ if (!isset($_SESSION['active_profile'])) {
       transform: translateY(-50%) scale(0.92);
     }
 
-    /* Poster Card Premium Optimized */
+    /* Poster Card Minimalist Premium */
     .vod-card {
       position: relative;
-      border-radius: 14px;
+      border-radius: 12px;
       overflow: hidden;
       cursor: pointer;
-      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-      background: #0f172a;
+      transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+      background: #000;
       flex-shrink: 0;
-      border: 1px solid rgba(255, 255, 255, 0.05);
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.03);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
     }
     
-    /* Overlay Superiore per leggibilità badge */
+    /* Overlay Superiore Soft per badge */
     .vod-card::before {
       content: '';
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
-      height: 40%;
-      background: linear-gradient(to bottom, rgba(2, 6, 23, 0.6) 0%, transparent 100%);
+      height: 35%;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, transparent 100%);
       z-index: 2;
-      opacity: 0.8;
+      opacity: 0.6;
       transition: opacity 0.4s ease;
     }
-    .vod-card:hover::before {
-      opacity: 1;
-    }
+
     .vod-card.landscape { width: 280px; aspect-ratio: 16 / 9; }
     .vod-card.portrait { width: 160px; aspect-ratio: 2 / 3; }
     
-    /* Effetto Riflesso di Luce (Shine) */
-    .vod-card::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -150%;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(
-        90deg,
-        transparent,
-        rgba(255, 255, 255, 0.1),
-        transparent
-      );
-      transform: skewX(-25deg);
-      transition: left 0.7s cubic-bezier(0.16, 1, 0.3, 1);
-      z-index: 5;
-      pointer-events: none;
+    .vod-card:hover { 
+      transform: scale(1.05) translateY(-5px);
+      z-index: 50;
+      border-color: rgba(255, 255, 255, 0.15);
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.8);
     }
     
-    .vod-card:hover::after {
-      left: 150%;
-    }
-
-    .vod-card:hover { 
-      transform: scale(1.06) translateY(-8px);
-      z-index: 50;
-      border-color: var(--accent);
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7), 0 0 25px var(--accent-glow);
-    }
     .vod-card img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       display: block;
-      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+      transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), filter 0.8s ease;
+      filter: brightness(0.9);
     }
+    
     .vod-card:hover img {
-      transform: scale(1.12);
-      filter: brightness(1.1);
+      transform: scale(1.08);
+      filter: brightness(1);
     }
     
     .vod-card-badge {
       position: absolute;
-      top: 10px;
-      right: 10px;
-      background: rgba(10, 10, 15, 0.65);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      padding: 4px 10px;
-      border-radius: 8px;
-      border: 1px solid rgba(255, 255, 255, 0.12);
+      top: 12px;
+      right: 12px;
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      padding: 4px 8px;
+      border-radius: 6px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
       color: #fbbf24;
-      font-weight: 800;
-      font-size: 0.78rem;
+      font-weight: 700;
+      font-size: 0.72rem;
       display: flex;
       align-items: center;
-      gap: 5px;
+      gap: 4px;
       z-index: 10;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-      transition: transform 0.3s ease;
-    }
-    .vod-card:hover .vod-card-badge {
-      transform: scale(1.1);
+      transition: all 0.3s ease;
     }
 
     .vod-card-overlay {
       position: absolute;
       inset: 0;
-      background: linear-gradient(to top, rgba(2, 6, 23, 0.98) 0%, rgba(2, 6, 23, 0.4) 50%, transparent 100%);
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.2) 60%, transparent 100%);
       padding: 16px;
       display: flex;
       flex-direction: column;
@@ -940,27 +913,27 @@ if (!isset($_SESSION['active_profile'])) {
       opacity: 0;
       transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
       z-index: 6;
-      backdrop-filter: blur(2px);
-      -webkit-backdrop-filter: blur(2px);
     }
+    
     .vod-card:hover .vod-card-overlay {
       opacity: 1;
     }
+    
     .vod-card-title {
-      font-weight: 800;
-      font-size: 0.95rem;
+      font-weight: 700;
+      font-size: 0.9rem;
       color: #fff;
       line-height: 1.2;
       text-align: left;
-      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
       font-family: var(--font-main);
       display: -webkit-box;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
       overflow: hidden;
-      transform: translateY(10px);
+      transform: translateY(8px);
       transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     }
+    
     .vod-card:hover .vod-card-title {
       transform: translateY(0);
     }
@@ -970,147 +943,95 @@ if (!isset($_SESSION['active_profile'])) {
       gap: 8px;
       justify-content: flex-start;
       margin-top: 12px;
-      transform: translateY(15px);
+      transform: translateY(12px);
       opacity: 0;
-      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0.05s;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     }
+    
     .vod-card:hover .vod-card-actions {
       transform: translateY(0);
       opacity: 1;
     }
     
     .vod-card-btn {
-      width: 32px;
-      height: 32px;
+      width: 30px;
+      height: 30px;
       border-radius: 50%;
       background: rgba(255, 255, 255, 0.1);
-      border: 1px solid rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.1);
       color: #fff;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      font-size: 1rem;
+      font-size: 0.9rem;
       cursor: pointer;
-      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      transition: all 0.2s ease;
       backdrop-filter: blur(8px);
       -webkit-backdrop-filter: blur(8px);
-      padding: 0;
     }
     
     .vod-card-btn:hover {
       background: #fff;
       color: #000;
-      border-color: #fff;
-      transform: scale(1.15);
-      box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+      transform: scale(1.1);
     }
     
     .vod-card-btn.play {
-      background: var(--accent);
-      color: #000;
-      border-color: var(--accent);
-      box-shadow: 0 0 10px var(--accent-glow);
-    }
-    .vod-card-btn.play:hover {
       background: #fff;
-      box-shadow: 0 0 20px var(--accent-glow);
+      color: #000;
+      border: none;
     }
     
     .vod-card-btn.fav i {
       color: var(--danger);
     }
 
-    /* Episode Badge sulla Card (Serie TV) - Extreme Polish */
+    /* Episode Badge sulla Card (Serie TV) - Minimalist */
     .vod-card-episode-badge {
       position: absolute;
-      top: 14px;
-      left: 14px;
-      background: rgba(15, 23, 42, 0.6);
-      backdrop-filter: blur(16px) saturate(1.8);
-      -webkit-backdrop-filter: blur(16px) saturate(1.8);
+      top: 12px;
+      left: 12px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
       color: #fff;
-      padding: 6px 12px;
-      border-radius: 10px;
-      font-size: 0.7rem;
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-size: 0.65rem;
       font-weight: 800;
       z-index: 10;
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.1);
       display: flex;
       align-items: center;
-      gap: 8px;
-      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    
-    .badge-label-resume {
-      max-width: 0;
-      overflow: hidden;
-      white-space: nowrap;
-      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-      opacity: 0;
-      font-size: 0.65rem;
-      color: var(--accent);
+      gap: 5px;
       text-transform: uppercase;
-      letter-spacing: 1px;
+      letter-spacing: 0.5px;
     }
     
-    .vod-card:hover .badge-label-resume {
-      max-width: 80px;
-      opacity: 1;
-      margin-left: 2px;
-    }
-
     .vod-card-episode-badge i {
-      font-size: 0.9rem;
-      color: var(--accent);
-      filter: drop-shadow(0 0 5px var(--accent-glow));
-      animation: badge-pulse 2s infinite;
-    }
-    
-    @keyframes badge-pulse {
-      0% { transform: scale(1); opacity: 1; }
-      50% { transform: scale(1.2); opacity: 0.8; }
-      100% { transform: scale(1); opacity: 1; }
+      font-size: 0.8rem;
+      color: #fff;
     }
 
-    .vod-card:hover .vod-card-episode-badge {
-      transform: scale(1.1);
-      background: rgba(15, 23, 42, 0.85);
-      border-color: var(--accent);
-      box-shadow: 0 0 20px var(--accent-glow);
-    }
-
-    /* Floating HUD Progress Bar */
+    /* Minimalist Integrated Progress Bar */
     .vod-card-progress-container {
       position: absolute;
-      bottom: 12px;
-      left: 12px;
-      right: 12px;
-      height: 4px;
-      background: rgba(15, 23, 42, 0.6);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      border-radius: 10px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: rgba(255, 255, 255, 0.1);
       z-index: 15;
-      overflow: hidden;
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     }
     
     .vod-card-progress-bar {
       height: 100%;
-      background: linear-gradient(90deg, var(--accent), #4facfe);
-      box-shadow: 0 0 15px var(--accent-glow);
+      background: var(--accent);
       transition: width 0.3s ease;
-      position: relative;
-      border-radius: 10px;
     }
     
     .vod-card:hover .vod-card-progress-container {
-      bottom: 14px;
-      height: 6px;
-      background: rgba(15, 23, 42, 0.8);
-      box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+      height: 3px;
     }
 
     
