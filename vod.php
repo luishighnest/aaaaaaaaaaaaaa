@@ -1020,73 +1020,97 @@ if (!isset($_SESSION['active_profile'])) {
       color: var(--danger);
     }
 
-    /* Episode Badge sulla Card (Serie TV) - Redesign Premium */
+    /* Episode Badge sulla Card (Serie TV) - Extreme Polish */
     .vod-card-episode-badge {
       position: absolute;
-      top: 12px;
-      left: 12px;
-      background: rgba(2, 6, 23, 0.7);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
+      top: 14px;
+      left: 14px;
+      background: rgba(15, 23, 42, 0.6);
+      backdrop-filter: blur(16px) saturate(1.8);
+      -webkit-backdrop-filter: blur(16px) saturate(1.8);
       color: #fff;
-      padding: 5px 10px;
-      border-radius: 8px;
-      font-size: 0.65rem;
-      font-weight: 900;
+      padding: 6px 12px;
+      border-radius: 10px;
+      font-size: 0.7rem;
+      font-weight: 800;
       z-index: 10;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-left: 3px solid var(--accent);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-      text-transform: uppercase;
-      letter-spacing: 0.8px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
       display: flex;
       align-items: center;
-      gap: 6px;
-      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      gap: 8px;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     }
-    .vod-card-episode-badge i {
-      font-size: 0.85rem;
+    
+    .badge-label-resume {
+      max-width: 0;
+      overflow: hidden;
+      white-space: nowrap;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      opacity: 0;
+      font-size: 0.65rem;
       color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
-    .vod-card:hover .vod-card-episode-badge {
-      transform: scale(1.05) translateX(3px);
-      background: rgba(2, 6, 23, 0.9);
-      border-color: rgba(0, 242, 254, 0.3);
+    
+    .vod-card:hover .badge-label-resume {
+      max-width: 80px;
+      opacity: 1;
+      margin-left: 2px;
     }
 
-    /* Progress Bar sulla Card Premium - Refined */
+    .vod-card-episode-badge i {
+      font-size: 0.9rem;
+      color: var(--accent);
+      filter: drop-shadow(0 0 5px var(--accent-glow));
+      animation: badge-pulse 2s infinite;
+    }
+    
+    @keyframes badge-pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.2); opacity: 0.8; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    .vod-card:hover .vod-card-episode-badge {
+      transform: scale(1.1);
+      background: rgba(15, 23, 42, 0.85);
+      border-color: var(--accent);
+      box-shadow: 0 0 20px var(--accent-glow);
+    }
+
+    /* Floating HUD Progress Bar */
     .vod-card-progress-container {
       position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 3px;
-      background: rgba(255, 255, 255, 0.08);
+      bottom: 12px;
+      left: 12px;
+      right: 12px;
+      height: 4px;
+      background: rgba(15, 23, 42, 0.6);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border-radius: 10px;
       z-index: 15;
       overflow: hidden;
-      transition: height 0.3s ease;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     }
+    
     .vod-card-progress-bar {
       height: 100%;
-      background: var(--accent);
+      background: linear-gradient(90deg, var(--accent), #4facfe);
       box-shadow: 0 0 15px var(--accent-glow);
       transition: width 0.3s ease;
       position: relative;
+      border-radius: 10px;
     }
-    /* Effetto glow sulla punta della barra di progresso */
-    .vod-card-progress-bar::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 4px;
-      height: 100%;
-      background: #fff;
-      box-shadow: 0 0 10px #fff, 0 0 20px var(--accent);
-      filter: blur(1px);
-    }
+    
     .vod-card:hover .vod-card-progress-container {
-      height: 5px;
+      bottom: 14px;
+      height: 6px;
+      background: rgba(15, 23, 42, 0.8);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.4);
     }
 
     
