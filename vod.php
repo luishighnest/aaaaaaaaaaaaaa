@@ -823,18 +823,35 @@ if (!isset($_SESSION['active_profile'])) {
       transform: translateY(-50%) scale(0.92);
     }
 
-    /* Poster Card Premium */
+    /* Poster Card Premium Optimized */
     .vod-card {
       position: relative;
       border-radius: 14px;
       overflow: hidden;
       cursor: pointer;
-      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      transition: all 0.45s cubic-bezier(0.2, 1, 0.3, 1);
       background: #0f172a;
       flex-shrink: 0;
       border: 1px solid rgba(255, 255, 255, 0.05);
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
       isolation: isolate;
+    }
+    
+    /* Overlay Superiore per leggibilità badge */
+    .vod-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 40%;
+      background: linear-gradient(to bottom, rgba(2, 6, 23, 0.6) 0%, transparent 100%);
+      z-index: 2;
+      opacity: 0.8;
+      transition: opacity 0.4s ease;
+    }
+    .vod-card:hover::before {
+      opacity: 1;
     }
     .vod-card.landscape { width: 280px; aspect-ratio: 16 / 9; }
     .vod-card.portrait { width: 160px; aspect-ratio: 2 / 3; }
