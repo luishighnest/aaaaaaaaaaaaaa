@@ -344,6 +344,7 @@ async function initHero(item) {
     
     const heroSection = document.getElementById('vod-hero-banner');
     const heroBackdrop = document.getElementById('vod-hero-backdrop');
+    const heroPoster = document.getElementById('vod-hero-poster');
     const heroRating = document.getElementById('vod-hero-rating');
     const heroYear = document.getElementById('vod-hero-year');
     const heroType = document.getElementById('vod-hero-type');
@@ -356,6 +357,15 @@ async function initHero(item) {
         heroBackdrop.src = `https://image.tmdb.org/t/p/original${item.backdrop_path}`;
     } else {
         heroBackdrop.src = 'https://via.placeholder.com/1920x1080?text=No+Backdrop';
+    }
+
+    if (heroPoster) {
+        if (item.poster_path) {
+            heroPoster.src = `https://image.tmdb.org/t/p/w500${item.poster_path}`;
+            heroPoster.parentElement.style.display = 'flex';
+        } else {
+            heroPoster.parentElement.style.display = 'none';
+        }
     }
     
     heroRating.innerHTML = `<i class="ph-fill ph-star"></i> ${rating}`;
@@ -612,6 +622,13 @@ function getPreviousProgress(id, type, season = null, episode = null) {
     const found = history.find(x => parseInt(x.id, 10) === parseInt(id, 10) && x.type === type);
     if (found) {
         if (type === 'tv') {
+            if (found.watched_episodes) {
+                const epKey = `${season}_${episode}`;
+                const epData = found.watched_episodes[epKey];
+                if (epData !== undefined && epData !== null) {
+                    return (typeof epData === 'object') ? (parseInt(epData.progress, 10) || 0) : (parseInt(epData, 10) || 0);
+                }
+            }
             if (parseInt(found.season, 10) === parseInt(season, 10) && parseInt(found.episode, 10) === parseInt(episode, 10)) {
                 return parseInt(found.progress, 10) || 0;
             }
@@ -627,6 +644,13 @@ function getPreviousSeconds(id, type, season = null, episode = null) {
     const found = history.find(x => parseInt(x.id, 10) === parseInt(id, 10) && x.type === type);
     if (found) {
         if (type === 'tv') {
+            if (found.watched_episodes) {
+                const epKey = `${season}_${episode}`;
+                const epData = found.watched_episodes[epKey];
+                if (epData !== undefined && epData !== null && typeof epData === 'object') {
+                    return parseInt(epData.seconds, 10) || 0;
+                }
+            }
             if (parseInt(found.season, 10) === parseInt(season, 10) && parseInt(found.episode, 10) === parseInt(episode, 10)) {
                 return parseInt(found.seconds, 10) || 0;
             }
@@ -817,7 +841,10 @@ async function sendProgressPayload(context, seconds, progress, isCompleted = fal
     }
     if (context.type === 'tv') {
         const key = `${context.season}_${context.episode}`;
-        watched_episodes[key] = finalProgress;
+        watched_episodes[key] = {
+            progress: finalProgress,
+            seconds: Math.round(finalSeconds)
+        };
     }
 
     const localItem = {
@@ -1219,19 +1246,39 @@ async function loadTvEpisodes(tvId, seasonNumber) {
                                  parseInt(historyItem.episode, 10) === parseInt(ep.episode_number, 10);
             
             const epKey = `${seasonNumber}_${ep.episode_number}`;
+            let epProgress = 0;
+            let epSeconds = 0;
             let isWatched = false;
             
             if (historyItem) {
-                const hasWatchedMap = historyItem.watched_episodes !== undefined && historyItem.watched_episodes !== null;
-                
-                if (hasWatchedMap) {
-                    isWatched = historyItem.watched_episodes[epKey] !== undefined && 
-                                parseInt(historyItem.watched_episodes[epKey], 10) >= 90;
+                // Determine watch/progress state
+                if (historyItem.watched_episodes && historyItem.watched_episodes[epKey] !== undefined) {
+                    const epData = historyItem.watched_episodes[epKey];
+                    if (epData && typeof epData === 'object') {
+                        epProgress = parseInt(epData.progress, 10) || 0;
+                        epSeconds = parseInt(epData.seconds, 10) || 0;
+                    } else {
+                        epProgress = parseInt(epData, 10) || 0;
+                    }
+                    isWatched = epProgress >= 90;
                 } else {
-                    isWatched = parseInt(seasonNumber, 10) < parseInt(historyItem.season, 10) ||
-                        (parseInt(seasonNumber, 10) === parseInt(historyItem.season, 10) && parseInt(ep.episode_number, 10) < parseInt(historyItem.episode, 10));
+                    // Fallback to sequential migration/history compatibility
+                    const hasWatchedMap = historyItem.watched_episodes !== undefined && historyItem.watched_episodes !== null;
+                    if (hasWatchedMap) {
+                        isWatched = false;
+                    } else {
+                        isWatched = parseInt(seasonNumber, 10) < parseInt(historyItem.season, 10) ||
+                            (parseInt(seasonNumber, 10) === parseInt(historyItem.season, 10) && parseInt(ep.episode_number, 10) < parseInt(historyItem.episode, 10));
+                    }
+                    if (isLastPlayed) {
+                        epProgress = parseInt(historyItem.progress, 10) || 0;
+                        epSeconds = parseInt(historyItem.seconds, 10) || 0;
+                        isWatched = isWatched || epProgress >= 90;
+                    }
                 }
             }
+            
+            const canResume = epProgress > 0 && epProgress < 95;
             
             const row = document.createElement('div');
             let rowClass = 'vod-episode-row';
@@ -1243,13 +1290,13 @@ async function loadTvEpisodes(tvId, seasonNumber) {
             row.className = rowClass;
             
             let progressHtml = '';
-            if (isLastPlayed && historyItem.progress > 0) {
+            if (epProgress > 0 && !isWatched) {
                 progressHtml = `
                     <div style="font-size: 0.75rem; color: var(--accent); font-weight: 600; margin-top: 4px; display: flex; align-items: center; gap: 8px;">
                         <span style="display:inline-block; width: 60px; height: 4px; background: rgba(255,255,255,0.2); border-radius: 2px; overflow:hidden;">
-                            <span style="display:block; width: ${historyItem.progress}%; height: 100%; background: var(--accent);"></span>
+                            <span style="display:block; width: ${epProgress}%; height: 100%; background: var(--accent);"></span>
                         </span>
-                        <span>${historyItem.progress}% completato</span>
+                        <span>${epProgress}% completato</span>
                     </div>
                 `;
             }
@@ -1280,13 +1327,13 @@ async function loadTvEpisodes(tvId, seasonNumber) {
             `;
             
             row.onclick = () => {
-                playShowEpisode(tvId, seasonNumber, ep.episode_number, isLastPlayed);
+                playShowEpisode(tvId, seasonNumber, ep.episode_number, canResume);
             };
             
             const playBtn = row.querySelector('.vod-episode-play-btn');
             playBtn.onclick = (e) => {
                 e.stopPropagation();
-                playShowEpisode(tvId, seasonNumber, ep.episode_number, isLastPlayed);
+                playShowEpisode(tvId, seasonNumber, ep.episode_number, canResume);
             };
             
             const statusBtn = row.querySelector('.vod-episode-status-btn');
@@ -1484,7 +1531,7 @@ async function setEpisodeWatchStatus(tvId, seasonNumber, episodeNumber, status) 
     
     // Applica le modifiche in base al comando
     if (status === 'watched') {
-        watched_episodes[epKey] = 100;
+        watched_episodes[epKey] = { progress: 100, seconds: 0 };
     } else if (status === 'unwatched') {
         delete watched_episodes[epKey];
     } else if (status === 'up_to_here') {
@@ -1494,18 +1541,18 @@ async function setEpisodeWatchStatus(tvId, seasonNumber, episodeNumber, status) 
                 if (curSNum < sNum) {
                     const count = parseInt(season.episode_count, 10) || 0;
                     for (let i = 1; i <= count; i++) {
-                        watched_episodes[`${curSNum}_${i}`] = 100;
+                        watched_episodes[`${curSNum}_${i}`] = { progress: 100, seconds: 0 };
                     }
                 } else if (curSNum === sNum) {
                     for (let i = 1; i <= eNum; i++) {
-                        watched_episodes[`${curSNum}_${i}`] = 100;
+                        watched_episodes[`${curSNum}_${i}`] = { progress: 100, seconds: 0 };
                     }
                 }
             });
         } else {
             // Fallback se non abbiamo i dettagli TMDB
             for (let i = 1; i <= eNum; i++) {
-                watched_episodes[`${sNum}_${i}`] = 100;
+                watched_episodes[`${sNum}_${i}`] = { progress: 100, seconds: 0 };
             }
         }
     }
@@ -1528,7 +1575,9 @@ async function setEpisodeWatchStatus(tvId, seasonNumber, episodeNumber, status) 
         let maxSeason = 0;
         let maxEpisode = 0;
         for (const key in watched_episodes) {
-            if (watched_episodes[key] >= 90) {
+            const epData = watched_episodes[key];
+            const prog = (epData && typeof epData === 'object') ? (epData.progress || 0) : parseInt(epData, 10);
+            if (prog >= 90) {
                 const [s, ep] = key.split('_').map(Number);
                 if (s > maxSeason || (s === maxSeason && ep > maxEpisode)) {
                     maxSeason = s;
@@ -1552,7 +1601,8 @@ async function setEpisodeWatchStatus(tvId, seasonNumber, episodeNumber, status) 
                 if (s > anySeason || (s === anySeason && ep > anyEpisode)) {
                     anySeason = s;
                     anyEpisode = ep;
-                    anyProgress = watched_episodes[key];
+                    const epData = watched_episodes[key];
+                    anyProgress = (epData && typeof epData === 'object') ? (epData.progress || 0) : parseInt(epData, 10);
                 }
             }
             targetSeason = anySeason;
@@ -1995,14 +2045,14 @@ async function handleEpisodeEnded() {
     
     // Segna l'episodio corrente come completato (100)
     const completedKey = `${context.season}_${context.episode}`;
-    watched_episodes[completedKey] = 100;
+    watched_episodes[completedKey] = { progress: 100, seconds: 0 };
     
     if (window.__NEXT_EPISODE__) {
         const next = window.__NEXT_EPISODE__;
         
         // Segna anche il prossimo episodio a 0% progress nella mappa localmente per evitare salti visivi
         const nextKey = `${next.season}_${next.episode}`;
-        watched_episodes[nextKey] = 0;
+        watched_episodes[nextKey] = { progress: 0, seconds: 0 };
         
         // Aggiorna la cache locale immediatamente
         const localItem = {
