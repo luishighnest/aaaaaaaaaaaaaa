@@ -1129,14 +1129,9 @@ if (!isset($_SESSION['active_profile'])) {
     }
     
     .vod-modal-topbar {
-      position: sticky;
-      top: 0;
-      z-index: 5;
       display: flex;
       justify-content: flex-end;
-      margin: -1rem -1rem 0.25rem -1rem;
-      padding: 0.25rem 0.25rem 0.45rem 1rem;
-      background: linear-gradient(to bottom, rgba(2, 6, 23, 0.96), rgba(2, 6, 23, 0.72) 72%, rgba(2, 6, 23, 0));
+      margin: -1rem -1rem -0.25rem 0;
       pointer-events: none;
     }
     .vod-modal-close {
@@ -1162,7 +1157,7 @@ if (!isset($_SESSION['active_profile'])) {
       color: var(--accent);
       border-color: rgba(255, 255, 255, 0.22);
       transform: translateY(-1px);
-      box-shadow: 0 14px 32px rgba(0, 0, 0, 0.36), 0 0 18px var(--accent-glow);
+      box-shadow: 0 14px 32px rgba(0, 0, 0, 0.36);
     }
     .vod-modal-close:active {
       transform: scale(0.96);
@@ -1487,14 +1482,11 @@ if (!isset($_SESSION['active_profile'])) {
     }
     .vod-episode-row.last-played {
       background: rgba(15, 23, 42, 0.45);
-      border-color: var(--accent);
-      box-shadow: 0 0 0 1px var(--accent-glow);
-      animation: ep-last-played-pulse 2.5s ease-in-out 1;
+      border-color: rgba(255, 255, 255, 0.12);
+      box-shadow: inset 3px 0 0 var(--accent);
     }
     @keyframes ep-last-played-pulse {
-      0%   { box-shadow: 0 0 0 1px var(--accent-glow), 0 0 0px 0px var(--accent-glow); }
-      40%  { box-shadow: 0 0 0 1px var(--accent-glow), 0 0 20px 6px var(--accent-glow); }
-      100% { box-shadow: 0 0 0 1px var(--accent-glow); }
+      0%, 100% { box-shadow: inset 3px 0 0 var(--accent); }
     }
 
     /* Badge "Riprendi qui" */
