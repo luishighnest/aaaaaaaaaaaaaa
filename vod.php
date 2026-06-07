@@ -736,16 +736,23 @@ if (!isset($_SESSION['active_profile'])) {
 
     /* Stile Righe Netflix */
     .vod-row-container {
-      margin-bottom: 2.5rem;
+      margin-bottom: 1.5rem;
       padding-left: 0;
-      position: relative; /* per posizionare le frecce assolute */
+      position: relative; 
+      z-index: 1;
+      transition: z-index 0.3s step-end;
+    }
+    
+    .vod-row-container:hover {
+      z-index: 100;
+      transition: z-index 0s;
     }
     
     .vod-row-title { 
       font-size: 1.35rem;
       font-weight: 800;
       color: var(--text-primary);
-      margin-bottom: 15px; 
+      margin-bottom: 5px; 
       display: flex;
       align-items: center;
       gap: 10px;
@@ -767,8 +774,9 @@ if (!isset($_SESSION['active_profile'])) {
       display: flex;
       gap: 20px;
       overflow-x: hidden; /* Annulla lo scrolling orizzontale manuale */
-      padding: 10px 40px 20px 40px;
+      padding: 45px 40px 45px 40px;
       scroll-behavior: smooth;
+      margin-top: -15px;
     }
     
     /* Frecce di navigazione per le righe */
@@ -829,12 +837,11 @@ if (!isset($_SESSION['active_profile'])) {
       border-radius: 14px;
       overflow: hidden;
       cursor: pointer;
-      transition: all 0.45s cubic-bezier(0.2, 1, 0.3, 1);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
       background: #0f172a;
       flex-shrink: 0;
       border: 1px solid rgba(255, 255, 255, 0.05);
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-      isolation: isolate;
     }
     
     /* Overlay Superiore per leggibilità badge */
