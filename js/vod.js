@@ -192,16 +192,54 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 500);
     });
 
-    // Gestione scorrimento infinito per il Catalogo
+    // Gestione scorrimento infinito per il Catalogo e animazione show/hide della navbar
     const scrollArea = document.getElementById('dash-main');
+    const navbar = document.querySelector('.vod-navbar');
+    let lastScrollTop = 0;
+    
     if (scrollArea) {
         scrollArea.addEventListener('scroll', () => {
+            const scrollTop = scrollArea.scrollTop;
+            
+            // 1. Scorrimento infinito per il Catalogo
             if (currentSection === 'catalog' && !isLoadingCatalog) {
                 const nearBottom = scrollArea.scrollHeight - scrollArea.scrollTop - scrollArea.clientHeight < 300;
                 if (nearBottom) {
                     loadNextCatalogPage();
                 }
             }
+            
+            // 2. Show/Hide navbar con animazione e gestione scrolled
+            if (navbar) {
+                const heroBanner = document.querySelector('.vod-hero-banner');
+                let threshold = 300;
+                if (heroBanner && heroBanner.offsetHeight) {
+                    threshold = heroBanner.offsetHeight - 72; // altezza navbar
+                }
+                
+                // Toggle classe scrolled per sfondo/blur
+                if (scrollTop > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+                
+                // Animazione nascondi/mostra
+                if (scrollTop > threshold) {
+                    if (scrollTop > lastScrollTop) {
+                        // Scroll verso il basso: nascondi
+                        navbar.classList.add('nav-hidden');
+                    } else {
+                        // Scroll verso l'alto: mostra
+                        navbar.classList.remove('nav-hidden');
+                    }
+                } else {
+                    // Sopra la soglia del banner: sempre visibile
+                    navbar.classList.remove('nav-hidden');
+                }
+            }
+            
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
         });
     }
 });
@@ -1621,12 +1659,36 @@ async function setEpisodeWatchStatus(tvId, seasonNumber, episodeNumber, status) 
     
     renderContinueWatching();
     
-    // Ricarica subito la visualizzazione degli episodi
-    loadTvEpisodes(tvId, seasonNumber);
+    // Salva la posizione dello scroll per evitare che la pagina ritorni in alto
+    const modalInfo = document.querySelector('.vod-modal-info');
+    const scrollPos = modalInfo ? modalInfo.scrollTop : 0;
     
-    // Aggiorna la modale principale per mantenere lo stato allineato
-    if (window.__CURRENT_MODAL_ITEM__) {
-        openModal(window.__CURRENT_MODAL_ITEM__, seasonNumber);
+    // Ricarica subito la visualizzazione degli episodi
+    await loadTvEpisodes(tvId, seasonNumber);
+    
+    // Ripristina la posizione dello scroll
+    if (modalInfo) {
+        modalInfo.scrollTop = scrollPos;
+    }
+    
+    // Aggiorna il pulsante "Riprendi" del modal se necessario senza ricaricare l'intera modale
+    const playBtn = document.getElementById('vod-modal-play-btn');
+    const resumeBtn = document.getElementById('vod-modal-resume-btn');
+    if (playBtn && resumeBtn) {
+        const historyItem = (window.__ACTIVE_PROFILE_VOD_HISTORY__ || []).find(
+            x => parseInt(x.id, 10) === tId && x.type === 'tv'
+        );
+        if (historyItem && historyItem.progress > 0 && historyItem.season && historyItem.episode) {
+            resumeBtn.style.display = 'inline-flex';
+            resumeBtn.innerHTML = `<i class="ph-fill ph-play"></i> Riprendi da S${historyItem.season}:E${historyItem.episode}`;
+            resumeBtn.onclick = () => {
+                playShowEpisode(tvId, historyItem.season, historyItem.episode, true);
+            };
+            playBtn.style.display = 'none';
+        } else {
+            resumeBtn.style.display = 'none';
+            playBtn.style.display = 'inline-flex';
+        }
     }
     
     // Invia la richiesta al server per sincronizzare
