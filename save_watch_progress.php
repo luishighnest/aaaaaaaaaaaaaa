@@ -62,8 +62,10 @@ $season = isset($data['season']) ? intval($data['season']) : 0;
 $episode = isset($data['episode']) ? intval($data['episode']) : 0;
 $progress = isset($data['progress']) ? intval($data['progress']) : 0;
 $seconds = isset($data['seconds']) ? intval($data['seconds']) : 0;
+$watched_episodes = isset($data['watched_episodes']) ? $data['watched_episodes'] : null;
+$delete = isset($data['delete']) ? (bool)$data['delete'] : false;
 
-if ($id <= 0 || !in_array($type, ['movie', 'tv']) || empty($title)) {
+if ($id <= 0 || !in_array($type, ['movie', 'tv']) || (empty($title) && !$delete)) {
     log_backend_debug("Parametri in input non validi. id: $id, type: $type, title: '$title'");
     echo json_encode(['success' => false, 'error' => 'Dati in input non validi']);
     exit;
@@ -104,6 +106,21 @@ foreach ($user_profiles as &$profile) {
                 break;
             }
         }
+
+        if ($delete) {
+            if ($found_index !== -1) {
+                array_splice($profile['watch_history'], $found_index, 1);
+            }
+            $updated_history = $profile['watch_history'];
+            $_SESSION['active_profile'] = $profile;
+            break;
+        }
+        
+        // Se c'è un'istanza esistente, preserviamo il suo watched_episodes se non ne passiamo uno nuovo
+        $existing_watched = null;
+        if ($found_index !== -1 && isset($profile['watch_history'][$found_index]['watched_episodes'])) {
+            $existing_watched = $profile['watch_history'][$found_index]['watched_episodes'];
+        }
         
         // Crea l'oggetto cronologia
         $history_item = [
@@ -119,6 +136,24 @@ foreach ($user_profiles as &$profile) {
         if ($type === 'tv') {
             $history_item['season'] = $season;
             $history_item['episode'] = $episode;
+            
+            if ($watched_episodes !== null && is_array($watched_episodes)) {
+                $history_item['watched_episodes'] = $watched_episodes;
+            } else {
+                // Se non c'è, inizializziamo o usiamo quello esistente
+                $history_item['watched_episodes'] = $existing_watched ?? new stdClass();
+            }
+            
+            // Se stiamo salvando un progresso normale da riproduzione (quindi non stiamo passando un watched_episodes esplicito),
+            // registriamo il progresso dell'episodio corrente in watched_episodes
+            if ($watched_episodes === null) {
+                // stdClass non supporta l'assegnazione con array style se non convertito, quindi trattiamolo come array
+                if (is_object($history_item['watched_episodes'])) {
+                    $history_item['watched_episodes'] = (array)$history_item['watched_episodes'];
+                }
+                $key = "{$season}_{$episode}";
+                $history_item['watched_episodes'][$key] = $progress;
+            }
         }
         
         if ($found_index !== -1) {

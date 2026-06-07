@@ -1283,8 +1283,7 @@ if (!isset($_SESSION['active_profile'])) {
       gap: 8px;
       flex-shrink: 0;
     }
-    .vod-episode-play-btn,
-    .vod-episode-status-btn {
+    .vod-episode-play-btn {
       width: 36px;
       height: 36px;
       background: rgba(255, 255, 255, 0.05);
@@ -1301,7 +1300,20 @@ if (!isset($_SESSION['active_profile'])) {
       outline: none;
     }
     .vod-episode-status-btn {
-      color: var(--text-secondary);
+      width: 28px;
+      height: 28px;
+      background: transparent;
+      border: none;
+      color: rgba(255, 255, 255, 0.4);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: var(--transition);
+      flex-shrink: 0;
+      outline: none;
     }
     .vod-episode-row:hover .vod-episode-play-btn {
       background: var(--accent);
@@ -1310,9 +1322,9 @@ if (!isset($_SESSION['active_profile'])) {
       box-shadow: 0 0 10px var(--accent-glow);
     }
     .vod-episode-status-btn:hover {
-      background: rgba(255, 255, 255, 0.12);
-      color: var(--text-primary);
-      border-color: rgba(255, 255, 255, 0.2);
+      background: rgba(255, 255, 255, 0.08);
+      color: #fff;
+      transform: scale(1.15);
     }
     
     /* Pop-up Menu Stato Visione Episodio */
