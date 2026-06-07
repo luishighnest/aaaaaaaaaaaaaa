@@ -520,7 +520,7 @@ if (!isset($_SESSION['active_profile'])) {
     }
     
     .vod-hero-btn.play {
-      background: linear-gradient(135deg, var(--accent) 0%, #00b0ff 100%);
+      background: linear-gradient(135deg, var(--accent) 0%, #4facfe 100%);
       color: #000;
       box-shadow: 0 4px 15px var(--accent-glow);
     }
