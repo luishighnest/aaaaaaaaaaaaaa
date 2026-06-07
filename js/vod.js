@@ -460,6 +460,8 @@ async function openModal(item) {
                 resumeBtn.onclick = () => {
                     playMovie(item.id, true);
                 };
+                // Nascondi "Guarda Ora" se c'è progresso per il film
+                playBtn.style.display = 'none';
             }
         }
     } else if (type === 'tv') {
@@ -768,6 +770,35 @@ async function sendProgressPayload(context, seconds, progress, isCompleted = fal
         seconds: Math.round(finalSeconds)
     };
     await sendClientDebug('sendProgressPayload: preparing payload', payloadInfo);
+
+    // Aggiorna immediatamente lo stato locale della cronologia per evitare latenze dell'interfaccia
+    if (!window.__ACTIVE_PROFILE_VOD_HISTORY__) {
+        window.__ACTIVE_PROFILE_VOD_HISTORY__ = [];
+    }
+    const existingIndex = window.__ACTIVE_PROFILE_VOD_HISTORY__.findIndex(
+        x => parseInt(x.id, 10) === parseInt(context.id, 10) && x.type === context.type
+    );
+    const localItem = {
+        id: parseInt(context.id, 10),
+        type: context.type,
+        title: context.title,
+        poster_path: context.poster_path,
+        progress: finalProgress,
+        seconds: Math.round(finalSeconds),
+        timestamp: Math.round(Date.now() / 1000)
+    };
+    if (context.type === 'tv') {
+        localItem.season = context.season;
+        localItem.episode = context.episode;
+    }
+    if (existingIndex !== -1) {
+        window.__ACTIVE_PROFILE_VOD_HISTORY__.splice(existingIndex, 1);
+    }
+    window.__ACTIVE_PROFILE_VOD_HISTORY__.unshift(localItem);
+    if (window.__ACTIVE_PROFILE_VOD_HISTORY__.length > 10) {
+        window.__ACTIVE_PROFILE_VOD_HISTORY__ = window.__ACTIVE_PROFILE_VOD_HISTORY__.slice(0, 10);
+    }
+    renderContinueWatching();
     
     try {
         const bodyData = {
@@ -871,6 +902,8 @@ async function saveCurrentProgress() {
 async function closePlayer() {
     console.log('[VOD PROGRESS DEBUG] closePlayer triggered.');
     await sendClientDebug('closePlayer triggered');
+    
+    const context = window.__PLAYBACK_CONTEXT__;
     const overlay = document.getElementById('vod-player-overlay');
     
     // Esci dal fullscreen se attivo
@@ -891,6 +924,17 @@ async function closePlayer() {
     setTimeout(() => {
         overlay.style.display = 'none';
     }, 400);
+
+    if (context && context.type === 'movie') {
+        // Per i film, rimaniamo sulla modale dei dettagli e la aggiorniamo con i nuovi progressi
+        if (window.__CURRENT_MODAL_ITEM__) {
+            openModal(window.__CURRENT_MODAL_ITEM__);
+        }
+    } else {
+        // Per le serie TV, chiudi la modale ed imposta la sezione Home
+        closeVodModal();
+        changeSection('home');
+    }
 }
 
 function playMovie(tmdbId, resume = false) {
@@ -1424,6 +1468,10 @@ async function loadNextCatalogPage() {
     const filterYear = document.getElementById('filter-year').value;
     const filterSort = document.getElementById('filter-sort').value;
     
+    // Nuovi filtri
+    const filterLang = document.getElementById('filter-lang').value;
+    const filterVote = document.getElementById('filter-vote').value;
+    
     try {
         let results = [];
         
@@ -1438,6 +1486,14 @@ async function loadNextCatalogPage() {
             if (filterYear) {
                 movieEndpoint += `&primary_release_year=${filterYear}`;
                 tvEndpoint += `&first_air_date_year=${filterYear}`;
+            }
+            if (filterLang) {
+                movieEndpoint += `&with_original_language=${filterLang}`;
+                tvEndpoint += `&with_original_language=${filterLang}`;
+            }
+            if (filterVote) {
+                movieEndpoint += `&vote_average.gte=${filterVote}&vote_count.gte=10`;
+                tvEndpoint += `&vote_average.gte=${filterVote}&vote_count.gte=10`;
             }
             
             const [movies, tvs] = await Promise.all([
@@ -1461,6 +1517,8 @@ async function loadNextCatalogPage() {
             let movieEndpoint = `/discover/movie?sort_by=${filterSort}&page=${catalogPage}`;
             if (filterGenre && genreMap[filterGenre]) movieEndpoint += `&with_genres=${genreMap[filterGenre].movie}`;
             if (filterYear) movieEndpoint += `&primary_release_year=${filterYear}`;
+            if (filterLang) movieEndpoint += `&with_original_language=${filterLang}`;
+            if (filterVote) movieEndpoint += `&vote_average.gte=${filterVote}&vote_count.gte=10`;
             
             results = await fetchTMDB(movieEndpoint);
             results.forEach(r => r.media_type = 'movie');
@@ -1468,6 +1526,8 @@ async function loadNextCatalogPage() {
             let tvEndpoint = `/discover/tv?sort_by=${filterSort}&page=${catalogPage}`;
             if (filterGenre && genreMap[filterGenre]) tvEndpoint += `&with_genres=${genreMap[filterGenre].tv}`;
             if (filterYear) tvEndpoint += `&first_air_date_year=${filterYear}`;
+            if (filterLang) tvEndpoint += `&with_original_language=${filterLang}`;
+            if (filterVote) tvEndpoint += `&vote_average.gte=${filterVote}&vote_count.gte=10`;
             
             results = await fetchTMDB(tvEndpoint);
             results.forEach(r => r.media_type = 'tv');
