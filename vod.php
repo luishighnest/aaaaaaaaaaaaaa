@@ -1331,29 +1331,49 @@ if (!isset($_SESSION['active_profile'])) {
     #vod-episode-status-menu {
       position: fixed;
       z-index: 10000;
-      background: #0f172a;
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      border-radius: 8px;
-      padding: 6px 0;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-      min-width: 180px;
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 6px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.03);
+      min-width: 190px;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      animation: vod-menu-fade-in 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      transform-origin: top center;
+    }
+    @keyframes vod-menu-fade-in {
+      from {
+        opacity: 0;
+        transform: scale(0.95) translateY(-4px);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+      }
     }
     #vod-episode-status-menu .menu-item {
-      padding: 8px 16px;
+      padding: 10px 14px;
       font-size: 0.85rem;
-      color: #e2e8f0;
+      color: #94a3b8;
       cursor: pointer;
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 12px;
       font-weight: 600;
-      transition: background-color 0.2s, color 0.2s;
+      border-radius: 8px;
+      transition: all 0.2s ease;
+    }
+    #vod-episode-status-menu .menu-item i {
+      font-size: 1.1rem;
+      transition: transform 0.2s ease;
     }
     #vod-episode-status-menu .menu-item:hover {
-      background: rgba(255, 255, 255, 0.08);
+      background: rgba(255, 255, 255, 0.06);
       color: #fff;
+    }
+    #vod-episode-status-menu .menu-item:hover i {
+      transform: scale(1.1);
     }
 
     /* --- RESPONSIVE MEDIA QUERIES --- */
