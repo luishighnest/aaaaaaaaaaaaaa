@@ -810,6 +810,16 @@ async function sendProgressPayload(context, seconds, progress, isCompleted = fal
     const existingIndex = window.__ACTIVE_PROFILE_VOD_HISTORY__.findIndex(
         x => parseInt(x.id, 10) === parseInt(context.id, 10) && x.type === context.type
     );
+    
+    let watched_episodes = {};
+    if (existingIndex !== -1 && window.__ACTIVE_PROFILE_VOD_HISTORY__[existingIndex].watched_episodes) {
+        watched_episodes = { ...window.__ACTIVE_PROFILE_VOD_HISTORY__[existingIndex].watched_episodes };
+    }
+    if (context.type === 'tv') {
+        const key = `${context.season}_${context.episode}`;
+        watched_episodes[key] = finalProgress;
+    }
+
     const localItem = {
         id: parseInt(context.id, 10),
         type: context.type,
@@ -817,6 +827,7 @@ async function sendProgressPayload(context, seconds, progress, isCompleted = fal
         poster_path: context.poster_path,
         progress: finalProgress,
         seconds: Math.round(finalSeconds),
+        watched_episodes: watched_episodes,
         timestamp: Math.round(Date.now() / 1000)
     };
     if (context.type === 'tv') {
@@ -1143,6 +1154,7 @@ async function loadTvSeasons(tvId, defaultSeasonNumber = null) {
     try {
         const response = await fetch(`${BASE_URL}/tv/${tvId}?api_key=${API_KEY}&language=it-IT`);
         const details = await response.json();
+        window.__CURRENT_TV_DETAILS__ = details;
         
         if (!details.seasons || details.seasons.length === 0) {
             select.innerHTML = '<option>Nessuna stagione</option>';
@@ -1205,10 +1217,20 @@ async function loadTvEpisodes(tvId, seasonNumber) {
                                  parseInt(historyItem.season, 10) === parseInt(seasonNumber, 10) && 
                                  parseInt(historyItem.episode, 10) === parseInt(ep.episode_number, 10);
             
-            const isWatched = historyItem && (
-                parseInt(seasonNumber, 10) < parseInt(historyItem.season, 10) ||
-                (parseInt(seasonNumber, 10) === parseInt(historyItem.season, 10) && parseInt(ep.episode_number, 10) < parseInt(historyItem.episode, 10))
-            );
+            const epKey = `${seasonNumber}_${ep.episode_number}`;
+            let isWatched = false;
+            
+            if (historyItem) {
+                const hasWatchedMap = historyItem.watched_episodes !== undefined && historyItem.watched_episodes !== null;
+                
+                if (hasWatchedMap) {
+                    isWatched = historyItem.watched_episodes[epKey] !== undefined && 
+                                parseInt(historyItem.watched_episodes[epKey], 10) >= 90;
+                } else {
+                    isWatched = parseInt(seasonNumber, 10) < parseInt(historyItem.season, 10) ||
+                        (parseInt(seasonNumber, 10) === parseInt(historyItem.season, 10) && parseInt(ep.episode_number, 10) < parseInt(historyItem.episode, 10));
+                }
+            }
             
             const row = document.createElement('div');
             let rowClass = 'vod-episode-row';
@@ -1356,49 +1378,138 @@ async function setEpisodeWatchStatus(tvId, seasonNumber, episodeNumber, status) 
     const title = item.title || item.name;
     const poster_path = item.poster_path;
     
-    let targetSeason = seasonNumber;
-    let targetEpisode = episodeNumber;
-    let progress = 100;
-    let seconds = 0;
-    let isCompleted = true;
+    const sNum = parseInt(seasonNumber, 10);
+    const eNum = parseInt(episodeNumber, 10);
+    const tId = parseInt(tvId, 10);
     
-    if (status === 'unwatched') {
-        // Se marchiamo come non visto, cerchiamo l'episodio precedente
-        if (episodeNumber > 1) {
-            targetEpisode = episodeNumber - 1;
-            progress = 100;
-            isCompleted = true;
-        } else if (seasonNumber > 1) {
-            targetSeason = seasonNumber - 1;
-            targetEpisode = 1;
-            progress = 100;
-            isCompleted = true;
-        } else {
-            // Se è S1:E1 che viene marchiato come non visto, rimuoviamo completamente lo show dalla cronologia!
-            targetSeason = 1;
-            targetEpisode = 1;
-            progress = 0;
-            seconds = 0;
-            isCompleted = false;
-        }
-    }
-    
-    // Aggiorna immediatamente lo stato locale per evitare latenze UI
+    // Recupera la cronologia esistente
     if (!window.__ACTIVE_PROFILE_VOD_HISTORY__) {
         window.__ACTIVE_PROFILE_VOD_HISTORY__ = [];
     }
     const existingIndex = window.__ACTIVE_PROFILE_VOD_HISTORY__.findIndex(
-        x => parseInt(x.id, 10) === parseInt(tvId, 10) && x.type === 'tv'
+        x => parseInt(x.id, 10) === tId && x.type === 'tv'
     );
+    const historyItem = existingIndex !== -1 ? window.__ACTIVE_PROFILE_VOD_HISTORY__[existingIndex] : null;
     
-    // Se stiamo resettando S1:E1 a "non visto" (rimozione totale della cronologia):
-    if (status === 'unwatched' && seasonNumber === 1 && episodeNumber === 1) {
+    // Inizializza o migra la mappa degli episodi visti
+    let watched_episodes = {};
+    if (historyItem) {
+        if (historyItem.watched_episodes && typeof historyItem.watched_episodes === 'object' && !Array.isArray(historyItem.watched_episodes)) {
+            watched_episodes = { ...historyItem.watched_episodes };
+        } else if (historyItem.season && historyItem.episode) {
+            // Migra la vecchia cronologia sequenziale
+            const hs = parseInt(historyItem.season, 10);
+            const he = parseInt(historyItem.episode, 10);
+            
+            if (window.__CURRENT_TV_DETAILS__ && window.__CURRENT_TV_DETAILS__.seasons) {
+                window.__CURRENT_TV_DETAILS__.seasons.forEach(season => {
+                    const curSNum = parseInt(season.season_number, 10);
+                    if (curSNum < hs) {
+                        const count = parseInt(season.episode_count, 10) || 0;
+                        for (let i = 1; i <= count; i++) {
+                            watched_episodes[`${curSNum}_${i}`] = 100;
+                        }
+                    } else if (curSNum === hs) {
+                        for (let i = 1; i < he; i++) {
+                            watched_episodes[`${curSNum}_${i}`] = 100;
+                        }
+                    }
+                });
+            } else {
+                for (let i = 1; i < he; i++) {
+                    watched_episodes[`${hs}_${i}`] = 100;
+                }
+            }
+            if (historyItem.progress >= 90) {
+                watched_episodes[`${hs}_${he}`] = 100;
+            } else if (historyItem.progress > 0) {
+                watched_episodes[`${hs}_${he}`] = historyItem.progress;
+            }
+        }
+    }
+    
+    const epKey = `${sNum}_${eNum}`;
+    
+    // Applica le modifiche in base al comando
+    if (status === 'watched') {
+        watched_episodes[epKey] = 100;
+    } else if (status === 'unwatched') {
+        delete watched_episodes[epKey];
+    } else if (status === 'up_to_here') {
+        if (window.__CURRENT_TV_DETAILS__ && window.__CURRENT_TV_DETAILS__.seasons) {
+            window.__CURRENT_TV_DETAILS__.seasons.forEach(season => {
+                const curSNum = parseInt(season.season_number, 10);
+                if (curSNum < sNum) {
+                    const count = parseInt(season.episode_count, 10) || 0;
+                    for (let i = 1; i <= count; i++) {
+                        watched_episodes[`${curSNum}_${i}`] = 100;
+                    }
+                } else if (curSNum === sNum) {
+                    for (let i = 1; i <= eNum; i++) {
+                        watched_episodes[`${curSNum}_${i}`] = 100;
+                    }
+                }
+            });
+        } else {
+            // Fallback se non abbiamo i dettagli TMDB
+            for (let i = 1; i <= eNum; i++) {
+                watched_episodes[`${sNum}_${i}`] = 100;
+            }
+        }
+    }
+    
+    // Determina se ci sono episodi nella cronologia
+    const noEpisodesLeft = Object.keys(watched_episodes).length === 0;
+    
+    let targetSeason = sNum;
+    let targetEpisode = eNum;
+    let progress = 100;
+    let seconds = 0;
+    
+    if (noEpisodesLeft) {
         if (existingIndex !== -1) {
             window.__ACTIVE_PROFILE_VOD_HISTORY__.splice(existingIndex, 1);
         }
     } else {
+        // Se non stiamo eliminando tutto, impostiamo il massimo episodio come target o teniamo il record attivo
+        // Trova il massimo episodio in watched_episodes
+        let maxSeason = 0;
+        let maxEpisode = 0;
+        for (const key in watched_episodes) {
+            if (watched_episodes[key] >= 90) {
+                const [s, ep] = key.split('_').map(Number);
+                if (s > maxSeason || (s === maxSeason && ep > maxEpisode)) {
+                    maxSeason = s;
+                    maxEpisode = ep;
+                }
+            }
+        }
+        
+        if (maxSeason > 0) {
+            targetSeason = maxSeason;
+            targetEpisode = maxEpisode;
+            progress = 100;
+        } else {
+            // Se ci sono episodi ma nessuno con progresso >= 90 (magari solo in corso)
+            // Troviamo il primo/ultimo episodio con progresso > 0
+            let anySeason = 1;
+            let anyEpisode = 1;
+            let anyProgress = 0;
+            for (const key in watched_episodes) {
+                const [s, ep] = key.split('_').map(Number);
+                if (s > anySeason || (s === anySeason && ep > anyEpisode)) {
+                    anySeason = s;
+                    anyEpisode = ep;
+                    anyProgress = watched_episodes[key];
+                }
+            }
+            targetSeason = anySeason;
+            targetEpisode = anyEpisode;
+            progress = anyProgress;
+        }
+        
         const localItem = {
-            id: parseInt(tvId, 10),
+            id: tId,
             type: 'tv',
             title: title,
             poster_path: poster_path,
@@ -1406,6 +1517,7 @@ async function setEpisodeWatchStatus(tvId, seasonNumber, episodeNumber, status) 
             seconds: seconds,
             season: targetSeason,
             episode: targetEpisode,
+            watched_episodes: watched_episodes,
             timestamp: Math.round(Date.now() / 1000)
         };
         
@@ -1417,10 +1529,10 @@ async function setEpisodeWatchStatus(tvId, seasonNumber, episodeNumber, status) 
     
     renderContinueWatching();
     
-    // Ricarica la visualizzazione degli episodi nella modale aperta
+    // Ricarica subito la visualizzazione degli episodi
     loadTvEpisodes(tvId, seasonNumber);
     
-    // Aggiorna i bottoni della modale principale se necessario
+    // Aggiorna la modale principale per mantenere lo stato allineato
     if (window.__CURRENT_MODAL_ITEM__) {
         openModal(window.__CURRENT_MODAL_ITEM__, seasonNumber);
     }
@@ -1428,22 +1540,21 @@ async function setEpisodeWatchStatus(tvId, seasonNumber, episodeNumber, status) 
     // Invia la richiesta al server per sincronizzare
     try {
         const bodyData = {
-            id: tvId,
+            id: tId,
             type: 'tv',
             title: title,
             poster_path: poster_path,
-            progress: progress,
-            seconds: seconds,
-            season: targetSeason,
-            episode: targetEpisode,
             csrf_token: window.__CSRF_TOKEN__
         };
         
-        if (status === 'unwatched' && seasonNumber === 1 && episodeNumber === 1) {
-            bodyData.progress = 0;
-            bodyData.seconds = 0;
-            bodyData.season = 0;
-            bodyData.episode = 0;
+        if (noEpisodesLeft) {
+            bodyData.delete = true;
+        } else {
+            bodyData.progress = progress;
+            bodyData.seconds = seconds;
+            bodyData.season = targetSeason;
+            bodyData.episode = targetEpisode;
+            bodyData.watched_episodes = watched_episodes;
         }
         
         const response = await fetch('save_watch_progress.php', {
@@ -1816,8 +1927,50 @@ async function handleEpisodeEnded() {
     if (!window.__PLAYBACK_CONTEXT__ || window.__PLAYBACK_CONTEXT__.type !== 'tv') return;
     const context = window.__PLAYBACK_CONTEXT__;
     
+    // Trova la cronologia esistente
+    if (!window.__ACTIVE_PROFILE_VOD_HISTORY__) {
+        window.__ACTIVE_PROFILE_VOD_HISTORY__ = [];
+    }
+    const existingIndex = window.__ACTIVE_PROFILE_VOD_HISTORY__.findIndex(
+        x => parseInt(x.id, 10) === parseInt(context.id, 10) && x.type === 'tv'
+    );
+    
+    // Inizializza o migra la mappa degli episodi visti
+    let watched_episodes = {};
+    if (existingIndex !== -1 && window.__ACTIVE_PROFILE_VOD_HISTORY__[existingIndex].watched_episodes) {
+        watched_episodes = { ...window.__ACTIVE_PROFILE_VOD_HISTORY__[existingIndex].watched_episodes };
+    }
+    
+    // Segna l'episodio corrente come completato (100)
+    const completedKey = `${context.season}_${context.episode}`;
+    watched_episodes[completedKey] = 100;
+    
     if (window.__NEXT_EPISODE__) {
         const next = window.__NEXT_EPISODE__;
+        
+        // Segna anche il prossimo episodio a 0% progress nella mappa localmente per evitare salti visivi
+        const nextKey = `${next.season}_${next.episode}`;
+        watched_episodes[nextKey] = 0;
+        
+        // Aggiorna la cache locale immediatamente
+        const localItem = {
+            id: parseInt(context.id, 10),
+            type: 'tv',
+            title: context.title,
+            poster_path: context.poster_path,
+            progress: 0,
+            seconds: 0,
+            season: parseInt(next.season, 10),
+            episode: parseInt(next.episode, 10),
+            watched_episodes: watched_episodes,
+            timestamp: Math.round(Date.now() / 1000)
+        };
+        if (existingIndex !== -1) {
+            window.__ACTIVE_PROFILE_VOD_HISTORY__.splice(existingIndex, 1);
+        }
+        window.__ACTIVE_PROFILE_VOD_HISTORY__.unshift(localItem);
+        renderContinueWatching();
+        
         try {
             const bodyData = {
                 id: next.id,
@@ -1828,6 +1981,7 @@ async function handleEpisodeEnded() {
                 seconds: 0,
                 season: next.season,
                 episode: next.episode,
+                watched_episodes: watched_episodes,
                 csrf_token: window.__CSRF_TOKEN__
             };
             
