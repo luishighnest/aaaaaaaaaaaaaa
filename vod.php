@@ -329,6 +329,217 @@ if (!isset($_SESSION['active_profile'])) {
       transform: translateY(-50%) scale(1.15);
     }
 
+    /* ─── AUTOCOMPLETE DROPDOWN ─── */
+    .vod-search-dropdown {
+      position: absolute;
+      top: calc(100% + 10px);
+      left: 0;
+      right: 0;
+      background: rgba(2, 6, 23, 0.92);
+      backdrop-filter: blur(28px) saturate(1.4);
+      -webkit-backdrop-filter: blur(28px) saturate(1.4);
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      border-radius: 16px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.03), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+      overflow: hidden;
+      z-index: 9999;
+      opacity: 0;
+      transform: translateY(-8px) scale(0.98);
+      pointer-events: none;
+      transition: opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1), transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      max-height: 420px;
+      overflow-y: auto;
+    }
+    .vod-search-dropdown.open {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      pointer-events: auto;
+    }
+    .vod-search-dropdown::-webkit-scrollbar {
+      width: 4px;
+    }
+    .vod-search-dropdown::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 4px;
+    }
+
+    /* Header del dropdown con query */
+    .vod-dropdown-header {
+      padding: 10px 14px 6px 14px;
+      font-size: 0.7rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    }
+    .vod-dropdown-header i {
+      color: var(--accent);
+      font-size: 0.85rem;
+    }
+
+    /* Riga suggerimento */
+    .vod-suggestion-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 9px 14px;
+      cursor: pointer;
+      transition: background 0.15s ease;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+      position: relative;
+    }
+    .vod-suggestion-item:last-child {
+      border-bottom: none;
+    }
+    .vod-suggestion-item:hover {
+      background: rgba(255, 255, 255, 0.05);
+    }
+    .vod-suggestion-item.keyboard-active {
+      background: rgba(255, 255, 255, 0.07);
+    }
+    .vod-suggestion-item:hover .vod-suggestion-title,
+    .vod-suggestion-item.keyboard-active .vod-suggestion-title {
+      color: #fff;
+    }
+
+    /* Thumbnail suggerimento */
+    .vod-suggestion-thumb {
+      width: 44px;
+      height: 62px;
+      border-radius: 7px;
+      object-fit: cover;
+      flex-shrink: 0;
+      background: rgba(15, 23, 42, 0.6);
+      display: block;
+    }
+    .vod-suggestion-thumb-placeholder {
+      width: 44px;
+      height: 62px;
+      border-radius: 7px;
+      background: rgba(15, 23, 42, 0.6);
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255, 255, 255, 0.15);
+      font-size: 1.2rem;
+    }
+
+    /* Info testo suggerimento */
+    .vod-suggestion-info {
+      flex: 1;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .vod-suggestion-title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      transition: color 0.15s ease;
+    }
+    .vod-suggestion-meta {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+    .vod-suggestion-type {
+      font-size: 0.65rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+    .vod-suggestion-type.movie {
+      background: rgba(99, 102, 241, 0.2);
+      color: #818cf8;
+      border: 1px solid rgba(99, 102, 241, 0.2);
+    }
+    .vod-suggestion-type.tv {
+      background: rgba(16, 185, 129, 0.15);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.15);
+    }
+    .vod-suggestion-year {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+    .vod-suggestion-rating {
+      font-size: 0.72rem;
+      color: #fbbf24;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 3px;
+    }
+
+    /* Freccia di accesso rapido */
+    .vod-suggestion-arrow {
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.2);
+      flex-shrink: 0;
+      transition: color 0.15s ease, transform 0.15s ease;
+    }
+    .vod-suggestion-item:hover .vod-suggestion-arrow,
+    .vod-suggestion-item.keyboard-active .vod-suggestion-arrow {
+      color: var(--accent);
+      transform: translateX(3px);
+    }
+
+    /* Stato loading nel dropdown */
+    .vod-dropdown-loading {
+      padding: 18px 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--text-muted);
+      font-size: 0.82rem;
+      font-weight: 600;
+    }
+    .vod-dropdown-loading-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      animation: dd-pulse 1.2s ease-in-out infinite;
+    }
+    .vod-dropdown-loading-dot:nth-child(2) { animation-delay: 0.2s; }
+    .vod-dropdown-loading-dot:nth-child(3) { animation-delay: 0.4s; }
+    @keyframes dd-pulse {
+      0%, 100% { opacity: 0.3; transform: scale(0.8); }
+      50% { opacity: 1; transform: scale(1.1); }
+    }
+
+    /* Footer "mostra tutti i risultati" */
+    .vod-dropdown-footer {
+      padding: 10px 14px;
+      text-align: center;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--accent);
+      cursor: pointer;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      transition: background 0.15s ease, color 0.15s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+    .vod-dropdown-footer:hover {
+      background: rgba(255, 255, 255, 0.04);
+      color: #fff;
+    }
+
     /* Bottone Torna Indietro (Fisso a destra) */
     .vod-back-btn {
       display: inline-flex;
@@ -1717,8 +1928,9 @@ if (!isset($_SESSION['active_profile'])) {
       </nav>
       <div class="nav-search">
         <i class="ph ph-magnifying-glass search-icon"></i>
-        <input type="text" id="vod-search-input" placeholder="Cerca film o serie tv...">
+        <input type="text" id="vod-search-input" placeholder="Cerca film o serie tv..." autocomplete="off">
         <i class="ph ph-x clear-icon" id="vod-search-clear"></i>
+        <div class="vod-search-dropdown" id="vod-search-dropdown"></div>
       </div>
       <a href="index.php" class="vod-back-btn" title="Torna alla pagina precedente"><i class="ph ph-arrow-left"></i> Indietro</a>
     </header>
