@@ -351,16 +351,19 @@ if (!isset($_SESSION['active_profile'])) {
       right: 0.8rem;
       top: 50%;
       transform: translateY(-50%);
-      color: var(--text-muted);
+      color: rgba(255, 255, 255, 0.4);
       cursor: pointer;
-      font-size: 1rem;
+      font-size: 1.1rem;
       display: none;
-      z-index: 2;
+      z-index: 5;
+      transition: all 0.2s ease;
+      padding: 4px;
+      border-radius: 50%;
     }
-
     .vod-navbar .nav-search .clear-icon:hover {
-      color: var(--danger);
-      transform: translateY(-50%) scale(1.15);
+      color: #fff;
+      background: rgba(255, 255, 255, 0.1);
+      transform: translateY(-50%) scale(1.1);
     }
 
     /* ─── AUTOCOMPLETE DROPDOWN ORIGINALE ─── */
