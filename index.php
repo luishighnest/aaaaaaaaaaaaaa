@@ -326,7 +326,7 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
 
     <!-- Player Area -->
     <div class="dash-player-area" id="dash-player-area">
-      <iframe id="player-frame" src="about:blank" allow="autoplay; encrypted-media"></iframe>
+      <iframe id="player-frame" src="about:blank" allow="autoplay; encrypted-media; fullscreen" allowfullscreen></iframe>
     </div>
 
     <!-- Info Area -->
