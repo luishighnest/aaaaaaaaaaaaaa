@@ -1131,21 +1131,21 @@ if (!isset($_SESSION['active_profile'])) {
     .vod-modal-topbar {
       display: flex;
       justify-content: flex-end;
-      margin: -1rem -1rem -0.25rem 0;
+      margin: -1rem -1.25rem -0.25rem 0;
       pointer-events: none;
     }
     .vod-modal-close {
       background: rgba(15, 23, 42, 0.78);
       border: 1px solid rgba(255, 255, 255, 0.12);
       color: #fff;
-      width: 38px;
-      height: 38px;
+      width: 35px;
+      height: 35px;
       border-radius: 12px;
       display: flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
-      font-size: 1.1rem;
+      font-size: 1rem;
       pointer-events: auto;
       transition: var(--transition);
       backdrop-filter: blur(18px);
@@ -1170,8 +1170,8 @@ if (!isset($_SESSION['active_profile'])) {
       display: flex;
       align-items: center;
       justify-content: center;
-      background: rgba(0, 0, 0, 0.15);
-      border-right: 1px solid rgba(255,255,255,0.03);
+      background: transparent;
+      border-right: none;
       transition: width 0.25s ease;
     }
     .vod-modal-poster.is-landscape {
