@@ -1070,10 +1070,8 @@ a {
   border-radius: var(--radius);
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
-  overflow: hidden;
   position: relative;
   aspect-ratio: 16/9;
-  container-type: inline-size;
 }
 
 
@@ -1087,27 +1085,7 @@ a {
   z-index: 1;
 }
 
-/* ─── FULLSCREEN CUSTOM PER PC ─── */
-.dash-player-area:fullscreen {
-  position: fixed;
-  inset: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 99999;
-  border-radius: 0;
-  border: none;
-  background: #000;
-}
-.dash-player-area:-webkit-full-screen {
-  position: fixed;
-  inset: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 99999;
-  border-radius: 0;
-  border: none;
-  background: #000;
-}
+
 
 
 
