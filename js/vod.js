@@ -1554,6 +1554,11 @@ async function loadTvEpisodes(tvId, seasonNumber) {
                 progressTextHtml = `<span style="font-size:0.72rem; color:var(--accent); font-weight:600; margin-top:2px;">${epProgress}% completato</span>`;
             }
 
+            // Badge "Riprendi qui" per l'episodio corrente
+            const resumeBadgeHtml = isLastPlayed
+                ? `<div class="vod-ep-resume-badge"><i class="ph-fill ph-play-circle"></i> Riprendi qui</div>`
+                : '';
+
             row.innerHTML = `
                 <div class="vod-ep-thumb">
                     ${thumbHtml}
@@ -1568,6 +1573,7 @@ async function loadTvEpisodes(tvId, seasonNumber) {
                     <div class="vod-episode-overview" id="ep-overview-${ep.episode_number}">${ep.overview || 'Nessuna descrizione disponibile.'}</div>
                     ${readMoreHtml}
                     ${progressTextHtml}
+                    ${resumeBadgeHtml}
                 </div>
                 <div class="vod-episode-actions">
                     <button class="vod-episode-play-btn" title="Riproduci"><i class="ph-fill ph-play"></i></button>
@@ -1613,6 +1619,15 @@ async function loadTvEpisodes(tvId, seasonNumber) {
             
             episodesList.appendChild(row);
         });
+
+        // ─── AUTO-SCROLL ALL'EPISODIO CORRENTE ───
+        // Piccolo ritardo per attendere il rendering del layout (thumbnail lazy)
+        setTimeout(() => {
+            const lastPlayedRow = episodesList.querySelector('.vod-episode-row.last-played');
+            if (lastPlayedRow) {
+                lastPlayedRow.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+        }, 180);
         
     } catch(err) {
         console.error("Errore caricamento episodi", err);
