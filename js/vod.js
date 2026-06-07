@@ -1453,7 +1453,7 @@ function playShowEpisode(tmdbId, season, episode, resume = false) {
         }
     }
     
-    frame.src = `https://vixsrc.to/tv/${tmdbId}/${season}/${episode}?lang=it&primaryColor=${accent}${startAtParam}`;
+    frame.src = `https://vixsrc.to/tv/${tmdbId}/${season}/${episode}?lang=it&quality=1080&primaryColor=${accent}${startAtParam}`;
     overlay.style.display = 'flex';
     setTimeout(() => {
         overlay.classList.add('open');
