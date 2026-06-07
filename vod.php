@@ -383,9 +383,11 @@ if (!isset($_SESSION['active_profile'])) {
       overflow: hidden;
       display: flex;
       align-items: center;
+      justify-content: space-between;
       padding: 0 40px;
       margin-bottom: 2rem;
       border-bottom: 1px solid var(--border-subtle);
+      gap: 40px;
     }
     
     .vod-hero-bg {
@@ -418,11 +420,39 @@ if (!isset($_SESSION['active_profile'])) {
     .vod-hero-content {
       position: relative;
       z-index: 2;
+      flex: 1;
       max-width: 650px;
       display: flex;
       flex-direction: column;
       gap: 1.1rem;
       animation: fadeInHero 0.8s ease-out;
+    }
+    
+    .vod-hero-poster-container {
+      position: relative;
+      z-index: 2;
+      flex-shrink: 0;
+      width: 220px;
+      height: 330px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), 0 5px 15px rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.03);
+      animation: fadeInHero 0.8s ease-out;
+    }
+    .vod-hero-poster-container:hover {
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 8px 20px rgba(0, 0, 0, 0.4), 0 0 15px rgba(2, 132, 199, 0.2);
+    }
+    .vod-hero-poster-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
     
     @keyframes fadeInHero {
@@ -1470,6 +1500,9 @@ if (!isset($_SESSION['active_profile'])) {
         height: 45vh;
         min-height: 300px;
       }
+      .vod-hero-poster-container {
+        display: none;
+      }
       .vod-hero-title {
         font-size: 2rem;
       }
@@ -1619,6 +1652,9 @@ if (!isset($_SESSION['active_profile'])) {
             <button class="vod-hero-btn info" id="vod-hero-info-btn"><i class="ph ph-info"></i> Dettagli</button>
             <button class="vod-hero-btn info" id="vod-hero-fav-btn" style="padding: 0.75rem 1rem;"><i class="ph ph-heart" style="font-size: 1.2rem; color: var(--danger);"></i></button>
           </div>
+        </div>
+        <div class="vod-hero-poster-container" id="vod-hero-poster-container">
+          <img id="vod-hero-poster" src="" alt="Poster">
         </div>
       </div>
 

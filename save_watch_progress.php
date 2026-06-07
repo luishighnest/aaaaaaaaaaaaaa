@@ -152,7 +152,10 @@ foreach ($user_profiles as &$profile) {
                     $history_item['watched_episodes'] = (array)$history_item['watched_episodes'];
                 }
                 $key = "{$season}_{$episode}";
-                $history_item['watched_episodes'][$key] = $progress;
+                $history_item['watched_episodes'][$key] = [
+                    'progress' => $progress,
+                    'seconds' => $seconds
+                ];
             }
         }
         
