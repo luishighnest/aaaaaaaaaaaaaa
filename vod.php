@@ -1277,7 +1277,14 @@ if (!isset($_SESSION['active_profile'])) {
       overflow: hidden;
       line-height: 1.4;
     }
-    .vod-episode-play-btn {
+    .vod-episode-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+    .vod-episode-play-btn,
+    .vod-episode-status-btn {
       width: 36px;
       height: 36px;
       background: rgba(255, 255, 255, 0.05);
@@ -1291,12 +1298,50 @@ if (!isset($_SESSION['active_profile'])) {
       cursor: pointer;
       transition: var(--transition);
       flex-shrink: 0;
+      outline: none;
+    }
+    .vod-episode-status-btn {
+      color: var(--text-secondary);
     }
     .vod-episode-row:hover .vod-episode-play-btn {
       background: var(--accent);
       color: #000;
       border-color: var(--accent);
       box-shadow: 0 0 10px var(--accent-glow);
+    }
+    .vod-episode-status-btn:hover {
+      background: rgba(255, 255, 255, 0.12);
+      color: var(--text-primary);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+    
+    /* Pop-up Menu Stato Visione Episodio */
+    #vod-episode-status-menu {
+      position: fixed;
+      z-index: 10000;
+      background: #0f172a;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 8px;
+      padding: 6px 0;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+      min-width: 180px;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    #vod-episode-status-menu .menu-item {
+      padding: 8px 16px;
+      font-size: 0.85rem;
+      color: #e2e8f0;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 600;
+      transition: background-color 0.2s, color 0.2s;
+    }
+    #vod-episode-status-menu .menu-item:hover {
+      background: rgba(255, 255, 255, 0.08);
+      color: #fff;
     }
 
     /* --- RESPONSIVE MEDIA QUERIES --- */
