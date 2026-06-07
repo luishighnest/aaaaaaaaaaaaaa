@@ -172,6 +172,11 @@ if (!isset($_SESSION['active_profile'])) {
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
       height: 66px; /* Leggermente ridotta per un effetto dinamico premium */
     }
+    .vod-navbar.nav-hidden {
+      transform: translateY(-100%);
+      opacity: 0;
+      pointer-events: none;
+    }
 
     .vod-brand {
       display: flex;
@@ -916,27 +921,32 @@ if (!isset($_SESSION['active_profile'])) {
       position: absolute;
       top: 20px;
       right: 20px;
-      background: rgba(15, 23, 42, 0.55);
-      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(2, 6, 23, 0.8);
+      border: 1px solid rgba(255, 255, 255, 0.15);
       color: var(--text-secondary);
-      width: 40px;
-      height: 40px;
+      width: 44px;
+      height: 44px;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
-      font-size: 1.3rem;
-      z-index: 10;
+      font-size: 1.35rem;
+      z-index: 101;
       transition: var(--transition);
-      backdrop-filter: blur(10px);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255,255,255,0.1);
     }
     .vod-modal-close:hover {
       background: var(--accent);
       color: #000;
       border-color: var(--accent);
-      transform: rotate(90deg) scale(1.05);
-      box-shadow: 0 0 15px var(--accent-glow);
+      transform: rotate(90deg) scale(1.08);
+      box-shadow: 0 0 20px var(--accent-glow), 0 8px 24px rgba(0, 0, 0, 0.3);
+    }
+    .vod-modal-close:active {
+      transform: scale(0.95);
     }
     
     .vod-modal-poster {
