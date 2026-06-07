@@ -170,26 +170,232 @@ document.addEventListener('DOMContentLoaded', () => {
         searchClear.addEventListener('click', () => {
             searchInput.value = '';
             searchClear.style.display = 'none';
+            const dd = document.getElementById('vod-search-dropdown');
+            if (dd) dd.classList.remove('open');
             showHome();
         });
     }
 
-    // Gestione Search (Debounce)
+    // ─── GESTIONE RICERCA: DEBOUNCE + AUTOCOMPLETE DROPDOWN ───
+    const dropdown = document.getElementById('vod-search-dropdown');
     let searchTimeout;
+    let suggestTimeout;
+    let currentSuggestions = [];
+    let keyboardIndex = -1;
+
+    function closeDropdown() {
+        if (dropdown) {
+            dropdown.classList.remove('open');
+            keyboardIndex = -1;
+        }
+    }
+
+    function openDropdownWith(html) {
+        if (!dropdown) return;
+        dropdown.innerHTML = html;
+        dropdown.classList.add('open');
+    }
+
+    function highlightKeyboard(items) {
+        items.forEach((el, i) => {
+            el.classList.toggle('keyboard-active', i === keyboardIndex);
+            if (i === keyboardIndex) {
+                el.scrollIntoView({ block: 'nearest' });
+            }
+        });
+    }
+
+    function buildSuggestionHTML(query, results) {
+        if (!results || results.length === 0) {
+            return `<div class="vod-dropdown-loading" style="justify-content:center; padding: 20px 14px;">
+                <i class="ph ph-magnifying-glass" style="font-size:1.1rem; opacity:0.4;"></i>
+                <span style="opacity:0.6;">Nessun risultato per "${query}"</span>
+            </div>`;
+        }
+
+        const items = results.slice(0, 6);
+        let html = `<div class="vod-dropdown-header"><i class="ph ph-magnifying-glass"></i>Suggerimenti per "${query}"</div>`;
+
+        items.forEach((item, idx) => {
+            const type = item.media_type || (item.title ? 'movie' : 'tv');
+            if (type === 'person') return;
+            const title = item.title || item.name || '—';
+            const date = item.release_date || item.first_air_date || '';
+            const year = date ? date.split('-')[0] : '';
+            const rating = item.vote_average ? item.vote_average.toFixed(1) : null;
+            const typeLabel = type === 'movie' ? 'Film' : 'Serie TV';
+
+            const thumbHtml = item.poster_path
+                ? `<img class="vod-suggestion-thumb" src="https://image.tmdb.org/t/p/w92${item.poster_path}" alt="${title}" loading="lazy" onerror="this.outerHTML='<div class=\\'vod-suggestion-thumb-placeholder\\'><i class=\\'ph ph-film-strip\\'></i></div>'">`
+                : `<div class="vod-suggestion-thumb-placeholder"><i class="ph ph-film-strip"></i></div>`;
+
+            const ratingHtml = rating
+                ? `<span class="vod-suggestion-rating"><i class="ph-fill ph-star"></i>${rating}</span>`
+                : '';
+
+            html += `
+                <div class="vod-suggestion-item" data-idx="${idx}">
+                    ${thumbHtml}
+                    <div class="vod-suggestion-info">
+                        <div class="vod-suggestion-title">${title}</div>
+                        <div class="vod-suggestion-meta">
+                            <span class="vod-suggestion-type ${type}">${typeLabel}</span>
+                            ${year ? `<span class="vod-suggestion-year">${year}</span>` : ''}
+                            ${ratingHtml}
+                        </div>
+                    </div>
+                    <i class="ph ph-arrow-right vod-suggestion-arrow"></i>
+                </div>`;
+        });
+
+        if (results.length > 0) {
+            html += `<div class="vod-dropdown-footer" id="vod-dropdown-show-all">
+                <i class="ph ph-list"></i> Mostra tutti i risultati
+            </div>`;
+        }
+
+        return html;
+    }
+
+    async function fetchSuggestions(query) {
+        // Loader nel dropdown
+        openDropdownWith(`<div class="vod-dropdown-loading">
+            <div class="vod-dropdown-loading-dot"></div>
+            <div class="vod-dropdown-loading-dot"></div>
+            <div class="vod-dropdown-loading-dot"></div>
+            <span>Ricerca in corso...</span>
+        </div>`);
+
+        try {
+            const results = await fetchTMDB(`/search/multi?query=${encodeURIComponent(query)}&page=1`);
+            const filtered = (results || []).filter(r => r.media_type !== 'person');
+            currentSuggestions = filtered;
+            openDropdownWith(buildSuggestionHTML(query, filtered));
+
+            // Bind click su ogni suggerimento
+            const items = dropdown.querySelectorAll('.vod-suggestion-item');
+            items.forEach((el) => {
+                el.addEventListener('mousedown', (e) => {
+                    e.preventDefault(); // non perdere il focus dall'input
+                    const idx = parseInt(el.dataset.idx, 10);
+                    const item = currentSuggestions[idx];
+                    if (item) {
+                        closeDropdown();
+                        searchInput.value = item.title || item.name || '';
+                        if (searchClear) searchClear.style.display = 'block';
+                        openModal(item);
+                    }
+                });
+            });
+
+            // Bind footer "mostra tutti"
+            const footer = dropdown.querySelector('#vod-dropdown-show-all');
+            if (footer) {
+                footer.addEventListener('mousedown', (e) => {
+                    e.preventDefault();
+                    closeDropdown();
+                    searchContent(query);
+                });
+            }
+        } catch(err) {
+            closeDropdown();
+        }
+    }
+
     searchInput.addEventListener('input', (e) => {
         const query = e.target.value.trim();
         if (searchClear) {
             searchClear.style.display = query.length > 0 ? 'block' : 'none';
         }
-        
+
+        keyboardIndex = -1;
+
         clearTimeout(searchTimeout);
-        searchTimeout = setTimeout(() => {
-            if (query.length > 2) {
-                searchContent(query);
-            } else if (query.length === 0) {
-                showHome();
+        clearTimeout(suggestTimeout);
+
+        if (query.length === 0) {
+            closeDropdown();
+            showHome();
+            return;
+        }
+
+        if (query.length < 2) {
+            closeDropdown();
+            return;
+        }
+
+        // Debounce suggerimenti: 300ms
+        suggestTimeout = setTimeout(() => {
+            fetchSuggestions(query);
+        }, 300);
+
+        // Debounce ricerca full page: solo se si smette di digitare per 800ms (non attiva automaticamente)
+        // La ricerca full-page si triggera su Enter o click footer
+    });
+
+    // Navigazione da tastiera nel dropdown
+    searchInput.addEventListener('keydown', (e) => {
+        const query = searchInput.value.trim();
+        const items = dropdown ? dropdown.querySelectorAll('.vod-suggestion-item') : [];
+
+        if (e.key === 'ArrowDown') {
+            e.preventDefault();
+            if (items.length > 0) {
+                keyboardIndex = Math.min(keyboardIndex + 1, items.length - 1);
+                highlightKeyboard(Array.from(items));
             }
-        }, 500);
+        } else if (e.key === 'ArrowUp') {
+            e.preventDefault();
+            if (items.length > 0) {
+                keyboardIndex = Math.max(keyboardIndex - 1, -1);
+                highlightKeyboard(Array.from(items));
+            }
+        } else if (e.key === 'Enter') {
+            e.preventDefault();
+            if (keyboardIndex >= 0 && currentSuggestions[keyboardIndex]) {
+                const item = currentSuggestions[keyboardIndex];
+                closeDropdown();
+                searchInput.value = item.title || item.name || '';
+                if (searchClear) searchClear.style.display = 'block';
+                openModal(item);
+            } else if (query.length > 1) {
+                closeDropdown();
+                searchContent(query);
+            }
+        } else if (e.key === 'Escape') {
+            closeDropdown();
+            searchInput.blur();
+        }
+    });
+
+    // Chiudi dropdown su click esterno
+    document.addEventListener('mousedown', (e) => {
+        const searchWrapper = document.querySelector('.nav-search');
+        if (searchWrapper && !searchWrapper.contains(e.target)) {
+            closeDropdown();
+        }
+    });
+
+    // Riapri dropdown se si torna a focus con testo già presente
+    searchInput.addEventListener('focus', () => {
+        const query = searchInput.value.trim();
+        if (query.length >= 2 && currentSuggestions.length > 0) {
+            openDropdownWith(buildSuggestionHTML(query, currentSuggestions));
+            // Ri-binding eventi
+            const items = dropdown.querySelectorAll('.vod-suggestion-item');
+            items.forEach((el) => {
+                el.addEventListener('mousedown', (e) => {
+                    e.preventDefault();
+                    const idx = parseInt(el.dataset.idx, 10);
+                    const item = currentSuggestions[idx];
+                    if (item) {
+                        closeDropdown();
+                        searchInput.value = item.title || item.name || '';
+                        openModal(item);
+                    }
+                });
+            });
+        }
     });
 
     // Gestione scorrimento infinito per il Catalogo e animazione show/hide della navbar
