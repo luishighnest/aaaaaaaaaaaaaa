@@ -344,7 +344,6 @@ async function initHero(item) {
     
     const heroSection = document.getElementById('vod-hero-banner');
     const heroBackdrop = document.getElementById('vod-hero-backdrop');
-    const heroPoster = document.getElementById('vod-hero-poster');
     const heroRating = document.getElementById('vod-hero-rating');
     const heroYear = document.getElementById('vod-hero-year');
     const heroType = document.getElementById('vod-hero-type');
@@ -357,15 +356,6 @@ async function initHero(item) {
         heroBackdrop.src = `https://image.tmdb.org/t/p/original${item.backdrop_path}`;
     } else {
         heroBackdrop.src = 'https://via.placeholder.com/1920x1080?text=No+Backdrop';
-    }
-
-    if (heroPoster) {
-        if (item.poster_path) {
-            heroPoster.src = `https://image.tmdb.org/t/p/w500${item.poster_path}`;
-            heroPoster.parentElement.style.display = 'flex';
-        } else {
-            heroPoster.parentElement.style.display = 'none';
-        }
     }
     
     heroRating.innerHTML = `<i class="ph-fill ph-star"></i> ${rating}`;
