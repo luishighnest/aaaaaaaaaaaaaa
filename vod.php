@@ -309,6 +309,9 @@ if (!isset($_SESSION['active_profile'])) {
       box-shadow: 0 0 15px var(--accent-glow);
       cursor: default; /* Torna normale quando scrivi */
     }
+    .vod-navbar .nav-search:active {
+      transform: scale(0.95);
+    }
     .vod-navbar .nav-search input {
       width: 100%;
       height: 100%;
@@ -321,10 +324,11 @@ if (!isset($_SESSION['active_profile'])) {
       outline: none;
       opacity: 0;
       transition: opacity 0.3s;
-      cursor: text;
+      cursor: pointer; /* Ora mostra la manina anche sull'input invisibile */
     }
     .vod-navbar .nav-search:focus-within input {
       opacity: 1;
+      cursor: text; /* Torna cursore testo quando è aperto per scrivere */
     }
     .vod-navbar .nav-search .search-icon {
       position: absolute;
