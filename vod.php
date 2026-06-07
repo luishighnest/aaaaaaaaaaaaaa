@@ -278,10 +278,10 @@ if (!isset($_SESSION['active_profile'])) {
       height: 44px;
       margin-right: 15px;
       transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-      overflow: hidden;
       background: rgba(255, 255, 255, 0.05);
       border-radius: 12px;
       border: 1px solid rgba(255, 255, 255, 0.08);
+      /* overflow: hidden;  <-- Rimosso per permettere al dropdown di uscire */
     }
     .vod-navbar .nav-search:focus-within {
       width: 300px;
@@ -338,25 +338,25 @@ if (!isset($_SESSION['active_profile'])) {
       transform: translateY(-50%) scale(1.15);
     }
 
-    /* ─── AUTOCOMPLETE DROPDOWN ─── */
+    /* ─── AUTOCOMPLETE DROPDOWN ORIGINALE ─── */
     .vod-search-dropdown {
       position: absolute;
-      top: calc(100% + 10px);
-      left: 0;
+      top: calc(100% + 15px);
       right: 0;
+      width: 380px; /* Larghezza fissa per stabilità */
       background: rgba(2, 6, 23, 0.92);
       backdrop-filter: blur(28px) saturate(1.4);
       -webkit-backdrop-filter: blur(28px) saturate(1.4);
       border: 1px solid rgba(255, 255, 255, 0.09);
       border-radius: 16px;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.03), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.03);
       overflow: hidden;
       z-index: 9999;
       opacity: 0;
       transform: translateY(-8px) scale(0.98);
       pointer-events: none;
       transition: opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1), transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-      max-height: 420px;
+      max-height: 450px;
       overflow-y: auto;
     }
     .vod-search-dropdown.open {
@@ -374,28 +374,29 @@ if (!isset($_SESSION['active_profile'])) {
 
     /* Header del dropdown con query */
     .vod-dropdown-header {
-      padding: 10px 14px 6px 14px;
-      font-size: 0.7rem;
+      padding: 12px 18px;
+      font-size: 0.75rem;
       font-weight: 800;
       text-transform: uppercase;
       letter-spacing: 1px;
       color: var(--text-muted);
       display: flex;
       align-items: center;
-      gap: 7px;
+      gap: 8px;
       border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+      background: rgba(255, 255, 255, 0.02);
     }
     .vod-dropdown-header i {
       color: var(--accent);
-      font-size: 0.85rem;
+      font-size: 0.9rem;
     }
 
-    /* Riga suggerimento */
+    /* Riga suggerimento ORIGINALE */
     .vod-suggestion-item {
       display: flex;
       align-items: center;
-      gap: 12px;
-      padding: 9px 14px;
+      gap: 15px;
+      padding: 10px 18px;
       cursor: pointer;
       transition: background 0.15s ease;
       border-bottom: 1px solid rgba(255, 255, 255, 0.03);
@@ -409,17 +410,18 @@ if (!isset($_SESSION['active_profile'])) {
     }
 
     .vod-suggestion-thumb {
-      width: 32px;
-      height: 48px;
+      width: 38px;
+      height: 56px;
       object-fit: cover;
-      border-radius: 4px;
+      border-radius: 6px;
       background: #1a1a24;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     }
     .vod-suggestion-thumb-placeholder {
-      width: 32px;
-      height: 48px;
+      width: 38px;
+      height: 56px;
       background: rgba(255,255,255,0.05);
-      border-radius: 4px;
+      border-radius: 6px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -428,9 +430,9 @@ if (!isset($_SESSION['active_profile'])) {
     .vod-suggestion-info { flex: 1; min-width: 0; }
     .vod-suggestion-title {
       font-weight: 700;
-      font-size: 0.85rem;
+      font-size: 0.9rem;
       color: #fff;
-      margin-bottom: 2px;
+      margin-bottom: 3px;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -438,19 +440,32 @@ if (!isset($_SESSION['active_profile'])) {
     .vod-suggestion-meta {
       display: flex;
       align-items: center;
-      gap: 8px;
-      font-size: 0.72rem;
+      gap: 10px;
+      font-size: 0.75rem;
       color: var(--text-muted);
     }
     .vod-suggestion-type {
       text-transform: uppercase;
       font-weight: 800;
       font-size: 0.65rem;
+      padding: 1px 5px;
+      border-radius: 4px;
+      background: rgba(255,255,255,0.08);
     }
     .vod-suggestion-type.movie { color: var(--accent); }
     .vod-suggestion-type.tv { color: #f43f5e; }
-    .vod-suggestion-rating { color: #fbbf24; font-weight: 700; }
-    .vod-suggestion-arrow { font-size: 0.8rem; color: var(--text-muted); opacity: 0.5; }
+    .vod-suggestion-rating { 
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      color: #fbbf24; 
+      font-weight: 800; 
+    }
+    .vod-suggestion-arrow { 
+      font-size: 0.9rem; 
+      color: var(--text-muted); 
+      opacity: 0.4;
+    }
 
     .vod-suggestion-item.keyboard-active {
       background: rgba(255, 255, 255, 0.07);
