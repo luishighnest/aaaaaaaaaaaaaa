@@ -1347,7 +1347,7 @@ function playMovie(tmdbId, resume = false) {
         }
     }
     
-    frame.src = `https://vixsrc.to/movie/${tmdbId}?lang=it&primaryColor=${accent}${startAtParam}`;
+    frame.src = `https://vixsrc.to/movie/${tmdbId}?lang=it&quality=1080p&primaryColor=${accent}${startAtParam}`;
     overlay.style.display = 'flex';
     setTimeout(() => {
         overlay.classList.add('open');
@@ -1453,7 +1453,7 @@ function playShowEpisode(tmdbId, season, episode, resume = false) {
         }
     }
     
-    frame.src = `https://vixsrc.to/tv/${tmdbId}/${season}/${episode}?lang=it&quality=1080&primaryColor=${accent}${startAtParam}`;
+    frame.src = `https://vixsrc.to/tv/${tmdbId}/${season}/${episode}?lang=it&res=1080&primaryColor=${accent}${startAtParam}`;
     overlay.style.display = 'flex';
     setTimeout(() => {
         overlay.classList.add('open');
