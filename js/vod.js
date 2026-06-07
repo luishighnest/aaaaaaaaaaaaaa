@@ -1618,10 +1618,11 @@ window.addEventListener('message', (event) => {
     if (typeof msg === 'string') {
         type = msg;
     } else if (typeof msg === 'object' && msg !== null) {
-        if (msg.type === 'PLAYER_EVENT' && typeof msg.data === 'object' && msg.data !== null) {
-            type = msg.data.event || '';
-            seconds = msg.data.currentTime !== undefined ? msg.data.currentTime : null;
-            duration = msg.data.duration !== undefined ? msg.data.duration : null;
+        const playerPayload = msg.event || msg.data;
+        if (msg.type === 'PLAYER_EVENT' && typeof playerPayload === 'object' && playerPayload !== null) {
+            type = playerPayload.event || '';
+            seconds = playerPayload.currentTime !== undefined ? playerPayload.currentTime : null;
+            duration = playerPayload.duration !== undefined ? playerPayload.duration : null;
         } else {
             type = msg.type || msg.event || '';
             
