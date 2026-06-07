@@ -1607,7 +1607,7 @@ async function loadTvEpisodes(tvId, seasonNumber) {
             // Testo progresso sotto il titolo (se in corso)
             let progressTextHtml = '';
             if (epProgress > 0 && !isWatched) {
-                progressTextHtml = `<span class="vod-ep-progress-text" style="font-size:0.72rem; color:var(--accent); font-weight:600; margin-top:2px;">${epProgress}% completato</span>`;
+                progressTextHtml = `<span style="font-size:0.72rem; color:var(--accent); font-weight:600; margin-top:2px;">${epProgress}% completato</span>`;
             }
 
             // Badge "Riprendi qui" per l'episodio corrente
@@ -1636,9 +1636,6 @@ async function loadTvEpisodes(tvId, seasonNumber) {
                     <button class="vod-episode-status-btn" title="Opzioni visione"><i class="ph ph-dots-three-vertical"></i></button>
                 </div>
             `;
-            row.dataset.tvId = tvId;
-            row.dataset.season = seasonNumber;
-            row.dataset.episode = ep.episode_number;
             
             row.onclick = () => {
                 playShowEpisode(tvId, seasonNumber, ep.episode_number, canResume);
@@ -1691,193 +1688,6 @@ async function loadTvEpisodes(tvId, seasonNumber) {
     } catch(err) {
         console.error("Errore caricamento episodi", err);
         episodesList.innerHTML = '<div style="color: var(--text-muted); padding: 10px;">Errore nel caricamento degli episodi.</div>';
-    }
-}
-
-function getEpisodeProgressData(epData) {
-    if (epData && typeof epData === 'object') {
-        return {
-            progress: parseInt(epData.progress, 10) || 0,
-            seconds: parseInt(epData.seconds, 10) || 0
-        };
-    }
-
-    return {
-        progress: parseInt(epData, 10) || 0,
-        seconds: 0
-    };
-}
-
-function getEpisodeDisplayState(historyItem, seasonNumber, episodeNumber) {
-    const sNum = parseInt(seasonNumber, 10);
-    const eNum = parseInt(episodeNumber, 10);
-    let epProgress = 0;
-    let epSeconds = 0;
-    let isWatched = false;
-
-    const isLastPlayed = !!historyItem &&
-        parseInt(historyItem.season, 10) === sNum &&
-        parseInt(historyItem.episode, 10) === eNum;
-
-    if (historyItem) {
-        const epKey = `${sNum}_${eNum}`;
-        if (historyItem.watched_episodes && historyItem.watched_episodes[epKey] !== undefined) {
-            const progressData = getEpisodeProgressData(historyItem.watched_episodes[epKey]);
-            epProgress = progressData.progress;
-            epSeconds = progressData.seconds;
-            isWatched = epProgress >= 90;
-        } else {
-            const hasWatchedMap = historyItem.watched_episodes !== undefined && historyItem.watched_episodes !== null;
-            if (!hasWatchedMap) {
-                isWatched = sNum < parseInt(historyItem.season, 10) ||
-                    (sNum === parseInt(historyItem.season, 10) && eNum < parseInt(historyItem.episode, 10));
-            }
-            if (isLastPlayed) {
-                epProgress = parseInt(historyItem.progress, 10) || 0;
-                epSeconds = parseInt(historyItem.seconds, 10) || 0;
-                isWatched = isWatched || epProgress >= 90;
-            }
-        }
-    }
-
-    const canResume = epProgress > 0 && epProgress < 95;
-    const shouldShowResumeState = isLastPlayed && canResume && !isWatched;
-
-    return {
-        progress: epProgress,
-        seconds: epSeconds,
-        isWatched,
-        canResume,
-        shouldShowResumeState
-    };
-}
-
-function setEpisodeRowWatchedBadge(titleEl, isWatched) {
-    if (!titleEl) return;
-
-    const existingBadge = titleEl.querySelector('.vod-episode-watched-badge');
-    if (!isWatched) {
-        if (existingBadge) existingBadge.remove();
-        return;
-    }
-
-    if (!existingBadge) {
-        const badge = document.createElement('span');
-        badge.className = 'vod-episode-watched-badge';
-        badge.title = 'Già visto';
-        badge.style.cssText = 'color: #22c55e; font-size: 0.9rem; margin-left: 6px; display: inline-flex; align-items: center; vertical-align: middle;';
-        badge.innerHTML = '<i class="ph-fill ph-check-circle"></i>';
-        titleEl.appendChild(document.createTextNode(' '));
-        titleEl.appendChild(badge);
-    }
-}
-
-function setEpisodeRowProgress(row, progress, isWatched) {
-    const thumb = row.querySelector('.vod-ep-thumb');
-    let progressBar = row.querySelector('.vod-ep-progress-bar');
-    const shouldShowProgress = progress > 0 && !isWatched;
-
-    if (!shouldShowProgress) {
-        if (progressBar) progressBar.remove();
-    } else {
-        if (!progressBar && thumb) {
-            progressBar = document.createElement('div');
-            progressBar.className = 'vod-ep-progress-bar';
-            progressBar.innerHTML = '<div class="vod-ep-progress-fill"></div>';
-            thumb.appendChild(progressBar);
-        }
-        const fill = progressBar ? progressBar.querySelector('.vod-ep-progress-fill') : null;
-        if (fill) fill.style.width = `${progress}%`;
-    }
-
-    const info = row.querySelector('.vod-episode-info');
-    let progressText = row.querySelector('.vod-ep-progress-text');
-    if (!shouldShowProgress) {
-        if (progressText) progressText.remove();
-    } else {
-        if (!progressText && info) {
-            progressText = document.createElement('span');
-            progressText.className = 'vod-ep-progress-text';
-            progressText.style.cssText = 'font-size:0.72rem; color:var(--accent); font-weight:600; margin-top:2px;';
-            const resumeBadge = info.querySelector('.vod-ep-resume-badge');
-            info.insertBefore(progressText, resumeBadge || null);
-        }
-        progressText.textContent = `${progress}% completato`;
-    }
-}
-
-function setEpisodeRowResumeBadge(row, shouldShowResumeState) {
-    const info = row.querySelector('.vod-episode-info');
-    let resumeBadge = row.querySelector('.vod-ep-resume-badge');
-
-    if (!shouldShowResumeState) {
-        if (resumeBadge) resumeBadge.remove();
-        return;
-    }
-
-    if (!resumeBadge && info) {
-        resumeBadge = document.createElement('div');
-        resumeBadge.className = 'vod-ep-resume-badge';
-        resumeBadge.innerHTML = '<i class="ph-fill ph-play-circle"></i> Riprendi qui';
-        info.appendChild(resumeBadge);
-    }
-}
-
-function updateEpisodeRowVisual(row, tvId, seasonNumber, episodeNumber, state) {
-    row.classList.toggle('last-played', state.shouldShowResumeState);
-    row.classList.toggle('watched', state.isWatched && !state.shouldShowResumeState);
-
-    setEpisodeRowWatchedBadge(row.querySelector('.vod-episode-title'), state.isWatched);
-    setEpisodeRowProgress(row, state.progress, state.isWatched);
-    setEpisodeRowResumeBadge(row, state.shouldShowResumeState);
-
-    row.onclick = () => {
-        playShowEpisode(tvId, seasonNumber, episodeNumber, state.canResume);
-    };
-
-    const playBtn = row.querySelector('.vod-episode-play-btn');
-    if (playBtn) {
-        playBtn.onclick = (e) => {
-            e.stopPropagation();
-            playShowEpisode(tvId, seasonNumber, episodeNumber, state.canResume);
-        };
-    }
-}
-
-function updateVisibleEpisodeRowsFromHistory(tvId, seasonNumber) {
-    const historyItem = (window.__ACTIVE_PROFILE_VOD_HISTORY__ || []).find(
-        x => parseInt(x.id, 10) === parseInt(tvId, 10) && x.type === 'tv'
-    );
-
-    document.querySelectorAll('#vod-episodes-list .vod-episode-row').forEach(row => {
-        const rowSeason = row.dataset.season || seasonNumber;
-        const rowEpisode = row.dataset.episode;
-        if (!rowEpisode) return;
-
-        const state = getEpisodeDisplayState(historyItem, rowSeason, rowEpisode);
-        updateEpisodeRowVisual(row, tvId, rowSeason, rowEpisode, state);
-    });
-}
-
-function updateTvModalResumeButton(tvId) {
-    const playBtn = document.getElementById('vod-modal-play-btn');
-    const resumeBtn = document.getElementById('vod-modal-resume-btn');
-    if (!playBtn || !resumeBtn) return;
-
-    const historyItem = (window.__ACTIVE_PROFILE_VOD_HISTORY__ || []).find(
-        x => parseInt(x.id, 10) === parseInt(tvId, 10) && x.type === 'tv'
-    );
-
-    if (historyItem && historyItem.progress > 0 && historyItem.progress < 95 && historyItem.season && historyItem.episode) {
-        resumeBtn.style.display = 'inline-flex';
-        resumeBtn.innerHTML = `<i class="ph-fill ph-play"></i> Riprendi da S${historyItem.season}:E${historyItem.episode}`;
-        resumeBtn.onclick = () => {
-            playShowEpisode(tvId, historyItem.season, historyItem.episode, true);
-        };
-        playBtn.style.display = 'none';
-    } else {
-        resumeBtn.style.display = 'none';
-        playBtn.style.display = 'inline-flex';
     }
 }
 
