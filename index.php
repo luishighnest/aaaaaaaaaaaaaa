@@ -326,16 +326,6 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
 
     <!-- Player Area -->
     <div class="dash-player-area" id="dash-player-area">
-      <!-- Tasti invisibili per uscire dal fullscreen (visibili solo in fullscreen tramite JS) -->
-      <button id="btn-custom-fullscreen" class="custom-fullscreen-btn" title="Esci da Schermo intero"></button>
-      <button id="btn-custom-fullscreen-br" class="custom-fullscreen-btn-br" title="Esci da Schermo intero"></button>
-
-      <!-- OVERLAY IN STILE TV PREMIUM (visibile solo a schermo intero) -->
-      <div id="pc-fullscreen-overlay" class="pc-fullscreen-overlay">
-         <div class="pc-overlay-title" id="pc-overlay-title">Nessun Canale</div>
-         <div class="pc-overlay-subtitle" id="pc-overlay-subtitle">In onda: Programmazione in corso</div>
-      </div>
-
       <iframe id="player-frame" src="about:blank" allow="autoplay; encrypted-media"></iframe>
     </div>
 
@@ -345,9 +335,6 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
         <h1 class="dash-info-title" style="display:flex;align-items:center;justify-content:space-between;width:100%;gap:1rem;">
           <span id="player-ch-name">Caricamento...</span>
           <div style="display:flex; align-items:center; gap: 4px;">
-            <button id="btn-pc-fullscreen" class="btn-favorite-toggle" title="Schermo intero">
-              <i class="ph ph-corners-out"></i>
-            </button>
             <button id="btn-toggle-favorite" class="btn-favorite-toggle" style="display:none;" title="Aggiungi ai preferiti">
               <i class="ph ph-star"></i>
             </button>
@@ -890,17 +877,7 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
           </div>`;
       }
 
-      // Aggiorna anche l'overlay fullscreen del PC
-      const pcOverlayTitle = document.getElementById('pc-overlay-title');
-      const pcOverlaySubtitle = document.getElementById('pc-overlay-subtitle');
-      if (pcOverlayTitle && pcOverlaySubtitle) {
-        pcOverlayTitle.textContent = currentChannel ? currentChannel.name : 'Nessun Canale';
-        if (epg.now) {
-          pcOverlaySubtitle.textContent = `In onda: ${epg.now.titolo}`;
-        } else {
-          pcOverlaySubtitle.textContent = `In onda: Diretta continua`;
-        }
-      }
+
     }
 
     // Ã¢â€â‚¬Ã¢â€â‚¬ Fetch in background (aggiorna ogni 60s) Ã¢â€â‚¬Ã¢â€â‚¬
@@ -1099,11 +1076,7 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
       document.title = ch.name + ' ';
       document.getElementById('player-ch-name').textContent = ch.name;
 
-      // Aggiorna l'overlay fullscreen del PC
-      const pcOverlayTitle = document.getElementById('pc-overlay-title');
-      if (pcOverlayTitle) pcOverlayTitle.textContent = ch.name;
-      const pcOverlaySubtitle = document.getElementById('pc-overlay-subtitle');
-      if (pcOverlaySubtitle) pcOverlaySubtitle.textContent = "In onda: Caricamento...";
+
 
       // Aggiorna bottone preferiti del player
       const btnFav = document.getElementById('btn-toggle-favorite');
@@ -1147,73 +1120,7 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
       }
     });
 
-    // ─── GESTIONE FULLSCREEN CUSTOM PER OVERLAY ───
-    const playerAreaContainer = document.getElementById('dash-player-area');
-    const btnCustomFs = document.getElementById('btn-custom-fullscreen'); // Tasto invisibile alto-destra
-    const btnCustomFsBr = document.getElementById('btn-custom-fullscreen-br'); // Tasto invisibile basso-destra
-    const btnInfoFs = document.getElementById('btn-pc-fullscreen'); // Tasto visibile nel riquadro
 
-    function toggleCustomFullscreen() {
-      if (!document.fullscreenElement) {
-        if (playerAreaContainer.requestFullscreen) {
-          playerAreaContainer.requestFullscreen();
-        } else if (playerAreaContainer.webkitRequestFullscreen) {
-          playerAreaContainer.webkitRequestFullscreen();
-        }
-      } else {
-        if (document.exitFullscreen) {
-          document.exitFullscreen();
-        } else if (document.webkitExitFullscreen) {
-          document.webkitExitFullscreen();
-        }
-      }
-    }
-
-    if (btnCustomFs) {
-      btnCustomFs.addEventListener('click', toggleCustomFullscreen);
-    }
-    if (btnCustomFsBr) {
-      btnCustomFsBr.addEventListener('click', toggleCustomFullscreen);
-    }
-    if (btnInfoFs) {
-      btnInfoFs.addEventListener('click', toggleCustomFullscreen);
-    }
-    
-    // Gestisci timeout per far scomparire l'overlay quando il mouse è fermo a schermo intero
-    let pcFsTimeout;
-    const pcOverlay = document.getElementById('pc-fullscreen-overlay');
-    playerAreaContainer.addEventListener('mousemove', () => {
-      if (document.fullscreenElement === playerAreaContainer) {
-        pcOverlay.classList.remove('hidden');
-        document.body.style.cursor = 'default';
-        clearTimeout(pcFsTimeout);
-        pcFsTimeout = setTimeout(() => {
-          pcOverlay.classList.add('hidden');
-          document.body.style.cursor = 'none';
-        }, 4000);
-      }
-    });
-    
-    document.addEventListener('fullscreenchange', () => {
-      if (document.fullscreenElement === playerAreaContainer) {
-        // Appena entrati a schermo intero
-        pcOverlay.classList.remove('hidden');
-        if(btnCustomFs) btnCustomFs.style.display = 'block';
-        if(btnCustomFsBr) btnCustomFsBr.style.display = 'block'; // Mostra tasto basso-destra
-        clearTimeout(pcFsTimeout);
-        pcFsTimeout = setTimeout(() => {
-          pcOverlay.classList.add('hidden');
-          document.body.style.cursor = 'none';
-        }, 4000);
-      } else {
-        // Usciti dallo schermo intero
-        pcOverlay.classList.remove('hidden'); // Reset per via del CSS
-        if(btnCustomFs) btnCustomFs.style.display = 'none';
-        if(btnCustomFsBr) btnCustomFsBr.style.display = 'none'; // Nascondi tasto basso-destra
-        document.body.style.cursor = 'default';
-        clearTimeout(pcFsTimeout);
-      }
-    });
 
   </script>
   <!-- Settings Modal -->
