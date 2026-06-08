@@ -130,6 +130,28 @@ if (!isset($_SESSION['active_profile'])) {
     window.__ACTIVE_PROFILE_VOD_HISTORY__ = <?= json_encode($vod_history) ?>;
   </script>
   <style>
+    /* --- PREMIUM ANIMATION FRAMEWORK --- */
+    :root {
+      --anim-curve: cubic-bezier(0.16, 1, 0.3, 1);
+      --anim-fast: 0.2s;
+      --anim-base: 0.4s;
+    }
+
+    /* GPU Accelerated Transitions */
+    .vod-smooth {
+      transition-property: transform, opacity;
+      transition-duration: var(--anim-base);
+      transition-timing-function: var(--anim-curve);
+      will-change: transform, opacity;
+    }
+
+    .vod-smooth-fast {
+      transition-property: transform, opacity;
+      transition-duration: var(--anim-fast);
+      transition-timing-function: var(--anim-curve);
+      will-change: transform, opacity;
+    }
+    
     body {
       margin: 0;
       height: 100vh;
@@ -165,7 +187,13 @@ if (!isset($_SESSION['active_profile'])) {
       border-radius: 18px;
       z-index: 1000;
       box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
-      transition: transform 0.4s ease, opacity 0.4s ease, top 0.5s cubic-bezier(0.16, 1, 0.3, 1), background 0.5s cubic-bezier(0.16, 1, 0.3, 1), border-radius 0.5s cubic-bezier(0.16, 1, 0.3, 1), height 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+      /* Eredita .vod-smooth, aggiungendo solo le proprietà specifiche che cambiano */
+      transition-property: transform, opacity, top, background, border-radius, height;
+    }
+    
+    .vod-navbar.vod-smooth {
+       transition-duration: var(--anim-base);
+       transition-timing-function: var(--anim-curve);
     }
     
     .vod-navbar.scrolled {
@@ -2413,7 +2441,7 @@ if (!isset($_SESSION['active_profile'])) {
   <div class="vod-page-layout">
     
     <!-- Navbar Superiore Stile Netflix -->
-    <header class="vod-navbar">
+    <header class="vod-navbar vod-smooth">
       <div class="vod-brand" onclick="window.location.reload()">
         <div class="vod-brand-icon"><i class="ph-fill ph-play"></i></div>
         <div class="vod-brand-text">PZ<span class="brand-num">8</span><span class="brand-sub">VOD</span></div>
