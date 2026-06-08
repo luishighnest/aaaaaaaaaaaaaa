@@ -1552,7 +1552,6 @@ if (!isset($_SESSION['active_profile'])) {
       padding: 2rem;
       height: 100%;
       overflow: hidden;
-      align-items: center; /* Assicura allineamento verticale */
     }
 
     @media (max-width: 768px) {
@@ -1568,10 +1567,10 @@ if (!isset($_SESSION['active_profile'])) {
       flex-shrink: 0;
       position: sticky;
       top: 0;
-      height: 100%;
       display: flex;
-      align-items: center;
+      flex-direction: column;
       justify-content: center;
+      height: 100%;
     }
 
     .vod-modal-artwork img {
