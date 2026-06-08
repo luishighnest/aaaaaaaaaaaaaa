@@ -908,7 +908,7 @@ if (!isset($_SESSION['active_profile'])) {
     }
     .vod-hero-btn.fav-round.is-fav {
       background: rgba(0, 242, 254, 0.12);
-      border-color: rgba(0, 242, 254, 0.55);
+      border-color: rgba(255, 255, 255, 0.7);
       box-shadow: 0 0 22px var(--accent-glow), inset 0 0 10px rgba(0,242,254,0.06);
     }
     .vod-hero-btn.fav-round.is-fav i {
@@ -985,7 +985,7 @@ if (!isset($_SESSION['active_profile'])) {
     .vod-modal-fav-btn-new:active { transform: scale(0.96); }
     .vod-modal-fav-btn-new.is-fav {
       background: rgba(0, 242, 254, 0.1);
-      border-color: rgba(0, 242, 254, 0.5);
+      border-color: rgba(255, 255, 255, 0.7);
       color: var(--accent);
       box-shadow: 0 0 20px var(--accent-glow), inset 0 0 8px rgba(0,242,254,0.05);
     }
@@ -1045,10 +1045,10 @@ if (!isset($_SESSION['active_profile'])) {
       font-size: 0.95rem;
     }
     .vod-card-btn.info:hover {
-      background: rgba(79, 172, 254, 0.22);
-      border-color: rgba(79, 172, 254, 0.75);
-      color: #4facfe;
-      box-shadow: 0 0 16px rgba(79, 172, 254, 0.45), 0 0 0 3px rgba(79,172,254,0.1);
+      background: rgba(255,255,255,0.12);
+      border-color: rgba(255, 255, 255, 0.7);
+      color: #fff;
+      box-shadow: 0 0 14px rgba(255,255,255,0.15);
       transform: scale(1.18) translateY(-2px);
     }
     .vod-card-btn.info i { transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1); }
@@ -1067,7 +1067,7 @@ if (!isset($_SESSION['active_profile'])) {
     }
     .vod-card-btn.fav.is-fav {
       background: rgba(0, 242, 254, 0.14);
-      border-color: rgba(0, 242, 254, 0.6);
+      border-color: rgba(255, 255, 255, 0.7);
       color: var(--accent);
       box-shadow: 0 0 14px var(--accent-glow), inset 0 0 6px rgba(0,242,254,0.06);
     }
@@ -1526,35 +1526,55 @@ if (!isset($_SESSION['active_profile'])) {
     }
     
     .vod-modal-topbar {
+      position: sticky;
+      top: -3rem;
+      z-index: 10;
       display: flex;
       justify-content: flex-end;
-      margin: -1rem -1.25rem -0.25rem 0;
+      margin: -3rem -3rem 0.75rem -3rem;
+      padding: 1rem 1.5rem 0.75rem 1.5rem;
+      background: linear-gradient(to bottom, rgba(10, 15, 35, 0.97) 65%, transparent 100%);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
       pointer-events: none;
     }
     .vod-modal-close {
-      background: rgba(15, 23, 42, 0.78);
-      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(255, 255, 255, 0.08);
+      border: 1.5px solid rgba(255, 255, 255, 0.55);
       color: #fff;
-      width: 35px;
-      height: 35px;
-      border-radius: 12px;
-      display: flex;
+      width: auto;
+      height: 36px;
+      padding: 0 1rem;
+      border-radius: 50px;
+      display: inline-flex;
       align-items: center;
       justify-content: center;
+      gap: 7px;
       cursor: pointer;
-      font-size: 1rem;
+      font-size: 0.78rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.7px;
       pointer-events: auto;
-      transition: var(--transition);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
       backdrop-filter: blur(18px);
       -webkit-backdrop-filter: blur(18px);
-      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.28), inset 0 1px 0 rgba(255,255,255,0.08);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255,255,255,0.1);
+      white-space: nowrap;
+    }
+    .vod-modal-close i {
+      font-size: 1rem;
+      transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
     }
     .vod-modal-close:hover {
-      background: rgba(255, 255, 255, 0.12);
-      color: var(--accent);
-      border-color: rgba(255, 255, 255, 0.22);
+      background: rgba(255, 255, 255, 0.16);
+      border-color: #fff;
+      color: #fff;
       transform: translateY(-1px);
-      box-shadow: 0 14px 32px rgba(0, 0, 0, 0.36);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4), 0 0 0 3px rgba(255,255,255,0.08);
+    }
+    .vod-modal-close:hover i {
+      transform: translateX(-2px);
     }
     .vod-modal-close:active {
       transform: scale(0.96);
@@ -2568,7 +2588,7 @@ if (!isset($_SESSION['active_profile'])) {
       </div>
       <div class="vod-modal-info">
         <div class="vod-modal-topbar">
-          <button class="vod-modal-close" onclick="closeVodModal()" aria-label="Chiudi dettagli"><i class="ph ph-arrow-left"></i></button>
+          <button class="vod-modal-close" onclick="closeVodModal()" aria-label="Chiudi dettagli"><i class="ph ph-x"></i> Chiudi</button>
         </div>
         <h2 id="vod-modal-title">Titolo</h2>
         <div id="vod-modal-tagline"></div>
