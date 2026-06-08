@@ -171,25 +171,27 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const searchClear = document.getElementById('vod-search-clear');
     if (searchClear) {
-        searchClear.addEventListener('click', (e) => {
+        searchClear.addEventListener('mousedown', (e) => {
             e.preventDefault();
             e.stopPropagation();
             
-            // 1. Pulisci fisicamente l'input
+            // 1. Pulisci il testo
             searchInput.value = '';
             
-            // 2. Nascondi immediatamente la X e svuota/chiudi suggerimenti
+            // 2. Nascondi la X immediatamente
             searchClear.style.display = 'none';
+            
+            // 3. Chiudi e svuota suggerimenti
             const dd = document.getElementById('vod-search-dropdown');
             if (dd) {
                 dd.classList.remove('open');
                 dd.innerHTML = '';
             }
             
-            // 3. Forza la chiusura della barra (rimuovendo il focus)
+            // 4. Rimpicciolisci il rettangolo (togli il focus)
             searchInput.blur();
             
-            // 4. Ripristina la visualizzazione home se eravamo in ricerca
+            // 5. Torna alla home
             showHome();
         });
     }
@@ -330,7 +332,7 @@ document.addEventListener('DOMContentLoaded', () => {
     searchInput.addEventListener('input', (e) => {
         const query = e.target.value.trim();
         if (searchClear) {
-            searchClear.style.display = query.length > 0 ? 'block' : 'none';
+            searchClear.style.display = query.length > 0 ? 'flex' : 'none';
         }
 
         keyboardIndex = -1;
