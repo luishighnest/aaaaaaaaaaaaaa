@@ -481,63 +481,7 @@ if (!isset($_SESSION['active_profile'])) {
       background: rgba(255, 255, 255, 0.05);
     }
 
-    .vod-suggestion-thumb {
-      width: 38px;
-      height: 56px;
-      object-fit: cover;
-      border-radius: 6px;
-      background: #1a1a24;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    }
-    .vod-suggestion-thumb-placeholder {
-      width: 38px;
-      height: 56px;
-      background: rgba(255,255,255,0.05);
-      border-radius: 6px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--text-muted);
-    }
-    .vod-suggestion-info { flex: 1; min-width: 0; }
-    .vod-suggestion-title {
-      font-weight: 700;
-      font-size: 0.9rem;
-      color: #fff;
-      margin-bottom: 3px;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-    .vod-suggestion-meta {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 0.75rem;
-      color: var(--text-muted);
-    }
-    .vod-suggestion-type {
-      text-transform: uppercase;
-      font-weight: 800;
-      font-size: 0.65rem;
-      padding: 1px 5px;
-      border-radius: 4px;
-      background: rgba(255,255,255,0.08);
-    }
-    .vod-suggestion-type.movie { color: var(--accent); }
-    .vod-suggestion-type.tv { color: #f43f5e; }
-    .vod-suggestion-rating { 
-      display: flex;
-      align-items: center;
-      gap: 3px;
-      color: #fbbf24; 
-      font-weight: 800; 
-    }
-    .vod-suggestion-arrow { 
-      font-size: 0.9rem; 
-      color: var(--text-muted); 
-      opacity: 0.4;
-    }
+
 
     .vod-suggestion-item.keyboard-active {
       background: rgba(255, 255, 255, 0.07);
@@ -2484,6 +2428,115 @@ if (!isset($_SESSION['active_profile'])) {
         grid-template-columns: repeat(4, 1fr);
         gap: 1.2rem;
       }
+    }
+
+    /* Skeleton Loader Cards */
+    .vod-card-skeleton {
+      background: rgba(255,255,255,0.03);
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+      min-height: 200px;
+    }
+    .vod-card-skeleton.landscape {
+      min-height: 140px;
+    }
+    .vod-skeleton-shine {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.04) 50%, transparent 100%);
+      animation: skeletonShine 1.5s infinite;
+    }
+    @keyframes skeletonShine {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
+    }
+
+    /* Hero Carousel transition */
+    .vod-hero-content {
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    /* Next Episode Countdown Overlay */
+    #vod-next-ep-overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.85);
+      z-index: 100000;
+      align-items: center;
+      justify-content: center;
+      animation: fadeIn 0.3s ease;
+    }
+    .vod-next-ep-content {
+      text-align: center;
+      padding: 2.5rem;
+      border-radius: 16px;
+      background: rgba(20,20,30,0.95);
+      border: 1px solid rgba(255,255,255,0.08);
+      backdrop-filter: blur(20px);
+      max-width: 400px;
+      width: 90%;
+    }
+    .vod-next-ep-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+    .vod-next-ep-title span {
+      color: var(--accent);
+      font-size: 1.8rem;
+      font-weight: 900;
+    }
+    .vod-next-ep-info {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+    }
+    .vod-next-ep-actions {
+      display: flex;
+      gap: 0.75rem;
+      justify-content: center;
+    }
+    .vod-next-ep-play {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      padding: 0.65rem 1.5rem;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: transform 0.2s, background 0.2s;
+    }
+    .vod-next-ep-play:hover {
+      transform: scale(1.05);
+      background: var(--accent-hover);
+    }
+    .vod-next-ep-cancel {
+      background: rgba(255,255,255,0.08);
+      color: var(--text-muted);
+      border: 1px solid rgba(255,255,255,0.1);
+      padding: 0.65rem 1.2rem;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.85rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      transition: background 0.2s;
+    }
+    .vod-next-ep-cancel:hover {
+      background: rgba(255,255,255,0.12);
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
   </style>
 </head>
