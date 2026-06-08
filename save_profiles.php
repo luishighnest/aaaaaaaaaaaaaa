@@ -1,11 +1,9 @@
 <?php
 /**
  * save_profiles.php
- * Riceve i nuovi profili via AJAX e li salva nel database PostgreSQL.
+ * Riceve i nuovi profili via AJAX e li salva in user_profiles.json
  */
 session_start();
-require_once __DIR__ . '/config_db.php';
-require_once __DIR__ . '/db_helper.php';
 
 header('Content-Type: application/json');
 
@@ -33,40 +31,110 @@ if (!isset($data['profiles']) || !is_array($data['profiles'])) {
 
 $new_profiles = $data['profiles'];
 
+// Controllo base per evitare che un utente resti senza profili
 if (count($new_profiles) === 0) {
     echo json_encode(['success' => false, 'error' => 'Devi avere almeno un profilo.']);
     exit;
 }
 
-try {
-    $pdo->beginTransaction();
+$profiles_file = __DIR__ . '/user_profiles.json';
+$all_profiles = [];
 
-    // 1. Cancelliamo i vecchi profili per questo username
-    $stmt = $pdo->prepare("DELETE FROM user_profiles WHERE username = ?");
-    $stmt->execute([$username]);
+if (file_exists($profiles_file)) {
+    $raw = file_get_contents($profiles_file);
+    $all_profiles = json_decode($raw, true) ?? [];
+}
 
-    // 2. Inseriamo i nuovi profili
-    $stmt = $pdo->prepare("
-        INSERT INTO user_profiles (id, username, name, avatar, color, allowed_categories, allowed_channels, favorites, vod_favorites)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-    ");
-
-    foreach ($new_profiles as $p) {
-        $stmt->execute([
-            $p['id'] ?? (substr($username, 0, 3) . '_' . uniqid()),
-            $username,
-            $p['name'] ?? 'Nuovo Profilo',
-            $p['avatar'] ?? 'ph-user-circle',
-            $p['color'] ?? '#00f2fe',
-            json_encode($p['allowed_categories'] ?? []),
-            json_encode($p['allowed_channels'] ?? []),
-            json_encode($p['favorites'] ?? []),
-            json_encode($p['vod_favorites'] ?? [])
-        ]);
+// Assicuriamoci che ogni profilo abbia i campi necessari e preserviamo i dati esistenti
+foreach ($new_profiles as &$profile) {
+    if (empty($profile['id'])) {
+        $profile['id'] = substr($username, 0, 3) . '_' . uniqid();
+    }
+    if (empty($profile['name'])) {
+        $profile['name'] = 'Nuovo Profilo';
+    }
+    if (empty($profile['avatar'])) {
+        $profile['avatar'] = 'ph-user-circle';
+    }
+    if (empty($profile['color'])) {
+        $profile['color'] = '#00f2fe';
     }
 
-    $pdo->commit();
+    // Cerca se il profilo esisteva già nel database per preservare i suoi dati (preferiti, cronologia, ecc.)
+    $existing_profile = null;
+    if (isset($all_profiles[$username]) && is_array($all_profiles[$username])) {
+        foreach ($all_profiles[$username] as $existing) {
+            if ($existing['id'] === $profile['id']) {
+                $existing_profile = $existing;
+                break;
+            }
+        }
+    }
 
+    if ($existing_profile) {
+        foreach (['favorites', 'vod_favorites', 'watch_history'] as $key) {
+            if (isset($existing_profile[$key]) && !empty($existing_profile[$key])) {
+                if (!isset($profile[$key]) || empty($profile[$key])) {
+                    $profile[$key] = $existing_profile[$key];
+                }
+            }
+        }
+    }
+}
+unset($profile);
+
+$all_profiles[$username] = $new_profiles;
+
+// 4. Scrittura su Supabase (API)
+$supabase_url = getenv('SUPABASE_URL') . '/rest/v1/user_profiles';
+$supabase_key = getenv('SUPABASE_KEY');
+
+if ($supabase_url && $supabase_key) {
+    // 1. Cancelliamo i vecchi profili per questo username
+    $delete_url = getenv('SUPABASE_URL') . '/rest/v1/user_profiles?username=eq.' . urlencode($username);
+    $ch_del = curl_init($delete_url);
+    curl_setopt($ch_del, CURLOPT_CUSTOMREQUEST, "DELETE");
+    curl_setopt($ch_del, CURLOPT_HTTPHEADER, [
+        'apikey: ' . $supabase_key,
+        'Authorization: Bearer ' . $supabase_key
+    ]);
+    curl_setopt($ch_del, CURLOPT_RETURNTRANSFER, true);
+    curl_exec($ch_del);
+    curl_close($ch_del);
+
+    // 2. Prepariamo i nuovi dati
+    $profiles_to_send = [];
+    foreach ($new_profiles as $p) {
+        $profiles_to_send[] = [
+            'id' => $p['id'],
+            'username' => $username,
+            'name' => $p['name'],
+            'avatar' => $p['avatar'],
+            'color' => $p['color'],
+            'allowed_categories' => $p['allowed_categories'] ?? [],
+            'allowed_channels' => $p['allowed_channels'] ?? [],
+            'favorites' => $p['favorites'] ?? [],
+            'vod_favorites' => $p['vod_favorites'] ?? []
+        ];
+    }
+
+    // 3. Inseriamo i nuovi profili
+    $ch = curl_init($supabase_url);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($profiles_to_send));
+    curl_setopt($ch, CURLOPT_HTTPHEADER, [
+        'Content-Type: application/json',
+        'apikey: ' . $supabase_key,
+        'Authorization: Bearer ' . $supabase_key,
+        'Prefer: return=minimal'
+    ]);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_POST, true);
+    curl_exec($ch);
+    curl_close($ch);
+}
+
+if (file_put_contents($profiles_file, json_encode($all_profiles, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE))) {
+    
     // Aggiorniamo il profilo attivo in sessione se il nome/colore/avatar è cambiato
     if (isset($_SESSION['active_profile'])) {
         $active_id = $_SESSION['active_profile']['id'];
@@ -78,17 +146,13 @@ try {
                 break;
             }
         }
+        // Se il profilo attivo è stato eliminato, resettiamo e tornerà a select_profile.php al ricaricamento
         if (!$found) {
             unset($_SESSION['active_profile']);
         }
     }
 
     echo json_encode(['success' => true]);
-
-} catch (PDOException $e) {
-    if ($pdo->inTransaction()) {
-        $pdo->rollBack();
-    }
-    error_log("Errore salvataggio profili: " . $e->getMessage());
-    echo json_encode(['success' => false, 'error' => 'Impossibile salvare i profili nel database.']);
+} else {
+    echo json_encode(['success' => false, 'error' => 'Impossibile salvare il file.']);
 }

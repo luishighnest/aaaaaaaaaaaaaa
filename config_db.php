@@ -1,36 +1,29 @@
 <?php
 // config_db.php
 
-// Recupera le credenziali dalle variabili d'ambiente di Render
-$db_url = getenv('SUPABASE_URL');
-$db_key = getenv('SUPABASE_KEY');
-
-if (!$db_url || !$db_key) {
-    error_log("Errore: Variabili d'ambiente mancanti (SUPABASE_URL o SUPABASE_KEY)");
-    die("Errore di configurazione del database.");
-}
-
-// Supabase usa PostgreSQL
-$url_parts = parse_url($db_url);
-$host = $url_parts['host'] ?? '';
-$dbname = 'postgres'; 
-$port = 5432;
+// SQLite salva tutto in un file
+$db_file = __DIR__ . '/database.sqlite';
 
 try {
-    // Connessione a PostgreSQL
-    $dsn = "pgsql:host=$host;port=$port;dbname=$dbname";
-    
-    // NOTA: Per PostgreSQL, il "password" è la chiave API su Supabase
-    $pdo = new PDO($dsn, 'postgres', $db_key, [
+    $dsn = "sqlite:" . $db_file;
+    $pdo = new PDO($dsn, null, null, [
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-        PDO::ATTR_TIMEOUT => 5 // Timeout di 5 secondi
+        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
     ]);
     
+    // Crea la tabella se non esiste
+    $pdo->exec("CREATE TABLE IF NOT EXISTS watch_progress (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        username VARCHAR(50),
+        profile_id VARCHAR(50),
+        content_id INTEGER,
+        content_type VARCHAR(20),
+        progress INTEGER,
+        seconds INTEGER,
+        last_updated DATETIME DEFAULT CURRENT_TIMESTAMP
+    )");
+    
 } catch (PDOException $e) {
-    // Logga l'errore completo lato server per debugging
-    error_log("Errore connessione database: " . $e->getMessage());
-    // Mostra un messaggio generico all'utente
-    die("Errore di connessione al database. Si prega di riprovare più tardi.");
+    die("Errore SQLite: " . $e->getMessage());
 }
 ?>
