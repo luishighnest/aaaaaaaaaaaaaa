@@ -1276,7 +1276,7 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
                 <i class="ph ph-shield-check"></i> Installa uBlock Origin
               </a>
               <a href="https://chromewebstore.google.com/detail/videoplayer-mpdm3u8iptvep/opmeopcambhfimffbomjgemehjkbbmji" target="_blank" class="settings-action-btn" style="padding: 1rem; text-align: center; border-radius: 8px; background: var(--accent); color: #000; font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 0.5rem; text-decoration: none; transition: all 0.2s;" onmouseover="this.style.opacity='0.9';" onmouseout="this.style.opacity='1';">
-                <i class="ph ph-video"></i> Installa Video Player M3U8
+                <i class="ph ph-video"></i> Installa Video Player MPD
               </a>
             </div>
           </div>
