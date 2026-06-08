@@ -8,28 +8,6 @@ const searchGrid = document.getElementById('vod-search-grid');
 const searchInput = document.getElementById('vod-search-input');
 const modal = document.getElementById('vod-modal');
 
-function getSearchWrapper() {
-    return document.getElementById('vod-nav-search');
-}
-
-function getSearchClearBtn() {
-    return document.getElementById('vod-search-clear');
-}
-
-function setSearchExpanded(expanded) {
-    const searchWrapper = getSearchWrapper();
-    if (searchWrapper) {
-        searchWrapper.classList.toggle('is-expanded', expanded);
-    }
-}
-
-function setSearchClearVisible(visible) {
-    const searchClear = getSearchClearBtn();
-    if (!searchClear) return;
-    searchClear.classList.toggle('is-visible', visible);
-    searchClear.style.display = visible ? 'flex' : 'none';
-}
-
 // Elementi Modal
 const modalImg = document.getElementById('vod-modal-img');
 const modalTitle = document.getElementById('vod-modal-title');
@@ -211,44 +189,29 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
     
-    const searchWrapper = getSearchWrapper();
-    const searchClear = getSearchClearBtn();
-
-    if (searchWrapper && searchInput) {
-        searchWrapper.addEventListener('click', (e) => {
-            if (e.target === searchClear || searchClear?.contains(e.target)) return;
-            searchInput.focus();
-        });
-
-        searchInput.addEventListener('focus', () => {
-            setSearchExpanded(true);
-        });
-
-        searchInput.addEventListener('blur', () => {
-            window.setTimeout(() => {
-                if (!searchInput.value.trim()) {
-                    setSearchExpanded(false);
-                }
-            }, 120);
-        });
-    }
-
+    const searchClear = document.getElementById('vod-search-clear');
     if (searchClear) {
         searchClear.addEventListener('mousedown', (e) => {
             e.preventDefault();
             e.stopPropagation();
-
+            
+            // 1. Pulisci il testo
             searchInput.value = '';
-            setSearchClearVisible(false);
-
+            
+            // 2. Nascondi la X immediatamente
+            searchClear.style.display = 'none';
+            
+            // 3. Chiudi e svuota suggerimenti
             const dd = document.getElementById('vod-search-dropdown');
             if (dd) {
                 dd.classList.remove('open');
                 dd.innerHTML = '';
             }
-
+            
+            // 4. Rimpicciolisci il rettangolo (togli il focus)
             searchInput.blur();
-            setSearchExpanded(false);
+            
+            // 5. Torna alla home
             showHome();
         });
     }
@@ -366,7 +329,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (item) {
                         closeDropdown();
                         searchInput.value = item.title || item.name || '';
-                        setSearchClearVisible(true);
+                        if (searchClear) searchClear.style.display = 'block';
                         openModal(item);
                     }
                 });
@@ -388,9 +351,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     searchInput.addEventListener('input', (e) => {
         const query = e.target.value.trim();
-        setSearchClearVisible(query.length > 0);
-        if (query.length > 0) {
-            setSearchExpanded(true);
+        if (searchClear) {
+            searchClear.style.display = query.length > 0 ? 'flex' : 'none';
         }
 
         keyboardIndex = -1;
@@ -441,7 +403,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const item = currentSuggestions[keyboardIndex];
                 closeDropdown();
                 searchInput.value = item.title || item.name || '';
-                setSearchClearVisible(true);
+                if (searchClear) searchClear.style.display = 'block';
                 openModal(item);
             } else if (query.length > 1) {
                 closeDropdown();
@@ -449,9 +411,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         } else if (e.key === 'Escape') {
             closeDropdown();
-            if (!searchInput.value.trim()) {
-                setSearchExpanded(false);
-            }
             searchInput.blur();
         }
     });
@@ -887,13 +846,14 @@ async function openModal(item, defaultSeasonNumber = null) {
         }
         loadTvSeasons(item.id, seasonToLoad);
         
-        if (historyItem && historyItem.season && historyItem.episode && historyItem.progress < 95) {
+        if (historyItem && historyItem.progress > 0 && historyItem.progress < 95 && historyItem.season && historyItem.episode) {
             if (resumeBtn) {
                 resumeBtn.style.display = 'inline-flex';
                 resumeBtn.innerHTML = `<i class="ph-fill ph-play"></i> Riprendi da S${historyItem.season}:E${historyItem.episode}`;
                 resumeBtn.onclick = () => {
-                    playShowEpisode(item.id, historyItem.season, historyItem.episode, historyItem.progress > 0);
+                    playShowEpisode(item.id, historyItem.season, historyItem.episode, true);
                 };
+                // Nascondi "Guarda Ora" se c'è progresso
                 playBtn.style.display = 'none';
             }
         }
@@ -1191,13 +1151,8 @@ async function sendClientDebug(message, contextObj = {}) {
 async function sendProgressPayload(context, seconds, progress, isCompleted = false) {
     if (!context) return;
     
-    const tvEpisodeComplete = context.type === 'tv' && (isCompleted || progress >= 95);
-    let finalProgress = isCompleted ? 100 : progress;
-    let finalSeconds = isCompleted ? 0 : seconds;
-    let historySeason = context.season;
-    let historyEpisode = context.episode;
-    let historyProgress = finalProgress;
-    let historySeconds = finalSeconds;
+    const finalProgress = isCompleted ? 100 : progress;
+    const finalSeconds = isCompleted ? 0 : seconds;
     
     const payloadInfo = {
         id: context.id,
@@ -1222,20 +1177,10 @@ async function sendProgressPayload(context, seconds, progress, isCompleted = fal
     }
     if (context.type === 'tv') {
         const key = `${context.season}_${context.episode}`;
-        if (tvEpisodeComplete) {
-            watched_episodes[key] = { progress: 100, seconds: 0 };
-            const tvDetails = await ensureTvDetails(context.id);
-            const pointer = resolveHistoryAfterEpisodeComplete(tvDetails, context.season, context.episode);
-            historySeason = pointer.season;
-            historyEpisode = pointer.episode;
-            historyProgress = pointer.progress;
-            historySeconds = pointer.seconds;
-        } else {
-            watched_episodes[key] = {
-                progress: finalProgress,
-                seconds: Math.round(finalSeconds)
-            };
-        }
+        watched_episodes[key] = {
+            progress: finalProgress,
+            seconds: Math.round(finalSeconds)
+        };
     }
 
     const localItem = {
@@ -1243,14 +1188,14 @@ async function sendProgressPayload(context, seconds, progress, isCompleted = fal
         type: context.type,
         title: context.title,
         poster_path: context.poster_path,
-        progress: context.type === 'tv' ? historyProgress : finalProgress,
-        seconds: Math.round(context.type === 'tv' ? historySeconds : finalSeconds),
+        progress: finalProgress,
+        seconds: Math.round(finalSeconds),
         watched_episodes: watched_episodes,
         timestamp: Math.round(Date.now() / 1000)
     };
     if (context.type === 'tv') {
-        localItem.season = historySeason;
-        localItem.episode = historyEpisode;
+        localItem.season = context.season;
+        localItem.episode = context.episode;
     }
     if (existingIndex !== -1) {
         window.__ACTIVE_PROFILE_VOD_HISTORY__.splice(existingIndex, 1);
@@ -1260,10 +1205,6 @@ async function sendProgressPayload(context, seconds, progress, isCompleted = fal
         window.__ACTIVE_PROFILE_VOD_HISTORY__ = window.__ACTIVE_PROFILE_VOD_HISTORY__.slice(0, 10);
     }
     renderContinueWatching();
-
-    if (tvEpisodeComplete) {
-        await refreshTvModalAfterHistoryUpdate(context.id);
-    }
     
     try {
         const bodyData = {
@@ -1271,13 +1212,13 @@ async function sendProgressPayload(context, seconds, progress, isCompleted = fal
             type: context.type,
             title: context.title,
             poster_path: context.poster_path,
-            progress: context.type === 'tv' ? historyProgress : finalProgress,
-            seconds: Math.round(context.type === 'tv' ? historySeconds : finalSeconds),
+            progress: finalProgress,
+            seconds: Math.round(finalSeconds),
             csrf_token: window.__CSRF_TOKEN__
         };
         if (context.type === 'tv') {
-            bodyData.season = historySeason;
-            bodyData.episode = historyEpisode;
+            bodyData.season = context.season;
+            bodyData.episode = context.episode;
             bodyData.watched_episodes = watched_episodes;
         }
         
@@ -1308,9 +1249,6 @@ async function sendProgressPayload(context, seconds, progress, isCompleted = fal
         if (result.success) {
             window.__ACTIVE_PROFILE_VOD_HISTORY__ = result.watch_history;
             renderContinueWatching();
-            if (tvEpisodeComplete) {
-                await refreshTvModalAfterHistoryUpdate(context.id);
-            }
         } else {
             console.error('[VOD PROGRESS DEBUG] sendProgressPayload: Save failed on server:', result.error);
         }
@@ -1400,12 +1338,9 @@ async function closePlayer() {
             openModal(window.__CURRENT_MODAL_ITEM__);
         }
     } else if (context && context.type === 'tv') {
+        // Per le serie TV, rimaniamo sulla modale dei dettagli ed impostiamo la stagione corrente
         if (window.__CURRENT_MODAL_ITEM__) {
-            const historyItem = (window.__ACTIVE_PROFILE_VOD_HISTORY__ || []).find(
-                x => parseInt(x.id, 10) === parseInt(context.id, 10) && x.type === 'tv'
-            );
-            const seasonToOpen = historyItem && historyItem.season ? historyItem.season : context.season;
-            openModal(window.__CURRENT_MODAL_ITEM__, seasonToOpen);
+            openModal(window.__CURRENT_MODAL_ITEM__, context.season);
         }
     } else {
         // Fallback generico
@@ -1498,19 +1433,42 @@ function playShowEpisode(tmdbId, season, episode, resume = false) {
     if (nextBtn) nextBtn.style.display = 'none';
     window.__NEXT_EPISODE__ = null;
 
-    ensureTvDetails(tmdbId)
+    // Recupera la struttura dello show da TMDB per determinare il prossimo episodio
+    fetch(`${BASE_URL}/tv/${tmdbId}?api_key=${API_KEY}&language=it-IT`)
+        .then(r => r.json())
         .then(data => {
-            const next = getNextEpisode(data, season, episode);
-            if (next) {
-                window.__NEXT_EPISODE__ = {
-                    id: tmdbId,
-                    season: next.season,
-                    episode: next.episode
-                };
-                if (nextBtn) nextBtn.style.display = 'flex';
+            if (data && data.seasons) {
+                const currentSeasonNum = parseInt(season, 10);
+                const currentEpisodeNum = parseInt(episode, 10);
+                const currentSeasonObj = data.seasons.find(s => parseInt(s.season_number, 10) === currentSeasonNum);
+                
+                if (currentSeasonObj) {
+                    if (currentEpisodeNum < currentSeasonObj.episode_count) {
+                        window.__NEXT_EPISODE__ = {
+                            id: tmdbId,
+                            season: currentSeasonNum,
+                            episode: currentEpisodeNum + 1
+                        };
+                        if (nextBtn) nextBtn.style.display = 'flex';
+                    } else {
+                        // Cerca la prossima stagione valida (> season corrente con episodi)
+                        const nextSeasonObj = data.seasons
+                            .filter(s => parseInt(s.season_number, 10) > currentSeasonNum && s.episode_count > 0)
+                            .sort((a, b) => parseInt(a.season_number, 10) - parseInt(b.season_number, 10))[0];
+                        
+                        if (nextSeasonObj) {
+                            window.__NEXT_EPISODE__ = {
+                                id: tmdbId,
+                                season: parseInt(nextSeasonObj.season_number, 10),
+                                episode: 1
+                            };
+                            if (nextBtn) nextBtn.style.display = 'flex';
+                        }
+                    }
+                }
             }
         })
-        .catch(err => console.error('Errore verifica prossimo episodio:', err));
+        .catch(err => console.error("Errore verifica prossimo episodio:", err));
         
     // Recupera asincronamente il nome dell'episodio da TMDB
     fetch(`${BASE_URL}/tv/${tmdbId}/season/${season}?api_key=${API_KEY}&language=it-IT`)
@@ -1599,12 +1557,9 @@ async function loadTvSeasons(tvId, defaultSeasonNumber = null) {
     }
 }
 
-async function loadTvEpisodes(tvId, seasonNumber, options = {}) {
-    const { silent = false } = options;
+async function loadTvEpisodes(tvId, seasonNumber) {
     const episodesList = document.getElementById('vod-episodes-list');
-    if (!silent) {
-        episodesList.innerHTML = '<div style="color: var(--text-muted); padding: 10px;">Caricamento episodi...</div>';
-    }
+    episodesList.innerHTML = '<div style="color: var(--text-muted); padding: 10px;">Caricamento episodi...</div>';
     
     try {
         const response = await fetch(`${BASE_URL}/tv/${tvId}/season/${seasonNumber}?api_key=${API_KEY}&language=it-IT`);
@@ -1660,7 +1615,7 @@ async function loadTvEpisodes(tvId, seasonNumber, options = {}) {
             }
             
             const canResume = epProgress > 0 && epProgress < 95;
-            const shouldShowResumeState = isLastPlayed && !isWatched && epProgress < 95;
+            const shouldShowResumeState = isLastPlayed && canResume && !isWatched;
             
             const row = document.createElement('div');
             let rowClass = 'vod-episode-row';
@@ -1826,7 +1781,7 @@ function getEpisodeDisplayState(historyItem, seasonNumber, episodeNumber) {
     }
 
     const canResume = epProgress > 0 && epProgress < 95;
-    const shouldShowResumeState = isLastPlayed && !isWatched && epProgress < 95;
+    const shouldShowResumeState = isLastPlayed && canResume && !isWatched;
 
     return {
         progress: epProgress,
@@ -1953,107 +1908,16 @@ function updateTvModalResumeButton(tvId) {
         x => parseInt(x.id, 10) === parseInt(tvId, 10) && x.type === 'tv'
     );
 
-    if (historyItem && historyItem.season && historyItem.episode && historyItem.progress < 95) {
+    if (historyItem && historyItem.progress > 0 && historyItem.progress < 95 && historyItem.season && historyItem.episode) {
         resumeBtn.style.display = 'inline-flex';
         resumeBtn.innerHTML = `<i class="ph-fill ph-play"></i> Riprendi da S${historyItem.season}:E${historyItem.episode}`;
         resumeBtn.onclick = () => {
-            playShowEpisode(tvId, historyItem.season, historyItem.episode, historyItem.progress > 0);
+            playShowEpisode(tvId, historyItem.season, historyItem.episode, true);
         };
         playBtn.style.display = 'none';
     } else {
         resumeBtn.style.display = 'none';
         playBtn.style.display = 'inline-flex';
-    }
-}
-
-function getSortedSeasons(tvDetails) {
-    if (!tvDetails || !tvDetails.seasons) return [];
-    return tvDetails.seasons
-        .filter(s => parseInt(s.season_number, 10) > 0)
-        .sort((a, b) => parseInt(a.season_number, 10) - parseInt(b.season_number, 10));
-}
-
-function getNextEpisode(tvDetails, seasonNumber, episodeNumber) {
-    const seasons = getSortedSeasons(tvDetails);
-    const sNum = parseInt(seasonNumber, 10);
-    const eNum = parseInt(episodeNumber, 10);
-    const seasonIdx = seasons.findIndex(s => parseInt(s.season_number, 10) === sNum);
-    if (seasonIdx === -1) return null;
-
-    const episodeCount = parseInt(seasons[seasonIdx].episode_count, 10) || 0;
-    if (eNum < episodeCount) {
-        return { season: sNum, episode: eNum + 1 };
-    }
-
-    for (let i = seasonIdx + 1; i < seasons.length; i++) {
-        const count = parseInt(seasons[i].episode_count, 10) || 0;
-        if (count > 0) {
-            return { season: parseInt(seasons[i].season_number, 10), episode: 1 };
-        }
-    }
-
-    return null;
-}
-
-async function ensureTvDetails(tvId) {
-    const tId = parseInt(tvId, 10);
-    if (window.__CURRENT_TV_DETAILS__ && parseInt(window.__CURRENT_TV_DETAILS__.id, 10) === tId) {
-        return window.__CURRENT_TV_DETAILS__;
-    }
-    const response = await fetch(`${BASE_URL}/tv/${tId}?api_key=${API_KEY}&language=it-IT`);
-    const details = await response.json();
-    window.__CURRENT_TV_DETAILS__ = details;
-    return details;
-}
-
-function resolveHistoryAfterEpisodeComplete(tvDetails, seasonNumber, episodeNumber) {
-    const next = getNextEpisode(tvDetails, seasonNumber, episodeNumber);
-    if (next) {
-        return { season: next.season, episode: next.episode, progress: 0, seconds: 0 };
-    }
-    return {
-        season: parseInt(seasonNumber, 10),
-        episode: parseInt(episodeNumber, 10),
-        progress: 100,
-        seconds: 0
-    };
-}
-
-function resolveResumePointer(tvDetails, status, anchorSeason, anchorEpisode) {
-    if (status === 'up_to_here' || status === 'watched') {
-        return resolveHistoryAfterEpisodeComplete(tvDetails, anchorSeason, anchorEpisode);
-    }
-    return null;
-}
-
-async function refreshTvModalAfterHistoryUpdate(tvId) {
-    const tId = parseInt(tvId, 10);
-    const modal = document.getElementById('vod-modal');
-    const modalItem = window.__CURRENT_MODAL_ITEM__;
-    if (!modal || !modal.classList.contains('open') || !modalItem || parseInt(modalItem.id, 10) !== tId) {
-        return;
-    }
-
-    const historyItem = (window.__ACTIVE_PROFILE_VOD_HISTORY__ || []).find(
-        x => parseInt(x.id, 10) === tId && x.type === 'tv'
-    );
-    const seasonSelect = document.getElementById('vod-season-select');
-
-    updateTvModalResumeButton(tId);
-
-    if (!historyItem || historyItem.progress >= 95 || !historyItem.season) {
-        if (seasonSelect) {
-            updateVisibleEpisodeRowsFromHistory(tId, seasonSelect.value);
-        }
-        return;
-    }
-
-    const targetSeason = parseInt(historyItem.season, 10);
-    if (seasonSelect && parseInt(seasonSelect.value, 10) !== targetSeason) {
-        seasonSelect.value = targetSeason;
-        await loadTvEpisodes(tId, targetSeason, { silent: true });
-    } else {
-        updateVisibleEpisodeRowsFromHistory(tId, targetSeason);
     }
 }
 
@@ -2159,8 +2023,6 @@ async function setEpisodeWatchStatus(tvId, seasonNumber, episodeNumber, status) 
     
     const item = resolveVODItem(tvId, 'tv');
     if (!item) return;
-
-    const tvDetails = await ensureTvDetails(tvId);
     
     const title = item.title || item.name;
     const poster_path = item.poster_path;
@@ -2223,8 +2085,8 @@ async function setEpisodeWatchStatus(tvId, seasonNumber, episodeNumber, status) 
     } else if (status === 'unwatched') {
         delete watched_episodes[epKey];
     } else if (status === 'up_to_here') {
-        if (tvDetails && tvDetails.seasons) {
-            tvDetails.seasons.forEach(season => {
+        if (window.__CURRENT_TV_DETAILS__ && window.__CURRENT_TV_DETAILS__.seasons) {
+            window.__CURRENT_TV_DETAILS__.seasons.forEach(season => {
                 const curSNum = parseInt(season.season_number, 10);
                 if (curSNum < sNum) {
                     const count = parseInt(season.episode_count, 10) || 0;
@@ -2258,57 +2120,44 @@ async function setEpisodeWatchStatus(tvId, seasonNumber, episodeNumber, status) 
             window.__ACTIVE_PROFILE_VOD_HISTORY__.splice(existingIndex, 1);
         }
     } else {
-        const resumePointer = resolveResumePointer(tvDetails, status, sNum, eNum);
-
-        if (resumePointer) {
-            targetSeason = resumePointer.season;
-            targetEpisode = resumePointer.episode;
-            progress = resumePointer.progress;
-            seconds = resumePointer.seconds;
+        // Se non stiamo eliminando tutto, impostiamo il massimo episodio come target o teniamo il record attivo
+        // Trova il massimo episodio in watched_episodes
+        let maxSeason = 0;
+        let maxEpisode = 0;
+        for (const key in watched_episodes) {
+            const epData = watched_episodes[key];
+            const prog = (epData && typeof epData === 'object') ? (epData.progress || 0) : parseInt(epData, 10);
+            if (prog >= 90) {
+                const [s, ep] = key.split('_').map(Number);
+                if (s > maxSeason || (s === maxSeason && ep > maxEpisode)) {
+                    maxSeason = s;
+                    maxEpisode = ep;
+                }
+            }
+        }
+        
+        if (maxSeason > 0) {
+            targetSeason = maxSeason;
+            targetEpisode = maxEpisode;
+            progress = 100;
         } else {
-            let maxSeason = 0;
-            let maxEpisode = 0;
+            // Se ci sono episodi ma nessuno con progresso >= 90 (magari solo in corso)
+            // Troviamo il primo/ultimo episodio con progresso > 0
+            let anySeason = 1;
+            let anyEpisode = 1;
+            let anyProgress = 0;
             for (const key in watched_episodes) {
-                const epData = watched_episodes[key];
-                const prog = (epData && typeof epData === 'object') ? (epData.progress || 0) : parseInt(epData, 10);
-                if (prog >= 90) {
-                    const [s, ep] = key.split('_').map(Number);
-                    if (s > maxSeason || (s === maxSeason && ep > maxEpisode)) {
-                        maxSeason = s;
-                        maxEpisode = ep;
-                    }
+                const [s, ep] = key.split('_').map(Number);
+                if (s > anySeason || (s === anySeason && ep > anyEpisode)) {
+                    anySeason = s;
+                    anyEpisode = ep;
+                    const epData = watched_episodes[key];
+                    anyProgress = (epData && typeof epData === 'object') ? (epData.progress || 0) : parseInt(epData, 10);
                 }
             }
-
-            if (maxSeason > 0) {
-                const next = getNextEpisode(tvDetails, maxSeason, maxEpisode);
-                if (next) {
-                    targetSeason = next.season;
-                    targetEpisode = next.episode;
-                    progress = 0;
-                    seconds = 0;
-                } else {
-                    targetSeason = maxSeason;
-                    targetEpisode = maxEpisode;
-                    progress = 100;
-                }
-            } else {
-                let anySeason = 1;
-                let anyEpisode = 1;
-                let anyProgress = 0;
-                for (const key in watched_episodes) {
-                    const [s, ep] = key.split('_').map(Number);
-                    if (s > anySeason || (s === anySeason && ep > anyEpisode)) {
-                        anySeason = s;
-                        anyEpisode = ep;
-                        const epData = watched_episodes[key];
-                        anyProgress = (epData && typeof epData === 'object') ? (epData.progress || 0) : parseInt(epData, 10);
-                    }
-                }
-                targetSeason = anySeason;
-                targetEpisode = anyEpisode;
-                progress = anyProgress;
-            }
+            targetSeason = anySeason;
+            targetEpisode = anyEpisode;
+            progress = anyProgress;
         }
         
         const localItem = {
@@ -2330,16 +2179,7 @@ async function setEpisodeWatchStatus(tvId, seasonNumber, episodeNumber, status) 
         window.__ACTIVE_PROFILE_VOD_HISTORY__.unshift(localItem);
     }
     
-    const seasonSelect = document.getElementById('vod-season-select');
-    const visibleSeason = seasonSelect ? parseInt(seasonSelect.value, 10) : sNum;
-
-    if (!noEpisodesLeft && progress < 95 && seasonSelect && targetSeason !== visibleSeason) {
-        seasonSelect.value = targetSeason;
-        await loadTvEpisodes(tvId, targetSeason, { silent: true });
-    } else {
-        updateVisibleEpisodeRowsFromHistory(tvId, seasonNumber);
-    }
-
+    updateVisibleEpisodeRowsFromHistory(tvId, seasonNumber);
     updateTvModalResumeButton(tvId);
     renderContinueWatching();
 
@@ -2374,16 +2214,7 @@ async function setEpisodeWatchStatus(tvId, seasonNumber, episodeNumber, status) 
         const result = await response.json();
         if (result.success) {
             window.__ACTIVE_PROFILE_VOD_HISTORY__ = result.watch_history;
-            const synced = (window.__ACTIVE_PROFILE_VOD_HISTORY__ || []).find(
-                x => parseInt(x.id, 10) === tId && x.type === 'tv'
-            );
-            const syncedSeason = synced ? parseInt(synced.season, 10) : visibleSeason;
-            if (seasonSelect && synced && synced.progress < 95 && syncedSeason !== parseInt(seasonSelect.value, 10)) {
-                seasonSelect.value = syncedSeason;
-                await loadTvEpisodes(tvId, syncedSeason, { silent: true });
-            } else {
-                updateVisibleEpisodeRowsFromHistory(tvId, seasonNumber);
-            }
+            updateVisibleEpisodeRowsFromHistory(tvId, seasonNumber);
             updateTvModalResumeButton(tvId);
             renderContinueWatching();
         }
@@ -2644,8 +2475,8 @@ function changeSection(sectionName) {
     
     // Ripristina input di ricerca
     searchInput.value = '';
-    setSearchClearVisible(false);
-    setSearchExpanded(false);
+    const searchClear = document.getElementById('vod-search-clear');
+    if (searchClear) searchClear.style.display = 'none';
     searchContainer.style.display = 'none';
     
     // Toggle classe active sui link
@@ -2850,17 +2681,84 @@ async function playNextEpisode() {
 
 async function handleEpisodeEnded() {
     if (!window.__PLAYBACK_CONTEXT__ || window.__PLAYBACK_CONTEXT__.type !== 'tv') return;
-    if (window.__EPISODE_END_HANDLED__) return;
-    window.__EPISODE_END_HANDLED__ = true;
-
-    try {
-        await sendProgressPayload(window.__PLAYBACK_CONTEXT__, 0, 100, true);
-    } catch (err) {
-        console.error('Errore avanzamento automatico episodio:', err);
-    } finally {
-        setTimeout(() => {
-            window.__EPISODE_END_HANDLED__ = false;
-        }, 20000);
+    const context = window.__PLAYBACK_CONTEXT__;
+    
+    // Trova la cronologia esistente
+    if (!window.__ACTIVE_PROFILE_VOD_HISTORY__) {
+        window.__ACTIVE_PROFILE_VOD_HISTORY__ = [];
+    }
+    const existingIndex = window.__ACTIVE_PROFILE_VOD_HISTORY__.findIndex(
+        x => parseInt(x.id, 10) === parseInt(context.id, 10) && x.type === 'tv'
+    );
+    
+    // Inizializza o migra la mappa degli episodi visti
+    let watched_episodes = {};
+    if (existingIndex !== -1 && window.__ACTIVE_PROFILE_VOD_HISTORY__[existingIndex].watched_episodes) {
+        watched_episodes = { ...window.__ACTIVE_PROFILE_VOD_HISTORY__[existingIndex].watched_episodes };
+    }
+    
+    // Segna l'episodio corrente come completato (100)
+    const completedKey = `${context.season}_${context.episode}`;
+    watched_episodes[completedKey] = { progress: 100, seconds: 0 };
+    
+    if (window.__NEXT_EPISODE__) {
+        const next = window.__NEXT_EPISODE__;
+        
+        // Segna anche il prossimo episodio a 0% progress nella mappa localmente per evitare salti visivi
+        const nextKey = `${next.season}_${next.episode}`;
+        watched_episodes[nextKey] = { progress: 0, seconds: 0 };
+        
+        // Aggiorna la cache locale immediatamente
+        const localItem = {
+            id: parseInt(context.id, 10),
+            type: 'tv',
+            title: context.title,
+            poster_path: context.poster_path,
+            progress: 0,
+            seconds: 0,
+            season: parseInt(next.season, 10),
+            episode: parseInt(next.episode, 10),
+            watched_episodes: watched_episodes,
+            timestamp: Math.round(Date.now() / 1000)
+        };
+        if (existingIndex !== -1) {
+            window.__ACTIVE_PROFILE_VOD_HISTORY__.splice(existingIndex, 1);
+        }
+        window.__ACTIVE_PROFILE_VOD_HISTORY__.unshift(localItem);
+        renderContinueWatching();
+        
+        try {
+            const bodyData = {
+                id: next.id,
+                type: 'tv',
+                title: context.title,
+                poster_path: context.poster_path,
+                progress: 0,
+                seconds: 0,
+                season: next.season,
+                episode: next.episode,
+                watched_episodes: watched_episodes,
+                csrf_token: window.__CSRF_TOKEN__
+            };
+            
+            const response = await fetch('save_watch_progress.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRF-Token': window.__CSRF_TOKEN__
+                },
+                body: JSON.stringify(bodyData)
+            });
+            const result = await response.json();
+            if (result.success) {
+                window.__ACTIVE_PROFILE_VOD_HISTORY__ = result.watch_history;
+                renderContinueWatching();
+            }
+        } catch (err) {
+            console.error('Errore avanzamento automatico episodio:', err);
+        }
+    } else {
+        await saveProgressToServer(0, 100, true);
     }
 }
 
