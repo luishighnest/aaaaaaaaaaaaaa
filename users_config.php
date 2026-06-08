@@ -23,7 +23,7 @@ return [
         'Tyto' => [
             'password' => '$2y$12$XG2zFwgLQ9JFcfu4/gUPUeRqYoXsbuCPojKzG/jS5yJbtmOvPxfiW',
             'profiles' => [
-                ['id' => 'Tyto_main', 'name' => 'ale', 'avatar' => 'ph-user-circle', 'color' => '#00f2fe'],
+                ['id' => 'Tyto_main', 'name' => 'Tyto', 'avatar' => 'ph-user-circle', 'color' => '#00f2fe'],
             ]
         ]
     ]
