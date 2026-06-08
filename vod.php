@@ -908,14 +908,28 @@ if (!isset($_SESSION['active_profile'])) {
     }
     .vod-hero-btn.fav-round.is-fav {
       background: rgba(244, 63, 94, 0.15);
-      border-color: rgba(244, 63, 94, 0.5);
-      box-shadow: 0 0 18px rgba(244,63,94,0.25);
+      border-color: rgba(244, 63, 94, 0.6);
+      box-shadow: 0 0 22px rgba(244,63,94,0.35), inset 0 0 10px rgba(244,63,94,0.08);
     }
-    .vod-hero-btn.fav-round.is-fav i { color: var(--danger); }
+    .vod-hero-btn.fav-round.is-fav i {
+      color: var(--danger);
+      filter: drop-shadow(0 0 5px rgba(244,63,94,0.65));
+    }
     .vod-hero-btn.fav-round.is-fav:hover {
-      background: rgba(244, 63, 94, 0.25);
+      background: rgba(244, 63, 94, 0.26);
+      box-shadow: 0 0 30px rgba(244,63,94,0.5);
+      transform: translateY(-2px);
     }
-    .vod-hero-btn.fav-round::after { display: none; } /* no shine on round */
+    .vod-hero-btn.fav-round::after { display: none; }
+
+    /* ── ANIMAZIONE POP al toggle preferito ── */
+    @keyframes fav-pop {
+      0%   { transform: scale(1); }
+      35%  { transform: scale(1.35); }
+      65%  { transform: scale(0.85); }
+      100% { transform: scale(1); }
+    }
+    .fav-pop i { animation: fav-pop 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; }
 
     /* ── BOTTONI MODAL ── */
     .vod-modal-action-row {
@@ -970,66 +984,100 @@ if (!isset($_SESSION['active_profile'])) {
     }
     .vod-modal-fav-btn-new:active { transform: scale(0.96); }
     .vod-modal-fav-btn-new.is-fav {
-      background: rgba(244,63,94,0.12);
-      border-color: rgba(244,63,94,0.45);
+      background: rgba(244,63,94,0.14);
+      border-color: rgba(244,63,94,0.6);
       color: var(--danger);
-      box-shadow: 0 0 18px rgba(244,63,94,0.2);
+      box-shadow: 0 0 22px rgba(244,63,94,0.32), inset 0 0 10px rgba(244,63,94,0.06);
     }
-    .vod-modal-fav-btn-new.is-fav i { color: var(--danger); transform: scale(1.1); }
-    .vod-modal-fav-btn-new.is-fav:hover { background: rgba(244,63,94,0.2); }
+    .vod-modal-fav-btn-new.is-fav i {
+      color: var(--danger);
+      transform: scale(1.15);
+      filter: drop-shadow(0 0 4px rgba(244,63,94,0.65));
+    }
+    .vod-modal-fav-btn-new.is-fav:hover {
+      background: rgba(244,63,94,0.24);
+      box-shadow: 0 0 30px rgba(244,63,94,0.45);
+    }
 
     /* ── CARD BUTTONS REDESIGN ── */
     .vod-card-btn {
-      width: 32px;
-      height: 32px;
+      width: 34px;
+      height: 34px;
       border-radius: 50%;
-      background: rgba(0,0,0,0.45);
-      border: 1.5px solid rgba(255,255,255,0.18);
+      background: rgba(8, 10, 20, 0.55);
+      border: 1.5px solid rgba(255,255,255,0.2);
       color: #fff;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      font-size: 0.95rem;
+      font-size: 0.9rem;
       cursor: pointer;
-      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
+      transition: background 0.25s ease, border-color 0.25s ease,
+                  box-shadow 0.25s ease, transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1),
+                  color 0.2s ease;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
       flex-shrink: 0;
+      outline: none;
     }
-    .vod-card-btn:hover {
-      transform: scale(1.12) translateY(-1px);
-      border-color: rgba(255,255,255,0.45);
-      background: rgba(255,255,255,0.15);
-    }
-    .vod-card-btn:active { transform: scale(0.93); }
+    .vod-card-btn:active { transform: scale(0.9) !important; }
 
-    /* Play card – accent pieno */
+    /* ─ PLAY: bianco solido → accent al hover ─ */
     .vod-card-btn.play {
-      background: #fff;
+      background: rgba(255,255,255,0.92);
       border-color: transparent;
       color: #000;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+      font-size: 0.95rem;
+      box-shadow: 0 2px 14px rgba(0,0,0,0.45);
     }
     .vod-card-btn.play:hover {
       background: var(--accent);
-      box-shadow: 0 4px 18px var(--accent-glow);
+      color: #000;
       border-color: transparent;
-      transform: scale(1.15) translateY(-1px);
+      box-shadow: 0 0 22px var(--accent-glow), 0 4px 14px rgba(0,0,0,0.4);
+      transform: scale(1.18) translateY(-2px);
     }
 
-    /* Fav card – + diventa ✓ se preferito */
+    /* ─ INFO: accento blu/teal con bordo luminoso al hover ─ */
+    .vod-card-btn.info {
+      font-size: 0.95rem;
+    }
+    .vod-card-btn.info:hover {
+      background: rgba(79, 172, 254, 0.22);
+      border-color: rgba(79, 172, 254, 0.75);
+      color: #4facfe;
+      box-shadow: 0 0 16px rgba(79, 172, 254, 0.45), 0 0 0 3px rgba(79,172,254,0.1);
+      transform: scale(1.18) translateY(-2px);
+    }
+    .vod-card-btn.info i { transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1); }
+    .vod-card-btn.info:hover i { transform: rotate(15deg) scale(1.1); }
+
+    /* ─ FAV: + → ✓ con glow rosso ─ */
     .vod-card-btn.fav {
-      font-size: 1.1rem;
+      font-size: 1.05rem;
       font-weight: 900;
     }
-    .vod-card-btn.fav:hover { color: #fff; }
+    .vod-card-btn.fav:hover {
+      background: rgba(255,255,255,0.12);
+      border-color: rgba(255,255,255,0.45);
+      color: #fff;
+      transform: scale(1.18) translateY(-2px);
+    }
     .vod-card-btn.fav.is-fav {
       background: rgba(244,63,94,0.18);
-      border-color: rgba(244,63,94,0.5);
+      border-color: rgba(244,63,94,0.65);
       color: var(--danger);
-      box-shadow: 0 0 12px rgba(244,63,94,0.3);
+      box-shadow: 0 0 16px rgba(244,63,94,0.4), inset 0 0 8px rgba(244,63,94,0.08);
     }
-    .vod-card-btn.fav.is-fav:hover { background: rgba(244,63,94,0.3); }
+    .vod-card-btn.fav.is-fav i {
+      filter: drop-shadow(0 0 4px rgba(244,63,94,0.7));
+    }
+    .vod-card-btn.fav.is-fav:hover {
+      background: rgba(244,63,94,0.32);
+      border-color: rgba(244,63,94,0.85);
+      box-shadow: 0 0 24px rgba(244,63,94,0.55);
+      transform: scale(1.18) translateY(-2px);
+    }
 
     /* Stile Righe Netflix */
     .vod-row-container {
