@@ -171,11 +171,25 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const searchClear = document.getElementById('vod-search-clear');
     if (searchClear) {
-        searchClear.addEventListener('click', () => {
+        searchClear.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            // 1. Pulisci fisicamente l'input
             searchInput.value = '';
+            
+            // 2. Nascondi immediatamente la X e svuota/chiudi suggerimenti
             searchClear.style.display = 'none';
             const dd = document.getElementById('vod-search-dropdown');
-            if (dd) dd.classList.remove('open');
+            if (dd) {
+                dd.classList.remove('open');
+                dd.innerHTML = '';
+            }
+            
+            // 3. Forza la chiusura della barra (rimuovendo il focus)
+            searchInput.blur();
+            
+            // 4. Ripristina la visualizzazione home se eravamo in ricerca
             showHome();
         });
     }
@@ -1453,7 +1467,7 @@ function playShowEpisode(tmdbId, season, episode, resume = false) {
         }
     }
     
-    frame.src = `https://vixsrc.to/tv/${tmdbId}/${season}/${episode}?lang=it&quality=1080p&primaryColor=${accent}${startAtParam}`;
+    frame.src = `https://vixsrc.to/tv/${tmdbId}/${season}/${episode}?lang=it&res=1080&primaryColor=${accent}${startAtParam}`;
     overlay.style.display = 'flex';
     setTimeout(() => {
         overlay.classList.add('open');
@@ -2847,13 +2861,25 @@ window.addEventListener('message', (event) => {
                 
                 const now = Date.now();
                 const mediaDuration = window.__PLAYBACK_CONTEXT__.duration || (window.__PLAYBACK_CONTEXT__.type === 'movie' ? (120 * 60) : (45 * 60));
-                const progress = Math.min(95, Math.round((seconds / mediaDuration) * 100));
+                const progress = Math.round((seconds / mediaDuration) * 100);
+                
+                // Se supera il 95% e siamo in una serie TV, prepariamo il passaggio al prossimo episodio al termine
+                if (window.__PLAYBACK_CONTEXT__.type === 'tv' && progress >= 95) {
+                    // Non salviamo più il progresso normale, consideriamolo finito
+                    if (now - lastSaveTime >= 15000) {
+                        lastSaveTime = now;
+                        handleEpisodeEnded();
+                    }
+                    return;
+                }
+
+                const cappedProgress = Math.min(95, progress);
                 
                 // Throttling: salva al massimo ogni 15 secondi se avanzato di 10s
                 if (now - lastSaveTime >= 15000 && Math.abs(seconds - lastLoggedSeconds) >= 10) {
                     lastSaveTime = now;
                     lastLoggedSeconds = seconds;
-                    saveProgressToServer(seconds, progress);
+                    saveProgressToServer(seconds, cappedProgress);
                 }
             }
             break;
