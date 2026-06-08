@@ -286,7 +286,7 @@ if (!isset($_SESSION['active_profile'])) {
       color: #000;
     }
     
-    /* Barra di Ricerca High-End - Centratura e Funzionamento Finale */
+    /* Barra di Ricerca High-End - Precision Alignment */
     .vod-navbar .nav-search {
       position: relative;
       width: 44px;
@@ -299,8 +299,7 @@ if (!isset($_SESSION['active_profile'])) {
       cursor: pointer;
       display: flex;
       align-items: center;
-      justify-content: center; /* Centratura logo per default */
-      overflow: visible;
+      justify-content: center;
     }
     
     .vod-navbar .nav-search:hover {
@@ -314,11 +313,6 @@ if (!isset($_SESSION['active_profile'])) {
       border-color: var(--accent);
       box-shadow: 0 0 20px var(--accent-glow);
       cursor: default;
-      justify-content: flex-start;
-    }
-    
-    .vod-navbar .nav-search:active {
-      transform: scale(0.96);
     }
     
     .vod-navbar .nav-search input {
@@ -326,7 +320,7 @@ if (!isset($_SESSION['active_profile'])) {
       height: 100%;
       background: transparent;
       border: none;
-      padding: 0 44px 0 1.2rem; /* Spazio a destra per la X (44px) */
+      padding: 0 44px 0 1.2rem; /* Spazio esatto per le icone a destra */
       color: var(--text-primary);
       font-size: 0.95rem;
       font-weight: 600;
@@ -334,7 +328,6 @@ if (!isset($_SESSION['active_profile'])) {
       opacity: 0;
       transition: opacity 0.3s;
       cursor: pointer;
-      z-index: 1;
     }
     
     .vod-navbar .nav-search:focus-within input {
@@ -342,39 +335,43 @@ if (!isset($_SESSION['active_profile'])) {
       cursor: text;
     }
     
-    /* Icona Lente - Perfettamente centrata nel quadrato */
-    .vod-navbar .nav-search .search-icon {
+    /* Icona Lente e Icona X - STESSO PUNTO ESATTO */
+    .vod-search-icon-wrapper {
       position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      right: 0;
+      top: 0;
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      pointer-events: none;
+      z-index: 5;
+    }
+    
+    .vod-navbar .nav-search .search-icon {
       color: #fff;
       font-size: 1.25rem;
       transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-      pointer-events: none;
-      z-index: 2;
     }
     
-    /* Quando la barra si allarga, la lente si sposta a DESTRA per lasciare spazio al testo o sparire */
     .vod-navbar .nav-search:focus-within .search-icon {
-      left: calc(100% - 22px); /* Si sposta all'estremità destra */
-      opacity: 0; /* Opzionale: la facciamo sparire per lasciare spazio alla X */
-      transform: translate(-50%, -50%) scale(0.5);
+      color: var(--accent);
+      opacity: 0.3; /* Sottolinea che la barra è attiva ma lascia spazio alla X */
+      transform: scale(0.8);
     }
     
-    /* Icona X - All'estremità DESTRA */
     .vod-navbar .nav-search .clear-icon {
       position: absolute;
-      right: 0;
-      width: 44px;
-      height: 44px;
-      display: none; /* Gestito via JS */
+      inset: 0; /* Occupa tutto il wrapper (44x44) */
+      display: none; /* Gestito via JS flex/none */
       align-items: center;
       justify-content: center;
-      color: rgba(255, 255, 255, 0.5);
+      color: #fff;
       cursor: pointer;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       z-index: 10;
+      pointer-events: auto; /* IMPORTANTE: abilita il click sulla X */
       transition: all 0.2s ease;
     }
     
@@ -2191,9 +2188,11 @@ if (!isset($_SESSION['active_profile'])) {
         <div class="nav-link" id="nav-item-library" onclick="changeSection('library')"><i class="ph ph-heart"></i> Libreria</div>
       </nav>
       <div class="nav-search">
-        <i class="ph ph-magnifying-glass search-icon"></i>
         <input type="text" id="vod-search-input" placeholder="Cerca film o serie tv..." autocomplete="off">
-        <i class="ph ph-x clear-icon" id="vod-search-clear"></i>
+        <div class="vod-search-icon-wrapper">
+          <i class="ph ph-magnifying-glass search-icon"></i>
+          <div class="clear-icon" id="vod-search-clear"><i class="ph ph-x"></i></div>
+        </div>
         <div class="vod-search-dropdown" id="vod-search-dropdown"></div>
       </div>
       <a href="index.php" class="vod-back-btn" title="Torna alla pagina precedente"><i class="ph ph-arrow-left"></i> Indietro</a>
