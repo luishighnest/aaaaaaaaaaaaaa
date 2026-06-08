@@ -2642,19 +2642,19 @@ if (!isset($_SESSION['active_profile'])) {
 
       <!-- BODY SCROLLABILE -->
       <div class="vod-modal-info">
-        <div class="vod-modal-genres" id="vod-modal-genres"></div>
+        <div class="vod-modal-genres" id="vod-modal-genres" style="display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: wrap;"></div>
         <div class="vod-modal-action-row">
           <button class="vod-hero-btn play" id="vod-modal-play-btn" style="display: none;"><i class="ph-fill ph-play"></i> Guarda Ora</button>
           <button class="vod-hero-btn play" id="vod-modal-resume-btn" style="display: none;"><i class="ph-fill ph-play"></i> Riprendi</button>
           <button class="vod-modal-fav-btn-new" id="vod-modal-fav-btn"><i class="ph ph-plus"></i> <span>Aggiungi</span></button>
         </div>
-        <p class="vod-modal-desc" id="vod-modal-overview">Caricamento dettagli...</p>
+        <p class="vod-modal-desc" id="vod-modal-overview" style="margin-bottom: 2rem;"></p>
 
         <!-- Sezione Serie TV: Stagioni ed Episodi -->
         <div id="vod-modal-tv-section" style="display: none; margin-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 1.5rem;">
           <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
             <h3 style="font-family: var(--font-main); font-size: 1.25rem; font-weight: 800; color: #fff; margin: 0; text-transform: uppercase; letter-spacing: -0.5px;">Episodi</h3>
-            <select id="vod-season-select">
+            <select id="vod-season-select" style="background: var(--bg-card); color: #fff; border: 1px solid rgba(255,255,255,0.1); padding: 0.5rem 1rem; border-radius: 8px;">
               <!-- Popolato via JS -->
             </select>
           </div>
