@@ -595,8 +595,8 @@ $last_update = file_exists($epg_file) ? date('H:i', filemtime($epg_file)) : '--:
             <i class="ph ph-star"></i>
           </button>
         </div>
-        <a id="btn-back" href="<?= $back_url ?>" class="guida-btn-back">
-          <i class="ph ph-play"></i> <span>Guarda Ora</span>
+        <a id="btn-back" href="index.php" class="guida-btn-back">
+          <i class="ph ph-house"></i> <span>Torna alla Home</span>
         </a>
       </header>
 
