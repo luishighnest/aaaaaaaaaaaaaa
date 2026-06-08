@@ -1522,12 +1522,9 @@ if (!isset($_SESSION['active_profile'])) {
       max-height: 85vh;
     }
     /* Clip il contenuto interno rispettando border-radius */
-    .vod-modal-content > .vod-modal-poster,
-    .vod-modal-content > .vod-modal-info {
-      overflow: hidden;
-    }
     .vod-modal-content > .vod-modal-poster {
       border-radius: 24px 0 0 24px;
+      overflow: hidden;
     }
     .vod-modal-content > .vod-modal-info {
       border-radius: 0 24px 24px 0;
