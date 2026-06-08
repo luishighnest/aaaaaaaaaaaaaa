@@ -825,17 +825,17 @@ a {
   line-height: 1;
 }
 
-.dash-brand-text span {
+.dash-brand-text span:not(.dash-brand-badge) {
   color: var(--accent);
   text-shadow: 0 0 10px var(--accent-glow);
 }
 
 .dash-brand-badge {
   background: var(--accent);
-  color: #020617; /* Dark slate text for high contrast */
+  color: #020617 !important; /* Forza il colore scuro per contrasto */
   font-size: 0.62rem;
   font-weight: 900;
-  padding: 3px 5px;
+  padding: 3px 6px;
   border-radius: 5px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
