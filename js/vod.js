@@ -474,6 +474,26 @@ document.addEventListener('DOMContentLoaded', () => {
             lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
         });
     }
+    
+    // Gestione scorrimento modal per nascondere navbar
+    const modalContent = document.querySelector('.vod-modal-content');
+    const navbar = document.querySelector('.vod-navbar');
+    let lastModalScrollTop = 0;
+    
+    if (modalContent) {
+        modalContent.addEventListener('scroll', () => {
+            if (!navbar) return;
+            const scrollTop = modalContent.scrollTop;
+            
+            if (scrollTop > lastModalScrollTop && scrollTop > 100) {
+                navbar.classList.add('nav-hidden');
+            } else {
+                navbar.classList.remove('nav-hidden');
+            }
+            
+            lastModalScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        });
+    }
 });
 
 async function loadNetflixRows() {
@@ -868,6 +888,8 @@ async function openModal(item, defaultSeasonNumber = null) {
 function closeVodModal() {
     modal.classList.remove('open');
     window.__CURRENT_MODAL_ITEM__ = null;
+    const navbar = document.querySelector('.vod-navbar');
+    if (navbar) navbar.classList.remove('nav-hidden');
 }
 
 modal.addEventListener('click', (e) => {
