@@ -1255,7 +1255,88 @@ function togglePlayerFullscreen() {
             document.exitFullscreen().catch(err => console.error("Errore uscita fullscreen:", err));
         }
     }
+    
+    // Mostra sempre i controlli quando si toglia fullscreen
+    showPlayerControls();
 }
+
+// ==========================================
+// INFO PANEL (dettagli film/episodio nel player)
+// ==========================================
+function togglePlayerInfoPanel() {
+    const panel = document.getElementById('vod-player-info-panel');
+    if (!panel) return;
+    
+    if (panel.classList.contains('open')) {
+        panel.classList.remove('open');
+        return;
+    }
+    
+    // Popola il pannello con i dati del contesto attuale
+    const ctx = window.__PLAYBACK_CONTEXT__;
+    const modalItem = window.__CURRENT_MODAL_ITEM__;
+    
+    const titleEl = document.getElementById('vod-player-info-panel-title');
+    const subEl = document.getElementById('vod-player-info-panel-sub');
+    const metaEl = document.getElementById('vod-player-info-panel-meta');
+    const descEl = document.getElementById('vod-player-info-panel-desc');
+    
+    if (ctx) {
+        titleEl.textContent = ctx.title || (modalItem ? (modalItem.title || modalItem.name) : '');
+        
+        if (ctx.type === 'tv' && ctx.season && ctx.episode) {
+            subEl.textContent = `Stagione ${ctx.season} - Episodio ${ctx.episode}`;
+        } else {
+            subEl.textContent = ctx.type === 'movie' ? 'Film' : 'Serie TV';
+        }
+    } else if (modalItem) {
+        titleEl.textContent = modalItem.title || modalItem.name || '';
+        subEl.textContent = modalItem.media_type === 'movie' ? 'Film' : 'Serie TV';
+    }
+    
+    // Meta info
+    let metaHtml = '';
+    if (modalItem) {
+        if (modalItem.vote_average) {
+            metaHtml += `<span>⭐ ${modalItem.vote_average.toFixed(1)}</span>`;
+        }
+        const date = modalItem.release_date || modalItem.first_air_date;
+        if (date) {
+            metaHtml += `<span>${date.substring(0, 4)}</span>`;
+        }
+        if (modalItem.original_language) {
+            metaHtml += `<span>${modalItem.original_language.toUpperCase()}</span>`;
+        }
+    }
+    metaEl.innerHTML = metaHtml;
+    
+    // Descrizione
+    if (modalItem && modalItem.overview) {
+        descEl.textContent = modalItem.overview;
+    } else {
+        descEl.textContent = '';
+    }
+    
+    panel.classList.add('open');
+    showPlayerControls();
+}
+
+// Doppio click sul player = fullscreen + mostra controlli
+document.addEventListener('DOMContentLoaded', () => {
+    const overlay = document.getElementById('vod-player-overlay');
+    if (overlay) {
+        let clickTimer = null;
+        let clickCount = 0;
+        
+        overlay.addEventListener('dblclick', (e) => {
+            // Non attivare se cliccato su un bottone o sul pannello info
+            if (e.target.closest('button') || e.target.closest('#vod-player-info-panel')) return;
+            
+            e.preventDefault();
+            togglePlayerFullscreen();
+        });
+    }
+});
 
 async function sendClientDebug(message, contextObj = {}) {
     console.log('[VOD DIAGNOSTICS]', message, contextObj);
@@ -1446,6 +1527,10 @@ async function closePlayer() {
     
     // Salva il progresso prima di scaricare l'iframe
     await saveCurrentProgress();
+    
+    // Chiudi il pannello info se aperto
+    const infoPanel = document.getElementById('vod-player-info-panel');
+    if (infoPanel) infoPanel.classList.remove('open');
     
     const frame = document.getElementById('vod-player-frame');
     frame.src = 'about:blank';
@@ -3169,13 +3254,8 @@ document.addEventListener('keydown', (e) => {
         case 'f':
         case 'F':
             e.preventDefault();
-            // Fullscreen toggle
-            if (document.fullscreenElement) {
-                document.exitFullscreen();
-            } else {
-                const playerWrapper = playerOverlay.querySelector('.vod-player-wrapper') || playerOverlay;
-                if (playerWrapper.requestFullscreen) playerWrapper.requestFullscreen();
-            }
+            // Fullscreen toggle + mostra controlli (stessa funzione del tasto in basso a destra)
+            togglePlayerFullscreen();
             break;
             
         case 'Escape':
@@ -3201,6 +3281,12 @@ document.addEventListener('keydown', (e) => {
                 e.preventDefault();
                 handleEpisodeEnded();
             }
+            break;
+            
+        case 'i':
+        case 'I':
+            e.preventDefault();
+            togglePlayerInfoPanel();
             break;
     }
 });
