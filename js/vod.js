@@ -82,10 +82,8 @@ async function fetchTMDB(endpoint) {
 
 function populateCard(card, item, type, title, poster) {
     const isFav = isFavorite(item.id, type);
-    const favIcon = isFav ? 'ph-fill ph-check' : 'ph ph-plus';
+    const favIcon = isFav ? 'ph-fill ph-check-circle' : 'ph ph-plus';
     const favClass = isFav ? 'fav is-fav' : 'fav';
-    
-    // Cerca progresso nella cronologia per questo specifico contenuto
     const historyItem = (window.__ACTIVE_PROFILE_VOD_HISTORY__ || []).find(
         x => parseInt(x.id, 10) === parseInt(item.id, 10) && x.type === type
     );
@@ -999,7 +997,7 @@ function renderContinueWatching() {
         const progress = item.progress || 0;
         
         const isFav = isFavorite(item.id, type);
-        const favIcon = isFav ? 'ph-fill ph-check' : 'ph ph-plus';
+        const favIcon = isFav ? 'ph-fill ph-check-circle' : 'ph ph-plus';
         const favClass2 = isFav ? 'fav is-fav' : 'fav';
         
         const itemObj = {
@@ -2253,7 +2251,7 @@ function updateHeroFavButton(item) {
     const isFav = isFavorite(item.id, type);
     
     if (isFav) {
-        favBtn.innerHTML = '<i class="ph-fill ph-check"></i>';
+        favBtn.innerHTML = '<i class="ph-fill ph-check-circle"></i>';
         favBtn.title = 'Rimuovi dai Preferiti';
         favBtn.classList.add('is-fav');
     } else {
@@ -2280,7 +2278,7 @@ function updateModalFavButton(item) {
     const isFav = isFavorite(item.id, type);
     
     if (isFav) {
-        favBtn.innerHTML = '<i class="ph-fill ph-check"></i> <span>Aggiunto</span>';
+        favBtn.innerHTML = '<i class="ph-fill ph-check-circle"></i> <span>In Libreria</span>';
         favBtn.classList.add('is-fav');
     } else {
         favBtn.innerHTML = '<i class="ph ph-plus"></i> <span>Aggiungi</span>';
@@ -2308,7 +2306,7 @@ function updateFavoriteButtonsState(id, type) {
     const isFav = isFavorite(id, type);
     document.querySelectorAll(`.vod-card-btn.fav[data-id="${id}"][data-type="${type}"]`).forEach(btn => {
         const icon = btn.querySelector('i');
-        if (icon) icon.className = isFav ? 'ph-fill ph-check' : 'ph ph-plus';
+        if (icon) icon.className = isFav ? 'ph-fill ph-check-circle' : 'ph ph-plus';
         if (isFav) btn.classList.add('is-fav');
         else btn.classList.remove('is-fav');
         // pop animation
