@@ -176,31 +176,38 @@ if (!$found) {
     exit;
 }
 
-// 4. Scrittura su database e file
-// Salvataggio nel database
-if (isset($pdo)) {
-    try {
-        $stmt_del = $pdo->prepare("DELETE FROM watch_progress WHERE profile_id = :profile_id AND content_id = :id AND content_type = :type");
-        $stmt_del->execute(['profile_id' => $profile_id, 'id' => $id, 'type' => $type]);
+// 4. Scrittura su Supabase (API)
+$supabase_url = getenv('SUPABASE_URL') . '/rest/v1/watch_progress';
+$supabase_key = getenv('SUPABASE_KEY');
 
-        if (!$delete) {
-            $stmt_ins = $pdo->prepare("
-                INSERT INTO watch_progress (username, profile_id, content_id, content_type, progress, seconds, last_updated)
-                VALUES (:username, :profile_id, :id, :type, :progress, :seconds, DATETIME('now'))
-            ");
-            $stmt_ins->execute([
-                'username' => $username,
-                'profile_id' => $profile_id,
-                'id' => $id,
-                'type' => $type,
-                'progress' => $progress,
-                'seconds' => $seconds
-            ]);
-        }
-        log_backend_debug("Salvataggio su DB avvenuto con successo.");
-    } catch (PDOException $e) {
-        log_backend_debug("Errore database: " . $e->getMessage());
-    }
+if ($supabase_url && $supabase_key) {
+    // Preparo i dati
+    $data_to_send = [
+        'username' => $username,
+        'profile_id' => $profile_id,
+        'content_id' => $id,
+        'content_type' => $type,
+        'progress' => $progress,
+        'seconds' => $seconds
+    ];
+
+    // Chiamata API a Supabase
+    $ch = curl_init($supabase_url);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data_to_send));
+    curl_setopt($ch, CURLOPT_HTTPHEADER, [
+        'Content-Type: application/json',
+        'apikey: ' . $supabase_key,
+        'Authorization: Bearer ' . $supabase_key,
+        'Prefer: resolution=merge-duplicates'
+    ]);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_POST, true);
+    
+    $response = curl_exec($ch);
+    $httpCode = curl_getinfo($ch, CURL_INFO_HTTP_CODE);
+    curl_close($ch);
+
+    log_backend_debug("Salvataggio su Supabase. Codice HTTP: " . $httpCode);
 }
 
 // Scrittura originale su user_profiles.json (per compatibilità)
