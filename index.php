@@ -1201,6 +1201,14 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
                 <option value="12">12 Ore (AM/PM)</option>
               </select>
             </div>
+            
+            <div class="settings-row" style="margin-top: 1rem; border-top: 1px solid var(--border-subtle); padding-top: 1rem;">
+              <span>Dispositivo / Interfaccia</span>
+              <a href="index.php?view_mode=mobile" class="settings-theme-btn" style="display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none; text-align: center; justify-content: center; font-weight: 700; color: var(--accent); border-color: var(--accent);">
+                <i class="ph ph-phone"></i> Passa a Versione Mobile/TV
+              </a>
+            </div>
+          </div>
         </div>
 
         <!-- TAB PROFILO -->
@@ -1827,5 +1835,4 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
 </body>
 
 </html>
-
 
