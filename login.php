@@ -298,7 +298,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       position: relative;
     }
 
-    .input-wrapper i {
+    .input-wrapper i.left-icon {
       position: absolute;
       left: 14px;
       top: 50%;
@@ -309,16 +309,39 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       transition: color 0.2s;
     }
 
+    /* NUOVI STILI PER L'OCCHIO */
+    .toggle-password {
+      position: absolute;
+      right: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #64748b;
+      font-size: 1.2rem;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: color 0.2s;
+    }
+
+    .toggle-password:hover {
+      color: #00f2fe;
+    }
+
     .form-input {
       width: 100%;
       background: var(--bg-input, rgba(0, 0, 0, 0.2));
       border: 1px solid var(--border-subtle);
       border-radius: 12px;
-      padding: 12px 14px 12px 42px;
+      padding: 12px 42px 12px 42px; /* Cambiato padding-right a 42px per fare spazio all'occhio */
       color: var(--text-primary);
       font-size: 0.95rem;
       outline: none;
       transition: all 0.2s ease;
+      box-sizing: border-box;
     }
 
     .form-input:focus {
@@ -327,7 +350,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       background: var(--bg-input-focus, rgba(0, 0, 0, 0.3));
     }
 
-    .form-input:focus + i {
+    .form-input:focus + i.left-icon {
       color: #00f2fe;
     }
 
@@ -405,7 +428,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <label class="form-label" for="username">Username</label>
           <div class="input-wrapper">
             <input class="form-input" type="text" id="username" name="username" placeholder="Inserisci username" required autocomplete="username">
-            <i class="ph ph-user"></i>
+            <i class="ph ph-user left-icon"></i>
           </div>
         </div>
 
@@ -413,7 +436,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <label class="form-label" for="password">Password</label>
           <div class="input-wrapper">
             <input class="form-input" type="password" id="password" name="password" placeholder="Inserisci password" required autocomplete="current-password">
-            <i class="ph ph-lock"></i>
+            <i class="ph ph-lock left-icon"></i>
+            <button type="button" id="togglePasswordBtn" class="toggle-password" tabindex="-1">
+              <i id="eyeIcon" class="ph ph-eye"></i>
+            </button>
           </div>
         </div>
 
@@ -430,6 +456,26 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     </div>
   </div>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const passwordInput = document.getElementById('password');
+      const togglePasswordBtn = document.getElementById('togglePasswordBtn');
+      const eyeIcon = document.getElementById('eyeIcon');
+
+      togglePasswordBtn.addEventListener('click', function () {
+        // Controlla il tipo attuale dell'input
+        const isPassword = passwordInput.getAttribute('type') === 'password';
+        
+        // Scambia il tipo (da password a text e viceversa)
+        passwordInput.setAttribute('type', isPassword ? 'text' : 'password');
+        
+        // Cambia l'icona (occhio aperto / occhio sbarrato)
+        eyeIcon.className = isPassword ? 'ph ph-eye-slash' : 'ph ph-eye';
+      });
+    });
+  </script>
+
   <script src="js/theme.js?v=1.1"></script>
 </body>
 </html>
