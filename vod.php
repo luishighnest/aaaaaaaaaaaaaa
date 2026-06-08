@@ -335,7 +335,7 @@ if (!isset($_SESSION['active_profile'])) {
       cursor: text;
     }
     
-    /* Icona Lente e Icona X - CENTRATURA PERFETTA RIPRISTINATA */
+    /* Icona Lente e Icona X - Optical Centering & Precision */
     .vod-search-icon-wrapper {
       position: absolute;
       top: 0;
@@ -353,6 +353,7 @@ if (!isset($_SESSION['active_profile'])) {
       color: #fff;
       font-size: 1.25rem;
       transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      margin-right: 2px; /* Spostamento millimetrico a sinistra per centratura ottica (perfezione visiva) */
     }
     
     .vod-navbar .nav-search:focus-within .search-icon {
@@ -362,8 +363,10 @@ if (!isset($_SESSION['active_profile'])) {
     
     .vod-navbar .nav-search .clear-icon {
       position: absolute;
-      inset: 0;
-      display: none;
+      right: 0; /* All'estremità destra esatta */
+      width: 44px;
+      height: 44px;
+      display: none; /* Gestito via JS */
       align-items: center;
       justify-content: center;
       color: #fff;
