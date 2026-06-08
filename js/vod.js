@@ -1709,14 +1709,7 @@ async function loadTvEpisodes(tvId, seasonNumber) {
             episodesList.appendChild(row);
         });
 
-        // ─── AUTO-SCROLL ALL'EPISODIO CORRENTE ───
-        // Piccolo ritardo per attendere il rendering del layout (thumbnail lazy)
-        setTimeout(() => {
-            const lastPlayedRow = episodesList.querySelector('.vod-episode-row.last-played');
-            if (lastPlayedRow) {
-                lastPlayedRow.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-            }
-        }, 180);
+        // ─── EPISODIO CARICATO ───
         
     } catch(err) {
         console.error("Errore caricamento episodi", err);
