@@ -309,17 +309,17 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
         </button>
       </div>
       <div class="dash-cat-list" id="dash-cat-list">
-        <a href="vod.php" class="dash-cat-item" style="color: var(--accent); border-left: 3px solid var(--accent); background: rgba(0, 242, 254, 0.05);">
-          <i class="ph ph-film-strip" style="color: var(--accent);"></i> Film & Serie TV
-        </a>
         <!-- Categories injected here -->
       </div>
-      <a id="btn-guida-tv" href="guida.php" class="dash-exit"><i class="ph ph-calendar"></i> GUIDA TV</a>
-      <!-- Settings Trigger -->
-      <div style="margin-top: 0.8rem;">
-        <button id="open-settings-btn" onclick="document.getElementById('settings-modal').classList.add('open')" class="dash-exit" style="width: 100%; padding: 0.6rem; background: var(--bg-input); border-color: var(--border-subtle); color: var(--text-primary); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; gap: 0.5rem;"><i class="ph ph-gear"></i> Impostazioni</button>
-      </div>
 
+      <!-- Sezione Azioni -->
+      <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-top: 1rem;">
+        <a href="vod.php" class="dash-cat-item" style="color: var(--accent); border-left: 3px solid var(--accent); background: rgba(0, 242, 254, 0.05); justify-content: center;">
+          <i class="ph ph-film-strip" style="color: var(--accent);"></i> Film & Serie TV
+        </a>
+        <a id="btn-guida-tv" href="guida.php" class="dash-exit"><i class="ph ph-calendar"></i> GUIDA TV</a>
+        <button id="open-settings-btn" onclick="document.getElementById('settings-modal').classList.add('open')" class="dash-exit" style="width: 100%; padding: 0.8rem; background: var(--bg-input); border-color: var(--border-subtle); color: var(--text-primary); border-radius: 99px; display: flex; align-items: center; justify-content: center; gap: 0.5rem; border: 1px solid rgba(239, 68, 68, 0);"><i class="ph ph-gear"></i> Impostazioni</button>
+      </div>
     </aside>
 
     <!-- Tasto per riaprire la sidebar (visibile solo quando ÃƒÂ¨ nascosta) -->
