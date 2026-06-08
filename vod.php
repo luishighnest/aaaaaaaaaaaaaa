@@ -820,54 +820,70 @@ if (!isset($_SESSION['active_profile'])) {
     .vod-hero-btn {
       display: inline-flex;
       align-items: center;
-      gap: 9px;
-      padding: 0 1.7rem;
-      height: 46px;
-      border-radius: 14px;
-      font-size: 0.82rem;
-      font-weight: 800;
+      gap: 10px;
+      padding: 0 1.8rem;
+      height: 48px;
+      border-radius: 6px;
+      font-size: 0.95rem;
+      font-weight: 700;
       cursor: pointer;
-      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      transition: all 0.2s ease;
       border: none;
-      text-transform: uppercase;
-      letter-spacing: 0.8px;
+      text-transform: none;
+      letter-spacing: 0;
       position: relative;
       overflow: hidden;
       white-space: nowrap;
       flex-shrink: 0;
     }
 
-    /* Shine sweep on hover */
-    .vod-hero-btn::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(105deg, transparent 30%, rgba(255,255,255,0.18) 50%, transparent 70%);
-      transform: translateX(-100%);
-      transition: transform 0.55s cubic-bezier(0.16, 1, 0.3, 1);
-      pointer-events: none;
-    }
-    .vod-hero-btn:hover::after {
-      transform: translateX(100%);
-    }
+    .vod-hero-btn::after { display: none; }
 
     .vod-hero-btn i {
-      font-size: 1.05rem;
+      font-size: 1.35rem;
       flex-shrink: 0;
-      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      transition: transform 0.2s ease;
     }
-    .vod-hero-btn:hover i { transform: scale(1.15); }
-    .vod-hero-btn:active { transform: scale(0.96); }
+    .vod-hero-btn:hover i { transform: scale(1.08); }
+    .vod-hero-btn:active { transform: scale(0.97); opacity: 0.9; }
 
-    /* PLAY – principale */
+    /* PLAY – bianco Netflix */
     .vod-hero-btn.play {
-      background: linear-gradient(135deg, var(--accent) 0%, #4facfe 100%);
+      background: var(--accent);
       color: #000;
-      box-shadow: 0 0 0 0 var(--accent-glow);
+      font-weight: 800;
+      box-shadow: none;
+      letter-spacing: -0.2px;
     }
     .vod-hero-btn.play:hover {
-      box-shadow: 0 6px 28px var(--accent-glow), 0 0 0 3px rgba(0,242,254,0.18);
-      transform: translateY(-2px);
+      background: color-mix(in srgb, var(--accent) 85%, #fff 15%);
+      transform: none;
+      box-shadow: none;
+    }
+
+    /* RESUME – stesso stile play ma più contenuto, con barra progresso */
+    #vod-modal-resume-btn,
+    #vod-hero-resume-btn {
+      background: rgba(255,255,255,0.18);
+      color: #fff;
+      font-weight: 700;
+      position: relative;
+      overflow: hidden;
+    }
+    #vod-modal-resume-btn::before,
+    #vod-hero-resume-btn::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 3px;
+      width: 40%;
+      background: var(--accent);
+      border-radius: 0 2px 2px 0;
+    }
+    #vod-modal-resume-btn:hover,
+    #vod-hero-resume-btn:hover {
+      background: rgba(255,255,255,0.26);
     }
 
     /* INFO – secondario (Dettagli) */
