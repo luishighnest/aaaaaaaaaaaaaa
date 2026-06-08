@@ -1800,7 +1800,7 @@ if (!isset($_SESSION['active_profile'])) {
       transform: translateY(0);
     }
     .vod-player-fullscreen {
-      bottom: 15px;
+      bottom: 30px;
       right: 20px;
       width: 38px;
       height: 38px;
@@ -1819,6 +1819,19 @@ if (!isset($_SESSION['active_profile'])) {
       top: 20px;
       right: 20px;
       display: none;
+    }
+    .vod-player-info-btn {
+      top: 20px;
+      right: 74px;
+    }
+    .vod-player-info-btn:hover {
+      background: var(--accent);
+      border-color: var(--accent);
+      box-shadow: 0 4px 20px var(--accent-glow);
+      transform: translateY(-2px);
+    }
+    .vod-player-info-btn:active {
+      transform: translateY(0);
     }
     .vod-player-next-ep:hover {
       background: var(--accent);
@@ -1862,6 +1875,7 @@ if (!isset($_SESSION['active_profile'])) {
     .vod-player-overlay.controls-hidden .vod-player-close,
     .vod-player-overlay.controls-hidden .vod-player-fullscreen,
     .vod-player-overlay.controls-hidden .vod-player-next-ep,
+    .vod-player-overlay.controls-hidden .vod-player-info-btn,
     .vod-player-overlay.controls-hidden .vod-player-title-header {
       opacity: 0;
       pointer-events: none;
@@ -2378,7 +2392,7 @@ if (!isset($_SESSION['active_profile'])) {
         font-size: 1.1rem;
       }
       .vod-player-fullscreen {
-        bottom: 10px;
+        bottom: 25px;
         right: 15px;
         top: auto;
         width: 32px;
@@ -2534,6 +2548,67 @@ if (!isset($_SESSION['active_profile'])) {
     .vod-next-ep-cancel:hover {
       background: rgba(255,255,255,0.12);
     }
+    /* Player Info Panel */
+    #vod-player-info-panel {
+      display: none;
+      position: absolute;
+      top: 70px;
+      right: 20px;
+      width: 340px;
+      max-width: 90vw;
+      background: rgba(12, 12, 20, 0.95);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 14px;
+      padding: 1.4rem;
+      z-index: 10002;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      box-shadow: 0 8px 40px rgba(0,0,0,0.6);
+      animation: fadeIn 0.2s ease;
+    }
+    #vod-player-info-panel.open {
+      display: block;
+    }
+    .vod-player-info-title {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 0.4rem;
+    }
+    .vod-player-info-sub {
+      font-size: 0.85rem;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 0.8rem;
+    }
+    .vod-player-info-meta {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      margin-bottom: 0.8rem;
+    }
+    .vod-player-info-meta span {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      background: rgba(255,255,255,0.06);
+      padding: 3px 8px;
+      border-radius: 6px;
+    }
+    .vod-player-info-desc {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+      max-height: 120px;
+      overflow-y: auto;
+    }
+    .vod-player-info-desc::-webkit-scrollbar {
+      width: 4px;
+    }
+    .vod-player-info-desc::-webkit-scrollbar-thumb {
+      background: rgba(255,255,255,0.15);
+      border-radius: 2px;
+    }
+
     @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
@@ -2798,11 +2873,18 @@ if (!isset($_SESSION['active_profile'])) {
   <div class="vod-player-overlay" id="vod-player-overlay">
     <button class="vod-player-close" onclick="closePlayer()" title="Torna ai dettagli" style="z-index: 99999;"><i class="ph ph-arrow-left"></i></button>
     <button class="vod-player-fullscreen" id="vod-player-fullscreen-btn" onclick="togglePlayerFullscreen()"><i class="ph ph-corners-out"></i></button>
+    <button class="vod-player-info-btn" id="vod-player-info-btn" onclick="togglePlayerInfoPanel()" title="Info"><i class="ph ph-info"></i></button>
     <button class="vod-player-next-ep" id="vod-player-next-btn" onclick="playNextEpisode()" style="display: none;"><i class="ph ph-skip-forward"></i></button>
     <div class="vod-player-mouse-tracker" id="vod-player-mouse-tracker"></div>
     <div class="vod-player-title-header" id="vod-player-title-header">
       <h2 id="vod-player-title"></h2>
       <div id="vod-player-subtitle"></div>
+    </div>
+    <div id="vod-player-info-panel">
+      <div class="vod-player-info-title" id="vod-player-info-panel-title"></div>
+      <div class="vod-player-info-sub" id="vod-player-info-panel-sub"></div>
+      <div class="vod-player-info-meta" id="vod-player-info-panel-meta"></div>
+      <div class="vod-player-info-desc" id="vod-player-info-panel-desc"></div>
     </div>
     <div class="vod-player-wrapper">
       <iframe id="vod-player-frame" src="about:blank" allow="autoplay; fullscreen" allowfullscreen></iframe>
