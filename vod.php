@@ -335,11 +335,11 @@ if (!isset($_SESSION['active_profile'])) {
       cursor: text;
     }
     
-    /* Icona Lente e Icona X - STESSO PUNTO ESATTO E CENTRATURA TOTALE */
+    /* Icona Lente e Icona X - CENTRATURA PERFETTA RIPRISTINATA */
     .vod-search-icon-wrapper {
       position: absolute;
-      top: -1px; /* Compensa il bordo */
-      right: -1px;
+      top: 0;
+      right: 0;
       width: 44px;
       height: 44px;
       display: flex;
@@ -351,11 +351,8 @@ if (!isset($_SESSION['active_profile'])) {
     
     .vod-navbar .nav-search .search-icon {
       color: #fff;
-      font-size: 1.2rem;
+      font-size: 1.25rem;
       transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-      /* Forza centratura ottica */
-      margin: 0;
-      padding: 0;
     }
     
     .vod-navbar .nav-search:focus-within .search-icon {
@@ -371,7 +368,7 @@ if (!isset($_SESSION['active_profile'])) {
       justify-content: center;
       color: #fff;
       cursor: pointer;
-      font-size: 1.1rem;
+      font-size: 1.15rem;
       z-index: 10;
       pointer-events: auto;
       transition: all 0.2s ease;
@@ -379,7 +376,7 @@ if (!isset($_SESSION['active_profile'])) {
     
     .vod-navbar .nav-search .clear-icon:hover {
       color: var(--danger);
-      transform: scale(1.2);
+      transform: scale(1.15);
     }
 
     /* ─── AUTOCOMPLETE DROPDOWN ORIGINALE ─── */
