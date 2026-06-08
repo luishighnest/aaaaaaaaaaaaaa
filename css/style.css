@@ -2769,8 +2769,10 @@ body.tv-mode-active .pc-only-flex-btn { display: none !important; }
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
   border: 2px solid rgba(255,255,255,0.1);
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
   flex-shrink: 0;
+  background: rgba(0,0,0,0.2);
 }
 .vod-modal-hero-text {
   flex: 1;
