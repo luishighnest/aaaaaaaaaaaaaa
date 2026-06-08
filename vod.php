@@ -314,206 +314,100 @@ if (!isset($_SESSION['active_profile'])) {
       color: #000;
     }
     
-    /* Barra di Ricerca Premium */
+    /* Barra di Ricerca High-End - Precision Alignment */
     .vod-navbar .nav-search {
       position: relative;
-      width: 46px;
-      height: 46px;
+      width: 44px;
+      height: 44px;
       margin-right: 15px;
-      flex-shrink: 0;
-      border-radius: 14px;
-      background:
-        linear-gradient(145deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.03) 100%);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      backdrop-filter: blur(18px) saturate(1.5);
-      -webkit-backdrop-filter: blur(18px) saturate(1.5);
-      box-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, 0.1),
-        0 6px 20px rgba(0, 0, 0, 0.22);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
       cursor: pointer;
       display: flex;
       align-items: center;
-      overflow: hidden;
-      transition:
-        width 0.45s cubic-bezier(0.16, 1, 0.3, 1),
-        background 0.35s ease,
-        border-color 0.35s ease,
-        box-shadow 0.35s ease,
-        border-radius 0.35s ease;
+      justify-content: center;
     }
-
-    .vod-navbar .nav-search::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      border-radius: inherit;
-      background: radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.14), transparent 55%);
-      opacity: 0.55;
-      pointer-events: none;
-      transition: opacity 0.35s ease;
+    
+    .vod-navbar .nav-search:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.15);
     }
-
-    .vod-navbar .nav-search:hover:not(.is-expanded):not(:focus-within) {
-      background:
-        linear-gradient(145deg, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0.05) 100%);
-      border-color: rgba(255, 255, 255, 0.22);
-      box-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, 0.14),
-        0 0 0 1px rgba(255, 255, 255, 0.05),
-        0 10px 28px rgba(0, 0, 0, 0.28);
-      transform: translateY(-1px);
-    }
-
-    .vod-navbar .nav-search.is-expanded,
+    
     .vod-navbar .nav-search:focus-within {
-      width: min(360px, 40vw);
+      width: 320px;
+      background: rgba(0, 0, 0, 0.4);
+      border-color: var(--accent);
+      box-shadow: 0 0 20px var(--accent-glow);
       cursor: default;
-      border-radius: 16px;
-      background:
-        linear-gradient(160deg, rgba(2, 6, 23, 0.92) 0%, rgba(15, 23, 42, 0.78) 100%);
-      border-color: rgba(255, 255, 255, 0.16);
-      box-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, 0.08),
-        0 0 0 1px rgba(255, 255, 255, 0.06),
-        0 16px 40px rgba(0, 0, 0, 0.45),
-        0 0 32px var(--accent-glow);
-      transform: none;
     }
-
-    .vod-navbar .nav-search.is-expanded::before,
-    .vod-navbar .nav-search:focus-within::before {
-      opacity: 0.2;
-    }
-
+    
     .vod-navbar .nav-search input {
       width: 100%;
       height: 100%;
       background: transparent;
       border: none;
-      padding: 0 46px 0 46px;
+      padding: 0 44px 0 1.2rem; /* Spazio esatto per le icone a destra */
       color: var(--text-primary);
-      font-size: 0.92rem;
+      font-size: 0.95rem;
       font-weight: 600;
-      letter-spacing: 0.01em;
       outline: none;
       opacity: 0;
-      transform: translateX(8px);
-      transition:
-        opacity 0.32s ease 0.06s,
-        transform 0.38s cubic-bezier(0.16, 1, 0.3, 1) 0.04s;
+      transition: opacity 0.3s;
       cursor: pointer;
-      position: relative;
-      z-index: 2;
     }
-
-    .vod-navbar .nav-search input::placeholder {
-      color: rgba(148, 163, 184, 0.75);
-      font-weight: 500;
-      transition: color 0.25s ease;
-    }
-
-    .vod-navbar .nav-search.is-expanded input,
+    
     .vod-navbar .nav-search:focus-within input {
       opacity: 1;
-      transform: translateX(0);
       cursor: text;
     }
-
-    .vod-navbar .nav-search.is-expanded input::placeholder,
-    .vod-navbar .nav-search:focus-within input::placeholder {
-      color: rgba(148, 163, 184, 0.9);
-    }
-
+    
+    /* Icona Lente e Icona X - Optical Centering & Precision */
     .vod-search-icon-wrapper {
       position: absolute;
       top: 0;
-      left: 0;
-      width: 46px;
-      height: 46px;
+      right: 0;
+      width: 44px;
+      height: 44px;
       display: flex;
       align-items: center;
       justify-content: center;
       pointer-events: none;
-      z-index: 3;
-      transition: left 0.38s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 5;
     }
-
+    
     .vod-navbar .nav-search .search-icon {
-      color: rgba(255, 255, 255, 0.88);
-      font-size: 1.2rem;
-      filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.35));
-      transition:
-        color 0.3s ease,
-        transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1),
-        filter 0.3s ease;
-    }
-
-    .vod-navbar .nav-search:hover:not(.is-expanded) .search-icon {
-      transform: scale(1.08);
       color: #fff;
+      font-size: 1.25rem;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      margin-right: 2px; /* Spostamento millimetrico a sinistra per centratura ottica (perfezione visiva) */
     }
-
-    .vod-navbar .nav-search.is-expanded .search-icon,
+    
     .vod-navbar .nav-search:focus-within .search-icon {
-      color: var(--accent);
-      transform: scale(1.02);
-      filter: drop-shadow(0 0 8px var(--accent-glow));
+      opacity: 0;
+      transform: scale(0.5);
     }
-
+    
     .vod-navbar .nav-search .clear-icon {
       position: absolute;
-      top: 50%;
-      right: 7px;
-      width: 32px;
-      height: 32px;
-      margin-top: -16px;
-      padding: 0;
-      display: none;
+      right: 0; /* All'estremità destra esatta */
+      width: 44px;
+      height: 44px;
+      display: none; /* Gestito via JS */
       align-items: center;
       justify-content: center;
-      border-radius: 10px;
-      background: rgba(255, 255, 255, 0.06);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      color: rgba(255, 255, 255, 0.75);
+      color: #fff;
       cursor: pointer;
-      font-size: 0.95rem;
-      font-family: inherit;
-      line-height: 1;
-      z-index: 4;
+      font-size: 1.15rem;
+      z-index: 10;
       pointer-events: auto;
-      opacity: 0;
-      transform: scale(0.85);
-      appearance: none;
-      -webkit-appearance: none;
-      transition:
-        opacity 0.22s ease,
-        transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1),
-        background 0.2s ease,
-        border-color 0.2s ease,
-        color 0.2s ease;
+      transition: all 0.2s ease;
     }
-
-    .vod-navbar .nav-search .clear-icon:focus-visible {
-      outline: none;
-      border-color: rgba(248, 113, 113, 0.65);
-      box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.2);
-    }
-
-    .vod-navbar .nav-search .clear-icon.is-visible {
-      display: flex;
-      opacity: 1;
-      transform: scale(1);
-    }
-
+    
     .vod-navbar .nav-search .clear-icon:hover {
-      background: rgba(239, 68, 68, 0.16);
-      border-color: rgba(248, 113, 113, 0.45);
-      color: #fecaca;
-      transform: scale(1.06);
-    }
-
-    .vod-navbar .nav-search .clear-icon:active {
-      transform: scale(0.94);
+      color: var(--danger);
+      transform: scale(1.15);
     }
 
     /* ─── AUTOCOMPLETE DROPDOWN ORIGINALE ─── */
@@ -1729,40 +1623,19 @@ if (!isset($_SESSION['active_profile'])) {
       overflow: hidden; /* Gestiremo lo scroll internamente */
     }
 
-    .vod-modal-chrome {
-      flex-shrink: 0;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      padding: 14px 16px 8px;
-      position: relative;
-      z-index: 30;
-      background: linear-gradient(
-        180deg,
-        rgba(2, 6, 23, 1) 0%,
-        rgba(2, 6, 23, 0.92) 55%,
-        rgba(2, 6, 23, 0) 100%
-      );
-      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
-    }
-
     .vod-modal-inner {
       display: flex;
       flex-direction: row;
       gap: 2rem;
-      padding: 0 2rem 2rem;
-      flex: 1;
-      min-height: 0;
+      padding: 2rem;
+      height: 100%;
       overflow: hidden;
     }
 
     @media (max-width: 768px) {
-      .vod-modal-chrome {
-        padding: 12px 12px 6px;
-      }
       .vod-modal-inner {
         flex-direction: column;
-        padding: 0 1.5rem 1.5rem;
+        padding: 1.5rem;
         overflow-y: auto;
       }
     }
@@ -1829,55 +1702,37 @@ if (!isset($_SESSION['active_profile'])) {
     .vod-modal-info::-webkit-scrollbar { display: none; }
 
     .vod-modal-close {
-      position: relative;
-      flex-shrink: 0;
-      width: 42px;
-      height: 42px;
-      border-radius: 13px;
-      background: rgba(255, 255, 255, 0.06);
-      border: 1px solid rgba(255, 255, 255, 0.14);
-      color: rgba(255, 255, 255, 0.88);
-      display: inline-flex;
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      z-index: 20;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: rgba(20, 20, 30, 0.9);
+      border: none;
+      color: #fff;
+      display: flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
-      font-size: 1.15rem;
-      backdrop-filter: blur(14px) saturate(1.4);
-      -webkit-backdrop-filter: blur(14px) saturate(1.4);
-      box-shadow:
-        0 4px 18px rgba(0, 0, 0, 0.35),
-        inset 0 1px 0 rgba(255, 255, 255, 0.1);
-      transition:
-        background 0.22s ease,
-        border-color 0.22s ease,
-        color 0.22s ease,
-        transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1),
-        box-shadow 0.22s ease;
+      font-size: 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+      transition: background 0.18s ease, transform 0.18s ease;
     }
     .vod-modal-close i {
-      transition: transform 0.28s cubic-bezier(0.34, 1.56, 0.64, 1);
+      transition: transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1);
       line-height: 1;
     }
     .vod-modal-close:hover {
-      background: rgba(239, 68, 68, 0.14);
-      border-color: rgba(248, 113, 113, 0.55);
-      color: #fff;
-      transform: translateY(-1px);
-      box-shadow:
-        0 0 0 1px rgba(248, 113, 113, 0.15),
-        0 8px 24px rgba(239, 68, 68, 0.22),
-        inset 0 1px 0 rgba(255, 255, 255, 0.12);
+      background: rgba(60, 60, 80, 0.95);
+      transform: scale(1.1);
     }
     .vod-modal-close:hover i {
-      transform: rotate(90deg) scale(1.05);
+      transform: rotate(90deg);
     }
     .vod-modal-close:active {
-      transform: translateY(0) scale(0.94);
-    }
-    .vod-modal-close:focus-visible {
-      outline: none;
-      border-color: var(--accent);
-      box-shadow: 0 0 0 3px var(--accent-glow), 0 8px 24px rgba(0, 0, 0, 0.35);
+      transform: scale(0.92);
     }
 
     /* ── POSTER (vecchio, rimosso dal layout ma tenuto per compatibilità JS) ── */
@@ -2459,16 +2314,12 @@ if (!isset($_SESSION['active_profile'])) {
       }
       .vod-navbar .nav-search {
         order: 1;
-        width: 46px;
-        min-width: 46px;
+        width: 150px;
         margin-right: 0;
         flex: 1;
-        max-width: none;
       }
-      .vod-navbar .nav-search.is-expanded,
       .vod-navbar .nav-search:focus-within {
-        width: 100%;
-        flex: 1 1 100%;
+        width: 180px;
       }
       .vod-back-btn {
         order: 2;
@@ -2624,11 +2475,10 @@ if (!isset($_SESSION['active_profile'])) {
         font-size: 0.8rem;
       }
       .vod-navbar .nav-search {
-        width: 46px;
+        width: 180px;
       }
-      .vod-navbar .nav-search.is-expanded,
       .vod-navbar .nav-search:focus-within {
-        width: min(280px, 34vw);
+        width: 220px;
       }
       .vod-catalog-grid {
         grid-template-columns: repeat(4, 1fr);
@@ -2653,14 +2503,12 @@ if (!isset($_SESSION['active_profile'])) {
         <div class="nav-link" id="nav-item-catalog" onclick="changeSection('catalog')"><i class="ph ph-folder-open"></i> Catalogo</div>
         <div class="nav-link" id="nav-item-library" onclick="changeSection('library')"><i class="ph ph-plus-circle"></i> Libreria</div>
       </nav>
-      <div class="nav-search" id="vod-nav-search" role="search">
-        <input type="search" id="vod-search-input" placeholder="Cerca film, serie TV..." autocomplete="off" aria-label="Cerca film o serie TV" enterkeyhint="search">
-        <div class="vod-search-icon-wrapper" aria-hidden="true">
+      <div class="nav-search">
+        <input type="text" id="vod-search-input" placeholder="Cerca film o serie tv..." autocomplete="off">
+        <div class="vod-search-icon-wrapper">
           <i class="ph ph-magnifying-glass search-icon"></i>
+          <div class="clear-icon" id="vod-search-clear"><i class="ph ph-x"></i></div>
         </div>
-        <button type="button" class="clear-icon" id="vod-search-clear" aria-label="Cancella ricerca" title="Cancella">
-          <i class="ph ph-x"></i>
-        </button>
         <div class="vod-search-dropdown" id="vod-search-dropdown"></div>
       </div>
       <a href="index.php" class="vod-back-btn" title="Torna alla Home"><i class="ph ph-house"></i> Torna alla Home</a>
@@ -2833,11 +2681,7 @@ if (!isset($_SESSION['active_profile'])) {
   <!-- MODAL VOD -->
   <div class="vod-modal" id="vod-modal">
     <div class="vod-modal-content">
-      <div class="vod-modal-chrome">
-        <button type="button" class="vod-modal-close" onclick="closeVodModal()" aria-label="Chiudi dettagli" title="Chiudi">
-          <i class="ph ph-x"></i>
-        </button>
-      </div>
+      <button class="vod-modal-close" onclick="closeVodModal()" aria-label="Chiudi dettagli"><i class="ph ph-x"></i></button>
       <div class="vod-modal-inner">
         <div class="vod-modal-artwork">
           <img id="vod-modal-img" src="" alt="Poster">
