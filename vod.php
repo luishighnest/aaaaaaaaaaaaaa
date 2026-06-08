@@ -1537,6 +1537,7 @@ if (!isset($_SESSION['active_profile'])) {
       box-shadow: 0 30px 80px rgba(0,0,0,0.7);
       display: flex;
       flex-direction: column;
+      height: auto;
       max-height: 88vh;
     }
     .vod-modal-content::-webkit-scrollbar { width: 5px; }
