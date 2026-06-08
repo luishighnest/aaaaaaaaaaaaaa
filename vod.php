@@ -907,17 +907,17 @@ if (!isset($_SESSION['active_profile'])) {
       transform: translateY(-2px);
     }
     .vod-hero-btn.fav-round.is-fav {
-      background: rgba(244, 63, 94, 0.15);
-      border-color: rgba(244, 63, 94, 0.6);
-      box-shadow: 0 0 22px rgba(244,63,94,0.35), inset 0 0 10px rgba(244,63,94,0.08);
+      background: rgba(0, 242, 254, 0.12);
+      border-color: rgba(0, 242, 254, 0.55);
+      box-shadow: 0 0 22px var(--accent-glow), inset 0 0 10px rgba(0,242,254,0.06);
     }
     .vod-hero-btn.fav-round.is-fav i {
-      color: var(--danger);
-      filter: drop-shadow(0 0 5px rgba(244,63,94,0.65));
+      color: var(--accent);
+      filter: drop-shadow(0 0 6px var(--accent-glow));
     }
     .vod-hero-btn.fav-round.is-fav:hover {
-      background: rgba(244, 63, 94, 0.26);
-      box-shadow: 0 0 30px rgba(244,63,94,0.5);
+      background: rgba(0, 242, 254, 0.2);
+      box-shadow: 0 0 32px var(--accent-glow), 0 0 0 3px rgba(0,242,254,0.15);
       transform: translateY(-2px);
     }
     .vod-hero-btn.fav-round::after { display: none; }
@@ -984,19 +984,21 @@ if (!isset($_SESSION['active_profile'])) {
     }
     .vod-modal-fav-btn-new:active { transform: scale(0.96); }
     .vod-modal-fav-btn-new.is-fav {
-      background: rgba(244,63,94,0.14);
-      border-color: rgba(244,63,94,0.6);
-      color: var(--danger);
-      box-shadow: 0 0 22px rgba(244,63,94,0.32), inset 0 0 10px rgba(244,63,94,0.06);
+      background: rgba(0, 242, 254, 0.1);
+      border-color: rgba(0, 242, 254, 0.5);
+      color: var(--accent);
+      box-shadow: 0 0 20px var(--accent-glow), inset 0 0 8px rgba(0,242,254,0.05);
     }
     .vod-modal-fav-btn-new.is-fav i {
-      color: var(--danger);
-      transform: scale(1.15);
-      filter: drop-shadow(0 0 4px rgba(244,63,94,0.65));
+      color: var(--accent);
+      transform: scale(1.1);
+      filter: drop-shadow(0 0 5px var(--accent-glow));
     }
     .vod-modal-fav-btn-new.is-fav:hover {
-      background: rgba(244,63,94,0.24);
-      box-shadow: 0 0 30px rgba(244,63,94,0.45);
+      background: rgba(0, 242, 254, 0.18);
+      border-color: rgba(0, 242, 254, 0.7);
+      box-shadow: 0 0 28px var(--accent-glow), 0 0 0 3px rgba(0,242,254,0.12);
+      transform: translateY(-2px);
     }
 
     /* ── CARD BUTTONS REDESIGN ── */
@@ -1052,7 +1054,7 @@ if (!isset($_SESSION['active_profile'])) {
     .vod-card-btn.info i { transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1); }
     .vod-card-btn.info:hover i { transform: rotate(15deg) scale(1.1); }
 
-    /* ─ FAV: + → ✓ con glow rosso ─ */
+    /* ─ FAV: + → ✓ con glow accent ─ */
     .vod-card-btn.fav {
       font-size: 1.05rem;
       font-weight: 900;
@@ -1064,18 +1066,18 @@ if (!isset($_SESSION['active_profile'])) {
       transform: scale(1.18) translateY(-2px);
     }
     .vod-card-btn.fav.is-fav {
-      background: rgba(244,63,94,0.18);
-      border-color: rgba(244,63,94,0.65);
-      color: var(--danger);
-      box-shadow: 0 0 16px rgba(244,63,94,0.4), inset 0 0 8px rgba(244,63,94,0.08);
+      background: rgba(0, 242, 254, 0.14);
+      border-color: rgba(0, 242, 254, 0.6);
+      color: var(--accent);
+      box-shadow: 0 0 14px var(--accent-glow), inset 0 0 6px rgba(0,242,254,0.06);
     }
     .vod-card-btn.fav.is-fav i {
-      filter: drop-shadow(0 0 4px rgba(244,63,94,0.7));
+      filter: drop-shadow(0 0 4px var(--accent-glow));
     }
     .vod-card-btn.fav.is-fav:hover {
-      background: rgba(244,63,94,0.32);
-      border-color: rgba(244,63,94,0.85);
-      box-shadow: 0 0 24px rgba(244,63,94,0.55);
+      background: rgba(0, 242, 254, 0.24);
+      border-color: rgba(0, 242, 254, 0.85);
+      box-shadow: 0 0 22px var(--accent-glow), 0 0 0 3px rgba(0,242,254,0.12);
       transform: scale(1.18) translateY(-2px);
     }
 
