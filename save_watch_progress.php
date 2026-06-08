@@ -4,6 +4,7 @@
  * Salva lo stato di riproduzione dei contenuti VOD per il profilo attivo.
  */
 session_start();
+require_once __DIR__ . '/config_db.php';
 
 header('Content-Type: application/json');
 
@@ -187,7 +188,34 @@ if (!$found) {
     exit;
 }
 
-// 4. Scrittura su user_profiles.json
+// 4. Scrittura su database e file
+// Salvataggio nel database se la connessione è attiva
+if (isset($pdo)) {
+    try {
+        $stmt_del = $pdo->prepare("DELETE FROM watch_progress WHERE profile_id = :profile_id AND content_id = :id AND content_type = :type");
+        $stmt_del->execute(['profile_id' => $profile_id, 'id' => $id, 'type' => $type]);
+
+        if (!$delete) {
+            $stmt_ins = $pdo->prepare("
+                INSERT INTO watch_progress (username, profile_id, content_id, content_type, progress, seconds, last_updated)
+                VALUES (:username, :profile_id, :id, :type, :progress, :seconds, NOW())
+            ");
+            $stmt_ins->execute([
+                'username' => $username,
+                'profile_id' => $profile_id,
+                'id' => $id,
+                'type' => $type,
+                'progress' => $progress,
+                'seconds' => $seconds
+            ]);
+        }
+        log_backend_debug("Salvataggio su DB avvenuto con successo.");
+    } catch (PDOException $e) {
+        log_backend_debug("Errore database: " . $e->getMessage());
+    }
+}
+
+// Scrittura originale su user_profiles.json (per compatibilità)
 if (file_put_contents($profiles_file, json_encode($all_profiles, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE))) {
     log_backend_debug("Scrittura su user_profiles.json avvenuta con successo. Elementi cronologia: " . count($updated_history));
     echo json_encode(['success' => true, 'watch_history' => $updated_history]);
