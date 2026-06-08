@@ -1768,7 +1768,8 @@ if (!isset($_SESSION['active_profile'])) {
     }
     .vod-player-close,
     .vod-player-fullscreen,
-    .vod-player-next-ep {
+    .vod-player-next-ep,
+    .vod-player-info-btn {
       position: absolute;
       background: rgba(255, 255, 255, 0.05);
       border: 1px solid rgba(255, 255, 255, 0.1);
@@ -1800,8 +1801,8 @@ if (!isset($_SESSION['active_profile'])) {
       transform: translateY(0);
     }
     .vod-player-fullscreen {
-      bottom: 30px;
-      right: 20px;
+      bottom: 8px;
+      right: 12px;
       width: 38px;
       height: 38px;
       font-size: 1.1rem;
@@ -2392,8 +2393,8 @@ if (!isset($_SESSION['active_profile'])) {
         font-size: 1.1rem;
       }
       .vod-player-fullscreen {
-        bottom: 25px;
-        right: 15px;
+        bottom: 6px;
+        right: 10px;
         top: auto;
         width: 32px;
         height: 32px;
