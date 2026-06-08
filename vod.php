@@ -907,18 +907,17 @@ if (!isset($_SESSION['active_profile'])) {
       transform: translateY(-2px);
     }
     .vod-hero-btn.fav-round.is-fav {
-      background: rgba(255,255,255,0.07);
-      border-color: rgba(255,255,255,0.18);
-      box-shadow: none;
+      background: rgba(244, 63, 94, 0.15);
+      border-color: rgba(244, 63, 94, 0.6);
+      box-shadow: 0 0 22px rgba(244,63,94,0.35), inset 0 0 10px rgba(244,63,94,0.08);
     }
     .vod-hero-btn.fav-round.is-fav i {
       color: var(--danger);
       filter: drop-shadow(0 0 5px rgba(244,63,94,0.65));
     }
     .vod-hero-btn.fav-round.is-fav:hover {
-      background: rgba(255,255,255,0.14);
-      border-color: rgba(255,255,255,0.35);
-      box-shadow: none;
+      background: rgba(244, 63, 94, 0.26);
+      box-shadow: 0 0 30px rgba(244,63,94,0.5);
       transform: translateY(-2px);
     }
     .vod-hero-btn.fav-round::after { display: none; }
@@ -985,10 +984,10 @@ if (!isset($_SESSION['active_profile'])) {
     }
     .vod-modal-fav-btn-new:active { transform: scale(0.96); }
     .vod-modal-fav-btn-new.is-fav {
-      background: rgba(255,255,255,0.07);
-      border-color: rgba(255,255,255,0.18);
-      color: #fff;
-      box-shadow: none;
+      background: rgba(244,63,94,0.14);
+      border-color: rgba(244,63,94,0.6);
+      color: var(--danger);
+      box-shadow: 0 0 22px rgba(244,63,94,0.32), inset 0 0 10px rgba(244,63,94,0.06);
     }
     .vod-modal-fav-btn-new.is-fav i {
       color: var(--danger);
@@ -996,9 +995,8 @@ if (!isset($_SESSION['active_profile'])) {
       filter: drop-shadow(0 0 4px rgba(244,63,94,0.65));
     }
     .vod-modal-fav-btn-new.is-fav:hover {
-      background: rgba(255,255,255,0.13);
-      border-color: rgba(255,255,255,0.35);
-      box-shadow: none;
+      background: rgba(244,63,94,0.24);
+      box-shadow: 0 0 30px rgba(244,63,94,0.45);
     }
 
     /* ── CARD BUTTONS REDESIGN ── */
@@ -1066,18 +1064,18 @@ if (!isset($_SESSION['active_profile'])) {
       transform: scale(1.18) translateY(-2px);
     }
     .vod-card-btn.fav.is-fav {
-      background: rgba(8,10,20,0.55);
-      border-color: rgba(255,255,255,0.2);
+      background: rgba(244,63,94,0.18);
+      border-color: rgba(244,63,94,0.65);
       color: var(--danger);
-      box-shadow: none;
+      box-shadow: 0 0 16px rgba(244,63,94,0.4), inset 0 0 8px rgba(244,63,94,0.08);
     }
     .vod-card-btn.fav.is-fav i {
       filter: drop-shadow(0 0 4px rgba(244,63,94,0.7));
     }
     .vod-card-btn.fav.is-fav:hover {
-      background: rgba(255,255,255,0.12);
-      border-color: rgba(255,255,255,0.45);
-      box-shadow: none;
+      background: rgba(244,63,94,0.32);
+      border-color: rgba(244,63,94,0.85);
+      box-shadow: 0 0 24px rgba(244,63,94,0.55);
       transform: scale(1.18) translateY(-2px);
     }
 
@@ -2383,7 +2381,7 @@ if (!isset($_SESSION['active_profile'])) {
         <div class="nav-link" id="nav-item-movies" onclick="changeSection('movies')"><i class="ph ph-film-strip"></i> Film</div>
         <div class="nav-link" id="nav-item-tv" onclick="changeSection('tv')"><i class="ph ph-television"></i> Serie TV</div>
         <div class="nav-link" id="nav-item-catalog" onclick="changeSection('catalog')"><i class="ph ph-folder-open"></i> Catalogo</div>
-        <div class="nav-link" id="nav-item-library" onclick="changeSection('library')"><i class="ph ph-plus"></i> Libreria</div>
+        <div class="nav-link" id="nav-item-library" onclick="changeSection('library')"><i class="ph ph-heart"></i> Libreria</div>
       </nav>
       <div class="nav-search">
         <input type="text" id="vod-search-input" placeholder="Cerca film o serie tv..." autocomplete="off">
