@@ -1592,8 +1592,8 @@ if (!isset($_SESSION['active_profile'])) {
       padding: 0 1.8rem 1.4rem;
     }
     .vod-modal-hero-poster {
-      width: 150px;
-      height: 225px;
+      width: 200px;
+      height: 300px;
       border-radius: 12px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.5);
       border: 2px solid rgba(255,255,255,0.1);
