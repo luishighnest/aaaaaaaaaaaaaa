@@ -1,10 +1,9 @@
 <?php
 /**
  * select_profile.php
- * Schermata di selezione del profilo attivo (Stile Netflix) con dati dal database.
+ * Schermata di selezione del profilo attivo (Stile Netflix).
  */
 session_start();
-require_once __DIR__ . '/config_db.php';
 
 // Previeni il caching della pagina da parte del browser
 header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
@@ -28,7 +27,6 @@ if (file_exists($config_file)) {
     // Controllo scadenza abbonamento PZ8 (reale e bloccante)
     $subscription_expiry = $config['subscription_expiry'] ?? '2027-12-31';
     if (time() > strtotime($subscription_expiry . ' 23:59:59')) {
-        // ... (gestione logica logout scaduto mantenuta)
         $secure_cookie = isset($_SERVER['HTTPS']) || (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https');
         if (isset($_COOKIE['remember_user'])) {
             setcookie('remember_user', '', [
@@ -52,29 +50,33 @@ if (file_exists($config_file)) {
         header('Location: expired.php');
         exit;
     }
+    
+    $profiles = $config['users'][$username]['profiles'] ?? [];
 }
 
-// Carica profili dal database
-$stmt = $pdo->prepare("SELECT * FROM user_profiles WHERE username = ?");
-$stmt->execute([$username]);
-$profiles = $stmt->fetchAll();
+// Override with custom user profiles if available
+$custom_profiles_file = __DIR__ . '/user_profiles.json';
+if (file_exists($custom_profiles_file)) {
+    $custom_data = json_decode(file_get_contents($custom_profiles_file), true);
+    if (isset($custom_data[$username]) && is_array($custom_data[$username])) {
+        $profiles = $custom_data[$username];
+    }
+}
 
 // Se viene selezionato un profilo
 if (isset($_GET['profile_id'])) {
     $profile_id = $_GET['profile_id'];
     
-    // Cerca il profilo corrispondente nel database
-    $stmt = $pdo->prepare("SELECT * FROM user_profiles WHERE id = ? AND username = ?");
-    $stmt->execute([$profile_id, $username]);
-    $selected_profile = $stmt->fetch();
+    // Cerca il profilo corrispondente nella configurazione per sicurezza
+    $selected_profile = null;
+    foreach ($profiles as $profile) {
+        if ($profile['id'] === $profile_id) {
+            $selected_profile = $profile;
+            break;
+        }
+    }
     
-    if ($selected_profile !== false) {
-        // Decodifica i campi JSON prima di metterli in sessione
-        $selected_profile['allowed_categories'] = json_decode($selected_profile['allowed_categories'], true);
-        $selected_profile['allowed_channels'] = json_decode($selected_profile['allowed_channels'], true);
-        $selected_profile['favorites'] = json_decode($selected_profile['favorites'], true);
-        $selected_profile['vod_favorites'] = json_decode($selected_profile['vod_favorites'], true);
-        
+    if ($selected_profile !== null) {
         $_SESSION['active_profile'] = $selected_profile;
         header('Location: index.php');
         exit;
