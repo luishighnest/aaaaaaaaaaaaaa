@@ -477,11 +477,11 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Gestione scorrimento modal per nascondere navbar
     const modalContent = document.querySelector('.vod-modal-content');
-    const navbar = document.querySelector('.vod-navbar');
     let lastModalScrollTop = 0;
     
     if (modalContent) {
         modalContent.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.vod-navbar');
             if (!navbar) return;
             const scrollTop = modalContent.scrollTop;
             
