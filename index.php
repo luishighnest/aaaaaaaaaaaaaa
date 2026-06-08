@@ -314,9 +314,10 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
 
       <!-- Sezione Azioni -->
       <div style="display: flex; flex-direction: column; gap: 0.6rem; margin-top: 0.8rem;">
-        <a href="vod.php" class="dash-cat-item" style="color: #fff; border-left: 3px solid var(--accent); background: rgba(0, 242, 254, 0.05); justify-content: center; padding: 0.6rem; font-weight: 700; font-size: 0.9rem;">
-          <i class="ph ph-film-strip" style="color: var(--accent);"></i> Film & Serie TV
+        <a href="vod.php" class="dash-exit" style="margin-top:0; padding: 0.6rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem; text-decoration: none;">
+          <i class="ph ph-film-strip"></i> Film & Serie TV
         </a>
+
         <a id="btn-guida-tv" href="guida.php" class="dash-exit" style="margin-top:0; padding: 0.6rem;"><i class="ph ph-calendar"></i> GUIDA TV</a>
         <button id="open-settings-btn" onclick="document.getElementById('settings-modal').classList.add('open')" class="dash-exit" style="width: 100%; padding: 0.6rem; background: var(--bg-input); border-color: var(--border-subtle); color: var(--text-primary); border-radius: 99px; display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin-top:0; border: 1px solid var(--border-subtle);"><i class="ph ph-gear"></i> Impostazioni</button>
       </div>

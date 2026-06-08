@@ -1592,14 +1592,15 @@ if (!isset($_SESSION['active_profile'])) {
       padding: 0 1.8rem 1.4rem;
     }
     .vod-modal-hero-poster {
-      width: 90px;
-      flex-shrink: 0;
-      border-radius: 10px;
-      box-shadow: 0 8px 28px rgba(0,0,0,0.65);
+      width: 200px;
+      height: 300px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
       border: 2px solid rgba(255,255,255,0.1);
-      aspect-ratio: 2/3;
-      object-fit: cover;
-      background: rgba(15,23,42,0.5);
+      object-fit: contain;
+      object-position: center;
+      flex-shrink: 0;
+      background: rgba(0,0,0,0.2);
     }
     .vod-modal-hero-text {
       flex: 1;
