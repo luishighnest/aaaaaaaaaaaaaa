@@ -1552,6 +1552,7 @@ if (!isset($_SESSION['active_profile'])) {
       padding: 2rem;
       height: 100%;
       overflow: hidden;
+      align-items: center; /* Assicura allineamento verticale */
     }
 
     @media (max-width: 768px) {
