@@ -172,15 +172,26 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchClear = document.getElementById('vod-search-clear');
     if (searchClear) {
         searchClear.addEventListener('click', (e) => {
-            e.stopPropagation(); // Evita conflitti con il focus dell'input
+            e.preventDefault();
+            e.stopPropagation();
+            
+            // 1. Pulisci il testo
             searchInput.value = '';
-            searchClear.style.display = 'none';
+            
+            // 2. Nascondi immediatamente i suggerimenti
             const dd = document.getElementById('vod-search-dropdown');
             if (dd) {
                 dd.classList.remove('open');
-                dd.innerHTML = ''; // Svuota fisicamente i suggerimenti
+                dd.innerHTML = '';
             }
-            searchInput.focus(); // Riporta il focus per permettere una nuova ricerca
+            
+            // 3. Nascondi la X
+            searchClear.style.display = 'none';
+            
+            // 4. Rimuovi il focus per far rimpicciolire la barra
+            searchInput.blur();
+            
+            // 5. Torna alla home
             showHome();
         });
     }
@@ -2852,13 +2863,25 @@ window.addEventListener('message', (event) => {
                 
                 const now = Date.now();
                 const mediaDuration = window.__PLAYBACK_CONTEXT__.duration || (window.__PLAYBACK_CONTEXT__.type === 'movie' ? (120 * 60) : (45 * 60));
-                const progress = Math.min(95, Math.round((seconds / mediaDuration) * 100));
+                const progress = Math.round((seconds / mediaDuration) * 100);
+                
+                // Se supera il 95% e siamo in una serie TV, prepariamo il passaggio al prossimo episodio al termine
+                if (window.__PLAYBACK_CONTEXT__.type === 'tv' && progress >= 95) {
+                    // Non salviamo più il progresso normale, consideriamolo finito
+                    if (now - lastSaveTime >= 15000) {
+                        lastSaveTime = now;
+                        handleEpisodeEnded();
+                    }
+                    return;
+                }
+
+                const cappedProgress = Math.min(95, progress);
                 
                 // Throttling: salva al massimo ogni 15 secondi se avanzato di 10s
                 if (now - lastSaveTime >= 15000 && Math.abs(seconds - lastLoggedSeconds) >= 10) {
                     lastSaveTime = now;
                     lastLoggedSeconds = seconds;
-                    saveProgressToServer(seconds, progress);
+                    saveProgressToServer(seconds, cappedProgress);
                 }
             }
             break;
