@@ -2670,7 +2670,7 @@ if (!isset($_SESSION['active_profile'])) {
 
   <!-- PLAYER OVERLAY -->
   <div class="vod-player-overlay" id="vod-player-overlay">
-    <button class="vod-player-close" onclick="window.location.href='index.php'" title="Torna alla Home"><i class="ph ph-house"></i></button>
+    <button class="vod-player-close" onclick="window.location.href='index.php'" title="Torna alla Home" style="z-index: 99999;"><i class="ph ph-house"></i></button>
     <button class="vod-player-fullscreen" id="vod-player-fullscreen-btn" onclick="togglePlayerFullscreen()"><i class="ph ph-corners-out"></i></button>
     <button class="vod-player-next-ep" id="vod-player-next-btn" onclick="playNextEpisode()" style="display: none;"><i class="ph ph-skip-forward"></i></button>
     <div class="vod-player-mouse-tracker" id="vod-player-mouse-tracker"></div>
