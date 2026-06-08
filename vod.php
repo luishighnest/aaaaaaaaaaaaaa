@@ -1538,11 +1538,11 @@ if (!isset($_SESSION['active_profile'])) {
       position: relative;
       transform: scale(0.95) translateY(20px);
       transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-      overflow-y: auto;
       max-height: 85vh;
       box-shadow: 0 30px 80px rgba(0,0,0,0.7);
       display: flex;
       flex-direction: column;
+      overflow: hidden; /* Gestiremo lo scroll internamente */
     }
 
     .vod-modal-inner {
@@ -1550,18 +1550,24 @@ if (!isset($_SESSION['active_profile'])) {
       flex-direction: row;
       gap: 2rem;
       padding: 2rem;
+      height: 100%;
+      overflow: hidden;
     }
 
     @media (max-width: 768px) {
       .vod-modal-inner {
         flex-direction: column;
         padding: 1.5rem;
+        overflow-y: auto;
       }
     }
 
     .vod-modal-artwork {
       width: 35%;
       flex-shrink: 0;
+      position: sticky;
+      top: 0;
+      height: fit-content;
     }
 
     .vod-modal-artwork img {
@@ -1574,6 +1580,7 @@ if (!isset($_SESSION['active_profile'])) {
     @media (max-width: 768px) {
       .vod-modal-artwork {
         width: 100%;
+        position: static;
       }
       .vod-modal-artwork img {
         aspect-ratio: 16/9;
@@ -1586,6 +1593,19 @@ if (!isset($_SESSION['active_profile'])) {
       display: flex;
       flex-direction: column;
       gap: 1rem;
+      overflow-y: auto;
+      padding-right: 10px; /* Spazio per evitare che scrollbar sia troppo attaccata */
+    }
+
+    /* Hide scrollbar for Chrome/Safari/Opera */
+    .vod-modal-details::-webkit-scrollbar {
+      display: none;
+    }
+    
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .vod-modal-details {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
     }
 
     /* ── INFO BODY (scrollabile) ── */
