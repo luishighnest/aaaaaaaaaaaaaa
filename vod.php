@@ -1504,9 +1504,8 @@ if (!isset($_SESSION['active_profile'])) {
       inset: 0;
       z-index: 9999;
       display: block;
-      overflow-y: auto;
-      overflow-x: hidden;
-      padding: 5vh 5% 5vh;
+      overflow-y: hidden;
+      padding: 0;
       box-sizing: border-box;
       opacity: 0;
       pointer-events: none;
@@ -1535,15 +1534,15 @@ if (!isset($_SESSION['active_profile'])) {
       border-radius: 20px;
       width: 100%;
       max-width: 780px;
-      margin: 0 auto;
+      margin: 5vh auto;
       position: relative;
       transform: scale(0.95) translateY(20px);
       transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-      overflow-y: visible;
+      overflow-y: auto;
+      height: 90vh;
       box-shadow: 0 30px 80px rgba(0,0,0,0.7);
       display: flex;
       flex-direction: column;
-      height: auto;
     }
     .vod-modal-content::-webkit-scrollbar { display: none; }
     .vod-modal.open .vod-modal-content {
