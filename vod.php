@@ -1566,7 +1566,7 @@ if (!isset($_SESSION['active_profile'])) {
     .vod-modal-hero-bg img {
       width: 100%;
       height: 100%;
-      object-fit: contain;
+      object-fit: cover;
       object-position: center;
       opacity: 1;
       display: block;
