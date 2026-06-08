@@ -1504,7 +1504,7 @@ if (!isset($_SESSION['active_profile'])) {
       inset: 0;
       z-index: 9999;
       display: block;
-      overflow-y: auto;
+      overflow-y: scroll;
       overflow-x: hidden;
       padding: 5vh 5% 5vh;
       box-sizing: border-box;
@@ -1548,6 +1548,7 @@ if (!isset($_SESSION['active_profile'])) {
       box-shadow: 0 30px 80px rgba(0,0,0,0.7);
       display: flex;
       flex-direction: column;
+      min-height: 100%;
       height: auto;
     }
     .vod-modal-content::-webkit-scrollbar { display: none; }
