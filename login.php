@@ -390,7 +390,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <i class="ph ph-play-circle"></i>
         </div>
         <h1 class="login-title">PZ8</h1>
-        <p class="login-subtitle">Dashboard StreamHub Premium</p>
+        <p class="login-subtitle">ù</p>
       </div>
 
       <?php if (!empty($error_message)): ?>
