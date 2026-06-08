@@ -308,18 +308,19 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
           <i class="ph ph-sidebar-simple"></i>
         </button>
       </div>
-      <div class="dash-cat-list" id="dash-cat-list">
+      <div class="dash-cat-list" id="dash-cat-list" style="margin-bottom: 0.5rem;">
         <!-- Categories injected here -->
       </div>
 
       <!-- Sezione Azioni -->
-      <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-top: 1rem;">
-        <a href="vod.php" class="dash-cat-item" style="color: var(--accent); border-left: 3px solid var(--accent); background: rgba(0, 242, 254, 0.05); justify-content: center;">
+      <div style="display: flex; flex-direction: column; gap: 0.2rem;">
+        <a href="vod.php" class="dash-cat-item" style="color: var(--accent); border-left: 3px solid var(--accent); background: rgba(0, 242, 254, 0.05); justify-content: center; padding: 0.6rem;">
           <i class="ph ph-film-strip" style="color: var(--accent);"></i> Film & Serie TV
         </a>
-        <a id="btn-guida-tv" href="guida.php" class="dash-exit"><i class="ph ph-calendar"></i> GUIDA TV</a>
-        <button id="open-settings-btn" onclick="document.getElementById('settings-modal').classList.add('open')" class="dash-exit" style="width: 100%; padding: 0.8rem; background: var(--bg-input); border-color: var(--border-subtle); color: var(--text-primary); border-radius: 99px; display: flex; align-items: center; justify-content: center; gap: 0.5rem; border: 1px solid rgba(239, 68, 68, 0);"><i class="ph ph-gear"></i> Impostazioni</button>
+        <a id="btn-guida-tv" href="guida.php" class="dash-exit" style="margin-top:0; padding: 0.6rem;"><i class="ph ph-calendar"></i> GUIDA TV</a>
+        <button id="open-settings-btn" onclick="document.getElementById('settings-modal').classList.add('open')" class="dash-exit" style="width: 100%; padding: 0.6rem; background: var(--bg-input); border-color: var(--border-subtle); color: var(--text-primary); border-radius: 99px; display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin-top:0; border: 1px solid rgba(239, 68, 68, 0);"><i class="ph ph-gear"></i> Impostazioni</button>
       </div>
+
     </aside>
 
     <!-- Tasto per riaprire la sidebar (visibile solo quando ÃƒÂ¨ nascosta) -->
@@ -1184,7 +1185,7 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
       <div class="settings-modal-body" style="padding-top: 1.5rem;">
         
         <!-- TAB INTERFACCIA -->
-       <div id="tab-interfaccia" class="settings-tab-pane active">
+      <div id="tab-interfaccia" class="settings-tab-pane active">
           <div class="settings-section">
             <h3><i class="ph ph-palette"></i> Aspetto</h3>
             <div class="settings-row" style="margin-bottom: 1rem;">
@@ -1209,6 +1210,7 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
             </div>
           </div>
         </div>
+
         <!-- TAB PROFILO -->
         <div id="tab-profilo" class="settings-tab-pane">
           <div class="settings-section" style="margin-bottom: 2.5rem;">
