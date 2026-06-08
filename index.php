@@ -1136,6 +1136,7 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
           <button class="settings-tab-btn active" data-tab="tab-interfaccia"><i class="ph ph-desktop"></i> Interfaccia</button>
           <button class="settings-tab-btn" data-tab="tab-profilo"><i class="ph ph-user"></i> Profilo</button>
           <button class="settings-tab-btn" data-tab="tab-gestione"><i class="ph ph-users"></i> Gestione</button>
+          <button class="settings-tab-btn" data-tab="tab-supporto"><i class="ph ph-question"></i> Supporto</button>
         </div>
       </div>
 
@@ -1266,17 +1267,20 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
               </button>
             </div>
           </div>
+        </div>
 
-          <div class="settings-section" style="margin-top: 1.5rem; background: var(--bg-surface); border: 1px solid var(--accent); border-radius: 12px; padding: 1.5rem;">
+        <!-- TAB SUPPORTO -->
+        <div id="tab-supporto" class="settings-tab-pane">
+          <div class="settings-section" style="background: var(--bg-surface); border: 1px solid var(--accent); border-radius: 12px; padding: 1.5rem;">
             <h3 style="margin-top: 0; color: var(--accent);"><i class="ph ph-warning-circle"></i> Estensioni Obbligatorie</h3>
             <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1rem;">
               Per il corretto funzionamento del sito, è obbligatorio installare le seguenti estensioni browser:
             </p>
-            <div style="display: flex; gap: 1rem;">
-              <a href="https://ublockorigin.com/it" target="_blank" class="settings-action-btn" style="flex: 1; padding: 0.8rem; text-align: center; border-radius: 8px; background: var(--accent); color: #000; font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 0.5rem; text-decoration: none; transition: all 0.2s;" onmouseover="this.style.opacity='0.9';" onmouseout="this.style.opacity='1';">
+            <div style="display: flex; flex-direction: column; gap: 1rem;">
+              <a href="https://ublockorigin.com/it" target="_blank" class="settings-action-btn" style="padding: 1rem; text-align: center; border-radius: 8px; background: var(--accent); color: #000; font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 0.5rem; text-decoration: none; transition: all 0.2s;" onmouseover="this.style.opacity='0.9';" onmouseout="this.style.opacity='1';">
                 <i class="ph ph-shield-check"></i> Installa uBlock Origin
               </a>
-              <a href="https://chromewebstore.google.com/detail/videoplayer-mpdm3u8iptvep/opmeopcambhfimffbomjgemehjkbbmji" target="_blank" class="settings-action-btn" style="flex: 1; padding: 0.8rem; text-align: center; border-radius: 8px; background: var(--accent); color: #000; font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 0.5rem; text-decoration: none; transition: all 0.2s;" onmouseover="this.style.opacity='0.9';" onmouseout="this.style.opacity='1';">
+              <a href="https://chromewebstore.google.com/detail/videoplayer-mpdm3u8iptvep/opmeopcambhfimffbomjgemehjkbbmji" target="_blank" class="settings-action-btn" style="padding: 1rem; text-align: center; border-radius: 8px; background: var(--accent); color: #000; font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 0.5rem; text-decoration: none; transition: all 0.2s;" onmouseover="this.style.opacity='0.9';" onmouseout="this.style.opacity='1';">
                 <i class="ph ph-video"></i> Installa Video Player M3U8
               </a>
             </div>
