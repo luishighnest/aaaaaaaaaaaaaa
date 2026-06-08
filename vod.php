@@ -1592,8 +1592,8 @@ if (!isset($_SESSION['active_profile'])) {
       padding: 0 1.8rem 1.4rem;
     }
     .vod-modal-hero-poster {
-      width: 200px;
-      height: 300px;
+      width: 150px;
+      height: 225px;
       border-radius: 12px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.5);
       border: 2px solid rgba(255,255,255,0.1);
@@ -2670,7 +2670,7 @@ if (!isset($_SESSION['active_profile'])) {
 
   <!-- PLAYER OVERLAY -->
   <div class="vod-player-overlay" id="vod-player-overlay">
-    <button class="vod-player-close" onclick="closePlayer()"><i class="ph ph-arrow-left"></i></button>
+    <button class="vod-player-close" onclick="window.location.href='index.php'" title="Torna alla Home"><i class="ph ph-house"></i></button>
     <button class="vod-player-fullscreen" id="vod-player-fullscreen-btn" onclick="togglePlayerFullscreen()"><i class="ph ph-corners-out"></i></button>
     <button class="vod-player-next-ep" id="vod-player-next-btn" onclick="playNextEpisode()" style="display: none;"><i class="ph ph-skip-forward"></i></button>
     <div class="vod-player-mouse-tracker" id="vod-player-mouse-tracker"></div>
