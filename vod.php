@@ -816,43 +816,220 @@ if (!isset($_SESSION['active_profile'])) {
       margin-top: 0.4rem;
     }
     
+    /* ── BOTTONI HERO & MODAL – REDESIGN ── */
     .vod-hero-btn {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
-      padding: 0.75rem 1.6rem;
-      border-radius: 99px;
-      font-size: 0.9rem;
-      font-weight: 700;
+      gap: 9px;
+      padding: 0 1.7rem;
+      height: 46px;
+      border-radius: 14px;
+      font-size: 0.82rem;
+      font-weight: 800;
       cursor: pointer;
-      transition: var(--transition);
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
       border: none;
       text-transform: uppercase;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.8px;
+      position: relative;
+      overflow: hidden;
+      white-space: nowrap;
+      flex-shrink: 0;
     }
-    
+
+    /* Shine sweep on hover */
+    .vod-hero-btn::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(105deg, transparent 30%, rgba(255,255,255,0.18) 50%, transparent 70%);
+      transform: translateX(-100%);
+      transition: transform 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+      pointer-events: none;
+    }
+    .vod-hero-btn:hover::after {
+      transform: translateX(100%);
+    }
+
+    .vod-hero-btn i {
+      font-size: 1.05rem;
+      flex-shrink: 0;
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .vod-hero-btn:hover i { transform: scale(1.15); }
+    .vod-hero-btn:active { transform: scale(0.96); }
+
+    /* PLAY – principale */
     .vod-hero-btn.play {
       background: linear-gradient(135deg, var(--accent) 0%, #4facfe 100%);
       color: #000;
-      box-shadow: 0 4px 15px var(--accent-glow);
+      box-shadow: 0 0 0 0 var(--accent-glow);
     }
     .vod-hero-btn.play:hover {
-      box-shadow: 0 8px 25px var(--accent-glow);
+      box-shadow: 0 6px 28px var(--accent-glow), 0 0 0 3px rgba(0,242,254,0.18);
       transform: translateY(-2px);
     }
-    
+
+    /* INFO – secondario (Dettagli) */
     .vod-hero-btn.info {
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid var(--border-subtle);
+      background: rgba(255,255,255,0.07);
+      border: 1.5px solid rgba(255,255,255,0.18);
       color: #fff;
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
     }
     .vod-hero-btn.info:hover {
-      background: rgba(255, 255, 255, 0.15);
-      border-color: rgba(255, 255, 255, 0.2);
+      background: rgba(255,255,255,0.13);
+      border-color: rgba(255,255,255,0.35);
       transform: translateY(-2px);
     }
+
+    /* FAV ROUND – bottone +/✓ a cerchio (hero) */
+    .vod-hero-btn.fav-round {
+      width: 46px;
+      height: 46px;
+      padding: 0;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.07);
+      border: 1.5px solid rgba(255,255,255,0.18);
+      color: #fff;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      justify-content: center;
+    }
+    .vod-hero-btn.fav-round i {
+      font-size: 1.3rem;
+      transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), color 0.25s;
+    }
+    .vod-hero-btn.fav-round:hover {
+      background: rgba(255,255,255,0.14);
+      border-color: rgba(255,255,255,0.35);
+      transform: translateY(-2px);
+    }
+    .vod-hero-btn.fav-round.is-fav {
+      background: rgba(244, 63, 94, 0.15);
+      border-color: rgba(244, 63, 94, 0.5);
+      box-shadow: 0 0 18px rgba(244,63,94,0.25);
+    }
+    .vod-hero-btn.fav-round.is-fav i { color: var(--danger); }
+    .vod-hero-btn.fav-round.is-fav:hover {
+      background: rgba(244, 63, 94, 0.25);
+    }
+    .vod-hero-btn.fav-round::after { display: none; } /* no shine on round */
+
+    /* ── BOTTONI MODAL ── */
+    .vod-modal-action-row {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+
+    /* Bottone fav nel modal: solo icona + (o ✓) con testo */
+    .vod-modal-fav-btn-new {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      height: 46px;
+      padding: 0 1.3rem;
+      border-radius: 14px;
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      cursor: pointer;
+      border: 1.5px solid rgba(255,255,255,0.18);
+      background: rgba(255,255,255,0.07);
+      color: #fff;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      white-space: nowrap;
+      position: relative;
+      overflow: hidden;
+    }
+    .vod-modal-fav-btn-new::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(105deg, transparent 30%, rgba(255,255,255,0.18) 50%, transparent 70%);
+      transform: translateX(-100%);
+      transition: transform 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+      pointer-events: none;
+    }
+    .vod-modal-fav-btn-new:hover::after { transform: translateX(100%); }
+    .vod-modal-fav-btn-new i {
+      font-size: 1.15rem;
+      transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), color 0.25s;
+    }
+    .vod-modal-fav-btn-new:hover {
+      background: rgba(255,255,255,0.13);
+      border-color: rgba(255,255,255,0.35);
+      transform: translateY(-2px);
+    }
+    .vod-modal-fav-btn-new:active { transform: scale(0.96); }
+    .vod-modal-fav-btn-new.is-fav {
+      background: rgba(244,63,94,0.12);
+      border-color: rgba(244,63,94,0.45);
+      color: var(--danger);
+      box-shadow: 0 0 18px rgba(244,63,94,0.2);
+    }
+    .vod-modal-fav-btn-new.is-fav i { color: var(--danger); transform: scale(1.1); }
+    .vod-modal-fav-btn-new.is-fav:hover { background: rgba(244,63,94,0.2); }
+
+    /* ── CARD BUTTONS REDESIGN ── */
+    .vod-card-btn {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: rgba(0,0,0,0.45);
+      border: 1.5px solid rgba(255,255,255,0.18);
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      flex-shrink: 0;
+    }
+    .vod-card-btn:hover {
+      transform: scale(1.12) translateY(-1px);
+      border-color: rgba(255,255,255,0.45);
+      background: rgba(255,255,255,0.15);
+    }
+    .vod-card-btn:active { transform: scale(0.93); }
+
+    /* Play card – accent pieno */
+    .vod-card-btn.play {
+      background: #fff;
+      border-color: transparent;
+      color: #000;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+    }
+    .vod-card-btn.play:hover {
+      background: var(--accent);
+      box-shadow: 0 4px 18px var(--accent-glow);
+      border-color: transparent;
+      transform: scale(1.15) translateY(-1px);
+    }
+
+    /* Fav card – + diventa ✓ se preferito */
+    .vod-card-btn.fav {
+      font-size: 1.1rem;
+      font-weight: 900;
+    }
+    .vod-card-btn.fav:hover { color: #fff; }
+    .vod-card-btn.fav.is-fav {
+      background: rgba(244,63,94,0.18);
+      border-color: rgba(244,63,94,0.5);
+      color: var(--danger);
+      box-shadow: 0 0 12px rgba(244,63,94,0.3);
+    }
+    .vod-card-btn.fav.is-fav:hover { background: rgba(244,63,94,0.3); }
 
     /* Stile Righe Netflix */
     .vod-row-container {
@@ -1073,38 +1250,7 @@ if (!isset($_SESSION['active_profile'])) {
       opacity: 1;
     }
     
-    .vod-card-btn {
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.1);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      color: #fff;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.9rem;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-    }
-    
-    .vod-card-btn:hover {
-      background: #fff;
-      color: #000;
-      transform: scale(1.1);
-    }
-    
-    .vod-card-btn.play {
-      background: #fff;
-      color: #000;
-      border: none;
-    }
-    
-    .vod-card-btn.fav i {
-      color: var(--danger);
-    }
+
 
     /* Episode Badge sulla Card (Serie TV) - Minimalist */
     .vod-card-episode-badge {
@@ -2221,7 +2367,7 @@ if (!isset($_SESSION['active_profile'])) {
           <div class="vod-hero-buttons">
             <button class="vod-hero-btn play" id="vod-hero-play-btn"><i class="ph-fill ph-play"></i> Guarda Ora</button>
             <button class="vod-hero-btn info" id="vod-hero-info-btn"><i class="ph ph-info"></i> Dettagli</button>
-            <button class="vod-hero-btn info" id="vod-hero-fav-btn" style="padding: 0.75rem 1rem;"><i class="ph ph-heart" style="font-size: 1.2rem; color: var(--danger);"></i></button>
+            <button class="vod-hero-btn fav-round" id="vod-hero-fav-btn" title="Aggiungi ai Preferiti"><i class="ph ph-plus"></i></button>
           </div>
         </div>
       </div>
@@ -2385,10 +2531,10 @@ if (!isset($_SESSION['active_profile'])) {
         </div>
 
         <div class="vod-modal-genres" id="vod-modal-genres"></div>
-        <div style="display: flex; gap: 10px; align-items: center; margin-top: 10px;">
-          <button class="vod-hero-btn play" id="vod-modal-play-btn" style="display: none; margin-top: 0; width: fit-content;"><i class="ph-fill ph-play"></i> Guarda Ora</button>
-          <button class="vod-hero-btn play" id="vod-modal-resume-btn" style="display: none; margin-top: 0; width: fit-content;"><i class="ph-fill ph-play"></i> Riprendi</button>
-          <button class="vod-hero-btn info" id="vod-modal-fav-btn" style="padding: 0.75rem 1.1rem; display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 0.85rem;"><i class="ph ph-heart" style="font-size: 1.1rem; color: var(--danger);"></i> <span>Aggiungi ai Preferiti</span></button>
+        <div class="vod-modal-action-row">
+          <button class="vod-hero-btn play" id="vod-modal-play-btn" style="display: none;"><i class="ph-fill ph-play"></i> Guarda Ora</button>
+          <button class="vod-hero-btn play" id="vod-modal-resume-btn" style="display: none;"><i class="ph-fill ph-play"></i> Riprendi</button>
+          <button class="vod-modal-fav-btn-new" id="vod-modal-fav-btn"><i class="ph ph-plus"></i> <span>Aggiungi</span></button>
         </div>
 
         <p class="vod-modal-desc" id="vod-modal-overview">Caricamento dettagli...</p>
