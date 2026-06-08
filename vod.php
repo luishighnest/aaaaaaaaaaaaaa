@@ -1501,20 +1501,16 @@ if (!isset($_SESSION['active_profile'])) {
     /* VOD MODAL ULTRA-PREMIUM */
     .vod-modal {
       position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+      inset: 0;
       background: rgba(2, 6, 23, 0.6);
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
       z-index: 9999;
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
+      display: block;
       overflow-y: auto;
       overflow-x: hidden;
-      padding: 5vh 0 5vh;
+      padding: 5vh 5% 5vh;
+      box-sizing: border-box;
       opacity: 0;
       pointer-events: none;
       transition: opacity 0.4s ease;
@@ -1535,8 +1531,9 @@ if (!isset($_SESSION['active_profile'])) {
       -webkit-backdrop-filter: blur(30px);
       border: 1px solid rgba(255, 255, 255, 0.08);
       border-radius: 20px;
-      width: 90%;
+      width: 100%;
       max-width: 780px;
+      margin: 0 auto;
       position: relative;
       transform: scale(0.95) translateY(20px);
       transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
@@ -1545,7 +1542,6 @@ if (!isset($_SESSION['active_profile'])) {
       display: flex;
       flex-direction: column;
       height: auto;
-      flex-shrink: 0;
     }
     .vod-modal-content::-webkit-scrollbar { display: none; }
     .vod-modal.open .vod-modal-content {
