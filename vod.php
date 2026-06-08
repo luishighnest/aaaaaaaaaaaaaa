@@ -1506,41 +1506,130 @@ if (!isset($_SESSION['active_profile'])) {
     }
     
     .vod-modal-content {
-      background: rgba(2, 6, 23, 0.88);
+      background: rgba(2, 6, 23, 0.96);
       backdrop-filter: blur(30px);
       -webkit-backdrop-filter: blur(30px);
       border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: 24px;
+      border-radius: 20px;
       width: 90%;
-      max-width: 900px;
-      position: relative; 
+      max-width: 780px;
+      position: relative;
       transform: scale(0.95) translateY(20px);
       transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
       overflow: visible;
-      box-shadow: 0 30px 60px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.05); 
+      box-shadow: 0 30px 80px rgba(0,0,0,0.7);
       display: flex;
-      max-height: 85vh;
-    }
-    /* Clip il contenuto interno rispettando border-radius */
-    .vod-modal-content > .vod-modal-poster {
-      border-radius: 24px 0 0 24px;
-      overflow: hidden;
-    }
-    .vod-modal-content > .vod-modal-info {
-      border-radius: 0 24px 24px 0;
+      flex-direction: column;
+      max-height: 88vh;
     }
     .vod-modal.open .vod-modal-content {
       transform: scale(1) translateY(0);
     }
-    
+
+    /* ── HERO ── */
+    .vod-modal-hero {
+      position: relative;
+      width: 100%;
+      height: 260px;
+      flex-shrink: 0;
+      border-radius: 20px 20px 0 0;
+      overflow: hidden;
+    }
+    .vod-modal-hero-bg {
+      position: absolute;
+      inset: 0;
+      background: #0a0f1e;
+    }
+    .vod-modal-hero-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 20%;
+      opacity: 0.55;
+      display: block;
+    }
+    .vod-modal-hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(2,6,23,0.1) 0%,
+        rgba(2,6,23,0.3) 40%,
+        rgba(2,6,23,0.92) 100%
+      );
+    }
+    .vod-modal-hero-body {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      align-items: flex-end;
+      gap: 1.4rem;
+      padding: 0 1.8rem 1.4rem;
+    }
+    .vod-modal-hero-poster {
+      width: 90px;
+      flex-shrink: 0;
+      border-radius: 10px;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.65);
+      border: 2px solid rgba(255,255,255,0.1);
+      aspect-ratio: 2/3;
+      object-fit: cover;
+      background: rgba(15,23,42,0.5);
+      transform: translateY(28px);
+      transition: transform 0.3s ease;
+    }
+    .vod-modal-hero-text {
+      flex: 1;
+      min-width: 0;
+      padding-bottom: 4px;
+    }
+    .vod-modal-hero-text h2 {
+      font-family: var(--font-main);
+      font-size: 1.85rem;
+      font-weight: 900;
+      color: #fff;
+      margin: 0 0 6px;
+      line-height: 1.1;
+      letter-spacing: -0.8px;
+      text-shadow: 0 2px 12px rgba(0,0,0,0.6);
+    }
+    .vod-modal-hero-text #vod-modal-tagline {
+      font-style: italic;
+      color: var(--accent);
+      font-size: 0.88rem;
+      font-weight: 500;
+      margin-bottom: 10px;
+      opacity: 0.9;
+    }
+
+    /* ── INFO BODY (scrollabile) ── */
     .vod-modal-topbar {
       display: none;
     }
+    .vod-modal-info {
+      padding: 2rem 1.8rem 1.8rem 1.8rem;
+      padding-top: calc(28px + 1.4rem); /* compensa il poster che sporge */
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 1.1rem;
+      overflow-y: auto;
+      border-radius: 0 0 20px 20px;
+    }
+    .vod-modal-info::-webkit-scrollbar { width: 5px; }
+    .vod-modal-info::-webkit-scrollbar-thumb {
+      background: rgba(255,255,255,0.1);
+      border-radius: 10px;
+    }
+
+    /* ── CLOSE BTN ── */
     .vod-modal-close {
       position: absolute;
       top: 14px;
       right: 14px;
-      z-index: 10;
+      z-index: 20;
       width: 36px;
       height: 36px;
       border-radius: 50%;
@@ -1554,152 +1643,88 @@ if (!isset($_SESSION['active_profile'])) {
       font-size: 1rem;
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
-      box-shadow: 0 2px 14px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(255,255,255,0.08);
-      transition: background 0.22s, border-color 0.22s, color 0.22s, box-shadow 0.22s, transform 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 2px 14px rgba(0,0,0,0.55), inset 0 1px 0 rgba(255,255,255,0.08);
+      transition: background 0.22s, border-color 0.22s, color 0.22s, transform 0.22s cubic-bezier(0.16,1,0.3,1);
     }
-    .vod-modal-close i {
-      transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-    }
+    .vod-modal-close i { transition: transform 0.3s cubic-bezier(0.34,1.56,0.64,1); }
     .vod-modal-close:hover {
-      background: rgba(255, 255, 255, 0.15);
-      border-color: rgba(255, 255, 255, 0.8);
+      background: rgba(255,255,255,0.15);
+      border-color: rgba(255,255,255,0.8);
       color: #fff;
       transform: scale(1.12);
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.55);
     }
-    .vod-modal-close:hover i {
-      transform: rotate(90deg);
-    }
-    .vod-modal-close:active {
-      transform: scale(0.9);
-    }
-    
-    .vod-modal-poster {
-      width: 300px;
-      flex-shrink: 0;
-      padding: 2.5rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: transparent;
-      border-right: none;
-      transition: width 0.25s ease;
-    }
-    .vod-modal-poster.is-landscape {
-      width: 380px;
-    }
-    .vod-modal-poster.is-square {
-      width: 320px;
-    }
-    .vod-modal-poster img {
-      width: auto;
-      max-width: 100%;
-      height: auto;
-      max-height: calc(85vh - 5rem);
-      object-fit: contain;
-      border-radius: 12px;
-      box-shadow: 0 15px 35px rgba(0,0,0,0.5);
-      border: 1px solid rgba(255,255,255,0.05);
-      display: block;
-      background: rgba(15, 23, 42, 0.35);
-    }
-    .vod-modal-poster.is-portrait img {
-      max-width: 230px;
-    }
-    .vod-modal-poster.is-landscape img {
-      max-width: 320px;
-    }
-    .vod-modal-poster.is-square img {
-      max-width: 260px;
-    }
-    
-    .vod-modal-info {
-      padding: 3rem;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      gap: 1.2rem;
-      overflow-y: auto;
-    }
-    .vod-modal-info::-webkit-scrollbar {
-      width: 6px;
-    }
-    .vod-modal-info::-webkit-scrollbar-thumb {
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 10px;
-    }
-    
+    .vod-modal-close:hover i { transform: rotate(90deg); }
+    .vod-modal-close:active { transform: scale(0.9); }
+
+    /* ── POSTER (vecchio, rimosso dal layout ma tenuto per compatibilità JS) ── */
+    .vod-modal-poster { display: none; }
+
+    /* ── META ── */
     #vod-modal-title {
       font-family: var(--font-main);
-      font-size: 2.2rem;
+      font-size: 1.85rem;
       margin: 0;
       line-height: 1.1;
       color: #fff;
-      text-shadow: 0 2px 10px rgba(0,0,0,0.5);
-      font-weight: 800;
-      letter-spacing: -1px;
+      font-weight: 900;
+      letter-spacing: -0.8px;
     }
-    
     #vod-modal-tagline {
       font-style: italic;
       color: var(--accent);
-      font-size: 1.05rem;
-      margin-top: -5px;
+      font-size: 0.88rem;
       font-weight: 500;
+      opacity: 0.9;
     }
-    
     .vod-modal-meta-row {
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
+      gap: 8px;
       align-items: center;
+      margin-top: 6px;
     }
-    
-    .vod-meta-badge { 
-      background: rgba(255,255,255,0.04);
-      padding: 5px 12px;
-      border-radius: 30px; 
-      font-size: 0.8rem;
+    .vod-meta-badge {
+      background: rgba(255,255,255,0.06);
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 0.76rem;
       font-weight: 700;
       display: inline-flex;
       align-items: center;
-      gap: 6px; 
-      border: 1px solid rgba(255,255,255,0.05);
+      gap: 5px;
+      border: 1px solid rgba(255,255,255,0.08);
       color: var(--text-secondary);
       font-family: var(--font-alt);
     }
     .vod-meta-badge.rating {
       color: #fbbf24;
-      background: rgba(251, 191, 36, 0.12);
-      border-color: rgba(251, 191, 36, 0.25);
+      background: rgba(251,191,36,0.12);
+      border-color: rgba(251,191,36,0.25);
     }
-    
     .vod-modal-desc {
-      font-size: 0.95rem;
-      line-height: 1.6;
+      font-size: 0.93rem;
+      line-height: 1.65;
       color: var(--text-secondary);
-      margin-top: 5px;
+      margin: 0;
     }
-    
     .vod-modal-genres {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 5px;
+      gap: 7px;
     }
     .vod-genre-tag {
-      background: rgba(255,255,255,0.03);
-      padding: 4px 12px;
-      border-radius: 8px;
-      font-size: 0.8rem;
-      color: var(--text-primary);
-      border: 1px solid rgba(255,255,255,0.05);
-      font-weight: 500;
-      transition: var(--transition);
+      background: rgba(255,255,255,0.04);
+      padding: 4px 11px;
+      border-radius: 7px;
+      font-size: 0.76rem;
+      color: var(--text-secondary);
+      border: 1px solid rgba(255,255,255,0.07);
+      font-weight: 600;
+      transition: background 0.2s, border-color 0.2s;
     }
     .vod-genre-tag:hover {
-      background: rgba(255, 255, 255, 0.08);
-      border-color: rgba(255, 255, 255, 0.15);
+      background: rgba(255,255,255,0.09);
+      border-color: rgba(255,255,255,0.18);
     }
 
     /* Theater Video Player Overlay */
@@ -2578,27 +2603,36 @@ if (!isset($_SESSION['active_profile'])) {
   <div class="vod-modal" id="vod-modal">
     <div class="vod-modal-content">
       <button class="vod-modal-close" onclick="closeVodModal()" aria-label="Chiudi dettagli"><i class="ph ph-x"></i></button>
-      <div class="vod-modal-poster">
-        <img id="vod-modal-img" src="" alt="Poster">
-      </div>
-      <div class="vod-modal-info">
-        <h2 id="vod-modal-title">Titolo</h2>
-        <div id="vod-modal-tagline"></div>
-        
-        <div class="vod-modal-meta-row">
-          <span class="vod-meta-badge rating" id="vod-modal-rating"><i class="ph-fill ph-star"></i> N/A</span>
-          <span class="vod-meta-badge" id="vod-modal-date"><i class="ph ph-calendar"></i> N/A</span>
-          <span class="vod-meta-badge" id="vod-modal-duration"><i class="ph ph-clock"></i> N/A</span>
-          <span class="vod-meta-badge" id="vod-modal-status"><i class="ph ph-info"></i> N/A</span>
-        </div>
 
+      <!-- HERO AREA (backdrop + poster + titolo) -->
+      <div class="vod-modal-hero">
+        <div class="vod-modal-hero-bg">
+          <img id="vod-modal-backdrop" src="" alt="">
+        </div>
+        <div class="vod-modal-hero-overlay"></div>
+        <div class="vod-modal-hero-body">
+          <img class="vod-modal-hero-poster" id="vod-modal-img" src="" alt="Poster">
+          <div class="vod-modal-hero-text">
+            <h2 id="vod-modal-title">Titolo</h2>
+            <div id="vod-modal-tagline"></div>
+            <div class="vod-modal-meta-row">
+              <span class="vod-meta-badge rating" id="vod-modal-rating"><i class="ph-fill ph-star"></i> N/A</span>
+              <span class="vod-meta-badge" id="vod-modal-date"><i class="ph ph-calendar"></i> N/A</span>
+              <span class="vod-meta-badge" id="vod-modal-duration"><i class="ph ph-clock"></i> N/A</span>
+              <span class="vod-meta-badge" id="vod-modal-status"><i class="ph ph-info"></i> N/A</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BODY SCROLLABILE -->
+      <div class="vod-modal-info">
         <div class="vod-modal-genres" id="vod-modal-genres"></div>
         <div class="vod-modal-action-row">
           <button class="vod-hero-btn play" id="vod-modal-play-btn" style="display: none;"><i class="ph-fill ph-play"></i> Guarda Ora</button>
           <button class="vod-hero-btn play" id="vod-modal-resume-btn" style="display: none;"><i class="ph-fill ph-play"></i> Riprendi</button>
           <button class="vod-modal-fav-btn-new" id="vod-modal-fav-btn"><i class="ph ph-plus"></i> <span>Aggiungi</span></button>
         </div>
-
         <p class="vod-modal-desc" id="vod-modal-overview">Caricamento dettagli...</p>
 
         <!-- Sezione Serie TV: Stagioni ed Episodi -->
@@ -2614,6 +2648,7 @@ if (!isset($_SESSION['active_profile'])) {
           </div>
         </div>
       </div>
+
     </div>
   </div>
 
