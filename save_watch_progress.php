@@ -8,21 +8,9 @@ require_once __DIR__ . '/config_db.php';
 
 header('Content-Type: application/json');
 
-// Helper per loggare eventi sul server
+// Helper per loggare eventi nei log di sistema di Render
 function log_backend_debug($message) {
-    $log_file = __DIR__ . '/progress_debug.log';
-    $log_entry = sprintf(
-        "[%s] [SERVER] %s | Session: %s\n",
-        date('Y-m-d H:i:s'),
-        $message,
-        json_encode([
-            'logged_in' => $_SESSION['logged_in'] ?? null,
-            'username' => $_SESSION['username'] ?? null,
-            'active_profile_id' => $_SESSION['active_profile']['id'] ?? null,
-            'csrf_token' => $_SESSION['csrf_token'] ?? null
-        ])
-    );
-    file_put_contents($log_file, $log_entry, FILE_APPEND);
+    error_log("[DEBUG] " . $message);
 }
 
 // 1. Verifica autenticazione
