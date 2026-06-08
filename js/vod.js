@@ -2261,6 +2261,11 @@ function updateHeroFavButton(item) {
         favBtn.title = 'Aggiungi ai Preferiti';
         favBtn.classList.remove('is-fav');
     }
+    // pop
+    favBtn.classList.remove('fav-pop');
+    void favBtn.offsetWidth;
+    favBtn.classList.add('fav-pop');
+    favBtn.addEventListener('animationend', () => favBtn.classList.remove('fav-pop'), { once: true });
     
     favBtn.onclick = (e) => {
         e.stopPropagation();
@@ -2281,6 +2286,11 @@ function updateModalFavButton(item) {
         favBtn.innerHTML = '<i class="ph ph-plus"></i> <span>Aggiungi</span>';
         favBtn.classList.remove('is-fav');
     }
+    // pop
+    favBtn.classList.remove('fav-pop');
+    void favBtn.offsetWidth;
+    favBtn.classList.add('fav-pop');
+    favBtn.addEventListener('animationend', () => favBtn.classList.remove('fav-pop'), { once: true });
     
     favBtn.onclick = (e) => {
         e.stopPropagation();
@@ -2301,6 +2311,11 @@ function updateFavoriteButtonsState(id, type) {
         if (icon) icon.className = isFav ? 'ph-fill ph-check' : 'ph ph-plus';
         if (isFav) btn.classList.add('is-fav');
         else btn.classList.remove('is-fav');
+        // pop animation
+        btn.classList.remove('fav-pop');
+        void btn.offsetWidth;
+        btn.classList.add('fav-pop');
+        btn.addEventListener('animationend', () => btn.classList.remove('fav-pop'), { once: true });
     });
 }
 
