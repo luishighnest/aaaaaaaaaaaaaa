@@ -1562,14 +1562,30 @@ if (!isset($_SESSION['active_profile'])) {
       position: absolute;
       inset: 0;
       background: #0a0f1e;
+      overflow: hidden;
     }
+    
+    /* Ambient layer: blurred version of the image to fill gaps */
+    .vod-modal-hero-bg::before {
+      content: '';
+      position: absolute;
+      inset: -20px;
+      background-image: var(--hero-bg-url);
+      background-size: cover;
+      background-position: center;
+      filter: blur(20px) brightness(0.6);
+      z-index: 0;
+    }
+
     .vod-modal-hero-bg img {
+      position: relative;
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: contain; /* Sharp image centered, ambient layer fills gaps */
       object-position: center;
       opacity: 1;
       display: block;
+      z-index: 1;
     }
     .vod-modal-hero-overlay {
       position: absolute;
