@@ -1,29 +1,34 @@
 <?php
 // config_db.php
 
-// SQLite salva tutto in un file
-$db_file = __DIR__ . '/database.sqlite';
+// Recupera le credenziali dalle variabili d'ambiente di Render
+$db_url = getenv('SUPABASE_URL');
+$db_key = getenv('SUPABASE_KEY');
+
+// Supabase usa PostgreSQL
+// NOTA: Per il DSN, utilizziamo l'host estratto dall'URL
+$url_parts = parse_url($db_url);
+$host = $url_parts['host'];
+$dbname = 'postgres'; // Database standard su Supabase
+$port = 5432;
 
 try {
-    $dsn = "sqlite:" . $db_file;
-    $pdo = new PDO($dsn, null, null, [
+    // Connessione a PostgreSQL
+    $dsn = "pgsql:host=$host;port=$port;dbname=$dbname";
+    
+    // NOTA: Per PostgreSQL, il "password" è la chiave API su Supabase
+    $pdo = new PDO($dsn, 'postgres', $db_key, [
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
     ]);
     
-    // Crea la tabella se non esiste
-    $pdo->exec("CREATE TABLE IF NOT EXISTS watch_progress (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        username VARCHAR(50),
-        profile_id VARCHAR(50),
-        content_id INTEGER,
-        content_type VARCHAR(20),
-        progress INTEGER,
-        seconds INTEGER,
-        last_updated DATETIME DEFAULT CURRENT_TIMESTAMP
-    )");
+    // Nota: La creazione delle tabelle tramite `CREATE TABLE IF NOT EXISTS` 
+    // andrebbe fatta via migrazioni o console Supabase, non ad ogni richiesta web.
+    // Il codice di creazione tabelle è stato rimosso per ottimizzare.
     
 } catch (PDOException $e) {
-    die("Errore SQLite: " . $e->getMessage());
+    // In produzione non mostrare dettagli del database
+    error_log("Errore connessione database: " . $e->getMessage());
+    die("Errore di connessione al database.");
 }
 ?>

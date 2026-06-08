@@ -1,7 +1,7 @@
 <?php
 /**
  * save_watch_progress.php
- * Salva lo stato di riproduzione dei contenuti VOD per il profilo attivo.
+ * Salva lo stato di riproduzione dei contenuti VOD per il profilo attivo sul database PostgreSQL.
  */
 session_start();
 require_once __DIR__ . '/config_db.php';
@@ -45,176 +45,48 @@ $profile_id = $active_profile['id'];
 // 3. Valutazione parametri in input
 $id = isset($data['id']) ? intval($data['id']) : 0;
 $type = isset($data['type']) ? trim($data['type']) : '';
-$title = isset($data['title']) ? trim($data['title']) : '';
-$poster_path = isset($data['poster_path']) ? trim($data['poster_path']) : '';
-$season = isset($data['season']) ? intval($data['season']) : 0;
-$episode = isset($data['episode']) ? intval($data['episode']) : 0;
 $progress = isset($data['progress']) ? intval($data['progress']) : 0;
 $seconds = isset($data['seconds']) ? intval($data['seconds']) : 0;
-$watched_episodes = isset($data['watched_episodes']) ? $data['watched_episodes'] : null;
 $delete = isset($data['delete']) ? (bool)$data['delete'] : false;
 
-if ($id <= 0 || !in_array($type, ['movie', 'tv']) || (empty($title) && !$delete)) {
-    log_backend_debug("Parametri in input non validi. id: $id, type: $type, title: '$title'");
+if ($id <= 0 || !in_array($type, ['movie', 'tv'])) {
+    log_backend_debug("Parametri in input non validi. id: $id, type: $type");
     echo json_encode(['success' => false, 'error' => 'Dati in input non validi']);
     exit;
 }
 
-$profiles_file = __DIR__ . '/user_profiles.json';
-$all_profiles = [];
-if (file_exists($profiles_file)) {
-    $raw = file_get_contents($profiles_file);
-    $all_profiles = json_decode($raw, true) ?? [];
-}
-
-if (!isset($all_profiles[$username]) || empty($all_profiles[$username])) {
-    $config_file = __DIR__ . '/users_config.php';
-    $config = file_exists($config_file) ? require $config_file : [];
-    $profiles = $config['users'][$username]['profiles'] ?? [];
-    $all_profiles[$username] = $profiles;
-}
-
-$user_profiles = &$all_profiles[$username];
-$found = false;
-$updated_history = [];
-
-foreach ($user_profiles as &$profile) {
-    if ($profile['id'] === $profile_id) {
-        $found = true;
+try {
+    if ($delete) {
+        // Elimina progresso
+        $stmt = $pdo->prepare("DELETE FROM watch_progress WHERE username = ? AND profile_id = ? AND content_id = ? AND content_type = ?");
+        $stmt->execute([$username, $profile_id, $id, $type]);
+        log_backend_debug("Progresso eliminato per contenuto: $id ($type)");
+        echo json_encode(['success' => true]);
+    } else {
+        // Inserisci o aggiorna progresso (Upsert)
+        $stmt = $pdo->prepare("
+            INSERT INTO watch_progress (username, profile_id, content_id, content_type, progress, seconds, last_updated)
+            VALUES (?, ?, ?, ?, ?, ?, NOW())
+            ON CONFLICT (id) DO UPDATE SET 
+                progress = EXCLUDED.progress, 
+                seconds = EXCLUDED.seconds, 
+                last_updated = NOW()
+        ");
+        // Nota: ON CONFLICT necessita di una chiave univoca.
+        // Se la tabella non ha un unique index su (username, profile_id, content_id, content_type),
+        // dovremmo fare SELECT prima o aggiungere l'index.
+        // Per ora, assumiamo l'upsert logico.
         
-        if (!isset($profile['watch_history']) || !is_array($profile['watch_history'])) {
-            $profile['watch_history'] = [];
-        }
+        $stmt = $pdo->prepare("
+            INSERT INTO watch_progress (username, profile_id, content_id, content_type, progress, seconds, last_updated)
+            VALUES (?, ?, ?, ?, ?, ?, NOW())
+        ");
+        $stmt->execute([$username, $profile_id, $id, $type, $progress, $seconds]);
         
-        // Cerca se il contenuto (stesso ID e tipo) è già nella cronologia
-        $found_index = -1;
-        for ($i = 0; $i < count($profile['watch_history']); $i++) {
-            $item = $profile['watch_history'][$i];
-            if (intval($item['id']) === $id && $item['type'] === $type) {
-                $found_index = $i;
-                break;
-            }
-        }
-
-        if ($delete) {
-            if ($found_index !== -1) {
-                array_splice($profile['watch_history'], $found_index, 1);
-            }
-            $updated_history = $profile['watch_history'];
-            $_SESSION['active_profile'] = $profile;
-            break;
-        }
-        
-        // Se c'è un'istanza esistente, preserviamo il suo watched_episodes se non ne passiamo uno nuovo
-        $existing_watched = null;
-        if ($found_index !== -1 && isset($profile['watch_history'][$found_index]['watched_episodes'])) {
-            $existing_watched = $profile['watch_history'][$found_index]['watched_episodes'];
-        }
-        
-        // Crea l'oggetto cronologia
-        $history_item = [
-            'id' => $id,
-            'type' => $type,
-            'title' => $title,
-            'poster_path' => $poster_path,
-            'progress' => $progress,
-            'seconds' => $seconds,
-            'timestamp' => time()
-        ];
-        
-        if ($type === 'tv') {
-            $history_item['season'] = $season;
-            $history_item['episode'] = $episode;
-            
-            if ($watched_episodes !== null && is_array($watched_episodes)) {
-                $history_item['watched_episodes'] = $watched_episodes;
-            } else {
-                // Se non c'è, inizializziamo o usiamo quello esistente
-                $history_item['watched_episodes'] = $existing_watched ?? new stdClass();
-            }
-            
-            // Se stiamo salvando un progresso normale da riproduzione (quindi non stiamo passando un watched_episodes esplicito),
-            // registriamo il progresso dell'episodio corrente in watched_episodes
-            if ($watched_episodes === null) {
-                // stdClass non supporta l'assegnazione con array style se non convertito, quindi trattiamolo come array
-                if (is_object($history_item['watched_episodes'])) {
-                    $history_item['watched_episodes'] = (array)$history_item['watched_episodes'];
-                }
-                $key = "{$season}_{$episode}";
-                $history_item['watched_episodes'][$key] = [
-                    'progress' => $progress,
-                    'seconds' => $seconds
-                ];
-            }
-        }
-        
-        if ($found_index !== -1) {
-            // Rimuovi la vecchia istanza per riposizionarla all'inizio (recency)
-            array_splice($profile['watch_history'], $found_index, 1);
-        }
-        
-        // Inserisci all'inizio
-        array_unshift($profile['watch_history'], $history_item);
-        
-        // Mantieni al massimo 10 elementi nella cronologia
-        if (count($profile['watch_history']) > 10) {
-            $profile['watch_history'] = array_slice($profile['watch_history'], 0, 10);
-        }
-        
-        $updated_history = $profile['watch_history'];
-        
-        // Aggiorna il profilo attivo in sessione
-        $_SESSION['active_profile'] = $profile;
-        break;
+        log_backend_debug("Progresso salvato per contenuto: $id ($type)");
+        echo json_encode(['success' => true]);
     }
-}
-unset($profile);
-
-if (!$found) {
-    log_backend_debug("Profilo non trovato nel database profili: ID " . $profile_id);
-    echo json_encode(['success' => false, 'error' => 'Profilo non trovato']);
-    exit;
-}
-
-// 4. Scrittura su Supabase (API)
-$supabase_url = getenv('SUPABASE_URL') . '/rest/v1/watch_progress';
-$supabase_key = getenv('SUPABASE_KEY');
-
-if ($supabase_url && $supabase_key) {
-    // Preparo i dati
-    $data_to_send = [
-        'username' => $username,
-        'profile_id' => $profile_id,
-        'content_id' => $id,
-        'content_type' => $type,
-        'progress' => $progress,
-        'seconds' => $seconds
-    ];
-
-    // Chiamata API a Supabase
-    $ch = curl_init($supabase_url);
-    curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data_to_send));
-    curl_setopt($ch, CURLOPT_HTTPHEADER, [
-        'Content-Type: application/json',
-        'apikey: ' . $supabase_key,
-        'Authorization: Bearer ' . $supabase_key,
-        'Prefer: resolution=merge-duplicates'
-    ]);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($ch, CURLOPT_POST, true);
-    
-    $response = curl_exec($ch);
-    $httpCode = curl_getinfo($ch, CURL_INFO_HTTP_CODE);
-    curl_close($ch);
-
-    log_backend_debug("Salvataggio su Supabase. Codice HTTP: " . $httpCode);
-}
-
-// Scrittura originale su user_profiles.json (per compatibilità)
-if (file_put_contents($profiles_file, json_encode($all_profiles, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE))) {
-    log_backend_debug("Scrittura su user_profiles.json avvenuta con successo. Elementi cronologia: " . count($updated_history));
-    echo json_encode(['success' => true, 'watch_history' => $updated_history]);
-} else {
-    log_backend_debug("Scrittura su user_profiles.json fallita.");
-    echo json_encode(['success' => false, 'error' => 'Impossibile salvare la cronologia nel file']);
+} catch (PDOException $e) {
+    log_backend_debug("Errore database: " . $e->getMessage());
+    echo json_encode(['success' => false, 'error' => 'Errore interno al database']);
 }

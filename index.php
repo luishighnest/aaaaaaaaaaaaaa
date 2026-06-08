@@ -1,26 +1,8 @@
 <?php
 // Avvia sessione e verifica autenticazione
 session_start();
+require_once __DIR__ . '/config_db.php';
 
-// Sincronizza il profilo attivo in sessione con user_profiles.json se esiste
-if (isset($_SESSION['username']) && isset($_SESSION['active_profile']['id'])) {
-    $username = $_SESSION['username'];
-    $profile_id = $_SESSION['active_profile']['id'];
-    $profiles_file = file_exists(__DIR__ . '/user_profiles.json') 
-        ? __DIR__ . '/user_profiles.json' 
-        : (file_exists(dirname(__DIR__) . '/user_profiles.json') ? dirname(__DIR__) . '/user_profiles.json' : '');
-    if ($profiles_file && file_exists($profiles_file)) {
-        $profiles_data = json_decode(file_get_contents($profiles_file), true);
-        if (isset($profiles_data[$username]) && is_array($profiles_data[$username])) {
-            foreach ($profiles_data[$username] as $p) {
-                if ($p['id'] === $profile_id) {
-                    $_SESSION['active_profile'] = $p;
-                    break;
-                }
-            }
-        }
-    }
-}
 
 // Gestione della modalità di visualizzazione (PC vs Mobile vs TV)
 function isSmartTV() {
@@ -135,17 +117,18 @@ if (!isset($_SESSION['active_profile'])) {
 $active_profile = $_SESSION['active_profile'];
 $username = $_SESSION['username'] ?? '';
 
-// Carica tutti i profili dell'utente
+// Carica tutti i profili dell'utente dal database
+$stmt = $pdo->prepare("SELECT * FROM user_profiles WHERE username = ?");
+$stmt->execute([$username]);
+$all_profiles_raw = $stmt->fetchAll();
+
 $all_profiles = [];
-$custom_profiles_file = __DIR__ . '/user_profiles.json';
-if (file_exists($custom_profiles_file)) {
-    $custom_data = json_decode(file_get_contents($custom_profiles_file), true);
-    if (isset($custom_data[$username]) && is_array($custom_data[$username])) {
-        $all_profiles = $custom_data[$username];
-    }
-}
-if (empty($all_profiles)) {
-    $all_profiles = $config['users'][$username]['profiles'] ?? [];
+foreach ($all_profiles_raw as $p) {
+    $p['allowed_categories'] = json_decode($p['allowed_categories'], true);
+    $p['allowed_channels'] = json_decode($p['allowed_channels'], true);
+    $p['favorites'] = json_decode($p['favorites'], true);
+    $p['vod_favorites'] = json_decode($p['vod_favorites'], true);
+    $all_profiles[] = $p;
 }
 $all_profiles_json = json_encode($all_profiles, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
 $pname_check = isset($active_profile['name']) ? strtolower($active_profile['name']) : '';

@@ -1,9 +1,11 @@
 <?php
 /**
  * toggle_favorite.php
- * Gestisce l'aggiunta e rimozione dei canali preferiti del profilo attivo.
+ * Gestisce l'aggiunta e rimozione dei canali preferiti del profilo attivo sul database PostgreSQL.
  */
 session_start();
+require_once __DIR__ . '/config_db.php';
+require_once __DIR__ . '/db_helper.php';
 
 header('Content-Type: application/json');
 
@@ -23,7 +25,6 @@ if (empty($_SESSION['csrf_token']) || !hash_equals($_SESSION['csrf_token'], $csr
     exit;
 }
 
-$username = $_SESSION['username'];
 $active_profile = $_SESSION['active_profile'] ?? null;
 if (!$active_profile) {
     echo json_encode(['success' => false, 'error' => 'Nessun profilo attivo selezionato']);
@@ -37,60 +38,29 @@ if ($channel_id <= 0) {
     exit;
 }
 
-$profiles_file = __DIR__ . '/user_profiles.json';
-$all_profiles = [];
-if (file_exists($profiles_file)) {
-    $raw = file_get_contents($profiles_file);
-    $all_profiles = json_decode($raw, true) ?? [];
-}
-
-// Se non ci sono profili in user_profiles.json per l'utente, li carica da users_config.php e li inizializza
-if (!isset($all_profiles[$username]) || empty($all_profiles[$username])) {
-    $config_file = __DIR__ . '/users_config.php';
-    $config = file_exists($config_file) ? require $config_file : [];
-    $profiles = $config['users'][$username]['profiles'] ?? [];
-    $all_profiles[$username] = $profiles;
-}
-
-$user_profiles = &$all_profiles[$username];
-$found = false;
-$updated_favorites = [];
-
-foreach ($user_profiles as &$profile) {
-    if ($profile['id'] === $profile_id) {
-        $found = true;
-        if (!isset($profile['favorites']) || !is_array($profile['favorites'])) {
-            $profile['favorites'] = [];
-        }
-        
-        $fav_index = array_search($channel_id, $profile['favorites']);
-        if ($fav_index !== false) {
-            // Rimuove se già presente
-            array_splice($profile['favorites'], $fav_index, 1);
-        } else {
-            // Aggiunge se non presente
-            $profile['favorites'][] = $channel_id;
-        }
-        
-        // Ordina o normalizza gli indici numerici dell'array
-        $profile['favorites'] = array_values($profile['favorites']);
-        $updated_favorites = $profile['favorites'];
-        
-        // Aggiorna il profilo attivo in sessione
-        $_SESSION['active_profile'] = $profile;
-        break;
-    }
-}
-unset($profile);
-
-if (!$found) {
+// Recupera profilo dal database
+$profile = get_user_profile($pdo, $profile_id);
+if (!$profile) {
     echo json_encode(['success' => false, 'error' => 'Profilo non trovato']);
     exit;
 }
 
-// Salva nel file user_profiles.json
-if (file_put_contents($profiles_file, json_encode($all_profiles, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE))) {
-    echo json_encode(['success' => true, 'favorites' => $updated_favorites]);
+// Decodifica JSON
+$favorites = json_decode($profile['favorites'], true) ?? [];
+
+$fav_index = array_search($channel_id, $favorites);
+if ($fav_index !== false) {
+    array_splice($favorites, $fav_index, 1);
 } else {
-    echo json_encode(['success' => false, 'error' => 'Impossibile salvare i preferiti nel file']);
+    $favorites[] = $channel_id;
 }
+$favorites = array_values($favorites);
+
+// Aggiorna database
+$profile['favorites'] = $favorites; // Invia come array, il helper lo codifica
+update_user_profile($pdo, $profile_id, $profile);
+
+// Aggiorna sessione
+$_SESSION['active_profile'] = $profile;
+
+echo json_encode(['success' => true, 'favorites' => $favorites]);
