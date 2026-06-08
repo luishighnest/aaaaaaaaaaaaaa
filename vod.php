@@ -1504,7 +1504,7 @@ if (!isset($_SESSION['active_profile'])) {
       inset: 0;
       z-index: 9999;
       display: block;
-      overflow-y: auto;
+      overflow-y: hidden;
       padding: 0;
       box-sizing: border-box;
       opacity: 0;
@@ -1538,9 +1538,8 @@ if (!isset($_SESSION['active_profile'])) {
       position: relative;
       transform: scale(0.95) translateY(20px);
       transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-      overflow-y: visible;
-      height: auto;
-      min-height: 80vh;
+      overflow-y: auto;
+      height: 90vh;
       box-shadow: 0 30px 80px rgba(0,0,0,0.7);
       display: flex;
       flex-direction: column;
@@ -1555,6 +1554,7 @@ if (!isset($_SESSION['active_profile'])) {
       position: relative;
       width: 100%;
       height: 260px;
+      flex-shrink: 0;
       border-radius: 20px 20px 0 0;
       overflow: hidden;
     }
