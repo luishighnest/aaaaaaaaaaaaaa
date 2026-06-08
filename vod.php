@@ -1531,53 +1531,45 @@ if (!isset($_SESSION['active_profile'])) {
       z-index: 10;
       display: flex;
       justify-content: flex-end;
-      margin: -3rem -3rem 0.75rem -3rem;
-      padding: 1rem 1.5rem 0.75rem 1.5rem;
-      background: linear-gradient(to bottom, rgba(10, 15, 35, 0.97) 65%, transparent 100%);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
+      align-items: center;
+      margin: -3rem -3rem 0 -3rem;
+      padding: 0.8rem 1rem;
       pointer-events: none;
     }
     .vod-modal-close {
-      background: rgba(255, 255, 255, 0.08);
-      border: 1.5px solid rgba(255, 255, 255, 0.55);
-      color: #fff;
-      width: auto;
+      width: 36px;
       height: 36px;
-      padding: 0 1rem;
-      border-radius: 50px;
-      display: inline-flex;
+      border-radius: 50%;
+      background: rgba(8, 12, 30, 0.75);
+      border: 1.5px solid rgba(255, 255, 255, 0.28);
+      color: rgba(255, 255, 255, 0.75);
+      display: flex;
       align-items: center;
       justify-content: center;
-      gap: 7px;
       cursor: pointer;
-      font-size: 0.78rem;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 0.7px;
+      font-size: 1rem;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
       pointer-events: auto;
-      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-      backdrop-filter: blur(18px);
-      -webkit-backdrop-filter: blur(18px);
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255,255,255,0.1);
-      white-space: nowrap;
+      flex-shrink: 0;
     }
     .vod-modal-close i {
-      font-size: 1rem;
-      transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+      transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
     }
     .vod-modal-close:hover {
-      background: rgba(255, 255, 255, 0.16);
-      border-color: #fff;
+      background: rgba(255, 255, 255, 0.14);
+      border-color: rgba(255, 255, 255, 0.75);
       color: #fff;
-      transform: translateY(-1px);
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4), 0 0 0 3px rgba(255,255,255,0.08);
+      transform: scale(1.12);
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.55);
     }
     .vod-modal-close:hover i {
-      transform: translateX(-2px);
+      transform: rotate(90deg);
     }
     .vod-modal-close:active {
-      transform: scale(0.96);
+      transform: scale(0.9);
     }
     
     .vod-modal-poster {
@@ -2588,7 +2580,7 @@ if (!isset($_SESSION['active_profile'])) {
       </div>
       <div class="vod-modal-info">
         <div class="vod-modal-topbar">
-          <button class="vod-modal-close" onclick="closeVodModal()" aria-label="Chiudi dettagli"><i class="ph ph-x"></i> Chiudi</button>
+          <button class="vod-modal-close" onclick="closeVodModal()" aria-label="Chiudi dettagli"><i class="ph ph-x"></i></button>
         </div>
         <h2 id="vod-modal-title">Titolo</h2>
         <div id="vod-modal-tagline"></div>
