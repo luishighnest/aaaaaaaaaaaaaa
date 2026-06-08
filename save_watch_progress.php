@@ -177,7 +177,7 @@ if (!$found) {
 }
 
 // 4. Scrittura su database e file
-// Salvataggio nel database se la connessione è attiva
+// Salvataggio nel database
 if (isset($pdo)) {
     try {
         $stmt_del = $pdo->prepare("DELETE FROM watch_progress WHERE profile_id = :profile_id AND content_id = :id AND content_type = :type");
@@ -186,7 +186,7 @@ if (isset($pdo)) {
         if (!$delete) {
             $stmt_ins = $pdo->prepare("
                 INSERT INTO watch_progress (username, profile_id, content_id, content_type, progress, seconds, last_updated)
-                VALUES (:username, :profile_id, :id, :type, :progress, :seconds, NOW())
+                VALUES (:username, :profile_id, :id, :type, :progress, :seconds, DATETIME('now'))
             ");
             $stmt_ins->execute([
                 'username' => $username,

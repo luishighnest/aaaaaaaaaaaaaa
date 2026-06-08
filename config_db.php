@@ -1,32 +1,29 @@
 <?php
 // config_db.php
 
-$database_url = getenv('DATABASE_URL');
-
-if (!$database_url) {
-    // Per ora, se non trova la variabile su Render, usa una stringa vuota 
-    // per non bloccare il sito. In futuro dovremo gestire meglio questo caso.
-    return; 
-}
+// SQLite salva tutto in un file
+$db_file = __DIR__ . '/database.sqlite';
 
 try {
-    $url_parts = parse_url($database_url);
-    
-    $host = $url_parts['host'];
-    $port = $url_parts['port'] ?? 5432;
-    $dbname = ltrim($url_parts['path'], '/');
-    $user = $url_parts['user'];
-    $password = $url_parts['pass'];
-
-    $dsn = "pgsql:host=$host;port=$port;dbname=$dbname;sslmode=require";
-    
-    $pdo = new PDO($dsn, $user, $password, [
+    $dsn = "sqlite:" . $db_file;
+    $pdo = new PDO($dsn, null, null, [
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
     ]);
     
+    // Crea la tabella se non esiste
+    $pdo->exec("CREATE TABLE IF NOT EXISTS watch_progress (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        username VARCHAR(50),
+        profile_id VARCHAR(50),
+        content_id INTEGER,
+        content_type VARCHAR(20),
+        progress INTEGER,
+        seconds INTEGER,
+        last_updated DATETIME DEFAULT CURRENT_TIMESTAMP
+    )");
+    
 } catch (PDOException $e) {
-    // Debug: Mostra l'errore per identificare il problema di connessione
-    die("Errore di connessione al database: " . $e->getMessage());
+    die("Errore SQLite: " . $e->getMessage());
 }
 ?>
