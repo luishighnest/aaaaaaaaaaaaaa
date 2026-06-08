@@ -26,7 +26,7 @@ try {
     ]);
     
 } catch (PDOException $e) {
-    // Silenziamo l'errore per ora, per evitare che il sito crashi 
-    // se il DB non è raggiungibile durante i test.
+    // Debug: Mostra l'errore per identificare il problema di connessione
+    die("Errore di connessione al database: " . $e->getMessage());
 }
 ?>
