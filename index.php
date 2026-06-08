@@ -1132,7 +1132,10 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
           <button id="close-settings-btn" onclick="document.getElementById('settings-modal').classList.remove('open')" class="settings-modal-close">&times;</button>
         </div>
         
-        <div class="settings-tabs-header" style="display: flex; gap: 0.5rem; border-bottom: 1px solid var(--border-subtle); margin-bottom: -1px;">
+        <div class="settings-tabs-header" style="display: flex; gap: 0.5rem; border-bottom: 1px solid var(--border-subtle); margin-bottom: -1px; overflow-x: auto; white-space: nowrap; -ms-overflow-style: none; scrollbar-width: none;">
+          <style>
+            .settings-tabs-header::-webkit-scrollbar { display: none; }
+          </style>
           <button class="settings-tab-btn active" data-tab="tab-interfaccia"><i class="ph ph-desktop"></i> Interfaccia</button>
           <button class="settings-tab-btn" data-tab="tab-profilo"><i class="ph ph-user"></i> Profilo</button>
           <button class="settings-tab-btn" data-tab="tab-gestione"><i class="ph ph-users"></i> Gestione</button>
