@@ -2381,7 +2381,7 @@ if (!isset($_SESSION['active_profile'])) {
         <div class="nav-link" id="nav-item-movies" onclick="changeSection('movies')"><i class="ph ph-film-strip"></i> Film</div>
         <div class="nav-link" id="nav-item-tv" onclick="changeSection('tv')"><i class="ph ph-television"></i> Serie TV</div>
         <div class="nav-link" id="nav-item-catalog" onclick="changeSection('catalog')"><i class="ph ph-folder-open"></i> Catalogo</div>
-        <div class="nav-link" id="nav-item-library" onclick="changeSection('library')"><i class="ph ph-heart"></i> Libreria</div>
+        <div class="nav-link" id="nav-item-library" onclick="changeSection('library')"><i class="ph ph-plus-circle"></i> Libreria</div>
       </nav>
       <div class="nav-search">
         <input type="text" id="vod-search-input" placeholder="Cerca film o serie tv..." autocomplete="off">
@@ -2544,12 +2544,12 @@ if (!isset($_SESSION['active_profile'])) {
 
       <!-- Container Libreria -->
       <div id="vod-library-container" style="display: none;">
-        <h2 class="vod-search-section-title"><i class="ph-fill ph-heart" style="color: var(--danger);"></i> La Mia Libreria</h2>
+        <h2 class="vod-search-section-title"><i class="ph-fill ph-plus-circle" style="color: var(--accent);"></i> La Mia Libreria</h2>
         <div class="vod-grid" id="vod-library-grid"></div>
         
         <!-- Stato Vuoto Libreria -->
         <div class="dash-empty-state" id="vod-library-empty" style="display: none; padding: 6rem 1rem;">
-          <i class="ph ph-heart-break" style="color: var(--danger); font-size: 3.5rem; opacity: 0.8;"></i>
+          <i class="ph ph-book-bookmark" style="color: var(--accent); font-size: 3.5rem; opacity: 0.8;"></i>
           <div class="dash-empty-title" style="font-family: var(--font-main); font-size: 1.3rem; font-weight: 800; color: #fff; margin-top: 10px;">La tua Libreria è vuota</div>
           <div class="dash-empty-hint" style="color: var(--text-muted); font-size: 0.95rem; margin-top: 5px;">Aggiungi film e serie TV ai preferiti per ritrovarli rapidamente qui.</div>
         </div>
