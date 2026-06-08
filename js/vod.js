@@ -175,23 +175,21 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             e.stopPropagation();
             
-            // 1. Pulisci il testo
+            // 1. Pulisci fisicamente l'input
             searchInput.value = '';
             
-            // 2. Nascondi immediatamente i suggerimenti
+            // 2. Nascondi immediatamente la X e svuota/chiudi suggerimenti
+            searchClear.style.display = 'none';
             const dd = document.getElementById('vod-search-dropdown');
             if (dd) {
                 dd.classList.remove('open');
                 dd.innerHTML = '';
             }
             
-            // 3. Nascondi la X
-            searchClear.style.display = 'none';
-            
-            // 4. Rimuovi il focus per far rimpicciolire la barra
+            // 3. Forza la chiusura della barra (rimuovendo il focus)
             searchInput.blur();
             
-            // 5. Torna alla home
+            // 4. Ripristina la visualizzazione home se eravamo in ricerca
             showHome();
         });
     }
