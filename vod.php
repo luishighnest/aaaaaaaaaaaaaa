@@ -286,7 +286,7 @@ if (!isset($_SESSION['active_profile'])) {
       color: #000;
     }
     
-    /* Barra di Ricerca High-End Optimized */
+    /* Barra di Ricerca High-End - Centratura e Funzionamento Finale */
     .vod-navbar .nav-search {
       position: relative;
       width: 44px;
@@ -299,91 +299,88 @@ if (!isset($_SESSION['active_profile'])) {
       cursor: pointer;
       display: flex;
       align-items: center;
-      justify-content: flex-end; /* Allinea a destra per default */
+      justify-content: center; /* Centratura logo per default */
+      overflow: visible;
     }
+    
     .vod-navbar .nav-search:hover {
       background: rgba(255, 255, 255, 0.1);
-      border-color: rgba(255, 255, 255, 0.2);
+      border-color: rgba(255, 255, 255, 0.15);
     }
+    
     .vod-navbar .nav-search:focus-within {
-      width: 300px;
-      background: rgba(0, 0, 0, 0.3);
+      width: 320px;
+      background: rgba(0, 0, 0, 0.4);
       border-color: var(--accent);
-      box-shadow: 0 0 15px var(--accent-glow);
+      box-shadow: 0 0 20px var(--accent-glow);
       cursor: default;
+      justify-content: flex-start;
     }
+    
     .vod-navbar .nav-search:active {
-      transform: scale(0.95);
+      transform: scale(0.96);
     }
+    
     .vod-navbar .nav-search input {
       width: 100%;
       height: 100%;
       background: transparent;
       border: none;
-      padding: 0 3.2rem 0 1.2rem; /* Spazio a destra per le icone */
+      padding: 0 44px 0 1.2rem; /* Spazio a destra per la X (44px) */
       color: var(--text-primary);
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       font-weight: 600;
       outline: none;
       opacity: 0;
       transition: opacity 0.3s;
       cursor: pointer;
+      z-index: 1;
     }
+    
     .vod-navbar .nav-search:focus-within input {
       opacity: 1;
       cursor: text;
     }
     
-    /* Container per le icone a destra */
-    .nav-search-icons {
+    /* Icona Lente - Perfettamente centrata nel quadrato */
+    .vod-navbar .nav-search .search-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 1.25rem;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      pointer-events: none;
+      z-index: 2;
+    }
+    
+    /* Quando la barra si allarga, la lente si sposta a DESTRA per lasciare spazio al testo o sparire */
+    .vod-navbar .nav-search:focus-within .search-icon {
+      left: calc(100% - 22px); /* Si sposta all'estremità destra */
+      opacity: 0; /* Opzionale: la facciamo sparire per lasciare spazio alla X */
+      transform: translate(-50%, -50%) scale(0.5);
+    }
+    
+    /* Icona X - All'estremità DESTRA */
+    .vod-navbar .nav-search .clear-icon {
       position: absolute;
       right: 0;
       width: 44px;
       height: 44px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      pointer-events: none; /* Lascia passare i click all'input/x */
-    }
-
-    .vod-navbar .nav-search .search-icon {
-      color: #fff;
-      font-size: 1.15rem;
-      transition: all 0.3s;
-    }
-    .vod-navbar .nav-search:focus-within .search-icon {
-      color: var(--accent);
-      opacity: 0.5; /* Leggermente trasparente quando scrivi */
-    }
-    
-    .vod-navbar .nav-search .clear-icon {
-      position: absolute;
-      right: 0.7rem;
-      top: 50%;
-      transform: translateY(-50%);
-      color: #fff;
-      cursor: pointer;
-      font-size: 1.2rem;
-      display: none;
-      z-index: 10;
-      pointer-events: auto;
-      background: var(--danger);
-      width: 24px;
-      height: 24px;
-      border-radius: 50%;
       display: none; /* Gestito via JS */
       align-items: center;
       justify-content: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
-      transition: all 0.2s;
+      color: rgba(255, 255, 255, 0.5);
+      cursor: pointer;
+      font-size: 1.2rem;
+      z-index: 10;
+      transition: all 0.2s ease;
     }
+    
     .vod-navbar .nav-search .clear-icon:hover {
-      transform: translateY(-50%) scale(1.1);
-      filter: brightness(1.2);
-    }
-    .vod-navbar .nav-search .clear-icon i {
-      font-size: 0.9rem;
-      font-weight: 900;
+      color: var(--danger);
+      transform: scale(1.2);
     }
 
     /* ─── AUTOCOMPLETE DROPDOWN ORIGINALE ─── */
