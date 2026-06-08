@@ -1184,21 +1184,20 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
       <div class="settings-modal-body" style="padding-top: 1.5rem;">
         
         <!-- TAB INTERFACCIA -->
-        <div id="tab-interfaccia" class="settings-tab-pane active">
+       <div id="tab-interfaccia" class="settings-tab-pane active">
           <div class="settings-section">
             <h3><i class="ph ph-palette"></i> Aspetto</h3>
             <div class="settings-row" style="margin-bottom: 1rem;">
               <span>Tema dell'interfaccia</span>
               <button id="theme-toggle" class="settings-theme-btn">
-                <i class="ph ph-sun"></i> Modalità 
+                <i class="ph ph-sun"></i> Modalità 
               </button>
             </div>
             
             <div class="settings-row" style="margin-bottom: 1rem; align-items: flex-start; flex-direction: column; gap: 0.8rem;">
               <span style="font-weight: 600;">Colore Principale</span>
               <div id="accent-color-picker" style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                <!-- Generato via JS -->
-              </div>
+                </div>
             </div>
 
             <div class="settings-row">
@@ -1208,16 +1207,8 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
                 <option value="12">12 Ore (AM/PM)</option>
               </select>
             </div>
-            
-            <div class="settings-row" style="margin-top: 1rem; border-top: 1px solid var(--border-subtle); padding-top: 1rem;">
-              <span>Dispositivo / Interfaccia</span>
-              <a href="index.php?view_mode=mobile" class="settings-theme-btn" style="display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none; text-align: center; justify-content: center; font-weight: 700; color: var(--accent); border-color: var(--accent);">
-                <i class="ph ph-phone"></i> Passa a Versione Mobile/TV
-              </a>
-            </div>
           </div>
         </div>
-
         <!-- TAB PROFILO -->
         <div id="tab-profilo" class="settings-tab-pane">
           <div class="settings-section" style="margin-bottom: 2.5rem;">
