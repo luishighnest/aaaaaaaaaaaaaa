@@ -1502,9 +1502,6 @@ if (!isset($_SESSION['active_profile'])) {
     .vod-modal {
       position: fixed;
       inset: 0;
-      background: rgba(2, 6, 23, 0.6);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
       z-index: 9999;
       display: block;
       overflow-y: auto;
@@ -1514,6 +1511,16 @@ if (!isset($_SESSION['active_profile'])) {
       opacity: 0;
       pointer-events: none;
       transition: opacity 0.4s ease;
+    }
+    .vod-modal::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background: rgba(2, 6, 23, 0.75);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      z-index: -1;
+      pointer-events: none;
     }
     .vod-modal::-webkit-scrollbar { width: 5px; }
     .vod-modal::-webkit-scrollbar-thumb {
