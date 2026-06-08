@@ -20,6 +20,11 @@ return [
                 ['id' => 'ale_kids', 'name' => 'Bambini', 'avatar' => 'ph-smiley', 'color' => '#00e676'],
                 ['id' => 'ale_guest', 'name' => 'Ospiti', 'avatar' => 'ph-users', 'color' => '#ff9800']
             ]
+        'Tyto' => [
+            'password' => '$2y$12$XG2zFwgLQ9JFcfu4/gUPUeRqYoXsbuCPojKzG/jS5yJbtmOvPxfiW',
+            'profiles' => [
+                ['id' => 'Tyto_main', 'name' => 'ale', 'avatar' => 'ph-user-circle', 'color' => '#00f2fe'],
+            ]
         ]
     ]
 ];
