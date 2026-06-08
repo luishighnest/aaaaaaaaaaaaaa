@@ -286,17 +286,20 @@ if (!isset($_SESSION['active_profile'])) {
       color: #000;
     }
     
-    /* Barra di Ricerca High-End */
+    /* Barra di Ricerca High-End Optimized */
     .vod-navbar .nav-search {
       position: relative;
       width: 44px;
       height: 44px;
       margin-right: 15px;
-      transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
       background: rgba(255, 255, 255, 0.05);
       border-radius: 12px;
       border: 1px solid rgba(255, 255, 255, 0.08);
-      cursor: pointer; /* Ora risulta come tasto al passaggio del mouse */
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end; /* Allinea a destra per default */
     }
     .vod-navbar .nav-search:hover {
       background: rgba(255, 255, 255, 0.1);
@@ -307,7 +310,7 @@ if (!isset($_SESSION['active_profile'])) {
       background: rgba(0, 0, 0, 0.3);
       border-color: var(--accent);
       box-shadow: 0 0 15px var(--accent-glow);
-      cursor: default; /* Torna normale quando scrivi */
+      cursor: default;
     }
     .vod-navbar .nav-search:active {
       transform: scale(0.95);
@@ -317,53 +320,70 @@ if (!isset($_SESSION['active_profile'])) {
       height: 100%;
       background: transparent;
       border: none;
-      padding: 0 1rem 0 3rem;
+      padding: 0 3.2rem 0 1.2rem; /* Spazio a destra per le icone */
       color: var(--text-primary);
       font-size: 0.9rem;
       font-weight: 600;
       outline: none;
       opacity: 0;
       transition: opacity 0.3s;
-      cursor: pointer; /* Ora mostra la manina anche sull'input invisibile */
+      cursor: pointer;
     }
     .vod-navbar .nav-search:focus-within input {
       opacity: 1;
-      cursor: text; /* Torna cursore testo quando è aperto per scrivere */
+      cursor: text;
     }
-    .vod-navbar .nav-search .search-icon {
+    
+    /* Container per le icone a destra */
+    .nav-search-icons {
       position: absolute;
-      left: 0;
+      right: 0;
       width: 44px;
       height: 44px;
       display: flex;
       align-items: center;
       justify-content: center;
+      pointer-events: none; /* Lascia passare i click all'input/x */
+    }
+
+    .vod-navbar .nav-search .search-icon {
       color: #fff;
-      font-size: 1.1rem;
-      pointer-events: none;
-      transition: color 0.3s;
+      font-size: 1.15rem;
+      transition: all 0.3s;
     }
     .vod-navbar .nav-search:focus-within .search-icon {
       color: var(--accent);
+      opacity: 0.5; /* Leggermente trasparente quando scrivi */
     }
+    
     .vod-navbar .nav-search .clear-icon {
       position: absolute;
-      right: 0.8rem;
+      right: 0.7rem;
       top: 50%;
       transform: translateY(-50%);
-      color: rgba(255, 255, 255, 0.4);
+      color: #fff;
       cursor: pointer;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       display: none;
-      z-index: 5;
-      transition: all 0.2s ease;
-      padding: 4px;
+      z-index: 10;
+      pointer-events: auto;
+      background: var(--danger);
+      width: 24px;
+      height: 24px;
       border-radius: 50%;
+      display: none; /* Gestito via JS */
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+      transition: all 0.2s;
     }
     .vod-navbar .nav-search .clear-icon:hover {
-      color: #fff;
-      background: rgba(255, 255, 255, 0.1);
       transform: translateY(-50%) scale(1.1);
+      filter: brightness(1.2);
+    }
+    .vod-navbar .nav-search .clear-icon i {
+      font-size: 0.9rem;
+      font-weight: 900;
     }
 
     /* ─── AUTOCOMPLETE DROPDOWN ORIGINALE ─── */
