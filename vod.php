@@ -165,7 +165,7 @@ if (!isset($_SESSION['active_profile'])) {
       border-radius: 18px;
       z-index: 1000;
       box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
-      transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+      transition: transform 0.4s ease, opacity 0.4s ease, top 0.5s cubic-bezier(0.16, 1, 0.3, 1), background 0.5s cubic-bezier(0.16, 1, 0.3, 1), border-radius 0.5s cubic-bezier(0.16, 1, 0.3, 1), height 0.5s cubic-bezier(0.16, 1, 0.3, 1);
     }
     
     .vod-navbar.scrolled {
@@ -182,8 +182,8 @@ if (!isset($_SESSION['active_profile'])) {
     }
 
     .vod-navbar.nav-hidden {
-      transform: translateY(-120%);
-      opacity: 0;
+      transform: translateY(-120%) !important;
+      opacity: 0 !important;
     }
 
     .vod-brand {
