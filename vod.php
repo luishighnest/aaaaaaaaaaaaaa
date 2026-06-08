@@ -335,11 +335,11 @@ if (!isset($_SESSION['active_profile'])) {
       cursor: text;
     }
     
-    /* Icona Lente e Icona X - STESSO PUNTO ESATTO */
+    /* Icona Lente e Icona X - STESSO PUNTO ESATTO E CENTRATURA TOTALE */
     .vod-search-icon-wrapper {
       position: absolute;
-      right: 0;
-      top: 0;
+      top: -1px; /* Compensa il bordo */
+      right: -1px;
       width: 44px;
       height: 44px;
       display: flex;
@@ -351,27 +351,29 @@ if (!isset($_SESSION['active_profile'])) {
     
     .vod-navbar .nav-search .search-icon {
       color: #fff;
-      font-size: 1.25rem;
+      font-size: 1.2rem;
       transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      /* Forza centratura ottica */
+      margin: 0;
+      padding: 0;
     }
     
     .vod-navbar .nav-search:focus-within .search-icon {
-      color: var(--accent);
-      opacity: 0.3; /* Sottolinea che la barra è attiva ma lascia spazio alla X */
-      transform: scale(0.8);
+      opacity: 0;
+      transform: scale(0.5);
     }
     
     .vod-navbar .nav-search .clear-icon {
       position: absolute;
-      inset: 0; /* Occupa tutto il wrapper (44x44) */
-      display: none; /* Gestito via JS flex/none */
+      inset: 0;
+      display: none;
       align-items: center;
       justify-content: center;
       color: #fff;
       cursor: pointer;
       font-size: 1.1rem;
       z-index: 10;
-      pointer-events: auto; /* IMPORTANTE: abilita il click sulla X */
+      pointer-events: auto;
       transition: all 0.2s ease;
     }
     
