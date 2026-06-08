@@ -1,6 +1,7 @@
 <?php
 // Avvia sessione e verifica autenticazione
 session_start();
+require_once __DIR__ . '/sync_profiles.php';
 
 // Sincronizza il profilo attivo in sessione con user_profiles.json se esiste
 if (isset($_SESSION['username']) && isset($_SESSION['active_profile']['id'])) {
