@@ -1624,37 +1624,40 @@ if (!isset($_SESSION['active_profile'])) {
       border-radius: 10px;
     }
 
-    /* ── CLOSE BTN ── */
     .vod-modal-close {
       position: absolute;
-      top: 14px;
-      right: 14px;
+      top: -14px;
+      right: -14px;
       z-index: 20;
-      width: 36px;
-      height: 36px;
+      width: 40px;
+      height: 40px;
       border-radius: 50%;
-      background: rgba(8, 12, 30, 0.82);
-      border: 1.5px solid rgba(255, 255, 255, 0.3);
-      color: rgba(255, 255, 255, 0.8);
+      background: #1a1a2e;
+      border: 2px solid rgba(255, 255, 255, 0.18);
+      color: #fff;
       display: flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
-      font-size: 1rem;
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      box-shadow: 0 2px 14px rgba(0,0,0,0.55), inset 0 1px 0 rgba(255,255,255,0.08);
-      transition: background 0.22s, border-color 0.22s, color 0.22s, transform 0.22s cubic-bezier(0.16,1,0.3,1);
+      font-size: 1.05rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.7);
+      transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
     }
-    .vod-modal-close i { transition: transform 0.3s cubic-bezier(0.34,1.56,0.64,1); }
+    .vod-modal-close i {
+      transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+      line-height: 1;
+    }
     .vod-modal-close:hover {
-      background: rgba(255,255,255,0.15);
-      border-color: rgba(255,255,255,0.8);
-      color: #fff;
-      transform: scale(1.12);
+      background: #2d2d4e;
+      border-color: rgba(255, 255, 255, 0.55);
+      transform: scale(1.1);
     }
-    .vod-modal-close:hover i { transform: rotate(90deg); }
-    .vod-modal-close:active { transform: scale(0.9); }
+    .vod-modal-close:hover i {
+      transform: rotate(90deg);
+    }
+    .vod-modal-close:active {
+      transform: scale(0.92);
+    }
 
     /* ── POSTER (vecchio, rimosso dal layout ma tenuto per compatibilità JS) ── */
     .vod-modal-poster { display: none; }
