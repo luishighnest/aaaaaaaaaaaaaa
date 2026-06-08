@@ -80,6 +80,27 @@ async function fetchTMDB(endpoint) {
     }
 }
 
+function createSkeletonCard(type = 'portrait') {
+    const card = document.createElement('div');
+    card.className = `vod-card vod-card-skeleton ${type}`;
+    card.setAttribute('aria-hidden', 'true');
+    card.innerHTML = '<div class="vod-skeleton-shine"></div>';
+    return card;
+}
+
+function appendSkeletonCards(container, count, type = 'portrait', gridMode = false) {
+    if (!container) return;
+    for (let i = 0; i < count; i++) {
+        const card = createSkeletonCard(type);
+        if (gridMode) card.style.width = '100%';
+        container.appendChild(card);
+    }
+}
+
+function getRowSkeletonCount(type) {
+    return type === 'landscape' ? 5 : 8;
+}
+
 function populateCard(card, item, type, title, poster) {
     const isFav = isFavorite(item.id, type);
     const favIcon = isFav ? 'ph-fill ph-check-circle' : 'ph ph-plus';
@@ -600,10 +621,20 @@ function renderSectionRows(rowsList, container) {
         rowCont.innerHTML = `<div class="vod-row-title">${row.title}</div><div class="vod-row" id="row-${row.id}"></div>`;
         container.appendChild(rowCont);
         attachRowArrows(rowCont);
+
+        const rowDiv = document.getElementById(`row-${row.id}`);
+        appendSkeletonCards(rowDiv, getRowSkeletonCount(row.type), row.type);
         
         fetchTMDB(row.endpoint).then(items => {
-            const rowDiv = document.getElementById(`row-${row.id}`);
-            if (!rowDiv || !items || items.length === 0) return;
+            const rowDivLoaded = document.getElementById(`row-${row.id}`);
+            if (!rowDivLoaded) return;
+
+            if (!items || items.length === 0) {
+                rowCont.remove();
+                return;
+            }
+
+            rowDivLoaded.innerHTML = '';
             
             items.forEach(item => {
                 if (item.media_type === 'person') return;
@@ -615,7 +646,7 @@ function renderSectionRows(rowsList, container) {
                 const card = document.createElement('div');
                 card.className = `vod-card ${row.type}`;
                 populateCard(card, item, type, title, poster);
-                rowDiv.appendChild(card);
+                rowDivLoaded.appendChild(card);
             });
         });
     });
@@ -702,7 +733,8 @@ async function searchContent(query) {
     document.querySelectorAll('.vod-navbar .nav-link').forEach(el => el.classList.remove('active'));
     
     document.getElementById('vod-search-title').innerHTML = `Risultati per: "${query}"`;
-    searchGrid.innerHTML = '<div class="vod-loading">Ricerca in corso...</div>';
+    searchGrid.innerHTML = '';
+    appendSkeletonCards(searchGrid, 12, 'portrait', true);
     
     const results = await fetchTMDB(`/search/multi?query=${encodeURIComponent(query)}`);
     
@@ -2544,9 +2576,22 @@ async function loadNextCatalogPage() {
     isLoadingCatalog = true;
     
     const indicator = document.getElementById('vod-catalog-loading-indicator');
-    if (indicator) indicator.style.display = 'block';
-    
     const grid = document.getElementById('vod-catalog-grid');
+
+    if (grid) {
+        if (catalogPage === 1 && grid.children.length === 0) {
+            appendSkeletonCards(grid, 18, 'portrait', true);
+        } else if (catalogPage > 1) {
+            for (let i = 0; i < 6; i++) {
+                const sk = createSkeletonCard('portrait');
+                sk.style.width = '100%';
+                sk.dataset.catalogSkeleton = '1';
+                grid.appendChild(sk);
+            }
+        }
+    }
+
+    if (indicator && catalogPage > 1) indicator.style.display = 'block';
     
     const filterType = document.getElementById('filter-type').value;
     const filterGenre = document.getElementById('filter-genre').value;
@@ -2625,6 +2670,9 @@ async function loadNextCatalogPage() {
                 grid.innerHTML = '<div class="vod-empty">Nessun contenuto corrisponde ai filtri selezionati.</div>';
             }
         } else {
+            if (catalogPage === 1) {
+                grid.innerHTML = '';
+            }
             results.forEach(item => {
                 const title = item.title || item.name;
                 const poster = item.poster_path ? `${IMG_BASE_URL}${item.poster_path}` : 'https://via.placeholder.com/500x750?text=No+Img';
@@ -2640,8 +2688,14 @@ async function loadNextCatalogPage() {
         }
     } catch (err) {
         console.error("Errore nel caricamento della pagina del catalogo", err);
+        if (catalogPage === 1 && grid) {
+            grid.querySelectorAll('.vod-card-skeleton').forEach(el => el.remove());
+        }
     } finally {
         isLoadingCatalog = false;
+        if (grid) {
+            grid.querySelectorAll('[data-catalog-skeleton]').forEach(el => el.remove());
+        }
         if (indicator) indicator.style.display = 'none';
     }
 }
