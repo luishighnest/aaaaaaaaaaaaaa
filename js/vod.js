@@ -768,11 +768,16 @@ async function openModal(item, defaultSeasonNumber = null) {
     // Imposta backdrop hero
     const backdropEl = document.getElementById('vod-modal-backdrop');
     if (backdropEl) {
+        let bgUrl = '';
         if (item.backdrop_path) {
-            backdropEl.src = `https://image.tmdb.org/t/p/w1280${item.backdrop_path}`;
-            backdropEl.style.display = 'block';
+            bgUrl = `https://image.tmdb.org/t/p/w1280${item.backdrop_path}`;
         } else if (item.poster_path) {
-            backdropEl.src = `https://image.tmdb.org/t/p/w780${item.poster_path}`;
+            bgUrl = `https://image.tmdb.org/t/p/w780${item.poster_path}`;
+        }
+        
+        if (bgUrl) {
+            backdropEl.src = bgUrl;
+            backdropEl.parentElement.style.setProperty('--hero-bg-url', `url('${bgUrl}')`);
             backdropEl.style.display = 'block';
         } else {
             backdropEl.src = '';
