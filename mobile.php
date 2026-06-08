@@ -363,6 +363,22 @@ $is_kids_profile = (
           <a href="select_profile.php" class="profile-avatar-btn" style="border-radius:10px; width:auto; padding:0 12px; height:32px; font-size:0.8rem; font-weight:700; color:var(--text-secondary);"><i class="ph ph-users" style="margin-right:4px;"></i> Cambia</a>
         </div>
 
+        <!-- Estensioni Obbligatorie -->
+        <div style="background: var(--bg-surface); border: 1px solid var(--accent); border-radius: 12px; padding: 1rem; margin-top: 1.5rem;">
+          <h3 style="margin-top: 0; color: var(--accent); font-size: 0.95rem;"><i class="ph ph-warning-circle"></i> Estensioni Obbligatorie</h3>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem;">
+            Per il corretto funzionamento del sito, è obbligatorio installare le seguenti estensioni browser:
+          </p>
+          <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+            <a href="https://ublockorigin.com/it" target="_blank" class="profile-avatar-btn" style="background: var(--accent); color: white; display: flex; align-items: center; justify-content: center; gap: 0.5rem; text-decoration: none; padding: 0.6rem; border-radius: 10px; font-size: 0.85rem;">
+              <i class="ph ph-shield-check"></i> Installa uBlock Origin
+            </a>
+            <a href="https://chromewebstore.google.com/detail/videoplayer-mpdm3u8iptvep/opmeopcambhfimffbomjgemehjkbbmji" target="_blank" class="profile-avatar-btn" style="background: var(--accent); color: white; display: flex; align-items: center; justify-content: center; gap: 0.5rem; text-decoration: none; padding: 0.6rem; border-radius: 10px; font-size: 0.85rem;">
+              <i class="ph ph-video"></i> Installa Video Player M3U8
+            </a>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>

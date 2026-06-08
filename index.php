@@ -1183,14 +1183,15 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
             <div class="settings-row" style="margin-bottom: 1rem;">
               <span>Tema dell'interfaccia</span>
               <button id="theme-toggle" class="settings-theme-btn">
-                <i class="ph ph-sun"></i> Modalità 
+                <i class="ph ph-sun"></i> Modalità 
               </button>
             </div>
             
             <div class="settings-row" style="margin-bottom: 1rem; align-items: flex-start; flex-direction: column; gap: 0.8rem;">
               <span style="font-weight: 600;">Colore Principale</span>
               <div id="accent-color-picker" style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                </div>
+                <!-- Generato via JS -->
+              </div>
             </div>
 
             <div class="settings-row">
@@ -1199,6 +1200,13 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
                 <option value="24">24 Ore</option>
                 <option value="12">12 Ore (AM/PM)</option>
               </select>
+            </div>
+            
+            <div class="settings-row" style="margin-top: 1rem; border-top: 1px solid var(--border-subtle); padding-top: 1rem;">
+              <span>Dispositivo / Interfaccia</span>
+              <a href="index.php?view_mode=mobile" class="settings-theme-btn" style="display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none; text-align: center; justify-content: center; font-weight: 700; color: var(--accent); border-color: var(--accent);">
+                <i class="ph ph-phone"></i> Passa a Versione Mobile/TV
+              </a>
             </div>
           </div>
         </div>
@@ -1256,6 +1264,21 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
               <button id="save-profiles-btn" style="background: var(--accent); color: #000; border: none; padding: 0.6rem 1.2rem; border-radius: var(--radius-sm); font-weight: 800; cursor: pointer; display: flex; align-items: center; gap: 0.5rem; transition: opacity 0.2s;">
                 <i class="ph ph-floppy-disk"></i> Salva Profili
               </button>
+            </div>
+          </div>
+
+          <div class="settings-section" style="margin-top: 1.5rem; background: var(--bg-surface); border: 1px solid var(--accent); border-radius: 12px; padding: 1.5rem;">
+            <h3 style="margin-top: 0; color: var(--accent);"><i class="ph ph-warning-circle"></i> Estensioni Obbligatorie</h3>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1rem;">
+              Per il corretto funzionamento del sito, è obbligatorio installare le seguenti estensioni browser:
+            </p>
+            <div style="display: flex; gap: 1rem;">
+              <a href="https://ublockorigin.com/it" target="_blank" class="settings-action-btn" style="flex: 1; padding: 0.8rem; text-align: center; border-radius: 8px; background: var(--accent); color: #000; font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 0.5rem; text-decoration: none; transition: all 0.2s;" onmouseover="this.style.opacity='0.9';" onmouseout="this.style.opacity='1';">
+                <i class="ph ph-shield-check"></i> Installa uBlock Origin
+              </a>
+              <a href="https://chromewebstore.google.com/detail/videoplayer-mpdm3u8iptvep/opmeopcambhfimffbomjgemehjkbbmji" target="_blank" class="settings-action-btn" style="flex: 1; padding: 0.8rem; text-align: center; border-radius: 8px; background: var(--accent); color: #000; font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 0.5rem; text-decoration: none; transition: all 0.2s;" onmouseover="this.style.opacity='0.9';" onmouseout="this.style.opacity='1';">
+                <i class="ph ph-video"></i> Installa Video Player M3U8
+              </a>
             </div>
           </div>
         </div>
@@ -1827,4 +1850,5 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
 </body>
 
 </html>
+
 
