@@ -309,14 +309,17 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
         </button>
       </div>
       <div class="dash-cat-list" id="dash-cat-list">
+        <a href="vod.php" class="dash-cat-item" style="color: var(--accent); border-left: 3px solid var(--accent); background: rgba(0, 242, 254, 0.05);">
+          <i class="ph ph-film-strip" style="color: var(--accent);"></i> Film & Serie TV
+        </a>
         <!-- Categories injected here -->
       </div>
       <a id="btn-guida-tv" href="guida.php" class="dash-exit"><i class="ph ph-calendar"></i> GUIDA TV</a>
-      <!-- Settings Trigger & VOD Button -->
-      <div style="display: flex; gap: 0.5rem; width: 100%; margin-top: 0.8rem;">
-        <button id="open-settings-btn" onclick="document.getElementById('settings-modal').classList.add('open')" class="dash-exit" style="margin-top: 0; margin-bottom: 0; padding: 0.6rem; background: var(--bg-input); border-color: var(--border-subtle); color: var(--text-primary); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; gap: 0.5rem; flex: 1;"><i class="ph ph-gear"></i> Impostazioni</button>
-        <button id="open-vod-btn" onclick="window.location.href='vod.php'" class="dash-exit pc-only-flex-btn" style="margin-top: 0; margin-bottom: 0; padding: 0.6rem; background: var(--bg-input); border-color: var(--border-subtle); color: var(--text-primary); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; gap: 0.5rem; flex: 1;"><i class="ph ph-film-strip"></i> Film & Serie TV</button>
+      <!-- Settings Trigger -->
+      <div style="margin-top: 0.8rem;">
+        <button id="open-settings-btn" onclick="document.getElementById('settings-modal').classList.add('open')" class="dash-exit" style="width: 100%; padding: 0.6rem; background: var(--bg-input); border-color: var(--border-subtle); color: var(--text-primary); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; gap: 0.5rem;"><i class="ph ph-gear"></i> Impostazioni</button>
       </div>
+
     </aside>
 
     <!-- Tasto per riaprire la sidebar (visibile solo quando ÃƒÂ¨ nascosta) -->
@@ -1181,20 +1184,21 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
       <div class="settings-modal-body" style="padding-top: 1.5rem;">
         
         <!-- TAB INTERFACCIA -->
-    <div id="tab-interfaccia" class="settings-tab-pane active">
+        <div id="tab-interfaccia" class="settings-tab-pane active">
           <div class="settings-section">
             <h3><i class="ph ph-palette"></i> Aspetto</h3>
             <div class="settings-row" style="margin-bottom: 1rem;">
               <span>Tema dell'interfaccia</span>
               <button id="theme-toggle" class="settings-theme-btn">
-                <i class="ph ph-sun"></i> Modalità 
+                <i class="ph ph-sun"></i> Modalità 
               </button>
             </div>
             
             <div class="settings-row" style="margin-bottom: 1rem; align-items: flex-start; flex-direction: column; gap: 0.8rem;">
               <span style="font-weight: 600;">Colore Principale</span>
               <div id="accent-color-picker" style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                </div>
+                <!-- Generato via JS -->
+              </div>
             </div>
 
             <div class="settings-row">
@@ -1203,6 +1207,13 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
                 <option value="24">24 Ore</option>
                 <option value="12">12 Ore (AM/PM)</option>
               </select>
+            </div>
+            
+            <div class="settings-row" style="margin-top: 1rem; border-top: 1px solid var(--border-subtle); padding-top: 1rem;">
+              <span>Dispositivo / Interfaccia</span>
+              <a href="index.php?view_mode=mobile" class="settings-theme-btn" style="display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none; text-align: center; justify-content: center; font-weight: 700; color: var(--accent); border-color: var(--accent);">
+                <i class="ph ph-phone"></i> Passa a Versione Mobile/TV
+              </a>
             </div>
           </div>
         </div>
@@ -1276,7 +1287,7 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
                 <i class="ph ph-shield-check"></i> Installa uBlock Origin
               </a>
               <a href="https://chromewebstore.google.com/detail/videoplayer-mpdm3u8iptvep/opmeopcambhfimffbomjgemehjkbbmji" target="_blank" class="settings-action-btn" style="padding: 1rem; text-align: center; border-radius: 8px; background: var(--accent); color: #000; font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 0.5rem; text-decoration: none; transition: all 0.2s;" onmouseover="this.style.opacity='0.9';" onmouseout="this.style.opacity='1';">
-                <i class="ph ph-video"></i> Installa Video Player MPD
+                <i class="ph ph-video"></i> Installa Video Player M3U8
               </a>
             </div>
           </div>
