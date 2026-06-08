@@ -20,6 +20,7 @@ return [
                 ['id' => 'ale_kids', 'name' => 'Bambini', 'avatar' => 'ph-smiley', 'color' => '#00e676'],
                 ['id' => 'ale_guest', 'name' => 'Ospiti', 'avatar' => 'ph-users', 'color' => '#ff9800']
             ]
+        ], // <-- Mancava questa chiusura e la virgola
         'Tyto' => [
             'password' => '$2y$12$XG2zFwgLQ9JFcfu4/gUPUeRqYoXsbuCPojKzG/jS5yJbtmOvPxfiW',
             'profiles' => [
