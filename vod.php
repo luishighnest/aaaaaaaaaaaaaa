@@ -1567,7 +1567,10 @@ if (!isset($_SESSION['active_profile'])) {
       flex-shrink: 0;
       position: sticky;
       top: 0;
-      height: fit-content;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .vod-modal-artwork img {
