@@ -1526,23 +1526,19 @@ if (!isset($_SESSION['active_profile'])) {
     }
     
     .vod-modal-topbar {
-      position: sticky;
-      top: -3rem;
-      z-index: 10;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      margin: -3rem -3rem 0 -3rem;
-      padding: 0.8rem 1rem;
-      pointer-events: none;
+      display: none;
     }
     .vod-modal-close {
+      position: fixed;
+      top: calc(50% - 42.5vh + 14px);
+      right: calc((100vw - min(900px, 90vw)) / 2 + 14px);
+      z-index: 10001;
       width: 36px;
       height: 36px;
       border-radius: 50%;
-      background: rgba(8, 12, 30, 0.75);
-      border: 1.5px solid rgba(255, 255, 255, 0.28);
-      color: rgba(255, 255, 255, 0.75);
+      background: rgba(8, 12, 30, 0.82);
+      border: 1.5px solid rgba(255, 255, 255, 0.3);
+      color: rgba(255, 255, 255, 0.8);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -1550,20 +1546,18 @@ if (!isset($_SESSION['active_profile'])) {
       font-size: 1rem;
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
-      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
-      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-      pointer-events: auto;
-      flex-shrink: 0;
+      box-shadow: 0 2px 14px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(255,255,255,0.08);
+      transition: background 0.22s, border-color 0.22s, color 0.22s, box-shadow 0.22s, transform 0.22s cubic-bezier(0.16, 1, 0.3, 1);
     }
     .vod-modal-close i {
       transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
     }
     .vod-modal-close:hover {
-      background: rgba(255, 255, 255, 0.14);
-      border-color: rgba(255, 255, 255, 0.75);
+      background: rgba(255, 255, 255, 0.15);
+      border-color: rgba(255, 255, 255, 0.8);
       color: #fff;
       transform: scale(1.12);
-      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.55);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.55);
     }
     .vod-modal-close:hover i {
       transform: rotate(90deg);
@@ -2352,6 +2346,11 @@ if (!isset($_SESSION['active_profile'])) {
       #vod-player-subtitle {
         font-size: 0.75rem;
       }
+      /* Bottone chiudi modal su mobile */
+      .vod-modal-close {
+        top: calc(50% - 45vh + 12px);
+        right: calc((100vw - 90vw) / 2 + 12px);
+      }
     }
 
     @media (min-width: 769px) and (max-width: 1024px) {
@@ -2574,14 +2573,12 @@ if (!isset($_SESSION['active_profile'])) {
 
   <!-- MODAL VOD -->
   <div class="vod-modal" id="vod-modal">
+    <button class="vod-modal-close" onclick="closeVodModal()" aria-label="Chiudi dettagli"><i class="ph ph-x"></i></button>
     <div class="vod-modal-content">
       <div class="vod-modal-poster">
         <img id="vod-modal-img" src="" alt="Poster">
       </div>
       <div class="vod-modal-info">
-        <div class="vod-modal-topbar">
-          <button class="vod-modal-close" onclick="closeVodModal()" aria-label="Chiudi dettagli"><i class="ph ph-x"></i></button>
-        </div>
         <h2 id="vod-modal-title">Titolo</h2>
         <div id="vod-modal-tagline"></div>
         
