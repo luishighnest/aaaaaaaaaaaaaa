@@ -1516,10 +1516,11 @@ if (!isset($_SESSION['active_profile'])) {
       position: relative;
       transform: scale(0.95) translateY(20px);
       transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-      overflow: visible;
+      overflow: hidden;
       box-shadow: 0 30px 80px rgba(0,0,0,0.7);
       display: flex;
       flex-direction: column;
+      height: 88vh;
       max-height: 88vh;
     }
     .vod-modal.open .vod-modal-content {
@@ -1577,8 +1578,6 @@ if (!isset($_SESSION['active_profile'])) {
       aspect-ratio: 2/3;
       object-fit: cover;
       background: rgba(15,23,42,0.5);
-      transform: translateY(28px);
-      transition: transform 0.3s ease;
     }
     .vod-modal-hero-text {
       flex: 1;
@@ -1609,14 +1608,13 @@ if (!isset($_SESSION['active_profile'])) {
       display: none;
     }
     .vod-modal-info {
-      padding: 2rem 1.8rem 1.8rem 1.8rem;
-      padding-top: calc(28px + 1.4rem); /* compensa il poster che sporge */
+      padding: 1.5rem 1.8rem 1.8rem 1.8rem;
       flex: 1;
       display: flex;
       flex-direction: column;
       gap: 1.1rem;
       overflow-y: auto;
-      border-radius: 0 0 20px 20px;
+      min-height: 0;
     }
     .vod-modal-info::-webkit-scrollbar { width: 5px; }
     .vod-modal-info::-webkit-scrollbar-thumb {
@@ -1626,30 +1624,29 @@ if (!isset($_SESSION['active_profile'])) {
 
     .vod-modal-close {
       position: absolute;
-      top: -14px;
-      right: -14px;
+      top: 14px;
+      right: 14px;
       z-index: 20;
-      width: 40px;
-      height: 40px;
+      width: 32px;
+      height: 32px;
       border-radius: 50%;
-      background: #1a1a2e;
-      border: 2px solid rgba(255, 255, 255, 0.18);
+      background: rgba(20, 20, 30, 0.9);
+      border: none;
       color: #fff;
       display: flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
-      font-size: 1.05rem;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.7);
-      transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+      font-size: 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+      transition: background 0.18s ease, transform 0.18s ease;
     }
     .vod-modal-close i {
-      transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+      transition: transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1);
       line-height: 1;
     }
     .vod-modal-close:hover {
-      background: #2d2d4e;
-      border-color: rgba(255, 255, 255, 0.55);
+      background: rgba(60, 60, 80, 0.95);
       transform: scale(1.1);
     }
     .vod-modal-close:hover i {
@@ -2605,7 +2602,6 @@ if (!isset($_SESSION['active_profile'])) {
   <!-- MODAL VOD -->
   <div class="vod-modal" id="vod-modal">
     <div class="vod-modal-content">
-      <button class="vod-modal-close" onclick="closeVodModal()" aria-label="Chiudi dettagli"><i class="ph ph-x"></i></button>
 
       <!-- HERO AREA (backdrop + poster + titolo) -->
       <div class="vod-modal-hero">
@@ -2613,6 +2609,7 @@ if (!isset($_SESSION['active_profile'])) {
           <img id="vod-modal-backdrop" src="" alt="">
         </div>
         <div class="vod-modal-hero-overlay"></div>
+        <button class="vod-modal-close" onclick="closeVodModal()" aria-label="Chiudi dettagli"><i class="ph ph-x"></i></button>
         <div class="vod-modal-hero-body">
           <img class="vod-modal-hero-poster" id="vod-modal-img" src="" alt="Poster">
           <div class="vod-modal-hero-text">
