@@ -85,6 +85,54 @@ unset($profile);
 
 $all_profiles[$username] = $new_profiles;
 
+// 4. Scrittura su Supabase (API)
+$supabase_url = getenv('SUPABASE_URL') . '/rest/v1/user_profiles';
+$supabase_key = getenv('SUPABASE_KEY');
+
+if ($supabase_url && $supabase_key) {
+    // 1. Cancelliamo i vecchi profili per questo username
+    $delete_url = getenv('SUPABASE_URL') . '/rest/v1/user_profiles?username=eq.' . urlencode($username);
+    $ch_del = curl_init($delete_url);
+    curl_setopt($ch_del, CURLOPT_CUSTOMREQUEST, "DELETE");
+    curl_setopt($ch_del, CURLOPT_HTTPHEADER, [
+        'apikey: ' . $supabase_key,
+        'Authorization: Bearer ' . $supabase_key
+    ]);
+    curl_setopt($ch_del, CURLOPT_RETURNTRANSFER, true);
+    curl_exec($ch_del);
+    curl_close($ch_del);
+
+    // 2. Prepariamo i nuovi dati
+    $profiles_to_send = [];
+    foreach ($new_profiles as $p) {
+        $profiles_to_send[] = [
+            'id' => $p['id'],
+            'username' => $username,
+            'name' => $p['name'],
+            'avatar' => $p['avatar'],
+            'color' => $p['color'],
+            'allowed_categories' => $p['allowed_categories'] ?? [],
+            'allowed_channels' => $p['allowed_channels'] ?? [],
+            'favorites' => $p['favorites'] ?? [],
+            'vod_favorites' => $p['vod_favorites'] ?? []
+        ];
+    }
+
+    // 3. Inseriamo i nuovi profili
+    $ch = curl_init($supabase_url);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($profiles_to_send));
+    curl_setopt($ch, CURLOPT_HTTPHEADER, [
+        'Content-Type: application/json',
+        'apikey: ' . $supabase_key,
+        'Authorization: Bearer ' . $supabase_key,
+        'Prefer: return=minimal'
+    ]);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_POST, true);
+    curl_exec($ch);
+    curl_close($ch);
+}
+
 if (file_put_contents($profiles_file, json_encode($all_profiles, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE))) {
     
     // Aggiorniamo il profilo attivo in sessione se il nome/colore/avatar è cambiato
