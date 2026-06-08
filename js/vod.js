@@ -712,41 +712,17 @@ function getModalArtworkUrl(item) {
 }
 
 function applyModalPosterShape() {
-    const posterWrap = modalImg.closest('.vod-modal-poster');
-    if (!posterWrap) return;
-
-    posterWrap.classList.remove('is-portrait', 'is-landscape', 'is-square');
-
-    const ratio = modalImg.naturalWidth && modalImg.naturalHeight
-        ? modalImg.naturalWidth / modalImg.naturalHeight
-        : 2 / 3;
-
-    if (ratio > 1.15) {
-        posterWrap.classList.add('is-landscape');
-    } else if (ratio < 0.85) {
-        posterWrap.classList.add('is-portrait');
-    } else {
-        posterWrap.classList.add('is-square');
-    }
+    // Non più necessario con il nuovo layout Netflix, ma manteniamo per compatibilità
 }
 
 function setModalPosterImage(src, title) {
-    const posterWrap = modalImg.closest('.vod-modal-poster');
-    if (posterWrap) {
-        posterWrap.classList.remove('is-portrait', 'is-landscape', 'is-square');
-    }
-
     modalImg.alt = title || 'Poster';
-    modalImg.onload = applyModalPosterShape;
-    modalImg.onerror = () => {
-        modalImg.onerror = null;
-        modalImg.onload = applyModalPosterShape;
-        modalImg.src = 'https://via.placeholder.com/500x750?text=No+Poster';
-    };
     modalImg.src = src;
-
-    if (modalImg.complete && modalImg.naturalWidth) {
-        applyModalPosterShape();
+    // Aggiorna anche l'hero poster
+    const heroPoster = document.getElementById('vod-modal-img');
+    if (heroPoster) {
+        heroPoster.alt = title || 'Poster';
+        heroPoster.src = src;
     }
 }
 
@@ -768,6 +744,22 @@ async function openModal(item, defaultSeasonNumber = null) {
     
     // Inizializza Modal con info base
     setModalPosterImage(poster, title);
+    
+    // Imposta backdrop hero
+    const backdropEl = document.getElementById('vod-modal-backdrop');
+    if (backdropEl) {
+        if (item.backdrop_path) {
+            backdropEl.src = `https://image.tmdb.org/t/p/w1280${item.backdrop_path}`;
+            backdropEl.style.display = 'block';
+        } else if (item.poster_path) {
+            backdropEl.src = `https://image.tmdb.org/t/p/w780${item.poster_path}`;
+            backdropEl.style.display = 'block';
+        } else {
+            backdropEl.src = '';
+            backdropEl.style.display = 'none';
+        }
+    }
+
     modalTitle.textContent = title;
     document.getElementById('vod-modal-tagline').textContent = '';
     document.getElementById('vod-modal-duration').innerHTML = `<i class="ph ph-clock"></i> ...`;
