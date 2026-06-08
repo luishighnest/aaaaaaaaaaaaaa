@@ -2002,7 +2002,7 @@ if (!isset($_SESSION['active_profile'])) {
       background: rgba(15, 23, 42, 0.25);
       border: 1px solid rgba(255, 255, 255, 0.04);
       border-radius: 14px;
-      transition: background 0.25s ease, border-color 0.25s ease, transform 0.2s ease;
+      transition: background 0.25s ease, border-color 0.25s ease, opacity 0.25s ease, box-shadow 0.25s ease, transform 0.2s ease;
       cursor: pointer;
       min-height: 80px;
     }
