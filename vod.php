@@ -2448,7 +2448,7 @@ if (!isset($_SESSION['active_profile'])) {
         </div>
         <div class="vod-search-dropdown" id="vod-search-dropdown"></div>
       </div>
-      <a href="index.php" class="vod-back-btn" title="Torna alla pagina precedente"><i class="ph ph-arrow-left"></i> Indietro</a>
+      <a href="index.php" class="vod-back-btn" title="Torna alla Home"><i class="ph ph-house"></i> Torna alla Home</a>
     </header>
 
     <!-- Main Content (Vertical Scroll) -->
@@ -2670,7 +2670,7 @@ if (!isset($_SESSION['active_profile'])) {
 
   <!-- PLAYER OVERLAY -->
   <div class="vod-player-overlay" id="vod-player-overlay">
-    <button class="vod-player-close" onclick="window.location.href='index.php'" title="Torna alla Home"><i class="ph ph-house"></i></button>
+    <button class="vod-player-close" onclick="closePlayer()" title="Torna ai dettagli" style="z-index: 99999;"><i class="ph ph-arrow-left"></i></button>
     <button class="vod-player-fullscreen" id="vod-player-fullscreen-btn" onclick="togglePlayerFullscreen()"><i class="ph ph-corners-out"></i></button>
     <button class="vod-player-next-ep" id="vod-player-next-btn" onclick="playNextEpisode()" style="display: none;"><i class="ph ph-skip-forward"></i></button>
     <div class="vod-player-mouse-tracker" id="vod-player-mouse-tracker"></div>
