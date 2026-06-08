@@ -1516,10 +1516,21 @@ if (!isset($_SESSION['active_profile'])) {
       position: relative; 
       transform: scale(0.95) translateY(20px);
       transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-      overflow: hidden;
+      overflow: visible;
       box-shadow: 0 30px 60px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.05); 
       display: flex;
       max-height: 85vh;
+    }
+    /* Clip il contenuto interno rispettando border-radius */
+    .vod-modal-content > .vod-modal-poster,
+    .vod-modal-content > .vod-modal-info {
+      overflow: hidden;
+    }
+    .vod-modal-content > .vod-modal-poster {
+      border-radius: 24px 0 0 24px;
+    }
+    .vod-modal-content > .vod-modal-info {
+      border-radius: 0 24px 24px 0;
     }
     .vod-modal.open .vod-modal-content {
       transform: scale(1) translateY(0);
@@ -1529,10 +1540,10 @@ if (!isset($_SESSION['active_profile'])) {
       display: none;
     }
     .vod-modal-close {
-      position: fixed;
-      top: calc(50% - 42.5vh + 14px);
-      right: calc((100vw - min(900px, 90vw)) / 2 + 14px);
-      z-index: 10001;
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      z-index: 10;
       width: 36px;
       height: 36px;
       border-radius: 50%;
@@ -2346,11 +2357,6 @@ if (!isset($_SESSION['active_profile'])) {
       #vod-player-subtitle {
         font-size: 0.75rem;
       }
-      /* Bottone chiudi modal su mobile */
-      .vod-modal-close {
-        top: calc(50% - 45vh + 12px);
-        right: calc((100vw - 90vw) / 2 + 12px);
-      }
     }
 
     @media (min-width: 769px) and (max-width: 1024px) {
@@ -2573,8 +2579,8 @@ if (!isset($_SESSION['active_profile'])) {
 
   <!-- MODAL VOD -->
   <div class="vod-modal" id="vod-modal">
-    <button class="vod-modal-close" onclick="closeVodModal()" aria-label="Chiudi dettagli"><i class="ph ph-x"></i></button>
     <div class="vod-modal-content">
+      <button class="vod-modal-close" onclick="closeVodModal()" aria-label="Chiudi dettagli"><i class="ph ph-x"></i></button>
       <div class="vod-modal-poster">
         <img id="vod-modal-img" src="" alt="Poster">
       </div>
