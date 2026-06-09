@@ -956,6 +956,7 @@ async function openModal(item, defaultSeasonNumber = null) {
         if (historyItem && historyItem.progress > 0) {
             if (resumeBtn) {
                 resumeBtn.style.display = 'inline-flex';
+                resumeBtn.style.setProperty('--resume-progress', historyItem.progress + '%');
                 resumeBtn.innerHTML = `<i class="ph-fill ph-play"></i> Riprendi (${historyItem.progress}%)`;
                 resumeBtn.onclick = () => {
                     playMovie(item.id, true);
@@ -979,6 +980,7 @@ async function openModal(item, defaultSeasonNumber = null) {
         if (historyItem && historyItem.progress > 0 && historyItem.progress < 95 && historyItem.season && historyItem.episode) {
             if (resumeBtn) {
                 resumeBtn.style.display = 'inline-flex';
+                resumeBtn.style.setProperty('--resume-progress', historyItem.progress + '%');
                 resumeBtn.innerHTML = `<i class="ph-fill ph-play"></i> Riprendi da S${historyItem.season}:E${historyItem.episode}`;
                 resumeBtn.onclick = () => {
                     playShowEpisode(item.id, historyItem.season, historyItem.episode, true);
