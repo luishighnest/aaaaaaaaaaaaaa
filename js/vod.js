@@ -1114,9 +1114,10 @@ function showPlayerControls() {
     overlay.classList.remove('controls-hidden');
     clearTimeout(playerControlsTimeout);
     
-    // Se il pannello info è aperto, non nascondere i controlli
+    // Se il pannello info o il pannello episodi è aperto, non nascondere i controlli
     const infoPanel = document.getElementById('vod-player-info-panel');
-    if (infoPanel && infoPanel.classList.contains('open')) {
+    const epPanel = document.getElementById('vod-player-episodes-panel');
+    if ((infoPanel && infoPanel.classList.contains('open')) || (epPanel && epPanel.classList.contains('open'))) {
         return;
     }
     
@@ -1336,9 +1337,11 @@ async function closePlayer() {
     // Salva il progresso prima di scaricare l'iframe
     await saveCurrentProgress();
     
-    // Chiudi il pannello info se aperto
+    // Chiudi i pannelli info ed episodi se aperti
     const infoPanel = document.getElementById('vod-player-info-panel');
     if (infoPanel) infoPanel.classList.remove('open');
+    const epPanel = document.getElementById('vod-player-episodes-panel');
+    if (epPanel) epPanel.classList.remove('open');
     
     const frame = document.getElementById('vod-player-frame');
     frame.src = 'about:blank';
@@ -1565,6 +1568,204 @@ async function togglePlayerInfoPanel() {
     }
 }
 
+    }
+}
+
+async function togglePlayerEpisodesPanel() {
+    const panel = document.getElementById('vod-player-episodes-panel');
+    if (!panel) return;
+    
+    if (panel.classList.contains('open')) {
+        panel.classList.remove('open');
+        showPlayerControls(); // riattiva il timeout per nascondere i controlli
+        return;
+    }
+    
+    // Chiudi il pannello info se aperto
+    const infoPanel = document.getElementById('vod-player-info-panel');
+    if (infoPanel && infoPanel.classList.contains('open')) {
+        infoPanel.classList.remove('open');
+    }
+    
+    panel.classList.add('open');
+    showPlayerControls();
+    
+    const ctx = window.__PLAYBACK_CONTEXT__;
+    if (!ctx || ctx.type !== 'tv') {
+        panel.innerHTML = `<div style="padding: 2rem; text-align: center; color: #aaa;">Episodi non disponibili per questo contenuto.</div>`;
+        return;
+    }
+    
+    const tvId = ctx.id;
+    
+    // Inizializza layout
+    panel.innerHTML = `
+        <div class="vod-player-episodes-hero">
+            <div class="vod-player-episodes-header-title">Episodi</div>
+            <div class="vod-player-episodes-season-selector-wrapper">
+                <select id="vod-player-season-select">
+                    <option>Caricamento stagioni...</option>
+                </select>
+                <i class="ph ph-caret-down select-arrow-icon"></i>
+            </div>
+            <button class="vod-player-episodes-close-btn" onclick="togglePlayerEpisodesPanel()" title="Chiudi"><i class="ph ph-x"></i></button>
+        </div>
+        <div class="vod-player-episodes-body" id="vod-player-episodes-list-container">
+            <div style="color: #aaa; text-align: center; padding: 2rem;">Caricamento...</div>
+        </div>
+    `;
+    
+    try {
+        // Carica stagioni dallo show principale
+        const tvUrl = `${BASE_URL}/tv/${tvId}?api_key=${API_KEY}&language=it-IT`;
+        const tvResp = await fetch(tvUrl);
+        const tvDetails = await tvResp.json();
+        
+        if (!tvDetails.seasons || tvDetails.seasons.length === 0) {
+            document.getElementById('vod-player-season-select').innerHTML = '<option>Nessuna stagione</option>';
+            document.getElementById('vod-player-episodes-list-container').innerHTML = '';
+            return;
+        }
+        
+        const seasonSelect = document.getElementById('vod-player-season-select');
+        seasonSelect.innerHTML = '';
+        
+        let targetSeason = ctx.season || tvDetails.seasons[0].season_number;
+        
+        tvDetails.seasons.forEach(season => {
+            // Saltiamo la stagione 0 (specials/extra) a meno che non stiamo riproducendo proprio quella
+            if (season.season_number === 0 && ctx.season !== 0) return;
+            
+            const option = document.createElement('option');
+            option.value = season.season_number;
+            option.textContent = season.name || `Stagione ${season.season_number}`;
+            seasonSelect.appendChild(option);
+        });
+        
+        seasonSelect.value = targetSeason;
+        
+        // Carica gli episodi per la stagione target
+        await loadPlayerEpisodes(tvId, targetSeason);
+        
+        seasonSelect.onchange = (e) => {
+            loadPlayerEpisodes(tvId, e.target.value);
+        };
+        
+    } catch (err) {
+        console.error("Errore nel caricamento stagioni nel player:", err);
+        document.getElementById('vod-player-episodes-list-container').innerHTML = `
+            <div style="color: #ef4444; padding: 2rem; text-align: center;">Errore nel caricamento delle stagioni.</div>
+        `;
+    }
+}
+
+async function loadPlayerEpisodes(tvId, seasonNumber) {
+    const container = document.getElementById('vod-player-episodes-list-container');
+    if (!container) return;
+    
+    container.innerHTML = `
+        <div style="height: 62px; background: #222; border-radius: 6px; margin-bottom: 8px; animation: pulse 1.5s infinite;"></div>
+        <div style="height: 62px; background: #222; border-radius: 6px; margin-bottom: 8px; animation: pulse 1.5s infinite;"></div>
+        <div style="height: 62px; background: #222; border-radius: 6px; margin-bottom: 8px; animation: pulse 1.5s infinite;"></div>
+    `;
+    
+    try {
+        const epUrl = `${BASE_URL}/tv/${tvId}/season/${seasonNumber}?api_key=${API_KEY}&language=it-IT`;
+        const resp = await fetch(epUrl);
+        const data = await resp.json();
+        
+        container.innerHTML = '';
+        if (!data.episodes || data.episodes.length === 0) {
+            container.innerHTML = `<div style="color: #aaa; text-align: center; padding: 2rem;">Nessun episodio in questa stagione.</div>`;
+            return;
+        }
+        
+        const ctx = window.__PLAYBACK_CONTEXT__;
+        const historyItem = (window.__ACTIVE_PROFILE_VOD_HISTORY__ || []).find(
+            x => parseInt(x.id, 10) === parseInt(tvId, 10) && x.type === 'tv'
+        );
+        
+        data.episodes.forEach(ep => {
+            const isCurrent = ctx && 
+                              parseInt(ctx.season, 10) === parseInt(seasonNumber, 10) && 
+                              parseInt(ctx.episode, 10) === parseInt(ep.episode_number, 10);
+                              
+            const epKey = `${seasonNumber}_${ep.episode_number}`;
+            let epProgress = 0;
+            let isWatched = false;
+            
+            if (historyItem) {
+                if (historyItem.watched_episodes && historyItem.watched_episodes[epKey] !== undefined) {
+                    const epData = historyItem.watched_episodes[epKey];
+                    if (epData && typeof epData === 'object') {
+                        epProgress = parseInt(epData.progress, 10) || 0;
+                    } else {
+                        epProgress = parseInt(epData, 10) || 0;
+                    }
+                    isWatched = epProgress >= 90;
+                } else {
+                    const hasWatchedMap = historyItem.watched_episodes !== undefined && historyItem.watched_episodes !== null;
+                    if (!hasWatchedMap) {
+                        isWatched = parseInt(seasonNumber, 10) < parseInt(historyItem.season, 10) ||
+                            (parseInt(seasonNumber, 10) === parseInt(historyItem.season, 10) && parseInt(ep.episode_number, 10) < parseInt(historyItem.episode, 10));
+                    }
+                    if (isCurrent) {
+                        epProgress = parseInt(historyItem.progress, 10) || 0;
+                        isWatched = isWatched || epProgress >= 90;
+                    }
+                }
+            }
+            
+            const thumbUrl = ep.still_path ? `https://image.tmdb.org/t/p/w300${ep.still_path}` : null;
+            const thumbHtml = thumbUrl 
+                ? `<img src="${thumbUrl}" alt="Ep. ${ep.episode_number}">` 
+                : `<div style="width:100%; height:100%; background:#1c1e24; display:flex; align-items:center; justify-content:center; color:#555;"><i class="ph ph-film-strip" style="font-size:1.5rem;"></i></div>`;
+                
+            const progressBarHtml = (epProgress > 0 && !isWatched)
+                ? `<div class="vod-player-ep-progress-bar"><div class="vod-player-ep-progress-fill" style="width: ${epProgress}%;"></div></div>`
+                : '';
+                
+            const epTitle = ep.name || `Episodio ${ep.episode_number}`;
+            const displayTitle = isWatched
+                ? `${epTitle} <i class="ph-fill ph-check-circle" style="color:#22c55e; font-size:0.85rem; margin-left:4px;"></i>`
+                : epTitle;
+                
+            const row = document.createElement('div');
+            row.className = `vod-player-episode-row${isCurrent ? ' current' : ''}`;
+            
+            row.innerHTML = `
+                <div class="vod-player-ep-thumb">
+                    ${thumbHtml}
+                    <div class="vod-player-ep-thumb-overlay">
+                        <div class="vod-player-ep-play-icon"><i class="ph-fill ph-play"></i></div>
+                    </div>
+                    ${progressBarHtml}
+                </div>
+                <div class="vod-player-episode-info">
+                    <div class="vod-player-ep-num">Episodio ${ep.episode_number}</div>
+                    <div class="vod-player-episode-title">${displayTitle}</div>
+                    <div class="vod-player-episode-overview">${ep.overview || 'Trama non disponibile.'}</div>
+                </div>
+            `;
+            
+            row.onclick = async (e) => {
+                e.stopPropagation();
+                // Chiudi il pannello
+                document.getElementById('vod-player-episodes-panel').classList.remove('open');
+                // Riproduci l'episodio
+                await saveCurrentProgress();
+                playShowEpisode(tvId, seasonNumber, ep.episode_number, epProgress > 0);
+            };
+            
+            container.appendChild(row);
+        });
+        
+    } catch (err) {
+        console.error("Errore nel caricamento episodi nel player:", err);
+        container.innerHTML = `<div style="color: #ef4444; padding: 2rem; text-align: center;">Errore nel caricamento degli episodi.</div>`;
+    }
+}
+
 function playMovie(tmdbId, resume = false) {
     const item = resolveVODItem(tmdbId, 'movie');
     const title = item ? (item.title || item.name) : 'Film';
@@ -1585,6 +1786,8 @@ function playMovie(tmdbId, resume = false) {
     
     const nextBtn = document.getElementById('vod-player-next-btn');
     if (nextBtn) nextBtn.style.display = 'none';
+    const epBtn = document.getElementById('vod-player-episodes-btn');
+    if (epBtn) epBtn.style.display = 'none';
     window.__NEXT_EPISODE__ = null;
     
     // Mostra titolo in alto al centro dell'overlay
@@ -1647,6 +1850,8 @@ function playShowEpisode(tmdbId, season, episode, resume = false) {
     
     const nextBtn = document.getElementById('vod-player-next-btn');
     if (nextBtn) nextBtn.style.display = 'none';
+    const epBtn = document.getElementById('vod-player-episodes-btn');
+    if (epBtn) epBtn.style.display = 'flex';
     window.__NEXT_EPISODE__ = null;
 
     // Recupera la struttura dello show da TMDB per determinare il prossimo episodio
