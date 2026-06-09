@@ -788,21 +788,22 @@ if (!isset($_SESSION['active_profile'])) {
       margin-top: 0.4rem;
     }
     
-    /* ── BOTTONI HERO & MODAL – REDESIGN ── */
+    /* ── BOTTONI HERO & MODAL – REDESIGN NETFLIX ── */
     .vod-hero-btn {
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      padding: 0 1.8rem;
-      height: 48px;
-      border-radius: 6px;
-      font-size: 0.95rem;
-      font-weight: 700;
+      padding: 0 2rem;
+      height: 52px;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 800;
+      font-family: 'Netflix Sans', 'Inter', 'Helvetica Neue', sans-serif;
+      letter-spacing: 0.01em;
       cursor: pointer;
-      transition: all 0.2s ease;
+      transition: background 0.18s ease, transform 0.15s ease, box-shadow 0.18s ease;
       border: none;
       text-transform: none;
-      letter-spacing: 0;
       position: relative;
       overflow: hidden;
       white-space: nowrap;
@@ -811,39 +812,66 @@ if (!isset($_SESSION['active_profile'])) {
 
     .vod-hero-btn::after { display: none; }
 
-    .vod-hero-btn i {
-      font-size: 1.35rem;
+    /* Icona play SVG inline – più nitida del font icon */
+    .vod-hero-btn .btn-play-icon {
+      width: 22px;
+      height: 22px;
       flex-shrink: 0;
-      transition: transform 0.2s ease;
+      transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+      filter: drop-shadow(0 1px 2px rgba(0,0,0,0.25));
     }
-    .vod-hero-btn:hover i { transform: scale(1.08); }
-    .vod-hero-btn:active { transform: scale(0.97); opacity: 0.9; }
+    .vod-hero-btn i {
+      font-size: 1.4rem;
+      flex-shrink: 0;
+      transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    .vod-hero-btn:hover .btn-play-icon,
+    .vod-hero-btn:hover i { transform: scale(1.15); }
+    .vod-hero-btn:active { transform: scale(0.96); }
 
     /* PLAY – bianco Netflix */
     .vod-hero-btn.play {
-      background: var(--accent);
-      color: #000;
-      font-weight: 800;
-      box-shadow: none;
-      letter-spacing: -0.2px;
+      background: #ffffff;
+      color: #111;
+      font-weight: 900;
+      letter-spacing: 0.02em;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.35);
     }
     .vod-hero-btn.play:hover {
-      background: color-mix(in srgb, var(--accent) 85%, #fff 15%);
-      transform: none;
-      box-shadow: none;
+      background: #e8e8e8;
+      box-shadow: 0 6px 28px rgba(0,0,0,0.45);
+      transform: translateY(-1px);
     }
 
-    /* RESUME – stesso stile play ma più contenuto, con barra progresso */
+    /* RESUME – frosted glass premium con barra progresso */
     #vod-modal-resume-btn,
     #vod-hero-resume-btn {
-      background: rgba(255,255,255,0.18);
+      background: rgba(255,255,255,0.12);
       color: #fff;
-      font-weight: 700;
+      font-weight: 800;
+      letter-spacing: 0.02em;
       position: relative;
       overflow: hidden;
+      border: 1.5px solid rgba(255,255,255,0.22);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.15);
     }
+    /* Barra progresso in basso */
     #vod-modal-resume-btn::before,
     #vod-hero-resume-btn::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 3px;
+      width: 100%;
+      background: rgba(255,255,255,0.08);
+      border-radius: 0;
+    }
+    /* Fill colorato sopra la track */
+    #vod-modal-resume-btn::after,
+    #vod-hero-resume-btn::after {
       content: '';
       position: absolute;
       bottom: 0;
@@ -852,10 +880,15 @@ if (!isset($_SESSION['active_profile'])) {
       width: var(--resume-progress, 40%);
       background: var(--accent);
       border-radius: 0 2px 2px 0;
+      transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+      display: block;
     }
     #vod-modal-resume-btn:hover,
     #vod-hero-resume-btn:hover {
-      background: rgba(255,255,255,0.26);
+      background: rgba(255,255,255,0.2);
+      border-color: rgba(255,255,255,0.38);
+      box-shadow: 0 6px 28px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.2);
+      transform: translateY(-1px);
     }
 
     /* INFO – secondario (Dettagli) */
@@ -2845,8 +2878,8 @@ if (!isset($_SESSION['active_profile'])) {
           <p class="vod-modal-desc" id="vod-modal-overview"></p>
           <div class="vod-modal-genres" id="vod-modal-genres"></div>
           <div class="vod-modal-action-row">
-            <button class="vod-hero-btn play" id="vod-modal-play-btn"><i class="ph-fill ph-play"></i> Guarda Ora</button>
-            <button class="vod-hero-btn" id="vod-modal-resume-btn" style="display:none;"><i class="ph-fill ph-play"></i> Riprendi</button>
+            <button class="vod-hero-btn play" id="vod-modal-play-btn"><svg class="btn-play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v14l11-7-11-7z"/></svg> Guarda Ora</button>
+            <button class="vod-hero-btn" id="vod-modal-resume-btn" style="display:none;"><svg class="btn-play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v14l11-7-11-7z"/></svg> Riprendi</button>
             <button class="vod-modal-fav-btn-new" id="vod-modal-fav-btn"><i class="ph ph-plus-circle"></i> Lista</button>
           </div>
           <div id="vod-modal-tv-section" style="display:none; margin-top:1rem;">
@@ -2865,8 +2898,8 @@ if (!isset($_SESSION['active_profile'])) {
       <div class="vod-modal-info">
         <div class="vod-modal-genres" id="vod-modal-genres" style="display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: wrap;"></div>
         <div class="vod-modal-action-row">
-          <button class="vod-hero-btn play" id="vod-modal-play-btn" style="display: none;"><i class="ph-fill ph-play"></i> Guarda Ora</button>
-          <button class="vod-hero-btn play" id="vod-modal-resume-btn" style="display: none;"><i class="ph-fill ph-play"></i> Riprendi</button>
+          <button class="vod-hero-btn play" id="vod-modal-play-btn" style="display: none;"><svg class="btn-play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v14l11-7-11-7z"/></svg> Guarda Ora</button>
+          <button class="vod-hero-btn" id="vod-modal-resume-btn" style="display: none;"><svg class="btn-play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v14l11-7-11-7z"/></svg> Riprendi</button>
           <button class="vod-modal-fav-btn-new" id="vod-modal-fav-btn"><i class="ph ph-plus-circle"></i> <span>Aggiungi</span></button>
         </div>
         <p class="vod-modal-desc" id="vod-modal-overview" style="margin-bottom: 2rem;"></p>
