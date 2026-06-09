@@ -2063,7 +2063,6 @@ function updateEpisodeRowVisual(row, tvId, seasonNumber, episodeNumber, state) {
 
     setEpisodeRowWatchedBadge(row.querySelector('.vod-episode-title'), state.isWatched);
     setEpisodeRowProgress(row, state.progress, state.isWatched);
-}
 
     row.onclick = () => {
         playShowEpisode(tvId, seasonNumber, episodeNumber, state.canResume);
