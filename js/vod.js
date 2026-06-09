@@ -1114,6 +1114,12 @@ function showPlayerControls() {
     overlay.classList.remove('controls-hidden');
     clearTimeout(playerControlsTimeout);
     
+    // Se il pannello info è aperto, non nascondere i controlli
+    const infoPanel = document.getElementById('vod-player-info-panel');
+    if (infoPanel && infoPanel.classList.contains('open')) {
+        return;
+    }
+    
     playerControlsTimeout = setTimeout(() => {
         if (overlay.classList.contains('open')) {
             overlay.classList.add('controls-hidden');
@@ -1330,6 +1336,10 @@ async function closePlayer() {
     // Salva il progresso prima di scaricare l'iframe
     await saveCurrentProgress();
     
+    // Chiudi il pannello info se aperto
+    const infoPanel = document.getElementById('vod-player-info-panel');
+    if (infoPanel) infoPanel.classList.remove('open');
+    
     const frame = document.getElementById('vod-player-frame');
     frame.src = 'about:blank';
     overlay.classList.remove('open');
@@ -1351,6 +1361,207 @@ async function closePlayer() {
         // Fallback generico
         closeVodModal();
         changeSection('home');
+    }
+}
+
+async function togglePlayerInfoPanel() {
+    const panel = document.getElementById('vod-player-info-panel');
+    if (!panel) return;
+    
+    if (panel.classList.contains('open')) {
+        panel.classList.remove('open');
+        showPlayerControls(); // riattiva il timeout per nascondere i controlli
+        return;
+    }
+    
+    // Mostra caricamento ed apri pannello
+    panel.classList.add('open');
+    showPlayerControls();
+    
+    const ctx = window.__PLAYBACK_CONTEXT__;
+    if (!ctx) {
+        panel.innerHTML = `<div style="padding: 2rem; text-align: center; color: #aaa;">Nessuna informazione disponibile.</div>`;
+        return;
+    }
+    
+    const id = ctx.id;
+    const type = ctx.type;
+    
+    // Struttura iniziale del pannello in modalità loading con skeletons
+    panel.innerHTML = `
+        <div class="vod-player-info-hero">
+            <div style="width:100%; height:100%; background:linear-gradient(90deg, #111 25%, #222 50%, #111 75%); background-size:200% 100%; animation: shimmer 1.5s infinite;"></div>
+            <button class="vod-player-info-close-btn" onclick="togglePlayerInfoPanel()" title="Chiudi"><i class="ph ph-x"></i></button>
+        </div>
+        <div class="vod-player-info-body">
+            <div style="height: 24px; width: 60%; background: #222; border-radius: 4px; margin-bottom: 8px; animation: pulse 1.5s infinite;"></div>
+            <div style="height: 16px; width: 40%; background: #222; border-radius: 4px; margin-bottom: 20px; animation: pulse 1.5s infinite;"></div>
+            <div style="height: 14px; width: 90%; background: #222; border-radius: 4px; margin-bottom: 8px; animation: pulse 1.5s infinite;"></div>
+            <div style="height: 14px; width: 85%; background: #222; border-radius: 4px; margin-bottom: 8px; animation: pulse 1.5s infinite;"></div>
+            <div style="height: 14px; width: 70%; background: #222; border-radius: 4px; margin-bottom: 8px; animation: pulse 1.5s infinite;"></div>
+        </div>
+    `;
+    
+    try {
+        let title = '';
+        let subTitle = '';
+        let overview = '';
+        let backdropPath = '';
+        let releaseYear = '';
+        let voteAverage = '';
+        let runtimeStr = '';
+        let genresHtml = '';
+        let castStr = '';
+        let creatorsStr = '';
+        
+        // Fetch dei dati principali dello show/movie (per generi, cast primario, backdrop principale)
+        const mainUrl = `${BASE_URL}/${type}/${id}?api_key=${API_KEY}&language=it-IT&append_to_response=credits`;
+        const mainResp = await fetch(mainUrl);
+        const mainData = await mainResp.json();
+        
+        backdropPath = mainData.backdrop_path || '';
+        voteAverage = mainData.vote_average ? mainData.vote_average.toFixed(1) : '';
+        
+        if (mainData.genres) {
+            genresHtml = mainData.genres.map(g => `<span class="genre-tag">${g.name}</span>`).join('');
+        }
+        if (mainData.credits && mainData.credits.cast) {
+            castStr = mainData.credits.cast.slice(0, 4).map(c => c.name).join(', ');
+        }
+        
+        if (type === 'movie') {
+            title = mainData.title || ctx.title || 'Film';
+            subTitle = 'Film';
+            overview = mainData.overview || 'Trama non disponibile.';
+            releaseYear = mainData.release_date ? mainData.release_date.split('-')[0] : '';
+            runtimeStr = mainData.runtime ? `${mainData.runtime} min` : '';
+            
+            if (mainData.credits && mainData.credits.crew) {
+                const directors = mainData.credits.crew.filter(c => c.job === 'Director').map(d => d.name);
+                if (directors.length > 0) {
+                    creatorsStr = directors.join(', ');
+                }
+            }
+        } else if (type === 'tv') {
+            const seasonNum = ctx.season;
+            const episodeNum = ctx.episode;
+            
+            title = mainData.name || ctx.title || 'Serie TV';
+            subTitle = `Stagione ${seasonNum} - Episodio ${episodeNum}`;
+            releaseYear = mainData.first_air_date ? mainData.first_air_date.split('-')[0] : '';
+            
+            if (mainData.created_by && mainData.created_by.length > 0) {
+                creatorsStr = mainData.created_by.map(c => c.name).join(', ');
+            }
+            
+            // Fetch dei dati dell'episodio specifico per serie TV
+            try {
+                const epUrl = `${BASE_URL}/tv/${id}/season/${seasonNum}/episode/${episodeNum}?api_key=${API_KEY}&language=it-IT`;
+                const epResp = await fetch(epUrl);
+                if (epResp.ok) {
+                    const epData = await epResp.json();
+                    
+                    if (epData.name) {
+                        subTitle += ` • ${epData.name}`;
+                    }
+                    if (epData.overview) {
+                        overview = epData.overview;
+                    } else {
+                        overview = mainData.overview || 'Trama non disponibile.';
+                    }
+                    if (epData.still_path) {
+                        backdropPath = epData.still_path; // L'immagine dell'episodio specifico!
+                    }
+                    if (epData.runtime) {
+                        runtimeStr = `${epData.runtime} min`;
+                    }
+                } else {
+                    overview = mainData.overview || 'Trama non disponibile.';
+                }
+            } catch (epErr) {
+                console.error("Errore fetch info episodio:", epErr);
+                overview = mainData.overview || 'Trama non disponibile.';
+            }
+        }
+        
+        const backdropUrl = backdropPath ? `${IMG_BASE_URL}${backdropPath}` : '';
+        
+        // Costruiamo i tag dei metadati
+        let metaHtml = '';
+        if (voteAverage) {
+            metaHtml += `<span class="rating-badge"><i class="ph-fill ph-star"></i> ${voteAverage}</span>`;
+        }
+        if (releaseYear) {
+            metaHtml += `<span>${releaseYear}</span>`;
+        }
+        if (runtimeStr) {
+            metaHtml += `<span>${runtimeStr}</span>`;
+        }
+        metaHtml += `<span class="quality-badge">1080p FHD</span>`;
+        
+        // Costruiamo le righe dei dettagli extra
+        let extraRowsHtml = '';
+        if (genresHtml) {
+            extraRowsHtml += `
+                <div class="vod-player-info-extra-row">
+                    <div class="vod-player-info-extra-label">Generi:</div>
+                    <div class="vod-player-info-extra-value">${genresHtml}</div>
+                </div>
+            `;
+        }
+        if (castStr) {
+            extraRowsHtml += `
+                <div class="vod-player-info-extra-row">
+                    <div class="vod-player-info-extra-label">Cast:</div>
+                    <div class="vod-player-info-extra-value">${castStr}</div>
+                </div>
+            `;
+        }
+        if (creatorsStr) {
+            extraRowsHtml += `
+                <div class="vod-player-info-extra-row">
+                    <div class="vod-player-info-extra-label">${type === 'movie' ? 'Regia' : 'Creatore'}:</div>
+                    <div class="vod-player-info-extra-value">${creatorsStr}</div>
+                </div>
+            `;
+        }
+        
+        // Popola il pannello con i dati reali
+        panel.innerHTML = `
+            <div class="vod-player-info-hero">
+                ${backdropUrl ? `<img src="${backdropUrl}" alt="${title}">` : `<div style="width:100%; height:100%; background:#13151b; display:flex; align-items:center; justify-content:center; color:#555;"><i class="ph ph-video" style="font-size:3rem;"></i></div>`}
+                <div class="vod-player-info-hero-overlay"></div>
+                <button class="vod-player-info-close-btn" onclick="togglePlayerInfoPanel()" title="Chiudi"><i class="ph ph-x"></i></button>
+            </div>
+            <div class="vod-player-info-body">
+                <div class="vod-player-info-title">${title}</div>
+                <div class="vod-player-info-sub">${subTitle}</div>
+                <div class="vod-player-info-meta">${metaHtml}</div>
+                
+                <div class="vod-player-info-divider"></div>
+                
+                <div class="vod-player-info-section-title">Trama</div>
+                <div class="vod-player-info-desc">${overview}</div>
+                
+                <div class="vod-player-info-divider"></div>
+                
+                <div class="vod-player-info-extra">
+                    ${extraRowsHtml}
+                </div>
+            </div>
+        `;
+        
+    } catch (err) {
+        console.error("Errore popolamento pannello info player:", err);
+        panel.innerHTML = `
+            <div class="vod-player-info-hero">
+                <button class="vod-player-info-close-btn" onclick="togglePlayerInfoPanel()" title="Chiudi"><i class="ph ph-x"></i></button>
+            </div>
+            <div class="vod-player-info-body">
+                <div class="vod-player-info-title">${ctx.title || 'Info'}</div>
+                <div style="color: #ef4444; font-size: 0.9rem; margin-top: 1rem;">Impossibile caricare i dettagli completi in questo momento.</div>
+            </div>
+        `;
     }
 }
 
