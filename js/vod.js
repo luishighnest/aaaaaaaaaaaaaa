@@ -1364,7 +1364,64 @@ async function closePlayer() {
     }
 }
 
-async function togglePlayerInfoPanel() {
+async function togglePlayerPlaylistPanel() {
+    const panel = document.getElementById('vod-player-playlist-panel');
+    const infoPanel = document.getElementById('vod-player-info-panel');
+    if (!panel) return;
+    
+    if (panel.classList.contains('open')) {
+        panel.classList.remove('open');
+        showPlayerControls();
+        return;
+    }
+    
+    // Chiudi info panel se aperto
+    if (infoPanel && infoPanel.classList.contains('open')) {
+        infoPanel.classList.remove('open');
+    }
+    
+    panel.classList.add('open');
+    showPlayerControls();
+    
+    const ctx = window.__PLAYBACK_CONTEXT__;
+    if (!ctx || ctx.type !== 'tv') {
+        document.getElementById('vod-player-playlist-content').innerHTML = `<div style="padding: 2rem; text-align: center; color: #aaa;">Playlist non disponibile.</div>`;
+        return;
+    }
+    
+    document.getElementById('vod-player-playlist-content').innerHTML = `<div style="padding: 2rem; text-align: center; color: #aaa;">Caricamento playlist...</div>`;
+    
+    // Riutilizza la logica di caricamento episodi (loadTvEpisodes, ma popolando il pannello del player)
+    // Per ora, una lista semplice
+    loadTvEpisodesIntoPlaylist(ctx.id, ctx.season);
+}
+
+async function loadTvEpisodesIntoPlaylist(tvId, seasonNumber) {
+    const content = document.getElementById('vod-player-playlist-content');
+    
+    try {
+        const response = await fetch(`${BASE_URL}/tv/${tvId}/season/${seasonNumber}?api_key=${API_KEY}&language=it-IT`);
+        const data = await response.json();
+        
+        content.innerHTML = '';
+        data.episodes.forEach(ep => {
+            const row = document.createElement('div');
+            row.className = 'vod-episode-row';
+            row.innerHTML = `
+                <div class="vod-episode-info">
+                    <div class="vod-episode-title">Ep. ${ep.episode_number}: ${ep.name}</div>
+                </div>
+            `;
+            row.onclick = () => {
+                playShowEpisode(tvId, seasonNumber, ep.episode_number, true);
+            };
+            content.appendChild(row);
+        });
+    } catch(err) {
+        content.innerHTML = '<div style="color: red; padding: 10px;">Errore caricamento.</div>';
+    }
+}
+
     const panel = document.getElementById('vod-player-info-panel');
     if (!panel) return;
     
