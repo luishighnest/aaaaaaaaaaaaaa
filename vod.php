@@ -2096,27 +2096,6 @@ if (!isset($_SESSION['active_profile'])) {
       0%, 100% { box-shadow: inset 3px 0 0 var(--accent); }
     }
 
-    /* Badge "Riprendi qui" */
-    .vod-ep-resume-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      font-size: 0.65rem;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      color: var(--accent);
-      background: rgba(var(--accent-rgb, 0, 170, 255), 0.12);
-      border: 1px solid rgba(var(--accent-rgb, 0, 170, 255), 0.25);
-      padding: 2px 7px;
-      border-radius: 4px;
-      margin-top: 3px;
-      width: fit-content;
-    }
-    .vod-ep-resume-badge i {
-      font-size: 0.75rem;
-    }
-
     /* Thumbnail Container */
     .vod-ep-thumb {
       position: relative;
