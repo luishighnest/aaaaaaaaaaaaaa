@@ -1422,42 +1422,6 @@ async function loadTvEpisodesIntoPlaylist(tvId, seasonNumber) {
     }
 }
 
-    const panel = document.getElementById('vod-player-info-panel');
-    if (!panel) return;
-    
-    if (panel.classList.contains('open')) {
-        panel.classList.remove('open');
-        showPlayerControls(); // riattiva il timeout per nascondere i controlli
-        return;
-    }
-    
-    // Mostra caricamento ed apri pannello
-    panel.classList.add('open');
-    showPlayerControls();
-    
-    const ctx = window.__PLAYBACK_CONTEXT__;
-    if (!ctx) {
-        panel.innerHTML = `<div style="padding: 2rem; text-align: center; color: #aaa;">Nessuna informazione disponibile.</div>`;
-        return;
-    }
-    
-    const id = ctx.id;
-    const type = ctx.type;
-    
-    // Struttura iniziale del pannello in modalità loading con skeletons
-    panel.innerHTML = `
-        <div class="vod-player-info-hero">
-            <div style="width:100%; height:100%; background:linear-gradient(90deg, #111 25%, #222 50%, #111 75%); background-size:200% 100%; animation: shimmer 1.5s infinite;"></div>
-            <button class="vod-player-info-close-btn" onclick="togglePlayerInfoPanel()" title="Chiudi"><i class="ph ph-x"></i></button>
-        </div>
-        <div class="vod-player-info-body">
-            <div style="height: 24px; width: 60%; background: #222; border-radius: 4px; margin-bottom: 8px; animation: pulse 1.5s infinite;"></div>
-            <div style="height: 16px; width: 40%; background: #222; border-radius: 4px; margin-bottom: 20px; animation: pulse 1.5s infinite;"></div>
-            <div style="height: 14px; width: 90%; background: #222; border-radius: 4px; margin-bottom: 8px; animation: pulse 1.5s infinite;"></div>
-            <div style="height: 14px; width: 85%; background: #222; border-radius: 4px; margin-bottom: 8px; animation: pulse 1.5s infinite;"></div>
-            <div style="height: 14px; width: 70%; background: #222; border-radius: 4px; margin-bottom: 8px; animation: pulse 1.5s infinite;"></div>
-        </div>
-    `;
     
     try {
         let title = '';
