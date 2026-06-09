@@ -1880,8 +1880,7 @@ if (!isset($_SESSION['active_profile'])) {
     .vod-player-close,
     .vod-player-fullscreen,
     .vod-player-next-ep,
-    .vod-player-info-btn,
-    .vod-player-playlist-btn {
+    .vod-player-info-btn {
       position: absolute;
       background: rgba(255, 255, 255, 0.05);
       border: 1px solid rgba(255, 255, 255, 0.1);
@@ -1946,19 +1945,6 @@ if (!isset($_SESSION['active_profile'])) {
     .vod-player-info-btn:active {
       transform: translateY(0);
     }
-    .vod-player-playlist-btn {
-      top: 20px;
-      left: 74px;
-    }
-    .vod-player-playlist-btn:hover {
-      background: var(--accent);
-      border-color: var(--accent);
-      box-shadow: 0 4px 20px var(--accent-glow);
-      transform: translateY(-2px);
-    }
-    .vod-player-playlist-btn:active {
-      transform: translateY(0);
-    }
     .vod-player-next-ep:hover {
       background: var(--accent);
       border-color: var(--accent);
@@ -2002,7 +1988,6 @@ if (!isset($_SESSION['active_profile'])) {
     .vod-player-overlay.controls-hidden .vod-player-fullscreen,
     .vod-player-overlay.controls-hidden .vod-player-next-ep,
     .vod-player-overlay.controls-hidden .vod-player-info-btn,
-    .vod-player-overlay.controls-hidden .vod-player-playlist-btn,
     .vod-player-overlay.controls-hidden .vod-player-title-header {
       opacity: 0;
       pointer-events: none;
@@ -2857,213 +2842,7 @@ if (!isset($_SESSION['active_profile'])) {
       border-radius: 4px;
       color: rgba(255,255,255,0.8);
     }
-
-    /* ── PLAYLIST PANEL (Stagioni & Episodi nel player) ── */
-    #vod-player-playlist-panel {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      width: 420px;
-      max-width: 100%;
-      height: 100%;
-      background: rgba(8, 10, 16, 0.88);
-      border-right: 1px solid rgba(255, 255, 255, 0.08);
-      padding: 0;
-      z-index: 10005;
-      backdrop-filter: blur(30px) saturate(170%);
-      -webkit-backdrop-filter: blur(30px) saturate(170%);
-      box-shadow: 10px 0 45px rgba(0,0,0,0.85);
-      transform: translateX(-100%);
-      transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease;
-      opacity: 0;
-      pointer-events: none;
-    }
-    #vod-player-playlist-panel.open {
-      transform: translateX(0);
-      opacity: 1;
-      pointer-events: auto;
-    }
-    .vod-player-playlist-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 22px 20px 16px 24px;
-      border-bottom: 1px solid rgba(255,255,255,0.07);
-      flex-shrink: 0;
-    }
-    .vod-player-playlist-title {
-      font-size: 1.1rem;
-      font-weight: 800;
-      color: #fff;
-      letter-spacing: -0.3px;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      max-width: 300px;
-    }
-    .vod-player-playlist-season-tabs {
-      display: flex;
-      gap: 8px;
-      padding: 14px 20px;
-      overflow-x: auto;
-      flex-shrink: 0;
-      scrollbar-width: none;
-      border-bottom: 1px solid rgba(255,255,255,0.05);
-    }
-    .vod-player-playlist-season-tabs::-webkit-scrollbar { display: none; }
-    .vod-playlist-season-tab {
-      flex-shrink: 0;
-      padding: 6px 16px;
-      border-radius: 20px;
-      border: 1px solid rgba(255,255,255,0.12);
-      background: rgba(255,255,255,0.05);
-      color: rgba(255,255,255,0.6);
-      font-size: 0.78rem;
-      font-weight: 700;
-      letter-spacing: 0.5px;
-      cursor: pointer;
-      transition: all 0.25s ease;
-      text-transform: uppercase;
-    }
-    .vod-playlist-season-tab:hover {
-      background: rgba(255,255,255,0.1);
-      color: #fff;
-    }
-    .vod-playlist-season-tab.active {
-      background: linear-gradient(135deg, var(--accent) 0%, #4facfe 100%);
-      border-color: var(--accent);
-      color: #000;
-      font-weight: 900;
-      box-shadow: 0 4px 15px var(--accent-glow);
-    }
-    .vod-player-playlist-episodes {
-      flex: 1;
-      overflow-y: auto;
-      padding: 8px 0;
-    }
-    .vod-player-playlist-episodes::-webkit-scrollbar { width: 4px; }
-    .vod-player-playlist-episodes::-webkit-scrollbar-thumb {
-      background: rgba(255,255,255,0.12);
-      border-radius: 4px;
-    }
-    .vod-playlist-episode {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      padding: 12px 20px;
-      cursor: pointer;
-      transition: background 0.18s ease;
-      border-bottom: 1px solid rgba(255,255,255,0.03);
-      position: relative;
-    }
-    .vod-playlist-episode:hover {
-      background: rgba(255,255,255,0.06);
-    }
-    .vod-playlist-episode.active {
-      background: rgba(0, 242, 254, 0.06);
-    }
-    .vod-playlist-episode.active::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      width: 3px;
-      background: var(--accent);
-      border-radius: 0 3px 3px 0;
-    }
-    .vod-playlist-ep-number {
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.1);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.78rem;
-      font-weight: 800;
-      color: rgba(255,255,255,0.5);
-      flex-shrink: 0;
-    }
-    .vod-playlist-episode.active .vod-playlist-ep-number {
-      background: rgba(0, 242, 254, 0.12);
-      border-color: var(--accent);
-      color: var(--accent);
-    }
-    .vod-playlist-ep-info {
-      flex: 1;
-      min-width: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 3px;
-    }
-    .vod-playlist-ep-title {
-      font-size: 0.88rem;
-      font-weight: 700;
-      color: rgba(255,255,255,0.88);
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-    .vod-playlist-episode.active .vod-playlist-ep-title {
-      color: #fff;
-    }
-    .vod-playlist-ep-date {
-      font-size: 0.72rem;
-      color: rgba(255,255,255,0.35);
-      font-weight: 600;
-    }
-    .vod-playlist-ep-progress {
-      height: 3px;
-      background: rgba(255,255,255,0.08);
-      border-radius: 3px;
-      margin-top: 4px;
-      overflow: hidden;
-    }
-    .vod-playlist-ep-progress-bar {
-      height: 100%;
-      background: var(--accent);
-      border-radius: 3px;
-    }
-    .vod-playlist-ep-playing {
-      font-size: 1.1rem;
-      color: var(--accent);
-      flex-shrink: 0;
-      animation: playlist-pulse 1.8s ease-in-out infinite;
-    }
-    @keyframes playlist-pulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.4; }
-    }
-    .vod-player-playlist-empty {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      flex: 1;
-      gap: 14px;
-      color: rgba(255,255,255,0.35);
-      font-size: 0.9rem;
-      padding: 40px;
-      text-align: center;
-    }
-    .vod-player-playlist-empty i {
-      font-size: 2.5rem;
-      opacity: 0.4;
-    }
-    .vod-player-playlist-loading {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      padding: 40px;
-      flex: 1;
-    }
-
+    
     /* Animations */
     @keyframes shimmer {
       0% { background-position: -200% 0; }
@@ -3337,7 +3116,6 @@ if (!isset($_SESSION['active_profile'])) {
   <!-- PLAYER OVERLAY -->
   <div class="vod-player-overlay" id="vod-player-overlay">
     <button class="vod-player-close" onclick="closePlayer()" title="Torna ai dettagli" style="z-index: 99999;"><i class="ph ph-arrow-left"></i></button>
-    <button class="vod-player-playlist-btn" id="vod-player-playlist-btn" onclick="togglePlayerPlaylistPanel()" title="Stagioni ed Episodi"><i class="ph ph-playlist"></i></button>
     <button class="vod-player-fullscreen" id="vod-player-fullscreen-btn" onclick="togglePlayerFullscreen()"><i class="ph ph-corners-out"></i></button>
     <button class="vod-player-info-btn" id="vod-player-info-btn" onclick="togglePlayerInfoPanel()" title="Info"><i class="ph ph-info"></i></button>
     <button class="vod-player-next-ep" id="vod-player-next-btn" onclick="playNextEpisode()" style="display: none;"><i class="ph ph-skip-forward"></i></button>
@@ -3346,7 +3124,6 @@ if (!isset($_SESSION['active_profile'])) {
       <h2 id="vod-player-title"></h2>
       <div id="vod-player-subtitle"></div>
     </div>
-    <div id="vod-player-playlist-panel"></div>
     <div id="vod-player-info-panel">
       <div class="vod-player-info-title" id="vod-player-info-panel-title"></div>
       <div class="vod-player-info-sub" id="vod-player-info-panel-sub"></div>
@@ -3359,123 +3136,5 @@ if (!isset($_SESSION['active_profile'])) {
   </div>
 
   <script src="js/vod.js?v=<?= time() ?>"></script>
-  <script>
-  // Fallback inline - garantisce che la funzione esista anche con vod.js cachato
-  if (typeof togglePlayerPlaylistPanel === 'undefined') {
-    async function togglePlayerPlaylistPanel() {
-      const panel = document.getElementById('vod-player-playlist-panel');
-      if (!panel) return;
-      if (panel.classList.contains('open')) {
-        panel.classList.remove('open');
-        return;
-      }
-      const infoPanel = document.getElementById('vod-player-info-panel');
-      if (infoPanel) infoPanel.classList.remove('open');
-      const ctx = window.__PLAYBACK_CONTEXT__;
-      const title = ctx ? (ctx.title || 'Playlist') : 'Playlist';
-      if (!ctx || ctx.type !== 'tv') {
-        panel.innerHTML = `
-          <div class="vod-player-playlist-header">
-            <span class="vod-player-playlist-title">${title}</span>
-            <button class="vod-player-info-close-btn" onclick="togglePlayerPlaylistPanel()"><i class="ph ph-x"></i></button>
-          </div>
-          <div class="vod-player-playlist-empty">
-            <i class="ph ph-film-strip"></i>
-            <p>Questo è un film,<br>nessun episodio disponibile.</p>
-          </div>`;
-        panel.classList.add('open');
-        if (typeof showPlayerControls === 'function') showPlayerControls();
-        return;
-      }
-      const tmdbId = ctx.id;
-      const currentSeason = ctx.season;
-      const currentEpisode = ctx.episode;
-      panel.innerHTML = `
-        <div class="vod-player-playlist-header">
-          <span class="vod-player-playlist-title">${title}</span>
-          <button class="vod-player-info-close-btn" onclick="togglePlayerPlaylistPanel()"><i class="ph ph-x"></i></button>
-        </div>
-        <div class="vod-player-playlist-loading">
-          <div class="vod-dropdown-loading-dot"></div>
-          <div class="vod-dropdown-loading-dot"></div>
-          <div class="vod-dropdown-loading-dot"></div>
-        </div>`;
-      panel.classList.add('open');
-      if (typeof showPlayerControls === 'function') showPlayerControls();
-      try {
-        const API_KEY_L = (typeof API_KEY !== 'undefined') ? API_KEY : '2e0b38cfb2936cec8ab1ce48e4335ac3';
-        const BASE_URL_L = (typeof BASE_URL !== 'undefined') ? BASE_URL : 'https://api.themoviedb.org/3';
-        const showResp = await fetch(`${BASE_URL_L}/tv/${tmdbId}?api_key=${API_KEY_L}&language=it-IT`);
-        const showData = await showResp.json();
-        const seasons = (showData.seasons || []).filter(s => parseInt(s.season_number,10) > 0 && s.episode_count > 0);
-        const renderEpisodes = async (seasonNum) => {
-          const episodesContainer = document.getElementById('vod-player-playlist-episodes');
-          if (!episodesContainer) return;
-          episodesContainer.innerHTML = `<div class="vod-player-playlist-loading"><div class="vod-dropdown-loading-dot"></div><div class="vod-dropdown-loading-dot"></div><div class="vod-dropdown-loading-dot"></div></div>`;
-          try {
-            const epResp = await fetch(`${BASE_URL_L}/tv/${tmdbId}/season/${seasonNum}?api_key=${API_KEY_L}&language=it-IT`);
-            const epData = await epResp.json();
-            const episodes = epData.episodes || [];
-            episodesContainer.innerHTML = '';
-            episodes.forEach(ep => {
-              const isActive = parseInt(ep.episode_number,10) === parseInt(currentEpisode,10) && parseInt(seasonNum,10) === parseInt(currentSeason,10);
-              const progress = (typeof getPreviousProgress === 'function') ? getPreviousProgress(tmdbId,'tv',seasonNum,ep.episode_number) : 0;
-              const epEl = document.createElement('div');
-              epEl.className = `vod-playlist-episode${isActive ? ' active' : ''}`;
-              epEl.innerHTML = `
-                <div class="vod-playlist-ep-number">${ep.episode_number}</div>
-                <div class="vod-playlist-ep-info">
-                  <div class="vod-playlist-ep-title">${ep.name || 'Episodio ' + ep.episode_number}</div>
-                  ${ep.air_date ? `<div class="vod-playlist-ep-date">${ep.air_date.substring(0,10)}</div>` : ''}
-                  ${progress > 0 && progress < 95 ? `<div class="vod-playlist-ep-progress"><div class="vod-playlist-ep-progress-bar" style="width:${progress}%"></div></div>` : ''}
-                </div>
-                ${isActive ? '<i class="ph-fill ph-play vod-playlist-ep-playing"></i>' : ''}`;
-              epEl.addEventListener('click', () => {
-                togglePlayerPlaylistPanel();
-                setTimeout(() => { if (typeof playShowEpisode === 'function') playShowEpisode(tmdbId, seasonNum, ep.episode_number); }, 200);
-              });
-              episodesContainer.appendChild(epEl);
-            });
-            const activeEp = episodesContainer.querySelector('.vod-playlist-episode.active');
-            if (activeEp) setTimeout(() => activeEp.scrollIntoView({ behavior:'smooth', block:'center' }), 120);
-          } catch(err) {
-            episodesContainer.innerHTML = '<div class="vod-player-playlist-empty"><p>Errore caricamento episodi.</p></div>';
-          }
-        };
-        panel.innerHTML = `
-          <div class="vod-player-playlist-header">
-            <span class="vod-player-playlist-title">${title}</span>
-            <button class="vod-player-info-close-btn" onclick="togglePlayerPlaylistPanel()"><i class="ph ph-x"></i></button>
-          </div>
-          <div class="vod-player-playlist-season-tabs" id="vod-player-playlist-season-tabs"></div>
-          <div class="vod-player-playlist-episodes" id="vod-player-playlist-episodes"></div>`;
-        const tabsContainer = document.getElementById('vod-player-playlist-season-tabs');
-        seasons.forEach(s => {
-          const sNum = parseInt(s.season_number, 10);
-          const tab = document.createElement('button');
-          tab.className = `vod-playlist-season-tab${sNum === parseInt(currentSeason,10) ? ' active' : ''}`;
-          tab.textContent = `Stagione ${sNum}`;
-          tab.addEventListener('click', async () => {
-            tabsContainer.querySelectorAll('.vod-playlist-season-tab').forEach(t => t.classList.remove('active'));
-            tab.classList.add('active');
-            await renderEpisodes(sNum);
-          });
-          tabsContainer.appendChild(tab);
-        });
-        await renderEpisodes(currentSeason);
-      } catch(err) {
-        panel.innerHTML = `
-          <div class="vod-player-playlist-header">
-            <span class="vod-player-playlist-title">Playlist</span>
-            <button class="vod-player-info-close-btn" onclick="togglePlayerPlaylistPanel()"><i class="ph ph-x"></i></button>
-          </div>
-          <div class="vod-player-playlist-empty">
-            <i class="ph ph-warning"></i>
-            <p>Errore nel caricamento degli episodi.</p>
-          </div>`;
-      }
-    }
-  }
-  </script>
 </body>
 </html>
