@@ -28,54 +28,36 @@ let catalogGenreMap = {};
 
 const homePool = [
     { id: 'trending_day', title: 'In Tendenza Oggi', endpoint: '/trending/all/day', type: 'landscape' },
-    { id: 'trending_week', title: 'I Più Popolari della Settimana', endpoint: '/trending/all/week', type: 'portrait' },
-    { id: 'mixed_action', title: 'Azione & Adrenalina', endpoint: '/discover/movie?with_genres=28&sort_by=vote_average.desc&vote_count.gte=200', type: 'portrait' },
-    { id: 'mixed_tv_action', title: 'Serie TV d\'Azione', endpoint: '/discover/tv?with_genres=10759&sort_by=vote_average.desc&vote_count.gte=100', type: 'portrait' },
-    { id: 'mixed_comedy', title: 'Commedie Imperdibili', endpoint: '/discover/movie?with_genres=35&sort_by=popularity.desc&vote_count.gte=100', type: 'portrait' },
-    { id: 'mixed_tv_comedy', title: 'Commedie TV Esilaranti', endpoint: '/discover/tv?with_genres=35&sort_by=popularity.desc&vote_count.gte=50', type: 'portrait' },
-    { id: 'mixed_thriller', title: 'Thriller da Brivido', endpoint: '/discover/movie?with_genres=53&sort_by=vote_average.desc&vote_count.gte=150', type: 'portrait' },
-    { id: 'mixed_tv_drama', title: 'Drammi TV Avvincenti', endpoint: '/discover/tv?with_genres=18&sort_by=vote_average.desc&vote_count.gte=100', type: 'portrait' },
-    { id: 'mixed_scifi', title: 'Fantascienza & Futuro', endpoint: '/discover/movie?with_genres=878&sort_by=vote_average.desc&vote_count.gte=150', type: 'portrait' },
-    { id: 'mixed_tv_scifi', title: 'Sci-Fi & Fantasy TV', endpoint: '/discover/tv?with_genres=10765&sort_by=vote_average.desc&vote_count.gte=80', type: 'portrait' },
+    { id: 'trending_week', title: 'I Più Votati della Settimana', endpoint: '/trending/all/week', type: 'portrait' },
+    { id: 'mixed_action', title: 'Azione & Avventura Consigliati', endpoint: '/discover/movie?with_genres=28,12', type: 'portrait' },
+    { id: 'mixed_comedy', title: 'Commedie del Momento', endpoint: '/discover/movie?with_genres=35', type: 'portrait' },
     { id: 'mixed_pop_movie', title: 'Film da Non Perdere', endpoint: '/movie/popular', type: 'portrait' },
+    { id: 'mixed_upcoming', title: 'Anteprime & Novità', endpoint: '/movie/upcoming', type: 'portrait' },
     { id: 'mixed_pop_tv', title: 'Serie TV sulla Bocca di Tutti', endpoint: '/tv/popular', type: 'portrait' },
-    { id: 'mixed_top_movie', title: 'Capolavori del Cinema', endpoint: '/movie/top_rated', type: 'portrait' },
-    { id: 'mixed_top_tv', title: 'Serie TV Pluripremiate', endpoint: '/tv/top_rated', type: 'portrait' },
-    { id: 'mixed_horror', title: 'Horror & Suspense', endpoint: '/discover/movie?with_genres=27&sort_by=vote_average.desc&vote_count.gte=100', type: 'portrait' },
-    { id: 'mixed_tv_mystery', title: 'Gialli & Misteri TV', endpoint: '/discover/tv?with_genres=9648&sort_by=vote_average.desc&vote_count.gte=50', type: 'portrait' },
-    { id: 'mixed_animation', title: 'Animazione per Tutti', endpoint: '/discover/movie?with_genres=16&sort_by=vote_average.desc&vote_count.gte=100', type: 'portrait' },
-    { id: 'mixed_crime', title: 'Crime & Poliziesco', endpoint: '/discover/movie?with_genres=80&sort_by=vote_average.desc&vote_count.gte=100', type: 'portrait' },
-    { id: 'mixed_tv_crime', title: 'Crime TV', endpoint: '/discover/tv?with_genres=80&sort_by=vote_average.desc&vote_count.gte=50', type: 'portrait' },
-    { id: 'mixed_romance', title: 'Storie d\'Amore', endpoint: '/discover/movie?with_genres=10749&sort_by=vote_average.desc&vote_count.gte=100', type: 'portrait' }
+    { id: 'mixed_top_tv', title: 'Grandi Successi Televisivi', endpoint: '/tv/top_rated', type: 'portrait' }
 ];
 
 const moviePool = [
     { id: 'movie_pop', title: 'Film Popolari', endpoint: '/movie/popular', type: 'portrait' },
     { id: 'movie_top', title: 'Capolavori del Cinema', endpoint: '/movie/top_rated', type: 'portrait' },
-    { id: 'movie_action', title: 'Cinema d\'Azione', endpoint: '/discover/movie?with_genres=28&sort_by=vote_average.desc&vote_count.gte=200', type: 'portrait' },
-    { id: 'movie_comedy', title: 'Commedie Spassose', endpoint: '/discover/movie?with_genres=35&sort_by=popularity.desc&vote_count.gte=100', type: 'portrait' },
-    { id: 'movie_horror', title: 'Brivido & Horror', endpoint: '/discover/movie?with_genres=27&sort_by=vote_average.desc&vote_count.gte=100', type: 'portrait' },
-    { id: 'movie_scifi', title: 'Fantascienza & Futuro', endpoint: '/discover/movie?with_genres=878&sort_by=vote_average.desc&vote_count.gte=150', type: 'portrait' },
-    { id: 'movie_thriller', title: 'Thriller & Suspense', endpoint: '/discover/movie?with_genres=53&sort_by=vote_average.desc&vote_count.gte=150', type: 'portrait' },
-    { id: 'movie_drama', title: 'Grandi Storie Drammatiche', endpoint: '/discover/movie?with_genres=18&sort_by=vote_average.desc&vote_count.gte=200', type: 'portrait' },
-    { id: 'movie_crime', title: 'Crime & Noir', endpoint: '/discover/movie?with_genres=80&sort_by=vote_average.desc&vote_count.gte=100', type: 'portrait' },
-    { id: 'movie_animation', title: 'Animazione & Famiglia', endpoint: '/discover/movie?with_genres=16&sort_by=vote_average.desc&vote_count.gte=100', type: 'portrait' },
-    { id: 'movie_war', title: 'Guerra & Storico', endpoint: '/discover/movie?with_genres=10752,36&sort_by=vote_average.desc&vote_count.gte=80', type: 'portrait' },
-    { id: 'movie_documentary', title: 'Documentari Imperdibili', endpoint: '/discover/movie?with_genres=99&sort_by=vote_average.desc&vote_count.gte=50', type: 'portrait' }
+    { id: 'movie_upcoming', title: 'Nuove Uscite', endpoint: '/movie/upcoming', type: 'portrait' },
+    { id: 'movie_action', title: 'Cinema d\'Azione', endpoint: '/discover/movie?with_genres=28', type: 'portrait' },
+    { id: 'movie_comedy', title: 'Commedie Spassose', endpoint: '/discover/movie?with_genres=35', type: 'portrait' },
+    { id: 'movie_horror', title: 'Brivido & Horror', endpoint: '/discover/movie?with_genres=27', type: 'portrait' },
+    { id: 'movie_scifi', title: 'Fantascienza & Futuro', endpoint: '/discover/movie?with_genres=878', type: 'portrait' },
+    { id: 'movie_thriller', title: 'Thriller & Suspense', endpoint: '/discover/movie?with_genres=53', type: 'portrait' },
+    { id: 'movie_drama', title: 'Grandi Storie Drammatiche', endpoint: '/discover/movie?with_genres=18', type: 'portrait' }
 ];
 
 const tvPool = [
     { id: 'tv_pop', title: 'Serie TV Popolari', endpoint: '/tv/popular', type: 'portrait' },
     { id: 'tv_top', title: 'Serie TV da Capolavoro', endpoint: '/tv/top_rated', type: 'portrait' },
-    { id: 'tv_scifi', title: 'Fantascienza & Fantasy', endpoint: '/discover/tv?with_genres=10765&sort_by=vote_average.desc&vote_count.gte=100', type: 'portrait' },
-    { id: 'tv_action', title: 'Azione & Avventura TV', endpoint: '/discover/tv?with_genres=10759&sort_by=vote_average.desc&vote_count.gte=100', type: 'portrait' },
-    { id: 'tv_drama', title: 'Drammi & Intrighi', endpoint: '/discover/tv?with_genres=18&sort_by=vote_average.desc&vote_count.gte=100', type: 'portrait' },
-    { id: 'tv_comedy', title: 'Commedie TV', endpoint: '/discover/tv?with_genres=35&sort_by=popularity.desc&vote_count.gte=50', type: 'portrait' },
-    { id: 'tv_mystery', title: 'Giallo & Mistero', endpoint: '/discover/tv?with_genres=9648&sort_by=vote_average.desc&vote_count.gte=50', type: 'portrait' },
-    { id: 'tv_anime', title: 'Anime & Animazione', endpoint: '/discover/tv?with_genres=16&sort_by=vote_average.desc&vote_count.gte=50', type: 'portrait' },
-    { id: 'tv_crime', title: 'Crime & Poliziesco TV', endpoint: '/discover/tv?with_genres=80&sort_by=vote_average.desc&vote_count.gte=50', type: 'portrait' },
-    { id: 'tv_documentary', title: 'Docu-Serie', endpoint: '/discover/tv?with_genres=99&sort_by=vote_average.desc&vote_count.gte=30', type: 'portrait' },
-    { id: 'tv_war', title: 'Guerra & Politica TV', endpoint: '/discover/tv?with_genres=10768&sort_by=vote_average.desc&vote_count.gte=30', type: 'portrait' }
+    { id: 'tv_scifi', title: 'Fantascienza & Fantasy', endpoint: '/discover/tv?with_genres=10765', type: 'portrait' },
+    { id: 'tv_action', title: 'Azione & Avventura TV', endpoint: '/discover/tv?with_genres=10759', type: 'portrait' },
+    { id: 'tv_drama', title: 'Drammi & Intrighi', endpoint: '/discover/tv?with_genres=18', type: 'portrait' },
+    { id: 'tv_comedy', title: 'Commedie TV', endpoint: '/discover/tv?with_genres=35', type: 'portrait' },
+    { id: 'tv_mystery', title: 'Giallo & Mistero', endpoint: '/discover/tv?with_genres=9648', type: 'portrait' },
+    { id: 'tv_anime', title: 'Anime & Animazione Giapponese', endpoint: '/discover/tv?with_genres=16', type: 'portrait' }
 ];
 
 function shuffleArray(array) {
@@ -89,48 +71,41 @@ function shuffleArray(array) {
 async function fetchTMDB(endpoint) {
     try {
         const sep = endpoint.includes('?') ? '&' : '?';
-        const cacheKey = 'tmdb_' + endpoint;
-        
-        // Cache sessionStorage (5 minuti)
-        const cached = sessionStorage.getItem(cacheKey);
-        if (cached) {
-            const { data, ts } = JSON.parse(cached);
-            if (Date.now() - ts < 5 * 60 * 1000) {
-                return data;
-            }
-            sessionStorage.removeItem(cacheKey);
-        }
-        
         const response = await fetch(`${BASE_URL}${endpoint}${sep}api_key=${API_KEY}&language=it-IT`);
-        const json = await response.json();
-        const data = json.results || json.genres || [];
-        
-        // Filtra contenuti non ancora usciti (anteprime)
-        const filtered = Array.isArray(data) ? data.filter(item => {
-            if (!item.release_date && !item.first_air_date) return true; // no date = ok (generi, etc)
-            const releaseDate = item.release_date || item.first_air_date;
-            if (!releaseDate) return true;
-            return new Date(releaseDate) <= new Date();
-        }) : data;
-        
-        // Salva in cache
-        try {
-            sessionStorage.setItem(cacheKey, JSON.stringify({ data: filtered, ts: Date.now() }));
-        } catch(e) { /* sessionStorage pieno, ignora */ }
-        
-        return filtered;
+        const data = await response.json();
+        return data.results || data.genres || [];
     } catch (error) {
         console.error('Errore TMDB:', error);
         return [];
     }
 }
 
+function createSkeletonCard(type = 'portrait') {
+    const card = document.createElement('div');
+    card.className = `vod-card vod-card-skeleton ${type}`;
+    card.setAttribute('aria-hidden', 'true');
+    card.innerHTML = '<div class="vod-skeleton-shine"></div>';
+    return card;
+}
+
+function appendSkeletonCards(container, count, type = 'portrait', gridMode = false) {
+    if (!container) return;
+    for (let i = 0; i < count; i++) {
+        const card = createSkeletonCard(type);
+        if (gridMode) card.style.width = '100%';
+        container.appendChild(card);
+    }
+}
+
+function getRowSkeletonCount(type) {
+    return type === 'landscape' ? 5 : 8;
+}
+
 function populateCard(card, item, type, title, poster) {
     const isFav = isFavorite(item.id, type);
     const favIcon = isFav ? 'ph-fill ph-plus-circle' : 'ph ph-plus-circle';
     const favClass = isFav ? 'fav is-fav' : 'fav';
-    
-    // Cerca progresso nella cronologia per questo specifico contenuto
+    const favLabel = isFav ? 'In Libreria' : 'Lista';
     const historyItem = (window.__ACTIVE_PROFILE_VOD_HISTORY__ || []).find(
         x => parseInt(x.id, 10) === parseInt(item.id, 10) && x.type === type
     );
@@ -217,25 +192,27 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const searchClear = document.getElementById('vod-search-clear');
     if (searchClear) {
-        searchClear.addEventListener('click', (e) => {
+        searchClear.addEventListener('mousedown', (e) => {
             e.preventDefault();
             e.stopPropagation();
             
-            // 1. Pulisci fisicamente l'input
+            // 1. Pulisci il testo
             searchInput.value = '';
             
-            // 2. Nascondi immediatamente la X e svuota/chiudi suggerimenti
+            // 2. Nascondi la X immediatamente
             searchClear.style.display = 'none';
+            
+            // 3. Chiudi e svuota suggerimenti
             const dd = document.getElementById('vod-search-dropdown');
             if (dd) {
                 dd.classList.remove('open');
                 dd.innerHTML = '';
             }
             
-            // 3. Forza la chiusura della barra (rimuovendo il focus)
+            // 4. Rimpicciolisci il rettangolo (togli il focus)
             searchInput.blur();
             
-            // 4. Ripristina la visualizzazione home se eravamo in ricerca
+            // 5. Torna alla home
             showHome();
         });
     }
@@ -376,7 +353,7 @@ document.addEventListener('DOMContentLoaded', () => {
     searchInput.addEventListener('input', (e) => {
         const query = e.target.value.trim();
         if (searchClear) {
-            searchClear.style.display = query.length > 0 ? 'block' : 'none';
+            searchClear.style.display = query.length > 0 ? 'flex' : 'none';
         }
 
         keyboardIndex = -1;
@@ -519,6 +496,26 @@ document.addEventListener('DOMContentLoaded', () => {
             lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
         });
     }
+    
+    // Gestione scorrimento modal per nascondere navbar
+    const modalContent = document.querySelector('.vod-modal-content');
+    let lastModalScrollTop = 0;
+    
+    if (modalContent) {
+        modalContent.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.vod-navbar');
+            if (!navbar) return;
+            const scrollTop = modalContent.scrollTop;
+            
+            if (scrollTop > lastModalScrollTop && scrollTop > 100) {
+                navbar.classList.add('nav-hidden');
+            } else {
+                navbar.classList.remove('nav-hidden');
+            }
+            
+            lastModalScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        });
+    }
 });
 
 async function loadNetflixRows() {
@@ -530,38 +527,23 @@ async function loadNetflixRows() {
     if (moviesContainer) moviesContainer.innerHTML = '';
     if (tvContainer) tvContainer.innerHTML = '';
     
-    // Fetch and initialize the Hero Banner Carousel
+    // Fetch and initialize the Hero Banner using a random item from Trending
     fetchTMDB('/trending/all/day').then(items => {
         if (items && items.length > 0) {
-            // Filtra contenuti senza data (non ancora usciti)
-            const released = items.filter(i => {
-                const d = i.release_date || i.first_air_date;
-                return d && new Date(d) <= new Date();
-            });
-            const heroItems = (released.length > 0 ? released : items).slice(0, 8);
-            initHeroCarousel(heroItems);
+            const randomIndex = Math.floor(Math.random() * items.length);
+            initHero(items[randomIndex]);
         }
     });
     
-    // Home: Mix bilanciato - garantisci almeno 3 film e 3 serie TV su 7 righe
-    const movieRows = homePool.filter(r => r.endpoint.includes('/movie') || r.endpoint.includes('discover/movie'));
-    const tvRows = homePool.filter(r => r.endpoint.includes('/tv') || r.endpoint.includes('discover/tv'));
-    const mixedRows = homePool.filter(r => r.endpoint.includes('/trending'));
+    // Mescola e seleziona 5 righe casuali per ogni sezione
+    const activeHomeRows = shuffleArray([...homePool]).slice(0, 5);
+    const activeMovieRows = shuffleArray([...moviePool]).slice(0, 5);
+    const activeTvRows = shuffleArray([...tvPool]).slice(0, 5);
     
-    const selectedMixed = shuffleArray([...mixedRows]).slice(0, 1); // 1 trending
-    const selectedMovies = shuffleArray([...movieRows]).slice(0, 3); // 3 film
-    const selectedTv = shuffleArray([...tvRows]).slice(0, 3); // 3 serie TV
-    const activeHomeRows = shuffleArray([...selectedMixed, ...selectedMovies, ...selectedTv]);
-    
-    // Film: 6 righe random dal pool film
-    const activeMovieRows = shuffleArray([...moviePool]).slice(0, 6);
-    // TV: 6 righe random dal pool TV
-    const activeTvRows = shuffleArray([...tvPool]).slice(0, 6);
-    
-    // Renderizza con skeleton loaders
-    renderSectionRowsWithSkeletons(activeHomeRows, homeContainer);
-    renderSectionRowsWithSkeletons(activeMovieRows, moviesContainer);
-    renderSectionRowsWithSkeletons(activeTvRows, tvContainer);
+    // Renderizza nei rispettivi container
+    renderSectionRows(activeHomeRows, homeContainer);
+    renderSectionRows(activeMovieRows, moviesContainer);
+    renderSectionRows(activeTvRows, tvContainer);
 }
 
 function attachRowArrows(rowCont) {
@@ -640,58 +622,20 @@ function renderSectionRows(rowsList, container) {
         rowCont.innerHTML = `<div class="vod-row-title">${row.title}</div><div class="vod-row" id="row-${row.id}"></div>`;
         container.appendChild(rowCont);
         attachRowArrows(rowCont);
-        
-        fetchTMDB(row.endpoint).then(items => {
-            const rowDiv = document.getElementById(`row-${row.id}`);
-            if (!rowDiv || !items || items.length === 0) return;
-            
-            items.forEach(item => {
-                if (item.media_type === 'person') return;
-                const title = item.title || item.name;
-                const imgPath = (row.type === 'landscape' && item.backdrop_path) ? item.backdrop_path : item.poster_path;
-                const poster = imgPath ? `${IMG_BASE_URL}${imgPath}` : 'https://via.placeholder.com/500x750?text=No+Img';
-                const type = item.media_type || (item.title ? 'movie' : 'tv');
-                
-                const card = document.createElement('div');
-                card.className = `vod-card ${row.type}`;
-                populateCard(card, item, type, title, poster);
-                rowDiv.appendChild(card);
-            });
-        });
-    });
-}
 
-// Skeleton Loaders + Caricamento reale
-function renderSectionRowsWithSkeletons(rowsList, container) {
-    if (!container) return;
-    
-    rowsList.forEach(row => {
-        const rowCont = document.createElement('div');
-        rowCont.className = 'vod-row-container';
+        const rowDiv = document.getElementById(`row-${row.id}`);
+        appendSkeletonCards(rowDiv, getRowSkeletonCount(row.type), row.type);
         
-        // Crea skeleton placeholders
-        const skeletonCount = row.type === 'landscape' ? 5 : 8;
-        let skeletonCards = '';
-        for (let i = 0; i < skeletonCount; i++) {
-            skeletonCards += `<div class="vod-card ${row.type} vod-card-skeleton"><div class="vod-skeleton-shine"></div></div>`;
-        }
-        
-        rowCont.innerHTML = `<div class="vod-row-title">${row.title}</div><div class="vod-row" id="row-${row.id}">${skeletonCards}</div>`;
-        container.appendChild(rowCont);
-        attachRowArrows(rowCont);
-        
-        // Fetch dati reali e sostituisci skeletons
         fetchTMDB(row.endpoint).then(items => {
-            const rowDiv = document.getElementById(`row-${row.id}`);
-            if (!rowDiv) return;
-            
+            const rowDivLoaded = document.getElementById(`row-${row.id}`);
+            if (!rowDivLoaded) return;
+
             if (!items || items.length === 0) {
-                rowDiv.innerHTML = '';
+                rowCont.remove();
                 return;
             }
-            
-            // Rimuovi skeletons
-            rowDiv.innerHTML = '';
+
+            rowDivLoaded.innerHTML = '';
             
             items.forEach(item => {
                 if (item.media_type === 'person') return;
@@ -703,57 +647,10 @@ function renderSectionRowsWithSkeletons(rowsList, container) {
                 const card = document.createElement('div');
                 card.className = `vod-card ${row.type}`;
                 populateCard(card, item, type, title, poster);
-                rowDiv.appendChild(card);
+                rowDivLoaded.appendChild(card);
             });
-            
-            // Ri-aggiorna frecce dopo il caricamento reale
-            attachRowArrows(rowCont);
         });
     });
-}
-
-// ==========================================
-// HERO BANNER CAROUSEL (Auto-rotate)
-// ==========================================
-let heroCarouselItems = [];
-let heroCarouselIndex = 0;
-let heroCarouselTimer = null;
-
-function initHeroCarousel(items) {
-    if (!items || items.length === 0) return;
-    heroCarouselItems = items;
-    heroCarouselIndex = 0;
-    
-    // Mostra il primo item
-    initHero(heroCarouselItems[0]);
-    
-    // Avvia rotazione automatica ogni 8 secondi
-    clearInterval(heroCarouselTimer);
-    heroCarouselTimer = setInterval(() => {
-        heroCarouselIndex = (heroCarouselIndex + 1) % heroCarouselItems.length;
-        transitionHero(heroCarouselItems[heroCarouselIndex]);
-    }, 8000);
-}
-
-function transitionHero(item) {
-    const heroSection = document.getElementById('vod-hero-banner');
-    if (!heroSection || heroSection.style.display === 'none') return;
-    
-    const content = heroSection.querySelector('.vod-hero-content');
-    if (content) {
-        content.style.opacity = '0';
-        content.style.transform = 'translateY(15px)';
-    }
-    
-    setTimeout(() => {
-        initHero(item);
-        if (content) {
-            setTimeout(() => {
-                content.style.opacity = '1';
-                content.style.transform = 'translateY(0)';
-            }, 50);
-        }
-    }, 300);
 }
 
 async function initHero(item) {
@@ -837,7 +734,8 @@ async function searchContent(query) {
     document.querySelectorAll('.vod-navbar .nav-link').forEach(el => el.classList.remove('active'));
     
     document.getElementById('vod-search-title').innerHTML = `Risultati per: "${query}"`;
-    searchGrid.innerHTML = '<div class="vod-loading">Ricerca in corso...</div>';
+    searchGrid.innerHTML = '';
+    appendSkeletonCards(searchGrid, 12, 'portrait', true);
     
     const results = await fetchTMDB(`/search/multi?query=${encodeURIComponent(query)}`);
     
@@ -867,41 +765,17 @@ function getModalArtworkUrl(item) {
 }
 
 function applyModalPosterShape() {
-    const posterWrap = modalImg.closest('.vod-modal-poster');
-    if (!posterWrap) return;
-
-    posterWrap.classList.remove('is-portrait', 'is-landscape', 'is-square');
-
-    const ratio = modalImg.naturalWidth && modalImg.naturalHeight
-        ? modalImg.naturalWidth / modalImg.naturalHeight
-        : 2 / 3;
-
-    if (ratio > 1.15) {
-        posterWrap.classList.add('is-landscape');
-    } else if (ratio < 0.85) {
-        posterWrap.classList.add('is-portrait');
-    } else {
-        posterWrap.classList.add('is-square');
-    }
+    // Non più necessario con il nuovo layout Netflix, ma manteniamo per compatibilità
 }
 
 function setModalPosterImage(src, title) {
-    const posterWrap = modalImg.closest('.vod-modal-poster');
-    if (posterWrap) {
-        posterWrap.classList.remove('is-portrait', 'is-landscape', 'is-square');
-    }
-
     modalImg.alt = title || 'Poster';
-    modalImg.onload = applyModalPosterShape;
-    modalImg.onerror = () => {
-        modalImg.onerror = null;
-        modalImg.onload = applyModalPosterShape;
-        modalImg.src = 'https://via.placeholder.com/500x750?text=No+Poster';
-    };
     modalImg.src = src;
-
-    if (modalImg.complete && modalImg.naturalWidth) {
-        applyModalPosterShape();
+    // Aggiorna anche l'hero poster
+    const heroPoster = document.getElementById('vod-modal-img');
+    if (heroPoster) {
+        heroPoster.alt = title || 'Poster';
+        heroPoster.src = src;
     }
 }
 
@@ -927,6 +801,7 @@ async function openModal(item, defaultSeasonNumber = null) {
     
     // Inizializza Modal con info base
     setModalPosterImage(poster, title);
+    
     modalTitle.textContent = title;
     document.getElementById('vod-modal-tagline').textContent = '';
     document.getElementById('vod-modal-duration').innerHTML = `<i class="ph ph-clock"></i> ...`;
@@ -956,8 +831,7 @@ async function openModal(item, defaultSeasonNumber = null) {
         if (historyItem && historyItem.progress > 0) {
             if (resumeBtn) {
                 resumeBtn.style.display = 'inline-flex';
-                resumeBtn.style.setProperty('--resume-progress', historyItem.progress + '%');
-                resumeBtn.innerHTML = `<svg class="btn-play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v14l11-7-11-7z"/></svg> Riprendi (${historyItem.progress}%)`;
+                resumeBtn.innerHTML = `<i class="ph-fill ph-play"></i> Riprendi (${historyItem.progress}%)`;
                 resumeBtn.onclick = () => {
                     playMovie(item.id, true);
                 };
@@ -980,8 +854,7 @@ async function openModal(item, defaultSeasonNumber = null) {
         if (historyItem && historyItem.progress > 0 && historyItem.progress < 95 && historyItem.season && historyItem.episode) {
             if (resumeBtn) {
                 resumeBtn.style.display = 'inline-flex';
-                resumeBtn.style.setProperty('--resume-progress', historyItem.progress + '%');
-                resumeBtn.innerHTML = `<svg class="btn-play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v14l11-7-11-7z"/></svg> Riprendi da S${historyItem.season}:E${historyItem.episode}`;
+                resumeBtn.innerHTML = `<i class="ph-fill ph-play"></i> Riprendi da S${historyItem.season}:E${historyItem.episode}`;
                 resumeBtn.onclick = () => {
                     playShowEpisode(item.id, historyItem.season, historyItem.episode, true);
                 };
@@ -1037,6 +910,8 @@ async function openModal(item, defaultSeasonNumber = null) {
 function closeVodModal() {
     modal.classList.remove('open');
     window.__CURRENT_MODAL_ITEM__ = null;
+    const navbar = document.querySelector('.vod-navbar');
+    if (navbar) navbar.classList.remove('nav-hidden');
 }
 
 modal.addEventListener('click', (e) => {
@@ -1159,7 +1034,7 @@ function renderContinueWatching() {
         
         const isFav = isFavorite(item.id, type);
         const favIcon = isFav ? 'ph-fill ph-plus-circle' : 'ph ph-plus-circle';
-        const favClass = isFav ? 'fav is-fav' : 'fav';
+        const favClass2 = isFav ? 'fav is-fav' : 'fav';
         
         const itemObj = {
             id: item.id,
@@ -1181,7 +1056,7 @@ function renderContinueWatching() {
                 <div class="vod-card-actions">
                     <button class="vod-card-btn play" title="Guarda ora"><i class="ph-fill ph-play"></i></button>
                     <button class="vod-card-btn info" title="Dettagli"><i class="ph ph-info"></i></button>
-                    <button class="vod-card-btn ${favClass}" data-id="${item.id}" data-type="${type}" title="Preferiti"><i class="${favIcon}"></i></button>
+                    <button class="vod-card-btn ${favClass2}" data-id="${item.id}" data-type="${type}" title="Preferiti"><i class="${favIcon}"></i></button>
                 </div>
             </div>
         `;
@@ -1239,6 +1114,12 @@ function showPlayerControls() {
     overlay.classList.remove('controls-hidden');
     clearTimeout(playerControlsTimeout);
     
+    // Se il pannello info è aperto, non nascondere i controlli
+    const infoPanel = document.getElementById('vod-player-info-panel');
+    if (infoPanel && infoPanel.classList.contains('open')) {
+        return;
+    }
+    
     playerControlsTimeout = setTimeout(() => {
         if (overlay.classList.contains('open')) {
             overlay.classList.add('controls-hidden');
@@ -1263,88 +1144,7 @@ function togglePlayerFullscreen() {
             document.exitFullscreen().catch(err => console.error("Errore uscita fullscreen:", err));
         }
     }
-    
-    // Mostra sempre i controlli quando si toglia fullscreen
-    showPlayerControls();
 }
-
-// ==========================================
-// INFO PANEL (dettagli film/episodio nel player)
-// ==========================================
-function togglePlayerInfoPanel() {
-    const panel = document.getElementById('vod-player-info-panel');
-    if (!panel) return;
-    
-    if (panel.classList.contains('open')) {
-        panel.classList.remove('open');
-        return;
-    }
-    
-    // Popola il pannello con i dati del contesto attuale
-    const ctx = window.__PLAYBACK_CONTEXT__;
-    const modalItem = window.__CURRENT_MODAL_ITEM__;
-    
-    const titleEl = document.getElementById('vod-player-info-panel-title');
-    const subEl = document.getElementById('vod-player-info-panel-sub');
-    const metaEl = document.getElementById('vod-player-info-panel-meta');
-    const descEl = document.getElementById('vod-player-info-panel-desc');
-    
-    if (ctx) {
-        titleEl.textContent = ctx.title || (modalItem ? (modalItem.title || modalItem.name) : '');
-        
-        if (ctx.type === 'tv' && ctx.season && ctx.episode) {
-            subEl.textContent = `Stagione ${ctx.season} - Episodio ${ctx.episode}`;
-        } else {
-            subEl.textContent = ctx.type === 'movie' ? 'Film' : 'Serie TV';
-        }
-    } else if (modalItem) {
-        titleEl.textContent = modalItem.title || modalItem.name || '';
-        subEl.textContent = modalItem.media_type === 'movie' ? 'Film' : 'Serie TV';
-    }
-    
-    // Meta info
-    let metaHtml = '';
-    if (modalItem) {
-        if (modalItem.vote_average) {
-            metaHtml += `<span>⭐ ${modalItem.vote_average.toFixed(1)}</span>`;
-        }
-        const date = modalItem.release_date || modalItem.first_air_date;
-        if (date) {
-            metaHtml += `<span>${date.substring(0, 4)}</span>`;
-        }
-        if (modalItem.original_language) {
-            metaHtml += `<span>${modalItem.original_language.toUpperCase()}</span>`;
-        }
-    }
-    metaEl.innerHTML = metaHtml;
-    
-    // Descrizione
-    if (modalItem && modalItem.overview) {
-        descEl.textContent = modalItem.overview;
-    } else {
-        descEl.textContent = '';
-    }
-    
-    panel.classList.add('open');
-    showPlayerControls();
-}
-
-// Doppio click sul player = fullscreen + mostra controlli
-document.addEventListener('DOMContentLoaded', () => {
-    const overlay = document.getElementById('vod-player-overlay');
-    if (overlay) {
-        let clickTimer = null;
-        let clickCount = 0;
-        
-        overlay.addEventListener('dblclick', (e) => {
-            // Non attivare se cliccato su un bottone o sul pannello info
-            if (e.target.closest('button') || e.target.closest('#vod-player-info-panel')) return;
-            
-            e.preventDefault();
-            togglePlayerFullscreen();
-        });
-    }
-});
 
 async function sendClientDebug(message, contextObj = {}) {
     console.log('[VOD DIAGNOSTICS]', message, contextObj);
@@ -1561,6 +1361,207 @@ async function closePlayer() {
         // Fallback generico
         closeVodModal();
         changeSection('home');
+    }
+}
+
+async function togglePlayerInfoPanel() {
+    const panel = document.getElementById('vod-player-info-panel');
+    if (!panel) return;
+    
+    if (panel.classList.contains('open')) {
+        panel.classList.remove('open');
+        showPlayerControls(); // riattiva il timeout per nascondere i controlli
+        return;
+    }
+    
+    // Mostra caricamento ed apri pannello
+    panel.classList.add('open');
+    showPlayerControls();
+    
+    const ctx = window.__PLAYBACK_CONTEXT__;
+    if (!ctx) {
+        panel.innerHTML = `<div style="padding: 2rem; text-align: center; color: #aaa;">Nessuna informazione disponibile.</div>`;
+        return;
+    }
+    
+    const id = ctx.id;
+    const type = ctx.type;
+    
+    // Struttura iniziale del pannello in modalità loading con skeletons
+    panel.innerHTML = `
+        <div class="vod-player-info-hero">
+            <div style="width:100%; height:100%; background:linear-gradient(90deg, #111 25%, #222 50%, #111 75%); background-size:200% 100%; animation: shimmer 1.5s infinite;"></div>
+            <button class="vod-player-info-close-btn" onclick="togglePlayerInfoPanel()" title="Chiudi"><i class="ph ph-x"></i></button>
+        </div>
+        <div class="vod-player-info-body">
+            <div style="height: 24px; width: 60%; background: #222; border-radius: 4px; margin-bottom: 8px; animation: pulse 1.5s infinite;"></div>
+            <div style="height: 16px; width: 40%; background: #222; border-radius: 4px; margin-bottom: 20px; animation: pulse 1.5s infinite;"></div>
+            <div style="height: 14px; width: 90%; background: #222; border-radius: 4px; margin-bottom: 8px; animation: pulse 1.5s infinite;"></div>
+            <div style="height: 14px; width: 85%; background: #222; border-radius: 4px; margin-bottom: 8px; animation: pulse 1.5s infinite;"></div>
+            <div style="height: 14px; width: 70%; background: #222; border-radius: 4px; margin-bottom: 8px; animation: pulse 1.5s infinite;"></div>
+        </div>
+    `;
+    
+    try {
+        let title = '';
+        let subTitle = '';
+        let overview = '';
+        let backdropPath = '';
+        let releaseYear = '';
+        let voteAverage = '';
+        let runtimeStr = '';
+        let genresHtml = '';
+        let castStr = '';
+        let creatorsStr = '';
+        
+        // Fetch dei dati principali dello show/movie (per generi, cast primario, backdrop principale)
+        const mainUrl = `${BASE_URL}/${type}/${id}?api_key=${API_KEY}&language=it-IT&append_to_response=credits`;
+        const mainResp = await fetch(mainUrl);
+        const mainData = await mainResp.json();
+        
+        backdropPath = mainData.backdrop_path || '';
+        voteAverage = mainData.vote_average ? mainData.vote_average.toFixed(1) : '';
+        
+        if (mainData.genres) {
+            genresHtml = mainData.genres.map(g => `<span class="genre-tag">${g.name}</span>`).join('');
+        }
+        if (mainData.credits && mainData.credits.cast) {
+            castStr = mainData.credits.cast.slice(0, 4).map(c => c.name).join(', ');
+        }
+        
+        if (type === 'movie') {
+            title = mainData.title || ctx.title || 'Film';
+            subTitle = 'Film';
+            overview = mainData.overview || 'Trama non disponibile.';
+            releaseYear = mainData.release_date ? mainData.release_date.split('-')[0] : '';
+            runtimeStr = mainData.runtime ? `${mainData.runtime} min` : '';
+            
+            if (mainData.credits && mainData.credits.crew) {
+                const directors = mainData.credits.crew.filter(c => c.job === 'Director').map(d => d.name);
+                if (directors.length > 0) {
+                    creatorsStr = directors.join(', ');
+                }
+            }
+        } else if (type === 'tv') {
+            const seasonNum = ctx.season;
+            const episodeNum = ctx.episode;
+            
+            title = mainData.name || ctx.title || 'Serie TV';
+            subTitle = `Stagione ${seasonNum} - Episodio ${episodeNum}`;
+            releaseYear = mainData.first_air_date ? mainData.first_air_date.split('-')[0] : '';
+            
+            if (mainData.created_by && mainData.created_by.length > 0) {
+                creatorsStr = mainData.created_by.map(c => c.name).join(', ');
+            }
+            
+            // Fetch dei dati dell'episodio specifico per serie TV
+            try {
+                const epUrl = `${BASE_URL}/tv/${id}/season/${seasonNum}/episode/${episodeNum}?api_key=${API_KEY}&language=it-IT`;
+                const epResp = await fetch(epUrl);
+                if (epResp.ok) {
+                    const epData = await epResp.json();
+                    
+                    if (epData.name) {
+                        subTitle += ` • ${epData.name}`;
+                    }
+                    if (epData.overview) {
+                        overview = epData.overview;
+                    } else {
+                        overview = mainData.overview || 'Trama non disponibile.';
+                    }
+                    if (epData.still_path) {
+                        backdropPath = epData.still_path; // L'immagine dell'episodio specifico!
+                    }
+                    if (epData.runtime) {
+                        runtimeStr = `${epData.runtime} min`;
+                    }
+                } else {
+                    overview = mainData.overview || 'Trama non disponibile.';
+                }
+            } catch (epErr) {
+                console.error("Errore fetch info episodio:", epErr);
+                overview = mainData.overview || 'Trama non disponibile.';
+            }
+        }
+        
+        const backdropUrl = backdropPath ? `${IMG_BASE_URL}${backdropPath}` : '';
+        
+        // Costruiamo i tag dei metadati
+        let metaHtml = '';
+        if (voteAverage) {
+            metaHtml += `<span class="rating-badge"><i class="ph-fill ph-star"></i> ${voteAverage}</span>`;
+        }
+        if (releaseYear) {
+            metaHtml += `<span>${releaseYear}</span>`;
+        }
+        if (runtimeStr) {
+            metaHtml += `<span>${runtimeStr}</span>`;
+        }
+        metaHtml += `<span class="quality-badge">1080p FHD</span>`;
+        
+        // Costruiamo le righe dei dettagli extra
+        let extraRowsHtml = '';
+        if (genresHtml) {
+            extraRowsHtml += `
+                <div class="vod-player-info-extra-row">
+                    <div class="vod-player-info-extra-label">Generi:</div>
+                    <div class="vod-player-info-extra-value">${genresHtml}</div>
+                </div>
+            `;
+        }
+        if (castStr) {
+            extraRowsHtml += `
+                <div class="vod-player-info-extra-row">
+                    <div class="vod-player-info-extra-label">Cast:</div>
+                    <div class="vod-player-info-extra-value">${castStr}</div>
+                </div>
+            `;
+        }
+        if (creatorsStr) {
+            extraRowsHtml += `
+                <div class="vod-player-info-extra-row">
+                    <div class="vod-player-info-extra-label">${type === 'movie' ? 'Regia' : 'Creatore'}:</div>
+                    <div class="vod-player-info-extra-value">${creatorsStr}</div>
+                </div>
+            `;
+        }
+        
+        // Popola il pannello con i dati reali
+        panel.innerHTML = `
+            <div class="vod-player-info-hero">
+                ${backdropUrl ? `<img src="${backdropUrl}" alt="${title}">` : `<div style="width:100%; height:100%; background:#13151b; display:flex; align-items:center; justify-content:center; color:#555;"><i class="ph ph-video" style="font-size:3rem;"></i></div>`}
+                <div class="vod-player-info-hero-overlay"></div>
+                <button class="vod-player-info-close-btn" onclick="togglePlayerInfoPanel()" title="Chiudi"><i class="ph ph-x"></i></button>
+            </div>
+            <div class="vod-player-info-body">
+                <div class="vod-player-info-title">${title}</div>
+                <div class="vod-player-info-sub">${subTitle}</div>
+                <div class="vod-player-info-meta">${metaHtml}</div>
+                
+                <div class="vod-player-info-divider"></div>
+                
+                <div class="vod-player-info-section-title">Trama</div>
+                <div class="vod-player-info-desc">${overview}</div>
+                
+                <div class="vod-player-info-divider"></div>
+                
+                <div class="vod-player-info-extra">
+                    ${extraRowsHtml}
+                </div>
+            </div>
+        `;
+        
+    } catch (err) {
+        console.error("Errore popolamento pannello info player:", err);
+        panel.innerHTML = `
+            <div class="vod-player-info-hero">
+                <button class="vod-player-info-close-btn" onclick="togglePlayerInfoPanel()" title="Chiudi"><i class="ph ph-x"></i></button>
+            </div>
+            <div class="vod-player-info-body">
+                <div class="vod-player-info-title">${ctx.title || 'Info'}</div>
+                <div style="color: #ef4444; font-size: 0.9rem; margin-top: 1rem;">Impossibile caricare i dettagli completi in questo momento.</div>
+            </div>
+        `;
     }
 }
 
@@ -1872,8 +1873,10 @@ async function loadTvEpisodes(tvId, seasonNumber) {
                 progressTextHtml = `<span class="vod-ep-progress-text" style="font-size:0.72rem; color:var(--accent); font-weight:600; margin-top:2px;">${epProgress}% completato</span>`;
             }
 
-            // Badge "Riprendi qui" rimosso
-            const resumeBadgeHtml = '';
+            // Badge "Riprendi qui" per l'episodio corrente
+            const resumeBadgeHtml = shouldShowResumeState
+                ? `<div class="vod-ep-resume-badge"><i class="ph-fill ph-play-circle"></i> Riprendi qui</div>`
+                : '';
 
             row.innerHTML = `
                 <div class="vod-ep-thumb">
@@ -1939,7 +1942,7 @@ async function loadTvEpisodes(tvId, seasonNumber) {
             episodesList.appendChild(row);
         });
 
-        // Auto-scroll all'episodio rimosso per aprire la scheda sempre in alto a tutto.
+        // ─── EPISODIO CARICATO ───
         
     } catch(err) {
         console.error("Errore caricamento episodi", err);
@@ -2060,8 +2063,20 @@ function setEpisodeRowProgress(row, progress, isWatched) {
 }
 
 function setEpisodeRowResumeBadge(row, shouldShowResumeState) {
+    const info = row.querySelector('.vod-episode-info');
     let resumeBadge = row.querySelector('.vod-ep-resume-badge');
-    if (resumeBadge) resumeBadge.remove();
+
+    if (!shouldShowResumeState) {
+        if (resumeBadge) resumeBadge.remove();
+        return;
+    }
+
+    if (!resumeBadge && info) {
+        resumeBadge = document.createElement('div');
+        resumeBadge.className = 'vod-ep-resume-badge';
+        resumeBadge.innerHTML = '<i class="ph-fill ph-play-circle"></i> Riprendi qui';
+        info.appendChild(resumeBadge);
+    }
 }
 
 function updateEpisodeRowVisual(row, tvId, seasonNumber, episodeNumber, state) {
@@ -2380,14 +2395,10 @@ async function setEpisodeWatchStatus(tvId, seasonNumber, episodeNumber, status) 
         window.__ACTIVE_PROFILE_VOD_HISTORY__.unshift(localItem);
     }
     
-    renderContinueWatching();
-    
-    // Aggiorna i visual degli episodi già nel DOM senza ricaricare (niente scroll-to-top)
     updateVisibleEpisodeRowsFromHistory(tvId, seasonNumber);
     updateTvModalResumeButton(tvId);
-    
+    renderContinueWatching();
 
-    
     // Invia la richiesta al server per sincronizzare
     try {
         const bodyData = {
@@ -2419,10 +2430,9 @@ async function setEpisodeWatchStatus(tvId, seasonNumber, episodeNumber, status) 
         const result = await response.json();
         if (result.success) {
             window.__ACTIVE_PROFILE_VOD_HISTORY__ = result.watch_history;
-            renderContinueWatching();
-            // Aggiorna solo i visual nel DOM, senza ricostruire la lista (evita scroll-to-top)
             updateVisibleEpisodeRowsFromHistory(tvId, seasonNumber);
             updateTvModalResumeButton(tvId);
+            renderContinueWatching();
         }
     } catch (err) {
         console.error('Errore nel salvataggio dello stato di visione:', err);
@@ -2473,11 +2483,11 @@ function updateHeroFavButton(item, animate = false) {
     const isFav = isFavorite(item.id, type);
     
     if (isFav) {
-        favBtn.innerHTML = '<i class="ph-fill ph-plus-circle" style="font-size: 1.2rem;"></i>';
+        favBtn.innerHTML = '<i class="ph-fill ph-plus-circle"></i>';
         favBtn.title = 'Rimuovi dai Preferiti';
         favBtn.classList.add('is-fav');
     } else {
-        favBtn.innerHTML = '<i class="ph ph-plus-circle" style="font-size: 1.2rem;"></i>';
+        favBtn.innerHTML = '<i class="ph ph-plus-circle"></i>';
         favBtn.title = 'Aggiungi ai Preferiti';
         favBtn.classList.remove('is-fav');
     }
@@ -2499,10 +2509,10 @@ function updateModalFavButton(item, animate = false) {
     const isFav = isFavorite(item.id, type);
     
     if (isFav) {
-        favBtn.innerHTML = '<i class="ph-fill ph-plus-circle" style="font-size: 1.1rem;"></i> <span>Rimuovi dai Preferiti</span>';
+        favBtn.innerHTML = '<i class="ph-fill ph-plus-circle" style="font-size: 1.1rem;"></i> <span>In Libreria</span>';
         favBtn.classList.add('is-fav');
     } else {
-        favBtn.innerHTML = '<i class="ph ph-plus-circle" style="font-size: 1.1rem;"></i> <span>Aggiungi ai Preferiti</span>';
+        favBtn.innerHTML = '<i class="ph ph-plus-circle" style="font-size: 1.1rem;"></i> <span>La mia Lista</span>';
         favBtn.classList.remove('is-fav');
     }
     
@@ -2772,9 +2782,22 @@ async function loadNextCatalogPage() {
     isLoadingCatalog = true;
     
     const indicator = document.getElementById('vod-catalog-loading-indicator');
-    if (indicator) indicator.style.display = 'block';
-    
     const grid = document.getElementById('vod-catalog-grid');
+
+    if (grid) {
+        if (catalogPage === 1 && grid.children.length === 0) {
+            appendSkeletonCards(grid, 18, 'portrait', true);
+        } else if (catalogPage > 1) {
+            for (let i = 0; i < 6; i++) {
+                const sk = createSkeletonCard('portrait');
+                sk.style.width = '100%';
+                sk.dataset.catalogSkeleton = '1';
+                grid.appendChild(sk);
+            }
+        }
+    }
+
+    if (indicator && catalogPage > 1) indicator.style.display = 'block';
     
     const filterType = document.getElementById('filter-type').value;
     const filterGenre = document.getElementById('filter-genre').value;
@@ -2853,6 +2876,9 @@ async function loadNextCatalogPage() {
                 grid.innerHTML = '<div class="vod-empty">Nessun contenuto corrisponde ai filtri selezionati.</div>';
             }
         } else {
+            if (catalogPage === 1) {
+                grid.innerHTML = '';
+            }
             results.forEach(item => {
                 const title = item.title || item.name;
                 const poster = item.poster_path ? `${IMG_BASE_URL}${item.poster_path}` : 'https://via.placeholder.com/500x750?text=No+Img';
@@ -2868,8 +2894,14 @@ async function loadNextCatalogPage() {
         }
     } catch (err) {
         console.error("Errore nel caricamento della pagina del catalogo", err);
+        if (catalogPage === 1 && grid) {
+            grid.querySelectorAll('.vod-card-skeleton').forEach(el => el.remove());
+        }
     } finally {
         isLoadingCatalog = false;
+        if (grid) {
+            grid.querySelectorAll('[data-catalog-skeleton]').forEach(el => el.remove());
+        }
         if (indicator) indicator.style.display = 'none';
     }
 }
@@ -3089,7 +3121,7 @@ window.addEventListener('message', (event) => {
             
         case 'ended':
             if (window.__PLAYBACK_CONTEXT__.type === 'tv') {
-                showNextEpisodeCountdown();
+                handleEpisodeEnded();
             } else {
                 saveProgressToServer(0, 100, true);
             }
@@ -3126,171 +3158,6 @@ window.addEventListener('message', (event) => {
                     saveProgressToServer(seconds, cappedProgress);
                 }
             }
-            break;
-    }
-});
-
-// ==========================================
-// AUTOPLAY NEXT EPISODE COUNTDOWN
-// ==========================================
-let nextEpCountdownTimer = null;
-let nextEpCountdownValue = 10;
-
-function showNextEpisodeCountdown() {
-    const ctx = window.__PLAYBACK_CONTEXT__;
-    if (!ctx || ctx.type !== 'tv') {
-        handleEpisodeEnded();
-        return;
-    }
-    
-    // Crea overlay countdown se non esiste
-    let overlay = document.getElementById('vod-next-ep-overlay');
-    if (!overlay) {
-        overlay = document.createElement('div');
-        overlay.id = 'vod-next-ep-overlay';
-        overlay.innerHTML = `
-            <div class="vod-next-ep-content">
-                <div class="vod-next-ep-title">Prossimo episodio tra <span id="vod-next-ep-seconds">10</span>s</div>
-                <div class="vod-next-ep-info" id="vod-next-ep-info"></div>
-                <div class="vod-next-ep-actions">
-                    <button class="vod-next-ep-play" id="vod-next-ep-play-now">
-                        <i class="ph-fill ph-play"></i> Riproduci Ora
-                    </button>
-                    <button class="vod-next-ep-cancel" id="vod-next-ep-cancel">
-                        <i class="ph ph-x"></i> Annulla
-                    </button>
-                </div>
-            </div>
-        `;
-        document.body.appendChild(overlay);
-    }
-    
-    // Info episodio
-    const nextEp = ctx.episode ? parseInt(ctx.episode) + 1 : 2;
-    const infoEl = document.getElementById('vod-next-ep-info');
-    if (infoEl) {
-        infoEl.textContent = `S${ctx.season || 1}:E${nextEp} - ${ctx.title || ''}`;
-    }
-    
-    overlay.style.display = 'flex';
-    nextEpCountdownValue = 10;
-    document.getElementById('vod-next-ep-seconds').textContent = nextEpCountdownValue;
-    
-    // Countdown timer
-    clearInterval(nextEpCountdownTimer);
-    nextEpCountdownTimer = setInterval(() => {
-        nextEpCountdownValue--;
-        const secEl = document.getElementById('vod-next-ep-seconds');
-        if (secEl) secEl.textContent = nextEpCountdownValue;
-        
-        if (nextEpCountdownValue <= 0) {
-            clearInterval(nextEpCountdownTimer);
-            hideNextEpisodeCountdown();
-            handleEpisodeEnded();
-        }
-    }, 1000);
-    
-    // Pulsante "Riproduci Ora"
-    document.getElementById('vod-next-ep-play-now').onclick = () => {
-        clearInterval(nextEpCountdownTimer);
-        hideNextEpisodeCountdown();
-        handleEpisodeEnded();
-    };
-    
-    // Pulsante "Annulla"
-    document.getElementById('vod-next-ep-cancel').onclick = () => {
-        clearInterval(nextEpCountdownTimer);
-        hideNextEpisodeCountdown();
-        saveProgressToServer(0, 100, true);
-    };
-}
-
-function hideNextEpisodeCountdown() {
-    const overlay = document.getElementById('vod-next-ep-overlay');
-    if (overlay) overlay.style.display = 'none';
-}
-
-// ==========================================
-// KEYBOARD SHORTCUTS (Player)
-// ==========================================
-document.addEventListener('keydown', (e) => {
-    const playerOverlay = document.getElementById('vod-player-overlay');
-    if (!playerOverlay || playerOverlay.style.display === 'none') return;
-    
-    const iframe = document.getElementById('vod-player-iframe');
-    if (!iframe) return;
-    
-    // Non catturare se il focus è su un input/textarea/select
-    if (['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement.tagName)) return;
-    
-    switch (e.key) {
-        case ' ':
-        case 'k':
-            e.preventDefault();
-            // Toggle play/pause tramite postMessage
-            iframe.contentWindow.postMessage({ type: 'togglePlay' }, '*');
-            break;
-            
-        case 'ArrowRight':
-            e.preventDefault();
-            // Seek +10 secondi
-            iframe.contentWindow.postMessage({ type: 'seek', value: 10 }, '*');
-            break;
-            
-        case 'ArrowLeft':
-            e.preventDefault();
-            // Seek -10 secondi
-            iframe.contentWindow.postMessage({ type: 'seek', value: -10 }, '*');
-            break;
-            
-        case 'ArrowUp':
-            e.preventDefault();
-            // Volume +10%
-            iframe.contentWindow.postMessage({ type: 'volume', value: 0.1 }, '*');
-            break;
-            
-        case 'ArrowDown':
-            e.preventDefault();
-            // Volume -10%
-            iframe.contentWindow.postMessage({ type: 'volume', value: -0.1 }, '*');
-            break;
-            
-        case 'f':
-        case 'F':
-            e.preventDefault();
-            // Fullscreen toggle + mostra controlli (stessa funzione del tasto in basso a destra)
-            togglePlayerFullscreen();
-            break;
-            
-        case 'Escape':
-            e.preventDefault();
-            if (document.fullscreenElement) {
-                document.exitFullscreen();
-            } else {
-                closeVodPlayer();
-            }
-            break;
-            
-        case 'm':
-        case 'M':
-            e.preventDefault();
-            // Mute toggle
-            iframe.contentWindow.postMessage({ type: 'toggleMute' }, '*');
-            break;
-            
-        case 'n':
-        case 'N':
-            // Next episode (solo per serie TV)
-            if (window.__PLAYBACK_CONTEXT__ && window.__PLAYBACK_CONTEXT__.type === 'tv') {
-                e.preventDefault();
-                handleEpisodeEnded();
-            }
-            break;
-            
-        case 'i':
-        case 'I':
-            e.preventDefault();
-            togglePlayerInfoPanel();
             break;
     }
 });
