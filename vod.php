@@ -910,34 +910,31 @@ if (!isset($_SESSION['active_profile'])) {
     }
     .vod-hero-btn.fav-round::after { display: none; }
 
-    /* ── ANIMAZIONE POP + ROTATE + GLOW al toggle preferito ── */
+    /* ── ANIMAZIONE ELEGANTE E COERENTE AL TOGGLE PREFERITO ── */
     @keyframes fav-pop-active {
-      0% { transform: scale(1) rotate(0deg); }
-      30% { transform: scale(1.4) rotate(90deg); }
-      50% { transform: scale(0.8) rotate(100deg); }
-      70% { transform: scale(1.15) rotate(85deg); }
-      100% { transform: scale(1) rotate(90deg); }
+      0% { transform: scale(1); }
+      50% { transform: scale(1.18); }
+      100% { transform: scale(1); }
     }
     @keyframes fav-pop-inactive {
-      0% { transform: scale(1) rotate(90deg); }
-      30% { transform: scale(1.3) rotate(0deg); }
-      50% { transform: scale(0.8) rotate(-10deg); }
-      100% { transform: scale(1) rotate(0deg); }
+      0% { transform: scale(1); }
+      50% { transform: scale(0.88); }
+      100% { transform: scale(1); }
     }
     .fav-pop-active i {
       display: inline-block;
-      animation: fav-pop-active 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+      animation: fav-pop-active 0.3s cubic-bezier(0.25, 1, 0.5, 1) forwards;
     }
     .fav-pop-inactive i {
       display: inline-block;
-      animation: fav-pop-inactive 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+      animation: fav-pop-inactive 0.3s cubic-bezier(0.25, 1, 0.5, 1) forwards;
     }
     @keyframes fav-ring-pulse {
-      0% { box-shadow: 0 0 0 0 rgba(0, 242, 254, 0.8); }
-      100% { box-shadow: 0 0 0 16px rgba(0, 242, 254, 0); }
+      0% { box-shadow: 0 0 0 0 rgba(0, 242, 254, 0.55); }
+      100% { box-shadow: 0 0 0 8px rgba(0, 242, 254, 0); }
     }
     .fav-pulse-ring {
-      animation: fav-ring-pulse 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      animation: fav-ring-pulse 0.35s cubic-bezier(0.25, 1, 0.5, 1) forwards;
     }
 
     /* ── BOTTONI MODAL ── */
