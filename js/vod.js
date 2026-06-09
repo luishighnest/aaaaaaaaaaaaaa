@@ -134,7 +134,7 @@ function populateCard(card, item, type, title, poster) {
             <div class="vod-card-actions">
                 <button class="vod-card-btn play" title="Guarda ora"><i class="ph-fill ph-play"></i></button>
                 <button class="vod-card-btn info" title="Dettagli"><i class="ph ph-info"></i></button>
-                <button class="vod-card-btn ${favClass}" data-id="${item.id}" data-type="${type}" title="Preferiti"><i class="${favIcon}"></i> <span>${favLabel}</span></button>
+                <button class="vod-card-btn ${favClass}" data-id="${item.id}" data-type="${type}" title="Preferiti"><i class="${favIcon}"></i></button>
             </div>
         </div>
     `;
@@ -1056,7 +1056,7 @@ function renderContinueWatching() {
                 <div class="vod-card-actions">
                     <button class="vod-card-btn play" title="Guarda ora"><i class="ph-fill ph-play"></i></button>
                     <button class="vod-card-btn info" title="Dettagli"><i class="ph ph-info"></i></button>
-                    <button class="vod-card-btn ${favClass2}" data-id="${item.id}" data-type="${type}" title="Preferiti"><i class="${favIcon}"></i> <span>${isFav ? 'In Libreria' : 'Lista'}</span></button>
+                    <button class="vod-card-btn ${favClass2}" data-id="${item.id}" data-type="${type}" title="Preferiti"><i class="${favIcon}"></i></button>
                 </div>
             </div>
         `;
@@ -2272,11 +2272,11 @@ function updateHeroFavButton(item, animate = false) {
     const isFav = isFavorite(item.id, type);
     
     if (isFav) {
-        favBtn.innerHTML = '<i class="ph-fill ph-plus-circle" style="font-size: 1.25rem;"></i> <span>In Libreria</span>';
+        favBtn.innerHTML = '<i class="ph-fill ph-plus-circle"></i>';
         favBtn.title = 'Rimuovi dai Preferiti';
         favBtn.classList.add('is-fav');
     } else {
-        favBtn.innerHTML = '<i class="ph ph-plus-circle" style="font-size: 1.25rem;"></i> <span>La mia Lista</span>';
+        favBtn.innerHTML = '<i class="ph ph-plus-circle"></i>';
         favBtn.title = 'Aggiungi ai Preferiti';
         favBtn.classList.remove('is-fav');
     }
@@ -2326,8 +2326,6 @@ function updateFavoriteButtonsState(id, type, animate = false) {
     document.querySelectorAll(`.vod-card-btn.fav[data-id="${id}"][data-type="${type}"]`).forEach(btn => {
         const icon = btn.querySelector('i');
         if (icon) icon.className = isFav ? 'ph-fill ph-plus-circle' : 'ph ph-plus-circle';
-        const label = btn.querySelector('span');
-        if (label) label.textContent = isFav ? 'In Libreria' : 'Lista';
         
         if (isFav) btn.classList.add('is-fav');
         else btn.classList.remove('is-fav');
