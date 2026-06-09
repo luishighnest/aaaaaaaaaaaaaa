@@ -1880,8 +1880,7 @@ if (!isset($_SESSION['active_profile'])) {
     .vod-player-close,
     .vod-player-fullscreen,
     .vod-player-next-ep,
-    .vod-player-info-btn,
-    .vod-player-playlist-btn {
+    .vod-player-info-btn {
       position: absolute;
       background: rgba(255, 255, 255, 0.05);
       border: 1px solid rgba(255, 255, 255, 0.1);
@@ -1946,19 +1945,6 @@ if (!isset($_SESSION['active_profile'])) {
     .vod-player-info-btn:active {
       transform: translateY(0);
     }
-    .vod-player-playlist-btn {
-      top: 20px;
-      left: 74px;
-    }
-    .vod-player-playlist-btn:hover {
-      background: var(--accent);
-      border-color: var(--accent);
-      box-shadow: 0 4px 20px var(--accent-glow);
-      transform: translateY(-2px);
-    }
-    .vod-player-playlist-btn:active {
-      transform: translateY(0);
-    }
     .vod-player-next-ep:hover {
       background: var(--accent);
       border-color: var(--accent);
@@ -2002,7 +1988,6 @@ if (!isset($_SESSION['active_profile'])) {
     .vod-player-overlay.controls-hidden .vod-player-fullscreen,
     .vod-player-overlay.controls-hidden .vod-player-next-ep,
     .vod-player-overlay.controls-hidden .vod-player-info-btn,
-    .vod-player-overlay.controls-hidden .vod-player-playlist-btn,
     .vod-player-overlay.controls-hidden .vod-player-title-header {
       opacity: 0;
       pointer-events: none;
@@ -2857,213 +2842,7 @@ if (!isset($_SESSION['active_profile'])) {
       border-radius: 4px;
       color: rgba(255,255,255,0.8);
     }
-
-    /* ── PLAYLIST PANEL (Stagioni & Episodi nel player) ── */
-    #vod-player-playlist-panel {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      width: 420px;
-      max-width: 100%;
-      height: 100%;
-      background: rgba(8, 10, 16, 0.88);
-      border-right: 1px solid rgba(255, 255, 255, 0.08);
-      padding: 0;
-      z-index: 10005;
-      backdrop-filter: blur(30px) saturate(170%);
-      -webkit-backdrop-filter: blur(30px) saturate(170%);
-      box-shadow: 10px 0 45px rgba(0,0,0,0.85);
-      transform: translateX(-100%);
-      transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease;
-      opacity: 0;
-      pointer-events: none;
-    }
-    #vod-player-playlist-panel.open {
-      transform: translateX(0);
-      opacity: 1;
-      pointer-events: auto;
-    }
-    .vod-player-playlist-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 22px 20px 16px 24px;
-      border-bottom: 1px solid rgba(255,255,255,0.07);
-      flex-shrink: 0;
-    }
-    .vod-player-playlist-title {
-      font-size: 1.1rem;
-      font-weight: 800;
-      color: #fff;
-      letter-spacing: -0.3px;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      max-width: 300px;
-    }
-    .vod-player-playlist-season-tabs {
-      display: flex;
-      gap: 8px;
-      padding: 14px 20px;
-      overflow-x: auto;
-      flex-shrink: 0;
-      scrollbar-width: none;
-      border-bottom: 1px solid rgba(255,255,255,0.05);
-    }
-    .vod-player-playlist-season-tabs::-webkit-scrollbar { display: none; }
-    .vod-playlist-season-tab {
-      flex-shrink: 0;
-      padding: 6px 16px;
-      border-radius: 20px;
-      border: 1px solid rgba(255,255,255,0.12);
-      background: rgba(255,255,255,0.05);
-      color: rgba(255,255,255,0.6);
-      font-size: 0.78rem;
-      font-weight: 700;
-      letter-spacing: 0.5px;
-      cursor: pointer;
-      transition: all 0.25s ease;
-      text-transform: uppercase;
-    }
-    .vod-playlist-season-tab:hover {
-      background: rgba(255,255,255,0.1);
-      color: #fff;
-    }
-    .vod-playlist-season-tab.active {
-      background: linear-gradient(135deg, var(--accent) 0%, #4facfe 100%);
-      border-color: var(--accent);
-      color: #000;
-      font-weight: 900;
-      box-shadow: 0 4px 15px var(--accent-glow);
-    }
-    .vod-player-playlist-episodes {
-      flex: 1;
-      overflow-y: auto;
-      padding: 8px 0;
-    }
-    .vod-player-playlist-episodes::-webkit-scrollbar { width: 4px; }
-    .vod-player-playlist-episodes::-webkit-scrollbar-thumb {
-      background: rgba(255,255,255,0.12);
-      border-radius: 4px;
-    }
-    .vod-playlist-episode {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      padding: 12px 20px;
-      cursor: pointer;
-      transition: background 0.18s ease;
-      border-bottom: 1px solid rgba(255,255,255,0.03);
-      position: relative;
-    }
-    .vod-playlist-episode:hover {
-      background: rgba(255,255,255,0.06);
-    }
-    .vod-playlist-episode.active {
-      background: rgba(0, 242, 254, 0.06);
-    }
-    .vod-playlist-episode.active::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      width: 3px;
-      background: var(--accent);
-      border-radius: 0 3px 3px 0;
-    }
-    .vod-playlist-ep-number {
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.1);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.78rem;
-      font-weight: 800;
-      color: rgba(255,255,255,0.5);
-      flex-shrink: 0;
-    }
-    .vod-playlist-episode.active .vod-playlist-ep-number {
-      background: rgba(0, 242, 254, 0.12);
-      border-color: var(--accent);
-      color: var(--accent);
-    }
-    .vod-playlist-ep-info {
-      flex: 1;
-      min-width: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 3px;
-    }
-    .vod-playlist-ep-title {
-      font-size: 0.88rem;
-      font-weight: 700;
-      color: rgba(255,255,255,0.88);
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-    .vod-playlist-episode.active .vod-playlist-ep-title {
-      color: #fff;
-    }
-    .vod-playlist-ep-date {
-      font-size: 0.72rem;
-      color: rgba(255,255,255,0.35);
-      font-weight: 600;
-    }
-    .vod-playlist-ep-progress {
-      height: 3px;
-      background: rgba(255,255,255,0.08);
-      border-radius: 3px;
-      margin-top: 4px;
-      overflow: hidden;
-    }
-    .vod-playlist-ep-progress-bar {
-      height: 100%;
-      background: var(--accent);
-      border-radius: 3px;
-    }
-    .vod-playlist-ep-playing {
-      font-size: 1.1rem;
-      color: var(--accent);
-      flex-shrink: 0;
-      animation: playlist-pulse 1.8s ease-in-out infinite;
-    }
-    @keyframes playlist-pulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.4; }
-    }
-    .vod-player-playlist-empty {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      flex: 1;
-      gap: 14px;
-      color: rgba(255,255,255,0.35);
-      font-size: 0.9rem;
-      padding: 40px;
-      text-align: center;
-    }
-    .vod-player-playlist-empty i {
-      font-size: 2.5rem;
-      opacity: 0.4;
-    }
-    .vod-player-playlist-loading {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      padding: 40px;
-      flex: 1;
-    }
-
+    
     /* Animations */
     @keyframes shimmer {
       0% { background-position: -200% 0; }
@@ -3337,7 +3116,6 @@ if (!isset($_SESSION['active_profile'])) {
   <!-- PLAYER OVERLAY -->
   <div class="vod-player-overlay" id="vod-player-overlay">
     <button class="vod-player-close" onclick="closePlayer()" title="Torna ai dettagli" style="z-index: 99999;"><i class="ph ph-arrow-left"></i></button>
-    <button class="vod-player-playlist-btn" id="vod-player-playlist-btn" onclick="togglePlayerPlaylistPanel()" title="Stagioni ed Episodi"><i class="ph ph-playlist"></i></button>
     <button class="vod-player-fullscreen" id="vod-player-fullscreen-btn" onclick="togglePlayerFullscreen()"><i class="ph ph-corners-out"></i></button>
     <button class="vod-player-info-btn" id="vod-player-info-btn" onclick="togglePlayerInfoPanel()" title="Info"><i class="ph ph-info"></i></button>
     <button class="vod-player-next-ep" id="vod-player-next-btn" onclick="playNextEpisode()" style="display: none;"><i class="ph ph-skip-forward"></i></button>
@@ -3346,7 +3124,6 @@ if (!isset($_SESSION['active_profile'])) {
       <h2 id="vod-player-title"></h2>
       <div id="vod-player-subtitle"></div>
     </div>
-    <div id="vod-player-playlist-panel"></div>
     <div id="vod-player-info-panel">
       <div class="vod-player-info-title" id="vod-player-info-panel-title"></div>
       <div class="vod-player-info-sub" id="vod-player-info-panel-sub"></div>
