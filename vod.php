@@ -1880,6 +1880,7 @@ if (!isset($_SESSION['active_profile'])) {
     .vod-player-close,
     .vod-player-fullscreen,
     .vod-player-next-ep,
+    .vod-player-playlist-btn,
     .vod-player-info-btn {
       position: absolute;
       background: rgba(255, 255, 255, 0.05);
@@ -2000,6 +2001,7 @@ if (!isset($_SESSION['active_profile'])) {
     .vod-player-overlay.controls-hidden .vod-player-close,
     .vod-player-overlay.controls-hidden .vod-player-fullscreen,
     .vod-player-overlay.controls-hidden .vod-player-next-ep,
+    .vod-player-overlay.controls-hidden .vod-player-playlist-btn,
     .vod-player-overlay.controls-hidden .vod-player-info-btn,
     .vod-player-overlay.controls-hidden .vod-player-title-header {
       opacity: 0;
@@ -3094,42 +3096,13 @@ if (!isset($_SESSION['active_profile'])) {
         </div>
       </div>
     </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- BODY SCROLLABILE -->
-      <div class="vod-modal-info">
-        <div class="vod-modal-genres" id="vod-modal-genres" style="display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: wrap;"></div>
-        <div class="vod-modal-action-row">
-          <button class="vod-hero-btn play" id="vod-modal-play-btn" style="display: none;"><svg class="btn-play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v14l11-7-11-7z"/></svg> Guarda Ora</button>
-          <button class="vod-hero-btn" id="vod-modal-resume-btn" style="display: none;"><svg class="btn-play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v14l11-7-11-7z"/></svg> Riprendi</button>
-          <button class="vod-modal-fav-btn-new" id="vod-modal-fav-btn"><i class="ph ph-plus-circle"></i> La mia Lista</button>
-        </div>
-        <p class="vod-modal-desc" id="vod-modal-overview" style="margin-bottom: 2rem;"></p>
-
-        <!-- Sezione Serie TV: Stagioni ed Episodi -->
-        <div id="vod-modal-tv-section" style="display: none; margin-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 1.5rem;">
-          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
-            <h3 style="font-family: var(--font-main); font-size: 1.25rem; font-weight: 800; color: #fff; margin: 0; text-transform: uppercase; letter-spacing: -0.5px;">Episodi</h3>
-            <select id="vod-season-select" style="background: var(--bg-card); color: #fff; border: 1px solid rgba(255,255,255,0.1); padding: 0.5rem 1rem; border-radius: 8px;">
-              <!-- Popolato via JS -->
-            </select>
-          </div>
-          <div id="vod-episodes-list">
-            <!-- Popolato via JS -->
-          </div>
-        </div>
-      </div>
-
-    </div>
   </div>
 
   <!-- PLAYER OVERLAY -->
   <div class="vod-player-overlay" id="vod-player-overlay">
     <button class="vod-player-close" onclick="closePlayer()" title="Torna ai dettagli" style="z-index: 99999;"><i class="ph ph-arrow-left"></i></button>
     <button class="vod-player-fullscreen" id="vod-player-fullscreen-btn" onclick="togglePlayerFullscreen()"><i class="ph ph-corners-out"></i></button>
+    <button class="vod-player-playlist-btn" id="vod-player-playlist-btn" onclick="togglePlayerPlaylistPanel()" title="Playlist"><i class="ph ph-playlist"></i></button>
     <button class="vod-player-info-btn" id="vod-player-info-btn" onclick="togglePlayerInfoPanel()" title="Info"><i class="ph ph-info"></i></button>
     <button class="vod-player-next-ep" id="vod-player-next-btn" onclick="playNextEpisode()" style="display: none;"><i class="ph ph-skip-forward"></i></button>
     <div class="vod-player-mouse-tracker" id="vod-player-mouse-tracker"></div>
@@ -3143,15 +3116,15 @@ if (!isset($_SESSION['active_profile'])) {
       <div class="vod-player-info-meta" id="vod-player-info-panel-meta"></div>
       <div class="vod-player-info-desc" id="vod-player-info-panel-desc"></div>
     </div>
-    <div class="vod-player-wrapper">
-      <iframe id="vod-player-frame" src="about:blank" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    <div id="vod-player-playlist-panel">
+      <div class="vod-player-info-hero">
+        <button class="vod-player-info-close-btn" onclick="togglePlayerPlaylistPanel()" title="Chiudi"><i class="ph ph-x"></i></button>
+      </div>
+      <div class="vod-player-info-body">
+        <div class="vod-player-info-title">Playlist Episodi</div>
+        <div id="vod-player-playlist-content"></div>
+      </div>
     </div>
-  </div>
-
-  <script src="js/vod.js?v=<?= time() ?>"></script>
-</body>
-</html>
-v>
     <div class="vod-player-wrapper">
       <iframe id="vod-player-frame" src="about:blank" allow="autoplay; fullscreen" allowfullscreen></iframe>
     </div>
