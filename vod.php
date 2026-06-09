@@ -1802,11 +1802,11 @@ if (!isset($_SESSION['active_profile'])) {
     }
     .vod-player-fullscreen {
       bottom: 8px;
-      right: 40px;
-      width: 38px;
-      height: 38px;
-      font-size: 1.1rem;
-    }
+      right: 25px;
+      width: 44px;
+      height: 44px
+      font-size: 1.3rem;
+}
     .vod-player-fullscreen:hover {
       background: var(--accent);
       border-color: var(--accent);
