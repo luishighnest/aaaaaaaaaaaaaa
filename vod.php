@@ -2775,7 +2775,7 @@ if (!isset($_SESSION['active_profile'])) {
           <div class="vod-hero-buttons">
             <button class="vod-hero-btn play" id="vod-hero-play-btn"><i class="ph-fill ph-play"></i> Guarda Ora</button>
             <button class="vod-hero-btn info" id="vod-hero-info-btn"><i class="ph ph-info"></i> Dettagli</button>
-            <button class="vod-hero-btn fav-round" id="vod-hero-fav-btn" title="Aggiungi ai Preferiti"><i class="ph ph-plus-circle"></i> La mia Lista</button>
+            <button class="vod-hero-btn fav-round" id="vod-hero-fav-btn" title="Aggiungi ai Preferiti"><i class="ph ph-plus-circle"></i></button>
           </div>
         </div>
       </div>
