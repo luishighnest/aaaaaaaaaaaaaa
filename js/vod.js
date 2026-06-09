@@ -127,7 +127,7 @@ async function fetchTMDB(endpoint) {
 
 function populateCard(card, item, type, title, poster) {
     const isFav = isFavorite(item.id, type);
-    const favIcon = isFav ? 'ph-fill ph-heart' : 'ph ph-heart';
+    const favIcon = isFav ? 'ph-fill ph-plus-circle' : 'ph ph-plus-circle';
     
     // Cerca progresso nella cronologia per questo specifico contenuto
     const historyItem = (window.__ACTIVE_PROFILE_VOD_HISTORY__ || []).find(
@@ -1151,7 +1151,7 @@ function renderContinueWatching() {
         const progress = item.progress || 0;
         
         const isFav = isFavorite(item.id, type);
-        const favIcon = isFav ? 'ph-fill ph-heart' : 'ph ph-heart';
+        const favIcon = isFav ? 'ph-fill ph-plus-circle' : 'ph ph-plus-circle';
         
         const itemObj = {
             id: item.id,
@@ -2465,10 +2465,10 @@ function updateHeroFavButton(item) {
     const isFav = isFavorite(item.id, type);
     
     if (isFav) {
-        favBtn.innerHTML = '<i class="ph-fill ph-heart" style="font-size: 1.2rem; color: var(--danger);"></i>';
+        favBtn.innerHTML = '<i class="ph-fill ph-plus-circle" style="font-size: 1.2rem;"></i>';
         favBtn.title = 'Rimuovi dai Preferiti';
     } else {
-        favBtn.innerHTML = '<i class="ph ph-heart" style="font-size: 1.2rem; color: var(--danger);"></i>';
+        favBtn.innerHTML = '<i class="ph ph-plus-circle" style="font-size: 1.2rem;"></i>';
         favBtn.title = 'Aggiungi ai Preferiti';
     }
     
@@ -2485,9 +2485,9 @@ function updateModalFavButton(item) {
     const isFav = isFavorite(item.id, type);
     
     if (isFav) {
-        favBtn.innerHTML = '<i class="ph-fill ph-heart" style="font-size: 1.1rem; color: var(--danger);"></i> <span>Rimuovi dai Preferiti</span>';
+        favBtn.innerHTML = '<i class="ph-fill ph-plus-circle" style="font-size: 1.1rem;"></i> <span>Rimuovi dai Preferiti</span>';
     } else {
-        favBtn.innerHTML = '<i class="ph ph-heart" style="font-size: 1.1rem; color: var(--danger);"></i> <span>Aggiungi ai Preferiti</span>';
+        favBtn.innerHTML = '<i class="ph ph-plus-circle" style="font-size: 1.1rem;"></i> <span>Aggiungi ai Preferiti</span>';
     }
     
     favBtn.onclick = (e) => {
@@ -2505,7 +2505,7 @@ function updateFavoriteButtonsState(id, type) {
     }
     const isFav = isFavorite(id, type);
     document.querySelectorAll(`.vod-card-btn.fav[data-id="${id}"][data-type="${type}"] i`).forEach(icon => {
-        icon.className = isFav ? 'ph-fill ph-heart' : 'ph ph-heart';
+        icon.className = isFav ? 'ph-fill ph-plus-circle' : 'ph ph-plus-circle';
     });
 }
 
