@@ -1927,6 +1927,19 @@ if (!isset($_SESSION['active_profile'])) {
     .vod-player-fullscreen:active {
       transform: translateY(0);
     }
+    .vod-player-playlist-btn {
+      top: 20px;
+      right: 128px;
+    }
+    .vod-player-playlist-btn:hover {
+      background: var(--accent);
+      border-color: var(--accent);
+      box-shadow: 0 4px 20px var(--accent-glow);
+      transform: translateY(-2px);
+    }
+    .vod-player-playlist-btn:active {
+      transform: translateY(0);
+    }
     .vod-player-next-ep {
       top: 20px;
       right: 20px;
@@ -2661,7 +2674,7 @@ if (!isset($_SESSION['active_profile'])) {
       background: rgba(255,255,255,0.12);
     }
     /* Player Info Panel Redesign (Premium Glassmorphic Sidebar) */
-    #vod-player-info-panel {
+    #vod-player-info-panel, #vod-player-playlist-panel {
       display: flex;
       flex-direction: column;
       position: absolute;
@@ -2683,7 +2696,7 @@ if (!isset($_SESSION['active_profile'])) {
       opacity: 0;
       pointer-events: none;
     }
-    #vod-player-info-panel.open {
+    #vod-player-info-panel.open, #vod-player-playlist-panel.open {
       transform: translateX(0);
       opacity: 1;
       pointer-events: auto;
@@ -3130,6 +3143,15 @@ if (!isset($_SESSION['active_profile'])) {
       <div class="vod-player-info-meta" id="vod-player-info-panel-meta"></div>
       <div class="vod-player-info-desc" id="vod-player-info-panel-desc"></div>
     </div>
+    <div class="vod-player-wrapper">
+      <iframe id="vod-player-frame" src="about:blank" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <script src="js/vod.js?v=<?= time() ?>"></script>
+</body>
+</html>
+v>
     <div class="vod-player-wrapper">
       <iframe id="vod-player-frame" src="about:blank" allow="autoplay; fullscreen" allowfullscreen></iframe>
     </div>
