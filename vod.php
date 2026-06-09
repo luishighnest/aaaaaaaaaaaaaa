@@ -905,19 +905,16 @@ if (!isset($_SESSION['active_profile'])) {
       transform: translateY(-2px);
     }
 
-    /* FAV HERO – bottone rettangolare coerente con il modal (hero) */
+    /* FAV HERO – cerchio coerente con la grafica del modal (hero) */
     .vod-hero-btn.fav-round {
+      width: 52px;
+      height: 52px;
+      padding: 0;
+      border-radius: 50%;
       display: inline-flex;
       align-items: center;
-      gap: 10px;
-      height: 52px;
-      padding: 0 2rem;
-      border-radius: 8px;
+      justify-content: center;
       font-size: 1rem;
-      font-weight: 800;
-      font-family: 'Netflix Sans', 'Inter', 'Helvetica Neue', sans-serif;
-      letter-spacing: 0.01em;
-      text-transform: none;
       cursor: pointer;
       border: 1.5px solid rgba(255,255,255,0.22);
       background: rgba(255,255,255,0.12);
@@ -926,7 +923,6 @@ if (!isset($_SESSION['active_profile'])) {
       -webkit-backdrop-filter: blur(16px);
       box-shadow: 0 4px 20px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.15);
       transition: background 0.18s ease, border-color 0.18s ease, transform 0.15s ease, box-shadow 0.18s ease;
-      white-space: nowrap;
       position: relative;
       overflow: hidden;
     }
@@ -938,10 +934,11 @@ if (!isset($_SESSION['active_profile'])) {
       transform: translateX(-100%);
       transition: transform 0.55s cubic-bezier(0.16, 1, 0.3, 1);
       pointer-events: none;
+      border-radius: 50%;
     }
     .vod-hero-btn.fav-round:hover::after { transform: translateX(100%); }
     .vod-hero-btn.fav-round i {
-      font-size: 1.25rem;
+      font-size: 1.35rem;
       transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), color 0.25s;
     }
     .vod-hero-btn.fav-round:hover {
@@ -1124,29 +1121,26 @@ if (!isset($_SESSION['active_profile'])) {
     .vod-card-btn.info i { transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1); }
     .vod-card-btn.info:hover i { transform: rotate(15deg) scale(1.1); }
 
-    /* ─ FAV: rettangolare coerente con il modal ─ */
+    /* ─ FAV: cerchio coerente con la grafica del modal ─ */
     .vod-card-btn.fav {
-      width: auto;
-      height: 28px;
-      border-radius: 6px;
-      padding: 0 10px;
-      gap: 5px;
-      font-size: 0.65rem;
-      font-weight: 800;
-      font-family: 'Netflix Sans', 'Inter', 'Helvetica Neue', sans-serif;
-      letter-spacing: 0.01em;
-      white-space: nowrap;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      padding: 0;
+      font-size: 1.05rem;
+      font-weight: 900;
       background: rgba(8, 10, 20, 0.55);
-      border: 1.5px solid rgba(255,255,255,0.2);
+      border: 1.5px solid rgba(255,255,255,0.22);
       color: #fff;
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.1);
       position: relative;
       overflow: hidden;
       transition: background 0.18s ease, border-color 0.18s ease, transform 0.15s ease, box-shadow 0.18s ease;
     }
     .vod-card-btn.fav i {
-      font-size: 0.8rem;
+      font-size: 1.05rem;
       transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), color 0.25s;
     }
     .vod-card-btn.fav::after {
@@ -1157,15 +1151,16 @@ if (!isset($_SESSION['active_profile'])) {
       transform: translateX(-100%);
       transition: transform 0.55s cubic-bezier(0.16, 1, 0.3, 1);
       pointer-events: none;
+      border-radius: 50%;
     }
     .vod-card-btn.fav:hover::after { transform: translateX(100%); }
     .vod-card-btn.fav:hover {
-      background: rgba(255,255,255,0.18);
+      background: rgba(255,255,255,0.2);
       border-color: rgba(255,255,255,0.38);
       box-shadow: 0 4px 16px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.15);
-      transform: scale(1.05) translateY(-1px);
+      transform: scale(1.12) translateY(-2px);
     }
-    .vod-card-btn.fav:active { transform: scale(0.94) !important; }
+    .vod-card-btn.fav:active { transform: scale(0.9) !important; }
     .vod-card-btn.fav.is-fav {
       background: rgba(255,255,255,0.92);
       border-color: rgba(255,255,255,0.92);
@@ -1182,7 +1177,7 @@ if (!isset($_SESSION['active_profile'])) {
       border-color: #e8e8e8;
       color: #111;
       box-shadow: 0 4px 18px rgba(0,0,0,0.35);
-      transform: scale(1.05) translateY(-1px);
+      transform: scale(1.12) translateY(-2px);
     }
 
     /* Stile Righe Netflix */
