@@ -128,6 +128,7 @@ async function fetchTMDB(endpoint) {
 function populateCard(card, item, type, title, poster) {
     const isFav = isFavorite(item.id, type);
     const favIcon = isFav ? 'ph-fill ph-plus-circle' : 'ph ph-plus-circle';
+    const favClass = isFav ? 'fav is-fav' : 'fav';
     
     // Cerca progresso nella cronologia per questo specifico contenuto
     const historyItem = (window.__ACTIVE_PROFILE_VOD_HISTORY__ || []).find(
@@ -158,7 +159,7 @@ function populateCard(card, item, type, title, poster) {
             <div class="vod-card-actions">
                 <button class="vod-card-btn play" title="Guarda ora"><i class="ph-fill ph-play"></i></button>
                 <button class="vod-card-btn info" title="Dettagli"><i class="ph ph-info"></i></button>
-                <button class="vod-card-btn fav" data-id="${item.id}" data-type="${type}" title="Preferiti"><i class="${favIcon}"></i></button>
+                <button class="vod-card-btn ${favClass}" data-id="${item.id}" data-type="${type}" title="Preferiti"><i class="${favIcon}"></i></button>
             </div>
         </div>
     `;
@@ -1152,6 +1153,7 @@ function renderContinueWatching() {
         
         const isFav = isFavorite(item.id, type);
         const favIcon = isFav ? 'ph-fill ph-plus-circle' : 'ph ph-plus-circle';
+        const favClass = isFav ? 'fav is-fav' : 'fav';
         
         const itemObj = {
             id: item.id,
@@ -1173,7 +1175,7 @@ function renderContinueWatching() {
                 <div class="vod-card-actions">
                     <button class="vod-card-btn play" title="Guarda ora"><i class="ph-fill ph-play"></i></button>
                     <button class="vod-card-btn info" title="Dettagli"><i class="ph ph-info"></i></button>
-                    <button class="vod-card-btn fav" data-id="${item.id}" data-type="${type}" title="Preferiti"><i class="${favIcon}"></i></button>
+                    <button class="vod-card-btn ${favClass}" data-id="${item.id}" data-type="${type}" title="Preferiti"><i class="${favIcon}"></i></button>
                 </div>
             </div>
         `;
@@ -2458,7 +2460,28 @@ function isFavorite(id, type) {
     return favs.some(fav => intval(fav.id) === intval(id) && fav.type === type);
 }
 
-function updateHeroFavButton(item) {
+function triggerFavAnimation(btn, isFav) {
+    if (!btn) return;
+    
+    // Rimuovi classi animazione per resettare il trigger
+    btn.classList.remove('fav-pop-active', 'fav-pop-inactive', 'fav-pulse-ring');
+    void btn.offsetWidth; // Reflow
+    
+    // Applica le classi dell'animazione
+    if (isFav) {
+        btn.classList.add('fav-pop-active');
+        btn.classList.add('fav-pulse-ring');
+    } else {
+        btn.classList.add('fav-pop-inactive');
+    }
+    
+    // Pulizia dopo il completamento
+    btn.addEventListener('animationend', () => {
+        btn.classList.remove('fav-pop-active', 'fav-pop-inactive', 'fav-pulse-ring');
+    }, { once: true });
+}
+
+function updateHeroFavButton(item, animate = false) {
     const favBtn = document.getElementById('vod-hero-fav-btn');
     if (!favBtn) return;
     const type = item.media_type || (item.title ? 'movie' : 'tv');
@@ -2467,9 +2490,15 @@ function updateHeroFavButton(item) {
     if (isFav) {
         favBtn.innerHTML = '<i class="ph-fill ph-plus-circle" style="font-size: 1.2rem;"></i>';
         favBtn.title = 'Rimuovi dai Preferiti';
+        favBtn.classList.add('is-fav');
     } else {
         favBtn.innerHTML = '<i class="ph ph-plus-circle" style="font-size: 1.2rem;"></i>';
         favBtn.title = 'Aggiungi ai Preferiti';
+        favBtn.classList.remove('is-fav');
+    }
+    
+    if (animate) {
+        triggerFavAnimation(favBtn, isFav);
     }
     
     favBtn.onclick = (e) => {
@@ -2478,7 +2507,7 @@ function updateHeroFavButton(item) {
     };
 }
 
-function updateModalFavButton(item) {
+function updateModalFavButton(item, animate = false) {
     const favBtn = document.getElementById('vod-modal-fav-btn');
     if (!favBtn) return;
     const type = item.media_type || (item.title ? 'movie' : 'tv');
@@ -2486,8 +2515,14 @@ function updateModalFavButton(item) {
     
     if (isFav) {
         favBtn.innerHTML = '<i class="ph-fill ph-plus-circle" style="font-size: 1.1rem;"></i> <span>Rimuovi dai Preferiti</span>';
+        favBtn.classList.add('is-fav');
     } else {
         favBtn.innerHTML = '<i class="ph ph-plus-circle" style="font-size: 1.1rem;"></i> <span>Aggiungi ai Preferiti</span>';
+        favBtn.classList.remove('is-fav');
+    }
+    
+    if (animate) {
+        triggerFavAnimation(favBtn, isFav);
     }
     
     favBtn.onclick = (e) => {
@@ -2496,16 +2531,24 @@ function updateModalFavButton(item) {
     };
 }
 
-function updateFavoriteButtonsState(id, type) {
+function updateFavoriteButtonsState(id, type, animate = false) {
     if (window.__CURRENT_MODAL_ITEM__ && intval(window.__CURRENT_MODAL_ITEM__.id) === intval(id)) {
-        updateModalFavButton(window.__CURRENT_MODAL_ITEM__);
+        updateModalFavButton(window.__CURRENT_MODAL_ITEM__, animate);
     }
     if (window.__CURRENT_HERO_ITEM__ && intval(window.__CURRENT_HERO_ITEM__.id) === intval(id)) {
-        updateHeroFavButton(window.__CURRENT_HERO_ITEM__);
+        updateHeroFavButton(window.__CURRENT_HERO_ITEM__, animate);
     }
     const isFav = isFavorite(id, type);
-    document.querySelectorAll(`.vod-card-btn.fav[data-id="${id}"][data-type="${type}"] i`).forEach(icon => {
-        icon.className = isFav ? 'ph-fill ph-plus-circle' : 'ph ph-plus-circle';
+    document.querySelectorAll(`.vod-card-btn.fav[data-id="${id}"][data-type="${type}"]`).forEach(btn => {
+        const icon = btn.querySelector('i');
+        if (icon) icon.className = isFav ? 'ph-fill ph-plus-circle' : 'ph ph-plus-circle';
+        
+        if (isFav) btn.classList.add('is-fav');
+        else btn.classList.remove('is-fav');
+        
+        if (animate) {
+            triggerFavAnimation(btn, isFav);
+        }
     });
 }
 
@@ -2543,7 +2586,7 @@ async function toggleVodFavorite(item) {
         console.log('Server response:', result);
         if (result.success) {
             window.__ACTIVE_PROFILE_VOD_FAVORITES__ = result.vod_favorites;
-            updateFavoriteButtonsState(id, type);
+            updateFavoriteButtonsState(id, type, true);
             
             if (currentSection === 'library') {
                 renderLibrary();
