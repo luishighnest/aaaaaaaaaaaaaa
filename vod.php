@@ -2664,7 +2664,7 @@ if (!isset($_SESSION['active_profile'])) {
           <div class="vod-hero-buttons">
             <button class="vod-hero-btn play" id="vod-hero-play-btn"><i class="ph-fill ph-play"></i> Guarda Ora</button>
             <button class="vod-hero-btn info" id="vod-hero-info-btn"><i class="ph ph-info"></i> Dettagli</button>
-            <button class="vod-hero-btn fav-round" id="vod-hero-fav-btn" title="Aggiungi ai Preferiti"><i class="ph ph-plus"></i></button>
+            <button class="vod-hero-btn fav-round" id="vod-hero-fav-btn" title="Aggiungi ai Preferiti"><i class="ph ph-plus-circle"></i></button>
           </div>
         </div>
       </div>
@@ -2829,7 +2829,7 @@ if (!isset($_SESSION['active_profile'])) {
           <div class="vod-modal-action-row">
             <button class="vod-hero-btn play" id="vod-modal-play-btn"><i class="ph-fill ph-play"></i> Guarda Ora</button>
             <button class="vod-hero-btn" id="vod-modal-resume-btn" style="display:none;"><i class="ph-fill ph-play"></i> Riprendi</button>
-            <button class="vod-modal-fav-btn-new" id="vod-modal-fav-btn"><i class="ph ph-plus"></i> Lista</button>
+            <button class="vod-modal-fav-btn-new" id="vod-modal-fav-btn"><i class="ph ph-plus-circle"></i> Lista</button>
           </div>
           <div id="vod-modal-tv-section" style="display:none; margin-top:1rem;">
             <select id="vod-season-select"></select>
@@ -2849,7 +2849,7 @@ if (!isset($_SESSION['active_profile'])) {
         <div class="vod-modal-action-row">
           <button class="vod-hero-btn play" id="vod-modal-play-btn" style="display: none;"><i class="ph-fill ph-play"></i> Guarda Ora</button>
           <button class="vod-hero-btn play" id="vod-modal-resume-btn" style="display: none;"><i class="ph-fill ph-play"></i> Riprendi</button>
-          <button class="vod-modal-fav-btn-new" id="vod-modal-fav-btn"><i class="ph ph-plus"></i> <span>Aggiungi</span></button>
+          <button class="vod-modal-fav-btn-new" id="vod-modal-fav-btn"><i class="ph ph-plus-circle"></i> <span>Aggiungi</span></button>
         </div>
         <p class="vod-modal-desc" id="vod-modal-overview" style="margin-bottom: 2rem;"></p>
 
