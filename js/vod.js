@@ -831,6 +831,7 @@ async function openModal(item, defaultSeasonNumber = null) {
         if (historyItem && historyItem.progress > 0) {
             if (resumeBtn) {
                 resumeBtn.style.display = 'inline-flex';
+                resumeBtn.style.setProperty('--resume-progress', historyItem.progress + '%');
                 resumeBtn.innerHTML = `<i class="ph-fill ph-play"></i> Riprendi (${historyItem.progress}%)`;
                 resumeBtn.onclick = () => {
                     playMovie(item.id, true);
@@ -854,6 +855,7 @@ async function openModal(item, defaultSeasonNumber = null) {
         if (historyItem && historyItem.progress > 0 && historyItem.progress < 95 && historyItem.season && historyItem.episode) {
             if (resumeBtn) {
                 resumeBtn.style.display = 'inline-flex';
+                resumeBtn.style.setProperty('--resume-progress', historyItem.progress + '%');
                 resumeBtn.innerHTML = `<i class="ph-fill ph-play"></i> Riprendi da S${historyItem.season}:E${historyItem.episode}`;
                 resumeBtn.onclick = () => {
                     playShowEpisode(item.id, historyItem.season, historyItem.episode, true);
@@ -1873,11 +1875,6 @@ async function loadTvEpisodes(tvId, seasonNumber) {
                 progressTextHtml = `<span class="vod-ep-progress-text" style="font-size:0.72rem; color:var(--accent); font-weight:600; margin-top:2px;">${epProgress}% completato</span>`;
             }
 
-            // Badge "Riprendi qui" per l'episodio corrente
-            const resumeBadgeHtml = shouldShowResumeState
-                ? `<div class="vod-ep-resume-badge"><i class="ph-fill ph-play-circle"></i> Riprendi qui</div>`
-                : '';
-
             row.innerHTML = `
                 <div class="vod-ep-thumb">
                     ${thumbHtml}
@@ -1892,7 +1889,6 @@ async function loadTvEpisodes(tvId, seasonNumber) {
                     <div class="vod-episode-overview" id="ep-overview-${ep.episode_number}">${ep.overview || 'Nessuna descrizione disponibile.'}</div>
                     ${readMoreHtml}
                     ${progressTextHtml}
-                    ${resumeBadgeHtml}
                 </div>
                 <div class="vod-episode-actions">
                     <button class="vod-episode-play-btn" title="Riproduci"><i class="ph-fill ph-play"></i></button>
@@ -2055,27 +2051,9 @@ function setEpisodeRowProgress(row, progress, isWatched) {
             progressText = document.createElement('span');
             progressText.className = 'vod-ep-progress-text';
             progressText.style.cssText = 'font-size:0.72rem; color:var(--accent); font-weight:600; margin-top:2px;';
-            const resumeBadge = info.querySelector('.vod-ep-resume-badge');
-            info.insertBefore(progressText, resumeBadge || null);
+            info.appendChild(progressText);
         }
-        progressText.textContent = `${progress}% completato`;
-    }
-}
-
-function setEpisodeRowResumeBadge(row, shouldShowResumeState) {
-    const info = row.querySelector('.vod-episode-info');
-    let resumeBadge = row.querySelector('.vod-ep-resume-badge');
-
-    if (!shouldShowResumeState) {
-        if (resumeBadge) resumeBadge.remove();
-        return;
-    }
-
-    if (!resumeBadge && info) {
-        resumeBadge = document.createElement('div');
-        resumeBadge.className = 'vod-ep-resume-badge';
-        resumeBadge.innerHTML = '<i class="ph-fill ph-play-circle"></i> Riprendi qui';
-        info.appendChild(resumeBadge);
+        if (progressText) progressText.textContent = `${progress}% completato`;
     }
 }
 
@@ -2085,7 +2063,7 @@ function updateEpisodeRowVisual(row, tvId, seasonNumber, episodeNumber, state) {
 
     setEpisodeRowWatchedBadge(row.querySelector('.vod-episode-title'), state.isWatched);
     setEpisodeRowProgress(row, state.progress, state.isWatched);
-    setEpisodeRowResumeBadge(row, state.shouldShowResumeState);
+}
 
     row.onclick = () => {
         playShowEpisode(tvId, seasonNumber, episodeNumber, state.canResume);
@@ -2126,6 +2104,7 @@ function updateTvModalResumeButton(tvId) {
 
     if (historyItem && historyItem.progress > 0 && historyItem.progress < 95 && historyItem.season && historyItem.episode) {
         resumeBtn.style.display = 'inline-flex';
+        resumeBtn.style.setProperty('--resume-progress', historyItem.progress + '%');
         resumeBtn.innerHTML = `<i class="ph-fill ph-play"></i> Riprendi da S${historyItem.season}:E${historyItem.episode}`;
         resumeBtn.onclick = () => {
             playShowEpisode(tvId, historyItem.season, historyItem.episode, true);
