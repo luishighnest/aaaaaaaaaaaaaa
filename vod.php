@@ -1026,20 +1026,21 @@ if (!isset($_SESSION['active_profile'])) {
     }
     .vod-modal-fav-btn-new:active { transform: scale(0.96); }
     .vod-modal-fav-btn-new.is-fav {
-      background: rgba(0, 242, 254, 0.08);
-      border-color: rgba(0, 242, 254, 0.5);
-      color: var(--accent);
-      box-shadow: 0 4px 20px rgba(0,0,0,0.25), 0 0 18px var(--accent-glow), inset 0 1px 0 rgba(0,242,254,0.1);
+      background: rgba(255,255,255,0.95);
+      border-color: rgba(255,255,255,0.95);
+      color: #111;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
     }
     .vod-modal-fav-btn-new.is-fav i {
-      color: var(--accent);
+      color: #16a34a;
       transform: scale(1.1);
-      filter: drop-shadow(0 0 5px var(--accent-glow));
+      filter: none;
     }
     .vod-modal-fav-btn-new.is-fav:hover {
-      background: rgba(0, 242, 254, 0.15);
-      border-color: rgba(0, 242, 254, 0.7);
-      box-shadow: 0 6px 28px rgba(0,0,0,0.35), 0 0 28px var(--accent-glow);
+      background: #e8e8e8;
+      border-color: #e8e8e8;
+      color: #111;
+      box-shadow: 0 6px 28px rgba(0,0,0,0.4);
       transform: translateY(-1px);
     }
 
