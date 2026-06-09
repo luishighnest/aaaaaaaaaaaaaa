@@ -910,14 +910,35 @@ if (!isset($_SESSION['active_profile'])) {
     }
     .vod-hero-btn.fav-round::after { display: none; }
 
-    /* ── ANIMAZIONE POP al toggle preferito ── */
-    @keyframes fav-pop {
-      0%   { transform: scale(1); }
-      35%  { transform: scale(1.35); }
-      65%  { transform: scale(0.85); }
-      100% { transform: scale(1); }
+    /* ── ANIMAZIONE POP + ROTATE + GLOW al toggle preferito ── */
+    @keyframes fav-pop-active {
+      0% { transform: scale(1) rotate(0deg); }
+      30% { transform: scale(1.4) rotate(90deg); }
+      50% { transform: scale(0.8) rotate(100deg); }
+      70% { transform: scale(1.15) rotate(85deg); }
+      100% { transform: scale(1) rotate(90deg); }
     }
-    .fav-pop i { animation: fav-pop 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; }
+    @keyframes fav-pop-inactive {
+      0% { transform: scale(1) rotate(90deg); }
+      30% { transform: scale(1.3) rotate(0deg); }
+      50% { transform: scale(0.8) rotate(-10deg); }
+      100% { transform: scale(1) rotate(0deg); }
+    }
+    .fav-pop-active i {
+      display: inline-block;
+      animation: fav-pop-active 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+    }
+    .fav-pop-inactive i {
+      display: inline-block;
+      animation: fav-pop-inactive 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+    }
+    @keyframes fav-ring-pulse {
+      0% { box-shadow: 0 0 0 0 rgba(0, 242, 254, 0.8); }
+      100% { box-shadow: 0 0 0 16px rgba(0, 242, 254, 0); }
+    }
+    .fav-pulse-ring {
+      animation: fav-ring-pulse 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
 
     /* ── BOTTONI MODAL ── */
     .vod-modal-action-row {
