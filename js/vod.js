@@ -907,6 +907,10 @@ function setModalPosterImage(src, title) {
 
 // Pop-up Modal Avanzato
 async function openModal(item, defaultSeasonNumber = null) {
+    const modalContent = document.querySelector('.vod-modal-content');
+    if (modalContent) {
+        modalContent.scrollTop = 0;
+    }
     window.__CURRENT_MODAL_ITEM__ = item;
     const title = item.title || item.name;
     const poster = getModalArtworkUrl(item);
@@ -1866,10 +1870,8 @@ async function loadTvEpisodes(tvId, seasonNumber) {
                 progressTextHtml = `<span class="vod-ep-progress-text" style="font-size:0.72rem; color:var(--accent); font-weight:600; margin-top:2px;">${epProgress}% completato</span>`;
             }
 
-            // Badge "Riprendi qui" per l'episodio corrente
-            const resumeBadgeHtml = shouldShowResumeState
-                ? `<div class="vod-ep-resume-badge"><i class="ph-fill ph-play-circle"></i> Riprendi qui</div>`
-                : '';
+            // Badge "Riprendi qui" rimosso
+            const resumeBadgeHtml = '';
 
             row.innerHTML = `
                 <div class="vod-ep-thumb">
@@ -1935,14 +1937,7 @@ async function loadTvEpisodes(tvId, seasonNumber) {
             episodesList.appendChild(row);
         });
 
-        // ─── AUTO-SCROLL ALL'EPISODIO CORRENTE ───
-        // Piccolo ritardo per attendere il rendering del layout (thumbnail lazy)
-        setTimeout(() => {
-            const lastPlayedRow = episodesList.querySelector('.vod-episode-row.last-played');
-            if (lastPlayedRow) {
-                lastPlayedRow.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-            }
-        }, 180);
+        // Auto-scroll all'episodio rimosso per aprire la scheda sempre in alto a tutto.
         
     } catch(err) {
         console.error("Errore caricamento episodi", err);
@@ -2063,20 +2058,8 @@ function setEpisodeRowProgress(row, progress, isWatched) {
 }
 
 function setEpisodeRowResumeBadge(row, shouldShowResumeState) {
-    const info = row.querySelector('.vod-episode-info');
     let resumeBadge = row.querySelector('.vod-ep-resume-badge');
-
-    if (!shouldShowResumeState) {
-        if (resumeBadge) resumeBadge.remove();
-        return;
-    }
-
-    if (!resumeBadge && info) {
-        resumeBadge = document.createElement('div');
-        resumeBadge.className = 'vod-ep-resume-badge';
-        resumeBadge.innerHTML = '<i class="ph-fill ph-play-circle"></i> Riprendi qui';
-        info.appendChild(resumeBadge);
-    }
+    if (resumeBadge) resumeBadge.remove();
 }
 
 function updateEpisodeRowVisual(row, tvId, seasonNumber, episodeNumber, state) {
