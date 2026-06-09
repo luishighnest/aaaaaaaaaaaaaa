@@ -1802,7 +1802,7 @@ if (!isset($_SESSION['active_profile'])) {
     }
     .vod-player-fullscreen {
       bottom: 8px;
-      right: 12px;
+      right: 40px;
       width: 38px;
       height: 38px;
       font-size: 1.1rem;
@@ -2394,7 +2394,7 @@ if (!isset($_SESSION['active_profile'])) {
       }
       .vod-player-fullscreen {
         bottom: 6px;
-        right: 10px;
+        right: 35px;
         top: auto;
         width: 32px;
         height: 32px;
