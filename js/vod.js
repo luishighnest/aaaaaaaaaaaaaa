@@ -2395,37 +2395,11 @@ async function setEpisodeWatchStatus(tvId, seasonNumber, episodeNumber, status) 
     
     renderContinueWatching();
     
-    // Salva la posizione dello scroll per evitare che la pagina ritorni in alto
-    const modalInfo = document.querySelector('.vod-modal-info');
-    const scrollPos = modalInfo ? modalInfo.scrollTop : 0;
+    // Aggiorna i visual degli episodi già nel DOM senza ricaricare (niente scroll-to-top)
+    updateVisibleEpisodeRowsFromHistory(tvId, seasonNumber);
+    updateTvModalResumeButton(tvId);
     
-    // Ricarica subito la visualizzazione degli episodi
-    await loadTvEpisodes(tvId, seasonNumber);
-    
-    // Ripristina la posizione dello scroll
-    if (modalInfo) {
-        modalInfo.scrollTop = scrollPos;
-    }
-    
-    // Aggiorna il pulsante "Riprendi" del modal se necessario senza ricaricare l'intera modale
-    const playBtn = document.getElementById('vod-modal-play-btn');
-    const resumeBtn = document.getElementById('vod-modal-resume-btn');
-    if (playBtn && resumeBtn) {
-        const historyItem = (window.__ACTIVE_PROFILE_VOD_HISTORY__ || []).find(
-            x => parseInt(x.id, 10) === tId && x.type === 'tv'
-        );
-        if (historyItem && historyItem.progress > 0 && historyItem.progress < 95 && historyItem.season && historyItem.episode) {
-            resumeBtn.style.display = 'inline-flex';
-            resumeBtn.innerHTML = `<i class="ph-fill ph-play"></i> Riprendi da S${historyItem.season}:E${historyItem.episode}`;
-            resumeBtn.onclick = () => {
-                playShowEpisode(tvId, historyItem.season, historyItem.episode, true);
-            };
-            playBtn.style.display = 'none';
-        } else {
-            resumeBtn.style.display = 'none';
-            playBtn.style.display = 'inline-flex';
-        }
-    }
+
     
     // Invia la richiesta al server per sincronizzare
     try {
@@ -2459,7 +2433,9 @@ async function setEpisodeWatchStatus(tvId, seasonNumber, episodeNumber, status) 
         if (result.success) {
             window.__ACTIVE_PROFILE_VOD_HISTORY__ = result.watch_history;
             renderContinueWatching();
-            loadTvEpisodes(tvId, seasonNumber);
+            // Aggiorna solo i visual nel DOM, senza ricostruire la lista (evita scroll-to-top)
+            updateVisibleEpisodeRowsFromHistory(tvId, seasonNumber);
+            updateTvModalResumeButton(tvId);
         }
     } catch (err) {
         console.error('Errore nel salvataggio dello stato di visione:', err);
