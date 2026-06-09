@@ -849,7 +849,7 @@ if (!isset($_SESSION['active_profile'])) {
       bottom: 0;
       left: 0;
       height: 3px;
-      width: 40%;
+      width: var(--resume-progress, 40%);
       background: var(--accent);
       border-radius: 0 2px 2px 0;
     }
