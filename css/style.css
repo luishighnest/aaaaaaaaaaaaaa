@@ -2659,7 +2659,7 @@ body.tv-mode-active .pc-only-flex-btn { display: none !important; }
 }
 
 .vod-card-btn.fav i {
-  color: var(--danger);
+  color: inherit;
 }
 .vod-card-rating {
   font-size: 0.8rem;
