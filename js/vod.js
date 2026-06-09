@@ -957,7 +957,7 @@ async function openModal(item, defaultSeasonNumber = null) {
             if (resumeBtn) {
                 resumeBtn.style.display = 'inline-flex';
                 resumeBtn.style.setProperty('--resume-progress', historyItem.progress + '%');
-                resumeBtn.innerHTML = `<i class="ph-fill ph-play"></i> Riprendi (${historyItem.progress}%)`;
+                resumeBtn.innerHTML = `<svg class="btn-play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v14l11-7-11-7z"/></svg> Riprendi (${historyItem.progress}%)`;
                 resumeBtn.onclick = () => {
                     playMovie(item.id, true);
                 };
@@ -981,7 +981,7 @@ async function openModal(item, defaultSeasonNumber = null) {
             if (resumeBtn) {
                 resumeBtn.style.display = 'inline-flex';
                 resumeBtn.style.setProperty('--resume-progress', historyItem.progress + '%');
-                resumeBtn.innerHTML = `<i class="ph-fill ph-play"></i> Riprendi da S${historyItem.season}:E${historyItem.episode}`;
+                resumeBtn.innerHTML = `<svg class="btn-play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v14l11-7-11-7z"/></svg> Riprendi da S${historyItem.season}:E${historyItem.episode}`;
                 resumeBtn.onclick = () => {
                     playShowEpisode(item.id, historyItem.season, historyItem.episode, true);
                 };
