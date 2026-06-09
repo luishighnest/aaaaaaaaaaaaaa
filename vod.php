@@ -3359,5 +3359,123 @@ if (!isset($_SESSION['active_profile'])) {
   </div>
 
   <script src="js/vod.js?v=<?= time() ?>"></script>
+  <script>
+  // Fallback inline - garantisce che la funzione esista anche con vod.js cachato
+  if (typeof togglePlayerPlaylistPanel === 'undefined') {
+    async function togglePlayerPlaylistPanel() {
+      const panel = document.getElementById('vod-player-playlist-panel');
+      if (!panel) return;
+      if (panel.classList.contains('open')) {
+        panel.classList.remove('open');
+        return;
+      }
+      const infoPanel = document.getElementById('vod-player-info-panel');
+      if (infoPanel) infoPanel.classList.remove('open');
+      const ctx = window.__PLAYBACK_CONTEXT__;
+      const title = ctx ? (ctx.title || 'Playlist') : 'Playlist';
+      if (!ctx || ctx.type !== 'tv') {
+        panel.innerHTML = `
+          <div class="vod-player-playlist-header">
+            <span class="vod-player-playlist-title">${title}</span>
+            <button class="vod-player-info-close-btn" onclick="togglePlayerPlaylistPanel()"><i class="ph ph-x"></i></button>
+          </div>
+          <div class="vod-player-playlist-empty">
+            <i class="ph ph-film-strip"></i>
+            <p>Questo è un film,<br>nessun episodio disponibile.</p>
+          </div>`;
+        panel.classList.add('open');
+        if (typeof showPlayerControls === 'function') showPlayerControls();
+        return;
+      }
+      const tmdbId = ctx.id;
+      const currentSeason = ctx.season;
+      const currentEpisode = ctx.episode;
+      panel.innerHTML = `
+        <div class="vod-player-playlist-header">
+          <span class="vod-player-playlist-title">${title}</span>
+          <button class="vod-player-info-close-btn" onclick="togglePlayerPlaylistPanel()"><i class="ph ph-x"></i></button>
+        </div>
+        <div class="vod-player-playlist-loading">
+          <div class="vod-dropdown-loading-dot"></div>
+          <div class="vod-dropdown-loading-dot"></div>
+          <div class="vod-dropdown-loading-dot"></div>
+        </div>`;
+      panel.classList.add('open');
+      if (typeof showPlayerControls === 'function') showPlayerControls();
+      try {
+        const API_KEY_L = (typeof API_KEY !== 'undefined') ? API_KEY : '2e0b38cfb2936cec8ab1ce48e4335ac3';
+        const BASE_URL_L = (typeof BASE_URL !== 'undefined') ? BASE_URL : 'https://api.themoviedb.org/3';
+        const showResp = await fetch(`${BASE_URL_L}/tv/${tmdbId}?api_key=${API_KEY_L}&language=it-IT`);
+        const showData = await showResp.json();
+        const seasons = (showData.seasons || []).filter(s => parseInt(s.season_number,10) > 0 && s.episode_count > 0);
+        const renderEpisodes = async (seasonNum) => {
+          const episodesContainer = document.getElementById('vod-player-playlist-episodes');
+          if (!episodesContainer) return;
+          episodesContainer.innerHTML = `<div class="vod-player-playlist-loading"><div class="vod-dropdown-loading-dot"></div><div class="vod-dropdown-loading-dot"></div><div class="vod-dropdown-loading-dot"></div></div>`;
+          try {
+            const epResp = await fetch(`${BASE_URL_L}/tv/${tmdbId}/season/${seasonNum}?api_key=${API_KEY_L}&language=it-IT`);
+            const epData = await epResp.json();
+            const episodes = epData.episodes || [];
+            episodesContainer.innerHTML = '';
+            episodes.forEach(ep => {
+              const isActive = parseInt(ep.episode_number,10) === parseInt(currentEpisode,10) && parseInt(seasonNum,10) === parseInt(currentSeason,10);
+              const progress = (typeof getPreviousProgress === 'function') ? getPreviousProgress(tmdbId,'tv',seasonNum,ep.episode_number) : 0;
+              const epEl = document.createElement('div');
+              epEl.className = `vod-playlist-episode${isActive ? ' active' : ''}`;
+              epEl.innerHTML = `
+                <div class="vod-playlist-ep-number">${ep.episode_number}</div>
+                <div class="vod-playlist-ep-info">
+                  <div class="vod-playlist-ep-title">${ep.name || 'Episodio ' + ep.episode_number}</div>
+                  ${ep.air_date ? `<div class="vod-playlist-ep-date">${ep.air_date.substring(0,10)}</div>` : ''}
+                  ${progress > 0 && progress < 95 ? `<div class="vod-playlist-ep-progress"><div class="vod-playlist-ep-progress-bar" style="width:${progress}%"></div></div>` : ''}
+                </div>
+                ${isActive ? '<i class="ph-fill ph-play vod-playlist-ep-playing"></i>' : ''}`;
+              epEl.addEventListener('click', () => {
+                togglePlayerPlaylistPanel();
+                setTimeout(() => { if (typeof playShowEpisode === 'function') playShowEpisode(tmdbId, seasonNum, ep.episode_number); }, 200);
+              });
+              episodesContainer.appendChild(epEl);
+            });
+            const activeEp = episodesContainer.querySelector('.vod-playlist-episode.active');
+            if (activeEp) setTimeout(() => activeEp.scrollIntoView({ behavior:'smooth', block:'center' }), 120);
+          } catch(err) {
+            episodesContainer.innerHTML = '<div class="vod-player-playlist-empty"><p>Errore caricamento episodi.</p></div>';
+          }
+        };
+        panel.innerHTML = `
+          <div class="vod-player-playlist-header">
+            <span class="vod-player-playlist-title">${title}</span>
+            <button class="vod-player-info-close-btn" onclick="togglePlayerPlaylistPanel()"><i class="ph ph-x"></i></button>
+          </div>
+          <div class="vod-player-playlist-season-tabs" id="vod-player-playlist-season-tabs"></div>
+          <div class="vod-player-playlist-episodes" id="vod-player-playlist-episodes"></div>`;
+        const tabsContainer = document.getElementById('vod-player-playlist-season-tabs');
+        seasons.forEach(s => {
+          const sNum = parseInt(s.season_number, 10);
+          const tab = document.createElement('button');
+          tab.className = `vod-playlist-season-tab${sNum === parseInt(currentSeason,10) ? ' active' : ''}`;
+          tab.textContent = `Stagione ${sNum}`;
+          tab.addEventListener('click', async () => {
+            tabsContainer.querySelectorAll('.vod-playlist-season-tab').forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+            await renderEpisodes(sNum);
+          });
+          tabsContainer.appendChild(tab);
+        });
+        await renderEpisodes(currentSeason);
+      } catch(err) {
+        panel.innerHTML = `
+          <div class="vod-player-playlist-header">
+            <span class="vod-player-playlist-title">Playlist</span>
+            <button class="vod-player-info-close-btn" onclick="togglePlayerPlaylistPanel()"><i class="ph ph-x"></i></button>
+          </div>
+          <div class="vod-player-playlist-empty">
+            <i class="ph ph-warning"></i>
+            <p>Errore nel caricamento degli episodi.</p>
+          </div>`;
+      }
+    }
+  }
+  </script>
 </body>
 </html>
