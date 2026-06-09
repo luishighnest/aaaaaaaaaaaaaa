@@ -1,14 +1,6 @@
 [
   {
     "channel_id": [
-      8
-    ],
-    "time": "01:00",
-    "title": "AMICHEVOLI",
-    "desc": "Colombia - Giordania"
-  },
-  {
-    "channel_id": [
       95
     ],
     "time": "20:45",
@@ -25,10 +17,66 @@
   },
   {
     "channel_id": [
+      118
+    ],
+    "time": "02:30",
+    "title": "NBA PLAYOFF, FINALE (GARA 3)",
+    "desc": "New York Knicks - San Antonio Spurs"
+  },
+  {
+    "channel_id": [
       8
     ],
     "time": "04:10",
     "title": "AMICHEVOLI",
     "desc": "Perù - Spagna"
+  },
+  {
+    "channel_id": [
+      53
+    ],
+    "time": "19:00",
+    "title": "AMICHEVOLI",
+    "desc": "Ungheria - Kazakistan"
+  },
+  {
+    "channel_id": [
+      16
+    ],
+    "time": "21:00",
+    "title": "SEGUNDA DIVISION, SEMIFINALI (R)",
+    "desc": "Almería - CD Castellon"
+  },
+  {
+    "channel_id": [
+      8
+    ],
+    "time": "04:10",
+    "title": "AMICHEVOLI",
+    "desc": "Perù - Spagna"
+  },
+  {
+    "channel_id": [
+      16
+    ],
+    "time": "21:00",
+    "title": "SEGUNDA DIVISION, SEMIFINALI (R)",
+    "desc": "Málaga - Las Palmas"
+  },
+  {
+    "channel_id": [
+      56
+    ],
+    "time": "21:45",
+    "title": "AMICHEVOLI",
+    "desc": "Portogallo - Nigeria"
+  },
+  {
+    "channel_id": [
+      51
+    ],
+    "time": "22:00",
+    "title": "AMICHEVOLI",
+    "desc": "Inghilterra - Costa Rica"
   }
 ]
