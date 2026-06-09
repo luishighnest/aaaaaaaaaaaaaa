@@ -983,21 +983,23 @@ if (!isset($_SESSION['active_profile'])) {
     .vod-modal-fav-btn-new {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
-      height: 46px;
-      padding: 0 1.3rem;
-      border-radius: 14px;
-      font-size: 0.82rem;
+      gap: 10px;
+      height: 52px;
+      padding: 0 2rem;
+      border-radius: 8px;
+      font-size: 1rem;
       font-weight: 800;
-      letter-spacing: 0.6px;
-      text-transform: uppercase;
+      font-family: 'Netflix Sans', 'Inter', 'Helvetica Neue', sans-serif;
+      letter-spacing: 0.01em;
+      text-transform: none;
       cursor: pointer;
-      border: 1.5px solid rgba(255,255,255,0.18);
-      background: rgba(255,255,255,0.07);
+      border: 1.5px solid rgba(255,255,255,0.22);
+      background: rgba(255,255,255,0.12);
       color: #fff;
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.15);
+      transition: background 0.18s ease, border-color 0.18s ease, transform 0.15s ease, box-shadow 0.18s ease;
       white-space: nowrap;
       position: relative;
       overflow: hidden;
@@ -1006,27 +1008,28 @@ if (!isset($_SESSION['active_profile'])) {
       content: '';
       position: absolute;
       inset: 0;
-      background: linear-gradient(105deg, transparent 30%, rgba(255,255,255,0.18) 50%, transparent 70%);
+      background: linear-gradient(105deg, transparent 30%, rgba(255,255,255,0.14) 50%, transparent 70%);
       transform: translateX(-100%);
       transition: transform 0.55s cubic-bezier(0.16, 1, 0.3, 1);
       pointer-events: none;
     }
     .vod-modal-fav-btn-new:hover::after { transform: translateX(100%); }
     .vod-modal-fav-btn-new i {
-      font-size: 1.15rem;
-      transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), color 0.25s;
+      font-size: 1.25rem;
+      transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), color 0.25s;
     }
     .vod-modal-fav-btn-new:hover {
-      background: rgba(255,255,255,0.13);
-      border-color: rgba(255,255,255,0.35);
-      transform: translateY(-2px);
+      background: rgba(255,255,255,0.2);
+      border-color: rgba(255,255,255,0.38);
+      box-shadow: 0 6px 28px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.2);
+      transform: translateY(-1px);
     }
     .vod-modal-fav-btn-new:active { transform: scale(0.96); }
     .vod-modal-fav-btn-new.is-fav {
-      background: rgba(0, 242, 254, 0.1);
-      border-color: rgba(255, 255, 255, 0.7);
+      background: rgba(0, 242, 254, 0.08);
+      border-color: rgba(0, 242, 254, 0.5);
       color: var(--accent);
-      box-shadow: 0 0 20px var(--accent-glow), inset 0 0 8px rgba(0,242,254,0.05);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.25), 0 0 18px var(--accent-glow), inset 0 1px 0 rgba(0,242,254,0.1);
     }
     .vod-modal-fav-btn-new.is-fav i {
       color: var(--accent);
@@ -1034,10 +1037,10 @@ if (!isset($_SESSION['active_profile'])) {
       filter: drop-shadow(0 0 5px var(--accent-glow));
     }
     .vod-modal-fav-btn-new.is-fav:hover {
-      background: rgba(0, 242, 254, 0.18);
+      background: rgba(0, 242, 254, 0.15);
       border-color: rgba(0, 242, 254, 0.7);
-      box-shadow: 0 0 28px var(--accent-glow), 0 0 0 3px rgba(0,242,254,0.12);
-      transform: translateY(-2px);
+      box-shadow: 0 6px 28px rgba(0,0,0,0.35), 0 0 28px var(--accent-glow);
+      transform: translateY(-1px);
     }
 
     /* ── CARD BUTTONS REDESIGN ── */
@@ -2880,7 +2883,7 @@ if (!isset($_SESSION['active_profile'])) {
           <div class="vod-modal-action-row">
             <button class="vod-hero-btn play" id="vod-modal-play-btn"><svg class="btn-play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v14l11-7-11-7z"/></svg> Guarda Ora</button>
             <button class="vod-hero-btn" id="vod-modal-resume-btn" style="display:none;"><svg class="btn-play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v14l11-7-11-7z"/></svg> Riprendi</button>
-            <button class="vod-modal-fav-btn-new" id="vod-modal-fav-btn"><i class="ph ph-plus-circle"></i> Lista</button>
+            <button class="vod-modal-fav-btn-new" id="vod-modal-fav-btn"><i class="ph ph-plus-circle"></i> La mia Lista</button>
           </div>
           <div id="vod-modal-tv-section" style="display:none; margin-top:1rem;">
             <select id="vod-season-select"></select>
@@ -2900,7 +2903,7 @@ if (!isset($_SESSION['active_profile'])) {
         <div class="vod-modal-action-row">
           <button class="vod-hero-btn play" id="vod-modal-play-btn" style="display: none;"><svg class="btn-play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v14l11-7-11-7z"/></svg> Guarda Ora</button>
           <button class="vod-hero-btn" id="vod-modal-resume-btn" style="display: none;"><svg class="btn-play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v14l11-7-11-7z"/></svg> Riprendi</button>
-          <button class="vod-modal-fav-btn-new" id="vod-modal-fav-btn"><i class="ph ph-plus-circle"></i> <span>Aggiungi</span></button>
+          <button class="vod-modal-fav-btn-new" id="vod-modal-fav-btn"><i class="ph ph-plus-circle"></i> La mia Lista</button>
         </div>
         <p class="vod-modal-desc" id="vod-modal-overview" style="margin-bottom: 2rem;"></p>
 
