@@ -88,12 +88,25 @@ $last_update = file_exists($epg_file) ? date('H:i', filemtime($epg_file)) : '--:
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
   <script>
     (function() {
-      const accent = localStorage.getItem('accent_color');
-      const glow = localStorage.getItem('accent_glow');
-      if (accent && glow) {
-        document.documentElement.style.setProperty('--accent', accent);
-        document.documentElement.style.setProperty('--accent-glow', glow);
-      }
+      const accent = localStorage.getItem('accent_color') || '#00f2fe';
+      const glow = localStorage.getItem('accent_glow') || 'rgba(0, 242, 254, 0.3)';
+      document.documentElement.style.setProperty('--accent', accent);
+      document.documentElement.style.setProperty('--accent-glow', glow);
+
+      window.updateFaviconColor = function(color) {
+        const hex = color || '#00f2fe';
+        const svg = `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><defs><linearGradient id='g' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' stop-color='${hex}'/><stop offset='100%' stop-color='#020617'/></linearGradient></defs><rect width='24' height='24' rx='6' fill='url(#g)'/><path d='M9.5 7.5v9l7-4.5-7-4.5z' fill='#ffffff'/></svg>`;
+        let link = document.querySelector('link[rel="icon"]');
+        if (!link) {
+          link = document.createElement('link');
+          link.rel = 'icon';
+          link.type = 'image/svg+xml';
+          document.head.appendChild(link);
+        }
+        link.href = 'data:image/svg+xml,' + encodeURIComponent(svg);
+      };
+
+      window.updateFaviconColor(accent);
     })();
     document.documentElement.classList.add('no-transitions');
     if (localStorage.getItem('theme') === 'light') {

@@ -2,6 +2,7 @@
 $user_passwords = [
     'a' => 'a'
     'Tyto' =>'Sassuolomerda'
+    'Manu' =>'Pezzotto'   
 ];
 
 // Configuro le opzioni per forzare il costo a 12

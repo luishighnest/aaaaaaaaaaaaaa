@@ -187,12 +187,25 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
     <link rel="stylesheet" href="css/style.css?v=1.18">
     <script>
       (function() {
-        const accent = localStorage.getItem('accent_color');
-        const glow = localStorage.getItem('accent_glow');
-        if (accent && glow) {
-          document.documentElement.style.setProperty('--accent', accent);
-          document.documentElement.style.setProperty('--accent-glow', glow);
-        }
+        const accent = localStorage.getItem('accent_color') || '#00f2fe';
+        const glow = localStorage.getItem('accent_glow') || 'rgba(0, 242, 254, 0.3)';
+        document.documentElement.style.setProperty('--accent', accent);
+        document.documentElement.style.setProperty('--accent-glow', glow);
+
+        window.updateFaviconColor = function(color) {
+          const hex = color || '#00f2fe';
+          const svg = `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><defs><linearGradient id='g' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' stop-color='${hex}'/><stop offset='100%' stop-color='#020617'/></linearGradient></defs><rect width='24' height='24' rx='6' fill='url(#g)'/><path d='M9.5 7.5v9l7-4.5-7-4.5z' fill='#ffffff'/></svg>`;
+          let link = document.querySelector('link[rel="icon"]');
+          if (!link) {
+            link = document.createElement('link');
+            link.rel = 'icon';
+            link.type = 'image/svg+xml';
+            document.head.appendChild(link);
+          }
+          link.href = 'data:image/svg+xml,' + encodeURIComponent(svg);
+        };
+
+        window.updateFaviconColor(accent);
         
         // Rilevamento client-side per schermi piccoli (mobile)
         const cookieMode = document.cookie.split('; ').find(row => row.startsWith('pz8_view_mode='));
@@ -240,6 +253,68 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
         border-radius: var(--radius-sm) !important;
       }
     }
+
+    /* VOD Card — usa il colore accent dalle impostazioni */
+    .dash-vod-card {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.85rem 1rem;
+      border-radius: var(--radius-sm);
+      background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 18%, transparent) 0%, color-mix(in srgb, var(--accent) 10%, transparent) 100%);
+      border: 1px solid color-mix(in srgb, var(--accent) 45%, transparent);
+      box-shadow: 0 4px 18px color-mix(in srgb, var(--accent) 18%, transparent);
+      color: #fff;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+    .dash-vod-card:hover {
+      background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 32%, transparent) 0%, color-mix(in srgb, var(--accent) 22%, transparent) 100%);
+      border-color: color-mix(in srgb, var(--accent) 75%, transparent);
+      box-shadow: 0 6px 24px var(--accent-glow);
+    }
+    .dash-vod-card-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: color-mix(in srgb, var(--accent) 20%, transparent);
+      border: 1px solid color-mix(in srgb, var(--accent) 50%, transparent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .dash-vod-card-icon i {
+      font-size: 1.1rem;
+      color: var(--accent);
+    }
+    .dash-vod-card-text {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      line-height: 1.2;
+    }
+    .dash-vod-card-title {
+      font-size: 0.88rem;
+      font-weight: 900;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .dash-vod-card-sub {
+      font-size: 0.68rem;
+      font-weight: 600;
+      color: color-mix(in srgb, var(--accent) 80%, white);
+      text-transform: none;
+      letter-spacing: 0;
+    }
+    .dash-vod-card-arrow {
+      margin-left: auto;
+      font-size: 1rem;
+      color: color-mix(in srgb, var(--accent) 70%, transparent);
+    }
   </style>
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
   <script>
@@ -284,7 +359,7 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
     <aside class="dash-sidebar">
       <div class="dash-brand" onclick="window.location.reload()">
         <div class="dash-brand-icon"><i class="ph-fill ph-play"></i></div>
-        <div class="dash-brand-text">PZ<span>8</span><span class="dash-brand-badge">LIVE</span></div>
+        <div class="dash-brand-text">PZ8</span><span class="dash-brand-badge">LIVE</span></div>
       </div>
       <div class="dash-clock" id="dash-clock">--:--:--</div>
       <div class="dash-clock-date" id="dash-clock-date"></div>
@@ -314,8 +389,17 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
 
       <!-- Sezione Azioni -->
       <div style="display: flex; flex-direction: column; gap: 0.6rem; margin-top: 0.8rem;">
-        <a href="vod.php" class="dash-exit" style="margin-top:0; padding: 0.6rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem; text-decoration: none;">
-          <i class="ph ph-film-strip"></i> Film & Serie TV
+
+        <!-- VOD Card — categoria primaria -->
+        <a href="vod.php" class="dash-vod-card">
+          <div class="dash-vod-card-icon">
+            <i class="ph-fill ph-film-strip"></i>
+          </div>
+          <div class="dash-vod-card-text">
+            <span class="dash-vod-card-title">Film & Serie TV</span>
+            <span class="dash-vod-card-sub">VOD on demand</span>
+          </div>
+          <i class="ph ph-arrow-right dash-vod-card-arrow"></i>
         </a>
 
         <a id="btn-guida-tv" href="guida.php" class="dash-exit" style="margin-top:0; padding: 0.6rem;"><i class="ph ph-calendar"></i> GUIDA TV</a>
@@ -1302,7 +1386,9 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
             { name: 'Oro Premium', hex: '#eab308', glow: 'rgba(234, 179, 8, 0.3)' },
             { name: 'Smeraldo', hex: '#10b981', glow: 'rgba(16, 185, 129, 0.3)' },
             { name: 'Viola', hex: '#a855f7', glow: 'rgba(168, 85, 247, 0.3)' },
-            { name: 'Rosa', hex: '#ec4899', glow: 'rgba(236, 72, 153, 0.3)' }
+            { name: 'Rosa', hex: '#ec4899', glow: 'rgba(236, 72, 153, 0.3)' },
+            { name: 'Bianco', hex: '#ffffff', glow: 'rgba(255, 255, 255, 0.3)' },
+            { name: 'Nero', hex: '#000000', glow: 'rgba(0, 0, 0, 0.3)' }
         ];
 
         const pickerContainer = document.getElementById('accent-color-picker');
@@ -1319,7 +1405,7 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
                 btn.style.borderRadius = '50%';
                 btn.style.background = preset.hex;
                 btn.style.cursor = 'pointer';
-                btn.style.border = isSelected ? '3px solid #fff' : '2px solid transparent';
+                btn.style.border = isSelected ? '3px solid #fff' : '1px solid rgba(255, 255, 255, 0.2)';
                 btn.style.boxShadow = isSelected ? `0 0 0 2px ${preset.hex}` : 'none';
                 btn.style.transform = isSelected ? 'scale(1.1)' : 'scale(1)';
                 btn.style.transition = 'all 0.2s';
@@ -1331,6 +1417,7 @@ $agenda_json = json_encode($agenda_data, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG);
                     localStorage.setItem('accent_glow', preset.glow);
                     document.documentElement.style.setProperty('--accent', preset.hex);
                     document.documentElement.style.setProperty('--accent-glow', preset.glow);
+                    if (window.updateFaviconColor) window.updateFaviconColor(preset.hex);
                     renderAccentPicker();
                 };
                 pickerContainer.appendChild(btn);

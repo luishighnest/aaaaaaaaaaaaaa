@@ -91,5 +91,917 @@
             ],
             "allowed_channels": []
         }
+    ],
+    "a": [
+        {
+            "id": "ale_main",
+            "name": "ale",
+            "avatar": "ph-user-circle",
+            "color": "#00f2fe",
+            "vod_favorites": [
+                {
+                    "id": 66732,
+                    "type": "tv",
+                    "title": "Stranger Things",
+                    "poster_path": "\/wZNIKNMqjulcU1AbU6X98tHy9QF.jpg"
+                },
+                {
+                    "id": 60625,
+                    "type": "tv",
+                    "title": "Rick and Morty",
+                    "poster_path": "\/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg"
+                },
+                {
+                    "id": 66788,
+                    "type": "tv",
+                    "title": "Tredici",
+                    "poster_path": "\/r6vlLLCl8SYka5hObkP5Jn5H5uR.jpg"
+                },
+                {
+                    "id": 1339713,
+                    "type": "movie",
+                    "title": "Obsession",
+                    "poster_path": "\/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg"
+                },
+                {
+                    "id": 79744,
+                    "type": "tv",
+                    "title": "The Rookie",
+                    "poster_path": "\/70kTz0OmjjZe7zHvIDrq2iKW7PJ.jpg"
+                },
+                {
+                    "id": 456,
+                    "type": "tv",
+                    "title": "I Simpson",
+                    "poster_path": "\/fxLooktejTUqCvZl9ARhKMFNpbf.jpg"
+                },
+                {
+                    "id": 229544,
+                    "type": "tv",
+                    "title": "Among Us",
+                    "poster_path": "\/zQPnH87FXB6MEwRIy2xfhT41lq9.jpg"
+                },
+                {
+                    "id": 18165,
+                    "type": "tv",
+                    "title": "The Vampire Diaries",
+                    "poster_path": "\/b3vl6wV1W8PBezFfntKTrhrehCY.jpg"
+                },
+                {
+                    "id": 1434,
+                    "type": "tv",
+                    "title": "I Griffin",
+                    "poster_path": "\/6IwwpmNmOta9UDz5gfvSokPFELL.jpg"
+                },
+                {
+                    "id": 1396,
+                    "type": "tv",
+                    "title": "Breaking Bad",
+                    "poster_path": "\/ztkUQFLlC19CCMYHW9o1zWhJRNq.jpg"
+                },
+                {
+                    "id": 1405,
+                    "type": "tv",
+                    "title": "Dexter",
+                    "poster_path": "\/q8dWfc4JwQuv3HayIZeO84jAXED.jpg"
+                }
+            ],
+            "watch_history": [
+                {
+                    "id": 1226863,
+                    "type": "movie",
+                    "title": "Super Mario Galaxy Il Film",
+                    "poster_path": "\/sTfdi7ZoiKiLVkvktoAlKKOTaaN.jpg",
+                    "progress": 0,
+                    "seconds": 4,
+                    "timestamp": 1781172467
+                },
+                {
+                    "id": 1396,
+                    "type": "tv",
+                    "title": "Breaking Bad",
+                    "poster_path": "\/ztkUQFLlC19CCMYHW9o1zWhJRNq.jpg",
+                    "progress": 100,
+                    "seconds": 0,
+                    "timestamp": 1781172100,
+                    "season": 4,
+                    "episode": 1,
+                    "watched_episodes": {
+                        "0_1": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_2": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_3": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_4": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_5": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_6": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_7": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_8": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_9": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "1_1": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "1_2": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "1_4": {
+                            "progress": 70,
+                            "seconds": 2024
+                        },
+                        "1_3": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "1_7": {
+                            "progress": 0,
+                            "seconds": 13
+                        },
+                        "4_12": {
+                            "progress": 0,
+                            "seconds": 7
+                        },
+                        "4_1": {
+                            "progress": 100,
+                            "seconds": 0
+                        }
+                    }
+                },
+                {
+                    "id": 1339713,
+                    "type": "movie",
+                    "title": "Obsession",
+                    "poster_path": "\/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
+                    "progress": 31,
+                    "seconds": 1939,
+                    "timestamp": 1781170692
+                },
+                {
+                    "id": 124364,
+                    "type": "tv",
+                    "title": "FROM",
+                    "poster_path": "\/oRTAA5VqHi2W2rfkiJ3fHiGfI9M.jpg",
+                    "progress": 3,
+                    "seconds": 69,
+                    "timestamp": 1781168164,
+                    "season": 1,
+                    "episode": 1,
+                    "watched_episodes": {
+                        "1_1": {
+                            "progress": 3,
+                            "seconds": 69
+                        },
+                        "1_2": {
+                            "progress": 1,
+                            "seconds": 14
+                        }
+                    }
+                },
+                {
+                    "id": 83533,
+                    "type": "movie",
+                    "title": "Avatar: Fuoco e Cenere",
+                    "poster_path": "\/xxiIVbzr9YCfKTftTqN3mojUkKM.jpg",
+                    "progress": 0,
+                    "seconds": 8,
+                    "timestamp": 1781126386
+                },
+                {
+                    "id": 18165,
+                    "type": "tv",
+                    "title": "The Vampire Diaries",
+                    "poster_path": "\/b3vl6wV1W8PBezFfntKTrhrehCY.jpg",
+                    "progress": 60,
+                    "seconds": 1534,
+                    "timestamp": 1781122790,
+                    "season": 4,
+                    "episode": 22,
+                    "watched_episodes": {
+                        "0_1": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_2": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_3": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_4": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_5": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_6": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_7": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_8": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_9": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_10": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_11": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_12": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_13": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_14": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_15": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_16": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_17": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_18": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_19": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_20": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_21": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_22": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_23": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_24": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_25": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_26": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_27": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_28": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_29": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_30": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_31": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_32": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_33": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_34": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_35": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_36": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_37": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_38": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_39": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_40": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_41": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_42": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_43": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_44": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_45": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_46": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_47": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_48": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_49": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_50": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_51": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_52": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_53": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_54": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "1_1": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "1_2": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "1_3": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "1_4": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "1_5": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "1_6": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "1_7": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "1_8": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "1_9": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "1_10": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "1_11": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "1_12": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "1_13": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "1_14": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "1_15": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "1_16": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "1_17": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "1_18": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "1_19": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "1_20": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "1_21": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "1_22": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "2_1": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "2_2": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "2_3": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "2_4": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "2_5": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "2_6": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "2_7": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "2_8": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "2_9": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "2_10": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "2_11": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "2_12": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "2_13": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "2_14": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "2_15": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "2_16": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "2_17": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "2_18": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "2_19": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "2_20": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "2_21": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "2_22": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "3_1": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "3_2": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "3_3": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "3_4": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "3_5": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "3_6": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "3_7": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "3_8": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "3_9": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "3_10": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "3_11": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "3_12": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "3_13": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "3_14": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "3_15": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "3_16": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "3_17": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "3_18": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "3_19": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "3_20": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "3_21": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "3_22": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "4_1": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "4_2": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "4_3": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "4_4": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "4_5": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "4_6": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "4_7": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "4_8": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "4_9": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "4_10": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "4_11": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "4_12": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "4_13": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "4_14": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "4_15": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "4_16": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "4_17": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "4_18": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "4_19": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "4_20": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "4_21": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "4_22": {
+                            "progress": 60,
+                            "seconds": 1534
+                        }
+                    }
+                },
+                {
+                    "id": 229544,
+                    "type": "tv",
+                    "title": "Among Us",
+                    "poster_path": "\/zQPnH87FXB6MEwRIy2xfhT41lq9.jpg",
+                    "progress": 56,
+                    "seconds": 453,
+                    "timestamp": 1781118996,
+                    "season": 1,
+                    "episode": 3,
+                    "watched_episodes": {
+                        "1_1": {
+                            "progress": 88,
+                            "seconds": 715
+                        },
+                        "1_2": {
+                            "progress": 58,
+                            "seconds": 469
+                        },
+                        "1_3": {
+                            "progress": 56,
+                            "seconds": 453
+                        }
+                    }
+                },
+                {
+                    "id": 79744,
+                    "type": "tv",
+                    "title": "The Rookie",
+                    "poster_path": "\/70kTz0OmjjZe7zHvIDrq2iKW7PJ.jpg",
+                    "progress": 9,
+                    "seconds": 231,
+                    "timestamp": 1781114651,
+                    "season": 1,
+                    "episode": 7,
+                    "watched_episodes": {
+                        "1_1": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "1_3": {
+                            "progress": 91,
+                            "seconds": 2351
+                        },
+                        "1_2": {
+                            "progress": 50,
+                            "seconds": 1296
+                        },
+                        "1_5": {
+                            "progress": 43,
+                            "seconds": 1061
+                        },
+                        "1_6": {
+                            "progress": 39,
+                            "seconds": 1003
+                        },
+                        "1_7": {
+                            "progress": 9,
+                            "seconds": 231
+                        },
+                        "1_8": {
+                            "progress": 72,
+                            "seconds": 1808
+                        }
+                    }
+                },
+                {
+                    "id": 1434,
+                    "type": "tv",
+                    "title": "I Griffin",
+                    "poster_path": "\/6IwwpmNmOta9UDz5gfvSokPFELL.jpg",
+                    "progress": 95,
+                    "seconds": 1351,
+                    "timestamp": 1781113696,
+                    "season": 1,
+                    "episode": 1,
+                    "watched_episodes": {
+                        "1_1": {
+                            "progress": 95,
+                            "seconds": 1351
+                        },
+                        "1_2": {
+                            "progress": 0,
+                            "seconds": 0
+                        }
+                    }
+                },
+                {
+                    "id": 456,
+                    "type": "tv",
+                    "title": "I Simpson",
+                    "poster_path": "\/fxLooktejTUqCvZl9ARhKMFNpbf.jpg",
+                    "progress": 100,
+                    "seconds": 0,
+                    "timestamp": 1781112529,
+                    "season": 15,
+                    "episode": 2,
+                    "watched_episodes": {
+                        "0_1": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "0_2": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "15_2": {
+                            "progress": 100,
+                            "seconds": 0
+                        },
+                        "1_1": {
+                            "progress": 100,
+                            "seconds": 0
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ale_kids",
+            "name": "Bambini",
+            "avatar": "ph-smiley",
+            "color": "#00e676"
+        },
+        {
+            "id": "ale_guest",
+            "name": "Ospiti",
+            "avatar": "ph-users",
+            "color": "#ff9800"
+        }
     ]
 }

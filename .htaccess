@@ -1,13 +1,53 @@
 Options -Indexes
 DirectoryIndex index.php index.html
 
-# Priorità a index.php rispetto a index.html
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteBase /
-    # Root del sito: usa index.php
+
+    # Root del sito: usa index.php invece di index.html
     RewriteCond %{THE_REQUEST} ^GET\ /index\.html
     RewriteRule ^index\.html$ /index.php [R=301,L]
+
+    # ── VOD URL puliti ────────────────────────────────────────────────────────
+    # Non riscrivere file o cartelle fisicamente esistenti
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    # /vod → Home VOD
+    RewriteRule ^vod/?$ vod.php [L,QSA]
+
+    # /film → sezione Film
+    RewriteRule ^film/?$ vod.php?section=movies [L,QSA]
+
+    # /serie → sezione Serie TV
+    RewriteRule ^serie/?$ vod.php?section=tv [L,QSA]
+
+    # /catalogo → sezione Catalogo
+    RewriteRule ^catalogo/?$ vod.php?section=catalog [L,QSA]
+
+    # /libreria → sezione Libreria
+    RewriteRule ^libreria/?$ vod.php?section=library [L,QSA]
+
+    # /film/550 → dettaglio film
+    RewriteRule ^film/([0-9]+)/?$ vod.php?type=movie&id=$1 [L,QSA]
+
+    # /serie/1396 → dettaglio serie TV
+    RewriteRule ^serie/([0-9]+)/?$ vod.php?type=tv&id=$1 [L,QSA]
+
+    # /watch/550 → player film
+    RewriteRule ^watch/([0-9]+)/?$ vod.php?play=movie&id=$1 [L,QSA]
+
+    # /watch/1396/2/5 → player episodio TV (id/stagione/episodio)
+    RewriteRule ^watch/([0-9]+)/([0-9]+)/([0-9]+)/?$ vod.php?play=tv&id=$1&season=$2&episode=$3 [L,QSA]
+    # ── Fine VOD URL puliti ───────────────────────────────────────────────────
+</IfModule>
+
+# Blocca accesso diretto alla cartella backup JS
+<IfModule mod_authz_core.c>
+    <Directory "js/backups">
+        Require all denied
+    </Directory>
 </IfModule>
 
 # Header di sicurezza

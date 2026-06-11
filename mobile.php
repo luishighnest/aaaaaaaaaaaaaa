@@ -298,6 +298,7 @@ $is_kids_profile = (
         <nav class="drawer-list">
           <?php if (!$is_kids_profile): ?>
             <div id="btn-agenda" class="drawer-item"><i class="ph ph-clock"></i> Agenda Eventi</div>
+            <a href="vod.php" class="drawer-item"><i class="ph ph-film-strip"></i> Film &amp; Serie TV</a>
           <?php endif; ?>
           <a href="guida.php" class="drawer-item"><i class="ph ph-calendar"></i> Guida TV</a>
           <div id="btn-settings" class="drawer-item"><i class="ph ph-gear"></i> Impostazioni</div>

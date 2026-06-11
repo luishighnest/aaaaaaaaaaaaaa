@@ -12,6 +12,7 @@ if (count(get_included_files()) === 1) {
  */
 return [
     'subscription_expiry' => '2027-12-31',
+    'tmdb_api_key'        => '2e0b38cfb2936cec8ab1ce48e4335ac3',
     'users' => [
         'a' => [
             'password' => '$2y$12$5SbJLnbGLVzLwUTTrFjBi.WlgKiFPlYeEb8uvhWJyN0zA2nsA26MK',
