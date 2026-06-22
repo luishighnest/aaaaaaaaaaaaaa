@@ -134,7 +134,7 @@
                 "descrizione": "Un grande evento musicale pensato e realizzato per promuovere i valori del rispetto della vita, della prevenzione, dell'alimentazione sana e della cura di sé attraverso il linguaggio universale della musica e dello spettacolo. Giorgia Cardinaletti e Nek conducono la serata in occasione della giornata mondiale contro la droga e le dipendenze, insieme a dieci artisti straordinari: Andrea Bocelli, Annalisa, Gianni Morandi, Biagio Antonacci, Emma, Antonello Venditti, Alessandra Amoroso, Gigi D'Alessio, Riccardo Cocciante e Il Volo, accompagnati dalla Nuova Orchestra Sinfonietta diretta dal Maestro Leonardo De Amicis. Ospiti Lorella Cuccarini e Raoul Bova."
             }
         ],
-        "aggiornato": "12:15"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Rai 2",
@@ -172,8 +172,8 @@
             },
             {
                 "ora": "10:00",
-                "titolo": "TG2 Dossier",
-                "descrizione": "Approfondimento del Tg2. Direttore Antonio Preziosi Vicedirettore Elisabetta Migliorelli A cura di Francesco Vitale"
+                "titolo": "Tg2 Dossier - Chi Sogna Disegna",
+                "descrizione": "Un viaggio tra i più noti e amati autori di questa arte ricca di creativit� e talento. L'animazione è ormai da tempo la nuova frontiera del cinema: dal maestro e decano Bruno Bozzetto fino ai più giovani e pluripremiati Simone massi e Alessandro Rak insieme ad altri. Il lungometraggio di Cinzia Terlizzi racconta come l'animazione non vada più considerata soltanto un prodotto per i più piccoli, ma un settore d'eccellenza che produce cultura e fa girare l'economia."
             },
             {
                 "ora": "10:55",
@@ -187,7 +187,7 @@
             },
             {
                 "ora": "11:10",
-                "titolo": "Un'Estate A Langeoog",
+                "titolo": "Un'estate a Langeoog",
                 "descrizione": "Antonia Hofmaier e il figlio Linus raggiungono la piccola isola di Langeoog, nel Mare del Nord, per fa firmare al padre le carte dell'eredit� materna. Suo padre l'aveva lasciata vent'anni prima per fuggire con l'amante, Levke, che ora può conoscere. Suo padre è partito in barca e Antonia, in attesa che torni, deve convivere con la donna che odia."
             },
             {
@@ -202,8 +202,8 @@
             },
             {
                 "ora": "13:50",
-                "titolo": "TG2 Medicina 33",
-                "descrizione": "Direttore Antonio Preziosi A cura di Laura Berti"
+                "titolo": "Tg2 Medicina 33",
+                "descrizione": "Il quotidiano di medicina del Tg2. I migliori specialisti di ogni settore della medicina rispondono alle domande che ciascuno di noi vorrebbe fare. Consigli utili per star bene."
             },
             {
                 "ora": "14:00",
@@ -262,8 +262,8 @@
             },
             {
                 "ora": "21:20",
-                "titolo": "Notti Mondiali - Speciale",
-                "descrizione": "SPORT - Commenti e approfondimenti dell'incontro appena concluso dei Mondiali FIFA 2026.. - Supervisione di Marco Mazzocchi e Massimo Proietto A cura di Alessandro Antinelli e Alessandro Forti Coordinamento Giornalistico Alessandro Gargiulo Conduce Alessandro Antinelli Ospiti Paulo Roberto Falcao, Marco Tardelli, Ciccio Graziani, Massimo De Luca, Manuela Giugliano, Alessio Dionisi Regia di Annarita Cardinali"
+                "titolo": "Notti Mondiali Speciale",
+                "descrizione": "Commenti e approfondimenti dell'incontro appena concluso dei Mondiali FIFA 2026."
             },
             {
                 "ora": "21:50",
@@ -271,7 +271,7 @@
                 "descrizione": "$23"
             }
         ],
-        "aggiornato": "12:15"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Rai 3",
@@ -415,10 +415,10 @@
             {
                 "ora": "21:15",
                 "titolo": "Filorosso",
-                "descrizione": "Antonino Monteleone, con Adele Grossi, racconta i fatti che stanno ridefinendo gli equilibri globali e la vita quotidiana degli italiani: politica, sicurezza, economia, trasformazioni sociali."
+                "descrizione": "$23"
             }
         ],
-        "aggiornato": "12:15"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Rai 4",
@@ -550,7 +550,7 @@
                 "descrizione": "Quando una sconosciuta rivela un fatto scioccante su sua moglie, Adam Price rimane coinvolto in una rete di segreti che gli sconvolge la vita in questa serie thriller."
             }
         ],
-        "aggiornato": "12:15"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Rai 5",
@@ -662,7 +662,7 @@
                 "descrizione": "François, che ha una relazione con Anne, vede un mattino un uomo che esce con lei dalla sua abitazione. Non sa che si tratta di un aviatore, suo ex, che le ha annunciato che il loro rapporto è definitivamente chiuso. François si ritiene tradito e cerca una spiegazione che Anne rinvia ma incontra casualmente l'uomo con una donna e si mette a pedinare la coppia. Li segue su un autobus dove conosce la quindicenne Lucie alla quale dice di essere un detective incaricato di verificare la fedelt� della donna. Lucie decide di affiancarsi a lui nel pedinamento."
             }
         ],
-        "aggiornato": "12:15"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Rete 4",
@@ -754,7 +754,7 @@
                 "descrizione": "Nicola Porro affronta temi d'attualita', di politica e di economia in compagnia dei suoi ospiti."
             }
         ],
-        "aggiornato": "12:15"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Canale 5",
@@ -896,7 +896,7 @@
                 "descrizione": "Maria accetta un matrimonio di convenienza con Manuel, un ricco proprietario terriero della Mancha, per garantire un futuro alla propria famiglia. In un contesto segnato da diffidenze e segreti irrisolti, un equilibrio gi� precario viene messo in crisi da un evento inatteso."
             }
         ],
-        "aggiornato": "12:15"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Italia 1",
@@ -1008,7 +1008,7 @@
                 "descrizione": "Gli esperimenti della dottoressa Susan McAlester stanno per cambiare la storia della medicina. Ma per raggiungere il suo obiettivo, scoprire la chiave per rigenerare il tessuto cerebrale umano, la scienziata ha violato il codice etico, intervenendo a livello genetico sul Dna degli squali mako. Li ha resi più intelligenti. Ma Susan deve fare i conti con i membri del suo gruppo di studio e con il fatto che i finanziatori del progetto sono pronti a tagliare i fondi alla vigilia di un test chiave."
             }
         ],
-        "aggiornato": "12:15"
+        "aggiornato": "20:56"
     },
     {
         "canale": "La7",
@@ -1027,17 +1027,17 @@
             {
                 "ora": "08:00",
                 "titolo": "Omnibus Dibattito",
-                "descrizione": "Programma di informazione e approfondimento con rubriche, ospiti, rassegna stampa, aggiornamenti sul traffico, previsioni meteo, dibattito sul tema del giorno. 24a Edizione."
+                "descrizione": "Alessandra Sardoni con Marco Minniti, Massimo Franco, Giovanni Orsina, Francesco Semprini, Mariangela Zappia, Emiliano Fittpaldi"
             },
             {
                 "ora": "09:40",
                 "titolo": "Coffee Break",
-                "descrizione": "Lo spazio mattutino per l'approfondimento e l'attualit� condotto da Andrea Pancani. 14a Edizione."
+                "descrizione": "Andrea Pancani con Marco Galluzzo, Brando Benifei, Clemente Mastella, Chiara Tenerini, Alessandro Gonzato"
             },
             {
                 "ora": "11:00",
                 "titolo": "L'Aria Che Tira",
-                "descrizione": "Conduce David Parenzo. 15a edizione"
+                "descrizione": "David Parenzo con Maurizio Molinari, Stefano Bonaccini, Antonello Caporale, Annalisa Terranova, Claudio Borghi, Greta Cristini, Carlo Cottarelli, Daniele Compatangelo, Arturo Scotto, Maurizio Gasparri, Tiziana Ferrario, Luigi..."
             },
             {
                 "ora": "13:30",
@@ -1047,7 +1047,7 @@
             {
                 "ora": "14:15",
                 "titolo": "Tagadà Cronache d'Estate",
-                "descrizione": "Conducono Alessio Orsingher e Luca Sappino"
+                "descrizione": "Alessio Orsingher e Luca Sappino con Daniela Preziosi, Nadia Urbinati, Antonio Di Bella, Sandro Iacometti, Pierantonio Zanettin, Debora Serracchiani, Pietro De Leo, Alessandro Cattaneo, Ettore Licheri, Tonia Mastrobuoni, Greta..."
             },
             {
                 "ora": "16:40",
@@ -1072,7 +1072,7 @@
             {
                 "ora": "20:35",
                 "titolo": "Otto e Mezzo",
-                "descrizione": "Il programma di approfondimento quotidiano condotto da Lilli Gruber, con ospiti in studio e il punto di Paolo Pagliaro. 25a Edizione"
+                "descrizione": "Ospiti di Lilli Gruber: Luca Josi, Matteo Renzi, Massimo Giannini"
             },
             {
                 "ora": "21:15",
@@ -1085,7 +1085,7 @@
                 "descrizione": "La7 25 Incipit (1a Parte - 1 di 5)"
             }
         ],
-        "aggiornato": "12:15"
+        "aggiornato": "20:56"
     },
     {
         "canale": "TV8",
@@ -1202,7 +1202,7 @@
                 "descrizione": "Alberto Stasi e Andrea Sempio: chi ha ucciso Chiara Poggi? Dopo quasi 20 anni e una condanna definitiva per il fidanzato della vittima, il caso è ancora aperto."
             }
         ],
-        "aggiornato": "12:15"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Nove",
@@ -1309,7 +1309,7 @@
                 "descrizione": "Francesco Panella esplora Europa, Africa e USA per trovare i veri sapori d'Italia. A Marrakech, Francesco elegge il miglior ristorante italiano della Citta Nuova."
             }
         ],
-        "aggiornato": "12:15"
+        "aggiornato": "20:56"
     },
     {
         "canale": "20 Mediaset",
@@ -1426,7 +1426,7 @@
                 "descrizione": "Nato da una delle molte scappatelle di Zeus con una mortale e cresciuto da un'umile famiglia di pescatori, Perseo è un vero eroe proletario che sogna di sovvertire l'ordine naturale delle cose andando a combattere gli dei stessi. Siccome non è l'unico mortale a pensarla così, il padre degli dei, aizzato dal fratello Ade che intanto mira a fargli le scarpe, decide di ricordare agli umani il suo potere liberando la più grande delle piaghe prese in prestito dalla mitologia nordica: il Kraken. L'unico modo per evitare che la creatura degli abissi distrugga la citt� di Argo è sacrificare Andromeda, figlia del re, che la stessa madre ha definito \"Più bella di Afrodite\". Quando si dice \"cercarsela\". Perseo però non ci sta e unitosi ai valorosi guerrieri di Argo vuole trovare un modo di sconfiggere il mostro."
             }
         ],
-        "aggiornato": "12:15"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Twentyseven",
@@ -1533,7 +1533,7 @@
                 "descrizione": "Problemi di bilancio costringono alla chiusura di una delle due scuole di polizia dello stato. Si apre così una sfida senza esclusione di gag per decidere quale verr� risparmiata."
             }
         ],
-        "aggiornato": "12:15"
+        "aggiornato": "20:56"
     },
     {
         "canale": "IRIS",
@@ -1587,7 +1587,7 @@
             {
                 "ora": "21:15",
                 "titolo": "Breaking In",
-                "descrizione": "[Azione] - Per il ciclo: VITA DI DONNA.\nIn una casa attrezzata per essere a prova di pericoli, alcuni uomini prendono in ostaggio 2 ragazzi. La loro mamma non si fermera' di fronte a nulla pur di liberarli. Regia di J. Mcteigue; USA 2018"
+                "descrizione": "Quando i suoi due figli vengono presi in ostaggio in una casa progettata per essere impenetrabile, per una madre comincia una corsa contro il tempo. Far� di tutto per entrare nella casa e portare via i suoi due figli."
             },
             {
                 "ora": "23:11",
@@ -1595,7 +1595,7 @@
                 "descrizione": "Ispirato a una storia vera, è la storia di Josey Aimes che in cerca di un lavoro, dopo il fallimento del suo matrimonio, torna nel nord Minnesota. E' una madre single con due bambini da mantenere e quindi pensa subito alla fonte di impiego più importante della zona, la miniera di ferro. E' un ambiente maschile non abituato ai cambiamenti. Incoraggiata dall'amica Glory, una delle poche donne in questo settore, Josey entra in miniera. E' pronta ad affrontare un lavoro pericoloso e duro, ma non le molestie sessuali che lei e le altre minatrici si trovano a subire da parte dei colleghi maschi. Quando Josey protesta contro il trattamento che lei e le sue compagne di lavoro subiscono, incontra la resistenza non solo di chi comanda, ma anche della comunit� intera che non vuole ascoltare la verit� , dei suoi genitori e delle sue stesse colleghe, timorose che le cose peggiorino. Ma Josey trover� il coraggio di lottare per le cose in cui crede, anche se questo significa restare sola..."
             }
         ],
-        "aggiornato": "12:15"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Rai Movie",
@@ -1657,7 +1657,7 @@
                 "descrizione": "\"Old Henry\" è un western di azione che parla di un agricoltore vedovo e di suo figlio che accolgono, con la giusta prudenza, un uomo ferito che porta con sé una borsa piena di denaro. Arrivano degli uomini che sostengono di voler arrestare il ferito e restituire i soldi, ma l’agricoltore non sa di chi fidarsi. Con la sua propriet� sotto assedio, l’agricoltore si rivela abile con le armi, sorprendendo tutti e spingendo a dubitare della sua vera identit� ."
             }
         ],
-        "aggiornato": "12:15"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Rai Premium",
@@ -1714,11 +1714,6 @@
                 "descrizione": "Candice Renoir aveva messo in pausa la sua carriera per 10 anni. Quando torna da Singapore per riprendere il servizio in una citt� portuale nel sud della Francia, si sente un po' “arrugginita”. Nonostante l'evidente sfida alla sua unit� e ad un cinico superiore che non le facilita il lavoro, è determinata a trasformare le sue cosiddette debolezze in punti di forza, risolvendo i casi più complessi con il suo buon senso, la sua acuta osservazione e la sua pratica natura condita da una frenetica routine quotidiana.\n\nSolo Candice può catturare un assassino perché conosce la composizione chimica di un prodotto per la pulizia dei vetri o determina l'ora di un omicidio dal tempo di cottura degli spiedini... Candice è solo ingenua all'esterno e nessuno può resisterle!"
             },
             {
-                "ora": "15:50",
-                "titolo": "Anica - Appuntamento Al Cinema",
-                "descrizione": "Rubrica per la promozione della cultura cinematografica in Italia."
-            },
-            {
                 "ora": "15:55",
                 "titolo": "Un ciclone in convento",
                 "descrizione": "Serie televisiva tedesca dal titolo originale Um Himmels Willen (Per amor del cielo). I protagonisti sono il sindaco di Kaltenthal Wolfgang Wller, che vuole trasformare il convento del paese in un moderno centro congressi, e la sorella Lotte Albers, che lotta per salvare l'antico convento."
@@ -1754,7 +1749,7 @@
                 "descrizione": "Dopo un anno di vita nella lussuosa villa del padre, Ruby e la gemella Giselle vengono mandate in un esclusivo collegio, gestito da una preside crudele. Tratto dal romanzo \"Pearl in the Mist\" di V. C. Andrews."
             }
         ],
-        "aggiornato": "12:15"
+        "aggiornato": "20:56"
     },
     {
         "canale": "La 5",
@@ -1841,7 +1836,7 @@
                 "descrizione": "Secondo capitolo di \"Un Amore Stellato\". La cuoca Toni e l'ex chef stellato Rufus attraversano un periodo di forte stress causato dalla caotica gestione del loro ristorante. Ma quando, a sorpresa, Heidi, la madre di Toni, vince una vacanza sul mar Baltico e chiede alla figlia di accompagnarla, Heidi incontra una sua vecchia fiamma, Ivo. L'atmosfera vacanziera far� sì che tra i due si riaccenda la passione. Con D. Amft e E. Bernsdorf."
             }
         ],
-        "aggiornato": "12:15"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Real Time",
@@ -1938,7 +1933,7 @@
                 "descrizione": "Essere madre significa non arrendersi nonostante tutte le difficolt� , ma al contrario aggrapparsi con tutte le proprie forze alla vita per i propri figli. La serie racconta la storia di Melek, che ricostruisce la propria vita insieme alla sua famiglia e ai suoi figli. Interpretata da Nehir Erdoğan, la serie mette in luce gli sforzi di una madre per rimanere in piedi e la sua lotta per la sopravvivenza insieme ai suoi tre figli, affrontando il passato per costruire un futuro migliore per la sua famiglia."
             }
         ],
-        "aggiornato": "12:15"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Food Network",
@@ -2095,7 +2090,7 @@
                 "descrizione": "Nonna Pina in cucina: spaghetti alla trappitara e carciofi del contadino."
             }
         ],
-        "aggiornato": "12:15"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Focus",
@@ -2192,7 +2187,7 @@
                 "descrizione": "Catania, la citta' che per secoli ha coperto un'opera d'arte straordinaria, il colosseo nero. Scopriamo cosa ha a che fare con l'amatissima Sant'Agata."
             }
         ],
-        "aggiornato": "12:15"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Giallo",
@@ -2264,7 +2259,7 @@
                 "descrizione": "Due detective, DCI McDonald e DS Dodds, che apparentemente non hanno nulla in comune, vengono messi insieme e stringono una rumorosa amicizia e una divertente collaborazione in questa miniserie drammatica britannica in due parti ambientata nella moderna Bath."
             }
         ],
-        "aggiornato": "12:15"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Boing",
@@ -2421,7 +2416,7 @@
                 "descrizione": "Gumball, un gatto di 12 anni, e il suo amico Darwin, un pesce rosso, vivono avventure al limite della follia, in questa stravagante commedia animata."
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "K2",
@@ -2578,7 +2573,7 @@
                 "descrizione": "1' Stagione Ep.12 - Le avventure di tre scoiattoli dalla voce incredibile, 'adottati' da Dave Seville, che diventano un fenomeno musicale."
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Rai Gulp",
@@ -2735,7 +2730,7 @@
                 "descrizione": "Tutte le stelle del cielo si stanno misteriosamente spegnendo una ad una, gettando man mano nell'oscurit� i vari mondi dell'Universo Magico. E sembra proprio che dietro questa terribile minaccia si celi il ritorno di Valtor."
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Frisbee",
@@ -2892,7 +2887,7 @@
                 "descrizione": "5' Stagione Ep.6 - Proseguono le avventure dei tre fratelli scoiattoli dotati di una voce incredibile e di uno straordinario talento musicale."
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "DMAX",
@@ -2984,7 +2979,7 @@
                 "descrizione": "Una squadra va alla ricerca della preziosa giada."
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Rai Sport",
@@ -3071,7 +3066,7 @@
                 "descrizione": "Il Crossdromo Miravalle di Montevarchi ospita il GP d'Italia del Mondiale Motocross 2026"
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Sportitalia",
@@ -3203,7 +3198,7 @@
                 "descrizione": "Il programma tratta le vicende del calciomercato sia nella sessione estiva che in quella invernale e va in onda alle ore 23.00 dal lunedì al venerdì"
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "HGTV",
@@ -3310,7 +3305,7 @@
                 "descrizione": "Due amici si occupano del progetto di ristrutturazione di una casa enorme. Ma sono alle prime armi e hanno disperatamente bisogno dell'aiuto di Tarek."
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "RSI LA 1",
@@ -3467,7 +3462,7 @@
                 "descrizione": "I colori del tempo"
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "RSI LA 2",
@@ -3544,7 +3539,7 @@
                 "descrizione": "da Philadelphia (USA)"
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "DAZN 1",
@@ -3646,7 +3641,7 @@
                 "descrizione": "2a g - Guarda tutte le azioni salienti della giornata di Serie A. Segui la Serie A Enilive su DAZN!"
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Sky Sport 24",
@@ -3793,9 +3788,9 @@
                 "descrizione": "Le notizie e i commenti del giorno, le anteprime e l'attualita' con servizi, commenti, interviste e collegamenti."
             },
             {
-                "ora": "17:30",
-                "titolo": "Sport 24 Today",
-                "descrizione": "Le notizie e i commenti del giorno, le anteprime e l'attualita' con servizi, commenti, interviste e collegamenti."
+                "ora": "17:45",
+                "titolo": "Reparto Corse Moto GP",
+                "descrizione": "Appuntamento settimanale con l'approfondimento dedicato al motomondiale, condotto da Marta Abiye con Paolo Beltramo."
             },
             {
                 "ora": "18:00",
@@ -3803,7 +3798,7 @@
                 "descrizione": "Le notizie e i commenti del giorno, le anteprime e l'attualita' con servizi, commenti, interviste e collegamenti."
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Sky Sport Uno",
@@ -3957,7 +3952,7 @@
                 "descrizione": "Curiosita', commenti, notizie e anticipazioni sui possibili movimenti del calciomercato. Condotto dal trio Alessandro Bonan, Gianluca Di Marzio e Fayna."
             },
             {
-                "ora": "22:00",
+                "ora": "22:10",
                 "titolo": "Premier League, I Gol Della Stagione",
                 "descrizione": "Durante la stagione 2025\/26 della Premier sono stati segnati 1.045 gol. Riviviamo le reti piu' belle e significative."
             },
@@ -3972,7 +3967,7 @@
                 "descrizione": "Campionato Inter Scudetto 2026. - Le emozioni, le partite piu' importanti, le migliori immagini e il filo conduttore di Chivu. Tutto concentrato in questo film del 21^ scudetto, quello dell'anima nerazzurra."
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Sky Sport Tennis",
@@ -4019,7 +4014,7 @@
                 "descrizione": "Dall'Heristo Arena di Halle, Germania."
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Sky Sport F1",
@@ -4131,7 +4126,7 @@
                 "descrizione": "21 appuntamenti per scalare la vetta della classifica. Si accende il semaforo verde e si alzano i decibel in pista. In pole position Hamilton, in prima fila anche Rosberg."
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Sky Sport Legend",
@@ -4203,7 +4198,7 @@
                 "descrizione": "Seconda parte del viaggio nel passato di Alessandro Del Piero, che ripercorre uno degli anni piu' iconici della sua carriera: il 1996."
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Sky Sport MotoGP",
@@ -4360,7 +4355,7 @@
                 "descrizione": "Collegamenti dal paddock, i commenti dei nostri ospiti in studio, le emozioni delle feste nei box. Questi gli ingredienti della nuova puntata di Race Anatomy condotta da Cristiana Buonamano"
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Sky Sport Basket",
@@ -4457,7 +4452,7 @@
                 "descrizione": "Intervista a Danny Green"
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Sky Sport Arena",
@@ -4544,7 +4539,7 @@
                 "descrizione": "Finale Maschile Beach Volley. - Segui la partita di beach volley in programma."
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Sky Sport Max",
@@ -4631,7 +4626,7 @@
                 "descrizione": "50 anni dopo Adriano Panatta, un italiano torna a trionfare al Foro Italico. Il cammino di Jannik Sinner a Roma, attraverso i backstage e le immagini inedite di Sky Sport."
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Sky Sport Mix",
@@ -4698,7 +4693,7 @@
                 "descrizione": "Premier Padel. - Seguiamo le gare del Premier Padel Major."
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Sky Sport Golf",
@@ -4765,7 +4760,7 @@
                 "descrizione": "Dal Shinnecock Hills Golf Club di Southampton, Stati Uniti."
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Sky Sport 251",
@@ -4930,7 +4925,7 @@
                 "descrizione": "Il generale Eugene Erwing, eroe del Vietnam e del Golfo, uomo d'azione e intellettuale, una vera leggenda dell'esercito americano, per motivi di principio (ha disobbedito a un ordine ingiusto) viene internato in una prigione militare. Il comandante è un colonnello metodico e crudele, forse psicopatico, che vive malissimo la superiorit� dell'altro. I detenuti eleggono Erwing loro capo morale e non solo. In una spirale di violenze e ingiustizie sempre più intollerabili, esplode la sfida fra il generale e il comandante, che ricorda quasi quella tra i due colonnelli de Il Ponte sul fiume Kwai."
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Sky Cinema Uno +24",
@@ -4987,7 +4982,7 @@
                 "descrizione": "La trama segue Millie, una donna che cerca un nuovo inizio e trova lavoro come domestica per una coppia benestante ed elitaria. Ma come spesso accade nei thriller, le apparenze ingannano. Millie scoprir� presto che dietro la facciata di questa ricca famiglia perfetta si nascondono segreti oscuri e pericolosi."
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Sky Cinema Due",
@@ -5049,7 +5044,7 @@
                 "descrizione": "All’inizio del XX secolo, la scoperta del petrolio trasformò l’esistenza degli Osage che diventarono da un giorno all’altro immensamente ricchi. L’improvviso benessere di questi nativi americani attirò l’interesse dei bianchi che iniziarono a manipolare, estorcere e sottrarre con l’inganno i beni degli Osage fino a ricorrere all’omicidio. Una storia d’amore e tradimenti, delitti e misteri in un intrigo avvincente per la scoperta della verit� ."
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Sky Cinema Due +24",
@@ -5066,7 +5061,7 @@
                 "descrizione": "1862: guerra civile americana. L'infermiere dell'esercito sudista Newt Knight, avendo assistito a troppe ingiustizie, decide di disertare per riportare a casa il cadavere del giovane nipote a cui non è stato prestato soccorso dopo che era stato ferito. Giunto a casa è testimone di altri soprusi commessi dai soldati confederati nei confronti della popolazione. Da quel momento Knight comincia a raccogliere intorno a sé uomini e donne di razza bianca e nera pronti ad opporsi alla prepotenza militare. Accade così che la contea Jones del Mississippi si costituisce in uno Stato Libero sotto la guida di Knight che non è intenzionato ad arrendersi."
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Sky Cinema Collection",
@@ -5143,7 +5138,7 @@
                 "descrizione": "Doug, Phil, Stu e Alan sono un gruppo di amici che, all'annuncio del matrimonio di Doug, decidono di organizzare una festa di addio al celibato a Las Vegas. Phil e Stu sono amici d' infanzia dello sposo: uno è un sereno insegnante delle elementari, mentre l'altro è un dentista, convivente con una gelosa quanto atroce compagna; Alan è invece lo stravagante fratello della promessa sposa di Doug ed accetta di partecipare una volta invitato dal cognato.Giunti a Las Vegas i quattro si recano sul tetto dell'albergo in cui risiedono e una volta qui iniziano a bere in onore della loro amicizia. Il mattino seguente gli amici si svegliano intontiti e privi di ricordi della sera precedente e dopo aver riacquistato un minimo di lucidit� si accorgono che la stanza dell'hotel è totalmente sottosopra e che il loro amico Doug, lo sposo, è scomparso nel nulla."
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Sky Cinema Family",
@@ -5205,7 +5200,7 @@
                 "descrizione": "Durante un sopralluogo sulla Terra per raccogliere vegetali, un gruppo di alieni viene sorpreso e uno di loro viene lasciato erroneamente al suolo per l'affrettato decollo. L'alieno, solo e smarrito, viene trovato ed ospitato da Elliott, con la complicit� della sorellina Gertie e il fratello maggiore Michael. Tra i due si instaura un profondo rapporto di amicizia che li lega anche a livello emotivo. Desideroso di tornare a casa, l'alieno costruisce un rudimentale dispositivo di comunicazione per chiedere aiuto ai suoi. Gradualmente, la salute di ET peggiora, e la situazione è aggravata dall'irruzione nell'universo dei ragazzi da parte del mondo degli adulti, che vuole impossessarsi dell'alieno."
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Sky Cinema Action",
@@ -5257,7 +5252,7 @@
                 "descrizione": "Arthur è figlio di Tom, guardiano di un faro, e Atlanna, nientemeno che regina di Atlantide. L'unione dei due è però clandestina, tanto che per salvare il figlio Atlanna accetter� di farsi giudicare nella citt� subacquea, che la giustizier� consegnandola al più feroce dei popoli sottomarini. Arthur cresce imparando in segreto da Vulko, consigliere del re e di suo figlio Orm, i segreti di Atlantide, ma da adulto preferisce stare lontano dalla citt� sommersa e si limita a compiere gesta eroiche in mare, come salvare un sottomarino da un team di pirati. Qui finisce per lasciare morire uno di loro e il figlio giura vendetta, tanto da allearsi con il fratellastro di Arthur, Orm. Nel mentre la figlia di Re Nereus, Mera, cerca di convincere Arthur ad abbracciare il suo retaggio di regale atlantideo per scongiurare una guerra, ma per riuscire in questo piano sar� necessario ritrovare il perduto tridente di Atlan."
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Sky Cinema Suspense",
@@ -5319,7 +5314,7 @@
                 "descrizione": "Jack Ryan, giovane analista, da poco entrato alla CIA, viene incaricato da WIlliam Cabot, capo del controspionaggio, di una missione particolarmente pericolosa: mettersi sulle tracce di una bomba atomica smarrita trent'anni prima dagli israeliani, rimasta inesplosa sottoterra, e ritrovata per caso in quei giorni. La bomba rappresenta un pericolo nucleare rivolto verso gli Stati Uniti, di cui minaccia la sicurezza. Assistito dal collega John Clark, Ryan segue varie piste, anche se i sospetti sono indirizzati verso la Russia. Mentre il reciproco scambio di accuse tra Stati Uniti e Russia prosegue e raggiunge livelli molto delicati, Ryan arriva ad individuare i veri colpevoli: si tratta di alcuni neonazisti europei, che appunto volevano ricreare il clima da guerra fredda per portare avanti un loro piano di sterminio e di dominio."
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Sky Cinema Romance",
@@ -5381,7 +5376,7 @@
                 "descrizione": "Sam e Molly sono una coppia felice. Vivono insieme da poco e si direbbe che nulla possa scalfire il loro amore, ma una sera in un vicolo un po' troppo buio Sam viene ucciso da un ladro. Il suo spirito resta imprigionato sulla Terra. Scopre qualcosa su quella sera che è stato assassinato, ma non riesce a comunicare con i vivi, almeno fino a quando non incontra un'esoterica molto suscettibile."
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Sky Cinema Drama",
@@ -5443,7 +5438,7 @@
                 "descrizione": "Salvo (Augusto Zazzaro) ha circa 5 anni quando suo padre Vincenzo (Riccardo Scamarcio) scompare, portato via da due carabinieri. Alcuni anni dopo, una volta uscito di prigione, Vincenzo torna a riprendersi suo figlio che nel frattempo è andato a vivere in Trentino dagli zii. Padre e figlio quasi non si riconoscono, e, come due estranei, si mettono in macchina verso il sud d’Italia, dove Vincenzo ha una missione da compiere. Sar� il tempo del viaggio a metterli di fronte alla verit� del loro rapporto e di cosa sono l’uno per l’altro."
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Sky Cinema Comedy",
@@ -5505,7 +5500,7 @@
                 "descrizione": "Alberto è un mite responsabile delle poste della bassa Brianza a un passo dal tanto sospirato trasferimento nel centro di Milano. Quando gli comunicano che la promessa rilocazione gli è stata revocata per dare precedenza a un collega disabile, Alberto, per non deludere le speranze della moglie e del figlio, decide di fingersi a sua volta disabile. Durante la visita di controllo, commette però un'imprudenza e, come punizione, gli viene imposto un trasferimento in Campania, in un piccolo paese del Cilento. Per un lombardo abitudinario e pieno di preconcetti sul Sud Italia come lui, la prospettiva di vivere almeno due anni in quei luoghi rappresenta un incubo, cui si prepara con un nuovo guardaroba di vestiti leggeri e giubbotto antiproiettile."
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Sky Uno",
@@ -5597,7 +5592,7 @@
                 "descrizione": "Alessandro Borghese è il protagonista della grande tentazione di questa puntata: cosa avr� in serbo per i membri della Compagnia?"
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Sky Atlantic",
@@ -5714,7 +5709,7 @@
                 "descrizione": "Uno sguardo dietro le quinte della serie televisiva \"House of the Dragon\": dalla realizzazione alla logistica, dalla scenografia agli effetti speciali utilizzati."
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Sky Serie",
@@ -5841,7 +5836,7 @@
                 "descrizione": "$25"
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Sky Investigation",
@@ -5973,7 +5968,7 @@
                 "descrizione": "Gabriel Saint-Barthélémy è chiamato da tutti Saint-Barth per le sue origini. Al suo ritorno nell'isola paradisiaca dove è nato finisce subito per doversi occupare di un omicidio suscitando la curiosit� dei colleghi per la sua straordinaria attitudine a calarsi nei panni delle vittime."
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Sky Crime",
@@ -6090,7 +6085,7 @@
                 "descrizione": "S7 Ep9 di 9 La matricola scomparsa - Quando una matricola scompare e viene poi ritrovata morta, la comunita' di Hope Mills, Carolina del Nord, e' allarmata e si attiva per stanare il colpevole."
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Sky Adventure",
@@ -6104,12 +6099,12 @@
             {
                 "ora": "06:00",
                 "titolo": "Pesca selvaggia",
-                "descrizione": "Trevor Carlson mette tutto in gioco per sfidare onde gigantesche da Maui, nelle Hawaii, fino a Ensenada, in Messico."
+                "descrizione": "Trevor Carlson ha di fronte a sé una serie di grandi sfide, nelle quali occorre mettere tutto in gioco. L'impresa che lo aspetta consiste nel domare onde gigantesche da Maui, nelle Hawaii, fino a Ensenada, in Messico."
             },
             {
                 "ora": "06:45",
                 "titolo": "Pesca selvaggia",
-                "descrizione": "Assunto da alcuni ricercatori per catturare squali e contribuire allo sviluppo di antibiotici in grado di salvare le vittime dei morsi di squalo, Cyril deve sfidare coccodrilli e squali furiosi per portare a termine questa pericolosa missione."
+                "descrizione": "Dei ricercatori incaricano Cyril di catturare squali per contribuire allo sviluppo di antibiotici, in grado di salvare le vittime dei morsi di questi pesci. Per riuscirci, deve sfidare coccodrilli e pescecani furiosi."
             },
             {
                 "ora": "07:35",
@@ -6194,25 +6189,25 @@
             {
                 "ora": "21:15",
                 "titolo": "Pesca selvaggia",
-                "descrizione": "Trevor Carlson mette tutto in gioco per sfidare onde gigantesche da Maui, nelle Hawaii, fino a Ensenada, in Messico."
+                "descrizione": "Trevor Carlson ha di fronte a sé una serie di grandi sfide, nelle quali occorre mettere tutto in gioco. L'impresa che lo aspetta consiste nel domare onde gigantesche da Maui, nelle Hawaii, fino a Ensenada, in Messico."
             },
             {
                 "ora": "22:05",
                 "titolo": "Pesca selvaggia",
-                "descrizione": "Assunto da alcuni ricercatori per catturare squali e contribuire allo sviluppo di antibiotici in grado di salvare le vittime dei morsi di squalo, Cyril deve sfidare coccodrilli e squali furiosi per portare a termine questa pericolosa missione."
+                "descrizione": "Dei ricercatori incaricano Cyril di catturare squali per contribuire allo sviluppo di antibiotici, in grado di salvare le vittime dei morsi di questi pesci. Per riuscirci, deve sfidare coccodrilli e pescecani furiosi."
             },
             {
                 "ora": "22:50",
                 "titolo": "Pesca selvaggia",
-                "descrizione": "Trevor Carlson mette tutto in gioco per sfidare onde gigantesche da Maui, nelle Hawaii, fino a Ensenada, in Messico."
+                "descrizione": "Trevor Carlson ha di fronte a sé una serie di grandi sfide, nelle quali occorre mettere tutto in gioco. L'impresa che lo aspetta consiste nel domare onde gigantesche da Maui, nelle Hawaii, fino a Ensenada, in Messico."
             },
             {
                 "ora": "23:40",
                 "titolo": "Pesca selvaggia",
-                "descrizione": "Assunto da alcuni ricercatori per catturare squali e contribuire allo sviluppo di antibiotici in grado di salvare le vittime dei morsi di squalo, Cyril deve sfidare coccodrilli e squali furiosi per portare a termine questa pericolosa missione."
+                "descrizione": "Dei ricercatori incaricano Cyril di catturare squali per contribuire allo sviluppo di antibiotici, in grado di salvare le vittime dei morsi di questi pesci. Per riuscirci, deve sfidare coccodrilli e pescecani furiosi."
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "MTV",
@@ -6354,7 +6349,7 @@
                 "descrizione": "Ep3 di 42 Sterling e Rocsi Diaz IX - In questo episodio Rob e Steelo danno il benvenuto a Rocsi Diaz"
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Comedy Central",
@@ -6511,7 +6506,7 @@
                 "descrizione": "Quando la moglie Andi decide di riavviare la sua carriera professionale, Adam è costretto a passare più tempo a casa e assumersi maggiori responsabilit� nell'accudire i loro tre figli piccoli."
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Sky Arte",
@@ -6618,7 +6613,7 @@
                 "descrizione": "Tra luce dorata, simbolismo ed erotismo, un viaggio nei capolavori di Gustav Klimt, fino all’opera che meglio incarna lo spirito del primo ’900: “Il Bacio”."
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Sky Documentaries",
@@ -6740,7 +6735,7 @@
                 "descrizione": "Ep2 di 3 Sex tape e bugie - Un video porno di Kim Kardshian rende noto il nome della sua famiglia in tutto il mondo. Nel frattempo, il suo reality show raggiunge l'apice del successo."
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Sky Nature",
@@ -6857,7 +6852,7 @@
                 "descrizione": "Esploriamo i regni scandinavi del fuoco, del ghiaccio e degli animali, tra cui il bue muschiato, gli orsi polari e le volpi artiche, che devono affrontare il paesaggio mentre cambia intorno a loro."
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Discovery Channel",
@@ -6974,7 +6969,7 @@
                 "descrizione": "Seguiamo il processo di produzione di alcuni articoli o alimenti di uso quotidiano, come l'asciugatrice, la chewing gum e i fuochi di artificio."
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "History Channel",
@@ -7091,7 +7086,7 @@
                 "descrizione": "La ferocia criminale nazista - Ripercorriamo la assurda follia criminale nazista nei campi di concentramento, attraverso testimonianze e racconti inediti."
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Cartoon Network",
@@ -7248,7 +7243,7 @@
                 "descrizione": "Craig e i suoi due amici Kelsey e JP vivono bellissime avventure nella natura selvaggia conosciuta come Creek: un posto pieno di azione e incredibili storie."
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Dea Kids",
@@ -7405,7 +7400,7 @@
                 "descrizione": "Dopo che Courtney si rifiuta di condividere le sue vittorie ottenute ad un concorso viene trasportata in un futuro tetro, dove scopre che l'avidit� non è senza conseguenze."
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Nick Jr",
@@ -7562,7 +7557,7 @@
                 "descrizione": "Il piccolo regno di Ben e Holly è un cartone animato britannico per i bambini in et� prescolare ambientato in un magico regno incantato, popolato da fate, elfi e insetti."
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Boomerang",
@@ -7719,7 +7714,7 @@
                 "descrizione": "Ep1 di 78 Campeggio nella natura - Dopo una lunga lotta per accaparrarsi la casetta del guardaboschi, che non vogliono dividere, Grizzy e i Lemming finiscono per farla esplodere."
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Sky TG 24",
@@ -7876,7 +7871,7 @@
                 "descrizione": "Previsioni meteo dettagliate e sempre aggiornate 24 ore al giorno. Le previsioni regionali, nazionali ed internazionali."
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:56"
     },
     {
         "canale": "Rai News 24",
@@ -8033,7 +8028,7 @@
                 "descrizione": "Tg Ucraino"
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:57"
     },
     {
         "canale": "Sky Meteo 24",
@@ -8190,6 +8185,6 @@
                 "descrizione": "Previsioni meteo dettagliate e sempre aggiornate 24 ore al giorno. Le previsioni regionali, nazionali ed internazionali."
             }
         ],
-        "aggiornato": "12:16"
+        "aggiornato": "20:57"
     }
 ]
