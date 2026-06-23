@@ -129,17 +129,12 @@
                 "descrizione": "Inghilterra e Ghana si giocano a Boston il primato del gruppo L. La nazionale dei Tre Leoni di Kane e Bellingham parte ovviamente con tutti i favori del pronostico."
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "15:13"
     },
     {
         "canale": "Rai 2",
         "categoria": "Digitale Terrestre",
         "programmi": [
-            {
-                "ora": "06:00",
-                "titolo": "Ritorno a Las Sabinas",
-                "descrizione": "Dopo molti anni di lontananza, le sorelle Molina tornano nella loro citt� natale per affrontare i problemi di salute del padre. Il loro ritorno significa una riunione con le vite, gli amori e i segreti che hanno cercato di dimenticare."
-            },
             {
                 "ora": "06:10",
                 "titolo": "La Grande Vallata",
@@ -153,7 +148,7 @@
             {
                 "ora": "07:47",
                 "titolo": "Baywatch",
-                "descrizione": "Il tenente Mitch Buchannon è il caposquadra dei bagnini delle spiagge di Emerald Bay, in Florida, assieme alle due fidate colleghe Stephanie Holden e C.J. Parker. Essendo rimasti liberi tre posti vengono indette delle selezioni, che vengono vinte dal borioso ex campione olimpico di nuoto Matt Brody, dall'intelligente Summer Quinn e dall'imbranato esperto di informatica Ronnie (al suo terzo tentativo e innamorato di C.J.). Nel frattempo giunge ad Emerald Bay la nuova proprietaria dell'esclusivo Huntley Club, Victoria Leeds, su cui pendono delle voci riguardo il fatto che sia a capo del traffico di una pericolosissima droga chiamata \"Flakka\"."
+                "descrizione": "Le avventure di una squadra di bagnini di salvataggio della spiaggia di Malibù, Los Angeles. Guidati da Mitch Buchannon, i ragazzi affrontano numerose sfide per proteggere i turisti."
             },
             {
                 "ora": "08:30",
@@ -167,8 +162,8 @@
             },
             {
                 "ora": "10:00",
-                "titolo": "TG2 Dossier",
-                "descrizione": "Approfondimento del Tg2. Direttore Antonio Preziosi Vicedirettore Elisabetta Migliorelli A cura di Francesco Vitale"
+                "titolo": "Tg2 Dossier - È Tutto Oro Quello Che Luccica",
+                "descrizione": "Il fascino, la storia e le metamorfosi dell'oro in un viaggio che ne esplora il valore estetico, simbolico ed economico. L'inviata Laura Pintus segue le tracce dell'oro che ancora affiora dai fiumi, per raccontare ciò che questo metallo rappresenta: la luce sacra del tesoro di San Gennaro a Napoli, il potere regale che risplende nella Reggia di Versailles e nella piazza dorata di Nancy. Un itinerario che tocca anche la tradizione orafa fiorentina, custode di un'arte antica tramandata nei secoli, e l'eccellenza dei restauratori dell'Opificio delle Pietre Dure di Firenze, capaci di restituire splendore a opere segnate dal tempo."
             },
             {
                 "ora": "10:55",
@@ -271,7 +266,7 @@
                 "descrizione": "I protagonisti della politica, dell'attualit� , della cultura o dello spettacolo raccontano senza filtri il loro momento di svolta e le loro scelte di vita, tra famiglia, carriera, figli e amori."
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "15:13"
     },
     {
         "canale": "Rai 3",
@@ -420,10 +415,10 @@
             {
                 "ora": "23:15",
                 "titolo": "Onore Al Merito",
-                "descrizione": "Laura Chimenti racconta le storie di imprenditori, donne e uomini che, con il loro lavoro e la loro visione, hanno contribuito alla crescita del Paese e sono stati insigniti dal Presidente della Repubblica dell'onorificenza di Cavaliere del Lavoro."
+                "descrizione": "La settima puntata è dedicata al Cavaliere del Lavoro Fulvio Codecasa: con il suo rigoroso e lungimirante impegno ha trasformato il cantiere di pescherecci della sua famiglia in un'azienda che produce yacht di lusso, imbarcazioni che, partendo da Viareggio, navigano i mari di tutto il mondo. L'altro Cavaliere del Lavoro di questo settimo appuntamento sar� Claudio Luti, un grande manager che con creativit� e ricerca ha rivoluzionato la storia del design italiano, introducendo materiali innovativi nella produzione di oggetti di arredamento. La sua azienda è diventata simbolo internazionale dell'Italian style."
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "15:13"
     },
     {
         "canale": "Rai 4",
@@ -555,7 +550,7 @@
                 "descrizione": "Rubrica per la promozione della cultura cinematografica in Italia."
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "15:14"
     },
     {
         "canale": "Rai 5",
@@ -667,7 +662,7 @@
                 "descrizione": "Un ex detenuto torna in prigione per raccontare ai suoi ex compagni di carcere, la sua nuova vita lontana dal crimine, ma qualcosa va storto e per restare vivo, è costretto a giocare una partita molto pericolosa."
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "15:14"
     },
     {
         "canale": "Rete 4",
@@ -759,7 +754,7 @@
                 "descrizione": "Talk di attualita' e politica, approfondita e commentata dagli ospiti. Bianca Berlinguer conduce dando voce a tutte le opinioni."
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "15:14"
     },
     {
         "canale": "Canale 5",
@@ -831,12 +826,12 @@
                 "descrizione": "Il processo tv che affronta vicende comuni e quotidiane con uno sguardo sempre attento ai temi piu' attuali. Conduce Barbara Palombelli"
             },
             {
-                "ora": "12:58",
+                "ora": "12:57",
                 "titolo": "Tg5",
                 "descrizione": "Le notizie piu' importanti, nazionali e internazionali, con approfondimenti e rubriche, a cura della redazione giornalistica di Canale 5."
             },
             {
-                "ora": "13:44",
+                "ora": "13:45",
                 "titolo": "Beautiful",
                 "descrizione": "Li e Finn parlano del dramma che ha colpito Poppy e Luna. Li soffre profondamente per sua sorella, devastata nello scoprire che sua figlia Luna e' una criminale responsabile di omicidi."
             },
@@ -861,32 +856,32 @@
                 "descrizione": "Il nuovo spazio pomeridiano d'informazione condotto da Gianluigi Nuzzi con approfondimenti su storie, fatti e attualita'."
             },
             {
-                "ora": "18:42",
+                "ora": "18:40",
                 "titolo": "Avanti un altro - primavera",
                 "descrizione": "Paolo Bonolis, presentatore storico del game show piu' folle della tv, torna per la dodicesima stagione alla guida del preserale di Canale 5."
             },
             {
-                "ora": "19:54",
+                "ora": "19:52",
                 "titolo": "Tg5 Prima Pagina",
                 "descrizione": "Sintesi delle notizie principali del giorno."
             },
             {
-                "ora": "20:00",
+                "ora": "19:59",
                 "titolo": "Tg5",
                 "descrizione": "Le notizie piu' importanti, nazionali e internazionali, con approfondimenti e rubriche, a cura della redazione giornalistica di Canale 5.\nQUESTO PROGRAMMA E' SOTTOTITOLATO."
             },
             {
-                "ora": "20:39",
+                "ora": "20:42",
                 "titolo": "La ruota della fortuna",
                 "descrizione": "Gerry Scotti, Samira e la ruota piu' famosa della tv! I concorrenti devono scoprire le frasi nascoste. Serve bravura ma la fortuna ci mette del suo!"
             },
             {
                 "ora": "21:20",
-                "titolo": "Gigi & vanessa insieme",
-                "descrizione": "Gigi & vanessa insieme '25"
+                "titolo": "Gigi & Vanessa insieme",
+                "descrizione": "Uno show all'insegna della musica, dello spettacolo e della spontaneita'. Gigi D'Alessio e Vanessa Incontrada celebrano il loro forte legame condividendo il palco con diversi ospiti."
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "15:14"
     },
     {
         "canale": "Italia 1",
@@ -998,7 +993,7 @@
                 "descrizione": "Kyle e Peter Reynolds sono due fratelli cui la madre, piuttosto eccentrica, ha sempre raccontato che il padre era morto quando erano ancora piccoli. Una volta scoperto che non è così, decidono di mettersi alla ricerca del loro vero padre e vengono anche a sapere alcune cose della loro madre che forse avrebbero preferito non conoscere."
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "15:14"
     },
     {
         "canale": "La7",
@@ -1017,17 +1012,17 @@
             {
                 "ora": "08:00",
                 "titolo": "Omnibus Dibattito",
-                "descrizione": "Programma di informazione e approfondimento con rubriche, ospiti, rassegna stampa, aggiornamenti sul traffico, previsioni meteo, dibattito sul tema del giorno. 24a Edizione."
+                "descrizione": "Alessandra Sardoni con Vincenzo Camporini, Mariateresa Meli, Angelo Bonelli, Pino Corrias, Francesco Giubilei, Marco Varvello"
             },
             {
                 "ora": "09:40",
                 "titolo": "Coffee Break",
-                "descrizione": "Lo spazio mattutino per l'approfondimento e l'attualit� condotto da Andrea Pancani. 14a Edizione."
+                "descrizione": "Andrea Pancani con Riccardo Magi, Giorgio Dell’arti, Pietro De Leo, Paolo Zangrillo, Susanna Ceccardi"
             },
             {
                 "ora": "11:00",
                 "titolo": "L'Aria Che Tira",
-                "descrizione": "Conduce David Parenzo. 15a edizione"
+                "descrizione": "David Parenzo con Donatella Di Cesare, Alessandro Zan, Raffaele Speranzon, Renato Mannheimer, Michele Silenzi, Antonio Padellaro, Alessandro Cecchi Paone, Walter Villadei, Duilio Giammaria, Antonella Boralevi, Giuseppe Santangelo,..."
             },
             {
                 "ora": "13:30",
@@ -1068,9 +1063,14 @@
                 "ora": "21:15",
                 "titolo": "Epstein: sopravvissute all'incubo - AVENGED; NO WAY OUT",
                 "descrizione": "E 3-4 - Documentario \/ Mini-serie TV di Anne Sundberg e Ricki Stern (USA 2020). Otto sopravvissuti condividono le loro storie nel documentario su Jeffrey Epstein, pluri condannato per reati sessuali e pedofili, che ha usato potere..."
+            },
+            {
+                "ora": "23:20",
+                "titolo": "Il caso Epstein. Il racconto continua - parte 2",
+                "descrizione": "Speciale a cura di La7 Digital Media Lab - Nuove rivelazioni dagli Epstein Files: documenti, testimonianze e rapporti con il potere. Focus su Bill Clinton e sui legami tra Epstein e Donald Trump."
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "15:14"
     },
     {
         "canale": "TV8",
@@ -1177,7 +1177,7 @@
                 "descrizione": "Alessandro Borghese è il protagonista della grande tentazione di questa puntata: cosa avr� in serbo per i membri della Compagnia?"
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:14"
     },
     {
         "canale": "Nove",
@@ -1276,10 +1276,10 @@
             {
                 "ora": "21:30",
                 "titolo": "Le Crociate",
-                "descrizione": "Ridley Scott scende in Terra Santa per un kolossal epico con scene d'azione spettacolari. Un maniscalco rimasto vedovo si aggrega a un manipolo di crociati per difendere Gerusalemme dagli invasori."
+                "descrizione": "Balian è un maniscalco che ha perso la famiglia e che ha rischiato di perdere anche la fede. Le guerre di religione che sconvolgono la remota Terra Santa gli sembrano lontane anni luce. Ma il destino bussa alla porta di Balian sotto le spoglie di un grande cavaliere, Godfrey di Ibelin, un crociato che dopo aver combattuto nel lontano Oriente ha fatto momentaneamente ritorno in patria, in Francia. Dichiarando di essere suo padre, Godfrey mostrer� a Balian che cosa voglia dire essere un cavaliere e lo porter� con sé in un favoloso viaggio attraverso i continenti per giungere fino in Terra Santa"
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:14"
     },
     {
         "canale": "20 Mediaset",
@@ -1396,7 +1396,7 @@
                 "descrizione": "Agli inizi degli anni Sessanta del Novecento, in piena guerra fredda, l'agente della Cia Napoleon Solo (Henry Cavill) e l'agente del KGB Ilya Kuryakin (Armie Hammer) sono costretti a mettere da parte il tradizionale antagonismo per impegnarsi in una missione comune. Il loro obiettivo è quello di mettere fuori dai giochi un'organizzazione criminale internazionale che minaccia di scuotere il gi� precario equilibrio globale con la proliferazione di armi e tecnologia nucleari. Solo e Kuryakin hanno una traccia da cui partire: il contatto con la figlia di uno scienziato tedesco scomparso, l'unico in grado di infiltrarsi nell'organizzazione. Finiranno così con l'essere impegnati in una corsa contro il tempo per ritrovare l'uomo e prevenire una catastrofe mondiale."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:14"
     },
     {
         "canale": "Twentyseven",
@@ -1493,7 +1493,7 @@
                 "descrizione": "Il piccolo Sandy, in vacanza in Florida con l'eccentrico zio Porter, diventa amico del delfino Flipper e di una sua coetanea. Con il loro aiuto riuscir� a scongiurare l'inquinamento della baia minacciato da un malvagio industriale."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:14"
     },
     {
         "canale": "IRIS",
@@ -1550,7 +1550,7 @@
                 "descrizione": "Nemmeno la guerra di Secessione è un motivo sufficiente perché Jess Birdwell (Cooper), di rigorosa osservanza quacchera, rinneghi i suoi principi che non ammettono in alcun modo la violenza. Il figlio Josh (Perkins), invece, si arruola nella Guardia Civile e sua madre (McGuire) è disperata. Ma il capofamiglia, quando è in gioco la vita di Josh, è pronto anch'egli ad armarsi di fucile."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:14"
     },
     {
         "canale": "Rai Movie",
@@ -1607,7 +1607,7 @@
                 "descrizione": "Jerry Maguire, spregiudicato procuratore sportivo dalla vita frenetica, viene licenziato dall'agenzia per cui lavora. Cercher� di ricostruirsi una nuova vita con l'aiuto di Rod Tidwell, atleta in declino, e di Dorothy, una deliziosa ragazza che decide di seguirlo nel suo futuro incerto."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:14"
     },
     {
         "canale": "Rai Premium",
@@ -1699,7 +1699,7 @@
                 "descrizione": "Ambientata tra Lucca e Viareggio durante la seconda guerra mondiale, la serie racconta la storia dello psichiatra e poeta Mario Tobino, medico dell’ospedale psichiatrico femminile di Maggiano dove è giunto alla fine del 1942 dopo essere stato congedato dal fronte libico. Con un approccio umano e non convenzionale, Tobino si confronta con i metodi rigidi e repressivi dell’istituzione, cercando invece di restituire dignit� , ascolto e comprensione alle pazienti ricoverate, molte delle quali sono state internate ingiustamente o per aver manifestato un comportamento ritenuto troppo libero per l’epoca."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:14"
     },
     {
         "canale": "La 5",
@@ -1786,7 +1786,7 @@
                 "descrizione": "Sull'isola hawaiana di Maui Anne Marie lavora con scarso entusiasmo come cameriera. L'unica sua passione è il surf. Insieme ad un gruppo di amiche affitta un capanno sul mare e decide di prepararsi ad una gara importante. L'arrivo di Matt, un giocatore di calcio, la distrae dal suo intento."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:14"
     },
     {
         "canale": "Real Time",
@@ -1878,7 +1878,7 @@
                 "descrizione": "Una donna ha una crisi poco dopo il parto: riuscira' a sopravvivere? Inoltre, un addetto alla sicurezza e' disorientato, non respira e non e' lucido. L'uomo ha una ferita al cervello?"
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:14"
     },
     {
         "canale": "Food Network",
@@ -2025,7 +2025,7 @@
                 "descrizione": "Luca torna fra le colline della sua Toscana, a Murlo e Buonconvento."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:14"
     },
     {
         "canale": "Focus",
@@ -2127,7 +2127,7 @@
                 "descrizione": "Cime imponenti incoronano il continente europeo: sono le Alpi e per poterle ammirare ci vuole lo sguardo di un'aquila."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:14"
     },
     {
         "canale": "Giallo",
@@ -2204,7 +2204,7 @@
                 "descrizione": "L'ispettore capo Tom Barnaby della polizia di Midsomer e il suo fidato sergente, Gavin Troy, , devono investigare sugli omicidi che avvengono nei villaggi dell'immaginaria contea inglese di Midsomer. Le storie sono ambientate nel presente ed hanno una struttura di \"giallo classico\", in cui l'indagine e le deduzioni prevalgono sull'azione e sulla violenza."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:14"
     },
     {
         "canale": "Boing",
@@ -2293,7 +2293,7 @@
             {
                 "ora": "09:15",
                 "titolo": "Teen Titans Go!",
-                "descrizione": "I supereroi compagni di stanza Robin, Stella, Corvina, Bibi e Cyborg proteggono Jump City dai malvagi, quando non sono troppo impegnati a litigare e a sfidarsi."
+                "descrizione": "Bibi perde la sua super capacita'di trasformarsi in animale"
             },
             {
                 "ora": "09:25",
@@ -2361,7 +2361,7 @@
                 "descrizione": "Gumball, un gatto di 12 anni, e il suo amico Darwin, un pesce rosso, vivono avventure al limite della follia, in questa stravagante commedia animata."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:14"
     },
     {
         "canale": "K2",
@@ -2518,7 +2518,7 @@
                 "descrizione": "1' Stagione Ep.47 - Le avventure di tre scoiattoli dalla voce incredibile, 'adottati' da Dave Seville, che diventano un fenomeno musicale."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:14"
     },
     {
         "canale": "Rai Gulp",
@@ -2675,7 +2675,7 @@
                 "descrizione": "Anatane e i suoi amici hanno un incidente e il loro airgliss è distrutto. Si fermano quindi nella vicina citt� di Strasburgo e incontrano Flora, una ragazza che offre loro il suo aiuto, e sua nonna, Augusta, che mette a disposizione dei ragazzi un nuovo velivolo, un planef, per proseguire il loro viaggio verso Okura"
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:14"
     },
     {
         "canale": "Frisbee",
@@ -2832,7 +2832,7 @@
                 "descrizione": "5' Stagione Ep.32 - Proseguono le avventure dei tre fratelli scoiattoli dotati di una voce incredibile e di uno straordinario talento musicale."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:14"
     },
     {
         "canale": "DMAX",
@@ -2929,7 +2929,7 @@
                 "descrizione": "Nel 2024, la Florida viene colpita da due enormi uragani mortali."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:14"
     },
     {
         "canale": "Rai Sport",
@@ -2958,7 +2958,7 @@
             {
                 "ora": "11:10",
                 "titolo": "Argentina - Austria",
-                "descrizione": "Lo scontro tra Argentina e Austria decide la leadership del gruppo J. L'albiceleste campione del mondo in carica viena dalla netta vittoria contro l'Algeria mentre la squadra di Ralf Rangnick ha agevolmente battuto la Giordania 3-1."
+                "descrizione": "Collegamento pre e post partita con la supervisione di Marco Mazzocchi e Massimo Proietto. Conduce Paola Ferrari con Simona Rolandi, Paulo Roberto Falcao e Marco Tardelli. Regia di Marco Spoletini. Partita del Mondia le di Calcio Fifa 2026 in programma dall'11 giugno al 19 luglio 2026, in diverse citt� di Stati Uniti, Canada e Messico. Coppa del Mondo di Calcio FIFA 2026 Un programma a cura di Rai Sport con la Supervisione Marco Lollobrigida In diretta dal AT&T Stadium (Dallas). Telecronaca di Stefano Bizzotto. Commento tecnico di Andrea Stramaccioni."
             },
             {
                 "ora": "13:15",
@@ -2996,7 +2996,7 @@
                 "descrizione": "Europei - Finali a Squadre: Spada Donne e Fioretto Uomini"
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:14"
     },
     {
         "canale": "Sportitalia",
@@ -3113,7 +3113,7 @@
                 "descrizione": "Il programma tratta le vicende del calciomercato sia nella sessione estiva che in quella invernale e va in onda alle ore 23.00 dal lunedì al venerdì"
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:14"
     },
     {
         "canale": "HGTV",
@@ -3265,7 +3265,7 @@
                 "descrizione": "Alex si occupa di un biliardino malmesso. Martin e' alle prese con una cassa di legno, mentre Craig sistema una sedia scandinava."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:14"
     },
     {
         "canale": "RSI LA 1",
@@ -3422,7 +3422,7 @@
                 "descrizione": "Mentre l'ospedale è in quarantena, quattro studenti di medicina dovranno lavorare insieme per svolgere anche il lavoro dei loro superiori."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:14"
     },
     {
         "canale": "RSI LA 2",
@@ -3502,14 +3502,9 @@
                 "ora": "21:15",
                 "titolo": "FIFA World Cup 2026 ™ - Inghilterra - Ghana",
                 "descrizione": "da Boston (USA)"
-            },
-            {
-                "ora": "23:10",
-                "titolo": "FIFA World Cup 2026 ™ - Inghilterra - Ghana",
-                "descrizione": "da Boston (USA)"
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:14"
     },
     {
         "canale": "DAZN 1",
@@ -3606,7 +3601,7 @@
                 "descrizione": "Michele Dalai intervista Federico Dimarco, l'esterno dell'Inter reduce da una stagione da incorniciare con 7 gol, 18 assist, il premio di miglior giocatore del campionato e il double con i nerazzurri."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:14"
     },
     {
         "canale": "Sky Sport 24",
@@ -3763,7 +3758,7 @@
                 "descrizione": "Tutti gli aggiornamenti dalle squadre di Serie A con collegamenti live, interviste e ospiti in studio."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:14"
     },
     {
         "canale": "Sky Sport Uno",
@@ -3937,7 +3932,7 @@
                 "descrizione": "Curiosita', commenti, notizie e anticipazioni sui possibili movimenti del calciomercato. Condotto dal trio Alessandro Bonan, Gianluca Di Marzio e Fayna."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:14"
     },
     {
         "canale": "Sky Sport Tennis",
@@ -3966,6 +3961,11 @@
             {
                 "ora": "11:00",
                 "titolo": "Tennis Atp&Wta 2026",
+                "descrizione": "Tennis: ATP & WTA. - ... Tennis: ATP & WTA. - ... Tennis: ATP & WTA. - ... Tennis: ATP & WTA. - ... Tennis Atp&Wta. - Tennis Atp&Wta"
+            },
+            {
+                "ora": "12:00",
+                "titolo": "Tennis Atp&Wta 2026",
                 "descrizione": "23\/06\/2026 Tennis: ATP & WTA. - ... Tennis Atp&Wta. - Tennis Atp&Wta"
             },
             {
@@ -3989,7 +3989,7 @@
                 "descrizione": "50 anni dopo Adriano Panatta, un italiano torna a trionfare al Foro Italico. Il cammino di Jannik Sinner a Roma, attraverso i backstage e le immagini inedite di Sky Sport."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:14"
     },
     {
         "canale": "Sky Sport F1",
@@ -4146,7 +4146,7 @@
                 "descrizione": "Prima fila tutta McLaren all'A1 Ring, con Hakkinen e Coulthard. Le Ferrari sono terza, con Irvine, e settima, con Salo che sostituisce Schumacher dopo l'infortunio di Silverstone."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:14"
     },
     {
         "canale": "Sky Sport Legend",
@@ -4228,7 +4228,7 @@
                 "descrizione": "UEFA Champions League Story. - 22 Maggio 2010, al Santiago Bernabeu di Madrid, Inter e Bayern Monaco si sfidano nella finale di Champions League. Per i nerazzurri sara' il terzo titolo della storia"
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:14"
     },
     {
         "canale": "Sky Sport MotoGP",
@@ -4385,7 +4385,7 @@
                 "descrizione": "Brivio - Back To Japan"
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:14"
     },
     {
         "canale": "Sky Sport Basket",
@@ -4453,16 +4453,16 @@
             },
             {
                 "ora": "19:05",
-                "titolo": "Il Sogno Di Quinn Ellis",
-                "descrizione": "Intervista a Quinn Ellis, giovane talento dell'Olimpia Milano. Dall'Inghilterra a Capo d'Orlando, Casale e Trento. La sua famiglia ha scritto, e scrive ancora, la storia del basket inglese."
+                "titolo": "Basket Room Lba - Finals",
+                "descrizione": "Il lavoro di Davide Beretta ripercorre la serie che ha portato l'Olimpia a vincere il suo trentaduesimo scudetto nonostante la bella resistenza della Reyer. Con Giulia Cicchine' e Geri De Rosa."
             },
             {
-                "ora": "19:30",
+                "ora": "19:15",
                 "titolo": "Olympiacos Piraeus - Fenerbahçe Beko",
                 "descrizione": "Eurolega. - I greci, primi in stagione regolare, sfidano i turchi di Nic Melli, campioni in carica e pronti a difendere il titolo. In palio un posto nella finale di Eurolega. TC: Andrea Solaini e Chicca Macchi."
             },
             {
-                "ora": "21:35",
+                "ora": "21:15",
                 "titolo": "Finale, Gara 4: Umana Reyer Venezia - EA7 Emporio Armani Milano",
                 "descrizione": "- EA7 Emporio Armani Milano Serie A Basket. - In gara 3 la Reyer ha riaperto la serie e ora punta a gara 5. L'Olimpia resta in vantaggio 2-1 ed e' ancora ad una sola vittoria dallo scudetto. Telecronaca di Geri De Rosa e Andrea Meneghin."
             },
@@ -4472,7 +4472,7 @@
                 "descrizione": "Spurs NBA. - Si torna a Oklahoma City con la serie in parita' sul 2-2: chi vince gara-5 si guadagna il primo match point nella serie. Telecronaca di Flavio Tranquillo e Davide Pessina"
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:14"
     },
     {
         "canale": "Sky Sport Arena",
@@ -4564,7 +4564,7 @@
                 "descrizione": "23\/06\/2026 WRC Highlight Show. - Riviviamo le fasi piu' emozionanti delle gare del World Rally Championship."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:14"
     },
     {
         "canale": "Sky Sport Max",
@@ -4646,7 +4646,7 @@
                 "descrizione": "Le azioni dei Grand Slam del Judo."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:14"
     },
     {
         "canale": "Sky Sport Mix",
@@ -4698,7 +4698,7 @@
                 "descrizione": "I protagonisti, le sfide e gli eventi nazionali e internazionali in collegamento con i circoli di tutta Italia. Gli eventi del padel dilettantistico e le analisi dei materiali tecnici all'avanguardia."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:14"
     },
     {
         "canale": "Sky Sport Golf",
@@ -4765,7 +4765,7 @@
                 "descrizione": "World Tour. - Dall'Aronimink Golf Club di Newtown Square, Stati Uniti."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:14"
     },
     {
         "canale": "Sky Sport 251",
@@ -4935,7 +4935,7 @@
                 "descrizione": "Dopo il crollo avvenuto in un'isolata miniera di diamanti nelle regioni settentrionali del Canada, un autista guida una missione di salvataggio quasi impossibile su un oceano ghiacciato per salvare la vita dei minatori rimasti intrappolati. Si ritrover� così al centro di una corsa contro il tempo per evitare il peggio."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:14"
     },
     {
         "canale": "Sky Cinema Uno +24",
@@ -4992,7 +4992,7 @@
                 "descrizione": "Il generale Eugene Erwing, eroe del Vietnam e del Golfo, uomo d'azione e intellettuale, una vera leggenda dell'esercito americano, per motivi di principio (ha disobbedito a un ordine ingiusto) viene internato in una prigione militare. Il comandante è un colonnello metodico e crudele, forse psicopatico, che vive malissimo la superiorit� dell'altro. I detenuti eleggono Erwing loro capo morale e non solo. In una spirale di violenze e ingiustizie sempre più intollerabili, esplode la sfida fra il generale e il comandante, che ricorda quasi quella tra i due colonnelli de Il Ponte sul fiume Kwai."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:14"
     },
     {
         "canale": "Sky Cinema Due",
@@ -5049,7 +5049,7 @@
                 "descrizione": "Campagna toscana, estate 1984. Il bidello Mario e l'insegnante Saverio sono fermi ad un passaggio a livello, in attesa che il treno passi. I due sono amici e si confidano a vicenda. Saverio tra l'altro è preoccupato per sua sorella Gabriella. L'attesa si protrae e decidono di percorrere una stradina tra i campi. Dopo un po' restano in panne con l'auto in mezzo alla campagna. Si fa sera, piove. I due passano la notte in una locanda. Trovano posto in una stanza che ospita gi� un'altra persona."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:14"
     },
     {
         "canale": "Sky Cinema Due +24",
@@ -5071,7 +5071,7 @@
                 "descrizione": "Dopo aver preso ostaggi in una banca di Stoccolma, un ex detenuto chiede il rilascio di un vecchio complice. Con l'aggravarsi della situazione, l'uomo sviluppa uno strano legame con una delle donne sequestrate."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:14"
     },
     {
         "canale": "Sky Cinema Collection",
@@ -5128,7 +5128,7 @@
                 "descrizione": "Quando l'Enterprise fa ritorno sulla Terra in seguito ad un controverso incidente galattico, l'indomito Capitano Kirk è impaziente di tornare fra le stelle per una nuova e più lunga missione di pace ed esplorazione. Le cose però non vanno affatto bene sul Pianeta Blu. Un devastante attacco terrorista ha rivelato una realt� allarmante e la Flotta Stellare ha subìto un attacco dall'interno dalle disastrose conseguenze globali. Il Capitano Kirk guider� l'Enterprise in una missione incredibile che spazia dal pianeta Klingon alla Baia di San Francisco. Il nemico che si annida a bordo dell'Enterprise ha un unico scopo: la distruzione totale. Kirk guider� i suoi compagni in un ingannevole regno di specchi dove non si erano mai inoltrati prima d'ora, penetrando il sottile confine fra amici e nemici, vendetta e giustizia, alle prese con una guerra totale e la potenzialit� di un futuro unito."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:14"
     },
     {
         "canale": "Sky Cinema Family",
@@ -5195,7 +5195,7 @@
                 "descrizione": "Un'orca maschio, ribattezzata Willy, viene pescata e separata da i suoi genitori e finisce per diventare l'attrazione di un parco marino. Jesse, un ragazzino di strada, per atti di vandalismo, viene costretto a fare servizio di volontariato presso quell'acquario. Il ragazzino all'interno dell'acquario fa amicizia con Willy, e gli insegna alcuni trucchi e comportamenti, che neppure l'addestratore era riuscito ad insegnarli. Quando però Jesse capisce che di lì a poco il proprietario dell'acquario ha intenzione di sbarazzarsi di Willy, decide di donare la libert� all'orca, organizza un piano di fuga e riesce nell'impresa con l'aiuto di Rae, Randolph e dei suoi nuovi genitori. Sfortunatamente le acque sono alte 6 metri e le reti dei peschereggi le costeggiano tutte. Allora a Jesse viene un'idea, far saltare a Willy gli scogli. Dopo qualche minuto, Jesse convince Willy a saltare. Infine Willy, riunendosi alla sua famiglia ringrazia Jesse e i suoi amici facendo salti spettacolari."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:14"
     },
     {
         "canale": "Sky Cinema Action",
@@ -5252,7 +5252,7 @@
                 "descrizione": "300 è il numero di spartani che si opposero al re persiano Serse nel 480 A.C. Questa pellicola narra infatti di una storia realmente accaduta, di una battaglia epica combattuta al passo delle Termopili che vedeva contrapporsi 300 spartani contro un milione di persiani. Re Serse, spinto dalla sua insaziabile sete di conquista, invia un messaggero in Grecia, a Sparta, che viene accolto dal re Leonida (G. Butler) e dalla regina Gorgo (L. Headey). Ma quando l’emissario pronuncia la parola 'sottomissione' decreta l’inizio della semi-disfatta per i persiani. Leonida, dopo aver ucciso il messaggero, decide di affrontare questa nuova minaccia chiamata Persia: dopo aver radunato 300 tra i migliori combattenti spartani si dirige allo stretto passo delle Termopili per contrastare il temibile nemico.."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:14"
     },
     {
         "canale": "Sky Cinema Suspense",
@@ -5309,7 +5309,7 @@
                 "descrizione": "Basato su un agghiacciante capitolo del romanzo cult di Bram Stoker, Dracula. Demeter: Il Risveglio di Dracula racconta la terrificante storia della nave mercantile Demeter, noleggiata per trasportare cinquanta casse di legno non contrassegnate da Carpathia a Londra. Strani eventi si abbattono sull'equipaggio mentre cerca di sopravvivere al lungo viaggio, perseguitato ogni notte da una presenza inquietante a bordo della nave. Quando la Demeter arriva finalmente al largo delle coste inglesi, è un relitto carbonizzato e abbandonato. Dell'equipaggio non c'è traccia."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:14"
     },
     {
         "canale": "Sky Cinema Romance",
@@ -5366,7 +5366,7 @@
                 "descrizione": "Sono passati alcuni anni e Sophie ha deciso di rimodernare l'hotel di famiglia, sull'isola greca di Kalokairi, per rendere omaggio a Donna, che l'ha cresciuta da sola in quel paradiso terrestre. Mentre soffre per la lontananza di Sky e si adopera perché l'inaugurazione dell'hotel sia memorabile, la giovane donna ripensa alla vita di sua madre, a quel pugno di giorni che le sconvolsero la vita e alla scelta di restare sull'isola, la stessa che sta maturando lei, tra entusiasmo e perplessit� ."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:14"
     },
     {
         "canale": "Sky Cinema Drama",
@@ -5428,7 +5428,7 @@
                 "descrizione": "In fuga dall'Europa del dopoguerra, l'architetto visionario László Toth arriva in America per ricostruire la sua vita, il suo lavoro e il suo matrimonio con la moglie Erzsébet dopo essere stato costretto a separarsi durante la guerra da confini e regimi mutevoli. Da solo in un paese nuovo e sconosciuto, László si stabilisce in Pennsylvania, dove il ricco e importante industriale Harrison Lee Van Buren riconosce il suo talento nel costruire. Ma il potere e l'eredit� hanno un costo elevato."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:14"
     },
     {
         "canale": "Sky Cinema Comedy",
@@ -5490,7 +5490,7 @@
                 "descrizione": "Alberto Colombo, brianzolo impiegato alle poste, ha finalmente ottenuto la promozione e il trasferimento a Milano. Il Sud, in cui è stato benvenuto e benvoluto, sembra adesso un ricordo lontano che Mattia, indolente compagno meridionale, risveglia col suo arrivo improvviso. Perché la relazione con la bella Maria sta naufragando a causa della sua immaturit� e di un mutuo procrastinato. Deciso a dimostrare alla consorte di essere un uomo responsabile, Mattia si lascia contagiare dall'operosit� milanese finendo per fare brunch e carriera sotto la Madunina. Alberto intanto, promosso direttore e occupato full time, trascura la moglie che finir� per lasciarlo. Sedotti e abbandonati si rimboccheranno le maniche e proveranno a riprendersi la famiglia e una vita migliore in un'Italia senza confini e campanilismi."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:14"
     },
     {
         "canale": "Sky Uno",
@@ -5587,7 +5587,7 @@
                 "descrizione": "Le quattro giovani spose protagoniste di questo episodio promettono quattro scatenatissime feste di matrimonio, tra amici a base di musica, balli, cocktail e tanta leggerezza e spensieratezza."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:14"
     },
     {
         "canale": "Sky Atlantic",
@@ -5694,7 +5694,7 @@
                 "descrizione": "La serie prequel vede la dinastia Targaryen all'apice assoluto del suo potere, con più di 15 draghi sotto il loro giogo. La maggior parte degli imperi, che siano reali o immaginari, crollano quando raggiungono tali poteri e tali altezze. Nel caso dei Targaryen, la loro lenta caduta inizia quasi 193 anni prima degli eventi de Il Trono di Spade, quando re Viserys Targaryen rompe un secolo di tradizione nominando sua figlia Rhaenyra erede al Trono di Spade. La corte rimane scioccata quando Rhaenyra mantiene il suo status di erede nonostante Viserys in seguito avr� un figlio maschio, legittimo erede. Inizia così ad attecchire il seme della divisione e forti attriti in tutto il regno."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:15"
     },
     {
         "canale": "Sky Serie",
@@ -5826,7 +5826,7 @@
                 "descrizione": "Basata sul racconto breve di Manuel Gonzalez, la serie esamina gli squilibri di potere all'interno della coppia: quando un incidente di laboratorio riduce Lindy a soli 15 cm di altezza, il gi� fragile equilibrio nel suo matrimonio con Les esplode in una battaglia esilarante e graffiante tra orgoglio, rancore e amore."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:15"
     },
     {
         "canale": "Sky Investigation",
@@ -5953,7 +5953,7 @@
                 "descrizione": "La serie si svolge nella splendida cornice di una piccola isola caraibica, Saint-Marie, dove il poliziotto Richard Poole, britannico doc, viene inviato per risolvere un misterioso omicidio.Poole si ritrova in una fatiscente stazione di polizia a lavorare con una nuova partner, la brillante Camille Bordey, in un ambiente totalmente diverso da tutto ciò a cui lui è abituato. Lui è un tipo da giacca, cravatta e mocassini... in spiaggia. Nonostante ciò, pur essendo assolutamente un pesce fuor d'acqua in questo paradiso terrestre, si dimostrer� all’altezza di risolvere ogni caso che si presenter� di episodio in episodio."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:15"
     },
     {
         "canale": "Sky Crime",
@@ -6075,7 +6075,7 @@
                 "descrizione": "S4 Ep11 di 13 Licenza d'amore - Un artista che realizza fumetti si ispira alla sua fidanzata, ma inizia a preoccuparsi quando non distingue piu' la fantasia dalla realta'."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:15"
     },
     {
         "canale": "Sky Adventure",
@@ -6187,7 +6187,7 @@
                 "descrizione": "Cyril si trova nel Pacifico meridionale per catturare un pesce enorme e leggendario, conosciuto dalla gente del posto come 'Uruati'. Come se non bastasse, cerca di riuscirci senza venire divorato dagli squali."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:15"
     },
     {
         "canale": "MTV",
@@ -6324,7 +6324,7 @@
                 "descrizione": "Ep16 di 42 - In questa puntata Rob e Steelo sono affiancati da Lolo Wood."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:15"
     },
     {
         "canale": "Comedy Central",
@@ -6481,7 +6481,7 @@
                 "descrizione": "Quando la moglie Andi decide di riavviare la sua carriera professionale, Adam è costretto a passare più tempo a casa e assumersi maggiori responsabilit� nell'accudire i loro tre figli piccoli."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:15"
     },
     {
         "canale": "Sky Arte",
@@ -6593,7 +6593,7 @@
                 "descrizione": "Ep.9 di 10 - Giardini d'arte a cielo aperto. Murales, installazioni e sculture che non solo decorano, ma raccontano storie, riflettono culture e stimolano la riflessione."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:15"
     },
     {
         "canale": "Sky Documentaries",
@@ -6715,7 +6715,7 @@
                 "descrizione": "Scopriamo in cosa consiste il processo di mummificazione praticato dagli antichi Egizi ed indaghiamo sulla figura del faraone Ramses II. Inoltr,e entriamo in alcune tombe che sono state sigillate per migliaia di anni."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:15"
     },
     {
         "canale": "Sky Nature",
@@ -6837,7 +6837,7 @@
                 "descrizione": "S1 Ep2 - Le due spettacolari costiere che si congiungono sulla punta sud dell'Africa."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:15"
     },
     {
         "canale": "Discovery Channel",
@@ -6954,7 +6954,7 @@
                 "descrizione": "Proseguono le avventure dei cacciatori d'oro."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:15"
     },
     {
         "canale": "History Channel",
@@ -7081,7 +7081,7 @@
                 "descrizione": "S1 Ep9 di 20 Codice Enigma - Combattuta tra spie o usando codici segreti. Il piu' celebre e' Enigma, decifrato dal britannico Alan Turing."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:15"
     },
     {
         "canale": "Cartoon Network",
@@ -7238,7 +7238,7 @@
                 "descrizione": "S8 Ep7 - Un'altra avventura per Sticky Joe - Sticky Joe insegue il suo topo Ciao per tutta Jump City."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:15"
     },
     {
         "canale": "Dea Kids",
@@ -7395,7 +7395,7 @@
                 "descrizione": "Dopo aver creduto di aver trasformato Chef in pietra, Duncan punta al caos assoluto solo per scoprire che alla fine non c'è gioia nella vittoria senza un avversario."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:15"
     },
     {
         "canale": "Nick Jr",
@@ -7552,7 +7552,7 @@
                 "descrizione": "Ep10 di 13 - Mister Coccodrillo e Daisy trasformano la vita di tutti i giorni in buffe avventure tra amicizia, entusiasmo e divertenti incomprensioni."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:15"
     },
     {
         "canale": "Boomerang",
@@ -7709,7 +7709,7 @@
                 "descrizione": "Ep21 di 78 L'orso dei palloncini - Grizzy guarda un programma tv sulle sculture di palloncini, cosi' decide di realizzare una scultura a forma di cagnolino per l'orsa di cui e' innamorato."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:15"
     },
     {
         "canale": "Sky TG 24",
@@ -7866,7 +7866,7 @@
                 "descrizione": "Previsioni meteo dettagliate e sempre aggiornate 24 ore al giorno. Le previsioni regionali, nazionali ed internazionali."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:15"
     },
     {
         "canale": "Rai News 24",
@@ -7899,11 +7899,6 @@
             },
             {
                 "ora": "07:00",
-                "titolo": "RASSEGNA STAMPA TITOLI QUOTIDIANI",
-                "descrizione": "RASSEGNA STAMPA TITOLI QUOTIDIANI"
-            },
-            {
-                "ora": "07:03",
                 "titolo": "RASSEGNA STAMPA",
                 "descrizione": "RASSEGNA STAMPA"
             },
@@ -7964,13 +7959,8 @@
             },
             {
                 "ora": "10:00",
-                "titolo": "FILO DIRETTO",
-                "descrizione": "FILO DIRETTO"
-            },
-            {
-                "ora": "10:30",
-                "titolo": "FILO DIRETTO",
-                "descrizione": "FILO DIRETTO"
+                "titolo": "Filo Diretto - Puntata Del 23 \/06\/2026",
+                "descrizione": "Filo diretto - Puntata del 23 \/06\/2026"
             },
             {
                 "ora": "11:00",
@@ -8021,9 +8011,19 @@
                 "ora": "13:27",
                 "titolo": "METEO AM",
                 "descrizione": "METEO AM"
+            },
+            {
+                "ora": "13:30",
+                "titolo": "Tg In Inglese",
+                "descrizione": "Tg In Inglese"
+            },
+            {
+                "ora": "13:40",
+                "titolo": "NEWS + SOMMARIO",
+                "descrizione": "NEWS + SOMMARIO"
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:15"
     },
     {
         "canale": "Sky Meteo 24",
@@ -8180,6 +8180,6 @@
                 "descrizione": "Previsioni meteo dettagliate e sempre aggiornate 24 ore al giorno. Le previsioni regionali, nazionali ed internazionali."
             }
         ],
-        "aggiornato": "09:54"
+        "aggiornato": "15:15"
     }
 ]
