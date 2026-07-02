@@ -71,7 +71,7 @@
             {
                 "ora": "11:30",
                 "titolo": "Italia A\/R",
-                "descrizione": "Vittorio Brumotti ci accompagna in un viaggio attraverso l'Italia a bordo di un camper ed in sella alla sua bicicletta in compagnia di Patricio il suo amico più fedele per far conoscere al pubblico le storie e i luoghi più autentici del nostro paese. Conduce Vittorio Brumotti con la partecipazione speciale di Monica Caradonna."
+                "descrizione": "Vittorio Brumotti alla scoperta dell'Italia costiera in sella alla sua bicicletta e con l'amico a quattro zampe Patricio: pedalate fra i borghi, esperienze sportive, incontri con chi quei luoghi li abita e li protegge ogni giorno. A completare il racconto uno spazio dedicato alla cucina e ai prodotti del territorio, con la partecipazione speciale di Monica Caradonna."
             },
             {
                 "ora": "12:00",
@@ -134,17 +134,12 @@
                 "descrizione": "Mara Venier e Alberto Matano conducono la XVIII edizione del Premio Biagio Agnes, un tradizionale appuntamento che lega il prestigio di celebri nomi dell'informazione e della comunicazione ad un evento che vuole valorizzare e premiare la professione giornalistica in ogni suo aspetto, con la partecipazione di grandi ospiti musicali e della televisione."
             }
         ],
-        "aggiornato": "09:23"
+        "aggiornato": "14:15"
     },
     {
         "canale": "Rai 2",
         "categoria": "Digitale Terrestre",
         "programmi": [
-            {
-                "ora": "06:00",
-                "titolo": "Ritorno a Las Sabinas",
-                "descrizione": "Dopo molti anni di lontananza, le sorelle Molina tornano nella loro citt� natale per affrontare i problemi di salute del padre. Il loro ritorno significa una riunione con le vite, gli amori e i segreti che hanno cercato di dimenticare."
-            },
             {
                 "ora": "06:10",
                 "titolo": "La Grande Vallata",
@@ -173,7 +168,7 @@
             {
                 "ora": "10:00",
                 "titolo": "TG2 Storie. I Racconti Della Settimana",
-                "descrizione": "Le storie e i protagonisti di fatti di cronaca e di costume che si raccontano nella loro quotidianit� . Direttore Antonio Preziosi Vicedirettore Alfonso Samengo Curato e condotto da Adriana Pannitteri"
+                "descrizione": "Le storie e i protagonisti di fatti di cronaca e di costume che si raccontano nella loro quotidianit� ."
             },
             {
                 "ora": "10:55",
@@ -202,8 +197,8 @@
             },
             {
                 "ora": "13:50",
-                "titolo": "TG2 Medicina 33",
-                "descrizione": "Direttore Antonio Preziosi A cura di Laura Berti"
+                "titolo": "Tg2 Medicina 33",
+                "descrizione": "Il quotidiano di medicina del Tg2. I migliori specialisti di ogni settore della medicina rispondono alle domande che ciascuno di noi vorrebbe fare. Consigli utili per star bene."
             },
             {
                 "ora": "14:00",
@@ -212,13 +207,8 @@
             },
             {
                 "ora": "14:45",
-                "titolo": "Belgio - Senegal",
+                "titolo": "Sedicesimi: Belgio - Senegal",
                 "descrizione": "Collegamento pre e post partita con la supervisione di Marco Mazzocchi e Massimo Proietto. Conduce Paola Ferrari con Simona Rolandi, Paulo Roberto Falcao e Marco Tardelli. Regia di Marco Spoletini. Partita del Mondiale di Calcio Fifa 2026 in programma dall'11 giugno al 19 luglio 2026, in diverse citt� di Stati Uniti, Canada e Messico. Coppa del Mondo di Calcio FIFA 2026. Un programma a cura di Rai Sport con la Supervisione Marco Lollobrigida. In diretta dal MetLife Stadium di New Jersey (New York). Telecronaca di Giuseppe Galati. Commento tecnico di Daniele Adani."
-            },
-            {
-                "ora": "17:00",
-                "titolo": "S.W.A.T.",
-                "descrizione": "Un sergente S.W.A.T. della zona, l’ex Marine Daniel Harrelson, viene incaricato di dirigere un’unit� tattica specializzata che rappresenta l’ultima tappa delle forze dell’ordine di Los Angeles, nella première di S.W.A.T. Diviso tra la lealt� per il luogo dove è cresciuto e la fedelt� ai suoi fratelli in blu, Hondo ha tutto ciò che serve per essere un leader eccellente e per fare da tramite tra i suoi due mondi."
             },
             {
                 "ora": "18:00",
@@ -271,7 +261,7 @@
                 "descrizione": "Con la sua relazione in stallo, Mel, madre single, lascia il fidanzato. Dopo che lui se ne va, strani eventi iniziano ad accadere in casa sua, minacciando la sua sicurezza e il suo benessere."
             }
         ],
-        "aggiornato": "09:23"
+        "aggiornato": "14:15"
     },
     {
         "canale": "Rai 3",
@@ -284,8 +274,8 @@
             },
             {
                 "ora": "08:00",
-                "titolo": "Agorà Estate",
-                "descrizione": "L'approfondimento estivo del mattino di Rai3 condotto da Giulia Di Stefano con Marco Carrara, attraverso ospiti, inviati, inchieste e contributi video dai social."
+                "titolo": "Così è La Villa - Agorà Estate",
+                "descrizione": "$23"
             },
             {
                 "ora": "10:45",
@@ -410,7 +400,7 @@
             {
                 "ora": "21:15",
                 "titolo": "Il Mondo Con Gli Occhi Di Overland - L'Anima Di Madeira, Scolpita Da Natura E Ingegno + Il Mondo Con Occhi Nuovi",
-                "descrizione": "$23"
+                "descrizione": "$24"
             },
             {
                 "ora": "23:25",
@@ -418,7 +408,7 @@
                 "descrizione": "Nel 1565 Malta viene assediata dalle milizie di Solimano il Magnifico, il potente sultano dell'Impero Ottomano. Cristoforo Gorno racconta la resistenza dei Cavalieri di San Giovanni di Gerusalemme, impegnati con le loro poche risorse a difendere l'isola."
             }
         ],
-        "aggiornato": "09:23"
+        "aggiornato": "14:15"
     },
     {
         "canale": "Rai 4",
@@ -550,7 +540,7 @@
                 "descrizione": "Ben ha perso la moglie, brutalmente uccisa dalla Triade, potente organizzazione mafiosa cinese. Da quel giorno Ben, ex membro della mafia di Los Angeles, vive la realt� che gli ruota attorno solo in chiave di vendetta nei confronti di chi ha commesso quel terribile omicidio. Così quando un'orfana, che si d� il caso sia la figlia di un personaggio influente della Triade, gli chiede di aiutarlo a Ben non sembra vero di potere menare le mani e di risolvere a modo suo la pericolosa situazione."
             }
         ],
-        "aggiornato": "09:23"
+        "aggiornato": "14:15"
     },
     {
         "canale": "Rai 5",
@@ -672,7 +662,7 @@
                 "descrizione": "Un format che racconta la vita professionale e personale di alcune delle icone pop del nostro tempo partendo da dieci scatti. Repertorio, interviste dirette ai protagonisti, amici e collaboratori. In questo episodio, la storia di Mercury, dalla nascita a Zanzibar alla tragica scomparsa nel 1991."
             }
         ],
-        "aggiornato": "09:23"
+        "aggiornato": "14:15"
     },
     {
         "canale": "Rete 4",
@@ -769,7 +759,7 @@
                 "descrizione": "Walt Kowalski è un veterano della guerra in Corea e non sopporta che nell'abitazione di fianco alla sua viva una famiglia di asiatici. Le uniche sue passioni, oltre alla birra, sono il suo cane e un'auto modello Gran Torino, che viene sottoposta a continua manutenzione. La sua vita cambia il giorno in cui il giovane vicino Thao, spinto da una gang, si introduce nel suo garage. Walt lo fa fuggire, ma di lì a poco tempo assister� a una violenta irruzione dei membri della gang con inatteso sconfinamento nella sua propriet� . In quell'occasione sottrarr� Thao alla violenza del branco, ottenendo la riconoscenza della sua famiglia."
             }
         ],
-        "aggiornato": "09:23"
+        "aggiornato": "14:15"
     },
     {
         "canale": "Canale 5",
@@ -906,7 +896,7 @@
                 "descrizione": "Gli artisti piu' celebri della musica italiana e internazionale si esibiscono nella kermesse musicale dell'estate italiana. Condotto da Ilary Blasi, con Fabio Rovazzi e Daniele Battaglia."
             }
         ],
-        "aggiornato": "09:23"
+        "aggiornato": "14:15"
     },
     {
         "canale": "Italia 1",
@@ -1018,7 +1008,7 @@
                 "descrizione": "Ellie Arroway, cerca nella scienza la risposta a quesiti che da sempre la tormentano. Chi siamo? Perchè siamo qui? C'è qualcun altro nell'universo? Specializzata nella ricerca di segnali inviati da esseri extraterrestri, una mattina riesce a captare un messaggio proveniente dalla lontana stella Vega, contenente il progetto di una macchina spaziale capace di proiettare un passeggero nell'iperspazio. Ellie dovr� battersi per essere la prescelta per questo incredibile viaggio."
             }
         ],
-        "aggiornato": "09:24"
+        "aggiornato": "14:16"
     },
     {
         "canale": "La7",
@@ -1037,17 +1027,17 @@
             {
                 "ora": "08:00",
                 "titolo": "Omnibus Dibattito",
-                "descrizione": "Programma di informazione e approfondimento con rubriche, ospiti, rassegna stampa, aggiornamenti sul traffico, previsioni meteo, dibattito sul tema del giorno. 24a Edizione."
+                "descrizione": "Gerardo Greco con Maurizio Molinari, Viola Ardone, Marcello Sorgi, Francesco Delzio, Cecilia Sala, Claudio Cerasa, Marco Lillo, Alessandra Ghisleri"
             },
             {
                 "ora": "09:40",
                 "titolo": "Coffee Break",
-                "descrizione": "Lo spazio mattutino per l'approfondimento e l'attualit� condotto da Andrea Pancani. 14a Edizione."
+                "descrizione": "Andrea Pancani con Pino Corrias, Giulio Tremonti, Marco Varvello, Giorgio Spaziani, Mauro Mazza, Sara Funaro"
             },
             {
                 "ora": "11:00",
                 "titolo": "L'Aria Che Tira",
-                "descrizione": "Conduce David Parenzo. 15a edizione"
+                "descrizione": "David Parenzo con Francesco Bechis, Annalisa Terranova, Marco Grimaldi, Claudia Fusani, Antonio Polito, Maddalena Loy, Massimiliano Dona, Giuliano Granato, Alessandro Cattaneo, Alessandro Rapinese, Paolo Magri"
             },
             {
                 "ora": "13:30",
@@ -1085,7 +1075,7 @@
                 "descrizione": "Robert 'Mac' MacDougal è considerato il maggior ladro d'arte del mondo. Quando a New York viene rubato un Rembrandt, Mac diventa l'indiziato numero uno. Gin Baker, investigatrice delle assicurazioni, convince il suo capo ad affidarle la ricerca di Mac, per evitare che la compagnia sia costretta a pagare il premio di 24 milioni di dollari. Gin e Mac si incontrano a Londra, poi Mac conduce la ragazza nel proprio castello in un'isola occidentale della Scozia. Qui Mac addestra Gin a diventare una perfetta ladra d'arte, e lei lo asseconda, diventando una perfetta allieva."
             }
         ],
-        "aggiornato": "09:23"
+        "aggiornato": "14:15"
     },
     {
         "canale": "TV8",
@@ -1202,7 +1192,7 @@
                 "descrizione": "Uno degli ingredienti che non può mancare in un matrimonio è l'attenzione ai dettagli. Lo sanno le spose di oggi, che del dettaglio hanno fatto il must have del loro sì."
             }
         ],
-        "aggiornato": "09:23"
+        "aggiornato": "14:15"
     },
     {
         "canale": "Nove",
@@ -1304,7 +1294,7 @@
                 "descrizione": "Amadeus conduce La Corrida. I dilettanti allo sbaraglio si esibiscono giudicati dal pubblico in studio."
             }
         ],
-        "aggiornato": "09:23"
+        "aggiornato": "14:15"
     },
     {
         "canale": "20 Mediaset",
@@ -1421,7 +1411,7 @@
                 "descrizione": "Un fabbro con un talento per il Kung fu si trasferisce in un villaggio della Cina feudale, dove sar� costretto da due famiglie rivali a costruire armi sempre più infallibili. Quando la situazione degenera, il fabbro si trasforma però nell’arma più spietata…"
             }
         ],
-        "aggiornato": "09:23"
+        "aggiornato": "14:15"
     },
     {
         "canale": "Twentyseven",
@@ -1513,7 +1503,7 @@
                 "descrizione": "In questo caso si tratta di un prequel in quanto assistiamo all'incontro di Fred (Mark Addy) e di Barney (Stephen Baldwin) con le loro dolci met� . Fred è infatti alla ricerca della sua anima gemella e incontra Wilma (Kristen Johnston) di cui si innamora. Anche se la relazione tra i due è ostacolata dai genitori della ragazza, Fred non si arrende e per conquistarla organizza un week - end a Rock Vegas. Lo accompagna anche il suo caro amico Barney che vuole fare breccia nel cuore di Betty, la ragazza di cui è innamorato. La breve vacanza servir� a consolidare le due coppie."
             }
         ],
-        "aggiornato": "09:23"
+        "aggiornato": "14:15"
     },
     {
         "canale": "IRIS",
@@ -1575,7 +1565,7 @@
                 "descrizione": "Uno strano marchingegno risucchia, il Dott. Rick Marshall, la sua assistente ed un uomo del sud, in un buco temporale spedendoli in un universo parallelo. I tre dovranno trovare il modo di sopravvivere in un luogo che é completamente diverso e lontano anni luce dalle comodit� alle quali erano abituati..."
             }
         ],
-        "aggiornato": "09:23"
+        "aggiornato": "14:15"
     },
     {
         "canale": "Rai Movie",
@@ -1632,19 +1622,14 @@
                 "descrizione": "Nel 1962, dopo la chiusura di uno dei migliori club di New York in cui lavorava, il buttafuori italoamericano Tony Lip deve a tutti i costi trovare un lavoro per mantenere la sua famiglia. Accetta di lavorare per il pianista afroamericano Don Shirley e decide di seguirlo in tour nel sud degli Stati Uniti. Nonostante le differenze e gli iniziali contrasti, tra i due si instaurer� una forte amicizia."
             }
         ],
-        "aggiornato": "09:23"
+        "aggiornato": "14:15"
     },
     {
         "canale": "Rai Premium",
         "categoria": "Digitale Terrestre",
         "programmi": [
             {
-                "ora": "06:10",
-                "titolo": "Baciato dal sole",
-                "descrizione": "Elio, un giovane pugliese, arriva a Roma per diventare famoso. Gli viene affidata la conduzione di un programma televisivo, ma il fantasma della madre, che lo abbandonò quando era ancora un bambino, continua a perseguitarlo."
-            },
-            {
-                "ora": "07:00",
+                "ora": "06:50",
                 "titolo": "Baciato dal sole",
                 "descrizione": "Elio, un giovane pugliese, arriva a Roma per diventare famoso. Gli viene affidata la conduzione di un programma televisivo, ma il fantasma della madre, che lo abbandonò quando era ancora un bambino, continua a perseguitarlo."
             },
@@ -1724,17 +1709,12 @@
                 "descrizione": "Francesca Fagnani faccia a faccia con le sue belve, sedute su una sedia scomoda ma rivelatrice, in un dialogo senza sconti e caratterizzato dai toni ironici e graffianti, ma anche intimi e profondi."
             },
             {
-                "ora": "21:20",
-                "titolo": "Belve",
-                "descrizione": "Francesca Fagnani faccia a faccia con le sue belve, sedute su una sedia scomoda ma rivelatrice, in un dialogo senza sconti e caratterizzato dai toni ironici e graffianti, ma anche intimi e profondi."
-            },
-            {
                 "ora": "23:55",
                 "titolo": "Le indagini di Lolita Lobosco",
                 "descrizione": "Dai romanzi di Gabriella Genisi\n\nLe indagini di Lolita Lobosco\n\n2021 Italia\n\nDopo un lungo periodo di lavoro al Nord, il vicequestore Lolita Lobosco torna nella sua Bari per dirigere una squadra di soli uomini. In un mondo ostinatamente governato dai maschi, Lolita sceglie di restare sé stessa senza reprimere il suo fascino e la sua bellezza, anzi usa queste sue doti per affermarsi e combattere i pregiudizi. Liberamente tratto dai romanzi di Gabriella Genisi. Regia: Luca Miniero Interpreti: Luisa Ranieri, Filippo Scicchitano, Giovanni Ludeno, Jacopo Cullin, Bianca Nappi, Giulia Fiume, Ninni Bruschetta, Paolo Briguglia, Lunetta Savino"
             }
         ],
-        "aggiornato": "09:23"
+        "aggiornato": "14:15"
     },
     {
         "canale": "La 5",
@@ -1821,7 +1801,7 @@
                 "descrizione": "Andrea è un trentottenne, bello e sicuro di sé. Single, 'sciupafemmine' e superficiale, con un'avviatissima carriera in un'importante agenzia che si occupa di product placement. Nella sua vita, fatta di avventure di una sola notte, sembra andare tutto a gonfie vele: nessuna responsabilit� , tutto lavoro e divertimento. Finché un giorno, al suo ritorno a casa, dove vive con Paolo - un curioso amico disoccupato - trova... Layla. La ragazzina, decisamente stravagante, ha diciassette anni e dice di essere sua figlia. E non è sola... Con lei c'è suo nonno Enzo, un improbabile ex rockettaro e padre della sua prima fugace e dimenticata conquista… E sono venuti per restare!"
             }
         ],
-        "aggiornato": "09:23"
+        "aggiornato": "14:15"
     },
     {
         "canale": "Real Time",
@@ -1928,7 +1908,7 @@
                 "descrizione": "Emma si occupa di Antony che ha delle escrescenze sulle orecchie. Inoltre, Sam e' a disagio a causa di un bozzolo cresciuto in mezzo alla fronte."
             }
         ],
-        "aggiornato": "09:23"
+        "aggiornato": "14:15"
     },
     {
         "canale": "Food Network",
@@ -2075,7 +2055,7 @@
                 "descrizione": "In giro per Napoli, Fabio Esposito e Sal Da Vinci giudicano la pizza migliore."
             }
         ],
-        "aggiornato": "09:23"
+        "aggiornato": "14:15"
     },
     {
         "canale": "Focus",
@@ -2177,7 +2157,7 @@
                 "descrizione": "Tre asteroidi interstellari con traiettorie anomale: potrebbero essere sonde extraterrestri?"
             }
         ],
-        "aggiornato": "09:23"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Giallo",
@@ -2254,7 +2234,7 @@
                 "descrizione": "L'Ispettore capo Vera Stanhope (Brenda Blethyn) è una detective alla soglia della pensione della fittizia Northumberland & City Police, che indaga sui delitti che avvengono nella sua giurisdizione. Lei è appassionata del suo lavoro e, nonostante un aspetto costantemente trasandato e una personalit� irascibile, ha una mente calcolatrice e si impegna profondamente nel suo lavoro. Suoi compagni di lavoro sono i sergenti Joe Ashworth (David Leon) e Aiden Healy (Kenny Doughty)."
             }
         ],
-        "aggiornato": "09:23"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Boing",
@@ -2411,7 +2391,7 @@
                 "descrizione": "Gumball, un gatto di 12 anni, e il suo amico Darwin, un pesce rosso, vivono avventure al limite della follia, in questa stravagante commedia animata."
             }
         ],
-        "aggiornato": "09:23"
+        "aggiornato": "14:16"
     },
     {
         "canale": "K2",
@@ -2568,7 +2548,7 @@
                 "descrizione": "3' Stagione Ep.42 - Le avventure di tre scoiattoli dalla voce incredibile, 'adottati' da Dave Seville, che diventano un fenomeno musicale."
             }
         ],
-        "aggiornato": "09:23"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Rai Gulp",
@@ -2725,7 +2705,7 @@
                 "descrizione": "Su Prometia, le Winx cadono nella trappola orchestrata da Orion e Valtor. Per fortuna, Stella e Flora riescono a liberare appena in tempo le loro amiche. Intanto, su Iridia, Obscurum trasforma tutte le Lumen, tra cui Lumilla, in Staryummy. Le Winx arrivano appena in tempo per salvare Orion, ma non possono fare niente per le Lumen trasformate..."
             }
         ],
-        "aggiornato": "09:23"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Frisbee",
@@ -2882,7 +2862,7 @@
                 "descrizione": "3' Stagione Ep.35 - Le avventure di tre scoiattoli dalla voce incredibile, 'adottati' da Dave Seville, che diventano un fenomeno musicale."
             }
         ],
-        "aggiornato": "09:23"
+        "aggiornato": "14:16"
     },
     {
         "canale": "DMAX",
@@ -2989,7 +2969,7 @@
                 "descrizione": "I rapporti tra i vicini di casa non sono mai stati cosi' animati: liti, risse ed episodi ai limiti della realta'!"
             }
         ],
-        "aggiornato": "09:23"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Rai Sport",
@@ -3061,7 +3041,7 @@
                 "descrizione": "Edizione 113 del Tour de France, la corsa a tappe più prestigiosa del ciclismo mondiale. Questa è la presentazione delle 23 squadre e dei 184 corridori che prenderanno parte alla Grande Boucle, pronta a scattare da Barcellona per tre settimane di spettacolo sulle strade di Spagna e Francia."
             }
         ],
-        "aggiornato": "09:23"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Sportitalia",
@@ -3193,7 +3173,7 @@
                 "descrizione": "Il programma tratta le vicende del calciomercato sia nella sessione estiva che in quella invernale e va in onda alle ore 23.00 dal lunedì al venerdì"
             }
         ],
-        "aggiornato": "09:23"
+        "aggiornato": "14:16"
     },
     {
         "canale": "HGTV",
@@ -3300,7 +3280,7 @@
                 "descrizione": "Dopo 20 anni di missioni internazionali, una coppia vuole stabilirsi in Florida."
             }
         ],
-        "aggiornato": "09:23"
+        "aggiornato": "14:16"
     },
     {
         "canale": "RSI LA 1",
@@ -3457,7 +3437,7 @@
                 "descrizione": "Attualit� della Svizzera italiana"
             }
         ],
-        "aggiornato": "09:23"
+        "aggiornato": "14:16"
     },
     {
         "canale": "RSI LA 2",
@@ -3485,8 +3465,8 @@
             },
             {
                 "ora": "09:10",
-                "titolo": "La tribù del calcio",
-                "descrizione": "$23"
+                "titolo": "La tribù del calcio - La Tribù del Calcio unisce Costa d’Avorio e Sudafrica",
+                "descrizione": "Anche oggi La Tribù del Calcio ha fatto viaggiare il pubblico tra storie, tradizioni e sapori, con due ospiti speciali della Svizzera italiana: Nadia, in rappresentanza della Costa d’Avorio, e Jeffrey, dal Sudafrica.Nadia ha raccontato particolarit� , cultura e radici del suo Paese, portando in studio l’attiéké, uno dei piatti più conosciuti della cucina ivoriana, preparato con manioca. Un alimento che porta con sé una storia importante: i saperi legati alla sua produzione sono riconosciuti dall’UNESCO come patrimonio culturale immateriale.Dall’altra parte Jeffrey ha aperto una finestra sul Sudafrica, tra ricordi di famiglia, usanze e identit� . In studio ha portato una torta dolce preparata con la ricetta tradizionale di sua mamma, un piccolo pezzo di casa condiviso con ascoltatori e telespettatori.Ancora una volta La Tribù del Calcio ha dimostrato che il calcio può essere un punto d’incontro. Un modo per mettere insieme popoli, culture e storie diverse, tutte presenti e vive nella Svizzera italiana."
             },
             {
                 "ora": "10:00",
@@ -3499,34 +3479,24 @@
                 "descrizione": "Sedicesimi di finale \rda San Francisco (USA)\rReplica"
             },
             {
-                "ora": "14:00",
+                "ora": "13:55",
+                "titolo": "Donne che hanno cambiato il mondo - Annie Leibovitz",
+                "descrizione": "Donne che hanno cambiato il mondo - Annie Leibovitz"
+            },
+            {
+                "ora": "14:05",
+                "titolo": "Donne che hanno cambiato il mondo - Audrey Hepburn",
+                "descrizione": "Donne che hanno cambiato il mondo - Audrey Hepburn"
+            },
+            {
+                "ora": "14:10",
+                "titolo": "L'uomo di casa",
+                "descrizione": "Mike Baxter è un padre felicemente sposato con tre figlie che si ritrova a essere l’intruso maschio mentre cerca di mantenere la virilit� in una casa piena di donne. Per sfuggire ai drammi femminili di casa sua. Mike si rifugia nel caldo e virile abbraccio del suo lavoro all’Outdoor Man, un negozio di articoli sportivi dove lavora come direttore del marketing. Si diletta anche con il vlog dell’Outdoor Man, che usa come pulpito per divulgare le sue opinioni, che spesso non hanno nulla a che vedere con la merce del negozio. Invece di vendere mountain bike o kayak, in qualche modo Mike finisce a blaterare di ambiente, sanit� , politica internazionale o qualsiasi altro argomento gli venga in mente."
+            },
+            {
+                "ora": "14:35",
                 "titolo": "Tennis: Wimbledon 2026",
                 "descrizione": "Secondo turno\nda Wimbledon (GBR)"
-            },
-            {
-                "ora": "15:30",
-                "titolo": "Guardia Costiera",
-                "descrizione": "Protagonista della serie è una squadra della Guardia Costiera tedesca, di stanza a Neustadt, che pattuglia le coste lungo il mare Baltico a bordo dell'Albatros. A capo della squadra vi è il Capitano Holger Ehlers. La serie è girata tra New Stadt, nello Schleswig-Holstein e l'isola di Rügen nel MecLemburgo-Pomerania Anteriore."
-            },
-            {
-                "ora": "16:20",
-                "titolo": "Il mondo filmato dagli animali - Secondo episodio",
-                "descrizione": "di Anne Sommerfield e Hannah Ward"
-            },
-            {
-                "ora": "17:10",
-                "titolo": "Racconti Dalle Città Di Mare",
-                "descrizione": "Un giro del mondo per mano della rinomata fotografa Heidi Hollinger prima e della giornalista e conduttrice televisiva Sophie Fouron poi, alla scoperta della vita, della bellezza, della cultura, delle tradizioni delle citt� portuali più importanti e famose, divenute veri luoghi simbolo del nostro pianeta."
-            },
-            {
-                "ora": "18:00",
-                "titolo": "Monk",
-                "descrizione": "Telefilm poliziesco con Tony Shalhoub"
-            },
-            {
-                "ora": "18:45",
-                "titolo": "All Rise",
-                "descrizione": "Uno sguardo alla vita personale e professionale di giudici, avvocati, impiegati, ufficiali giudiziari e poliziotti che lavorano in un tribunale della contea di Los Angeles."
             },
             {
                 "ora": "19:25",
@@ -3539,7 +3509,7 @@
                 "descrizione": "Sedicesimi di finale\nda Los Angeles (USA)"
             }
         ],
-        "aggiornato": "09:23"
+        "aggiornato": "14:16"
     },
     {
         "canale": "DAZN 1",
@@ -3631,7 +3601,7 @@
                 "descrizione": "Quella del 'Giuseppe Sinigaglia' non solo e' stata una delle partite piu' divertenti della stagione, ma puo' aver avuto anche un peso incredibile sulla corsa Scudetto dei nerazzurri."
             }
         ],
-        "aggiornato": "09:23"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Sky Sport 24",
@@ -3690,7 +3660,7 @@
             {
                 "ora": "09:40",
                 "titolo": "Tennis Wimbledon The Insider 2026 Ep.3",
-                "descrizione": "Una prospettiva diversa per raccontare Wimbledon ogni giorno. Racconti, interviste e immagini dietro le quinte, con Stefano Meloccaro nel ruolo di \"insider"
+                "descrizione": "Ep.3 01\/07\/2026 The Insider Wimbledon. - Una prospettiva diversa per raccontare Wimbledon ogni giorno. Racconti, interviste e immagini dietro le quinte, con Stefano Meloccaro nel ruolo di \"insider"
             },
             {
                 "ora": "10:00",
@@ -3705,7 +3675,7 @@
             {
                 "ora": "10:40",
                 "titolo": "Tennis Wimbledon The Insider 2026 Ep.3",
-                "descrizione": "Una prospettiva diversa per raccontare Wimbledon ogni giorno. Racconti, interviste e immagini dietro le quinte, con Stefano Meloccaro nel ruolo di \"insider"
+                "descrizione": "Ep.3 01\/07\/2026 The Insider Wimbledon. - Una prospettiva diversa per raccontare Wimbledon ogni giorno. Racconti, interviste e immagini dietro le quinte, con Stefano Meloccaro nel ruolo di \"insider"
             },
             {
                 "ora": "11:00",
@@ -3788,7 +3758,7 @@
                 "descrizione": "Le notizie e i commenti del giorno, le anteprime e l'attualita' con servizi, commenti, interviste e collegamenti."
             }
         ],
-        "aggiornato": "09:23"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Sky Sport Uno",
@@ -3947,7 +3917,7 @@
                 "descrizione": "Curiosita', commenti, notizie e anticipazioni sui possibili movimenti del calciomercato. Condotto dal trio Alessandro Bonan, Gianluca Di Marzio e Fayna."
             }
         ],
-        "aggiornato": "09:23"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Sky Sport Tennis",
@@ -3966,7 +3936,7 @@
             {
                 "ora": "08:00",
                 "titolo": "Tennis Wimbledon The Insider 2026 Ep.3",
-                "descrizione": "Una prospettiva diversa per raccontare Wimbledon ogni giorno. Racconti, interviste e immagini dietro le quinte, con Stefano Meloccaro nel ruolo di \"insider"
+                "descrizione": "Ep.3 01\/07\/2026 The Insider Wimbledon. - Una prospettiva diversa per raccontare Wimbledon ogni giorno. Racconti, interviste e immagini dietro le quinte, con Stefano Meloccaro nel ruolo di \"insider"
             },
             {
                 "ora": "08:15",
@@ -3975,13 +3945,23 @@
             },
             {
                 "ora": "08:30",
+                "titolo": "Sky Tennis Show 2026",
+                "descrizione": "Tennis Show. - Lo spettacolo di Wimbledon commentato in studio da giornalisti e talent di Sky Sport, con interviste, analisi e curiosita'. Conduce Eleonora Cottarelli"
+            },
+            {
+                "ora": "08:55",
                 "titolo": "3a giornata",
                 "descrizione": "Dall'All-England Lawn Tennis and Croquet Club di Wimbledon, Inghilterra."
             },
             {
+                "ora": "10:45",
+                "titolo": "Sky Tennis Show 2026",
+                "descrizione": "Tennis Show. - Lo spettacolo di Wimbledon commentato in studio da giornalisti e talent di Sky Sport, con interviste, analisi e curiosita'. Conduce Eleonora Cottarelli"
+            },
+            {
                 "ora": "11:15",
                 "titolo": "Tennis Wimbledon The Insider 2026 Ep.3",
-                "descrizione": "Una prospettiva diversa per raccontare Wimbledon ogni giorno. Racconti, interviste e immagini dietro le quinte, con Stefano Meloccaro nel ruolo di \"insider"
+                "descrizione": "Ep.3 01\/07\/2026 The Insider Wimbledon. - Una prospettiva diversa per raccontare Wimbledon ogni giorno. Racconti, interviste e immagini dietro le quinte, con Stefano Meloccaro nel ruolo di \"insider"
             },
             {
                 "ora": "11:30",
@@ -3996,7 +3976,7 @@
             {
                 "ora": "12:00",
                 "titolo": "4a giornata",
-                "descrizione": "Dall'All-England Lawn Tennis and Croquet Club di Wimbledon, Inghilterra."
+                "descrizione": "GRANT-BOUZKOVA (Ramella-Cotto); PLISKOVA-SWIATEK (Boschetto-Reggi); BERRETTINI-FILS; McNALLY-RYBAKINA (Pero-Furlan)"
             },
             {
                 "ora": "14:00",
@@ -4006,7 +3986,7 @@
             {
                 "ora": "14:30",
                 "titolo": "4a giornata",
-                "descrizione": "Dall'All-England Lawn Tennis and Croquet Club di Wimbledon, Inghilterra."
+                "descrizione": "PLISKOVA-SWIATEK (Boschetto-Reggi); BERRETTINI-FILS; McNALLY-RYBAKINA (Pero-Furlan)"
             },
             {
                 "ora": "22:00",
@@ -4029,7 +4009,7 @@
                 "descrizione": "Dall'All-England Lawn Tennis and Croquet Club di Wimbledon, Inghilterra."
             }
         ],
-        "aggiornato": "09:23"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Sky Sport F1",
@@ -4186,7 +4166,7 @@
                 "descrizione": "Comincia il weekend con le parole dei protagonisti: le aspettative dei piloti prima di infilarsi il casco e scendere in pista."
             }
         ],
-        "aggiornato": "09:23"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Sky Sport Legend",
@@ -4293,7 +4273,7 @@
                 "descrizione": "Champions League Story. - Riviviamo i momenti piu' esaltanti di questa competizione attraverso le partite piu' interessanti. Buon divertimento!"
             }
         ],
-        "aggiornato": "09:23"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Sky Sport MotoGP",
@@ -4430,7 +4410,7 @@
                 "descrizione": "Terzo appuntamento del mondiale 2026: a Austin, in Texas, si accendono i motori per la gara della MotoGP. Telecronaca Guido Meda e Mauro Sanchini"
             }
         ],
-        "aggiornato": "09:23"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Sky Sport Basket",
@@ -4512,7 +4492,7 @@
                 "descrizione": "Mondiali Basket 02\/07\/2026. - Islanda-Italia e' appena finita. Tutti gli approfondimenti e le curiosita' nello studio di Giulia Cicchine', con Matteo Soragna e Geri De Rosa."
             }
         ],
-        "aggiornato": "09:23"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Sky Sport Arena",
@@ -4559,7 +4539,7 @@
                 "descrizione": "Dall'All-England Lawn Tennis and Croquet Club di Wimbledon, Inghilterra."
             }
         ],
-        "aggiornato": "09:23"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Sky Sport Max",
@@ -4676,7 +4656,7 @@
                 "descrizione": "Il piu' importante torneo di atletica del mondo, dove si sfidano campioni provenienti da ogni paese."
             }
         ],
-        "aggiornato": "09:23"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Sky Sport Mix",
@@ -4738,7 +4718,7 @@
                 "descrizione": "Il piu' importante torneo di atletica del mondo, dove si sfidano campioni provenienti da ogni paese."
             }
         ],
-        "aggiornato": "09:23"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Sky Sport Golf",
@@ -4800,7 +4780,7 @@
                 "descrizione": "Golf: DP World Tour. - Dal Golfclub Munchen Eichenried di Monaco, Germania."
             }
         ],
-        "aggiornato": "09:23"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Sky Sport 251",
@@ -4809,10 +4789,10 @@
             {
                 "ora": "13:30",
                 "titolo": "4a giornata",
-                "descrizione": "Tennis"
+                "descrizione": "4a giornata Wimbledon: SWAN - KEYS, ROYER - ZVEREV (Nicolodi-Colangelo), MENSIK - DIMITROV (Boschetto-Reggi)"
             }
         ],
-        "aggiornato": "09:23"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Sky Sport 252",
@@ -4821,10 +4801,10 @@
             {
                 "ora": "11:30",
                 "titolo": "4a giornata",
-                "descrizione": "Tennis"
+                "descrizione": "4a giornata Wimbledon: FRITZ - KYPSON, CARRENO B. - JODAR, ANISIMOVA - KENIN (Paventi-Garrone), TIAFOE - CHOINSKI, PAOLINI - GOLUBIC (Bisti-Golarsa)"
             }
         ],
-        "aggiornato": "09:23"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Sky Sport 253",
@@ -4833,10 +4813,10 @@
             {
                 "ora": "11:30",
                 "titolo": "4a giornata",
-                "descrizione": "Tennis"
+                "descrizione": "4a giornata Wimbledon: DE MINAUR - MANNARINO, EALA - JOINT (Cazzaniga-Arnaboldi), DUCKWORTH - COBOLLI, OSORIO - NOSKOVA (Ferreo-Rossi)"
             }
         ],
-        "aggiornato": "09:23"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Sky Sport 254",
@@ -4845,10 +4825,10 @@
             {
                 "ora": "11:30",
                 "titolo": "4a giornata",
-                "descrizione": "Tennis"
+                "descrizione": "4a giornata Wimbledon: SHNAIDER - SAMSONOVA (Aghemo), NAKASHIMA - STRUFF, FEARNELY - MUNAR (Aghemo-Crugnola), CIRSTEA - BIRRELL (Brunelli), JACQUET - BUBLIK (Brunelli-Crugnola)"
             }
         ],
-        "aggiornato": "09:24"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Sky Sport 255",
@@ -4857,10 +4837,10 @@
             {
                 "ora": "11:30",
                 "titolo": "4a giornata",
-                "descrizione": "Tennis"
+                "descrizione": "4a giornata Wimbledon: GRANT - BOUZKOVA, FERY - VIRTANEN, BLINKOVA - KOSTYUK (Ramella-Cotto), LEHECKA - MOLKAN, SINIAKOVA\/TOWNSEND-CHAN\/TAUSON (Salmini)"
             }
         ],
-        "aggiornato": "09:24"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Sky Sport 256",
@@ -4869,10 +4849,10 @@
             {
                 "ora": "11:30",
                 "titolo": "4a giornata",
-                "descrizione": "Tennis"
+                "descrizione": "4a giornata Wimbledon: DIALLO - SONEGO, KHACHANOV - HANFMANN (Massara-Pescosolido), MERTENS - TIMOFEEVA, HANFMANN\/STRUFF-KOPRIVA\/PIECZONKA (Sfolcini)"
             }
         ],
-        "aggiornato": "09:24"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Sky Sport 257",
@@ -4884,7 +4864,7 @@
                 "descrizione": "Premio Internazionale Fairplay Menarini 2026. Dalle ore 21:00"
             }
         ],
-        "aggiornato": "09:23"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Sky Sport 258",
@@ -4970,7 +4950,7 @@
                 "descrizione": "Quando un killer prende di mira l’élite di Gotham con una serie di malvagi stratagemmi, una scia di indizi criptici spinge il più grande detective del mondo a indagare nei bassifondi, incontrando personaggi come Selina Kyle alias Catwoman, Oswald Cobblepot alias il Pinguino, Carmine Falcone e Edward Nashton alias l’Enigmista. Mentre le prove iniziano a condurlo più vicino alla soluzione e la portata dei piani del malfattore diventa chiara, Batman deve stringere nuove alleanze, smascherare il colpevole e rendere giustizia all’abuso di potere e alla corruzione che da tempo affliggono Gotham City."
             }
         ],
-        "aggiornato": "09:24"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Sky Cinema Uno +24",
@@ -5032,7 +5012,7 @@
                 "descrizione": "Portia Nathan (Tina Fey), puritana addetta alle ammissioni all'universit� di Princeton, è colta di sorpresa quando, in visita di reclutamento in un liceo sperimentale del New Hampshire, incontra l'ex compagno di college John Pressman (Paul Rudd). Poiché Pressman ipotizza che Geremia (Nat Wolff), suo studente molto dotato ma dai metodi poco convenzionali, sia il figlio che lei ha dato in adozione molti anni prima, Portia va incontro a un cambiamento radicale della sua esistenza. Si ritrover� ad occuparsi di Geremia, rischiando di danneggiare la vita che ha sempre creduto di volere, e a vivere un'esilarante storia d'amore che non si sarebbe mai aspettata."
             }
         ],
-        "aggiornato": "09:24"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Sky Cinema Due",
@@ -5089,7 +5069,7 @@
                 "descrizione": "Henry Hill, figlio di emigranti italo-irlandesi, fin da giovane entra a far parte della piccola mafia dei quartieri poveri di New York. Ma ben presto scopre la ferocia dei boss locali che usano chiamarsi fra di loro \"bravi ragazzi\"..."
             }
         ],
-        "aggiornato": "09:24"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Sky Cinema Due +24",
@@ -5111,7 +5091,7 @@
                 "descrizione": "Toscana, fine Seconda Guerra Mondiale. In un casolare l’infermiera canadese Hana, innamorata di un soldato indiano, si occupa di un misterioso paziente inglese del quale si ripercorre, grazie alla presenza dell’enigmatico Caravaggio, la grande e tragica passione per l’affascinante Katherine."
             }
         ],
-        "aggiornato": "09:24"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Sky Cinema Collection",
@@ -5178,7 +5158,7 @@
                 "descrizione": "Doug (Spencer) è uscito di prigione, Rosco (Hill) è un ventriloquo vagabondo che se ne va in giro sui suoi pattini a rotelle. Per una serie di combinazioni si trovano insieme, incaricati di una missione pericolosissima da parte della Cia. Il loro compito è quello di sgominare un'organizzazione criminale comandata da un pazzo che vorrebbe sovvertire la situazione mondiale..."
             }
         ],
-        "aggiornato": "09:24"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Sky Cinema Family",
@@ -5245,7 +5225,7 @@
                 "descrizione": "Buster e il suo cast hanno trasformato il New Moon Theater in un successo locale, ma Buster ha messo gli occhi su un premio più grande: Debuttare con un nuovo spettacolo al Crystal Tower Theater nell’affascinante Redshore City. Ma senza conoscenze, Buster e i suoi devono intrufolarsi negli uffici di fama mondiale Crystal Entertainment, gestiti da un lupo magnate e spietato di nome Jimmy Crystal. In un disperato tentativo di ottenere l’attenzione di Mr. Crystal, Gunter lancia spontaneamente un’idea che Buster accetta con facilit� , promettendo che nel loro nuovo spettacolo ci sar� la leggenda del leone rock Clay Calloway. Il problema è che Buster non ha mai incontrato Clay, artista che si è allontanato dal mondo più di dieci anni fa e dopo la perdita di sua moglie. Mentre Gunter aiuta Buster a sognare un capolavoro teatrale, e la pressione (e le minacce sinistre) di Mr. Crystal Mount, Buster intraprende una ricerca per trovare Clay e convincerlo a tornare sul palco."
             }
         ],
-        "aggiornato": "09:24"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Sky Cinema Action",
@@ -5307,7 +5287,7 @@
                 "descrizione": "L'epica battaglia continua! Una nuovissima avventura che vedr� l'onnipotente Kong e il temibile Godzilla combattere fianco a fianco contro una colossale minaccia sconosciuta che si cela nel nostro mondo, mettendo a dura prova la loro stessa esistenza... e la nostra. \"Godzilla e Kong - Il nuovo Impero\" approfondisce ulteriormente le storie e le origini di questi due Titani, nonché i misteri di Skull Island, tra gli altri, svelando la mitica battaglia che ha contribuito a forgiare questi esseri straordinari e li ha legati per sempre all'umanit� ."
             }
         ],
-        "aggiornato": "09:24"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Sky Cinema Suspense",
@@ -5364,7 +5344,7 @@
                 "descrizione": "Il Monolith è il suv più sicuro mai costruito e Sara, giovane madre, lo sta guidando nel deserto diretta verso Los Angels. Sul seggiolino posteriore c'è David, il figlio di due anni che sta giocando con lo smartphone della madre quando questa investe un cervo. Sara scende dall'auto per controllare i danni lasciando David e il telefono all'interno, quando il piccolo spinge per errore il telecomando della vettura chiudendosi dentro. Non c'è modo di aprire l'auto e Sar� dovr� fare affidamento esclusivamente sulle sue forze per salvare David."
             }
         ],
-        "aggiornato": "09:24"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Sky Cinema Romance",
@@ -5421,7 +5401,7 @@
                 "descrizione": "Phoebe Dynevor nel biopic targato Sky Original, diretto da Claire McCarthy. La storia della rivoluzionaria artista della ceramica Clarice Cliff, una delle prime esponenti dell'Art Deco (GBR 2021)"
             }
         ],
-        "aggiornato": "09:24"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Sky Cinema Drama",
@@ -5483,7 +5463,7 @@
                 "descrizione": "Leonardo DiCaprio e Kate Winslet, vincitrice del Golden Globe, in un dramma coniugale diretto da Sam Mendes, che racconta la crisi di una coppia borghese nell'America degli anni 50."
             }
         ],
-        "aggiornato": "09:24"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Sky Cinema Comedy",
@@ -5550,7 +5530,7 @@
                 "descrizione": "I tre amici Aldo, Giovanni e Giacomo si mettono in viaggio verso il sud Italia per il matrimonio di uno di loro con la futura moglie. Durante il tragitto il terzetto affronta varie peripezie, tra le quali l'incontro con una ragazza di cui Giovanni si innamora e il trasporto di una gamba di legno al suocero."
             }
         ],
-        "aggiornato": "09:24"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Sky Uno",
@@ -5662,7 +5642,7 @@
                 "descrizione": "L'avventura prosegue nel nord Europa, dove non mancano certo i paesaggi e le piste. I concorrenti si rendono conto di quanto sia importante il depistaggio."
             }
         ],
-        "aggiornato": "09:24"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Sky Atlantic",
@@ -5769,7 +5749,7 @@
                 "descrizione": "La serie prequel vede la dinastia Targaryen all'apice assoluto del suo potere, con più di 15 draghi sotto il loro giogo. La maggior parte degli imperi, che siano reali o immaginari, crollano quando raggiungono tali poteri e tali altezze. Nel caso dei Targaryen, la loro lenta caduta inizia quasi 193 anni prima degli eventi de Il Trono di Spade, quando re Viserys Targaryen rompe un secolo di tradizione nominando sua figlia Rhaenyra erede al Trono di Spade. La corte rimane scioccata quando Rhaenyra mantiene il suo status di erede nonostante Viserys in seguito avr� un figlio maschio, legittimo erede. Inizia così ad attecchire il seme della divisione e forti attriti in tutto il regno."
             }
         ],
-        "aggiornato": "09:24"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Sky Serie",
@@ -5901,7 +5881,7 @@
                 "descrizione": "Basata sul racconto breve di Manuel Gonzalez, la serie esamina gli squilibri di potere all'interno della coppia: quando un incidente di laboratorio riduce Lindy a soli 15 cm di altezza, il gi� fragile equilibrio nel suo matrimonio con Les esplode in una battaglia esilarante e graffiante tra orgoglio, rancore e amore."
             }
         ],
-        "aggiornato": "09:24"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Sky Investigation",
@@ -6023,7 +6003,7 @@
                 "descrizione": "Law & Order è un media franchise creato da Dick Wolf per la NBC Universal e formato da varie serie televisive poliziesco-giudiziarie e un film per la televisione, trasmessi sul network NBC dal 13 settembre 1990. Il franchise Law & Order nel tempo ha ispirato anche una serie di adattamenti televisivi stranieri, un docu-reality e videogiochi ufficiali, oltre a generare una serie di crossover con altre serie tv statunitensi."
             }
         ],
-        "aggiornato": "09:24"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Sky Crime",
@@ -6125,7 +6105,7 @@
                 "descrizione": "Lontano dai riflettori e dalle luci della ribalta, per Cambi emerge una lenta, faticosa rinascita. Un uomo diverso, che ha imparato il valore delle piccole cose e il significato della ricerca di sé."
             }
         ],
-        "aggiornato": "09:24"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Sky Adventure",
@@ -6252,7 +6232,7 @@
                 "descrizione": "Un treno in corsa deraglia durante il suo viaggio inaugurale e i passeggeri si ritrovano nel caos, costretti a trovare la forza di sopravvivere in uno dei disastri ferroviari più sconvolgenti degli ultimi tempi."
             }
         ],
-        "aggiornato": "09:24"
+        "aggiornato": "14:16"
     },
     {
         "canale": "MTV",
@@ -6404,7 +6384,7 @@
                 "descrizione": "Ep21 di 42 - In questa puntata Rob e Steelo sono affiancati da Lolo Wood."
             }
         ],
-        "aggiornato": "09:24"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Comedy Central",
@@ -6561,7 +6541,7 @@
                 "descrizione": "Quando la moglie Andi decide di riavviare la sua carriera professionale, Adam è costretto a passare più tempo a casa e assumersi maggiori responsabilit� nell'accudire i loro tre figli piccoli."
             }
         ],
-        "aggiornato": "09:24"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Sky Arte",
@@ -6663,7 +6643,7 @@
                 "descrizione": "Il pittore olandese ha destato gli interessi di professionisti del settore e di appassionati. Un racconto delicato focalizzando sul suo periodo legato al sud della Francia, quando il pittore si trasferì ad Arles e poi a Saint-Rémy."
             }
         ],
-        "aggiornato": "09:24"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Sky Documentaries",
@@ -6770,7 +6750,7 @@
                 "descrizione": "Anche solo un’ora - La sopravvivenza qui passa dal dilemma tra uccidere o essere ucciso. La pace, anche se di un’ora sola, è un dono dal cielo."
             }
         ],
-        "aggiornato": "09:24"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Sky Nature",
@@ -6902,7 +6882,7 @@
                 "descrizione": "Le zebre sono spesso le apripista della migrazione. Essendo erbivori meno selettivi, mangiano la parte più alta e dura dell'erba, aprendo la strada agli altri che preferiscono l'erba più tenera e corta."
             }
         ],
-        "aggiornato": "09:24"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Discovery Channel",
@@ -7019,7 +6999,7 @@
                 "descrizione": "Passiamo al vaglio altri oggetti di uso quotidiano e scopriamo come sono fatti i rocchetti per la pesca, le vernici, i telai e le macchine per i gelati."
             }
         ],
-        "aggiornato": "09:24"
+        "aggiornato": "14:16"
     },
     {
         "canale": "History Channel",
@@ -7141,7 +7121,7 @@
                 "descrizione": "S16 Ep6 di 10 Ecco la mia offerta - Giornata ricca di offerte a Moreno Valley. Non per tutti pero', qualcuno infatti ne approfitta per fare una gita."
             }
         ],
-        "aggiornato": "09:24"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Cartoon Network",
@@ -7298,7 +7278,7 @@
                 "descrizione": "Craig e i suoi due amici Kelsey e JP vivono bellissime avventure nella natura selvaggia conosciuta come Creek: un posto pieno di azione e incredibili storie."
             }
         ],
-        "aggiornato": "09:24"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Dea Kids",
@@ -7411,17 +7391,17 @@
             },
             {
                 "ora": "09:40",
-                "titolo": "Il Barbiere Pasticciere",
+                "titolo": "Il barbiere pasticciere",
                 "descrizione": "Wilk trova delle forbici magiche appartenute a un antichissimo barbiere. Wilk inizia ad usarle, e vive un incredibile momento di gloria al lavoro."
             },
             {
                 "ora": "09:45",
-                "titolo": "Il Barbiere Pasticciere",
+                "titolo": "Il barbiere pasticciere",
                 "descrizione": "Torta Principessa si presenta al negozio di Pan Barbiere per imparare il mestiere. Fiutando l'affare, Pan barbiere accetta."
             },
             {
                 "ora": "09:55",
-                "titolo": "Il Barbiere Pasticciere",
+                "titolo": "Il barbiere pasticciere",
                 "descrizione": "Patato decide di soffiare al suo rivale Pan Barbiere il suo più valente collaboratore, Wilk, per farlo lavorare nel suo negozio da barbiere."
             },
             {
@@ -7431,7 +7411,7 @@
             },
             {
                 "ora": "10:15",
-                "titolo": "Il Barbiere Pasticciere",
+                "titolo": "Il barbiere pasticciere",
                 "descrizione": "Per ottenere un sussidio, Pan Barbiere deve dimostrare che il personale del suo salone è felice: ma invece Choco non riesce a sorridere. Deve assolutamente riuscire a rallegrarlo."
             },
             {
@@ -7455,7 +7435,7 @@
                 "descrizione": "La signora MacArthur ha deciso di distruggere la scuola per vendicarsi di tutte le volte che Chef e i suoi bambini l'hanno messa in difficolt� con i suoi vari lavori e l'hanno fatta licenziare."
             }
         ],
-        "aggiornato": "09:24"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Nick Jr",
@@ -7612,7 +7592,7 @@
                 "descrizione": "Ep4 di 13 - Daisy e Coccodrillo organizzano un picnic. \/ Il mistero dello gnomo rotto."
             }
         ],
-        "aggiornato": "09:24"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Boomerang",
@@ -7769,7 +7749,7 @@
                 "descrizione": "Ep3 Il nido accogliente - Le cose iniziano a scomparire dalla casetta come per magia. Grizzy e' convinto che i Lemming siano i colpevoli, ma anche loro sono vittime di furti inspiegabili."
             }
         ],
-        "aggiornato": "09:24"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Sky TG 24",
@@ -7926,7 +7906,7 @@
                 "descrizione": "Previsioni meteo dettagliate e sempre aggiornate 24 ore al giorno. Le previsioni regionali, nazionali ed internazionali."
             }
         ],
-        "aggiornato": "09:24"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Rai News 24",
@@ -8083,7 +8063,7 @@
                 "descrizione": "METEO"
             }
         ],
-        "aggiornato": "09:24"
+        "aggiornato": "14:16"
     },
     {
         "canale": "Sky Meteo 24",
@@ -8240,6 +8220,6 @@
                 "descrizione": "Previsioni meteo dettagliate e sempre aggiornate 24 ore al giorno. Le previsioni regionali, nazionali ed internazionali."
             }
         ],
-        "aggiornato": "09:24"
+        "aggiornato": "14:16"
     }
 ]
