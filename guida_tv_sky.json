@@ -154,7 +154,7 @@
                 "descrizione": "TG1 Sera"
             }
         ],
-        "aggiornato": "13:46"
+        "aggiornato": "19:22"
     },
     {
         "canale": "Rai 2",
@@ -247,28 +247,13 @@
             },
             {
                 "ora": "17:20",
-                "titolo": "Ciclismo: Tour De France 2026 - 1a Tappa: Barcellona - Barcellona (Crono A Squadre)",
-                "descrizione": "l Tour de France 2026 si apre con una cronometro a squadre nel cuore di Barcellona. Un percorso breve ma tecnico, con il finale in salita verso Montjuïc, che assegner� la prima maglia gialla e offrir� i primi distacchi tra gli uomini di classifica."
-            },
-            {
-                "ora": "17:25",
                 "titolo": "Ciclismo: Tour De France 2026 - Le Strade Del Tour: 1a Tappa",
                 "descrizione": "Un viaggio lungo il percorso del Tour de France 2026 per scoprire i luoghi che fanno da scenario alla corsa più celebre del mondo."
             },
             {
-                "ora": "17:40",
-                "titolo": "Tour De France 1^ Tappa Barcellona - Bar",
-                "descrizione": "Tour de France 1^ tappa Barcellona - Barcellona (ESP) - SPORT - Ciclismo. 113^ edizione"
-            },
-            {
-                "ora": "18:15",
-                "titolo": "Tour All'Arrivo",
-                "descrizione": "SPORT. - Ciclismo. A cura di Alessandro Fabretti Coordinamento giornalistico Franco Bortuzzo Conduce Francesco Pancani Telecronaca Stefano Rizzato Commento tecnico Silvio Martinello, Stefano Garzelli, Davide Cassani Produttore esecutivo Guido Lissoni Regia Italia Maria Baratta"
-            },
-            {
-                "ora": "18:45",
-                "titolo": "Ciclismo: Tour De France 2026 - Le Strade Del Tour: 2a Tappa",
-                "descrizione": "Un viaggio lungo il percorso del Tour de France 2026 per scoprire i luoghi che fanno da scenario alla corsa più celebre del mondo."
+                "ora": "17:25",
+                "titolo": "Ciclismo: Tour De France 2026 - 1a Tappa: Barcellona - Barcellona (Crono A Squadre)",
+                "descrizione": "l Tour de France 2026 si apre con una cronometro a squadre nel cuore di Barcellona. Un percorso breve ma tecnico, con il finale in salita verso Montjuïc, che assegner� la prima maglia gialla e offrir� i primi distacchi tra gli uomini di classifica."
             },
             {
                 "ora": "19:15",
@@ -276,9 +261,9 @@
                 "descrizione": "La rubrica di ciclismo dedicata al Tour de France 2026, tra cronaca, analisi e interviste a caldo a commento della tappa appena conclusa."
             },
             {
-                "ora": "19:41",
-                "titolo": "Tour De France 1^ Tappa Barcellona - Barcellona",
-                "descrizione": "Tour de France 1^ tappa Barcellona - Barcellona (ESP) - SPORT - Ciclismo. 113^ edizione"
+                "ora": "19:40",
+                "titolo": "Ciclismo: Tour De France 2026 - Le Strade Del Tour: 2a Tappa",
+                "descrizione": "Un viaggio lungo il percorso del Tour de France 2026 per scoprire i luoghi che fanno da scenario alla corsa più celebre del mondo."
             },
             {
                 "ora": "19:45",
@@ -309,9 +294,14 @@
                 "ora": "23:20",
                 "titolo": "Dark Lines",
                 "descrizione": "Il delitto dell'Universit� \"La Sapienza di Roma\": Valentina Romani racconta il caso dell'assassinio della ventiduenne studentessa Marta Russo. Nessuna condanna, nessun movente e una verit� giudiziaria che lascia ancora molti dubbi."
+            },
+            {
+                "ora": "23:40",
+                "titolo": "TG2 Storie. I Racconti Della Settimana",
+                "descrizione": "Le storie e i protagonisti di fatti di cronaca e di costume che si raccontano nella loro quotidianit� ."
             }
         ],
-        "aggiornato": "13:46"
+        "aggiornato": "19:22"
     },
     {
         "canale": "Rai 3",
@@ -404,7 +394,7 @@
             },
             {
                 "ora": "15:00",
-                "titolo": "Intelligenze Umane",
+                "titolo": "Intelligenze Umane. Algoritmi Del Capitale - DIAlogo Con Giulio Tremonti (Pt.2)",
                 "descrizione": "\"Intelligenze Umane\" è condotto da padre Paolo Benanti. Il programma propone una serie di conversazioni con protagonisti del nostro tempo su temi centrali per la contemporaneit� , con particolare attenzione al rapporto tra pensiero umano e intelligenza artificiale."
             },
             {
@@ -468,7 +458,7 @@
                 "descrizione": "In concomitanza con la finale dei Mondiali di calcio, \"Blob\" ripercorre il cammino che portò l'Italia alla conquista del quarto titolo mondiale nel 2006. Dalla guida di Marcello Lippi al trionfo di Berlino, un viaggio tra partite, campioni e immagini rimaste nella memoria collettiva del Paese. Non solo il racconto di una vittoria storica, ma anche uno sguardo all'Italia di quell'estate: le emozioni condivise, i rituali davanti alla tv, le piazze in festa e i retroscena di un successo che ha segnato un'intera generazione."
             }
         ],
-        "aggiornato": "13:46"
+        "aggiornato": "19:22"
     },
     {
         "canale": "Rai 4",
@@ -585,7 +575,7 @@
                 "descrizione": "Cinque scalatori impegnati a esplorare le Highlands scozzesi scoprono una ragazza serba prigioniera in una cavit� nella roccia. Il team viene intrappolato in un gioco mortale con i rapitori mentre tenta di liberare la ragazza e portarla in salvo."
             }
         ],
-        "aggiornato": "13:46"
+        "aggiornato": "19:22"
     },
     {
         "canale": "Rai 5",
@@ -707,7 +697,7 @@
                 "descrizione": "Miles Davis, colui che ha sfidato ogni etichetta e ha incarnato la parola \"cool\". Usando le parole dell'autobiografia di Miles Davis, questo film offre una visione incisiva - della nostra comprensione del leggendario musicista."
             }
         ],
-        "aggiornato": "13:46"
+        "aggiornato": "19:22"
     },
     {
         "canale": "Rete 4",
@@ -814,7 +804,7 @@
                 "descrizione": "Cosa vuol dire avere una mamma bellissima, vitale, frivola, imbarazzante? E’ il cruccio che ha accompagnato tutta la vita di Bruno, primogenito di Anna, fin da quando aveva otto anni. Tutto comincia nell’estate del 1971, quando assistendo alla tradizionale elezione delle Miss dello stabilimento balneare più popolare di Livorno, Anna viene inaspettatamente chiamata sul palco ed incoronata “la mamma più bella”. Da allora, nella famiglia Michelucci, arriva lo scompiglio e per Anna, per Bruno e per la sorella Valeria, inizia un’avventura che si concluder� solo ai giorni nostri, con un inattesa struggente riconciliazione."
             }
         ],
-        "aggiornato": "13:46"
+        "aggiornato": "19:22"
     },
     {
         "canale": "Canale 5",
@@ -951,7 +941,7 @@
                 "descrizione": "Divertente show-antropologico, ripropone la \"selezione naturale\" fra 2 categorie di persone antitetiche che gareggiano al fine di scoprire chi e' destinato alla sopravvivenza."
             }
         ],
-        "aggiornato": "13:46"
+        "aggiornato": "19:22"
     },
     {
         "canale": "Italia 1",
@@ -1083,7 +1073,7 @@
                 "descrizione": "Miles è un bravissimo motociclista di rally, ma non è molto a suo agio nelle relazioni umane. A causa di un pericoloso scherzo, un giorno si ritrova da solo in una valle sperduta. Lì si imbatte in A.X.L., un cane robotizzato progettato per essere una pericolosa arma militare, dotato di una sofisticata A.I. che rende il suo comportamento molto simile a quello degli animali. Tra Miles e A.X.L. nascer� subito una sincera amicizia, messa però in pericolo dagli scienziati che rivogliono indietro la loro creatura. Con l'aiuto della bella Sara, i due amici dovranno fare di tutto per sfuggire ai nemici ed evitare che l'aggressivit� del cane robot prenda il sopravvento."
             }
         ],
-        "aggiornato": "13:46"
+        "aggiornato": "19:22"
     },
     {
         "canale": "La7",
@@ -1155,7 +1145,7 @@
                 "descrizione": "La vita del reduce della guerra del Golfo Ben Marco è un alternarsi di incubi, brutti ricordi, fobie, di cui è difficile capire l'origine. Scoprir� di essere la vittima predestinata di oscuri giochi di potere di chi mira ad assumere il controllo della Presidenza degli Stati Uniti."
             }
         ],
-        "aggiornato": "13:46"
+        "aggiornato": "19:22"
     },
     {
         "canale": "TV8",
@@ -1237,14 +1227,9 @@
                 "descrizione": "Formula 2. - Dal Circuito di Silverstone, Towcester, Inghilterra."
             },
             {
-                "ora": "15:35",
+                "ora": "15:50",
                 "titolo": "Speciale McLaren",
                 "descrizione": "Per celebrare le 1000 gare nella massima competizione automobilistica, la squadra ha fatto scendere in pista le proprie monoposto con un allestimento visivo unico."
-            },
-            {
-                "ora": "15:55",
-                "titolo": "Gran Bretagna",
-                "descrizione": "Riviviamo insieme tutte le forti emozioni che ci sono state trasmesse durante gli scorsi Gran Premi in attesa della gara di Formula 1."
             },
             {
                 "ora": "16:15",
@@ -1297,7 +1282,7 @@
                 "descrizione": "Ep1 di 8 Marrakech - Un tempo luoghi inaccessibili, oggi i Riad sono stati trasformati in vere oasi dell'ospitalita'. Lo sanno bene i 4 italiani che Bruno Barbieri ha scelto per questa sfida."
             }
         ],
-        "aggiornato": "13:46"
+        "aggiornato": "19:22"
     },
     {
         "canale": "Nove",
@@ -1364,7 +1349,7 @@
                 "descrizione": "Alcuni esperti analizzano le menti di terribili criminali."
             }
         ],
-        "aggiornato": "13:46"
+        "aggiornato": "19:22"
     },
     {
         "canale": "20 Mediaset",
@@ -1466,7 +1451,7 @@
                 "descrizione": "110 fpi - roma boxing night"
             }
         ],
-        "aggiornato": "13:46"
+        "aggiornato": "19:22"
     },
     {
         "canale": "Twentyseven",
@@ -1563,7 +1548,7 @@
                 "descrizione": "Nel 1914 la danese Karen Dinesen arriva nel Kenya per occuparsi di una piantagione di caffè, acquistata dal marito (e cugino), il barone svedese Bror von Blixen-Finecke che, dopo averla contagiata di sifilide, la trascura. Divorziata, s'innamora di Denys Finch-Hatton, inglese avventuroso, che muore in un incidente aereo."
             }
         ],
-        "aggiornato": "13:46"
+        "aggiornato": "19:22"
     },
     {
         "canale": "IRIS",
@@ -1615,7 +1600,7 @@
                 "descrizione": "Il film racconta la storia di Michael, un giovane idealista che ottiene il lavoro dei suoi sogni alle Nazioni Unite come coordinatore del programma \"Oil for Food\". Il giovane viene coinvolto nel mercato petrolifero del dopoguerra iracheno. Michael cercher� quindi risposte nell'uomo di cui più si fida, Pasha, un esperto diplomatico nonché suo capo. Più cose apprender� e più il sospetto di una cospirazione prender� piede nella sua mente. L'unica via di uscita sar� quella di raccontare tutto, mettendo a rischio la sua esistenza, la sua carriera e la vita della donna che ama."
             }
         ],
-        "aggiornato": "13:46"
+        "aggiornato": "19:22"
     },
     {
         "canale": "Rai Movie",
@@ -1682,7 +1667,7 @@
                 "descrizione": "Sam è un ragazzo che divide il proprio tempo in due modi principali: si diletta in incontri notturni con un'aspirante attrice e spia le vicine di casa dal suo balcone. Una sera, però, intercetta lo sguardo di Sarah, una ragazza che gli promette che si rivedranno il giorno dopo. Ma Sarah scompare nel nulla e Sam inizia una ricerca infinita, nel corso della quale scopre molte più cose sulla citt� di Los Angeles di quanto si aspettasse."
             }
         ],
-        "aggiornato": "13:46"
+        "aggiornato": "19:22"
     },
     {
         "canale": "Rai Premium",
@@ -1789,7 +1774,7 @@
                 "descrizione": "$24"
             }
         ],
-        "aggiornato": "13:46"
+        "aggiornato": "19:22"
     },
     {
         "canale": "La 5",
@@ -1866,7 +1851,7 @@
                 "descrizione": "Gli artisti piu' celebri della musica italiana e internazionale si esibiscono nella kermesse musicale dell'estate italiana. Condotto da Ilary Blasi, con Fabio Rovazzi e Daniele Battaglia."
             }
         ],
-        "aggiornato": "13:46"
+        "aggiornato": "19:22"
     },
     {
         "canale": "Real Time",
@@ -1953,7 +1938,7 @@
                 "descrizione": "La perdita di peso di Angie e' minacciata quando il suo matrimonio non va bene. La sua vita e' nel caos: riuscira' a rispettare la dieta del dr. Now?"
             }
         ],
-        "aggiornato": "13:46"
+        "aggiornato": "19:22"
     },
     {
         "canale": "Food Network",
@@ -2095,7 +2080,7 @@
                 "descrizione": "Simone Rugiati e' in viaggio per il Bel Paese alla ricerca dei migliori food advisor."
             }
         ],
-        "aggiornato": "13:46"
+        "aggiornato": "19:22"
     },
     {
         "canale": "Focus",
@@ -2202,7 +2187,7 @@
                 "descrizione": "Inverno rigido a Yellowstone: tra neve, fuoco geotermico e gelo, scopri come la natura sfida temperature estreme per sopravvivere."
             }
         ],
-        "aggiornato": "13:46"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Giallo",
@@ -2289,7 +2274,7 @@
                 "descrizione": "Nina e Lukas indagano sul ritrovamento di un cadavere in un cantiere. Nel frattempo, una troupe cinematografica ha denunciato la scomparsa del suo attore principale."
             }
         ],
-        "aggiornato": "13:46"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Boing",
@@ -2446,7 +2431,7 @@
                 "descrizione": "Gus e Steve si divertono a fare gli scherzi telefonici, ma per aver utilizzato il telefono intergalattico di Grandpa, finiscono in una prigione spaziale. Per evadere, dovranno unire le forze."
             }
         ],
-        "aggiornato": "13:46"
+        "aggiornato": "19:23"
     },
     {
         "canale": "K2",
@@ -2603,7 +2588,7 @@
                 "descrizione": "1' Stagione Ep.7 - Le avventure di tre scoiattoli dalla voce incredibile, 'adottati' da Dave Seville, che diventano un fenomeno musicale."
             }
         ],
-        "aggiornato": "13:46"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Rai Gulp",
@@ -2760,7 +2745,7 @@
                 "descrizione": "Negli abissi di Andros, Aisha deve riuscire a salvare Nex, che si trova in grave pericolo. Intanto, le altre Winx tentano di impedire a Obscurum e agli Staryummy di portarsi via la luce di Gorgol, ma purtroppo vengono imprigionate all'interno della stella e attaccate da alcuni anemoni magici. Aisha comprende come calmare gli anemoni e le Winx riescono a ridare luce al nucleo di Gorgol..."
             }
         ],
-        "aggiornato": "13:46"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Frisbee",
@@ -2917,7 +2902,7 @@
                 "descrizione": "1' Stagione Ep.11 - Una serie basata sui libri di Margret e H. A. Rey. George, simpatica scimmietta, scopre ogni giorno cose sorprendenti sul funzionamento di tutto ciò che la circonda."
             }
         ],
-        "aggiornato": "13:46"
+        "aggiornato": "19:23"
     },
     {
         "canale": "DMAX",
@@ -3034,7 +3019,7 @@
                 "descrizione": "Andrea Agresti analizza i crimini ripresi dalle telecamere e diventati virali. Manuel Spadaccini ci consiglia come comportarci in situazioni ad alto rischio."
             }
         ],
-        "aggiornato": "13:46"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Rai Sport",
@@ -3116,7 +3101,7 @@
                 "descrizione": "Come è ormai consuetudine, la nona tappa della Diamond League sbarca negli Stati Uniti, a Eugene in Oregon. Il parterre è ricco di campioni e campionesse del mondo e di tante medaglie d'oro olimpiche. Per l'Italia spicca Larissa Iapichino."
             }
         ],
-        "aggiornato": "13:46"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Sportitalia",
@@ -3233,7 +3218,7 @@
                 "descrizione": "Intervista con Michele Criscitiello"
             }
         ],
-        "aggiornato": "13:46"
+        "aggiornato": "19:23"
     },
     {
         "canale": "HGTV",
@@ -3340,7 +3325,7 @@
                 "descrizione": "Un appassionato di viaggi e' finalmente pronto a fermarsi e a vivere con la sua fidanzata. Brian e Mika hanno solo 100 giorni per terminare il progetto."
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "RSI LA 1",
@@ -3497,7 +3482,7 @@
                 "descrizione": "La Svizzera non è l'unico Paese ad avere da oltre un secolo un servizio militare obbligatorio. Ma la multiculturalit� , i corsi di ripetizione e la sussidiariet� dell'esercito in un territorio alpino lo rendono unico. In questa \"Memorabilia\" ne scopriamo anche alcune curiosit� , come l'alto gradimento delle razioni alimentari, gli exploit sportivi, la fattoria penitenziaria."
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "RSI LA 2",
@@ -3559,7 +3544,7 @@
                 "descrizione": "Ottavi di finale\nda Philadelphia (USA)"
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "DAZN 1",
@@ -3661,7 +3646,7 @@
                 "descrizione": "Christian Pulisic e il leggendario coach Dan Peterson in una chiacchierata, 1 to 1, parlano del momento del calciatore statunitense e di tutta la sua esperienza italiana e rossonera."
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Sky Sport 24",
@@ -3818,7 +3803,7 @@
                 "descrizione": "Le notizie e i commenti del giorno, le anteprime e l'attualita' con servizi, commenti, interviste e collegamenti."
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Sky Sport Uno",
@@ -3982,7 +3967,7 @@
                 "descrizione": "Dopo nove stagioni, Mo Salah saluta il Liverpool. Compagni di squadra e allenatori, attuali e passati, omaggiano l'attaccante egiziano, 257 gol con la maglia dei Reds."
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Sky Sport Tennis",
@@ -4041,7 +4026,7 @@
             {
                 "ora": "12:00",
                 "titolo": "6a giornata",
-                "descrizione": "BOLELLI\/VAVASSORI-DE JONG\/ROYER (Paventi-Crugnola); KHACHANOV-COBOLLI (Bisti-Golarsa); FRITZ-SONEGO (Cazzaniga-Cotto); DIMITROV-BERRETTINI (Boschetto-Ljubicic)"
+                "descrizione": "Dall'All-England Lawn Tennis and Croquet Club di Wimbledon, Inghilterra."
             },
             {
                 "ora": "14:00",
@@ -4051,7 +4036,17 @@
             {
                 "ora": "14:30",
                 "titolo": "6a giornata",
-                "descrizione": "BOLELLI\/VAVASSORI-DE JONG\/ROYER (Paventi-Crugnola); KHACHANOV-COBOLLI (Bisti-Golarsa); FRITZ-SONEGO (Cazzaniga-Cotto); DIMITROV-BERRETTINI (Boschetto-Ljubicic)"
+                "descrizione": "6a giornata Wimbledon - KHACHANOV-COBOLLI (Bisti-Golarsa); FRITZ-SONEGO (Cazzaniga-Cotto); DIMITROV-BERRETTINI (Boschetto-Ljubicic)"
+            },
+            {
+                "ora": "18:30",
+                "titolo": "Berrettini - Dimitrov",
+                "descrizione": "Wimbledon. - Dall'All-England Lawn Tennis and Croquet Club di Wimbledon, Inghilterra."
+            },
+            {
+                "ora": "20:30",
+                "titolo": "6a giornata",
+                "descrizione": "Dall'All-England Lawn Tennis and Croquet Club di Wimbledon, Inghilterra."
             },
             {
                 "ora": "22:00",
@@ -4071,10 +4066,10 @@
             {
                 "ora": "23:00",
                 "titolo": "6a giornata",
-                "descrizione": "BOLELLI\/VAVASSORI-DE JONG\/ROYER (Paventi-Crugnola); KHACHANOV-COBOLLI (Bisti-Golarsa); FRITZ-SONEGO (Cazzaniga-Cotto); DIMITROV-BERRETTINI (Boschetto-Ljubicic)"
+                "descrizione": "Dall'All-England Lawn Tennis and Croquet Club di Wimbledon, Inghilterra."
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Sky Sport F1",
@@ -4156,17 +4151,7 @@
                 "descrizione": "Formula 2. - Dal Circuito di Silverstone, Towcester, Inghilterra."
             },
             {
-                "ora": "15:35",
-                "titolo": "Programmazione non disponibile",
-                "descrizione": "I palinsesti sono in via di definizione da parte del canale"
-            },
-            {
-                "ora": "15:40",
-                "titolo": "Gran Bretagna",
-                "descrizione": "Riviviamo insieme tutte le forti emozioni che ci sono state trasmesse durante gli scorsi Gran Premi in attesa della gara di Formula 1."
-            },
-            {
-                "ora": "15:55",
+                "ora": "16:00",
                 "titolo": "Barcellona",
                 "descrizione": "Scopriamo se la F2 e' ancora la porta d'accesso alla F1. Anche se troppi campioni restano al palo e tanti arrivano dalle Academy, il campionato cadetto rimane oggi l'ascensore per la serie A."
             },
@@ -4186,7 +4171,7 @@
                 "descrizione": "Qualifiche F1. - Dopo la gara Sprint a Silverstone e' sfida per la pole: Q1, Q2 e Q3 con l'adrenalina che sale. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero."
             },
             {
-                "ora": "18:15",
+                "ora": "18:20",
                 "titolo": "F1 Paddock Live Post Qualifiche",
                 "descrizione": "Qualifiche. - Analisi e commento di quanto successo nelle qualifiche con le interviste ai protagonisti. Conduce Davide Camicioli."
             },
@@ -4226,7 +4211,7 @@
                 "descrizione": "A Silverstone prima gara del weekend sulla distanza di 100km: chi conquistera' gli 8 punti in palio per il vincitore? Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero."
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Sky Sport Legend",
@@ -4313,7 +4298,7 @@
                 "descrizione": "Gemelli del gol, fratelli granata - Il Torino sogna il sorpasso alla Juve con i 36 gol di Pulici e Graziani, trascinati dagli assist di Claudio Sala, il \"Poeta del gol\"."
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Sky Sport MotoGP",
@@ -4460,7 +4445,7 @@
                 "descrizione": "Settimo appuntamento del mondiale 2026: al Mugello, in Italia, si accendono i motori per la gara della MotoGP. Telecronaca Guido Meda e Mauro Sanchini"
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Sky Sport Basket",
@@ -4532,7 +4517,7 @@
                 "descrizione": "Gara-7, non c'e' futuro: 48 minuti per decidere chi, tra Thunder e Spurs, sfidera' i Knicks in finale NBA. Telecronaca di Flavio Tranquillo e Davide Pessina"
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Sky Sport Arena",
@@ -4574,7 +4559,7 @@
                 "descrizione": "Dall'All-England Lawn Tennis and Croquet Club di Wimbledon, Inghilterra."
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Sky Sport Max",
@@ -4621,17 +4606,17 @@
                 "descrizione": "Nations Championship. - Comincia il nuovo torneo che unisce i test match di luglio e novembre tra le prime 12 squadre al mondo. A Sydney di fronte l'8a e la 3a del ranking. Telecronaca Malpezzi-Frati"
             },
             {
-                "ora": "14:00",
+                "ora": "14:05",
                 "titolo": "Giappone - Italia",
                 "descrizione": "Ecco il nuovo torneo che unisce i test match di luglio e novembre. Azzurri avanti 8-2 nei precedenti. A Tokyo di fronte 12esima e 10a del ranking. Telecronaca Pierantozzi-Fusetti"
             },
             {
-                "ora": "16:00",
+                "ora": "16:10",
                 "titolo": "Laureus Spirit of Sports",
                 "descrizione": "Interviste esclusive con i piu' grandi nomi dello sport, approfondimenti, analisi."
             },
             {
-                "ora": "16:30",
+                "ora": "16:35",
                 "titolo": "Giorgio Porrà Intervista Roberto Mancini",
                 "descrizione": "Mancini. - In occasione del Festival della Serie A Roberto Mancini si racconta tra il ricordo commosso di Vialli, il trionfo a Euro 2020, il premio Legendary Coach e l'ipotesi di un ritorno"
             },
@@ -4661,7 +4646,7 @@
                 "descrizione": "Ecco il nuovo torneo che unisce i test match di luglio e novembre tra le prime 12 squadre al mondo. A Cardiff di fronte la 9a e l'11esima del ranking. Telecronaca Roggero-De Rossi"
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Sky Sport Mix",
@@ -4728,7 +4713,7 @@
                 "descrizione": "Il piu' importante torneo di atletica del mondo, dove si sfidano campioni provenienti da ogni paese."
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Sky Sport Golf",
@@ -4790,7 +4775,7 @@
                 "descrizione": "Golf: DP World Tour. - Dal Golfclub Munchen Eichenried di Monaco, Germania."
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Sky Sport 251",
@@ -4799,10 +4784,10 @@
             {
                 "ora": "13:30",
                 "titolo": "6a giornata",
-                "descrizione": "6a giornata Wimbledon: DE MINAUR - SVAJDA (Ferrero-Garrone), EALA - SWIATEK (Nicolodi-Colangelo), ANISIMOVA - KEYS (Boschetto-Reggi), DIMITROV - BERRETTINI (Boschetto-Ljubicic)"
+                "descrizione": "6a giornata Wimbledon: EALA - SWIATEK (Nicolodi-Colangelo), ANISIMOVA - KEYS (Boschetto-Reggi), DIMITROV - BERRETTINI (Boschetto-Ljubicic)"
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Sky Sport 252",
@@ -4811,10 +4796,10 @@
             {
                 "ora": "11:30",
                 "titolo": "6a giornata",
-                "descrizione": "6a giornata Wimbledon: BOLELLI\/VAVASSORI-DE JONG\/ROYER (Paventi-Crugnola), MERTENS - RYBAKINA, GIRON - ZVEREV (Pero-Furlan), TIAFOE - BUBLIK (Nicolodi-Colangelo)"
+                "descrizione": "6a giornata Wimbledon: GIRON - ZVEREV (Pero-Furlan), TIAFOE - BUBLIK (Nicolodi-Colangelo)"
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Sky Sport 253",
@@ -4823,10 +4808,10 @@
             {
                 "ora": "11:30",
                 "titolo": "6a giornata",
-                "descrizione": "6a giornata Wimbledon: NAVARRO - KOSTYUK, KHACHANOV - COBOLLI (Bisti-Golarsa), FRITZ - SONEGO (Cazzaniga-Cotto)"
+                "descrizione": "6a giornata Wimbledon:KHACHANOV - COBOLLI (Bisti-Golarsa), FRITZ - SONEGO (Cazzaniga-Cotto)"
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Sky Sport 254",
@@ -4835,10 +4820,10 @@
             {
                 "ora": "11:30",
                 "titolo": "6a giornata",
-                "descrizione": "6a giornata Wimbledon: DE MINAUR - SVAJDA (Ferrero-Garrone), PAOLINI - SAKKARI (Ferrero-Rossi), CIRSTEA - NOSKOVA (Sfolcini-Rossi)"
+                "descrizione": "6a giornata Wimbledon: PAOLINI - SAKKARI (Ferrero-Rossi), CIRSTEA - NOSKOVA (Sfolcini-Rossi)"
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Sky Sport 255",
@@ -4847,10 +4832,10 @@
             {
                 "ora": "11:30",
                 "titolo": "6a giornata",
-                "descrizione": "6a giornata Wimbledon: BOLELLI\/VAVASSORI - DE JONG\/ROYER, HUNTER\/MCNALLY - KEMPEN\/PANOVA (Paventi-Crugnola), VAVASSORI\/ERRANI - STEVENSON\/BURRAGE (Ramella-Garrone)"
+                "descrizione": "6a giornata Wimbledon: VAVASSORI\/ERRANI - STEVENSON\/BURRAGE (Ramella-Garrone)"
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Sky Sport 256",
@@ -4859,10 +4844,10 @@
             {
                 "ora": "11:30",
                 "titolo": "6a giornata",
-                "descrizione": "6a giornata Wimbledon: SAMSONOVA - BOUZKOVA (Salmini-Arnaboldi), LEHECKA - MUNAR (Lupi-Arnaboldi), (Jr.) HANCE - MASSELLANI (Lupi)"
+                "descrizione": "6a giornata Wimbledon: HANCE - MASSELLANI (Lupi), LEHECKA - MUNAR (Lupi-Arnaboldi),"
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Sky Sport 257",
@@ -4879,7 +4864,7 @@
                 "descrizione": "Padel Premier Tour 2026 Bordeaux P2 Semifinali Sess. Serale. Dalle ore 17:00"
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Sky Sport 258",
@@ -4891,7 +4876,7 @@
                 "descrizione": "Baseball Mlb 2026. Dalle ore 17:00"
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Sky Sport 259",
@@ -4960,7 +4945,7 @@
                 "descrizione": "Will Caster è uno stimato ricercatore nel campo dell'intelligenza artificiale, che sta lavorando a una macchina senziente, capace di ricreare, oltre all'intelligenza artificiale, anche l'intera gamma delle emozioni umane. I suoi esperimenti gli hanno tuttavia procurato molti nemici, specie nelle fila dei movimenti estremisti anti-tecnologia. Quando Will subisce un attentato da parte di questi ultimi, sua moglie Evelyn e il suo amico Max impiantano le sue sinapsi nella macchina da lui stesso creata, provocandone così la \"trascendenza\". Ma il nuovo Will diverr� un essere assetato di potere."
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Sky Cinema Uno +24",
@@ -5017,7 +5002,7 @@
                 "descrizione": "Dalla sua infanzia povera alla sua ascesa alla fama, dai suoi trionfi ai suoi fallimenti, da Parigi a New York, scopri il viaggio eccezionale di un artista. Intimo, intenso, fragile e indistruttibile, devoto alla sua arte fino alla fine, ecco uno dei cantanti più immortali di tutti i tempi: MONSIEUR AZNAVOUR."
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Sky Cinema Due",
@@ -5079,7 +5064,7 @@
                 "descrizione": "Will Hunting è un ragazzo orfano dedito a piccoli furti, ma con grandi capacit� per la matematica. Queste doti vengono notate da un professore universitario, che mandandolo da un suo amico psichiatra cerca di aiutarlo a togliersi dalla strada."
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Sky Cinema Due +24",
@@ -5096,7 +5081,7 @@
                 "descrizione": "La storia oltraggiosa di Eduard Limonov, il poeta radicale sovietico che divenne un barbone a New York, un mito in Francia e un antieroe politico in Russia."
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Sky Cinema Collection",
@@ -5163,7 +5148,7 @@
                 "descrizione": "In Venom: The Last Dance, Tom Hardy torna a interpretare Venom, uno dei più celebri e complessi personaggi della Marvel. Nel film conclusivo della trilogia, Eddie e Venom sono in fuga. Mentre il cerchio si stringe attorno a loro, i due protagonisti sono costretti a prendere una decisione sconvolgente che far� calare il sipario sul loro “ultimo ballo”."
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Sky Cinema Family",
@@ -5235,7 +5220,7 @@
                 "descrizione": "Stéphane decide di trasferirsi sulle splendide montagne del Cantal per riallacciare i rapporti con la figlia di 8 anni, Victoria, che è rimasta in silenzio dalla scomparsa della madre. Durante una passeggiata nella foresta, un pastore regala a Victoria un cucciolo di nome \"Mystery\" che gradualmente le dar� il gusto della vita. Ma molto rapidamente, Stéphane scopre che l'animale è in realt� un lupo... Nonostante gli avvertimenti e il pericolo di questa situazione, non riesce a separare sua figlia da questa ciocca di capelli apparentemente innocua."
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Sky Cinema Action",
@@ -5292,7 +5277,7 @@
                 "descrizione": "Killing Season racconter� la storia di un militare veterano che si è ritirato a vivere in un'isolata baita di legno tra le montagne. Quando un raro visitatore, un turista europeo, capita dalle sue parti, tra i due uomini nasce una strana amicizia. In realt� però il turista non è altri che un ex soldato serbo in cerca di vendetta. Una volta scoperte le carte inizia una spietata guerra tra i due uomini, che finiscono per darsi la caccia a vicenda in un gioco mortale al gatto e al topo."
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Sky Cinema Suspense",
@@ -5354,7 +5339,7 @@
                 "descrizione": "In estate Forte dei Marmi è una cittadina tranquilla, un piccolo angolo di paradiso per i suoi cittadini benestanti. In inverno le giornate si accorciano, le notti si allungano e le ville diventano piccole fortezze custodite da sofisticati circuiti di telecamere di sicurezza. Questa è una storia invernale, una storia che sconvolge le vite dei propri personaggi e li cambia per sempre. Quando la paura abita all’interno delle case e delle persone, qual è il prezzo della sicurezza?"
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Sky Cinema Romance",
@@ -5411,7 +5396,7 @@
                 "descrizione": "Trent'anni dopo, Edward Burns dirige e interpreta il sequel del suo acclamato debutto. Ormai cinquantenne, Barry McMullen è alle prese con le turbolenze sentimentali dei suoi cari."
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Sky Cinema Drama",
@@ -5463,7 +5448,7 @@
                 "descrizione": "Una cronaca di 15 anni dell'espansione e dell'insediamento pre e post guerra civile del West americano - un viaggio irto di pericoli e intrighi dalle lotte con gli elementi naturali, alle interazioni con le popolazioni indigene che vivevano sulla terra, e la determinazione e molte volte la spietatezza di coloro che hanno cercato di stabilirlo."
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Sky Cinema Comedy",
@@ -5530,7 +5515,7 @@
                 "descrizione": "Partire o restare? Restare o partire? Pio e Amedeo sono due amici inseparabili, o almeno lo sono stati fino al giorno della maturit� , quando scatta anche per loro, inesorabile, il fatidico dilemma che attanaglia i giovani del Sud: mollare tutto in cerca di un futuro migliore o restare a casa e provare a costruire quel domani possibile?"
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Sky Uno",
@@ -5637,7 +5622,7 @@
                 "descrizione": "Ep7 di 14 Edimburgo - e' Natale e Alessandro e' volato ad Edimburgo, la capitale della Scozia! Giuliano, Ilaria, Pasquale e Rosario devono tenere alto il nome della cucina italiana in terra britannica."
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Sky Atlantic",
@@ -5744,7 +5729,7 @@
                 "descrizione": "Un'epica serie di avventure romantiche basata sulla vita del famoso fuorilegge americano Billy the Kid, dalle sue umili radici irlandesi, ai suoi primi giorni come cowboy e pistolero nella frontiera americana, al suo ruolo fondamentale nella guerra della contea di Lincoln e oltre."
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Sky Serie",
@@ -5881,7 +5866,7 @@
                 "descrizione": "Considerata un'immigrata, comune e semplice, Caterina de' Medici è sposata alla corte francese del XVI secolo da adolescente orfana che dovrebbe portare una fortuna in dote e produrre molti eredi, solo per scoprire che suo marito è innamorato di una donna anziana, la sua la dote non è pagata e lei non riesce a concepire. Eppure, solo con la sua intelligenza e determinazione, riesce a mantenere vivo il suo matrimonio e padroneggia meglio di chiunque altro lo sport sanguinario che è la monarchia, governando la Francia per 50 anni."
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Sky Investigation",
@@ -6008,7 +5993,7 @@
                 "descrizione": "Law & Order è un media franchise creato da Dick Wolf per la NBC Universal e formato da varie serie televisive poliziesco-giudiziarie e un film per la televisione, trasmessi sul network NBC dal 13 settembre 1990. Il franchise Law & Order nel tempo ha ispirato anche una serie di adattamenti televisivi stranieri, un docu-reality e videogiochi ufficiali, oltre a generare una serie di crossover con altre serie tv statunitensi."
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Sky Crime",
@@ -6135,7 +6120,7 @@
                 "descrizione": "Ep1 di 6 Scomparsi: Emanuela Orlandi - Ripercorriamo la scomparsa di Emanuela Orlandi e, attraverso il ricordo di suo fratello, analizziamo alcune domande che ancora oggi sono senza risposta."
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Sky Adventure",
@@ -6257,7 +6242,7 @@
                 "descrizione": "Mentre le fiamme avvolgono Lahaina, residenti e turisti fuggono verso l'oceano nel disperato tentativo di sopravvivere all'incendio boschivo più letale mai registrato alle Hawaii."
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "MTV",
@@ -6414,7 +6399,7 @@
                 "descrizione": "Ep23 di 42 - In questa puntata Rob e Steelo sono affiancati da Lolo Wood."
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Comedy Central",
@@ -6571,7 +6556,7 @@
                 "descrizione": "Stanley \"Stan\" Marsh, Eric Cartman e Kyle Broflosky e Kenneth \"Kenny\" McCormick, quattro ragazzi che frequentano la scuola elementare e vivono nella cittadina di South Park, in Colorado. Pestiferi, osceni e sfacciatamente intelligenti i ragazzacci affrontano temi di attualit� con immediatezza e sana cattiveria sfatando tabù e demonizzando la societ� americana. Le loro \"armi\" sono la parodia, la commedia nera e il linguaggio scurrile."
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Sky Arte",
@@ -6673,7 +6658,7 @@
                 "descrizione": "Vita, opere e misteri di Piero della Francesca, uno dei pionieri dell'arte rinascimentale."
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Sky Documentaries",
@@ -6780,7 +6765,7 @@
                 "descrizione": "Ep1 di 5 Il sole - Stella Divina: esploriamo le origini dell'Universo dal momento in cui la prima stella ha illuminato il cosmo fino alla creazione del Sole."
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Sky Nature",
@@ -6887,7 +6872,7 @@
                 "descrizione": "S1 Ep3 - L'ultima tappa ci porta nel luogo dove il deserto dell'Australia incontra l'Oceano Indiano."
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Discovery Channel",
@@ -6999,7 +6984,7 @@
                 "descrizione": "Scopriamo come la tecnica per tagliare gli alberi sia una vera risorsa per Vancouver. In un laboratorio in Spagna, osserviamo l'argilla che viene trasformata in tegole."
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "History Channel",
@@ -7106,7 +7091,7 @@
                 "descrizione": "S16 Ep1 di 10 Ritorno agli affari - Ritornano gli affari piu' incredibili d'America. Tra tattica e prove di forza si cerca di fare i giusti affari a San Bernardino."
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Cartoon Network",
@@ -7263,7 +7248,7 @@
                 "descrizione": "Ep39 di 40 Elmore Stream 2.0 - Tutto l'episodio è composto da una serie di video realizzati e caricati su Elmore Stream dagli abitanti della citt� ."
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Dea Kids",
@@ -7420,7 +7405,7 @@
                 "descrizione": "Ep23 di 52 - Cody ha una maglietta talmente cool che i compagni nemmeno lo riconoscono. Cosi' Cody decide che deve cogliere l'occasione di cambiare vita e diventare popolare."
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Nick Jr",
@@ -7577,7 +7562,7 @@
                 "descrizione": "Il piccolo regno di Ben e Holly è un cartone animato britannico per i bambini in et� prescolare ambientato in un magico regno incantato, popolato da fate, elfi e insetti."
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Boomerang",
@@ -7734,7 +7719,7 @@
                 "descrizione": "Ep44 Nascondino coi Lemming - Grizzy rovina il nascondino ai Lemming rivelando dove sono nascosti, cosi' loro lo sfidano a giocare e trovano in lui un valido avversario."
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Sky TG 24",
@@ -7891,7 +7876,7 @@
                 "descrizione": "Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo."
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Rai News 24",
@@ -8048,7 +8033,7 @@
                 "descrizione": "Ogni settimana Dario Marchetti accompagna il pubblico nel multiverso dei videogiochi: notizie, recensioni, analisi e curiosit� per raccontare, da prospettive sempre nuove, il più grande settore dell'intrattenimento di oggi."
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     },
     {
         "canale": "Sky Meteo 24",
@@ -8205,6 +8190,6 @@
                 "descrizione": "Previsioni meteo dettagliate e sempre aggiornate 24 ore al giorno. Le previsioni regionali, nazionali ed internazionali."
             }
         ],
-        "aggiornato": "13:47"
+        "aggiornato": "19:23"
     }
 ]
