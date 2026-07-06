@@ -139,7 +139,7 @@
                 "descrizione": "Commenti e approfondimenti sulla partita dei Mondiali FIFA 2026 appena conclusa. Conduce Alessandro Antinelli. Ospiti Paulo Roberto Falcao, Marco Tardelli, Ciccio Graziani, Massimo De Luca, Manuela Giugliano, Alessio Dionisi. Regia di Annarita Cardinali."
             }
         ],
-        "aggiornato": "10:49"
+        "aggiornato": "15:46"
     },
     {
         "canale": "Rai 2",
@@ -192,8 +192,8 @@
             },
             {
                 "ora": "11:00",
-                "titolo": "Brasile - Norvegia",
-                "descrizione": "Collegamento pre e post partita con la supervisione di Marco Mazzocchi e Massimo Proietto. Conduce Paola Ferrari con Simona Rolandi, Paulo Roberto Falcao e Marco Tardelli. Regia di Marco Spoletini. Partita del Mondiale di Calcio Fifa 2026 in programma dall'11 giugno al 19 luglio 2026, in diverse citt� di Stati Uniti, Canada e Messico. Coppa del Mondo di Calcio FIFA 2026. Un programma a cura di Rai Sport con la Supervisione Marco Lollobrigida. In diretta dal MetLife Stadium di New Jersey (New York). Telecronaca di Giuseppe Galati. Commento tecnico di Daniele Adani."
+                "titolo": "Ottavi: Brasile - Norvegia",
+                "descrizione": "Al MetLife Stadium di New York va in scena uno degli ottavi più attesi di questa rassegna, la sfida tra il Brasile di Ancelotti, una delle squadre candidate al titolo, e la Norvegia trascinata dal bomber Haaland."
             },
             {
                 "ora": "13:00",
@@ -219,26 +219,6 @@
                 "ora": "14:45",
                 "titolo": "Ciclismo: Tour De France 2026 - 3a Tappa: Granollers - Les Angles (Fasi Finali)",
                 "descrizione": "Il primo vero banco di prova per gli scalatori porta il gruppo dai Pirenei catalani fino a Les Angles. Una lunga giornata di montagna che può gi� delineare le gerarchie della classifica generale."
-            },
-            {
-                "ora": "14:50",
-                "titolo": "Tour In Diretta",
-                "descrizione": "SPORT. - Ciclismo. A cura di Alessandro Fabretti Coordinamento giornalistico Franco Bortuzzo Conduce Francesco Pancani Telecronaca Stefano Rizzato Commento tecnico Silvio Martinello, Stefano Garzelli, Davide Cassani Produttore esecutivo Guido Lissoni Regia Italia Maria Baratta"
-            },
-            {
-                "ora": "15:15",
-                "titolo": "Tour De France 3^ Tappa Granollers (ESP)",
-                "descrizione": "Tour de France 3^ tappa Granollers (ESP) - Les Angles (FRA) - SPORT - Ciclismo. 113^ edizione"
-            },
-            {
-                "ora": "16:05",
-                "titolo": "Tour All'Arrivo",
-                "descrizione": "SPORT. - Ciclismo. A cura di Alessandro Fabretti Coordinamento giornalistico Franco Bortuzzo Conduce Francesco Pancani Telecronaca Stefano Rizzato Commento tecnico Silvio Martinello, Stefano Garzelli, Davide Cassani Produttore esecutivo Guido Lissoni Regia Italia Maria Baratta"
-            },
-            {
-                "ora": "16:15",
-                "titolo": "Tour De France 3^ Tappa Granollers (ESP)",
-                "descrizione": "Tour de France 3^ tappa Granollers (ESP) - Les Angles (FRA) - SPORT - Ciclismo. 113^ edizione"
             },
             {
                 "ora": "17:05",
@@ -294,9 +274,14 @@
                 "ora": "21:20",
                 "titolo": "Boss In Incognito",
                 "descrizione": "$23"
+            },
+            {
+                "ora": "23:45",
+                "titolo": "Un Anno Da Protagonista: RAI C'è - Presentazione Dell'Offerta 2026\/27",
+                "descrizione": "Da Piazza della Repubblica di Ancona, Federica Gentile e Gabriele Vagnato rivelano le novit� e raccolgono le emozioni dei protagonisti dell'offerta televisiva dell'autunno firmata Rai 2026\/27."
             }
         ],
-        "aggiornato": "10:49"
+        "aggiornato": "15:46"
     },
     {
         "canale": "Rai 3",
@@ -310,7 +295,7 @@
             {
                 "ora": "08:00",
                 "titolo": "Agorà Estate",
-                "descrizione": "L'approfondimento estivo del mattino di Rai3 condotto da Giulia Di Stefano con Marco Carrara, attraverso ospiti, inviati, inchieste e contributi video dai social."
+                "descrizione": "$23"
             },
             {
                 "ora": "10:30",
@@ -385,7 +370,7 @@
             {
                 "ora": "15:10",
                 "titolo": "Italian Genius - Platimiro Fiorenza",
-                "descrizione": "$23"
+                "descrizione": "$24"
             },
             {
                 "ora": "16:00",
@@ -395,7 +380,7 @@
             {
                 "ora": "17:00",
                 "titolo": "Overland 19 - Le Indie Di Overland - Delhi. L'India In Una Città",
-                "descrizione": "$24"
+                "descrizione": "$25"
             },
             {
                 "ora": "17:55",
@@ -438,7 +423,7 @@
                 "descrizione": "Antonino Monteleone, con Adele Grossi, racconta i fatti che stanno ridefinendo gli equilibri globali e la vita quotidiana degli italiani: politica, sicurezza, economia, trasformazioni sociali."
             }
         ],
-        "aggiornato": "10:49"
+        "aggiornato": "15:46"
     },
     {
         "canale": "Rai 4",
@@ -575,7 +560,7 @@
                 "descrizione": "Un gruppo di compagni di classe festeggia il proprio diploma in un luogo isolato sul quale viene raccontata una storia sinistra."
             }
         ],
-        "aggiornato": "10:49"
+        "aggiornato": "15:46"
     },
     {
         "canale": "Rai 5",
@@ -687,7 +672,7 @@
                 "descrizione": "Pauline è una graziosa tredicenne, che passa gli ultimi giorni di vacanza, a settembre con la seducente cugina trentenne Marion, in una villetta sulla spiaggia della Normandia. Mentre incontra un coetaneo, Sylvain con cui fa presto a stabilire un franco rapporto di simpatia e di amicizia, essa assiste a tutto il complesso gioco dei sentimenti e delle attrazioni degli adulti. C'è Pierre che, un tempo innamorato pazzo di Marion, che ha alle spalle un matrimonio fallito e cerca il grande amore ovunque, l'ama ancora e in forma gelosamente possessiva; c'è Henri, un play-boy vacuo e chiacchierone quanto interessante, che filosofeggia con Marion sull'amore dicendo di non volersi legare perché il vero amore è solo illusione, ma ne diventa ben presto l'amante..."
             }
         ],
-        "aggiornato": "10:49"
+        "aggiornato": "15:46"
     },
     {
         "canale": "Rete 4",
@@ -774,7 +759,7 @@
                 "descrizione": "Figlia di ricchi professionisti (Scott Thomas, Neill), la 14enne Grace MacLean (Johansson) è vittima a New York di un incidente stradale in cui muore una cara amica, lei perde una gamba e il suo amato purosangue Pilgrim rimane malconcio. Convinta che l'avvenire della figlia sia legato a quello del cavallo, la madre Annie si reca con la figlia in una fattoria del Montana dove vive Tom Booker (Redford), celebre per la sua conoscenza dei cavalli."
             }
         ],
-        "aggiornato": "10:49"
+        "aggiornato": "15:46"
     },
     {
         "canale": "Canale 5",
@@ -921,7 +906,7 @@
                 "descrizione": "Marco (Fabio De Luigi) e Giulia (Virginia Raffaele) vivono la propria vita di coppia in modo armonioso e passionale. Entrambi sfoggiano una forma invidiabile e una mise sempre alla moda. Per loro il mondo si divide in due: l’Inferno, abitato da genitori esasperati e soggiogati da piccoli esseri pestiferi, e il Paradiso, dove uomini e donne liberi da sensi di colpa, si godono i piaceri della vita senza figli e fieri di vivere in appartamenti sempre in perfetto ordine. Loro sanno bene da che parte stare, ben distanti da quelle coppie di amici in perenne crisi coniugale e logorati dalla vita da genitori. Eppure, il destino è gi� all’opera per sconvolgere le loro vite e sgretolare tutte le loro certezze: all’improvviso e inspiegabilmente, si risvegliano con tre bambini di 10, 9 e 6 anni che li chiamano mamma e pap� . Liberarsene e tornare alla felice vita “precedente” diventer� il loro unico obiettivo."
             }
         ],
-        "aggiornato": "10:49"
+        "aggiornato": "15:46"
     },
     {
         "canale": "Italia 1",
@@ -1033,7 +1018,7 @@
                 "descrizione": "Sara e Jackson sono gi� un po' presi l'uno dall'altra quando vengono invitati al matrimonio dei loro migliori amici su un'isola tropicale. In volo su un piccolo Cessna, vedono il loro amore divampare. Quando però il pilota ha un attacco di cuore, i due dovranno fidarsi reciprocamente e impegnarsi per compiere un atterraggio di emergenza dal momento che in gioco ci sar� la loro stessa sopravvivenza."
             }
         ],
-        "aggiornato": "10:49"
+        "aggiornato": "15:46"
     },
     {
         "canale": "La7",
@@ -1052,17 +1037,17 @@
             {
                 "ora": "08:00",
                 "titolo": "Omnibus Dibattito",
-                "descrizione": "Programma di informazione e approfondimento con rubriche, ospiti, rassegna stampa, aggiornamenti sul traffico, previsioni meteo, dibattito sul tema del giorno. 24a Edizione."
+                "descrizione": "Alessandra Sardoni con Giampiero Massolo, Daniela Tagliafico, Luigi Di Gregorio, Antonio Di Bella, Vitalba Azzollini, Mario Giro"
             },
             {
                 "ora": "09:40",
                 "titolo": "Coffee Break",
-                "descrizione": "Lo spazio mattutino per l'approfondimento e l'attualit� condotto da Andrea Pancani. 14a Edizione."
+                "descrizione": "Andrea Pancani con Pietro De Leo, Davide Giacalone, Andrea Pennacchioli, Valerio Valentini, Micol Flammini, Vincenzo Paglia, Lorenzo Gasperini"
             },
             {
                 "ora": "11:00",
                 "titolo": "L'Aria Che Tira",
-                "descrizione": "Conduce David Parenzo. 15a edizione"
+                "descrizione": "David Parenzo con Mirella Serri, Augusto Minzolini, Igor Taruffi, Nicola Procaccini, Renato Mannheimer, Paolo Mieli, Daniele Compatangelo, Silvia Sardone, Giovanni Sallusti, Sara Manfuso, Andrea Di Francesco, Raffaella Paita,..."
             },
             {
                 "ora": "13:30",
@@ -1110,7 +1095,7 @@
                 "descrizione": "Informazione a cura della redazione del TG LA7."
             }
         ],
-        "aggiornato": "10:49"
+        "aggiornato": "15:46"
     },
     {
         "canale": "TV8",
@@ -1227,7 +1212,7 @@
                 "descrizione": "Jack Fuller è uno scapolo impenitente che non finisce mai quello che comincia, Joy McNally è una bionda broker di New York che porta tutto diligentemente a termine. Lui perde il lavoro per poca applicazione, lei il futuro sposo per troppa sollecitudine. Licenziati senza troppi convenevoli, trovano rifugio e piacere a Las Vegas, dove si incontrano, si ubriacano e si sposano. Finiti gli effetti dell'alcol cercano di divorziare e di conservare tre milioni di dollari vinti da Jack con il quarto di dollaro di Joy. Peccato che un giudice tradizionalista decida per loro altrimenti: sei mesi di convivenza forzata e congelamento della vincita al Jackpot. Intraprenderanno così un periodo obbligato e \"idilliaco\" da marito e moglie."
             }
         ],
-        "aggiornato": "10:49"
+        "aggiornato": "15:46"
     },
     {
         "canale": "Nove",
@@ -1329,7 +1314,7 @@
                 "descrizione": "Francesco Panella riparte alla scoperta dei migliori ristoranti italiani all'estero incontrando 3 ristoratori che lo porteranno a mangiare nel loro ristorante del cuore."
             }
         ],
-        "aggiornato": "10:49"
+        "aggiornato": "15:46"
     },
     {
         "canale": "20 Mediaset",
@@ -1446,7 +1431,7 @@
                 "descrizione": "Una turista mette la mano nella ciotola dei salatini di un aeroporto prima di dare la sua carta di credito al cameriere. Una riunione d'affari inizia con un giro di strette di mani. Un uomo tossisce a bordo di un autobus affollato... Un breve contatto, un solo istante ed il virus letale viene trasmesso. Quando Beth Emhoff torna a Minneapolis dopo un viaggio d'affari ad Hong Kong, quello che pensava fosse solo un banale jet lag è invece il contagio di un virus."
             }
         ],
-        "aggiornato": "10:49"
+        "aggiornato": "15:46"
     },
     {
         "canale": "Twentyseven",
@@ -1538,7 +1523,7 @@
                 "descrizione": "I nostri pasticcioni sono a Miami dove l'adorato comandante Lassard dovrebbe ricevere un'onoreficienza. Ma i criminali non vanno in vacanza e, se lo fanno, decidono loro quando. Lassard viene rapito e nemmeno le sirene delle feste in spiaggia fermeranno i tumultuosi tentativi di liberarlo da parte dei suoi intrepidi uomini."
             }
         ],
-        "aggiornato": "10:49"
+        "aggiornato": "15:46"
     },
     {
         "canale": "IRIS",
@@ -1610,7 +1595,7 @@
                 "descrizione": "Spionaggio industriale con omicidi su commissione, un sicario anziano e stanco, un sicario giovane e senza scrupoli che vuole soppiantare l'altro e una callida esperta di sistemi di vigilanza."
             }
         ],
-        "aggiornato": "10:49"
+        "aggiornato": "15:46"
     },
     {
         "canale": "Rai Movie",
@@ -1672,7 +1657,7 @@
                 "descrizione": "I cavalli sono l'anima e il sangue della storia. Siamo negli anni quaranta. Il cow boy John Grady Cole (Demon, appunto) vede letteralmente capovolgersi il suo mondo. Ciò che resta del west viene ingoiato dalle strade e dalle costruzioni. Il colpo di grazia glielo d� sua madre, che vende il ranch a una societ� petrolifera. Partendo per il Messico col suo amico Lacey, Cole crede di trovare qualcosa di ciò che ha perduto, una terra selvaggia buona anche per i cavalli. In principio le cose sembrano funzionare, il cow boy trova ranch, lavoro e anche l'amore. Ma la ragazza non è quella giusta, infatti è la figlia del padrone, e laggiù nel Messico non basta essere innamorati per essere felici. Tutt'altro. E così John comincia a \"perdere\". Prima gli appioppano una falsa accusa di omicidio, poi, il padre della ragazza fa di tutto per separare i due, ad ogni costo."
             }
         ],
-        "aggiornato": "10:49"
+        "aggiornato": "15:46"
     },
     {
         "canale": "Rai Premium",
@@ -1769,7 +1754,7 @@
                 "descrizione": "Quando il fratello minore di Pearl si ammala gravemente, lei torna nel bayou per trovare Ruby e scoprire i misteriosi segreti del suo passato."
             }
         ],
-        "aggiornato": "10:49"
+        "aggiornato": "15:46"
     },
     {
         "canale": "La 5",
@@ -1856,7 +1841,7 @@
                 "descrizione": "[Thriller] - La sorella di Brenda, accusata di un omicidio, prende in mano il caso per risolvere il mistero che ruota intorno al delitto. Brenda e' davvero innocente? Regia di A. De Villiers; CAN 2013"
             }
         ],
-        "aggiornato": "10:49"
+        "aggiornato": "15:46"
     },
     {
         "canale": "Real Time",
@@ -1953,7 +1938,7 @@
                 "descrizione": "Essere madre significa non arrendersi nonostante tutte le difficolt� , ma al contrario aggrapparsi con tutte le proprie forze alla vita per i propri figli. La serie racconta la storia di Melek, che ricostruisce la propria vita insieme alla sua famiglia e ai suoi figli. Interpretata da Nehir Erdoğan, la serie mette in luce gli sforzi di una madre per rimanere in piedi e la sua lotta per la sopravvivenza insieme ai suoi tre figli, affrontando il passato per costruire un futuro migliore per la sua famiglia."
             }
         ],
-        "aggiornato": "10:49"
+        "aggiornato": "15:46"
     },
     {
         "canale": "Food Network",
@@ -2110,7 +2095,7 @@
                 "descrizione": "Giusina va alla scoperta di nuove ricette tradizionali."
             }
         ],
-        "aggiornato": "10:49"
+        "aggiornato": "15:46"
     },
     {
         "canale": "Focus",
@@ -2217,7 +2202,7 @@
                 "descrizione": "Potrebbe il crollo del mondo sumero aver influenzato una delle piu' grandi storie mai raccontate, quella di Noe' e il Diluvio Universale?"
             }
         ],
-        "aggiornato": "10:49"
+        "aggiornato": "15:46"
     },
     {
         "canale": "Giallo",
@@ -2294,7 +2279,7 @@
                 "descrizione": "Due detective, DCI McDonald e DS Dodds, che apparentemente non hanno nulla in comune, vengono messi insieme e stringono una rumorosa amicizia e una divertente collaborazione in questa miniserie drammatica britannica in due parti ambientata nella moderna Bath."
             }
         ],
-        "aggiornato": "10:49"
+        "aggiornato": "15:46"
     },
     {
         "canale": "Boing",
@@ -2398,7 +2383,7 @@
             {
                 "ora": "10:00",
                 "titolo": "Teen Titans Go!",
-                "descrizione": "I supereroi compagni di stanza Robin, Stella, Corvina, Bibi e Cyborg proteggono Jump City dai malvagi, quando non sono troppo impegnati a litigare e a sfidarsi."
+                "descrizione": "Robin ha avuto la patente sospesa a causa di un incidente"
             },
             {
                 "ora": "10:10",
@@ -2451,7 +2436,7 @@
                 "descrizione": "Gumball riesce ad ottenere un appuntamento con Nocciolina. L'appuntamento consiste nel presenziare al funerale del ragno della bambina."
             }
         ],
-        "aggiornato": "10:49"
+        "aggiornato": "15:46"
     },
     {
         "canale": "K2",
@@ -2608,7 +2593,7 @@
                 "descrizione": "2' Stagione Ep.45 - Le avventure di tre scoiattoli dalla voce incredibile, 'adottati' da Dave Seville, che diventano un fenomeno musicale."
             }
         ],
-        "aggiornato": "10:49"
+        "aggiornato": "15:46"
     },
     {
         "canale": "Rai Gulp",
@@ -2765,7 +2750,7 @@
                 "descrizione": "Valtor e Obscurum intendono attaccare una nuova stella, Syderia, e per farlo decidono di adottare una strategia diversa: l'inganno. Quando le Winx arrivano in soccorso di Syderia, scoprono che le Lumen che la abitano sono convinte che le fate siano venute a rubare il tesoro della loro stella. Dopo aver scoperto che nel sottosuolo di Syderia c'è una montagna di cristallo, le Winx la fanno brillare con i loro poteri Cosmix. Bloom ha l'idea di portare un frammento di cristallo a Orion per fargli costruire nuovi nuclei per le stelle spente."
             }
         ],
-        "aggiornato": "10:49"
+        "aggiornato": "15:46"
     },
     {
         "canale": "Frisbee",
@@ -2922,7 +2907,7 @@
                 "descrizione": "2' Stagione Ep.38 - Le avventure di tre scoiattoli dalla voce incredibile, 'adottati' da Dave Seville, che diventano un fenomeno musicale."
             }
         ],
-        "aggiornato": "10:49"
+        "aggiornato": "15:46"
     },
     {
         "canale": "DMAX",
@@ -3014,7 +2999,7 @@
                 "descrizione": "La famiglia Bunce continua a cercare la preziosa giada."
             }
         ],
-        "aggiornato": "10:49"
+        "aggiornato": "15:46"
     },
     {
         "canale": "Rai Sport",
@@ -3033,7 +3018,7 @@
             {
                 "ora": "07:30",
                 "titolo": "Ottavi: Brasile - Norvegia",
-                "descrizione": "Collegamento pre e post partita con la supervisione di Marco Mazzocchi e Massimo Proietto. Conduce Paola Ferrari con Simona Rolandi, Paulo Roberto Falcao e Marco Tardelli. Regia di Marco Spoletini. Partita del Mondiale di Calcio Fifa 2026 in programma dall'11 giugno al 19 luglio 2026, in diverse citt� di Stati Uniti, Canada e Messico. Coppa del Mondo di Calcio FIFA 2026. Un programma a cura di Rai Sport con la Supervisione Marco Lollobrigida. In diretta dal MetLife Stadium di New Jersey (New York). Telecronaca di Giuseppe Galati. Commento tecnico di Daniele Adani."
+                "descrizione": "Al MetLife Stadium di New York va in scena uno degli ottavi più attesi di questa rassegna, la sfida tra il Brasile di Ancelotti, una delle squadre candidate al titolo, e la Norvegia trascinata dal bomber Haaland."
             },
             {
                 "ora": "09:35",
@@ -3101,7 +3086,7 @@
                 "descrizione": "Mondiali La Thuile - Cross Country Short Track Uomini Elite"
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:46"
     },
     {
         "canale": "Sportitalia",
@@ -3238,7 +3223,7 @@
                 "descrizione": "Il programma tratta le vicende del calciomercato sia nella sessione estiva che in quella invernale e va in onda alle ore 23.00 dal lunedì al venerdì"
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:46"
     },
     {
         "canale": "HGTV",
@@ -3345,7 +3330,7 @@
                 "descrizione": "Una coppia ha avviato dei progetti impossibili da finire. Jasmine interviene."
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:46"
     },
     {
         "canale": "RSI LA 1",
@@ -3502,7 +3487,7 @@
                 "descrizione": "Le notizie di prima serata"
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:46"
     },
     {
         "canale": "RSI LA 2",
@@ -3539,34 +3524,19 @@
                 "descrizione": "Millevoci in TV"
             },
             {
-                "ora": "12:05",
+                "ora": "12:10",
                 "titolo": "FIFA World Cup 2026 ™ - Messico - Inghilterra (R)",
-                "descrizione": "Ottavi di finale\rda Citt� del Messico (MEX)\rReplica"
+                "descrizione": "Ottavi di finale\rda Citt� del Messico (MEX)"
             },
             {
-                "ora": "14:00",
-                "titolo": "Tennis: Wimbledon 2026",
-                "descrizione": "Quarto turno\nda Wimbledon (GBR)"
-            },
-            {
-                "ora": "15:25",
-                "titolo": "Guardia Costiera",
-                "descrizione": "Protagonista della serie è una squadra della Guardia Costiera tedesca, di stanza a Neustadt, che pattuglia le coste lungo il mare Baltico a bordo dell'Albatros. A capo della squadra vi è il Capitano Holger Ehlers. La serie è girata tra New Stadt, nello Schleswig-Holstein e l'isola di Rügen nel MecLemburgo-Pomerania Anteriore."
-            },
-            {
-                "ora": "16:10",
-                "titolo": "La vita segreta dei laghi - India - Lago Chilika",
-                "descrizione": "Il Chilika, nello stato indiano dell´Odisha, è uno dei più grandi laghi costieri al mondo, ma non solo, è anche una dimensione naturale più unica che rara, in cui le caratteristiche di una laguna di acqua salmastra si fondono con quelle di un lago d´acqua dolce. Estremamente ricco dal punto di vista della biodiversit� , il Chilika ospita numerose specie animali e vegetali tipiche dei due ecosistemi, marino e lacustre. Soggetto ai cambiamenti stagionali e delle maree, vive tuttavia su un equilibrio precario e cangiante. Una biologa marina, un ornitologo e un archeologo, sono tra gli esperti che ci accompagnano alla scoperta dei segreti e delle particolarit� di questo sorprendente lago."
-            },
-            {
-                "ora": "17:05",
-                "titolo": "Racconti Dalle Città Di Mare",
-                "descrizione": "Un giro del mondo per mano della rinomata fotografa Heidi Hollinger prima e della giornalista e conduttrice televisiva Sophie Fouron poi, alla scoperta della vita, della bellezza, della cultura, delle tradizioni delle citt� portuali più importanti e famose, divenute veri luoghi simbolo del nostro pianeta."
+                "ora": "14:05",
+                "titolo": "Tennis: Wimbledon 2026 - A. de Minaur (AUS) - F. Cobolli (ITA)",
+                "descrizione": "A Seguire \nG. Dimitrov (BUL) - A.Fery (GBR) \nOttavi di finale\nda Wimbledon"
             },
             {
                 "ora": "17:55",
                 "titolo": "Basket: Qualificazioni Mondiali 2027 - Turchia - Svizzera",
-                "descrizione": "da Instanbul (TUR)"
+                "descrizione": "da Istanbul (TUR)"
             },
             {
                 "ora": "19:25",
@@ -3575,11 +3545,11 @@
             },
             {
                 "ora": "20:00",
-                "titolo": "FIFA World Cup 2026 ™",
+                "titolo": "FIFA World Cup 2026 ™ - Portogallo - Spagna",
                 "descrizione": "Ottavi di finale\nda Dallas (USA)"
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:46"
     },
     {
         "canale": "DAZN 1",
@@ -3676,7 +3646,7 @@
                 "descrizione": "A 12 minuti dalla fine la Roma era sopra 3-1 ma la Juventus si e' tenuta in vita tenendo tutto completamente aperto per la corsa al quarto posto. Rivivi la partita con il 'Bordocam' di Davide Bernardi."
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:46"
     },
     {
         "canale": "Sky Sport 24",
@@ -3833,7 +3803,7 @@
                 "descrizione": "Da Wimbledon, gli aggiornamenti di Dalila Setti sul torneo di tennis con notizie e commenti sui principali temi sportivi della giornata."
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:46"
     },
     {
         "canale": "Sky Sport Uno",
@@ -4002,7 +3972,7 @@
                 "descrizione": "Curiosita', commenti, notizie e anticipazioni sui possibili movimenti del calciomercato. Condotto dal trio Alessandro Bonan, Gianluca Di Marzio e Fayna."
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:46"
     },
     {
         "canale": "Sky Sport Tennis",
@@ -4061,7 +4031,7 @@
             {
                 "ora": "12:00",
                 "titolo": "8a giornata",
-                "descrizione": "Dall'All-England Lawn Tennis and Croquet Club di Wimbledon, Inghilterra."
+                "descrizione": "8a giornata Wimbledon: KRUEGER - KOSTYUK (Bisti-Colangelo)"
             },
             {
                 "ora": "14:00",
@@ -4071,12 +4041,7 @@
             {
                 "ora": "14:30",
                 "titolo": "8a giornata",
-                "descrizione": "Dall'All-England Lawn Tennis and Croquet Club di Wimbledon, Inghilterra."
-            },
-            {
-                "ora": "19:30",
-                "titolo": "8a giornata",
-                "descrizione": "Dall'All-England Lawn Tennis and Croquet Club di Wimbledon, Inghilterra."
+                "descrizione": "8a giornata Wimbledon: PAOLINI - EALA (Boschetto-Reggi), DIMITROV - FERY (Boschetto-Ljubicic), LEHECKA - ZVEREV (Nicolodi-Ljubicic)"
             },
             {
                 "ora": "22:00",
@@ -4099,7 +4064,7 @@
                 "descrizione": "Dall'All-England Lawn Tennis and Croquet Club di Wimbledon, Inghilterra."
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:46"
     },
     {
         "canale": "Sky Sport F1",
@@ -4226,7 +4191,7 @@
                 "descrizione": "L'analisi del Gran Premio disputato per commentare la gara insieme agli ospiti in studio. Riviviamo i brividi della corsa attraverso le immagini piu' spettacolari e ascoltiamo i commenti a caldo dei protagonisti."
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:46"
     },
     {
         "canale": "Sky Sport Legend",
@@ -4303,7 +4268,7 @@
                 "descrizione": "UEFA Champions League Story. - 22 Maggio 2010, al Santiago Bernabeu di Madrid, Inter e Bayern Monaco si sfidano nella finale di Champions League. Per i nerazzurri sara' il terzo titolo della storia"
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:46"
     },
     {
         "canale": "Sky Sport MotoGP",
@@ -4460,7 +4425,7 @@
                 "descrizione": "Fabiano Sterlacchini, Technical Director di Aprilia Racing, ci racconta l'atmosfera del box Aprilia e il lavoro che ha portato i piloti al vertice della classifica del mondiale 2026 di MotoGP."
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:46"
     },
     {
         "canale": "Sky Sport Basket",
@@ -4492,32 +4457,22 @@
                 "descrizione": "World Cup. - Toko Shengelia, reduce con la sua nazionale dalla brutta sconfitta contro l'Ucraina, ospita l'imbattuta Spagna. In palio punti importanti in vista della seconda fase. Telecronaca di Davide Fumagalli."
             },
             {
-                "ora": "11:30",
-                "titolo": "Facce di bronzo - Da Bologna al Pireo",
-                "descrizione": "Facce di bronzo - Da Bologna al Pireo"
-            },
-            {
-                "ora": "11:45",
-                "titolo": "Intervista Matilde Villa",
-                "descrizione": "Speciale Intervista Matilde Villa"
-            },
-            {
-                "ora": "12:05",
+                "ora": "12:00",
                 "titolo": "Islanda - Italia",
                 "descrizione": "World Cup. - Copertura dei preliminari della Coppa del Mondo FIBA 2027."
             },
             {
-                "ora": "14:05",
+                "ora": "13:55",
                 "titolo": "San Antonio - Oklahoma City",
                 "descrizione": "Primo match point nella serie per i Thunder, sopra 3-2. Ma gli Spurs contano sul pubblico di casa per portare la sfida a gara-7. Telecronaca di Flavio Tranquillo e Davide Pessina"
             },
             {
-                "ora": "16:00",
+                "ora": "15:55",
                 "titolo": "Speciale Kyle Hines",
                 "descrizione": "La storia incredibile di Kyle Hines, conosciuto come 'The Miracle', dai problemi di salute affrontati da bambino fino a diventare un'icona e un punto di riferimento della pallacanestro mondiale."
             },
             {
-                "ora": "16:30",
+                "ora": "16:20",
                 "titolo": "Italia - Lituania",
                 "descrizione": "Qualificazioni World Cup. - Dalla Virtus Segafredo Arena di Bologna, Italia."
             },
@@ -4552,7 +4507,7 @@
                 "descrizione": "Qualificazioni World Cup. - Gobert contro Markkanen: stelle NBA a confronto nella sesta e ultima giornata della prima fase di qualificazioni Qatar 2027. Chi vince arriva primo nel gruppo G. Telecronaca di Davide Fumagalli"
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:46"
     },
     {
         "canale": "Sky Sport Arena",
@@ -4604,7 +4559,7 @@
                 "descrizione": "Dall'All-England Lawn Tennis and Croquet Club di Wimbledon, Inghilterra."
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:46"
     },
     {
         "canale": "Sky Sport Max",
@@ -4631,12 +4586,12 @@
                 "descrizione": "European Championship. - I momenti salienti del prestigioso Campionato Europeo FIA di Karting, che si disputa a Mulsen."
             },
             {
-                "ora": "08:55",
+                "ora": "09:00",
                 "titolo": "This is padel",
                 "descrizione": "I protagonisti, le sfide e gli eventi nazionali e internazionali in collegamento con i circoli di tutta Italia. Gli eventi del padel dilettantistico e le analisi dei materiali tecnici all'avanguardia."
             },
             {
-                "ora": "09:25",
+                "ora": "09:30",
                 "titolo": "Speciale Inter: Il Film Del Campionato",
                 "descrizione": "Campionato Inter Scudetto 2026. - Le emozioni, le partite piu' importanti, le migliori immagini e il filo conduttore di Chivu. Tutto concentrato in questo film del 21^ scudetto, quello dell'anima nerazzurra."
             },
@@ -4656,22 +4611,12 @@
                 "descrizione": "Ecco il nuovo torneo che unisce i test match di luglio e novembre. Azzurri avanti 8-2 nei precedenti. A Tokyo di fronte 12esima e 10a del ranking. Telecronaca Pierantozzi-Fusetti"
             },
             {
-                "ora": "14:00",
+                "ora": "13:50",
                 "titolo": "Italia - Argentina",
                 "descrizione": "Amichevoli. - Terza amichevole estiva per la Nazionale di Fefe' De Giorgi, gli azzurri sfidano a Trento l'Argentina. Tc Locatelli-Zorzi"
             },
             {
-                "ora": "15:30",
-                "titolo": "The Boat Show",
-                "descrizione": "Regate, grandi eventi, saloni nautici e tutto il nuovo che arriva dal mondo della cantieristica, a vela e a motore. In ogni occasione, un personaggio del mondo della nautica si racconta al pubblico."
-            },
-            {
-                "ora": "16:00",
-                "titolo": "Una Stagione Da Ricordare",
-                "descrizione": "Premier Special. - Cuore, passione e dramma. Il trionfo dell'Arsenal, l'addio di Guardiola al City, i successi in campo europeo di Aston Villa e Palace. Riviviamo una stagione entusiasmante."
-            },
-            {
-                "ora": "16:30",
+                "ora": "16:25",
                 "titolo": "Australia - Irlanda",
                 "descrizione": "Comincia il nuovo torneo che unisce i test match di luglio e novembre tra le prime 12 squadre al mondo. A Sydney di fronte l'8a e la 3a del ranking. Telecronaca Malpezzi-Frati"
             },
@@ -4701,7 +4646,7 @@
                 "descrizione": "Amichevoli. - Terza amichevole estiva per la Nazionale di Fefe' De Giorgi, gli azzurri sfidano a Trento l'Argentina. Tc Locatelli-Zorzi"
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:46"
     },
     {
         "canale": "Sky Sport Mix",
@@ -4773,7 +4718,7 @@
                 "descrizione": "Il resoconto della Dakar 2026 disputata per la settima volta nel deserto dell'Arabia Saudita. Curato da Sandro Donato Grosso."
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:46"
     },
     {
         "canale": "Sky Sport Golf",
@@ -4840,7 +4785,7 @@
                 "descrizione": "Golf: DP World Tour. - Dal Golfclub Munchen Eichenried di Monaco, Germania."
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:46"
     },
     {
         "canale": "Sky Sport 251",
@@ -4849,10 +4794,10 @@
             {
                 "ora": "13:30",
                 "titolo": "Tennis Grand Slam Wimbledon Champ. 2026 95",
-                "descrizione": "Tennis"
+                "descrizione": "8a giornata Wimbledon: DE MINAUR - COBOLLI, KEYS - NOSKOVA (Pero-Bertolucci), FRITZ - BUBLIK (Ferrero-Rossi)"
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:46"
     },
     {
         "canale": "Sky Sport 252",
@@ -4861,10 +4806,10 @@
             {
                 "ora": "11:30",
                 "titolo": "Tennis Grand Slam Wimbledon Champ. 2026 96",
-                "descrizione": "Tennis"
+                "descrizione": "8a giornata Wimbledon: KRUEGER - KOSTYUK (Bisti-Colangelo), BOUZKOVA - MERTENS (Ferrero-Rossi), KOSTYUK\/RUSE-PEREZ\/SCHUURS (Bisti), SALISBURY\/FERNANDEZ-HARRISON\/ZHANG"
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:46"
     },
     {
         "canale": "Sky Sport 253",
@@ -4873,10 +4818,10 @@
             {
                 "ora": "11:30",
                 "titolo": "Tennis Grand Slam Wimbledon Champ. 2026 97",
-                "descrizione": "Tennis"
+                "descrizione": "8a giornata Wimbledon: AOYAMA\/LIANG-HSIEH\/X.WANG, JIANG\/XU-SIEGEMUND\/ZVONAREVA (Cazzaniga) , BOLELLI\/VAVASSORI-KRAJICEK\/MEKTIC (Cazzaniga-Colangelo), \nROGER-V.\/SIEGEMUND-AREVALO\/OSTAPENKO"
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:46"
     },
     {
         "canale": "Sky Sport 254",
@@ -4885,10 +4830,10 @@
             {
                 "ora": "11:30",
                 "titolo": "Tennis Grand Slam Wimbledon Champ. 2026 98",
-                "descrizione": "Tennis"
+                "descrizione": "8a giornata Wimbledon: GUO\/MLADENOVIC-DETIUC\/KROMACHEVA, (Jr.) SHAO - PISTOLA(Paventi), (Jr.) AZAM\/REDDY-GRIBALDO\/MASSELLANI, PAVIC\/STOLLAR-SKUPSKI\/KRAWCZYK"
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:46"
     },
     {
         "canale": "Sky Sport 255",
@@ -4924,7 +4869,7 @@
                 "descrizione": "Una giornata di incontri, confronti, storie e attualit� al Teatro Lirico Giorgio Gaber. Insieme a protagonisti della politica, dell'economia e della cultura, si analizzano i grandi temi del presente per immaginare strategie e soluzioni per il futuro."
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:46"
     },
     {
         "canale": "Sky Sport 258",
@@ -5005,7 +4950,7 @@
                 "descrizione": "Frank Farmer, ex agente segreto viene ingaggiato come guardia del corpo personale della pop star Rachel Marron, la cui vita privata è protetta con misure di sicurezza elevatissime, perchè c'è qualcuno che la perseguita..."
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:47"
     },
     {
         "canale": "Sky Cinema Uno +24",
@@ -5062,7 +5007,7 @@
                 "descrizione": "Jann Mardenborough, un giocatore del videogame 'Gran Turismo', applica le abilit� apprese alla console in varie competizioni automobilistiche, per diventare un pilota professionista."
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:47"
     },
     {
         "canale": "Sky Cinema Due",
@@ -5114,7 +5059,7 @@
                 "descrizione": "Quattro storie di violenza s'intersecano in una struttura apparentemente circolare che va avanti e indietro nel tempo: si chiude 1) due balordi (T. Roth, A. Plummer) si accingono a fare una rapina in una tavola calda; 2) due sicari (J. Travolta, S.L. Jackson) recuperano una valigetta preziosa, puliscono la loro auto, insozzata dal sangue e dal cervello di un uomo ucciso per sbaglio, con l'aiuto di Mr. Wolf (H. Keitel), l'uomo che risolve problemi, e vanno a mangiare proprio nella tavola calda della rapina; 3) uno dei due sicari (Travolta) deve portare a ballare Mia (U. Thurman), moglie del capo (V. Rhames), che, scambiata eroina per cocaina, va in overdose; 4) il pugile Butch (B. Willis) contravviene ai patti, vince un incontro che doveva perdere e scappa con la borsa."
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:47"
     },
     {
         "canale": "Sky Cinema Due +24",
@@ -5136,7 +5081,7 @@
                 "descrizione": "All'et� di sette anni, Gesù vive con Giuseppe e Maria a Alessandria d'Egitto, dove i tre si sono rifugiati per evitare il massacro di bambini ordinato da re Erode d'Israele. Gesù sa che i genitori Giuseppe e Maria gli nascondono alcuni segreti sulla sua nascita, segreti che lo rendono diverso da tutti i coetanei. I genitori, tuttavia, decidono che, nonostante la giovane et� del figlio, sia arrivato il momento di rivelargli le sue vere origini e, apprendendo che re Erode è morto, optano per il ritorno nella loro casa di Nazareth. Ignorano, però, che il figlio di Erode è determinato a seguire la volont� del padre di vedere Gesù morto."
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:47"
     },
     {
         "canale": "Sky Cinema Collection",
@@ -5198,7 +5143,7 @@
                 "descrizione": "1971: Katharine Graham è la prima donna alla guida del The Washington Post in una societ� dove il potere è di norma maschile, Ben Bradlee è il duro e testardo direttore del suo giornale. Nonostante Kaye e Ben siano molto diversi, l’indagine che intraprendono e il loro coraggio provocheranno la prima grande scossa nella storia dell’informazione con una fuga di notizie senza precedenti, svelando al mondo intero la massiccia copertura di segreti governativi riguardanti la Guerra in Vietnam durata per decenni. La lotta contro le istituzioni per garantire la libert� di informazione e di stampa è il cuore del film, dove la scelta morale, l’etica professionale e il rischio di perdere tutto si alternano in un potente thriller politico. I due metteranno a rischio la loro carriera e la loro stessa libert� nell’intento di portare pubblicamente alla luce ciò che quattro Presidenti hanno nascosto e insabbiato per anni."
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:47"
     },
     {
         "canale": "Sky Cinema Family",
@@ -5260,7 +5205,7 @@
                 "descrizione": "Hiccup è un giovane vichingo che vive in un villaggio sperduto nel nulla, in una landa fredda, inospitale, con poco da mangiare e soprattutto infestata dai draghi. Tuttavia i vichinghi invece che spostarsi preferiscono combattere, non a caso sono tutti grandi e grossi. Tutti tranne Hiccup, figlio del capo del villaggio, che è secco e inadatto al combattimento. Il ragazzo ha però una spiccata passione per la costruzione di macchinari con cui tenta di uccidere draghi e una conseguente inclinazione per la creazione di problemi..."
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:47"
     },
     {
         "canale": "Sky Cinema Action",
@@ -5317,7 +5262,7 @@
                 "descrizione": "A Parigi nel 1943 un generale della Wehrmacht, appassionato di calcio, promuove una partita tra la nazionale tedesca e una squadra formata da prigionieri di guerra alleati. È un'operazione di propaganda bellica, ma la Resistenza francese ne approfitta per organizzare durante l'intervallo l'evasione dei prigionieri che, invece, per orgoglio sportivo, rimangono in campo, strappando un pareggio nonostante un arbitraggio scandaloso, e riuscendo a fuggire, mescolati alla folla festante che ha invaso lo stadio."
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:47"
     },
     {
         "canale": "Sky Cinema Suspense",
@@ -5379,7 +5324,7 @@
                 "descrizione": "Nel cuore gelido dell'Alaska, il pilota Daryl (Mark Wahlberg) deve trasportare l'agente federale Madolyn (Michelle Dockery) e il suo prigioniero Winston (Topher Grace). Quando il viaggio prende una piega mortale, il pericolo non viene solo dall'esterno. Mentre il ghiaccio si stringe attorno a loro, la lotta per la sopravvivenza inizia e il vero nemico potrebbe essere gi� a bordo."
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:47"
     },
     {
         "canale": "Sky Cinema Romance",
@@ -5441,7 +5386,7 @@
                 "descrizione": "Negli anni ottanta, gli adolescenti Jackie e Clotaire vivono un turbolenta e appassionata storia d'amore nonostante le loro differenze di classe e d'indole. Uscito di prigione dopo avere scontato 12 anni per un crimine che non ha commesso, Clotaire cerca disperatamente di ricongiungersi con Jackie, ma lei ormai si è sposata e sembra aver voltato per sempre le spalle al loro passato insieme."
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:47"
     },
     {
         "canale": "Sky Cinema Drama",
@@ -5503,7 +5448,7 @@
                 "descrizione": "Un regista convoca le sue attrici preferite, quelle con cui ha lavorato e quelle che ha amato. Vuole fare un film sulle donne ma non svela molto: le osserva, prende spunto, si fa ispirare, finché il suo immaginario non le catapulta in un’altra epoca, in un passato dove il rumore delle macchine da cucire riempie un luogo di lavoro gestito e popolato da donne, dove gli uomini hanno piccoli ruoli marginali e il cinema può essere raccontato da un altro punto di vista: quello del costume. Tra solitudini, passioni, ansie, mancanze strazianti e legami indissolubili, realt� e finzione si compenetrano, così come la vita delle attrici con quella dei personaggi, la competizione con la sorellanza, il visibile con l’invisibile."
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:47"
     },
     {
         "canale": "Sky Cinema Comedy",
@@ -5570,7 +5515,7 @@
                 "descrizione": "La principessa Letizia vive nello splendido castello di un piccolo principato con suo padre, il Re, e il ciambellano Anastasio. La giovane è triste e frustrata: non riesce a conquistare le prime pagine dei giornali come accaduto, invece, alla nonna e alla madre prima di lei. Su ordine del Re, il ciambellano architetta un piano per creare uno scandalo e far parlare tutti i rotocalchi: la principessa dovr� fingere di innamorarsi di un popolano povero e ignorante. La scelta cade su Antonio, un ragazzo napoletano dai modi \"pittoreschi\", disoccupato e maestro nell'arte dello scrocco..."
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:47"
     },
     {
         "canale": "Sky Uno",
@@ -5619,7 +5564,7 @@
             {
                 "ora": "11:40",
                 "titolo": "Destination X: Scopri la meta",
-                "descrizione": "L'avventura prosegue nel nord Europa, dove non mancano certo i paesaggi e le piste. I concorrenti si rendono conto di quanto sia importante il depistaggio."
+                "descrizione": "L'avventura prosegue nel nord Europa, dove non mancano certo i paesaggi e le piste. I concorrenti si rendono conto di quanto sia importante il depistaggio. L'inganno di un giocatore porta alla rovina di un altro."
             },
             {
                 "ora": "12:35",
@@ -5674,10 +5619,10 @@
             {
                 "ora": "23:45",
                 "titolo": "Destination X: Scopri la meta",
-                "descrizione": "L'avventura prosegue nel nord Europa, dove non mancano certo i paesaggi e le piste. I concorrenti si rendono conto di quanto sia importante il depistaggio."
+                "descrizione": "L'avventura prosegue nel nord Europa, dove non mancano certo i paesaggi e le piste. I concorrenti si rendono conto di quanto sia importante il depistaggio. L'inganno di un giocatore porta alla rovina di un altro."
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:47"
     },
     {
         "canale": "Sky Atlantic",
@@ -5794,7 +5739,7 @@
                 "descrizione": "La serie prequel vede la dinastia Targaryen all'apice assoluto del suo potere, con più di 15 draghi sotto il loro giogo. La maggior parte degli imperi, che siano reali o immaginari, crollano quando raggiungono tali poteri e tali altezze. Nel caso dei Targaryen, la loro lenta caduta inizia quasi 193 anni prima degli eventi de Il Trono di Spade, quando re Viserys Targaryen rompe un secolo di tradizione nominando sua figlia Rhaenyra erede al Trono di Spade. La corte rimane scioccata quando Rhaenyra mantiene il suo status di erede nonostante Viserys in seguito avr� un figlio maschio, legittimo erede. Inizia così ad attecchire il seme della divisione e forti attriti in tutto il regno."
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:47"
     },
     {
         "canale": "Sky Serie",
@@ -5926,7 +5871,7 @@
                 "descrizione": "Cavalcare il brivido emozionale attraverso il caos raccontanto giorno dopo giorno nell’ospedale più esplosivo della citt� , con la squadra coraggiosa dei medici che lo tengono insieme. Essi affronteranno nuovi casi unici ispirati dagli eventi di attualit� , creeranno relazioni di fuoco nel pandemonio cardiopalmo del pronto soccorso. La serie è di genere medical drama è uno spinoff di Chicago Fire, creata da by Dick Wolf e Matt Olmstead."
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:47"
     },
     {
         "canale": "Sky Investigation",
@@ -5989,8 +5934,8 @@
             },
             {
                 "ora": "13:25",
-                "titolo": "Spiaggia N°6",
-                "descrizione": "S7 Ep1 Spiaggia N^6 - Scena ripulita, pochi indizi: il nuovo omicidio e' sicuramente opera di un professionista. Un'ufficiale IGPN affianca l'indagine, finche' emerge un possibile legame tra due omicidi."
+                "titolo": "Delitti ai Tropici",
+                "descrizione": "Il comandante della Police Nationale Mélissa Sainte-Rose, originaria della Martinica, viene trasferita dalla Francia continentale a Fort-de-France, dove trova alle sue dipendenze il capitano Gaëlle Crivelli. I rapporti sono tesi tra le due poliziotte, perché totalmente diverse nel loro comportamento, ma complementari per la risoluzione degli omicidi."
             },
             {
                 "ora": "14:20",
@@ -6044,8 +5989,8 @@
             },
             {
                 "ora": "22:50",
-                "titolo": "Spiaggia N°6",
-                "descrizione": "S7 Ep1 Spiaggia N^6 - Scena ripulita, pochi indizi: il nuovo omicidio e' sicuramente opera di un professionista. Un'ufficiale IGPN affianca l'indagine, finche' emerge un possibile legame tra due omicidi."
+                "titolo": "Delitti ai Tropici",
+                "descrizione": "Il comandante della Police Nationale Mélissa Sainte-Rose, originaria della Martinica, viene trasferita dalla Francia continentale a Fort-de-France, dove trova alle sue dipendenze il capitano Gaëlle Crivelli. I rapporti sono tesi tra le due poliziotte, perché totalmente diverse nel loro comportamento, ma complementari per la risoluzione degli omicidi."
             },
             {
                 "ora": "23:45",
@@ -6053,7 +5998,7 @@
                 "descrizione": "La serie si svolge nella splendida cornice di una piccola isola caraibica, Saint-Marie, dove il poliziotto Richard Poole, britannico doc, viene inviato per risolvere un misterioso omicidio.Poole si ritrova in una fatiscente stazione di polizia a lavorare con una nuova partner, la brillante Camille Bordey, in un ambiente totalmente diverso da tutto ciò a cui lui è abituato. Lui è un tipo da giacca, cravatta e mocassini... in spiaggia. Nonostante ciò, pur essendo assolutamente un pesce fuor d'acqua in questo paradiso terrestre, si dimostrer� all’altezza di risolvere ogni caso che si presenter� di episodio in episodio."
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:47"
     },
     {
         "canale": "Sky Crime",
@@ -6175,7 +6120,7 @@
                 "descrizione": "Serial Killers: Jeffrey Dahmer - Un documentario sulla mente perversa del mostruoso Jeffrey Dahmer e sulla sua doppia vita da cannibale."
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:47"
     },
     {
         "canale": "Sky Adventure",
@@ -6297,7 +6242,7 @@
                 "descrizione": "Dagli squali tigre delle Bahamas ai feroci pesci d'acqua dolce africani, Cyril Chauquet esplora le affascinanti storie dei pesci mostruosi che popolano le profondit� nascoste dei fiumi e degli oceani del nostro pianeta."
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:47"
     },
     {
         "canale": "MTV",
@@ -6449,7 +6394,7 @@
                 "descrizione": "Ep29 di 42 Sterling e Nina Agdal LX - In questo episodio Rob e Steelo danno il benvenuto a Nina Agdal."
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:47"
     },
     {
         "canale": "Comedy Central",
@@ -6606,7 +6551,7 @@
                 "descrizione": "Quando la moglie Andi decide di riavviare la sua carriera professionale, Adam è costretto a passare più tempo a casa e assumersi maggiori responsabilit� nell'accudire i loro tre figli piccoli."
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:47"
     },
     {
         "canale": "Sky Arte",
@@ -6708,7 +6653,7 @@
                 "descrizione": "Ep2 di 3 Artisti e mercanti del Terzo Reich - Facciamo luce sull'ossessione dei nazisti per l'arte e sui tanti furti di capolavori da loro perpetrati durante la seconda guerra mondiale."
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:47"
     },
     {
         "canale": "Sky Documentaries",
@@ -6810,7 +6755,7 @@
                 "descrizione": "Alla scoperta dei sette giorni che hanno preceduto la terribile scomparsa della principessa Diana. Attraverso interviste esclusive ai familiari e agli amici più cari, una testimonianza della sua importanza nelle loro vite."
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:47"
     },
     {
         "canale": "Sky Nature",
@@ -6917,7 +6862,7 @@
                 "descrizione": "Ep1 di 10 Il respiro della Terra - Will Smith è il protagonista del documentario firmato dal regista Darren Aronofsky. L'attore ci accompagna in un viaggio epico alla scoperta della nascita del pianeta."
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:47"
     },
     {
         "canale": "Discovery Channel",
@@ -7029,7 +6974,7 @@
                 "descrizione": "In questa puntata scopriremo come sono fatti gli accessori idraulici in rame, i carillon, i macinapepe e i piantoni degli sterzi."
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:47"
     },
     {
         "canale": "History Channel",
@@ -7146,7 +7091,7 @@
                 "descrizione": "Gli atlantici - La trasvolata atlantica del 1933 guidata da Italo Balbo diventa un'impresa epocale, tra aviazione e propaganda, celebrata con entusiasmo in America."
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:47"
     },
     {
         "canale": "Cartoon Network",
@@ -7303,7 +7248,7 @@
                 "descrizione": "Craig e i suoi due amici Kelsey e JP vivono bellissime avventure nella natura selvaggia conosciuta come Creek: un posto pieno di azione e incredibili storie."
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:47"
     },
     {
         "canale": "Dea Kids",
@@ -7460,7 +7405,7 @@
                 "descrizione": "Gli incubi di Cody rovinano il pisolino ai bambini dell'asilo. Per porvi rimedio, Duncan e Gwen entrano nel sogno di Cody per scoprire quale sia la causa del suo sonno disturbato. Scoprono così che ciò che spaventa Cody è Duncan."
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:47"
     },
     {
         "canale": "Nick Jr",
@@ -7617,7 +7562,7 @@
                 "descrizione": "Il piccolo regno di Ben e Holly è un cartone animato britannico per i bambini in et� prescolare ambientato in un magico regno incantato, popolato da fate, elfi e insetti."
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:47"
     },
     {
         "canale": "Boomerang",
@@ -7774,7 +7719,7 @@
                 "descrizione": "Ep8 L'antenato - Grizzy scopre che una strana creatura fossilizzata nell'ambra e' sua antenata. Vorrebbe prenderla, ma i Lemming cercano di impedirglielo, perche' risulta anche antenata loro!"
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:47"
     },
     {
         "canale": "Sky TG 24",
@@ -7931,7 +7876,7 @@
                 "descrizione": "Una giornata di incontri, confronti, storie e attualit� al Teatro Lirico Giorgio Gaber. Insieme a protagonisti della politica, dell'economia e della cultura, si analizzano i grandi temi del presente per immaginare strategie e soluzioni per il futuro."
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:47"
     },
     {
         "canale": "Rai News 24",
@@ -8088,7 +8033,7 @@
                 "descrizione": "FOCUS 24"
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:47"
     },
     {
         "canale": "Sky Meteo 24",
@@ -8245,6 +8190,6 @@
                 "descrizione": "Previsioni meteo dettagliate e sempre aggiornate 24 ore al giorno. Le previsioni regionali, nazionali ed internazionali."
             }
         ],
-        "aggiornato": "10:50"
+        "aggiornato": "15:47"
     }
 ]
