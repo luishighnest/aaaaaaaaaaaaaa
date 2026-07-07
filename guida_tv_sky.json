@@ -129,17 +129,12 @@
                 "descrizione": "Collegamento pre e post partita con la supervisione di Marco Mazzocchi e Massimo Proietto. Conduce Paola Ferrari con Simona Rolandi, Paulo Roberto Falcao e Marco Tardelli. Regia di Marco Spoletini. Partita del Mondiale di Calcio Fifa 2026 in programma dall'11 giugno al 19 luglio 2026, in diverse citt� di Stati Uniti, Canada e Messico. Coppa del Mondo di Calcio FIFA 2026. Un programma a cura di Rai Sport con la Supervisione Marco Lollobrigida. In diretta dal MetLife Stadium di New Jersey (New York). Telecronaca di Giuseppe Galati. Commento tecnico di Daniele Adani."
             }
         ],
-        "aggiornato": "09:52"
+        "aggiornato": "14:49"
     },
     {
         "canale": "Rai 2",
         "categoria": "Digitale Terrestre",
         "programmi": [
-            {
-                "ora": "06:00",
-                "titolo": "Ritorno a Las Sabinas",
-                "descrizione": "Dopo molti anni di lontananza, le sorelle Molina tornano nella loro citt� natale per affrontare i problemi di salute del padre. Il loro ritorno significa una riunione con le vite, gli amori e i segreti che hanno cercato di dimenticare."
-            },
             {
                 "ora": "06:10",
                 "titolo": "La Grande Vallata",
@@ -172,8 +167,8 @@
             },
             {
                 "ora": "10:00",
-                "titolo": "TG2 Dossier",
-                "descrizione": "Approfondimento del Tg2. Direttore Antonio Preziosi Vicedirettore Elisabetta Migliorelli A cura di Francesco Vitale"
+                "titolo": "Tg2 Dossier - Giuseppe Che Sconfisse Cosa Nostra",
+                "descrizione": "Un approfondimento speciale sulla tragica storia del piccolo Giuseppe Di Matteo, il bambino brutalmente ucciso dalla mafia trent'anni fa. Il reportage di Giorgio Ruta e Francesco Vitale ripercorre gli eventi che portarono all'assassinio di Giuseppe, figlio del collaboratore di giustizia Santino Di Matteo, come atto di vendetta. L'omicidio suscitò indignazione e commozione in tutta Italia, diventando il simbolo della brutalit� e della ferocia della criminalit� organizzata, ma determinò anche la fine della mafia stragista dei corleonesi. \"Giuseppe che sconfisse Cosa nostra\" vuole soprattutto celebrare la memoria di un bimbo, simbolo di una resistenza che non cede mai al sopruso e alla violenza."
             },
             {
                 "ora": "10:55",
@@ -182,13 +177,13 @@
             },
             {
                 "ora": "11:00",
-                "titolo": "Ottavi: Portogallo - Spagna",
-                "descrizione": "Collegamento pre e post partita con la supervisione di Marco Mazzocchi e Massimo Proietto. Conduce Paola Ferrari con Simona Rolandi, Paulo Roberto Falcao e Marco Tardelli. Regia di Marco Spoletini. Partita del Mondiale di Calcio Fifa 2026 in programma dall'11 giugno al 19 luglio 2026, in diverse citt� di Stati Uniti, Canada e Messico. Coppa del Mondo di Calcio FIFA 2026. Un programma a cura di Rai Sport con la Supervisione Marco Lollobrigida. In diretta dal MetLife Stadium di New Jersey (New York). Telecronaca di Giuseppe Galati. Commento tecnico di Daniele Adani."
+                "titolo": "Clip Playlist",
+                "descrizione": "Con la conduzione di Federica Gentile, Gabriele Vagnato e Nina Zilli, artisti emergenti e grandi nomi si raccontano attraverso la musica, offrendo momenti dinamici e leggeri alternati ad altri più intimi ed emotivi."
             },
             {
                 "ora": "11:15",
                 "titolo": "Crociere di nozze",
-                "descrizione": "TV MOVIE - Sulla nave da crociera diretta a Corfù, i signori May festeggiano a bordo le loro nozze d'argento, mentre i giovani Michael ed Evelyn sono in procinto di sposarsi.... - (DEU, 2010) Romantico Regia di Dieter Kehler Con Eva-Maria Grein von Friedl, Marcus Grüsser, Siegfried Rauch"
+                "descrizione": "Amori, divorzi e matrimoni si intrecciano sulla Nave dei Sogni in viaggio verso le mete più ambite."
             },
             {
                 "ora": "13:00",
@@ -216,34 +211,14 @@
                 "descrizione": "Percorso vallonato con un finale impegnativo alle porte dei Pirenei. Le salite degli ultimi chilometri favoriscono attacchi da lontano e possono regalare spettacolo tra i pretendenti alla maglia gialla."
             },
             {
-                "ora": "14:45",
-                "titolo": "Tour In Diretta",
-                "descrizione": "SPORT. - Ciclismo. A cura di Alessandro Fabretti Coordinamento giornalistico Franco Bortuzzo Conduce Francesco Pancani Telecronaca Stefano Rizzato Commento tecnico Silvio Martinello, Stefano Garzelli, Davide Cassani Produttore esecutivo Guido Lissoni Regia Italia Maria Baratta"
-            },
-            {
-                "ora": "15:15",
-                "titolo": "Tour De France 4^ Tappa Carcassonne - Fo",
-                "descrizione": "Tour de France 4^ tappa Carcassonne - Foix - SPORT - Ciclismo. 113^ edizione"
-            },
-            {
-                "ora": "16:30",
-                "titolo": "Tour All'Arrivo",
-                "descrizione": "SPORT. - Ciclismo. A cura di Alessandro Fabretti Coordinamento giornalistico Franco Bortuzzo Conduce Francesco Pancani Telecronaca Stefano Rizzato Commento tecnico Silvio Martinello, Stefano Garzelli, Davide Cassani Produttore esecutivo Guido Lissoni Regia Italia Maria Baratta"
-            },
-            {
-                "ora": "16:50",
+                "ora": "17:35",
                 "titolo": "Ciclismo: Tour De France 2026 - Tour Replay: 4a Tappa",
                 "descrizione": "La rubrica di ciclismo dedicata al Tour de France 2026, tra cronaca, analisi e interviste a caldo a commento della tappa appena conclusa."
             },
             {
-                "ora": "17:35",
+                "ora": "17:57",
                 "titolo": "Ciclismo: Tour De France 2026 - Le Strade Del Tour: 5a Tappa",
                 "descrizione": "Un viaggio lungo il percorso del Tour de France 2026 per scoprire i luoghi che fanno da scenario alla corsa più celebre del mondo."
-            },
-            {
-                "ora": "17:57",
-                "titolo": "Tour De France 4^ Tappa Carcassonne - Fo",
-                "descrizione": "Tour de France 4^ tappa Carcassonne - Foix - SPORT - Ciclismo. 113^ edizione"
             },
             {
                 "ora": "18:00",
@@ -284,9 +259,14 @@
                 "ora": "21:00",
                 "titolo": "TG2 Post",
                 "descrizione": "Rubrica informativa del TG2. Direttore Antonio Preziosi"
+            },
+            {
+                "ora": "21:20",
+                "titolo": "Storie Al Bivio Di Sera",
+                "descrizione": "I protagonisti della politica, dell'attualit� , della cultura o dello spettacolo raccontano senza filtri il loro momento di svolta e le loro scelte di vita, tra famiglia, carriera, figli e amori."
             }
         ],
-        "aggiornato": "09:52"
+        "aggiornato": "14:49"
     },
     {
         "canale": "Rai 3",
@@ -374,7 +354,7 @@
             },
             {
                 "ora": "15:10",
-                "titolo": "Italian Genius - Giannola Nonino",
+                "titolo": "Italian Genius - Valentina Steinmann",
                 "descrizione": "$23"
             },
             {
@@ -430,10 +410,10 @@
             {
                 "ora": "23:15",
                 "titolo": "Speciale Il Cacciatore Di Sogni - Rete Bilt",
-                "descrizione": "Un viaggio tra inclusione, autonomia e nuove opportunit� . Il racconto della Rete Bilt, il progetto promosso dal Ministro per le Disabilit� per sostenere il turismo accessibile e l'inserimento lavorativo. Ospite in studio l'attore Cesare Bocci. Trasmissione realizzata in collaborazione con la Presidenza del Consiglio dei Ministri – Dipartimento per le politiche in favore delle persone con disabilit� ."
+                "descrizione": "Un viaggio tra inclusione, autonomia e nuove opportunit� . Il racconto della Rete Bilt, il progetto promosso dal Ministro per le Disabilit� per sostenere il turismo accessibile e l'inserimento lavorativo. Ospite in studio l'attore Cesare Bocci. Trasmissione realizzata in collaborazione con la Presidenza del Consiglio dei Ministri - Dipartimento per le politiche in favore delle persone con disabilit� ."
             }
         ],
-        "aggiornato": "09:52"
+        "aggiornato": "14:49"
     },
     {
         "canale": "Rai 4",
@@ -560,7 +540,7 @@
                 "descrizione": "Intenzionati a staccare dalla routine, Marc e Anna decidono di scambiare casa con Hans e Olga, coppia tedesca di pensionati che hanno conosciuto tramite un sito web. Nonostante l'apparente calma iniziale, a poco a poco lo scambio di casa si trasforma in un vero e proprio incubo."
             }
         ],
-        "aggiornato": "09:52"
+        "aggiornato": "14:49"
     },
     {
         "canale": "Rai 5",
@@ -677,7 +657,7 @@
                 "descrizione": "Un piccolo affresco napoletano nell'Italia anni Settanta. Peppino Lo Cicero è un guappo in pensione, vive la sua vita in ritiro, si occupa di pesca e del figlio Nino, guappo anche lui. Ma nella missione di oggi Nino cade, vittima di un agguato. Viene assassinato dall'uomo che era andato a uccidere. Qualcuno ha tradito."
             }
         ],
-        "aggiornato": "09:52"
+        "aggiornato": "14:49"
     },
     {
         "canale": "Rete 4",
@@ -764,7 +744,7 @@
                 "descrizione": "Le grandi domande di freedom '26"
             }
         ],
-        "aggiornato": "09:52"
+        "aggiornato": "14:49"
     },
     {
         "canale": "Canale 5",
@@ -901,7 +881,7 @@
                 "descrizione": "Ozgur è l'erede di un'enorme ricchezza, viziato e spocchioso. Appena compiuti 18 anni, riceve la visita di una ragazza, Elif, ma non riconosce in lei la bambina a cui si era legato da bambino e che, in seguito alla morte dei genitori, aveva dovuto lasciare dieci anni prima con la promessa di rivedersi."
             }
         ],
-        "aggiornato": "09:52"
+        "aggiornato": "14:49"
     },
     {
         "canale": "Italia 1",
@@ -1013,7 +993,7 @@
                 "descrizione": "Rick ha quarant'anni, una moglie, tre bambini e un amico con cui condivide la passione per le donne e la frustrazione di non poterle possedere (tutte). Immaturi e ossessionati dal sesso, consumano le loro esistenze tra i pannolini da cambiare e un gruppo di amici altrettanto infantili, che scommettono ipotetiche somme su immaginarie conigliette e miss maglietta bagnata. Esasperate dai loro atteggiamenti al limite del demenziale e del buongusto, le rispettive consorti decidono di concedere a Rick e Fred una vacanza dal matrimonio e dalle responsabilit� , convinte in cuor loro di mettere fine una volta per tutte al loro indecente delirare. Ma la libera uscita, lunga sette giorni e sette notti, non dar� ai degenerati coniugi i risultati sperati, appagandone il cuore prima che i genitali."
             }
         ],
-        "aggiornato": "09:52"
+        "aggiornato": "14:49"
     },
     {
         "canale": "La7",
@@ -1032,17 +1012,17 @@
             {
                 "ora": "08:00",
                 "titolo": "Omnibus Dibattito",
-                "descrizione": "Programma di informazione e approfondimento con rubriche, ospiti, rassegna stampa, aggiornamenti sul traffico, previsioni meteo, dibattito sul tema del giorno. 24a Edizione."
+                "descrizione": "Alessandra Sardoni con Daniela Preziosi, Maurizio Molinari, Michele Valensise, Alberto Faustini, Frediano Finucci, Venanzio Postiglione, Nando Pagnoncelli"
             },
             {
                 "ora": "09:40",
                 "titolo": "Coffee Break",
-                "descrizione": "Lo spazio mattutino per l'approfondimento e l'attualit� condotto da Andrea Pancani. 14a Edizione."
+                "descrizione": "Andrea Pancani con Marcello Minenna, Arturo Scotto, Giuseppe Iacolino, Ylenja Lucaselli, Ferdinando Uliano, Rosario Rasizza, Silvano Simone Bettini"
             },
             {
                 "ora": "11:00",
                 "titolo": "L'Aria Che Tira",
-                "descrizione": "Conduce David Parenzo. 15a edizione"
+                "descrizione": "David Parenzo con Giulia Merlo, Michele Silenzi, Corradino Mineo, Claudio Borghi, Angelo D’orsi, Francesco Bechis, Nicola Fratoianni, Marco Politi, Maddalena Loy, Piergiorgio Odifreddi, Maurizio Ruggiero, Federico Fubini"
             },
             {
                 "ora": "13:30",
@@ -1085,7 +1065,7 @@
                 "descrizione": "Il principe Nasir, erede al trono di un Paese produttore di petrolio, ha instaurato nuove relazioni commerciali con la Cina a scapito degli Usa, fino a quel momento privilegiati. Bob Barnes, un agente della Cia esperto in questioni mediorientali, riceve l'incarico di uccidere il principe Nasir. Ma non tutto va come dovrebbe..."
             }
         ],
-        "aggiornato": "09:52"
+        "aggiornato": "14:49"
     },
     {
         "canale": "TV8",
@@ -1197,7 +1177,7 @@
                 "descrizione": "12 persone comuni, una giungla ostile, tentazioni irresistibili che decurteranno il montepremi finale. Fabio Caressa d� il via a Money Road."
             }
         ],
-        "aggiornato": "09:52"
+        "aggiornato": "14:49"
     },
     {
         "canale": "Nove",
@@ -1304,7 +1284,7 @@
                 "descrizione": "Luca è alle prese con la causa di divorzio di Caterina e Filippo, che si rimbalzano i figli, bambini degeneri che snobbano la Playstation e vorrebbero andare al planetario. Smessa la toga, non depone le armi ma le affila, arcistufo della moglie Loredana, al punto da trasferirsi nell'appartamento del figlio universitario. L'altra figlia è invece a Parigi con Marc, ma la Nuova Zelanda chiama e promette una nuova vita e, forse, un nuovo amore. Intanto Sergio, scomparsa Michela, si ritrova con due figlie adolescenti e una fidanzata interdetta, mentre Paolo subisce le minacce dell'ex di Monique ed Elisa resta folgorata dalla scoperta che il prete che sta per sposarla a Corrado è in realt� il suo ex Lorenzo."
             }
         ],
-        "aggiornato": "09:52"
+        "aggiornato": "14:49"
     },
     {
         "canale": "20 Mediaset",
@@ -1421,7 +1401,7 @@
                 "descrizione": "1978. Tre casalinghe del quartiere di Hell's Kitchen, mogli di mafiosi mandati in prigione dall'FBI sono lasciate da sole a gestire gli interessi personali dei coniugi. Le donne dovranno prendere in mano le azioni criminali della mafia irlandese, dimostrandosi inaspettatamente abili in tutto: dalla gestione del giro di racket, fino all'eliminazione - letterale - della concorrenza."
             }
         ],
-        "aggiornato": "09:52"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Twentyseven",
@@ -1518,7 +1498,7 @@
                 "descrizione": "Il piccolo porcellino Babe arriva alla fattoria degli Hoggett come futura vittima per il cenone natalizio, e nel frattempo fa la conoscenza di Rex, il cane pastore convinto che solo i cani sono animali intelligenti, ma la sua compagna Fly alleva Babe come se fosse suo figlio. Altri ospiti della fattoria sono Ferdinand, un eccentrico paperotto che si sforza di imparare a cantare come un gallo per rendersi utile in fattoria e Duchessa, la gatta persiana..."
             }
         ],
-        "aggiornato": "09:52"
+        "aggiornato": "14:50"
     },
     {
         "canale": "IRIS",
@@ -1580,7 +1560,7 @@
                 "descrizione": "[Western] - Per il ciclo: C'ERA UNA VOLTA IL WESTERN.\nJed e Ben, amici dai tempi in cui prestarono servizio militare durante la Guerra Civile, sono costretti a combattere l'uno contro l'altro. Regia di S. Wanamaker, con Y. Brynner, R. Crenna; USA 1971"
             }
         ],
-        "aggiornato": "09:52"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Rai Movie",
@@ -1637,7 +1617,7 @@
                 "descrizione": "Julianne è una critica culinaria indipendente e determinata. Una sera, mentre si trova a cena con il suo editore George, riceve un messaggio piuttosto concitato da parte di Michael, vecchia fiamma divenuta nel tempo il suo migliore amico. Julianne rievoca con George una serata romantica e appassionata di molti anni prima in cui Michael le promise che se entrambi fossero arrivati single ai 28 anni si sarebbero sposati fra di loro. Ora che al compleanno mancano poche settimane, Julianne si rende conto di aver sempre amato Michael e si convince che la chiamata potrebbe realmente nascondere la fatidica proposta. Ma quando riesce a mettersi in contatto con lui la realt� è ben diversa: Michael ha conosciuto una bionda ventenne di Chicago e sta per sposarsi con lei di lì a pochi giorni. A Julianne restano solo pochi giorni per far capire al migliore amico di essere la ragazza giusta per lui."
             }
         ],
-        "aggiornato": "09:52"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Rai Premium",
@@ -1734,7 +1714,7 @@
                 "descrizione": "Torino, 1967. Cesare Corvara è il primario del reparto di Cardiochirurgia dell'ospedale \"Le Molinette\" col sogno di essere alla guida dell'equipe che realizzer� il primo trapianto di cuore della storia.\n\nFiction RAI ispirata al pioniere della cardiochirurgia Achille Dogliotti e incentrata sul tentativo di effettuare il primo trapianto di cuore."
             }
         ],
-        "aggiornato": "09:52"
+        "aggiornato": "14:50"
     },
     {
         "canale": "La 5",
@@ -1821,7 +1801,7 @@
                 "descrizione": "Javed (Viveik Kalra) è un adolescente britannico di discendenza pakistana che vive nella citt� di Luton, Inghilterra, nel 1987. Nel mezzo dei tumulti razziali ed economici dell'epoca, scrive poesie come mezzo per sfuggire all'intolleranza della sua citt� e all'inflessibilit� tradizionalista di suo padre (Kulvinder Ghir). Ma quando un suo compagno di classe (Aaron Phagura) gli fa conoscere la musica del \"Boss\", Javed scopre dei parallelismi con la sua vita da classe operaia nei potenti testi di Springsteen. Mentre Javed scopre una via d’uscita catartica ai suoi sogni repressi, comincia anche a trovare il coraggio di esprimersi con la sua voce unica."
             }
         ],
-        "aggiornato": "09:52"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Real Time",
@@ -1913,7 +1893,7 @@
                 "descrizione": "Un uomo ha brutti ricordi d'infanzia. Cosa ha causato i suoi episodi di pazzia? Inoltre, un compleanno si trasforma in un disastro quando tutti i bambini iniziano a vomitare."
             }
         ],
-        "aggiornato": "09:52"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Food Network",
@@ -2055,7 +2035,7 @@
                 "descrizione": "Luca accoglie la sfida e si mette in viaggio verso Otricoli e Amelia."
             }
         ],
-        "aggiornato": "09:52"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Focus",
@@ -2167,7 +2147,7 @@
                 "descrizione": "La storia di Alessandro Magno: dalle conquiste alla nascita del mondo ellenistico, fino a un'eredita' culturale che sopravvisse anche alla conquista romana."
             }
         ],
-        "aggiornato": "09:52"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Giallo",
@@ -2244,7 +2224,7 @@
                 "descrizione": "L'Ispettore capo Vera Stanhope (Brenda Blethyn) è una detective alla soglia della pensione della fittizia Northumberland & City Police, che indaga sui delitti che avvengono nella sua giurisdizione. Lei è appassionata del suo lavoro e, nonostante un aspetto costantemente trasandato e una personalit� irascibile, ha una mente calcolatrice e si impegna profondamente nel suo lavoro. Suoi compagni di lavoro sono i sergenti Joe Ashworth (David Leon) e Aiden Healy (Kenny Doughty)."
             }
         ],
-        "aggiornato": "09:52"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Boing",
@@ -2401,7 +2381,7 @@
                 "descrizione": "Per essere piu' presente con i figli Nicole li accompagna anche nella vita all'interno della scuola causando situazioni molto imbarazzanti per i ragazzi."
             }
         ],
-        "aggiornato": "09:52"
+        "aggiornato": "14:50"
     },
     {
         "canale": "K2",
@@ -2558,7 +2538,7 @@
                 "descrizione": "3' Stagione Ep.51 - Le avventure di tre scoiattoli dalla voce incredibile, 'adottati' da Dave Seville, che diventano un fenomeno musicale."
             }
         ],
-        "aggiornato": "09:52"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Rai Gulp",
@@ -2715,7 +2695,7 @@
                 "descrizione": "Bloom si reca sulla Terra per organizzare una festa di compleanno a sorpresa per sua madre Vanessa e può così riabbracciare i suoi genitori. Intanto, Valtor decide di attaccare il Sole, per mettere in pericolo la Terra e gli affetti di Bloom. Mentre le Winx partono per salvare il Sole, gli Specialisti devono affrontare due giganti oscuri provenienti dal mare. Twinkly scopre il modo per far tornare gli Staryummy in Lumen, ma queste ultime hanno ancora paura di loro..."
             }
         ],
-        "aggiornato": "09:52"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Frisbee",
@@ -2872,7 +2852,7 @@
                 "descrizione": "3' Stagione Ep.44 - Le avventure di tre scoiattoli dalla voce incredibile, 'adottati' da Dave Seville, che diventano un fenomeno musicale."
             }
         ],
-        "aggiornato": "09:52"
+        "aggiornato": "14:50"
     },
     {
         "canale": "DMAX",
@@ -2954,7 +2934,7 @@
                 "descrizione": "Gibba si trova in Belgio per investigare la battaglia delle Ardenne, l'estremo tentativo del Fuhrer di ribaltare le sorti del conflitto."
             }
         ],
-        "aggiornato": "09:52"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Rai Sport",
@@ -3036,7 +3016,7 @@
                 "descrizione": "Memory del 07\/07\/2026"
             }
         ],
-        "aggiornato": "09:52"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Sportitalia",
@@ -3163,7 +3143,7 @@
                 "descrizione": "Intervista con Michele Criscitiello"
             }
         ],
-        "aggiornato": "09:52"
+        "aggiornato": "14:50"
     },
     {
         "canale": "HGTV",
@@ -3310,7 +3290,7 @@
                 "descrizione": "Lo scultore Nick lavora sul pezzo forte di un lunapark. Alex trasforma un vecchio carretto e Craig sistema una poltrona malmessa."
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:50"
     },
     {
         "canale": "RSI LA 1",
@@ -3467,7 +3447,7 @@
                 "descrizione": "Home edition\npresenta Nicola Saldanha"
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:50"
     },
     {
         "canale": "RSI LA 2",
@@ -3510,17 +3490,17 @@
             },
             {
                 "ora": "14:00",
-                "titolo": "Tennis: Wimbledon 2026",
-                "descrizione": "Quarto di finale\nda Wimbledon (GBR)"
+                "titolo": "Fuoriprogramma",
+                "descrizione": "Fuoriprogramma"
             },
             {
                 "ora": "15:15",
-                "titolo": "Guardia Costiera",
-                "descrizione": "Protagonista della serie è una squadra della Guardia Costiera tedesca, di stanza a Neustadt, che pattuglia le coste lungo il mare Baltico a bordo dell'Albatros. A capo della squadra vi è il Capitano Holger Ehlers. La serie è girata tra New Stadt, nello Schleswig-Holstein e l'isola di Rügen nel MecLemburgo-Pomerania Anteriore."
+                "titolo": "Il Rebus",
+                "descrizione": "Protagonista della serie è una squadra della Guardia Costiera tedesca, di stanza a Neustadt, che pattuglia le coste lungo il mare Baltico a bordo dell'Albatros.\nA capo della squadra vi è il Capitano Holger Ehlers.\nLa serie è girata tra New Stadt, nello Schleswig-Holstein e l'isola di Rügen nel MecLemburgo-Pomerania Anteriore."
             },
             {
                 "ora": "16:00",
-                "titolo": "La vita segreta dei laghi - Albania e Montenegro",
+                "titolo": "Albania e Montenegro",
                 "descrizione": "Condiviso tra Albania e Montenegro, il lago di Scutari è il più grande bacino di acqua dolce dei Balcani. Immerso in un contesto naturale di grande bellezza e variet� , il lago è un fattore fondamentale per l´incredibile biodiversit� della regione. Esperti tra cui un geologo, un ornitologo, un ittiologo, ma anche un monaco ortodosso che fin dall´infanzia nutre un profondo legame con queste acque, ci aiutano a conoscere le caratteristiche del lago e dell´ambiente che attorno a esso vive e si sviluppa."
             },
             {
@@ -3539,7 +3519,7 @@
                 "descrizione": "Ottavi di finale\nda Vancouver (CAN)"
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:50"
     },
     {
         "canale": "DAZN 1",
@@ -3636,7 +3616,7 @@
                 "descrizione": "Claudio Marchisio - Gli intervistati vengono accompagnati in un viaggio interiore tra ferite, traumi, conti in sospeso, rinascite, segreti non detti. Nel secondo episodio l'ospite di Giorgia Rossi e' Claudio Marchisio."
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Sky Sport 24",
@@ -3793,7 +3773,7 @@
                 "descrizione": "Da Wimbledon, gli aggiornamenti di Dalila Setti sul torneo di tennis con notizie e commenti sui principali temi sportivi della giornata."
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Sky Sport Uno",
@@ -3962,7 +3942,7 @@
                 "descrizione": "Curiosita', commenti, notizie e anticipazioni sui possibili movimenti del calciomercato. Condotto dal trio Alessandro Bonan, Gianluca Di Marzio e Fayna."
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Sky Sport Tennis",
@@ -4021,15 +4001,20 @@
             {
                 "ora": "12:00",
                 "titolo": "9a giornata",
-                "descrizione": "Dall'All-England Lawn Tennis and Croquet Club di Wimbledon, Inghilterra."
+                "descrizione": "9a giornata Wimbledon: CABAL\/FARAH-BAGHDATIS\/MALISSE (Lupi), SINIAKOVA\/TOWNSEND-MUHAMMAD\/STOLLAR (Lupi)"
             },
             {
                 "ora": "14:30",
                 "titolo": "1^ Quarto Femminile",
-                "descrizione": "Dall'All-England Lawn Tennis and Croquet Club di Wimbledon, Inghilterra."
+                "descrizione": "1^ Quarto Femminile Wimbledon: dall'All-England Lawn Tennis and Croquet Club di Wimbledon, Inghilterra."
             },
             {
                 "ora": "16:30",
+                "titolo": "9a giornata",
+                "descrizione": "9a giornata Wimbledon: LEHECKA - ZVEREV (Boschetto-Ljubicic)"
+            },
+            {
+                "ora": "17:30",
                 "titolo": "2^ Quarto Maschile",
                 "descrizione": "Dall'All-England Lawn Tennis and Croquet Club di Wimbledon, Inghilterra."
             },
@@ -4050,7 +4035,7 @@
             },
             {
                 "ora": "20:30",
-                "titolo": "Tennis Grand Slam Wimbledon Championship - Tennis Grand Slam Wimbledon Champ. 2026 9a Giornata (Solo Repl)",
+                "titolo": "9a giornata",
                 "descrizione": "Dall'All-England Lawn Tennis and Croquet Club di Wimbledon, Inghilterra."
             },
             {
@@ -4070,11 +4055,11 @@
             },
             {
                 "ora": "23:00",
-                "titolo": "Tennis Grand Slam Wimbledon Championship - Tennis Grand Slam Wimbledon Champ. 2026 9a Giornata (Solo Repl)",
+                "titolo": "9a giornata",
                 "descrizione": "Dall'All-England Lawn Tennis and Croquet Club di Wimbledon, Inghilterra."
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Sky Sport F1",
@@ -4216,7 +4201,7 @@
                 "descrizione": "A Silverstone Russell, Norris e Hamilton giocano in casa ma il leader del mondiale Antonelli vuole tornare a vincere. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero."
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Sky Sport Legend",
@@ -4313,7 +4298,7 @@
                 "descrizione": "UEFA Champions League Story. - Il 18 Maggio 1994 ad Atene il Milan allenato da Fabio Capello e' in finale contro il Barcellona allenato da Johan Cruijff. Riviviamo una delle finali piu' esaltanti della storia rossonera."
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Sky Sport MotoGP",
@@ -4470,7 +4455,7 @@
                 "descrizione": "Appuntamento settimanale con l'approfondimento dedicato al motomondiale, condotto da Marta Abiye con Paolo Beltramo."
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Sky Sport Basket",
@@ -4537,7 +4522,7 @@
                 "descrizione": "AJ Dybantsa, Darryn Peterson, Carlos Boozer, Caleb Wilson: chi sara' la prima scelta assoluta 2026? I futuri campioni NBA fanno il loro ingresso nella lega. Telecronaca di Dario Vismara e Lorenzo Neri"
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Sky Sport Arena",
@@ -4556,7 +4541,7 @@
             {
                 "ora": "07:00",
                 "titolo": "Icarus Ultra",
-                "descrizione": "Icarus Ultra. - Un nuovo Bike In con Patrick Martini a Verona; Running Scenery e Polo Venturini sono nel Mugello; edizione 2021 della Crazy Run; Piemonte Sport Experience continua in Valsesia."
+                "descrizione": "Un nuovo Bike In con Patrick Martini a Verona; Running Scenery e Polo Venturini sono nel Mugello; edizione 2021 della Crazy Run; Piemonte Sport Experience continua in Valsesia."
             },
             {
                 "ora": "07:25",
@@ -4595,11 +4580,11 @@
             },
             {
                 "ora": "22:00",
-                "titolo": "Tennis Grand Slam Wimbledon Championship - Tennis Grand Slam Wimbledon Champ. 2026 9a Giornata (Solo Repl)",
+                "titolo": "9a giornata",
                 "descrizione": "Dall'All-England Lawn Tennis and Croquet Club di Wimbledon, Inghilterra."
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Sky Sport Max",
@@ -4623,7 +4608,7 @@
             {
                 "ora": "09:00",
                 "titolo": "Icarus Ultra",
-                "descrizione": "Icarus Ultra. - Un nuovo Bike In con Patrick Martini a Verona; Running Scenery e Polo Venturini sono nel Mugello; edizione 2021 della Crazy Run; Piemonte Sport Experience continua in Valsesia."
+                "descrizione": "Un nuovo Bike In con Patrick Martini a Verona; Running Scenery e Polo Venturini sono nel Mugello; edizione 2021 della Crazy Run; Piemonte Sport Experience continua in Valsesia."
             },
             {
                 "ora": "09:30",
@@ -4706,7 +4691,7 @@
                 "descrizione": "Mancini. - In occasione del Festival della Serie A Roberto Mancini si racconta tra il ricordo commosso di Vialli, il trionfo a Euro 2020, il premio Legendary Coach e l'ipotesi di un ritorno"
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Sky Sport Mix",
@@ -4768,7 +4753,7 @@
                 "descrizione": "Rally Erc"
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Sky Sport Golf",
@@ -4835,7 +4820,7 @@
                 "descrizione": "Dal Shinnecock Hills Golf Club di Southampton, Stati Uniti."
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Sky Sport 251",
@@ -4844,10 +4829,10 @@
             {
                 "ora": "13:30",
                 "titolo": "Tennis Grand Slam Wimbledon Champ. 2026 106",
-                "descrizione": "Tennis"
+                "descrizione": "9a giornata Wimbledon: OSAKA - MUCHOVA (Nicolodi-Reggi)"
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Sky Sport 252",
@@ -4856,10 +4841,10 @@
             {
                 "ora": "11:30",
                 "titolo": "Tennis Grand Slam Wimbledon Champ. 2026 107",
-                "descrizione": "Tennis"
+                "descrizione": "9a giornata Wimbledon: CABAL\/FARAH-BAGHDATIS\/MALISSE, SINIAKOVA\/TOWNSEND-MUHAMMAD\/STOLLAR (Lupi), HELIOVAARA\/PATTEN-ANDREOZZI\/GUINARD, \nHARRISON\/ZHANG-AREVALO\/OSTAPENKO (Massara)"
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Sky Sport 253",
@@ -4867,11 +4852,11 @@
         "programmi": [
             {
                 "ora": "11:30",
-                "titolo": "Tennis Grand Slam Wimbledon Champ. 2026 108",
-                "descrizione": "Tennis"
+                "titolo": "9a giornata",
+                "descrizione": "9a giornata Wimbledon: RADWANSKA\/WOZNIACKI-RYBARIKOVA\/SAFAROVA, HUNTER\/McNALLY-DABROWSKI\/STEFANI, KRAJICEK\/MEKTIC-KOKKINAKIS\/KOVACEVIC, \nPOLMANS\/HUNTER-PAVIC\/STOLLAR"
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Sky Sport 254",
@@ -5000,7 +4985,7 @@
                 "descrizione": "Un sottotenente, le sue forze di polizia e un vigilante sono tutti coinvolti in un pericoloso piano che coinvolge un uomo problematico, recentemente arrestato e legato ad anni di rapimenti e omicidi di donne…"
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Sky Cinema Uno +24",
@@ -5057,7 +5042,7 @@
                 "descrizione": "Frank Farmer, ex agente segreto viene ingaggiato come guardia del corpo personale della pop star Rachel Marron, la cui vita privata è protetta con misure di sicurezza elevatissime, perchè c'è qualcuno che la perseguita..."
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Sky Cinema Due",
@@ -5109,7 +5094,7 @@
                 "descrizione": "Primi del Settecento. L'Ospedale della Piet� è il più grande orfanotrofio di Venezia, ma è anche un'istituzione che avvia le orfane più brillanti allo studio della musica. La sua orchestra è una delle più apprezzate al mondo. Cecilia ha vent'anni, vive da sempre alla Piet� ed è una straordinaria violinista. L'arte ha dischiuso la sua mente ma non le porte dell'orfanotrofio; può esibirsi solo lì dentro, dietro una grata, per ricchi mecenati. Questo fino a che un vento di primavera scuote improvvisamente la sua vita. Tutto cambia con l'arrivo del nuovo insegnante di violino. Il suo nome è Antonio Vivaldi."
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Sky Cinema Due +24",
@@ -5136,7 +5121,7 @@
                 "descrizione": "Londra, estate 1593. Un giovane Shakespeare a corto di ispirazione, impulsivo e alla ricerca del fuoco dell'amore per dare vita alla poesia del teatro. Una ragazza figlia di ricchi borghesi, Viola De Lesseps, trascorre le notti a sognare i versi di quello Shakespeare artista della penna e di poter un giorno far parte di una compagnia di teatro, vietato alle donne. Alle audizioni per trovare un Romeo a una commedia non ancora scritta, dopo una desolante schiera di aspiranti, un giovane sconosciuto recita un sonetto con tanto sentimento che lo stesso Shakespeare lo rincorre fino a villa De Lesseps per sapere di lui. O meglio di lei, che travestita da uomo e aiutata dalla fedele balia, voleva coronare il sogno di calcare le scene."
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Sky Cinema Collection",
@@ -5188,7 +5173,7 @@
                 "descrizione": "Il famoso simbolista Robert Langdon questa volta è sulle tracce di una serie di indizi legati al grande poeta Dante. Quando si risveglia in un ospedale italiano colpito da amnesia, si affida al medico Sienna Brooks per recuperare i suoi ricordi. In una corsa contro il tempo che ha per sfondo tutta l’Europa, cercheranno di prevenire le azioni di un folle che ha intenzione di scatenare una piaga strettamente connessa con l'Inferno di Dante Alighieri."
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Sky Cinema Family",
@@ -5255,7 +5240,7 @@
                 "descrizione": "Il giovane magizoologo Newt Scamander arriva a New York dall'Inghilterra con una valigia piena delle creature fantastiche che ha raccolto e salvato in molti anni di viaggi e ricerche. Senza volere, scambia però il prezioso carico con quello di Jacob Kowalski, pasticcere e No-Mag (è il nome americano dei Babbani), il quale libera inavvertitamente le creature, violando lo Statuto di Segretezza e mettendo Newt nei guai. È il 1926 e il Paese è in grande subbuglio: l'oscuro Gellert Grindewalt è introvabile, qualcosa di misterioso semina caos e distruzione per le strade della citt� e i fondamentalisti della caccia alle streghe sono sempre più infervorati. Il mondo magico e quello dei No-Mag sono pericolosamente vicini ad entrare in guerra."
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Sky Cinema Action",
@@ -5312,7 +5297,7 @@
                 "descrizione": "Un ente governativo segreto, gestito da Amanda Waller e chiamato Argus, crea una task force composta da super criminali. A loro vengono assegnati compiti pericolosi da portare a termine in cambio di clemenza per le loro pene detentive. Non tutto però è così semplice come sembra all'apparenza e lo squadrone dovr� presto far� i conti con un'inaspettata situazione."
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Sky Cinema Suspense",
@@ -5369,7 +5354,7 @@
                 "descrizione": "In un manicomio costruito tra le torbide paludi di New Orleans una donna è stata in isolamento per più di dieci anni. Possiede poteri unici e straordinari con cui può controllare i pensieri degli altri. Con la luna piena, si risveglier� dallo stato catatonico in cui si ritrova e si dar� alla fuga, con conseguenze inaspettate..."
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Sky Cinema Romance",
@@ -5426,7 +5411,7 @@
                 "descrizione": "Leone è il fidanzato perfetto: gentile, educato, rispettoso. I genitori di Carola lo adorano, convinti che lei abbia finalmente lasciato Manuel, il ragazzo poco raccomandabile con cui usciva. In realt� , Leone per Carola è solo una copertura mentre lei continua a frequentare Manuel. Ed è proprio a causa di questa situazione che Leone si ritrova costretto ai servizi sociali, dopo essere stato accusato ingiustamente di un crimine non commesso. Eppure, questa svolta inaspettata nasconde una scoperta meravigliosa: quella del primo amore, con Flor, un'attivista ambientale, forte e libera. Quando Leone sembra aver finalmente dimenticato Carola però, lei piomba di nuovo nella sua vita. Diviso tra l'amore vero e quello da sempre immaginato, Leone trover� la sua strada grazie anche ai consigli di Meda, un senzatetto che gli insegner� la filosofia dell'amore, dei sentimenti e della vita al di l� dei libri."
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Sky Cinema Drama",
@@ -5488,7 +5473,7 @@
                 "descrizione": "Il film vede protagonista un figlio (Saul Nanni), che non voleva più avere niente a che fare con suo padre (Kim Rossi Stuart), costretto ad aiutarlo a mandare avanti il ranch di famiglia dopo che questi si è fratturato alcune ossa. I due si ritrovano per addestrare un cavallo recalcitrante e portarlo a vincere una competizione di cross-country, ma allo stesso tempo provano a sciogliere quel grumo di rabbia, ostilit� , rancore, che ha impedito loro per tanto tempo di essere vicini. È un difficile percorso a ostacoli quello che deve compiere il cavallo, ma anche quello che devono affrontare i due per ricostruire l'amore e la vicinanza che avevano perduto. In questa impresa li aiuter� un'addestratrice di cavalli, di cui il giovane si innamora."
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Sky Cinema Comedy",
@@ -5550,7 +5535,7 @@
                 "descrizione": "Charlie Waldo (Charlie Hunnam) è un ex superstar del dipartimento di polizia di Los Angeles, che ha lasciato il servizio e vive adesso una vita semplice in solitudine tra i boschi. Alistair Pinch (Mel Gibson) è un attore eccentrico che passa i suoi giorni ubriaco sul set del suo show televisivo. Quando la moglie di Pinch viene trovata morta, lui è il principale sospettato e Waldo viene convinto a rientrare in servizio per indagare sull'accaduto. Il caso trova Waldo alle prese con gangster, dirigenti di Hollywood e maestre d'asilo, che cercano di scagionare Finch... o di confermare la sua colpevolezza"
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Sky Uno",
@@ -5652,7 +5637,7 @@
                 "descrizione": "I matrimoni di queste quattro spose si tingeranno di verde, colore dell'energia, della natura e della speranza: soprattutto quella di vincere Quattro Matrimoni! Scopriamo chi ce la far� ."
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Sky Atlantic",
@@ -5759,7 +5744,7 @@
                 "descrizione": "La serie prequel vede la dinastia Targaryen all'apice assoluto del suo potere, con più di 15 draghi sotto il loro giogo. La maggior parte degli imperi, che siano reali o immaginari, crollano quando raggiungono tali poteri e tali altezze. Nel caso dei Targaryen, la loro lenta caduta inizia quasi 193 anni prima degli eventi de Il Trono di Spade, quando re Viserys Targaryen rompe un secolo di tradizione nominando sua figlia Rhaenyra erede al Trono di Spade. La corte rimane scioccata quando Rhaenyra mantiene il suo status di erede nonostante Viserys in seguito avr� un figlio maschio, legittimo erede. Inizia così ad attecchire il seme della divisione e forti attriti in tutto il regno."
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Sky Serie",
@@ -5891,7 +5876,7 @@
                 "descrizione": "Basata sul racconto breve di Manuel Gonzalez, la serie esamina gli squilibri di potere all'interno della coppia: quando un incidente di laboratorio riduce Lindy a soli 15 cm di altezza, il gi� fragile equilibrio nel suo matrimonio con Les esplode in una battaglia esilarante e graffiante tra orgoglio, rancore e amore."
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Sky Investigation",
@@ -6008,7 +5993,7 @@
                 "descrizione": "Il comandante della Police Nationale Mélissa Sainte-Rose, originaria della Martinica, viene trasferita dalla Francia continentale a Fort-de-France, dove trova alle sue dipendenze il capitano Gaëlle Crivelli. I rapporti sono tesi tra le due poliziotte, perché totalmente diverse nel loro comportamento, ma complementari per la risoluzione degli omicidi."
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Sky Crime",
@@ -6120,7 +6105,7 @@
                 "descrizione": "Dietro il volto di uno studente, amico leale e padre di famiglia si nascondeva un serial killer che uccise piu' di 30 persone."
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Sky Adventure",
@@ -6247,7 +6232,7 @@
                 "descrizione": "La Maserati decide di costruire la sua prima nuova supercar in vent'anni. Resta da capire se sar� sufficiente a riportare il marchio ai vertici dell'industria automobilistica italiana."
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:50"
     },
     {
         "canale": "MTV",
@@ -6264,32 +6249,42 @@
                 "descrizione": "Ep2 di 42 - In questa puntata Rob e Steelo sono affiancati da Greg McKeown"
             },
             {
-                "ora": "06:30",
+                "ora": "06:25",
                 "titolo": "Ridiculousness: Veri American Idiots",
                 "descrizione": "Ep3 di 42 - In questa puntata Rob e Steelo sono affiancati da Lolo Wood."
             },
             {
-                "ora": "06:55",
+                "ora": "06:50",
                 "titolo": "Ridiculousness: Veri American Idiots",
                 "descrizione": "Ep5 di 42 - In questa puntata Rob e Steelo sono affiancati da Brooke Schofield"
             },
             {
-                "ora": "07:20",
+                "ora": "07:10",
+                "titolo": "Ridiculousness: Veri American Idiots",
+                "descrizione": "Ep28 di 42 Sterling e Rocsi Diaz XXXII - In questo episodio Rob e Steelo sono accompagnati da Rocsi Diaz."
+            },
+            {
+                "ora": "07:25",
+                "titolo": "Daymond John II",
+                "descrizione": "S40 Ep30 Daymond John II - In questo episodio Rob e Steelo sono accompagnati da Daymond John."
+            },
+            {
+                "ora": "07:50",
                 "titolo": "Catfish: False Identita'",
                 "descrizione": "Ep33 di 42 - Tyler non cercava l'amore mentre navigava su siti porno, ma quando capito' sul profilo di Stefany fu amore. Nev e Kamie lo aiutano a scoprire chi si nasconde dietro la sua sfuggente meta'."
             },
             {
-                "ora": "08:10",
+                "ora": "08:35",
                 "titolo": "Catfish: False Identita'",
                 "descrizione": "Ep4 di 21 Lauren e Derek - Lauren ha conosciuto Derek su MySpace 8 anni fa, costruendo una solida amicizia virtuale. Derek non ha mai accettato di incontrarla, nemmeno di farsi vedere in video. Lauren"
             },
             {
-                "ora": "09:00",
+                "ora": "09:15",
                 "titolo": "Teen Mom OG - Festa della mamma",
                 "descrizione": "S6 Ep8 Festa della mamma - Maci e Tyler hanno il terzo figlio, ma continuano a preoccuparsi per via del fatto che Ryan non e' sufficientemente presente per Bentley. Tra Gary e Amber c'e' ancora troppa..."
             },
             {
-                "ora": "09:55",
+                "ora": "10:05",
                 "titolo": "Teen Mom OG - Il punto di svolta",
                 "descrizione": "S6 Ep9 Il punto di svolta - Amber e' preoccupata per aver sviluppato una nuova dipendenza, questa volta dal cibo, e decide di vedere un dottore. Farrah decide di aprire un'attivita' e Tyler e'..."
             },
@@ -6299,32 +6294,37 @@
                 "descrizione": "S6 Ep10 Buon viso a cattivo gioco - Amber e Gary si preparano per il primo giorno di scuola di Leah, mentre Catelynn continua a combattere contro l'ansia e la depressione."
             },
             {
-                "ora": "11:45",
+                "ora": "11:35",
                 "titolo": "Dallas Cowboys Cheerleaders: Making...",
                 "descrizione": "Ep1 di 13 Prime impressioni - 400 ballerine provenienti da tutto il Paese si riuniscono all'AT&T Stadium per partecipare alle audizioni per diventare cheerleader dei Dallas Cowboys."
             },
             {
-                "ora": "12:35",
+                "ora": "12:15",
                 "titolo": "Dallas Cowboys Cheerleaders: Making...",
                 "descrizione": "Ep2 di 13 Gara di coreografia - Con il gruppo ristretto a 101 ragazze, la pressione si fa sentire."
             },
             {
-                "ora": "13:35",
+                "ora": "13:05",
+                "titolo": "Caught In The Act",
+                "descrizione": "Ep12 di 12 - Sunny avr� il suo lieto fine con il suo ragazzo e convivente Woodlief?"
+            },
+            {
+                "ora": "13:50",
                 "titolo": "Caught In The Act",
                 "descrizione": "Ep13 di 12 - Miguel è il fidanzato perfetto di cui Li è alla ricerca o soltanto un bravo attore?"
             },
             {
-                "ora": "14:20",
+                "ora": "14:35",
                 "titolo": "Caught In The Act: Double Life",
                 "descrizione": "Ep14 di 16 - Quale ricetta sta preparando Ayisha: il successo o una doppia vita?"
             },
             {
-                "ora": "15:15",
+                "ora": "15:25",
                 "titolo": "Teen Mom 2 - Moving In, Moving On",
                 "descrizione": "S1 Ep5 Moving In, Moving On - Jenelle non sa come pagare la scuola. Per leah e Corey le cose si fanno difficili, mentre Adam trasloca da Chelsea. Kailyn ricomincia la scuola ma non sa dove vivere col..."
             },
             {
-                "ora": "16:05",
+                "ora": "16:10",
                 "titolo": "Ink Master Redemption",
                 "descrizione": "Ep2 di 15 - Damon affronta la tela Jazmine mentre Caroline affronta la tela Anthony."
             },
@@ -6349,42 +6349,47 @@
                 "descrizione": "Ep3 - Ramon, insoddisfatto del suo lavoro e della citta' in cui vive, ha come unica consolazione il suo rapporto online con Paola. Dopo un breve collegamento video tra i due, Ramon e' molto confuso..."
             },
             {
-                "ora": "19:20",
+                "ora": "19:15",
                 "titolo": "Catfish: False Identita'",
                 "descrizione": "Ep4 di 21 Lauren e Derek - Lauren ha conosciuto Derek su MySpace 8 anni fa, costruendo una solida amicizia virtuale. Derek non ha mai accettato di incontrarla, nemmeno di farsi vedere in video. Lauren"
             },
             {
-                "ora": "20:10",
+                "ora": "20:05",
                 "titolo": "Caught In The Act",
                 "descrizione": "Ep6 di 24 Qualsiasi vecchio D va bene - Andrew sospetta che la sua fidanzata Nikki stia uscendo con il suo insegnante di yoga."
             },
             {
-                "ora": "21:05",
+                "ora": "20:55",
                 "titolo": "Caught In The Act",
                 "descrizione": "Ep3 di 17 - La verit� che Tami scoprir� rischia di mandare all'aria i progetti nuziali di Melik per Izzy?"
             },
             {
-                "ora": "22:00",
+                "ora": "21:45",
                 "titolo": "MTV Cribs US",
                 "descrizione": "Ep24 di 28 Amanda Seales\/Emelia Hartford\/Perez Hilton - Amanda Seales, Emelia Hartford e Perez Hilton ci mostrano le loro case."
             },
             {
-                "ora": "22:25",
+                "ora": "22:10",
                 "titolo": "MTV Cribs US",
                 "descrizione": "Ep15 di 28 - In questo episodio entriamo nelle case dell’attrice Bella Thorne, della supermodella Shanina Shaik e andiamo in Tennesse a casa dell’artista country Brian Kelley."
             },
             {
-                "ora": "23:00",
+                "ora": "22:35",
                 "titolo": "MTV Floribama Shore",
                 "descrizione": "Ep14 di 16 - Un gioco di carte casual porta a un epico birdwatching. Jeremiah comunica ai ragazzi che suo fratello Josh sta venendo per una visita."
             },
             {
-                "ora": "23:55",
+                "ora": "23:20",
                 "titolo": "Ridiculousness: Veri American Idiots",
                 "descrizione": "Ep22 di 42 - In questa puntata Rob e Steelo sono affiancati da Lolo Wood."
+            },
+            {
+                "ora": "23:45",
+                "titolo": "Ridiculousness: Veri American Idiots",
+                "descrizione": "Ep34 di 42 Sterling e Lolo Wood XXIX - In questo episodio Rob e Steelo danno il benvenuto a Lolo Wood."
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Comedy Central",
@@ -6411,7 +6416,7 @@
                 "descrizione": "Doug è un corriere del Queens. Mentre lui desidererebbe soltanto un televisore a 70 pollici, la sua casa è invasa da parenti. Carrie, la moglie, un giorno decide di sorprenderlo e gli sistema un impianto a grande schermo così che Doug possa seguire con gli amici le partite in tv. Le cose cambiano quando Arthur, suo suocero, rimasto vedovo da poco, si insedia a casa Hefferman trasformando la sala tv di Doug nella sua stanza da letto…Ma non basta, anche Sara, sorella di Carrie e aspirante attrice, si trasferisce nella casa…"
             },
             {
-                "ora": "07:05",
+                "ora": "07:10",
                 "titolo": "Frasier",
                 "descrizione": "Dopo molti anni trascorsi al bar \"Cheers\", Frasier torna a casa a Seattle per lavorare come psichiatra radiofonico dopo che suo padre poliziotto è stato colpito all'anca in servizio."
             },
@@ -6421,12 +6426,12 @@
                 "descrizione": "Dopo molti anni trascorsi al bar \"Cheers\", Frasier torna a casa a Seattle per lavorare come psichiatra radiofonico dopo che suo padre poliziotto è stato colpito all'anca in servizio."
             },
             {
-                "ora": "07:50",
+                "ora": "07:55",
                 "titolo": "Frasier",
                 "descrizione": "Dopo molti anni trascorsi al bar \"Cheers\", Frasier torna a casa a Seattle per lavorare come psichiatra radiofonico dopo che suo padre poliziotto è stato colpito all'anca in servizio."
             },
             {
-                "ora": "08:20",
+                "ora": "08:15",
                 "titolo": "Frasier",
                 "descrizione": "Dopo molti anni trascorsi al bar \"Cheers\", Frasier torna a casa a Seattle per lavorare come psichiatra radiofonico dopo che suo padre poliziotto è stato colpito all'anca in servizio."
             },
@@ -6456,92 +6461,92 @@
                 "descrizione": "Il ragazzo più amichevole del Midwest trasferisce la sua famiglia in un quartiere di Los Angeles dove non tutti gli assomigliano."
             },
             {
-                "ora": "10:35",
+                "ora": "10:45",
                 "titolo": "Hot In Cleveland",
                 "descrizione": "Hot in Cleveland\" si basa su tre favolose, eccentriche donne sopra i quarant'anni di Los Angeles, migliori amiche, le cui vite sono state cambiate per sempre quando il loro aereo è dovuto atterrare inaspettatamente a Cleveland e presto riscopriranno loro stesse in questa nuova \"terra promessa\"."
             },
             {
-                "ora": "11:00",
+                "ora": "11:05",
                 "titolo": "Hot In Cleveland",
                 "descrizione": "Hot in Cleveland\" si basa su tre favolose, eccentriche donne sopra i quarant'anni di Los Angeles, migliori amiche, le cui vite sono state cambiate per sempre quando il loro aereo è dovuto atterrare inaspettatamente a Cleveland e presto riscopriranno loro stesse in questa nuova \"terra promessa\"."
             },
             {
-                "ora": "11:20",
+                "ora": "11:30",
                 "titolo": "Becker",
                 "descrizione": "Il dottor John Becker è un tipo tutt'altro che facile da trattare... Certo è un medico in gamba e dedito alla sua professione e ai suoi pazienti come nessun altro, però ha un pessimo carattere ed un'espressione perennemente accigliata. Persino i suoi amici più cari, dalla bella barista Reggie al cieco Jake, proprietario del vicino chiosco dei giornali, non sempre riescono a far breccia nella sua dura scorza di misantropo di professione, ma non si arrendono mai perché sanno che, sotto sotto, Becker ha un cuore d'oro."
             },
             {
-                "ora": "11:45",
+                "ora": "11:55",
                 "titolo": "Becker",
                 "descrizione": "Il dottor John Becker è un tipo tutt'altro che facile da trattare... Certo è un medico in gamba e dedito alla sua professione e ai suoi pazienti come nessun altro, però ha un pessimo carattere ed un'espressione perennemente accigliata. Persino i suoi amici più cari, dalla bella barista Reggie al cieco Jake, proprietario del vicino chiosco dei giornali, non sempre riescono a far breccia nella sua dura scorza di misantropo di professione, ma non si arrendono mai perché sanno che, sotto sotto, Becker ha un cuore d'oro."
             },
             {
-                "ora": "12:10",
+                "ora": "12:20",
                 "titolo": "Spin City",
                 "descrizione": "Il maniaco del lavoro Mike Flaherty è il vicesindaco di New York City, che serve come stratega chiave del sindaco Randall Winston e gestore tanto necessario. Mike gestisce la citt� con l'aiuto del suo strampalato staff: un addetto stampa ansioso e insicuro; un capo di stato maggiore sessista e maleducato; un attivista gay impeccabilmente curato che gestisce gli affari delle minoranze; un contabile acuto ed efficiente, pazzo per gli uomini; e un giovane scrittore di discorsi idealista. Come Mike, sono tutti professionalmente capaci ma sfidati personalmente."
             },
             {
-                "ora": "12:30",
+                "ora": "12:45",
                 "titolo": "Spin City",
                 "descrizione": "Il maniaco del lavoro Mike Flaherty è il vicesindaco di New York City, che serve come stratega chiave del sindaco Randall Winston e gestore tanto necessario. Mike gestisce la citt� con l'aiuto del suo strampalato staff: un addetto stampa ansioso e insicuro; un capo di stato maggiore sessista e maleducato; un attivista gay impeccabilmente curato che gestisce gli affari delle minoranze; un contabile acuto ed efficiente, pazzo per gli uomini; e un giovane scrittore di discorsi idealista. Come Mike, sono tutti professionalmente capaci ma sfidati personalmente."
             },
             {
-                "ora": "13:00",
+                "ora": "13:05",
                 "titolo": "Papà a tempo pieno",
                 "descrizione": "Quando la moglie Andi decide di riavviare la sua carriera professionale, Adam è costretto a passare più tempo a casa e assumersi maggiori responsabilit� nell'accudire i loro tre figli piccoli."
             },
             {
-                "ora": "13:20",
+                "ora": "13:30",
                 "titolo": "Papà a tempo pieno",
                 "descrizione": "Quando la moglie Andi decide di riavviare la sua carriera professionale, Adam è costretto a passare più tempo a casa e assumersi maggiori responsabilit� nell'accudire i loro tre figli piccoli."
             },
             {
-                "ora": "13:40",
+                "ora": "13:50",
                 "titolo": "The Neighborhood",
                 "descrizione": "Il ragazzo più amichevole del Midwest trasferisce la sua famiglia in un quartiere di Los Angeles dove non tutti gli assomigliano."
             },
             {
-                "ora": "14:05",
+                "ora": "14:15",
                 "titolo": "The Neighborhood",
                 "descrizione": "Il ragazzo più amichevole del Midwest trasferisce la sua famiglia in un quartiere di Los Angeles dove non tutti gli assomigliano."
             },
             {
-                "ora": "14:30",
+                "ora": "14:35",
                 "titolo": "Le regole dell'amore",
                 "descrizione": "Rules of Engagement è una commedia sulle diverse fasi delle relazioni uomo\/donna, viste attraverso gli occhi di una coppia appena fidanzata, Adam e Jennifer, una coppia sposata di lunga data, Jeff e Audrey, e un ragazzo single in cerca di preda, Russel. Come scoprono, le fasi spesso confuse di una relazione possono sembrare come sulle montagne russe. Le persone possono descriverti la corsa, ma per sapere davvero com'è devi sperimentarla di persona."
             },
             {
-                "ora": "14:50",
+                "ora": "14:55",
                 "titolo": "Le regole dell'amore",
                 "descrizione": "Rules of Engagement è una commedia sulle diverse fasi delle relazioni uomo\/donna, viste attraverso gli occhi di una coppia appena fidanzata, Adam e Jennifer, una coppia sposata di lunga data, Jeff e Audrey, e un ragazzo single in cerca di preda, Russel. Come scoprono, le fasi spesso confuse di una relazione possono sembrare come sulle montagne russe. Le persone possono descriverti la corsa, ma per sapere davvero com'è devi sperimentarla di persona."
             },
             {
-                "ora": "15:10",
+                "ora": "15:20",
                 "titolo": "Becker",
                 "descrizione": "Il dottor John Becker è un tipo tutt'altro che facile da trattare... Certo è un medico in gamba e dedito alla sua professione e ai suoi pazienti come nessun altro, però ha un pessimo carattere ed un'espressione perennemente accigliata. Persino i suoi amici più cari, dalla bella barista Reggie al cieco Jake, proprietario del vicino chiosco dei giornali, non sempre riescono a far breccia nella sua dura scorza di misantropo di professione, ma non si arrendono mai perché sanno che, sotto sotto, Becker ha un cuore d'oro."
             },
             {
-                "ora": "15:35",
+                "ora": "15:40",
                 "titolo": "Becker",
                 "descrizione": "Il dottor John Becker è un tipo tutt'altro che facile da trattare... Certo è un medico in gamba e dedito alla sua professione e ai suoi pazienti come nessun altro, però ha un pessimo carattere ed un'espressione perennemente accigliata. Persino i suoi amici più cari, dalla bella barista Reggie al cieco Jake, proprietario del vicino chiosco dei giornali, non sempre riescono a far breccia nella sua dura scorza di misantropo di professione, ma non si arrendono mai perché sanno che, sotto sotto, Becker ha un cuore d'oro."
             },
             {
-                "ora": "16:00",
+                "ora": "16:05",
                 "titolo": "Hot In Cleveland",
                 "descrizione": "Hot in Cleveland\" si basa su tre favolose, eccentriche donne sopra i quarant'anni di Los Angeles, migliori amiche, le cui vite sono state cambiate per sempre quando il loro aereo è dovuto atterrare inaspettatamente a Cleveland e presto riscopriranno loro stesse in questa nuova \"terra promessa\"."
             },
             {
-                "ora": "16:20",
+                "ora": "16:25",
                 "titolo": "Hot In Cleveland",
                 "descrizione": "Hot in Cleveland\" si basa su tre favolose, eccentriche donne sopra i quarant'anni di Los Angeles, migliori amiche, le cui vite sono state cambiate per sempre quando il loro aereo è dovuto atterrare inaspettatamente a Cleveland e presto riscopriranno loro stesse in questa nuova \"terra promessa\"."
             },
             {
-                "ora": "16:45",
+                "ora": "16:50",
                 "titolo": "Papà a tempo pieno",
                 "descrizione": "Quando la moglie Andi decide di riavviare la sua carriera professionale, Adam è costretto a passare più tempo a casa e assumersi maggiori responsabilit� nell'accudire i loro tre figli piccoli."
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Sky Arte",
@@ -6633,7 +6638,7 @@
                 "descrizione": "Ep2 di 3 - Toni Servillo racconta Pavia: citt� storicamente “pudica”, mostra ora la sua grande storia, tra arte e scienza, re e premi Nobel, universit� e centri di ricerca."
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Sky Documentaries",
@@ -6740,7 +6745,7 @@
                 "descrizione": "Due settimane dopo il primo attentato, è in corso un altro tentativo terroristico. Quattro bombe sono state piazzate nel sistema di trasporto pubblico di Londra, ma non esplodono."
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Sky Nature",
@@ -6852,7 +6857,7 @@
                 "descrizione": "La Corrente del Golfo, con il proprio calore, favorisce un'esplosione di vita vegetale e animale: megattere, tartarughe liuto, foche e orche e una gran quantit� di altri pesci."
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Discovery Channel",
@@ -6964,7 +6969,7 @@
                 "descrizione": "Proseguono le avventure dei cacciatori d'oro."
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:50"
     },
     {
         "canale": "History Channel",
@@ -7081,7 +7086,7 @@
                 "descrizione": "Negli ultimi anni, Coca-Cola e Pepsi si sono sfidate a colpi di campagne pubblicitarie e costose indagini sui gusti dei consumatori per conquistare il mercato."
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Cartoon Network",
@@ -7238,7 +7243,7 @@
                 "descrizione": "Ep23 di 52 Robin perde la voce - Robin non rispetta le regole del gioco del flick e perde la voce. Riuscira' a riaverla grazie all'aiuto dei Titans."
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:50"
     },
     {
         "canale": "Dea Kids",
@@ -7395,7 +7400,7 @@
                 "descrizione": "Per rinfrescarsi in una giornata di caldo asfissiante, Chef propone ai bambini dell'asilo di riempire d'acqua una piccola piscina. Ma prima di scendere nel seminterrato per aprire il rubinetto dell'acqua, raccomanda ai bambini di non toccare il tubo."
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:51"
     },
     {
         "canale": "Nick Jr",
@@ -7552,7 +7557,7 @@
                 "descrizione": "Ep6 di 13 - Daisy e la mamma giocano a bocce. \/ Il nido di Gigi deve essere rinnovato."
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:51"
     },
     {
         "canale": "Boomerang",
@@ -7709,7 +7714,7 @@
                 "descrizione": "Ep29 I gettoni vincenti - A un luna park si vincono i gettoni per vincere un premio, ma Grizzy non e' bravo quanto i Lemming, ad aggiudicarseli."
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:51"
     },
     {
         "canale": "Sky TG 24",
@@ -7866,7 +7871,7 @@
                 "descrizione": "Previsioni meteo dettagliate e sempre aggiornate 24 ore al giorno. Le previsioni regionali, nazionali ed internazionali."
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:51"
     },
     {
         "canale": "Rai News 24",
@@ -8023,7 +8028,7 @@
                 "descrizione": "METEO"
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:51"
     },
     {
         "canale": "Sky Meteo 24",
@@ -8180,6 +8185,6 @@
                 "descrizione": "Previsioni meteo dettagliate e sempre aggiornate 24 ore al giorno. Le previsioni regionali, nazionali ed internazionali."
             }
         ],
-        "aggiornato": "09:53"
+        "aggiornato": "14:51"
     }
 ]
