@@ -139,17 +139,12 @@
                 "descrizione": "Commenti e approfondimenti sulla partita dei Mondiali FIFA 2026 appena conclusa. Conduce Alessandro Antinelli. Ospiti Paulo Roberto Falcao, Marco Tardelli, Ciccio Graziani, Massimo De Luca, Manuela Giugliano, Alessio Dionisi. Regia di Annarita Cardinali."
             }
         ],
-        "aggiornato": "09:45"
+        "aggiornato": "14:40"
     },
     {
         "canale": "Rai 2",
         "categoria": "Digitale Terrestre",
         "programmi": [
-            {
-                "ora": "06:00",
-                "titolo": "Ritorno a Las Sabinas",
-                "descrizione": "Dopo molti anni di lontananza, le sorelle Molina tornano nella loro citt� natale per affrontare i problemi di salute del padre. Il loro ritorno significa una riunione con le vite, gli amori e i segreti che hanno cercato di dimenticare."
-            },
             {
                 "ora": "06:10",
                 "titolo": "La Grande Vallata",
@@ -182,8 +177,8 @@
             },
             {
                 "ora": "10:00",
-                "titolo": "TG2 Storie. I Racconti Della Settimana",
-                "descrizione": "Le storie e i protagonisti di fatti di cronaca e di costume che si raccontano nella loro quotidianit� .. - Direttore Antonio Preziosi Vicedirettore Alfonso Samengo Curato e condotto da Adriana Pannitteri"
+                "titolo": "Tg2 Storie - I Racconti Della Settimana",
+                "descrizione": "Le storie e i protagonisti di fatti di cronaca e di costume che si raccontano nella loro quotidianit� . Direttore Antonio Preziosi. Vicedirettore Fabrizio Frullani. Curato e condotto da Adriana Pannitteri"
             },
             {
                 "ora": "10:55",
@@ -192,13 +187,13 @@
             },
             {
                 "ora": "11:00",
-                "titolo": "Quarti: Francia - Marocco",
-                "descrizione": "Si alza il sipario sui quarti di finale dei Mondiali di calcio. A Boston si sfidano Francia e Marocco, un rematch della semifinale di Qatar 2022. I Blues di Didier Deschamps partono ovviamente favoriti ma non possono sottostimare la forza della nazionale marocchina, ormai una neopotenza del calcio mondiale con i suoi talenti Hakimi, Ounahi e Bouaddi."
+                "titolo": "TG Sport Giorno",
+                "descrizione": "A cura di Rai Sport"
             },
             {
                 "ora": "11:10",
                 "titolo": "Crociere di nozze",
-                "descrizione": "TV MOVIE - Una donna, divenuta cieca in seguito ad un incidente d'auto, si sposa sulla nave. Una sua amica scopre che il futuro marito è il padre del ragazzo che aveva causato l'incidente.... - (2012) Romantico Regia di Dieter Kehler Con Jessica Boehrs, Marcus Grüsser, Siegfried Rauch, Heide Keller"
+                "descrizione": "Amori, divorzi e matrimoni si intrecciano sulla Nave dei Sogni in viaggio verso le mete più ambite."
             },
             {
                 "ora": "13:00",
@@ -226,34 +221,14 @@
                 "descrizione": "Dopo le montagne torna una frazione favorevole alle ruote veloci. Il percorso pianeggiante conduce a Bordeaux, dove i velocisti avranno una delle migliori occasioni per giocarsi il successo di tappa."
             },
             {
-                "ora": "14:45",
-                "titolo": "Tour In Diretta",
-                "descrizione": "SPORT. - Ciclismo. A cura di Alessandro Fabretti Coordinamento giornalistico Franco Bortuzzo Conduce Francesco Pancani Telecronaca Stefano Rizzato Commento tecnico Silvio Martinello, Stefano Garzelli, Davide Cassani Produttore esecutivo Guido Lissoni Regia Italia Maria Baratta"
-            },
-            {
-                "ora": "15:15",
-                "titolo": "Tour De France 7^ Tappa Hagetmau - Borde",
-                "descrizione": "Tour de France 7^ tappa Hagetmau - Bordeaux - SPORT - Ciclismo. 113^ edizione"
-            },
-            {
-                "ora": "16:25",
+                "ora": "17:25",
                 "titolo": "Ciclismo: Tour De France 2026 - Tour Replay: 7a Tappa",
                 "descrizione": "La rubrica di ciclismo dedicata al Tour de France 2026, tra cronaca, analisi e interviste a caldo a commento della tappa appena conclusa."
             },
             {
-                "ora": "16:50",
-                "titolo": "Tour De France 7^ Tappa Hagetmau - Borde",
-                "descrizione": "Tour de France 7^ tappa Hagetmau - Bordeaux - SPORT - Ciclismo. 113^ edizione"
-            },
-            {
-                "ora": "17:25",
+                "ora": "17:57",
                 "titolo": "Ciclismo: Tour De France 2026 - Le Strade Del Tour: 8a Tappa",
                 "descrizione": "Un viaggio lungo il percorso del Tour de France 2026 per scoprire i luoghi che fanno da scenario alla corsa più celebre del mondo."
-            },
-            {
-                "ora": "17:57",
-                "titolo": "Tour De France 7^ Tappa Hagetmau - Borde",
-                "descrizione": "Tour de France 7^ tappa Hagetmau - Bordeaux - SPORT - Ciclismo. 113^ edizione"
             },
             {
                 "ora": "18:00",
@@ -294,9 +269,24 @@
                 "ora": "21:00",
                 "titolo": "TG2 Post",
                 "descrizione": "Rubrica informativa del TG2. Direttore Antonio Preziosi"
+            },
+            {
+                "ora": "21:20",
+                "titolo": "Noi",
+                "descrizione": "La serie racconta la storia di Pietro e Rebecca (Lino Guanciale e Aurora Ruffino), una giovane coppia che affronta la sfida di crescere tre figli (corrispettivi di Jack e Rebecca) e di Claudio (Dario Aita), Caterina (Claudia Marsicano) e Daniele (Livio Kone) che cercano la propria strada verso la felicit� (che quindi saranno Kevin, Kate e Randall).\n\nLa storia è dichiaratamente ambientata su più piani temporali, quindi la sorpresa del pilot di This is Us in cui si svela l’ambientazione anni ’80, viene fatta sparire. Come l’originale sar� ambientata in 3 citt� : Torino, industriale, Napoli, la citt� della musica, Roma, la citt� del cinema."
+            },
+            {
+                "ora": "22:20",
+                "titolo": "Noi",
+                "descrizione": "La serie racconta la storia di Pietro e Rebecca (Lino Guanciale e Aurora Ruffino), una giovane coppia che affronta la sfida di crescere tre figli (corrispettivi di Jack e Rebecca) e di Claudio (Dario Aita), Caterina (Claudia Marsicano) e Daniele (Livio Kone) che cercano la propria strada verso la felicit� (che quindi saranno Kevin, Kate e Randall).\n\nLa storia è dichiaratamente ambientata su più piani temporali, quindi la sorpresa del pilot di This is Us in cui si svela l’ambientazione anni ’80, viene fatta sparire. Come l’originale sar� ambientata in 3 citt� : Torino, industriale, Napoli, la citt� della musica, Roma, la citt� del cinema."
+            },
+            {
+                "ora": "23:20",
+                "titolo": "Elsbeth",
+                "descrizione": "Dopo una carriera di successo a Chicago, Elsbeth Tascioni, un'avvocatessa astuta ma non convenzionale, utilizza il suo singolare punto di vista per fare osservazioni uniche e mettere all'angolo brillanti criminali insieme alla polizia di New York."
             }
         ],
-        "aggiornato": "09:45"
+        "aggiornato": "14:40"
     },
     {
         "canale": "Rai 3",
@@ -309,8 +299,8 @@
             },
             {
                 "ora": "08:00",
-                "titolo": "Agorà Estate",
-                "descrizione": "L'approfondimento estivo del mattino di Rai3 condotto da Giulia Di Stefano con Marco Carrara, attraverso ospiti, inviati, inchieste e contributi video dai social."
+                "titolo": "A Stretto Giro - Agorà Estate",
+                "descrizione": "$23"
             },
             {
                 "ora": "10:30",
@@ -390,7 +380,7 @@
             {
                 "ora": "15:55",
                 "titolo": "Gli Imperdibili",
-                "descrizione": "Backstage, anteprime, eventi e curiosit� dentro lo schermo. È il programma che offre informazione e approfondimento sulla programmazione dei canali che compongono il bouquet RAI."
+                "descrizione": "Backstage, anteprime, eventi e curiosit� dentro lo schermo. È il programma che offre informazione e approfondimento sulla programmazione dei canali che compongono il bouquet Rai."
             },
             {
                 "ora": "16:00",
@@ -400,7 +390,7 @@
             {
                 "ora": "17:00",
                 "titolo": "Overland 20 - Verso L'Africa Che Cambia - Senegal, Tra Natura E Sorrisi",
-                "descrizione": "$23"
+                "descrizione": "$24"
             },
             {
                 "ora": "17:55",
@@ -453,7 +443,7 @@
                 "descrizione": "Serie antologica di genere fantastico che raccoglie episodi a sé stanti, affidati a diversi registi, e senza personaggi fissi, sulla falsariga di serie classiche."
             }
         ],
-        "aggiornato": "09:45"
+        "aggiornato": "14:40"
     },
     {
         "canale": "Rai 4",
@@ -565,7 +555,7 @@
                 "descrizione": "Una giovane donna si ritrover� ad affrontare uno degli incubi peggiori di sempre: dispersa in alto mare, con solo una boa come sostegno, dovr� difendersi da un terribile squalo bianco che sorveglia le acque che la separano dalla riva."
             }
         ],
-        "aggiornato": "09:45"
+        "aggiornato": "14:40"
     },
     {
         "canale": "Rai 5",
@@ -677,7 +667,7 @@
                 "descrizione": "La sua celebre fotografia \"The Migrant Mother\" è una delle immagini più riconosciute e impressionanti al mondo, un ritratto commovente nello sguardo tormentato di una madre rivolto verso un futuro incerto, divenuto emblema della Grande Depressione."
             }
         ],
-        "aggiornato": "09:45"
+        "aggiornato": "14:40"
     },
     {
         "canale": "Rete 4",
@@ -764,7 +754,7 @@
                 "descrizione": "Approfondimento giornalistico condotto da Gianluigi Nuzzi e Alessandra Viero su alcuni dei gialli irrisolti della cronaca."
             }
         ],
-        "aggiornato": "09:45"
+        "aggiornato": "14:40"
     },
     {
         "canale": "Canale 5",
@@ -916,7 +906,7 @@
                 "descrizione": "Serhat Yelduran è un chirurgo di grande successo che decide di cambiare il destino che la sua famiglia gli ha riservato per costruirsi una vita diversa a Istanbul. Questa decisione lo porta a incontrare Melek Özdel, di cui Serhat si innamora a prima vista e che sposa in segreto, all'insaputa della sua famiglia."
             }
         ],
-        "aggiornato": "09:45"
+        "aggiornato": "14:40"
     },
     {
         "canale": "Italia 1",
@@ -1033,7 +1023,7 @@
                 "descrizione": "In California un politico corrotto e i suoi scagnozzi sparano al detective di Los Angeles Mason Storm, lasciandolo in fin di vita. Presto però dovranno fare i conti con la realt� : Storm è un uomo duro da uccidere. Steven Seagal, uno dei più affascinanti interpreti di film d'azione, con questo thriller ha riscosso un successo di botteghino due volte superiore al suo film debutto Nico. Dopo sette anni trascorsi in coma, il detective Storm si risveglia con un solo scopo: la vendetta. Assistito da un'infermiera piena di attenzioni, si rimette in forma per poter finalmente dare libero sfogo alla sua incredibile maestria nelle arti marziali"
             }
         ],
-        "aggiornato": "09:45"
+        "aggiornato": "14:40"
     },
     {
         "canale": "La7",
@@ -1052,17 +1042,17 @@
             {
                 "ora": "08:00",
                 "titolo": "Omnibus Dibattito",
-                "descrizione": "Programma di informazione e approfondimento con rubriche, ospiti, rassegna stampa, aggiornamenti sul traffico, previsioni meteo, dibattito sul tema del giorno. 24a Edizione."
+                "descrizione": "Alessandra Sardoni con Massimo Franco, Cinzia Sciuto, Gianni Cuperlo, Gaetano Quagliariello, Dario Fabbri, Lorenzo Pregliasco"
             },
             {
                 "ora": "09:40",
                 "titolo": "Coffee Break",
-                "descrizione": "Lo spazio mattutino per l'approfondimento e l'attualit� condotto da Andrea Pancani. 14a Edizione."
+                "descrizione": "Andrea Pancani con Marco Antonellis, Piercamillo Falasca, Andrea Carugati, Marco Di Liddo, Ludovico Seppilli, Davide Casaleggio"
             },
             {
                 "ora": "11:00",
                 "titolo": "L'Aria Che Tira",
-                "descrizione": "Conduce David Parenzo. 15a edizione"
+                "descrizione": "David Parenzo con Duilio Giammaria, Sara Kelany, Francesco Giubilei, Dario Nardella, Alessandra Ghisleri, Nathalie Tocci, Vincenzo Camporini, Daniele Compatangelo, Elisabetta Piccolotti, Rossano Sasso, Annalisa Camilli, Francesco..."
             },
             {
                 "ora": "13:30",
@@ -1105,7 +1095,7 @@
                 "descrizione": "Jean Valjean termina il periodo di condanna ai lavori forzati, e viaggia verso a Digione fermandosi a Dignè dove decide di ricambiare l'accoglienza del vescovo con maltrattamenti e furto della sua argenteria. Le guardie lo bloccano decise ad arrestarlo per l'ennesimo crimine ma il vescovo lo scagiona dalle accuse. Colpito da questo atteggiamento, Jean Valjean decide di cambiare strada e seguire la via della rettitudine. Muta il suo nome in Lemaire e trova un lavoro, ma dovr� vedersela con l'ispettore Javert e con nuove accuse. Nel corso degli eventi si prender� cura di Cosette, una bambina figlia di una conoscente morta tempo prima per colpa dello stesso ispettore."
             }
         ],
-        "aggiornato": "09:45"
+        "aggiornato": "14:40"
     },
     {
         "canale": "TV8",
@@ -1142,7 +1132,7 @@
                 "descrizione": "Alessandro Borghese torna a vestire i panni dello chef rock che mescola i suoi sound musicali preferiti agli ingredienti di ricette tradizionali e sperimentazioni innovative."
             },
             {
-                "ora": "07:40",
+                "ora": "07:45",
                 "titolo": "Quattro matrimoni",
                 "descrizione": "Ep2 di 8 - Quattro spose pugliesi si sfidano a colpi di abito, location, cibo ed evento generale, il tutto sotto l'occhio vigile e i commenti sarcastici di Costantino."
             },
@@ -1152,12 +1142,12 @@
                 "descrizione": "Ep2 di 8 - Con gli ironici e pungenti commenti de La Pina. Un evento a tema ghiaccio e fuoco, tradizionali nozze partenopee, un rito celtico e un ricevimento pugliese-argentino."
             },
             {
-                "ora": "10:05",
+                "ora": "10:10",
                 "titolo": "Sky TG24 in pillole",
                 "descrizione": "Il telegiornale con le notizie piu' importanti del giorno."
             },
             {
-                "ora": "10:10",
+                "ora": "10:15",
                 "titolo": "Quattro matrimoni",
                 "descrizione": "Ep5 di 8 - Quattro spose romantiche scendono sul campo di battaglia. Uno dei loro matrimoni addolcir� anche il cuore di Costantino?"
             },
@@ -1177,12 +1167,12 @@
                 "descrizione": "Joe Bastianich e Cristina Donadio vanno alla ricerca della versione più di tendenza di questo primo piatto a Napoli. Partecipano: Aria Restaurant, Zi Teresa, Michelasso e Essencia Restaurant."
             },
             {
-                "ora": "12:45",
+                "ora": "12:50",
                 "titolo": "Alessandro Borghese - 4 Ristoranti",
                 "descrizione": "Ep7 di 14 Milano - In questa puntata Alessandro Borghese ha scelto Milano per scoprire il miglior brunch fra i ristoranti di Alba, Matteo, Youssra e Michele."
             },
             {
-                "ora": "14:00",
+                "ora": "14:05",
                 "titolo": "Un patrigno quasi perfetto",
                 "descrizione": "Bailey Kershaw, studentessa del college, fa ritorno a casa per trascorrervi le vacanze estive e viene a sapere che la madre si sta frequentando con un certo Hugo, con il quale sembra intenzionata a convolare in breve tempo a seconde nozze. Bailey sospetta da subito del futuro patrigno, ritenendo che nasconda qualche losco secondo fine, e il suo giudizio si rivela ben presto più che giusto..."
             },
@@ -1212,7 +1202,7 @@
                 "descrizione": "Una serata di talent, campioni e grandi protagonisti Sky per svelare una stagione ricca di emozioni, spettacolo e appuntamenti imperdibili. Conduce Fabio Caressa."
             }
         ],
-        "aggiornato": "09:45"
+        "aggiornato": "14:40"
     },
     {
         "canale": "Nove",
@@ -1319,7 +1309,7 @@
                 "descrizione": "Il meglio della satira unica di Maurizio Crozza."
             }
         ],
-        "aggiornato": "09:45"
+        "aggiornato": "14:40"
     },
     {
         "canale": "20 Mediaset",
@@ -1431,7 +1421,7 @@
                 "descrizione": "Sam Witwicky sta per partire per il college e si trova costretto a doversi separare per la prima volta dalla sua ragazza Mikaela e dalla sua famiglia, quando improvvisamente viene colto da visioni che gli attraversano il cervello come lampi. Preoccupato di soffrire della stessa malattia che ha colpito suo nonno, Sam non rivela a nessuno il suo problema fino a che non può più fare a meno di ignorare i messaggi e i simboli che compaiono nella sua mente. Nonostante le sue migliori intenzioni, il giovane si trover� nuovamente coinvolto nella guerra senza confine tra Autobot e Decepticon in cui è ancora una volta in gioco il destino dell'universo."
             }
         ],
-        "aggiornato": "09:45"
+        "aggiornato": "14:40"
     },
     {
         "canale": "Twentyseven",
@@ -1528,7 +1518,7 @@
                 "descrizione": "Phil Weston, da sempre negato in qualsiasi attivit� agonistica, si ritrova ad allenare i Tigers, ultimi in classifica, poiché suo figlio è stato escluso dalla squadra dei Gladiators, primi in classifica, allenata dal padre di Phil, Buck Weston. Phil dovr� cercare di vincere il campionato sfidando anche suo padre, con l'aiuto di Mike Ditka."
             }
         ],
-        "aggiornato": "09:45"
+        "aggiornato": "14:40"
     },
     {
         "canale": "IRIS",
@@ -1585,7 +1575,7 @@
                 "descrizione": "John Dillinger è un fuorilegge col vizio del baseball, del cinema e delle macchine veloci. A colpi di Thompson e a capo di una gang armata, rapina banche ed estingue i debiti degli americani impoveriti dalla (Grande) Depressione. Le sue fughe rocambolesche e temerarie gettano imbarazzo e sconforto sulle istituzioni e su Edgar Hoover, ambizioso direttore del Bureau of Investigation. Elegante ed impavido, Dillinger ha un proiettile sempre in canna e un cappotto per ogni occasione e per ogni signora, rapinata del suo cuore o rapita dal suo fascino. La sua nemesi, efficiente e laconica, ha il volto e il garbo \"gable\" di Melvin Purvis, determinato ad accomodarlo sulla sedia elettrica. Decimata la sua compagine di criminali e assediato dalla polizia, Dillinger sceglier� la via fatale (e letale) del cinema."
             }
         ],
-        "aggiornato": "09:45"
+        "aggiornato": "14:40"
     },
     {
         "canale": "Rai Movie",
@@ -1647,7 +1637,7 @@
                 "descrizione": "Catturati da una spietata banda di criminali, Diabolik e Ginko si trovano faccia a faccia. Rinchiusi in una cella, senza via di uscita e certi di andare incontro a una morte inevitabile, Diabolik rivela all'ispettore il suo misterioso passato. Intanto, Eva Kant e Altea sono alla disperata ricerca dei loro uomini. Le strade delle due rivali si incroceranno?"
             }
         ],
-        "aggiornato": "09:45"
+        "aggiornato": "14:40"
     },
     {
         "canale": "Rai Premium",
@@ -1744,7 +1734,7 @@
                 "descrizione": "Emma deve recarsi in Italia per tenere un corso di storia dell’arte all’universit� di Venezia e decide di portare con sé il velo comprato con le amiche per risalire alle sue origini. L’aiuter� un affascinante giovane uomo, discendente di una famiglia di artigiani di merletti, e per Emma sar� l’inizio di una straordinaria avventura."
             }
         ],
-        "aggiornato": "09:45"
+        "aggiornato": "14:40"
     },
     {
         "canale": "La 5",
@@ -1761,47 +1751,47 @@
                 "descrizione": "A Como si intrecciano le vicende di alcune famiglie: i Gherardi con Alfio, imprenditore sposato con Letizia e i tre figli Adriana, il cinico Andrea e la giovane Alice, i Bonelli Giovanni e Mirella che gestiscono una locanda e che hanno tre figlie Chiara, Eva e Lisa, i de Carolis-Falcon composti da Vittorio, un medico che ha due figli: Emilia, sposata con Giacomo Falcon (genitori dell'adolescente Marco) e Bruno, fidanzato con Adriana Gherardi ed infine Silvana che ha cresciuto da sola il figlio Luca."
             },
             {
-                "ora": "07:22",
+                "ora": "07:14",
                 "titolo": "Amiche mie",
                 "descrizione": "La serie, ambientata a Milano, racconta la storia di quattro amiche tra i 35 e i 40 anni che per motivi diversi si ritrovano single e fanno dell'amicizia il loro punto di forza."
             },
             {
-                "ora": "09:06",
+                "ora": "09:14",
                 "titolo": "Cherry Season - La stagione del cuore",
                 "descrizione": "Öykü, una giovane ragazza il cui sogno più grande è fare la stilista, abita con la madre e il fratello, mentre il padre è scappato con l'amante quando lei era piccola. Fin da piccola è innamorata di Mete, il fratello della sua migliora amica Bürcu, unica a conoscenza di questo sentimento, ma lui l'ha sempre vista come una sorella minore. S'interessa, invece, a Seyma, amica e vicina di casa di Öykü, gentile e buona esteriormente, ma che in realt� non esita ad approfittarsi degli altri e intrattenere relazioni con uomini più grandi solo per la loro ricchezza. Intanto, a causa di un equivoco Öykü si ritrova a uscire con Ayaz, architetto collega e migliore amico di Mete, e i due, nonostante gli attriti iniziali, finiscono per innamorarsi."
             },
             {
-                "ora": "10:03",
+                "ora": "10:18",
                 "titolo": "Cherry Season - La stagione del cuore",
                 "descrizione": "Öykü, una giovane ragazza il cui sogno più grande è fare la stilista, abita con la madre e il fratello, mentre il padre è scappato con l'amante quando lei era piccola. Fin da piccola è innamorata di Mete, il fratello della sua migliora amica Bürcu, unica a conoscenza di questo sentimento, ma lui l'ha sempre vista come una sorella minore. S'interessa, invece, a Seyma, amica e vicina di casa di Öykü, gentile e buona esteriormente, ma che in realt� non esita ad approfittarsi degli altri e intrattenere relazioni con uomini più grandi solo per la loro ricchezza. Intanto, a causa di un equivoco Öykü si ritrova a uscire con Ayaz, architetto collega e migliore amico di Mete, e i due, nonostante gli attriti iniziali, finiscono per innamorarsi."
             },
             {
-                "ora": "11:02",
+                "ora": "11:22",
                 "titolo": "Far Away",
                 "descrizione": "Alya Albora arriva a Mardin dal Canada insieme alla salma del defunto marito e al loro figlio di cinque anni per adempiere alle ultime volont� dell'uomo: essere sepolto nella terra natia degli Albora. Tuttavia, questo arrivo segna un punto di non ritorno, non c'è via d'uscita da Albora. Sebbene Cihan Albora, il capo clan degli Albora, non sia indifferente alle difficolt� di Alya, non le permette di partire con il figlio. Affrontando le tenebre del passato, i segreti nascosti e la dura realt� della regione, Alya Albora si trova coinvolta in una feroce lotta con la famiglia del suo defunto marito."
             },
             {
-                "ora": "12:31",
+                "ora": "12:21",
                 "titolo": "Beautiful",
                 "descrizione": "La tensione esplode tra vita privata e affari. Bill vive un momento imbarazzante quando Will rientra all'improvviso e lo sorprende in intimita' con Poppy."
             },
             {
-                "ora": "12:57",
+                "ora": "12:53",
                 "titolo": "Amiche mie",
                 "descrizione": "La serie, ambientata a Milano, racconta la storia di quattro amiche tra i 35 e i 40 anni che per motivi diversi si ritrovano single e fanno dell'amicizia il loro punto di forza."
             },
             {
-                "ora": "14:42",
+                "ora": "15:13",
                 "titolo": "Una mamma per amica",
                 "descrizione": "Serie televisiva incentrata sulle vite di Lorelai Victoria Gilmore e della figlia Lorelai \"Rory\" Leigh Gilmore, esplorando le relazioni interpersonali e intergenerazionali in maniera profonda, il tutto compresso in una immaginaria cittadina di Stars Hollow in Connecticut, le loro vite avranno a che fare con numerosi personaggi particolari, come lo scorbutico ristoratore Luke amico e anche più di Lorelai, il tuttofare Kirk, il presidente dell'assemblea cittadina e proprietario del negozio di alimentari della citt� Taylor Doose e le ficcanaso Patty e Babette. A completare il quadro sono i ricchi genitori di Lorelai, distanti dal mondo della figlia e in perenne conflitto con lei."
             },
             {
-                "ora": "15:47",
+                "ora": "16:11",
                 "titolo": "Una mamma per amica",
                 "descrizione": "Serie televisiva incentrata sulle vite di Lorelai Victoria Gilmore e della figlia Lorelai \"Rory\" Leigh Gilmore, esplorando le relazioni interpersonali e intergenerazionali in maniera profonda, il tutto compresso in una immaginaria cittadina di Stars Hollow in Connecticut, le loro vite avranno a che fare con numerosi personaggi particolari, come lo scorbutico ristoratore Luke amico e anche più di Lorelai, il tuttofare Kirk, il presidente dell'assemblea cittadina e proprietario del negozio di alimentari della citt� Taylor Doose e le ficcanaso Patty e Babette. A completare il quadro sono i ricchi genitori di Lorelai, distanti dal mondo della figlia e in perenne conflitto con lei."
             },
             {
-                "ora": "16:52",
+                "ora": "17:07",
                 "titolo": "Cherry Season - La stagione del cuore",
                 "descrizione": "Öykü, una giovane ragazza il cui sogno più grande è fare la stilista, abita con la madre e il fratello, mentre il padre è scappato con l'amante quando lei era piccola. Fin da piccola è innamorata di Mete, il fratello della sua migliora amica Bürcu, unica a conoscenza di questo sentimento, ma lui l'ha sempre vista come una sorella minore. S'interessa, invece, a Seyma, amica e vicina di casa di Öykü, gentile e buona esteriormente, ma che in realt� non esita ad approfittarsi degli altri e intrattenere relazioni con uomini più grandi solo per la loro ricchezza. Intanto, a causa di un equivoco Öykü si ritrova a uscire con Ayaz, architetto collega e migliore amico di Mete, e i due, nonostante gli attriti iniziali, finiscono per innamorarsi."
             },
@@ -1811,12 +1801,12 @@
                 "descrizione": "Öykü, una giovane ragazza il cui sogno più grande è fare la stilista, abita con la madre e il fratello, mentre il padre è scappato con l'amante quando lei era piccola. Fin da piccola è innamorata di Mete, il fratello della sua migliora amica Bürcu, unica a conoscenza di questo sentimento, ma lui l'ha sempre vista come una sorella minore. S'interessa, invece, a Seyma, amica e vicina di casa di Öykü, gentile e buona esteriormente, ma che in realt� non esita ad approfittarsi degli altri e intrattenere relazioni con uomini più grandi solo per la loro ricchezza. Intanto, a causa di un equivoco Öykü si ritrova a uscire con Ayaz, architetto collega e migliore amico di Mete, e i due, nonostante gli attriti iniziali, finiscono per innamorarsi."
             },
             {
-                "ora": "19:02",
+                "ora": "18:55",
                 "titolo": "Terra Amara",
                 "descrizione": "La storia d'amore di Zuleyha, cresciuta senza padre e che lavora con Yilmaz come tessitrice ausiliaria per guadagnare soldi per suo fratello, un giocatore d'azzardo. La vita di questi due giovani, accecati dall'amore di una normale notte, si trasformer� in un oscuro incubo. Questo incubo li porter� prima da Istanbul e lontano, e poi nella tenuta della famiglia Yaman. Nel primo episodio della serie, Yilmaz e Zuleyha hanno deciso di lavorare nella tenuta di Yaman. Tuttavia, a causa di una delle bugie di Zuleyha, le vite di tutti loro cambieranno radicalmente."
             },
             {
-                "ora": "20:07",
+                "ora": "19:58",
                 "titolo": "Terra Amara",
                 "descrizione": "La storia d'amore di Zuleyha, cresciuta senza padre e che lavora con Yilmaz come tessitrice ausiliaria per guadagnare soldi per suo fratello, un giocatore d'azzardo. La vita di questi due giovani, accecati dall'amore di una normale notte, si trasformer� in un oscuro incubo. Questo incubo li porter� prima da Istanbul e lontano, e poi nella tenuta della famiglia Yaman. Nel primo episodio della serie, Yilmaz e Zuleyha hanno deciso di lavorare nella tenuta di Yaman. Tuttavia, a causa di una delle bugie di Zuleyha, le vite di tutti loro cambieranno radicalmente."
             },
@@ -1826,7 +1816,7 @@
                 "descrizione": "Il programma piu' atteso dell'estate dedicato ai sentimenti con nuovi colpi di scena, momenti romantici, tradimenti inattesi e confronti al falo'. Conduce Filippo Bisciglia."
             }
         ],
-        "aggiornato": "09:45"
+        "aggiornato": "14:40"
     },
     {
         "canale": "Real Time",
@@ -1928,7 +1918,7 @@
                 "descrizione": "Jaclyn ha un bozzolo sulla parte posteriore della testa che le causa problemi. Shane ha un'escrescenza tra gli occhi che potrebbe rappresentare un pericolo per il lavoro."
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:40"
     },
     {
         "canale": "Food Network",
@@ -2050,7 +2040,7 @@
                 "descrizione": "Antonino Cannavacciuolo e' a Cesana Torinese, alle prese con una situazione inedita. Un triangolo amoroso che vede il titolare con la fidanzata in sala e la ex in cucina sta compromettendo l'andamento de La Tana del Lupo."
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:40"
     },
     {
         "canale": "Focus",
@@ -2162,7 +2152,7 @@
                 "descrizione": "Che fine ha fatto l'arca dell'alleanza? Una delle reliquie perdute piu' agognate al mondo, il manufatto piu' emblematico e temibile della storia umana potrebbe essere un'arma aliena?"
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:40"
     },
     {
         "canale": "Giallo",
@@ -2244,7 +2234,7 @@
                 "descrizione": "A causa di alcuni errori giudiziari che l'hanno condotta in carcere, Constance Meyer decide di diventare studentessa presso la Scuola Nazionale di Magistratura. Cinquantenne e dinamica, tenta di conciliare la vita familiare con questa nuova sfida."
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:40"
     },
     {
         "canale": "Boing",
@@ -2401,7 +2391,7 @@
                 "descrizione": "Gumball non vuole lavarsi le mani e subisce un'aggressione in piena regola da parte di un virus particolarmente bellicoso che gli scatenera' contro gli elettrodomestici."
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:40"
     },
     {
         "canale": "K2",
@@ -2558,7 +2548,7 @@
                 "descrizione": "2' Stagione Ep.34 - Le avventure di tre scoiattoli dalla voce incredibile, 'adottati' da Dave Seville, che diventano un fenomeno musicale."
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:40"
     },
     {
         "canale": "Rai Gulp",
@@ -2715,7 +2705,7 @@
                 "descrizione": "Tutte le stelle del cielo si stanno misteriosamente spegnendo una ad una, gettando man mano nell'oscurit� i vari mondi dell'Universo Magico. E sembra proprio che dietro questa terribile minaccia si celi il ritorno di Valtor."
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:40"
     },
     {
         "canale": "Frisbee",
@@ -2872,7 +2862,7 @@
                 "descrizione": "2' Stagione Ep.27 - Le avventure di tre scoiattoli dalla voce incredibile, 'adottati' da Dave Seville, che diventano un fenomeno musicale."
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:40"
     },
     {
         "canale": "DMAX",
@@ -2959,7 +2949,7 @@
                 "descrizione": "A Catania la mafia e' un male che non si riesce a sradicare mai del tutto. I Carabinieri combattono ogni giorno, con interventi continui e costanti."
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:40"
     },
     {
         "canale": "Rai Sport",
@@ -3008,7 +2998,7 @@
             {
                 "ora": "18:30",
                 "titolo": "Gli Imperdibili",
-                "descrizione": "Backstage, anteprime, eventi e curiosit� dentro lo schermo. E' il programma che offre informazione e approfondimento sulla programmazione dei canali che compongono il bouquet RAI."
+                "descrizione": "Backstage, anteprime, eventi e curiosit� dentro lo schermo. È il programma che offre informazione e approfondimento sulla programmazione dei canali che compongono il bouquet Rai."
             },
             {
                 "ora": "18:35",
@@ -3036,7 +3026,7 @@
                 "descrizione": "Memory"
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:40"
     },
     {
         "canale": "Sportitalia",
@@ -3163,7 +3153,7 @@
                 "descrizione": "Il programma tratta le vicende del calciomercato sia nella sessione estiva che in quella invernale e va in onda alle ore 23.00 dal lunedì al venerdì"
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:40"
     },
     {
         "canale": "HGTV",
@@ -3320,7 +3310,7 @@
                 "descrizione": "Alcune persone hanno deciso di cercare la propria casa su un'isola. Riusciranno a iniziare una nuova vita?"
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:40"
     },
     {
         "canale": "RSI LA 1",
@@ -3477,7 +3467,7 @@
                 "descrizione": "I colori del tempo"
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:40"
     },
     {
         "canale": "RSI LA 2",
@@ -3505,8 +3495,8 @@
             },
             {
                 "ora": "09:10",
-                "titolo": "La tribù del calcio",
-                "descrizione": "$23"
+                "titolo": "La tribù del calcio - La Tribù del calcio: Belgio-Spagna",
+                "descrizione": "Il rosso è il colore del quarto di finale di Los Angeles: Furie rosse contro Diavoli rossi, Spagna contro Belgio. Non succedeva da esattamente quarant’anni e dal 5-4 del Belgio ai rigori proprio ai quarti di Messico ’86.Yamal contro Lukaku, Rodri contro De Bruyne, ma anche catalani e madrileni uniti per uniti per una volta contro valloni e fiamminghi. Ma alla Tribù ce la giocheremo a colpi di churros e frites: per la Spagna ritorna Monica Hernandez Garcia, catalana di Lleida; per il Belgio, Walter Caers il fiammingo."
             },
             {
                 "ora": "10:00",
@@ -3554,7 +3544,7 @@
                 "descrizione": "Quarti di finale\nda Los Angeles (USA)"
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:41"
     },
     {
         "canale": "DAZN 1",
@@ -3641,7 +3631,7 @@
                 "descrizione": "What if...? ZW Jackson - Giovanni Barsotti, Omar Aamoum e Cristian Brocchi ci portano alla scoperta delle storie legate ai 'What if' del calcio con ZW Jackson, youtuber e presidente di Zeta Como in Kings League."
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:41"
     },
     {
         "canale": "Sky Sport 24",
@@ -3663,7 +3653,7 @@
                 "descrizione": "Tutto quello che è accaduto nel panorama sportivo delle ultime 24 ore, con analisi, notizie, e una lettura dei giornali che troveremo in edicola."
             },
             {
-                "ora": "06:45",
+                "ora": "06:40",
                 "titolo": "MotoGP Paddock Pass",
                 "descrizione": "Il magazine dedicato all'approfondimento del weekend di gara e di anticipazione del prossimo GP: tecnica, colore, statistiche, storia, curiosita'. Il mondo delle gare visto dai box."
             },
@@ -3683,11 +3673,6 @@
                 "descrizione": "Il Tg Della Casa Dello Sport Estate"
             },
             {
-                "ora": "08:15",
-                "titolo": "Tennis Highlights Show Wimbledon 2026 Ep.11",
-                "descrizione": "2026 Ep.11 09\/07\/2026 Highlights Show Wimbledon. - Le sintesi degli incontri piu' interessanti della giornata sui campi in erba del torneo di Wimbledon, con le voci dei telecronisti di Sky Sport"
-            },
-            {
                 "ora": "08:30",
                 "titolo": "News Line",
                 "descrizione": "Tutto quello che è accaduto nel panorama sportivo delle ultime 24 ore, con analisi, notizie, e una lettura dei giornali che troveremo in edicola."
@@ -3703,7 +3688,7 @@
                 "descrizione": "Il Tg Della Casa Dello Sport Estate"
             },
             {
-                "ora": "09:45",
+                "ora": "09:40",
                 "titolo": "Tennis Wimbledon The Insider 2026 Ep.11",
                 "descrizione": "Ep.11 09\/07\/2026 The Insider Wimbledon. - Una prospettiva diversa per raccontare Wimbledon ogni giorno. Racconti, interviste e immagini dietro le quinte, con Stefano Meloccaro nel ruolo di \"insider"
             },
@@ -3718,7 +3703,7 @@
                 "descrizione": "Il Tg Della Casa Dello Sport Estate"
             },
             {
-                "ora": "10:45",
+                "ora": "10:40",
                 "titolo": "Tennis Wimbledon The Insider 2026 Ep.11",
                 "descrizione": "Ep.11 09\/07\/2026 The Insider Wimbledon. - Una prospettiva diversa per raccontare Wimbledon ogni giorno. Racconti, interviste e immagini dietro le quinte, con Stefano Meloccaro nel ruolo di \"insider"
             },
@@ -3796,9 +3781,14 @@
                 "ora": "18:00",
                 "titolo": "Sport 24 Today",
                 "descrizione": "Le notizie e i commenti del giorno, le anteprime e l'attualita' con servizi, commenti, interviste e collegamenti."
+            },
+            {
+                "ora": "18:30",
+                "titolo": "Sport 24 Today",
+                "descrizione": "Le notizie e i commenti del giorno, le anteprime e l'attualita' con servizi, commenti, interviste e collegamenti."
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:41"
     },
     {
         "canale": "Sky Sport Uno",
@@ -3947,9 +3937,9 @@
                 "descrizione": "Giorgio Porra' racconta Marcello Lippi: il suo mare, le sue radici, Vialli e la Juve che nel 1996 conquisto' la Champions, preludio al trionfo Mondiale del 2006"
             },
             {
-                "ora": "19:30",
-                "titolo": "Sky Mondiale Show Circo Massimo",
-                "descrizione": "10\/07\/2026. - ... 10\/07\/2026. - ... 10\/07\/2026. - Sky Mondiale Show Circo Massimo..."
+                "ora": "19:40",
+                "titolo": "Circo Massimo",
+                "descrizione": "10\/07\/2026. - ... 10\/07\/2026. - Sky Mondiale Show Circo Massimo..."
             },
             {
                 "ora": "23:00",
@@ -3957,7 +3947,7 @@
                 "descrizione": "Curiosita', commenti, notizie e anticipazioni sui possibili movimenti del calciomercato. Condotto dal trio Alessandro Bonan, Gianluca Di Marzio e Fayna."
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:41"
     },
     {
         "canale": "Sky Sport Tennis",
@@ -3966,12 +3956,12 @@
             {
                 "ora": "05:30",
                 "titolo": "Tennis Atp Tour This Week 2026",
-                "descrizione": "08\/07\/2026 ATP Tour: This Week. - Gli aggiornamenti sul circuito maschile di tennis professionistico. Con informazioni dettagliate sui vari giocatori di punta e sui tornei piu' importanti, accompagnate da analisi approfondite."
+                "descrizione": "08\/07\/2026 ATP Tour: This Week. - Un nuovo aggiornamento sul circuito maschile di tennis professionistico. Ascoltiamo informazioni dettagliate sui vari giocatori di punta e sui tornei piu' importanti, accompagnate da analisi approfondite."
             },
             {
                 "ora": "06:00",
-                "titolo": "Finale Doppio Misto",
-                "descrizione": "Dall'All-England Lawn Tennis and Croquet Club di Wimbledon, Inghilterra."
+                "titolo": "POL\/HUN - ARE\/OST Finale Doppio Misto",
+                "descrizione": "Misto Wimbledon. - Dall'All-England Lawn Tennis and Croquet Club di Wimbledon, Inghilterra."
             },
             {
                 "ora": "08:00",
@@ -3985,8 +3975,8 @@
             },
             {
                 "ora": "08:45",
-                "titolo": "2a Semifinale Femminile",
-                "descrizione": "Dall'All-England Lawn Tennis and Croquet Club di Wimbledon, Inghilterra."
+                "titolo": "Kostyuk - Noskova 2a Semifinale Femminile",
+                "descrizione": "Femminile Wimbledon. - Dall'All-England Lawn Tennis and Croquet Club di Wimbledon, Inghilterra."
             },
             {
                 "ora": "10:45",
@@ -4000,8 +3990,8 @@
             },
             {
                 "ora": "11:30",
-                "titolo": "1a Semifinale Femminile",
-                "descrizione": "Dall'All-England Lawn Tennis and Croquet Club di Wimbledon, Inghilterra."
+                "titolo": "Muchova - Gauff 1a Semifinale Femminile",
+                "descrizione": "Femminile Wimbledon. - Dall'All-England Lawn Tennis and Croquet Club di Wimbledon, Inghilterra."
             },
             {
                 "ora": "14:00",
@@ -4010,13 +4000,13 @@
             },
             {
                 "ora": "14:30",
-                "titolo": "1a Semifinale Maschile",
-                "descrizione": "Wimbledon. - Dall'All-England Lawn Tennis and Croquet Club di Wimbledon, Inghilterra."
+                "titolo": "Fery - Zverev 1a Semifinale Maschile",
+                "descrizione": "Semifinale Maschile Wimbledon. - FERY (Gbr)-ZVEREV (Ger) - Dopo il successo a Parigi, Zverev cerca la sua prima finale a Wimbledon contro il sorprendente Fery (Tc: Boschetto-Ljubicic)"
             },
             {
                 "ora": "17:30",
-                "titolo": "2a Semifinale Maschile",
-                "descrizione": "Wimbledon. - Dall'All-England Lawn Tennis and Croquet Club di Wimbledon, Inghilterra."
+                "titolo": "Sinner - Djokovic 2a Semifinale Maschile",
+                "descrizione": "Semifinale Maschile Wimbledon. - SINNER (Ita)-DJOKOVIC (Srb) - Terza semifinale a Wimbledon per Sinner, sempre contro Djokovic che invece la gioca per 15.a volta (Tc: Pero-Bertolucci)"
             },
             {
                 "ora": "20:30",
@@ -4024,7 +4014,7 @@
                 "descrizione": "10\/07\/2026 Sky Tennis Show. - Lo spettacolo di Wimbledon commentato in studio da giornalisti e talent di Sky Sport, con interviste, analisi e curiosita'. Conduce Eleonora Cottarelli"
             },
             {
-                "ora": "21:00",
+                "ora": "20:55",
                 "titolo": "Tennis Wimbledon The Insider 2026 Ep.12",
                 "descrizione": "Ep.12 10\/07\/2026 The Insider Wimbledon. - Una prospettiva diversa per raccontare Wimbledon ogni giorno. Racconti, interviste e immagini dietro le quinte, con Stefano Meloccaro nel ruolo di \"insider"
             },
@@ -4039,7 +4029,7 @@
                 "descrizione": "Tennis Show. - Lo spettacolo di Wimbledon commentato in studio da giornalisti e talent di Sky Sport, con interviste, analisi e curiosita'. Conduce Eleonora Cottarelli"
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:41"
     },
     {
         "canale": "Sky Sport F1",
@@ -4076,29 +4066,29 @@
                 "descrizione": "Dall'Indianapolis Motor Speedway, Indianapolis, Stati Uniti."
             },
             {
-                "ora": "15:45",
+                "ora": "15:35",
                 "titolo": "F2 Chasing The Dream 2026 Ep.2",
                 "descrizione": "22 piloti con un sogno in comune: arrivare un giorno in F1. Alla scoperta dei giovani protagonisti della F2 con interviste ai protagonisti e il dietro le quinte di una lunga stagione."
             },
             {
-                "ora": "16:00",
+                "ora": "15:55",
                 "titolo": "GP Austria: Gara",
                 "descrizione": "Ottava gara del mondiale in casa della Red Bull. Antonelli guida la classifica con 41 punti su Hamilton e 50 su Russell. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero."
             },
             {
-                "ora": "17:00",
+                "ora": "16:50",
                 "titolo": "GP Barcellona: Gara",
                 "descrizione": "A Barcellona settima gara del mondiale: tutti a caccia di Kimi Antonelli, dominatore del mondiale e reduce da 5 vittorie consecutive. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero."
             },
             {
-                "ora": "18:00",
+                "ora": "17:50",
                 "titolo": "Bommarito Automotive Group 500",
                 "descrizione": "Indycar Series. - l'ovale di san Louis con ancora una volta Alex Palou reduce dal successo di Detroit a dettare legge"
             },
             {
                 "ora": "20:30",
                 "titolo": "Little Italy: La Mercedes di Kimi",
-                "descrizione": "Little Italy: La Mercedes di Kimi."
+                "descrizione": "La Mercedes di Kimi Antonelli."
             },
             {
                 "ora": "21:00",
@@ -4126,7 +4116,7 @@
                 "descrizione": "Quinta gara della stagione sul circuito intitolato a Gilles Villeneuve, con Kimi Antonelli leader della classifica. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero."
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:41"
     },
     {
         "canale": "Sky Sport Legend",
@@ -4228,7 +4218,7 @@
                 "descrizione": "Tennis Heroes. - Non sbagliava mai e toglieva la pazienza a chiunque. Non a Panatta, come conferma Bertolucci. Borg ha superato i confini del suo sport, diventando la prima rockstar del tennis."
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:41"
     },
     {
         "canale": "Sky Sport MotoGP",
@@ -4322,7 +4312,7 @@
             {
                 "ora": "17:00",
                 "titolo": "Speciale Acosta",
-                "descrizione": "Assistiamo all'intervista esclusiva del pilota MotoGP Pedro Acosta riguardo il suo futuro."
+                "descrizione": "Pedro Acosta, intervistato da Sandro Donato Grosso, ci racconta la sua stagione e le sue aspettative per la prossima stagione quando diventera' un pilota ufficiale della Ducati."
             },
             {
                 "ora": "17:15",
@@ -4365,14 +4355,14 @@
                 "descrizione": "Il meglio della giornata in pista: gli highlights, i temi del giorno e tutti gli approfondimenti direttamente dal paddock."
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:41"
     },
     {
         "canale": "Sky Sport Basket",
         "categoria": "Sport",
         "programmi": [
             {
-                "ora": "03:30",
+                "ora": "03:20",
                 "titolo": "Virtus Bologna - Olimpia Milano",
                 "descrizione": "Basket Supercoppa. - La seconda semifinale e' una classica del nostro basket: la Virtus, che ha vinto l'ultimo campionato, contro l'Olimpia Milano, finalista dell'ultima Coppa Italia. TC: Solaini-Meneghin."
             },
@@ -4387,7 +4377,7 @@
                 "descrizione": "Trasferta in Bassa Slesia per la squadra di Neven Spahija: la Reyer cerca la sua seconda vittoria europea a casa della squadra 17 volte campione di Polonia. TC: Calogero Destro."
             },
             {
-                "ora": "09:00",
+                "ora": "08:55",
                 "titolo": "Teo Soragna Incontra Luis Scola",
                 "descrizione": "Matteo Soragna intervista Luis Scola ripercorrendone la carriera attraverso l'NBA, l'Eurolega e i trionfi con la maglia dell'Argentina. Un viaggio a ritroso nelle parole di uno dei protagonisti dell'ultimo quarto di secolo di pallancanestro."
             },
@@ -4397,12 +4387,12 @@
                 "descrizione": "Dalla Virtus Segafredo Arena di Bologna, Italia."
             },
             {
-                "ora": "11:30",
+                "ora": "11:35",
                 "titolo": "Grazie Gio: La Notte della Capitana",
                 "descrizione": "Un omaggio alla straordinaria carriera di Giorgia Sottana e al suo ruolo di storica capitana del Famila Basket. La campionessa chiude una carriera straordinaria, costellata di successi nazionali e internazionali."
             },
             {
-                "ora": "12:00",
+                "ora": "12:05",
                 "titolo": "Finale, Gara 2: Milano - Venezia",
                 "descrizione": "Serie A Basket. - A 48 ore dalla vittoria milanese in gara 1 si torna in campo sempre al Forum: l'Olimpia per avvicinarsi allo scudetto, la Reyer per ribaltare il vantaggio del campo. Telecronaca: De Rosa-Meneghin."
             },
@@ -4412,17 +4402,17 @@
                 "descrizione": "Spurs NBA. - Dopo le incredibili emozioni di gara-1, e la vittoria Spurs in doppio OT, OKC cerca di impattare la serie in gara-2. Telecronaca di Davide Fumagalli e Matteo Soragna"
             },
             {
-                "ora": "16:00",
+                "ora": "16:05",
                 "titolo": "Il Maestro, La Pallacanestro Di Zelimir Obradovic",
                 "descrizione": "Zelimir Obradovic. - L'allenatore piu' vincente nella storia dell'Eurolega racconta se' stesso e la sua pallacanestro a margine di un clinic tenutosi a Roma. Intervista di Geri De Rosa, montaggio di Andrea Rappazzo."
             },
             {
-                "ora": "16:15",
+                "ora": "16:20",
                 "titolo": "U19 Eccellenza: Finale Nazionale",
                 "descrizione": "Derthona Basket o Vis 2008 Ferrara: sono loro a contendersi lo scudetto Under 19 nell'atto finale della settimana romana del PalaTiziano dedicata al meglio del basket giovanile italiano."
             },
             {
-                "ora": "18:30",
+                "ora": "18:35",
                 "titolo": "Finale, Gara 2: Milano - Venezia",
                 "descrizione": "Serie A Basket. - A 48 ore dalla vittoria milanese in gara 1 si torna in campo sempre al Forum: l'Olimpia per avvicinarsi allo scudetto, la Reyer per ribaltare il vantaggio del campo. Telecronaca: De Rosa-Meneghin."
             },
@@ -4437,7 +4427,7 @@
                 "descrizione": "Indiana Pacers NBA Summer League. - Dal Cox Pavilion di Las Vegas, Stati Uniti."
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:41"
     },
     {
         "canale": "Sky Sport Arena",
@@ -4459,7 +4449,7 @@
                 "descrizione": "Trascinato da Harry Kane e sotto la guida di Vincent Kompany, il Bayern Monaco vincitore di Bundesliga e coppa di Germania ha infranto numerosi primati."
             },
             {
-                "ora": "07:30",
+                "ora": "07:25",
                 "titolo": "The Boat Show",
                 "descrizione": "Regate, grandi eventi, saloni nautici e tutto il nuovo che arriva dal mondo della cantieristica, a vela e a motore. In ogni occasione, un personaggio del mondo della nautica si racconta al pubblico."
             },
@@ -4481,7 +4471,7 @@
             {
                 "ora": "11:15",
                 "titolo": "Gran Bretagna: Prove libere 1",
-                "descrizione": "Dal circuito di Donington Park, Castle Donington, Regno Unito."
+                "descrizione": "libere 1 WorldSBK. - Ottavo Round della stagione 2026. Dal circuito di Donington Park, le prime prove libere della World Superbike. Telecronaca Vercellesi - Temporali"
             },
             {
                 "ora": "12:15",
@@ -4499,29 +4489,29 @@
                 "descrizione": "05\/07\/2026 Rally Erc. - Rally Erc"
             },
             {
-                "ora": "14:30",
+                "ora": "14:35",
                 "titolo": "The Boat Show",
                 "descrizione": "Regate, grandi eventi, saloni nautici e tutto il nuovo che arriva dal mondo della cantieristica, a vela e a motore. In ogni occasione, un personaggio del mondo della nautica si racconta al pubblico."
             },
             {
                 "ora": "15:05",
                 "titolo": "Gran Bretagna: Superpole",
-                "descrizione": "Le gare del Campionato Mondiale di Superbike femminile."
+                "descrizione": "WorldWCR Superbike Femminile. - Le gare del Campionato Mondiale di Superbike femminile."
             },
             {
-                "ora": "15:45",
+                "ora": "15:50",
                 "titolo": "Programmazione non disponibile",
                 "descrizione": "I palinsesti sono in via di definizione da parte del canale"
             },
             {
                 "ora": "15:55",
                 "titolo": "Gran Bretagna: Prove libere 2",
-                "descrizione": "Dal circuito di Donington Park, Castle Donington, Regno Unito."
+                "descrizione": "libere 2 WorldSBK. - Ottavo Round della stagione 2026. Dal circuito di Donington Park, le seconde prove libere della World Superbike. Telecronaca Vercellesi - Temporali"
             },
             {
                 "ora": "16:55",
                 "titolo": "Gran Bretagna: Superpole",
-                "descrizione": "Segui la gara del campionato mondiale di Supersport."
+                "descrizione": "Supersport. - Ottavo Round della stagione 2026. Dal circuito di Donington Park, la Superpole della World Supersport. Telecronaca Vercellesi - Temporali"
             },
             {
                 "ora": "17:45",
@@ -4551,15 +4541,15 @@
             {
                 "ora": "22:00",
                 "titolo": "What's Next 2026",
-                "descrizione": "Ep1 What's Next 2026 10\/07\/2026 - What's Next 2026"
+                "descrizione": "Una serata di talent, campioni e grandi protagonisti Sky per svelare una stagione ricca di emozioni, spettacolo e appuntamenti imperdibili. Conduce Fabio Caressa."
             },
             {
-                "ora": "23:30",
+                "ora": "23:45",
                 "titolo": "Serie A Vieste: King Of The Beach",
                 "descrizione": "Beach Volley. - Segui la partita di beach volley in programma."
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:41"
     },
     {
         "canale": "Sky Sport Max",
@@ -4581,12 +4571,12 @@
                 "descrizione": "Padel. - Seguiamo le gare del Premier Padel Major."
             },
             {
-                "ora": "09:00",
+                "ora": "09:05",
                 "titolo": "Speciale Inter: Tutti I Gol Dello Scudetto",
                 "descrizione": "Scudetto Inter Scudetto 2026. - Tutti i gol della cavalcata della squadra nerazzurra per lo scudetto numero 21, quello dell'anima nerazzurra."
             },
             {
-                "ora": "09:30",
+                "ora": "09:35",
                 "titolo": "Premier League, I Gol Della Stagione",
                 "descrizione": "Durante la stagione 2025\/26 della Premier sono stati segnati 1.045 gol. Riviviamo le reti piu' belle e significative."
             },
@@ -4596,7 +4586,7 @@
                 "descrizione": "Mondiali. - Federico Buffa racconta \"Il Maracanazo\". Fuori a sorpresa Italia e Inghilterra, l'Uruguay trionfa, umiliando un Paese intero. Sara' il piu' grande dramma sportivo della storia brasiliana."
             },
             {
-                "ora": "11:30",
+                "ora": "11:25",
                 "titolo": "The Boat Show",
                 "descrizione": "Regate, grandi eventi, saloni nautici e tutto il nuovo che arriva dal mondo della cantieristica, a vela e a motore. In ogni occasione, un personaggio del mondo della nautica si racconta al pubblico."
             },
@@ -4611,7 +4601,7 @@
                 "descrizione": "Segui la specialita' della mountain bike."
             },
             {
-                "ora": "16:30",
+                "ora": "16:25",
                 "titolo": "Lippi",
                 "descrizione": "Giorgio Porra' racconta Marcello Lippi: il suo mare, le sue radici, Vialli e la Juve che nel 1996 conquisto' la Champions, preludio al trionfo Mondiale del 2006"
             },
@@ -4656,7 +4646,7 @@
                 "descrizione": "Dallo Stadio Louis II di Fontvieille, Principato di Monaco."
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:41"
     },
     {
         "canale": "Sky Sport Mix",
@@ -4695,7 +4685,7 @@
             {
                 "ora": "10:00",
                 "titolo": "12a giornata Behind The Scenes",
-                "descrizione": "Scenes Wimbledon. - Dall'All-England Lawn Tennis and Croquet Club di Wimbledon, Inghilterra."
+                "descrizione": "Scenes Wimbledon. - Access All England - Il canale originale dell'All England Lawn Tennis & Croquet Club con tutte le immagini \"dietro le quinte\" del torneo di Wimbledon"
             },
             {
                 "ora": "18:00",
@@ -4728,14 +4718,14 @@
                 "descrizione": "Championship. - Prima giornata del nuovo torneo che unisce i test match di luglio e novembre tra le prime 12 squadre al mondo. Di fronte la 2a e la 4a del ranking. Telecronaca Malpezzi-De Rossi"
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:41"
     },
     {
         "canale": "Sky Sport Golf",
         "categoria": "Sport",
         "programmi": [
             {
-                "ora": "03:00",
+                "ora": "03:05",
                 "titolo": "Golf Dp World Tour 2026 Genesis Scottish Open 1a Giornata",
                 "descrizione": "Golf: DP World Tour. - Dal Renaissance Club, a North Berwick, Scozia."
             },
@@ -4755,14 +4745,14 @@
                 "descrizione": "Giorno 2 Golf: DP World Tour. - Dal Renaissance Club, a North Berwick, Scozia."
             },
             {
-                "ora": "20:00",
+                "ora": "20:05",
                 "titolo": "Le Vaudreuil Golf Challenge",
-                "descrizione": "Challenge Tour. - Il meglio dell'azione del Challenge Tour Series."
+                "descrizione": "Challenge Tour. - Il meglio dell'azione del Le Vaudreuil Golf Challenge, dove gareggia Julien Sale."
             },
             {
                 "ora": "20:30",
                 "titolo": "BMW International Open",
-                "descrizione": "Highlights DP World Tour. - Le sintesi dedicate alle partite del DP World Tour."
+                "descrizione": "Highlights DP World Tour. - Assistiamo e riviviamo i momenti migliori del toreno di golf BMW International Open."
             },
             {
                 "ora": "20:45",
@@ -4775,7 +4765,7 @@
                 "descrizione": "Golf: DP World Tour. - Dal Renaissance Club, a North Berwick, Scozia."
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:41"
     },
     {
         "canale": "Sky Sport 251",
@@ -4783,11 +4773,11 @@
         "programmi": [
             {
                 "ora": "13:30",
-                "titolo": "Tennis Grand Slam Wimbledon Champ. 2026 144",
-                "descrizione": "Tennis"
+                "titolo": "12a giornata",
+                "descrizione": "12a giornata Wimbledon: AOIAMA\/LIANG-DABROWSI\/STEFANI (Cazzaniga), FERNANDEZ-HEWETT, GUO\/MLADENOVIC-X.JIANG\/Y.XU (Cazzaniga)"
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:41"
     },
     {
         "canale": "Sky Sport 252",
@@ -4795,11 +4785,11 @@
         "programmi": [
             {
                 "ora": "11:30",
-                "titolo": "Tennis Grand Slam Wimbledon Champ. 2026 145",
-                "descrizione": "Tennis"
+                "titolo": "12a giornata",
+                "descrizione": "12a giornata Wimbledon: (Boys) BOOGARD-HEWITT, CIURNELLI\/SLOBODA-ANTONIUS\/JOHNSON, (Girls) BARROS\/L.DA SILVA-BEREZINA\/CVETKOVIC"
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:41"
     },
     {
         "canale": "Sky Sport 253",
@@ -4807,11 +4797,11 @@
         "programmi": [
             {
                 "ora": "11:30",
-                "titolo": "Tennis Grand Slam Wimbledon Champ. 2026 146",
-                "descrizione": "Tennis"
+                "titolo": "12a giornata",
+                "descrizione": "2a giornata Wimbledon: (Girls) SKLIAR-PUSHKAREVA, (Boys) REISACH-LEE, (Girls) TBD-WOBKER\/ZOLDAKOVA"
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:41"
     },
     {
         "canale": "Sky Sport 254",
@@ -4900,37 +4890,37 @@
                 "descrizione": "Grazie al sacrificio alle Termopili dei 300 valorosi spartani guidati da Leonida, la Grecia ha una possibilit� di resistere all'invasione dell'Impero Persiano. Ma la speranza è legata alla capacit� di Temistocle, guida militare degli ateniesi, di riuscire a unire le citt� -stato indipendenti nella lotta per la libert� dell'Ellade e di contrastare con l'astuzia e le tattiche di combattimento la forza preponderante della flotta persiana."
             },
             {
-                "ora": "07:50",
-                "titolo": "Memory: Trappole della mente",
-                "descrizione": "Tentando di superare l'eredit� di suo padre, un neuroscienziato indiano americano rimane coinvolto nel suo stesso esperimento, mettendo l'uno contro l'altro dieci frammenti della sua coscienza."
+                "ora": "07:55",
+                "titolo": "Memory",
+                "descrizione": "Alex Lewis, sicario ormai prossimo al ritiro, viene chiamato a svolgere un’ultima missione. Ma quando scopre che il bersaglio è una giovane ragazza, rifiuta di portare a termine l’incarico e si rivolta contro la malvagia organizzazione che l’ha assoldato. Il suo cammino di vendetta lo porta fino ai vertici del gruppo criminale, capeggiato dall’affascinante magnate immobiliare di El Paso Davana Sealman e dal figlio, che tengono in pugno le vite di molti ragazzi innocenti. Per salvare la pelle dovr� quindi dare loro la caccia e ucciderli prima che siano loro a farlo. Nel frattempo, è braccato anche dall’FBI, che nella persona dell’agente Vincent Serra è gi� sulle sue tracce."
             },
             {
-                "ora": "09:45",
+                "ora": "09:55",
                 "titolo": "Above Suspicion",
                 "descrizione": "Un agente dell'FBI da poco sposato riceve il compito di ottenere informazioni in una cittadina del Kentucky che si trova tra i monti Appalachi. L'uomo inizia una relazione illecita con una donna del posto, alle prese con delle difficolt� economiche, che diventa la sua principale fonte d'informazione. La giovane vede in lui un modo per fuggire, tuttavia entrambi si avviano inconsapevolmente verso il disastro. Lo scandalo scuote, infatti, le fondamenta dell'agenzia e porta alla prima incriminazione di un agente dell'FBI con l'accusa di omicidio."
             },
             {
-                "ora": "11:35",
+                "ora": "11:45",
                 "titolo": "Cinquanta sfumature di grigio",
                 "descrizione": "Anastasia Steele, una studentessa in letteratura inglese prossima alla laurea, per sostituire un'amica influenzata va ad intervistare Christian Grey, giovane e ricco amministratore delegato della Grey Enterprises Holdings Inc. e se ne innamora, ricambiata, a prima vista. L'uomo mette però in breve tempo le cose in chiaro: la sua è una personalit� dominante e il rapporto dovr� sottostare a precisi patti, con Anastasia che deve accettare di essere oggetto di atti di sadismo."
             },
             {
-                "ora": "13:45",
+                "ora": "13:55",
                 "titolo": "Tramite amicizia",
                 "descrizione": "Lorenzo ha un’agenzia molto particolare: offre amici a noleggio. Se hai bisogno di conforto, di compagnia o semplicemente di un consiglio per lo shopping, Lorenzo è il finto amico che fa per te. Quando però è il proprietario dell’azienda di dolciumi dove lavorano i suoi zii ad aver bisogno di un amico, tutto si scompiglier� e la vita di Lorenzo cambier� definitivamente."
             },
             {
-                "ora": "15:25",
+                "ora": "15:35",
                 "titolo": "La leggenda degli uomini straordinari",
                 "descrizione": "Mostri e creature di ogni risma e da ogni tempo in un supergruppo capitanato da Allan Quatermain. il Capitano Nemo, una vampira, l’uomo invisibile, l'agente dei Servizi Segreti americani Tom Sawyer, Dorian Gray, il Dottor Jekyll e Mister Hyde, votati alla causa del Bene per sconfiggere il malefico Phantom e sventare il suo folle piano di distruzione del mondo. Ma - come i membri della lega scopriranno ben presto a proprie spese - non è detto che le cose stiano proprio come è stato loro raccontato..."
             },
             {
-                "ora": "17:20",
+                "ora": "17:25",
                 "titolo": "Prendiamoci una pausa",
                 "descrizione": "Tre coppie di et� diverse decidono di prendersi una “pausa di riflessione”. Per il quarantenne Fabrizio è un disastro emotivo che nasconde altro; per la sua compagna Valeria un’opportunit� ; per Valter, prossimo ai sessanta, è un inaccettabile torto impostogli dalla moglie Fiorella, con cui è sposato da trent’anni, mentre per lei è un’esigenza; per la diciannovenne Erica è un incidente di percorso; per il suo ragazzo Gabriel, conosciuto online, è uno scudo per nascondere la ricerca di se stesso."
             },
             {
-                "ora": "19:05",
+                "ora": "19:10",
                 "titolo": "Anemone",
                 "descrizione": "I legami familiari tra padri, figli e fratelli vengono esplorati mentre relazioni complesse si sviluppano attraverso viaggi personali e conflitti generazionali."
             },
@@ -4940,12 +4930,12 @@
                 "descrizione": "Quattro anni fa, il tredicenne Finn uccise il suo rapitore e riuscì a fuggire, diventando l’unico sopravvissuto a Il Rapace. Ma il vero male trascende la morte… e il telefono sta squillando ancora."
             },
             {
-                "ora": "23:15",
+                "ora": "23:10",
                 "titolo": "Una Di Famiglia - The Housemaid",
                 "descrizione": "La trama segue Millie, una donna che cerca un nuovo inizio e trova lavoro come domestica per una coppia benestante ed elitaria. Ma come spesso accade nei thriller, le apparenze ingannano. Millie scoprir� presto che dietro la facciata di questa ricca famiglia perfetta si nascondono segreti oscuri e pericolosi."
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:41"
     },
     {
         "canale": "Sky Cinema Uno +24",
@@ -4967,12 +4957,12 @@
                 "descrizione": "I legami familiari tra padri, figli e fratelli vengono esplorati mentre relazioni complesse si sviluppano attraverso viaggi personali e conflitti generazionali."
             },
             {
-                "ora": "11:00",
+                "ora": "11:05",
                 "titolo": "L'ultima notte di Amore",
                 "descrizione": "La notte prima del suo pensionamento, il tenente di polizia Franco Amore viene chiamato a indagare sulla scena del crimine in cui il suo migliore amico e partner di lunga data Dino è stato ucciso durante una rapina di diamanti. Si capir� che Amore è stato coinvolto nella rapina e che solo l'amore di sua moglie Viviana lo aiuter� a sopravvivere a questa notte fatale."
             },
             {
-                "ora": "13:15",
+                "ora": "13:20",
                 "titolo": "Schegge di paura",
                 "descrizione": "Per l'uccisione dell'arcivescovo di Chicago (79 coltellate) è arrestato un ragazzo (Norton) che fa parte del coro. Indizi schiaccianti. Il più pagato avvocato della citt� (Gere) ne assume gratis la difesa."
             },
@@ -4988,8 +4978,8 @@
             },
             {
                 "ora": "19:15",
-                "titolo": "Memory: Trappole della mente",
-                "descrizione": "Tentando di superare l'eredit� di suo padre, un neuroscienziato indiano americano rimane coinvolto nel suo stesso esperimento, mettendo l'uno contro l'altro dieci frammenti della sua coscienza."
+                "titolo": "Memory",
+                "descrizione": "Alex Lewis, sicario ormai prossimo al ritiro, viene chiamato a svolgere un’ultima missione. Ma quando scopre che il bersaglio è una giovane ragazza, rifiuta di portare a termine l’incarico e si rivolta contro la malvagia organizzazione che l’ha assoldato. Il suo cammino di vendetta lo porta fino ai vertici del gruppo criminale, capeggiato dall’affascinante magnate immobiliare di El Paso Davana Sealman e dal figlio, che tengono in pugno le vite di molti ragazzi innocenti. Per salvare la pelle dovr� quindi dare loro la caccia e ucciderli prima che siano loro a farlo. Nel frattempo, è braccato anche dall’FBI, che nella persona dell’agente Vincent Serra è gi� sulle sue tracce."
             },
             {
                 "ora": "21:15",
@@ -5002,14 +4992,14 @@
                 "descrizione": "Un agente dell'FBI da poco sposato riceve il compito di ottenere informazioni in una cittadina del Kentucky che si trova tra i monti Appalachi. L'uomo inizia una relazione illecita con una donna del posto, alle prese con delle difficolt� economiche, che diventa la sua principale fonte d'informazione. La giovane vede in lui un modo per fuggire, tuttavia entrambi si avviano inconsapevolmente verso il disastro. Lo scandalo scuote, infatti, le fondamenta dell'agenzia e porta alla prima incriminazione di un agente dell'FBI con l'accusa di omicidio."
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:41"
     },
     {
         "canale": "Sky Cinema Due",
         "categoria": "Cinema",
         "programmi": [
             {
-                "ora": "04:55",
+                "ora": "05:00",
                 "titolo": "Hometown - La strada dei ricordi",
                 "descrizione": "Roman Polanski e Ryszard Horowitz sono venuti in Polonia per condividere con noi i ricordi più personali della loro infanzia e giovinezza."
             },
@@ -5019,27 +5009,27 @@
                 "descrizione": "La storia ruota attorno alla vicenda personale di Nancy Stokes un'insegnante in pensione, vedova, con alle spalle un matrimonio solido e rigoroso a cui però è sempre mancato un po' di brivido. Ormai sola, Nancy decide di cercare quello che nella vita di coppia non ha mai trovato: una soddisfacente esperienza sessuale. Si rivolge così a un'agenzia di gigolò e sceglie di incontrare Leo Grande. Giovane e affascinante, Leo Grande sembra essere tutto quello per cui Nancy è pronta a pagare: un uomo in grado di realizzare le sue fantasie. Ma nel corso di tre incontri in una camera di hotel le dinamiche cambiano: Leo si dimostra non solo come un uomo con cui fare dell'ottimo sesso, ma anche una persona con cui parlare e nonostante la differenza d'et� , tra i due nascer� un rapporto di fiducia che porter� Nancy a riscoprire se stessa..."
             },
             {
-                "ora": "07:55",
+                "ora": "08:00",
                 "titolo": "Notre-Dame in fiamme",
                 "descrizione": "Il 15 aprile 2019 la cattedrale di Notre-Dame subisce alcuni danni irreparabili dopo un incendio difficilmente domabile. Il film ricostruisce la tragedia e racconta da vicino chi sono stati i protagonisti dell'impresa."
             },
             {
-                "ora": "09:45",
+                "ora": "09:50",
                 "titolo": "Ben Hur",
                 "descrizione": "L'epopea del giudeo Ben-Hur, arrestato dall'amico Messala, tribuno dell'impero romano, inviato nelle galee come schiavo, riuscir� , dopo aver salvato il console Ario, a diventare un ricco romano e a tornare in patria per vendicarsi."
             },
             {
-                "ora": "13:15",
+                "ora": "13:20",
                 "titolo": "Sotto attacco",
                 "descrizione": "Cresciuto da un padre violento, Cash sfoga la sua aggressivit� nel tentativo di diventare campione mondiale di arti marziali miste. Abituato a primeggiare in tutto, si ritrova a dover affrontare una sfida inedita quando il suo secondo figlio nasce con la sindrome di Williams. Invece di alzarsi e combattere, Cash scappa via, costringendo il figlio maggiore Jett a occuparsi quasi a tempo pieno del fratello minore. Quando decide di seguire le orme del padre, Jett affronta a testa alta il passato, ingaggiando una dura battaglia con il genitore."
             },
             {
-                "ora": "15:15",
+                "ora": "15:20",
                 "titolo": "Le vele scarlatte",
                 "descrizione": "Juliette, figlia di un reduce della Grande Guerra e orfana di madre, vive sola nel Nord della Francia con il padre, Raphaël. Appassionata di musica e di canto, la ragazza - molto solitaria - incontra un'estate un mago che la fa una profezia: un giorno delle vele scarlatte la porteranno via dal villaggio. Da quel momento Juliette non smetter� mai di credere che la profezia un giorno si avverer� ."
             },
             {
-                "ora": "17:00",
+                "ora": "17:05",
                 "titolo": "Potere assoluto",
                 "descrizione": "Al presidente degli Stati Uniti non basta portarsi a letto la moglie del suo migliore amico e sostenitore, ma la picchia e ne nasce una lite furibonda. Le guardie del corpo eliminano quindi la donna prima che sia lei a uccidere il presidente. Da una cabina-armadio Luther Whitney, professionista del furto, assiste al fattaccio e fugge. Comincia così la caccia al ladro..."
             },
@@ -5059,7 +5049,7 @@
                 "descrizione": "Una giovane emigrante abbandona la Polonia per veleggiare verso Ellis Island, ma il viaggio diventa un incubo. Costretta a prostituirsi per procurarsi cibo e medicine per la sorellina malata, una volta giunta a New York la donna si imbatte in un affascinante criminale. Il cugino dell’uomo, un giovane mago di strada, si innamora della bella polacca proponendole una via di fuga da una vita di miseria e illegalit� ."
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:41"
     },
     {
         "canale": "Sky Cinema Due +24",
@@ -5076,12 +5066,12 @@
                 "descrizione": "Attacco a Mumbai è ambientato nel novembre 2008, quando alcuni jihadisti del Pakistan mettono in atto una serie di attacchi terroristici a Mumbai, facendo precipitare nel caos la citt� più popolosa dell’India. Durante i tre giorni dell’assedio, gli uomini armati sequestrano il leggendario Taj Mahal Palace Hotel, tenendo prigionieri all’interno oltre 500 ospiti e dipendenti. Il film si concentra sugli eventi accaduti nel leggendario hotel, considerato l’emblema del progresso del paese e del suo variegato patrimonio culturale. Nel pieno dell’attacco, persone provenienti da diversi paesi, culture, religioni e classi sociali dovranno trovare il modo di reagire e far fronte ai continui pericoli."
             },
             {
-                "ora": "04:55",
+                "ora": "05:00",
                 "titolo": "Hometown - La strada dei ricordi",
                 "descrizione": "Roman Polanski e Ryszard Horowitz sono venuti in Polonia per condividere con noi i ricordi più personali della loro infanzia e giovinezza."
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:41"
     },
     {
         "canale": "Sky Cinema Collection",
@@ -5098,7 +5088,7 @@
                 "descrizione": "Frank W. Abagnale Jr. è il tipico ragazzo americano di buona famiglia degli anni '60. Ma l'improvviso dissesto finanziario del padre e il divorzio dei genitori lo costringono ad andarsene di casa. Ma come sbarcare il lunario? Ad esempio ottenendo una divisa da pilota Pan Am, falsificando assegni della compagnia aerea e comprandosi una macchina marcatrice per alterare i numeri degli stessi. In poco tempo Frank, che cambia identit� più velocemente dei propri abiti, diventa una delle priorit� dell'Fbi ed in particolare dell'agente Hanratty, esperto in frodi bancarie e come il suo antagonista solo al mondo."
             },
             {
-                "ora": "09:55",
+                "ora": "10:00",
                 "titolo": "C'è post@ per te",
                 "descrizione": "Joe Fox e Kathleen Kelly vivono e lavorano a pochi isolati di distanza nell'Upper West Side. I negozi che frequentano sono gli stessi e passeggiano per le stesse strade. Lui è il proprietario della più importante catena di bookstore di Manhattan, le megalibrerie Fox, mentre lei gestisce una piccola libreria per bambini ereditata dalla madre, \"Il Negozio Dietro l'Angolo\" proprio accanto al bookstore. I due si incontrano in una chat-room, e nasce un'amicizia sebbene anonima. Nella vita reale invece, s'incontrano ad una festa di beneficenza in cui capiscono di non sopportarsi, ma le cose cambiano man mano che iniziano a frequentarsi."
             },
@@ -5118,7 +5108,7 @@
                 "descrizione": "Il famoso simbolista Robert Langdon questa volta è sulle tracce di una serie di indizi legati al grande poeta Dante. Quando si risveglia in un ospedale italiano colpito da amnesia, si affida al medico Sienna Brooks per recuperare i suoi ricordi. In una corsa contro il tempo che ha per sfondo tutta l’Europa, cercheranno di prevenire le azioni di un folle che ha intenzione di scatenare una piaga strettamente connessa con l'Inferno di Dante Alighieri."
             },
             {
-                "ora": "18:55",
+                "ora": "18:50",
                 "titolo": "Apollo 13",
                 "descrizione": "E’ passato meno di un anno da quando l’uomo ha camminato sulla luna, ma l’interesse del pubblico americano risale a molto tempo prima. Apollo 13 era considerata solo un’altra missione di \"routine\", finché le parole \"Houston, abbiamo un problema\" non hanno squarciato l’immenso vuoto dello spazio. Ron Howard dirige Tom Hanks, vincitore dell’Oscar con Philadelphia e Forrest Gump, Kevin Bacon, Bill Paxton, Gary Sinise e Ed Harris in quest’affascinante e avvincente thriller fantascientifico. Abbandonati a 205.000 miglia dalla Terra in una navicella in avaria, gli astronauti Jim Lovell, Fred Haise e Jack Swigert combattono una battaglia disperata per sopravvivere. Nel frattempo, alla stazione di controllo, l’astronauta Ken Mattingly, il direttore di volo Gene Granz ed un eroico equipaggio di terra lottano contro il tempo e contro le avversit� per riportarli a casa. Un’avventura mozzafiato, che racconta una storia di coraggio, fiducia e abilit� che è ancora più eccezionale perché è vera!"
             },
@@ -5133,7 +5123,7 @@
                 "descrizione": "È la vigilia di Natale e Chuck Noland, funzionario della Federal Express, scambia i regali con la sua fidanzata Kelly in macchina prima di salire a bordo dell'aereo per l'ennesimo viaggio di lavoro. A causa di una tempesta l'aereo si inabissa nel Pacifico. Chuck, unico sopravvissuto, naufraga su di un isola deserta dove si rende conto, poco alla volta, che dovr� restarci per molto molto tempo."
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:41"
     },
     {
         "canale": "Sky Cinema Family",
@@ -5155,42 +5145,42 @@
                 "descrizione": "Quando Mortimer Folchart detto Mo, esperto rilegatore di libri malandati, trova un volume di \"Inkheart\" in una vecchia libreria di provincia, non crede ai propri occhi. Sono dieci anni che cerca quel libro, da quando sua figlia Meggie ne aveva tre; da quando, l'ultima notte in un cui lo ha letto ad alta voce, sua moglie Resa è scomparsa all'interno del mondo fantastico di Inkheart, alla corte medievale del malvagio Capricorn. Pochi lo sanno, ma Mo è una lingua di fata: con la lettura può richiamare alla realt� i personaggi dei romanzi, ma rimandarli indietro può essere molto più complicato. Ora, con quella copia del libro in mano, Mo è deciso ha ritrovare Resa e, che lo voglia o meno, Meggie far� di tutto per aiutarlo."
             },
             {
-                "ora": "08:15",
+                "ora": "08:10",
                 "titolo": "Il giro del mondo in 80 giorni",
                 "descrizione": "Phileass Frogg e Passepartout sono rispettivamente una rana e una scimmia marmosetta scommettono con gli abitanti del villaggio che riusciranno a fare il giro del mondo in 80 giorni. Una volta partiti, vivono una serie di disavventure incontrando nuovi amici. Infine riescono a tornare in tempo, ma proprio nel rientrare, Passapartout scorge un nuovo pezzo di terra di cui non sapevano l'esistenza. Al villaggio annuncia quindi che non hanno vinto la scommessa, perché non hanno girato tutto il mondo essendoci più terra ancora da esplorare. Phileas e Passepartout propongono così una nuova scommessa, il giro del mondo, includendo anche il nuovo paese da scoprire, in 70 giorni."
             },
             {
-                "ora": "09:40",
+                "ora": "09:35",
                 "titolo": "Il gigante di ferro",
                 "descrizione": "Il piccolo Hogart è un ragazzino che abita nel Maine e che, un giorno fa la conoscenza di un gigante che arriva direttamente dallo spazio. Il bambino, dopo l'iniziale timore, diventa amico e maestro del gigante dagli strabilianti poteri. Hogart sa perfettamente che l'ottuso mondo che lo circonda non è pronto ad accogliere il suo strano amico, e perciò fa di tutto per tenerlo al sicuro da occhi indiscreti."
             },
             {
-                "ora": "11:10",
+                "ora": "11:05",
                 "titolo": "Bla Bla Baby",
                 "descrizione": "Una commedia interpretata da uno stuolo di poppanti. Eh sì, questa volta i protagonisti sono proprio loro. Sono piccoli, irresistibili, insospettabili ma anche terribili, esilaranti e intuitivi, con una perfetta capacit� di linguaggio e un coefficiente intellettivo da Nobel. A met� tra Senti chi parla e Baby Boss, Bla Bla Baby è una novit� assoluta, un nuovo genere in cui i pargoli parlano davvero grazie alla magia degli effetti visivi."
             },
             {
-                "ora": "12:50",
+                "ora": "12:40",
                 "titolo": "Viaggio al centro della Terra",
                 "descrizione": "Alla ricerca di un collega scomparso, un professore universitario si ritrova al centro della Terra col nipote e un'affascinante islandese. Appassionato di Verne, user� il celebre romanzo come guida. Nell'immaginifico Mondo sotterraneo il trio trova uccellini luminosi, oceani, piante carnivore giganti, mostri marini e dinosauri."
             },
             {
-                "ora": "14:25",
+                "ora": "14:10",
                 "titolo": "Dog Man",
                 "descrizione": "Un cane poliziotto e il suo padrone, un agente di polizia umano, vengono feriti sul lavoro. Uno strampalato intervento chirurgico fonde i due e salva loro la vita. Così nasce Dog Man, che ha giurato di proteggere e servire, ma anche di giocare a riporto, sedersi e rotolarsi. Con questa nuova identit� , si sforza di piacere al capo e fermare le trame malvagie del supercriminale felino Gino il gatto."
             },
             {
-                "ora": "15:55",
+                "ora": "15:45",
                 "titolo": "Un film Minecraft",
                 "descrizione": "Benvenuti nel mondo di Minecraft, dove la creativit� non serve solo a costruire, ma è essenziale per la sopravvivenza! Quattro improvvisati avventurieri – Garrett “The Garbage Man” Garrison (Momoa), Henry (Hansen), Natalie (Myers) e Dawn (Brooks) – sono alle prese con problemi quotidiani quando vengono improvvisamente trascinati, attraverso un misterioso portale, nell’Overworld: un bizzarro paese delle meraviglie cubico dove regna l’immaginazione. Per far ritorno a casa, dovranno imparare a padroneggiare questo mondo (e proteggerlo dalla minaccia di Piglins e Zombie) mentre intraprendono una magica missione affiancati da un esperto e inaspettato ‘costruttore’ del posto, Steve (Black). L’avventura metter� alla prova tutti e cinque, sfidandoli a essere coraggiosi e a ritrovare le qualit� che rendono ciascuno di loro unico e creativo… le stesse abilit� di cui hanno bisogno per tornare a vivere nel mondo reale."
             },
             {
-                "ora": "17:40",
+                "ora": "17:30",
                 "titolo": "Ritorno al futuro - Parte II",
                 "descrizione": "Il film comincia dove terminava il primo capitolo, ovvero con Marty e Jennifer che partono insieme allo scienziato Doc, inventore della macchina del tempo, per il 2015 allo scopo di evitare che il futuro dei loro figli possa essere in pericolo. Ma la situazione precipita e ad essere in pericolo non è più il futuro, ma il passato. Marty dovr� tornare nuovamente nel 1955 e..."
             },
             {
-                "ora": "19:30",
+                "ora": "19:25",
                 "titolo": "Rock Dog 3",
                 "descrizione": "Dopo aver girato il mondo, Bodi si prende una pausa e torna al suo villaggio, dove ora pecore e lupi vivono in armonia. Quando scopre che il gruppo femminile K-9 non sa chi sia la leggenda del rock Angus Scattergood, sente il dovere di partecipare al concorso musicale \"Batti il mio ritmo” per ispirare una nuova generazione di rock star. Ma, dopo essersi unito allo spettacolo, Bodi si rende presto conto di aver fatto il passo più lungo della gamba, ritrovandosi a essere da un giorno all’altro una celebrit� della tv."
             },
@@ -5200,12 +5190,12 @@
                 "descrizione": "RJ è un procione ingordo e opportunista che fa sempre per sé. A dargli una lezione ci pensa l'orso Vincent, a cui RJ ha cercato di rubare le provviste accumulate per il letargo. Nella fuga rocambolesca le leccornie di Vincent finiscono sotto un tir in corsa e RJ è costretto all'ultimatum: recuperare il cibo perduto entro una settimana o diventare cibo per orsi. L'incontro con una scombinata famiglia allargata in cui convivono appassionatamente una tartaruga, una puzzola, uno scoiattolo, due opossum e cinque istrici, corregger� il suo egoismo. A loro, sempre a caccia di provvigioni per l'inverno, RJ rivela Suburbia, la citt� degli uomini oltre la siepe. Dietro quel muro verde, la gang del bosco far� scorpacciate di cibo ghiotto e di amicizia."
             },
             {
-                "ora": "22:30",
+                "ora": "22:25",
                 "titolo": "Ritorno al futuro - Parte III",
                 "descrizione": "Per questa terza, conclusiva, puntata della trilogia, Marty McFly è costretto a tornare indietro nel tempo fino al 1885 per salvare Doc, che vi era stato catapultato al termine del secondo capitolo. Questa volta tornare nel futuro sar� ancora più difficile."
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:41"
     },
     {
         "canale": "Sky Cinema Action",
@@ -5242,12 +5232,12 @@
                 "descrizione": "Il ricchissimo industriale John Hammond è riuscito a costruire un parco dei divertimenti a tema incentrato sui dinosauri (riportati in vita grazie ad una complessa operazione di ingegneria genetica), il \"Jurassic Park\". Hammond invita alcuni esperti e scienziati a compiere un sopralluogo nell'isola dove il parco è allestito e a stilare una perizia positiva che gli permetta di ottenere i finanziamenti di cui ha bisogno. Ma qualcosa va storto: a causa di una tempesta, il sistema di controllo computerizzato del parco va fuori uso, i dinosauri rompono i recinti in cui sono rinchiusi e impazzano liberi dando la caccia agli umani..."
             },
             {
-                "ora": "16:45",
+                "ora": "16:40",
                 "titolo": "L'uomo dei ghiacci - The Ice Road",
                 "descrizione": "Dopo il crollo avvenuto in un'isolata miniera di diamanti nelle regioni settentrionali del Canada, un autista guida una missione di salvataggio quasi impossibile su un oceano ghiacciato per salvare la vita dei minatori rimasti intrappolati. Si ritrover� così al centro di una corsa contro il tempo per evitare il peggio."
             },
             {
-                "ora": "18:40",
+                "ora": "18:35",
                 "titolo": "Midway",
                 "descrizione": "La battaglia navale delle Midway, combattuta fra il 4 e il 6 giugno del 1942 vide la marina militare americana respingere la Marina imperiale giapponese."
             },
@@ -5262,7 +5252,7 @@
                 "descrizione": "Un agente della DEA deve investigare, su richiesta di un amico, sulla misteriosa scomparsa di un gruppo di ranger, il sergente istruttore e diversi suoi cadetti, durante un corso nel campo di addestramento Fort Clayton a Panama."
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:41"
     },
     {
         "canale": "Sky Cinema Suspense",
@@ -5284,32 +5274,32 @@
                 "descrizione": "Sette anni sono passati da quando il Dott. Hannibal Lecter sfuggì alla sorveglianza, dieci anni da quando l'agente FBI Clarice Starling lo intervistò nell'ospedale di massima sicurezza per criminali psicotici. Ora il Dr. Lecter si trova a Firenze sotto falsa copertura, ma una sua vecchia viittima, rimasta sfigurata, si rifa viva per vendicarsi..."
             },
             {
-                "ora": "09:25",
+                "ora": "09:30",
                 "titolo": "Io sono l'abisso",
                 "descrizione": "L’Uomo che pulisce pensa che si possono ricavare un sacco di segreti dai rifiuti. Perché la gente tende a mentire; la spazzatura, invece, non mente mai. L’Uomo che pulisce credeva di essere invisibile finché non ha incontrato la Ragazzina col ciuffo viola. La Ragazzina col ciuffo viola irrompe nella sua vita ordinata perché solo un angelo cattivo può salvarla adesso. Intanto, la Cacciatrice sa che l� fuori c’è qualcuno che uccide le donne dai capelli biondi. Anche se nessuno le crede, lei lo sa. Ciò che non sa, invece, è che c’è qualcosa di malvagio che si nasconde dietro la porta verde. La verit� sta in fondo a un abisso buio e profondissimo."
             },
             {
-                "ora": "11:35",
+                "ora": "11:40",
                 "titolo": "Al vertice della tensione",
                 "descrizione": "Jack Ryan, giovane analista, da poco entrato alla CIA, viene incaricato da WIlliam Cabot, capo del controspionaggio, di una missione particolarmente pericolosa: mettersi sulle tracce di una bomba atomica smarrita trent'anni prima dagli israeliani, rimasta inesplosa sottoterra, e ritrovata per caso in quei giorni. La bomba rappresenta un pericolo nucleare rivolto verso gli Stati Uniti, di cui minaccia la sicurezza. Assistito dal collega John Clark, Ryan segue varie piste, anche se i sospetti sono indirizzati verso la Russia. Mentre il reciproco scambio di accuse tra Stati Uniti e Russia prosegue e raggiunge livelli molto delicati, Ryan arriva ad individuare i veri colpevoli: si tratta di alcuni neonazisti europei, che appunto volevano ricreare il clima da guerra fredda per portare avanti un loro piano di sterminio e di dominio."
             },
             {
-                "ora": "13:45",
+                "ora": "13:55",
                 "titolo": "Companion",
                 "descrizione": "Nella tenuta di un miliardario, un tranquillo fine settimana in riva al lago si trasforma in un incubo per Iris e dei suoi amici. Infatti, un androide sottomesso, creato per la compagnia umana, impazzisce."
             },
             {
-                "ora": "15:30",
+                "ora": "15:40",
                 "titolo": "American Night",
                 "descrizione": "Michael Rubino (Emile Hirsch) è appena diventato capo di tutti i capi della mafia di New York ma il suo più grande desiderio è quello di poter dedicare la sua vita alla pittura e diventare un grande artista. John Kaplan (Jonathan Rhys Meyers) è un mercante d'arte disordinato e ombroso ma è anche il migliore al mondo per l’individuazione dei falsi. Le strade dei due, apparentemente così distanti, si incontreranno davanti a un bivio di cruciale importanza, quando il furto della Marylin di Warhol dar� il via ad una serie di accadimenti imprevisti che sconvolgeranno le loro vite."
             },
             {
-                "ora": "17:40",
+                "ora": "17:45",
                 "titolo": "Caccia al killer: Monster",
                 "descrizione": "La prima infanzia di Aileen Wuornos, la serial killer femminile più famosa d'America. Nel 1976 una giovane Aileen arriva in Florida alla ricerca di una nuova vita che l'aiuti a fuggire dal suo tragico passato."
             },
             {
-                "ora": "19:10",
+                "ora": "19:15",
                 "titolo": "Jack Ryan: L'iniziazione",
                 "descrizione": "Jack Ryan è un giovane analista finanziario che lavora sotto copertura a Mosca per conto della Cia. Quando scopre che il suo datore di lavoro è implicato in un complotto teso a finanziare un attacco terroristico per far collassare l'economia americana, Jack non esita ad affrontarlo, anche a costo di mettere a repentaglio la propria vita."
             },
@@ -5319,19 +5309,19 @@
                 "descrizione": "Quando un rinomato investigatore privato viene ucciso, la sua allieva prende in carico il caso. Man mano che l’indagine porta a galla la verit� , lei è costretta a un'alleanza pericolosa con l’assassino per scoprire i loschi segreti che la citt� nasconde e portare giustizia alle sue vittime."
             },
             {
-                "ora": "22:50",
+                "ora": "22:45",
                 "titolo": "Black Phone 2",
                 "descrizione": "Quattro anni fa, il tredicenne Finn uccise il suo rapitore e riuscì a fuggire, diventando l’unico sopravvissuto a Il Rapace. Ma il vero male trascende la morte… e il telefono sta squillando ancora."
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:41"
     },
     {
         "canale": "Sky Cinema Romance",
         "categoria": "Cinema",
         "programmi": [
             {
-                "ora": "05:00",
+                "ora": "04:50",
                 "titolo": "Corro da te",
                 "descrizione": "Single e affascinante seduttore, Gianni è un seduttore seriale. Gestisce un'importante azienda di scarpe da corsa ed è pronto a tutto pur di conquistare la donna di turno, arrivando persino a fingersi costretto su una sedia a rotelle per suscitare piet� . La sua vita però è destinata a cambiare quando conosce Chiara, una donna solare e dinamica che un incidente ha reso paraplegica."
             },
@@ -5341,32 +5331,32 @@
                 "descrizione": "Endless, film diretto da Scott Speer, è la storia di Riley e Chris, due giovani da poco diplomati e innamoratissimi. Quando il ragazzo muore in un incidente, Riley si sente così in colpa da ritenersi lei stessa la causa della morte del suo fidanzato. Chris, però, non è morto definitivamente, ma è bloccato in un limbo e miracolosamente riesce a mettersi in contatto con la sua amata. Ma la loro storia d'amore, che supera il confine tra la vita e la morte, permetter� ai due ragazzi di imparare una delle lezioni più difficili della vita: riuscire a lasciarsi andare."
             },
             {
-                "ora": "08:30",
+                "ora": "08:35",
                 "titolo": "Poli opposti",
                 "descrizione": "Stefano è un terapista di coppia che si è appena separato dalla moglie. Claudia è un avvocato divorzista e madre single con figlio preadolescente. I loro studi, con annessa abitazione, si ritrovano sullo stesso pianerottolo. L'antipatia (e attrazione) reciproca sono immediate, e a queste si aggiunge la rivalit� professionale quando i pazienti dell'una cominciano a rivolgersi all'altro, e viceversa. Ma questa, fin dall'inizio, si identifica come una commedia romantica, e dunque i poli opposti del titolo sono destinati ad avvicinarsi."
             },
             {
-                "ora": "10:05",
+                "ora": "10:10",
                 "titolo": "Mektoub, My Love: Canto Uno",
                 "descrizione": "Amin, un aspirante sceneggiatore che vive a Parigi, ritorna per l’estate nella sua citt� natale, una comunit� di pescatori nel sud della Francia. Accompagnato da suo cugino Tony e dalla sua migliore amica Ophélie, Amin passa il suo tempo tra il ristorante di specialit� tunisine dei suoi genitori, i bar del quartiere e la spiaggia frequentata dalle ragazze in vacanza. Incantato dalle numerose figure femminili che lo circondano, Amin resta soggiogato da queste sirene estive, all’opposto del suo dionisiaco cugino che si getta senza remore nell’euforia dei loro corpi. Amin porta avanti la sua ricerca filosofica lanciandosi nella scrittura delle sue sceneggiature."
             },
             {
-                "ora": "13:05",
+                "ora": "13:15",
                 "titolo": "Am I Ok?",
                 "descrizione": "Lucy e Jane sono state migliori amiche per la maggior parte della loro esistenza e pensano di sapere l'una tutto dell'altra. Ma, quando Jane annuncia di volersi trasferire a Londra, Lucy rivela un segreto a lungo taciuto. Mentre Jane cercher� di aiutare Lucy, la loro amicizia verr� gettata nel caos."
             },
             {
-                "ora": "14:40",
+                "ora": "14:45",
                 "titolo": "Duplicity",
                 "descrizione": "Claire Stenwick è un'avvenente agente della CIA con licenza di sedurre, Ray Koval è un agente dei servizi segreti britannici sedotto (drogato e gabbato) dal fascino della concorrenza. A New York, cinque anni dopo, Claire e Ray si ritrovano loro malgrado occupati per la stessa multinazionale, che vorrebbe entrare in possesso della formula di un prodotto rivoluzionario in anticipo sull'azienda rivale. Innamorati con riserva, diffidenti per mestiere, i due amanti depongono le armi, praticano l'amore, bevono champagne, bruciano di passione e pianificano di imbrogliare i magnati delle industrie concorrenti. Tra Dubai e Miami, tra Cleveland e Roma, tra salti temporali e sentimenti senza fine, Claire e Ray getteranno la maschera e berranno alla salute di una sfida inaugurata con un Margarita e finita \"in bollicine\"."
             },
             {
-                "ora": "16:50",
+                "ora": "16:55",
                 "titolo": "Se scappi, ti sposo",
                 "descrizione": "Il reporter newyorkese Ike Graham è in cerca di un'idea interessante cui dedicare il nuovo articolo della sua rubrica sul USA Today. Al pub dove solitamente trova ispirazione, fa la conoscenza di un uomo sconsolato che gli racconta di una donna che ha sistematicamente abbandonato all'altare ogni suo sposo nel giorno delle nozze. Il pezzo sulla \"sposa in fuga\" riceve un grosso richiamo e provoca le ire del suo stesso soggetto, Maggie Carpenter, che per pronta risposta scrive una lettera di protesta in cui denuncia le bugie e lo sciovinismo di Ike. Licenziato dalla sua editrice nonché ex moglie, Ike decide così di vendicarsi a suo modo, indagando sulle precedenti relazioni di Maggie e trasferendosi nella piccola cittadina del Maryland dove lei vive in attesa di sposarsi per la quarta volta."
             },
             {
-                "ora": "18:50",
+                "ora": "18:55",
                 "titolo": "Appuntamento con l'amore",
                 "descrizione": "Nella giornata di S. Valentino si incrociano diverse storie, tutte flebilmente unite tra loro. C’è l’italoamericano colmo di gioia per aver chiesto di sposarlo alla sua ragazza che di lavoro consegna fiori, c’è la press agent stressata e sempre sola, il reporter sportivo d’assalto relegato a fare costume, la donna soldato in licenza dal fronte, la maestra elementare che sembra aver finalmente trovato l’uomo giusto, il bambino di lei innamorato e il donnaiolo incallito."
             },
@@ -5381,7 +5371,7 @@
                 "descrizione": "Finley, un'aspirante violinista di talento, incontra Beckett, una famosa giovane star del cinema, mentre si reca al suo semestre universitario all'estero in un piccolo villaggio costiero in Irlanda. Una storia d'amore inaspettata emerge quando il rubacuori Beckett guida la nervosa Finley in un avventuroso risveglio, e lei lo incoraggia a farsi carico del suo futuro, finché le pressioni della sua celebrit� non si mettono in mezzo."
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:41"
     },
     {
         "canale": "Sky Cinema Drama",
@@ -5408,22 +5398,22 @@
                 "descrizione": "Gli astronauti Ryan Stone e Matt Kowalsky lavorano ad alcune riparazioni di una stazione orbitante nello spazio quando un'imprevedibile catena di eventi gli scaraventa contro una tempesta di detriti. L'impatto è devastante, distrugge la loro stazione e li lascia a vagare nello spazio nel disperato tentativo di sopravvivere e trovare una maniera per tornare sulla Terra."
             },
             {
-                "ora": "11:50",
+                "ora": "11:55",
                 "titolo": "Atlas",
                 "descrizione": "Appassionata di arrampicata, Allegra è vittima di un attacco terroristico che costa la vita ai suoi amici. Annientata dal senso di colpa e dal desiderio di vendetta si ritira nella sua solitudine. I suoi cari sono impotenti. Così, per tornare a godere della vita Allegra deve intraprendere una lunga lotta contro se stessa. In questo contesto incontra Arad, un giovane rifugiato del Medio Oriente: la fiducia nel diverso rimane un difficile ostacolo."
             },
             {
-                "ora": "13:20",
+                "ora": "13:25",
                 "titolo": "La stanza accanto",
                 "descrizione": "Ingrid e Martha sono amiche da anni, e non si sono mai dette mezze verit� . Ingrid è una scrittrice di successo il cui ultimo libro racconta la sua incapacit� di capire e accettare la morte. Martha è stata una corrispondente di guerra e ora è affetta da un tumore che potrebbe essere curabile con una terapia sperimentale, ma intanto si è preparata all'idea di morire, e ha gi� scelto, nel caso, come farlo: con una pillola comprata sul dark web. Ciò che vorrebbe però è non morire sola, e poiché il suo rapporto con la figlia le appare come irrimediabilmente compromesso chiede a Ingrid di soggiornare nella stanza accanto alla sua nel momento in cui dovesse decidere di \"abbandonare il party\"."
             },
             {
-                "ora": "15:10",
+                "ora": "15:15",
                 "titolo": "Siccita'",
                 "descrizione": "A Roma non piove da tre anni e la mancanza d’acqua stravolge regole e abitudini. Nella citt� che muore di sete e di divieti si muove un coro di personaggi, giovani e vecchi, emarginati e di successo, vittime e approfittatori. Le loro esistenze sono legate in un unico disegno beffardo e tragico, mentre cercano ognuno la propria redenzione."
             },
             {
-                "ora": "17:20",
+                "ora": "17:25",
                 "titolo": "L'ultimo giorno sulla Terra",
                 "descrizione": "In un futuro non troppo lontano, la temperatura del pianeta terra è aumentata a dismisura, molte specie si sono estinte e centinaia di persone sono diventate rifugiati climatici. Un nuovo pianeta è apparso in cielo ed è in rotta di collisione con la terra. Solo un uomo può salvare il mondo, il suo nome è Paul W.R, tuttavia, a poche ore dell’inizio della missione l’astronauta è scomparso. Da allora tutti lo cercano."
             },
@@ -5438,12 +5428,12 @@
                 "descrizione": "Billy Hope è il campione imbattuto dei pesi massimi. Ha una moglie bellissima, Maureen, conosciuta all'orfanotrofio dove entrambi sono cresciuti, una figlia e una villa faraonica. Maureen prova a convincerlo che tutto questo non è fatto per durare e che deve abbandonare la boxe, ma prima che Billy possa mettere in atto la sua promessa, un alterco con il rivale Miguel Escobar degenera e un proiettile vagante colpisce Maureen, uccidendola. Billy perder� ogni cosa e dovr� ripartire da zero, con l'obiettivo di tornare sul ring e sfidare Escobar."
             },
             {
-                "ora": "23:10",
+                "ora": "23:05",
                 "titolo": "Vita segreta di Maria Capasso",
                 "descrizione": "Maria (Luisa Ranieri) ha sposato giovanissima un onesto lavoratore, fa l’estetista part time e ha tre figli. La sua è una vita come tante di quelle della periferia popolare di Napoli, che nella fatica quotidiana di arrivare a fine mese ti fa abituare a tutto. Quando al marito viene diagnosticata una malattia in fase terminale, Maria accetta l’aiuto di Gennaro (Daniele Russo), ricco proprietario di un autosalone. Da lui si lascia corteggiare fino a diventarne l’amante. Un giorno lui le propone di diventare partner in affari: trasporter� un carico di cocaina fino in Svizzera. Una volta divenuta vedova, il legame con Gennaro la far� precipitare in un vortice criminale, che le permetter� finalmente di vivere nuove possibilit� e coronare vecchi sogni. Ma la strada scelta da Maria per la sua personale rivincita lascer� dietro di sé le sue inevitabili vittime, proprio come in una guerra che non guarda in faccia nessuno."
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:41"
     },
     {
         "canale": "Sky Cinema Comedy",
@@ -5460,17 +5450,17 @@
                 "descrizione": "Il film vede il giovane Fabio alle prese con un padre ingombrante e una sorellina capricciosa e viziata che lo considerano un buono a nulla, un \"vegetale\" appunto. Lo sfortunato neolaureato in cerca di un impiego reagisce al disprezzo della sua famiglia e degli esigenti datori di lavoro, quando un evento inatteso rimescola i ruoli offrendogli una preziosa occasione."
             },
             {
-                "ora": "08:40",
+                "ora": "08:45",
                 "titolo": "Se Dio vuole",
                 "descrizione": "Tommaso è uno stimato cardiochirurgo, anche se il suo rapporto con il \"cuore\" si limita alla sala operatoria. Una vita fa ha conosciuto sua moglie Carla, affascinante e \"pasionaria\", oggi sfiorita come gli ideali in cui credeva. Tommaso e Carla hanno due figli; la più grande Bianca non ha interessi, non ha idee, non ha passioni: una simpatica mentecatta. Andrea invece è un ragazzo brillante, iscritto a Medicina, pronto a seguire le orme del padre, con suo grande orgoglio. Ultimamente Andrea però sembra cambiato: è spesso chiuso nella sua stanza e la sera esce senza dire a nessuno dove va. Il dubbio si insinua strisciante: Andrea è gay!"
             },
             {
-                "ora": "10:10",
+                "ora": "10:15",
                 "titolo": "Una poltrona per due",
                 "descrizione": "Due finanzieri di Filadelfia sostituiscono per scommessa un manager d'assalto, bianco, con un nero spiantato senza arte né parte."
             },
             {
-                "ora": "12:10",
+                "ora": "12:15",
                 "titolo": "Compagni di scuola",
                 "descrizione": "Federica, mantenuta di lusso, riunisce nella sua villa al mare, dopo quindici anni dalla licenza liceale, un folto gruppo di ex-compagni di scuola: Maria Rita, single e psicologa; Gloria, ragazza madre; Valeria, giornalista ; Gioia, sterile e un po' fuori di testa; Jolanda, petulante zitella; Margherita, insoddisfatta moglie di un gelosissimo carabiniere; Francesco, imbellito ma insoddisfatto; Fabris, il bello della classe, peggiorato fisicamente e persino calvo; Luca, ex-marito di Valeria, vignettista satirico; Bruno, cantante fallito; Attemi, videomane; Armando, eterno bambinone; Gino, magistrato finto paralitico; Mauro, squallido politicante; Ottavio, insopportabile sapientone; Finocchiaro, burino macellaio; Piero \"il Patata\", estroverso professore di liceo, afflitto da una moglie volgare ed ingenuamente innamorato della sua allieva Cristina. Dal pomeriggio all'alba successiva, l'incontro rivela le illusioni..."
             },
@@ -5500,12 +5490,12 @@
                 "descrizione": "Due amici più che ventenni vivono a Miami durante la guerra in Iraq. I due, sfruttando un’iniziativa poco conosciuta del governo che offre alle piccole imprese contratti di fornitura alle Forze Armate, iniziano a racimolare ingenti somme di denaro. Vivono sfrenatamente nel lusso fino a quando non stringono un accordo da 300 milioni per armare l’esercito afgano. Accordo che porter� la coppia in contatto con persone ambigue e poco raccomandabili. Tra queste, anche esponenti del Governo americano."
             },
             {
-                "ora": "23:00",
+                "ora": "22:55",
                 "titolo": "Grazie ragazzi",
                 "descrizione": "Antonio è un attore appassionato ma spesso disoccupato. Di fronte alla mancanza di offerte di lavoro, accetta un lavoro come insegnante di un laboratorio teatrale all’interno di un istituto penitenziario. All’inizio titubante, scopre del talento nella improbabile compagnia di detenuti e questo riaccende in lui la passione e la voglia di fare teatro. Antonio riesce a convincere la direttrice del carcere a mettere in scena la famosa commedia di Samuel Beckett “Aspettando Godot” su un vero palcoscenico teatrale. Giorno dopo giorno i detenuti si arrendono alla risolutezza di Antonio. Si lasciano andare scoprendo il potere liberatorio dell’arte e la sua capacit� di dare uno scopo e una speranza oltre l’attesa. Così quando arriva il definitivo via libera, inizia un tour trionfale."
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:41"
     },
     {
         "canale": "Sky Uno",
@@ -5542,28 +5532,28 @@
                 "descrizione": "Ep1 di 8 Sardegna costa del sud - Bruno Barbieri arriva in Sardegna, nella Costa del Sud, famosa per le splendide spiagge, per la sua natura incontaminata e per le numerose testimonianze di una storia millenaria."
             },
             {
-                "ora": "10:35",
+                "ora": "10:40",
                 "titolo": "Alessandro Borghese - 4 Ristoranti",
                 "descrizione": "Ep6 di 14 Costa Azzurra - Chi tra Salvatore, Tina, Vincent e Francesco si aggiudichera' il titolo di miglior ristoratore di cucina italiana della Cote d'Azur, meta turistica esclusiva per eccellenza?"
             },
             {
-                "ora": "11:50",
+                "ora": "11:55",
                 "titolo": "Quattro matrimoni",
                 "descrizione": "I matrimoni di queste quattro spose si tingeranno di verde, colore dell'energia, della natura e della speranza: soprattutto quella di vincere Quattro Matrimoni! Scopriamo chi ce la far� ."
             },
             {
-                "ora": "13:05",
+                "ora": "13:15",
                 "titolo": "Destination X: Scopri la meta",
                 "descrizione": "Tra storie d'amore in divenire e false piste, il percorso di un concorrente giunge al termine. Due nuovi concorrenti a sorpresa stravolgono immediatamente il gioco."
             },
             {
-                "ora": "14:00",
+                "ora": "14:05",
                 "titolo": "Destination X: Scopri la meta",
                 "descrizione": "I nuovi arrivati Peter e Jana non perdono tempo e scatenano subito un po' di trambusto. Dopo essere stato votato come il più affidabile, Biggy si trova di fronte a un bivio: tradire un membro dell'alleanza o rischiare lui stesso l'eliminazione."
             },
             {
                 "ora": "15:00",
-                "titolo": "Giorgio Locatelli: Home Restaurant",
+                "titolo": "Home Restaurant",
                 "descrizione": "Ep20 di 25 - Due coppie di cuochi amatoriali dovranno trasformare per un giorno la propria casa in un vero Home Restaurant. A giudicarli Giorgio Locatelli ed Enzo Miccio."
             },
             {
@@ -5577,12 +5567,12 @@
                 "descrizione": "I matrimoni di queste quattro spose si tingeranno di verde, colore dell'energia, della natura e della speranza: soprattutto quella di vincere Quattro Matrimoni! Scopriamo chi ce la far� ."
             },
             {
-                "ora": "18:40",
+                "ora": "18:35",
                 "titolo": "Alessandro Borghese - 4 Ristoranti",
                 "descrizione": "Ep10 di 14 Sardegna - Zona della Sardegna con una storia millenaria che affonda le radici tanto in montagna quanto lungo la sua costa meravigliosa, Ogliastra e' il terreno di una sfida tutta al femminile."
             },
             {
-                "ora": "20:00",
+                "ora": "19:55",
                 "titolo": "Alessandro Borghese - 4 Ristoranti",
                 "descrizione": "Ep11 di 14 Gorizia - Gorizia è una citta' che da sempre attinge dalle numerose culture che la influenzano, da quella austroungarica a quella veneziana, da quella slava a quella friulana."
             },
@@ -5594,10 +5584,10 @@
             {
                 "ora": "22:30",
                 "titolo": "What's Next 2026",
-                "descrizione": "Ep1 What's Next 2026 10\/07\/2026 - What's Next 2026"
+                "descrizione": "Una serata di talent, campioni e grandi protagonisti Sky per svelare una stagione ricca di emozioni, spettacolo e appuntamenti imperdibili. Conduce Fabio Caressa."
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:41"
     },
     {
         "canale": "Sky Atlantic",
@@ -5609,17 +5599,17 @@
                 "descrizione": "48 persone sopravvivono ad un tremendo disastro aereo e si ritrovano dispersi su un'isola dell'Oceano Pacifico che sembra completamente disabitata. Ognuno di loro ha una sua storia, ognuno di loro nasconde dei segreti. Ma tutti quanti sono consapevoli che, se vogliono continuare a vivere, debbono collaborare, superare le avversit� e le divisioni personali e sperare in un soccorso che potrebbe anche non arrivare mai. Il gruppo, mentre affronta l'inclemenza del tempo e l'ambiente ostile, scopre, con il passare del tempo, che anche l'isola nasconde dei segreti."
             },
             {
-                "ora": "06:00",
+                "ora": "06:05",
                 "titolo": "Poker Face",
                 "descrizione": "Charlie è una donna con un dono straordinario: riconoscere quando qualcuno mente. A bordo della sua Plymouth Barracuda, attraversa il paese e, a ogni tappa, si trova coinvolta in strani crimini che non può fare a meno di risolvere."
             },
             {
-                "ora": "06:50",
+                "ora": "06:55",
                 "titolo": "Poker Face",
                 "descrizione": "Charlie è una donna con un dono straordinario: riconoscere quando qualcuno mente. A bordo della sua Plymouth Barracuda, attraversa il paese e, a ogni tappa, si trova coinvolta in strani crimini che non può fare a meno di risolvere."
             },
             {
-                "ora": "07:50",
+                "ora": "07:55",
                 "titolo": "House of the Dragon",
                 "descrizione": "La serie prequel vede la dinastia Targaryen all'apice assoluto del suo potere, con più di 15 draghi sotto il loro giogo. La maggior parte degli imperi, che siano reali o immaginari, crollano quando raggiungono tali poteri e tali altezze. Nel caso dei Targaryen, la loro lenta caduta inizia quasi 193 anni prima degli eventi de Il Trono di Spade, quando re Viserys Targaryen rompe un secolo di tradizione nominando sua figlia Rhaenyra erede al Trono di Spade. La corte rimane scioccata quando Rhaenyra mantiene il suo status di erede nonostante Viserys in seguito avr� un figlio maschio, legittimo erede. Inizia così ad attecchire il seme della divisione e forti attriti in tutto il regno."
             },
@@ -5644,42 +5634,42 @@
                 "descrizione": "Un'epica serie di avventure romantiche basata sulla vita del famoso fuorilegge americano Billy the Kid, dalle sue umili radici irlandesi, ai suoi primi giorni come cowboy e pistolero nella frontiera americana, al suo ruolo fondamentale nella guerra della contea di Lincoln e oltre."
             },
             {
-                "ora": "12:30",
+                "ora": "12:25",
                 "titolo": "Billy the Kid",
                 "descrizione": "Un'epica serie di avventure romantiche basata sulla vita del famoso fuorilegge americano Billy the Kid, dalle sue umili radici irlandesi, ai suoi primi giorni come cowboy e pistolero nella frontiera americana, al suo ruolo fondamentale nella guerra della contea di Lincoln e oltre."
             },
             {
-                "ora": "13:25",
+                "ora": "13:20",
                 "titolo": "Chicago P.D.",
                 "descrizione": "La serie racconta le vicende del Distretto 21 del Dipartimento di Polizia di Chicago, composto da due gruppi differenti: l'Unit� di pattuglia, che vigila le pericolose strade della citt� , e l'Unit� di Intelligence, che combatte il crimine organizzato, il traffico di droga e si occupa dei casi di omicidio più complessi."
             },
             {
-                "ora": "14:15",
+                "ora": "14:05",
                 "titolo": "Lost",
                 "descrizione": "48 persone sopravvivono ad un tremendo disastro aereo e si ritrovano dispersi su un'isola dell'Oceano Pacifico che sembra completamente disabitata. Ognuno di loro ha una sua storia, ognuno di loro nasconde dei segreti. Ma tutti quanti sono consapevoli che, se vogliono continuare a vivere, debbono collaborare, superare le avversit� e le divisioni personali e sperare in un soccorso che potrebbe anche non arrivare mai. Il gruppo, mentre affronta l'inclemenza del tempo e l'ambiente ostile, scopre, con il passare del tempo, che anche l'isola nasconde dei segreti."
             },
             {
-                "ora": "15:05",
+                "ora": "14:55",
                 "titolo": "Lost",
                 "descrizione": "48 persone sopravvivono ad un tremendo disastro aereo e si ritrovano dispersi su un'isola dell'Oceano Pacifico che sembra completamente disabitata. Ognuno di loro ha una sua storia, ognuno di loro nasconde dei segreti. Ma tutti quanti sono consapevoli che, se vogliono continuare a vivere, debbono collaborare, superare le avversit� e le divisioni personali e sperare in un soccorso che potrebbe anche non arrivare mai. Il gruppo, mentre affronta l'inclemenza del tempo e l'ambiente ostile, scopre, con il passare del tempo, che anche l'isola nasconde dei segreti."
             },
             {
-                "ora": "15:55",
+                "ora": "15:45",
                 "titolo": "Ray Donovan",
                 "descrizione": "Il faccendiere Ray Donovan risolve con abilit� e destrezza i problemi di molte personalit� di spicco di Los Angeles, atleti, cantanti e uomini d'affari, ma con la stessa abilit� non riesce a risolvere i suoi problemi personali. I suoi problemi si complicano quando il padre, con cui ha da sempre un rapporto conflittuale, viene inaspettatamente scarcerato, sconvolgendo la sua vita e il suo nucleo familiare."
             },
             {
-                "ora": "16:55",
+                "ora": "16:45",
                 "titolo": "Ray Donovan",
                 "descrizione": "Il faccendiere Ray Donovan risolve con abilit� e destrezza i problemi di molte personalit� di spicco di Los Angeles, atleti, cantanti e uomini d'affari, ma con la stessa abilit� non riesce a risolvere i suoi problemi personali. I suoi problemi si complicano quando il padre, con cui ha da sempre un rapporto conflittuale, viene inaspettatamente scarcerato, sconvolgendo la sua vita e il suo nucleo familiare."
             },
             {
-                "ora": "18:00",
+                "ora": "17:50",
                 "titolo": "House of the Dragon",
                 "descrizione": "La serie prequel vede la dinastia Targaryen all'apice assoluto del suo potere, con più di 15 draghi sotto il loro giogo. La maggior parte degli imperi, che siano reali o immaginari, crollano quando raggiungono tali poteri e tali altezze. Nel caso dei Targaryen, la loro lenta caduta inizia quasi 193 anni prima degli eventi de Il Trono di Spade, quando re Viserys Targaryen rompe un secolo di tradizione nominando sua figlia Rhaenyra erede al Trono di Spade. La corte rimane scioccata quando Rhaenyra mantiene il suo status di erede nonostante Viserys in seguito avr� un figlio maschio, legittimo erede. Inizia così ad attecchire il seme della divisione e forti attriti in tutto il regno."
             },
             {
-                "ora": "19:05",
+                "ora": "19:00",
                 "titolo": "House of the Dragon",
                 "descrizione": "La serie prequel vede la dinastia Targaryen all'apice assoluto del suo potere, con più di 15 draghi sotto il loro giogo. La maggior parte degli imperi, che siano reali o immaginari, crollano quando raggiungono tali poteri e tali altezze. Nel caso dei Targaryen, la loro lenta caduta inizia quasi 193 anni prima degli eventi de Il Trono di Spade, quando re Viserys Targaryen rompe un secolo di tradizione nominando sua figlia Rhaenyra erede al Trono di Spade. La corte rimane scioccata quando Rhaenyra mantiene il suo status di erede nonostante Viserys in seguito avr� un figlio maschio, legittimo erede. Inizia così ad attecchire il seme della divisione e forti attriti in tutto il regno."
             },
@@ -5709,7 +5699,7 @@
                 "descrizione": "Charlie è una donna con un dono straordinario: riconoscere quando qualcuno mente. A bordo della sua Plymouth Barracuda, attraversa il paese e, a ogni tappa, si trova coinvolta in strani crimini che non può fare a meno di risolvere."
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:41"
     },
     {
         "canale": "Sky Serie",
@@ -5736,7 +5726,7 @@
                 "descrizione": "Considerata un'immigrata, comune e semplice, Caterina de' Medici è sposata alla corte francese del XVI secolo da adolescente orfana che dovrebbe portare una fortuna in dote e produrre molti eredi, solo per scoprire che suo marito è innamorato di una donna anziana, la sua la dote non è pagata e lei non riesce a concepire. Eppure, solo con la sua intelligenza e determinazione, riesce a mantenere vivo il suo matrimonio e padroneggia meglio di chiunque altro lo sport sanguinario che è la monarchia, governando la Francia per 50 anni."
             },
             {
-                "ora": "08:10",
+                "ora": "08:05",
                 "titolo": "Un'estate fa - Speciale",
                 "descrizione": "Un delitto da risolvere, tante vite da ricomporre: Lino Guanciale e gli altri protagonisti di Un'estate fa ci raccontano temi, personaggi e curiosita' della serie."
             },
@@ -5751,7 +5741,7 @@
                 "descrizione": "New York, 1882: la giovane Marian si trasferisce dalle zie a New York e incontra la dura realt� dell'alta societ� ."
             },
             {
-                "ora": "10:20",
+                "ora": "10:15",
                 "titolo": "The Gilded Age",
                 "descrizione": "New York, 1882: la giovane Marian si trasferisce dalle zie a New York e incontra la dura realt� dell'alta societ� ."
             },
@@ -5761,7 +5751,7 @@
                 "descrizione": "Gregory House è un medico burbero, di un'onest� quasi brutale, scorbutico nei confronti dei pazienti con i quali, se potesse, eviterebbe persino di parlare. Afflitto da dolori cronici a una gamba, è costretto a camminare aiutandosi con un bastone."
             },
             {
-                "ora": "12:05",
+                "ora": "12:10",
                 "titolo": "Dr. House: Medical Division",
                 "descrizione": "Gregory House è un medico burbero, di un'onest� quasi brutale, scorbutico nei confronti dei pazienti con i quali, se potesse, eviterebbe persino di parlare. Afflitto da dolori cronici a una gamba, è costretto a camminare aiutandosi con un bastone."
             },
@@ -5796,7 +5786,7 @@
                 "descrizione": "Brenda e Kelly litigano quando, dopo la prima audizione, Roy Randolph sembra preferire Kelly per il ruolo da protagonista."
             },
             {
-                "ora": "18:20",
+                "ora": "18:25",
                 "titolo": "Dr. House: Medical Division",
                 "descrizione": "Gregory House è un medico burbero, di un'onest� quasi brutale, scorbutico nei confronti dei pazienti con i quali, se potesse, eviterebbe persino di parlare. Afflitto da dolori cronici a una gamba, è costretto a camminare aiutandosi con un bastone."
             },
@@ -5811,12 +5801,12 @@
                 "descrizione": "Una delle commedie televisive più amate di sempre su un gruppo di sei amici trentenni, la trama si svolge prevalentemente in due appartamenti e un Coffee-Bar: Monica, Rachel, Phoebe, Chandler, Ross e Joey condividono sogni, amori, delusioni e speranze fra gag esilaranti e battute dal ritmo serratissimo."
             },
             {
-                "ora": "20:25",
+                "ora": "20:20",
                 "titolo": "Friends",
                 "descrizione": "Una delle commedie televisive più amate di sempre su un gruppo di sei amici trentenni, la trama si svolge prevalentemente in due appartamenti e un Coffee-Bar: Monica, Rachel, Phoebe, Chandler, Ross e Joey condividono sogni, amori, delusioni e speranze fra gag esilaranti e battute dal ritmo serratissimo."
             },
             {
-                "ora": "20:45",
+                "ora": "20:40",
                 "titolo": "Friends",
                 "descrizione": "Una delle commedie televisive più amate di sempre su un gruppo di sei amici trentenni, la trama si svolge prevalentemente in due appartamenti e un Coffee-Bar: Monica, Rachel, Phoebe, Chandler, Ross e Joey condividono sogni, amori, delusioni e speranze fra gag esilaranti e battute dal ritmo serratissimo."
             },
@@ -5826,12 +5816,12 @@
                 "descrizione": "Basata sul racconto breve di Manuel Gonzalez, la serie esamina gli squilibri di potere all'interno della coppia: quando un incidente di laboratorio riduce Lindy a soli 15 cm di altezza, il gi� fragile equilibrio nel suo matrimonio con Les esplode in una battaglia esilarante e graffiante tra orgoglio, rancore e amore."
             },
             {
-                "ora": "22:05",
+                "ora": "22:00",
                 "titolo": "The Miniature Wife: Un piccolo problema",
                 "descrizione": "Basata sul racconto breve di Manuel Gonzalez, la serie esamina gli squilibri di potere all'interno della coppia: quando un incidente di laboratorio riduce Lindy a soli 15 cm di altezza, il gi� fragile equilibrio nel suo matrimonio con Les esplode in una battaglia esilarante e graffiante tra orgoglio, rancore e amore."
             },
             {
-                "ora": "22:55",
+                "ora": "22:50",
                 "titolo": "Chicago Med",
                 "descrizione": "Cavalcare il brivido emozionale attraverso il caos raccontanto giorno dopo giorno nell’ospedale più esplosivo della citt� , con la squadra coraggiosa dei medici che lo tengono insieme. Essi affronteranno nuovi casi unici ispirati dagli eventi di attualit� , creeranno relazioni di fuoco nel pandemonio cardiopalmo del pronto soccorso. La serie è di genere medical drama è uno spinoff di Chicago Fire, creata da by Dick Wolf e Matt Olmstead."
             },
@@ -5841,99 +5831,99 @@
                 "descrizione": "$25"
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:41"
     },
     {
         "canale": "Sky Investigation",
         "categoria": "Intrattenimento",
         "programmi": [
             {
-                "ora": "05:15",
+                "ora": "05:10",
                 "titolo": "Balthazar",
                 "descrizione": "Il dottor Raphaël Balthazar, è un medico legale affascinante, intelligente, brillante nel lavoro, ma con un carattere assolutamente esasperante. Forte di queste qualit� sfida spesso il sistema delle regole imposte dalla societ� . Per Hélène Bach, capitano della polizia, non è facile lavorare con Raphaël. Tuttavia, deve trovare il modo di farlo perché solamente unendo le forze possono pensare di riuscire a risolvere il caso di omicidio complicato che si presenta alle autorit� ."
             },
             {
-                "ora": "06:00",
+                "ora": "06:05",
                 "titolo": "FBI: International",
                 "descrizione": "La serie segue gli agenti d'élite dell'International Fly Team dell'FBI con sede a Budapest, incaricati di localizzare e neutralizzare le minacce contro gli americani, ovunque si trovino."
             },
             {
-                "ora": "06:45",
+                "ora": "06:50",
                 "titolo": "FBI: International",
                 "descrizione": "La serie segue gli agenti d'élite dell'International Fly Team dell'FBI con sede a Budapest, incaricati di localizzare e neutralizzare le minacce contro gli americani, ovunque si trovino."
             },
             {
-                "ora": "07:30",
+                "ora": "07:35",
                 "titolo": "CSI: Miami",
                 "descrizione": "Si tratta del primo spin-off della serie TV CSI - Scena del crimine, le cui vicende ruotano attorno alle indagini della squadra del turno di giorno della polizia scientifica di Miami. Sebbene la serie sia accomunata a CSI - Scena del crimine per quanto riguarda il metodo di indagine e ricerca delle prove, talvolta CSI: Miami si avvicina alle serie poliziesche in senso stretto in quanto è caratterizzata da un ruolo più preponderante dell'azione vera e propria, che in alcuni episodi ruba la scena all'analisi scientifica."
             },
             {
-                "ora": "08:15",
+                "ora": "08:25",
                 "titolo": "Delitti ai Tropici",
                 "descrizione": "Il comandante della Police Nationale Mélissa Sainte-Rose, originaria della Martinica, viene trasferita dalla Francia continentale a Fort-de-France, dove trova alle sue dipendenze il capitano Gaëlle Crivelli. I rapporti sono tesi tra le due poliziotte, perché totalmente diverse nel loro comportamento, ma complementari per la risoluzione degli omicidi."
             },
             {
-                "ora": "09:10",
+                "ora": "09:15",
                 "titolo": "Delitti ai Tropici",
                 "descrizione": "Il comandante della Police Nationale Mélissa Sainte-Rose, originaria della Martinica, viene trasferita dalla Francia continentale a Fort-de-France, dove trova alle sue dipendenze il capitano Gaëlle Crivelli. I rapporti sono tesi tra le due poliziotte, perché totalmente diverse nel loro comportamento, ma complementari per la risoluzione degli omicidi."
             },
             {
-                "ora": "10:05",
+                "ora": "10:20",
                 "titolo": "Law & Order: Special Victims Unit",
                 "descrizione": "Le indagini dell'Unit� Vittime Speciali, una nuova squadra speciale della Polizia di New York che si occupa di crimini a sfondo sessuale. In ogni episodio si segue da una parte l'attivit� investigativa attuata dalla squadra e dall'altra l'aspetto giudiziario con l'iniziativa processuale condotta dalla procura distrettuale."
             },
             {
-                "ora": "10:50",
+                "ora": "11:05",
                 "titolo": "Law & Order: Special Victims Unit",
                 "descrizione": "Le indagini dell'Unit� Vittime Speciali, una nuova squadra speciale della Polizia di New York che si occupa di crimini a sfondo sessuale. In ogni episodio si segue da una parte l'attivit� investigativa attuata dalla squadra e dall'altra l'aspetto giudiziario con l'iniziativa processuale condotta dalla procura distrettuale."
             },
             {
-                "ora": "11:35",
+                "ora": "11:50",
                 "titolo": "CSI: Miami",
                 "descrizione": "Si tratta del primo spin-off della serie TV CSI - Scena del crimine, le cui vicende ruotano attorno alle indagini della squadra del turno di giorno della polizia scientifica di Miami. Sebbene la serie sia accomunata a CSI - Scena del crimine per quanto riguarda il metodo di indagine e ricerca delle prove, talvolta CSI: Miami si avvicina alle serie poliziesche in senso stretto in quanto è caratterizzata da un ruolo più preponderante dell'azione vera e propria, che in alcuni episodi ruba la scena all'analisi scientifica."
             },
             {
-                "ora": "12:25",
+                "ora": "12:40",
                 "titolo": "CSI: Miami",
                 "descrizione": "Si tratta del primo spin-off della serie TV CSI - Scena del crimine, le cui vicende ruotano attorno alle indagini della squadra del turno di giorno della polizia scientifica di Miami. Sebbene la serie sia accomunata a CSI - Scena del crimine per quanto riguarda il metodo di indagine e ricerca delle prove, talvolta CSI: Miami si avvicina alle serie poliziesche in senso stretto in quanto è caratterizzata da un ruolo più preponderante dell'azione vera e propria, che in alcuni episodi ruba la scena all'analisi scientifica."
             },
             {
-                "ora": "13:15",
+                "ora": "13:30",
                 "titolo": "Delitti ai Tropici",
                 "descrizione": "Il comandante della Police Nationale Mélissa Sainte-Rose, originaria della Martinica, viene trasferita dalla Francia continentale a Fort-de-France, dove trova alle sue dipendenze il capitano Gaëlle Crivelli. I rapporti sono tesi tra le due poliziotte, perché totalmente diverse nel loro comportamento, ma complementari per la risoluzione degli omicidi."
             },
             {
-                "ora": "14:10",
+                "ora": "14:25",
                 "titolo": "FBI: International",
                 "descrizione": "La serie segue gli agenti d'élite dell'International Fly Team dell'FBI con sede a Budapest, incaricati di localizzare e neutralizzare le minacce contro gli americani, ovunque si trovino."
             },
             {
-                "ora": "14:55",
+                "ora": "15:10",
                 "titolo": "FBI: International",
                 "descrizione": "La serie segue gli agenti d'élite dell'International Fly Team dell'FBI con sede a Budapest, incaricati di localizzare e neutralizzare le minacce contro gli americani, ovunque si trovino."
             },
             {
-                "ora": "15:45",
+                "ora": "16:00",
                 "titolo": "Balthazar",
                 "descrizione": "Il dottor Raphaël Balthazar, è un medico legale affascinante, intelligente, brillante nel lavoro, ma con un carattere assolutamente esasperante. Forte di queste qualit� sfida spesso il sistema delle regole imposte dalla societ� . Per Hélène Bach, capitano della polizia, non è facile lavorare con Raphaël. Tuttavia, deve trovare il modo di farlo perché solamente unendo le forze possono pensare di riuscire a risolvere il caso di omicidio complicato che si presenta alle autorit� ."
             },
             {
-                "ora": "16:30",
+                "ora": "17:00",
                 "titolo": "Balthazar",
                 "descrizione": "Il dottor Raphaël Balthazar, è un medico legale affascinante, intelligente, brillante nel lavoro, ma con un carattere assolutamente esasperante. Forte di queste qualit� sfida spesso il sistema delle regole imposte dalla societ� . Per Hélène Bach, capitano della polizia, non è facile lavorare con Raphaël. Tuttavia, deve trovare il modo di farlo perché solamente unendo le forze possono pensare di riuscire a risolvere il caso di omicidio complicato che si presenta alle autorit� ."
             },
             {
-                "ora": "17:30",
+                "ora": "17:55",
                 "titolo": "Law & Order: I due volti della giustizia",
                 "descrizione": "Law & Order è un media franchise creato da Dick Wolf per la NBC Universal e formato da varie serie televisive poliziesco-giudiziarie e un film per la televisione, trasmessi sul network NBC dal 13 settembre 1990. Il franchise Law & Order nel tempo ha ispirato anche una serie di adattamenti televisivi stranieri, un docu-reality e videogiochi ufficiali, oltre a generare una serie di crossover con altre serie tv statunitensi."
             },
             {
-                "ora": "18:30",
+                "ora": "18:45",
                 "titolo": "Law & Order: I due volti della giustizia",
                 "descrizione": "Law & Order è un media franchise creato da Dick Wolf per la NBC Universal e formato da varie serie televisive poliziesco-giudiziarie e un film per la televisione, trasmessi sul network NBC dal 13 settembre 1990. Il franchise Law & Order nel tempo ha ispirato anche una serie di adattamenti televisivi stranieri, un docu-reality e videogiochi ufficiali, oltre a generare una serie di crossover con altre serie tv statunitensi."
             },
             {
-                "ora": "19:30",
+                "ora": "19:35",
                 "titolo": "Delitti ai Tropici",
                 "descrizione": "Il comandante della Police Nationale Mélissa Sainte-Rose, originaria della Martinica, viene trasferita dalla Francia continentale a Fort-de-France, dove trova alle sue dipendenze il capitano Gaëlle Crivelli. I rapporti sono tesi tra le due poliziotte, perché totalmente diverse nel loro comportamento, ma complementari per la risoluzione degli omicidi."
             },
@@ -5948,79 +5938,84 @@
                 "descrizione": "Charlie è una donna con un dono straordinario: riconoscere quando qualcuno mente. A bordo della sua Plymouth Barracuda, attraversa il paese e, a ogni tappa, si trova coinvolta in strani crimini che non può fare a meno di risolvere."
             },
             {
-                "ora": "22:55",
+                "ora": "22:45",
                 "titolo": "Poker Face",
                 "descrizione": "Charlie è una donna con un dono straordinario: riconoscere quando qualcuno mente. A bordo della sua Plymouth Barracuda, attraversa il paese e, a ogni tappa, si trova coinvolta in strani crimini che non può fare a meno di risolvere."
             },
             {
-                "ora": "23:55",
+                "ora": "23:45",
                 "titolo": "NCIS: New Orleans",
                 "descrizione": "La serie segue le vicende della squadra dell'NCIS distaccata a New Orleans. Guidata dall'agente speciale Dwayne Cassius Pride, è composta anche dall'agente speciale Christopher LaSalle e dalla neo-arrivata agente Meredith Brody, avvalendosi dell'assistenza del tecnico di laboratorio Sebastian Lund e del medico legale Loretta Wade. A partire dalla seconda stagione entrano nella squadra Patton Plame, esperto di cyber crimini, gi� collaboratore del team nella prima stagione e Sonja Percy, ex agente dell'ATF che ha collaborato con Pride nella caccia alla Piccola Esca e a Sasha Broussard. Durante la terza stagione, in seguito alla partenza di Brody, causata dalla sconvolgente storia con l'agente e traditore John Russo, alla squadra si aggiunger� l'agente Tammy Gregorio."
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:41"
     },
     {
         "canale": "Sky Crime",
         "categoria": "Intrattenimento",
         "programmi": [
             {
-                "ora": "05:30",
+                "ora": "04:50",
+                "titolo": "Fiumicino: Operazione Sex & Clean",
+                "descrizione": "Nel 2022, a Fiumicino, un pacco sospetto svela una rete di narcotraffico globale. L'operato della Polizia porta alla luce che uno dei più vasti traffici di droga sintetica dell'Europa, tra laboratori clandestini e canali insospettabili."
+            },
+            {
+                "ora": "06:00",
                 "titolo": "Online - Connessioni Pericolose",
                 "descrizione": "Quali sono i problemi legati alle informazioni pubblicate in rete attraverso i social media e i vari motori di ricerca? Cristina, 24 anni, ha tante amiche adolescenti che non l'hanno mai vista ma che si divertono a chattare con lei, almeno fino a quando non scoprono chi sia veramente Cristina..."
             },
             {
-                "ora": "06:00",
+                "ora": "06:30",
                 "titolo": "Medici assassini",
                 "descrizione": "S4 Ep8 di 10 Vittima o colpevole? - La scoperta del cadavere di un ospite in una casa di cura fa ricadere i sospetti su un'infermiera."
             },
             {
-                "ora": "06:55",
+                "ora": "07:25",
                 "titolo": "Medici assassini",
                 "descrizione": "S4 Ep7 di 10 Morte nella casa di riposo - La morte di un'anziana sembra naturale, ma l'autopsia rivela ferite inquietanti e il personale si interroga sul ruolo dell'assistente Jacob Hoysted."
             },
             {
-                "ora": "07:50",
+                "ora": "08:15",
                 "titolo": "La modella assassina - ...",
                 "descrizione": "Omicidio, tentato omicidio, evasione dal carcere. Ripercorriamo l'incredibile storia di Rosa della Corte attraverso la sua stessa testimonianza."
             },
             {
-                "ora": "08:50",
+                "ora": "09:10",
                 "titolo": "La modella assassina - ...",
                 "descrizione": "Rosa decide di raccontare la verit� , e confida il suo passato al giornalista. Non è ancora chiaro se la sua intenzione sia quella di far luce sul mistero che avvolge per anni la morte di Salvatore Pollastro."
             },
             {
-                "ora": "09:45",
+                "ora": "10:00",
                 "titolo": "La truffa perfetta - Estorsione sessuale",
                 "descrizione": "S1 Ep1 Estorsione sessuale - A Greenville, Jacob trova il corpo senza vita del fratello gemello Jared nel loro appartamento. Accanto, una pistola. Un dramma sconvolge per sempre la famiglia Johns."
             },
             {
-                "ora": "10:40",
+                "ora": "10:55",
                 "titolo": "La truffa perfetta - Schiava online",
                 "descrizione": "S1 Ep2 Schiava online - Una donna si presenta alla polizia di Redmond: credeva di aver trovato l'amore online, ma e' finita in una rete di inganni e sfruttamento."
             },
             {
-                "ora": "11:35",
+                "ora": "11:45",
                 "titolo": "Murder Suspect",
                 "descrizione": "S1 Ep3 di 5 Il tirapugni - Parte 1 - Un uomo viene brutalmente picchiato in casa con un tirapugni e muore in ospedale."
             },
             {
-                "ora": "12:50",
+                "ora": "13:00",
                 "titolo": "Murder Suspect",
                 "descrizione": "S1 Ep4 di 5 Il tirapugni - Parte 2 - Un uomo viene trovato picchiato a morte nella sua casa. Tre uomini sono sospettati, ma un imprevisto mette a rischio l'indagine."
             },
             {
-                "ora": "14:00",
+                "ora": "14:10",
                 "titolo": "Delitti a circuito chiuso",
                 "descrizione": "S10 Ep5 di 20 Episodio 1 - A Cleveland, Conbino Crasto viene ucciso durante una rapina in una stazione di servizio."
             },
             {
-                "ora": "14:55",
+                "ora": "15:05",
                 "titolo": "Delitti",
                 "descrizione": "Roma, 1991. La contessa Alberica Filo della Torre viene uccisa nella propria villa. Le ipotesi sull'omicidio sono molteplici, dalla vendetta allo spionaggio fino allo scioccante epilogo."
             },
             {
-                "ora": "16:00",
+                "ora": "16:10",
                 "titolo": "Il Furto Del Secolo",
                 "descrizione": "Il Furto Del Secolo - 16 luglio 1999: Massimo Carminati e la sua banda saccheggiano alcune delle cassette di sicurezza di una banca. Ma i criminali non erano alla ricerca di soldi..."
             },
@@ -6030,17 +6025,17 @@
                 "descrizione": "S1 Ep7 di 10 L’omicidio del postino - Un consueto giro di consegne si trasforma in tragedia quando un postino viene ucciso in pieno giorno."
             },
             {
-                "ora": "18:40",
+                "ora": "18:35",
                 "titolo": "A caccia dell'orco",
                 "descrizione": "S1 Ep3 di 10 Un alunno in pericolo - Quando emergono i messaggi inappropriati di un insegnante a un minore, il detective Godwin indaga per capire fin dove si spingono i suoi crimini."
             },
             {
-                "ora": "19:30",
+                "ora": "19:25",
                 "titolo": "Bande criminali - Le cronache...",
                 "descrizione": "S1 Ep2 di 12 El Chapo e il Cartello di Sinaloa - Sinaloa e il suo leader El Chapo mirano a diventare la piu grande organizzazione di narcotrafficanti al mondo."
             },
             {
-                "ora": "19:55",
+                "ora": "19:50",
                 "titolo": "Bande criminali - Le cronache...",
                 "descrizione": "S1 Ep10 di 12 La famiglia Gambino - Quando John Gotti si stanca dell'avidita' del boss, Paul Castellano, il destino della piu' potente famiglia mafiosa italiana di New York verra' stravolto."
             },
@@ -6070,7 +6065,7 @@
                 "descrizione": "La cassetta dell'orrore - La storia di due serial killer e stupratori americani che, in appena cinque mesi del 1979, rapirono, torturarono e uccisero cinque ragazze adolescenti."
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:41"
     },
     {
         "canale": "Sky Adventure",
@@ -6192,7 +6187,7 @@
                 "descrizione": "Dai più tragici a quelli più comici, sveliamo i più incredibili fallimenti ingegneristici del nostro tempo."
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:41"
     },
     {
         "canale": "MTV",
@@ -6230,7 +6225,7 @@
             },
             {
                 "ora": "09:00",
-                "titolo": "Teen Mom OG 6",
+                "titolo": "Teen Mom OG - Ciao di nuovo mondo!",
                 "descrizione": "S6 Ep17 Ciao di nuovo mondo! - Tyler e' meno ottimista del solito quando suo padre viene nuovamente rilasciato di prigione. Maci organizza una festa di compleanno per Bentley"
             },
             {
@@ -6240,7 +6235,7 @@
             },
             {
                 "ora": "10:50",
-                "titolo": "Teen Mom OG 6",
+                "titolo": "Teen Mom OG - Natale blu",
                 "descrizione": "S6 Ep19 Natale blu - Amber continua a essere triste di non poter tenere Leah quanto vuole. Cate sorprende Tyler con una vacanza invernale."
             },
             {
@@ -6265,7 +6260,7 @@
             },
             {
                 "ora": "15:15",
-                "titolo": "Teen Mom 2 1",
+                "titolo": "Teen Mom 2 - Switching Gears",
                 "descrizione": "S1 Ep8 Switching Gears - Jenelle e Kieffer chiedono ospitalita' a Barbara. Il padre di Chelsea vuole che Adam trovi un lavoro. Kailyn esce col suo ex. Leah e Corey organizzano il matrimonio."
             },
             {
@@ -6329,7 +6324,7 @@
                 "descrizione": "Ep3 di 42 Sterling e Nina Agdal LXV - Rob e Steelo sono con Nina Agdal che si vanta di essere un'icona dello scooter."
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:41"
     },
     {
         "canale": "Comedy Central",
@@ -6371,122 +6366,122 @@
                 "descrizione": "Dopo molti anni trascorsi al bar \"Cheers\", Frasier torna a casa a Seattle per lavorare come psichiatra radiofonico dopo che suo padre poliziotto è stato colpito all'anca in servizio."
             },
             {
-                "ora": "08:20",
+                "ora": "08:15",
                 "titolo": "Frasier",
                 "descrizione": "Dopo molti anni trascorsi al bar \"Cheers\", Frasier torna a casa a Seattle per lavorare come psichiatra radiofonico dopo che suo padre poliziotto è stato colpito all'anca in servizio."
             },
             {
-                "ora": "08:45",
+                "ora": "08:35",
                 "titolo": "The King of Queens",
                 "descrizione": "Doug è un corriere del Queens. Mentre lui desidererebbe soltanto un televisore a 70 pollici, la sua casa è invasa da parenti. Carrie, la moglie, un giorno decide di sorprenderlo e gli sistema un impianto a grande schermo così che Doug possa seguire con gli amici le partite in tv. Le cose cambiano quando Arthur, suo suocero, rimasto vedovo da poco, si insedia a casa Hefferman trasformando la sala tv di Doug nella sua stanza da letto…Ma non basta, anche Sara, sorella di Carrie e aspirante attrice, si trasferisce nella casa…"
             },
             {
-                "ora": "09:05",
+                "ora": "09:00",
                 "titolo": "The King of Queens",
                 "descrizione": "Doug è un corriere del Queens. Mentre lui desidererebbe soltanto un televisore a 70 pollici, la sua casa è invasa da parenti. Carrie, la moglie, un giorno decide di sorprenderlo e gli sistema un impianto a grande schermo così che Doug possa seguire con gli amici le partite in tv. Le cose cambiano quando Arthur, suo suocero, rimasto vedovo da poco, si insedia a casa Hefferman trasformando la sala tv di Doug nella sua stanza da letto…Ma non basta, anche Sara, sorella di Carrie e aspirante attrice, si trasferisce nella casa…"
             },
             {
-                "ora": "09:30",
+                "ora": "09:25",
                 "titolo": "The King of Queens",
                 "descrizione": "Doug è un corriere del Queens. Mentre lui desidererebbe soltanto un televisore a 70 pollici, la sua casa è invasa da parenti. Carrie, la moglie, un giorno decide di sorprenderlo e gli sistema un impianto a grande schermo così che Doug possa seguire con gli amici le partite in tv. Le cose cambiano quando Arthur, suo suocero, rimasto vedovo da poco, si insedia a casa Hefferman trasformando la sala tv di Doug nella sua stanza da letto…Ma non basta, anche Sara, sorella di Carrie e aspirante attrice, si trasferisce nella casa…"
             },
             {
-                "ora": "09:55",
+                "ora": "09:45",
                 "titolo": "The Neighborhood",
                 "descrizione": "Il ragazzo più amichevole del Midwest trasferisce la sua famiglia in un quartiere di Los Angeles dove non tutti gli assomigliano."
             },
             {
-                "ora": "10:15",
+                "ora": "10:10",
                 "titolo": "The Neighborhood",
                 "descrizione": "Il ragazzo più amichevole del Midwest trasferisce la sua famiglia in un quartiere di Los Angeles dove non tutti gli assomigliano."
             },
             {
-                "ora": "10:35",
+                "ora": "10:30",
                 "titolo": "Hot In Cleveland",
                 "descrizione": "Hot in Cleveland\" si basa su tre favolose, eccentriche donne sopra i quarant'anni di Los Angeles, migliori amiche, le cui vite sono state cambiate per sempre quando il loro aereo è dovuto atterrare inaspettatamente a Cleveland e presto riscopriranno loro stesse in questa nuova \"terra promessa\"."
             },
             {
-                "ora": "11:00",
+                "ora": "10:50",
                 "titolo": "Hot In Cleveland",
                 "descrizione": "Hot in Cleveland\" si basa su tre favolose, eccentriche donne sopra i quarant'anni di Los Angeles, migliori amiche, le cui vite sono state cambiate per sempre quando il loro aereo è dovuto atterrare inaspettatamente a Cleveland e presto riscopriranno loro stesse in questa nuova \"terra promessa\"."
             },
             {
-                "ora": "11:20",
+                "ora": "11:15",
+                "titolo": "Most Ridiculous",
+                "descrizione": "Ep10 di 20 - I video più demenziali e assurdi che navigano indisturbati sul web con il commento dissacrante di Edoardo Zaggia e Alberto Sacco."
+            },
+            {
+                "ora": "11:35",
                 "titolo": "Becker",
                 "descrizione": "Il dottor John Becker è un tipo tutt'altro che facile da trattare... Certo è un medico in gamba e dedito alla sua professione e ai suoi pazienti come nessun altro, però ha un pessimo carattere ed un'espressione perennemente accigliata. Persino i suoi amici più cari, dalla bella barista Reggie al cieco Jake, proprietario del vicino chiosco dei giornali, non sempre riescono a far breccia nella sua dura scorza di misantropo di professione, ma non si arrendono mai perché sanno che, sotto sotto, Becker ha un cuore d'oro."
             },
             {
-                "ora": "11:45",
+                "ora": "12:00",
                 "titolo": "Becker",
                 "descrizione": "Il dottor John Becker è un tipo tutt'altro che facile da trattare... Certo è un medico in gamba e dedito alla sua professione e ai suoi pazienti come nessun altro, però ha un pessimo carattere ed un'espressione perennemente accigliata. Persino i suoi amici più cari, dalla bella barista Reggie al cieco Jake, proprietario del vicino chiosco dei giornali, non sempre riescono a far breccia nella sua dura scorza di misantropo di professione, ma non si arrendono mai perché sanno che, sotto sotto, Becker ha un cuore d'oro."
             },
             {
-                "ora": "12:10",
+                "ora": "12:25",
                 "titolo": "Spin City",
                 "descrizione": "Il maniaco del lavoro Mike Flaherty è il vicesindaco di New York City, che serve come stratega chiave del sindaco Randall Winston e gestore tanto necessario. Mike gestisce la citt� con l'aiuto del suo strampalato staff: un addetto stampa ansioso e insicuro; un capo di stato maggiore sessista e maleducato; un attivista gay impeccabilmente curato che gestisce gli affari delle minoranze; un contabile acuto ed efficiente, pazzo per gli uomini; e un giovane scrittore di discorsi idealista. Come Mike, sono tutti professionalmente capaci ma sfidati personalmente."
             },
             {
-                "ora": "12:30",
+                "ora": "12:50",
                 "titolo": "Spin City",
                 "descrizione": "Il maniaco del lavoro Mike Flaherty è il vicesindaco di New York City, che serve come stratega chiave del sindaco Randall Winston e gestore tanto necessario. Mike gestisce la citt� con l'aiuto del suo strampalato staff: un addetto stampa ansioso e insicuro; un capo di stato maggiore sessista e maleducato; un attivista gay impeccabilmente curato che gestisce gli affari delle minoranze; un contabile acuto ed efficiente, pazzo per gli uomini; e un giovane scrittore di discorsi idealista. Come Mike, sono tutti professionalmente capaci ma sfidati personalmente."
             },
             {
-                "ora": "13:00",
+                "ora": "13:10",
                 "titolo": "Papà a tempo pieno",
                 "descrizione": "Quando la moglie Andi decide di riavviare la sua carriera professionale, Adam è costretto a passare più tempo a casa e assumersi maggiori responsabilit� nell'accudire i loro tre figli piccoli."
             },
             {
-                "ora": "13:20",
+                "ora": "13:30",
                 "titolo": "Papà a tempo pieno",
                 "descrizione": "Quando la moglie Andi decide di riavviare la sua carriera professionale, Adam è costretto a passare più tempo a casa e assumersi maggiori responsabilit� nell'accudire i loro tre figli piccoli."
             },
             {
-                "ora": "13:40",
+                "ora": "13:55",
                 "titolo": "The Neighborhood",
                 "descrizione": "Il ragazzo più amichevole del Midwest trasferisce la sua famiglia in un quartiere di Los Angeles dove non tutti gli assomigliano."
             },
             {
-                "ora": "14:05",
+                "ora": "14:15",
                 "titolo": "The Neighborhood",
                 "descrizione": "Il ragazzo più amichevole del Midwest trasferisce la sua famiglia in un quartiere di Los Angeles dove non tutti gli assomigliano."
             },
             {
-                "ora": "14:30",
+                "ora": "14:35",
                 "titolo": "Le regole dell'amore",
                 "descrizione": "Rules of Engagement è una commedia sulle diverse fasi delle relazioni uomo\/donna, viste attraverso gli occhi di una coppia appena fidanzata, Adam e Jennifer, una coppia sposata di lunga data, Jeff e Audrey, e un ragazzo single in cerca di preda, Russel. Come scoprono, le fasi spesso confuse di una relazione possono sembrare come sulle montagne russe. Le persone possono descriverti la corsa, ma per sapere davvero com'è devi sperimentarla di persona."
             },
             {
-                "ora": "14:50",
+                "ora": "15:00",
                 "titolo": "Le regole dell'amore",
                 "descrizione": "Rules of Engagement è una commedia sulle diverse fasi delle relazioni uomo\/donna, viste attraverso gli occhi di una coppia appena fidanzata, Adam e Jennifer, una coppia sposata di lunga data, Jeff e Audrey, e un ragazzo single in cerca di preda, Russel. Come scoprono, le fasi spesso confuse di una relazione possono sembrare come sulle montagne russe. Le persone possono descriverti la corsa, ma per sapere davvero com'è devi sperimentarla di persona."
             },
             {
-                "ora": "15:10",
+                "ora": "15:20",
                 "titolo": "Becker",
                 "descrizione": "Il dottor John Becker è un tipo tutt'altro che facile da trattare... Certo è un medico in gamba e dedito alla sua professione e ai suoi pazienti come nessun altro, però ha un pessimo carattere ed un'espressione perennemente accigliata. Persino i suoi amici più cari, dalla bella barista Reggie al cieco Jake, proprietario del vicino chiosco dei giornali, non sempre riescono a far breccia nella sua dura scorza di misantropo di professione, ma non si arrendono mai perché sanno che, sotto sotto, Becker ha un cuore d'oro."
             },
             {
-                "ora": "15:35",
+                "ora": "15:45",
                 "titolo": "Becker",
                 "descrizione": "Il dottor John Becker è un tipo tutt'altro che facile da trattare... Certo è un medico in gamba e dedito alla sua professione e ai suoi pazienti come nessun altro, però ha un pessimo carattere ed un'espressione perennemente accigliata. Persino i suoi amici più cari, dalla bella barista Reggie al cieco Jake, proprietario del vicino chiosco dei giornali, non sempre riescono a far breccia nella sua dura scorza di misantropo di professione, ma non si arrendono mai perché sanno che, sotto sotto, Becker ha un cuore d'oro."
             },
             {
-                "ora": "16:00",
+                "ora": "16:05",
                 "titolo": "Hot In Cleveland",
                 "descrizione": "Hot in Cleveland\" si basa su tre favolose, eccentriche donne sopra i quarant'anni di Los Angeles, migliori amiche, le cui vite sono state cambiate per sempre quando il loro aereo è dovuto atterrare inaspettatamente a Cleveland e presto riscopriranno loro stesse in questa nuova \"terra promessa\"."
             },
             {
-                "ora": "16:20",
+                "ora": "16:30",
                 "titolo": "Hot In Cleveland",
                 "descrizione": "Hot in Cleveland\" si basa su tre favolose, eccentriche donne sopra i quarant'anni di Los Angeles, migliori amiche, le cui vite sono state cambiate per sempre quando il loro aereo è dovuto atterrare inaspettatamente a Cleveland e presto riscopriranno loro stesse in questa nuova \"terra promessa\"."
-            },
-            {
-                "ora": "16:45",
-                "titolo": "Papà a tempo pieno",
-                "descrizione": "Quando la moglie Andi decide di riavviare la sua carriera professionale, Adam è costretto a passare più tempo a casa e assumersi maggiori responsabilit� nell'accudire i loro tre figli piccoli."
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:41"
     },
     {
         "canale": "Sky Arte",
@@ -6503,52 +6498,52 @@
                 "descrizione": "Il Festival attraversa l'Italia da Trieste a Palermo con un itinerario di concerti che unisce il fascino del patrimonio culturale al talento dei giovani interpreti."
             },
             {
-                "ora": "06:35",
+                "ora": "06:40",
                 "titolo": "The Stones and Brian Jones",
                 "descrizione": "La storia di Brian Jones, il brillante fondatore dei leggendari Rolling Stones, e di come sia stato progressivamente messo da parte fino a essere dimenticato dalla storia."
             },
             {
-                "ora": "08:15",
+                "ora": "08:20",
                 "titolo": "33 giri Italian masters",
                 "descrizione": "Ep5 di 6 Alberto Fortis - Ci sono album che hanno segnato la storia della musica italiana. Nella puntata: Alberto Fortis racconta l'album omonimo \"Alberto Fortis\"."
             },
             {
-                "ora": "09:05",
+                "ora": "09:10",
                 "titolo": "33 giri Italian masters",
                 "descrizione": "Ep4 di 6 Zucchero - Oro, incenso e birra - Ci sono album che hanno segnato la storia della musica italiana. Nell'episodio Zucchero ci racconta il suo album Oro incenso e birra."
             },
             {
-                "ora": "09:55",
+                "ora": "10:05",
                 "titolo": "La Strana Coppia - L'arte Di Gilbert & George",
                 "descrizione": "Per Gilbert e George, la loro vita è la loro arte. In questo documentario riflettono sul loro impegno comune nei confronti dell'arte."
             },
             {
-                "ora": "11:35",
+                "ora": "11:40",
                 "titolo": "The Stones and Brian Jones",
                 "descrizione": "La storia di Brian Jones, il brillante fondatore dei leggendari Rolling Stones, e di come sia stato progressivamente messo da parte fino a essere dimenticato dalla storia."
             },
             {
-                "ora": "13:15",
+                "ora": "13:20",
                 "titolo": "Manierismo. L'arte piu' pazza del mondo",
                 "descrizione": "Ep1 di 3 Bye Bye Rinascimento - Tra i movimenti artistici del Periodo degli Antichi Maestri, il piu' bizzarro e il piu' emozionante e' sicuramente il Manierismo."
             },
             {
-                "ora": "14:20",
+                "ora": "14:25",
                 "titolo": "Vermeer - The Greatest Exhibition",
                 "descrizione": "Al Rijksmuseum di Amsterdam, in compagnia del Direttore del museo e dei curatori della mostra, ci addentriamo nella più grande esposizione dedicata finora a Vermeer."
             },
             {
-                "ora": "16:00",
+                "ora": "16:05",
                 "titolo": "Le dame con l'ermellino",
                 "descrizione": "Il celebre dipinto di Leonardo ha avuto una vita movimentata e ha incrociato lo sguardo di tante donne: questo documentario racconta le loro vicende."
             },
             {
-                "ora": "17:15",
+                "ora": "17:20",
                 "titolo": "Gian Paolo Barbieri. L'uomo e la bellezza",
                 "descrizione": "Uno sguardo intimo su uno dei più grandi fotografi italiani, arricchito da documenti e testimonianze di chi ha lavorato con lui tra moda, arte, teatro e cinema."
             },
             {
-                "ora": "18:40",
+                "ora": "18:45",
                 "titolo": "Eravamo notte, ora siamo giorno",
                 "descrizione": "Ambrosia Fortuna al PAC: frammenti di vita in oltre 10 anni di scatti. Un racconto intimo sulla mostra, con riflessioni più che mai attuali."
             },
@@ -6573,19 +6568,19 @@
                 "descrizione": "Sul finire degli anni Sessanta, due famosi produttori discografici scoprono in un bar di Detroit un giovane musicista che con le sue melodie soul e gli intensi testi profetici credevano avrebbe avuto molto da dire nella storia della musica. Quel musicista era Sixto Rodriguez che però dopo una serie di concerti dallo scarso successo e un paio di dischi che nessuno comprò, sparì nel nulla. Per anni, molte leggende hanno cercato di dare risposte alla possibile fine del cantautore, paventando ipotesi spesso fantasiose, fino a quando un giorno in Sudafrica due fan fanno una scoperta eccezionale."
             },
             {
-                "ora": "22:40",
+                "ora": "22:45",
                 "titolo": "Steven Van Zandt: Disciple",
                 "descrizione": "Ripercorriamo la carriera di musicista, attore, attivista e altro ancora di Stevie Van Zandt, il famoso consigliere del New Jersey di Bruce Springsteen e Tony Soprano."
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:41"
     },
     {
         "canale": "Sky Documentaries",
         "categoria": "Documentari",
         "programmi": [
             {
-                "ora": "05:10",
+                "ora": "05:15",
                 "titolo": "Un avvertimento prima di iniziare",
                 "descrizione": "Io, sopravvissuto alla strage di Viareggio. Pablo Trincia incontra Marco, sopravvissuto al disastro ferroviario del 2009."
             },
@@ -6605,72 +6600,72 @@
                 "descrizione": "Ep1 di 4 Rapimento senza riscatto - Un gruppo di terroristi, travestiti da idraulici, rapisce il generale americano della NATO James Lee Dozier poco prima di Natale 1981."
             },
             {
-                "ora": "07:50",
+                "ora": "07:55",
                 "titolo": "Il sequestro Dozier - Un'operazione...",
                 "descrizione": "Ep2 di 4 Ad ogni costo - Mentre Dozier e' nelle mani dei brigatisti, una figura misteriosa si aggira per i commissariati di polizia."
             },
             {
-                "ora": "08:35",
+                "ora": "08:50",
                 "titolo": "Nazzi racconta",
                 "descrizione": "All'alba del 25 settembre 2005, il giovane Federico Aldrovandi scompare a Ferrara durante il rientro a piedi verso casa. Il suo corpo viene ritrovato in via Ippodromo a causa di un violento scontro con una pattuglia della polizia."
             },
             {
-                "ora": "09:05",
+                "ora": "09:20",
                 "titolo": "Nazzi racconta",
                 "descrizione": "Ripercorriamo le tappe di una vicenda che ha segnato la cronaca italiana, rivelando come la prima versione ufficiale di un decesso per malore o overdose sia stata smentita dalle indagini mediche e dall'ostinazione dei familiari."
             },
             {
-                "ora": "09:40",
+                "ora": "10:00",
                 "titolo": "#skybuffaracconta - Davis '76 Ep.1",
                 "descrizione": "Il racconto, davanti alle scuole, del golpe cileno del 1973. Scopriamo come Salvador Allende, politico con aperte convinzioni socialiste, fu eletto nel 1970."
             },
             {
-                "ora": "10:25",
+                "ora": "10:45",
                 "titolo": "SkyBuffaRacconta Davis 76",
                 "descrizione": "compiuto #SkyBuffaRacconta Davis '76. - L'altro cammino di Santiago e' compiuto. Pietrangeli, Panatta, Bertolucci, Barazzutti e Zugarelli conquistano la Coppa Davis. La prima e unica mai vinta dall'Italia dal 1900 ad oggi."
             },
             {
-                "ora": "11:10",
+                "ora": "11:30",
                 "titolo": "Markets of the world",
                 "descrizione": "Ep8 Guatemala: Il Mercato Maya - Dall'abbigliamento al cibo e alle credenze ancestrali, il mercato di Chichicastenango è lo specchio della cultura maya."
             },
             {
-                "ora": "11:45",
+                "ora": "12:00",
                 "titolo": "Food Markets. Profumi e sapori a km zero",
                 "descrizione": "Ep4 di 5 Monaco di Baviera - Viktualienmarkt - Il Viktualienmarkt e' il cuore pulsante di Monaco, dove possiamo trovare banchi temporanei di prodotti stagionali, ma anche negozi permanenti."
             },
             {
-                "ora": "12:45",
-                "titolo": "Breaking Bread: Pane Per I Tuoi...",
+                "ora": "13:00",
+                "titolo": "Breaking Bread: Pane per i tuoi denti",
                 "descrizione": "Tony sa bene che New York City ha la capacit� di fare proprio tutto, compreso il pane. Scopriamo le specialit� di Chinatown e il pane irlandese al bicarbonato."
             },
             {
-                "ora": "13:45",
+                "ora": "13:50",
                 "titolo": "Italia vs. Brasile 3-2 - La partita",
                 "descrizione": "Ep1 di 3 Prepartita - Tra polemiche e pronostici avversi la nazionale italiana scende in campo contro il Brasile."
             },
             {
-                "ora": "14:45",
+                "ora": "14:50",
                 "titolo": "Italia vs. Brasile 3-2 - La partita",
                 "descrizione": "Ep2 di 3 Primo tempo - Con la doppietta di Rossi e l'esordio di Bergomi, l'Italia di Bearzot tiene testa ai verdeoro."
             },
             {
-                "ora": "15:45",
+                "ora": "15:55",
                 "titolo": "Italia vs. Brasile 3-2 - La partita",
                 "descrizione": "Ep3 di 3 Secondo tempo - Al novantesimo minuto le sorti dell'Italia sono nelle mani di Dino Zoff."
             },
             {
-                "ora": "16:45",
+                "ora": "16:55",
                 "titolo": "Fuorigioco - Beppe Signori. Una storia di vita e di sport",
                 "descrizione": "Un racconto profondo su Beppe Signori che mette in luce uno dei periodi piu' difficili della sua vita: la vicenda del calcioscommesse."
             },
             {
-                "ora": "18:15",
+                "ora": "18:25",
                 "titolo": "Mi chiamo Francesco Totti",
                 "descrizione": "E’ la notte che precede il suo addio al calcio e Francesco Totti ripercorre tutta la sua vita, come se la vedesse proiettata su uno schermo insieme agli spettatori. Le immagini e le emozioni scorrono tra momenti chiave della sua carriera, scene di vita personale e ricordi inediti. Un racconto intimo, in prima persona, dello sportivo e dell’uomo."
             },
             {
-                "ora": "20:20",
+                "ora": "20:15",
                 "titolo": "Italia '90 - Quattro settimane che...",
                 "descrizione": "Ep1 di 3 - Tra imprese inaspettate e problemi di ordine pubblico, la Coppa del Mondo 1990 dimostra sin da subito di essere un torneo come nessun altro."
             },
@@ -6681,16 +6676,16 @@
             },
             {
                 "ora": "22:10",
-                "titolo": "Mondiali 2006: Destino azzurro",
+                "titolo": "Mondiali 2006 - Destino azzurro",
                 "descrizione": "Ep1 di 4 I Bookmakers contano - Gli Azzurri sono una squadra di talento ma ormai al capolinea. Contro ogni pronostico superano il primo girone."
             },
             {
                 "ora": "23:10",
-                "titolo": "Mondiali 2006: Destino azzurro",
+                "titolo": "Mondiali 2006 - Destino azzurro",
                 "descrizione": "Ep2 di 4 La prova del 10 - Un rigore decisivo porta gli Azzurri ai quarti di finale e una brutta notizia unisce il gruppo ancora di piu'."
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:41"
     },
     {
         "canale": "Sky Nature",
@@ -6707,12 +6702,12 @@
                 "descrizione": "Ep5 di 7 Piccoli cacciatori - Per diventare predatori, bisogna saper cacciare. Alcuni carnivori come i leoni, i ghepardi, le volpi e i coyote devono pur allenarsi da qualche parte!"
             },
             {
-                "ora": "06:30",
+                "ora": "06:25",
                 "titolo": "Gran Bretagna selvaggia",
                 "descrizione": "L'estate è un periodo di grande fermento per gli animali. Più sole significa più cibo, ma gli animali arrivano da lontano per condividerlo e la concorrenza è agguerrita."
             },
             {
-                "ora": "07:25",
+                "ora": "07:20",
                 "titolo": "Gran Bretagna selvaggia",
                 "descrizione": "Gli alberi entrano in letargo, ma non prima di regalare un ultimo tripudio di colori. Per gli animali, le giornate che si accorciano sono il segnale per prepararsi ai tempi bui che li attendono."
             },
@@ -6727,22 +6722,22 @@
                 "descrizione": "Mille elefanti si uniscono in un importante raduno annuale nel nord del Kenya, affrontando minacce mortali sia da parte dei predatori che dei bracconieri."
             },
             {
-                "ora": "10:15",
+                "ora": "10:10",
                 "titolo": "Grandi migrazioni: Un'avventura...",
                 "descrizione": "Una delle più grandi migrazioni terrestri del Nord America: i caribù attraversano la tundra. 100.000 esemplari devono affrontare orsi e lupi affamati, fiumi letali e montagne impervie."
             },
             {
-                "ora": "11:15",
+                "ora": "11:10",
                 "titolo": "Grandi migrazioni: Un'avventura...",
                 "descrizione": "Le zebre sono spesso le apripista della migrazione. Essendo erbivori meno selettivi, mangiano la parte più alta e dura dell'erba, aprendo la strada agli altri che preferiscono l'erba più tenera e corta."
             },
             {
-                "ora": "12:15",
+                "ora": "12:05",
                 "titolo": "In viaggio con gli elefanti",
                 "descrizione": "Gordon cerca di avvicinarsi a una mamma elefante e al suo piccolo nella savana keniota, con l'aiuto dell'esperto locale Benjamin Kyalo."
             },
             {
-                "ora": "13:10",
+                "ora": "13:05",
                 "titolo": "In viaggio con gli elefanti",
                 "descrizione": "Gordon torna in Kenya per seguire la piccola Wiva e la sua famiglia nel pieno della stagione secca. La nascita di un nuovo cucciolo, Gawa, d� vita a una festa straordinaria."
             },
@@ -6752,32 +6747,32 @@
                 "descrizione": "Ep1 di 10 Il giardino delle scimmie - Al confine meridionale del Pantanal, la natura e' cosi' variegata che gli scienziati smaniano di sapere come interagiscano gli animali."
             },
             {
-                "ora": "14:55",
+                "ora": "15:00",
                 "titolo": "Brasile selvaggio",
                 "descrizione": "Ep2 di 10 Il paradiso degli uccelli - Ogni anno, il Pantanal si trasforma in un paradiso per uccelli. Oltre 650 specie vi si radunano per la stagione degli accoppiamenti."
             },
             {
-                "ora": "15:45",
+                "ora": "15:55",
                 "titolo": "India selvaggia",
                 "descrizione": "La vita degli animali iconici dell'India vista da vicino. Scopri la vita quotidiana del gibbone."
             },
             {
-                "ora": "16:35",
+                "ora": "16:45",
                 "titolo": "India selvaggia",
                 "descrizione": "S1 Ep2 - Un viaggio attraverso l'esotica India, con la sua fauna, i suoi luoghi segreti e i suoi incredibili territori: dal fiume Gange alle vette dell'Himalaya, fino alla più grande baia del mondo, il Golfo del Bengala."
             },
             {
-                "ora": "17:35",
+                "ora": "17:45",
                 "titolo": "Panorami nascosti",
                 "descrizione": "Ep1 - Lungo la costa occidentale del Newfoundland, il Parco Nazionale di Gros Morne è ricco di bellezze naturali e un paradiso per gli escursionisti."
             },
             {
-                "ora": "18:30",
+                "ora": "18:40",
                 "titolo": "Panorami nascosti",
                 "descrizione": "Ep2 - Con oltre 1.000 km di estensione a ovest delle Ande, il deserto di Atacama è la regione non polare più secca."
             },
             {
-                "ora": "19:25",
+                "ora": "19:30",
                 "titolo": "Panorami nascosti",
                 "descrizione": "Ep3 - L'Altopiano Andino, brullo e maestoso, si estende nel cuore della lontana Bolivia tra cime innevate e il deserto di sale più vasto del mondo."
             },
@@ -6792,17 +6787,17 @@
                 "descrizione": "L'estate è un periodo di grande fermento per gli animali. Più sole significa più cibo, ma gli animali arrivano da lontano per condividerlo e la concorrenza è agguerrita."
             },
             {
-                "ora": "22:15",
+                "ora": "22:10",
                 "titolo": "Gran Bretagna selvaggia",
                 "descrizione": "Gli alberi entrano in letargo, ma non prima di regalare un ultimo tripudio di colori. Per gli animali, le giornate che si accorciano sono il segnale per prepararsi ai tempi bui che li attendono."
             },
             {
-                "ora": "23:15",
+                "ora": "23:10",
                 "titolo": "Gran Bretagna selvaggia",
                 "descrizione": "L'estate è un periodo di grande fermento per gli animali. Più sole significa più cibo, ma gli animali arrivano da lontano per condividerlo e la concorrenza è agguerrita."
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:41"
     },
     {
         "canale": "Discovery Channel",
@@ -6909,7 +6904,7 @@
                 "descrizione": "Scopriamo i processi di realizzazione di alcuni oggetti di uso comune, tra cui le motociclette, le pipe in terracotta, le bacchette per la batteria e i fischietti."
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:41"
     },
     {
         "canale": "History Channel",
@@ -7046,7 +7041,7 @@
                 "descrizione": "Ep3 di 30 La fortuna di Brandi - Tornati a Montebello, Brandi e il suo amico fanno un viaggio indietro nel tempo e scoprono qualcosa di interessante. Darrell sfrutta al meglio quel poco che ha."
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:41"
     },
     {
         "canale": "Cartoon Network",
@@ -7203,7 +7198,7 @@
                 "descrizione": "Ep4 di 52 I Titans vanno al cinema. 2a parte - Dopo essere stati al cinema, i Titans decidono di scrivere e girare un film. Corvina teme che le divergenze creative distruggeranno la loro amicizia."
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:41"
     },
     {
         "canale": "Dea Kids",
@@ -7360,7 +7355,7 @@
                 "descrizione": "I bambini dell'asilo sembrano aver bisogno di una forte motivazione per prepararsi alle attivit� sportive scolastiche. In loro aiuto arriva Thingameroo, una gigantesca mascotte creata da loro che, però, finir� per rappresentare un pericolo."
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:41"
     },
     {
         "canale": "Nick Jr",
@@ -7377,9 +7372,14 @@
                 "descrizione": "Ep5 di 26 Il mio bel castello\/Dove finisce la sabbia - Nuovi episodi aspettano Barbapap� e la sua famiglia, composta da coloratissimi personaggi multiforma."
             },
             {
-                "ora": "06:25",
+                "ora": "06:20",
                 "titolo": "Barbapapà: Una grande famiglia felice",
                 "descrizione": "Ep6 di 26 La nascita\/La rivelazione - Nel giardino di Francesco, nasce un esemplare di Barbapap� .\/Barbapap� scopre di avere l'abilit� di poter modellare il suo corpo."
+            },
+            {
+                "ora": "06:45",
+                "titolo": "Barbapapà: Una grande famiglia felice",
+                "descrizione": "Ep14 di 26 Il Louvre\/La giornata dei contrari - \"La famiglia Barbapap� scopre il Louvre! \/ Barbalalla ha deciso di rispettare tutte le regole della \"\"giornata dei contrari\"\".\""
             },
             {
                 "ora": "07:00",
@@ -7387,27 +7387,32 @@
                 "descrizione": "Ep4 di 13 I cuccioli salvano la nuova casa di Hummy Mummy \/ I cuccioli salvano Adventure Bakes - Humdinger ospita la madre ma ci sono i coccodrilli. \/ Winnie e il suo dolce."
             },
             {
-                "ora": "07:25",
+                "ora": "07:20",
                 "titolo": "PAW Patrol",
                 "descrizione": "Ep8 di 13 - La stagione 12 di Paw Patrol segue la squadra di cuccioli alle prese con nuove emozionanti missioni: sono in arrivo nuovi amici cuccioli e salvataggi ricchi di azione."
             },
             {
-                "ora": "07:50",
+                "ora": "07:45",
                 "titolo": "Rubble & Crew",
                 "descrizione": "Ep3 di 13 - I cuccioli costruiscono una nave pirata. \/La squadra aiuta Sierra Sparkle."
             },
             {
-                "ora": "08:15",
+                "ora": "08:10",
                 "titolo": "DORA",
                 "descrizione": "Continiuamo a esplorare con Dora! Segui la famosa explorer in una serie di fantastiche avventure con amici vecchi e nuovi mentre viaggia per la stravagante e meravigliosa Foresta Pluviale accompagnata dal suo migliore amico Boots."
             },
             {
-                "ora": "08:40",
+                "ora": "08:20",
                 "titolo": "DORA",
                 "descrizione": "Continiuamo a esplorare con Dora! Segui la famosa explorer in una serie di fantastiche avventure con amici vecchi e nuovi mentre viaggia per la stravagante e meravigliosa Foresta Pluviale accompagnata dal suo migliore amico Boots."
             },
             {
-                "ora": "09:05",
+                "ora": "08:45",
+                "titolo": "DORA",
+                "descrizione": "Continiuamo a esplorare con Dora! Segui la famosa explorer in una serie di fantastiche avventure con amici vecchi e nuovi mentre viaggia per la stravagante e meravigliosa Foresta Pluviale accompagnata dal suo migliore amico Boots."
+            },
+            {
+                "ora": "09:10",
                 "titolo": "Tim Rex nello Spazio",
                 "descrizione": "Ep9 di 10 L'action figure \/ Astroscherzi \/ La talpa - Un nuovo giocattolo. \/ Tim fa scherzi. \/ Bisogna catturare una talpa."
             },
@@ -7432,7 +7437,7 @@
                 "descrizione": "Ep10 di 13 Rubble & Crew - Rubble, insieme alla sua famiglia di cuccioli esperti di costruzioni, si trasferisce nella vicina citt� di Builder Cove, dove ora vivono, giocano e costruiscono tutto..."
             },
             {
-                "ora": "11:05",
+                "ora": "11:10",
                 "titolo": "Barbapapà: Una grande famiglia felice",
                 "descrizione": "Ep18 di 26 Piccoli inventori\/La scelta di Barbazoo - I Barbabebè vogliono inventare. \/ I Barbabebè devono scegliere tra andare in piscina o fare un giro in bicicletta."
             },
@@ -7462,7 +7467,7 @@
                 "descrizione": "Ep12 di 20 Divertimento sulla neve - Approfittando della nevicata che e' caduta sulla citta', le mega macchine escono a giocare e Gabby prepara della buonissima cioccolata calda."
             },
             {
-                "ora": "13:20",
+                "ora": "13:15",
                 "titolo": "Blaze e le mega macchine",
                 "descrizione": "Ep13 di 20 Macchine da costruzione alla riscossa - Blaze, Starla e Stripes si trasformano in macchine da costruzione e aiutano Crusher e Pickle, che sono bloccati su un'altissima torre."
             },
@@ -7472,19 +7477,24 @@
                 "descrizione": "Ep6 di 10 - I cuccioli col giocattolo.\/Kai e Tim alla fiera.\/Insetto Spaziale scovato."
             },
             {
-                "ora": "14:05",
+                "ora": "14:00",
                 "titolo": "Tim Rex nello Spazio",
                 "descrizione": "Ep7 di 10 Il tesoro\/Il ruggito\/Il mammut - Viene trovato un tesoro. \/ C'è un festival. \/ Si perde un mammut."
             },
             {
-                "ora": "14:30",
+                "ora": "14:25",
                 "titolo": "Barbapapà: Una grande famiglia felice",
                 "descrizione": "Ep10 di 26 Il diario di Barbazoo\/Una grande reporter - Barbazoo decide di scrivere sul suo diario personale come si è svolta la sua giornata.\/Barbottina vuole diventare una reporter."
             },
             {
-                "ora": "14:55",
+                "ora": "14:50",
                 "titolo": "Barbapapà: Una grande famiglia felice",
                 "descrizione": "Ep11 di 26 Il Barbaclub\/Le alghe verdi - Barbabarba, Barbabravo e Barbabella, hanno costruito una capanna sull'albero.\/Barbaforte e Lolita finiscono in un acquitrino e svengono."
+            },
+            {
+                "ora": "15:10",
+                "titolo": "Barbapapà: Una grande famiglia felice",
+                "descrizione": "Ep3 di 26 Boris \/ Nato selvaggio - I Barbabebe' stanno giocando nella foresta quando incontrano un elefantino smarrito. \/ Barbazoo si rende conto che l'elefante non e' felice; vorrebbe tornare in Africa."
             },
             {
                 "ora": "15:20",
@@ -7500,24 +7510,9 @@
                 "ora": "15:55",
                 "titolo": "Il piccolo regno di Ben e Holly - Girini",
                 "descrizione": "Il piccolo regno di Ben e Holly è un cartone animato britannico per i bambini in et� prescolare ambientato in un magico regno incantato, popolato da fate, elfi e insetti."
-            },
-            {
-                "ora": "16:10",
-                "titolo": "PAW Patrol",
-                "descrizione": "I cuccioli devono riportare un orso sonnambulo nella sua tana prima che si risvegli."
-            },
-            {
-                "ora": "16:35",
-                "titolo": "PAW Patrol",
-                "descrizione": "Ep11 di 26 I cuccioli salvano uno scimmione \/ I cuccioli salvano una gattina volante - I cuccioli devono attirare uno scimmione sul Paw Patroller per poterlo riportare nella giungla."
-            },
-            {
-                "ora": "17:00",
-                "titolo": "Rubble & Crew",
-                "descrizione": "Ep2 di 13 La squadra costruisce un ascensore in hotel\/ La squadra costruisce un chiosco di popcorn con i mici - La squadra di Rubble sistema un hotel.\/ Café Carl ha problemi con i gatti."
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:41"
     },
     {
         "canale": "Boomerang",
@@ -7674,7 +7669,7 @@
                 "descrizione": "Ep14 Accademia Grizzy - I Lemming sono sempre esagitati e fastidiosi, cosi', quando Grizzy vede dei pinguini marciare ordinatamente in fila, decide di insegnare loro come ci si comporta."
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:41"
     },
     {
         "canale": "Sky TG 24",
@@ -7831,7 +7826,7 @@
                 "descrizione": "Previsioni meteo dettagliate e sempre aggiornate 24 ore al giorno. Le previsioni regionali, nazionali ed internazionali."
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:41"
     },
     {
         "canale": "Rai News 24",
@@ -7988,7 +7983,7 @@
                 "descrizione": "SUPERCINEMA"
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:41"
     },
     {
         "canale": "Sky Meteo 24",
@@ -8145,6 +8140,6 @@
                 "descrizione": "Previsioni meteo dettagliate e sempre aggiornate 24 ore al giorno. Le previsioni regionali, nazionali ed internazionali."
             }
         ],
-        "aggiornato": "09:46"
+        "aggiornato": "14:41"
     }
 ]
