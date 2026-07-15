@@ -149,17 +149,12 @@
                 "descrizione": "Commenti e approfondimenti sulla partita dei Mondiali FIFA 2026 appena conclusa. Conduce Alessandro Antinelli. Ospiti Paulo Roberto Falcao, Marco Tardelli, Ciccio Graziani, Massimo De Luca, Manuela Giugliano, Alessio Dionisi. Regia di Annarita Cardinali."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "13:54"
     },
     {
         "canale": "Rai 2",
         "categoria": "Digitale Terrestre",
         "programmi": [
-            {
-                "ora": "06:00",
-                "titolo": "Ritorno a Las Sabinas",
-                "descrizione": "Dopo molti anni di lontananza, le sorelle Molina tornano nella loro citt� natale per affrontare i problemi di salute del padre. Il loro ritorno significa una riunione con le vite, gli amori e i segreti che hanno cercato di dimenticare."
-            },
             {
                 "ora": "06:10",
                 "titolo": "La Grande Vallata",
@@ -192,8 +187,8 @@
             },
             {
                 "ora": "10:00",
-                "titolo": "TG2 Dossier",
-                "descrizione": "Approfondimento del Tg2. Direttore Antonio Preziosi Vicedirettore Elisabetta Migliorelli A cura di Francesco Vitale"
+                "titolo": "Tg2 Dossier - Memorabili",
+                "descrizione": "Le Olimpiadi Milano Cortina 2026 e il trionfo azzurro. Il racconto si snoda attraverso le immagini delle medaglie conquistate, ma anche dietro le quinte: la preparazione, le rinunce, le cadute e le rivincite delle competizioni che resteranno nella storia dello sport italiano. Imprese inattese, conferme straordinarie e storie personali di sacrificio e determinazione che hanno trasformato atlete e atleti in simboli di un'intera generazione."
             },
             {
                 "ora": "10:55",
@@ -232,7 +227,7 @@
             },
             {
                 "ora": "14:45",
-                "titolo": "Dulcis in fundo",
+                "titolo": "N.C.I.S.",
                 "descrizione": "La serie segue le vicende della principale squadra di agenti speciali dell'agenzia federale Naval Criminal Investigative Service (NCIS), denominata «Major Case Response Team» (MCRT)[5], con sede al Washington Navy Yard di Washington. L'NCIS si occupa dei reati più gravi che vedono coinvolti membri o persone legate alla marina degli Stati Uniti o al corpo dei Marines. Il Major Case Response Team, in particolare, si occupa dei casi più difficili e delicati, quali ad esempio l'omicidio di uomini vicini al Presidente, morti di celebrit� all'interno di basi della marina, minacce terroristiche e rapimenti."
             },
             {
@@ -241,34 +236,14 @@
                 "descrizione": "Tappa di trasferimento con un tracciato prevalentemente pianeggiante, destinata a riportare in primo piano i velocisti. Le squadre delle ruote veloci avranno l'occasione di controllare la corsa fino allo sprint finale."
             },
             {
-                "ora": "15:40",
-                "titolo": "Tour In Diretta",
-                "descrizione": "SPORT. - Ciclismo. A cura di Alessandro Fabretti Coordinamento giornalistico Franco Bortuzzo Conduce Francesco Pancani Telecronaca Stefano Rizzato Commento tecnico Silvio Martinello, Stefano Garzelli, Davide Cassani Produttore esecutivo Guido Lissoni Regia Italia Maria Baratta"
-            },
-            {
-                "ora": "15:50",
-                "titolo": "Tour De France 11^ Tappa Vichy - Nevers",
-                "descrizione": "Dalle Alpi ai Pirenei, il Tour de France 2026 accende la sfida per la Maglia Gialla tra Tadej Pogačar, Remco Evenepoel, Jonas Vingegaard e la nuova promessa Paul Seixas."
-            },
-            {
-                "ora": "16:40",
+                "ora": "17:40",
                 "titolo": "Ciclismo: Tour De France 2026 - Tour Replay: 11a Tappa",
                 "descrizione": "La rubrica di ciclismo dedicata al Tour de France 2026, tra cronaca, analisi e interviste a caldo a commento della tappa appena conclusa."
             },
             {
-                "ora": "16:50",
-                "titolo": "Tour De France 11^ Tappa Vichy - Nevers",
-                "descrizione": "Dalle Alpi ai Pirenei, il Tour de France 2026 accende la sfida per la Maglia Gialla tra Tadej Pogačar, Remco Evenepoel, Jonas Vingegaard e la nuova promessa Paul Seixas."
-            },
-            {
-                "ora": "17:40",
+                "ora": "17:58",
                 "titolo": "Ciclismo: Tour De France 2026 - Le Strade Del Tour: 12a Tappa",
                 "descrizione": "Un viaggio lungo il percorso del Tour de France 2026 per scoprire i luoghi che fanno da scenario alla corsa più celebre del mondo."
-            },
-            {
-                "ora": "17:58",
-                "titolo": "Tour De France 11^ Tappa Vichy - Nevers",
-                "descrizione": "Dalle Alpi ai Pirenei, il Tour de France 2026 accende la sfida per la Maglia Gialla tra Tadej Pogačar, Remco Evenepoel, Jonas Vingegaard e la nuova promessa Paul Seixas."
             },
             {
                 "ora": "18:00",
@@ -304,9 +279,24 @@
                 "ora": "20:30",
                 "titolo": "TG2 20.30",
                 "descrizione": "TG2 20.30"
+            },
+            {
+                "ora": "21:00",
+                "titolo": "TG2 Post",
+                "descrizione": "Rubrica informativa del TG2. Direttore Antonio Preziosi"
+            },
+            {
+                "ora": "21:20",
+                "titolo": "Un oggi alla volta",
+                "descrizione": "Marco è un ansioso diciannovenne prossimo alla maturit� , con tre materie da recuperare, una madre che vive con lo smartphone in mano ed un fratello che sogna di fare il cantante indie. È a-social e vorrebbe amare come si faceva un tempo. Aria si è diplomata l'anno precedente, ha tatuato sul braccio un oggi alla volta e vive ogni giorno come se fosse l'ultimo."
+            },
+            {
+                "ora": "23:20",
+                "titolo": "Gli anni belli",
+                "descrizione": "Estate 1994. Un nuovo governo è da poco salito al potere ed Elena, 16 anni, amante dei Nirvana e pasionaria in erba non vede l’ora di farlo cadere. Purtroppo per lei i suoi genitori hanno altri programmi. Il padre, burbero insegnante di greco, e la madre, paziente mediatrice, si trascinano una consuetudine dagli anni ’70: saltare in macchina e recarsi sempre nello stesso identico campeggio sulle coste assolate del Salento. Quest’anno pero li aspetta una sorpresa: c’è un nuovo direttore in citt� , ed ha cambiato tutto, a cominciare dal nome. Il nuovo sta avanzando, ed il “Bella Italia” intende essere il nuovo fatto vacanza. Sullo sfondo di un’Italia che non lo sa ma sta cambiando tanto anche lei, Elena si appresta a vivere l’estate più esaltante di sempre, tra rivoluzioni e lacrime di sofferenze d’amore adolescenziale."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "13:54"
     },
     {
         "canale": "Rai 3",
@@ -463,7 +453,7 @@
                 "descrizione": "Da Piazza del Duomo, il tradizionale Concerto per Milano. Sul podio dell'Orchestra Filarmonica della Scala, il M° Riccardo Chailly. Al pianoforte il compositore giapponese di fama mondiale Hayato Sumino."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "13:54"
     },
     {
         "canale": "Rai 4",
@@ -585,7 +575,7 @@
                 "descrizione": "Sette anni sono passati da quando il Dott. Hannibal Lecter sfuggì alla sorveglianza, dieci anni da quando l'agente FBI Clarice Starling lo intervistò nell'ospedale di massima sicurezza per criminali psicotici. Ora il Dr. Lecter si trova a Firenze sotto falsa copertura, ma una sua vecchia viittima, rimasta sfigurata, si rifa viva per vendicarsi..."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "13:54"
     },
     {
         "canale": "Rai 5",
@@ -687,7 +677,7 @@
                 "descrizione": "Prima Visione RAI - In questa puntata, Lucrezia Lo Bianco percorre il Cammino dei Briganti: 108 km tra Lazio e Abruzzo, sulle tracce di una storia di ribellione e resistenza. Un viaggio tra borghi, montagne e incontri che raccontano la rinascita di un territorio ricco di paesaggi spettacolari, storia, identit� e magia."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "13:54"
     },
     {
         "canale": "Rete 4",
@@ -779,7 +769,7 @@
                 "descrizione": "Un padre e una madre dopo aver accompagnato i figli ad una gita scolastica abbordano una ragazzina che risulta essere l'amante del loro migliore amico sposato con Marcella. Il sogno di una serata a base di sesso e tequila si trasforma in un incubo."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "13:54"
     },
     {
         "canale": "Canale 5",
@@ -921,7 +911,7 @@
                 "descrizione": "Maya, è una donna di 40 anni alle prese con frustrazioni dovute a sogni mai realizzati. Fino a quando ha la possibilit� di dimostrare a Madison Avenue che l'esperienza di strada è preziosa quanto le conoscenze ottenute dai libri, e che non è mai troppo tardi per un secondo atto."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "13:54"
     },
     {
         "canale": "Italia 1",
@@ -1043,7 +1033,7 @@
                 "descrizione": "La giovane Lauryn si è trasferita da una piccola citt� dell'Indiana a Chicago, per inseguire il sogno di entrare nella prestigiosa Chicago School of Music and Dance. Quando le viene però negata la possibilit� di entrarvi a far parte, decide di lavorare come spogliarellista in un club notturno. In un ambiente non facile da affrontare, Lauryn inizia un periodo di scoperta di sé stessa che le far� capire che se anche i piani possono cambiare, i sogni durano invece per sempre."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "13:54"
     },
     {
         "canale": "La7",
@@ -1115,7 +1105,7 @@
                 "descrizione": "A Little Chaos - Film (Drammatico Romantico) di Alan Rickman con Kate Winslet, Alan Rickman, Stanley Tucci (UK\/USA 2014). Il noto paesaggista André Le Notre viene incaricato da Luigi XIV di realizzare i giardini di Versailles...."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "13:54"
     },
     {
         "canale": "TV8",
@@ -1227,7 +1217,7 @@
                 "descrizione": "Meryl e Paul Morgan sono separati. La loro vita perfetta, spesa nel cuore di Manhattan, ha avuto una battuta di arresto. Paul, avvocato di successo, ha tradito Meryl a Chicago con una collega avvenente e adesso vorrebbe cancellare l'accaduto, farsi perdonare e rientrare nel letto e nelle grazie della consorte. Meryl, ferita e ostinata a resistere alla strategia di riconquista, declina suo malgrado inviti, doni, dichiarazioni e (buone) intenzioni. Sar� il destino a decidere il loro futuro, cacciandoli in una situazione decisamente pericolosa. Testimoni di un omicidio vengono presi in consegna dall'FBI, inseriti nel programma protezione testimoni e precipitati a Ray nel Wyoming, lontano dai comfort di New York e sotto la tutela di una coppia di ruvidi federali. La convivenza forzata e la natura selvaggia li costringeranno a ripensare al loro matrimonio e a rimontare in sella."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "13:54"
     },
     {
         "canale": "Nove",
@@ -1326,7 +1316,7 @@
             {
                 "ora": "21:30",
                 "titolo": "Brave ragazze",
-                "descrizione": "Quattro ragazze nella Gaeta degli anni '80 si mascherano da uomini per mettere a segno delle rapine a mano armata."
+                "descrizione": "A Gaeta, primi anni '80. Quattro donne in crisi provano a cambiare il corso delle loro vite armate di bigodini e pistole. Anna (Ambra Angiolini) è una ragazza madre, due figli da mantenere e nessun lavoro stabile. Maria (Serena Rossi) è una timida devota alla Vergine, vittima di un marito violento. Chicca (Ilenia Pastorelli) e Caterina (Silvia D’Amico), sorelle di indole opposta, sognano un futuro migliore, lontano. Col coraggio di chi ha poco da perdere, decidono di travestirsi da uomini e svaligiare insieme la banca del paese. Ma è solo l'inizio di una serie di azioni spericolate, su cui è chiamato ad indagare il commissario Morandi (Luca Argentero), un vortice destinato a stravolgere per sempre il destino di quattro \"brave ragazze”."
             },
             {
                 "ora": "23:50",
@@ -1334,7 +1324,7 @@
                 "descrizione": "La stand-up comedy incontra il dating in un format con protagonisti Marta e Gianluca."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "13:54"
     },
     {
         "canale": "20 Mediaset",
@@ -1451,7 +1441,7 @@
                 "descrizione": "Frank Penny è un poliziotto che, caduto in disgrazia, è in cerca di redenzione. La sua possibilit� arriva quando la figlia undicenne del capo della polizia viene rapita. Per salvarla, Frank avr� bisogno dell'aiuto di Ava Brooks, il cui canale di notizie in diretta segue ogni sua mossa e tentativo. Mentre l'intera citt� guarda ciò che sta accadendo, Frank e Ava saranno impegnati in una corsa contro il tempo affinché tutto vada per il verso giusto."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "13:54"
     },
     {
         "canale": "Twentyseven",
@@ -1553,7 +1543,7 @@
                 "descrizione": "Miles è un bravissimo motociclista di rally, ma non è molto a suo agio nelle relazioni umane. A causa di un pericoloso scherzo, un giorno si ritrova da solo in una valle sperduta. Lì si imbatte in A.X.L., un cane robotizzato progettato per essere una pericolosa arma militare, dotato di una sofisticata A.I. che rende il suo comportamento molto simile a quello degli animali. Tra Miles e A.X.L. nascer� subito una sincera amicizia, messa però in pericolo dagli scienziati che rivogliono indietro la loro creatura. Con l'aiuto della bella Sara, i due amici dovranno fare di tutto per sfuggire ai nemici ed evitare che l'aggressivit� del cane robot prenda il sopravvento."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "13:54"
     },
     {
         "canale": "IRIS",
@@ -1615,7 +1605,7 @@
                 "descrizione": "Ron Kovic, nato il 4 luglio 1946, si arruola nei Marines e torna dal Vietnam, nel 1968, paralizzato nella parte inferiore del corpo e impotente. Attraverso varie esperienze arriva a una presa di coscienza pacifista e porta la sua testimonianza alla Convenzione Democratica del 1976."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "13:54"
     },
     {
         "canale": "Rai Movie",
@@ -1672,7 +1662,7 @@
                 "descrizione": "Stella, diciassettenne, trascorre la maggior parte del tempo in ospedale perché affetta da fibrosi cistica. La sua vita è piena di routine, confini e autocontrollo: tutti sono messi alla prova quando incontra Will, un adolescente incredibilmente affascinante che ha la sua stessa malattia."
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:54"
     },
     {
         "canale": "Rai Premium",
@@ -1769,7 +1759,7 @@
                 "descrizione": "Eva Cantini è un'ispettrice di polizia che fa ritorno nel tranquillo paesino dove è cresciuta per stare accanto alla sorella Rachele, ragazza-madre. Eva, una donna dal temperamento forte e determinato, si ritrova a investigare sulla misteriosa scomparsa di Gioia, una aspirante showgirl, e con l'aiuto del PM Giuditta Doria e del brillante medico legale Anita Mancuso costruisce una squadra pronta a tutto."
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:54"
     },
     {
         "canale": "La 5",
@@ -1861,7 +1851,7 @@
                 "descrizione": "La decennale lotta tra gli allevatori Sebastian Leitner e Lorenz Huber, è nata per la morte accidentale di Peter, il figlio di otto anni di Sebastian, per mano di Lorenz, che non si d� pace per quanto accaduto. I due uomini sono pronti a dimenticare, ma non è lo stesso per i rispettivi figli, Florian Leitner e Lisa Huber, un tempo innamorati. Il loro rapporto si è incrinato per sempre, ma non solo: Lisa, che è un avvocato, torna da Monaco determinata a vincere una causa contro i Leitner."
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:54"
     },
     {
         "canale": "Real Time",
@@ -1963,7 +1953,7 @@
                 "descrizione": "Un team di dermatologi aiuta alcuni pazienti affetti da patologie estreme."
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:54"
     },
     {
         "canale": "Food Network",
@@ -2120,7 +2110,7 @@
                 "descrizione": "Chiara arriva a Pisa per farci scoprire le tradizioni, i prodotti, e le ricette tipiche di questa citta' una delle sette meraviglie del mondo anche in cucina!"
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:54"
     },
     {
         "canale": "Focus",
@@ -2227,7 +2217,7 @@
                 "descrizione": "L'uomo ha interpretato il mondo unendo realta' e simboli: cosi' nascono miti e sacro. Templi, sacrifici e arte rivelano il bisogno di creare."
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:54"
     },
     {
         "canale": "Giallo",
@@ -2309,7 +2299,7 @@
                 "descrizione": "L'ispettore capo Tom Barnaby della polizia di Midsomer e il suo fidato sergente, Gavin Troy, , devono investigare sugli omicidi che avvengono nei villaggi dell'immaginaria contea inglese di Midsomer. Le storie sono ambientate nel presente ed hanno una struttura di \"giallo classico\", in cui l'indagine e le deduzioni prevalgono sull'azione e sulla violenza."
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:54"
     },
     {
         "canale": "Boing",
@@ -2466,7 +2456,7 @@
                 "descrizione": "Craig decide di allenarsi al ruscello ai videogame dato che continua a perdere contro le sfide che effettua con il padre."
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:54"
     },
     {
         "canale": "K2",
@@ -2623,7 +2613,7 @@
                 "descrizione": "2' Stagione Ep.34 - Le avventure di tre scoiattoli dalla voce incredibile, 'adottati' da Dave Seville, che diventano un fenomeno musicale."
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:54"
     },
     {
         "canale": "Rai Gulp",
@@ -2740,7 +2730,7 @@
                 "descrizione": "Esther si presenta al pollaio chiedendo di far parte della Coop Troop. Flo e gli altri la accolgono generosamente ma, fin dagli inizi, la collaborazione non sembra funzionare al meglio. Esther vuole assumere mansioni che spettano ad altri, è restia ad adeguarsi al lavoro di squadra e finisce addirittura per impossessarsi della pollauto..."
             },
             {
-                "ora": "11:00",
+                "ora": "10:55",
                 "titolo": "Coop Troop",
                 "descrizione": "Elvis chiama la Coop Troop chiedendo aiuto: Esther si è sdraiata in mezzo a una strada, convinta di essere la bella addormentata e aspettando un principe che venga a svegliarla con un bacio. Ma, lungo quella strada, sta per transitare il fattore, diretto al mercato. Come evitare che l'ostinata camaleonte venga inesorabilmente spiaccicata al suolo?"
             },
@@ -2780,7 +2770,7 @@
                 "descrizione": "Le Winx partono alla volta di Lynphea, il mondo di Flora, dove si trova la quarta Stella Primaria. Qui, Flora riabbraccia sua sorella Miele. Darcy usa le sue illusioni per assumere le sembianze di Miele e ingannare Flora. In questo modo, ottiene la Stella Primaria prima delle Winx..."
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:54"
     },
     {
         "canale": "Frisbee",
@@ -2937,7 +2927,7 @@
                 "descrizione": "2' Stagione Ep.29 - Le avventure di tre scoiattoli dalla voce incredibile, 'adottati' da Dave Seville, che diventano un fenomeno musicale."
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:54"
     },
     {
         "canale": "DMAX",
@@ -3024,7 +3014,7 @@
                 "descrizione": "Mr. Oro guida rete di compro oro nel nord Italia. Ogni giorno nuove trattative e colpi di scena"
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:54"
     },
     {
         "canale": "Rai Sport",
@@ -3096,7 +3086,7 @@
                 "descrizione": "Mondiale Endurance - 6 ore di San Paolo"
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:54"
     },
     {
         "canale": "Sportitalia",
@@ -3223,7 +3213,7 @@
                 "descrizione": "Il programma tratta le vicende del calciomercato sia nella sessione estiva che in quella invernale e va in onda alle ore 23.00 dal lunedì al venerdì"
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:54"
     },
     {
         "canale": "HGTV",
@@ -3345,7 +3335,7 @@
                 "descrizione": "Lucas costruisce una gigantesca piscina per un amico. Crea un giardino da sogno con un molo, un'enorme cascata, un focolare e un bar con intrattenimento audio-visivo!"
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:54"
     },
     {
         "canale": "RSI LA 1",
@@ -3502,7 +3492,7 @@
                 "descrizione": "Le notizie di prima serata"
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:54"
     },
     {
         "canale": "RSI LA 2",
@@ -3579,7 +3569,7 @@
                 "descrizione": "Semifinale\nda Atlanta (USA)"
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:54"
     },
     {
         "canale": "DAZN 1",
@@ -3661,7 +3651,7 @@
                 "descrizione": "Un'intervista con il punto di riferimento del calciomercato internazionale."
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:54"
     },
     {
         "canale": "Sky Sport 24",
@@ -3818,7 +3808,7 @@
                 "descrizione": "Tutti gli aggiornamenti dalle squadre di Serie A con collegamenti live, interviste e ospiti in studio."
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:54"
     },
     {
         "canale": "Sky Sport Uno",
@@ -3977,7 +3967,7 @@
                 "descrizione": "Curiosita', commenti, notizie e anticipazioni sui possibili movimenti del calciomercato. Condotto dal trio Alessandro Bonan, Gianluca Di Marzio e Fayna."
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:54"
     },
     {
         "canale": "Sky Sport Tennis",
@@ -4024,7 +4014,7 @@
                 "descrizione": "Tutti i tornei di tennis internazionali del circuito maschile ATP e di quello femminile WTA, con l'attenzione puntata sui tennisti italiani."
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:54"
     },
     {
         "canale": "Sky Sport F1",
@@ -4181,7 +4171,7 @@
                 "descrizione": "Riviviamo insieme tutte le forti emozioni che ci sono state trasmesse durante gli scorsi Gran Premi in attesa della gara di Formula 1."
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:54"
     },
     {
         "canale": "Sky Sport Legend",
@@ -4288,7 +4278,7 @@
                 "descrizione": "Lo Scudetto per gli Immortali - L'apoteosi finale con immagini inedite davanti ai 70mila del Comunale. L'omaggio al Grande Torino e la salita a Superga per lo scudetto."
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:54"
     },
     {
         "canale": "Sky Sport MotoGP",
@@ -4445,7 +4435,7 @@
                 "descrizione": "Il magazine di approfondimento sul lungo weekend della Superbike. Gli approfondimenti tecnici, i momenti di gara, le interviste agli addetti ai lavori e ai piloti, le immagini piu' belle."
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:54"
     },
     {
         "canale": "Sky Sport Basket",
@@ -4532,7 +4522,7 @@
                 "descrizione": "Philadelphia 76ers NBA Summer League. - Dal Thomas & Mack Center di Las Vegas, Stati Uniti."
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:54"
     },
     {
         "canale": "Sky Sport Arena",
@@ -4614,12 +4604,17 @@
                 "descrizione": "14\/07\/2026 Baseball Mlb. - Baseball Mlb"
             },
             {
+                "ora": "23:00",
+                "titolo": "Icarus Ultra 2025 Ep.41",
+                "descrizione": "Icarus Ultra. - Avventure, sfide, imprese e curiosita' dal mondo degli sport outdoor: da 18 anni Icarus Ultra racconta storie straordinarie di donne e uomini ordinari."
+            },
+            {
                 "ora": "23:30",
                 "titolo": "Lippi",
                 "descrizione": "Giorgio Porra' racconta Marcello Lippi: il suo mare, le sue radici, Vialli e la Juve che nel 1996 conquisto' la Champions, preludio al trionfo Mondiale del 2006"
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:54"
     },
     {
         "canale": "Sky Sport Max",
@@ -4716,7 +4711,7 @@
                 "descrizione": "2a giornata del nuovo torneo che unisce i test match di luglio e novembre. A San Juan i Pumas cercano il riscatto dopo la sconfitta contro la Scozia. Telecronaca Fusetti-Vancini"
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:54"
     },
     {
         "canale": "Sky Sport Mix",
@@ -4758,7 +4753,7 @@
                 "descrizione": "50 anni dopo Adriano Panatta, un italiano torna a trionfare al Foro Italico. Il cammino di Jannik Sinner a Roma, attraverso i backstage e le immagini inedite di Sky Sport."
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:54"
     },
     {
         "canale": "Sky Sport Golf",
@@ -4815,7 +4810,7 @@
                 "descrizione": "I momenti salienti dell'Italian Challenge Open, prestigioso torneo di golf dell'European Challenge."
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:54"
     },
     {
         "canale": "Sky Sport 251",
@@ -4985,7 +4980,7 @@
                 "descrizione": "A Vero Beach, in Florida, tre diverse coppie in fasi diverse della loro relazione diventano protagoniste di un film su come il matrimonio, un'idea antiquata, necessiti di nuova linfa: perché ad esempio non trasformare le nozze in un accordo valido sette anni con un'opzione di rinnovo? Per Alice e Noah sarebbe un'ottima trovata per i loro dieci anni insieme. Fanny, la sorella di Alice, è convinta che il suo \"matrimonio aperto\" con Zander rappresenti la chiave della felicit� . Cybil e Harvey, infine, aspettano inermi di sapere cosa riservi loro la vita. Mentre la regista del film cerca di mostrare loro come il concetto di matrimonio sia oramai superato, le tre coppie scoprono cosa vogliono e cosa no."
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:54"
     },
     {
         "canale": "Sky Cinema Uno +24",
@@ -5047,7 +5042,7 @@
                 "descrizione": "Giorgio è uno psichiatra infantile che va in crisi alla notizia che potrebbe diventare padre, Lorenzo un agente immobiliare che per nulla al mondo lascerebbe il letto a castello e la colazione a letto che gli assicura la permanenza in casa dei genitori, Luisa è una manager separata con una figlia meno distratta di lei, Francesca una chef che cerca di disintossicarsi dall'appetito sessuale, Piero un dj che ascolta ogni notte le nostalgie altrui vivendo immerso nelle proprie e Virgilio quello che con una bugia, vent'anni prima, ha disintegrato il gruppo. Ora però i sei ex compagni di liceo si ritrovano, alla soglia dei quarant'anni, quando una raccomandata del ministero della pubblica istruzione annulla il loro esame di maturit� e li obbliga a rifarlo."
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:55"
     },
     {
         "canale": "Sky Cinema Due",
@@ -5104,7 +5099,7 @@
                 "descrizione": "La serie prequel vede la dinastia Targaryen all'apice assoluto del suo potere, con più di 15 draghi sotto il loro giogo. La maggior parte degli imperi, che siano reali o immaginari, crollano quando raggiungono tali poteri e tali altezze. Nel caso dei Targaryen, la loro lenta caduta inizia quasi 193 anni prima degli eventi de Il Trono di Spade, quando re Viserys Targaryen rompe un secolo di tradizione nominando sua figlia Rhaenyra erede al Trono di Spade. La corte rimane scioccata quando Rhaenyra mantiene il suo status di erede nonostante Viserys in seguito avr� un figlio maschio, legittimo erede. Inizia così ad attecchire il seme della divisione e forti attriti in tutto il regno."
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:55"
     },
     {
         "canale": "Sky Cinema Due +24",
@@ -5121,7 +5116,7 @@
                 "descrizione": "Michael Corleone, il padrino della cupola mafiosa italo-americana, ormai anziano, decide di ripulire la sua vita ed i suoi affari cercando di instaurare un regime di convivenza pacifica con le altre famiglie di New York. Ma a malincuore é costretto a rivedere la sua posizione quando una delle altre famiglie rivendica dei diritti sui Corleone."
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:55"
     },
     {
         "canale": "Sky Cinema Collection",
@@ -5178,7 +5173,7 @@
                 "descrizione": "Sono passati otto anni da quando Batman è svanito nella notte, trasformandosi in un istante da eroe a fuggitivo. Prendendosi la colpa della morte del procuratore Harvey Dent, il Cavaliere oscuro ha sacrificato tutto per ciò che lui e il Commissario Gordon speravano fosse un bene superiore. Per un po’ di tempo la bugia ha funzionato e l’attivit� criminale di Gotham City è stata schiacciata dal peso della legge anti-criminale Dent Act. Ma tutto cambier� con l’arrivo di un’astuta ladra con un misterioso piano. Ma molto più pericoloso è l’arrivo di Bane, un terrorista mascherato i cui spietati piani per Gotham costringono Bruce a uscire dal suo esilio auto imposto. Ma anche se indossa di nuovo il mantello e il cappuccio, Batman potrebbe non essere così forte da fermare Bane."
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:55"
     },
     {
         "canale": "Sky Cinema Family",
@@ -5240,7 +5235,7 @@
                 "descrizione": "Il topo Jerry si trasferisce nel miglior hotel di New York alla vigilia del \"matrimonio del secolo\", costringendo il disperato organizzatore dell'evento ad assumere il gatto Tom per sbarazzarsi di lui. La conseguente battaglia tra gatto e topo minaccia di distruggere la sua carriera, il matrimonio e forse l'hotel stesso. Ma presto, sorge un problema ancora più grande: uno staff diabolicamente ambizioso che cospira contro tutti e tre."
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:55"
     },
     {
         "canale": "Sky Cinema Action",
@@ -5302,7 +5297,7 @@
                 "descrizione": "Due anni fa sperava di essersi lasciato alle spalle quel passato che non poteva ricordare, ma che lo perseguitava con misteriose immagini di morte e violenza. Il destino però torna a bussare alla porta di Jason Bourne, killer professionista senza più memoria, quando viene accusato (ingiustamente?) di aver ucciso il premier cinese."
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:55"
     },
     {
         "canale": "Sky Cinema Suspense",
@@ -5364,7 +5359,7 @@
                 "descrizione": "Dopo essere stato costretto a guidare un misterioso passeggero sotto la minaccia di una pistola, un uomo si ritrova in un gioco ad alto rischio al gatto col topo in cui diventa chiaro che non tutto è come sembra."
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:55"
     },
     {
         "canale": "Sky Cinema Romance",
@@ -5426,7 +5421,7 @@
                 "descrizione": "Quanto è difficile separarsi dopo un lungo rapporto, dopo dieci anni di convivenza o di matrimonio? Quanto è difficile trovare le parole, i modi? Quanto è complicato voler lasciare un uomo senza farlo soffrire? E se un giorno, in un momento di disperazione e solitudine si scrivesse ad una posta del cuore? Per sfogarsi o per trovare qualcuno che ci suggerisse come fare, come riuscire a separarci senza far soffrire il nostro partner? Ma soprattutto cosa succederebbe se quella lettera anonima arrivasse proprio al nostro compagno?"
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:55"
     },
     {
         "canale": "Sky Cinema Drama",
@@ -5493,7 +5488,7 @@
                 "descrizione": "Clémence, impavida sindaca di una citt� vicino a Parigi, sta completando l’ultimo mandato della sua carriera politica. Insieme al suo fedele braccio destro Yazid, ha combattuto a lungo per questa citt� afflitta da povert� , disoccupazione e padroni di topaie privi di scrupoli. Tuttavia, quando le viene offerta la prospettiva di diventare ministro, la sua ambizione prende il sopravvento, facendo vacillare la devozione e l’impegno nei confronti dei suoi cittadini. Riusciranno la sua integrit� politica e le sue promesse elettorali a sopravvivere a questa nuova ambizione?"
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:55"
     },
     {
         "canale": "Sky Cinema Comedy",
@@ -5555,7 +5550,7 @@
                 "descrizione": "Max e Annie sono soliti riunirsi con altre coppie nei fine settimana per una serata di giochi di societ� . Una sera, su proposta del fratello carismatico di Max, Brooks, per gioco devono risolvere un misterioso delitto, con tanto di criminali e agenti federali improvvisati. Così, anche il rapimento di Brooks fa parte secondo loro del gioco. Ma, non appena i sei partecipanti super competitivi si apprestano a risolvere il caso in vista della vittoria, scoprono che né il gioco né Brooks sono quel che sembrano. Nel corso di una notte caotica, gli amici si ritrovano sempre più invischiati in situazioni che progressivamente prendono delle pieghe inaspettate."
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:55"
     },
     {
         "canale": "Sky Uno",
@@ -5662,7 +5657,7 @@
                 "descrizione": "Protagoniste di oggi sono quattro spose che per il gran giorno hanno scelto un luogo orgogliosamente sul mare. E chiss� , poitrebbe anche scapparci il bagno di mezzanotte."
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:55"
     },
     {
         "canale": "Sky Atlantic",
@@ -5784,7 +5779,7 @@
                 "descrizione": "Charlie è una donna con un dono straordinario: riconoscere quando qualcuno mente. A bordo della sua Plymouth Barracuda, attraversa il paese e, a ogni tappa, si trova coinvolta in strani crimini che non può fare a meno di risolvere."
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:55"
     },
     {
         "canale": "Sky Serie",
@@ -5863,12 +5858,12 @@
             {
                 "ora": "16:45",
                 "titolo": "Beverly Hills 90210",
-                "descrizione": "Brandon e Kelly continuano a nascondere la loro relazione a Dylan, ma è inevitabile che la verit� venga a galla. Nel frattempo, Donna ha intenzione di prendersi un semestre libero per partecipare a un ballo delle debuttanti."
+                "descrizione": "Beverly Hills 90210 è una serie televisiva trasmessa negli Stati Uniti d'America tra il 1990 ed il 2000. Il 90210 del titolo si riferisce allo Zip Code (termine con cui negli USA si indica il codice di avviamento postale) della citt� di Beverly Hills nella contea Los Angeles. Il soggetto, all'epoca, fu originale, per la prima volta infatti una serie televisiva si propose di raccontare gli adolescenti per quello che erano affrontando temi delicati come droga, AIDS, sessualit� e alcolismo. La serie seguiva le vicissitudini di un gruppo di adolescenti dell'alta borghesia, abitanti nel quartiere VIP di Beverly Hills, a Los Angeles."
             },
             {
                 "ora": "17:35",
                 "titolo": "Beverly Hills 90210",
-                "descrizione": "Brandon decide di partecipare alle elezioni per il Senato studentesco insieme a Josh, con l'aiuto di Steve che organizza la campagna elettorale. Quando Valerie capisce che Dylan è ricco, lo seduce."
+                "descrizione": "Beverly Hills 90210 è una serie televisiva trasmessa negli Stati Uniti d'America tra il 1990 ed il 2000. Il 90210 del titolo si riferisce allo Zip Code (termine con cui negli USA si indica il codice di avviamento postale) della citt� di Beverly Hills nella contea Los Angeles. Il soggetto, all'epoca, fu originale, per la prima volta infatti una serie televisiva si propose di raccontare gli adolescenti per quello che erano affrontando temi delicati come droga, AIDS, sessualit� e alcolismo. La serie seguiva le vicissitudini di un gruppo di adolescenti dell'alta borghesia, abitanti nel quartiere VIP di Beverly Hills, a Los Angeles."
             },
             {
                 "ora": "18:25",
@@ -5916,7 +5911,7 @@
                 "descrizione": "Il dottor Charles deve fare i conti con i propri problemi di salute mentale, dopo aver vissuto un'esperienza straziante durante il servizio presso il numero verde per la prevenzione dei suicidi."
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:55"
     },
     {
         "canale": "Sky Investigation",
@@ -6033,7 +6028,7 @@
                 "descrizione": "Dopo l'improvvisa morte del marito, Jenny si trasferisce con il figlio adolescente a Toronto, dove prende servizio come medico legale e collabora con il detective McAvoy alla risoluzione di alcuni casi di omicidio."
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:55"
     },
     {
         "canale": "Sky Crime",
@@ -6155,7 +6150,7 @@
                 "descrizione": "Sei ragazze belghe scompaiono misteriosamente per mano del Mostro, il famigerato serial killer del Belgio. Una volta smascherato il colpevole, la polizia si rende conto di essersi imbattuta in una rete di sfruttamento sessuale minorile."
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:55"
     },
     {
         "canale": "Sky Adventure",
@@ -6224,7 +6219,7 @@
             {
                 "ora": "13:10",
                 "titolo": "In Search Of - Ai Limiti Del Reale",
-                "descrizione": "Ep6 di 10 Intelligenza artificiale - Zach cerca di capire in che modo il futuro dell'intelligenza artificiale possa gia' rappresentare una minaccia per l'umanita'."
+                "descrizione": "Zach cerca di capire in che modo il futuro dell'intelligenza artificiale possa gi� rappresentare una minaccia per l'umanit� ."
             },
             {
                 "ora": "13:55",
@@ -6292,7 +6287,7 @@
                 "descrizione": "I surfisti vivono e si godono le emozioni più intense che Waimea Bay abbia mai offerto."
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:55"
     },
     {
         "canale": "MTV",
@@ -6324,7 +6319,7 @@
                 "descrizione": "Ep45 di 100 - Zark sta con Roger, ma in videochat Roger mostra solo met� della faccia, perchè dice di essere malato."
             },
             {
-                "ora": "07:55",
+                "ora": "08:00",
                 "titolo": "Catfish: False Identita'",
                 "descrizione": "Ep46 di 100 Brittany e Mark - Brittany si sta riprendendo da una rottura così brutta che spera di essere beccata dal suo ex che vuole tornare insieme a lei!"
             },
@@ -6339,7 +6334,7 @@
                 "descrizione": "S6 Ep27 Truth Be Told - Durante una vacanza a Key West, Farrah e il fidanzato di sua madre litigano. Viene accettata l'offerta per la casa di Catelynn e Tyler. Maci cerca di affrontare Ryan."
             },
             {
-                "ora": "10:35",
+                "ora": "10:40",
                 "titolo": "Teen Mom OG",
                 "descrizione": "Ep1 di 18 - Ritornano, in un'edizione totalmente nuova, le nostre affezionate mamme teenager alle prese con i problemi e le difficolta' tipiche dell'adolescenza e della... maternita'!"
             },
@@ -6349,12 +6344,12 @@
                 "descrizione": "Ep13 di 13 Il giorno della partita - La prova finale: tagliare o non tagliare? Questo è il dilemma."
             },
             {
-                "ora": "12:10",
+                "ora": "12:15",
                 "titolo": "Dallas Cowboys Cheerleaders: Making...",
                 "descrizione": "Ep1 di 8 Come nessun'altra - 21 delle migliori candidate esordienti partecipano al Training Camp. Hanno pochi giorni per ambientarsi prima che si uniscano le veterane."
             },
             {
-                "ora": "13:00",
+                "ora": "13:05",
                 "titolo": "Caught In The Act",
                 "descrizione": "Ep4 di 6 Un insaziabile appetito di successo - Jessica sospetta che il suo collega e partner Walter la tradisca."
             },
@@ -6364,7 +6359,7 @@
                 "descrizione": "Ep5 di 6 Ha un altro appartamento? - Gierra desidera creare una famiglia con Shay, ma sospetta che i suoi impegni con le ragazze dei locali possano aver fatto sfumare la sua idea."
             },
             {
-                "ora": "14:30",
+                "ora": "14:35",
                 "titolo": "Caught In The Act",
                 "descrizione": "Ep6 di 6 Non suo cugino! - Caught In The Act segue la conduttrice Tami Roman nella sua missione di aiutare gli amanti sospettosi a cogliere sul fatto i loro partner traditori."
             },
@@ -6394,7 +6389,7 @@
                 "descrizione": "Ep12 di 16 Matilde e Angelica Aureli - MTV Cribs torna in Italia! In questo episodio scopriremo la casa delle gemelle Matilde e Angelica Aureli."
             },
             {
-                "ora": "18:30",
+                "ora": "18:25",
                 "titolo": "Catfish: False identita'",
                 "descrizione": "Ep16 - Mike si e' innamorato di Caroline online. Lei continua ad evitare di incontrarlo, fino a quando non gli lascia un biglietto sulla macchina spiegandogli che ha il cancro."
             },
@@ -6419,17 +6414,17 @@
                 "descrizione": "Ep10 di 12 - Tami Roman aiuta gli amanti sospettosi a cogliere sul fatto i loro partner infedeli. Insieme alla sua squadra, Tami scoprir� la verit� che può rivelarsi decisiva per chi si affida a..."
             },
             {
-                "ora": "22:30",
+                "ora": "22:25",
                 "titolo": "The Challenge: All Stars",
                 "descrizione": "Ep7 di 10 Facciamo un patto - \"TJ d� il benvenuto agli sfidanti nell'esilarante e divertente sfida \"\"Shooting stars\"\".\""
             },
             {
-                "ora": "23:20",
+                "ora": "23:15",
                 "titolo": "MTV Floribama Shore",
                 "descrizione": "Ep3 di 12 - Gus si confronta con Nils a proposito delle voci che crede abbiano rovinato la sua storia con Lisa. Candace a Codi fanno uno scherzo telefonico ai genitori. Gus e Jeremiah litigano."
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:55"
     },
     {
         "canale": "Comedy Central",
@@ -6586,7 +6581,7 @@
                 "descrizione": "Quando la moglie Andi decide di riavviare la sua carriera professionale, Adam è costretto a passare più tempo a casa e assumersi maggiori responsabilit� nell'accudire i loro tre figli piccoli."
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:55"
     },
     {
         "canale": "Sky Arte",
@@ -6673,7 +6668,7 @@
                 "descrizione": "Grazie a filmati integrali ritrovati del concerto di Dalla al Village Gate di New York del 1986, un viaggio sulla nascita di uno dei suoi album più famosi, \"DallAmeriCaruso\", mentre il cantautore ci racconta la storia di Caruso."
             }
         ],
-        "aggiornato": "08:24"
+        "aggiornato": "13:55"
     },
     {
         "canale": "Sky Documentaries",
@@ -6785,7 +6780,7 @@
                 "descrizione": "S1 Ep3 L'apertura - Nel giugno 1990, il giorno dell'inaugurazione del primo parco a tema Universal a Orlando e' costellato di difficolta', un passo falso che i creatori sono determinati a evitare."
             }
         ],
-        "aggiornato": "08:25"
+        "aggiornato": "13:55"
     },
     {
         "canale": "Sky Nature",
@@ -6902,7 +6897,7 @@
                 "descrizione": "L'estate è un periodo di grande fermento per gli animali. Più sole significa più cibo, ma gli animali arrivano da lontano per condividerlo e la concorrenza è agguerrita."
             }
         ],
-        "aggiornato": "08:25"
+        "aggiornato": "13:55"
     },
     {
         "canale": "Discovery Channel",
@@ -7019,7 +7014,7 @@
                 "descrizione": "Passiamo altri oggetti d'uso quotidiano sotto la lente d'ingrandimento: distintivi della polizia, rum, autolavaggi e manometri."
             }
         ],
-        "aggiornato": "08:25"
+        "aggiornato": "13:55"
     },
     {
         "canale": "History Channel",
@@ -7136,7 +7131,7 @@
                 "descrizione": "Ep9 di 30 Il sesto senso di Darrell - Darrell decide di seguire il suo istinto e la sua mossa si rivela vincente. Brandi cerca di insegnare a Danielle una lezione molto importante."
             }
         ],
-        "aggiornato": "08:25"
+        "aggiornato": "13:55"
     },
     {
         "canale": "Cartoon Network",
@@ -7293,7 +7288,7 @@
                 "descrizione": "Ep15 di 40 Il fumetto - Gumball e' il protagonista del suo fumetto, ma fatica a tenere testa al suo alter ego."
             }
         ],
-        "aggiornato": "08:25"
+        "aggiornato": "13:55"
     },
     {
         "canale": "Dea Kids",
@@ -7450,7 +7445,7 @@
                 "descrizione": "Izzy pensa che Chef voglia che lei sia all'altezza della sfida di distruggere la stanza dei bambini con l'arte, così ottiene della vernice magica per dare vita a tutte le sue creazioni."
             }
         ],
-        "aggiornato": "08:25"
+        "aggiornato": "13:55"
     },
     {
         "canale": "Nick Jr",
@@ -7607,7 +7602,7 @@
                 "descrizione": "Ep40 di 52 Il campeggio - Holly va in campeggio con Ben e la sua famiglia. Si unira' al gruppo uno gnomo molto buffo e invadente..."
             }
         ],
-        "aggiornato": "08:25"
+        "aggiornato": "13:55"
     },
     {
         "canale": "Boomerang",
@@ -7654,102 +7649,92 @@
                 "descrizione": "Gatti adorabili, abilit� bizzarre e magie divertenti! Parti per una serie di avventure animate insieme alla simpatica Gabby e al suo amico Pandy Panda."
             },
             {
-                "ora": "07:00",
+                "ora": "07:05",
                 "titolo": "La casa delle bambole di Gabby",
                 "descrizione": "Gatti adorabili, abilit� bizzarre e magie divertenti! Parti per una serie di avventure animate insieme alla simpatica Gabby e al suo amico Pandy Panda."
             },
             {
-                "ora": "07:20",
+                "ora": "07:25",
                 "titolo": "La casa delle bambole di Gabby",
                 "descrizione": "Gatti adorabili, abilit� bizzarre e magie divertenti! Parti per una serie di avventure animate insieme alla simpatica Gabby e al suo amico Pandy Panda."
             },
             {
-                "ora": "07:45",
+                "ora": "07:50",
                 "titolo": "Dino Ranch",
                 "descrizione": "Ep29 di 52 Sonny l'imbroglione - Al Dino-Ranch e' un giorno di festa, e' il giorno del trofeo della Dino-lealta'!"
             },
             {
-                "ora": "07:55",
+                "ora": "08:05",
                 "titolo": "Dino Ranch",
                 "descrizione": "Ep30 di 52 La dolcezza di Rebel - Al Dino-Ranch un affamato stegosauro genera scompiglio finche' non ci pensera' Blitz, a modo suo, a tranquillizzare l'affamato rettile."
             },
             {
-                "ora": "08:10",
+                "ora": "08:15",
                 "titolo": "Dino Ranch",
                 "descrizione": "Ep31 di 52 La festa dei cuccioli - Clover organizza un pigiama party per i cuccioli di dinosauro, ma Zampa Tonante vuole che partecipi anche il suo piccolino."
             },
             {
-                "ora": "08:20",
+                "ora": "08:30",
                 "titolo": "Dino Ranch",
                 "descrizione": "Ep32 di 52 La scorciatoia di Clara - I tre giovani Tinhorn vanno al Dino Ranch, ma mentre Jon, Miguel e Min si allenano, Clara decide di prendere delle scorciatoie per evitare di lavorare."
             },
             {
-                "ora": "08:30",
+                "ora": "08:40",
                 "titolo": "Dino Ranch",
                 "descrizione": "Ep33 di 52 La canzone dei fratelli minori - Miguel e Ogie Tinhorn devono fare squadra per aiutare un cucciolo di brontosauro. Capiranno che si puo' diventare eroi solo essendo se stessi."
             },
             {
-                "ora": "08:40",
+                "ora": "08:50",
                 "titolo": "Trasporto Formiche",
                 "descrizione": "S1 Ep7 - Trasporto Formiche - I Baby Lemmings scoprono che una fila di formiche funziona benissimo per farsi trasportare, ma anche al cucciolo di castoro fa comodo per portare i suoi rametti."
             },
             {
-                "ora": "08:50",
+                "ora": "09:00",
                 "titolo": "Tutti pazzi per le nocciole",
                 "descrizione": "S1 Ep1 - Tutti pazzi per le nocciole - I Baby Lemmings giocano con una palla di muschio, ma quando vedono una nocciola gigante, intravedono ancor piu' divertimento!"
             },
             {
-                "ora": "08:55",
+                "ora": "09:05",
                 "titolo": "Baby Lemmings - A lume di lucciola",
                 "descrizione": "S1 Ep12 - A lume di lucciola - Il cucciolo d'alce vorrebbe dormire, ma ha bisogno di una luce che possa confortarlo. Cosi', quando vede i Baby Lemmings giocare con le lucciole, decide di prenderle per se'."
             },
             {
-                "ora": "09:05",
+                "ora": "09:15",
                 "titolo": "Grizzy e i Lemming",
                 "descrizione": "Ep28 Una brutta storta - Ispirandosi all'illustrazione di un libro di medicina, Grizzy finge di essersi storto una caviglia per farsi servire e riverire dai Lemming."
             },
             {
-                "ora": "09:10",
-                "titolo": "Grizzy e i Lemming",
-                "descrizione": "Ep29 I gettoni vincenti - A un luna park si vincono i gettoni per vincere un premio, ma Grizzy non e' bravo quanto i Lemming, ad aggiudicarseli."
-            },
-            {
-                "ora": "09:15",
+                "ora": "09:25",
                 "titolo": "Grizzy e i Lemming",
                 "descrizione": "Ep30 Il gioco delle biglie - I Lemming scoprono che le ostriche trasformano gli oggetti in perle, cosi' ne creano un bel po' per giocarci a biglie, ma Grizzy ci scivola sopra."
             },
             {
-                "ora": "09:20",
+                "ora": "09:30",
                 "titolo": "Grizzy e i Lemming",
                 "descrizione": "Ep31 Una boccia a cinque stelle - Grizzy invidia ai Lemming il pesciolino vivace e affettuoso che hanno adottato, cosi' ne prende uno per se', che pero' e' del tutto inespressivo."
             },
             {
-                "ora": "09:30",
+                "ora": "09:35",
                 "titolo": "Grizzy e i Lemming",
                 "descrizione": "Ep32 L'oggetto smarrito - Per impedire ai Lemming di prendere tutti i barattoli di casa per costruire uno scivolo sulla spiaggia, Grizzy perde il suo amato medaglione."
             },
             {
-                "ora": "09:35",
-                "titolo": "Grizzy e i Lemming",
-                "descrizione": "Ep34 Pirati in vista - I Lemming giocano ai pirati su una barca trovata in spiaggia, ma Grizzy decide di rubargliela per andare a pesca."
-            },
-            {
-                "ora": "09:40",
-                "titolo": "Grizzy e i Lemming",
-                "descrizione": "Ep34 Pirati in vista - I Lemming giocano ai pirati su una barca trovata in spiaggia, ma Grizzy decide di rubargliela per andare a pesca."
-            },
-            {
                 "ora": "09:45",
+                "titolo": "Grizzy e i Lemming",
+                "descrizione": "Ep34 Pirati in vista - I Lemming giocano ai pirati su una barca trovata in spiaggia, ma Grizzy decide di rubargliela per andare a pesca."
+            },
+            {
+                "ora": "09:50",
                 "titolo": "Grizzy e i Lemming",
                 "descrizione": "Ep35 Un cesto di granchi - Litigandosi la crema al cioccolato, Grizzy e i Lemming finiscono in una citta' sottomarina di granchi, in cui c'e' un cibo ancor piu' squisito!"
             },
             {
-                "ora": "09:55",
+                "ora": "10:00",
                 "titolo": "Grizzy e i Lemming",
                 "descrizione": "Ep37 La sabbia magica - Mentre Grizzy cerca invano di raggiungere una noce di cocco per dissetarsi, i Lemming scoprono che la sabbia di una conchiglia puo' farli volare!"
             },
             {
-                "ora": "10:00",
+                "ora": "10:05",
                 "titolo": "Grizzy e i Lemming",
                 "descrizione": "Ep37 La sabbia magica - Mentre Grizzy cerca invano di raggiungere una noce di cocco per dissetarsi, i Lemming scoprono che la sabbia di una conchiglia puo' farli volare!"
             },
@@ -7759,12 +7744,22 @@
                 "descrizione": "Ep38 Sinfonia per Lemming - I Lemming disturbano Grizzy suonando strumenti improvvisati, e quando lui li butta fuori, loro scoprono un ukulele che incanta chi lo ascolta."
             },
             {
-                "ora": "10:15",
+                "ora": "10:20",
                 "titolo": "Grizzy e i Lemming",
                 "descrizione": "Ep39 Casetta interplanetaria - Grizzy ruba i ventilatori che i Lemming usano come motori di una navicella-giocattolo, ma loro trovano un vero razzo e finiscono tutti nello spazio!"
+            },
+            {
+                "ora": "10:25",
+                "titolo": "Grizzy e i Lemming: Pelosi e dispettosi",
+                "descrizione": "Ep40 Pronti, partenza, bam! - Piu' palleggi si fanno, piu' punti si accumulano per aggiudicarsi dei premi, ma ne occorrono addirittura mille, per vincere la crema al cioccolato!"
+            },
+            {
+                "ora": "10:35",
+                "titolo": "Grizzy e i Lemming: Pelosi e dispettosi",
+                "descrizione": "Ep41 Termitator - I Lemming adottano un insetto che si nutre solo di legno, e quando Grizzy scopre che sta divorando casa sua, prende misure drastiche per liberarsene."
             }
         ],
-        "aggiornato": "08:25"
+        "aggiornato": "13:55"
     },
     {
         "canale": "Sky TG 24",
@@ -7921,7 +7916,7 @@
                 "descrizione": "Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo."
             }
         ],
-        "aggiornato": "08:25"
+        "aggiornato": "13:55"
     },
     {
         "canale": "Rai News 24",
@@ -8078,7 +8073,7 @@
                 "descrizione": "NEWS + SOMMARIO"
             }
         ],
-        "aggiornato": "08:25"
+        "aggiornato": "13:55"
     },
     {
         "canale": "Sky Meteo 24",
