@@ -144,17 +144,12 @@
                 "descrizione": "Dal Teatro greco di Taormina torna Taobuk Gala, Festival letterario internazionale alla sua 16° edizione, che raccoglie la tradizione di Taormina quale capitale cosmopolita della letteratura, dello spettacolo e delle arti in genere. Conducono Antonella Ferrara e Massimiliano Ossini."
             }
         ],
-        "aggiornato": "08:22"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Rai 2",
         "categoria": "Digitale Terrestre",
         "programmi": [
-            {
-                "ora": "06:00",
-                "titolo": "Ritorno a Las Sabinas",
-                "descrizione": "Dopo molti anni di lontananza, le sorelle Molina tornano nella loro citt� natale per affrontare i problemi di salute del padre. Il loro ritorno significa una riunione con le vite, gli amori e i segreti che hanno cercato di dimenticare."
-            },
             {
                 "ora": "06:20",
                 "titolo": "La Grande Vallata",
@@ -187,8 +182,8 @@
             },
             {
                 "ora": "10:00",
-                "titolo": "TG2 Storie. I Racconti Della Settimana",
-                "descrizione": "Le storie e i protagonisti di fatti di cronaca e di costume che si raccontano nella loro quotidianit� . Direttore Antonio Preziosi Vicedirettore Alfonso Samengo Curato e condotto da Adriana Pannitteri"
+                "titolo": "Tg2 Storie - I Racconti Della Settimana",
+                "descrizione": "$23"
             },
             {
                 "ora": "10:55",
@@ -217,8 +212,8 @@
             },
             {
                 "ora": "13:50",
-                "titolo": "TG2 Medicina 33",
-                "descrizione": "Direttore Antonio Preziosi A cura di Laura Berti"
+                "titolo": "Tg2 Medicina 33",
+                "descrizione": "Il quotidiano di medicina del Tg2. I migliori specialisti di ogni settore della medicina rispondono alle domande che ciascuno di noi vorrebbe fare. Consigli utili per star bene."
             },
             {
                 "ora": "14:00",
@@ -231,34 +226,14 @@
                 "descrizione": "Percorso veloce con lievi ondulazioni e una sola salita nella parte centrale. Salvo sorprese, il finale di Chalon-sur-Saône dovrebbe offrire un'altra occasione agli sprinter."
             },
             {
-                "ora": "14:55",
-                "titolo": "Tour In Diretta",
-                "descrizione": "SPORT. - Ciclismo. A cura di Alessandro Fabretti Coordinamento giornalistico Franco Bortuzzo Conduce Francesco Pancani Telecronaca Stefano Rizzato Commento tecnico Silvio Martinello, Stefano Garzelli, Davide Cassani Produttore esecutivo Guido Lissoni Regia Italia Maria Baratta"
-            },
-            {
-                "ora": "15:15",
-                "titolo": "Tour De France 12^ Tappa Circuit Nevers",
-                "descrizione": "Tour de France 12^ tappa Circuit Nevers Magny-Cours - Chalon-sur-Saône - SPORT - Ciclismo. 113^ edizione"
-            },
-            {
-                "ora": "16:40",
+                "ora": "17:40",
                 "titolo": "Ciclismo: Tour De France 2026 - Tour Replay: 12a Tappa",
                 "descrizione": "La rubrica di ciclismo dedicata al Tour de France 2026, tra cronaca, analisi e interviste a caldo a commento della tappa appena conclusa."
             },
             {
-                "ora": "16:50",
-                "titolo": "Tour De France 12^ Tappa Circuit Nevers",
-                "descrizione": "Tour de France 12^ tappa Circuit Nevers Magny-Cours - Chalon-sur-Saône - SPORT - Ciclismo. 113^ edizione"
-            },
-            {
-                "ora": "17:40",
+                "ora": "17:58",
                 "titolo": "Ciclismo: Tour De France 2026 - Le Strade Del Tour: 13a Tappa",
                 "descrizione": "Un viaggio lungo il percorso del Tour de France 2026 per scoprire i luoghi che fanno da scenario alla corsa più celebre del mondo."
-            },
-            {
-                "ora": "17:58",
-                "titolo": "Tour De France 12^ Tappa Circuit Nevers",
-                "descrizione": "Tour de France 12^ tappa Circuit Nevers Magny-Cours - Chalon-sur-Saône - SPORT - Ciclismo. 113^ edizione"
             },
             {
                 "ora": "18:00",
@@ -299,9 +274,19 @@
                 "ora": "21:00",
                 "titolo": "TG2 Post",
                 "descrizione": "Rubrica informativa del TG2. Direttore Antonio Preziosi"
+            },
+            {
+                "ora": "21:20",
+                "titolo": "La Finale. Italia-Francia 2006: Il Cielo è Azzurro Sopra Berlino",
+                "descrizione": "Il 9 luglio 2006, la testata di Zidane a Materazzi trasforma la finale mondiale in un mito, simbolo della rivalit� tra Francia e Italia. A vent'anni da Berlino, protagonisti e cronisti ripercorrono quella partita emblematica."
+            },
+            {
+                "ora": "23:10",
+                "titolo": "Chi segna vince",
+                "descrizione": "L'allenatore olandese Thomas Rongen tenta l'impresa quasi impossibile di trasformare la squadra di calcio delle Samoa Americane da perennemente perdente a vincente."
             }
         ],
-        "aggiornato": "08:22"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Rai 3",
@@ -443,7 +428,7 @@
                 "descrizione": "Il melodramma più amato e rappresentato al mondo apre il 103° Arena di Verona Opera Festival in una nuova produzione che, per la prima volta nella storia areniana, porta a Verona una delle istituzioni più iconiche della capitale francese: il Moulin Rouge."
             }
         ],
-        "aggiornato": "08:22"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Rai 4",
@@ -570,7 +555,7 @@
                 "descrizione": "Durante un'escursione, l'agente speciale Brenner Baker e il marito si imbattono in un giro di stupefacenti. I due vengono presi in ostaggio dagli spacciatori e, mentre il marito viene ucciso, Brenner è lasciata in fin di vita. Da quel momento in poi, la donna non avr� altro in mente che la vendetta."
             }
         ],
-        "aggiornato": "08:22"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Rai 5",
@@ -682,7 +667,7 @@
                 "descrizione": "«The Boss», come è sempre stato soprannominato, è uno degli artisti più conosciuti e rappresentativi della scena rock americana. Scopriamo - l'incredibile carriera di Bruce Springsteen, dal Jersey Shore agli stadi sold out di tutto il mondo. Questa è la storia del sogno americano, raccontata dall'uomo stesso. - con Regia: Jordan Hill 2023 ITA"
             }
         ],
-        "aggiornato": "08:22"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Rete 4",
@@ -769,7 +754,7 @@
                 "descrizione": "Programma di attualita' e approfondimento condotto da Giuseppe Brindisi e realizzato in collaborazione tra Videonews e Tg4."
             }
         ],
-        "aggiornato": "08:22"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Canale 5",
@@ -916,7 +901,7 @@
                 "descrizione": "Gli artisti piu' celebri della musica italiana e internazionale si esibiscono nella kermesse musicale dell'estate italiana. Condotto da Ilary Blasi, con Fabio Rovazzi e Daniele Battaglia."
             }
         ],
-        "aggiornato": "08:22"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Italia 1",
@@ -1048,7 +1033,7 @@
                 "descrizione": "Le indagini dell'Unit� Vittime Speciali, una nuova squadra speciale della Polizia di New York che si occupa di crimini a sfondo sessuale. In ogni episodio si segue da una parte l'attivit� investigativa attuata dalla squadra e dall'altra l'aspetto giudiziario con l'iniziativa processuale condotta dalla procura distrettuale."
             }
         ],
-        "aggiornato": "08:22"
+        "aggiornato": "14:06"
     },
     {
         "canale": "La7",
@@ -1115,7 +1100,7 @@
                 "descrizione": "Il meglio della programmazione di LA7"
             }
         ],
-        "aggiornato": "08:22"
+        "aggiornato": "14:06"
     },
     {
         "canale": "TV8",
@@ -1227,7 +1212,7 @@
                 "descrizione": "I matrimoni di queste quattro spose si tingeranno di verde, colore dell'energia, della natura e della speranza: soprattutto quella di vincere Quattro Matrimoni! Scopriamo chi ce la far� ."
             }
         ],
-        "aggiornato": "08:22"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Nove",
@@ -1324,7 +1309,7 @@
                 "descrizione": "Amadeus conduce La Corrida. I dilettanti allo sbaraglio si esibiscono giudicati dal pubblico in studio."
             }
         ],
-        "aggiornato": "08:22"
+        "aggiornato": "14:06"
     },
     {
         "canale": "20 Mediaset",
@@ -1441,7 +1426,7 @@
                 "descrizione": "Eddie Morra è uno scrittore in crisi depressiva, incapace di cominciare il primo romanzo che gli è stato commissionato. Per questa sua tendenza all'autocommiserazione e al boicottaggio autoindotto, la fidanzata decide di lasciarlo. Lo stesso giorno incontra per caso Vernon, il fratello della donna con cui è stato sposato per poco tempo molti anni prima. Per placare i suoi tormenti, Vernon, che è un ex-spacciatore, gli offre un farmaco in via di licenza in grado di aumentare le capacit� dei recettori neuronali ed attivare tutte le aree del cervello. Il farmaco ha subito un effetto incredibile su Eddie, facendogli non solo recuperare l'autostima perduta ma anche tutti i ricordi più distanti e reconditi. Quando l'effetto svanisce, decide di tornare subito da Vernon per farsi dare altre pillole, ma una volta raggiunto il suo appartamento, trova l'ex-cognato morto sul divano, ucciso da qualcuno interessato allo stesso farmaco."
             }
         ],
-        "aggiornato": "08:22"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Twentyseven",
@@ -1538,7 +1523,7 @@
                 "descrizione": "In un castello della campagna inglese affittato per le riprese di un film avvengono misteriosi omicidi. Sar� l'infallibile Miss Marple a venire a capo dell'enigma. Miss Marple significa Agatha Christie, l'incontrastata regina del giallo, con le sue trame perfette e le sue ambientazioni tipicamente \"Old England\"."
             }
         ],
-        "aggiornato": "08:22"
+        "aggiornato": "14:06"
     },
     {
         "canale": "IRIS",
@@ -1600,7 +1585,7 @@
                 "descrizione": "Il tenente Nick Frescia, della sezione narcotici della polizia di Los Angeles, è sulle tracce di Dale Mc Kussic (detto Mac), trafficante di droga e suo ex compagno di liceo. Mac vuole uscire dal giro della droga: Nick gli crede ma il suo collega Maguire è convinto che stia mentendo. Mentre Nick indaga fra le amicizie di Mac questi, le cui intenzioni sono sincere, decide di aiutare un'ultima volta il trafficante messicano Carlos a piazzare una grossa partita di droga nella citt� degli angeli."
             }
         ],
-        "aggiornato": "08:22"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Rai Movie",
@@ -1642,22 +1627,22 @@
                 "descrizione": "Parecchio da fare per il commissario Rizzo della sezione narcotici di Napoli. I superiori non condividono i suoi sistemi e c'è perfino un inviato da New York che sospetta in lui una spia della mafia."
             },
             {
-                "ora": "19:05",
+                "ora": "19:07",
                 "titolo": "Soldato blu",
                 "descrizione": "Rapita dal capo cheyenne Lupo Pezzato, Kathy, una giovane donna bianca, viene liberata, dopo due anni , da un drappello di soldati. I fuggitivi vengono inseguiti dai cheyenne di Lupo Pezzato, mentre dal forte più vicino fervono i preparativi per la partenza di uno squadrone di cavalleria con un obiettivo ben preciso, eliminare gli indiani."
             },
             {
-                "ora": "21:10",
+                "ora": "21:13",
                 "titolo": "Beckett",
                 "descrizione": "Durante una vacanza in Grecia, il turista americano Beckett (John David Washington) diventa l’obiettivo di una caccia all’uomo dopo un incidente devastante. Costretto a fuggire per rimanere in vita, Beckett attraversa tutto il paese per raggiungere l’ambasciata statunitense e riabilitare il suo nome, in un crescendo di tensioni mentre le autorit� si avvicinano, disordini politici e una pericolosa rete di cospirazioni…."
             },
             {
-                "ora": "23:00",
+                "ora": "23:02",
                 "titolo": "Wasabi",
                 "descrizione": "Hubert è un ispettore di polizia dal cuore tenero ma dai modi un pò rudi. Dopo aver involontariamente cambiato i connotati del figlio del Prefetto, il Commissario gli suggerisce di prendersi un pò di vacanze. A malincuore accetta di occuparsi un pò più della sua vita privata... Riceve una telefonata dal Giappone, nella quale un notaio gli comunica che Niko, la donna della sua vita scomparsa da circa venti anni, è morta in circostanze misteriose..."
             }
         ],
-        "aggiornato": "08:22"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Rai Premium",
@@ -1754,7 +1739,7 @@
                 "descrizione": "Dai romanzi di Gabriella Genisi\n\nLe indagini di Lolita Lobosco\n\n2021 Italia\n\nDopo un lungo periodo di lavoro al Nord, il vicequestore Lolita Lobosco torna nella sua Bari per dirigere una squadra di soli uomini. In un mondo ostinatamente governato dai maschi, Lolita sceglie di restare sé stessa senza reprimere il suo fascino e la sua bellezza, anzi usa queste sue doti per affermarsi e combattere i pregiudizi. Liberamente tratto dai romanzi di Gabriella Genisi. Regia: Luca Miniero Interpreti: Luisa Ranieri, Filippo Scicchitano, Giovanni Ludeno, Jacopo Cullin, Bianca Nappi, Giulia Fiume, Ninni Bruschetta, Paolo Briguglia, Lunetta Savino"
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:06"
     },
     {
         "canale": "La 5",
@@ -1846,7 +1831,7 @@
                 "descrizione": "Due adulti sposati che si ritrovano uniti da una passione incontrollabile e da un amore coriaceo, particolarmente resistente alle intemperie. Viviana è sexy, vitale e intrigante, e ha un notevole talento per i discorsi intorcinati. È combattuta fra restare amante e alleviare così le infelicit� matrimoniali o sfasciarsi la vita per investire in un'altra. Modesto è meno chic, decisamente più sboccato e sbrigativo nella formulazione dei concetti, ma abilissimo nell'autoassoluzione. Spara battute a sproposito per svicolare, e fa pure ridere. Moderatamente vigliacco, aspirerebbe alla prosecuzione a tempo indeterminato della doppia vita piuttosto che a un secondo matrimonio, visto che gi� il suo non è che gli piaccia granché."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Real Time",
@@ -1948,7 +1933,7 @@
                 "descrizione": "Mariah, 20 anni, va dalla dottoressa Emma per la sua acne. Jonathan ha circa 40 bozzi di grasso sulla pelle e la giovane mamma Holly e' preoccupata di avere due capezzoli in piu'."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Food Network",
@@ -2100,7 +2085,7 @@
                 "descrizione": "In giro per Napoli, Fabio Esposito e Sal Da Vinci giudicano la pizza migliore."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Focus",
@@ -2212,7 +2197,7 @@
                 "descrizione": "Namibia, terra del deserto Namib: paesaggi ostili ma pieni di vita, dagli elefanti adattati alla sabbia ai piccoli rettili e toporagni che sfidano il caldo estremo."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Giallo",
@@ -2284,7 +2269,7 @@
                 "descrizione": "Due detective, DCI McDonald e DS Dodds, che apparentemente non hanno nulla in comune, vengono messi insieme e stringono una rumorosa amicizia e una divertente collaborazione in questa miniserie drammatica britannica in due parti ambientata nella moderna Bath."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Boing",
@@ -2441,7 +2426,7 @@
                 "descrizione": "Un bambino rivendica il diritto di proprieta' sul Tronco."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:06"
     },
     {
         "canale": "K2",
@@ -2598,7 +2583,7 @@
                 "descrizione": "3' Stagione Ep.45 - Le avventure di tre scoiattoli dalla voce incredibile, 'adottati' da Dave Seville, che diventano un fenomeno musicale."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Rai Gulp",
@@ -2755,7 +2740,7 @@
                 "descrizione": "Le Winx si recano su Melody, per trovare la quinta Stella Primaria. Qui scoprono che la stella è stata trovata dalla principessa Galatea, che l'ha messa in palio come premio di una gara di ballo. Mentre le altre Winx affrontano le Trix nella gara di ballo, Musa parte per andare a trovare suo padre nella loro casa delle vacanze. Qui viene raggiunta da Riven, ipnotizzato dalla magia di Darcy..."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Frisbee",
@@ -2912,7 +2897,7 @@
                 "descrizione": "3' Stagione Ep.39 - Le avventure di tre scoiattoli dalla voce incredibile, 'adottati' da Dave Seville, che diventano un fenomeno musicale."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:06"
     },
     {
         "canale": "DMAX",
@@ -3014,7 +2999,7 @@
                 "descrizione": "Zak, Aaron e la loro squadra vanno a caccia di fantasmi."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Rai Sport",
@@ -3051,11 +3036,6 @@
                 "descrizione": "La Nazionale maschile torna a giocare in Italia per un'amichevole ufficiale. Alla BTS Arena di Trento gli azzurri affrontano l'Argentina, a undici anni dall'ultimo precedente nella citt� trentina, in una sfida di prestigio che promette spettacolo e rappresenta un importante banco di prova in vista dei prossimi impegni internazionali."
             },
             {
-                "ora": "15:25",
-                "titolo": "Programmazione da definire",
-                "descrizione": "I palinsesti sono in via di definizione da parte emittente"
-            },
-            {
                 "ora": "15:55",
                 "titolo": "Atletica Leggera: Europei U18 2026 - 1a Giornata",
                 "descrizione": "Prima giornata di gare agli Europei Under 18 di atletica a Rieti."
@@ -3081,7 +3061,7 @@
                 "descrizione": "Sangue freddo e precisione, le doti fondamentali di una delle discipline che ha regalato più medaglie all'Italia ai Giochi Olimpici."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Sportitalia",
@@ -3198,7 +3178,7 @@
                 "descrizione": "Il programma tratta le vicende del calciomercato sia nella sessione estiva che in quella invernale e va in onda alle ore 23.00 dal lunedì al venerdì"
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:06"
     },
     {
         "canale": "HGTV",
@@ -3300,7 +3280,7 @@
                 "descrizione": "Dave e Jenny sistemano una casa che e' stata danneggiata da diversi tornado."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:06"
     },
     {
         "canale": "RSI LA 1",
@@ -3457,7 +3437,7 @@
                 "descrizione": "I colori del tempo"
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:06"
     },
     {
         "canale": "RSI LA 2",
@@ -3500,28 +3480,28 @@
             },
             {
                 "ora": "13:55",
-                "titolo": "Tesori del Mondo - Mumbai, Victoria Terminus",
-                "descrizione": "Proteggiamoli. Non perdiamoli. Conosciamoli. Una serie che punteggia il palinsesto RSI ci fa conoscere i grandi tesori del pianeta che ci ospita. Bombay, dal 1995 ufficialmente Mumbai, è una citt� dell'India, capitale dello stato del Maharashtra. Con una popolazione stimata di 13,66 milioni di abitanti, è la seconda citt� più popolosa del mondo dopo Shanghai[2]. Insieme con la vicina periferia di Navi Mumbai e Thane, forma un agglomerato urbano di 19 milioni di abitanti, rendendola la quinta più popolosa area metropolitana del pianeta."
+                "titolo": "Mumbai, Victoria Terminus",
+                "descrizione": "Proteggiamoli. Non perdiamoli. Conosciamoli. Una serie che punteggia il palinsesto RSI ci fa conoscere i grandi tesori del pianeta che ci ospita.\n\nBombay, dal 1995 ufficialmente Mumbai, è una citt� dell'India, capitale dello stato del Maharashtra. Con una popolazione stimata di 13,66 milioni di abitanti, è la seconda citt� più popolosa del mondo dopo Shanghai[2]. Insieme con la vicina periferia di Navi Mumbai e Thane, forma un agglomerato urbano di 19 milioni di abitanti, rendendola la quinta più popolosa area metropolitana del pianeta."
             },
             {
                 "ora": "14:15",
-                "titolo": "Medici In Corsia",
-                "descrizione": "Mentre l'ospedale è in quarantena, quattro studenti di medicina dovranno lavorare insieme per svolgere anche il lavoro dei loro superiori."
+                "titolo": "Rinascere",
+                "descrizione": "Le storie vere di persone obese che si affidano al Dott. Giardiello per cambiare vita e tornare a un peso normale."
             },
             {
                 "ora": "15:05",
-                "titolo": "Guardia Costiera",
-                "descrizione": "Protagonista della serie è una squadra della Guardia Costiera tedesca, di stanza a Neustadt, che pattuglia le coste lungo il mare Baltico a bordo dell'Albatros. A capo della squadra vi è il Capitano Holger Ehlers. La serie è girata tra New Stadt, nello Schleswig-Holstein e l'isola di Rügen nel MecLemburgo-Pomerania Anteriore."
+                "titolo": "Tennis: Swiss Open Gstaad 2026 - A. Bublik (KAZ) - Q.Halys (FRA)",
+                "descrizione": "da Gstaad"
             },
             {
                 "ora": "15:55",
-                "titolo": "They all came out to Montreux - La folle storia del Jazz Festival di Montreux",
+                "titolo": "La folle storia del Jazz Festival di Montreux",
                 "descrizione": "di Oliver Murray"
             },
             {
                 "ora": "16:45",
-                "titolo": "Racconti Dalle Città Di Mare",
-                "descrizione": "Un giro del mondo per mano della rinomata fotografa Heidi Hollinger prima e della giornalista e conduttrice televisiva Sophie Fouron poi, alla scoperta della vita, della bellezza, della cultura, delle tradizioni delle citt� portuali più importanti e famose, divenute veri luoghi simbolo del nostro pianeta."
+                "titolo": "Barcellona",
+                "descrizione": "Dopo che una forza misteriosa ha decimato la popolazione mondiale, Sebastian deve affrontare il suo viaggio di sopravvivenza tra le strade desolate di Barcellona. Mentre forma alleanze scomode con altri sopravvissuti e cerca di fuggire dalla citt� , cresce una minaccia inaspettata e ancora più sinistra."
             },
             {
                 "ora": "17:35",
@@ -3554,7 +3534,7 @@
                 "descrizione": "Verso la fine degli anni settanta, il truffatore finanziario Irving Rosenfeld e la sua socia, nonché amante, si trovano loro malgrado a lavorare a fianco dell'agente federale Richie DiMaso per vendicare una serie di politici e mafiosi, tra cui Carmine Polito, l'imprevedibile sindaco della povera citt� di Camden, in New Jersey."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:06"
     },
     {
         "canale": "DAZN 1",
@@ -3651,7 +3631,7 @@
                 "descrizione": "Alessandro Nesta - Gli intervistati attraversano il proprio tunnel interiore. Un viaggio tra ferite, traumi, conti in sospeso, rinascite, segreti. Nel terzo episodio l'ospite di Giorgia Rossi e' Alessandro Nesta."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Sky Sport 24",
@@ -3808,7 +3788,7 @@
                 "descrizione": "Tutti gli aggiornamenti dalle squadre di Serie A con collegamenti live, interviste e ospiti in studio."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Sky Sport Uno",
@@ -3972,7 +3952,7 @@
                 "descrizione": "Curiosita', commenti, notizie e anticipazioni sui possibili movimenti del calciomercato. Condotto dal trio Alessandro Bonan, Gianluca Di Marzio e Fayna."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Sky Sport Tennis",
@@ -4004,17 +3984,27 @@
                 "descrizione": "Tutti i tornei di tennis internazionali del circuito maschile ATP e di quello femminile WTA, con l'attenzione puntata sui tennisti italiani."
             },
             {
-                "ora": "22:55",
+                "ora": "18:00",
+                "titolo": "Arnaldi - Dzumhur 2^ Quarto di Finale",
+                "descrizione": "Quarto di Finale Tennis: ATP 250 Umago. - Dall'ITC Stella Maris di Umago, Croazia."
+            },
+            {
+                "ora": "20:00",
+                "titolo": "Tennis: ATP & WTA",
+                "descrizione": "Tutti i tornei di tennis internazionali del circuito maschile ATP e di quello femminile WTA, con l'attenzione puntata sui tennisti italiani."
+            },
+            {
+                "ora": "23:00",
                 "titolo": "Tennis Atp Tour This Week 2026",
                 "descrizione": "15\/07\/2026 ATP Tour: This Week. - Gli aggiornamenti sul circuito maschile di tennis professionistico. Con informazioni dettagliate sui vari giocatori di punta e sui tornei piu' importanti, accompagnate da analisi approfondite."
             },
             {
-                "ora": "23:30",
+                "ora": "23:35",
                 "titolo": "Tennis: ATP & WTA",
                 "descrizione": "Tutti i tornei di tennis internazionali del circuito maschile ATP e di quello femminile WTA, con l'attenzione puntata sui tennisti italiani."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Sky Sport F1",
@@ -4171,7 +4161,7 @@
                 "descrizione": "Alla vigilia del weekend di gara la squadra di Sky Sport F1 presenta il Gran Premio analizzando punti forti e punti deboli delle varie squadre."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Sky Sport Legend",
@@ -4278,7 +4268,7 @@
                 "descrizione": "processo di Biscardi. - Aldo Biscardi e Maurizio Mosca ospitano il direttore generale dell'Inter Piero Boschi e il sindaco di Napoli Antonio Bassolino per analizzare le rispettive crisi societarie"
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Sky Sport MotoGP",
@@ -4420,7 +4410,7 @@
                 "descrizione": "Sesto Round della stagione 2026. Dal circuito di Aragon, in Spagna, la Race 2 della World Superbike. Telecronaca Vercellesi - Temporali"
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Sky Sport Basket",
@@ -4444,7 +4434,7 @@
             {
                 "ora": "10:25",
                 "titolo": "Teo Soragna Incontra Luis Scola",
-                "descrizione": "Matteo Soragna intervista Luis Scola ripercorrendone la carriera attraverso l'NBA, l'Eurolega e i trionfi con la maglia dell'Argentina. Un viaggio a ritroso nelle parole di uno dei protagonisti dell'ultimo quarto di secolo di pallancanestro."
+                "descrizione": "Matteo Soragna intervista Luis Scola ripercorrendone la carriera attraverso l'NBA, l'Eurolega e i trionfi con la maglia dell'Argentina."
             },
             {
                 "ora": "11:00",
@@ -4488,8 +4478,8 @@
             },
             {
                 "ora": "20:40",
-                "titolo": "Grazie Gio: La Notte della Capitana",
-                "descrizione": "Un omaggio alla straordinaria carriera di Giorgia Sottana e al suo ruolo di storica capitana del Famila Basket. La campionessa chiude una carriera straordinaria, costellata di successi nazionali e internazionali."
+                "titolo": "Teo Soragna Incontra Simone...",
+                "descrizione": "Fontecchio 16\/07\/2026. - Teo Soragna Incontra Simone..."
             },
             {
                 "ora": "21:10",
@@ -4502,7 +4492,7 @@
                 "descrizione": "Cinque gare di un'intensita' senza pari: la sfida tra New York e San Antonio ha regalato emozioni incredibili. Riviviamo i momenti piu' belli del trionfo dei Knicks, di nuovo campioni NBA dopo 53 anni"
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Sky Sport Arena",
@@ -4599,7 +4589,7 @@
                 "descrizione": "Board. - Ci spostiamo nel cuore del Friuli Venezia Giulia, tra Aquileia e Grado, per vivere piu' da vicino il Campionato Italiano Diporto Touring Cup."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Sky Sport Max",
@@ -4701,7 +4691,7 @@
                 "descrizione": "Rockets NBA Summer League. - Dal Cox Pavilion di Las Vegas, Stati Uniti."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Sky Sport Mix",
@@ -4753,7 +4743,7 @@
                 "descrizione": "Board. - Ci spostiamo nel cuore del Friuli Venezia Giulia, tra Aquileia e Grado, per vivere piu' da vicino il Campionato Italiano Diporto Touring Cup."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Sky Sport Golf",
@@ -4800,7 +4790,7 @@
                 "descrizione": "Dal Royal Birkdale Golf Club di Lancashire, Inghilterra."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Sky Sport 251",
@@ -4970,7 +4960,7 @@
                 "descrizione": "Dopo che la cometa Clarke ha decimato la Terra, la famiglia Garrity deve ora rischiare tutto per intraprendere un pericoloso viaggio attraverso la terra desolata d'Europa per trovare una nuova casa."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Sky Cinema Uno +24",
@@ -5032,7 +5022,7 @@
                 "descrizione": "A Vero Beach, in Florida, tre diverse coppie in fasi diverse della loro relazione diventano protagoniste di un film su come il matrimonio, un'idea antiquata, necessiti di nuova linfa: perché ad esempio non trasformare le nozze in un accordo valido sette anni con un'opzione di rinnovo? Per Alice e Noah sarebbe un'ottima trovata per i loro dieci anni insieme. Fanny, la sorella di Alice, è convinta che il suo \"matrimonio aperto\" con Zander rappresenti la chiave della felicit� . Cybil e Harvey, infine, aspettano inermi di sapere cosa riservi loro la vita. Mentre la regista del film cerca di mostrare loro come il concetto di matrimonio sia oramai superato, le tre coppie scoprono cosa vogliono e cosa no."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Sky Cinema Due",
@@ -5089,7 +5079,7 @@
                 "descrizione": "Nel 2013 Edward Snowden (Joseph Gordon-Levitt) lascia con discrezione il suo impiego alla National Security Agency e vola ad Hong Kong per incontrare i giornalisti Glenn Greenwald e Ewen MacAskill e la regista Laura Poitras allo scopo di rivelare i giganteschi programmi di sorveglianza informatica elaborati dal governo degli Stati Uniti. Consulente esperto di informatica, legato da un impegno di massima segretezza, Ed ha scoperto che una montagna virtuale di dati viene registrata tracciando ogni forma di comunicazione digitale, non solo relativa a governi stranieri e a potenziali gruppi di terroristi, ma anche a quella di normali cittadini americani. Disilluso rispetto al suo lavoro nel mondo dell’intelligence, Snowden raccoglie meticolosamente centinaia di migliaia di documenti segreti per dimostrare la portata della violazione dei diritti in atto. Lasciando la donna che ama, Lindsay Mills, Ed trova il coraggio di agire spinto dai principi in cui crede."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Sky Cinema Due +24",
@@ -5116,7 +5106,7 @@
                 "descrizione": "Tre impiegati di una multinazionale tentano di sopravvivere e conservare il proprio lavoro nonostante la fusione con un'azienda più grande, ma la situazione non manca di influenzare profondamente la loro condizione economica e familiare sconvolgendo le loro esistenze."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Sky Cinema Collection",
@@ -5173,7 +5163,7 @@
                 "descrizione": "Dom Cobb possiede una qualifica speciale: è in grado di inserirsi nei sogni altrui per prelevare i segreti nascosti nel più profondo del subconscio. Viene contattato da Saito, un potentissimo industriale di origine giapponese, il quale gli chiede di tentare l'operazione opposta. Non deve prelevare pensieri celati ma inserire un'idea che si radichi nella mente di una persona. Costui è Robert Fischer Jr. il quale, alla morte dell'anziano e dittatoriale genitore, dovr� convincersi che l'unica cosa che può fare è distruggere l'impero ereditato. Saito avr� allora campo libero. In cambio offrir� a Cobb la possibilit� di rientrare negli Stati Uniti dove è ricercato per omicidio. Cobb accetta e si fa affiancare da un team di cui entra a far parte la giovane Ariane, architetto abilissimo nella costruzione di spazi virtuali."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Sky Cinema Family",
@@ -5240,7 +5230,7 @@
                 "descrizione": "Larry Daley è disoccupato e divorziato e rischia di perdere la custodia congiunta del figlio se non trover� un lavoro. Accetta quindi di fare il guardiano notturno al New York Museum of Natural History. Quello che non sa, ma che ben presto scoprir� , è che nel museo di notte animali e statue si animano creando un grande caos."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Sky Cinema Action",
@@ -5297,7 +5287,7 @@
                 "descrizione": "Jason Bourne è tornato. La sua angoscia è sempre alimentata dal bisogno di sapere chi e perché lo ha trasformato in una macchina per uccidere cancellandone l'identit� . A questo si aggiunge il desiderio di vendicare la morte della sua compagna. Il teatro dell'azione è estremamente vario: da Mosca a Londra, da Torino fino a Tangeri passando per la Spagna fino a un epilogo che dovrebbe essere programmaticamente destinato a chiudere la trilogia."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Sky Cinema Suspense",
@@ -5364,7 +5354,7 @@
                 "descrizione": "Un tranquilla base militare della Georgia viene sconvolta dalla morte di un affascinante ufficiale, figlia del generale a comando della base. Tocca all'ufficiale e investigatore militare Paul Bennner indagare sullo scomodo omicidio aiutato da Madeleine Stowe. Le ricerche di Benner presto si scontrano però con il codice d'onore militare della base che vuole coprire i veri motivi della morte della vittima."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Sky Cinema Romance",
@@ -5421,7 +5411,7 @@
                 "descrizione": "Marta (Serena Rossi) è una regista di teatro, single e bene o male soddisfatta della sua vita, a un passo dal debutto del suo Amleto. Al suo 40esimo compleanno riceve una visita inaspettata: l'Arcangelo Gabriele (Fabio Balsamo), che vorrebbe annunciarle la nascita di un figlio. Ma Marta non è sicura di volere un figlio “in dono” e chiede tempo per pensarci. Preso alla sprovvista da questa richiesta, costretto a fermarsi sulla Terra più del previsto, Gabriele si trasferir� a casa sua e le star� accanto per le due settimane che a Marta serviranno per capire cosa vuole per sé stessa e per essere felice."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Sky Cinema Drama",
@@ -5478,7 +5468,7 @@
                 "descrizione": "Una cronaca di 15 anni dell'espansione e dell'insediamento pre e post guerra civile del West americano - un viaggio irto di pericoli e intrighi dalle lotte con gli elementi naturali, alle interazioni con le popolazioni indigene che vivevano sulla terra, e la determinazione e molte volte la spietatezza di coloro che hanno cercato di stabilirlo."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Sky Cinema Comedy",
@@ -5540,7 +5530,7 @@
                 "descrizione": "Riuscire a evitare tutti i fastidi della vita quotidiana, mettersi in salvo da ogni rottura di scatole è sufficiente per essere felici? Il professore a settant’anni suonati ha trovato finalmente la serenit� , ha una bella casa, una discreta pensione, degli amici con cui scherzare, una signora con cui passare qualche giornata. Si dedica solo a cose piacevoli. Fino a quando la sua vita è messa sottosopra dall’arrivo della figlia, in crisi coniugale, e dei due ingombrantissimi nipotini. Nuove preoccupazioni, nuove angosce, ma anche nuovi affetti. Comincia così un’avventura nelle vite sentimentali degli altri, e nella sua, che gli far� capire che l’amore vale sempre la pena di essere vissuto, anche se porta tribolazioni, sacrifici e patimenti. Un film che riflette sull’amore e sull’inesorabile istinto degli esseri umani a mischiare il proprio destino con quello degli altri, con tutto quello che ne può derivare: fatiche ma anche gioie, e l’impressione di aver vissuto veramente."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Sky Uno",
@@ -5642,7 +5632,7 @@
                 "descrizione": "I giocatori si sfidano e trascorrono la notte in uno dei castelli più infestati d'Europa. Quando trapelano troppe informazioni, una decisione brutale costringe uno dei giocatori più forti a tornare a casa."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Sky Atlantic",
@@ -5759,7 +5749,7 @@
                 "descrizione": "La serie prequel vede la dinastia Targaryen all'apice assoluto del suo potere, con più di 15 draghi sotto il loro giogo. La maggior parte degli imperi, che siano reali o immaginari, crollano quando raggiungono tali poteri e tali altezze. Nel caso dei Targaryen, la loro lenta caduta inizia quasi 193 anni prima degli eventi de Il Trono di Spade, quando re Viserys Targaryen rompe un secolo di tradizione nominando sua figlia Rhaenyra erede al Trono di Spade. La corte rimane scioccata quando Rhaenyra mantiene il suo status di erede nonostante Viserys in seguito avr� un figlio maschio, legittimo erede. Inizia così ad attecchire il seme della divisione e forti attriti in tutto il regno."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Sky Serie",
@@ -5886,7 +5876,7 @@
                 "descrizione": "Joy e Stan, due ex allenatori di tennis, possono finalmente godersi la vita dopo la vendita della loro accademia. Ma quando Joy scompare, i quattro figli della coppia si ritrovano ad analizzare il matrimonio dei genitori da una prospettiva diversa."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Sky Investigation",
@@ -6013,7 +6003,7 @@
                 "descrizione": "Il comandante della Police Nationale Mélissa Sainte-Rose, originaria della Martinica, viene trasferita dalla Francia continentale a Fort-de-France, dove trova alle sue dipendenze il capitano Gaëlle Crivelli. I rapporti sono tesi tra le due poliziotte, perché totalmente diverse nel loro comportamento, ma complementari per la risoluzione degli omicidi."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Sky Crime",
@@ -6130,7 +6120,7 @@
                 "descrizione": "S1 Ep2 di 4 Lo strangolatore di Vienna - Vienna, anni '90: una scia di morti misteriose confonde la polizia. Quando casi simili appaiono a Los Angeles, emerge l'orrore."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:06"
     },
     {
         "canale": "Sky Adventure",
@@ -6193,8 +6183,8 @@
             },
             {
                 "ora": "12:50",
-                "titolo": "Pesca selvaggia",
-                "descrizione": "I surfisti vivono e si godono le emozioni più intense che Waimea Bay abbia mai offerto."
+                "titolo": "Pesca Selvaggia",
+                "descrizione": "Cyril Chauquet e la sua squadra di cineasti senza paura intraprendono la loro impresa più pericolosa, alla ricerca di alcune delle creature più temibili."
             },
             {
                 "ora": "13:40",
@@ -6267,7 +6257,7 @@
                 "descrizione": "Un gelo invernale micidiale trasforma un'autostrada del Texas in una trappola mortale: automobilisti e soccorritori lottano per sopravvivere a un enorme tamponamento a catena che si propaga troppo rapidamente."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:07"
     },
     {
         "canale": "MTV",
@@ -6404,7 +6394,7 @@
                 "descrizione": "Ep27 di 42 - In questa puntata Rob e Steelo sono affiancati da Lolo Wood."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:07"
     },
     {
         "canale": "Comedy Central",
@@ -6561,7 +6551,7 @@
                 "descrizione": "Hot in Cleveland\" si basa su tre favolose, eccentriche donne sopra i quarant'anni di Los Angeles, migliori amiche, le cui vite sono state cambiate per sempre quando il loro aereo è dovuto atterrare inaspettatamente a Cleveland e presto riscopriranno loro stesse in questa nuova \"terra promessa\"."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:07"
     },
     {
         "canale": "Sky Arte",
@@ -6658,7 +6648,7 @@
                 "descrizione": "La storia di un giovane emigrato, destinato a diventare un'icona: quando Picasso arriva a Parigi nel 1901, il suo futuro ha inizio."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:07"
     },
     {
         "canale": "Sky Documentaries",
@@ -6755,7 +6745,7 @@
                 "descrizione": "Messner e la squadra cercano di salvare i compagni di cordata su una montagna del Nepal nel 79."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:07"
     },
     {
         "canale": "Sky Nature",
@@ -6872,7 +6862,7 @@
                 "descrizione": "Ep4 di 10 La tana del giaguaro - Nel cuore del Brasile, il felino piu' grande d'America, il magnifico giaguaro, regna su una terra magica ricca di bellezza e diversita' naturale."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:07"
     },
     {
         "canale": "Discovery Channel",
@@ -6989,7 +6979,7 @@
                 "descrizione": "Scopriamo i processi di fabbricazione di cineprese, decorazioni natalizie di vetro e pneumatici giganti."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:07"
     },
     {
         "canale": "History Channel",
@@ -7111,7 +7101,7 @@
                 "descrizione": "Ep11 di 16 - Nuove aste, nuove battaglie all'ultima offerta. I cacciatori d'affari piu' agguerriti d'America tornano in azione per aggiudicarsi i magazzini piu' ghiotti."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:07"
     },
     {
         "canale": "Cartoon Network",
@@ -7268,7 +7258,7 @@
                 "descrizione": "Craig e i suoi due amici Kelsey e JP vivono bellissime avventure nella natura selvaggia conosciuta come Creek: un posto pieno di azione e incredibili storie."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:07"
     },
     {
         "canale": "Dea Kids",
@@ -7425,7 +7415,7 @@
                 "descrizione": "Gli amici di Cody iniziano preoccuparsi seriamente quando vedono che lui sta stringendo una nuova amicizia con un cactus."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:07"
     },
     {
         "canale": "Nick Jr",
@@ -7582,7 +7572,7 @@
                 "descrizione": "Ep42 di 52 Il Picchio - Re Cardo si annoia e decide di dedicarsi al bird watching. Grazie al libro magico sugli uccelli avvista un picchio che sta costruendo il suo nido sul grande albero degli elfi..."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:07"
     },
     {
         "canale": "Boomerang",
@@ -7739,7 +7729,7 @@
                 "descrizione": "Ep60 Suoni e luci - Grizzy si libera delle lanterne cinesi con cui i Lemming stanno giocando, ma loro trovano ne una hi-tech capace di creare molto piu' scompiglio!"
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:07"
     },
     {
         "canale": "Sky TG 24",
@@ -7896,7 +7886,7 @@
                 "descrizione": "Previsioni meteo dettagliate e sempre aggiornate 24 ore al giorno. Le previsioni regionali, nazionali ed internazionali."
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:07"
     },
     {
         "canale": "Rai News 24",
@@ -8053,7 +8043,7 @@
                 "descrizione": "NEWS + SOMMARIO"
             }
         ],
-        "aggiornato": "08:23"
+        "aggiornato": "14:07"
     },
     {
         "canale": "Sky Meteo 24",
