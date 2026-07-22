@@ -149,17 +149,12 @@
                 "descrizione": "La professoressa Joss, che si reca in Inghilterra per visitare la fattoria dove è cresciuta la sua defunta madre e si lega al padre single Daniel, la cui famiglia ora la gestisce."
             }
         ],
-        "aggiornato": "08:36"
+        "aggiornato": "14:08"
     },
     {
         "canale": "Rai 2",
         "categoria": "Digitale Terrestre",
         "programmi": [
-            {
-                "ora": "06:00",
-                "titolo": "Ritorno a Las Sabinas",
-                "descrizione": "Dopo molti anni di lontananza, le sorelle Molina tornano nella loro citt� natale per affrontare i problemi di salute del padre. Il loro ritorno significa una riunione con le vite, gli amori e i segreti che hanno cercato di dimenticare."
-            },
             {
                 "ora": "06:10",
                 "titolo": "La Grande Vallata",
@@ -187,8 +182,8 @@
             },
             {
                 "ora": "10:00",
-                "titolo": "TG2 Dossier",
-                "descrizione": "Direttore Antonio Preziosi Vicedirettore Elisabetta Migliorelli A cura di Francesco Vitale"
+                "titolo": "Tg2 Dossier - L'Ucraina Nascosta, Reportage Dal Fronte",
+                "descrizione": "Un viaggio nel cuore di un Paese lacerato da una guerra che dura ormai da quasi tre anni. Lo racconta il reportage \"L'Ucraina nascosta\", dell'inviato Piergiorgio Giacovazzo. Il conflitto in Ucraina sembra non avere fine e continua a trasformare profondamente la vita di milioni di persone. La linea del fronte, che si sposta continuamente, ridisegna di giorno in giorno la geografia umana e materiale del Paese. Tra le ferite più profonde: migliaia di corpi provenienti dal fronte ancora da identificare e famiglie che attendono da mesi una notizia. Intanto cresce il numero dei renitenti alla leva, uomini che scelgono la clandestinit� pur di non combattere. Accanto alla distruzione emerge anche la forza di chi resta. Le donne ucraine, protagoniste di una nuova resistenza civile e militare, sono al fronte o impegnate in lavori che fino a poco tempo fa erano riservati solo agli uomini. \"L'Ucraina nascosta\" è un viaggio nelle zone dimenticate del conflitto, dove la speranza resiste nonostante tutto."
             },
             {
                 "ora": "10:55",
@@ -231,34 +226,14 @@
                 "descrizione": "Frazione di trasferimento tra le Alpi, con un percorso favorevole alle ruote veloci ma non privo di insidie. I continui saliscendi possono offrire spazio alle fughe, prima di un probabile sprint a Voiron."
             },
             {
-                "ora": "14:55",
-                "titolo": "Tour In Diretta",
-                "descrizione": "SPORT. - Ciclismo. A cura di Alessandro Fabretti Coordinamento giornalistico Franco Bortuzzo Conduce Francesco Pancani Telecronaca Stefano Rizzato Commento tecnico Silvio Martinello, Stefano Garzelli, Davide Cassani Produttore esecutivo Guido Lissoni Regia Italia Maria Baratta"
-            },
-            {
-                "ora": "15:15",
-                "titolo": "Tour De France 17^ Tappa Chambery - Voir",
-                "descrizione": "Tour de France 17^ tappa Chambery - Voiron - SPORT - Ciclismo. 113^ edizione"
-            },
-            {
-                "ora": "16:25",
+                "ora": "17:25",
                 "titolo": "Ciclismo: Tour De France 2026 - Tour Replay: 17a Tappa",
                 "descrizione": "La rubrica di ciclismo dedicata al Tour de France 2026, tra cronaca, analisi e interviste a caldo a commento della tappa appena conclusa."
             },
             {
-                "ora": "16:50",
-                "titolo": "Tour De France 17^ Tappa Chambery - Voir",
-                "descrizione": "Tour de France 17^ tappa Chambery - Voiron - SPORT - Ciclismo. 113^ edizione"
-            },
-            {
-                "ora": "17:25",
+                "ora": "17:55",
                 "titolo": "Ciclismo: Tour De France 2026 - Le Strade Del Tour: 18a Tappa",
                 "descrizione": "Un viaggio lungo il percorso del Tour de France 2026 per scoprire i luoghi che fanno da scenario alla corsa più celebre del mondo."
-            },
-            {
-                "ora": "17:58",
-                "titolo": "Tour De France 17^ Tappa Chambery - Voir",
-                "descrizione": "Tour de France 17^ tappa Chambery - Voiron - SPORT - Ciclismo. 113^ edizione"
             },
             {
                 "ora": "18:00",
@@ -304,9 +279,29 @@
                 "ora": "21:00",
                 "titolo": "TG2 Post",
                 "descrizione": "Rubrica informativa del TG2. Direttore Antonio Preziosi"
+            },
+            {
+                "ora": "21:20",
+                "titolo": "Boston Blue",
+                "descrizione": "Un detective di New York e una collega di Boston indagano su un incendio mortale in un'azienda tecnologica, scoprendo una rete di segreti legati alla tecnologia di riconoscimento facciale."
+            },
+            {
+                "ora": "22:07",
+                "titolo": "Boston Blue",
+                "descrizione": "Lena e Danny vengono coinvolti in un'indagine per omicidio ad alto rischio quando un informatore legato a uno dei casi giudiziari di Mae viene trovato morto; Jonah e Sean si preparano per il loro primo giorno ufficiale di lavoro."
+            },
+            {
+                "ora": "22:57",
+                "titolo": "Boston Blue",
+                "descrizione": "Un cadavere sul molo collega Lena e Danny a un caso di droga con l'ex partner Rodgers. Jonah e Sean indagano su una scomparsa legata a una caccia al tesoro, mentre Sarah e Mae affrontano problemi legali e domestici."
+            },
+            {
+                "ora": "23:40",
+                "titolo": "Butcher's Crossing",
+                "descrizione": "Negli anni '70 dell'Ottocento, un giovane studente di Harvard abbandona gli studi e cerca il suo destino nel West, legando il suo destino a una squadra di cacciatori di bufali guidata da un uomo di nome Miller. Insieme, intraprendono un viaggio straziante, mettendo a repentaglio la vita e la sanit� mentale."
             }
         ],
-        "aggiornato": "08:36"
+        "aggiornato": "14:08"
     },
     {
         "canale": "Rai 3",
@@ -319,8 +314,8 @@
             },
             {
                 "ora": "08:00",
-                "titolo": "Agorà Estate",
-                "descrizione": "L'approfondimento estivo del mattino di Rai3 condotto da Giulia Di Stefano con Marco Carrara, attraverso ospiti, inviati, inchieste e contributi video dai social."
+                "titolo": "Alta Tensione - Agorà Estate",
+                "descrizione": "$23"
             },
             {
                 "ora": "10:30",
@@ -355,7 +350,7 @@
             {
                 "ora": "13:15",
                 "titolo": "Passato E Presente - L'Autostrada Del Sole",
-                "descrizione": "$23"
+                "descrizione": "$24"
             },
             {
                 "ora": "14:00",
@@ -463,7 +458,7 @@
                 "descrizione": "Da Piazza del Campo a Siena, Concerto per l'Italia. Protagonisti della serata, nel quadro del Chigiana International Festival & Summer Academy 2026, sono Daniel Harding, alla guida dell'Orchestra dell'Accademia Nazionale di Santa Cecilia, e il pianista Stefano Bollani. Regia Claudia De Toma."
             }
         ],
-        "aggiornato": "08:36"
+        "aggiornato": "14:08"
     },
     {
         "canale": "Rai 4",
@@ -590,7 +585,7 @@
                 "descrizione": "In Lituania, un adolescente, reso orfano dalla guerra e muto dagli orrori di cui è stato testimone, si ritrova chiuso in un orfanotrofio sovietico dove deve fare i conti con le prepotenze dei suoi perfidi compagni. Ma non è un ragazzo come tanti altri: è il giovane Hannibal Lecter. Dopo una rocambolesca fuga oltre la cortina di ferro, raggiunge la periferia di Parigi, in Francia, dove risiede lo zio, suo unico parente ancora in vita. Giunto a Lecter Castle, Hannibal scopre che l'uomo è morto, ma la sua bellissima e misteriosa vedova giapponese, Lady Murasaki Shibuku, lo accoglie in casa."
             }
         ],
-        "aggiornato": "08:36"
+        "aggiornato": "14:08"
     },
     {
         "canale": "Rai 5",
@@ -697,7 +692,7 @@
                 "descrizione": "Realizzato da una troupe che ha vissuto a fianco di Ozzy Osbourne per due anni, questo film offre uno sguardo a 360 gradi sul genio, la sregolatezza e capacit� di redenzione del frontman dei Black Sabbath. Immagini live eroiche, backstage in puro stile rock and roll, interviste ad hoc di Sir Paul McCartney e Tommy Lee."
             }
         ],
-        "aggiornato": "08:36"
+        "aggiornato": "14:08"
     },
     {
         "canale": "Rete 4",
@@ -794,7 +789,7 @@
                 "descrizione": "A San Francisco l'ispettore Callaghan rende la vita difficile ai criminali. Tuttavia, un giorno un killer s'apposta sui tetti della citt� e inizia a sparare ai passanti, inviando poi un biglietto alla polizia firmandosi Scorpio. Si tratta di un assassino psicopatico, che ricatta le forze dell'ordine minacciando di uccidere ancora se non ricever� 20mila dollari. L'ispettore Callaghan viene quindi incaricato del caso, ma quando il serial killer viene scarcerato per mancanza di prove, decide di agire al di fuori della legalit� ."
             }
         ],
-        "aggiornato": "08:36"
+        "aggiornato": "14:08"
     },
     {
         "canale": "Canale 5",
@@ -941,7 +936,7 @@
                 "descrizione": "Il programma piu' atteso dell'estate dedicato ai sentimenti con nuovi colpi di scena, momenti romantici, tradimenti inattesi e confronti al falo'. Conduce Filippo Bisciglia."
             }
         ],
-        "aggiornato": "08:36"
+        "aggiornato": "14:08"
     },
     {
         "canale": "Italia 1",
@@ -1078,7 +1073,7 @@
                 "descrizione": "Le indagini dell'Unit� Vittime Speciali, una nuova squadra speciale della Polizia di New York che si occupa di crimini a sfondo sessuale. In ogni episodio si segue da una parte l'attivit� investigativa attuata dalla squadra e dall'altra l'aspetto giudiziario con l'iniziativa processuale condotta dalla procura distrettuale."
             }
         ],
-        "aggiornato": "08:36"
+        "aggiornato": "14:08"
     },
     {
         "canale": "La7",
@@ -1150,7 +1145,7 @@
                 "descrizione": "Al “Boston Globe” nell’estate del 2001 arriva da Miami un nuovo direttore, Marty Baron. E’ deciso a far sì che il giornale torni in prima linea su tematiche anche scottanti, liberando dalla routine il team di giornalisti investigativi che è aggregato sotto la sigla di ‘Spotlight’. Il primo argomento di cui vuole che il giornale si occupi è quello relativo a un sacerdote che nel corso di trent’anni ha abusato numerosi giovani senza che contro di lui venissero presi provvedimenti drastici. Baron è convinto che il cardinale di Boston fosse al corrente del problema ma che abbia fatto tutto quanto era in suo potere perché la questione venisse insabbiata. Nasce così un’inchiesta che ha portato letteralmente alla luce un numero molto elevato di abusi di minori in ambito ecclesiale."
             }
         ],
-        "aggiornato": "08:36"
+        "aggiornato": "14:08"
     },
     {
         "canale": "TV8",
@@ -1267,7 +1262,7 @@
                 "descrizione": "A Seattle, in seguito ad un'operazione di polizia finita male, e durante la quale il malvivente e l'ostaggio restano uccisi, il detective Quentin Conners viene sospeso dal servizio, mentre il suo collega Jason York lascia la polizia. Successivamente a Conners viene incaricato di occuparsi il di una rapina in banca con ostaggio, e gli viene assegnato come partner Shane Dekker, un novellino. Apparentemente, i rapinatori non hanno prelevato un centesimo dalla banca, ma poi la polizia si rende conto che in realt� i malviventi hanno installato un virus nel sistema informatico e si sono appropriati dei soldi depositati sui numerosi conti correnti. Come se non bastasse, la polizia scopre che il capo dei rapinatori, Lorenz, sta uccidendo i suoi complici."
             }
         ],
-        "aggiornato": "08:36"
+        "aggiornato": "14:08"
     },
     {
         "canale": "Nove",
@@ -1374,7 +1369,7 @@
                 "descrizione": "Francesco va alla ricerca della ricetta per il weekend perfetto."
             }
         ],
-        "aggiornato": "08:36"
+        "aggiornato": "14:08"
     },
     {
         "canale": "20 Mediaset",
@@ -1491,7 +1486,7 @@
                 "descrizione": "Una volta ogni generazione, c'è un torneo di arti marziali interdimensionale indetto dagli Dei Anziani, conosciuto come Mortal Kombat. Se il regno di Outworld vince Mortal Kombat dieci volte consecutive, il suo imperatore, Shao Kahn, sar� in grado di invadere e conquistare l'Earthrealm (la Terra). L'Outworld ha gi� vinto nove tornei, quindi questo sar� il torneo decisivo."
             }
         ],
-        "aggiornato": "08:36"
+        "aggiornato": "14:08"
     },
     {
         "canale": "Twentyseven",
@@ -1593,7 +1588,7 @@
                 "descrizione": "La Terra viene invasa dai marziani. Sono verdi, cattivi e dotati di un perverso umorismo nero. I terrestri ripongono la loro fiducia nel Presidente degli Stati Uniti, ma la salvezza arriver� in un modo ben più bizzarro."
             }
         ],
-        "aggiornato": "08:36"
+        "aggiornato": "14:08"
     },
     {
         "canale": "IRIS",
@@ -1645,7 +1640,7 @@
                 "descrizione": "Nel 1738, a Parigi, in condizioni disagiate, nasce Jean-Baptiste Grenouille. Fin da bambino, dotato di un olfatto molto sviluppato, Jean-Baptiste va alla ricerca di tutti gli odori del mondo. Una volta cresciuto, lavora nel negozio del profumiere Baldini, dove apprende tutti i segreti delle spezie e delle essenze. La sua ossessione, però, rimane quella di riuscire a distillare e conservare il profumo delle donne. Questo incubo lo far� diventare un assassino."
             }
         ],
-        "aggiornato": "08:36"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Rai Movie",
@@ -1707,7 +1702,7 @@
                 "descrizione": "In Campania la moglie di un muratore viene arrestata perché ha cercato di spingere una minorenne tra le braccia di un creditore. In carcere conosce una lesbica, se ne innamora e, nonostante il grave scandalo dei compaesani, le due vanno a vivere insieme. La prima donna è però costretta ad avere rapporti con il creditore e quando l'amica la scopre incinta, in un impeto d'ira, l'uccide."
             }
         ],
-        "aggiornato": "08:36"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Rai Premium",
@@ -1796,12 +1791,12 @@
             {
                 "ora": "21:20",
                 "titolo": "Cuori",
-                "descrizione": "Torino, 1967. Cesare Corvara è il primario del reparto di Cardiochirurgia dell'ospedale \"Le Molinette\" col sogno di essere alla guida dell'equipe che realizzer� il primo trapianto di cuore della storia.\n\nFiction RAI ispirata al pioniere della cardiochirurgia Achille Dogliotti e incentrata sul tentativo di effettuare il primo trapianto di cuore."
+                "descrizione": "A Torino, tra gli anni '60 e '70, un gruppo di cardiochirurghi capitanato dalla dottoressa Delia Brunello e dal dottor Alberto Ferraris è impegnato a rivoluzionare la medicina sperimentando nuove tecniche pioneristiche. Tra le sfide professionali ed etiche, però, si fanno strada anche i sentimenti perché il cuore non è \"solo\" un muscolo."
             },
             {
                 "ora": "22:15",
                 "titolo": "Cuori",
-                "descrizione": "Torino, 1967. Cesare Corvara è il primario del reparto di Cardiochirurgia dell'ospedale \"Le Molinette\" col sogno di essere alla guida dell'equipe che realizzer� il primo trapianto di cuore della storia.\n\nFiction RAI ispirata al pioniere della cardiochirurgia Achille Dogliotti e incentrata sul tentativo di effettuare il primo trapianto di cuore."
+                "descrizione": "A Torino, tra gli anni '60 e '70, un gruppo di cardiochirurghi capitanato dalla dottoressa Delia Brunello e dal dottor Alberto Ferraris è impegnato a rivoluzionare la medicina sperimentando nuove tecniche pioneristiche. Tra le sfide professionali ed etiche, però, si fanno strada anche i sentimenti perché il cuore non è \"solo\" un muscolo."
             },
             {
                 "ora": "23:05",
@@ -1809,7 +1804,7 @@
                 "descrizione": "Divertenti storie con protagonisti alcuni degli attori più amati dal pubblico che indagano, con i toni leggeri della commedia all'italiana, sui disagi e sulle difficolt� dell'Italia di oggi."
             }
         ],
-        "aggiornato": "08:36"
+        "aggiornato": "14:09"
     },
     {
         "canale": "La 5",
@@ -1896,7 +1891,7 @@
                 "descrizione": "La decennale lotta tra gli allevatori Sebastian Leitner e Lorenz Huber, è nata per la morte accidentale di Peter, il figlio di otto anni di Sebastian, per mano di Lorenz, che non si d� pace per quanto accaduto. I due uomini sono pronti a dimenticare, ma non è lo stesso per i rispettivi figli, Florian Leitner e Lisa Huber, un tempo innamorati. Il loro rapporto si è incrinato per sempre, ma non solo: Lisa, che è un avvocato, torna da Monaco determinata a vincere una causa contro i Leitner."
             }
         ],
-        "aggiornato": "08:37"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Real Time",
@@ -2003,7 +1998,7 @@
                 "descrizione": "Un team di dermatologi aiuta alcuni pazienti affetti da patologie estreme."
             }
         ],
-        "aggiornato": "08:37"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Food Network",
@@ -2160,7 +2155,7 @@
                 "descrizione": "Chiara Maci ci accompagna a Montepulciano e con Barbara prepara alcuni piatti tipici della tradizione toscana."
             }
         ],
-        "aggiornato": "08:37"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Focus",
@@ -2277,7 +2272,7 @@
                 "descrizione": "Dall'Egitto alle grotte preistoriche e al Medioevo: indizi sull'assassinio di Ramses III, strutture neandertaliane, il vino romano piu' antico, un pavimento d'ossa."
             }
         ],
-        "aggiornato": "08:37"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Giallo",
@@ -2364,7 +2359,7 @@
                 "descrizione": "La serie è ambientata a Brokenwood, una piccola cittadina situata a pochi chilometri dalla costa e basata principalmente sull’agricoltura. I suoi abitanti sono persone che vogliono cambiare il proprio stile di vita e che si vogliono allontanare dallo stress cittadino. Purtroppo, però, per loro li attender� la paura che si nasconde dietro alcuni casi che svelano il motivo per cui il luogo dove essi vivono, in realt� , non è così tranquillo come sembra."
             }
         ],
-        "aggiornato": "08:37"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Boing",
@@ -2521,7 +2516,7 @@
                 "descrizione": "Le biciclette dei 10 Manubri sono state rubate e Craig, Kelsey e JP si occupano del caso. Ma trovare il colpevole non sara' facile."
             }
         ],
-        "aggiornato": "08:37"
+        "aggiornato": "14:09"
     },
     {
         "canale": "K2",
@@ -2678,7 +2673,7 @@
                 "descrizione": "5' Stagione Ep.4 - Proseguono le avventure dei tre fratelli scoiattoli dotati di una voce incredibile e di uno straordinario talento musicale."
             }
         ],
-        "aggiornato": "08:37"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Rai Gulp",
@@ -2835,7 +2830,7 @@
                 "descrizione": "Nella foresta dei funghi bioluminescenti, i Paladini e gli orchi albini guidati da Ramralu affrontano golem che si fondono in una gigantesca sfera rotolante. Il comportamento misterioso di Elara incuriosisce Ian, Myrva e Gmor, che nonostante il loro ruolo come paladini, tentano di sbirciare nel suo studio."
             }
         ],
-        "aggiornato": "08:37"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Frisbee",
@@ -2992,7 +2987,7 @@
                 "descrizione": "4' Stagione Ep.48 - Le avventure di tre scoiattoli dalla voce incredibile, 'adottati' da Dave Seville, che diventano un fenomeno musicale."
             }
         ],
-        "aggiornato": "08:37"
+        "aggiornato": "14:09"
     },
     {
         "canale": "DMAX",
@@ -3084,7 +3079,7 @@
                 "descrizione": "Mr. Oro guida rete di compro oro nel nord Italia. Ogni giorno nuove trattative e colpi di scena"
             }
         ],
-        "aggiornato": "08:37"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Rai Sport",
@@ -3142,8 +3137,8 @@
             },
             {
                 "ora": "20:00",
-                "titolo": "Ciclismo: Tour De France 2026 - Tour Di Sera",
-                "descrizione": "Dalle Alpi ai Pirenei, il Tour de France 2026 accende la sfida per la Maglia Gialla tra Tadej Pogačar, Remco Evenepoel, Jonas Vingegaard e la nuova promessa Paul Seixas."
+                "titolo": "Ciclismo: Tour De France 2026 - Tour Di Sera - 17a Tappa",
+                "descrizione": "La rubrica dedicata alla Grande Boucle che racconta i momenti più significativi della tappa."
             },
             {
                 "ora": "20:45",
@@ -3166,7 +3161,7 @@
                 "descrizione": "World Rally Championship - Rally d'Estonia: 9a tappa"
             }
         ],
-        "aggiornato": "08:37"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Sportitalia",
@@ -3288,7 +3283,7 @@
                 "descrizione": "Il programma tratta le vicende del calciomercato sia nella sessione estiva che in quella invernale e va in onda alle ore 23.00 dal lunedì al venerdì"
             }
         ],
-        "aggiornato": "08:37"
+        "aggiornato": "14:09"
     },
     {
         "canale": "HGTV",
@@ -3390,7 +3385,7 @@
                 "descrizione": "E' tempo di festa. Lucas Congdon e il suo team sono pronti a una nuova sfida: realizzare un resort messicano in un giardino residenziale a Venice, in Florida."
             }
         ],
-        "aggiornato": "08:37"
+        "aggiornato": "14:09"
     },
     {
         "canale": "RSI LA 1",
@@ -3547,7 +3542,7 @@
                 "descrizione": "I colori del tempo"
             }
         ],
-        "aggiornato": "08:37"
+        "aggiornato": "14:09"
     },
     {
         "canale": "RSI LA 2",
@@ -3654,7 +3649,7 @@
                 "descrizione": "Dom Cobb possiede una qualifica speciale: è in grado di inserirsi nei sogni altrui per prelevare i segreti nascosti nel più profondo del subconscio. Viene contattato da Saito, un potentissimo industriale di origine giapponese, il quale gli chiede di tentare l'operazione opposta. Non deve prelevare pensieri celati ma inserire un'idea che si radichi nella mente di una persona. Costui è Robert Fischer Jr. il quale, alla morte dell'anziano e dittatoriale genitore, dovr� convincersi che l'unica cosa che può fare è distruggere l'impero ereditato. Saito avr� allora campo libero. In cambio offrir� a Cobb la possibilit� di rientrare negli Stati Uniti dove è ricercato per omicidio. Cobb accetta e si fa affiancare da un team di cui entra a far parte la giovane Ariane, architetto abilissimo nella costruzione di spazi virtuali."
             }
         ],
-        "aggiornato": "08:37"
+        "aggiornato": "14:09"
     },
     {
         "canale": "DAZN 1",
@@ -3766,7 +3761,7 @@
                 "descrizione": "Cesc Fabregas - Puntata speciale con il Profeta Hernanes e Cesc Fabregas! L'allenatore del Como, da leggenda del calcio internazionale, e' uno degli ex giocatori appena tornati nel gioco, per la campagna Future Stars."
             }
         ],
-        "aggiornato": "08:37"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Sky Sport 24",
@@ -3923,7 +3918,7 @@
                 "descrizione": "Tutti gli aggiornamenti dalle squadre di Serie A con collegamenti live, interviste e ospiti in studio."
             }
         ],
-        "aggiornato": "08:37"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Sky Sport Uno",
@@ -4087,7 +4082,7 @@
                 "descrizione": "Atletico Madrid UEFA Champions League Story. - La Juve non ha mai vinto e non ha mai segnato nei 3 precedenti assoluti. Un solo punto e nessun gol dell'Atletico nelle ultime 2 trasferte. TC: Caressa-Bergomi."
             }
         ],
-        "aggiornato": "08:37"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Sky Sport Tennis",
@@ -4134,7 +4129,7 @@
                 "descrizione": "Tutti i tornei di tennis internazionali del circuito maschile ATP e di quello femminile WTA, con l'attenzione puntata sui tennisti italiani."
             }
         ],
-        "aggiornato": "08:37"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Sky Sport F1",
@@ -4286,7 +4281,7 @@
                 "descrizione": "Edizione n.74. 20 piloti e un solo obiettivo: diventare il nuovo campione del mondo! Hamilton in pole position. TC: Vanzini-Gene'-Chinchero. Analisi e aggiornamenti con Bobbi e Sangiorgio."
             }
         ],
-        "aggiornato": "08:37"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Sky Sport Legend",
@@ -4403,7 +4398,7 @@
                 "descrizione": "Alla finale scudetto si affrontano di nuovo Juvecaserta e Olimpia Milano. La partita del dentro o fuori, della vittoria tanto agognata oppure dell'oblio."
             }
         ],
-        "aggiornato": "08:37"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Sky Sport MotoGP",
@@ -4550,7 +4545,7 @@
                 "descrizione": "Quarto appuntamento del mondiale 2026: a Jerez, in Spagna, si accendono i motori per la gara della MotoGP. Telecronaca Meda - Sanchini"
             }
         ],
-        "aggiornato": "08:37"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Sky Sport Basket",
@@ -4637,7 +4632,7 @@
                 "descrizione": "Dopo il -36 nel Principato e dopo il cambio dell'allenatore, l'Efes cerca di ripartire contro il Real di Scariolo reduce da due vittorie consecutive di un solo punto. TC: Fumagalli."
             }
         ],
-        "aggiornato": "08:37"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Sky Sport Arena",
@@ -4714,7 +4709,7 @@
                 "descrizione": "Championship. - Segui le gare del World Rally Championship."
             }
         ],
-        "aggiornato": "08:37"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Sky Sport Max",
@@ -4816,7 +4811,7 @@
                 "descrizione": "Forti come un leone - Le origini del Toro di Radice e Pianelli: una squadra-famiglia che conquista il campionato con un calcio rivoluzionario e anima operaia"
             }
         ],
-        "aggiornato": "08:37"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Sky Sport Mix",
@@ -4878,7 +4873,7 @@
                 "descrizione": "Dal London Stadium di Londra, Inghilterra."
             }
         ],
-        "aggiornato": "08:37"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Sky Sport Golf",
@@ -4945,7 +4940,7 @@
                 "descrizione": "World Tour. - Dal Golfclub Munchen Eichenried di Monaco, Germania."
             }
         ],
-        "aggiornato": "08:37"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Sky Sport 251",
@@ -4957,7 +4952,7 @@
                 "descrizione": "Cod. 414909 - Calcio Amichevole. Calcio d'inizio ore 18:00. Primo test estivo in Trentino per il Napoli di Allegri. Azzurri imbattuti nei 3 precedenti contro i toscani con una vittoria (in coppa Italia) e 2 pari in B. TC: Riccardo Gentile"
             }
         ],
-        "aggiornato": "08:36"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Sky Sport 252",
@@ -5120,7 +5115,7 @@
                 "descrizione": "Quando un survivalista solitario e sua figlia salvano una misteriosa donna ferita da un fiume, si ritrovano invischiati in una letale rete di violenza e vendetta, costretti ad affrontare un criminale brutale per sopravvivere."
             }
         ],
-        "aggiornato": "08:37"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Sky Cinema Uno +24",
@@ -5177,7 +5172,7 @@
                 "descrizione": "Dopo essersi ritrovati per affrontare gli esami della maturit� , i sette protagonisti del film decidono di organizzare quel famoso viaggio di fine scuola che non erano riusciti a fare ai tempi del liceo. Accompagnati, chi volontariamente e chi no, da mogli, fidanzate, genitori e figli, vivranno nuove avventure e nuovi percorsi di crescita in un'isola della Grecia, rivelando ognuno nuove debolezze, a dimostrazione che la vera \"maturit� \" non si raggiunge mai completamente."
             }
         ],
-        "aggiornato": "08:37"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Sky Cinema Due",
@@ -5239,7 +5234,7 @@
                 "descrizione": "La serie prequel vede la dinastia Targaryen all'apice assoluto del suo potere, con più di 15 draghi sotto il loro giogo. La maggior parte degli imperi, che siano reali o immaginari, crollano quando raggiungono tali poteri e tali altezze. Nel caso dei Targaryen, la loro lenta caduta inizia quasi 193 anni prima degli eventi de Il Trono di Spade, quando re Viserys Targaryen rompe un secolo di tradizione nominando sua figlia Rhaenyra erede al Trono di Spade. La corte rimane scioccata quando Rhaenyra mantiene il suo status di erede nonostante Viserys in seguito avr� un figlio maschio, legittimo erede. Inizia così ad attecchire il seme della divisione e forti attriti in tutto il regno."
             }
         ],
-        "aggiornato": "08:37"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Sky Cinema Due +24",
@@ -5256,7 +5251,7 @@
                 "descrizione": "Basato su una storia vera, The Wolf of Wall Street segue l’impressionante ascesa e la caduta di Jordan Belfort (interpretato dal tre volte candidato all’Academy Award® Leonardo DiCaprio), il broker di New York che conquista una fortuna incredibile truffando milioni di investitori. Il film segue la folle cavalcata di Belfort, un giovane “nuovo arrivato” a Wall Street che si trasforma via via in un corrotto manipolatore dei mercati e in un cowboy della Borsa. Avendo conquistato rapidamente una ricchezza enorme, Jordan la utilizza per comprarsi un’infinita gamma di afrodisiaci: donne, cocaina, automobili, la moglie supermodella e una vita leggendaria fatta di aspirazioni e acquisti senza limiti. Ma mentre la societ� di Belfort, la Stratton Oakmont, è sulla cresta dell’onda e sguazza nella gratificazione edonistica più estrema, la SEC e l’FBI tengono d’occhio il suo impero contrassegnato dagli eccessi."
             }
         ],
-        "aggiornato": "08:37"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Sky Cinema Collection",
@@ -5308,7 +5303,7 @@
                 "descrizione": "Optimus Prime e i suoi fedeli Autobot sono di nuovo in azione per combattere i pericolosi Decepticon, intenzionati a conquistare lo spazio tra Stati Uniti e Russia per vendicare l’ultima sconfitta subita. Ancora una volta, toccher� all’umano Sam Witwicky (Shia LaBeouf) andare in aiuto dei suoi amici robot. Questi dovranno vedersela con un nuovo, temibile nemico: Shockwawe, tiranno di Cybertron, ha infatti conquistato il pianeta natale dei Transformers dopo la loro caduta” sulla Terra e non ha alcuna intenzione di fermarsi lì."
             }
         ],
-        "aggiornato": "08:37"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Sky Cinema Family",
@@ -5375,7 +5370,7 @@
                 "descrizione": "Ci sono bambini che sognano una famiglia perfetta, fatta di sorrisi, coccole e merende biologiche. Ma Gabriele, che ha tutto questo, non lo sopporta. Per lui, la felicit� sta nell’avere genitori separati, come i suoi compagni di classe, che hanno doppi regali, doppie vacanze, doppia paghetta e videogiochi illimitati. Circondato dalle attenzioni costanti di mamma Miriam (Carolina Crescentini) e pap� Stefano (Giampaolo Morelli), complici e innamorati più che mai, Gabriele si sente in trappola. Quando i suoi genitori gli rivelano il desiderio di trasferirsi fuori citt� , realizza che l’unica soluzione per evitare questo incubo è farli separare! Con l’aiuto della sua amica del cuore Rebecca, mette in atto un diabolico piano per raggiungere il suo obiettivo."
             }
         ],
-        "aggiornato": "08:37"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Sky Cinema Action",
@@ -5432,7 +5427,7 @@
                 "descrizione": "Frank è un killer a pagamento catturato da una chirurga plastica, la quale, per vendicare la morte del fratello, anche lui tra i bersagli del killer, lo opera per cambiargli sesso, infliggendogli così una tortura maggiore della morte. La traumatica esperienza porta Frank a cambiare, allerta la polizia della pericolosa chirurga e diventa giustiziere delle ragazze vittime di soprusi."
             }
         ],
-        "aggiornato": "08:37"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Sky Cinema Suspense",
@@ -5494,7 +5489,7 @@
                 "descrizione": "Sergio Rossetti, un insegnate di educazione fisica, viene trasferito a Remis, un piccolo paese di montagna nel quale regna una serenit� inscalfibile. Scoprir� che dietro a quell’equilibrio dorato si cela un inquietante rituale. Una notte a settimana gli abitanti di Remis si liberano del proprio dolore grazie a un adolescente, Matteo Corbin: basta abbracciarlo per stare meglio. Nel tentativo di salvare Matteo dalla follia della sua comunit� , Sergio scatener� il lato oscuro di quello che tutti chiamano l’angelo di Remis."
             }
         ],
-        "aggiornato": "08:37"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Sky Cinema Romance",
@@ -5561,7 +5556,7 @@
                 "descrizione": "Il cinema ha ballato mille volte. Forse diecimila. E quando la musica, ormai parte fondamentale di ogni film, si fonde con la trama il potere di seduzione nei confronti del pubblico si amplifica enormemente. Hollywood lo sa da sempre, da Cappello a cilindro fino al recente Shall we dance. Il titolo originale Take the lead, letteralmente \"prendi la guida\", \"guidami\", aveva sicuramente un impatto più immediato dell'italiano \"ti va di ballare\", perché la storia vera di Mr. Dulaine, insegnante di standards (i balli classici come il Waltzer, il Fox Trot, il Tango) impegnato a coinvolgere un gruppo di giovani avviatisi su una cattiva strada, è un vero esempio di leadership, al punto da poter essere utilizzato nelle scuole di management."
             }
         ],
-        "aggiornato": "08:37"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Sky Cinema Drama",
@@ -5628,7 +5623,7 @@
                 "descrizione": "Italia 1600. Michelangelo Merisi, in arte Caravaggio è un artista geniale e sovversivo che vive con il peso di una condanna a morte e su cui sta per allungarsi l’Ombra di un implacabile potere occulto. Un’inquietante figura è stata infatti incaricata di indagare sul pittore che - con la sua vita e la sua arte - affascina, sconvolge, sovverte. L’esistenza di un genio nelle mani di un’Ombra."
             }
         ],
-        "aggiornato": "08:37"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Sky Cinema Comedy",
@@ -5695,7 +5690,7 @@
                 "descrizione": "Remake dell'omonimo film francocanadese, sempre con Ken Scott alla regia. La storia vede al centro un uomo di mezza et� decisamente immaturo che scopre che le sue donazioni di sperma hanno dato origine a 530 bambini. Di questi, 142 si coalizzano per una class action, che consenta loro di scoprire l'identit� del padre, fino a quel momento conosciuto soltanto con lo pseudonimo di Starbuck nei moduli per la donazione. A quel punto, l'uomo dovr� decidere se assumersi le sue responsabilit� o meno."
             }
         ],
-        "aggiornato": "08:37"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Sky Uno",
@@ -5792,7 +5787,7 @@
                 "descrizione": "Ep3 di 6 Berlino - Victoria Cabello e il suo compagno di viaggio Paride sono a Berlino, un viaggio tra adrenalina, comodita' e momenti di coccole inaspettati."
             }
         ],
-        "aggiornato": "08:37"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Sky Atlantic",
@@ -5909,7 +5904,7 @@
                 "descrizione": "Charlie è una donna con un dono straordinario: riconoscere quando qualcuno mente. A bordo della sua Plymouth Barracuda, attraversa il paese e, a ogni tappa, si trova coinvolta in strani crimini che non può fare a meno di risolvere."
             }
         ],
-        "aggiornato": "08:37"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Sky Serie",
@@ -6036,7 +6031,7 @@
                 "descrizione": "Cavalcare il brivido emozionale attraverso il caos raccontanto giorno dopo giorno nell’ospedale più esplosivo della citt� , con la squadra coraggiosa dei medici che lo tengono insieme. Essi affronteranno nuovi casi unici ispirati dagli eventi di attualit� , creeranno relazioni di fuoco nel pandemonio cardiopalmo del pronto soccorso. La serie è di genere medical drama è uno spinoff di Chicago Fire, creata da by Dick Wolf e Matt Olmstead."
             }
         ],
-        "aggiornato": "08:37"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Sky Investigation",
@@ -6158,7 +6153,7 @@
                 "descrizione": "Law & Order è un media franchise creato da Dick Wolf per la NBC Universal e formato da varie serie televisive poliziesco-giudiziarie e un film per la televisione, trasmessi sul network NBC dal 13 settembre 1990. Il franchise Law & Order nel tempo ha ispirato anche una serie di adattamenti televisivi stranieri, un docu-reality e videogiochi ufficiali, oltre a generare una serie di crossover con altre serie tv statunitensi."
             }
         ],
-        "aggiornato": "08:37"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Sky Crime",
@@ -6275,7 +6270,7 @@
                 "descrizione": "S1 Ep1 di 3 L'ingegnere dal doppio volto - Alla fine degli anni Sessanta la polizia indaga su una serie di omicidi di giovani uomini e autostoppisti."
             }
         ],
-        "aggiornato": "08:37"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Sky Adventure",
@@ -6412,7 +6407,7 @@
                 "descrizione": "L'esperto di bushcraft Hazen Audel si avventura in profondit� nelle antiche foreste di Lao, in cerca di funghi stagionali estremamente pregiati per i locali. Dopo mensi di monsoni, le pure e antiche foreste sono piene di tesori naturali."
             }
         ],
-        "aggiornato": "08:37"
+        "aggiornato": "14:09"
     },
     {
         "canale": "MTV",
@@ -6495,8 +6490,8 @@
             },
             {
                 "ora": "15:20",
-                "titolo": "Teen Mom 2 - Overload",
-                "descrizione": "S5 Ep16 Overload - Finale Special - Check Up with Dr. Drew Pt 2. Il Dottor Drew esamina la relazione tra Chelsea e Adam. Jenelle parla della sua relazione con Nathan, dell'aborto, la gravidanza e le..."
+                "titolo": "Teen Mom 2",
+                "descrizione": "Ep16 di 34 - Finale Special - Check Up with Dr. Drew Pt 2. Il Dottor Drew esamina la relazione tra Chelsea e Adam. Jenelle parla della sua relazione con Nathan, dell'aborto, la gravidanza e le..."
             },
             {
                 "ora": "16:05",
@@ -6559,7 +6554,7 @@
                 "descrizione": "Ep29 di 42 - In questa puntata Rob e Steelo sono affiancati da Lolo Wood."
             }
         ],
-        "aggiornato": "08:37"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Comedy Central",
@@ -6716,7 +6711,7 @@
                 "descrizione": "Il maniaco del lavoro Mike Flaherty è il vicesindaco di New York City, che serve come stratega chiave del sindaco Randall Winston e gestore tanto necessario. Mike gestisce la citt� con l'aiuto del suo strampalato staff: un addetto stampa ansioso e insicuro; un capo di stato maggiore sessista e maleducato; un attivista gay impeccabilmente curato che gestisce gli affari delle minoranze; un contabile acuto ed efficiente, pazzo per gli uomini; e un giovane scrittore di discorsi idealista. Come Mike, sono tutti professionalmente capaci ma sfidati personalmente."
             }
         ],
-        "aggiornato": "08:38"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Sky Arte",
@@ -6833,7 +6828,7 @@
                 "descrizione": "Ep2 di 4 Sfide - Nancy Wilson e Chaka Khan raccontano cosa volesse dire prendere il controllo della propria carriera nell'epoca d'oro del rock anni '70... fino all'alba di MTV."
             }
         ],
-        "aggiornato": "08:38"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Sky Documentaries",
@@ -6930,7 +6925,7 @@
                 "descrizione": "Scopriamo il dietro le quinte della missione Artemis II, girato nel corso di tre anni e mezzo presso la NASA. Vediamo come hanno fatto quattro astronauti a raggiungere la Luna, spingendosi più in profondit� nello spazio che mai."
             }
         ],
-        "aggiornato": "08:38"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Sky Nature",
@@ -7057,7 +7052,7 @@
                 "descrizione": "Ep2 di 5 Gli orsi polari - Ai confini con l'Artico, gli orsi polari della Baia di Hudson devono fare i conti con il surriscaldamento dei mari e la fame crescente."
             }
         ],
-        "aggiornato": "08:38"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Discovery Channel",
@@ -7179,7 +7174,7 @@
                 "descrizione": "Passiamo sotto la lente d'ingrandimento alcuni oggetti d'uso quotidiano e scopriamo come sono fatte le fotografie, gli elettrodi per la saldatura e i violini elettrici."
             }
         ],
-        "aggiornato": "08:38"
+        "aggiornato": "14:09"
     },
     {
         "canale": "History Channel",
@@ -7306,7 +7301,7 @@
                 "descrizione": "Ep20 di 30 La scelta vincente - Nuove aste, nuove battaglie all'ultima offerta. I cacciatori d'affari piu' agguerriti d'America tornano in azione per aggiudicarsi i magazzini piu' ghiotti."
             }
         ],
-        "aggiornato": "08:38"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Cartoon Network",
@@ -7373,7 +7368,7 @@
                 "descrizione": "Ep20 di 44 La lezione - Gumball e Darwin saltano la scuola e Larry pensa a un piano per convincerli dell'importanza dello studio: il piano riesce, ma poi Larry inizia a porsi delle domande."
             },
             {
-                "ora": "08:15",
+                "ora": "08:20",
                 "titolo": "Lo straordinario mondo di Gumball",
                 "descrizione": "Ep21 di 44 Ritorno al passato - L'umanit� , si ritrova improvvisamente senza Internet, tornando a usi e costumi degni del Medioevo: i nostri eroi non possono certo restare a guardare!"
             },
@@ -7398,7 +7393,7 @@
                 "descrizione": "Ep5 di 40 La poesia - Gumball ha scritto una poesia sulle chiappe per la rassegna della scuola, ma il preside non vuole fargliela leggere perche' ha un trauma infantile."
             },
             {
-                "ora": "09:15",
+                "ora": "09:20",
                 "titolo": "Teen Titans Go",
                 "descrizione": "S7 Ep30 - Il telecomando - Robin, ossessionato dal controllo, non vuole che gli altri riordinino con lui la stanza delle prove. Cyborg, Bibi, Corvina e Stellarubia ci entrano lo stesso."
             },
@@ -7463,7 +7458,7 @@
                 "descrizione": "Ep6 di 40 Il dono perfetto - Alla notizia del compleanno di Nuvola, Gumball e Darwin entrano nel panico perche' non sanno cosa regalarle, dato che la ragazza ha gia' tutto quello che vuole."
             }
         ],
-        "aggiornato": "08:38"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Dea Kids",
@@ -7620,7 +7615,7 @@
                 "descrizione": "Il numero eccessivo di palloncini voluti da Chef per decorare il tavolo nel giorno del suo compleanno fanno volare via il tavolo con sopra i bambini. Dopo un lungo viaggio, i bimbi atterrano su un'isola quasi deserta, abitata solo da Bobby."
             }
         ],
-        "aggiornato": "08:38"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Nick Jr",
@@ -7777,7 +7772,7 @@
                 "descrizione": "Ep5 di 52 Daisy e Poppy - Holly e i suoi amici devono restare in cortile a giocare con le sorelline gemelle di Holly, Daisy e Poppy. Va tutto bene finche' le due gemelle si appropriano di una bacchetta magica..."
             }
         ],
-        "aggiornato": "08:38"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Boomerang",
@@ -7934,7 +7929,7 @@
                 "descrizione": "Ep32 L'oggetto smarrito - Per impedire ai Lemming di prendere tutti i barattoli di casa per costruire uno scivolo sulla spiaggia, Grizzy perde il suo amato medaglione."
             }
         ],
-        "aggiornato": "08:38"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Sky TG 24",
@@ -8091,7 +8086,7 @@
                 "descrizione": "Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo."
             }
         ],
-        "aggiornato": "08:38"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Rai News 24",
@@ -8145,7 +8140,7 @@
             {
                 "ora": "07:45",
                 "titolo": "BASTA LA SALUTE",
-                "descrizione": "Il settimanale di sanit� e benessere che porta il telespettatore all'interno di ospedali, luoghi di assistenza, nelle stanze della politica dove si prendono decisioni sulla sanit� . Dalla medicina al benessere all'alimentazione alla gestione delle strutture del Servizio Sanitario Nazionale, Basta la Salute d� voce a medici, ricercatori, associazioni di malati, specialisti della gestione sanitaria: ma sempre e rigorosamente basandosi sulla EBM, la medicina delle evidenze scientifiche verificata dalla Comunit� internazionale dei ricercatori."
+                "descrizione": "Il settimanale di sanit� e benessere che porta il telespettatore all'interno di ospedali, luoghi di assistenza, nelle stanze della politica dove si prendono decisioni sulla sanit� . Dalla medicina al benessere all'alimentazione alla gestione delle strutture del Servizio Sanitario Nazionale, Basta la Salute d� voce a medici, ricercatori, associazioni"
             },
             {
                 "ora": "07:57",
@@ -8185,7 +8180,7 @@
             {
                 "ora": "09:45",
                 "titolo": "BASTA LA SALUTE",
-                "descrizione": "Il settimanale di sanit� e benessere che porta il telespettatore all'interno di ospedali, luoghi di assistenza, nelle stanze della politica dove si prendono decisioni sulla sanit� . Dalla medicina al benessere all'alimentazione alla gestione delle strutture del Servizio Sanitario Nazionale, Basta la Salute d� voce a medici, ricercatori, associazioni di malati, specialisti della gestione sanitaria: ma sempre e rigorosamente basandosi sulla EBM, la medicina delle evidenze scientifiche verificata dalla Comunit� internazionale dei ricercatori."
+                "descrizione": "Il settimanale di sanit� e benessere che porta il telespettatore all'interno di ospedali, luoghi di assistenza, nelle stanze della politica dove si prendono decisioni sulla sanit� . Dalla medicina al benessere all'alimentazione alla gestione delle strutture del Servizio Sanitario Nazionale, Basta la Salute d� voce a medici, ricercatori, associazioni"
             },
             {
                 "ora": "10:00",
@@ -8248,7 +8243,7 @@
                 "descrizione": "NEWS + SOMMARIO"
             }
         ],
-        "aggiornato": "08:38"
+        "aggiornato": "14:09"
     },
     {
         "canale": "Sky Meteo 24",
