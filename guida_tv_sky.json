@@ -144,17 +144,12 @@
                 "descrizione": "Da Santa Margherita di Pula, Sardegna, l'appuntamento estivo dedicato al cinema ed alla televisione con premiazioni, proiezioni, incontri e presentazioni di film e serie tv, con la presenza di attori e ospiti nazionali ed internazionali. Conduce Tiziana Rocca."
             }
         ],
-        "aggiornato": "08:38"
+        "aggiornato": "14:18"
     },
     {
         "canale": "Rai 2",
         "categoria": "Digitale Terrestre",
         "programmi": [
-            {
-                "ora": "06:00",
-                "titolo": "Ritorno a Las Sabinas",
-                "descrizione": "Dopo molti anni di lontananza, le sorelle Molina tornano nella loro citt� natale per affrontare i problemi di salute del padre. Il loro ritorno significa una riunione con le vite, gli amori e i segreti che hanno cercato di dimenticare."
-            },
             {
                 "ora": "06:10",
                 "titolo": "La Grande Vallata",
@@ -182,8 +177,8 @@
             },
             {
                 "ora": "10:00",
-                "titolo": "TG2 Storie. I Racconti Della Settimana",
-                "descrizione": "Le storie e i protagonisti di fatti di cronaca e di costume che si raccontano nella loro quotidianit� . Direttore Antonio Preziosi Vicedirettore Alfonso Samengo Curato e condotto da Adriana Pannitteri"
+                "titolo": "Tg2 Storie. I Racconti Della Settimana",
+                "descrizione": "Le storie e i protagonisti di fatti di cronaca e di costume che si raccontano nella loro quotidianit� . Curato e condotto da Adriana Pannitteri"
             },
             {
                 "ora": "10:55",
@@ -212,8 +207,8 @@
             },
             {
                 "ora": "13:50",
-                "titolo": "TG2 Medicina 33",
-                "descrizione": "Direttore Antonio Preziosi A cura di Laura Berti"
+                "titolo": "Tg2 Medicina 33",
+                "descrizione": "Il quotidiano di medicina del Tg2. I migliori specialisti di ogni settore della medicina rispondono alle domande che ciascuno di noi vorrebbe fare. Consigli utili per star bene."
             },
             {
                 "ora": "14:00",
@@ -221,32 +216,12 @@
                 "descrizione": "Si torna in alta montagna con una lunga ascesa conclusiva verso Orcières-Merlette. Una tappa destinata a mettere nuovamente alla prova gli uomini di classifica in vista del gran finale alpino."
             },
             {
-                "ora": "14:05",
-                "titolo": "Tour In Diretta",
-                "descrizione": "SPORT. - Ciclismo. A cura di Alessandro Fabretti Coordinamento giornalistico Franco Bortuzzo Conduce Francesco Pancani Telecronaca Stefano Rizzato Commento tecnico Silvio Martinello, Stefano Garzelli, Davide Cassani Produttore esecutivo Guido Lissoni Regia Italia Maria Baratta"
-            },
-            {
-                "ora": "15:15",
-                "titolo": "Tour De France 18^ Tappa Voiron - OrcièR",
-                "descrizione": "Tour de France 18^ tappa Voiron - Orcière Merlette - SPORT - Ciclismo. 113^ edizione"
-            },
-            {
-                "ora": "16:25",
-                "titolo": "Tour All'Arrivo",
-                "descrizione": "SPORT. - Ciclismo. A cura di Alessandro Fabretti Coordinamento giornalistico Franco Bortuzzo Conduce Francesco Pancani Telecronaca Stefano Rizzato Commento tecnico Silvio Martinello, Stefano Garzelli, Davide Cassani Produttore esecutivo Guido Lissoni Regia Italia Maria Baratta"
-            },
-            {
-                "ora": "16:50",
-                "titolo": "Tour De France 18^ Tappa Voiron - OrcièR",
-                "descrizione": "Tour de France 18^ tappa Voiron - Orcière Merlette - SPORT - Ciclismo. 113^ edizione"
-            },
-            {
                 "ora": "17:25",
                 "titolo": "Ciclismo: Tour De France 2026 - Tour Replay: 18a Tappa",
                 "descrizione": "La rubrica di ciclismo dedicata al Tour de France 2026, tra cronaca, analisi e interviste a caldo a commento della tappa appena conclusa."
             },
             {
-                "ora": "17:59",
+                "ora": "17:55",
                 "titolo": "Ciclismo: Tour De France 2026 - Le Strade Del Tour: 19a Tappa",
                 "descrizione": "Un viaggio lungo il percorso del Tour de France 2026 per scoprire i luoghi che fanno da scenario alla corsa più celebre del mondo."
             },
@@ -298,10 +273,20 @@
             {
                 "ora": "21:20",
                 "titolo": "Il commissario Rex",
-                "descrizione": "Il commissario Rex (Kommissar Rex) è una serie televisiva poliziesca di produzione austriaca e tedesca.\n\nLa serie è incentrata sulle indagini svolte da una \"squadra omicidi\" di Vienna, i cui poliziotti sono affiancati da un cane da pastore tedesco di nome Rex, eccezionale animale che aiuta a risolvere i casi ricercando indizi e persone, e naturalmente, salvando vite umane."
+                "descrizione": "Rex è stata una serie televisiva poliziesca di produzione italiana, sequel delle avventure della serie austriaca Il commissario Rex."
+            },
+            {
+                "ora": "23:05",
+                "titolo": "N.C.I.S. Origins",
+                "descrizione": "NCIS: Origins segue le vicende del giovane Leroy Jethro Gibbs nel 1991, 12 anni prima degli eventi di NCIS - Unit� anticrimine, ed è narrato da Mark Harmon. Nella serie, Gibbs inizia la sua carriera come agente speciale novizio nel nascente ufficio NIS di Camp Pendleton, dove trova il suo posto in una squadra grintosa e disordinata guidata dalla leggenda dell'NCIS Mike Franks."
+            },
+            {
+                "ora": "23:45",
+                "titolo": "N.C.I.S. Origins",
+                "descrizione": "NCIS: Origins segue le vicende del giovane Leroy Jethro Gibbs nel 1991, 12 anni prima degli eventi di NCIS - Unit� anticrimine, ed è narrato da Mark Harmon. Nella serie, Gibbs inizia la sua carriera come agente speciale novizio nel nascente ufficio NIS di Camp Pendleton, dove trova il suo posto in una squadra grintosa e disordinata guidata dalla leggenda dell'NCIS Mike Franks."
             }
         ],
-        "aggiornato": "08:38"
+        "aggiornato": "14:18"
     },
     {
         "canale": "Rai 3",
@@ -314,8 +299,8 @@
             },
             {
                 "ora": "08:00",
-                "titolo": "Agorà Estate",
-                "descrizione": "L'approfondimento estivo del mattino di Rai3 condotto da Giulia Di Stefano con Marco Carrara, attraverso ospiti, inviati, inchieste e contributi video dai social."
+                "titolo": "Sconto Corrente - Agorà Estate",
+                "descrizione": "$23"
             },
             {
                 "ora": "10:30",
@@ -448,7 +433,7 @@
                 "descrizione": "Puntata dedicata ad Atena, la vergine sapiente, la dea protettrice della saggezza e dell'ingegno, nata direttamente dalla mente di suo padre Zeus."
             }
         ],
-        "aggiornato": "08:38"
+        "aggiornato": "14:18"
     },
     {
         "canale": "Rai 4",
@@ -457,12 +442,12 @@
             {
                 "ora": "06:01",
                 "titolo": "Il commissario Rex",
-                "descrizione": "Il commissario Rex (Kommissar Rex) è una serie televisiva poliziesca di produzione austriaca e tedesca.\n\nLa serie è incentrata sulle indagini svolte da una \"squadra omicidi\" di Vienna, i cui poliziotti sono affiancati da un cane da pastore tedesco di nome Rex, eccezionale animale che aiuta a risolvere i casi ricercando indizi e persone, e naturalmente, salvando vite umane."
+                "descrizione": "Rex è stata una serie televisiva poliziesca di produzione italiana, sequel delle avventure della serie austriaca Il commissario Rex."
             },
             {
                 "ora": "06:47",
                 "titolo": "Il commissario Rex",
-                "descrizione": "Il commissario Rex (Kommissar Rex) è una serie televisiva poliziesca di produzione austriaca e tedesca.\n\nLa serie è incentrata sulle indagini svolte da una \"squadra omicidi\" di Vienna, i cui poliziotti sono affiancati da un cane da pastore tedesco di nome Rex, eccezionale animale che aiuta a risolvere i casi ricercando indizi e persone, e naturalmente, salvando vite umane."
+                "descrizione": "Rex è stata una serie televisiva poliziesca di produzione italiana, sequel delle avventure della serie austriaca Il commissario Rex."
             },
             {
                 "ora": "07:34",
@@ -492,12 +477,12 @@
             {
                 "ora": "11:08",
                 "titolo": "Il commissario Rex",
-                "descrizione": "Il commissario Rex (Kommissar Rex) è una serie televisiva poliziesca di produzione austriaca e tedesca.\n\nLa serie è incentrata sulle indagini svolte da una \"squadra omicidi\" di Vienna, i cui poliziotti sono affiancati da un cane da pastore tedesco di nome Rex, eccezionale animale che aiuta a risolvere i casi ricercando indizi e persone, e naturalmente, salvando vite umane."
+                "descrizione": "Rex è stata una serie televisiva poliziesca di produzione italiana, sequel delle avventure della serie austriaca Il commissario Rex."
             },
             {
                 "ora": "11:57",
                 "titolo": "Il commissario Rex",
-                "descrizione": "Il commissario Rex (Kommissar Rex) è una serie televisiva poliziesca di produzione austriaca e tedesca.\n\nLa serie è incentrata sulle indagini svolte da una \"squadra omicidi\" di Vienna, i cui poliziotti sono affiancati da un cane da pastore tedesco di nome Rex, eccezionale animale che aiuta a risolvere i casi ricercando indizi e persone, e naturalmente, salvando vite umane."
+                "descrizione": "Rex è stata una serie televisiva poliziesca di produzione italiana, sequel delle avventure della serie austriaca Il commissario Rex."
             },
             {
                 "ora": "12:44",
@@ -580,7 +565,7 @@
                 "descrizione": "Jane è una bellissima ma tormentata ragazza americana in viaggio con lo zaino in spalla attraverso il Giappone, quando le sue abilit� di combattimento di strada attirano l'attenzione di Oshima, campionessa giapponese di karate, che la recluta e la allena per combattere nel feroce torneo clandestino di arti marziali tutto al femminile noto come \"Il Kumite\". Dopo mesi di rigorosa preparazione, Jane è pronta ad affrontare le combattenti più letali del mondo, tra cui Ling, l'apprendista cinese della nemesi di Oshima. Ma altre forze nefaste si nascondono nell'ombra, e Jane e Ling dovranno unirsi in un viaggio che le porter� dalla squallida malavita di Hong Kong allo sfarzo di Macao, prima di decidere chi sia davvero la migliore combattente del pianeta."
             }
         ],
-        "aggiornato": "08:38"
+        "aggiornato": "14:18"
     },
     {
         "canale": "Rai 5",
@@ -682,17 +667,17 @@
                 "descrizione": "Dalla Scalinata di San Bernardino, L'Aquila, Missa Pro Pace per soli, voce recitante, coro e orchestra di Nicola Piovani. Concerto evento, in prima esecuzione assoluta, per gli 80 anni della Societ� Aquilana dei Concerti \"Bonaventura Barattelli\". Regia Andrea Menghini."
             },
             {
-                "ora": "22:31",
+                "ora": "22:29",
                 "titolo": "Cantare Amantis Est - Cantare è Proprio Di Chi Ama (S. Agostino)",
                 "descrizione": "'Cantare amantis est' è il nuovo progetto di Ravenna Festival 2025. Il significato è nelle parole di Sant'Agostino: 'cantare amantis est', cantare è proprio di chi ama. Una masterclass del Maestro Muti, aperta a tutti (cori amatoriali e professionali, cantori esperti e principianti, di qualsiasi et� e tessitura)... - 2025 ITA"
             },
             {
-                "ora": "23:22",
+                "ora": "23:20",
                 "titolo": "La Storia Di Amy Winehouse In Dieci Scatti",
                 "descrizione": "La storia di Amy Winehouse, dall'infanzia, ai primi passi nel mondo della musica, fino al successo mondiale."
             }
         ],
-        "aggiornato": "08:38"
+        "aggiornato": "14:18"
     },
     {
         "canale": "Rete 4",
@@ -784,7 +769,7 @@
                 "descrizione": "Programma di attualita' e approfondimento condotto da Giuseppe Brindisi e realizzato in collaborazione tra Videonews e Tg4."
             }
         ],
-        "aggiornato": "08:38"
+        "aggiornato": "14:18"
     },
     {
         "canale": "Canale 5",
@@ -926,7 +911,7 @@
                 "descrizione": "Gli artisti piu' celebri della musica italiana e internazionale si esibiscono nella kermesse musicale dell'estate italiana. Condotto da Ilary Blasi, con Fabio Rovazzi e Daniele Battaglia."
             }
         ],
-        "aggiornato": "08:38"
+        "aggiornato": "14:18"
     },
     {
         "canale": "Italia 1",
@@ -1063,7 +1048,7 @@
                 "descrizione": "Le indagini dell'Unit� Vittime Speciali, una nuova squadra speciale della Polizia di New York che si occupa di crimini a sfondo sessuale. In ogni episodio si segue da una parte l'attivit� investigativa attuata dalla squadra e dall'altra l'aspetto giudiziario con l'iniziativa processuale condotta dalla procura distrettuale."
             }
         ],
-        "aggiornato": "08:38"
+        "aggiornato": "14:18"
     },
     {
         "canale": "La7",
@@ -1126,11 +1111,11 @@
             },
             {
                 "ora": "23:15",
-                "titolo": "Uozzap",
+                "titolo": "Uozzap Show",
                 "descrizione": "Il meglio della programmazione di LA7"
             }
         ],
-        "aggiornato": "08:38"
+        "aggiornato": "14:18"
     },
     {
         "canale": "TV8",
@@ -1247,7 +1232,7 @@
                 "descrizione": "Protagoniste di oggi sono quattro spose che per il gran giorno hanno scelto un luogo orgogliosamente sul mare. E chiss� , poitrebbe anche scapparci il bagno di mezzanotte."
             }
         ],
-        "aggiornato": "08:38"
+        "aggiornato": "14:18"
     },
     {
         "canale": "Nove",
@@ -1349,7 +1334,7 @@
                 "descrizione": "Amadeus conduce La Corrida. I dilettanti allo sbaraglio si esibiscono giudicati dal pubblico in studio."
             }
         ],
-        "aggiornato": "08:38"
+        "aggiornato": "14:18"
     },
     {
         "canale": "20 Mediaset",
@@ -1466,7 +1451,7 @@
                 "descrizione": "Durante una viaggio dalla Columbia, l'ex agente della narcotici diventato contrabbandiere, Andrew Thornton, ha un'avaria al motore del suo aereo privato. Abbandonò un borsone pieno di cocaina che venne trovato da un orso nero. L'animale divorò tutta la cocaina diventando il più massiccio consumatore di droga della storia."
             }
         ],
-        "aggiornato": "08:38"
+        "aggiornato": "14:18"
     },
     {
         "canale": "Twentyseven",
@@ -1563,7 +1548,7 @@
                 "descrizione": "Una coppia di sposi non proprio affiatata, coinvolta in affari poco chiari, tenta di sfuggire all'accusa di frode fiscale ed al conseguente arresto, rifugiandosi in una comunit� Amish: abituati alle comodit� di Manhattan, i due dovranno cambiare radicalmente le proprie abitudini di vita e dedicarsi ai lavori manuali."
             }
         ],
-        "aggiornato": "08:38"
+        "aggiornato": "14:18"
     },
     {
         "canale": "IRIS",
@@ -1620,7 +1605,7 @@
                 "descrizione": "Un corriere (Jeffrey Dean Morgan), sprezzante del pericolo e invischiato in giri poco leciti, riceve il compito di consegnare una valigetta sospetta a un noto boss della malavita, di cui si son perse le tracce da tempo. Durante il percorso per la consegna, si ritrova inseguito, in lungo e largo per tutta la nazione, sia da poliziotti e agenti dell'Fbi corrotti sia da esponenti della criminalit� , disposti a tutto pur di mettere le mani sul contenuto di ciò che trasporta e chiudere i conti in sospeso con il boss."
             }
         ],
-        "aggiornato": "08:38"
+        "aggiornato": "14:18"
     },
     {
         "canale": "Rai Movie",
@@ -1662,17 +1647,17 @@
                 "descrizione": "Zoe Hughes cerca di emergere come attrice, ma per lei è molto difficile diventare qualcuno, visto che sua madre non è nientemeno che Kathryn Vale, una famosissima ex-attrice. In passato Kathryn, circa dieci anni prima, decide di lasciare la sua carriera di attrice per via della morte del marito, Max Pierce, e delle relative accuse da parte dei giornalisti. Oggigiorno non si sa ancora chi sia l’assassino di Max e alcuni sospettano ancora che sia stata Kathryn, che intanto si è risposata con lo sceneggiatore Jake Kelly."
             },
             {
-                "ora": "21:10",
+                "ora": "21:11",
                 "titolo": "L'immortale",
                 "descrizione": "Charly Matteï ha deciso di dare una svolta alla sua vita da fuorilegge. Negli ultimi tre anni ha condotto una vita pacifica, dedicandosi a sua moglie e ai due bambini. Poi, un inverno, viene dato per morto in un parcheggio al Vecchio Porto di Marsiglia, con 22 pallottole in corpo. Tuttavia, a dispetto di ogni probabilit� , Charly è ancora vivo..."
             },
             {
-                "ora": "23:05",
+                "ora": "23:10",
                 "titolo": "Fire Squad - Incubo di fuoco",
                 "descrizione": "Basato sulla vera storia dei Granite Mountain Hotshots, narra dell’eroica storia di un’unit� locale di pompieri che con speranza, determinazione, sacrificio e di voglia di proteggere famiglie, comunit� e il paese, diventò una delle più importanti unit� d’élite della nazione. Mentre molti di noi cercano di sfuggire al pericolo, loro lo fronteggiarono, proteggendo le nostre vite, le nostre case e le cose a noi più care, rivelando un incredibile spirito di corpo che venne fuori durante un fatale incendio."
             }
         ],
-        "aggiornato": "08:38"
+        "aggiornato": "14:18"
     },
     {
         "canale": "Rai Premium",
@@ -1762,14 +1747,9 @@
                 "ora": "21:15",
                 "titolo": "Tim Summer Hits",
                 "descrizione": "Nuovo appuntamento con TIM Summer Hits : dalla suggestiva cornice di Piazza del Popolo, nel cuore della Capitale, Carlo Conti e Andrea Delogu sono pronti a un nuovo viaggio tra gli artisti protagonisti dell'estate e le canzoni che stanno facendo cantare il pubblico in tutta Italia. Nel corso della serata si alternano sul palco: Achille Lauro; Alex Britti; Benji & Fede; Cristiano Malgioglio; Elettra Lamborghini; Emma; Ernia; Francesco Gabbani; J-Ax; LDA & Aka 7even; Negramaro; Nicolò Filippucci; Noemi; Paola Iezzi; Raf; Rkomi; Rocco Hunt; Sayf; Tormento; Tredici Pietro."
-            },
-            {
-                "ora": "21:20",
-                "titolo": "Tim Summer Hits",
-                "descrizione": "Nuovo appuntamento con TIM Summer Hits : dalla suggestiva cornice di Piazza del Popolo, nel cuore della Capitale, Carlo Conti e Andrea Delogu sono pronti a un nuovo viaggio tra gli artisti protagonisti dell'estate e le canzoni che stanno facendo cantare il pubblico in tutta Italia. Nel corso della serata si alternano sul palco: Achille Lauro; Alex Britti; Benji & Fede; Cristiano Malgioglio; Elettra Lamborghini; Emma; Ernia; Francesco Gabbani; J-Ax; LDA & Aka 7even; Negramaro; Nicolò Filippucci; Noemi; Paola Iezzi; Raf; Rkomi; Rocco Hunt; Sayf; Tormento; Tredici Pietro."
             }
         ],
-        "aggiornato": "08:38"
+        "aggiornato": "14:18"
     },
     {
         "canale": "La 5",
@@ -1856,7 +1836,7 @@
                 "descrizione": "In un’assolata estate siciliana, Sara e Lorenzo si incontrano per la prima volta. Tra le onde nasce il loro giovane amore che, ben presto, si dimostrer� più forte di ogni ostacolo."
             }
         ],
-        "aggiornato": "08:38"
+        "aggiornato": "14:18"
     },
     {
         "canale": "Real Time",
@@ -1963,7 +1943,7 @@
                 "descrizione": "Negli ultimi due anni, il cheloide che pende dall'orecchio di Jenny e' cresciuto parecchio. Inoltre, la terribile acne di Connor ha minato la sua fiducia in se stesso."
             }
         ],
-        "aggiornato": "08:38"
+        "aggiornato": "14:18"
     },
     {
         "canale": "Food Network",
@@ -2120,7 +2100,7 @@
                 "descrizione": "Due pizzerie in sfida e tanto da assaggiare. Girovagando in un quartiere diverso di Napoli, Fabio Esposito e Sal Da Vinci sono pronti a decretare il vincitore."
             }
         ],
-        "aggiornato": "08:38"
+        "aggiornato": "14:18"
     },
     {
         "canale": "Focus",
@@ -2232,7 +2212,7 @@
                 "descrizione": "L'Alaska e' un paradiso per gli orsi; qui vivono i piu' grandi orsi al mondo, giganti che raggiungono quasi i 3 metri di altezza."
             }
         ],
-        "aggiornato": "08:38"
+        "aggiornato": "14:19"
     },
     {
         "canale": "Giallo",
@@ -2314,7 +2294,7 @@
                 "descrizione": "Due detective, DCI McDonald e DS Dodds, che apparentemente non hanno nulla in comune, vengono messi insieme e stringono una rumorosa amicizia e una divertente collaborazione in questa miniserie drammatica britannica in due parti ambientata nella moderna Bath."
             }
         ],
-        "aggiornato": "08:38"
+        "aggiornato": "14:19"
     },
     {
         "canale": "Boing",
@@ -2471,7 +2451,7 @@
                 "descrizione": "Craig cerca di avvisare i suoi amici riguardo l'altra sponda del ruscello con un racconto proprio del difensore dell'area: Poncho verde."
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "K2",
@@ -2628,7 +2608,7 @@
                 "descrizione": "1' Stagione Ep.14 - Le avventure di tre scoiattoli dalla voce incredibile, 'adottati' da Dave Seville, che diventano un fenomeno musicale."
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "Rai Gulp",
@@ -2785,7 +2765,7 @@
                 "descrizione": "Mentre Hugo cerca di nascondere la sua identit� , Alice la vuole scoprire e tramite gli indizi ricevuti lo mette alle strette. Hugo cede, ma sa che può fidarsi della ragazza alla quale lui si sta legando sempre di più. Nel frattempo, un antico ritratto viene ritrovato e pare essere legato a Hugo."
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "Frisbee",
@@ -2942,7 +2922,7 @@
                 "descrizione": "1' Stagione Ep.8 - Le avventure di tre scoiattoli dalla voce incredibile, 'adottati' da Dave Seville, che diventano un fenomeno musicale."
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "DMAX",
@@ -3034,7 +3014,7 @@
                 "descrizione": "Zak, Aaron e la loro squadra vanno a caccia di fantasmi."
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "Rai Sport",
@@ -3116,7 +3096,7 @@
                 "descrizione": "Settimanale di motori di RaiSport: le pagelle della F1, la tecnica delle monoposto di F1 in 3D, interviste ai piloti, ultime notizie e commenti sulla MotoGP. E poi Motocross, Rally Mondiale ed Italiano, Campionato Italiano GT, inchieste, approfondimenti."
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "Sportitalia",
@@ -3243,7 +3223,7 @@
                 "descrizione": "Il programma tratta le vicende del calciomercato sia nella sessione estiva che in quella invernale e va in onda alle ore 23.00 dal lunedì al venerdì"
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "HGTV",
@@ -3350,7 +3330,7 @@
                 "descrizione": "Dopo aver aiutato centinaia di clienti, Brian e Mika sono pronti a costruire la loro casa dei sogni. I due devono scendere a compromessi."
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "RSI LA 1",
@@ -3507,7 +3487,7 @@
                 "descrizione": "Nora, Ginny e Mary sono tre migliori amiche d'infanzia, che da ragazzine trascorrevano ogni estate insieme al campo estivo. Le donne, ormai mature, colgono al volo l'opportunit� di partecipare a una riunione nostalgica del campo estivo per tornare a lottare per il cibo, fare rafting sul fiume e condividere ogni cosa insieme alle amiche più care."
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "RSI LA 2",
@@ -3609,7 +3589,7 @@
                 "descrizione": "Un cronista televisivo, la cui carriera è ormai in declino, viene spedito dalla sua redazione in una cittadina della provincia americana per seguire un fatto di cronaca di poca importanza. Mentre sta visitando il Museo di storia naturale diventa inconsapevolmente testimone della protesta di Sam Baily, guardia giurata. L'uomo, per protestare contro il suo repentino licenziamento, si presenta armato al Museo con l'intenzione di farsi riassumere."
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "DAZN 1",
@@ -3706,7 +3686,7 @@
                 "descrizione": "Luka Modric e' stato il grande colpo dell'estate del Milan: queste le parole del centrocampista croato in esclusiva ai nostri microfoni a Casa Milan. Segui la Serie A Enilive su DAZN!"
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "Sky Sport 24",
@@ -3863,7 +3843,7 @@
                 "descrizione": "Tutti gli aggiornamenti dalle squadre di Serie A con collegamenti live, interviste e ospiti in studio."
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "Sky Sport Uno",
@@ -4037,7 +4017,7 @@
                 "descrizione": "Domenica. - Giorgio Porra' racconta il Pasolini calciatore nel centenario del grande artista. Una passione totale, partite infinite e periferie trasformate in tanti spelacchiati Maracana."
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "Sky Sport Tennis",
@@ -4084,7 +4064,7 @@
                 "descrizione": "Tutti i tornei di tennis internazionali del circuito maschile ATP e di quello femminile WTA, con l'attenzione puntata sui tennisti italiani."
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "Sky Sport F1",
@@ -4241,7 +4221,7 @@
                 "descrizione": "Alla vigilia del weekend di gara la squadra di Sky Sport F1 presenta il Gran Premio analizzando punti forti e punti deboli delle varie squadre."
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "Sky Sport Legend",
@@ -4348,7 +4328,7 @@
                 "descrizione": "Conegliano - Savino Del Bene Scandicci Volley CEV Champions League. - Conegliano - Scandicci"
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "Sky Sport MotoGP",
@@ -4495,7 +4475,7 @@
                 "descrizione": "Sesto appuntamento del mondiale 2026: al Montmelo', in Spagna, si accendono i motori per la gara della MotoGP. Telecronaca Guido Meda e Mauro Sanchini"
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "Sky Sport Basket",
@@ -4577,7 +4557,7 @@
                 "descrizione": "Dalla Fernando Buesa Arena di Vitoria-Gasteiz, Spagna."
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "Sky Sport Arena",
@@ -4664,7 +4644,7 @@
                 "descrizione": "Cristiana Buonamano conduce il talk show sul calciomercato \"Colpi da Maestro\" insieme a Luca Marchetti. Con Piero Ausilio e Giovanni Manna. Premiati anche Ludi, Antonelli e Carli."
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "Sky Sport Max",
@@ -4756,7 +4736,7 @@
                 "descrizione": "Regate, grandi eventi, saloni nautici e tutto il nuovo che arriva dal mondo della cantieristica, a vela e a motore. In ogni occasione, un personaggio del mondo della nautica si racconta al pubblico."
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "Sky Sport Mix",
@@ -4793,16 +4773,6 @@
                 "descrizione": "Tutti i tornei di tennis internazionali del circuito maschile ATP e di quello femminile WTA, con l'attenzione puntata sui tennisti italiani."
             },
             {
-                "ora": "19:00",
-                "titolo": "Colpi da maestro",
-                "descrizione": "Cristiana Buonamano conduce il talk show sul calciomercato \"Colpi da Maestro\" insieme a Luca Marchetti. Con Piero Ausilio e Giovanni Manna. Premiati anche Ludi, Antonelli e Carli."
-            },
-            {
-                "ora": "20:00",
-                "titolo": "Londra",
-                "descrizione": "Dal London Stadium di Londra, Inghilterra."
-            },
-            {
                 "ora": "22:00",
                 "titolo": "Estonia Live Stage 5",
                 "descrizione": "Championship. - Segui le gare del World Rally Championship."
@@ -4813,7 +4783,7 @@
                 "descrizione": "Dalla Nuova Scozia, le immagini spettacolari e avvincenti dal Canada Sail Grand Prix."
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "Sky Sport Golf",
@@ -4875,7 +4845,7 @@
                 "descrizione": "4 DP World Tour. - Tutti i tornei del tour europeo, il DP World Tour."
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "Sky Sport 251",
@@ -5055,7 +5025,7 @@
                 "descrizione": "Elisabetta (Matilda De Angelis), giovane e talentuosa avvocatessa triestina, difende e fa assolvere un noto docente universitario (Stefano Accorsi) dall’accusa di violenza sessuale. Quando l’uomo, reintegrato ma confinato ai margini dall’ateneo, le chiede di intentare causa contro l’istituzione, il passato di lei riemerge: segnali ambigui e presenze sfuggenti le fanno temere che l’ex compagno violento (Marlon Joubert), condannato per stalking, sia tornato a perseguitarla. Pian piano la tensione cresce inesorabilmente, mentre la linea che separa la realt� dalla paranoia si dissolve. Tratto dall’omonimo romanzo di Marco Franzoso, un film che inizia come un legal thriller, si trasforma in uno psicodramma e assume infine le inaspettate forme di un Kammerspiel."
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "Sky Cinema Uno +24",
@@ -5112,7 +5082,7 @@
                 "descrizione": "Quando un survivalista solitario e sua figlia salvano una misteriosa donna ferita da un fiume, si ritrovano invischiati in una letale rete di violenza e vendetta, costretti ad affrontare un criminale brutale per sopravvivere."
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "Sky Cinema Due",
@@ -5174,7 +5144,7 @@
                 "descrizione": "Un talent scout del mondo del baseball (Clint Eastwood) sta perdendo la vista ma decide comunque di partire per un viaggio on the road insieme alla figlia, con l’intenzione di incontrare una giovane promessa."
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "Sky Cinema Due +24",
@@ -5196,7 +5166,7 @@
                 "descrizione": "Nella stanza di una decadente pensione di Parigi, Oscar Wilde trascorre gli ultimi giorni della sua vita e come in un vivido sogno i ricordi del suo passato riaffiorano, trasportandolo in altre epoche e in altri luoghi. Non era lui un tempo l’uomo più famoso di Londra? L’artista idolatrato da quella societ� che l’ha poi crocifisso? Oggi Wilde è un uomo malato, che ripensa con malinconia alle passioni che l’hanno travolto e con tenerezza al suo incessante bisogno di amare incondizionatamente. Rivive la sua fatale relazione con Lord Alfred Douglas e le sue fughe attraverso l’Europa, ma anche il grande rimorso nei confronti della moglie Constance per aver gettato lei e i loro figli nello scandalo. Ad accompagnarlo in questo ultimo viaggio solo l’amore e la dedizione di Robbie Ross, che gli resta accanto fino alla fine nel vano tentativo di salvarlo da se stesso e l’affetto del suo più caro amico Reggie Turner."
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "Sky Cinema Collection",
@@ -5248,7 +5218,7 @@
                 "descrizione": "Cinque anni dopo i disastrosi eventi che hanno devastato Chicago, trasformandola in un campo di battaglia, la CIA ha segretamente deciso di mettere fine alla presenza dei Transformers sul suolo terrestre. Persino il leader degli Autobot, Optimus Prime, è costretto a nascondersi, almeno finché Cade Yeager, un inventore temerario ma sfortunato, finisce per ritrovarlo accidentalmente."
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "Sky Cinema Family",
@@ -5310,7 +5280,7 @@
                 "descrizione": "“SCOOBY!” ci svela come gli amici di sempre Scooby e Shaggy si siano incontrati, e come si siano uniti ai giovani investigatori Fred, Velma e Daphne per formare la famosa Mystery Inc. Con centinaia di casi risolti e avventure condivise, Scooby e la banda ora dovranno affrontare il loro mistero più grande e impegnativo di sempre: sventare un piano volto a sguinzagliare il cane fantasma Cerberus nel mondo. Mentre si apprestano a fermare questa “can-apocalisse globale”, i membri della banda scoprono che Scooby ha un retaggio segreto e un destino epico più grande di quanto potessero immaginare."
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "Sky Cinema Action",
@@ -5367,7 +5337,7 @@
                 "descrizione": "Adrenalinico action con Michelle Monaghan, Jason Clarke e Jai Courtney. Un pericoloso detenuto tiene in scacco le vite di un gruppo di ufficiali in un bunker top secret."
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "Sky Cinema Suspense",
@@ -5424,7 +5394,7 @@
                 "descrizione": "Un inventore trova uno strano animaletto in un negozio di cianfrusaglie e decide che sarebbe un perfetto regalo di Natale per il figlio. Viene avvisato della necessit� di seguire delle piccole regole: mai bagnarlo e mai dargli da mangiare dopo mezzanotte. Il figlio trasgredisce le regole inavvertitamente, dando vita ad un numero elevatissimo di piccoli mostri che mettono a soqquadro tutta la citt� ."
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "Sky Cinema Romance",
@@ -5486,7 +5456,7 @@
                 "descrizione": "Nella giornata di S. Valentino si incrociano diverse storie, tutte flebilmente unite tra loro. C’è l’italoamericano colmo di gioia per aver chiesto di sposarlo alla sua ragazza che di lavoro consegna fiori, c’è la press agent stressata e sempre sola, il reporter sportivo d’assalto relegato a fare costume, la donna soldato in licenza dal fronte, la maestra elementare che sembra aver finalmente trovato l’uomo giusto, il bambino di lei innamorato e il donnaiolo incallito."
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "Sky Cinema Drama",
@@ -5543,7 +5513,7 @@
                 "descrizione": "Bruno Salvati è un regista di scarso successo, reduce dalla separazione dalla moglie Anna da cui ha avuto due figli, la ventenne Adele e il diciassettenne Tito. A seguito di un malore improvviso, a Bruno viene diagnosticata una patologia che richiede l’intervento di un donatore. Tutti i suoi rapporti familiari vengono rimessi in discussione, compreso quello con suo padre Umberto, depositario di un segreto che costringer� Bruno ad affrontare un viaggio alla ricerca di qualcuno che lo possa aiutare."
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "Sky Cinema Comedy",
@@ -5605,7 +5575,7 @@
                 "descrizione": "Arturo scrive racconti per bambini da quando aveva dieci anni. Adesso, a trent'anni, incontra la figlia di un editore che decide di pubblicargli \"Il pesce innamorato\", un racconto che aveva scritto da bambino. Il successo arriva fulmineo e per Arturo nulla è più come prima. In un lussuoso albergo conosce Matilde e il colpo di fulmine è immediato."
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "Sky Uno",
@@ -5717,7 +5687,7 @@
                 "descrizione": "A Venezia, i giocatori lasciano l'autobus alle spalle, ma non i drammi. Un'alleanza segreta viene svelata in un'uscita di scena drammatica, mentre un giocatore si smarrisce nel Giardino delle Anime Perdute."
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "Sky Atlantic",
@@ -5829,7 +5799,7 @@
                 "descrizione": "La serie prequel vede la dinastia Targaryen all'apice assoluto del suo potere, con più di 15 draghi sotto il loro giogo. La maggior parte degli imperi, che siano reali o immaginari, crollano quando raggiungono tali poteri e tali altezze. Nel caso dei Targaryen, la loro lenta caduta inizia quasi 193 anni prima degli eventi de Il Trono di Spade, quando re Viserys Targaryen rompe un secolo di tradizione nominando sua figlia Rhaenyra erede al Trono di Spade. La corte rimane scioccata quando Rhaenyra mantiene il suo status di erede nonostante Viserys in seguito avr� un figlio maschio, legittimo erede. Inizia così ad attecchire il seme della divisione e forti attriti in tutto il regno."
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "Sky Serie",
@@ -5961,7 +5931,7 @@
                 "descrizione": "Joy e Stan, due ex allenatori di tennis, possono finalmente godersi la vita dopo la vendita della loro accademia. Ma quando Joy scompare, i quattro figli della coppia si ritrovano ad analizzare il matrimonio dei genitori da una prospettiva diversa."
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "Sky Investigation",
@@ -6093,7 +6063,7 @@
                 "descrizione": "Il comandante della Police Nationale Mélissa Sainte-Rose, originaria della Martinica, viene trasferita dalla Francia continentale a Fort-de-France, dove trova alle sue dipendenze il capitano Gaëlle Crivelli. I rapporti sono tesi tra le due poliziotte, perché totalmente diverse nel loro comportamento, ma complementari per la risoluzione degli omicidi."
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "Sky Crime",
@@ -6225,7 +6195,7 @@
                 "descrizione": "S1 Ep1 Il Serial Killer di Long Island - Un giorno di dicembre in un tratto solitario di strada a Long Island, un detective si imbatte in resti umani."
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "Sky Adventure",
@@ -6362,7 +6332,7 @@
                 "descrizione": "Quando inondazioni senza precedenti si abbattono sul Kentucky orientale, alcune famiglie sono costrette ad aggrapparsi ai tetti e agli alberi nel disperato tentativo di sfuggire alle acque impetuose."
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "MTV",
@@ -6519,7 +6489,7 @@
                 "descrizione": "Ep30 di 42 - In questa puntata Rob e Steelo sono affiancati da Lolo Wood."
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "Comedy Central",
@@ -6676,7 +6646,7 @@
                 "descrizione": "Quando la moglie Andi decide di riavviare la sua carriera professionale, Adam è costretto a passare più tempo a casa e assumersi maggiori responsabilit� nell'accudire i loro tre figli piccoli."
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "Sky Arte",
@@ -6763,7 +6733,7 @@
                 "descrizione": "Il pittore olandese ha destato gli interessi di professionisti del settore e di appassionati. Un racconto delicato focalizzando sul suo periodo legato al sud della Francia, quando il pittore si trasferì ad Arles e poi a Saint-Rémy."
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "Sky Documentaries",
@@ -6865,7 +6835,7 @@
                 "descrizione": "Ai confini del sistema solare c'è Giove: il suo aspetto marmoreo che ispira serenit� nasconde una realt� in tumulto. Ha persino trasformato il destino degli altri pianeti, inclusa la Terra."
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "Sky Nature",
@@ -6992,7 +6962,7 @@
                 "descrizione": "Ep6 di 10 Le scimmie dell'Amazzonia - Al confine meridionale della foresta amazzonica brasiliana vive una delle scimmie piu' intelligenti del Nuovo Mondo: l'atele dalle basette bianche."
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "Discovery Channel",
@@ -7104,7 +7074,7 @@
                 "descrizione": "Passiamo altri oggetti d'uso quotidiano sotto la lente d'ingrandimento e scopriamo come sono fatti i ferri di cavallo, le lavastoviglie e le pizze surgelate."
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "History Channel",
@@ -7226,7 +7196,7 @@
                 "descrizione": "Ep21 di 30 Specchietti per le allodole - Nuove aste, nuove battaglie all'ultima offerta. I cacciatori d'affari piu' agguerriti d'America tornano in azione per aggiudicarsi i magazzini piu' ghiotti."
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "Cartoon Network",
@@ -7383,7 +7353,7 @@
                 "descrizione": "Craig e i suoi due amici Kelsey e JP vivono bellissime avventure nella natura selvaggia conosciuta come Creek: un posto pieno di azione e incredibili storie."
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "Dea Kids",
@@ -7540,7 +7510,7 @@
                 "descrizione": "Owen mastica felicissimo una gomma per la prima volta. Quando per colpa di un imprevisto crede di averla ingoiata, i compagni gli prospettano le peggiori catastrofi possibili e immaginabili."
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "Nick Jr",
@@ -7697,7 +7667,7 @@
                 "descrizione": "Ep7 di 52 Il principe ranocchio - Holly per sbaglio trasforma Ben in un ranocchio. Con l'aiuto dei suoi amici, Holly cerca di ritrasformare Ben in un elfo, ma..."
             }
         ],
-        "aggiornato": "08:39"
+        "aggiornato": "14:19"
     },
     {
         "canale": "Boomerang",
@@ -7854,7 +7824,7 @@
                 "descrizione": "Ep53 Ballando sulla Grande Muraglia - Litigandosi un tappetino da ballo interattivo, Grizzy e i Lemming finiscono sulla Grande Muraglia Cinese, dove si attiva un gioco molto simile."
             }
         ],
-        "aggiornato": "08:40"
+        "aggiornato": "14:19"
     },
     {
         "canale": "Sky TG 24",
@@ -8011,7 +7981,7 @@
                 "descrizione": "Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo."
             }
         ],
-        "aggiornato": "08:40"
+        "aggiornato": "14:19"
     },
     {
         "canale": "Rai News 24",
@@ -8168,7 +8138,7 @@
                 "descrizione": "NEWS + SOMMARIO"
             }
         ],
-        "aggiornato": "08:40"
+        "aggiornato": "14:19"
     },
     {
         "canale": "Sky Meteo 24",
