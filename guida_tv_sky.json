@@ -144,17 +144,12 @@
                 "descrizione": "Giochi di luce, musica e spettacolo accompagnano il tradizionale show circense del Festival del Circo Internazionale di Montecarlo, giunto alla sua 46esima edizione."
             }
         ],
-        "aggiornato": "08:14"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Rai 2",
         "categoria": "Digitale Terrestre",
         "programmi": [
-            {
-                "ora": "06:00",
-                "titolo": "Ritorno a Las Sabinas",
-                "descrizione": "Dopo molti anni di lontananza, le sorelle Molina tornano nella loro citt� natale per affrontare i problemi di salute del padre. Il loro ritorno significa una riunione con le vite, gli amori e i segreti che hanno cercato di dimenticare."
-            },
             {
                 "ora": "06:20",
                 "titolo": "La Grande Vallata",
@@ -212,38 +207,18 @@
             },
             {
                 "ora": "14:00",
-                "titolo": "Ciclismo: Tour De France 2026 - 20a Tappa: Le Bourg D'Oisans - Alpe D'Huez",
+                "titolo": "Ciclismo: Tour De France 2026 - 20a Tappa: Le Bourg D'Oisans - Alpe D'Huez (Fasi Finali)",
                 "descrizione": "La tappa regina del Tour attraversa le Alpi con un susseguirsi di grandi colli prima del secondo arrivo consecutivo all'Alpe d'Huez. Una giornata durissima, destinata a decidere la corsa prima della passerella finale verso Parigi."
             },
             {
-                "ora": "14:05",
-                "titolo": "Tour In Diretta",
-                "descrizione": "SPORT. - Ciclismo. A cura di Alessandro Fabretti Coordinamento giornalistico Franco Bortuzzo Conduce Francesco Pancani Telecronaca Stefano Rizzato Commento tecnico Silvio Martinello, Stefano Garzelli, Davide Cassani Produttore esecutivo Guido Lissoni Regia Italia Maria Baratta"
-            },
-            {
-                "ora": "14:15",
-                "titolo": "Tour De France 20^ Tappa Le Bourg D'Oisa",
-                "descrizione": "Tour de France 20^ tappa Le Bourg d'Oisans - Alpe d'Huez - SPORT - Ciclismo. 113^ edizione"
-            },
-            {
-                "ora": "15:30",
+                "ora": "16:30",
                 "titolo": "Ciclismo: Tour De France 2026 - Tour Replay: 20a Tappa",
                 "descrizione": "La rubrica di ciclismo dedicata al Tour de France 2026, tra cronaca, analisi e interviste a caldo a commento della tappa appena conclusa."
             },
             {
-                "ora": "15:50",
-                "titolo": "Tour De France 20^ Tappa Le Bourg D'Oisa",
-                "descrizione": "Tour de France 20^ tappa Le Bourg d'Oisans - Alpe d'Huez - SPORT - Ciclismo. 113^ edizione"
-            },
-            {
-                "ora": "16:30",
+                "ora": "16:50",
                 "titolo": "Ciclismo: Tour De France 2026 - Le Strade Del Tour: 21a Tappa",
                 "descrizione": "Un viaggio lungo il percorso del Tour de France 2026 per scoprire i luoghi che fanno da scenario alla corsa più celebre del mondo."
-            },
-            {
-                "ora": "17:04",
-                "titolo": "Tour De France 20^ Tappa Le Bourg D'Oisa",
-                "descrizione": "Tour de France 20^ tappa Le Bourg d'Oisans - Alpe d'Huez - SPORT - Ciclismo. 113^ edizione"
             },
             {
                 "ora": "17:05",
@@ -299,9 +274,14 @@
                 "ora": "23:00",
                 "titolo": "Racconti Criminali. L'Incredibile Sequestro Casana",
                 "descrizione": "Il 22 agosto 1979 in Sardegna, si è compiuto il più rocambolesco e incredibile dei sequestri di persona. I banditi venuti da mare, si calano dalla ripida scogliera di Capo Pecora e rapiscono due giovanissimi fratelli torinesi, Giorgio e Marina Casana. Per la serie RACCONTI CRIMINALI, a distanza di 42 anni, le lucide testimonianze dei protagonisti ripercorrono quella drammatica vicenda: il sequestro, la prigionia, il rilascio, le indagini. Per il rapimento dei fratelli Casana furono emesse undici condanne per complessivi centonovantotto anni di carcere. Un racconto-verit� scritto e ideato da Vania Colasanti."
+            },
+            {
+                "ora": "23:50",
+                "titolo": "TG2 Storie. I Racconti Della Settimana",
+                "descrizione": "Le storie e i protagonisti di fatti di cronaca e di costume che si raccontano nella loro quotidianit� . Adriana Pannitteri racconta storie di attualit� , coraggio e creativit� dall'Italia e dal mondo."
             }
         ],
-        "aggiornato": "08:14"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Rai 3",
@@ -443,7 +423,7 @@
                 "descrizione": "Messico, 1971. A un anno dal trionfo di Pelé, lo Stadio Azteca ospita oltre centomila spettatori per un evento storico e mai visto prima. Sei squadre composte da giovani calciatrici si contendono la Coppa del Mondo, dando vita al primo Mondiale femminile della storia, seppur non riconosciuto dalle istituzioni. In lingua originale con sottotitoli."
             }
         ],
-        "aggiornato": "08:14"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Rai 4",
@@ -565,7 +545,7 @@
                 "descrizione": "Nell’estate del 1979, un gruppo di amici di una piccola cittadina dell’Ohio è testimone di un disastro ferroviario, mentre sono intenti ad effettuare le riprese di un film girato in Super 8 da mostrare ad un festival provinciale. Capiscono subito che non si tratta di un semplice incidente perchè “qualcosa” fugge dal luogo disastro. La questione è talmente importante che la loro cittadina si riempie di militari intenti ad indagare, le persone cominciano a scomparire e strani fatti cominciano ad accadere nella citt� . Lo sceriffo del posto comincia ad indagare per cercare la verit� e si trover� di fronte a qualcosa sconvolgente oltre ogni immaginazione. Alla fine star� ai ragazzi riuscire a mettere insieme i pezzi di una storia che proceder� comunque, con o senza il loro intervento, e dalla quale dovranno uscire vivi."
             }
         ],
-        "aggiornato": "08:14"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Rai 5",
@@ -677,7 +657,7 @@
                 "descrizione": "Nel 2012 i Guns N' Roses hanno celebrato i 25 anni di Appetite for Destruction, il loro album più amato e venduto, e i 4 anni di Chinese Democracy, l'ultimo album in studio, esibendosi in una serie di trascinanti concerti. In questo film, che riunisce i titoli dei 2 album, riviviamo il live tenuto dalla band a Las Vegas."
             }
         ],
-        "aggiornato": "08:14"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Rete 4",
@@ -769,7 +749,7 @@
                 "descrizione": "Una donna ricca, Raffaella, e alcuni amici noleggiano una barca a vela per un giro nel Mar Mediterraneo durante l'estate. Una ricca signora milanese, Raffaella Pavoni Lanzetti, e alcuni amici noleggiano una barca a vela per un giro nel Mar Mediterraneo durante l'estate. Durante la crociera nel Mediterraneo non si fa scrupolo di snobbare crudelmente la ciurma, ma quando naufraga su un’isola deserta con l’unica compagnia del marinaio Gennarino Carunchio, siciliano rude e comunista, la gerarchia di poteri si capovolge. Dopo un primo momento di paura, la signora ci prende anche gusto..."
             }
         ],
-        "aggiornato": "08:14"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Canale 5",
@@ -916,7 +896,7 @@
                 "descrizione": "Divertente show-antropologico, ripropone la \"selezione naturale\" fra 2 categorie di persone antitetiche che gareggiano al fine di scoprire chi e' destinato alla sopravvivenza."
             }
         ],
-        "aggiornato": "08:14"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Italia 1",
@@ -1058,7 +1038,7 @@
                 "descrizione": "Due criminali funestano Gotham City: \"Due Facce\", magistrato deturpato e impazzito, e l'Enigmista, scienziato folle e geniale con l'ossessione degli indovinelli. Bruce Wayne, alias Batman, rivive i propri traumi infantili quando la famiglia del giovane trapezista Dick Grayson viene decimata da \"Due Facce\", ma per fortuna interviene l'incandescente psicanalista Chase Meridian. Alla fine Dick diventer� Robin per affiancare Batman nella resa dei conti."
             }
         ],
-        "aggiornato": "08:14"
+        "aggiornato": "13:47"
     },
     {
         "canale": "La7",
@@ -1130,7 +1110,7 @@
                 "descrizione": "Portata la pace a Camelot, re Artù intende sposare la principessa Ginevra, che accetta l'offerta. Il cavaliere rinnegato Malagant, desideroso di appropriarsi delle terre di Ginevra, cerca di catturarla, ma interviene Lancillotto, vagabondo abilissimo con la spada. Vincolata dai doveri e dalla stima per Artù, Ginevra diventa regina e fa nominare Lancillotto cavaliere, ma la scelta tra il maturo sovrano e il giovane eroe è difficile."
             }
         ],
-        "aggiornato": "08:14"
+        "aggiornato": "13:47"
     },
     {
         "canale": "TV8",
@@ -1232,7 +1212,7 @@
                 "descrizione": "Il meglio del KISS KISS WAY 2026. Torino, Baia Domizia, Viareggio, Pescara rivivi le emozioni del tour estivo di Radio Kiss Kiss con i grandi protagonisti della musica italiana."
             }
         ],
-        "aggiornato": "08:14"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Nove",
@@ -1294,7 +1274,7 @@
                 "descrizione": "Marco Cattaneo racconta luci e ombre di campioni sportivi leggendari."
             }
         ],
-        "aggiornato": "08:14"
+        "aggiornato": "13:47"
     },
     {
         "canale": "20 Mediaset",
@@ -1416,7 +1396,7 @@
                 "descrizione": "Cinque anni dopo i disastrosi eventi che hanno devastato Chicago, trasformandola in un campo di battaglia, la CIA ha segretamente deciso di mettere fine alla presenza dei Transformers sul suolo terrestre. Persino il leader degli Autobot, Optimus Prime, è costretto a nascondersi, almeno finché Cade Yeager, un inventore temerario ma sfortunato, finisce per ritrovarlo accidentalmente."
             }
         ],
-        "aggiornato": "08:14"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Twentyseven",
@@ -1518,7 +1498,7 @@
                 "descrizione": "L'incredibile storia della vita di James Brown (Chadwick Boseman), ripercorsa attraverso la sua musica, i suoi passi e suoi stati d'animo. Dalla povera infanzia alla consacrazione come padrino del soul, si racconta l'evoluzione di una delle figure più influenti del XX secolo."
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "IRIS",
@@ -1570,7 +1550,7 @@
                 "descrizione": "Nella citt� di New York si è verificato un duplice omicidio. De Niro è il poliziotto di grande esperienza ma anche di grande umanit� che si occupa del caso, in una societ� in cui gli assassini ingaggiano esperti per ricostruirsi un' immagine e fare pubbliche confessioni in TV in prima serata. Il ritmo serrato, incalzante non è dato tanto dalla ricostruzione della verit� e dalla scoperta dell'assassino quanto, piuttosto, dall'accanimento dei media, disposti a tutto per realizzare lo scoop e conquistarsi i \" quindici minuti di celebrit� \"."
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Rai Movie",
@@ -1622,7 +1602,7 @@
                 "descrizione": "Nel presepe vivente il bambinello ha fatto lo sviluppo. Ha la barba e i brufoli degli adolescenti e nella culla non ci sta proprio. Bisogna trovarne un altro a tutti i costi! Una commedia sull'Italia di oggi, multietnica, senza figli e che si arrangia come può, con un lama al posto del bue e tre amici in lotta fra loro, al posto dei re Magi. Un presepe vivente così non si vedeva da 2000 anni nella piccola isola di Porto Buio."
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Rai Premium",
@@ -1719,7 +1699,7 @@
                 "descrizione": "$23"
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "La 5",
@@ -1796,7 +1776,7 @@
                 "descrizione": "Gli artisti piu' celebri della musica italiana e internazionale si esibiscono nella kermesse musicale dell'estate italiana. Condotto da Ilary Blasi, con Fabio Rovazzi e Daniele Battaglia."
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Real Time",
@@ -1888,7 +1868,7 @@
                 "descrizione": "Megan ha 24 anni, pesa quasi 300 chili e vive a casa con sua madre. Ora, la giovane deve andare a Houston per incontrare il dottor Now e cambiare le sue abitudini alimentari."
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Food Network",
@@ -2045,7 +2025,7 @@
                 "descrizione": "Simone Rugiati e' in viaggio per il Bel Paese alla ricerca dei migliori food advisor."
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Focus",
@@ -2157,7 +2137,7 @@
                 "descrizione": "Alla scoperta della fauna selvatica delle montagne del Vietnam, dai pangolini ai primati rari."
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Giallo",
@@ -2239,7 +2219,7 @@
                 "descrizione": "Il team Soko indaga su una morte avvenuta nel mondo degli amanti delle armi e dell'adrenalina."
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Boing",
@@ -2396,7 +2376,7 @@
                 "descrizione": "Gumball, un gatto di 12 anni, e il suo amico Darwin, un pesce rosso, vivono avventure al limite della follia, in questa stravagante commedia animata."
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "K2",
@@ -2553,7 +2533,7 @@
                 "descrizione": "3' Stagione Ep.18 - Le avventure di tre scoiattoli dalla voce incredibile, 'adottati' da Dave Seville, che diventano un fenomeno musicale."
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Rai Gulp",
@@ -2710,7 +2690,7 @@
                 "descrizione": "Il duello tra i Paladini e Vondhur scuote la Fortezza dove hanno recuperato l'Uovo di Drago. Vondhur non vuole lasciarlo, ma Ian, Myrva e Gmor lo considerano prezioso e lo portano via prima che il Mago Oscuro metta mano. Intanto, Elara indaga sulle foreste cristallizzate e scopre un indizio fondamentale."
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Frisbee",
@@ -2867,7 +2847,7 @@
                 "descrizione": "1' Stagione Ep.12 - Le mille avventure di Tag, una cucciola di 6 anni che vive a Pawston, curiosa di scoprire il mondo in cui vive."
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "DMAX",
@@ -2989,7 +2969,7 @@
                 "descrizione": "Andrea Agresti analizza i crimini ripresi dalle telecamere e diventati virali. Manuel Spadaccini ci consiglia come comportarci in situazioni ad alto rischio."
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Rai Sport",
@@ -2997,8 +2977,8 @@
         "programmi": [
             {
                 "ora": "06:00",
-                "titolo": "Ciclismo: Tour De France 2026 - ReTour",
-                "descrizione": "Dalle Alpi ai Pirenei, il Tour de France 2026 accende la sfida per la Maglia Gialla tra Tadej Pogačar, Remco Evenepoel, Jonas Vingegaard e la nuova promessa Paul Seixas."
+                "titolo": "Ciclismo: Tour De France 2026 - 19a Tappa: Gap - Alpe D'Huez",
+                "descrizione": "Il Tour ritrova l'Alpe d'Huez in una frazione breve ma esplosiva. Dopo un percorso impegnativo, la salita più iconica del ciclismo può regalare attacchi decisivi e ridisegnare la classifica generale."
             },
             {
                 "ora": "06:45",
@@ -3027,8 +3007,8 @@
             },
             {
                 "ora": "12:40",
-                "titolo": "Ciclismo. Anteprima Tour De France: Le Bourg D'Oisans - Alpe D'Huez - 20a Tappa",
-                "descrizione": "Ciclismo. Anteprima Tour de France: Le Bourg d'Oisans - Alpe d'Huez - 20a tappa"
+                "titolo": "Ciclismo: Tour De France 2026 - 20a Tappa: Le Bourg D'Oisans - Alpe D'Huez (Prima Parte)",
+                "descrizione": "La tappa regina del Tour attraversa le Alpi con un susseguirsi di grandi colli prima del secondo arrivo consecutivo all'Alpe d'Huez. Una giornata durissima, destinata a decidere la corsa prima della passerella finale verso Parigi."
             },
             {
                 "ora": "14:00",
@@ -3052,8 +3032,8 @@
             },
             {
                 "ora": "20:00",
-                "titolo": "Ciclismo: Tour De France 2026 - Tour Di Sera",
-                "descrizione": "Dalle Alpi ai Pirenei, il Tour de France 2026 accende la sfida per la Maglia Gialla tra Tadej Pogačar, Remco Evenepoel, Jonas Vingegaard e la nuova promessa Paul Seixas."
+                "titolo": "Ciclismo: Tour De France 2026 - Tour Di Sera - 20a Tappa",
+                "descrizione": "La rubrica dedicata alla Grande Boucle che racconta i momenti più significativi della tappa."
             },
             {
                 "ora": "20:20",
@@ -3066,7 +3046,7 @@
                 "descrizione": "Canoa: Mondiali Oklahoma 2026 - 6a giornata: Finali Kayak Cross"
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Sportitalia",
@@ -3099,13 +3079,13 @@
             },
             {
                 "ora": "09:00",
-                "titolo": "Tutti in ritiro",
-                "descrizione": "Tutti in ritiro"
+                "titolo": "Play weekend",
+                "descrizione": "Play weekend"
             },
             {
                 "ora": "10:00",
-                "titolo": "Tutti in ritiro",
-                "descrizione": "Tutti in ritiro"
+                "titolo": "Play weekend",
+                "descrizione": "Play weekend"
             },
             {
                 "ora": "11:00",
@@ -3134,56 +3114,61 @@
             },
             {
                 "ora": "14:00",
-                "titolo": "Blab",
-                "descrizione": "Blab Live"
-            },
-            {
-                "ora": "14:30",
-                "titolo": "Si Live 24",
-                "descrizione": "Un'informazione veloce, affidabile e aggiornata h24. “SI Live24” nasce per dare la possibilit� a tutti gli appassionati di sport di essere informati tutto il giorno"
-            },
-            {
-                "ora": "15:00",
-                "titolo": "Si Cafe'",
-                "descrizione": "Si Cafe'"
-            },
-            {
-                "ora": "16:00",
-                "titolo": "Si Live 24",
-                "descrizione": "Un'informazione veloce, affidabile e aggiornata h24. “SI Live24” nasce per dare la possibilit� a tutti gli appassionati di sport di essere informati tutto il giorno"
-            },
-            {
-                "ora": "16:30",
-                "titolo": "Si Live 24",
-                "descrizione": "Un'informazione veloce, affidabile e aggiornata h24. “SI Live24” nasce per dare la possibilit� a tutti gli appassionati di sport di essere informati tutto il giorno"
-            },
-            {
-                "ora": "17:00",
-                "titolo": "European Cup Calcio a 7",
-                "descrizione": "European Cup Calcio a 7"
-            },
-            {
-                "ora": "18:00",
-                "titolo": "Calciomercato Live I° parte",
-                "descrizione": "Calciomercato Live I° parte"
-            },
-            {
-                "ora": "20:00",
                 "titolo": "Monza-Galatasaray",
                 "descrizione": "Monza-Galatasaray"
             },
             {
+                "ora": "15:00",
+                "titolo": "Calciomercato Live I° parte",
+                "descrizione": "Calciomercato Live I° parte"
+            },
+            {
+                "ora": "16:00",
+                "titolo": "Campionato Argentino Belgrano-Rosario Central",
+                "descrizione": "Campionato Argentino Belgrano-Rosario Central"
+            },
+            {
+                "ora": "18:00",
+                "titolo": "European Cup Calcio a 7",
+                "descrizione": "European Cup Calcio a 7"
+            },
+            {
+                "ora": "19:00",
+                "titolo": "Blue Sport",
+                "descrizione": "Blue Sport"
+            },
+            {
+                "ora": "19:30",
+                "titolo": "Si Motori",
+                "descrizione": "Trasmissione ideata per gli appassionati dei motori, interviste in esclusiva,uno spazio dedicato alla presentazione dei nuovi modelli con le ultime news dal mondo delle quattro ruote. Condotto da Filippo Gherardi"
+            },
+            {
+                "ora": "20:00",
+                "titolo": "Si Live 24",
+                "descrizione": "Un'informazione veloce, affidabile e aggiornata h24. “SI Live24” nasce per dare la possibilit� a tutti gli appassionati di sport di essere informati tutto il giorno"
+            },
+            {
+                "ora": "20:30",
+                "titolo": "Si Live 24",
+                "descrizione": "Un'informazione veloce, affidabile e aggiornata h24. “SI Live24” nasce per dare la possibilit� a tutti gli appassionati di sport di essere informati tutto il giorno"
+            },
+            {
+                "ora": "21:00",
+                "titolo": "European Cup Calcio a 7",
+                "descrizione": "European Cup Calcio a 7"
+            },
+            {
                 "ora": "22:00",
-                "titolo": "Calciomercato Live II° parte",
-                "descrizione": "Calciomercato Live II° parte"
+                "titolo": "Calciomercato Live Week end",
+                "descrizione": "Calciomercato Live Week end"
             },
             {
                 "ora": "23:00",
-                "titolo": "Sportitaliamercato",
-                "descrizione": "Il programma tratta le vicende del calciomercato sia nella sessione estiva che in quella invernale e va in onda alle ore 23.00 dal lunedì al venerdì"
+                "titolo": "Calcio Week end",
+                "descrizione": "Calcio Week end"
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "HGTV",
@@ -3285,7 +3270,7 @@
                 "descrizione": "Nella casa di una coppia non c'e' piu' abbastanza spazio. Mika e Brian intervengono."
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "RSI LA 1",
@@ -3442,7 +3427,7 @@
                 "descrizione": "Una trasmissione, tre regioni linguistiche, tre modi di declinare la parola solidariet� in Svizzera e all'estero"
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "RSI LA 2",
@@ -3544,7 +3529,7 @@
                 "descrizione": "Siamo nel 1897. Dead for a Dollar segue il famoso cacciatore di taglie Max Borlund fin nelle profondità del Messico; qui si imbatte in Joe Cribbens – giocatore d’azzardo professionista e fuorilegge e suo nemico giurato – che Max aveva spedito in prigione alcuni anni prima. Borlund è in missione: deve ritrovare e portare a casa Rachel Kidd, moglie di un ricco uomo d’affari di Santa Fe, rapita e presa in ostaggio. Quando scopre che la donna è in realtà scappata da un marito violento, Max deve fare una scelta: portare a termine la missione disonesta per cui è stato ingaggiato, o farsi da parte mentre spietati fuorilegge mercenari e il rivale di lunga data si fanno sempre più vicini... Max e il suo aiutante Alonzo Poe non hanno nulla da guadagnare se resistono: nulla, a parte l’onore."
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "DAZN 1",
@@ -3626,7 +3611,7 @@
                 "descrizione": "Alessandro Nesta - Gli intervistati attraversano il proprio tunnel interiore. Un viaggio tra ferite, traumi, conti in sospeso, rinascite, segreti. Nel terzo episodio l'ospite di Giorgia Rossi e' Alessandro Nesta."
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Sky Sport 24",
@@ -3783,7 +3768,7 @@
                 "descrizione": "Le notizie e i commenti del giorno, le anteprime e l'attualita' con servizi, commenti, interviste e collegamenti."
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Sky Sport Uno",
@@ -3952,7 +3937,7 @@
                 "descrizione": "Rossoneri in vantaggio 8 a 1 nei 12 precedenti europei, 3 pareggi. Unica sconfitta del Milan: 2-1 nel 2007 a Glasgow. TC: Federico Zanon"
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Sky Sport Tennis",
@@ -4024,7 +4009,7 @@
                 "descrizione": "ATP 250 Estoril"
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Sky Sport F1",
@@ -4086,7 +4071,7 @@
                 "descrizione": "Porsche Supercup. - Segui l'evento di Porsche Super Cup in programma."
             },
             {
-                "ora": "11:55",
+                "ora": "12:00",
                 "titolo": "Crazy Race",
                 "descrizione": "Crazy Race"
             },
@@ -4171,7 +4156,7 @@
                 "descrizione": "E' sfida per la pole e per scattare piu' avanti possibile in griglia di partenza. Q1, Q2 e Q3 con l'adrenalina che sale. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero."
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Sky Sport Legend",
@@ -4288,7 +4273,7 @@
                 "descrizione": "Tennis Heroes\" celebra l'eroe Panatta a 50 anni dalla vittoria al Foro Italico. Con Adriano, Paolo Bertolucci, protagonista nella stessa epoca. Tra passato e presente nella storia di un torneo mitico"
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Sky Sport MotoGP",
@@ -4445,7 +4430,7 @@
                 "descrizione": "Quarto appuntamento con il Campionato Italiano Velocita' del 2026 - Classe Superbike, in pista a Misano per la Racing Night con gara 1. Telecronaca di Andrea Minerva"
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Sky Sport Basket",
@@ -4517,7 +4502,7 @@
                 "descrizione": "Dall'Unipol Forum di Milano, Italia."
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Sky Sport Arena",
@@ -4614,7 +4599,7 @@
                 "descrizione": "Le gare del SailGP."
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Sky Sport Max",
@@ -4721,7 +4706,7 @@
                 "descrizione": "Padel. - Seguiamo le gare del Premier Padel Major."
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Sky Sport Mix",
@@ -4828,7 +4813,7 @@
                 "descrizione": "Championship. - Segui le gare del World Rally Championship."
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Sky Sport Golf",
@@ -4890,7 +4875,7 @@
                 "descrizione": "World Tour. - Dall'Aronimink Golf Club di Newtown Square, Stati Uniti."
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Sky Sport 251",
@@ -4907,7 +4892,7 @@
                 "descrizione": "Tennis Atp 250 2026 Estoril 2a Semifinale. Dalle ore 18:00"
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Sky Sport 252",
@@ -5075,7 +5060,7 @@
                 "descrizione": "Hannah e Tahir si innamorano mentre sono senzatetto per le strade di New York. Shelter esplora come sono arrivati lì, e mentre apprendiamo il loro passato ci rendiamo conto che hanno bisogno l'uno dell'altro per costruire un futuro."
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Sky Cinema Uno +24",
@@ -5142,7 +5127,7 @@
                 "descrizione": "Questo film racconta la cronaca di una giornata, in Italia. Una sola giornata. Una giornata vissuta da personaggi dell'Italia di oggi, una fotografia degli italiani, con i loro vizi ed i loro difetti. Nel film ci si sposta da Milano a Roma, poi a Napoli, poi a Verona, Firenze, Bari, Potenza e così via, cercando di cogliere non solo il lato allegro delle situazioni ma anche il carattere regionale, linguistico e comportamentale delle varie \"etnie\" italiche. In breve le storie dei personaggi più importanti che nel corso del film si alterneranno e si incroceranno durante le diverse ore della giornata."
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Sky Cinema Due",
@@ -5199,7 +5184,7 @@
                 "descrizione": "Ex campione di football americano finito in carcere è costretto dal direttore del penitenziario ad allenare una squadra di detenuti da far giocare contro quella dei secondini, veri energumeni. Dovrebbe, naturalmente, perdere. Lo schema è quello di Quella sporca dozzina (1967). Nel 1° tempo la mescolanza di comico e drammatico non è sempre riuscita, ma la lunga sequenza della partita è cinema d'antologia. Parabola sociologica su una comunit� di servi e padroni."
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Sky Cinema Due +24",
@@ -5221,7 +5206,7 @@
                 "descrizione": "André Masson, specialista in arte moderna, riceve una lettera secondo la quale a Mulhouse sarebbe stato scoperto un dipinto di Egon Schiele. Scopre che l'opera è scomparsa dal 1939. Questa scoperta mette in pericolo la sua carriera."
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Sky Cinema Collection",
@@ -5268,7 +5253,7 @@
                 "descrizione": "Alcuni anni dopo la fine della guerra civile il cacciatore di taglie John Ruth (Kurt Russell), chiamato \"Il boia\", scorta la latitante Daisy Domergue (Jennifer Jason Leigh). Nel corso del loro viaggio incontrano due sconosciuti: il Maggiore Marquis Warren (Samuel L. Jackson), un ex soldato di colore dell'Unione diventato un cacciatore di taglie e Chris Mannix (Walton Goggins) un rinnegato del Sud che afferma di essere il nuovo sceriffo della citt� . A causa di una tormenta di neve sono tutti costretti a rifugiarsi in un negozio chiamato \"Minnie\", dove con l'inganno, vengono attirati in un terreno molto pericoloso."
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Sky Cinema Family",
@@ -5335,7 +5320,7 @@
                 "descrizione": "Flo ha 12 anni e la sua migliore amica è il cane Lassie, con cui vive in un tranquillo villaggio nella Germania meridionale. Un giorno, suo padre Andreas perde il lavoro e ciò comporta la necessit� di trasferirsi in una casa più piccola, dove non sono ammessi animali. Con il cuore spezzato, Flo è costretto a separarsi da Lassie e affidarla al conte Von Sprengel. Lassie però non si abituer� al nuovo padrone e quando ne avr� la possibilit� inizier� un avventuroso viaggio attraverso il paese per ricongiungersi con Flo."
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Sky Cinema Action",
@@ -5392,7 +5377,7 @@
                 "descrizione": "La Mummia Il ritorno è ambientato nel 1935, 10 anni dopo gli eventi narrati nel primo episodio. Rick O'Connell è ora sposato con Evelyn; marito e moglie si sono stabiliti a Londra e hanno un figlio di nove anni di nome Alex. Una serie di circostanze porta alla scoperta del cadavere di Imhotep al British Museum; questi, resuscitato, semina nuovamente il panico per le strade nella sua inarrestabile ricerca dell'immortalit� . Ma un'altra forza malvagia, ancora più temibile di Imhotep, vaga per il mondo evocata dai macabri rituali mistici degli antichi egizi. Quando queste due forze si scontrano, il destino dell'umanit� è sull'orlo del baratro..."
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Sky Cinema Suspense",
@@ -5449,7 +5434,7 @@
                 "descrizione": "Cecilia, a seguito della notizia del suicidio del suo ex fidanzato violento comincia a ricostruire la sua vita. Tuttavia il suo senso della realt� è messo in discussione quando inizia a sospettare che il suo amante defunto non sia realmente morto."
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Sky Cinema Romance",
@@ -5506,7 +5491,7 @@
                 "descrizione": "Nella primavera del 1922, il giovane Nick Carraway si trasferisce a Long Island, in una villetta che confina con la villa delle meraviglie di Gatsby, un misterioso milionario che è solito organizzare feste memorabili e del quale si dice di tutto ma si sa molto poco. Cugino della bella e sofisticata Daisy Buchanan, moglie di un ex campione di polo, Nick viene a conoscenza del passato intercorso tra Daisy e Gatsby e si presta ad ospitare un incontro tra i due, a cinque anni di distanza. Travolto dal clima ruggente dell'et� del jazz, da fiumi di alcol e dalla tragedia di un amore impossibile, Nick si scoprir� testimone, complice e disgustato, del tramonto del sogno americano."
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Sky Cinema Drama",
@@ -5568,7 +5553,7 @@
                 "descrizione": "Cresciuto nell'Arizona del secondo dopoguerra, un giovane di nome Sammy Fabelman scopre uno sconvolgente segreto di famiglia ed esplora come il potere dei film può aiutarlo a vedere la verit� ."
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Sky Cinema Comedy",
@@ -5635,7 +5620,7 @@
                 "descrizione": "Massimo Alberti (Edoardo Leo) è il proprietario del \"Miracolo Italiano\", bed and breakfast un tempo di lusso ridotto ormai ad una fatiscente palazzina. La crisi che ha messo in ginocchio l'attivit� sembra non aver scalfito i suoi dirimpettai, un convento gestito da suore sempre pieno di turisti a cui le pie donne offrono rifugio in cambio di una spontanea donazione. Esentasse. Ecco l'illuminazione di cui Massimo aveva bisogno: se vuole sopravvivere deve trasformare il \"Miracolo Italiano\" in luogo di culto. Ma per farlo deve prima fondare una sua religione."
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Sky Uno",
@@ -5727,7 +5712,7 @@
                 "descrizione": "Il meglio del KISS KISS WAY 2026. Torino, Baia Domizia, Viareggio, Pescara rivivi le emozioni del tour estivo di Radio Kiss Kiss con i grandi protagonisti della musica italiana."
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Sky Atlantic",
@@ -5834,7 +5819,7 @@
                 "descrizione": "Un'epica serie di avventure romantiche basata sulla vita del famoso fuorilegge americano Billy the Kid, dalle sue umili radici irlandesi, ai suoi primi giorni come cowboy e pistolero nella frontiera americana, al suo ruolo fondamentale nella guerra della contea di Lincoln e oltre."
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Sky Serie",
@@ -5951,7 +5936,7 @@
                 "descrizione": "Joy e Stan, due ex allenatori di tennis, possono finalmente godersi la vita dopo la vendita della loro accademia. Ma quando Joy scompare, i quattro figli della coppia si ritrovano ad analizzare il matrimonio dei genitori da una prospettiva diversa."
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Sky Investigation",
@@ -6068,7 +6053,7 @@
                 "descrizione": "La serie si svolge nella splendida cornice di una piccola isola caraibica, Saint-Marie, dove il poliziotto Richard Poole, britannico doc, viene inviato per risolvere un misterioso omicidio.Poole si ritrova in una fatiscente stazione di polizia a lavorare con una nuova partner, la brillante Camille Bordey, in un ambiente totalmente diverso da tutto ciò a cui lui è abituato. Lui è un tipo da giacca, cravatta e mocassini... in spiaggia. Nonostante ciò, pur essendo assolutamente un pesce fuor d'acqua in questo paradiso terrestre, si dimostrer� all’altezza di risolvere ogni caso che si presenter� di episodio in episodio."
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Sky Crime",
@@ -6190,7 +6175,7 @@
                 "descrizione": "Lontano dai riflettori e dalle luci della ribalta, per Cambi emerge una lenta, faticosa rinascita. Un uomo diverso, che ha imparato il valore delle piccole cose e il significato della ricerca di sé."
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Sky Adventure",
@@ -6327,7 +6312,7 @@
                 "descrizione": "Il naufragio del Costa Concordia"
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "MTV",
@@ -6484,7 +6469,7 @@
                 "descrizione": "Ep31 di 42 - In questa puntata Rob e Steelo sono affiancati da Lolo Wood."
             }
         ],
-        "aggiornato": "08:15"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Comedy Central",
@@ -6641,7 +6626,7 @@
                 "descrizione": "Ep8 di 10 - Michela Giraud torna alla guida di CCN; sagace, senza peli sulla lingua e dallo stile impeccabile. Ospiti di questa puntata i The Jackal."
             }
         ],
-        "aggiornato": "08:16"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Sky Arte",
@@ -6743,7 +6728,7 @@
                 "descrizione": "Straordinario artista e geniale imprenditore di se stesso, Tiziano Vecellio fondo' 'un impero' che da Venezia si estendeva fino alle piu' importanti corti d'Europa."
             }
         ],
-        "aggiornato": "08:16"
+        "aggiornato": "13:47"
     },
     {
         "canale": "Sky Documentaries",
@@ -6845,7 +6830,7 @@
                 "descrizione": "Horizon - Alla Scoperta Di Marte"
             }
         ],
-        "aggiornato": "08:16"
+        "aggiornato": "13:48"
     },
     {
         "canale": "Sky Nature",
@@ -6957,7 +6942,7 @@
                 "descrizione": "L'estate è un periodo di grande fermento per gli animali. Più sole significa più cibo, ma gli animali arrivano da lontano per condividerlo e la concorrenza è agguerrita."
             }
         ],
-        "aggiornato": "08:16"
+        "aggiornato": "13:48"
     },
     {
         "canale": "Discovery Channel",
@@ -7039,7 +7024,7 @@
                 "descrizione": "Documentari adrenalinici sui predatori degli oceani, tra misteri, attacchi e ricerca scientifica."
             }
         ],
-        "aggiornato": "08:16"
+        "aggiornato": "13:48"
     },
     {
         "canale": "History Channel",
@@ -7151,7 +7136,7 @@
                 "descrizione": "S16 Ep7 di 10 Ho trovato l'oro! - Giornata di importanti affari, tra oggetti antichi e immensi depositi. Qualcuno pero' e' riuscito a fare affari d'oro..."
             }
         ],
-        "aggiornato": "08:16"
+        "aggiornato": "13:48"
     },
     {
         "canale": "Cartoon Network",
@@ -7308,7 +7293,7 @@
                 "descrizione": "Ep37 di 40 Il detective - Anais racconta la storia di come ha indagato sulla scomparsa della sua bambola Daisy e di come, tra indizi e deduzioni, in perfetto stile poliziesco, e' riuscita a ritrovarla."
             }
         ],
-        "aggiornato": "08:16"
+        "aggiornato": "13:48"
     },
     {
         "canale": "Dea Kids",
@@ -7465,7 +7450,7 @@
                 "descrizione": "Chef spiega ai bambini alcune nozioni sull'agricoltura, insegnando loro a coltivare le piante piantando i semi. Tuttavia, Izzy presta troppe attenzioni al seme, il quale si trasforma in un mostro che terrorizza la classe."
             }
         ],
-        "aggiornato": "08:16"
+        "aggiornato": "13:48"
     },
     {
         "canale": "Nick Jr",
@@ -7622,7 +7607,7 @@
                 "descrizione": "Ep11 di 13 - Mister Coccodrillo e Daisy trasformano la vita di tutti i giorni in buffe avventure tra amicizia, entusiasmo e divertenti incomprensioni."
             }
         ],
-        "aggiornato": "08:16"
+        "aggiornato": "13:48"
     },
     {
         "canale": "Boomerang",
@@ -7779,7 +7764,7 @@
                 "descrizione": "Ep17 Coppa gelata - I Lemming corrono lungo una discesa di ghiaccio contro l'Orsetto Ranger di peluche, battendolo sempre. Grizzy non puo' sopportarlo e partecipa anche lui per aiutarlo."
             }
         ],
-        "aggiornato": "08:16"
+        "aggiornato": "13:48"
     },
     {
         "canale": "Sky TG 24",
@@ -7936,7 +7921,7 @@
                 "descrizione": "Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo."
             }
         ],
-        "aggiornato": "08:16"
+        "aggiornato": "13:48"
     },
     {
         "canale": "Rai News 24",
@@ -8093,7 +8078,7 @@
                 "descrizione": "Ogni settimana Dario Marchetti accompagna il pubblico nel multiverso dei videogiochi: notizie, recensioni, analisi e curiosit� per raccontare, da prospettive sempre nuove, il più grande settore dell'intrattenimento di oggi."
             }
         ],
-        "aggiornato": "08:16"
+        "aggiornato": "13:48"
     },
     {
         "canale": "Sky Meteo 24",
