@@ -15,8 +15,8 @@
             },
             {
                 "ora": "06:30",
-                "titolo": "TG1",
-                "descrizione": "TG1"
+                "titolo": "Tg1 Ore 06:30",
+                "descrizione": "Le edizioni del Tg1 disponibili on demand"
             },
             {
                 "ora": "06:33",
@@ -139,7 +139,7 @@
                 "descrizione": "Quattro puntate con il meglio di 30 anni di programmazione. Cosa è accaduto in tutti questi anni? e come l'abbiamo raccontato? Dall'archivio di Porta a Porta, quattro nuove puntate costruite attingendo allo sterminato repertorio di un programma testimone delle tante svolte e dei tanti cambiamenti della nostra societ� . Un programma di Bruno Vespa. Con la collaborazione di Maurizio Ricci, Giuseppe Tortora, Paola Miletich, Concita Borrelli e di Daniela Di Marzo."
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:48"
     },
     {
         "canale": "Rai 2",
@@ -182,8 +182,8 @@
             },
             {
                 "ora": "10:00",
-                "titolo": "TG2 Dossier",
-                "descrizione": "SPECIALE - Approfondimento del Tg2. - Direttore Antonio Preziosi Vicedirettore Elisabetta Migliorelli A cura di Francesco Vitale"
+                "titolo": "Tg2 Dossier - Ritorno A Chernobyl",
+                "descrizione": "Quaranta anni fa, l'esplosione del reattore 4 della centrale nucleare di Chernobyl, al confine tra Ucraina e Bielorussia. A Tg2 Dossier una puntata speciale dedicata alla tragedia che sconvolse l'umanit� provocando una tempesta radioattiva senza precedenti. Migliaia di morti, anche a distanza di decenni a causa di tumori e leucemie provocate dalle radiazioni. Le telecamere del Tg2 sono entrate nei luoghi della tragedia con gli inviati Vincenzo Frenda ed Ivo Bonato che hanno documentato da vicino le condizioni dell'area e il lavoro continuo di monitoraggio e contenimento, protetti da rigorose misure di sicurezza. Il reportage è un racconto del disastro nucleare attraverso anche le intense testimonianze di alcuni sopravvissuti, tra i quali ex dipendenti della centrale che raccontano in prima persona quei giorni drammatici e le conseguenze che ancora oggi segnano le loro vite. Un ritorno in quei luoghi anche per comprendere cosa resta oggi di Chernobyl e cosa ci insegna, a distanza di quattro decenni."
             },
             {
                 "ora": "10:55",
@@ -296,7 +296,7 @@
                 "descrizione": "L'ispettore Mackenzie Clarke è costretta a lasciare Londra sotto una nuvola di sospetti e tornare nell'ultimo posto in cui avrebbe mai voluto essere, la sua citt� natale di Dolphin Cove, in Australia, dove la sua tenacia e la sua etica del lavoro la aiutano a risolvere misteri di omicidio."
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:48"
     },
     {
         "canale": "Rai 3",
@@ -309,7 +309,7 @@
             },
             {
                 "ora": "08:00",
-                "titolo": "Agorà Estate",
+                "titolo": "Fuoco E Fiamme - Agorà Estate",
                 "descrizione": "L'approfondimento estivo del mattino di Rai3 condotto da Giulia Di Stefano con Marco Carrara, attraverso ospiti, inviati, inchieste e contributi video dai social."
             },
             {
@@ -435,10 +435,10 @@
             {
                 "ora": "21:15",
                 "titolo": "Filorosso",
-                "descrizione": "Antonino Monteleone, con Adele Grossi, racconta i fatti che stanno ridefinendo gli equilibri globali e la vita quotidiana degli italiani: politica, sicurezza, economia, trasformazioni sociali."
+                "descrizione": "$23"
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:48"
     },
     {
         "canale": "Rai 4",
@@ -580,7 +580,7 @@
                 "descrizione": "Helena, una donna che vive una vita apparentemente ordinaria, nasconde un oscuro segreto: suo padre è il famigerato 'Re delle paludi', l'uomo che ha tenuto lei e sua madre prigioniere nel deserto per anni. Dopo aver tentato per tutta la vita di sfuggire al suo passato, Helena è costretta ad affrontare i suoi demoni quando suo padre fugge inaspettatamente dalla prigione."
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:48"
     },
     {
         "canale": "Rai 5",
@@ -654,7 +654,7 @@
             {
                 "ora": "16:37",
                 "titolo": "Aspettando Re Lear",
-                "descrizione": "Alessandro Preziosi dirige e interpreta una nuova versione del \"Re Lear\" in cui i personaggi del capolavoro shakespeariano si muovono all'interno di scenografie interamente composte dalle opere del grande artista biellese Michelangelo Pistoletto. - di Alessandro Preziosi con Regia di Alessandro Preziosi 2024 ITA"
+                "descrizione": "Alessandro Preziosi dirige e interpreta una nuova versione del \"Re Lear\" in cui i personaggi del capolavoro shakespeariano si muovono all'interno di scenografie interamente composte dalle opere del grande artista biellese Michelangelo Pistoletto."
             },
             {
                 "ora": "18:04",
@@ -673,18 +673,18 @@
             },
             {
                 "ora": "19:25",
-                "titolo": "Questa è La Storia - Il Novecento A 45 G",
-                "descrizione": "Questa è la storia - Il Novecento a 45 giri: 1988 - RUBRICA - 1988: un anno che si muove leggero, in un tempo fatto di apparenza e di superficie. Mentre all'estero fanno scalpore le riforme di Gorbacëv, tr - a glasnost e perestrojka, in Italia le spiagge si svuotano dall'inquinamento, si accendono i dibattiti sul nucleare dopo il referendum, le centrali si fermano... - 2015 USA"
+                "titolo": "Questa è La Storia. Il Novecento A 45 Giri - 1988 (Pt.6)",
+                "descrizione": "$26"
             },
             {
                 "ora": "20:27",
                 "titolo": "Le Strade Di Overland - Borneo Malese: L'Anima Del Sarawak",
-                "descrizione": "$26"
+                "descrizione": "$27"
             },
             {
                 "ora": "21:20",
                 "titolo": "Paradise Is Burning",
-                "descrizione": "Svezia, quartiere operaio. Le sorelle Laura, Mira e Steffi vivono abbandonate a se stesse da una madre assente, tra libert� selvaggia e quotidianit� anarchica. Ma quando i servizi sociali minacciano di separarle, Laura cerca disperatamente un modo per tenere unita la famiglia sgangherata che hanno costruito. - di Mika Gustafson Regia di Mika Gustafson. Con Bianca Delbravo, Marta Oldenburg, Dilvin Asaad ,Mitja Siren, Safira Mossberg. 2023 ITA - PROGRAMMA ADATTO AD UNA VISONE CONGIUNTA CON UN ADULTO"
+                "descrizione": "Nel quartiere operaio di una citt� svedese le sorelle Laura, Mira e Steffi vivono abbandonate a se stesse da una madre assente. Ma quando i servizi sociali minacciano di separarle, Laura cerca disperatamente un modo per tenere unita la famiglia sgangherata che hanno costruito. Premio Orizzonti per la miglior regia a Venezia nel 2023."
             },
             {
                 "ora": "23:06",
@@ -692,7 +692,7 @@
                 "descrizione": "Nella cornice di Cergy-Pontoise, una delle nuove cittadine-satellite di Parigi, il gioco amoroso a rimpiattino tra quattro giovani che si cercano, si perdono e si ritrovano."
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:48"
     },
     {
         "canale": "Rete 4",
@@ -784,7 +784,7 @@
                 "descrizione": "Programma di attualita' e approfondimento condotto da Giuseppe Brindisi e realizzato in collaborazione tra Videonews e Tg4."
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:48"
     },
     {
         "canale": "Canale 5",
@@ -926,7 +926,7 @@
                 "descrizione": "Il programma piu' atteso dell'estate dedicato ai sentimenti con nuovi colpi di scena, momenti romantici, tradimenti inattesi e confronti al falo'. Conduce Filippo Bisciglia."
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:48"
     },
     {
         "canale": "Italia 1",
@@ -1048,7 +1048,7 @@
                 "descrizione": "Glimmer Man, in passato agente speciale dei servizi segreti, ha cambiato settore ed identit� . Col nuovo nome di Jack Cole, lavora per la polizia di New York, pronto però a trasferirsi, allorquando lo chiamano da Los Angeles, dove un serial killer sta seminando il terrore. A Cole viene affiancato Jim Campbell, investigatore della locale sezione omicidi. I due hanno caratteri molto diversi e la cosa si fa sentire nei modi di procedere sul lavoro. Arrivato sul luogo del nuovo delitto, Cole scopre che le vittime sono la sua ex moglie e il suo nuovo marito e che tutto viene prospettato in modo che Cole stesso sembri l'autore degli omicidi. Cole allora capisce di dover lasciare da parte la tranquillit� e il distacco che si era imposti per una maggiore decisione e fermezza..."
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:48"
     },
     {
         "canale": "La7",
@@ -1120,7 +1120,7 @@
                 "descrizione": "Una serie speciale composta da cinque puntate che ripercorre la storia dell'emittente La7 attraverso i momenti più significativi della sua evoluzione."
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:48"
     },
     {
         "canale": "TV8",
@@ -1227,7 +1227,7 @@
                 "descrizione": "Danny si è appena trasferito a Los Angeles: non conosce nessuno, e per lui è difficile fraternizzare. Compie l'errore di iniziare a corteggiare l'ex ragazza di un pericoloso capo banda giovanile, che inizia a tormentarlo. Il ragazzo, disperato, deve salvarsi dagli agguati della banda. Sar� un simpatico vicino di casa, Miyagi, un maestro orientale, a insegnare al ragazzo i segreti delle arti marziali. Dopo un duro allenamento Danny è pronto a sfidare i suoi nemici in una competizione sportiva."
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:48"
     },
     {
         "canale": "Nove",
@@ -1334,7 +1334,7 @@
                 "descrizione": "Francesco Panella riparte alla scoperta dei migliori ristoranti italiani all'estero incontrando 3 ristoratori che lo porteranno a mangiare nel loro ristorante del cuore."
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:48"
     },
     {
         "canale": "20 Mediaset",
@@ -1456,7 +1456,7 @@
                 "descrizione": "Milton è un ex galeotto indurito dalla vita che viene rispedito sulla Terra dall'inferno per la sua ultima possibilit� di redenzione: deve fermare e sgominare con le cattive una setta satanica che gli ha ucciso la figlia e ha intenzione di sacrificare la nipotina alla prima notte di luna piena per aprire le porte all'avvento del demonio. Ad aiutarlo c’è Piper, una giovane e sexy cameriera che mette l'auto del suo ex fidanzato a disposizione delle imprese di Milton, che però se la deve vedere anche con la polizia che è sulle sue tracce e con un misterioso killer noto come \"Il contabile\" che è stato inviato dal Diavolo in persona per riportare Milton nel mondo dei morti."
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:48"
     },
     {
         "canale": "Twentyseven",
@@ -1558,7 +1558,7 @@
                 "descrizione": "[Azione] - Un collega di Walker resta ucciso nel tentativo di sventare una rapina. Il ranger promette di vendicarne la morte. Regia di V. Vogel; USA 1993"
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:48"
     },
     {
         "canale": "IRIS",
@@ -1620,7 +1620,7 @@
                 "descrizione": "Jane Eyre fugge da Thornfield House, la residenza dove lavora come governante per il ricco Edward Rochester. L'isolamento e l'austerit� del luogo, oltre alla freddezza di Mr. Rochester, hanno infatti lasciato in segno sulla giovane Jane, nonostante la scorza dura che la vita in orfanotrofio le aveva fatto sviluppare. Riflettendo sul suo passato, e ritrovando la sua naturale curiosit� , Jane far� ritorno alla dimora di Mr. Rochester e al terribile segreto che egli nasconde."
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:48"
     },
     {
         "canale": "Rai Movie",
@@ -1672,12 +1672,12 @@
                 "descrizione": "Un maledestro avvocato vuole liberare un piccolo paese del West da uno scomodo fuorilegge. A questo scopo chiede l'aiuto di uno scaltro cow boy con il quale condivide l'amore per la stessa donna."
             },
             {
-                "ora": "23:20",
+                "ora": "23:19",
                 "titolo": "Giorno maledetto",
                 "descrizione": "Un uomo anziano e senza un braccio (Tracy) giunge in un paesino del sudovest degli Stati Uniti. Sta cercando il proprietario di una fattoria, un giapponese naturalizzato americano, per consegnargli una medaglia d'oro alla memoria del figlio che durante la guerra gli ha salvato la vita."
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:48"
     },
     {
         "canale": "Rai Premium",
@@ -1774,7 +1774,7 @@
                 "descrizione": "Simone Mankus, una passata diva del cinema, sta pianificando il suo ritorno. Uno stalker decide di interessarsi a lei. La sua unica speranza è affidarsi ad un ex poliziotto, Robert Fallner. Il passato di lei potrebbe portare un indizio sull'identit� dello stalker, ma l'ex diva si rivela poco disponibile con il polizotto."
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:48"
     },
     {
         "canale": "La 5",
@@ -1861,7 +1861,7 @@
                 "descrizione": "Infermiera e madre single, Sarah lotta tutti i giorni per conciliare lavoro e vita domestica. Spesso però il primo prevale sulla seconda e Lauren, la figlia di sette anni, soffre sempre più la sua assenza. La più grande paura di Sarah si materializza quando Lauren, mentre torna a casa da scuola da sola, viene rapita. Per salvare sua figlia, Sarah costretta a fare l'impensabile confrontandosi con uno sconcertante dilemma."
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:48"
     },
     {
         "canale": "Real Time",
@@ -1958,7 +1958,7 @@
                 "descrizione": "Essere madre significa non arrendersi nonostante tutte le difficolt� , ma al contrario aggrapparsi con tutte le proprie forze alla vita per i propri figli. La serie racconta la storia di Melek, che ricostruisce la propria vita insieme alla sua famiglia e ai suoi figli. Interpretata da Nehir Erdoğan, la serie mette in luce gli sforzi di una madre per rimanere in piedi e la sua lotta per la sopravvivenza insieme ai suoi tre figli, affrontando il passato per costruire un futuro migliore per la sua famiglia."
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:48"
     },
     {
         "canale": "Food Network",
@@ -2115,7 +2115,7 @@
                 "descrizione": "A Nicosia e Sperlinga, Giusina riscopre sapori, storie e tradizioni dell'entroterra siciliano."
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:48"
     },
     {
         "canale": "Focus",
@@ -2227,7 +2227,7 @@
                 "descrizione": "Se prosciugassimo la baia di San Francisco, con effetti visivi all'avanguardia, vedremmo il fondale marino rivelare le cicatrici di antichi terremoti."
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:48"
     },
     {
         "canale": "Giallo",
@@ -2314,7 +2314,7 @@
                 "descrizione": "John Taylor vive in silenziosa solitudine, progettando puzzle per vivere, sotto lo pseudonimo di \"Ludwig\". Quando il suo gemello identico, James, scompare dalla faccia della terra, John assume l'identit� del fratello in una ricerca per scoprire dove si trovi."
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:48"
     },
     {
         "canale": "Boing",
@@ -2471,7 +2471,7 @@
                 "descrizione": "Craig e suo cugino Bryson uniscono le forze per un fine settimana pieno di azione a casa dei nonni."
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:48"
     },
     {
         "canale": "K2",
@@ -2628,7 +2628,7 @@
                 "descrizione": "5' Stagione Ep.7 - Proseguono le avventure dei tre fratelli scoiattoli dotati di una voce incredibile e di uno straordinario talento musicale."
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:48"
     },
     {
         "canale": "Rai Gulp",
@@ -2785,7 +2785,7 @@
                 "descrizione": "I Paladini affrontano i Guardiani del Labirinto. Non è una battaglia facile, ma alla fine i nostri raggiungono le Uova di Drago gemelle al centro del labirinto. Lì devono riuscire a risolvere un ultimo enigma prima di poter tornare a casa, ma appena recuperano le uova, Vondhur appare all'improvviso e li affronta."
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:48"
     },
     {
         "canale": "Frisbee",
@@ -2942,7 +2942,7 @@
                 "descrizione": "5' Stagione Ep.2 - Proseguono le avventure dei tre fratelli scoiattoli dotati di una voce incredibile e di uno straordinario talento musicale."
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:48"
     },
     {
         "canale": "DMAX",
@@ -3029,7 +3029,7 @@
                 "descrizione": "La famiglia Bunce estrae giada dai ricchi giacimenti della regione."
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:48"
     },
     {
         "canale": "Rai Sport",
@@ -3037,8 +3037,8 @@
         "programmi": [
             {
                 "ora": "06:00",
-                "titolo": "Ciclismo: Tour De France 2026 - ReTour",
-                "descrizione": "Dalle Alpi ai Pirenei, il Tour de France 2026 accende la sfida per la Maglia Gialla tra Tadej Pogačar, Remco Evenepoel, Jonas Vingegaard e la nuova promessa Paul Seixas."
+                "titolo": "Ciclismo: Tour De France 2026 - 21a Tappa - Parigi Champs-ÉLyséEs",
+                "descrizione": "Gran finale nella capitale francese con arrivo sugli Champs-Élysées. Dopo il passaggio sulla collina di Montmartre, il Tour si conclude con l'ultima sfida tra attaccanti e velocisti nel cuore di Parigi."
             },
             {
                 "ora": "06:45",
@@ -3056,14 +3056,19 @@
                 "descrizione": "Mondiali - Semifinali e Finali individuali: Fioretto femminile"
             },
             {
+                "ora": "12:50",
+                "titolo": "Scherma: Mondiali 2026 - Semifinali: Sciabola Maschile",
+                "descrizione": "Scherma: Mondiali 2026 - Semifinali: Sciabola Maschile"
+            },
+            {
                 "ora": "14:35",
                 "titolo": "Pugilato - Capri Boxing Night 2026: Italia - USA (2a Giornata)",
                 "descrizione": "Alla Certosa di San Giacomo va in scena la Capri Boxing Night, con otto incontri tra gli atleti Elite delle Nazionali italiana e statunitense. Tra gli azzurri spicca la campionessa mondiale e medaglia olimpica Irma Testa."
             },
             {
                 "ora": "16:00",
-                "titolo": "Tennis: Ladies Open Palermo - Finale",
-                "descrizione": "Il Ladies Open Palermo riporta sulla terra rossa siciliana alcune delle migliori protagoniste del circuito internazionale. Una settimana di grande tennis tra sfide di alto livello, giovani promesse e campionesse in cerca del titolo."
+                "titolo": "Tennis: Ladies Open Palermo 2026 - Finale: Jones - Ferro",
+                "descrizione": "L'Italia torna protagonista del circuito WTA con il Palermo Ladies Open. La britannica Francesca Jones difende il titolo conquistato nel 2025. Tra le protagoniste attese sulla terra rossa siciliana anche le azzurre Lucia Bronzetti e Tyra Caterina Grant."
             },
             {
                 "ora": "19:00",
@@ -3091,7 +3096,7 @@
                 "descrizione": "Mondiali - Semifinali e Finali individuali: Fioretto femminile"
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:48"
     },
     {
         "canale": "Sportitalia",
@@ -3129,13 +3134,13 @@
             },
             {
                 "ora": "09:00",
-                "titolo": "Te la do io l'America",
-                "descrizione": "Te la do io l'America"
+                "titolo": "Tutti in ritiro",
+                "descrizione": "Tutti in ritiro"
             },
             {
                 "ora": "10:00",
-                "titolo": "Te la do io l'America",
-                "descrizione": "Te la do io l'America"
+                "titolo": "Tutti in ritiro",
+                "descrizione": "Tutti in ritiro"
             },
             {
                 "ora": "11:00",
@@ -3158,19 +3163,9 @@
                 "descrizione": "Un'informazione veloce, affidabile e aggiornata h24. “SI Live24” nasce per dare la possibilit� a tutti gli appassionati di sport di essere informati tutto il giorno"
             },
             {
-                "ora": "13:30",
+                "ora": "14:00",
                 "titolo": "Si Live 24",
                 "descrizione": "Un'informazione veloce, affidabile e aggiornata h24. “SI Live24” nasce per dare la possibilit� a tutti gli appassionati di sport di essere informati tutto il giorno"
-            },
-            {
-                "ora": "14:00",
-                "titolo": "Blab",
-                "descrizione": "Blab Live"
-            },
-            {
-                "ora": "14:30",
-                "titolo": "Tu vuoi fa l'Americano",
-                "descrizione": "Tu vuoi fa l'Americano"
             },
             {
                 "ora": "15:00",
@@ -3189,33 +3184,28 @@
             },
             {
                 "ora": "17:00",
-                "titolo": "Calciomercato",
-                "descrizione": "Calciomercato Live"
+                "titolo": "Campionato Argentino Deportivo Riestra-Boca Jr.",
+                "descrizione": "Campionato Argentino Deportivo Riestra-Boca Jr."
             },
             {
                 "ora": "19:00",
-                "titolo": "Si Motori",
-                "descrizione": "Trasmissione ideata per gli appassionati dei motori, interviste in esclusiva,uno spazio dedicato alla presentazione dei nuovi modelli con le ultime news dal mondo delle quattro ruote. Condotto da Filippo Gherardi"
-            },
-            {
-                "ora": "19:30",
-                "titolo": "Ruote in pista",
-                "descrizione": "Ruote in pista"
+                "titolo": "Calciomercato Live I° parte",
+                "descrizione": "Calciomercato Live I° parte"
             },
             {
                 "ora": "20:00",
-                "titolo": "Ronaldo & Messi \"the last duel\"",
-                "descrizione": "Ronaldo&amp;Messi \"the last duel\""
+                "titolo": "Si Live 24",
+                "descrizione": "Un'informazione veloce, affidabile e aggiornata h24. “SI Live24” nasce per dare la possibilit� a tutti gli appassionati di sport di essere informati tutto il giorno"
+            },
+            {
+                "ora": "20:30",
+                "titolo": "Si Live 24",
+                "descrizione": "Un'informazione veloce, affidabile e aggiornata h24. “SI Live24” nasce per dare la possibilit� a tutti gli appassionati di sport di essere informati tutto il giorno"
             },
             {
                 "ora": "21:00",
-                "titolo": "Speciale Mondiale 2026",
-                "descrizione": "Speciale Mondiale 2026"
-            },
-            {
-                "ora": "22:00",
-                "titolo": "Calciomercato Live Mondiale 2026",
-                "descrizione": "Calciomercato Live Mondiale 2026"
+                "titolo": "Calciomercato Live III° parte",
+                "descrizione": "Calciomercato Live III° parte"
             },
             {
                 "ora": "23:00",
@@ -3223,7 +3213,7 @@
                 "descrizione": "Il programma tratta le vicende del calciomercato sia nella sessione estiva che in quella invernale e va in onda alle ore 23.00 dal lunedì al venerdì"
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:48"
     },
     {
         "canale": "HGTV",
@@ -3330,7 +3320,7 @@
                 "descrizione": "Due amici si occupano del progetto di ristrutturazione di una casa enorme. Ma sono alle prime armi e hanno disperatamente bisogno dell'aiuto di Tarek."
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:48"
     },
     {
         "canale": "RSI LA 1",
@@ -3487,7 +3477,7 @@
                 "descrizione": "Home edition\npresenta Nicola Saldanha"
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:48"
     },
     {
         "canale": "RSI LA 2",
@@ -3604,7 +3594,7 @@
                 "descrizione": "Vita e avventure sul ring di George Foreman, pugile di classe e potenza cristalline protagonista di una delle carriere più lunghe e peculiari nella storia dello sport: attivo fra il 1969 e il 1977, periodo nel quale vinse il suo primo titolo mondiale poi perso contro Mohammed Alì nella celeberrima Rumbe in the Jungle di Kinshasa, Foreman si ritirò dopo aver scoperto la religione, per poi tornare a competere nel 1987 e vincere nuovamente la cintura di campione del mondo nel 1994, a 45 anni."
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:48"
     },
     {
         "canale": "DAZN 1",
@@ -3701,7 +3691,7 @@
                 "descrizione": "Lo scontro diretto tra le ultime due vincitrici del campionato ha regalato tanto spettacolo e una serie di duelli da brivido. Rivivi le immagini piu' belle con il 'Bordocam' di Davide Bernardi."
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:48"
     },
     {
         "canale": "Sky Sport 24",
@@ -3858,7 +3848,7 @@
                 "descrizione": "Tutti gli aggiornamenti dalle squadre di Serie A con collegamenti live, interviste e ospiti in studio."
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:48"
     },
     {
         "canale": "Sky Sport Uno",
@@ -4027,7 +4017,7 @@
                 "descrizione": "Dopo lo 0-0 contro il Basilea, la Juve sfida lo Standard Liegi contro cui non ha mai perso nei 2 precedenti di coppa Campioni 1982: 1-1 a Liegi e 2-0 a Torino. TC: Federico Botti"
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:48"
     },
     {
         "canale": "Sky Sport Tennis",
@@ -4079,7 +4069,7 @@
                 "descrizione": "Tutti i tornei di tennis internazionali del circuito maschile ATP e di quello femminile WTA, con l'attenzione puntata sui tennisti italiani."
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:48"
     },
     {
         "canale": "Sky Sport F1",
@@ -4206,7 +4196,7 @@
                 "descrizione": "L'analisi del Gran Premio disputato per commentare la gara insieme agli ospiti in studio. Riviviamo i brividi della corsa attraverso le immagini piu' spettacolari e ascoltiamo i commenti a caldo dei protagonisti."
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:48"
     },
     {
         "canale": "Sky Sport Legend",
@@ -4278,7 +4268,7 @@
                 "descrizione": "Giacomo Agostini, conosciuto da tutti come “Ago”, è una leggenda del motociclismo, simbolo di libert� , coraggio e passione. Testimonianze esclusive svelano l'uomo dietro il mito."
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:48"
     },
     {
         "canale": "Sky Sport MotoGP",
@@ -4435,7 +4425,7 @@
                 "descrizione": "Undicesimo appuntamento del mondiale 2026: al Sachsenring, in Germania, si accendono i motori per la gara della MotoGP. Telecronaca Meda- Sanchini"
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:48"
     },
     {
         "canale": "Sky Sport Basket",
@@ -4507,7 +4497,7 @@
                 "descrizione": "Costanza Verona. - 2016 Is The New 2026 - Intervista A Costanza Verona"
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:49"
     },
     {
         "canale": "Sky Sport Arena",
@@ -4604,7 +4594,7 @@
                 "descrizione": "Filo D'acqua: La Leggenda Della Pro Recco"
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:49"
     },
     {
         "canale": "Sky Sport Max",
@@ -4676,7 +4666,7 @@
                 "descrizione": "Nerazzurri imbattuti da 12 turni, 11 vittorie e un pari. Juve quarta dopo il 2-2 con la Lazio. Due vittorie a testa nelle ultime 7 sfide di A a San Siro. TC: Compagnoni-Marchegiani"
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:49"
     },
     {
         "canale": "Sky Sport Mix",
@@ -4753,7 +4743,7 @@
                 "descrizione": "Allo Stadio Olimpico di Roma l'Italia (5 punti) cerca la prima vittoria della storia contro un'Inghilterra (5 punti) in difficolta' nel torneo. Telecronaca Pierantozzi-Fusetti"
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:49"
     },
     {
         "canale": "Sky Sport Golf",
@@ -4820,7 +4810,7 @@
                 "descrizione": "World Tour. - Dal Golfclub Munchen Eichenried di Monaco, Germania."
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:49"
     },
     {
         "canale": "Sky Sport 251",
@@ -5000,7 +4990,7 @@
                 "descrizione": "Dopo l'improvvisa morte di suo marito, Libby è costretta a trasferirsi con sua madre ipercritica. All'improvviso, sua zia Jean, estraniata, offre una via di fuga: un lavoro e un posto dove vivere nella sua fattoria nel Texas Hill Country. Prima di poterne parlare, Libby sta facendo le valigie per il minivan, afferrando i bambini e percorrendo la strada. La vita nella fattoria delle capre di zia Jean è più meravigliosa e misteriosa di quanto Libby potesse immaginare. Oltre agli animali e al lavoro faticoso, c'è la quiete - la quiete della campagna. Ma c'è anche un gestore di fattoria ispida e burbero con una tragica vita familiare, un impiegato di un negozio di mangimi che afferma di poter contattare suo marito \"dall'altra parte\" e l'eccentrica zia che non ha mai veramente conosciuto ma che si rivela esattamente di chi ha bisogno."
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:49"
     },
     {
         "canale": "Sky Cinema Uno +24",
@@ -5062,7 +5052,7 @@
                 "descrizione": "Honey O'Donahue, una detective privata di una cittadina, si immerge in una serie di strani decessi legati a una misteriosa chiesa."
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:49"
     },
     {
         "canale": "Sky Cinema Due",
@@ -5114,7 +5104,7 @@
                 "descrizione": "Due marines della base militare USA di Guantanamo a Cuba sono deferiti al tribunale militare per l'omicidio di un commilitone. Studiando la pratica, il trio dei difensori si convince che fu un'applicazione di \"codice rosso\", la norma non scritta che impone dure correzioni fisiche ai compagni che sbagliano e che, data la rigida disciplina, non poteva non essere stata autorizzata, anzi ordinata dai superiori."
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:49"
     },
     {
         "canale": "Sky Cinema Due +24",
@@ -5136,7 +5126,7 @@
                 "descrizione": "1958: Tom Ripley è un giovane americano educato di modesta estrazione. Cede il posto alle signore e ascolta rispettosamente i consigli dei più anziani. Con gli amici è allegro, non ha eguali nell'imitare i personaggi celebri, nel cantare e suonare il piano. Soprattutto tende spesso a mentire pur di mascherare la propria condizione. Un giorno durante un party la grande occasione: un ricco industriale gli chiede, dietro un cospicuo compenso, di riportare negli Stati Uniti suo figlio Dickie, che vive un esilio dorato in Italia. Tom infatti, si è sentito di spacciarsi per un suo compagno di universit� , avendo indossato un blazer dell'istituto fattosi prestare da un amico per l'occasione. Il giovane entra in una gigantesca avventura, raggiunge quindi Ischia, dove vive Dick Greenleaf; ne diventa amico, e conosce anche la sua bella ragazza, Marge."
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:49"
     },
     {
         "canale": "Sky Cinema Collection",
@@ -5188,7 +5178,7 @@
                 "descrizione": "Stati Uniti del Sud, alla vigilia della guerra civile. Il cacciatore di taglie di origine tedesca dottor King Schultz, su un carretto da dentista, è alla ricerca dei fratelli Brittle, per consegnarli alle autorit� piuttosto morti che vivi e incassare la ricompensa. Per scovarli, libera dalle catene lo schiavo Django, promettendogli la libert� a missione completata. Tra i due uomini nasce così un sodalizio umano e professionale che li conduce attraverso l'America delle piantagioni e degli orrori razzisti alla ricerca dei criminali in fuga e della moglie di Django, Broomhilda, venduta come schiava a qualche possidente negriero."
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:49"
     },
     {
         "canale": "Sky Cinema Family",
@@ -5255,7 +5245,7 @@
                 "descrizione": "Z è una formica insoddisfatta, nevrotica, fantasiosa e ribelle, in cura dall'analista. La vita dentro il formicaio è dettata da regole ferree e ruota tutta intorno al lavoro. Il non poter pensare con la propria testa e l'inesistenza dell'originalit� del singolo rendono Z sempre più insofferente verso la colonia. Per caso incontra e s'innamora della principessa Bala, e per poterla incontrare di nuovo, verr� coinvolto in una terribile guerra contro le ferocissime Termiti rimanendo l'unico sopravvissuto. Divenuto un eroe di guerra, quando si scopre che in realt� è un semplice operaio e non un soldato, Z lascia la colonia rapendo la principessa Bala. Insieme raggiungono Insettopia, luogo mitico, di cui l'esistenza non è certa. Parallelamente il perfido generale Mandibola, promesso sposo di Bala , organizza un vero e proprio colpo di stato cercando di uccidere la regina, madre di Bala, e la maggior parte delle formiche operaie per rifondare egli stesso una nuova colonia."
             }
         ],
-        "aggiornato": "10:01"
+        "aggiornato": "14:49"
     },
     {
         "canale": "Sky Cinema Action",
@@ -5307,7 +5297,7 @@
                 "descrizione": "Un sistema sperimentale per il controllo delle condizioni meteo viene trasformato in un’arma per distruggere intere nazioni creando delle catastrofiche tempeste. Due fratelli formano un’alleanza per salvare il mondo dalla catastrofe."
             }
         ],
-        "aggiornato": "10:02"
+        "aggiornato": "14:49"
     },
     {
         "canale": "Sky Cinema Suspense",
@@ -5374,7 +5364,7 @@
                 "descrizione": "Stephanie (Anna Kendrick) è una mamma blogger che cerca di scoprire la verit� dietro la scomparsa della sua migliore amica, Emily (Blake Lively). Stephanie è affiancata dal marito di Emily, Sean (Henry Golding), in questa ricerca che dar� vita a colpi di scena, tradimenti, segreti e rivelazioni, amori, omicidi e vendette."
             }
         ],
-        "aggiornato": "10:02"
+        "aggiornato": "14:49"
     },
     {
         "canale": "Sky Cinema Romance",
@@ -5436,7 +5426,7 @@
                 "descrizione": "Anastasia Steele, una studentessa in letteratura inglese prossima alla laurea, per sostituire un'amica influenzata va ad intervistare Christian Grey, giovane e ricco amministratore delegato della Grey Enterprises Holdings Inc. e se ne innamora, ricambiata, a prima vista. L'uomo mette però in breve tempo le cose in chiaro: la sua è una personalit� dominante e il rapporto dovr� sottostare a precisi patti, con Anastasia che deve accettare di essere oggetto di atti di sadismo."
             }
         ],
-        "aggiornato": "10:02"
+        "aggiornato": "14:49"
     },
     {
         "canale": "Sky Cinema Drama",
@@ -5498,7 +5488,7 @@
                 "descrizione": "Mimì è un adolescente orfano nato con i piedi deformi che lavora in una pizzeria a Napoli. Un brutto giorno incontra Carmilla, una giovane ragazza convinta di essere una discendente del conte Dracula. Insieme decidono di fuggire da un mondo cinico e violento."
             }
         ],
-        "aggiornato": "10:02"
+        "aggiornato": "14:49"
     },
     {
         "canale": "Sky Cinema Comedy",
@@ -5565,7 +5555,7 @@
                 "descrizione": "Miami. Wilbur Walsh e Matt Kirby sono due disoccupati che cercano di sbarcare il lunario. Nonostante la loro buona volont� , non riescono proprio a trovare un lavoro, e a questo punto Kirby, ormai frustrato, suggerisce a Walsh di tentare un colpo che egli progetta da tempo: rapinare l'ufficio amministrazione di un supermercato. Tutto sembra essere stato pianificato nei minimi dettagli, ma incredibilmente il giorno della rapina sbagliano porta di ingresso, ritrovandosi così, invece che nel supermercato, nell'adiacente ufficio reclutamento della polizia.Per non destare sospetti, sono costretti ad arruolarsi e a prendere parte al corso di addestramento. Vista la situazione, Walsh e Kirby tentano in tutti i modi di farsi cacciare, ma invano; anzi, col tempo finiscono invece per diventare due veri poliziotti che riescono a risolvere un misterioso caso di omicidio e ad arrestare una banda di trafficanti di sostanze stupefacenti ad esso collegata."
             }
         ],
-        "aggiornato": "10:02"
+        "aggiornato": "14:49"
     },
     {
         "canale": "Sky Uno",
@@ -5687,7 +5677,7 @@
                 "descrizione": "A Venezia, i giocatori lasciano l'autobus alle spalle, ma non i drammi. Un'alleanza segreta viene svelata in un'uscita di scena drammatica, mentre un giocatore si smarrisce nel Giardino delle Anime Perdute."
             }
         ],
-        "aggiornato": "10:02"
+        "aggiornato": "14:49"
     },
     {
         "canale": "Sky Atlantic",
@@ -5809,7 +5799,7 @@
                 "descrizione": "La serie prequel vede la dinastia Targaryen all'apice assoluto del suo potere, con più di 15 draghi sotto il loro giogo. La maggior parte degli imperi, che siano reali o immaginari, crollano quando raggiungono tali poteri e tali altezze. Nel caso dei Targaryen, la loro lenta caduta inizia quasi 193 anni prima degli eventi de Il Trono di Spade, quando re Viserys Targaryen rompe un secolo di tradizione nominando sua figlia Rhaenyra erede al Trono di Spade. La corte rimane scioccata quando Rhaenyra mantiene il suo status di erede nonostante Viserys in seguito avr� un figlio maschio, legittimo erede. Inizia così ad attecchire il seme della divisione e forti attriti in tutto il regno."
             }
         ],
-        "aggiornato": "10:02"
+        "aggiornato": "14:49"
     },
     {
         "canale": "Sky Serie",
@@ -5941,7 +5931,7 @@
                 "descrizione": "Cavalcare il brivido emozionale attraverso il caos raccontanto giorno dopo giorno nell’ospedale più esplosivo della citt� , con la squadra coraggiosa dei medici che lo tengono insieme. Essi affronteranno nuovi casi unici ispirati dagli eventi di attualit� , creeranno relazioni di fuoco nel pandemonio cardiopalmo del pronto soccorso. La serie è di genere medical drama è uno spinoff di Chicago Fire, creata da by Dick Wolf e Matt Olmstead."
             }
         ],
-        "aggiornato": "10:02"
+        "aggiornato": "14:49"
     },
     {
         "canale": "Sky Investigation",
@@ -6068,7 +6058,7 @@
                 "descrizione": "Il comandante della Police Nationale Mélissa Sainte-Rose, originaria della Martinica, viene trasferita dalla Francia continentale a Fort-de-France, dove trova alle sue dipendenze il capitano Gaëlle Crivelli. I rapporti sono tesi tra le due poliziotte, perché totalmente diverse nel loro comportamento, ma complementari per la risoluzione degli omicidi."
             }
         ],
-        "aggiornato": "10:02"
+        "aggiornato": "14:49"
     },
     {
         "canale": "Sky Crime",
@@ -6200,7 +6190,7 @@
                 "descrizione": "Ep.5 di 8 - Wolfgang Abel e Marco Furlan firmano delitti in Italia, Germania e Paesi Bassi tra 1977 e 1984."
             }
         ],
-        "aggiornato": "10:02"
+        "aggiornato": "14:49"
     },
     {
         "canale": "Sky Adventure",
@@ -6213,7 +6203,7 @@
             },
             {
                 "ora": "06:00",
-                "titolo": "Pesca Selvaggia",
+                "titolo": "Predatori Dell'artico",
                 "descrizione": "Cyril Chauquet e la sua squadra di cineasti senza paura intraprendono la loro impresa più pericolosa, alla ricerca di alcune delle creature più temibili."
             },
             {
@@ -6323,7 +6313,7 @@
             },
             {
                 "ora": "21:15",
-                "titolo": "Pesca Selvaggia",
+                "titolo": "Predatori Dell'artico",
                 "descrizione": "Cyril Chauquet e la sua squadra di cineasti senza paura intraprendono la loro impresa più pericolosa, alla ricerca di alcune delle creature più temibili."
             },
             {
@@ -6333,7 +6323,7 @@
             },
             {
                 "ora": "22:50",
-                "titolo": "Pesca Selvaggia",
+                "titolo": "Predatori Dell'artico",
                 "descrizione": "Cyril Chauquet e la sua squadra di cineasti senza paura intraprendono la loro impresa più pericolosa, alla ricerca di alcune delle creature più temibili."
             },
             {
@@ -6342,7 +6332,7 @@
                 "descrizione": "Sul Rio Parana, nel nord dell'Argentina, innumerevoli pescatori sono stati violentemente trascinati in acqua da creature non identificate. Cyril si avventura sempre più a fondo nelle paludi piene di caimani e piranha per indagare sulle sparizioni."
             }
         ],
-        "aggiornato": "10:02"
+        "aggiornato": "14:49"
     },
     {
         "canale": "MTV",
@@ -6489,7 +6479,7 @@
                 "descrizione": "Ep5 di 42 - Lo show presentato da Rob Dyrdek, insieme alle celebrities Sterling Steelo Brim e Chanel West Coast che mostra video amatoriali trovati in internet."
             }
         ],
-        "aggiornato": "10:02"
+        "aggiornato": "14:49"
     },
     {
         "canale": "Comedy Central",
@@ -6646,7 +6636,7 @@
                 "descrizione": "Hot in Cleveland\" si basa su tre favolose, eccentriche donne sopra i quarant'anni di Los Angeles, migliori amiche, le cui vite sono state cambiate per sempre quando il loro aereo è dovuto atterrare inaspettatamente a Cleveland e presto riscopriranno loro stesse in questa nuova \"terra promessa\"."
             }
         ],
-        "aggiornato": "10:02"
+        "aggiornato": "14:49"
     },
     {
         "canale": "Sky Arte",
@@ -6738,7 +6728,7 @@
                 "descrizione": "Ep5 di 6 Munch: Oslo, 1994 - Olimpiadi 1994, la cerimonia di apertura fu il perfetto diversivo per il furto de \"L'Urlo\" di Munch. Ma grazie ad un eccentrico gallerista il quadro venne recuperato."
             }
         ],
-        "aggiornato": "10:02"
+        "aggiornato": "14:49"
     },
     {
         "canale": "Sky Documentaries",
@@ -6845,7 +6835,7 @@
                 "descrizione": "Leno, 2002. Un piccolo paese, un gruppo di ragazzi, una notte che finisce in tragedia. Desire'e scompare."
             }
         ],
-        "aggiornato": "10:02"
+        "aggiornato": "14:49"
     },
     {
         "canale": "Sky Nature",
@@ -6972,7 +6962,7 @@
                 "descrizione": "Ep8 di 10 Siamo soli nell'Universo? - Troveremo mai degli esseri simili a noi su un altro pianeta? Cosa accadrebbe se tale ipotesi fosse vera? Scopriamolo in compagnia dell'astronauta Mae Jamison."
             }
         ],
-        "aggiornato": "10:02"
+        "aggiornato": "14:49"
     },
     {
         "canale": "Discovery Channel",
@@ -7089,7 +7079,7 @@
                 "descrizione": "Esaminiamo da vicino altri oggetti di uso quotidiano e scopriamo come sono fatti i tombini, i ciocchi artificiali e le motoslitte."
             }
         ],
-        "aggiornato": "10:02"
+        "aggiornato": "14:49"
     },
     {
         "canale": "History Channel",
@@ -7201,7 +7191,7 @@
                 "descrizione": "La strage di Piazza Fontana e le bombe a Roma - In un'ora diversi attentati colpiscono le due maggiori citta' italiane provocando morte e distruzione."
             }
         ],
-        "aggiornato": "10:02"
+        "aggiornato": "14:49"
     },
     {
         "canale": "Cartoon Network",
@@ -7358,7 +7348,7 @@
                 "descrizione": "Craig e i suoi due amici Kelsey e JP vivono bellissime avventure nella natura selvaggia conosciuta come Creek: un posto pieno di azione e incredibili storie."
             }
         ],
-        "aggiornato": "10:02"
+        "aggiornato": "14:49"
     },
     {
         "canale": "Dea Kids",
@@ -7515,7 +7505,7 @@
                 "descrizione": "Ki crede di essere sfortunato e compra una pietra magica da Goo, convinto che possa portargli fortuna."
             }
         ],
-        "aggiornato": "10:02"
+        "aggiornato": "14:49"
     },
     {
         "canale": "Nick Jr",
@@ -7672,7 +7662,7 @@
                 "descrizione": "Il piccolo regno di Ben e Holly è un cartone animato britannico per i bambini in et� prescolare ambientato in un magico regno incantato, popolato da fate, elfi e insetti."
             }
         ],
-        "aggiornato": "10:02"
+        "aggiornato": "14:49"
     },
     {
         "canale": "Boomerang",
@@ -7829,7 +7819,7 @@
                 "descrizione": "Ep59 La cavalletta dell'abbondanza - I Lemming catturano una cavalletta, che messa sulla testa e col massimo della concentrazione, puo'' avverare qualsiasi desiderio!"
             }
         ],
-        "aggiornato": "10:02"
+        "aggiornato": "14:49"
     },
     {
         "canale": "Sky TG 24",
@@ -7986,7 +7976,7 @@
                 "descrizione": "Previsioni meteo dettagliate e sempre aggiornate 24 ore al giorno. Le previsioni regionali, nazionali ed internazionali."
             }
         ],
-        "aggiornato": "10:02"
+        "aggiornato": "14:49"
     },
     {
         "canale": "Rai News 24",
@@ -8143,7 +8133,7 @@
                 "descrizione": "NEWS + SOMMARIO"
             }
         ],
-        "aggiornato": "10:02"
+        "aggiornato": "14:49"
     },
     {
         "canale": "Sky Meteo 24",
