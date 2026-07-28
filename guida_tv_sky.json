@@ -139,17 +139,12 @@
                 "descrizione": "Quattro puntate con il meglio di 30 anni di programmazione. Cosa è accaduto in tutti questi anni? e come l'abbiamo raccontato? Dall'archivio di Porta a Porta, quattro nuove puntate costruite attingendo allo sterminato repertorio di un programma testimone delle tante svolte e dei tanti cambiamenti della nostra societ� ."
             }
         ],
-        "aggiornato": "08:43"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Rai 2",
         "categoria": "Digitale Terrestre",
         "programmi": [
-            {
-                "ora": "06:00",
-                "titolo": "Ritorno a Las Sabinas",
-                "descrizione": "Dopo molti anni di lontananza, le sorelle Molina tornano nella loro citt� natale per affrontare i problemi di salute del padre. Il loro ritorno significa una riunione con le vite, gli amori e i segreti che hanno cercato di dimenticare."
-            },
             {
                 "ora": "06:10",
                 "titolo": "La Grande Vallata",
@@ -183,7 +178,7 @@
             {
                 "ora": "10:00",
                 "titolo": "TG2 Dossier",
-                "descrizione": "SPECIALE - Approfondimento del Tg2. - Direttore Antonio Preziosi Vicedirettore Elisabetta Migliorelli A cura di Francesco Vitale"
+                "descrizione": "Approfondimento del Tg2."
             },
             {
                 "ora": "10:55",
@@ -293,10 +288,15 @@
             {
                 "ora": "21:20",
                 "titolo": "Ritorno In Paradiso - Festival Mortale",
-                "descrizione": "1^ Visione Rai - Un noto scrittore di libri gialli viene trovato morto in una villa, pochi minuti dopo aver annunciato l'uscita del suo nuovo libro ad un festival. Dalle indagini, emergono vecchie tensioni tra lo scrittore ed alcuni ospiti."
+                "descrizione": "Un noto scrittore di libri gialli viene trovato morto in una villa, pochi minuti dopo aver annunciato l'uscita del suo nuovo libro ad un festival. Dalle indagini, emergono vecchie tensioni tra lo scrittore ed alcuni ospiti."
+            },
+            {
+                "ora": "22:24",
+                "titolo": "Ritorno in Paradiso",
+                "descrizione": "L'ispettore Mackenzie Clarke è costretta a lasciare Londra sotto una nuvola di sospetti e tornare nell'ultimo posto in cui avrebbe mai voluto essere, la sua citt� natale di Dolphin Cove, in Australia, dove la sua tenacia e la sua etica del lavoro la aiutano a risolvere misteri di omicidio."
             }
         ],
-        "aggiornato": "08:43"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Rai 3",
@@ -304,8 +304,8 @@
         "programmi": [
             {
                 "ora": "08:00",
-                "titolo": "Agorà Estate",
-                "descrizione": "L'approfondimento estivo del mattino di Rai3 condotto da Giulia Di Stefano con Marco Carrara, attraverso ospiti, inviati, inchieste e contributi video dai social."
+                "titolo": "Palla Al Centro - Agorà Estate",
+                "descrizione": "$23"
             },
             {
                 "ora": "10:30",
@@ -380,7 +380,7 @@
             {
                 "ora": "15:10",
                 "titolo": "Il Provinciale - Umbria: I Colori Del Paesaggio - 23",
-                "descrizione": "$23"
+                "descrizione": "$24"
             },
             {
                 "ora": "15:45",
@@ -439,11 +439,11 @@
             },
             {
                 "ora": "23:45",
-                "titolo": "Per Un'Ora D'Amore",
+                "titolo": "Per un'ora d'amore",
                 "descrizione": "Maria è ossessionata dal mondo della televisione e sogna di diventare una celebrit� , mentre vive una tranquilla vita di provincia con suo figlio Daniel. Quando la showgirl Vale lancia il suo nuovo reality, Maria pensa che sia arrivato il suo momento, ma il mondo che desidera ardentemente sceglie qualcun altro."
             }
         ],
-        "aggiornato": "08:43"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Rai 4",
@@ -557,7 +557,7 @@
             {
                 "ora": "21:19",
                 "titolo": "Mea Culpa",
-                "descrizione": "Poliziotti a Tolone, Simon e Franck sono vittime di un terribile incidente d'auto. Mentre Franck ne esce illeso, Simon rimane gravemente ferito e perde il lavoro. Ma quando Theo, figlio di quest'ultimo, si trova coinvolto in un regolamento di conti mafioso, i due tornano insieme per aiutare il ragazzo."
+                "descrizione": "Poliziotti a Tolone, Simon e Franck stanno rientrando a casa quando sono protagonisti di un terribile incidente d'auto, che causa due vittime (tra cui un bambino). Mentre Franck ne esce illeso, Simon - che era alla guida e sotto gli effetti dell'alcol - rimane gravemente ferito. A causa di quanto accaduto, Simon perde ogni cosa, compresi lavoro e moglie, e per sei anni lavora come trasportatore di denaro mentre tenta di far da padre al figlioletto Theo. Un giorno, Theo è testimone di un regolamento di conti mafioso e la sua vita si ritrova in pericolo. Per proteggere il figlio Simon sar� disposto a tutto, anche a riformare coppia con Franck e ritornare sugli errori commessi."
             },
             {
                 "ora": "22:51",
@@ -565,7 +565,7 @@
                 "descrizione": "Per diventare agente della CIA, Evelyn Salt ha fatto giuramento sul suo onore di servire la patria. Quando un disertore l'accusa di essere una spia russa sotto mentite spoglie, Evelyn dovr� dimostrare di essere fedele ai principi per i quali ha giurato. Inizia così la sua fuga, forte della sua esperienza e dei suoi contatti dopo anni di lavoro come agente segreto, durante la quale dovr� dimostrarsi più furba dei suoi colleghi della Cia per evitare la cattura e proteggere il marito."
             }
         ],
-        "aggiornato": "08:43"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Rai 5",
@@ -632,27 +632,27 @@
                 "descrizione": "A Sud del Venezuela, il Parco nazionale Canaima ospita un meraviglioso mix di ambienti naturali, tra foreste tropicali, aride savane e imponenti montagne dalla cima piatta. Purtroppo, però, l'estrazione mineraria illegale, alla periferia del parco, sta minacciando il fragile equilibrio di questo ecosistema."
             },
             {
-                "ora": "15:40",
+                "ora": "15:41",
                 "titolo": "Il Pianeta Verde",
                 "descrizione": "David Attenborough ci svela lo strano e meraviglioso mondo delle foreste tropicali. Da alberi a crescita rapida a fiori che imitano animali morti. Nuove tecniche di ripresa ci consentiranno di vedere il loro mondo dalla loro prospettiva."
             },
             {
-                "ora": "16:31",
+                "ora": "16:32",
                 "titolo": "Onde Ribelli - 50 Anni Di Libertà In FM",
                 "descrizione": "Un racconto intimo, collettivo e appassionato che ripercorre 50 anni di radio libere in Italia, a partire dalla met� degli anni Settanta fino a oggi. È la storia di un'Italia che si risveglia attraverso le onde dell'etere, rompendo il monopolio dell'informazione e dando voce a una generazione che voleva essere ascoltata."
             },
             {
-                "ora": "17:25",
+                "ora": "17:26",
                 "titolo": "Generazione Bellezza - Dietro La Maschera",
                 "descrizione": "Una maschera tradizionale che stava per essere dimenticata. Un pastore che credeva nella tradizione come strumento di sviluppo per i territori. Una comunit� che ha capito il potenziale della memoria e l'ha protetta e valorizzata al meglio. É la storia di Mamoiada in provincia di Nuoro e delle maschere dei Mamuthones, divenute un brand noto a livello internazionale. Riprendono un immaginario ancestrale, emozionano chi le porta e chi li osserva. creano coesione sociale anche tra le generazioni. Portano lavoro ad artigiani e nuovi professionisti dell'accoglienza. Rendono orgogliosi di appartenere ad una terra che non è più conosciuta per la violenza ma per la bellezza della sua tradizione."
             },
             {
-                "ora": "17:46",
+                "ora": "17:47",
                 "titolo": "Maps - Musica, Arte, Poesia, Spettacolo Festival Dei Due Mondi 2026",
                 "descrizione": "MAPS, con la conduzione di Rachele Renna, accompagna il pubblico alla scoperta della 69esima edizione del Festival dei Due Mondi di Spoleto, nuovo direttore artistico Daniele Cipriani. Il tema radici attraversa le relazioni tra le arti, dall'opera alla prosa, dalla musica all' arte e alla danza. - Un programma di E. Avallone , E. Sorrentino, E. Beccalli, R. Renna, con C. Biffi, A. Montico e M. Serri. Coordinamento editoriale A. L. Guglielmi. Regia R. Valdata. 2026 ITA"
             },
             {
-                "ora": "18:47",
+                "ora": "18:48",
                 "titolo": "Poke Stories. Abbazia Di San Galgano (Pt.4)",
                 "descrizione": "Giorgio Pasotti racconta la storia dell'Abbazia di San Galgano (Chiusdino, Siena), uno dei siti più affascinanti del Medioevo italiano. Si parte dalla sua caratteristica più celebre: l'assenza del tetto, che trasforma la navata in una cattedrale a cielo aperto dove le pareti sembrano incorniciare l'infinito. Viene rievocata la storia di Galgano Guidotti, il cavaliere che, abbandonata la vita mondana e bellicosa, infisse la sua spada nel terreno (nella vicina Rotonda di Montesiepi) come segno di pace e conversione, trasformandola in una croce."
             },
@@ -662,7 +662,7 @@
                 "descrizione": "- Cronaca, politica, economia, cultura, spettacolo e sport dall'Italia e dal mondo. I fatti del giorno in tre minuti a cura di Rai News, il canale all news della Rai.. - ITA"
             },
             {
-                "ora": "18:55",
+                "ora": "18:56",
                 "titolo": "Di Là Dal Fiume E Tra Gli Alberi - Imperia, Città Dai Due Volti",
                 "descrizione": "Vincenzo Saccone ci svela le due anime di Imperia, citt� sospesa tra il mare e i monti, che ancora mantiene due diversi centri storici, due porti e due identit� ."
             },
@@ -672,12 +672,12 @@
                 "descrizione": "Viaggio in Valbrevenna, una valle genovese che percorre l'Appennino. Ricca di una natura selvaggia, di boschi e di pascoli, questa zona, in passato, come molti altri luoghi difficili, ha visto un forte esodo. Ora si sta assistendo a un timido ritorno della popolazione, che pian piano sta rivitalizzando le oltre 50 frazioni disseminate lungo tutta la valle. Di Massimo Campora"
             },
             {
-                "ora": "20:29",
+                "ora": "20:30",
                 "titolo": "Il Mondo Con Gli Occhi Di Overland - Mauritania: La Magia Del Deserto - 24",
                 "descrizione": "Overland torna a esplorare il Mondo e mostrarcelo con i suoi occhi: è la volta della Mauritania, che rivela bellezze nascoste, tradizioni antiche e paesaggi mozzafiato in un viaggio straordinario. Una terra ricca di storia e cultura, spesso sconosciuta o ricordata solo per eventi negativi. Il viaggio inizia a Nouakchott, capitale caotica e multiculturale, per poi proseguire verso le spettacolari dune di Amatlich, le più belle del Sahara che raccontano la storia delle antiche carovane attraverso il deserto."
             },
             {
-                "ora": "21:22",
+                "ora": "21:23",
                 "titolo": "Guida romantica a posti perduti",
                 "descrizione": "Un insolito road movie attraverso l'Europa alla ricerca di luoghi dimenticati durante il quale una coppia di sconosciuti, entrambi intrappolati in una quotidianit� bugiarda, viene a patti con il proprio passato. Benno e Allegra: lui ha superato i cinquanta, è inglese e beve come un dannato, lei, vent'anni di meno è una blogger di viaggi, con molta fantasia. Entrambi vivono mentendo e non hanno alcuna intenzione di cambiare. Vicini di casa senza essersi mai conosciuti, fino al giorno in cui lui sbaglia pianerottolo e tutto cambia. Il caso porta la strana coppia in una fuga verso posti perduti o dimenticati dove sostenendosi a vicenda i due si riscoprono l'una grazie all'altro."
             },
@@ -687,7 +687,7 @@
                 "descrizione": "Romolo e Remo, letteralmente travolti dall'esondazione del Tevere, si ritrovano senza più terre né popolo, catturati dalle genti di Alba. Insieme ad altri prigionieri sono costretti a partecipare a duelli nel fango, dove lo sconfitto viene dato alle fiamme. Quando è il turno di Remo, Romolo si offre come suo avversario e i due collaborando con astuzia riescono a scatenare una rivolta, ma è solo l'inizio del loro viaggio insieme agli altri fuggitivi e a una vestale che porta un fuoco sacro. Sapendo di avere forze nemiche sulle proprie tracce decidono di sfidare la superstizione e si avventurano nella foresta, dove Remo d� prove di valore e conquista la leadership del gruppo, mentre Romolo può fare poco altro che riprendersi da una ferita. Quando a Remo viene letto il destino dalla vestale, lui decide di sfidare il volere degli dèi."
             }
         ],
-        "aggiornato": "08:43"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Rete 4",
@@ -784,7 +784,7 @@
                 "descrizione": "Mario Grossi Tubi ha sperperato il proprio patrimonio e quello della moglie Gianna, ignara delle malefatte del marito. Le sue speranze sono ora riposte nel possibile matrimonio fra la figlia Anna Pia, una nerd con pessimo gusto per i fidanzati, e il cinquantenne Ottavio, che si spaccia per miliardario. Peccato che anche Ottavio sia al verde e sia accampato a sbafo nella villa di \"un certo Lapo\" ai Caraibi. I Caraibi sono anche la location di altre due storie: quella dell'attrazione fatale fra Fausto e Claudia, opposti per background e stile di vita ma supremamente compatibili in materia erotica, e quella della dipendenza di Adriano, conduttore di una tv catanese, da ogni tipo di gadget tecnologico come da ogni tipo di social."
             }
         ],
-        "aggiornato": "08:43"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Canale 5",
@@ -931,7 +931,7 @@
                 "descrizione": "Il programma piu' atteso dell'estate dedicato ai sentimenti con nuovi colpi di scena, momenti romantici, tradimenti inattesi e confronti al falo'. Conduce Filippo Bisciglia."
             }
         ],
-        "aggiornato": "08:43"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Italia 1",
@@ -1048,7 +1048,7 @@
                 "descrizione": "Nella Francia occupata dai nazisti, durante la Seconda Guerra Mondiale, Shosanna Dreyfus assiste all'esecuzione della sua famiglia su ordine del colonnello nazista Hans Landa, ma riesce a fuggire a Parigi dove assume una nuova identit� , come operatrice e titolare di un cinematografo. Nel frattempo, in un'altra localit� europea, il tenente Aldo Raine si mette alla guida di un gruppo di soldati ebrei conosciuti dai loro nemici come I Bastardi. Insieme ai suoi uomini, Raine collabora con con l'attrice tedesca Bridget Von Hammersmark, che in realt� è un agente segreto, in una missione speciale per rovesciare il Terzo Reich. Il loro destino si incrocer� con quello della Dreyfus, che tra l'altro sta pianificando una vendetta personale."
             }
         ],
-        "aggiornato": "08:43"
+        "aggiornato": "14:22"
     },
     {
         "canale": "La7",
@@ -1077,7 +1077,7 @@
             {
                 "ora": "11:00",
                 "titolo": "L'Aria Che Tira",
-                "descrizione": "Conduce David Parenzo. 15a edizione"
+                "descrizione": "Programma d'informazione e attualit�"
             },
             {
                 "ora": "13:30",
@@ -1115,7 +1115,7 @@
                 "descrizione": "La piccola Chiyo, a soli 9 anni è costretta a lasciare la famiglia e il povero villaggio di pescatori dove è nata. Venduta ad una scuola per geishe di Kyoto, viene istruita sui riti, le danze, la musica, la cerimonia del tè e l'abbigliamento adatto. Costretta a subire vessazioni e umiliazioni dalle colleghe e soprattutto dalla geisha più importante, Hatsumomo, gelosa della sua bellezza, dopo un tentativo di fuga viene retrocessa a serva. A salvarla ci penser� Mameha, geisha esperta e generosa, rivale di Hatsumomo, che la prende sotto la sua protezione."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:22"
     },
     {
         "canale": "TV8",
@@ -1227,7 +1227,7 @@
                 "descrizione": "Dopo essersi guadagnato due zeri e la licenza di uccidere James Bond, alle origini della sua carriera, è sulle tracce di Le Chiffre, uno spregiudicato banchiere che finanzia organizzazioni terroristiche. L'intervento di Bond manda all'aria i suoi piani, sventando un attentato ai danni di una compagnia aerea. Le Chiffre si ritrova così in debito e in imbarazzo con un misterioso signore della guerra africano, per saldare il conto organizza un'esclusiva partita a poker al Casino Royale nel Montenegro. Finanziato dal governo e controllato dall'affascinante contabile Vesper Lynd, Bond è tra i dieci ricchi partecipanti che gareggiano per il piatto milionario. Sopravvissuto a una lunga notte di bluff, strategie, inseguimenti, avvelenamenti e torture, sar� l'amore a piegare l'agente britannico e a condizionarne il destino sentimentale."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Nove",
@@ -1326,10 +1326,10 @@
             {
                 "ora": "21:30",
                 "titolo": "Segnali dal futuro",
-                "descrizione": "Il figlio di un astrofisico trova una lettera scritta 50 anni prima: ci sono i numeri delle vittime di disastri presenti e futuri..."
+                "descrizione": "Un professore rinviene nel cortile della scuola elementare del figlio una capsula temporale sepolta nel 1963, contenenti sconvolgenti predizioni su alcuni disastri naturali, tra cui l'imminente fine del mondo. L'uomo si convince che la sua famiglia giochi un ruolo determinante nei catastrofici eventi che si susseguono."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:22"
     },
     {
         "canale": "20 Mediaset",
@@ -1451,7 +1451,7 @@
                 "descrizione": "The Equalizer, serie tv di Andrew W. Marlowe (l'ideatore di Castle) e Terri Edda Miller per la rete americana CBS, è il remake al femminile dell'omonimo crime drama degli anni '80, in Italia meglio conosciuto con il titolo Un giustiziere a New York. Queen Latifah (Chicago) interpreta Robyn McCall, una donna enigmatica e con un passato misterioso la quale usa le proprie ampie capacit� per aiutare chi non ha nessun altro cui rivolgersi. Robyn si presenta alla maggior parte delle persone come una qualunque madre single che sta crescendo tranquillamente la figlia adolescente, Delilah (Laya DeLeon Hayes). Ma per pochi fidati, lei è Il Giustiziere - un angelo custode e difensore degli oppressi che è anche ostinato nella sua ricerca di una redenzione."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Twentyseven",
@@ -1553,7 +1553,7 @@
                 "descrizione": "Durante uno dei loro giri di raccolta di roba scartata da altri, Sonny e l'amichetto Sam incrociano la strada di Slappy, un malvagio pupazzo parlante. Desideroso di avere una famiglia tutta sua, Slappy metter� in atto un diabolico piano sfruttando le possibilit� offerte dalla festa di Halloween."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:22"
     },
     {
         "canale": "IRIS",
@@ -1610,7 +1610,7 @@
                 "descrizione": "Un enorme bisonte bianco vaga per le Montagne Nere, seminando il terrore fra cacciatori e indiani. Il Sioux Cavallo Pazzo lo insegue per vendicare la morte della sua bambina. Wild Bill Hickox è a sua volta sulle tracce del quadrupede, in compagnia dell'amico Charlie Zane. Le strade del guerriero indiano e del pistolero bianco si incrociano alcune volte, prima che i due affrontino insieme il bisonte."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Rai Movie",
@@ -1662,12 +1662,12 @@
                 "descrizione": "La vita e le conquiste di Alessandro Magno. Dalla giovinezza e i conflitti con il padre Filippo II, fino alle epiche battaglie contro l'Impero Persiano e le campagne in Asia, seguendo il suo inarrestabile e ambizioso sogno di unire il mondo intero sotto un unico e vasto impero."
             },
             {
-                "ora": "23:35",
+                "ora": "23:29",
                 "titolo": "L'immortale",
                 "descrizione": "Charly Matteï ha deciso di dare una svolta alla sua vita da fuorilegge. Negli ultimi tre anni ha condotto una vita pacifica, dedicandosi a sua moglie e ai due bambini. Poi, un inverno, viene dato per morto in un parcheggio al Vecchio Porto di Marsiglia, con 22 pallottole in corpo. Tuttavia, a dispetto di ogni probabilit� , Charly è ancora vivo..."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Rai Premium",
@@ -1764,7 +1764,7 @@
                 "descrizione": "Torino, 1967. Cesare Corvara è il primario del reparto di Cardiochirurgia dell'ospedale \"Le Molinette\" col sogno di essere alla guida dell'equipe che realizzer� il primo trapianto di cuore della storia.\n\nFiction RAI ispirata al pioniere della cardiochirurgia Achille Dogliotti e incentrata sul tentativo di effettuare il primo trapianto di cuore."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:22"
     },
     {
         "canale": "La 5",
@@ -1851,7 +1851,7 @@
                 "descrizione": "Una zingara dice a una donna che si innamorer� di un uomo di nome John. Quindi i suoi amici sconvolgono la sua vita per aiutarla a uscire con tutti i John che conoscono collettivamente per trovare \"quello giusto\"."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Real Time",
@@ -1948,7 +1948,7 @@
                 "descrizione": "Le tre coppie si conoscono, il confronto le mettera' tutte alla prova!"
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Food Network",
@@ -2090,7 +2090,7 @@
                 "descrizione": "Luca raggiunge le montagne dell'Appennino bolognese per una scarpetta ad alta quota all'insegna dei migliori prodotti tipici della zona."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Focus",
@@ -2207,7 +2207,7 @@
                 "descrizione": "Un viaggio tra scienza e storia svela il Partenone: tecniche antiche, ingegno greco e l'ascesa di Atene, tra Salamina e il simbolo del suo potere."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Giallo",
@@ -2289,7 +2289,7 @@
                 "descrizione": "L'Ispettore capo Vera Stanhope (Brenda Blethyn) è una detective alla soglia della pensione della fittizia Northumberland & City Police, che indaga sui delitti che avvengono nella sua giurisdizione. Lei è appassionata del suo lavoro e, nonostante un aspetto costantemente trasandato e una personalit� irascibile, ha una mente calcolatrice e si impegna profondamente nel suo lavoro. Suoi compagni di lavoro sono i sergenti Joe Ashworth (David Leon) e Aiden Healy (Kenny Doughty)."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Boing",
@@ -2446,7 +2446,7 @@
                 "descrizione": "Craig rischia tutto alla Casa da Giochi."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:22"
     },
     {
         "canale": "K2",
@@ -2603,7 +2603,7 @@
                 "descrizione": "1' Stagione Ep.12 - Le avventure di tre scoiattoli dalla voce incredibile, 'adottati' da Dave Seville, che diventano un fenomeno musicale."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Rai Gulp",
@@ -2760,7 +2760,7 @@
                 "descrizione": "Ian, Myrva e Gmor hanno raggiunto l'Uovo di Drago custodito nelle profondit� del ghiacciaio. I Troll, però, non si arrendono ed evocano un colosso di ghiaccio. I Paladini sono costretti a fuggire mentre il Colosso distrugge le caverne. Elara, intanto, si risveglia nella torre oscura di Vondhur. Ma come ci è finita?"
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "Frisbee",
@@ -2917,7 +2917,7 @@
                 "descrizione": "1' Stagione Ep.7 - Le avventure di tre scoiattoli dalla voce incredibile, 'adottati' da Dave Seville, che diventano un fenomeno musicale."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "DMAX",
@@ -3009,7 +3009,7 @@
                 "descrizione": "Un terribile uragano, il peggiore dell'ultimo secolo, colpisce la Florida."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "Rai Sport",
@@ -3041,7 +3041,7 @@
                 "descrizione": "Mondiali - Semifinali e Finali individuali: Spada femminile"
             },
             {
-                "ora": "15:25",
+                "ora": "15:30",
                 "titolo": "Atletica Leggera - Campionati Italiani Assoluti 2026: 2a Giornata",
                 "descrizione": "Atletica leggera - Campionati Italiani Assoluti: 2a giornata"
             },
@@ -3061,7 +3061,7 @@
                 "descrizione": "Mondiali - Semifinali e Finali individuali: Spada femminile"
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "Sportitalia",
@@ -3173,7 +3173,7 @@
                 "descrizione": "Il programma tratta le vicende del calciomercato sia nella sessione estiva che in quella invernale e va in onda alle ore 23.00 dal lunedì al venerdì"
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "HGTV",
@@ -3320,7 +3320,7 @@
                 "descrizione": "Lo scultore Nick si occupa di una vecchia statua dorata di un'aquila in legno. Ted sistema una luce nautica rotta e Ruth ripara la parte rovinata di un caminetto."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "RSI LA 1",
@@ -3477,7 +3477,7 @@
                 "descrizione": "Home edition\npresenta Nicola Saldanha"
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "RSI LA 2",
@@ -3584,7 +3584,7 @@
                 "descrizione": "Questa nuova e cruda saga targata \"Narcos\" racconta la genesi della narcoguerra messicana negli anni '80 con la storia vera dell'ascesa del cartello di Guadalajara."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "DAZN 1",
@@ -3696,7 +3696,7 @@
                 "descrizione": "A 12 minuti dalla fine la Roma era sopra 3-1 ma la Juventus si e' tenuta in vita tenendo tutto completamente aperto per la corsa al quarto posto. Rivivi la partita con il 'Bordocam' di Davide Bernardi."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "Sky Sport 24",
@@ -3853,7 +3853,7 @@
                 "descrizione": "Tutti gli aggiornamenti dalle squadre di Serie A con collegamenti live, interviste e ospiti in studio."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "Sky Sport Uno",
@@ -4017,7 +4017,7 @@
                 "descrizione": "Sfida inedita al BBBank Wildpark di Karlsruhe. L'Inter affronta per la prima volta in assoluto la formazione tedesca della Zweite Bundesliga. TC: Matteo Marceddu"
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "Sky Sport Tennis",
@@ -4029,7 +4029,7 @@
                 "descrizione": "Tutti i tornei di tennis internazionali del circuito maschile ATP e di quello femminile WTA, con l'attenzione puntata sui tennisti italiani."
             },
             {
-                "ora": "08:00",
+                "ora": "07:30",
                 "titolo": "Tennis: ATP & WTA",
                 "descrizione": "Tutti i tornei di tennis internazionali del circuito maschile ATP e di quello femminile WTA, con l'attenzione puntata sui tennisti italiani."
             },
@@ -4049,7 +4049,7 @@
                 "descrizione": "Tutti i tornei di tennis internazionali del circuito maschile ATP e di quello femminile WTA, con l'attenzione puntata sui tennisti italiani."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "Sky Sport F1",
@@ -4166,7 +4166,7 @@
                 "descrizione": "L'attesa e' finita: scopriamo la nuova F1 con le monoposto rivoluzionarie del 2026 impegnate nella prima gara dell'anno. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "Sky Sport Legend",
@@ -4273,7 +4273,7 @@
                 "descrizione": "Europa League. - Nerazzurri in cerca del primo storico trofeo europeo. Hanno vinto i 2 precedenti. Terza finale europea dei tedeschi, una vinta (coppa UEFA) e una persa (UCL). TC: Marinozzi-Bergomi."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "Sky Sport MotoGP",
@@ -4301,7 +4301,7 @@
             },
             {
                 "ora": "08:25",
-                "titolo": "Speciale Acosta",
+                "titolo": "Il Nuovo Pedro Acosta",
                 "descrizione": "Pedro Acosta, intervistato da Sandro Donato Grosso, ci racconta la sua stagione e le sue aspettative per la prossima stagione quando diventera' un pilota ufficiale della Ducati."
             },
             {
@@ -4351,7 +4351,7 @@
             },
             {
                 "ora": "14:25",
-                "titolo": "Speciale Acosta",
+                "titolo": "Il Nuovo Pedro Acosta",
                 "descrizione": "Pedro Acosta, intervistato da Sandro Donato Grosso, ci racconta la sua stagione e le sue aspettative per la prossima stagione quando diventera' un pilota ufficiale della Ducati."
             },
             {
@@ -4425,7 +4425,7 @@
                 "descrizione": "Quarto appuntamento con il Campionato Italiano Velocita' del 2026 - Classe Superbike, in pista a Misano per la Racing Night con gara 1. Telecronaca di Andrea Minerva"
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "Sky Sport Basket",
@@ -4517,7 +4517,7 @@
                 "descrizione": "Dalla Rocket Arena di Cleveland, Stati Uniti."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "Sky Sport Arena",
@@ -4565,8 +4565,8 @@
             },
             {
                 "ora": "14:00",
-                "titolo": "Filo D'acqua: La Leggenda Della Pro...",
-                "descrizione": "Filo D'acqua: La Leggenda Della Pro Recco"
+                "titolo": "Filo D'acqua: La Leggenda Della Pro Recco",
+                "descrizione": "Recco. - Filo D'acqua: La Leggenda Della Pro Recco"
             },
             {
                 "ora": "15:00",
@@ -4629,7 +4629,7 @@
                 "descrizione": "Le gare del SailGP."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "Sky Sport Max",
@@ -4697,8 +4697,8 @@
             },
             {
                 "ora": "18:30",
-                "titolo": "Filo D'acqua: La Leggenda Della Pro...",
-                "descrizione": "Filo D'acqua: La Leggenda Della Pro Recco"
+                "titolo": "Filo D'acqua: La Leggenda Della Pro Recco",
+                "descrizione": "Recco. - Filo D'acqua: La Leggenda Della Pro Recco"
             },
             {
                 "ora": "19:25",
@@ -4736,7 +4736,7 @@
                 "descrizione": "I protagonisti, le sfide e gli eventi nazionali e internazionali in collegamento con i circoli di tutta Italia. Gli eventi del padel dilettantistico e le analisi dei materiali tecnici all'avanguardia."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "Sky Sport Mix",
@@ -4794,8 +4794,8 @@
             },
             {
                 "ora": "17:30",
-                "titolo": "Filo D'acqua: La Leggenda Della Pro...",
-                "descrizione": "Filo D'acqua: La Leggenda Della Pro Recco"
+                "titolo": "Filo D'acqua: La Leggenda Della Pro Recco",
+                "descrizione": "Recco. - Filo D'acqua: La Leggenda Della Pro Recco"
             },
             {
                 "ora": "18:30",
@@ -4828,7 +4828,7 @@
                 "descrizione": "Championship. - Dalla RDS Arena di Dublino, Irlanda."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "Sky Sport Golf",
@@ -4895,7 +4895,7 @@
                 "descrizione": "World Tour. - Dal Renaissance Club, a North Berwick, Scozia."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "Sky Sport 251",
@@ -5075,7 +5075,7 @@
                 "descrizione": "Tre case, tre ragazzi, lo stesso obiettivo: vincere il concorso per un posto da impiegato nell'ufficio legale del Comune. Federico, laureato in giurisprudenza, ma solo per compiacere il padre consigliere, spera in una sua raccomandazione; Fabrizio, avvocato sulla carta ma non praticante nella vita, tenta di superare l'ennesima prova stata- le e Luca che da quando è nato ha avuto sempre la strada spianata. Solo per uno di loro si realizzerà il sogno di una vita, fin quando le cose non prenderanno una piega inaspettata."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "Sky Cinema Uno +24",
@@ -5137,7 +5137,7 @@
                 "descrizione": "Dopo l'improvvisa morte di suo marito, Libby è costretta a trasferirsi con sua madre ipercritica. All'improvviso, sua zia Jean, estraniata, offre una via di fuga: un lavoro e un posto dove vivere nella sua fattoria nel Texas Hill Country. Prima di poterne parlare, Libby sta facendo le valigie per il minivan, afferrando i bambini e percorrendo la strada. La vita nella fattoria delle capre di zia Jean è più meravigliosa e misteriosa di quanto Libby potesse immaginare. Oltre agli animali e al lavoro faticoso, c'è la quiete - la quiete della campagna. Ma c'è anche un gestore di fattoria ispida e burbero con una tragica vita familiare, un impiegato di un negozio di mangimi che afferma di poter contattare suo marito \"dall'altra parte\" e l'eccentrica zia che non ha mai veramente conosciuto ma che si rivela esattamente di chi ha bisogno."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "Sky Cinema Due",
@@ -5194,7 +5194,7 @@
                 "descrizione": "Tre impiegati di una multinazionale tentano di sopravvivere e conservare il proprio lavoro nonostante la fusione con un'azienda più grande, ma la situazione non manca di influenzare profondamente la loro condizione economica e familiare sconvolgendo le loro esistenze."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "Sky Cinema Due +24",
@@ -5221,7 +5221,7 @@
                 "descrizione": "Roma, 1976. Valerio (Mattia Garaci) ha dieci anni e una fervida immaginazione. La sua vita di bambino viene sconvolta quando, insieme alla madre (Barbara Ronchi), assiste all’attentato ai danni di suo padre Alfonso (Pierfrancesco Favino) da parte di un commando di terroristi. Da quel momento, la paura e il senso di vulnerabilit� segnano drammaticamente i sentimenti di tutta la famiglia. Ma è proprio in quei giorni difficili che Valerio conosce Christian (Francesco Gheghi), un ragazzino poco più grande di lui. Solitario, ribelle e sfrontato, sembra arrivato dal nulla. Quell’incontro, in un’estate carica di scoperte, cambier� per sempre le loro vite."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "Sky Cinema Collection",
@@ -5273,7 +5273,7 @@
                 "descrizione": "Cry Macho, adattamento cinematografico dell’omonimo romanzo di N. Richard Nash, racconta la storia di Mike Milo, un’ex stella del rodeo con un passato difficile che, per ripagare un debito nei confronti del suo benefattore, decide di andare in Messico per riportargli a casa il figlio. Durante questo viaggio, che doveva essere di breve durata, ma che si riveler� non privo di insidie e fuoriprogramma."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "Sky Cinema Family",
@@ -5340,7 +5340,7 @@
                 "descrizione": "King, un cucciolo di leone destinato alla tratta, scappa dall'aeroporto e si rifugia in casa di Inès, 12 anni, e Alex, 15. Fratello e sorella, i due hanno la folle idea di volerlo riportare a casa, in Africa, ma superare i controlli della dogana non è cosa da poco. Quando però Max, il nonno che hanno visto solo due volte nella loro vita, si unisce alla loro avventura, tutto diventer� possibile..."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "Sky Cinema Action",
@@ -5397,7 +5397,7 @@
                 "descrizione": "Mickey Pearson, un espatriato statunitense, ha costruito il suo impero criminale, basato sulla marijuana e altamente redditizio, a Londra, nella capitale inglese. Quando viene fuori la notizia che sta cercando di tirarsi fuori per sempre dall'attivit� , si innescano complotti, piani machiavellici, atti di corruzione e ricatti, nel tentativo di prendere il suo posto."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "Sky Cinema Suspense",
@@ -5459,7 +5459,7 @@
                 "descrizione": "Una coppia, Rebekah e Chris, e i loro figli, Tyler e Chloe, si trasferiscono in una casa di periferia apparentemente normale. Quando accadono strani eventi, iniziano a credere che ci sia qualcos'altro in casa con loro. La presenza sta per sconvolgere le loro vite in modi inimmaginabili."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "Sky Cinema Romance",
@@ -5521,7 +5521,7 @@
                 "descrizione": "Anastasia Steele ha detto basta a Christian Grey. Lo ama, ma non sar� mai la sua sottomessa. Il secondo capitolo riprende esattamente l� dove ci aveva lasciato il primo, con i due innamorati che si separano, per volere di lei. Grey è talmente addolorato che non vuole rinunciare ad Anastasia, piuttosto è disposto a rivedere il contratto, a dimenticare le regole, a non imporle nulla che lei non voglia fare, pur di averla al suo fianco. Cade così, a due minuti dall'inizio dal film, il presupposto scandaloso che regge da anni i discorsi attorno ai romanzi e al loro adattamento."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "Sky Cinema Drama",
@@ -5588,7 +5588,7 @@
                 "descrizione": "A Roma non piove da tre anni e la mancanza d’acqua stravolge regole e abitudini. Nella citt� che muore di sete e di divieti si muove un coro di personaggi, giovani e vecchi, emarginati e di successo, vittime e approfittatori. Le loro esistenze sono legate in un unico disegno beffardo e tragico, mentre cercano ognuno la propria redenzione."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "Sky Cinema Comedy",
@@ -5650,7 +5650,7 @@
                 "descrizione": "In un piccolo paesino di montagna vive un uomo dal nome impegnativo: Giuseppe Garibaldi, per tutti Peppino. Ama la pesca, la compagnia degli amici, la biblioteca in cui lavora da precario. E' un ottimista anche se il figlio lo accusa d'essere un fallito. Un giorno, a causa di un pasticcio dei politici, accade una cosa incredibile: Peppino viene eletto per errore Presidente della Repubblica Italiana. Strappato alla sua vita tranquilla, si trova a ricoprire un ruolo per il quale sa di essere evidentemente inadeguato, ma il suo buonsenso e i suoi gesti istintivi risultano incredibilmente efficaci. Certo il protocollo non è il suo forte. Janis Clementi, inflessibile quanto affascinante vice segretario generale della Presidenza della Repubblica, si affanna inutilmente nel tentativo di disciplinare le imprevedibili iniziative del Presidente..."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "Sky Uno",
@@ -5757,7 +5757,7 @@
                 "descrizione": "Jeffrey rende il gioco più difficile. Qualcuno è costretto a ingannare i propri alleati più stretti. Quando finalmente si raggiunge la Destinazione X, il gruppo subisce lo shock più grande della stagione."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "Sky Atlantic",
@@ -5869,7 +5869,7 @@
                 "descrizione": "Maggie e Negan si recano nella Manhattan post-apocalittica, da tempo isolata dalla terraferma. La citt� fatiscente è piena di morti e abitanti che l'hanno resa un mondo pieno di anarchia, pericolo, bellezza e terrore."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "Sky Serie",
@@ -6011,7 +6011,7 @@
                 "descrizione": "Joy e Stan, due ex allenatori di tennis, possono finalmente godersi la vita dopo la vendita della loro accademia. Ma quando Joy scompare, i quattro figli della coppia si ritrovano ad analizzare il matrimonio dei genitori da una prospettiva diversa."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "Sky Investigation",
@@ -6138,7 +6138,7 @@
                 "descrizione": "Law & Order è un media franchise creato da Dick Wolf per la NBC Universal e formato da varie serie televisive poliziesco-giudiziarie e un film per la televisione, trasmessi sul network NBC dal 13 settembre 1990. Il franchise Law & Order nel tempo ha ispirato anche una serie di adattamenti televisivi stranieri, un docu-reality e videogiochi ufficiali, oltre a generare una serie di crossover con altre serie tv statunitensi."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "Sky Crime",
@@ -6275,7 +6275,7 @@
                 "descrizione": "Stefano Nazzi racconta alcuni dei casi più sconvolgenti della cronaca italiana recente, analizzando le dinamiche di gruppo e riflettendo su responsabilit� collettiva e pressione sociale."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "Sky Adventure",
@@ -6358,7 +6358,7 @@
             },
             {
                 "ora": "15:25",
-                "titolo": "Predatori Dell'artico",
+                "titolo": "Pesca Selvaggia",
                 "descrizione": "Cyril Chauquet e la sua squadra di cineasti senza paura intraprendono la loro impresa più pericolosa, alla ricerca di alcune delle creature più temibili."
             },
             {
@@ -6417,7 +6417,7 @@
                 "descrizione": "La casa automobilistica britannica Lotus punta a dare il via alla sua rinascita e a sfidare le case automobilistiche rivali, presentando la prima supercar completamente elettrica da 2.000 cavalli del Regno Unito."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "MTV",
@@ -6544,7 +6544,7 @@
                 "descrizione": "Ep31 di 42 - In questa puntata Rob e Steelo sono affiancati da Lolo Wood."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "Comedy Central",
@@ -6701,7 +6701,7 @@
                 "descrizione": "Il ragazzo più amichevole del Midwest trasferisce la sua famiglia in un quartiere di Los Angeles dove non tutti gli assomigliano."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "Sky Arte",
@@ -6823,7 +6823,7 @@
                 "descrizione": "Ep3 di 6 Il Monferrato dei marchesi Paleologi - Scopriamo la storia del Marchesato del Monferrato nel suo ultimo tratto di splendore, nei decenni conclusivi della dinastia dei marchesi Paleologi."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "Sky Documentaries",
@@ -6950,7 +6950,7 @@
                 "descrizione": "Il ritratto di Federico Umberto D'Amato, burocrate che ha plasmato la storia della Prima Repubblica, manovrando segreti, dossier e silenzi. Dietro il burocrate ombroso si nasconde un volto inaspettato: quello di un gastronomo raffinato."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "Sky Nature",
@@ -7067,7 +7067,7 @@
                 "descrizione": "Le creature spia rivelano alcune delle straordinarie relazioni che esistono tra gli animali dell'oceano. Scopriamo così le granseole che emergono a migliaia dagli abissi per liberarsi dei propri gusci, rendendosi così però un bersaglio facile."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "Discovery Channel",
@@ -7184,7 +7184,7 @@
                 "descrizione": "Proseguono le avventure dei cacciatori d'oro."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "History Channel",
@@ -7306,7 +7306,7 @@
                 "descrizione": "Il giornalista Gianni Mura e lo storico Mimmo Franzinelli raccontano la storia d'Italia 'in punta di pedali', dal primo Giro d'Italia fino ai giorni nostri."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "Cartoon Network",
@@ -7463,7 +7463,7 @@
                 "descrizione": "S8 Ep13 - Arthur - Robin minaccia di licenziare il Dottor Light se non inizia a escogitare dei piani piu' fantasiosi."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "Dea Kids",
@@ -7620,7 +7620,7 @@
                 "descrizione": "Gli incubi di Cody rovinano il pisolino ai bambini dell'asilo. Per porvi rimedio, Duncan e Gwen entrano nel sogno di Cody per scoprire quale sia la causa del suo sonno disturbato. Scoprono così che ciò che spaventa Cody è Duncan."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "Nick Jr",
@@ -7777,7 +7777,7 @@
                 "descrizione": "Ep4 di 13 La squadra costruisce uno schermo gigante\/ La squadra costruisce un regalo per la festa della zia - Speed Meister rovina il drive-in.\/ I cuccioli fanno un regalo a zia Crane."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "Boomerang",
@@ -7934,7 +7934,7 @@
                 "descrizione": "Ep2 Il labirinto - Grizzy e i Lemming perdono un barattolo di crema al cioccolato in un tempio labirintico. Decisi a recuperarlo, entrano nel labirinto, ma finiscono per perdersi completamente."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "Sky TG 24",
@@ -8091,7 +8091,7 @@
                 "descrizione": "Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo."
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "Rai News 24",
@@ -8248,7 +8248,7 @@
                 "descrizione": "NEWS + SOMMARIO"
             }
         ],
-        "aggiornato": "08:44"
+        "aggiornato": "14:23"
     },
     {
         "canale": "Sky Meteo 24",
