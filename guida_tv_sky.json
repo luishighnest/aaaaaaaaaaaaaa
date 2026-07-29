@@ -81,7 +81,7 @@
             {
                 "ora": "11:20",
                 "titolo": "Italia A\/R",
-                "descrizione": "Vittorio Brumotti ci accompagna in un viaggio attraverso l'Italia a bordo di un camper ed in sella alla sua bicicletta in compagnia di Patricio il suo amico più fedele per far conoscere al pubblico le storie e i luoghi più auentici del nostro paese."
+                "descrizione": "Vittorio Brumotti alla scoperta dell'Italia costiera in sella alla sua bicicletta e con l'amico a quattro zampe Patricio: pedalate fra i borghi, esperienze sportive, incontri con chi quei luoghi li abita e li protegge ogni giorno. A completare il racconto uno spazio dedicato alla cucina e ai prodotti del territorio, con la partecipazione speciale di Monica Caradonna."
             },
             {
                 "ora": "11:50",
@@ -149,17 +149,12 @@
                 "descrizione": "Brillante avvocato d'affari, Laura sta per diventare socia. Deve tornare nella piccola isola tropicale dove è cresciuta e convincere il suo amico Chip, a sostituire il nonno miliardario alla guida dell'azienda da lui creata"
             }
         ],
-        "aggiornato": "08:48"
+        "aggiornato": "14:21"
     },
     {
         "canale": "Rai 2",
         "categoria": "Digitale Terrestre",
         "programmi": [
-            {
-                "ora": "06:00",
-                "titolo": "Ritorno a Las Sabinas",
-                "descrizione": "Dopo molti anni di lontananza, le sorelle Molina tornano nella loro citt� natale per affrontare i problemi di salute del padre. Il loro ritorno significa una riunione con le vite, gli amori e i segreti che hanno cercato di dimenticare."
-            },
             {
                 "ora": "06:10",
                 "titolo": "La Grande Vallata",
@@ -192,8 +187,8 @@
             },
             {
                 "ora": "10:00",
-                "titolo": "TG2 Dossier",
-                "descrizione": "Approfondimento del Tg2."
+                "titolo": "TG2 Dossier - Non Cercatemi A Casa",
+                "descrizione": "Il racconto delle storie di chi ha deciso di essere padrone del proprio tempo ed ha avuto il coraggio di cambiare vita. L'inviato Miska Ruggeri ha incontrato in Italia e all'estero alcune di queste persone: da coloro che si mantengono con il lavoro di prima pur senza avere fissa dimora e praticandolo da remoto in posti meravigliosi, ad altri che l'hanno trovato nei luoghi dove hanno deciso di fermarsi a vivere per un po'."
             },
             {
                 "ora": "10:55",
@@ -272,8 +267,8 @@
             },
             {
                 "ora": "18:20",
-                "titolo": "TG Sport Sera",
-                "descrizione": "TG Sport Sera"
+                "titolo": "Speciale TG Sport - Presentazione Mancini E Ranieri",
+                "descrizione": "Edizione speciale del Tg Sport"
             },
             {
                 "ora": "19:40",
@@ -304,9 +299,14 @@
                 "ora": "22:56",
                 "titolo": "Boston Blue",
                 "descrizione": "Il detective del NYPD Danny Reagan accetta un incarico presso il Dipartimento di Polizia di Boston e viene affiancato alla detective Lena Silver; quest'ultima appartiene a una famiglia legata alle forze dell'ordine e alla giustizia, composta dal Procuratore Distrettuale Mae Silver, dal Sovrintendente di Polizia Sarah Silver, dall'agente alle prime armi Jonah Silver e dal Reverendo Edwin Peters. Reagan spera di ricostruire il rapporto con suo figlio Sean proprio a Boston."
+            },
+            {
+                "ora": "23:40",
+                "titolo": "American Night",
+                "descrizione": "Michael Rubino (Emile Hirsch) è appena diventato capo di tutti i capi della mafia di New York ma il suo più grande desiderio è quello di poter dedicare la sua vita alla pittura e diventare un grande artista. John Kaplan (Jonathan Rhys Meyers) è un mercante d'arte disordinato e ombroso ma è anche il migliore al mondo per l’individuazione dei falsi. Le strade dei due, apparentemente così distanti, si incontreranno davanti a un bivio di cruciale importanza, quando il furto della Marylin di Warhol dar� il via ad una serie di accadimenti imprevisti che sconvolgeranno le loro vite."
             }
         ],
-        "aggiornato": "08:48"
+        "aggiornato": "14:21"
     },
     {
         "canale": "Rai 3",
@@ -319,8 +319,8 @@
             },
             {
                 "ora": "08:00",
-                "titolo": "Agorà Estate",
-                "descrizione": "L'approfondimento estivo del mattino di Rai3 condotto da Giulia Di Stefano con Marco Carrara, attraverso ospiti, inviati, inchieste e contributi video dai social."
+                "titolo": "Armi E Bagagli - Agorà Estate",
+                "descrizione": "$23"
             },
             {
                 "ora": "10:35",
@@ -458,7 +458,7 @@
                 "descrizione": "Il Teatro La Fenice torna in Piazza San Marco a Venezia con un omaggio a Ennio Morricone per una serata emozionante all'insegna della musica. Sul podio il M Kevin Rhodes. In programma la Cantata per l'Europa e alcune pagine scelte dalle colonne sonore che hanno reso Morricone uno dei compositori più amati del Novecento."
             }
         ],
-        "aggiornato": "08:48"
+        "aggiornato": "14:21"
     },
     {
         "canale": "Rai 4",
@@ -575,7 +575,7 @@
                 "descrizione": "Due coppie di fidanzati si stanno godendo la fine delle loro vacanze in Messico, quando un turista tedesco li invita ad una gita avventurosa attraverso la foresta alla ricerca del fratello. Dopo una lunga e difficoltosa attraversata, a cui si unir� anche un ragazzo greco, i sei si ritroveranno al cospetto di antiche rovine Maya. Le affascinanti rovine si trasformeranno ben presto un incubo per i sei turisti, che dovranno cercare di sopravvivere a malefiche entit� che assediano il luogo."
             }
         ],
-        "aggiornato": "08:48"
+        "aggiornato": "14:21"
     },
     {
         "canale": "Rai 5",
@@ -687,7 +687,7 @@
                 "descrizione": "In questo viaggio nella citt� più singolare della Toscana, Gemma Giorgini e Vittorio Rizzo raccontano una Lucca inedita, sospesa in una dimensione a cavallo tra il dentro e il fuori delle imponenti mura che la circondano. Un sottile equilibrio tra l'attaccamento alla tradizione e il desiderio di aprirsi al mondo. - con Un programma di Marco Melega Vittorio Rizzo e di Monica Ghezzi Gemma Giorgini Lucrezia Lo Bianco Vincenzo Saccone Giuseppe Sansonna Claudia Seghetti a cura di Gemma Giorgini Un programma di Marco Melega Vittorio Rizzo e di Monica Ghezzi Gemma Giorgini L 2026 ITA"
             }
         ],
-        "aggiornato": "08:48"
+        "aggiornato": "14:21"
     },
     {
         "canale": "Rete 4",
@@ -779,7 +779,7 @@
                 "descrizione": "Durante la tradizionale festa di natale, un gruppo di terroristi prende in ostaggio i dipendenti di una multinazionale giapponese all'interno di un modernissimo grattacielo. John McClane, poliziotto, però sfugge ai terroristi e grazie all'aiuto dei nascondigli naturali del grattacielo conduce una battaglia solitaria per portare in salvo gli ostaggi, tra i quali si trova anche la moglie."
             }
         ],
-        "aggiornato": "08:48"
+        "aggiornato": "14:21"
     },
     {
         "canale": "Canale 5",
@@ -926,7 +926,7 @@
                 "descrizione": "Il programma piu' atteso dell'estate dedicato ai sentimenti con nuovi colpi di scena, momenti romantici, tradimenti inattesi e confronti al falo'. Conduce Filippo Bisciglia."
             }
         ],
-        "aggiornato": "08:48"
+        "aggiornato": "14:21"
     },
     {
         "canale": "Italia 1",
@@ -1058,7 +1058,7 @@
                 "descrizione": "Le indagini dell'Unit� Vittime Speciali, una nuova squadra speciale della Polizia di New York che si occupa di crimini a sfondo sessuale. In ogni episodio si segue da una parte l'attivit� investigativa attuata dalla squadra e dall'altra l'aspetto giudiziario con l'iniziativa processuale condotta dalla procura distrettuale."
             }
         ],
-        "aggiornato": "08:48"
+        "aggiornato": "14:21"
     },
     {
         "canale": "La7",
@@ -1130,7 +1130,7 @@
                 "descrizione": "Una reporter, dopo aver realizzato uno scoop su uno scandalo governativo svelando il nome di un agente della CIA sotto copertura, rifiuta di rivelare la fonte dell'informazione per difendere la propria deontologia professionale, venendo per questo arrestata."
             }
         ],
-        "aggiornato": "08:48"
+        "aggiornato": "14:21"
     },
     {
         "canale": "TV8",
@@ -1247,7 +1247,7 @@
                 "descrizione": "I palinsesti sono in via di definizione da parte emittente"
             }
         ],
-        "aggiornato": "08:48"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Nove",
@@ -1354,7 +1354,7 @@
                 "descrizione": "Francesco va alla ricerca della ricetta per il weekend perfetto."
             }
         ],
-        "aggiornato": "08:48"
+        "aggiornato": "14:22"
     },
     {
         "canale": "20 Mediaset",
@@ -1471,7 +1471,7 @@
                 "descrizione": "I cattivi di Outworld, dopo aver perso nel primo \"Mortal\" il duello coi terrestri, tornano alla carica per l'nvasione del mondo."
             }
         ],
-        "aggiornato": "08:48"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Twentyseven",
@@ -1573,7 +1573,7 @@
                 "descrizione": "Il fumettista Tim Avery di recente è diventato pap� del piccolo Alvey, non senza qualche apprensione; ma la sua vita viene nuovamente sconvolta dalla scoperta che il bambino possiede gli straordinari poteri della Maschera..."
             }
         ],
-        "aggiornato": "08:48"
+        "aggiornato": "14:22"
     },
     {
         "canale": "IRIS",
@@ -1635,7 +1635,7 @@
                 "descrizione": "Ispirato alla serie che ottenne un grande successo in tutto il mondo tra il 1984 e il 1994, il ritorno di Miami Vice firmato da Michael Mann si permette oggi ciò che la televisione di allora non poteva proporre al proprio pubblico. Quindi nella vicenda di Sonny e Tubbs, i due poliziotti abilissimi a infiltrarsi in un grosso giro di droga, inserisce violenza ad alta intensit� di decibel e una storia di passione che non concede più che tanto alla vista ma offre comunque un buon grado di calor bianco. Michael Mann è un maestro accreditato del genere e con questo remake è consapevole di prendersi un bel rischio. Colin Farrell (bello e inespressivo più di quanto basta) e Jamie Foxx rilevano Don Johnson e Philip Michael Thomas."
             }
         ],
-        "aggiornato": "08:48"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Rai Movie",
@@ -1644,7 +1644,7 @@
             {
                 "ora": "06:40",
                 "titolo": "The Bounty Killer",
-                "descrizione": "Un assassino di taglie viene assunto da un proprietario terriero messicano per salvare sua figlia dopo che è stata rapita da una banda di fuorilegge il giorno del suo matrimonio."
+                "descrizione": "Vecchio west. Luke Chilson, cacciatore di taglie, d� la caccia al messicano José Faradin, accolto dalla sua comunit� come un figlio devoto. Ma dietro l'apparenza si cela un uomo spietato e violento: quando la sua vera natura emerge, persino chi lo aveva protetto sar� costretto a schierarsi contro di lui. Come finir� ?"
             },
             {
                 "ora": "08:20",
@@ -1667,12 +1667,12 @@
                 "descrizione": "Joe é un \"picciotto\" americano, inviato in Sicilia per prelevare un boss mafioso e il suo notevole patrimonio. Ma sulle tracce del ricco boss c'é un altro capomafia che non ha intenzione di cederlo a Joe e per questo gli scatena contro tutta la sua \"famiglia\"......"
             },
             {
-                "ora": "13:55",
+                "ora": "13:54",
                 "titolo": "L'immortale",
                 "descrizione": "Charly Matteï ha deciso di dare una svolta alla sua vita da fuorilegge. Negli ultimi tre anni ha condotto una vita pacifica, dedicandosi a sua moglie e ai due bambini. Poi, un inverno, viene dato per morto in un parcheggio al Vecchio Porto di Marsiglia, con 22 pallottole in corpo. Tuttavia, a dispetto di ogni probabilit� , Charly è ancora vivo..."
             },
             {
-                "ora": "15:55",
+                "ora": "15:54",
                 "titolo": "Due volte Giuda",
                 "descrizione": "Il pistolero Barrett, che ha perso la memoria in seguito a una ferita alla testa, viene inviato a eliminare Dingus, un uomo mai visto, ma, al momento di sparare, uccide invece il mandante. Scoperta poi la verit� , si accorge che Dingus aveva fatto del male alla sua famiglia. Raggiuntolo nel suo ranch, Barrett lo uccide nel duello finale."
             },
@@ -1697,7 +1697,7 @@
                 "descrizione": "Marisa Ventura è una ragazza madre del Bronx che lavora come cameriera in un albergo a 5 stelle di Manhattan, il Beresford Hotel. Marisa aspira a una condizione migliore, ma la vita le ha insegnato a contare solo su sé stessa e a restare con i piedi piantati per terra. Un giorno al Beresford capita Christopher Hall, l'affascinante rampollo di una dinastia di politici, che adesso corre per il Senato. Per un divertente equivoco, conosce Marisa erroneamente ritenuta una facoltosa cliente dell'albergo. I due si innamorano e la giovane assapora per un attimo il gusto della celebrit� prima che le cose tornino al loro giusto posto..."
             }
         ],
-        "aggiornato": "08:48"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Rai Premium",
@@ -1799,7 +1799,7 @@
                 "descrizione": "Divertenti storie con protagonisti alcuni degli attori più amati dal pubblico che indagano, con i toni leggeri della commedia all'italiana, sui disagi e sulle difficolt� dell'Italia di oggi."
             }
         ],
-        "aggiornato": "08:48"
+        "aggiornato": "14:22"
     },
     {
         "canale": "La 5",
@@ -1886,7 +1886,7 @@
                 "descrizione": "La decennale lotta tra gli allevatori Sebastian Leitner e Lorenz Huber, è nata per la morte accidentale di Peter, il figlio di otto anni di Sebastian, per mano di Lorenz, che non si d� pace per quanto accaduto. I due uomini sono pronti a dimenticare, ma non è lo stesso per i rispettivi figli, Florian Leitner e Lisa Huber, un tempo innamorati. Il loro rapporto si è incrinato per sempre, ma non solo: Lisa, che è un avvocato, torna da Monaco determinata a vincere una causa contro i Leitner."
             }
         ],
-        "aggiornato": "08:48"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Real Time",
@@ -1983,7 +1983,7 @@
                 "descrizione": "Un team di dermatologi aiuta alcuni pazienti affetti da patologie estreme."
             }
         ],
-        "aggiornato": "08:48"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Food Network",
@@ -2125,7 +2125,7 @@
                 "descrizione": "Chiara Maci arriva a Livorno per scoprire piatti e prodotti tipici della zona toscana, come il cacciucco e il 'cinque e cinque' dello street food livornese."
             }
         ],
-        "aggiornato": "08:48"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Focus",
@@ -2237,7 +2237,7 @@
                 "descrizione": "Quello che si lancia all'inseguimento di una barca potrebbe essere un vero mostro marino?"
             }
         ],
-        "aggiornato": "08:48"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Giallo",
@@ -2319,7 +2319,7 @@
                 "descrizione": "L'ispettore capo Tom Barnaby della polizia di Midsomer e il suo fidato sergente, Gavin Troy, , devono investigare sugli omicidi che avvengono nei villaggi dell'immaginaria contea inglese di Midsomer. Le storie sono ambientate nel presente ed hanno una struttura di \"giallo classico\", in cui l'indagine e le deduzioni prevalgono sull'azione e sulla violenza."
             }
         ],
-        "aggiornato": "08:48"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Boing",
@@ -2476,7 +2476,7 @@
                 "descrizione": "L'adorato cane di Selvaggia scompare, cosi' Craig si unisce alla ricerca per ritrovarlo."
             }
         ],
-        "aggiornato": "08:48"
+        "aggiornato": "14:22"
     },
     {
         "canale": "K2",
@@ -2633,7 +2633,7 @@
                 "descrizione": "2' Stagione Ep.22 - Le avventure di tre scoiattoli dalla voce incredibile, 'adottati' da Dave Seville, che diventano un fenomeno musicale."
             }
         ],
-        "aggiornato": "08:48"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Rai Gulp",
@@ -2790,7 +2790,7 @@
                 "descrizione": "Elara si muove nella Torre Oscura senza farsi catturare da Vondhur e riesce a rubare un Uovo di Drago. A Silverhide, Aran è preoccupato per la sua scomparsa. Ian, Myrva e Gmor trovano gli appunti della madre, li decifrano e corrono alla Torre di Oxys."
             }
         ],
-        "aggiornato": "08:48"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Frisbee",
@@ -2947,7 +2947,7 @@
                 "descrizione": "2' Stagione Ep.17 - Le avventure di tre scoiattoli dalla voce incredibile, 'adottati' da Dave Seville, che diventano un fenomeno musicale."
             }
         ],
-        "aggiornato": "08:48"
+        "aggiornato": "14:22"
     },
     {
         "canale": "DMAX",
@@ -3049,7 +3049,7 @@
                 "descrizione": "Mr. Oro guida rete di compro oro nel nord Italia. Ogni giorno nuove trattative e colpi di scena"
             }
         ],
-        "aggiornato": "08:48"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Rai Sport",
@@ -3111,7 +3111,7 @@
                 "descrizione": "Fioretto, spada e sciabola. La sport olimpico azzurro per eccellenza da guardare sui canali Rai e da rivedere su RaiPlay."
             }
         ],
-        "aggiornato": "08:48"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Sportitalia",
@@ -3218,7 +3218,7 @@
                 "descrizione": "Il programma tratta le vicende del calciomercato sia nella sessione estiva che in quella invernale e va in onda alle ore 23.00 dal lunedì al venerdì"
             }
         ],
-        "aggiornato": "08:48"
+        "aggiornato": "14:22"
     },
     {
         "canale": "HGTV",
@@ -3350,7 +3350,7 @@
                 "descrizione": "Osserviamo straordinarie piscine, tra cui una che si affaccia su un lago in Canada."
             }
         ],
-        "aggiornato": "08:48"
+        "aggiornato": "14:22"
     },
     {
         "canale": "RSI LA 1",
@@ -3418,8 +3418,8 @@
             },
             {
                 "ora": "09:30",
-                "titolo": "L'uovo",
-                "descrizione": "L'origine della vita\nDocumentario di Astrid Miller"
+                "titolo": "L’uovo - L’origine della vita",
+                "descrizione": "L'origine della vita\rDocumentario di Astrid Miller"
             },
             {
                 "ora": "10:25",
@@ -3453,8 +3453,8 @@
             },
             {
                 "ora": "14:25",
-                "titolo": "Le Sorelle McLeod",
-                "descrizione": "Dopo la morte della madre, Tess Silverman si reca a \"Drover's Run\", la fattoria dove ha trascorso i primi anni della sua vita. \"Drover's Run\" è una propriet� rurale di bestiame nell'Australia meridionale, dove vive l'unica famiglia rimasta, il padre Jack e la sorella Claire, che non vede da 20 anni."
+                "titolo": "Ben tornata a casa",
+                "descrizione": "Le praterie australiane e i sogni delle donne di Drovers', le sfide quotidiane della gente che vive a Gungellan, gli amori, i problemi economici e tutte le vicissitudini delle Sorelle McLeod e dei loro amici."
             },
             {
                 "ora": "15:10",
@@ -3507,7 +3507,7 @@
                 "descrizione": "Tutti i colori del tempo"
             }
         ],
-        "aggiornato": "08:48"
+        "aggiornato": "14:22"
     },
     {
         "canale": "RSI LA 2",
@@ -3530,8 +3530,8 @@
             },
             {
                 "ora": "08:30",
-                "titolo": "Modem",
-                "descrizione": "L'attualit� approfondita, in diretta in visualradio, tutte le mattine, da lunedì a venerdì"
+                "titolo": "Modem - Zali, l’ora della verità",
+                "descrizione": "$23"
             },
             {
                 "ora": "09:00",
@@ -3609,7 +3609,7 @@
                 "descrizione": "Nic Vega ha un passato di successo nella musica, con alle spalle una gloriosa carriera da cantante e una grande storia d’amore chiusa da anni. Ormai in crisi da tempo, quando realizza di aver perso tutto – fama, amici e ispirazione – Nic decide di tornare da lei, Francesca, irrompendo così nella sua vita serena e felice."
             }
         ],
-        "aggiornato": "08:49"
+        "aggiornato": "14:22"
     },
     {
         "canale": "DAZN 1",
@@ -3696,7 +3696,7 @@
                 "descrizione": "Un documentario sulla carriera unica di Igor Protti: l'umanita' di un campione capace di incarnare i sogni e la rivalsa delle province. Una storia fatta di gol, cuore e passione."
             }
         ],
-        "aggiornato": "08:49"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Sky Sport 24",
@@ -3853,7 +3853,7 @@
                 "descrizione": "Tutti gli aggiornamenti dalle squadre di Serie A con collegamenti live, interviste e ospiti in studio."
             }
         ],
-        "aggiornato": "08:49"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Sky Sport Uno",
@@ -4017,7 +4017,7 @@
                 "descrizione": "Rossoneri in vantaggio 8 a 1 nei 12 precedenti europei, 3 pareggi. Unica sconfitta del Milan: 2-1 nel 2007 a Glasgow. TC: Federico Zanon"
             }
         ],
-        "aggiornato": "08:49"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Sky Sport Tennis",
@@ -4025,11 +4025,6 @@
         "programmi": [
             {
                 "ora": "06:00",
-                "titolo": "Tennis: ATP & WTA",
-                "descrizione": "Tutti i tornei di tennis internazionali del circuito maschile ATP e di quello femminile WTA, con l'attenzione puntata sui tennisti italiani."
-            },
-            {
-                "ora": "08:00",
                 "titolo": "Tennis: ATP & WTA",
                 "descrizione": "Tutti i tornei di tennis internazionali del circuito maschile ATP e di quello femminile WTA, con l'attenzione puntata sui tennisti italiani."
             },
@@ -4054,7 +4049,7 @@
                 "descrizione": "Tutti i tornei di tennis internazionali del circuito maschile ATP e di quello femminile WTA, con l'attenzione puntata sui tennisti italiani."
             }
         ],
-        "aggiornato": "08:49"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Sky Sport F1",
@@ -4136,7 +4131,7 @@
                 "descrizione": "Seconda gara della stagione: dopo la doppietta Mercedes a Melbourne chi trionfera' a Shanghai? Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero."
             }
         ],
-        "aggiornato": "08:49"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Sky Sport Legend",
@@ -4203,7 +4198,7 @@
                 "descrizione": "Champions League Story. - Terza finale di Champions League per il Chelsea, 1 vittoria. Prima per i Citizens che non disputavano una finale europea dal 1970. TC: Marianella-Marchegiani."
             }
         ],
-        "aggiornato": "08:49"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Sky Sport MotoGP",
@@ -4335,7 +4330,7 @@
                 "descrizione": "Seconda giornata di gare al Misano World Circuit con il Campionato Italiano Velocita' - la Classe Sport Bike in pista per la Race 2. Telecronaca di Andrea Minerva"
             }
         ],
-        "aggiornato": "08:49"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Sky Sport Basket",
@@ -4422,7 +4417,7 @@
                 "descrizione": "Dopo le sconfitte contro Hapoel e Olimpia, la Virtus prova a ripartire nella prima delle due partite in due giorni nella caldissima Beogradska Arena. TC: Fumagalli-Macchi."
             }
         ],
-        "aggiornato": "08:49"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Sky Sport Arena",
@@ -4509,7 +4504,7 @@
                 "descrizione": "Le gare del SailGP."
             }
         ],
-        "aggiornato": "08:49"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Sky Sport Max",
@@ -4601,7 +4596,7 @@
                 "descrizione": "I protagonisti, le sfide e gli eventi nazionali e internazionali in collegamento con i circoli di tutta Italia. Gli eventi del padel dilettantistico e le analisi dei materiali tecnici all'avanguardia."
             }
         ],
-        "aggiornato": "08:49"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Sky Sport Mix",
@@ -4688,7 +4683,7 @@
                 "descrizione": "Challenge Cup. - Finale di ritorno della CEV Cup femminile, Chieri cerca l'impresa a Istanbul dopo il 2-3 dell'andata. Tc Prini-Sangiuliano"
             }
         ],
-        "aggiornato": "08:49"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Sky Sport Golf",
@@ -4765,7 +4760,7 @@
                 "descrizione": "4 DP World Tour. - Tutti i tornei del tour europeo, il DP World Tour."
             }
         ],
-        "aggiornato": "08:49"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Sky Sport 251",
@@ -4940,7 +4935,7 @@
                 "descrizione": "Un'agente della polizia nazionale spagnola si infiltra, appena ventenne, tra i ranghi dei separatisti baschi dell'ETA e per otto anni vive nei panni dell'estremista Aranzazu Berradre Marín. Durante la sua missione, la poliziotta è costretta a tagliare completamente i propri legami familiari, il tutto per smantellare il commando Donosti in un momento cruciale in cui la banda dichiarava falsamente di essere in tregua."
             }
         ],
-        "aggiornato": "08:49"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Sky Cinema Uno +24",
@@ -5002,7 +4997,7 @@
                 "descrizione": "Tre case, tre ragazzi, lo stesso obiettivo: vincere il concorso per un posto da impiegato nell'ufficio legale del Comune. Federico, laureato in giurisprudenza, ma solo per compiacere il padre consigliere, spera in una sua raccomandazione; Fabrizio, avvocato sulla carta ma non praticante nella vita, tenta di superare l'ennesima prova stata- le e Luca che da quando è nato ha avuto sempre la strada spianata. Solo per uno di loro si realizzerà il sogno di una vita, fin quando le cose non prenderanno una piega inaspettata."
             }
         ],
-        "aggiornato": "08:49"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Sky Cinema Due",
@@ -5059,7 +5054,7 @@
                 "descrizione": "La serie prequel vede la dinastia Targaryen all'apice assoluto del suo potere, con più di 15 draghi sotto il loro giogo. La maggior parte degli imperi, che siano reali o immaginari, crollano quando raggiungono tali poteri e tali altezze. Nel caso dei Targaryen, la loro lenta caduta inizia quasi 193 anni prima degli eventi de Il Trono di Spade, quando re Viserys Targaryen rompe un secolo di tradizione nominando sua figlia Rhaenyra erede al Trono di Spade. La corte rimane scioccata quando Rhaenyra mantiene il suo status di erede nonostante Viserys in seguito avr� un figlio maschio, legittimo erede. Inizia così ad attecchire il seme della divisione e forti attriti in tutto il regno."
             }
         ],
-        "aggiornato": "08:49"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Sky Cinema Due +24",
@@ -5081,7 +5076,7 @@
                 "descrizione": "Il tribunale di Napoli è alla ricerca di una famiglia per Alba, che ha la sindrome di down e, appena nata, è stata abbandonata in ospedale. Luca, single, omosessuale, cattolico, da sempre mosso da un forte desiderio di paternit� , lotta per ottenere l’affidamento di Alba. Quante famiglie “tradizionali” devono dire di no prima che Luca possa essere preso in considerazione? Può una bambina rifiutata dal mondo diventare il premio di una vita?"
             }
         ],
-        "aggiornato": "08:49"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Sky Cinema Collection",
@@ -5143,7 +5138,7 @@
                 "descrizione": "Un avido magnate delle ferrovie vuole mettere le mani sul terreno di una vedova e pertanto assolda un killer. In difesa della donna compare un misterioso innominato che ha vecchi conti da saldare col killer."
             }
         ],
-        "aggiornato": "08:49"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Sky Cinema Family",
@@ -5210,7 +5205,7 @@
                 "descrizione": "Quando Mortimer Folchart detto Mo, esperto rilegatore di libri malandati, trova un volume di \"Inkheart\" in una vecchia libreria di provincia, non crede ai propri occhi. Sono dieci anni che cerca quel libro, da quando sua figlia Meggie ne aveva tre; da quando, l'ultima notte in un cui lo ha letto ad alta voce, sua moglie Resa è scomparsa all'interno del mondo fantastico di Inkheart, alla corte medievale del malvagio Capricorn. Pochi lo sanno, ma Mo è una lingua di fata: con la lettura può richiamare alla realt� i personaggi dei romanzi, ma rimandarli indietro può essere molto più complicato. Ora, con quella copia del libro in mano, Mo è deciso ha ritrovare Resa e, che lo voglia o meno, Meggie far� di tutto per aiutarlo."
             }
         ],
-        "aggiornato": "08:49"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Sky Cinema Action",
@@ -5262,7 +5257,7 @@
                 "descrizione": "Le mani più veloci dell'oriente incontrano la bocca più grande dell'occidente quando il leggendario e intrepido Jackie Chan si accompagna all'intensit� comica di Chris Tucker in Rush Hour. Nel film, il detective Ispettore Lee Chan, un agente inflessibile e immerso nel suo lavoro, è l'orgoglio del Regale Corpo di Polizia di Hong Kong e tuttavia il suo atteggiamento modesto non rende l'idea della sua genialit� nelle arti marziali. La sua allieva preferita è la figlia undicenne del console Cinese, della quale è sia la guardia del corpo che migliore amico. Il suo compito sar� quello di andare in America e salvarla dal suo rapitore: il genio criminale che ha anche ucciso il partner diLee."
             }
         ],
-        "aggiornato": "08:49"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Sky Cinema Suspense",
@@ -5319,7 +5314,7 @@
                 "descrizione": "La prima infanzia di Aileen Wuornos, la serial killer femminile più famosa d'America. Nel 1976 una giovane Aileen arriva in Florida alla ricerca di una nuova vita che l'aiuti a fuggire dal suo tragico passato."
             }
         ],
-        "aggiornato": "08:49"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Sky Cinema Romance",
@@ -5371,7 +5366,7 @@
                 "descrizione": "Anastasia e il suo principe, Christian Grey, convolano a nozze, e in un attimo, con un colpo di bacchetta, i discorsi tra loro si adeguano alla nuova situazione: lui non ha piacere che lei prenda il sole in topless, inoltre preferirebbe che cambiasse il suo cognome nell'indirizzo email del lavoro, da Steele in Grey, e che rientrasse a casa alla sera senza tergiversare per i fatti suoi. L'argomento figli, poi, meglio lasciarlo per il futuro, perché la sola idea lo fa sbiancare, nonostante in giro si dica che non abbia paura di nulla."
             }
         ],
-        "aggiornato": "08:49"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Sky Cinema Drama",
@@ -5428,7 +5423,7 @@
                 "descrizione": "È passato del tempo dal \"giorno più brutto\", ma Oskar Schell non si d� pace. Suo padre lo ha lasciato con una missione incompiuta, con molte domande e una sola certezza: non deve smettere di cercare. Quando, nell'armadio del genitore, trova una chiave e un nome, Black, Oskar trova con essa anche la spinta e l'alibi che gli mancavano. Incontrare tutti i 472 Black di New York City per testare le loro serrature diventa per il bambino un modo di coltivare il sogno che quella chiave possa schiudergli un ultimo messaggio del padre e una maniera di scappare ancora il più a lungo possibile dall'evidenza."
             }
         ],
-        "aggiornato": "08:49"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Sky Cinema Comedy",
@@ -5495,7 +5490,7 @@
                 "descrizione": "Sono passati otto anni dalla sua elezione al Quirinale e Peppino Garibaldi vive il suo idillio sui monti con Janis e la piccola Guevara. Peppino non ha dubbi: preferisce la montagna alla campagna... elettorale. Janis, invece, è sempre più insofferente a questa vita troppo tranquilla e soprattutto non riconosce più in lui l'uomo appassionato, di cui si era innamorata, e che voleva cambiare l'Italia. Richiamata al Quirinale, nel momento in cui il Paese è alle prese con la formazione del nuovo governo e appare minacciato da oscuri intrighi, Janis lascia Peppino e torna a Roma con Guevara. Disperato, Peppino non ha scelta: tornare alla politica per riconquistare la donna che ama."
             }
         ],
-        "aggiornato": "08:49"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Sky Uno",
@@ -5597,7 +5592,7 @@
                 "descrizione": "Le quattro coppie migliori affrontano la prova più difficile nella semifinale, in cui devono cercare di preparare uno dei piatti stellati Michelin di Gordon alla stessa velocit� con cui lo prepara lui, cucinando a turno."
             }
         ],
-        "aggiornato": "08:49"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Sky Atlantic",
@@ -5714,7 +5709,7 @@
                 "descrizione": "Maggie e Negan attraversano una Manhattan postapocalittica, isolata da tempo dalla terraferma. La citt� in rovina è piena di morti e di abitanti che hanno creato un mondo di anarchia, pericolo, bellezza e terrore."
             }
         ],
-        "aggiornato": "08:49"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Sky Serie",
@@ -5856,7 +5851,7 @@
                 "descrizione": "Cavalcare il brivido emozionale attraverso il caos raccontanto giorno dopo giorno nell’ospedale più esplosivo della citt� , con la squadra coraggiosa dei medici che lo tengono insieme. Essi affronteranno nuovi casi unici ispirati dagli eventi di attualit� , creeranno relazioni di fuoco nel pandemonio cardiopalmo del pronto soccorso. La serie è di genere medical drama è uno spinoff di Chicago Fire, creata da by Dick Wolf e Matt Olmstead."
             }
         ],
-        "aggiornato": "08:49"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Sky Investigation",
@@ -5973,7 +5968,7 @@
                 "descrizione": "Law & Order è un media franchise creato da Dick Wolf per la NBC Universal e formato da varie serie televisive poliziesco-giudiziarie e un film per la televisione, trasmessi sul network NBC dal 13 settembre 1990. Il franchise Law & Order nel tempo ha ispirato anche una serie di adattamenti televisivi stranieri, un docu-reality e videogiochi ufficiali, oltre a generare una serie di crossover con altre serie tv statunitensi."
             }
         ],
-        "aggiornato": "08:49"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Sky Crime",
@@ -6100,7 +6095,7 @@
                 "descrizione": "Ian Brady nasce negli anni Trenta in una famiglia povera dei bassifondi di Glasgow. All'et� di nove anni visita Loch Lomond e torna a casa deciso a intraprendere un percorso diverso da tutti gli altri: una vita da criminale."
             }
         ],
-        "aggiornato": "08:49"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Sky Adventure",
@@ -6242,7 +6237,7 @@
                 "descrizione": "Il survivalista Hazen Audel si avventura nell'altipiano di Bolaven, un angolo aspro e incontaminato del bacino del Mekong in Laos, in una missione per trovare i cacciatori tradinzionali con il moschetto."
             }
         ],
-        "aggiornato": "08:49"
+        "aggiornato": "14:22"
     },
     {
         "canale": "MTV",
@@ -6364,7 +6359,7 @@
                 "descrizione": "Ep32 di 42 - In questa puntata Rob e Steelo sono affiancati da Lolo Wood."
             }
         ],
-        "aggiornato": "08:49"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Comedy Central",
@@ -6521,7 +6516,7 @@
                 "descrizione": "Il ragazzo più amichevole del Midwest trasferisce la sua famiglia in un quartiere di Los Angeles dove non tutti gli assomigliano."
             }
         ],
-        "aggiornato": "08:49"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Sky Arte",
@@ -6623,7 +6618,7 @@
                 "descrizione": "Uno sguardo rivelatore e intimo sulla vita e la carriera dell'icona musicale Tina Turner, che racconta il suo difficile cammino fino al successo e le sue battaglie private."
             }
         ],
-        "aggiornato": "08:49"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Sky Documentaries",
@@ -6735,7 +6730,7 @@
                 "descrizione": "S1 Ep2 Seconda puntata - Un Incontro Alieno presenta alcuni dei piu' importanti scienziati e pensatori, esplorando le implicazioni scientifiche e filosofiche del primo contatto."
             }
         ],
-        "aggiornato": "08:49"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Sky Nature",
@@ -6857,7 +6852,7 @@
                 "descrizione": "Il massimo esperto di tigri Valmik Thapar segue per un anno una nuova generazione nel Ranthambore, raccontando cinquant'anni di evoluzione della specie."
             }
         ],
-        "aggiornato": "08:49"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Discovery Channel",
@@ -6974,7 +6969,7 @@
                 "descrizione": "Scopriamo come sono prodotti gli oggetti quotidiani, come i dispositivi di sicurezza gonfiabili, le macchine da scrivere Braille e i violoncelli di fibre al carbonio."
             }
         ],
-        "aggiornato": "08:49"
+        "aggiornato": "14:22"
     },
     {
         "canale": "History Channel",
@@ -7071,7 +7066,7 @@
                 "descrizione": "La vita di Mussolini dalla marcia su Roma a piazzale Loreto, con una particolare attenzione agli aspetti spesso inediti della dimensione privata, come i rapporti con i familiari."
             }
         ],
-        "aggiornato": "08:49"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Cartoon Network",
@@ -7228,7 +7223,7 @@
                 "descrizione": "Ep31 di 40 La rapina - Mentre prova un casco in un negozio, Richard non riesce piu' a toglierlo ed e' costretto a comprarlo. Per questo motivo, non sente e non vede bene."
             }
         ],
-        "aggiornato": "08:49"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Dea Kids",
@@ -7385,7 +7380,7 @@
                 "descrizione": "Per rinfrescarsi in una giornata di caldo asfissiante, Chef propone ai bambini dell'asilo di riempire d'acqua una piccola piscina. Ma prima di scendere nel seminterrato per aprire il rubinetto dell'acqua, raccomanda ai bambini di non toccare il tubo."
             }
         ],
-        "aggiornato": "08:49"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Nick Jr",
@@ -7542,7 +7537,7 @@
                 "descrizione": "Ep10 di 13 - I cuccioli fanno fare skate agli animali. \/La squadra salva l'Hotel Hadley"
             }
         ],
-        "aggiornato": "08:49"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Boomerang",
@@ -7699,7 +7694,7 @@
                 "descrizione": "Ep23 Suoni e visioni - Grizzy non si gode il dvd sui salmoni, coi Lemming che fanno festa proprio li'. Ma scacciandoli, li fa atterrare alla stazione di ricerca, dove li attende una scoperta eccezionale."
             }
         ],
-        "aggiornato": "08:49"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Sky TG 24",
@@ -7856,7 +7851,7 @@
                 "descrizione": "Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo."
             }
         ],
-        "aggiornato": "08:49"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Rai News 24",
@@ -8013,7 +8008,7 @@
                 "descrizione": "NEWS + SOMMARIO"
             }
         ],
-        "aggiornato": "08:49"
+        "aggiornato": "14:22"
     },
     {
         "canale": "Sky Meteo 24",
