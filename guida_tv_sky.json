@@ -134,17 +134,12 @@
                 "descrizione": "Dalla splendida cornice di Piazza del Popolo a Roma, Carlo Conti e Andrea Delogu accompagnano il pubblico in una serata di grandi performance, con i protagonisti della musica italiana e le canzoni dell'estate. Sul palco si alternano: Aiello, Angelica Bove, Baby K, Chiello, Eddie Brock, Ermal Meta, Frah Quintale, Francesco Renga e Giusy Ferreri, Gaia, Gio Evan, Il Tre, Irama, Leo Gassmann, Levante, Lorenzo Salvetti, Mara Sattei e Enrico Nigiotti, Maria Antonietta e Colombre, Orietta Berti e Il Rosso, Paola Turci, Sal Da Vinci, Settembre, Trigno, Welo e Anna Tatangelo."
             }
         ],
-        "aggiornato": "14:21"
+        "aggiornato": "19:42"
     },
     {
         "canale": "Rai 2",
         "categoria": "Digitale Terrestre",
         "programmi": [
-            {
-                "ora": "06:00",
-                "titolo": "Ritorno a Las Sabinas",
-                "descrizione": "Dopo molti anni di lontananza, le sorelle Molina tornano nella loro citt� natale per affrontare i problemi di salute del padre. Il loro ritorno significa una riunione con le vite, gli amori e i segreti che hanno cercato di dimenticare."
-            },
             {
                 "ora": "06:10",
                 "titolo": "La Grande Vallata",
@@ -246,6 +241,11 @@
                 "descrizione": "TG2 L.I.S."
             },
             {
+                "ora": "18:13",
+                "titolo": "Meteo 2",
+                "descrizione": "Meteo 2"
+            },
+            {
                 "ora": "18:15",
                 "titolo": "TG2",
                 "descrizione": "TG2"
@@ -291,7 +291,7 @@
                 "descrizione": "Dopo una carriera di successo a Chicago, Elsbeth Tascioni, un'avvocatessa astuta ma non convenzionale, utilizza il suo singolare punto di vista per fare osservazioni uniche e mettere all'angolo brillanti criminali insieme alla polizia di New York."
             }
         ],
-        "aggiornato": "14:21"
+        "aggiornato": "19:42"
     },
     {
         "canale": "Rai 3",
@@ -438,7 +438,7 @@
                 "descrizione": "Serie antologica di genere fantastico che raccoglie episodi a sé stanti, affidati a diversi registi, e senza personaggi fissi, sulla falsariga di serie classiche."
             }
         ],
-        "aggiornato": "14:21"
+        "aggiornato": "19:42"
     },
     {
         "canale": "Rai 4",
@@ -560,7 +560,7 @@
                 "descrizione": "Il corpo senza vita e brutalmente mutilato di una ragazza viene rinvenuto in circostanze misteriose.\r Il caso viene affidato ai detective Han-soo (Lee Sung-min) e Min-tae (Yoo Jae-myung). Rivali da anni, i due poliziotti hanno metodi d’indagine molto diversi ma devono trovare il modo di collaborare e scovare il colpevole dell’efferato omicidio."
             }
         ],
-        "aggiornato": "14:21"
+        "aggiornato": "19:42"
     },
     {
         "canale": "Rai 5",
@@ -677,7 +677,7 @@
                 "descrizione": "Speciale sulla rassegna omonima di arte digitale, tecnologie video e musica che si tiene ogni estate a Roma dal 2018. Un viaggio dall'ideazione creativa alla realizzazione tangibile dell'evento, attraverso il racconto dei contenuti e le interviste ai suoi protagonisti. - 2026 ITA"
             }
         ],
-        "aggiornato": "14:21"
+        "aggiornato": "19:42"
     },
     {
         "canale": "Rete 4",
@@ -774,7 +774,7 @@
                 "descrizione": "Filippo Brogi, preside di una scuola media in Val d'Orcia, vuole a tutti costi vincere la gara della locale Festa dei giovani, e con l'approvazione dell'assessore comunale decide di invitare in Toscana una scolaresca africana poverissima per uno scambio culturale edificante. Peccato che il suo bidello Augusto Soreda confonda la citt� ghanese di Acrra con quella campana di Acerra, e inviti in Val d'Orcia una classe media sgarrupata i cui insegnanti d'accompagnamento sono Gerardo Gregale, ex fumettista insegnante controvoglia, e Wanda Pacini, ex fidanzata di Filippo Brogi emigrata al sud per dimenticare la loro traumatica rottura."
             }
         ],
-        "aggiornato": "14:21"
+        "aggiornato": "19:42"
     },
     {
         "canale": "Canale 5",
@@ -931,7 +931,7 @@
                 "descrizione": "Serhat Yelduran è un chirurgo di grande successo che decide di cambiare il destino che la sua famiglia gli ha riservato per costruirsi una vita diversa a Istanbul. Questa decisione lo porta a incontrare Melek Özdel, di cui Serhat si innamora a prima vista e che sposa in segreto, all'insaputa della sua famiglia."
             }
         ],
-        "aggiornato": "14:21"
+        "aggiornato": "19:42"
     },
     {
         "canale": "Italia 1",
@@ -1063,7 +1063,7 @@
                 "descrizione": "Law & Order è un media franchise creato da Dick Wolf per la NBC Universal e formato da varie serie televisive poliziesco-giudiziarie e un film per la televisione, trasmessi sul network NBC dal 13 settembre 1990. Il franchise Law & Order nel tempo ha ispirato anche una serie di adattamenti televisivi stranieri, un docu-reality e videogiochi ufficiali, oltre a generare una serie di crossover con altre serie tv statunitensi."
             }
         ],
-        "aggiornato": "14:21"
+        "aggiornato": "19:42"
     },
     {
         "canale": "La7",
@@ -1135,7 +1135,7 @@
                 "descrizione": "Un viaggio alla scoperta dei più grandi misteri del nostro tempo"
             }
         ],
-        "aggiornato": "14:21"
+        "aggiornato": "19:42"
     },
     {
         "canale": "TV8",
@@ -1252,7 +1252,7 @@
                 "descrizione": "Massimo è un ombroso barista, divorziato da poco, che si trova a indagare su alcuni delitti che avvengono nella sua cittadina toscana, Pineta. Il suo istinto d'investigatore trova sempre spunti in alcune conversazioni, che è costretto a sedare nel suo bar, ad opera di quattro arzilli vecchietti. Mentre indaga, Massimo si divide fra un amore per il commissario di polizia Vittoria Fusco, le vicende della sua barista Tiziana e la comparsa del suo fratellastro, Beppe."
             }
         ],
-        "aggiornato": "14:21"
+        "aggiornato": "19:42"
     },
     {
         "canale": "Nove",
@@ -1359,7 +1359,7 @@
                 "descrizione": "Il meglio della satira unica di Maurizio Crozza."
             }
         ],
-        "aggiornato": "14:21"
+        "aggiornato": "19:42"
     },
     {
         "canale": "20 Mediaset",
@@ -1471,7 +1471,7 @@
                 "descrizione": "I Transfomers che da anni vivono tra noi si nascondono alle forze speciali del governo Usa. Quando dei ragazzini entrano nell'area proibita di Chicago, dove ci fu una battaglia, Cade Yaeger interviene a salvarli e riceve da un Transformer un antico talismano, che gli si attacca addosso. Yaeger e la giovanissima Izabella sfuggono all'arresto e si rifugiano in una discarica di automobili, dove vivono diversi Autobot. Il governo sa che arriver� dallo spazio qualcosa e per fermarlo i suoi funzionari sono disposti a venire a patti con Megatron, liberando alcuni dei suoi più pericolosi Decepticon. Questi danno la caccia a Yaeger, che viene però salvato dal robot maggiordomo Cogman, al servizio di un Lord inglese che intende svelare a Yaeger la storia dei Transformers. Nel mentre Optimus Prime, sul pianeta Cybertron, è stato soggiogato dalla divinit� aliena Quintessa, i cui piani per la Terra sono apocalittici."
             }
         ],
-        "aggiornato": "14:21"
+        "aggiornato": "19:42"
     },
     {
         "canale": "Twentyseven",
@@ -1568,7 +1568,7 @@
                 "descrizione": "New York, anni Trenta. Stretto nella morsa tra i conflitti dei genitori, un fratello gangster e la gioielleria di famiglia, Bobby Dorfman si sente soffocare. Decide quindi di tentare fortuna a Hollywood, dove lo zio Phil, potente agente dei divi, lo assume come corriere. A Hollywood, Bobby ben presto si innamora ma purtroppo la bella giovane che ha conquistato il suo cuore non è libera e deve accontentarsi della sua amicizia. Almeno fino al giorno in cui lei gli comunica di aver rotto con il suo ragazzo. Improvvisamente l'orizzonte di Bobby diventa più chiaro e l'amore sembra a portata di mano."
             }
         ],
-        "aggiornato": "14:21"
+        "aggiornato": "19:42"
     },
     {
         "canale": "IRIS",
@@ -1610,7 +1610,7 @@
                 "descrizione": "Ispirato alla serie che ottenne un grande successo in tutto il mondo tra il 1984 e il 1994, il ritorno di Miami Vice firmato da Michael Mann si permette oggi ciò che la televisione di allora non poteva proporre al proprio pubblico. Quindi nella vicenda di Sonny e Tubbs, i due poliziotti abilissimi a infiltrarsi in un grosso giro di droga, inserisce violenza ad alta intensit� di decibel e una storia di passione che non concede più che tanto alla vista ma offre comunque un buon grado di calor bianco. Michael Mann è un maestro accreditato del genere e con questo remake è consapevole di prendersi un bel rischio. Colin Farrell (bello e inespressivo più di quanto basta) e Jamie Foxx rilevano Don Johnson e Philip Michael Thomas."
             },
             {
-                "ora": "13:40",
+                "ora": "13:41",
                 "titolo": "La contessa bianca",
                 "descrizione": "Shanghai, anni '30. Il film si articola sull'intensa quanto particolare storia d'amore tra un diplomatico americano non vedente ed una donna russa, che per aiutare la famiglia del marito, ormai morto, si barcamena tra diverse attivit� , il più delle volte neanche tanto legali..."
             },
@@ -1620,7 +1620,7 @@
                 "descrizione": "Celebriamo i compleanni di star del cinema italiano e internazionale con servizi e interviste. A cura di Anna Praderio."
             },
             {
-                "ora": "16:38",
+                "ora": "16:39",
                 "titolo": "Il cucciolo",
                 "descrizione": "Alla fine del 1800, la famiglia Baxter, composta dal padre Penny, dalla madre Ory e dal piccolo Jody, vive la durissima vita dei pionieri ai margini della foresta, in Florida. La casa è stata più volte colpita dai lutti con la morte di tre figli piccoli (la loro morte non viene mai detta, ma è probabile che morirono di malattie, incidenti, che siano stati vittima della Sindrome della morte improvvisa del lattante, che siano nati morti, o che Ory abbia avuto degli aborti spontanei) ma questo non ha intaccato l'amore per la vita e la natura del capofamiglia (anche se deve discutere con la moglie, indurita dal dolore). Anche il giovane Jody ama la natura e vorrebbe tanto un cucciolo da allevare ed amare. Un giorno vengono rubati i maiali alla fattoria e padre e figlio seguono le tracce nella speranza di riprendersi le bestie. Nel tragitto il padre viene morso..."
             },
@@ -1640,12 +1640,12 @@
                 "descrizione": "La storia della nazionale spagnola di pallanuoto e di come un duro programma di allenamento le permise di diventare una delle migliori squadre del mondo, fino a guadagnare la medaglia d'argento ai Giochi Olimpici di Barcellona del 1992."
             },
             {
-                "ora": "23:40",
+                "ora": "23:41",
                 "titolo": "First Man - Il primo uomo",
                 "descrizione": "Un film che narra l'avvincente storia della missione della NASA per portare un uomo sul luna. Il film si concentra sulla figura di Neil Armstrong e sugli anni tra il 1961 e il 1969. Resoconto viscerale in prima persona, basato sul libro di James R. Hansen, il film esplorer� i sacrifici e il costo che avr� per Armstrong e per l'intera nazione, una delle missioni più pericolose della storia."
             }
         ],
-        "aggiornato": "14:21"
+        "aggiornato": "19:42"
     },
     {
         "canale": "Rai Movie",
@@ -1702,7 +1702,7 @@
                 "descrizione": "Charly Matteï ha deciso di dare una svolta alla sua vita da fuorilegge. Negli ultimi tre anni ha condotto una vita pacifica, dedicandosi a sua moglie e ai due bambini. Poi, un inverno, viene dato per morto in un parcheggio al Vecchio Porto di Marsiglia, con 22 pallottole in corpo. Tuttavia, a dispetto di ogni probabilit� , Charly è ancora vivo..."
             }
         ],
-        "aggiornato": "14:21"
+        "aggiornato": "19:42"
     },
     {
         "canale": "Rai Premium",
@@ -1804,7 +1804,7 @@
                 "descrizione": "Emma e Paolo vivono felicemente a Chicago, ma quando il padre di lui si ammala, deve rientrare in Italia per assisterlo. Durante la permanenza nel Bel Paese, il giovane si accorge che vivere in America rende complicata la gestione dei rapporti familiari. Ne parla con Emma, che entra in crisi al solo pensiero di un rapporto a distanza. Cosa decideranno di fare?"
             }
         ],
-        "aggiornato": "14:21"
+        "aggiornato": "19:42"
     },
     {
         "canale": "La 5",
@@ -1891,7 +1891,7 @@
                 "descrizione": "L'assistente sociale approva la tutela di Charly da parte del fratello. Intanto Olga, potente donna d'affari, punta sul progetto del resort legato all'apicoltura. \n\nQUESTO PROGRAMMA E' SOTTOTITOLATO."
             }
         ],
-        "aggiornato": "14:21"
+        "aggiornato": "19:42"
     },
     {
         "canale": "Real Time",
@@ -1993,7 +1993,7 @@
                 "descrizione": "La dottoressa Lee affronta le strane escrescenze sulla testa di Madison. Chanel ha delle cisti dolorose con perdite maleodoranti."
             }
         ],
-        "aggiornato": "14:21"
+        "aggiornato": "19:42"
     },
     {
         "canale": "Food Network",
@@ -2120,7 +2120,7 @@
                 "descrizione": "Lo chef Cannavacciuolo e' a Busalla, alle porte di Genova, alle prese con il ristorante Da Penna: un locale allo sbando dove si mangia male, i cibi sono scadenti e la sporcizia regna sovrana."
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:42"
     },
     {
         "canale": "Focus",
@@ -2192,27 +2192,27 @@
                 "descrizione": "I tentativi piu' fuorvianti di trovare l'amore tra gli abitanto che vivono nell'oceano."
             },
             {
-                "ora": "14:46",
+                "ora": "14:45",
                 "titolo": "Fuori le prove! - Indagini ai confini della realta'",
                 "descrizione": "Quello che si lancia all'inseguimento di una barca potrebbe essere un vero mostro marino?"
             },
             {
-                "ora": "15:34",
+                "ora": "15:32",
                 "titolo": "Fuori le prove! - indagini ai confini della realta'",
                 "descrizione": "Una telecamera nel Michigan cattura immagini dell'inafferrabile sasquatch; un grande stormo di merli precipita verso la morte in Messico."
             },
             {
-                "ora": "16:26",
+                "ora": "16:22",
                 "titolo": "Primi al mondo - Storia e misteri del programma 101 Olivetti",
                 "descrizione": "L'origine di tutti i device, nato da un'intuizione geniale che avrebbe scardinato la logica dei grandi elaboratori democratizzando l'informatica!"
             },
             {
-                "ora": "17:52",
+                "ora": "17:48",
                 "titolo": "Boom: l'Italia della 600 quando ci batteva forte il cuore",
                 "descrizione": "Speciale inedito con Iva Zanicchi che ripercorre gli anni '60 tra aneddoti e cambiamenti del Paese, e materiali d'archivio e contributi di esperti."
             },
             {
-                "ora": "18:51",
+                "ora": "18:49",
                 "titolo": "K2 - La gloria e il segreto",
                 "descrizione": "Giuseppe Cederna ci racconta un'impresa epica: Il 31 luglio 1954 un dream team di scalatori italiani per la prima volta in vetta al K2!"
             },
@@ -2227,17 +2227,17 @@
                 "descrizione": "La mortale eruzione vulcanica che seppelli' Pompei nel 79 d.C. fece anche un'altra vittima: Ercolano."
             },
             {
-                "ora": "22:11",
+                "ora": "22:12",
                 "titolo": "Lost treasures of Rome",
                 "descrizione": "Gli archeologi indagano sul destino di Nerone e del suo palazzo d'oro sepolto."
             },
             {
-                "ora": "23:17",
+                "ora": "23:18",
                 "titolo": "Storie dimenticate",
                 "descrizione": "Gli esperti indagano sui bauli scomparsi di Tesla, il mistero di Petra, la sparizione di Glenn Miller e la statua di Zeus perduta nell'Antica Grecia."
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:42"
     },
     {
         "canale": "Giallo",
@@ -2324,7 +2324,7 @@
                 "descrizione": "Jack Grayling ha mollato tutto e ora fa il cantante in una nave da crociera. Ma in passato è stato un detective della polizia. Quando cominciano a verificarsi degli omicidi è costretto a tornare alla sua vecchia professione aiutando il Primo ufficiale della nave, Kate Woods…"
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:42"
     },
     {
         "canale": "Boing",
@@ -2481,7 +2481,7 @@
                 "descrizione": "Le cronache del Pigiama Party - Parte 1: Craig vive un'avventura al pigiama party a casa di Kelsey."
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:42"
     },
     {
         "canale": "K2",
@@ -2638,7 +2638,7 @@
                 "descrizione": "4' Stagione Ep.42 - Le avventure di tre scoiattoli dalla voce incredibile, 'adottati' da Dave Seville, che diventano un fenomeno musicale."
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:42"
     },
     {
         "canale": "Rai Gulp",
@@ -2795,7 +2795,7 @@
                 "descrizione": "Ian, Myrva e Gmor ricevono da Draiken l'investitura di Paladini: sar� loro il compito di difendere l'Erond� r dai sinistri piani di Arcana."
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:42"
     },
     {
         "canale": "Frisbee",
@@ -2952,7 +2952,7 @@
                 "descrizione": "4' Stagione Ep.37 - Le avventure di tre scoiattoli dalla voce incredibile, 'adottati' da Dave Seville, che diventano un fenomeno musicale."
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:42"
     },
     {
         "canale": "DMAX",
@@ -3039,7 +3039,7 @@
                 "descrizione": "Una docu-serie che esplora la complessita' delle situazioni affrontate quotidianamente dai Nuclei Operativi e Investigativi dei Carabinieri."
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:42"
     },
     {
         "canale": "Rai Sport",
@@ -3096,7 +3096,7 @@
                 "descrizione": "Al Centre Aquatique Olympique di Saint-Denis prendono il via gli Europei di Parigi 2026 con i preliminari del duo libero femminile di nuoto artistico. Le coppie in gara si sfidano per conquistare l'accesso alla finale."
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:42"
     },
     {
         "canale": "Sportitalia",
@@ -3203,7 +3203,7 @@
                 "descrizione": "Il programma tratta le vicende del calciomercato sia nella sessione estiva che in quella invernale e va in onda alle ore 23.00 dal lunedì al venerdì"
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:42"
     },
     {
         "canale": "HGTV",
@@ -3355,7 +3355,7 @@
                 "descrizione": "Christina aiuta una coppia a sistemare la camera da letto e il bagno, ma i due sono in disaccordo sul progetto e Christina cerca di accontentare entrambi."
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:42"
     },
     {
         "canale": "RSI LA 1",
@@ -3512,7 +3512,7 @@
                 "descrizione": "Le notizie di prima serata"
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:42"
     },
     {
         "canale": "RSI LA 2",
@@ -3634,7 +3634,7 @@
                 "descrizione": "Billie e Hella, due insolite amiche, si recano in Salento spinte da motivazioni differenti: Billie è costantemente impegnata ad organizzare un tour turistico per il lavoro della sorella, rimasta a casa a causa di un momento fragile della sua vita. Hella, invece, sogna di rivedere Angelo, un pescatore di cui è ancora innamorata e che negli ultimi anni le ha dedicato numerose poesie romantiche."
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:42"
     },
     {
         "canale": "DAZN 1",
@@ -3726,7 +3726,7 @@
                 "descrizione": "Tutto il fascino del Derby di Milano: dall'attesa del pre-partita alla festa finale. Rivivi le immagini piu' belle di Milan-Inter da una posizione privilegiata con il 'Bordocam' di Davide Bernardi."
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:42"
     },
     {
         "canale": "Sky Sport 24",
@@ -3883,7 +3883,7 @@
                 "descrizione": "studio europei nuoto"
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:43"
     },
     {
         "canale": "Sky Sport Uno",
@@ -4062,7 +4062,7 @@
                 "descrizione": "una squadra. - Dalla discesa in campo di Silvio Berlusconi al successo del Milan in Champions League, il racconto di una stagione memorabile attraverso le voci dei protagonisti e un ospite speciale."
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:43"
     },
     {
         "canale": "Sky Sport Tennis",
@@ -4090,16 +4090,21 @@
             },
             {
                 "ora": "18:00",
-                "titolo": "Tennis Atp&Wta 2026",
-                "descrizione": "31\/07\/2026 Tennis: ATP & WTA. - Tutti i tornei di tennis internazionali del circuito maschile ATP e di quello femminile WTA, con l'attenzione puntata sui tennisti italiani."
+                "titolo": "Tennis: ATP & WTA",
+                "descrizione": "Tutti i tornei di tennis internazionali del circuito maschile ATP e di quello femminile WTA, con l'attenzione puntata sui tennisti italiani."
+            },
+            {
+                "ora": "20:00",
+                "titolo": "Cocciaretto - Osaka",
+                "descrizione": "500 Washington. - Dal Rock Creek Park Tennis Center di Washington, Stati Uniti."
             },
             {
                 "ora": "22:00",
-                "titolo": "Tennis Atp&Wta 2026",
-                "descrizione": "31\/07\/2026 Tennis: ATP & WTA. - Tutti i tornei di tennis internazionali del circuito maschile ATP e di quello femminile WTA, con l'attenzione puntata sui tennisti italiani."
+                "titolo": "Tennis: ATP & WTA",
+                "descrizione": "Tutti i tornei di tennis internazionali del circuito maschile ATP e di quello femminile WTA, con l'attenzione puntata sui tennisti italiani."
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:43"
     },
     {
         "canale": "Sky Sport F1",
@@ -4201,7 +4206,7 @@
                 "descrizione": "E' la gara piu' iconica del mondiale: Leclerc gioca in casa, Antonelli viene da 4 successi di fila, Norris e' l'ultimo Re di Monte-Carlo. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero."
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:43"
     },
     {
         "canale": "Sky Sport Legend",
@@ -4273,7 +4278,7 @@
                 "descrizione": "Sky Sport celebra Ribot, uno dei cavalli da corsa piu' famosi della storia italiana e internazionale, imbattuto con 16 vittorie e mai una sconfitta in tutte le corse dal 1954 al 1956."
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:43"
     },
     {
         "canale": "Sky Sport MotoGP",
@@ -4405,7 +4410,7 @@
                 "descrizione": "Settimo appuntamento del mondiale 2026: al Mugello, in Italia, si accendono i motori per la Sprint della MotoGP. Telecronaca Guido Meda e Mauro Sanchini"
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:43"
     },
     {
         "canale": "Sky Sport Basket",
@@ -4482,7 +4487,7 @@
                 "descrizione": "Le migliori squadre d'Europa si affrontano nell'Eurolega."
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:43"
     },
     {
         "canale": "Sky Sport Arena",
@@ -4495,7 +4500,7 @@
             },
             {
                 "ora": "06:00",
-                "titolo": "Boat Show 2026 Ep.25",
+                "titolo": "The Boat Show",
                 "descrizione": "Regate, grandi eventi, saloni nautici e tutto il nuovo che arriva dal mondo della cantieristica, a vela e a motore. Un nuovo personaggio del mondo della nautica si racconta al pubblico."
             },
             {
@@ -4584,7 +4589,7 @@
                 "descrizione": "Rally Championship. - Segui le gare del World Rally Championship."
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:43"
     },
     {
         "canale": "Sky Sport Max",
@@ -4612,7 +4617,7 @@
             },
             {
                 "ora": "11:20",
-                "titolo": "Boat Show 2026 Ep.25",
+                "titolo": "The Boat Show",
                 "descrizione": "Boat Show. - Regate, grandi eventi, saloni nautici e tutto il nuovo che arriva dal mondo della cantieristica, a vela e a motore. Un nuovo personaggio del mondo della nautica si racconta al pubblico."
             },
             {
@@ -4631,13 +4636,13 @@
                 "descrizione": "Nuoto Europei Parigi 2026 Tuffi. - Segui le gare dei Campionati Europei di nuoto 2026. Da Parigi, Francia."
             },
             {
-                "ora": "15:55",
+                "ora": "16:15",
                 "titolo": "Federica Pellegrini",
                 "descrizione": "Prima olimpionica azzurra nella Hall of Fame del nuoto, Federica Pellegrini ha rappresentato record e ori, ma la sua eredita' va oltre i titoli. Un dono per lo sport italiano."
             },
             {
                 "ora": "17:00",
-                "titolo": "Boat Show 2026 Ep.25",
+                "titolo": "The Boat Show",
                 "descrizione": "Boat Show. - Regate, grandi eventi, saloni nautici e tutto il nuovo che arriva dal mondo della cantieristica, a vela e a motore. Un nuovo personaggio del mondo della nautica si racconta al pubblico."
             },
             {
@@ -4676,7 +4681,7 @@
                 "descrizione": "Europei Parigi 2026 Nuoto Artistico. - Segui le gare dei Campionati Europei di nuoto 2026. Da Parigi, Francia."
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:43"
     },
     {
         "canale": "Sky Sport Mix",
@@ -4699,8 +4704,8 @@
             },
             {
                 "ora": "09:00",
-                "titolo": "Boat Show 2026 Ep.25",
-                "descrizione": "Boat Show. - Regate, grandi eventi, saloni nautici e tutto il nuovo che arriva dal mondo della cantieristica, a vela e a motore. Un nuovo personaggio del mondo della nautica si racconta al pubblico."
+                "titolo": "The Boat Show",
+                "descrizione": "Regate, grandi eventi, saloni nautici e tutto il nuovo che arriva dal mondo della cantieristica, a vela e a motore. Un nuovo personaggio del mondo della nautica si racconta al pubblico."
             },
             {
                 "ora": "09:30",
@@ -4733,7 +4738,7 @@
                 "descrizione": "Icarus Ultra. - Un nuovo viaggio di Running Scenery - Green Energy; Piemonte Sport Experience episodio 5; il CAI e l'ambiente sul Monte Bianco; recap del nostro tour del Dolomiti Supeski."
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:43"
     },
     {
         "canale": "Sky Sport Golf",
@@ -4785,7 +4790,7 @@
                 "descrizione": "World Tour. - Dal Renaissance Club, a North Berwick, Scozia."
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:43"
     },
     {
         "canale": "Sky Sport 251",
@@ -4965,7 +4970,7 @@
                 "descrizione": "Alex Lewis, sicario ormai prossimo al ritiro, viene chiamato a svolgere un’ultima missione. Ma quando scopre che il bersaglio è una giovane ragazza, rifiuta di portare a termine l’incarico e si rivolta contro la malvagia organizzazione che l’ha assoldato. Il suo cammino di vendetta lo porta fino ai vertici del gruppo criminale, capeggiato dall’affascinante magnate immobiliare di El Paso Davana Sealman e dal figlio, che tengono in pugno le vite di molti ragazzi innocenti. Per salvare la pelle dovr� quindi dare loro la caccia e ucciderli prima che siano loro a farlo. Nel frattempo, è braccato anche dall’FBI, che nella persona dell’agente Vincent Serra è gi� sulle sue tracce."
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:43"
     },
     {
         "canale": "Sky Cinema Uno +24",
@@ -5027,7 +5032,7 @@
                 "descrizione": "Nell'Inghilterra dei Tudor intrisa di sangue, Catherine Parr cerca di destreggiarsi nella politica inglese quando diventa la sesta moglie di Enrico VIII."
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:43"
     },
     {
         "canale": "Sky Cinema Due",
@@ -5079,7 +5084,7 @@
                 "descrizione": "Basato su una storia vera. Dopo aver conseguito la laurea alla Emory University, il ventiduenne Christopher McCandless (Emile Hirsch) abbandona la sua vita agiata, da’ in beneficenza i suoi risparmi (24.000 dollari) e parte in un viaggio verso l’ignoto. Il percorso di Christopher lo porta tra l’altro ad attraversare i campi di grano del Sud Dakota e a viaggiare controcorrente lungo il fiume Colorado: Chris incontrer� una serie di pittoreschi personaggi che cambieranno per sempre la sua visuale della vita, e si spinger� ancora oltre per raggiungere l’Alaska e vivere in mezzo alle “terre selvagge” del Nord del Paese."
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:43"
     },
     {
         "canale": "Sky Cinema Due +24",
@@ -5101,7 +5106,7 @@
                 "descrizione": "Film di famiglia e diario intimo, l'8° lungometraggio di N. Moretti comincia il 28 marzo 1994 (vittoria elettorale della destra berlusconiana), termina nell'agosto 1997 quando l'autore decide di tornare al cinema di finzione con un musical, e fa perno sul 18 aprile 1996 quando gli nasce il figlio Pietro, mentre, vinte le elezioni, il centrosinistra dell'Ulivo va al governo. È un film che dice e riferisce molto, insegna moltissimo, suggerisce poco, non racconta quasi mai. A differenza di Caro diario, il mix di privato e pubblico non è riuscito."
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:43"
     },
     {
         "canale": "Sky Cinema Collection",
@@ -5148,7 +5153,7 @@
                 "descrizione": "All’inizio del XX secolo, la scoperta del petrolio trasformò l’esistenza degli Osage che diventarono da un giorno all’altro immensamente ricchi. L’improvviso benessere di questi nativi americani attirò l’interesse dei bianchi che iniziarono a manipolare, estorcere e sottrarre con l’inganno i beni degli Osage fino a ricorrere all’omicidio. Una storia d’amore e tradimenti, delitti e misteri in un intrigo avvincente per la scoperta della verit� ."
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:43"
     },
     {
         "canale": "Sky Cinema Family",
@@ -5210,7 +5215,7 @@
                 "descrizione": "Buster e il suo cast hanno trasformato il New Moon Theater in un successo locale, ma Buster ha messo gli occhi su un premio più grande: Debuttare con un nuovo spettacolo al Crystal Tower Theater nell’affascinante Redshore City. Ma senza conoscenze, Buster e i suoi devono intrufolarsi negli uffici di fama mondiale Crystal Entertainment, gestiti da un lupo magnate e spietato di nome Jimmy Crystal. In un disperato tentativo di ottenere l’attenzione di Mr. Crystal, Gunter lancia spontaneamente un’idea che Buster accetta con facilit� , promettendo che nel loro nuovo spettacolo ci sar� la leggenda del leone rock Clay Calloway. Il problema è che Buster non ha mai incontrato Clay, artista che si è allontanato dal mondo più di dieci anni fa e dopo la perdita di sua moglie. Mentre Gunter aiuta Buster a sognare un capolavoro teatrale, e la pressione (e le minacce sinistre) di Mr. Crystal Mount, Buster intraprende una ricerca per trovare Clay e convincerlo a tornare sul palco."
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:43"
     },
     {
         "canale": "Sky Cinema Action",
@@ -5267,7 +5272,7 @@
                 "descrizione": "Dopo un incidente catastrofico su un pianeta sconosciuto, il pilota Mills scopre subito di essere rimasto bloccato sulla Terra… 65 milioni di anni fa. Con una sola possibilit� di salvezza, Mills e l’unica altra sopravvissuta, Koa, devono farsi strada attraverso un territorio sconosciuto e pieno di pericolose creature preistoriche in un’epica lotta per la sopravvivenza."
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:43"
     },
     {
         "canale": "Sky Cinema Suspense",
@@ -5324,7 +5329,7 @@
                 "descrizione": "Transilvania, XV secolo. Il principe Vladimir, dopo la perdita improvvisa della sua amata, rinnega Dio, ereditando così una maledizione eterna: diventare un vampiro. Condannato a vagare nei secoli, sfida il destino e la morte stessa, guidato da un’unica speranza: ritrovare l’amore perduto."
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:43"
     },
     {
         "canale": "Sky Cinema Romance",
@@ -5381,7 +5386,7 @@
                 "descrizione": "Connor Mead è un celebre fotografo di moda col vizio delle donne e della poligamia. Costretto suo malgrado a partecipare alle nozze del fratello minore, lo sciupafemmine incallito torna alla tenuta del defunto zio Wayne. Allergico all'istituzione del matrimonio e fermamente deciso a far saltare in aria matrimonio e torta nuziale, sar� al contrario costretto a rivedere il suo cinismo e il suo antisentimentalismo da tre fantasmi in gonnella. A bordo di un letto a due piazze viagger� avanti e indietro nel tempo alla ricerca del suo cuore perduto. Tra fughe e viaggi metafisici, Connor rivedr� Jenny, ex amata, lasciata e mai dimenticata. Forse per il seduttore impenitente è tempo di amare."
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:43"
     },
     {
         "canale": "Sky Cinema Drama",
@@ -5438,7 +5443,7 @@
                 "descrizione": "Una multinazionale americana del settore pneumatici decide di chiudere la filiale italiana per tagliare sui costi e spostare la produzione in zone dove la manod'opera ha un costo minore."
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:43"
     },
     {
         "canale": "Sky Cinema Comedy",
@@ -5500,7 +5505,7 @@
                 "descrizione": "Sebastian Maniscalco, proveniente da una famiglia italo-americana, lavora come manager in un hotel Hilton a Chicago e convive con la fidanzata Ellie Collins, figlia di facoltosi proprietari di una importante catena alberghiera. Per la Festa dell'Indipendenza, Sebastian ed Ellie sono invitati nella residenza dei Collins dove vorrebbero cogliere l'occasione per annunciare il loro matrimonio. Informato dal figlio Sebastian, il padre Salvo, uomo di vecchio stampo e dalle origini siciliane (rimasto da poco vedovo), insiste per unirsi al viaggio e conoscere i genitori di Ellie. L'incontro tra due famiglie così diverse produrr� risultati esilaranti."
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:43"
     },
     {
         "canale": "Sky Uno",
@@ -5617,7 +5622,7 @@
                 "descrizione": "Nel gran finale, i 3 concorrenti rimasti in gara si contendono il premio di 250.000 dollari in una corsa attraverso Londra alla ricerca dell'ultima Destinazione X."
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:43"
     },
     {
         "canale": "Sky Atlantic",
@@ -5739,7 +5744,7 @@
                 "descrizione": "Charlie è una donna con un dono straordinario: riconoscere quando qualcuno mente. A bordo della sua Plymouth Barracuda, attraversa il paese e, a ogni tappa, si trova coinvolta in strani crimini che non può fare a meno di risolvere."
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:43"
     },
     {
         "canale": "Sky Serie",
@@ -5876,7 +5881,7 @@
                 "descrizione": "$23"
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:43"
     },
     {
         "canale": "Sky Investigation",
@@ -6003,7 +6008,7 @@
                 "descrizione": "La serie si svolge nella splendida cornice di una piccola isola caraibica, Saint-Marie, dove il poliziotto Richard Poole, britannico doc, viene inviato per risolvere un misterioso omicidio.Poole si ritrova in una fatiscente stazione di polizia a lavorare con una nuova partner, la brillante Camille Bordey, in un ambiente totalmente diverso da tutto ciò a cui lui è abituato. Lui è un tipo da giacca, cravatta e mocassini... in spiaggia. Nonostante ciò, pur essendo assolutamente un pesce fuor d'acqua in questo paradiso terrestre, si dimostrer� all’altezza di risolvere ogni caso che si presenter� di episodio in episodio."
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:43"
     },
     {
         "canale": "Sky Crime",
@@ -6140,7 +6145,7 @@
                 "descrizione": "S1 Ep1 di 4 Terrore a Los Angeles - Una serie di omicidi sconvolge Los Angeles, mettendo la polizia sotto pressione da parte dell'opinione pubblica che chiede di dare un nome al strangolatore."
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:43"
     },
     {
         "canale": "Sky Adventure",
@@ -6272,7 +6277,7 @@
                 "descrizione": "Dai più tragici a quelli più comici, sveliamo i più incredibili fallimenti ingegneristici del nostro tempo."
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:43"
     },
     {
         "canale": "MTV",
@@ -6424,7 +6429,7 @@
                 "descrizione": "Ep18 di 42 - Lo show presentato da Rob Dyrdek, insieme alle celebrities Sterling Steelo Brim e Chanel West Coast che mostra video amatoriali trovati in internet."
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:43"
     },
     {
         "canale": "Comedy Central",
@@ -6581,7 +6586,7 @@
                 "descrizione": "Hot in Cleveland\" si basa su tre favolose, eccentriche donne sopra i quarant'anni di Los Angeles, migliori amiche, le cui vite sono state cambiate per sempre quando il loro aereo è dovuto atterrare inaspettatamente a Cleveland e presto riscopriranno loro stesse in questa nuova \"terra promessa\"."
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:43"
     },
     {
         "canale": "Sky Arte",
@@ -6678,7 +6683,7 @@
                 "descrizione": "Prima di diventare Marilyn Monroe, era Norma Jeane: una ragazza timida, desiderosa dell'amore della madre single, che lavorava a Hollywood. Ripercorriamo l'infanzia di Norma Jeane prima che diventasse una stella."
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:43"
     },
     {
         "canale": "Sky Documentaries",
@@ -6755,37 +6760,47 @@
                 "descrizione": "Scopriamo il dietro le quinte della missione Artemis II, girato nel corso di tre anni e mezzo presso la NASA. Vediamo come hanno fatto quattro astronauti a raggiungere la Luna, spingendosi più in profondit� nello spazio che mai."
             },
             {
-                "ora": "18:25",
+                "ora": "18:20",
                 "titolo": "Nazzi racconta",
                 "descrizione": "Il padre di Luca Sacchi, la vittima, viene intervistato riguardo la vicenda e il suo dolore. La vita del 24enne è stata spezzata da uno sparo nel cuore della notte in nella Roma del 2019, lasciando dietro di sé una scia di interrogativi."
             },
             {
-                "ora": "18:55",
+                "ora": "18:50",
                 "titolo": "Nazzi racconta",
                 "descrizione": "Stefano Nazzi racconta alcuni dei casi più sconvolgenti della cronaca italiana recente, analizzando le dinamiche di gruppo e riflettendo su responsabilit� collettiva e pressione sociale."
             },
             {
                 "ora": "19:20",
-                "titolo": "Velasco Ep1",
-                "descrizione": "Tra vittorie storiche, nuove ripartenze e sfide continue, il C.t. di volley azzurro piu' vincente di sempre racconta retroscena e complessita' della \"scuola Velasco\". Pt.10 Ep.1"
+                "titolo": "Ago",
+                "descrizione": "Giacomo Agostini, conosciuto da tutti come “Ago”, è una leggenda del motociclismo, simbolo di libert� , coraggio e passione. Testimonianze esclusive svelano l'uomo dietro il mito."
             },
             {
-                "ora": "20:20",
-                "titolo": "Velasco Ep2",
-                "descrizione": "Da allenatore di una squadra di provincia a Campione del Mondo con la squadra maschile del XX secolo. Parte da Jesi il viaggio di Velasco verso uno storico oro olimpico. Pt.10 Ep.2"
+                "ora": "20:45",
+                "titolo": "Buffa E Baresi: Libero Di Sognare",
+                "descrizione": "15\/10\/2021 Buffa Racconta. - Buffa e Baresi: libero di sognare."
             },
             {
-                "ora": "21:15",
-                "titolo": "Geoff Hurst - Campione del mondo 1966",
-                "descrizione": "Geoff Hurst, la leggenda che ha segnato la prima tripletta in assoluto in una finale di Coppa del Mondo, ha vissuto una vita plasmata dalla gloria e dalla tragedia."
+                "ora": "21:30",
+                "titolo": "Parte 1",
+                "descrizione": "una squadra. - E' una stagione ricca di contraddizioni, quella che si prepara a vivere il Milan nel 1993-1994, diviso tra la rincorsa alla Champions e la campagna elettorale di Berlusconi."
             },
             {
-                "ora": "22:45",
-                "titolo": "Italia 1982 - Una storia azzurra",
-                "descrizione": "Tra interviste ai protagonisti e immagini d’epoca inedite, la storia dei mondiali di calcio del 1982 e della nazionale italiana, vista anche in parentesi private, contrapposta a quella di un paese guidato dal Presidente della Repubblica Sandro Pertini."
+                "ora": "22:30",
+                "titolo": "Parte 2",
+                "descrizione": "una squadra. - Dalla discesa in campo di Silvio Berlusconi al successo del Milan in Champions League, il racconto di una stagione memorabile attraverso le voci dei protagonisti e un ospite speciale."
+            },
+            {
+                "ora": "23:30",
+                "titolo": "I Signori Del Calcio 2012\/2013 Franco Baresi",
+                "descrizione": "Franco Baresi. - Sei Scudetti e tre Coppe dei Campioni con la maglia del Milan sono solo alcuni dei trofei vinti dall'ex capitano rossonero Franco Baresi, considerato dai piu' uno dei migliori calciatori del Ventesimo secolo. In questa intervista esclusiva si ripercorrono le tappe fondamentali della carriera del piu' grande libero della storia del calcio."
+            },
+            {
+                "ora": "23:55",
+                "titolo": "Parte 1",
+                "descrizione": "una squadra. - E' una stagione ricca di contraddizioni, quella che si prepara a vivere il Milan nel 1993-1994, diviso tra la rincorsa alla Champions e la campagna elettorale di Berlusconi."
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:43"
     },
     {
         "canale": "Sky Nature",
@@ -6902,7 +6917,7 @@
                 "descrizione": "Pedro dedica la sua vita a prendersi cura del bradipo Elsa, rimasta paralizzata in seguito a una caduta. Il lupo Thor d� il benvenuto nel branco al suo umano, Steve, mentre Kristen e Beau si prendono cura della procione Crystal."
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:43"
     },
     {
         "canale": "Discovery Channel",
@@ -7009,7 +7024,7 @@
                 "descrizione": "Scopriamo come vengono creati gli oggetti di uso quotidiano, tra cui i tatuaggi, gli assorbenti e i tubi di cemento."
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:43"
     },
     {
         "canale": "History Channel",
@@ -7111,7 +7126,7 @@
                 "descrizione": "Hitler e Stalin non si incontrarono mai, ma furono sempre ossessionati l'uno dall'altro. Furono sul punto di allearsi per dividersi l'Europa. Ma alla fine, l'antica contrapposizione fra est e ovest prevalse."
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:43"
     },
     {
         "canale": "Cartoon Network",
@@ -7268,7 +7283,7 @@
                 "descrizione": "Ep9 di 52 Beni immobili - Lex Luthor compra l'isola dei Teen Titans e li sfratta dalla Torre, che diventa il suo nuovo ufficio. Poi obbliga i Titans a pagare l'affitto."
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:43"
     },
     {
         "canale": "Dea Kids",
@@ -7425,7 +7440,7 @@
                 "descrizione": "Quando il pavimento finisce coperto di gomma da masticare il giorno di una grande gara di soffiaggio delle bolle, Sugar decide che potrebbe vincere aiutando i suoi amici a rimanere bloccati per terra."
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:43"
     },
     {
         "canale": "Nick Jr",
@@ -7582,7 +7597,7 @@
                 "descrizione": "Il piccolo regno di Ben e Holly è un cartone animato britannico per i bambini in et� prescolare ambientato in un magico regno incantato, popolato da fate, elfi e insetti."
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:43"
     },
     {
         "canale": "Boomerang",
@@ -7739,7 +7754,7 @@
                 "descrizione": "Ep65 Buon compleanno, Grizzy! - Grizzy vuole passare la giornata svolgendo le sue attivita' preferite, ma quando i Lemming scoprono che e' il suo compleanno, addio serenita'!"
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:43"
     },
     {
         "canale": "Sky TG 24",
@@ -7896,7 +7911,7 @@
                 "descrizione": "Previsioni meteo dettagliate e sempre aggiornate 24 ore al giorno. Le previsioni regionali, nazionali ed internazionali."
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:43"
     },
     {
         "canale": "Rai News 24",
@@ -8053,7 +8068,7 @@
                 "descrizione": "NEWS + SOMMARIO"
             }
         ],
-        "aggiornato": "14:22"
+        "aggiornato": "19:43"
     },
     {
         "canale": "Sky Meteo 24",
