@@ -76,7 +76,7 @@
             {
                 "ora": "12:00",
                 "titolo": "Italia A\/R",
-                "descrizione": "Vittorio Brumotti ci accompagna in un viaggio attraverso l'Italia a bordo di un camper e in sella alla sua bicicletta, in compagnia dell'amico a quattro zampe Patricio."
+                "descrizione": "Vittorio Brumotti alla scoperta dell'Italia costiera in sella alla sua bicicletta e con l'amico a quattro zampe Patricio: pedalate fra i borghi, esperienze sportive, incontri con chi quei luoghi li abita e li protegge ogni giorno. A completare il racconto uno spazio dedicato alla cucina e ai prodotti del territorio, con la partecipazione straordinaria di Monica Caradonna."
             },
             {
                 "ora": "12:30",
@@ -149,17 +149,12 @@
                 "descrizione": "TG1 Sera"
             }
         ],
-        "aggiornato": "08:45"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Rai 2",
         "categoria": "Digitale Terrestre",
         "programmi": [
-            {
-                "ora": "06:00",
-                "titolo": "Ritorno a Las Sabinas",
-                "descrizione": "Dopo molti anni di lontananza, le sorelle Molina tornano nella loro citt� natale per affrontare i problemi di salute del padre. Il loro ritorno significa una riunione con le vite, gli amori e i segreti che hanno cercato di dimenticare."
-            },
             {
                 "ora": "06:10",
                 "titolo": "La Grande Vallata",
@@ -187,8 +182,8 @@
             },
             {
                 "ora": "10:00",
-                "titolo": "TG2 - Storie. I Racconti Della Settimana",
-                "descrizione": "Le storie e i protagonisti di fatti di cronaca e di costume che si raccontano nella loro quotidianit� .."
+                "titolo": "TG2 Storie. I Racconti Della Settimana",
+                "descrizione": "$23"
             },
             {
                 "ora": "10:55",
@@ -301,7 +296,7 @@
                 "descrizione": "NCIS: Origins segue le vicende del giovane Leroy Jethro Gibbs nel 1991, 12 anni prima degli eventi di NCIS - Unit� anticrimine, ed è narrato da Mark Harmon. Nella serie, Gibbs inizia la sua carriera come agente speciale novizio nel nascente ufficio NIS di Camp Pendleton, dove trova il suo posto in una squadra grintosa e disordinata guidata dalla leggenda dell'NCIS Mike Franks."
             }
         ],
-        "aggiornato": "08:45"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Rai 3",
@@ -309,7 +304,7 @@
         "programmi": [
             {
                 "ora": "08:00",
-                "titolo": "Agorà Estate",
+                "titolo": "Bollino Rosso - Agorà Estate",
                 "descrizione": "L'approfondimento estivo del mattino di Rai3 condotto da Giulia Di Stefano con Marco Carrara, attraverso ospiti, inviati, inchieste e contributi video dai social."
             },
             {
@@ -438,7 +433,7 @@
                 "descrizione": "Da Itaca, l'isola di Odisseo, continua l'esplorazione di Cristoforo Gorno nell'Odissea. Il racconto riprende dallo sbarco dell'eroe nella sua isola e lo segue nel suo palazzo fino al compimento della vendetta contro i pretendenti. L'incontro con il cane Argo, il rapporto con il figlio Telemaco, la figura di Penelope sono alcuni degli aspetti che vengono approfonditi. Con l'aiuto, di Massimo Cultraro, dirigente di ricerca del CNR e studioso del mondo miceneo, Cristoforo Gorno mette a confronto il poema con i ritrovamenti archeologici di Itaca, in particolare l'edificio che è stato identificato con il palazzo dell'eroe."
             }
         ],
-        "aggiornato": "08:45"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Rai 4",
@@ -575,7 +570,7 @@
                 "descrizione": "Sam aveva solo 12 anni quando la madre Scarlet, assassina d'élite, è stata costretta ad abbandonarla. Sam è stata cresciuta da The Firm, sbrigativo sindacato del crimine per cui lavorava la madre. Oggi, 15 anni dopo, Sam segue le orme della madre lavorando per L'impresa come feroce assassina..."
             }
         ],
-        "aggiornato": "08:45"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Rai 5",
@@ -692,7 +687,7 @@
                 "descrizione": "Il concerto di Edoardo Bennato all'Anfiteatro Flavio di Pozzuoli. In scaletta tutti i classici del suo canzoniere: \"L'isola che non c'è\"; \"Il gatto e la volpe\"; \"Le ragazze fanno grandi sogni\"; \"Dotti, medici e sapienti\". La performance è arricchita da ironici sketch di Nino Frassica."
             }
         ],
-        "aggiornato": "08:45"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Rete 4",
@@ -784,7 +779,7 @@
                 "descrizione": "Programma di attualita' e approfondimento condotto da Giuseppe Brindisi e realizzato in collaborazione tra Videonews e Tg4."
             }
         ],
-        "aggiornato": "08:45"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Canale 5",
@@ -926,7 +921,7 @@
                 "descrizione": "Gli artisti piu' celebri della musica italiana e internazionale si esibiscono nella kermesse musicale dell'estate italiana. Condotto da Ilary Blasi, con Fabio Rovazzi e Daniele Battaglia."
             }
         ],
-        "aggiornato": "08:45"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Italia 1",
@@ -1058,7 +1053,7 @@
                 "descrizione": "Le indagini dell'Unit� Vittime Speciali, una nuova squadra speciale della Polizia di New York che si occupa di crimini a sfondo sessuale. In ogni episodio si segue da una parte l'attivit� investigativa attuata dalla squadra e dall'altra l'aspetto giudiziario con l'iniziativa processuale condotta dalla procura distrettuale."
             }
         ],
-        "aggiornato": "08:45"
+        "aggiornato": "14:25"
     },
     {
         "canale": "La7",
@@ -1077,17 +1072,17 @@
             {
                 "ora": "08:00",
                 "titolo": "Omnibus Dibattito",
-                "descrizione": "Programma di informazione e approfondimento con rubriche, ospiti, rassegna stampa, aggiornamenti sul traffico, previsioni meteo, dibattito sul tema del giorno. 24a Edizione."
+                "descrizione": "Flavia Fratello con Lorenzo Castellani, Piero Benassi, Ylenja Lucaselli, Alessandra Arachi, Marco Bentivogli, Maria Luisa Fantappiè"
             },
             {
                 "ora": "09:40",
                 "titolo": "Coffee Break",
-                "descrizione": "Conduce Marco Piccaluga"
+                "descrizione": "Marco Piccaluga con Francesco Silvestri, Sandro Iacometti, Sara Manfuso, Salvatore Sallemi, Alessandro Plateroti"
             },
             {
                 "ora": "11:00",
                 "titolo": "L'Aria Che Tira",
-                "descrizione": "Conduce Ludovica Ciriello"
+                "descrizione": "Ludovica Ciriello con Claudia Fusani, Luca Boccoli, Michele Silenzi, Marcello Sorgi, Licia Ronzulli, Antonio Polito, Renata Polverini, Marianna Ricciardi, Nino Cartabellotta, Tonia Cartolano, Mirna Mastronardi, Renato Mannheimer"
             },
             {
                 "ora": "13:30",
@@ -1125,7 +1120,7 @@
                 "descrizione": "Un viaggio alla scoperta dei più grandi misteri del nostro tempo"
             }
         ],
-        "aggiornato": "08:45"
+        "aggiornato": "14:25"
     },
     {
         "canale": "TV8",
@@ -1227,7 +1222,7 @@
                 "descrizione": "I matrimoni di queste quattro spose si tingeranno di verde, colore dell'energia, della natura e della speranza: soprattutto quella di vincere Quattro Matrimoni! Scopriamo chi ce la far� ."
             }
         ],
-        "aggiornato": "08:45"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Nove",
@@ -1324,7 +1319,7 @@
                 "descrizione": "Amadeus conduce La Corrida. I dilettanti allo sbaraglio si esibiscono giudicati dal pubblico in studio."
             }
         ],
-        "aggiornato": "08:45"
+        "aggiornato": "14:25"
     },
     {
         "canale": "20 Mediaset",
@@ -1446,7 +1441,7 @@
                 "descrizione": "John Constantine è un insolente detective del soprannaturale che è stato letteralmente all'inferno e poi tornato sulla terra. Quando Constantine inizia a collaborare con la poliziotta Angela Dodson per risolvere il misterioso suicidio della sorella gemella, le indagini li portano in un mondo di demoni ed angeli che esiste dietro la facciata della Los Angeles contemporanea. Coinvolti in una catastrofica serie di eventi soprannaturali, i due si legano l'un l'altra nella ricerca della pace ad ogni costo."
             }
         ],
-        "aggiornato": "08:45"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Twentyseven",
@@ -1548,7 +1543,7 @@
                 "descrizione": "Il regno di Fantasia sta per essere distrutto dal potere del Nulla, tra le pagine del libro \"La storia infinita\", che il piccolo Sebastian, orfano di madre e incompreso dal padre, si mette a leggere nella soffitta di casa per sottrarsi alla realt� che lo rende infelice. Mentre è intento alla lettura, viene risucchiato dalle vicende che sta immaginando. Insieme al fido Atreyu e al drago volante Falkor, Sebastian sconfigge la bellissima ma perfida regina Xayide."
             }
         ],
-        "aggiornato": "08:45"
+        "aggiornato": "14:25"
     },
     {
         "canale": "IRIS",
@@ -1615,7 +1610,7 @@
                 "descrizione": "Fino a ieri la vita di Kate McQuean, avvocato civilista, si svolgeva interamente tra casa e lavoro, a Miami. Ma, dopo aver chiesto il sequestro della nave del marito di una cliente, cominciano i suoi guai: le esplode la casa, le sparano addosso e di colpo Kate si trova costretta a una fuga a perdifiato. Chi le vuole male è una banda di ex agenti del Kgb, i cui piani per una rapina sono stati intralciati dall'avvocato. Per fortuna a proteggerla, e anche a consolarla nella fuga c'è un aitante detective."
             }
         ],
-        "aggiornato": "08:45"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Rai Movie",
@@ -1672,7 +1667,7 @@
                 "descrizione": "La famiglia del dottor Houseman (composta da lui, dalla moglie e dalle figlie Baby e Lisa) si reca in vacanza in un hotel dove subito il titolare cerca di proporre all'attenzione di Baby il proprio figlio. La ragazza è però immediatamente attratta da John Castle che ha il compito di animare, con la sua partner, le serate di danza. Quando questa rimane incinta e abortisce in maniera clandestina Baby, che l'ha sostituita come compagna di danza di John, chiede l'aiuto del padre. Costui, ritenendo che il ragazzo sia il padre del non nato, si oppone a qualsiasi relazione della figlia con lui."
             }
         ],
-        "aggiornato": "08:45"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Rai Premium",
@@ -1764,7 +1759,7 @@
                 "descrizione": "Sei puntate che vedono la partecipazione di 12 cantanti famosi del mondo musicale contemporaneo che si esibiscono dal vivo, supportati da un'orchestra composta da 24 elementi tra vocalist e orchestrali, presentando brani musicali del repertorio italiano, cover del cuore, cavalli di battaglia scelti dagli artisti per raccontare loro stessi, la loro passione per la musica e il loro percorso umano."
             }
         ],
-        "aggiornato": "08:45"
+        "aggiornato": "14:25"
     },
     {
         "canale": "La 5",
@@ -1851,7 +1846,7 @@
                 "descrizione": "Croce e Delizia, il film di Simone Godano, vede protagoniste due famiglie molte diverse tra loro. I Castelvecchio, eccentrici e con una mentalit� aperta, ma narcisisti e disuniti. I Petagna sono tutto l'opposto: gente molto affiatata, di estrazione sociale più umile, dai valori tradizionali ma conservatori. Come mai queste due famiglie così diverse si ritrovano a trascorrere le vacanze estive insieme? Lo sanno solo i capifamiglia Tony (Fabrizio Bentivoglio) e Carlo (Alessandro Gassmann): l'inaspettato annuncio del loro amore scardiner� gli equilibri delle due famiglie ma soprattutto quelli di Penelope (Jasmine Trinca) e Sandro (Filippo Scicchitano), i loro rispettivi primogeniti."
             }
         ],
-        "aggiornato": "08:45"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Real Time",
@@ -1948,7 +1943,7 @@
                 "descrizione": "Lillino, padre di famiglia a 21 anni, dopo la separazione dalla moglie inizia a mangiare smodatamente. La bilancia del dott. Giardiello segna 250 kg, il suo intervento e' molto delicato."
             }
         ],
-        "aggiornato": "08:45"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Food Network",
@@ -2085,7 +2080,7 @@
                 "descrizione": "A Bisceglie, Ida e Tommaso visitano 2 pasticcerie d'eccellenza e assaporano i 'sospiri'."
             }
         ],
-        "aggiornato": "08:45"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Focus",
@@ -2192,7 +2187,7 @@
                 "descrizione": "Attraverso le animazioni in CGI, analizziamo strato dopo strato pianeti, lune, buchi neri, stelle e galassie, per risolvere i misteri che circondano l'origine e il destino dell'universo."
             }
         ],
-        "aggiornato": "08:45"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Giallo",
@@ -2274,7 +2269,7 @@
                 "descrizione": "Due detective, DCI McDonald e DS Dodds, che apparentemente non hanno nulla in comune, vengono messi insieme e stringono una rumorosa amicizia e una divertente collaborazione in questa miniserie drammatica britannica in due parti ambientata nella moderna Bath."
             }
         ],
-        "aggiornato": "08:45"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Boing",
@@ -2431,7 +2426,7 @@
                 "descrizione": "Craig e i suoi amici partecipano a una gara di kart al ruscello con altri bambini. In palio c'e' un accesso esclusivo a una piscina interrata."
             }
         ],
-        "aggiornato": "08:45"
+        "aggiornato": "14:25"
     },
     {
         "canale": "K2",
@@ -2588,7 +2583,7 @@
                 "descrizione": "5' Stagione Ep.31 - Proseguono le avventure dei tre fratelli scoiattoli dotati di una voce incredibile e di uno straordinario talento musicale."
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Rai Gulp",
@@ -2745,7 +2740,7 @@
                 "descrizione": "Ian è prigioniero nelle segrete del castello di Arcana e non può far nient'altro che attendere che Myrva e Gmor giungano in suo aiuto. Nella cella accanto alla sua c'è però Maila, un'altra prigioniera di Arcana. I due ragazzi cominciano a raccontarsi le loro avventure per ingannare il tempo mentre aspettano l'arrivo dei soccorsi."
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Frisbee",
@@ -2902,7 +2897,7 @@
                 "descrizione": "5' Stagione Ep.25 - Proseguono le avventure dei tre fratelli scoiattoli dotati di una voce incredibile e di uno straordinario talento musicale."
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:25"
     },
     {
         "canale": "DMAX",
@@ -2994,7 +2989,7 @@
                 "descrizione": "Zak, Aaron e la loro squadra vanno a caccia di fantasmi."
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Rai Sport",
@@ -3071,7 +3066,7 @@
                 "descrizione": "Coppa del Mondo - Hangzhou: Fossa olimpica (4a prova)"
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Sportitalia",
@@ -3183,7 +3178,7 @@
                 "descrizione": "Il programma tratta le vicende del calciomercato sia nella sessione estiva che in quella invernale e va in onda alle ore 23.00 dal lunedì al venerdì"
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:25"
     },
     {
         "canale": "HGTV",
@@ -3290,7 +3285,7 @@
                 "descrizione": "Brian e Mika devono trasformare un terreno incolto in un luogo in cui sorgera' una casa da sogno. Inoltre, devono realizzare una cucina su misura per il proprietario."
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:25"
     },
     {
         "canale": "RSI LA 1",
@@ -3447,7 +3442,7 @@
                 "descrizione": "Le notizie di prima serata"
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:25"
     },
     {
         "canale": "RSI LA 2",
@@ -3549,7 +3544,7 @@
                 "descrizione": "Lyndon B. Johnson diviene il presidente degli Stati Uniti d'America nel caotico periodo che si sussegue all'assassinio di Kennedy. Johnson trascorre ben 11 mesi alla Casa Bianca seguendo l'approvazione del Civil Rights Act e preparando la campagna elettorale che gli permetter� di non essere più il \"presidente sostituto\"."
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:25"
     },
     {
         "canale": "DAZN 1",
@@ -3616,7 +3611,7 @@
                 "descrizione": "Un documentario sulla carriera unica di Igor Protti: l'umanita' di un campione capace di incarnare i sogni e la rivalsa delle province. Una storia fatta di gol, cuore e passione."
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Sky Sport 24",
@@ -3638,32 +3633,32 @@
                 "descrizione": "Tutto quello che è accaduto nel panorama sportivo delle ultime 24 ore, con analisi, notizie, e una lettura dei giornali che troveremo in edicola."
             },
             {
-                "ora": "06:45",
+                "ora": "07:00",
                 "titolo": "Sport 24 Calciomercato",
                 "descrizione": "Gli ultimi aggiornamenti sul Calciomercato. Tutte le novita' e le indiscrezioni su trattative e trasferimenti del mercato calciatori in Italia e all'estero. Le notizie esclusive della \"squadra mercato\" di SkySport."
             },
             {
-                "ora": "07:45",
+                "ora": "08:00",
                 "titolo": "News Line",
                 "descrizione": "Tutto quello che è accaduto nel panorama sportivo delle ultime 24 ore, con analisi, notizie, e una lettura dei giornali che troveremo in edicola."
             },
             {
-                "ora": "08:15",
+                "ora": "08:30",
                 "titolo": "News Line",
                 "descrizione": "Tutto quello che è accaduto nel panorama sportivo delle ultime 24 ore, con analisi, notizie, e una lettura dei giornali che troveremo in edicola."
             },
             {
-                "ora": "08:50",
+                "ora": "09:00",
                 "titolo": "Sport 24 Calciomercato",
                 "descrizione": "Gli ultimi aggiornamenti sul Calciomercato. Tutte le novita' e le indiscrezioni su trattative e trasferimenti del mercato calciatori in Italia e all'estero. Le notizie esclusive della \"squadra mercato\" di SkySport."
             },
             {
-                "ora": "09:50",
+                "ora": "10:00",
                 "titolo": "News Line",
                 "descrizione": "Tutto quello che è accaduto nel panorama sportivo delle ultime 24 ore, con analisi, notizie, e una lettura dei giornali che troveremo in edicola."
             },
             {
-                "ora": "10:25",
+                "ora": "10:30",
                 "titolo": "News Line",
                 "descrizione": "Tutto quello che è accaduto nel panorama sportivo delle ultime 24 ore, con analisi, notizie, e una lettura dei giornali che troveremo in edicola."
             },
@@ -3763,17 +3758,17 @@
                 "descrizione": "Tutti gli aggiornamenti dalle squadre di Serie A con collegamenti live, interviste e ospiti in studio."
             },
             {
-                "ora": "20:25",
+                "ora": "20:30",
                 "titolo": "Studio Europei Nuoto",
                 "descrizione": "Studio Europei Nuoto. - Dalla piscina del Foro Italico, il commento alla giornata con notizie, immagini e interviste."
             },
             {
-                "ora": "20:50",
+                "ora": "21:00",
                 "titolo": "Sport 24 Today",
                 "descrizione": "Le notizie e i commenti del giorno, le anteprime e l'attualita' con servizi, commenti, interviste e collegamenti."
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Sky Sport Uno",
@@ -3942,7 +3937,7 @@
                 "descrizione": "Beach Soccer LND. - ... 2026 Finale Campionato U20 06\/08\/2026 Calcio Beach Soccer L.N.D.. - Calcio Beach Soccer L.N.D."
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Sky Sport Tennis",
@@ -3979,7 +3974,7 @@
                 "descrizione": "Toronto & Montreal. - Da Montreal e Toronto, Canada."
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Sky Sport F1",
@@ -4091,7 +4086,7 @@
                 "descrizione": "Decimo appuntamento del mondiale sulla pista di Spa: Antonelli guida la classifica con 25 punti di vantaggio su Russell e 32 su Hamilton. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero."
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Sky Sport Legend",
@@ -4203,7 +4198,7 @@
                 "descrizione": "Champions League Story. - Riviviamo i momenti piu' esaltanti di questa competizione attraverso le partite piu' interessanti. Buon divertimento!"
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Sky Sport MotoGP",
@@ -4360,7 +4355,7 @@
                 "descrizione": "Il magazine dedicato all'approfondimento del weekend di gara e di anticipazione del prossimo GP: tecnica, colore, statistiche, storia, curiosita'. Il mondo delle gare visto dai box."
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Sky Sport Basket",
@@ -4462,7 +4457,7 @@
                 "descrizione": "Bologna Eurolega. - Le V Nere affrontano la trasferta piu' lunga: a Dubai, contro l'ex Abass, in palio ci sono punti pesanti nella corsa alla post season. Telecronaca di Andrea Solaini e Chicca Macchi."
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Sky Sport Arena",
@@ -4514,7 +4509,7 @@
                 "descrizione": "Toronto & Montreal. - Da Montreal e Toronto, Canada."
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Sky Sport Max",
@@ -4556,17 +4551,32 @@
                 "descrizione": "Europei Parigi 2026 Nuoto Artistico. - Segui le gare dei Campionati Europei di nuoto 2026. Da Parigi, Francia."
             },
             {
+                "ora": "13:30",
+                "titolo": "The Boat Show",
+                "descrizione": "Regate, grandi eventi, saloni nautici e tutto il nuovo che arriva dal mondo della cantieristica, a vela e a motore. In ogni occasione, un personaggio del mondo della nautica si racconta al pubblico."
+            },
+            {
                 "ora": "14:00",
                 "titolo": "Mixed 10m Platform Synchro Final",
                 "descrizione": "Nuoto Europei Parigi 2026 Tuffi. - Segui le gare dei Campionati Europei di nuoto 2026. Da Parigi, Francia."
             },
             {
-                "ora": "15:15",
+                "ora": "14:40",
+                "titolo": "Europei Nuoto Speciale Curtis",
+                "descrizione": "Sara Curtis, classe 2006, e' la nuova stella del nuoto italiano, protagonista assoluta agli Europei in vasca corta di Lublino 2025 con ori, record italiani ed europei. La 19enne di Savigliano ha conquistato l'oro nei 50 dorso, record europeo."
+            },
+            {
+                "ora": "14:55",
+                "titolo": "Europei Nuoto Speciale Curtis",
+                "descrizione": "Sara Curtis, classe 2006, e' la nuova stella del nuoto italiano, protagonista assoluta agli Europei in vasca corta di Lublino 2025 con ori, record italiani ed europei. La 19enne di Savigliano ha conquistato l'oro nei 50 dorso, record europeo."
+            },
+            {
+                "ora": "15:10",
                 "titolo": "Men's 3m Springboard Final",
                 "descrizione": "Europei Parigi 2026 Tuffi. - Segui le gare dei Campionati Europei di nuoto 2026. Da Parigi, Francia."
             },
             {
-                "ora": "16:40",
+                "ora": "16:45",
                 "titolo": "Ceccon, Il Campione Complesso",
                 "descrizione": "Pensieri dubbi e riflessioni di un campione complesso. Intervista a Thomas Ceccon durante la lunga preparazione verso gli Europei di Nuoto di Parigi"
             },
@@ -4596,7 +4606,7 @@
                 "descrizione": "L'evoluzione sportiva di Codogno mette in luce il suo percorso come Comunita' Europea dello Sport 2023, valorizzando progetti locali, la crescita della cittadinanza e club storici come l'AC Codogno 1908."
             },
             {
-                "ora": "21:20",
+                "ora": "21:15",
                 "titolo": "Women's 3m Springboard Synchro Final",
                 "descrizione": "Nuoto Europei Parigi 2026 Tuffi. - Segui le gare dei Campionati Europei di nuoto 2026. Da Parigi, Francia."
             },
@@ -4611,7 +4621,7 @@
                 "descrizione": "Europei Parigi 2026 Tuffi. - Segui le gare dei Campionati Europei di nuoto 2026. Da Parigi, Francia."
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Sky Sport Mix",
@@ -4698,7 +4708,7 @@
                 "descrizione": "Challenge Europe powered by AWS. - Le gare della GT World Challenge."
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Sky Sport Golf",
@@ -4770,7 +4780,7 @@
                 "descrizione": "4 DP World Tour. - Tutti i tornei del tour europeo, il DP World Tour."
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Sky Sport 251",
@@ -4945,7 +4955,7 @@
                 "descrizione": "Parigi, 1835. Frédéric Chopin ha 25 anni. È celebrato nei salotti parigini, adorato dall’aristocrazia e dal Re di Francia. Nessun evento culturale di rilievo è completo senza una sua apparizione. Lo vediamo durante scorribande notturne e alle feste che seguono i suoi concerti – quasi sempre traboccante di energia, mentre cela la sua malattia dietro una maschera ironica. La vita gli scivola tra le dita, ma lui si rifiuta di rallentare. Compone le sue opere più grandi, talvolta su commissione speciale, mentre impartisce lezioni di pianoforte per sbarcare il lunario. È ammirato dagli amici, adorato dalle donne, ma col tempo scoprir� che la cosa più importante della sua vita è la musica."
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Sky Cinema Uno +24",
@@ -5007,7 +5017,7 @@
                 "descrizione": "Lorenzo ha un’agenzia molto particolare: offre amici a noleggio. Se hai bisogno di conforto, di compagnia o semplicemente di un consiglio per lo shopping, Lorenzo è il finto amico che fa per te. Quando però è il proprietario dell’azienda di dolciumi dove lavorano i suoi zii ad aver bisogno di un amico, tutto si scompiglier� e la vita di Lorenzo cambier� definitivamente."
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Sky Cinema Due",
@@ -5069,7 +5079,7 @@
                 "descrizione": "Ricostruzione dettagliata della distruzione del sottomarino russo Kursk avvenuta nell'agosto 2000 nel corso di un'esercitazione navale su larga scala. L'esplosione verificatasi mentre la ciurma si stava preparando a sparare un missile fu causata da un'avaria nel sistema. Nell'incidente perirono 118 membri dell'equipaggio."
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Sky Cinema Due +24",
@@ -5086,7 +5096,7 @@
                 "descrizione": "Per Malcolm Little la vita è sempre stata caratterizzata dalla sofferenza e dalla lotta: un'infanzia infelice trascorsa tra orfanatrofi e riformatori. Prova sulla sua pelle la violenza del Ku Klux Klan e il degrado dei ghetti neri; diviene spacciatore, sfruttatore e conosce nuovamente la galera, ma l'incontro con il musulmano nero Elijah Muhammad gli cambia la vita: rifiuta il cognome impostogli dalla societ� bianca ribattezzandosi Malcolm X e divenendo il capo e la guida di tutti i neri che ... La vita di Malcolm X. È basato sull'Autobiografia di Malcolm X."
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Sky Cinema Collection",
@@ -5153,7 +5163,7 @@
                 "descrizione": "Massimo è un ombroso barista, divorziato da poco, che si trova a indagare su alcuni delitti che avvengono nella sua cittadina toscana, Pineta. Il suo istinto d'investigatore trova sempre spunti in alcune conversazioni, che è costretto a sedare nel suo bar, ad opera di quattro arzilli vecchietti. Mentre indaga, Massimo si divide fra un amore per il commissario di polizia Vittoria Fusco, le vicende della sua barista Tiziana e la comparsa del suo fratellastro, Beppe."
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Sky Cinema Family",
@@ -5215,7 +5225,7 @@
                 "descrizione": "Re Magnus è in guerra contro un terribile nemico. Ma armi e battaglie non lo distraggono dal doloroso ricordo della moglie perduta. Di lei gli rimane solo la piccola Biancaneve. Fino al giorno in cui, nella Foresta Tenebrosa, il re incontra una donna bellissima, capace di farlo innamorare di nuovo: la malvagia Ravenna. È la regina del Male, che con le sue arti di magia nera, assorbe dal cuore delle fanciulle l'eterna giovinezza, uccidendole. La prossima vittima è Biancaneve. Ma sotto il candore della pelle e l'ingenuit� dello sguardo, la ragazza cela un animo guerriero. Ed Eric, il cacciatore destinato a sopprimerla, si trover� di fronte una donna coraggiosa, affascinante, e decisa a combattere... nonché una banda di nani ribelli che darebbero la vita per lei. La perfida Ravenna ha i giorni contati."
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Sky Cinema Action",
@@ -5267,7 +5277,7 @@
                 "descrizione": "Il film si svolge nel XIV secolo, durante un periodo turbolento in cui le nazioni europee si contendono il dominio all'interno del Sacro Romano Impero. La Svizzera è una terra serena e pastorale che viene minacciata dall'ambizioso Impero austriaco. Guglielmo Tell, un cacciatore che in passato aveva vissuto in pace, si ritrova a dover guidare il suo popolo alla ribellione dopo che la sua famiglia e la sua patria sono messe in pericolo da un tirannico re e dai suoi crudeli signori della guerra. Costretto a prendere le armi per difendere ciò che gli è più caro, Tell diventa il simbolo di una lotta per la libert� e l'indipendenza, dando inizio a una resistenza che cambier� il destino della sua terra."
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Sky Cinema Suspense",
@@ -5329,7 +5339,7 @@
                 "descrizione": "John è in fuga. Trova riparo nel fitto della foresta, vicina a un villaggio isolato dell’estremo Nord, dove domina la religione, il sole non tramonta mai e le persone sembrano appartenere a un’altra epoca. Tra lui e il suo destino ci sono solo Lea, una donna in difficolt� ma dalla grande forza, e suo figlio Caleb, un bambino curioso e dal cuore puro. Mentre il sole di mezzanotte confonde realt� e immaginazione, John dovr� affrontare il tragico passato che lo tormenta."
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Sky Cinema Romance",
@@ -5391,7 +5401,7 @@
                 "descrizione": "Mary Fior (la Lopez) organizza matrimoni. Mentre è presa nella preparazione delle nozze della miliardaria Fran Donnolly, rischia di essere travolta da un cassonetto delle immondizie. A salvarla è Steve Edison, un pediatra. È il colpo di fulmine. Peccato che Steve sia proprio il promesso sposo della ricca cliente Fran."
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Sky Cinema Drama",
@@ -5448,7 +5458,7 @@
                 "descrizione": "C'era una volta Jasmine, reginetta mondana di Park Avenue, sposata al carismatico Hal, uomo d'affari che la viziava e lusingava. Ma Hal era anche un truffatore e un fedifrago e la fine del loro matrimonio ha portato Jasmine alla bancarotta e all'esaurimento nervoso. Sola e in balìa degli antidepressivi, la donna si trasferisce a San Francisco per vivere con la sorella Ginger, che spinge ad essere più ambiziosa in amore, scatenando la reazione del fidanzato di lei, Chili."
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Sky Cinema Comedy",
@@ -5510,7 +5520,7 @@
                 "descrizione": "Federica, mantenuta di lusso, riunisce nella sua villa al mare, dopo quindici anni dalla licenza liceale, un folto gruppo di ex-compagni di scuola: Maria Rita, single e psicologa; Gloria, ragazza madre; Valeria, giornalista ; Gioia, sterile e un po' fuori di testa; Jolanda, petulante zitella; Margherita, insoddisfatta moglie di un gelosissimo carabiniere; Francesco, imbellito ma insoddisfatto; Fabris, il bello della classe, peggiorato fisicamente e persino calvo; Luca, ex-marito di Valeria, vignettista satirico; Bruno, cantante fallito; Attemi, videomane; Armando, eterno bambinone; Gino, magistrato finto paralitico; Mauro, squallido politicante; Ottavio, insopportabile sapientone; Finocchiaro, burino macellaio; Piero \"il Patata\", estroverso professore di liceo, afflitto da una moglie volgare ed ingenuamente innamorato della sua allieva Cristina. Dal pomeriggio all'alba successiva, l'incontro rivela le illusioni..."
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Sky Uno",
@@ -5617,7 +5627,7 @@
                 "descrizione": "Il meglio delle 4 tappe del tour estivo dell'RDS Summer Festival 2026, con i migliori artisti del panorama musicale e i grandi successi dell'estate."
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Sky Atlantic",
@@ -5734,7 +5744,7 @@
                 "descrizione": "La serie prequel vede la dinastia Targaryen all'apice assoluto del suo potere, con più di 15 draghi sotto il loro giogo. La maggior parte degli imperi, che siano reali o immaginari, crollano quando raggiungono tali poteri e tali altezze. Nel caso dei Targaryen, la loro lenta caduta inizia quasi 193 anni prima degli eventi de Il Trono di Spade, quando re Viserys Targaryen rompe un secolo di tradizione nominando sua figlia Rhaenyra erede al Trono di Spade. La corte rimane scioccata quando Rhaenyra mantiene il suo status di erede nonostante Viserys in seguito avr� un figlio maschio, legittimo erede. Inizia così ad attecchire il seme della divisione e forti attriti in tutto il regno."
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Sky Serie",
@@ -5871,7 +5881,7 @@
                 "descrizione": "Joy e Stan, due ex allenatori di tennis, possono finalmente godersi la vita dopo la vendita della loro accademia. Ma quando Joy scompare, i quattro figli della coppia si ritrovano ad analizzare il matrimonio dei genitori da una prospettiva diversa."
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Sky Investigation",
@@ -5988,7 +5998,7 @@
                 "descrizione": "Il comandante della Police Nationale Mélissa Sainte-Rose, originaria della Martinica, viene trasferita dalla Francia continentale a Fort-de-France, dove trova alle sue dipendenze il capitano Gaëlle Crivelli. I rapporti sono tesi tra le due poliziotte, perché totalmente diverse nel loro comportamento, ma complementari per la risoluzione degli omicidi."
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Sky Crime",
@@ -6120,7 +6130,7 @@
                 "descrizione": "In compagnia di Carlo Lucarelli, addentriamoci nei meandri piu' oscuri della mente criminale, scovando i segreti di queste persone. Tra il 1968 e il 1985 il cosiddetto Mostro di Firenze compie otto duplici omicidi. Per la prima volta in Italia si parla di 'serial killer'."
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:25"
     },
     {
         "canale": "Sky Adventure",
@@ -6252,7 +6262,7 @@
                 "descrizione": "Il biologo marino Austin Gallagher va alla ricerca dei misteri legati agli squali che vivono nel Triangolo delle Bermuda seguendo uno squalo femmina di nome Mabel."
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:26"
     },
     {
         "canale": "MTV",
@@ -6269,72 +6279,92 @@
                 "descrizione": "Ep37 di 42 - Rob, Steelo e Maddy Smith cercano di interpretare i BIZARRE BEASTS, guardano le persone rovinare il divertimento in GAME OVER FOREVER e cercano di curare bambini SCHOOLSICK."
             },
             {
-                "ora": "06:30",
+                "ora": "06:25",
                 "titolo": "Ridiculousness: Veri American Idiots",
                 "descrizione": "Ep38 di 42 - Rob e Steelo con Maddy Smith lavano CAR DUMPS, contano NUMBER BUMMERS e firmano DELIVERY HAZARDS."
             },
             {
-                "ora": "06:55",
+                "ora": "06:50",
                 "titolo": "Ridiculousness: Veri American Idiots",
                 "descrizione": "Ep39 di 42 - Rob e Steelo insieme a Carly Aquilino guardano FIRST TIME WITH FIREWORKS, accostano e ripartono in SOBRIETY TEST EXTRA CREDIT e sono spaventati da FACEFUL OF FILTH."
             },
             {
-                "ora": "07:20",
-                "titolo": "Catfish: False Identita'",
-                "descrizione": "Ep78 di 100 Sham e Philip - Sham si è innamorata alla follia di Philip, un principe arabo conosciuto su Instagram, ma Philip si comporta in modo strano. Nev e Kamie indagano"
+                "ora": "07:10",
+                "titolo": "Ridiculousness: Veri American Idiots",
+                "descrizione": "Ep7 di 42 - Uno dopo l'altro tutti i piu' divertenti video trovati su internet e presentati da Rob Dyrdek"
+            },
+            {
+                "ora": "07:35",
+                "titolo": "Ridiculousness: Veri American Idiots",
+                "descrizione": "Ep21 di 42 - Uno dopo l'altro tutti i piu' divertenti video trovati su internet e presentati da Rob Dyrdek"
+            },
+            {
+                "ora": "07:50",
+                "titolo": "Ridiculousness: Veri American Idiots",
+                "descrizione": "Ep27 di 42 - Uno dopo l'altro tutti i piu' divertenti video trovati su internet e presentati da Rob Dyrdek"
             },
             {
                 "ora": "08:10",
                 "titolo": "Catfish: False Identita'",
+                "descrizione": "Ep78 di 100 Sham e Philip - Sham si è innamorata alla follia di Philip, un principe arabo conosciuto su Instagram, ma Philip si comporta in modo strano. Nev e Kamie indagano"
+            },
+            {
+                "ora": "08:50",
+                "titolo": "Catfish: False Identita'",
                 "descrizione": "Ep79 di 100 Jaquan e Shantel - Catfish aiuta Jaquan a mettersi in contatto con il suo misterioso amore online, Shantel. Ma in Catfish non si sa mai di chi ci si può fidare!"
             },
             {
-                "ora": "09:00",
+                "ora": "09:35",
+                "titolo": "Catfish: False Identita'",
+                "descrizione": "Ep3 di 23 - Danny ha intenzione di metter su famiglia con la sua fidanzata online. Ma quando chiede aiuto a Max e Nev per incontrarla dal vivo scoprira' di aver a che fare con un ex Catfish!"
+            },
+            {
+                "ora": "10:20",
                 "titolo": "Teen Mom OG",
                 "descrizione": "Ep17 di 24 - Cheyenne mette in dubbio la relazione con Matt. Con sorpresa di Maci, Ryan si presenta alla festa di compleanno di Bentley. Amber accetta il patteggiamento."
             },
             {
-                "ora": "09:55",
+                "ora": "11:05",
                 "titolo": "Teen Mom OG",
                 "descrizione": "Ep18 di 24 - Lo shock di Amber per i filmati del suo arresto. Andrew condivide la sua versione della storia. Catelynn parla con sua madre del trauma che ha passato nel dare Carly in adozione."
             },
             {
-                "ora": "10:50",
+                "ora": "11:50",
                 "titolo": "Teen Mom OG",
                 "descrizione": "Ep19 di 24 - Amber inizia una nuova storia, mentre Catelynn pensa di diventare veterinaria. Cheyenne chiude la sua relazione con Matt."
             },
             {
-                "ora": "11:45",
+                "ora": "12:40",
                 "titolo": "Dallas Cowboys Cheerleaders: Making...",
                 "descrizione": "Ep6 di 13 Media Training - Kelli insegna alle candidate come presentarsi al meglio agli eventi stampa."
             },
             {
-                "ora": "12:35",
+                "ora": "13:20",
                 "titolo": "Dallas Cowboys Cheerleaders: Making...",
                 "descrizione": "Ep7 di 13 Test della personalit� - Kelli porta le ragazze in un luogo speciale per vedere come interagiscono durante un'apparizione pubblica."
             },
             {
-                "ora": "13:30",
+                "ora": "14:05",
                 "titolo": "Caught In The Act",
                 "descrizione": "Ep5 di 30 Troppo bello per piangere - La storia d'amore di R.Guy e Ja'Van viene messa in discussione quando R.Guy chiede l'aiuto di Tami."
             },
             {
-                "ora": "14:20",
+                "ora": "14:55",
                 "titolo": "Caught In The Act",
                 "descrizione": "Ep6 di 30 - Gli allenamenti e l'alto desiderio sessuale di Melissa insospettiscono il suo fidanzato Max."
             },
             {
-                "ora": "15:15",
+                "ora": "15:40",
                 "titolo": "Teen Mom 2 - Expect a Miracle",
                 "descrizione": "S6 Ep10 Expect a Miracle - Kailyn e' divisa tra Javi e Jo. Leah divorzia definitivamente da Jeremy e si prepara a tornare in terapia. Jenelle e Barbara vanno in tribunale per discutere sulla custodia..."
             },
             {
-                "ora": "16:05",
+                "ora": "16:25",
                 "titolo": "Teen Mom 2 - Mi dispiace non mi dispiace",
                 "descrizione": "S6 Ep13 Mi dispiace non mi dispiace - In questo speciale episodio a conclusione di questa stagione di Teen Mom 2, Kailyn e Jo rivelano alcune sorprendenti novita' a proposito dei loro figli e gli..."
             },
             {
-                "ora": "17:00",
+                "ora": "17:10",
                 "titolo": "Help! I am in a secret relationship!",
                 "descrizione": "Ep15 di 24 Kaitlin e Cam - Kaitlin spera che il suo fidanzato Cam sia quello giusto, ma sospetta che possa essere un impostore."
             },
@@ -6344,47 +6374,52 @@
                 "descrizione": "Ep8 di 15 - Don affronter� Rich mentre Sebastian affronter� Jeff-"
             },
             {
-                "ora": "18:30",
+                "ora": "18:25",
                 "titolo": "Catfish: False Identita'",
                 "descrizione": "Ep1 - Dopo la morte del padre, Cassie ha superato la sua depressione grazie alla sua amiciza virtuale con Steve. Hanno addirittura pensato al matrimonio, ma Steve e' restio ad incontrarla di persona..."
             },
             {
-                "ora": "19:20",
+                "ora": "19:10",
                 "titolo": "Catfish: False Identita'",
                 "descrizione": "Ep2 di 23 - Alante ha passato gli ultimi 8 anni a pianificare una vita con Nevah, conosciuta online. A causa delle sue continue sparizioni Alante chiede aiuto a Nev e Max."
             },
             {
-                "ora": "20:10",
+                "ora": "19:55",
                 "titolo": "Caught In The Act",
                 "descrizione": "Ep24 di 24 Nessun futuro - Sicorra pensava che il personaggio da playboy del suo fidanzato rapper fosse per lo spettacolo, ma ora sospetta che lui la tradisca."
             },
             {
-                "ora": "21:05",
+                "ora": "20:40",
                 "titolo": "Caught In The Act",
                 "descrizione": "Ep9 di 30 - Alexis ha bisogno dell'aiuto di Tami per capire se il suo tempo col fidanzato sia realmente finito."
             },
             {
-                "ora": "22:00",
+                "ora": "21:30",
                 "titolo": "Ink Master Redemption",
                 "descrizione": "Ep2 di 10 - Jime, Duffy e Christian incontreranno Aj, Zack e Frank"
             },
             {
-                "ora": "22:25",
+                "ora": "21:50",
                 "titolo": "Ink Master: Redemption",
                 "descrizione": "Ep3 di 13 - Sebastian, James e Dunbar Dan, Stephanie e Becky"
             },
             {
-                "ora": "23:00",
+                "ora": "22:15",
                 "titolo": "MTV Floribama Shore",
                 "descrizione": "Gus subisce le dolorose conseguenze dell'incidente. Le ragazze danno il via ad una giornata di festeggiamenti per il compleanno di Jeremiah."
             },
             {
-                "ora": "23:55",
+                "ora": "23:00",
                 "titolo": "Ridiculousness: Veri American Idiots",
                 "descrizione": "Ep36 di 42 - In questa puntata Rob e Steelo sono affiancati da Lolo Wood."
+            },
+            {
+                "ora": "23:25",
+                "titolo": "Ridiculousness: Veri American Idiots",
+                "descrizione": "Ep10 di 42 - Rob Dyrdek presenta i video più divertenti presi da Internet insieme ai co-conduttori Sterling Brim, Chanel West Coast e alcune delle celebrit� più famose al mondo."
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:26"
     },
     {
         "canale": "Comedy Central",
@@ -6541,7 +6576,7 @@
                 "descrizione": "Hot in Cleveland\" si basa su tre favolose, eccentriche donne sopra i quarant'anni di Los Angeles, migliori amiche, le cui vite sono state cambiate per sempre quando il loro aereo è dovuto atterrare inaspettatamente a Cleveland e presto riscopriranno loro stesse in questa nuova \"terra promessa\"."
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:26"
     },
     {
         "canale": "Sky Arte",
@@ -6633,7 +6668,7 @@
                 "descrizione": "La vita di Cy Twombly, incredibile scultore, fotografo e pittore prolifico, contemporaneo di Robert Rauschenberg e Jasper Johns."
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:26"
     },
     {
         "canale": "Sky Documentaries",
@@ -6715,7 +6750,7 @@
                 "descrizione": "Grazie a filmati inediti recentemente scoperti ricostruiamo la vera storia di uno degli eventi piu' catastrofici del nostro tempo: il disastro di Chernobyl."
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:26"
     },
     {
         "canale": "Sky Nature",
@@ -6832,7 +6867,7 @@
                 "descrizione": "Ep10 di 10 Il Pantanal - Il Pantanal e' una delle riserve naturali piu' grandi e piu' ricche di flora e fauna, ma e' anche uno dei luoghi piu' inospitali."
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:26"
     },
     {
         "canale": "Discovery Channel",
@@ -6954,7 +6989,7 @@
                 "descrizione": "Scopriamo come vengono realizzati i prodotti di uso quotidiano, tra cui i ferri di cavallo, la lavastoviglie, la canna da mosca in grafite e le pizze surgelate."
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:26"
     },
     {
         "canale": "History Channel",
@@ -7071,7 +7106,7 @@
                 "descrizione": "Ep13 di 40 Che bottino Ivy! - Nuove aste, nuove battaglie all'ultima offerta. I cacciatori d'affari piu' agguerriti d'America tornano in azione per aggiudicarsi i magazzini piu' ghiotti."
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:26"
     },
     {
         "canale": "Cartoon Network",
@@ -7228,7 +7263,7 @@
                 "descrizione": "Craig e i suoi due amici Kelsey e JP vivono bellissime avventure nella natura selvaggia conosciuta come Creek: un posto pieno di azione e incredibili storie."
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:26"
     },
     {
         "canale": "Dea Kids",
@@ -7385,7 +7420,7 @@
                 "descrizione": "Dopo aver creduto di aver trasformato Chef in pietra, Duncan punta al caos assoluto solo per scoprire che alla fine non c'è gioia nella vittoria senza un avversario."
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:26"
     },
     {
         "canale": "Nick Jr",
@@ -7542,7 +7577,7 @@
                 "descrizione": "Ep9 di 26 Il libro del castigo \/ Pulizie a sorpresa - I Barbabebe' vanno in biblioteca per fare una ricerca. \/ e' primavera, e ci sono in programma le grandi pulizie per ogni barbabebe'."
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:26"
     },
     {
         "canale": "Boomerang",
@@ -7699,7 +7734,7 @@
                 "descrizione": "Ep35 Un cesto di granchi - Litigandosi la crema al cioccolato, Grizzy e i Lemming finiscono in una citta' sottomarina di granchi, in cui c'e' un cibo ancor piu' squisito!"
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:26"
     },
     {
         "canale": "Sky TG 24",
@@ -7856,7 +7891,7 @@
                 "descrizione": "Previsioni meteo dettagliate e sempre aggiornate 24 ore al giorno. Le previsioni regionali, nazionali ed internazionali."
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:26"
     },
     {
         "canale": "Rai News 24",
@@ -8013,7 +8048,7 @@
                 "descrizione": "NEWS + SOMMARIO"
             }
         ],
-        "aggiornato": "08:46"
+        "aggiornato": "14:26"
     },
     {
         "canale": "Sky Meteo 24",
