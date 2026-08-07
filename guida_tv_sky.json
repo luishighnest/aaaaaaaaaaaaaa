@@ -124,17 +124,12 @@
                 "descrizione": "Un appuntamento speciale, condotto da Carlo Conti e Andrea Delogu, che unisce nuove performance ai momenti più coinvolgenti delle quattro serate di Piazza del Popolo con i grandi protagonisti della musica italiana, tra duetti, performance mai viste e le hit più travolgenti del momento, per rivivere l'entusiasmo e l'energia che hanno trasformato ogni serata in una grande festa di musica dal vivo."
             }
         ],
-        "aggiornato": "07:24"
+        "aggiornato": "13:15"
     },
     {
         "canale": "Rai 2",
         "categoria": "Digitale Terrestre",
         "programmi": [
-            {
-                "ora": "06:00",
-                "titolo": "Ritorno a Las Sabinas",
-                "descrizione": "Dopo molti anni di lontananza, le sorelle Molina tornano nella loro citt� natale per affrontare i problemi di salute del padre. Il loro ritorno significa una riunione con le vite, gli amori e i segreti che hanno cercato di dimenticare."
-            },
             {
                 "ora": "06:10",
                 "titolo": "La Grande Vallata",
@@ -192,8 +187,8 @@
             },
             {
                 "ora": "14:00",
-                "titolo": "European Aquatics Parigi 2026 - Tuffi Grandi Altezze: 20mt Donne",
-                "descrizione": "Prima giornata dei tuffi dalle grandi altezze agli Europei di Parigi 2026, con il primo e il secondo round della gara femminile dai 20 metri."
+                "titolo": "European Aquatics Parigi 2026 - Tuffi Grandi Altezze: 20mt Uomini (Round 1-2)",
+                "descrizione": "Primo appuntamento con la gara maschile dei tuffi dalle grandi altezze, con gli atleti impegnati nel primo e nel secondo round dai 20 metri."
             },
             {
                 "ora": "18:10",
@@ -222,8 +217,8 @@
             },
             {
                 "ora": "19:42",
-                "titolo": "Equivoco",
-                "descrizione": "TELEFILM - - Un padre disperato chiede ad Erin di riaprire il caso irrisolto, vecchio di quindici anni, dell'omicidio di sua figlia nel suo appartamento...."
+                "titolo": "Blue Bloods",
+                "descrizione": "La serie segue le vicende della famiglia Reagan, che da generazioni lavorano come poliziotti presso il New York City Police Department. Frank Reagan è il capo del dipartimento, ruolo che precedentemente è stato ricoperto da suo padre Henry, è rimasto vedovo con tre figli ormai adulti: Danny, Erin, Jamie, e un altro figlio che è morto. Danny è un detective che svolge il suo lavoro in modo duro e non sempre seguendo il manuale, Erin è un assistente procuratore distrettuale che persegue molti criminali arrestati da Danny e Frank, Jamie invece è un ufficiale fresco di Accademia appena entrato nel corpo di polizia. Henry è il padre di Frank, un commissario di polizia in pensione che fornisce consulenze a suo figlio e ai nipoti."
             },
             {
                 "ora": "20:30",
@@ -233,7 +228,7 @@
             {
                 "ora": "21:00",
                 "titolo": "TG2 Post",
-                "descrizione": "Rubrica informativa del TG2."
+                "descrizione": "Rubrica informativa del TG2. - Direttore Antonio Preziosi"
             },
             {
                 "ora": "21:20",
@@ -246,7 +241,7 @@
                 "descrizione": "Dopo una carriera di successo a Chicago, Elsbeth Tascioni, un'avvocatessa astuta ma non convenzionale, utilizza il suo singolare punto di vista per fare osservazioni uniche e mettere all'angolo brillanti criminali insieme alla polizia di New York."
             }
         ],
-        "aggiornato": "07:24"
+        "aggiornato": "13:15"
     },
     {
         "canale": "Rai 3",
@@ -254,8 +249,8 @@
         "programmi": [
             {
                 "ora": "08:00",
-                "titolo": "Agorà Estate",
-                "descrizione": "L'approfondimento estivo del mattino di Rai3 condotto da Giulia Di Stefano con Marco Carrara, attraverso ospiti, inviati, inchieste e contributi video dai social."
+                "titolo": "L'Avvelenata - Agorà Estate",
+                "descrizione": "Apertura della puntata dedicata alla scomparsa di Francesco Guccini, il cantautore e poeta emiliano che oggi il mondo della musica e della cultura italiana piangono. Poi l'attualit� politica, con il caso Delmastro che continua a tenere banco, le spese per la difesa e la corsa per la leadership del campo largo. Infine il caro vacanze, con il primo weekend di agosto ormai alle porte e un esodo fortemente condizionato dall'aumento dei costi e conti sempre più salati per i vacanzieri del Bel Paese. Ospiti della puntata, Arturo Scotto, Partito Democratico, Grazia Di Maggio, Fratelli D'Italia, Alessandro Campi, politologo Universit� di Perugia, Gianni Riotta, Podcast Riottoso, Massimo Bernardini, giornalista e conduttore, Simona Maggiorelli, direttrice Left, Flaminia Camilletti, La Verit� , Mariano Bella, direttore Ufficio Studi Confcommercio, Fulvio Abbate, scrittore, Laila Perciballi, Movimento Consumatori, Carlo Cambi, La Verit� , Anna Vagli, criminologa, Stefano Callipo, psicologo."
             },
             {
                 "ora": "10:35",
@@ -388,7 +383,7 @@
                 "descrizione": "Serie antologica di genere fantastico che raccoglie episodi a sé stanti, affidati a diversi registi, e senza personaggi fissi, sulla falsariga di serie classiche."
             }
         ],
-        "aggiornato": "07:24"
+        "aggiornato": "13:15"
     },
     {
         "canale": "Rai 4",
@@ -515,7 +510,7 @@
                 "descrizione": "Quando si trova nel mirino di gang marsigliesi in guerra e agenti corrotti, un onesto poliziotto deve prendere in mano la situazione per proteggere la sua squadra."
             }
         ],
-        "aggiornato": "07:24"
+        "aggiornato": "13:15"
     },
     {
         "canale": "Rai 5",
@@ -627,7 +622,7 @@
                 "descrizione": "Il documentario ripercorre il percorso professionale e biografico di una delle fotografe italiane più significative e apprezzate del `900: la torinese Paola Agosti. \"Per me la fotografia è stata soprattutto testimonianza e partecipazione\", commenta la stessa fotografa che racconta in prima persona la sua vocazione."
             }
         ],
-        "aggiornato": "07:24"
+        "aggiornato": "13:15"
     },
     {
         "canale": "Rete 4",
@@ -724,7 +719,7 @@
                 "descrizione": "Sette episodi tutti da ridere che vedono come protagonisti alcuni dei principali esponenti del genere, vecchi e nuovi, ognuno alle prese con rocambolesche situazioni e gag surreali..."
             }
         ],
-        "aggiornato": "07:24"
+        "aggiornato": "13:15"
     },
     {
         "canale": "Canale 5",
@@ -876,7 +871,7 @@
                 "descrizione": "Serhat Yelduran è un chirurgo di grande successo che decide di cambiare il destino che la sua famiglia gli ha riservato per costruirsi una vita diversa a Istanbul. Questa decisione lo porta a incontrare Melek Özdel, di cui Serhat si innamora a prima vista e che sposa in segreto, all'insaputa della sua famiglia."
             }
         ],
-        "aggiornato": "07:24"
+        "aggiornato": "13:15"
     },
     {
         "canale": "Italia 1",
@@ -1008,7 +1003,7 @@
                 "descrizione": "Law & Order è un media franchise creato da Dick Wolf per la NBC Universal e formato da varie serie televisive poliziesco-giudiziarie e un film per la televisione, trasmessi sul network NBC dal 13 settembre 1990. Il franchise Law & Order nel tempo ha ispirato anche una serie di adattamenti televisivi stranieri, un docu-reality e videogiochi ufficiali, oltre a generare una serie di crossover con altre serie tv statunitensi."
             }
         ],
-        "aggiornato": "07:24"
+        "aggiornato": "13:15"
     },
     {
         "canale": "La7",
@@ -1027,17 +1022,17 @@
             {
                 "ora": "08:00",
                 "titolo": "Omnibus Dibattito",
-                "descrizione": "Programma di informazione e approfondimento con rubriche, ospiti, rassegna stampa, aggiornamenti sul traffico, previsioni meteo, dibattito sul tema del giorno. 24a Edizione."
+                "descrizione": "Flavia Fratello con Alessio Gallicola, Niccolò Carratelli, Edoardo Zanchini, Ettore Francesco Sequi, Pina Picierno"
             },
             {
                 "ora": "09:40",
                 "titolo": "Coffee Break",
-                "descrizione": "Conduce Marco Piccaluga"
+                "descrizione": "Marco Piccaluga con Massimiliano Lenzi, Federica Fantozzi, Alessandro Onorato, Federico Palmaroli, Domenico Giordano"
             },
             {
                 "ora": "11:00",
                 "titolo": "L'Aria Che Tira",
-                "descrizione": "Conduce Ludovica Ciriello"
+                "descrizione": "Ludovica Ciriello con Corradino Mineo, Flaminia Camilletti, Mirella Serri, Augusto Minzolini, Edmondo Bruti Liberati, Elena Testi, Maurizio Molinari, Vincenzo Camporini, Silvia Sciorilli Borrelli, Costanza Cavalli, Alberto Simoni,..."
             },
             {
                 "ora": "13:30",
@@ -1080,7 +1075,7 @@
                 "descrizione": "Un viaggio alla scoperta dei più grandi misteri del nostro tempo"
             }
         ],
-        "aggiornato": "07:24"
+        "aggiornato": "13:15"
     },
     {
         "canale": "TV8",
@@ -1182,7 +1177,7 @@
                 "descrizione": "Massimo è un ombroso barista, divorziato da poco, che si trova a indagare su alcuni delitti che avvengono nella sua cittadina toscana, Pineta. Il suo istinto d'investigatore trova sempre spunti in alcune conversazioni, che è costretto a sedare nel suo bar, ad opera di quattro arzilli vecchietti. Mentre indaga, Massimo si divide fra un amore per il commissario di polizia Vittoria Fusco, le vicende della sua barista Tiziana e la comparsa del suo fratellastro, Beppe."
             }
         ],
-        "aggiornato": "07:24"
+        "aggiornato": "13:15"
     },
     {
         "canale": "Nove",
@@ -1289,7 +1284,7 @@
                 "descrizione": "La stand-up comedy incontra il dating in un format con protagonisti Marta e Gianluca."
             }
         ],
-        "aggiornato": "07:24"
+        "aggiornato": "13:15"
     },
     {
         "canale": "20 Mediaset",
@@ -1411,7 +1406,7 @@
                 "descrizione": "Andrew e Garrett Foster sono due noti ladri di rare auto d’epoca. Ingaggiati per rubare una magnifica Bugatti del 1937 battuta all’asta per oltre due milioni di dollari, realizzano un colpo audace senza precedenti, tanto magistrale quanto sfortunato: il colpo è ai danni di Morier, noto mafioso rivale di Max Klemp, boss in ascesa della mafia tedesca che ha scelto di stabilirsi in Costa Azzurra. Quando Morier minaccia la loro vita e quella della fidanzata di Andrew, i due ladri non hanno altra scelta che accettare il ricatto del criminale e quindi rubare a Klemp la sua preziosissima Ferrari 250GT del 1962. Escogiteranno un piano che li metter� a dura prova tra inseguimenti mozzafiato e spettacolari incidenti."
             }
         ],
-        "aggiornato": "07:24"
+        "aggiornato": "13:15"
     },
     {
         "canale": "Twentyseven",
@@ -1513,7 +1508,7 @@
                 "descrizione": "Berlino, 1928. Wei Ling Soo è un celebre prestigiatore cinese in grado di fare sparire un elefante o di teletrasportarsi sotto gli occhi meravigliati di un pubblico acclamante. Ma dietro la maschera e dentro il suo camerino, Wei Ling Soo rivela Stanley Crawford, un gentiluomo inglese sentenzioso e insopportabile che accetta la proposta di un vecchio amico: smascherare una presunta medium, impegnata a circuire una ricchissima famiglia americana in vacanza sulla riviera francese. Ospite dei Catledge sulla Costa azzurra e sotto falsa identit� , si fa passare per un uomo d'affari; Stanley incontra la giovane Sophie Baker ed è subito amore. Ma per un uomo cinico e sprezzante come lui è difficile leggere dietro alle vibrazioni di Sophie un sentimento sincero. Un temporale e il ricovero della zia adorata, faranno crollare il razionalismo e le resistenze di Stanley: il soprannaturale esiste eccome e si chiama amore."
             }
         ],
-        "aggiornato": "07:24"
+        "aggiornato": "13:15"
     },
     {
         "canale": "IRIS",
@@ -1580,7 +1575,7 @@
                 "descrizione": "È il 1943. Gli alleati sono determinati a spezzare la presa di Hitler sull'Europa occupata e organizzano un attacco in Sicilia, trovandosi davanti a una sfida impossibile: proteggere l'enorme esercito da un potenziale massacro durante l'assedio. I due straordinari agenti del controspionaggio Ewen Montagu (Colin Firth) e Charles Cholmondeley (Matthew Macfadyen) hanno il compito di escogitare la più ingegnosa e improbabile strategia di disinformazione sulla guerra facendo leva sul più insolito agente segreto: un uomo morto."
             }
         ],
-        "aggiornato": "07:24"
+        "aggiornato": "13:15"
     },
     {
         "canale": "Rai Movie",
@@ -1624,7 +1619,7 @@
             {
                 "ora": "21:10",
                 "titolo": "Casablanca",
-                "descrizione": "1941 Seconda guerra mondiale. Marocco francese, Casablanca. Rick gestisce un locale frequentato da profughi, avventurieri e resistenti. L'arrivo di Ilsa, la donna che non ha mai dimenticato, riapre ferite e sentimenti mai sopiti. Tra passioni, scelte difficili e il peso della guerra, Rick si trova davanti a un destino inatteso."
+                "descrizione": "Nel principale porto del Marocco nel 1941 si incontrano poliziotti francesi, spie naziste, fuoriusciti antifascisti, avventurieri di rango, piccoli sciacalli. L'americano Rick Blaine, proprietario di un bar, aiuta Ilsa, la donna che amava (e ama ancora) e suo marito, perseguitato politico, a lasciare in aereo la citt� ."
             },
             {
                 "ora": "22:55",
@@ -1632,7 +1627,7 @@
                 "descrizione": "Nevrotico e inibito critico cinematografico di San Francisco, divorziato, vede apparire al proprio fianco il fantasma (J. Lacy) del Bogart di Casablanca come una specie di angelo custode e, vincendo la propria timidezza, cerca di imitarlo. Scritto da W. Allen che l'ha tratto da una sua commedia di successo (1969) in 3 atti, replicata sul palcoscenico per 453 volte, è un film brillante, armonioso, un po' verboso, con personaggi psicologicamente ben definiti, che contribuì alla nascente popolarit� di Allen più delle 2 regie precedenti (Prendi i soldi e scappa e Il dittatore dello stato libero di Bananas). Il titolo riprende una celebre battuta di Casablanca (1942) in cui Ingrid Bergman, rivolta al pianista nero, dice: “Play it, Sam” (Suonala, Sam). Il personaggio di Allen si chiama Allan Felix nell'originale, ma fu ribattezzato Sam in Italia perché i distributori pensarono che non si capisse l'allusione."
             }
         ],
-        "aggiornato": "07:24"
+        "aggiornato": "13:15"
     },
     {
         "canale": "Rai Premium",
@@ -1729,7 +1724,7 @@
                 "descrizione": "Nick e Tracy, dopo tre anni di matrimonio, non sono ancora riusciti a fare il loro viaggio di nozze. Finalmente, giunge l'occasione che tanto attendevano: una vacanza fatta di mare e relax nella splendida Grecia. Dopo alcune peripezie, riescono a trovare un alloggio in una deliziosa locanda ellenica dove incontrano Leo, un bambino senza genitori, dotato di un grande talento che solo l'amore di una vera famiglia potr� far sbocciare. Riuscir� la coppia nell'intento?"
             }
         ],
-        "aggiornato": "07:24"
+        "aggiornato": "13:15"
     },
     {
         "canale": "La 5",
@@ -1816,7 +1811,7 @@
                 "descrizione": "Kenya McQueen, un avvocato aziendale, trova l'amore nel posto più inaspettato quando accetta di andare a un appuntamento al buio con Brian Kelly, un paesaggista sexy e dallo spirito libero."
             }
         ],
-        "aggiornato": "07:24"
+        "aggiornato": "13:15"
     },
     {
         "canale": "Real Time",
@@ -1918,7 +1913,7 @@
                 "descrizione": "Katrina ha delle bolle maleodoranti e viscide. I tumori di Kim interferiscono con i suoi dispositivi per il sonno, portandola allo sfinimento."
             }
         ],
-        "aggiornato": "07:24"
+        "aggiornato": "13:15"
     },
     {
         "canale": "Food Network",
@@ -2050,7 +2045,7 @@
                 "descrizione": "Cannavacciuolo e' a Milano al Pupirichiello: un locale diviso tra un padre e un figlio con idee molto diverse. Per favorire il passaggio di generazione e svecchiare l'ambiente Antonino ricorre all'aiuto di Enzo Miccio."
             }
         ],
-        "aggiornato": "07:24"
+        "aggiornato": "13:15"
     },
     {
         "canale": "Focus",
@@ -2152,7 +2147,7 @@
                 "descrizione": "Quattro enigmi storici: il crollo di Rapa Nui, la tomba perduta di Attila sotto il Tibisco, la scomparsa della Biblioteca di Alessandria e il tesoro della Flor de la Mar."
             }
         ],
-        "aggiornato": "07:24"
+        "aggiornato": "13:15"
     },
     {
         "canale": "Giallo",
@@ -2239,7 +2234,7 @@
                 "descrizione": "La squadra indaga sulla morte di un poliziotto che stava partecipando a un seminario."
             }
         ],
-        "aggiornato": "07:24"
+        "aggiornato": "13:15"
     },
     {
         "canale": "Boing",
@@ -2396,7 +2391,7 @@
                 "descrizione": "JP trova un fossile nel ruscello"
             }
         ],
-        "aggiornato": "07:24"
+        "aggiornato": "13:15"
     },
     {
         "canale": "K2",
@@ -2553,7 +2548,7 @@
                 "descrizione": "3' Stagione Ep.43 - Le avventure di tre scoiattoli dalla voce incredibile, 'adottati' da Dave Seville, che diventano un fenomeno musicale."
             }
         ],
-        "aggiornato": "07:24"
+        "aggiornato": "13:15"
     },
     {
         "canale": "Rai Gulp",
@@ -2710,7 +2705,7 @@
                 "descrizione": "Ian, Myrva e Gmor tornano da Draiken portando con sé Maila dopo essere riusciti a fuggire dal castello di Arcana. Mentre l'ultimo Drago e Ian parlano delle rivelazioni che proprio Arcana ha fatto al ragazzo, Maila rivela il suo vero volto e, per la prima volta, Mekan sferra un attacco direttamente nel Cenote. Dopo un primo momento di sorpresa, i Paladini sono però pronti a reagire."
             }
         ],
-        "aggiornato": "07:24"
+        "aggiornato": "13:15"
     },
     {
         "canale": "Frisbee",
@@ -2867,7 +2862,7 @@
                 "descrizione": "3' Stagione Ep.37 - Le avventure di tre scoiattoli dalla voce incredibile, 'adottati' da Dave Seville, che diventano un fenomeno musicale."
             }
         ],
-        "aggiornato": "07:24"
+        "aggiornato": "13:15"
     },
     {
         "canale": "DMAX",
@@ -2959,7 +2954,7 @@
                 "descrizione": "Luigi Pelazza racconta l'ergastolo nel campo penale Vologodski Pjatak in Russi."
             }
         ],
-        "aggiornato": "07:24"
+        "aggiornato": "13:15"
     },
     {
         "canale": "Rai Sport",
@@ -3011,7 +3006,7 @@
                 "descrizione": "Sangue freddo e precisione, le doti fondamentali di una delle discipline che ha regalato più medaglie all'Italia ai Giochi Olimpici."
             },
             {
-                "ora": "23:00",
+                "ora": "22:50",
                 "titolo": "Tiro A Volo: Coppa Del Mondo 2026 - Hangzhou: Trap Misto (4a Prova)",
                 "descrizione": "Sangue freddo e precisione, le doti fondamentali di una delle discipline che ha regalato più medaglie all'Italia ai Giochi Olimpici."
             },
@@ -3021,7 +3016,7 @@
                 "descrizione": "Coppa del Mondo - Hangzhou: Fossa olimpica (4a prova)"
             }
         ],
-        "aggiornato": "07:24"
+        "aggiornato": "13:15"
     },
     {
         "canale": "Sportitalia",
@@ -3133,7 +3128,7 @@
                 "descrizione": "Il programma tratta le vicende del calciomercato sia nella sessione estiva che in quella invernale e va in onda alle ore 23.00 dal lunedì al venerdì"
             }
         ],
-        "aggiornato": "07:24"
+        "aggiornato": "13:15"
     },
     {
         "canale": "HGTV",
@@ -3285,7 +3280,7 @@
                 "descrizione": "Il fabbro Nev e il vetraio Gordon sistemano una lanterna gotica danneggiata. Ted lavora su un aereo arrugginito mentre Alex si occupa di un tavolo enorme."
             }
         ],
-        "aggiornato": "07:25"
+        "aggiornato": "13:15"
     },
     {
         "canale": "RSI LA 1",
@@ -3442,7 +3437,7 @@
                 "descrizione": "I colori del tempo"
             }
         ],
-        "aggiornato": "07:25"
+        "aggiornato": "13:15"
     },
     {
         "canale": "RSI LA 2",
@@ -3554,7 +3549,7 @@
                 "descrizione": "Quando Ted si fidanza con la ragazza cattiva del liceo e chiede a Jess, il suo migliore amico d'infanzia, di organizzare il loro matrimonio, le cose si complicano. I suoi veri sentimenti per Ted continuano a mettersi in mezzo. Le star Jocelyn Hudon e Ryan Paevey ."
             }
         ],
-        "aggiornato": "07:25"
+        "aggiornato": "13:15"
     },
     {
         "canale": "DAZN 1",
@@ -3631,7 +3626,7 @@
                 "descrizione": "La storia di Antonio Esposito, noto come 'Bostik' nei Quartieri Spagnoli di Napoli che negli anni '90 fece realizzare un murales in onore del Pibe de Oro. Oggi la piazza dell'opera e' meta turistica."
             }
         ],
-        "aggiornato": "07:25"
+        "aggiornato": "13:15"
     },
     {
         "canale": "Sky Sport 24",
@@ -3788,7 +3783,7 @@
                 "descrizione": "Le notizie e i commenti del giorno, le anteprime e l'attualita' con servizi, commenti, interviste e collegamenti."
             }
         ],
-        "aggiornato": "07:25"
+        "aggiornato": "13:15"
     },
     {
         "canale": "Sky Sport Uno",
@@ -3967,7 +3962,7 @@
                 "descrizione": "I biancazzurri a Bochum hanno vinto gli ultimi due precedenti contro l'Hertha Berlino: 3-1 nella Bundesliga del 2023 e 3-2 nella Zweite Bundesliga del 2025. TC: Pietro Nicolodi"
             }
         ],
-        "aggiornato": "07:25"
+        "aggiornato": "13:15"
     },
     {
         "canale": "Sky Sport Tennis",
@@ -4004,7 +3999,7 @@
                 "descrizione": "Toronto & Montreal. - Da Montreal e Toronto, Canada."
             }
         ],
-        "aggiornato": "07:25"
+        "aggiornato": "13:15"
     },
     {
         "canale": "Sky Sport F1",
@@ -4126,7 +4121,7 @@
                 "descrizione": "Dal Circuito di Catalogna, Barcellona, Spagna."
             }
         ],
-        "aggiornato": "07:25"
+        "aggiornato": "13:15"
     },
     {
         "canale": "Sky Sport Legend",
@@ -4228,7 +4223,7 @@
                 "descrizione": "UEFA Champions League Story. - Il 18 Maggio 1994 ad Atene il Milan allenato da Fabio Capello e' in finale contro il Barcellona allenato da Johan Cruijff. Riviviamo una delle finali piu' esaltanti della storia rossonera."
             }
         ],
-        "aggiornato": "07:25"
+        "aggiornato": "13:16"
     },
     {
         "canale": "Sky Sport MotoGP",
@@ -4375,7 +4370,7 @@
                 "descrizione": "Dal Circuito di Silverstone, Towcester, Inghilterra."
             }
         ],
-        "aggiornato": "07:25"
+        "aggiornato": "13:16"
     },
     {
         "canale": "Sky Sport Basket",
@@ -4457,7 +4452,7 @@
                 "descrizione": "La zona post season sta scappando e l'Olimpia ha bisogno di ritrovare la vittoria. A Milano arriva la squadra serba reduce dall'impresa contro l'Hapoel Tel Aviv. TC: De Rosa-Soragna."
             }
         ],
-        "aggiornato": "07:25"
+        "aggiornato": "13:16"
     },
     {
         "canale": "Sky Sport Arena",
@@ -4529,7 +4524,7 @@
                 "descrizione": "Toronto & Montreal. - Da Montreal e Toronto, Canada."
             }
         ],
-        "aggiornato": "07:25"
+        "aggiornato": "13:16"
     },
     {
         "canale": "Sky Sport Max",
@@ -4636,7 +4631,7 @@
                 "descrizione": "Un'analisi delle leghe d'elite della vela mondiale, protagoniste di momenti memorabili."
             }
         ],
-        "aggiornato": "07:25"
+        "aggiornato": "13:16"
     },
     {
         "canale": "Sky Sport Mix",
@@ -4683,7 +4678,7 @@
                 "descrizione": "Super Trofeo Europa. - Le gare del Lamborghini Super Trofeo."
             }
         ],
-        "aggiornato": "07:25"
+        "aggiornato": "13:16"
     },
     {
         "canale": "Sky Sport Golf",
@@ -4755,7 +4750,7 @@
                 "descrizione": "Championship, 4a giornata DP World Tour. - Tutti i tornei del tour europeo, il DP World Tour, che assegnano i punti per la 'Race to Dubai'"
             }
         ],
-        "aggiornato": "07:25"
+        "aggiornato": "13:16"
     },
     {
         "canale": "Sky Sport 251",
@@ -4935,7 +4930,7 @@
                 "descrizione": "Una commedia che vede protagonisti diversi personaggi le cui vicende si intrecciano: Cesare, un poliziotto che si occupa d'intercettazioni e vive spiando le vite degli altri; Antonio, presidente di un importante gruppo bancario, al quale i politici chiedono con insistenza fondi neri per finanziare i loro impicci. Un'indagine unisce il proprietario della clinica dove lavora Claudio, un chirurgo sposato con Elena, Vanessa, la figlia di Antonio, Marco, un giovane elettricista, e Laura, una massaggiatrice che si è innamorata di Cesare senza sapere che fa il poliziotto. Queste storie iniziano tutte male: Cesare scopre di avere una fidanzata che fa la escort, Laura incontra solo uomini sbagliati, Antonio è ricattato dai politici che lo obbligano a fare imbrogli, Claudio ha un figlio che combina solo guai, Elena soffre di una gelosia maniacale, Vanessa è una ragazza viziata, Marco viene accusato ingiustamente di un furto che non ha commesso. Ma... la vita è una cosa meravigliosa."
             }
         ],
-        "aggiornato": "07:25"
+        "aggiornato": "13:16"
     },
     {
         "canale": "Sky Cinema Uno +24",
@@ -4992,7 +4987,7 @@
                 "descrizione": "Parigi, 1835. Frédéric Chopin ha 25 anni. È celebrato nei salotti parigini, adorato dall’aristocrazia e dal Re di Francia. Nessun evento culturale di rilievo è completo senza una sua apparizione. Lo vediamo durante scorribande notturne e alle feste che seguono i suoi concerti – quasi sempre traboccante di energia, mentre cela la sua malattia dietro una maschera ironica. La vita gli scivola tra le dita, ma lui si rifiuta di rallentare. Compone le sue opere più grandi, talvolta su commissione speciale, mentre impartisce lezioni di pianoforte per sbarcare il lunario. È ammirato dagli amici, adorato dalle donne, ma col tempo scoprir� che la cosa più importante della sua vita è la musica."
             }
         ],
-        "aggiornato": "07:25"
+        "aggiornato": "13:16"
     },
     {
         "canale": "Sky Cinema Due",
@@ -5049,7 +5044,7 @@
                 "descrizione": "1920. In Sicilia per un breve soggiorno, Luigi Pirandello s’imbatte in un imprevisto che lo porter� a incontrare due singolari figure di teatranti, Onofrio \"Nofrio\" Principato e Sebastiano \"Bastiano\" Vella, due dilettanti che stanno provando con gli attori della loro filodrammatica un nuovo spettacolo. L’incontro tra il geniale autore dei \"Sei personaggi in cerca d’autore\" e questa scalcinata compagnia amatoriale sar� foriero di molte sorprese."
             }
         ],
-        "aggiornato": "07:25"
+        "aggiornato": "13:16"
     },
     {
         "canale": "Sky Cinema Due +24",
@@ -5071,7 +5066,7 @@
                 "descrizione": "Ispirato ai fumetti e alle strisce di Andrea Pazienza. In un appartamento bolognese, si sovrappongono, senza intrecciarsi, le storie di alcuni dei personaggi più noti del disegnatore marchigiano. Tra questi, Zanardi, Pentothal e Fiabeschi."
             }
         ],
-        "aggiornato": "07:25"
+        "aggiornato": "13:16"
     },
     {
         "canale": "Sky Cinema Collection",
@@ -5138,7 +5133,7 @@
                 "descrizione": "I palinsesti sono in via di definizione da parte emittente"
             }
         ],
-        "aggiornato": "07:25"
+        "aggiornato": "13:16"
     },
     {
         "canale": "Sky Cinema Family",
@@ -5200,7 +5195,7 @@
                 "descrizione": "I fratelli Templeton, Tim e Ted, sono diventati adulti e si sono inevitabilmente allontanati l'uno dall'altro. Tim è oramai sposato con Carol, è pap� di Tabitha, una bambina di sette anni, e della piccola Tina, ma sta a casa. Ted invece è il CEO di un importante fondo speculativo. Tabitha, che è la più brava della sua classe, ha come idolo lo zio e vorrebbe diventare come lui ma il padre teme che stia bruciando un po' le tappe, perdendosi la parte migliore dell'infanzia. Quando la piccola Tina si rivela essere un agente top secret in missione per scoprire quali segreti nasconda il misterioso fondatore della scuola frequentata da Tabitha, Tim e Ted si ritroveranno a dover collaborare ancora una volta e a riscoprire ciò che conta veramente."
             }
         ],
-        "aggiornato": "07:25"
+        "aggiornato": "13:16"
     },
     {
         "canale": "Sky Cinema Action",
@@ -5252,7 +5247,7 @@
                 "descrizione": "Arma letale è il soprannome di Martin Riggs, un poliziotto che, reduce dal Vietnam e vedovo recente di una moglie adoratissima, ha ormai trasferito nella pistola il suo amore esclusivo, tanto è affascinato dalla morte e tanto spesso si trova alle soglie del suicidio e della follia. I suoi superiori lo mettono in addestramento sotto la guida del sergente Roger Murtaugh, un nero anziano, con moglie, figli ed un innato senso dell'ordine e della moderazione."
             }
         ],
-        "aggiornato": "07:25"
+        "aggiornato": "13:16"
     },
     {
         "canale": "Sky Cinema Suspense",
@@ -5309,7 +5304,7 @@
                 "descrizione": "Una famiglia del New England ha degli incontri ravvicinati con i terribili spiriti che infestano la loro casa colonica. Per liberarsi delle presenze maligne, la famiglia è costretta a chiedere l'aiuto degli investigatori Ed e Lorraine Warren (realmente esistiti), esperti di fenomeni dell'occulto."
             }
         ],
-        "aggiornato": "07:25"
+        "aggiornato": "13:16"
     },
     {
         "canale": "Sky Cinema Romance",
@@ -5371,7 +5366,7 @@
                 "descrizione": "Sam Claflin in una commedia romantica targata Sky Original. In Messico per promuovere il suo libro uno scrittore inglese scopre che la traduttrice lo ha trasformato in un romanzo erotico."
             }
         ],
-        "aggiornato": "07:25"
+        "aggiornato": "13:16"
     },
     {
         "canale": "Sky Cinema Drama",
@@ -5428,7 +5423,7 @@
                 "descrizione": "L'allenatore dei Miami Sharks Tony D'Amato e' in crisi adesso che la sua squadra dopo due anni di succesi e' in calo di rendimento, ad aggravare le cose ci sono l'infortunio del quarterback titolare \"Cap\" Rooney e le pressioni della giovane proprietaria Christina Pagniacci."
             }
         ],
-        "aggiornato": "07:25"
+        "aggiornato": "13:16"
     },
     {
         "canale": "Sky Cinema Comedy",
@@ -5490,7 +5485,7 @@
                 "descrizione": "Kyle e Peter Reynolds sono due fratelli cui la madre, piuttosto eccentrica, ha sempre raccontato che il padre era morto quando erano ancora piccoli. Una volta scoperto che non è così, decidono di mettersi alla ricerca del loro vero padre e vengono anche a sapere alcune cose della loro madre che forse avrebbero preferito non conoscere."
             }
         ],
-        "aggiornato": "07:25"
+        "aggiornato": "13:16"
     },
     {
         "canale": "Sky Uno",
@@ -5597,7 +5592,7 @@
                 "descrizione": "Il meglio delle 4 tappe del tour estivo dell'RDS Summer Festival 2026, con i migliori artisti del panorama musicale e i grandi successi dell'estate."
             }
         ],
-        "aggiornato": "07:25"
+        "aggiornato": "13:16"
     },
     {
         "canale": "Sky Atlantic",
@@ -5714,7 +5709,7 @@
                 "descrizione": "Charlie è una donna con un dono straordinario: riconoscere quando qualcuno mente. A bordo della sua Plymouth Barracuda, attraversa il paese e, a ogni tappa, si trova coinvolta in strani crimini che non può fare a meno di risolvere."
             }
         ],
-        "aggiornato": "07:25"
+        "aggiornato": "13:16"
     },
     {
         "canale": "Sky Serie",
@@ -5846,7 +5841,7 @@
                 "descrizione": "$23"
             }
         ],
-        "aggiornato": "07:25"
+        "aggiornato": "13:16"
     },
     {
         "canale": "Sky Investigation",
@@ -5963,7 +5958,7 @@
                 "descrizione": "S13 Ep7 Il ritorno - Sull'isola di Saint August avviene uno strano omicidio nella piscina dell'hotel in cui soggiornano un gruppo di ex compagni di scuola ed una giovane donna appena giunti dall'Inghilterra"
             }
         ],
-        "aggiornato": "07:25"
+        "aggiornato": "13:16"
     },
     {
         "canale": "Sky Crime",
@@ -6100,7 +6095,7 @@
                 "descrizione": "Ep.2 di 8 - Gianfranco Stevanin, reo confesso, ha brutalmente assassinato almeno sei donne nel 1994."
             }
         ],
-        "aggiornato": "07:25"
+        "aggiornato": "13:16"
     },
     {
         "canale": "Sky Adventure",
@@ -6232,7 +6227,7 @@
                 "descrizione": "Dai più tragici a quelli più comici, sveliamo i più incredibili fallimenti ingegneristici del nostro tempo."
             }
         ],
-        "aggiornato": "07:25"
+        "aggiornato": "13:16"
     },
     {
         "canale": "MTV",
@@ -6389,7 +6384,7 @@
                 "descrizione": "Ep14 di 42 - Rob Dyrdek presenta i video più divertenti presi da Internet insieme ai co-conduttori Sterling Brim, Chanel West Coast e alcune delle celebrit� più famose al mondo."
             }
         ],
-        "aggiornato": "07:25"
+        "aggiornato": "13:16"
     },
     {
         "canale": "Comedy Central",
@@ -6546,7 +6541,7 @@
                 "descrizione": "Hot in Cleveland\" si basa su tre favolose, eccentriche donne sopra i quarant'anni di Los Angeles, migliori amiche, le cui vite sono state cambiate per sempre quando il loro aereo è dovuto atterrare inaspettatamente a Cleveland e presto riscopriranno loro stesse in questa nuova \"terra promessa\"."
             }
         ],
-        "aggiornato": "07:25"
+        "aggiornato": "13:16"
     },
     {
         "canale": "Sky Arte",
@@ -6633,7 +6628,7 @@
                 "descrizione": "Per Marilyn era importante costruirsi una carriera nel cinema, ma l'ascesa di una giovane donna nell'industria cinematografica hollywoodiana, dominata dagli uomini, non è stata sempre facile."
             }
         ],
-        "aggiornato": "07:25"
+        "aggiornato": "13:16"
     },
     {
         "canale": "Sky Documentaries",
@@ -6715,7 +6710,7 @@
                 "descrizione": "Tra interviste ai protagonisti e immagini d’epoca inedite, la storia dei mondiali di calcio del 1982 e della nazionale italiana, vista anche in parentesi private, contrapposta a quella di un paese guidato dal Presidente della Repubblica Sandro Pertini."
             }
         ],
-        "aggiornato": "07:25"
+        "aggiornato": "13:16"
     },
     {
         "canale": "Sky Nature",
@@ -6832,7 +6827,7 @@
                 "descrizione": "Esploriamo i regni scandinavi del fuoco, del ghiaccio e degli animali, tra cui il bue muschiato, gli orsi polari e le volpi artiche, che devono affrontare il paesaggio mentre cambia intorno a loro."
             }
         ],
-        "aggiornato": "07:25"
+        "aggiornato": "13:16"
     },
     {
         "canale": "Discovery Channel",
@@ -6954,7 +6949,7 @@
                 "descrizione": "Scopriamo come vengono create le manette e lo stucco per cartongesso e come vengono riempiti i serbatoi di propano. Inoltre seguiamo una ricostruzione facciale."
             }
         ],
-        "aggiornato": "07:25"
+        "aggiornato": "13:16"
     },
     {
         "canale": "History Channel",
@@ -7061,7 +7056,7 @@
                 "descrizione": "Ep15 di 40 Profitti inaspettati - Nuove aste, nuove battaglie all'ultima offerta. I cacciatori d'affari piu' agguerriti d'America tornano in azione per aggiudicarsi i magazzini piu' ghiotti."
             }
         ],
-        "aggiornato": "07:25"
+        "aggiornato": "13:16"
     },
     {
         "canale": "Cartoon Network",
@@ -7218,7 +7213,7 @@
                 "descrizione": "Ep29 di 52 La Lega delle Gambe - I Titans si trasformano di nuovo nella Lega delle Gambe, ma stavolta si fanno sopraffare dal potere delle gambe, nonostante Lady Gambesus li avesse avvertiti."
             }
         ],
-        "aggiornato": "07:25"
+        "aggiornato": "13:16"
     },
     {
         "canale": "Dea Kids",
@@ -7375,7 +7370,7 @@
                 "descrizione": "Dopo aver fallito il tentativo di aprire un barattolo, Chef crede di aver superato i suoi anni migliori. Allora Beth e i bambini riesumano qualcosa della sua fanciullezza per farlo ringiovanire."
             }
         ],
-        "aggiornato": "07:25"
+        "aggiornato": "13:16"
     },
     {
         "canale": "Nick Jr",
@@ -7532,7 +7527,7 @@
                 "descrizione": "Ep8 di 13 - La zia Crane e Speed Meister gareggiano. \/I cuccioli aiutano Wingsy."
             }
         ],
-        "aggiornato": "07:25"
+        "aggiornato": "13:16"
     },
     {
         "canale": "Boomerang",
@@ -7689,7 +7684,7 @@
                 "descrizione": "Ep56 Un orsetto vero - Un chip contenente un'intelligenza artificiale si collega accidentalmente all'orsetto di peluche di Grizzy, che prende vita come Pinocchio!"
             }
         ],
-        "aggiornato": "07:25"
+        "aggiornato": "13:16"
     },
     {
         "canale": "Sky TG 24",
@@ -7846,7 +7841,7 @@
                 "descrizione": "Previsioni meteo dettagliate e sempre aggiornate 24 ore al giorno. Le previsioni regionali, nazionali ed internazionali."
             }
         ],
-        "aggiornato": "07:25"
+        "aggiornato": "13:16"
     },
     {
         "canale": "Rai News 24",
@@ -8003,7 +7998,7 @@
                 "descrizione": "NEWS + SOMMARIO"
             }
         ],
-        "aggiornato": "07:25"
+        "aggiornato": "13:16"
     },
     {
         "canale": "Sky Meteo 24",
