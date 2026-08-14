@@ -5,7 +5,7 @@
         "programmi": [
             {
                 "ora": "06:00",
-                "titolo": "1mattina News - Puntata Del26",
+                "titolo": "1mattina News",
                 "descrizione": "Notizie e attualit� in tempo reale dall'Italia e dal mondo. Approfondimenti, ospiti in studio, inviati del Tg1 e interviste ai protagonisti della cronaca, dello sport, della cultura e dello spettacolo. Conducono Greta Mauro e Gianpiero Scarpati."
             },
             {
@@ -20,7 +20,7 @@
             },
             {
                 "ora": "06:33",
-                "titolo": "1mattina News - Puntata Del26",
+                "titolo": "1mattina News",
                 "descrizione": "Notizie e attualit� in tempo reale dall'Italia e dal mondo. Approfondimenti, ospiti in studio, inviati del Tg1 e interviste ai protagonisti della cronaca, dello sport, della cultura e dello spettacolo. Conducono Greta Mauro e Gianpiero Scarpati."
             },
             {
@@ -35,7 +35,7 @@
             },
             {
                 "ora": "07:10",
-                "titolo": "1mattina News - Puntata Del26",
+                "titolo": "1mattina News",
                 "descrizione": "Notizie e attualit� in tempo reale dall'Italia e dal mondo. Approfondimenti, ospiti in studio, inviati del Tg1 e interviste ai protagonisti della cronaca, dello sport, della cultura e dello spettacolo. Conducono Greta Mauro e Gianpiero Scarpati."
             },
             {
@@ -124,29 +124,24 @@
                 "descrizione": "Riproponiamo due serate omaggio per Giulio Rapetti, in arte Mogol, che sin dai primi anni '60 ha regalato un contributo enorme alla musica leggera italiana. Le due serate trattano il sodalizio artistico con Lucio Battisti, con il quale ha scritto alcune tra le più belle canzoni del patrimonio italiano e le collaborazioni artistiche che Mogol ha tenuto durante la sua lunga e prestigiosa carriera."
             }
         ],
-        "aggiornato": "07:39"
+        "aggiornato": "13:18"
     },
     {
         "canale": "Rai 2",
         "categoria": "Digitale Terrestre",
         "programmi": [
             {
-                "ora": "06:00",
-                "titolo": "Ritorno a Las Sabinas",
-                "descrizione": "Dopo molti anni di lontananza, le sorelle Molina tornano nella loro citt� natale per affrontare i problemi di salute del padre. Il loro ritorno significa una riunione con le vite, gli amori e i segreti che hanno cercato di dimenticare."
-            },
-            {
-                "ora": "06:10",
+                "ora": "06:25",
                 "titolo": "La Grande Vallata",
                 "descrizione": "La storia, ambientata nella valle di San Joaquin, in California, narra delle avventure quotidiane della famiglia Barkley, proprietari di un ranch."
             },
             {
-                "ora": "07:00",
+                "ora": "07:15",
                 "titolo": "Baywatch",
                 "descrizione": "Il tenente Mitch Buchannon è il caposquadra dei bagnini delle spiagge di Emerald Bay, in Florida, assieme alle due fidate colleghe Stephanie Holden e C.J. Parker. Essendo rimasti liberi tre posti vengono indette delle selezioni, che vengono vinte dal borioso ex campione olimpico di nuoto Matt Brody, dall'intelligente Summer Quinn e dall'imbranato esperto di informatica Ronnie (al suo terzo tentativo e innamorato di C.J.). Nel frattempo giunge ad Emerald Bay la nuova proprietaria dell'esclusivo Huntley Club, Victoria Leeds, su cui pendono delle voci riguardo il fatto che sia a capo del traffico di una pericolosissima droga chiamata \"Flakka\"."
             },
             {
-                "ora": "07:46",
+                "ora": "07:55",
                 "titolo": "Baywatch",
                 "descrizione": "Il tenente Mitch Buchannon è il caposquadra dei bagnini delle spiagge di Emerald Bay, in Florida, assieme alle due fidate colleghe Stephanie Holden e C.J. Parker. Essendo rimasti liberi tre posti vengono indette delle selezioni, che vengono vinte dal borioso ex campione olimpico di nuoto Matt Brody, dall'intelligente Summer Quinn e dall'imbranato esperto di informatica Ronnie (al suo terzo tentativo e innamorato di C.J.). Nel frattempo giunge ad Emerald Bay la nuova proprietaria dell'esclusivo Huntley Club, Victoria Leeds, su cui pendono delle voci riguardo il fatto che sia a capo del traffico di una pericolosissima droga chiamata \"Flakka\"."
             },
@@ -167,8 +162,8 @@
             },
             {
                 "ora": "09:30",
-                "titolo": "European Aquatics Parigi 2026",
-                "descrizione": "A cura di Riccardo Pescante Produttore esecutivo Sabina Bonafaccia Telecronaca Tommaso Mecarozzi Commento tecnico Luca Sacchi"
+                "titolo": "European Aquatics Parigi 2026 - Nuoto: Batterie (5a Giornata)",
+                "descrizione": "Quinta giornata del nuoto agli Europei di Parigi 2026, con le batterie di 50 stile libero femminili, 50 rana maschili, 100 dorso femminili, 200 farfalla maschili, 200 misti femminili, staffetta mista 4×100 stile libero e 1500 stile libero maschili."
             },
             {
                 "ora": "11:00",
@@ -177,13 +172,13 @@
             },
             {
                 "ora": "11:05",
-                "titolo": "European Aquatics Parigi 2026",
-                "descrizione": "A cura di Riccardo Pescante Produttore esecutivo Sabina Bonafaccia Telecronaca Tommaso Mecarozzi Commento tecnico Luca Sacchi"
+                "titolo": "European Aquatics Parigi 2026 - Nuoto: Batterie (5a Giornata)",
+                "descrizione": "Quinta giornata del nuoto agli Europei di Parigi 2026, con le batterie di 50 stile libero femminili, 50 rana maschili, 100 dorso femminili, 200 farfalla maschili, 200 misti femminili, staffetta mista 4×100 stile libero e 1500 stile libero maschili."
             },
             {
                 "ora": "11:30",
-                "titolo": "Campionati Europei Birmingham 2026",
-                "descrizione": "Atletica Telecronaca Luca di Bella Commento tecnico Stefano Tilli, Guido Alessandrini"
+                "titolo": "Europei Di Atletica 2026 - 5a Giornata (Sessione Mattutina) - Prima Parte",
+                "descrizione": "Quinta giornata degli Europei di atletica 2026 a Birmingham. Al via l'eptathlon, insieme alle qualificazioni di giavellotto femminile e asta maschile e alle batterie delle staffette 4×400 e dei 1500 metri maschili."
             },
             {
                 "ora": "13:00",
@@ -212,8 +207,8 @@
             },
             {
                 "ora": "15:40",
-                "titolo": "Campionati Mondiali Ginnastica Ritmica Francoforte 2026",
-                "descrizione": "Ginnastica ritmica Telecronaca Andrea Fusco Commento tecnico Milena Baldassarri"
+                "titolo": "Ginnastica Ritmica: Mondiali 2026 - Finale All-Around Individuale",
+                "descrizione": "A Francoforte le migliori 18 ginnaste delle qualificazioni si contendono il titolo mondiale nella finale All-Around individuale."
             },
             {
                 "ora": "18:10",
@@ -232,8 +227,8 @@
             },
             {
                 "ora": "18:25",
-                "titolo": "European Aquatics Parigi 2026",
-                "descrizione": "A cura di Riccardo Pescante Produttore esecutivo Sabina Bonafaccia Telecronaca Tommaso Mecarozzi Commento tecnico Luca Sacchi"
+                "titolo": "European Aquatics Parigi 2026 - Nuoto: Semifinali E Finali (5a Giornata)",
+                "descrizione": "Sessione serale con le finali di 100 farfalla femminili, 200 stile libero maschili, 200 rana femminili, 50 dorso maschili, 1500 stile libero femminili e staffetta mista 4×100 stile libero, oltre alle semifinali di 100 dorso femminili, 50 rana maschili, 50 stile libero femminili, 200 farfalla maschili e 200 misti femminili."
             },
             {
                 "ora": "20:30",
@@ -242,8 +237,8 @@
             },
             {
                 "ora": "21:00",
-                "titolo": "Campionati Europei Birmingham 2026",
-                "descrizione": "Atletica Telecronaca Luca di Bella Commento tecnico Stefano Tilli, Guido Alessandrini"
+                "titolo": "Europei Di Atletica 2026 - 5a Giornata (Sessione Serale) - Seconda Parte",
+                "descrizione": "Quinta serata degli Europei di atletica 2026, con le finali di 10.000 metri femminili, disco femminile, 400 ostacoli maschili, 200 metri maschili e 800 metri femminili, oltre alle prove dell'eptathlon"
             },
             {
                 "ora": "23:00",
@@ -251,7 +246,7 @@
                 "descrizione": "Il racconto di quattro nomi dello sport italiano: Michele Padovano, Vanessa Ferrari, Josefa Idem ed Emanuele Birarelli. Sono storie di vittorie e sconfitte, di fasi gloriose e momenti critici, giorni di sudore e notti di smarrimenti. Questa è la materia di cui è fatto lo sport."
             }
         ],
-        "aggiornato": "02:23"
+        "aggiornato": "13:17"
     },
     {
         "canale": "Rai 3",
@@ -408,39 +403,39 @@
                 "descrizione": "RaiNews24"
             }
         ],
-        "aggiornato": "07:39"
+        "aggiornato": "13:18"
     },
     {
         "canale": "Rai 4",
         "categoria": "Digitale Terrestre",
         "programmi": [
             {
-                "ora": "06:37",
+                "ora": "06:36",
                 "titolo": "Il commissario Rex",
                 "descrizione": "Rex è stata una serie televisiva poliziesca di produzione italiana, sequel delle avventure della serie austriaca Il commissario Rex."
             },
             {
-                "ora": "07:24",
+                "ora": "07:22",
                 "titolo": "Last Cop",
                 "descrizione": "Last Cop - L'ultimo sbirro (Der letzte Bulle) è una serie televisiva tedesca di genere poliziesco, in onda in Germania dal 12 aprile 2010 su Sat.1. In Italia è trasmessa dal 3 luglio 2012 su Rai 1. Negli anni ottanta, il commissario Mick Brisgau cade in coma a seguito di un colpo alla testa. Dopo vent'anni si risveglia e torna in servizio presso il commissariato di Essen, ma deve scontrarsi con metodi più moderni rispetto a quelli da lui usati in passato, e con una realt� quotidiana completamente differente a quella che aveva lasciato."
             },
             {
-                "ora": "08:05",
+                "ora": "08:03",
                 "titolo": "Scorpion",
                 "descrizione": "Basato su una storia vera, Scorpion è un dramma su un genio eccentrico Walter O'Brien e la sua squadra di disadattati brillanti che compongono l'ultima linea di difesa contro le minacce complesse, ad alta tecnologia dell'et� moderna. Il nuovo gruppo di Homeland Security \"Scorpion\" di O'Brien include Toby Curtis, un comportamentista esperto che può leggere chiunque; Happy Quinn, un prodigio meccanico e Sylvester Dodd, un guru delle statistiche."
             },
             {
-                "ora": "08:45",
+                "ora": "08:44",
                 "titolo": "Scorpion",
                 "descrizione": "Basato su una storia vera, Scorpion è un dramma su un genio eccentrico Walter O'Brien e la sua squadra di disadattati brillanti che compongono l'ultima linea di difesa contro le minacce complesse, ad alta tecnologia dell'et� moderna. Il nuovo gruppo di Homeland Security \"Scorpion\" di O'Brien include Toby Curtis, un comportamentista esperto che può leggere chiunque; Happy Quinn, un prodigio meccanico e Sylvester Dodd, un guru delle statistiche."
             },
             {
-                "ora": "09:28",
+                "ora": "09:27",
                 "titolo": "Castle",
                 "descrizione": "Richard Castle è uno scrittore di romanzi gialli che ha appena 'ucciso' il suo personaggio più noto e si ritrova senza ispirazione, almeno fino a quando non si ritrova coinvolto in un caso di omicidio e rimane affascinato dal detective Beckett, una donna affascinante con una tragica storia alle spalle che presto diventer� , suo malgrado, la musa ispiratrice di Castle."
             },
             {
-                "ora": "10:08",
+                "ora": "10:07",
                 "titolo": "Castle",
                 "descrizione": "Richard Castle è uno scrittore di romanzi gialli che ha appena 'ucciso' il suo personaggio più noto e si ritrova senza ispirazione, almeno fino a quando non si ritrova coinvolto in un caso di omicidio e rimane affascinato dal detective Beckett, una donna affascinante con una tragica storia alle spalle che presto diventer� , suo malgrado, la musa ispiratrice di Castle."
             },
@@ -480,17 +475,17 @@
                 "descrizione": "7 Dicembre 1990, arriva sulla tv italiana la maratona a scopo benefico \"Telethon\", con una prima volta che semplicemente straripa di ospiti incredibili e di successo."
             },
             {
-                "ora": "16:01",
+                "ora": "16:02",
                 "titolo": "70 X 70 - Vol. 2",
                 "descrizione": "Piero Angela si occupa e preoccupa dello stato dell'atmosfera terrestre gi� il 18 Gennaio 1989, con uno speciale davvero particolare, che si collega persino con lo spazio."
             },
             {
-                "ora": "16:05",
+                "ora": "16:06",
                 "titolo": "70 X 70 - Vol. 2",
                 "descrizione": "16 Gennaio 1994. A \"Domenica In\" da Mara Venier un trio di giovani comici presenta le prove generali dei personaggi che di lì a breve li avrebbero resi famosi. Erano Aldo, Giovanni e Giacomo."
             },
             {
-                "ora": "16:10",
+                "ora": "16:11",
                 "titolo": "70 X 70 - Vol. 2",
                 "descrizione": "La prima volta in cui fu realizzato un collegamento televisivo in mondovisione fu il 23 Luglio 1962. Andiamo a rivedere la programmazione tv di quel giorno."
             },
@@ -500,22 +495,22 @@
                 "descrizione": "Last Cop - L'ultimo sbirro (Der letzte Bulle) è una serie televisiva tedesca di genere poliziesco, in onda in Germania dal 12 aprile 2010 su Sat.1. In Italia è trasmessa dal 3 luglio 2012 su Rai 1. Negli anni ottanta, il commissario Mick Brisgau cade in coma a seguito di un colpo alla testa. Dopo vent'anni si risveglia e torna in servizio presso il commissariato di Essen, ma deve scontrarsi con metodi più moderni rispetto a quelli da lui usati in passato, e con una realt� quotidiana completamente differente a quella che aveva lasciato."
             },
             {
-                "ora": "17:07",
+                "ora": "17:06",
                 "titolo": "Scorpion",
                 "descrizione": "Basato su una storia vera, Scorpion è un dramma su un genio eccentrico Walter O'Brien e la sua squadra di disadattati brillanti che compongono l'ultima linea di difesa contro le minacce complesse, ad alta tecnologia dell'et� moderna. Il nuovo gruppo di Homeland Security \"Scorpion\" di O'Brien include Toby Curtis, un comportamentista esperto che può leggere chiunque; Happy Quinn, un prodigio meccanico e Sylvester Dodd, un guru delle statistiche."
             },
             {
-                "ora": "17:48",
+                "ora": "17:47",
                 "titolo": "Scorpion",
                 "descrizione": "Basato su una storia vera, Scorpion è un dramma su un genio eccentrico Walter O'Brien e la sua squadra di disadattati brillanti che compongono l'ultima linea di difesa contro le minacce complesse, ad alta tecnologia dell'et� moderna. Il nuovo gruppo di Homeland Security \"Scorpion\" di O'Brien include Toby Curtis, un comportamentista esperto che può leggere chiunque; Happy Quinn, un prodigio meccanico e Sylvester Dodd, un guru delle statistiche."
             },
             {
-                "ora": "18:27",
+                "ora": "18:28",
                 "titolo": "Castle",
                 "descrizione": "Richard Castle è uno scrittore di romanzi gialli che ha appena 'ucciso' il suo personaggio più noto e si ritrova senza ispirazione, almeno fino a quando non si ritrova coinvolto in un caso di omicidio e rimane affascinato dal detective Beckett, una donna affascinante con una tragica storia alle spalle che presto diventer� , suo malgrado, la musa ispiratrice di Castle."
             },
             {
-                "ora": "19:11",
+                "ora": "19:10",
                 "titolo": "Castle",
                 "descrizione": "Richard Castle è uno scrittore di romanzi gialli che ha appena 'ucciso' il suo personaggio più noto e si ritrova senza ispirazione, almeno fino a quando non si ritrova coinvolto in un caso di omicidio e rimane affascinato dal detective Beckett, una donna affascinante con una tragica storia alle spalle che presto diventer� , suo malgrado, la musa ispiratrice di Castle."
             },
@@ -535,12 +530,12 @@
                 "descrizione": "La nuova recluta Justin Rosa deve monitorare il membro del cartello del contrabbando di armi Eddie Flynn e tenerlo in vita a tutti i costi. Quando una squadra SWAT scende a casa di Flynn, Rosa infrange il protocollo e contatta direttamente il gangster per salvargli la vita. Mentre uomini armati irrompono nella Wire Room e scoppia il caos, Mueller e Rosa prendono un'ultima, disperata resistenza contro gli agenti e i funzionari corrotti che cercano di distruggere le prove e ucciderli entrambi."
             },
             {
-                "ora": "22:50",
+                "ora": "22:51",
                 "titolo": "La belva",
                 "descrizione": "Leonida Riva (Fabrizio Gifuni) è un reduce di guerra cupo e solitario, con un passato da Primo Capitano nelle Forze Speciali dell’Esercito. La vita e il lavoro hanno portato Riva sempre più lontano dalla famiglia. Suo figlio maggiore, Mattia, non lo ha mai perdonato, mentre la figlia Teresa lo adora incondizionatamente. Ma un tragico evento costringer� Leonida a trasformarsi nuovamente in qualcosa che credeva ormai sepolto nel suo passato. Una storia ad alta tensione emotiva che mescola sentimenti e azione in un crescendo che porter� un uomo a trasformarsi, per amore, in un vero nemico pubblico."
             }
         ],
-        "aggiornato": "02:23"
+        "aggiornato": "13:18"
     },
     {
         "canale": "Rai 5",
@@ -652,7 +647,7 @@
                 "descrizione": "L'epoca di Pizzi è quella della pellicola e questo non è solo un dettaglio tecnico. Fare una foto, allora, era ben diverso, lo scatto era unico, simbolico, non era mai sequenza ma racconto in sé. La pellicola è anche \"materiale\", si tocca, si sviluppa e poi si stampa, rimane un negativo che è come il cliché da cui si stampano le banconote. È il tesoro di Umberto Pizzi, la sua personale zecca.Il tempo che verr� quando si racconta una storia del passato, come l'amore da copertina tra Liz Taylor e Richard Burton, che si trasformer� nel racconto del contemporaneo, arrivando agli amori dei nostri giorni, così diversi da quelli del passato. Il bianco e nero che diventa colore."
             }
         ],
-        "aggiornato": "07:39"
+        "aggiornato": "13:18"
     },
     {
         "canale": "Rete 4",
@@ -754,7 +749,7 @@
                 "descrizione": "Vincenzo e Paolo sono stati lasciati dalle rispettive compagne, Sara e Federica, e sono a pezzi. Si incontrano per caso, riconoscendo l'uno nell'altro lo stesso scoramento, e decidono di farla pagare alle due ex: Vincenzo far� innamorare di sé Federica, e Paolo far� lo stesso con Sara, dopodiché i due procederanno in sincrono ad abbandonare le rispettive conquiste, spezzando loro il cuore. Ma non tutto fila come dovrebbe, anche perché si mette di mezzo Alberto, un attore squattrinato che accetta di interpretare il ruolo dell'autista di Vincenzo e poi non si accontenta della parte da subalterno."
             }
         ],
-        "aggiornato": "07:39"
+        "aggiornato": "13:18"
     },
     {
         "canale": "Canale 5",
@@ -911,7 +906,7 @@
                 "descrizione": "Serhat Yelduran è un chirurgo di grande successo che decide di cambiare il destino che la sua famiglia gli ha riservato per costruirsi una vita diversa a Istanbul. Questa decisione lo porta a incontrare Melek Özdel, di cui Serhat si innamora a prima vista e che sposa in segreto, all'insaputa della sua famiglia."
             }
         ],
-        "aggiornato": "07:39"
+        "aggiornato": "13:18"
     },
     {
         "canale": "Italia 1",
@@ -1028,7 +1023,7 @@
                 "descrizione": "Un giovane venditore di merce contraffatta, Shawn, attraversa un periodo difficile della sua vita, un po' per via di una tragedia passata ed un po' per causa del padre, che non ne vuole sapere niente di lui. Quando incontra Harvey, un ex lottatore di street-fighting che gli propone di entrare nel circuito delle lotte clandestine, Shawn intravede la possibilit� di ritrovare quegli stimoli che ormai erano andati persi..."
             }
         ],
-        "aggiornato": "07:39"
+        "aggiornato": "13:18"
     },
     {
         "canale": "La7",
@@ -1105,7 +1100,7 @@
                 "descrizione": "Tesori Nascosti - Documentario, Regia Paul Williams UK 2016"
             }
         ],
-        "aggiornato": "07:39"
+        "aggiornato": "13:18"
     },
     {
         "canale": "TV8",
@@ -1207,7 +1202,7 @@
                 "descrizione": "Un camion cisterna ha un incidente all'interno di un tunnel nelle gelide montagne norvegesi. Famiglie, adolescenti e turisti che stanno rientrando a casa per Natale, rimangono intrappolati nell'oscurit� . Una tempesta di neve ostacola i soccorsi e per tutti il tempo che passa diventa un nemico da sconfiggere. Quando poi la cisterna prende fuoco, la situazione si aggrava ulteriormente, lasciando che emerga la vera natura dell'uomo, propenso più alla propria salvezza che a quella degli altri."
             }
         ],
-        "aggiornato": "07:39"
+        "aggiornato": "13:18"
     },
     {
         "canale": "Nove",
@@ -1314,7 +1309,7 @@
                 "descrizione": "La stand-up comedy incontra il dating in un format con protagonisti Marta e Gianluca."
             }
         ],
-        "aggiornato": "07:39"
+        "aggiornato": "13:18"
     },
     {
         "canale": "20 Mediaset",
@@ -1426,7 +1421,7 @@
                 "descrizione": "La nuova storia segue le eroiche gesta dell'agenzia cripto-zoologica Monarch e dei suoi membri, che fronteggeranno una serie di mostri dalle dimensioni divine, tra cui il possente Godzilla, che si scontrer� con Mothra, Rodan e la sua nemesi più pericolosa, il mostro a tre teste King Ghidorah. Quando queste antiche super specie – ritenute veri miti – tornano in vita, inizier� la competizione per la supremazia, mettendo a rischio l'esistenza dell'umanit� ."
             }
         ],
-        "aggiornato": "07:39"
+        "aggiornato": "13:18"
     },
     {
         "canale": "Twentyseven",
@@ -1533,7 +1528,7 @@
                 "descrizione": "Londra, estate 1593. Un giovane Shakespeare a corto di ispirazione, impulsivo e alla ricerca del fuoco dell'amore per dare vita alla poesia del teatro. Una ragazza figlia di ricchi borghesi, Viola De Lesseps, trascorre le notti a sognare i versi di quello Shakespeare artista della penna e di poter un giorno far parte di una compagnia di teatro, vietato alle donne. Alle audizioni per trovare un Romeo a una commedia non ancora scritta, dopo una desolante schiera di aspiranti, un giovane sconosciuto recita un sonetto con tanto sentimento che lo stesso Shakespeare lo rincorre fino a villa De Lesseps per sapere di lui. O meglio di lei, che travestita da uomo e aiutata dalla fedele balia, voleva coronare il sogno di calcare le scene."
             }
         ],
-        "aggiornato": "07:39"
+        "aggiornato": "13:18"
     },
     {
         "canale": "IRIS",
@@ -1595,7 +1590,7 @@
                 "descrizione": "Inghilterra 1944. Per fuggire dalla guerra tre fratelli di Manchester vengono mandati nelle campagne dove una famiglia d� loro protezione in attesa della fine del conflitto. Si integrano velocemente nella nuova realt� e un giorno conoscono un giovane soldato americano in missione segreta, ma che è in realt� un disertore. Decidono di aiutarlo pur sapendo che le autorit� sono ormai sulle sue tracce."
             }
         ],
-        "aggiornato": "07:39"
+        "aggiornato": "13:18"
     },
     {
         "canale": "Rai Movie",
@@ -1608,8 +1603,8 @@
             },
             {
                 "ora": "09:15",
-                "titolo": "Altissima pressione",
-                "descrizione": "Commedia musicale italiana. Nella Roma degli anni Sessanta, Roberto, un cantante in cerca di affermazione, mette in crisi la sua relazione con la fidanzata Lia per Serenella, il cui padre potrebbe aiutarlo nella scalata al successo. Un'audizione e l'incisione del primo disco sono sufficienti per trasformare in tragedia una storia d'amore vicina al matrimonio: mentre Roberto è accecato dalla fama, infatti, Lia minaccia di uccidersi. Saranno i frequentatori del Caciotta Club, il locale in cui si esibiscono i musicisti più amati dai giovani, ad impedire il gesto estremo della ragazza."
+                "titolo": "Altissima Pressione",
+                "descrizione": "Nella Roma degli anni Sessanta, Roberto sogna il successo nel mondo della musica e si lascia sedurre dalle opportunit� offerte dalla fama. Le sue scelte mettono però a dura prova il rapporto con Lia, mentre tra ambizioni, passioni e locali alla moda, la sua vita prende una direzione sempre più complicata."
             },
             {
                 "ora": "10:55",
@@ -1657,7 +1652,7 @@
                 "descrizione": "In Francia, l'autorevole e rispettata chef Mallory (Helen Mirren) è sempre più preoccupata per la vicinanza al suo ristorante di un piccolo bistrot indiano, un concorrente che potrebbe portarle via clienti. Iniziando una guerra contro gli indiani e il loro locale, Mallory scoprir� lo straordinario talento del giovanissimo Hassan. A poco a poco, abbandonando le ostilit� iniziali, i due diventeranno amici e Mallory lo guider� nella conoscenza della raffinata cucina francese."
             }
         ],
-        "aggiornato": "07:39"
+        "aggiornato": "13:18"
     },
     {
         "canale": "Rai Premium",
@@ -1744,7 +1739,7 @@
                 "descrizione": "Dal momento in cui Máxima Zorreguieta appare al fianco del principe ereditario olandese, si ritrova sotto i riflettori. Quando Willem-Alexander le chiede di sposarlo, il passato la raggiunge. Scoppia una discussione accesa sulla carriera politica di suo padre nel regime di Videla, una discussione che non ha mai affrontato nei suoi circoli. Cosa consente a questa argentina di prosperare finalmente in una vecchia corte europea? E come può Máxima rimanere fedele a se stessa senza rinunciare alla sua famiglia, oppure queste cose non vanno insieme?"
             }
         ],
-        "aggiornato": "07:39"
+        "aggiornato": "13:18"
     },
     {
         "canale": "La 5",
@@ -1836,7 +1831,7 @@
                 "descrizione": "Un gruppo di amici si ritrova per un matrimonio. Uno dei testimoni sta per pubblicare un libro erotico e teme che gli amici si riconoscano nelle avventure dei personaggi. La damigella della sposa ha ottenuto in anteprima una bozza del libro e la fa circolare tra gli invitati costringendo ognuno a fare i conti con segreti e scottanti verit� ."
             }
         ],
-        "aggiornato": "07:39"
+        "aggiornato": "13:18"
     },
     {
         "canale": "Real Time",
@@ -1938,7 +1933,7 @@
                 "descrizione": "Kenny ha una rara patologia ed e' ricoperto di centinaia di bozzoli su tutto il corpo."
             }
         ],
-        "aggiornato": "07:39"
+        "aggiornato": "13:18"
     },
     {
         "canale": "Food Network",
@@ -2055,7 +2050,7 @@
                 "descrizione": "Lo chef stellato Antonino Cannavacciuolo e' in Piemonte per risollevare le sorti di un risto-pub ispirato agli indiani d'America: il 'Totem'. Si trovera' di fronte ad una cuoca anarchica e allergica alle regole."
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:18"
     },
     {
         "canale": "Focus",
@@ -2177,7 +2172,7 @@
                 "descrizione": "Dalle lame che sfidano la storia alle fosse mongole, da amuleti legati all'Egitto alle taverne millenarie: enigmi sepolti riemergono per riscrivere il passato dell'umanita'."
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:18"
     },
     {
         "canale": "Giallo",
@@ -2259,7 +2254,7 @@
                 "descrizione": "Nina e Lukas indagano sulla rapina a un furgone davanti a una banca, finito in omicidio."
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:18"
     },
     {
         "canale": "Boing",
@@ -2416,7 +2411,7 @@
                 "descrizione": "Craig, Kelsey. e Jp immaginano una realta' alternativa dove non diventano mai amici."
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:18"
     },
     {
         "canale": "K2",
@@ -2573,7 +2568,7 @@
                 "descrizione": "5' Stagione Ep.21 - Proseguono le avventure dei tre fratelli scoiattoli dotati di una voce incredibile e di uno straordinario talento musicale."
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:18"
     },
     {
         "canale": "Rai Gulp",
@@ -2730,7 +2725,7 @@
                 "descrizione": "I Paladini salvano la foresta degli alberi cangianti usando per la prima volta i loro nuovi e instabili poteri. Ma le cose si complicano di fronte ai golem che attaccano la foresta degli alberi fiamma perché a dargli manforte arriva proprio Vondhur, il mago oscuro, che ora conosce la vera identit� dei paladini."
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:18"
     },
     {
         "canale": "Frisbee",
@@ -2887,7 +2882,7 @@
                 "descrizione": "5' Stagione Ep.15 - Proseguono le avventure dei tre fratelli scoiattoli dotati di una voce incredibile e di uno straordinario talento musicale."
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:18"
     },
     {
         "canale": "DMAX",
@@ -2979,7 +2974,7 @@
                 "descrizione": "Luigi Pelazza ci porta in Armenia nella prigione di Armavir."
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:18"
     },
     {
         "canale": "Rai Sport",
@@ -3056,7 +3051,7 @@
                 "descrizione": "Sessione serale con le finali di 100 farfalla femminili, 200 stile libero maschili, 200 rana femminili, 50 dorso maschili, 1500 stile libero femminili e staffetta mista 4×100 stile libero, oltre alle semifinali di 100 dorso femminili, 50 rana maschili, 50 stile libero femminili, 200 farfalla maschili e 200 misti femminili."
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:18"
     },
     {
         "canale": "Sportitalia",
@@ -3139,13 +3134,13 @@
             },
             {
                 "ora": "17:00",
-                "titolo": "Amichevole Arsenal-Como",
-                "descrizione": "Amichevole Arsenal-Como"
+                "titolo": "Calciomercato Live I° parte",
+                "descrizione": "Calciomercato Live I° parte"
             },
             {
                 "ora": "18:30",
-                "titolo": "Calciomercato Live I° parte",
-                "descrizione": "Calciomercato Live I° parte"
+                "titolo": "Calciomercato Live II° parte",
+                "descrizione": "Calciomercato Live II° parte"
             },
             {
                 "ora": "19:30",
@@ -3154,8 +3149,8 @@
             },
             {
                 "ora": "20:00",
-                "titolo": "Campionato Saudita Diriyah-Al Ahli",
-                "descrizione": "Campionato Saudita Diriyah-Al Ahli"
+                "titolo": "Campionato Saudita Al Hilal-Al Faysaly",
+                "descrizione": "Campionato Saudita Al Hilal-Al Faysaly"
             },
             {
                 "ora": "22:00",
@@ -3168,7 +3163,7 @@
                 "descrizione": "Il programma tratta le vicende del calciomercato sia nella sessione estiva che in quella invernale e va in onda alle ore 23.00 dal lunedì al venerdì"
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:18"
     },
     {
         "canale": "HGTV",
@@ -3325,7 +3320,7 @@
                 "descrizione": "Una coppia vuole sistemare la camera da letto e il bagno della loro casa in Costa Mesa, in California. Christina cerca di trovare un punto di incontro tra i due."
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:18"
     },
     {
         "canale": "RSI LA 1",
@@ -3482,7 +3477,7 @@
                 "descrizione": "Due concorrenti un misterioso scrigno e una combinazione... e Che Combinazione! Quest'estate ritorna il format targato RSI e condotto da Daiana Crivelli. Un format avvincente che ruota attorno a un misterioso scrigno. Due concorrenti, che siano amici o membri della stessa famiglia, si lanciano in una sfida entusiasmante, affrontando cinque prove intriganti. Solo superando queste sfide, potranno ottenere i numeri segreti necessari per aprire lo scrigno e conquistare il premio finale. Preparatevi ad un quiz itinerante che attraversa le meraviglie della Svizzera italiana, dove divertimento, ingegno e spirito di squadra si intrecciano in un'esperienza indimenticabile. Chi avr� la bravura e l'astuzia per decifrare gli enigmi e svelare la combinazione vincente? La sfida è lanciata!"
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:18"
     },
     {
         "canale": "RSI LA 2",
@@ -3584,7 +3579,7 @@
                 "descrizione": "Le esperienze ad alta tensione di un gruppo di professionisti che operano nell'ambito dei servizi di emergenza - poliziotti, paramedici, vigili del fuoco. Uomini e donne chiamati nelle situazioni più scioccanti, imprevedibili, intense ed emozionanti, i quali mettono le proprie vite in pericolo per salvare il prossimo. Mentre lo fanno, il sergente Athena Grant, il capitano dei vigili del fuoco Bobby Nash, l'operatrice del 911 Abby Clark e i loro colleghi devono cercare inoltre di bilanciare gli impegni e le difficolt� della loro professione con le rispettive vite private."
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:18"
     },
     {
         "canale": "DAZN 1",
@@ -3666,7 +3661,7 @@
                 "descrizione": "Cristian Chivu, insieme ad Andrea Marinozzi, rivede al cinema la stagione dell'Inter campione d'Italia. Dal primo incontro con la squadra al campionato che verra'."
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:18"
     },
     {
         "canale": "Sky Sport 24",
@@ -3823,7 +3818,7 @@
                 "descrizione": "Gli ultimi aggiornamenti sul Calciomercato. Tutte le novita' e le indiscrezioni su trattative e trasferimenti del mercato calciatori in Italia e all'estero. Le notizie esclusive della \"squadra mercato\" di SkySport."
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:18"
     },
     {
         "canale": "Sky Sport Uno",
@@ -3987,7 +3982,7 @@
                 "descrizione": "Gli ultimi aggiornamenti sul Calciomercato. Tutte le novita' e le indiscrezioni su trattative e trasferimenti del mercato calciatori in Italia e all'estero. Le notizie esclusive della \"squadra mercato\" di SkySport."
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:18"
     },
     {
         "canale": "Sky Sport Tennis",
@@ -3999,12 +3994,12 @@
                 "descrizione": "Cincinnati. - Dal Lindner Family Tennis Center di Cincinnati, Stati Uniti."
             },
             {
-                "ora": "06:00",
+                "ora": "07:00",
                 "titolo": "Finale singolare",
                 "descrizione": "SWIATEK (Pol)-RYBAKINA (Kaz) - Tc: Setti-Arnaboldi"
             },
             {
-                "ora": "07:55",
+                "ora": "08:20",
                 "titolo": "Finale",
                 "descrizione": "SHELTON (Usa)-NAKASHIMA (Usa) - Tc: Boschetto-Reggi"
             },
@@ -4014,17 +4009,17 @@
                 "descrizione": "Dal Lindner Family Tennis Center di Cincinnati, Stati Uniti."
             },
             {
-                "ora": "11:25",
+                "ora": "11:30",
                 "titolo": "Finale singolare",
                 "descrizione": "SWIATEK (Pol)-RYBAKINA (Kaz) - Tc: Setti-Arnaboldi"
             },
             {
-                "ora": "13:15",
+                "ora": "13:05",
                 "titolo": "1a giornata",
                 "descrizione": "Dal Lindner Family Tennis Center di Cincinnati, Stati Uniti."
             },
             {
-                "ora": "15:00",
+                "ora": "15:15",
                 "titolo": "Finale",
                 "descrizione": "SHELTON (Usa)-NAKASHIMA (Usa) - Tc: Boschetto-Reggi"
             },
@@ -4034,7 +4029,7 @@
                 "descrizione": "WTA 1000 Cincinnati. - Dal Lindner Family Tennis Center di Cincinnati, Stati Uniti."
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:18"
     },
     {
         "canale": "Sky Sport F1",
@@ -4146,7 +4141,7 @@
                 "descrizione": "E' la gara piu' iconica del mondiale: Leclerc gioca in casa, Antonelli viene da 4 successi di fila, Norris e' l'ultimo Re di Monte-Carlo. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero."
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:18"
     },
     {
         "canale": "Sky Sport Legend",
@@ -4238,7 +4233,7 @@
                 "descrizione": "In occasione del trentennale delle storiche vittorie mondiali, il documentario realizzato da Slim Dogs ripercorre la storia della blasonata scuderia italiana che innovo' il mondo della Formula 1."
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:18"
     },
     {
         "canale": "Sky Sport MotoGP",
@@ -4395,7 +4390,7 @@
                 "descrizione": "Sesto appuntamento del mondiale 2026: al Montmelo', in Spagna, si accendono i motori per la Sprint della MotoGP. Telecronaca Meda - Sanchini"
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:18"
     },
     {
         "canale": "Sky Sport Basket",
@@ -4467,7 +4462,7 @@
                 "descrizione": "Segui l'incontro di NBA in programma."
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:18"
     },
     {
         "canale": "Sky Sport Arena",
@@ -4484,17 +4479,7 @@
                 "descrizione": "Campionati Europei di Atletica. - A Birmingham, 4a giornata degli Europei di atletica con 7 medaglie d'oro da assegnare, tra cui il triplo F e i 200m F. Tc: Roggero-Baldini-Bragagna"
             },
             {
-                "ora": "10:00",
-                "titolo": "Studio Estate Italiana",
-                "descrizione": "Studio Estate Italiana. - ... 13\/08\/2026. - ... 13\/08\/2026. - ... 13\/08\/2026. - ... 13\/08\/2026 Studi. - Studi"
-            },
-            {
                 "ora": "10:30",
-                "titolo": "Boat Show 2026 Ep.18",
-                "descrizione": "Regate, grandi eventi, saloni nautici e tutto il nuovo che arriva dal mondo della cantieristica, a vela e a motore. In ogni occasione, un personaggio del mondo della nautica si racconta al pubblico."
-            },
-            {
-                "ora": "11:00",
                 "titolo": "Studio Estate Italiana",
                 "descrizione": "Studio Estate Italiana. - ... 13\/08\/2026. - ... 13\/08\/2026. - ... 13\/08\/2026. - ... 13\/08\/2026 Studi. - Studi"
             },
@@ -4544,7 +4529,7 @@
                 "descrizione": "Lavoro. - L'Italia femminile di rugby non e' fatta di professioniste. E allora conosciamo meglio le storie di Giordana Duca e Michela Sillari, rugbiste-lavoratrici e di Sara Mannini, rugbista-studentessa."
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:18"
     },
     {
         "canale": "Sky Sport Max",
@@ -4576,7 +4561,7 @@
                 "descrizione": "Parigi 2026 Nuoto Vasca. - Segui le gare dei Campionati Europei di nuoto 2026. Da Parigi, Francia."
             },
             {
-                "ora": "12:00",
+                "ora": "12:30",
                 "titolo": "Serie A Vieste: Queen Of The Beach",
                 "descrizione": "Beach Volley. - Due giorni di sfide e spettacolo sulla sabbia di Vieste per il King e Queen of the Beach Serie A."
             },
@@ -4631,7 +4616,7 @@
                 "descrizione": "Parigi 2026 Nuoto Vasca. - Segui le gare dei Campionati Europei di nuoto 2026. Da Parigi, Francia."
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:18"
     },
     {
         "canale": "Sky Sport Mix",
@@ -4733,7 +4718,7 @@
                 "descrizione": "Seguiamo le gare del Premier Padel Major."
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:18"
     },
     {
         "canale": "Sky Sport Golf",
@@ -4751,8 +4736,8 @@
             },
             {
                 "ora": "09:00",
-                "titolo": "Open d'Italia",
-                "descrizione": "Un riepilogo delle migliori azioni del secondo giorno del DS Automobiles 83mo Open d'Italia."
+                "titolo": "Speciale Golf Battle Twelve",
+                "descrizione": "Speciale Golf Battle Twelve"
             },
             {
                 "ora": "09:30",
@@ -4770,7 +4755,7 @@
                 "descrizione": "Giorno 2 Golf: DP World Tour. - From the Great Northern in Kerteminde, Denmark."
             },
             {
-                "ora": "18:00",
+                "ora": "17:50",
                 "titolo": "Scottish Challenge",
                 "descrizione": "Il meglio dell'azione del Challenge Tour Series."
             },
@@ -4791,21 +4776,21 @@
             },
             {
                 "ora": "22:00",
-                "titolo": "Ep2 Miglianico Alps Open",
-                "descrizione": "Tour. - Per la prima volta nella sua storia, l'Alps Tour fa tappa al Villa Paradiso Golf Club di Cornate."
+                "titolo": "Speciale Golf Battle Twelve",
+                "descrizione": "Speciale Golf Battle Twelve"
             },
             {
-                "ora": "22:30",
+                "ora": "22:25",
                 "titolo": "Italian Pro Tour",
                 "descrizione": "I momenti salienti dell'Italian Challenge Open, prestigioso torneo di golf dell'European Challenge."
             },
             {
-                "ora": "23:00",
+                "ora": "22:55",
                 "titolo": "Danish Golf Championship: Giorno 2",
                 "descrizione": "Golf: DP World Tour. - From the Great Northern in Kerteminde, Denmark."
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:18"
     },
     {
         "canale": "Sky Sport 251",
@@ -4817,7 +4802,7 @@
                 "descrizione": "Calcio Amichevoli Trofeo Bortolotti. Dalle 20:45"
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:18"
     },
     {
         "canale": "Sky Sport 252",
@@ -4829,7 +4814,7 @@
                 "descrizione": "Tennis Masters 1000 & Wta 1000 Cincinnati 2026 2a Giornata. Dalle ore 17:00"
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:18"
     },
     {
         "canale": "Sky Sport 253",
@@ -4841,7 +4826,7 @@
                 "descrizione": "Calcio Serie C Coppa Italia. Dalle ore 21:00."
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:18"
     },
     {
         "canale": "Sky Sport 254",
@@ -4853,7 +4838,7 @@
                 "descrizione": "Europeo Atletica Leggera 5a Giornata - Salto In Alto Maschile. Dalle ore 20:55."
             }
         ],
-        "aggiornato": "07:41"
+        "aggiornato": "13:19"
     },
     {
         "canale": "Sky Sport 255",
@@ -4975,7 +4960,7 @@
                 "descrizione": "La vera storia di Katharine Gun, interprete nei Servizi Segreti Britannici, che decide di svelare alla stampa un'operazione di spionaggio illegale di Stati Uniti e Regno Unito a danno dei membri del Consiglio di Sicurezza dell'ONU durante l’invasione dell'Iraq del 2003."
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:18"
     },
     {
         "canale": "Sky Cinema Uno +24",
@@ -5037,7 +5022,7 @@
                 "descrizione": "Una squadra di soldate sotto copertura entra in territorio afgano per salvare un gruppo di adolescenti intrappolati tra l'Isis e le forze talebane"
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:18"
     },
     {
         "canale": "Sky Cinema Due",
@@ -5089,7 +5074,7 @@
                 "descrizione": "Simona Izzo e Ricky Tognazzi raccontano la storia d'amore tra Francesca Morvillo e Giovanni Falcone: un rapporto intenso che li vedr� uniti fino agli ultimi istanti delle loro vite"
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:18"
     },
     {
         "canale": "Sky Cinema Due +24",
@@ -5111,7 +5096,7 @@
                 "descrizione": "Un giovane di colore di Newark, diseredato e dotato, arriva alla Yale University, ma le ombre e le ingiustizie del suo passato minacciano il suo futuro."
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:18"
     },
     {
         "canale": "Sky Cinema Collection",
@@ -5178,7 +5163,7 @@
                 "descrizione": "Massimo è un ombroso barista, divorziato da poco, che si trova a indagare su alcuni delitti che avvengono nella sua cittadina toscana, Pineta. Il suo istinto d'investigatore trova sempre spunti in alcune conversazioni, che è costretto a sedare nel suo bar, ad opera di quattro arzilli vecchietti. Mentre indaga, Massimo si divide fra un amore per il commissario di polizia Vittoria Fusco, le vicende della sua barista Tiziana e la comparsa del suo fratellastro, Beppe."
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:18"
     },
     {
         "canale": "Sky Cinema Family",
@@ -5245,7 +5230,7 @@
                 "descrizione": "Durante una missione volta a impedire a Joker di distruggere Gotham City, Batman ferisce i sentimenti del suo arcinemico dicendogli che non è importante nella sua vita quanto Superman. Il giorno seguente, Batman partecipa al gala invernale della citt� per celebrare il pensionamento del commissario Gordon. Durante l'evento Barbara Gordon prende il posto del padre in qualit� di commissario di polizia di Gotham e annuncia il suo piano per rinforzare il corpo di polizia cittadino in modo che non abbia più bisogno di Batman, cosa che fa infuriare il giustiziere. Joker e tutti i criminali di Gotham fanno irruzione alla festa solo per arrendersi a Batman. A causa di questo Batman realizza che presto non ci sar� più bisogno di lui. In seguito il maggiordomo Alfred rivela a Bruce che questi ha adottato l'orfano Dick Grayson e lo convince a prenderlo sotto la sua ala come Robin."
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:19"
     },
     {
         "canale": "Sky Cinema Action",
@@ -5307,7 +5292,7 @@
                 "descrizione": "John Wick è in fuga per due ragioni: una taglia di 14 milioni di dollari e per aver infranto una delle regole fondamentali, uccidere qualcuno all'interno dell'Hotel Continental. La vittima infatti era un membro della Gran Tavola che aveva posto la taglia su di lui. John avrebbe dovuto gi� essere stato eliminato, ma il manager dell'Hotel Continental gli concede un'ora di tempo prima di dichiararlo ufficialmente “scomunicato\". John dovr� cercare di restare vivo, lottando e uccidendo, in cerca di una via d’uscita da New York City."
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:19"
     },
     {
         "canale": "Sky Cinema Suspense",
@@ -5364,7 +5349,7 @@
                 "descrizione": "Lorraine ed Ed Warren, esperti di paranormale, per una delle loro indagini più terrificanti si recano a Londra con lo scopo di aiutare una madre single che sta tentando di crescere da sola quattro bambini in una casa tormentata da spiriti maligni."
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:19"
     },
     {
         "canale": "Sky Cinema Romance",
@@ -5426,7 +5411,7 @@
                 "descrizione": "Al centro della storia due amiche, alle quali il destino prima regala la gioia di rimanere incinta contemporaneamente, per poi spazzarle via in un tragico incidente. Due mariti incapaci di affrontare la doppia sfida, essere padri e vedovi, decidono di allearsi, e darsi una mano a vicenda nel crescere i figli. Contro ogni pronostico nasce una nuova famiglia, anomala certo, ma che funziona alla grande, e che è destinata a venire sconvolta quando un’altra donna entra nell’equazione delle loro vite."
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:19"
     },
     {
         "canale": "Sky Cinema Drama",
@@ -5488,7 +5473,7 @@
                 "descrizione": "Mimì è un adolescente orfano nato con i piedi deformi che lavora in una pizzeria a Napoli. Un brutto giorno incontra Carmilla, una giovane ragazza convinta di essere una discendente del conte Dracula. Insieme decidono di fuggire da un mondo cinico e violento."
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:19"
     },
     {
         "canale": "Sky Cinema Comedy",
@@ -5555,7 +5540,7 @@
                 "descrizione": "Quindici giorni di vacanza negli Stati Uniti di un gruppo di studenti di una scuola privata romana, retta da sacerdoti. I piacevoli incontri si alternano con le delusioni, le gioie con le amarezze."
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:19"
     },
     {
         "canale": "Sky Uno",
@@ -5642,7 +5627,7 @@
                 "descrizione": "Riviviamo le stagioni di X Factor dal 2011 al 2014."
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:19"
     },
     {
         "canale": "Sky Atlantic",
@@ -5759,7 +5744,7 @@
                 "descrizione": "Un insegnante di chimica con un cancro allo stadio terminale comincia a produrre e spacciare metanfetamina con un suo ex studente per assicurare un futuro alla famiglia."
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:19"
     },
     {
         "canale": "Sky Serie",
@@ -5896,7 +5881,7 @@
                 "descrizione": "$23"
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:19"
     },
     {
         "canale": "Sky Investigation",
@@ -6008,7 +5993,7 @@
                 "descrizione": "La serie si svolge nella splendida cornice di una piccola isola caraibica, Saint-Marie, dove il poliziotto Richard Poole, britannico doc, viene inviato per risolvere un misterioso omicidio.Poole si ritrova in una fatiscente stazione di polizia a lavorare con una nuova partner, la brillante Camille Bordey, in un ambiente totalmente diverso da tutto ciò a cui lui è abituato. Lui è un tipo da giacca, cravatta e mocassini... in spiaggia. Nonostante ciò, pur essendo assolutamente un pesce fuor d'acqua in questo paradiso terrestre, si dimostrer� all’altezza di risolvere ogni caso che si presenter� di episodio in episodio."
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:19"
     },
     {
         "canale": "Sky Crime",
@@ -6140,7 +6125,7 @@
                 "descrizione": "Ep.7 di 8 - I delitti commessi da Donato Bilancia, condannato a tredici ergastoli in via definitiva."
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:19"
     },
     {
         "canale": "Sky Adventure",
@@ -6267,7 +6252,7 @@
                 "descrizione": "Dai più tragici a quelli più comici, sveliamo i più incredibili fallimenti ingegneristici del nostro tempo."
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:19"
     },
     {
         "canale": "MTV",
@@ -6419,7 +6404,7 @@
                 "descrizione": "Ep.4 di 8 - Chloe compie 18 anni. Megan e Dylan vanno in Spagna per cercare di risolvere i loro problemi. Mia affronta Maggie."
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:19"
     },
     {
         "canale": "Comedy Central",
@@ -6576,7 +6561,7 @@
                 "descrizione": "Hot in Cleveland\" si basa su tre favolose, eccentriche donne sopra i quarant'anni di Los Angeles, migliori amiche, le cui vite sono state cambiate per sempre quando il loro aereo è dovuto atterrare inaspettatamente a Cleveland e presto riscopriranno loro stesse in questa nuova \"terra promessa\"."
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:19"
     },
     {
         "canale": "Sky Arte",
@@ -6678,7 +6663,7 @@
                 "descrizione": "Mariska Hargitay aveva solo tre anni quando sua madre, la leggenda di Hollywood Jayne Mansfield, morì tragicamente in un incidente d'auto. Mariska esplora la vita della madre, tra memorie intime e immagini inedite."
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:19"
     },
     {
         "canale": "Sky Documentaries",
@@ -6785,7 +6770,7 @@
                 "descrizione": "Ep3 di 3 Secondo tempo - Al novantesimo minuto le sorti dell'Italia sono nelle mani di Dino Zoff."
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:19"
     },
     {
         "canale": "Sky Nature",
@@ -6902,7 +6887,7 @@
                 "descrizione": "A nord dell'arcipelago giapponese, la neve e il ghiaccio ricoprono l'isola di Hokkaido per sei mesi l'anno. Qui, per sopravvivere, bisogna sapersi adattare e saper cogliere le opportunit� quando si presentano."
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:19"
     },
     {
         "canale": "Discovery Channel",
@@ -7019,7 +7004,7 @@
                 "descrizione": "Mark e Digger costruiscono una particolare attrezzatura per salvare la loro vodka. Intanto, Pam potrebbe saperne piu' di quanto pensa sul liquore perduto di Popcorn."
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:19"
     },
     {
         "canale": "History Channel",
@@ -7131,7 +7116,7 @@
                 "descrizione": "Il viaggio che il giornalista Luigi Romersa intraprese nel 1944 su ordine del Duce alla ricerca di informazioni riservate sulle armi segrete dei nazisti."
             }
         ],
-        "aggiornato": "07:40"
+        "aggiornato": "13:19"
     },
     {
         "canale": "Cartoon Network",
@@ -7288,7 +7273,7 @@
                 "descrizione": "Ep4 di 52 Un pesce rosso - Stellarubia vince un pesce alla giostra, ma muore l'indomani. Il suo fantasma le dice di liberare gli altri pesci dalle grinfie dei giostrai."
             }
         ],
-        "aggiornato": "07:41"
+        "aggiornato": "13:19"
     },
     {
         "canale": "Dea Kids",
@@ -7445,7 +7430,7 @@
                 "descrizione": "Owen porta a scuola Shelley, un'aragosta che spaccia per la sua cagnolina. Il bambino, però, ignorava la morbosa passione di Chef per le aragoste."
             }
         ],
-        "aggiornato": "07:41"
+        "aggiornato": "13:19"
     },
     {
         "canale": "Nick Jr",
@@ -7602,7 +7587,7 @@
                 "descrizione": "Ep5 di 20 Il cristallo della forza\/Una conchiglia arrabbiata - Jade chiede l'aiuto della Deer Squad per ritrovare Alex Giramondo. \/Sir Steel dona a Lady Fluffpot una perla gigante."
             }
         ],
-        "aggiornato": "07:41"
+        "aggiornato": "13:19"
     },
     {
         "canale": "Boomerang",
@@ -7759,7 +7744,7 @@
                 "descrizione": "Ep47 La famiglia degli orsi - Grizzy trova un orso bianco in letargo e scopre che appartiene alla sua stessa specie. Se ne prende cura, ma questo rovina le abitudini dei Lemming."
             }
         ],
-        "aggiornato": "07:41"
+        "aggiornato": "13:19"
     },
     {
         "canale": "Sky TG 24",
@@ -7916,7 +7901,7 @@
                 "descrizione": "Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo."
             }
         ],
-        "aggiornato": "07:41"
+        "aggiornato": "13:19"
     },
     {
         "canale": "Rai News 24",
@@ -8073,7 +8058,7 @@
                 "descrizione": "NEWS + SOMMARIO"
             }
         ],
-        "aggiornato": "07:41"
+        "aggiornato": "13:19"
     },
     {
         "canale": "Sky Meteo 24",
