@@ -24,7 +24,7 @@
                 "descrizione": "Notizie e attualit� in tempo reale dall'Italia e dal mondo. Approfondimenti, ospiti in studio, inviati del Tg1 e interviste ai protagonisti della cronaca, dello sport, della cultura e dello spettacolo. Conducono Greta Mauro e Gianpiero Scarpati."
             },
             {
-                "ora": "06:57",
+                "ora": "06:58",
                 "titolo": "Che Tempo Fa",
                 "descrizione": "L'appuntamento con le previsioni del tempo gestito dall'Aeronautica militare."
             },
@@ -144,17 +144,12 @@
                 "descrizione": "Amy, responsabile dello sviluppo di un'azienda specializzata in integratori alimentari, arriva a Venezia per convincere il celebre chef Marcello ad accettare una partnership. Di fronte ai suoi continui rifiuti, decide di iscriversi al suo corso di cucina. Tra sapori, sfide e affinit� inaspettate, il loro incontro prende una piega sorprendente."
             }
         ],
-        "aggiornato": "06:52"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Rai 2",
         "categoria": "Digitale Terrestre",
         "programmi": [
-            {
-                "ora": "06:00",
-                "titolo": "Ritorno a Las Sabinas",
-                "descrizione": "Dopo molti anni di lontananza, le sorelle Molina tornano nella loro citt� natale per affrontare i problemi di salute del padre. Il loro ritorno significa una riunione con le vite, gli amori e i segreti che hanno cercato di dimenticare."
-            },
             {
                 "ora": "06:10",
                 "titolo": "La Grande Vallata",
@@ -192,8 +187,8 @@
             },
             {
                 "ora": "10:10",
-                "titolo": "TG2 Dossier",
-                "descrizione": "Approfondimento del Tg2. Direttore Antonio Preziosi Vicedirettore Elisabetta Migliorelli A cura di Francesco Vitale"
+                "titolo": "TG2 Dossier - Le Avventure Di Varenne",
+                "descrizione": "Varenne è il cavallo famoso in tutto il mondo per aver vinto 62 corse su 73 disputate: è stato tre volte campione del mondo, altrettante volte ha vinto la lotteria di Agnano, due volte il prestigioso Gran Prix d'Amerique. Nella sua carriera ha guadagnato oltre sei milioni di euro e una volta finite le gare, si è dedicato alla paternit� , mettendo al mondo 3000 figli. Il suo nome è stato preso in prestito da una via del centro di Parigi, ma Varenne è italiano e il suo driver storico lo definisce dotato di una intelligenza fuori dal comune rispetto ai suoi simili. Il 19 maggio scorso ha compiuto trent'anni e l'inviato del Tg2 Alessandro Poggi è andato a trovarlo."
             },
             {
                 "ora": "11:00",
@@ -299,9 +294,14 @@
                 "ora": "22:04",
                 "titolo": "Boston Blue",
                 "descrizione": "Il detective del NYPD Danny Reagan accetta un incarico presso il Dipartimento di Polizia di Boston e viene affiancato alla detective Lena Silver; quest'ultima appartiene a una famiglia legata alle forze dell'ordine e alla giustizia, composta dal Procuratore Distrettuale Mae Silver, dal Sovrintendente di Polizia Sarah Silver, dall'agente alle prime armi Jonah Silver e dal Reverendo Edwin Peters. Reagan spera di ricostruire il rapporto con suo figlio Sean proprio a Boston."
+            },
+            {
+                "ora": "22:52",
+                "titolo": "Boston Blue",
+                "descrizione": "Il detective del NYPD Danny Reagan accetta un incarico presso il Dipartimento di Polizia di Boston e viene affiancato alla detective Lena Silver; quest'ultima appartiene a una famiglia legata alle forze dell'ordine e alla giustizia, composta dal Procuratore Distrettuale Mae Silver, dal Sovrintendente di Polizia Sarah Silver, dall'agente alle prime armi Jonah Silver e dal Reverendo Edwin Peters. Reagan spera di ricostruire il rapporto con suo figlio Sean proprio a Boston."
             }
         ],
-        "aggiornato": "06:52"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Rai 3",
@@ -448,7 +448,7 @@
                 "descrizione": "Renzo Arbore e Gegè Telesforo tornano con un nuovo appuntamento. Apre la nuova puntata il campione della musica italiana, Renato Carosone con \"Pigliate na pastiglia\", interpretata, in chiave cubana, insieme a L'Orchestra Italiana. Si prosegue, poi, con Gigi Proietti, Massimo Catalano e Renzo Arbore, con i divertenti e goliardici doppi sensi dei brani \"Sofia\", \"Jolanda\" e \"Ai romani piaceva la biga\". Tocca di nuovo a Renzo Arbore L'Orchestra Italiana, con la serenata \"Voce 'e Notte\" ripresa durante il China Tour del 2007, e ad un eccezionale Francesco De Gregori, ospite nel programma \"Doc\" del 1987, ed il grande classico \"La Donna Cannone\". Renzo Arbore e i suoi Swing Maniacs interpretano \"Bongo Bongo Bongo\", mentre a Piazza del Plebiscito a Napoli, durante un piovoso Capodanno 2010, sempre Renzo Arbore con la sua orchestra italiana, suonano una toccante \"Reginella\" di Roberto Murolo."
             }
         ],
-        "aggiornato": "06:52"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Rai 4",
@@ -580,7 +580,7 @@
                 "descrizione": "Lanciato sulle orme di un serial killer, Adam, un poliziotto indurito ma ammirato, sopravvive miracolosamente dopo essere stato colpito alla testa. L'unico seguito, soffre di amnesia. Quando scopre una giovane donna legata e terrorizzata nella sua cantina, Adam si trova ad affrontare il più terribile dei dubbi: e se l'assassino che stava inseguendo non fosse altri che lui stesso?"
             }
         ],
-        "aggiornato": "06:53"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Rai 5",
@@ -687,7 +687,7 @@
                 "descrizione": "Luigi Maria Perotti ci conduce alla scoperta di una Siena inedita, dove ogni strada, ogni pietra, ogni voce, racconta una storia antica e profondamente umana. Un viaggio emozionante che ci porta a riflettere sul senso della vita."
             }
         ],
-        "aggiornato": "06:53"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Rete 4",
@@ -779,7 +779,7 @@
                 "descrizione": "Il film tratta della giovinezza e dei primi passi nel mondo del crimine di Vito Corleone, e delle difficolt� cinquant'anni più tardi di suo figlio, Michael, a mantenere in piedi l'impero Corleone. Il tutto tra vicende di emigrazione, tradimenti familiari, inchieste governative e affari."
             }
         ],
-        "aggiornato": "06:53"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Canale 5",
@@ -936,7 +936,7 @@
                 "descrizione": "Gerry Scotti, Samira e la ruota piu' famosa della tv! I concorrenti devono scoprire le frasi nascoste. Serve bravura ma la fortuna ci mette del suo!"
             }
         ],
-        "aggiornato": "06:53"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Italia 1",
@@ -1068,7 +1068,7 @@
                 "descrizione": "Le indagini dell'Unit� Vittime Speciali, una nuova squadra speciale della Polizia di New York che si occupa di crimini a sfondo sessuale. In ogni episodio si segue da una parte l'attivit� investigativa attuata dalla squadra e dall'altra l'aspetto giudiziario con l'iniziativa processuale condotta dalla procura distrettuale."
             }
         ],
-        "aggiornato": "06:53"
+        "aggiornato": "12:56"
     },
     {
         "canale": "La7",
@@ -1140,7 +1140,7 @@
                 "descrizione": "Nominato capo dell'FBI dal Presidente Calvin Coolidge, J. Edgar Hoover è un giovane uomo ambizioso nell'America proibizionista. Figlio di un padre debole e di una madre autoritaria, Edgar è ossessionato dalla sicurezza del Paese e dai criminali che la minacciano a suon di bombe e volantini. Avviata una lotta senza esclusione di colpi contro bolscevichi, radicali, gangster e delinquenti di ogni risma, il direttore federale attraversa la storia americana costruendosi una reputazione irreprensibile e inattaccabile. A farne le spese sono i suoi nemici, reali o supposti, tutti ugualmente ricattabili dai dossier confidenziali raccolti, archiviati e custoditi da Helen Gandy, fedele segretaria che rifiutò il suo corteggiamento e ne sposò la causa. Quarantotto anni di 'azioni' (il)legali, otto presidenti e un sentimento dissimulato dopo, quello per il collaboratore Clyde Tolson, Edgar detter� la sua biografia e le sue imprese."
             }
         ],
-        "aggiornato": "06:53"
+        "aggiornato": "12:56"
     },
     {
         "canale": "TV8",
@@ -1237,7 +1237,7 @@
                 "descrizione": "I palinsesti sono in via di definizione da parte emittente"
             }
         ],
-        "aggiornato": "06:53"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Nove",
@@ -1249,87 +1249,87 @@
                 "descrizione": "Kimra si gode una serata in un locale. Ma due mesi dopo, il suo corpo viene ritrovato lungo le sponde del fiume Tennessee. La polizia riuscira' a catturare il killer?"
             },
             {
-                "ora": "06:50",
+                "ora": "06:45",
                 "titolo": "Torbidi delitti",
                 "descrizione": "Il mistero della morte di un diciottenne, trovato in un canale di scolo ad Arlington, e' rimasto tale per 20 anni. Ora pero' c'e' una novita'..."
             },
             {
-                "ora": "07:45",
+                "ora": "07:30",
                 "titolo": "Alta infedelta'",
                 "descrizione": "Martina e Paolo stanno insieme da 5 anni. Lei, da 10 anni, ha un carissimo 'amico di penna' in America: Antonio, che decide di farle una sorpresa arrivando finalmente a Milano. Tra i due inizia una storia."
             },
             {
-                "ora": "08:15",
+                "ora": "08:00",
                 "titolo": "Alta infedelta': nuovi modi di tradire",
                 "descrizione": "Marica e Francesco sono una coppia affiatata, ma l'arrivo di Nicola nel negozio di lei li mette in crisi."
             },
             {
-                "ora": "08:50",
+                "ora": "08:30",
                 "titolo": "Alta infedelta'",
                 "descrizione": "Giada e Tommaso, futuri sposi, lavorano insieme in uno studio di architettura. La loro storia va a gonfie vele fino a quando nell'ufficio viene assunta Alice, vecchia conoscenza di Tommaso."
             },
             {
-                "ora": "09:20",
+                "ora": "09:00",
                 "titolo": "Alta infedelta'",
                 "descrizione": "Veronika, ventisettenne traduttrice, ha una relazione con Bernardo, un musicista milanese. L'equilibrio della coppia si spezza quando Veronika consoce Alessandro durante un viaggio di lavoro."
             },
             {
-                "ora": "09:55",
+                "ora": "09:30",
                 "titolo": "Alta infedelta'",
                 "descrizione": "Matteo e Gloria sono fidanzati da due anni. Matteo pero' sente che Gloria non ha mai dimenticato il suo ex Luca, uno stuntman squattrinato con cui ha vissuto una storia avventurosa."
             },
             {
-                "ora": "10:30",
+                "ora": "10:00",
                 "titolo": "Alta infedelta'",
                 "descrizione": "Roberto e Ottavia sono una coppia nella vita e nel lavoro. Per prendersi una piccola rivincita, la donna si iscrive ad un sito di incontri in cui conosce Antonio, giovane laureando."
             },
             {
-                "ora": "11:00",
+                "ora": "10:35",
                 "titolo": "Alta infedelta': nuovi modi di tradire",
                 "descrizione": "Al 'Caffe' degli artisti', il locale di Ilaria e Filippo arriva Lucrezia, la nuova bar tender. Il cocktail e' servito."
             },
             {
-                "ora": "11:35",
+                "ora": "11:10",
                 "titolo": "Cash or Trash - Chi offre di piu'?",
                 "descrizione": "Cinque mercanti cercheranno di aggiudicarsi preziosi oggetti."
             },
             {
-                "ora": "12:45",
+                "ora": "12:25",
                 "titolo": "Cash or Trash - Chi offre di piu'?",
                 "descrizione": "Alcuni mercanti cercano di aggiudicarsi preziosi oggetti."
             },
             {
-                "ora": "14:00",
+                "ora": "13:50",
                 "titolo": "The Cage - Prendi e scappa",
                 "descrizione": "Due coppie di concorrenti si sfidano in una gara a tempo per aggiudicarsi i premi di diverso valore racchiusi dentro una enorme gabbia trasparente. Conduce Amadeus con Giulia Salemi."
             },
             {
-                "ora": "15:00",
+                "ora": "14:55",
                 "titolo": "The Cage - Prendi e scappa",
                 "descrizione": "Due coppie di concorrenti si sfidano in una gara a tempo per aggiudicarsi i premi di diverso valore racchiusi dentro una enorme gabbia trasparente. Conduce Amadeus con Giulia Salemi."
             },
             {
-                "ora": "15:55",
+                "ora": "16:00",
                 "titolo": "Il delitto della porta accanto",
                 "descrizione": "La polizia di Hanover, Pennsylvania, brancola nel buio nell'indagine sulla morte di Monica Schemyer, una cinquantacinquenne tranquilla e gentile che nessuno poteva odiare..."
             },
             {
-                "ora": "16:50",
+                "ora": "17:00",
                 "titolo": "Il delitto della porta accanto",
                 "descrizione": "Jessica Evans e Jacon Wheeler vanno a pescare nei dintorni di Norris, Illinois, e non fanno mai piu' ritorno. In piu', nel fugrone di Wheeler viene fatta una macabra scoperta..."
             },
             {
-                "ora": "17:50",
+                "ora": "18:00",
                 "titolo": "Little Big Italy",
                 "descrizione": "Francesco Panella riparte alla scoperta dei piu' autentici ristoranti italiani in giro per il mondo. Oggi la sfida sara' a San Diego, citta' dal clima perfetto e meta di moltissimi turisti."
             },
             {
-                "ora": "19:20",
+                "ora": "19:35",
                 "titolo": "Cash or Trash - Chi offre di piu'?",
                 "descrizione": "Giochi di magia, lampade glitter, oggetti tibetani e memorabilia Star Wars animano una puntata pop e spirituale."
             },
             {
-                "ora": "20:35",
+                "ora": "20:45",
                 "titolo": "Cash or Trash - Chi offre di piu'?",
                 "descrizione": "Vasi, supporti telefonici, locandine e eliche d'aereo compongono un episodio vario e sorprendente."
             },
@@ -1339,12 +1339,12 @@
                 "descrizione": "Durante la Seconda Guerra Mondiale alla USS Indianapolis e al suo equipaggio guidato dal capitano Charles McVay viene affidata una missione top secret. Ma durante la traversata l’incrociatore viene affondato da un siluro giapponese. Vista la segretezza della missione la nave non viene soccorsa e dopo 5 giorni nelle acque infestate da squali, dei 1197 membri dell’equipaggio solo 317 vengono ritrovati ancora in vita. Per nascondere le proprie colpe il Governo degli Stati Uniti, qualche mese dopo, chiama McVay a giudizio davanti la Corte Marziale."
             },
             {
-                "ora": "23:50",
+                "ora": "23:45",
                 "titolo": "Il monaco",
                 "descrizione": "Un misterioso monaco tibetano senza nome girovaga sessant' anni per il mondo per proteggere da un gruppo di nazisti determinati a conoscerne il contenuto un' antica pergamena ricevuta in dono dal suo predecessore. Secondo la profezia, infatti, chi legger� per intero le scritture acquisir� poteri prodigiosi che garantiranno il dominio sul mondo."
             }
         ],
-        "aggiornato": "06:53"
+        "aggiornato": "12:56"
     },
     {
         "canale": "20 Mediaset",
@@ -1466,7 +1466,7 @@
                 "descrizione": "The Equalizer, serie tv di Andrew W. Marlowe (l'ideatore di Castle) e Terri Edda Miller per la rete americana CBS, è il remake al femminile dell'omonimo crime drama degli anni '80, in Italia meglio conosciuto con il titolo Un giustiziere a New York. Queen Latifah (Chicago) interpreta Robyn McCall, una donna enigmatica e con un passato misterioso la quale usa le proprie ampie capacit� per aiutare chi non ha nessun altro cui rivolgersi. Robyn si presenta alla maggior parte delle persone come una qualunque madre single che sta crescendo tranquillamente la figlia adolescente, Delilah (Laya DeLeon Hayes). Ma per pochi fidati, lei è Il Giustiziere - un angelo custode e difensore degli oppressi che è anche ostinato nella sua ricerca di una redenzione."
             }
         ],
-        "aggiornato": "06:53"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Twentyseven",
@@ -1573,7 +1573,7 @@
                 "descrizione": "Mac e Kelly Radner stanno per avere il loro secondo bambino e sono pronti a trasferirsi in periferia quando, prima di vendere la lro abitazione, scoprono che accanto alla loro casa si trasferiscono il gruppo di consorelle della Kappa Nu, ancora più folli di quanto fossero Teddy e il suo gruppo. Costretti a rivolgersi all'ex vicino di casa, i Radner affiancati dagli amici Jimmy e Paula sperano che Teddy possa essere la loro arma segreta per combattere il caos generato dalle consorelle."
             }
         ],
-        "aggiornato": "06:53"
+        "aggiornato": "12:56"
     },
     {
         "canale": "IRIS",
@@ -1635,7 +1635,7 @@
                 "descrizione": "Benjamin Button è un individuo molto particolare: nato con l'aspetto di un centenario, anziché invecchiare, ringiovanisce con gli anni. Innamoratosi di una donna di trent'anni, continua a diventare sempre più giovane mentre lei invecchia normalmente."
             }
         ],
-        "aggiornato": "06:53"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Rai Movie",
@@ -1702,7 +1702,7 @@
                 "descrizione": "Hirayama conduce una vita semplice, scandita da una routine perfetta. Si dedica con cura e passione a tutte le attivit� della sua giornata, dal lavoro come addetto alle pulizie dei bagni pubblici di Tokyo all’amore per la musica, ai libri, alle piante, alla fotografia e a tutte le piccole cose a cui si può dedicare un sorriso. Nel ripetersi del quotidiano, una serie di incontri inaspettati rivela gradualmente qualcosa in più del suo passato."
             }
         ],
-        "aggiornato": "06:53"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Rai Premium",
@@ -1799,7 +1799,7 @@
                 "descrizione": "La profiler Teresa Battaglia di Travenì viene incaricata di rintracciare un misterioso killer che si aggira sulle montagne della zona di Tarvisio in Friuli-Venezia Giulia, ma durante le sue indagini inizia ad accusare i primi sintomi della malattia di Alzheimer."
             }
         ],
-        "aggiornato": "06:53"
+        "aggiornato": "12:56"
     },
     {
         "canale": "La 5",
@@ -1896,7 +1896,7 @@
                 "descrizione": "I grandi nomi della musica arrivano nelle piazze piu' iconiche dell'Emilia-Romagna con Yoga Radio Estate, lo show musicale di Italia 1 condotto da Noemi ed Enrico Papi"
             }
         ],
-        "aggiornato": "06:53"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Real Time",
@@ -1998,7 +1998,7 @@
                 "descrizione": "Un team di dermatologi aiuta alcuni pazienti affetti da patologie estreme."
             }
         ],
-        "aggiornato": "06:53"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Food Network",
@@ -2140,7 +2140,7 @@
                 "descrizione": "Paride e Davide pedalano lungo la Via Verde della Costa dei Trabocchi."
             }
         ],
-        "aggiornato": "06:53"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Focus",
@@ -2257,7 +2257,7 @@
                 "descrizione": "Saliamo a bordo del Sommergibile Pietro Venuti della Marina militare italiana. Come si vive e lavora dentro un sottomarino? Con quali sacrifici, tipi di organizzazione e preparazione fisica e mentale?"
             }
         ],
-        "aggiornato": "06:53"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Giallo",
@@ -2329,7 +2329,7 @@
                 "descrizione": "L'ispettore capo Tom Barnaby della polizia di Midsomer e il suo fidato sergente, Gavin Troy, , devono investigare sugli omicidi che avvengono nei villaggi dell'immaginaria contea inglese di Midsomer. Le storie sono ambientate nel presente ed hanno una struttura di \"giallo classico\", in cui l'indagine e le deduzioni prevalgono sull'azione e sulla violenza."
             }
         ],
-        "aggiornato": "06:53"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Boing",
@@ -2486,7 +2486,7 @@
                 "descrizione": "A Craig viene affidato un regalo speciale di anniversario per sua madre, e lo perde immediatamente nel ruscello"
             }
         ],
-        "aggiornato": "06:53"
+        "aggiornato": "12:56"
     },
     {
         "canale": "K2",
@@ -2643,7 +2643,7 @@
                 "descrizione": "4' Stagione Ep.22 - Le avventure di tre scoiattoli dalla voce incredibile, 'adottati' da Dave Seville, che diventano un fenomeno musicale."
             }
         ],
-        "aggiornato": "06:53"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Rai Gulp",
@@ -2800,7 +2800,7 @@
                 "descrizione": "I Paladini sono venuti in possesso dell'Astrolibro, potente artefatto che permette di individuare le Uova di Drago. Ma decifrare il testo non è una cosa semplice, tanto che Arcana si dedica a tempo pieno alla faccenda, mentre i ragazzi si occupano del recupero delle Uova. La loro, però, non è una impresa facile."
             }
         ],
-        "aggiornato": "06:53"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Frisbee",
@@ -2957,7 +2957,7 @@
                 "descrizione": "Un allegro jet e i suoi amici cercano soluzioni pacifiche ai problemi che incontrano, mentre consegnano pacchi a bambini di tutto il mondo."
             }
         ],
-        "aggiornato": "06:53"
+        "aggiornato": "12:57"
     },
     {
         "canale": "DMAX",
@@ -3044,7 +3044,7 @@
                 "descrizione": "Per essere competitivi bisogna rischiare. Ma spesso i risultati non ripagano subito."
             }
         ],
-        "aggiornato": "06:53"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Rai Sport",
@@ -3071,6 +3071,11 @@
                 "descrizione": "Le finali di specialit� dei Mondiali di Ginnastica Ritmica 2026 assegna i titoli iridati nelle diverse discipline, con le migliori ginnaste del mondo in gara per conquistare le medaglie."
             },
             {
+                "ora": "13:50",
+                "titolo": "Perle Di Sport",
+                "descrizione": "Perle di Sport"
+            },
+            {
                 "ora": "14:00",
                 "titolo": "European Aquatics Parigi 2026 - Nuoto Artistico: Finale A Squadre Acrobatico",
                 "descrizione": "Finale della prova acrobatica a squadre di nuoto artistico agli Europei di Parigi 2026, con le Nazionali in gara per il titolo continentale."
@@ -3079,6 +3084,11 @@
                 "ora": "16:00",
                 "titolo": "Mondiale Motocross 2026 - GP Di Svezia: MX2 (Gara 2)",
                 "descrizione": "Si corre a Uddevalia la quindicesima tappa del Mondiale Motocross."
+            },
+            {
+                "ora": "16:45",
+                "titolo": "Perle Di Sport: Rio 2016",
+                "descrizione": "Perle di Sport: Rio 2016"
             },
             {
                 "ora": "17:00",
@@ -3121,7 +3131,7 @@
                 "descrizione": "Seconda parte della sessione serale dell'ultima giornata di gare agli Europei di atletica di Birmingham."
             }
         ],
-        "aggiornato": "06:53"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Sportitalia",
@@ -3248,7 +3258,7 @@
                 "descrizione": "Il programma tratta le vicende del calciomercato sia nella sessione estiva che in quella invernale e va in onda alle ore 23.00 dal lunedì al venerdì"
             }
         ],
-        "aggiornato": "06:53"
+        "aggiornato": "12:57"
     },
     {
         "canale": "HGTV",
@@ -3355,7 +3365,7 @@
                 "descrizione": "La Lucas affronta una sfida quasi impossibile: trasformare un piccolo cortile di periferia in un nobile resort a cinque stelle con uno spazio dedicato alla piscina."
             }
         ],
-        "aggiornato": "06:53"
+        "aggiornato": "12:57"
     },
     {
         "canale": "RSI LA 1",
@@ -3512,7 +3522,7 @@
                 "descrizione": "Tutti i colori del tempo"
             }
         ],
-        "aggiornato": "06:53"
+        "aggiornato": "12:57"
     },
     {
         "canale": "RSI LA 2",
@@ -3544,7 +3554,7 @@
                 "descrizione": "Millevoci in TV"
             },
             {
-                "ora": "12:35",
+                "ora": "12:30",
                 "titolo": "Siamo fuori",
                 "descrizione": "in diretta con Carlotta Gallino, Davide Riva e Christian Frapolli"
             },
@@ -3611,10 +3621,10 @@
             {
                 "ora": "22:15",
                 "titolo": "Missing - Scomparso",
-                "descrizione": "Titolo originale: Missing Regia: Costa-Gavras Interpreti: con Jack Lemmon, Sissy Spacek, John Shea, Melanie Mayron Paese - Anno: USA - 1982All'epoca del golpe, Charles e Beth vivono a Santiago del Cile. Quando Charles scompare improvvisamente nel nulla, Beth inizia a cercarlo attivamente insieme al suocero, un uomo d'affari giunto da New York che non ha mai condiviso le scelte di vita del figlio. Né l'ambasciata né le autorit� militari sembrano però in grado di rintracciare il disperso: si fa così strada il sospetto che Charles abbia scoperto le connivenze tra i servizi segreti americani e gli artefici del golpe e che per questo sia stato fatto sparire."
+                "descrizione": "Charles, giovane statunitense che abita in un paese dell'America Latina con la moglie Beth, si è sempre interessato alle condizioni sociali e politiche dello stato in cui vive. Quando questo viene sconvolto da un sanguinoso golpe, Charles scompare. Beth, insieme con alcuni amici, inizia le ricerche, senza risultati. Neppure l'arrivo del padre, un uomo d'affari di New York risolve la situazione."
             }
         ],
-        "aggiornato": "06:53"
+        "aggiornato": "12:57"
     },
     {
         "canale": "DAZN 1",
@@ -3696,7 +3706,7 @@
                 "descrizione": "Liga - 1a g. Dal trionfo in New Jersey al ritorno del calcio in Spagna: e' LaLiga EA Sports dei campioni del mondo."
             }
         ],
-        "aggiornato": "06:53"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Sky Sport 24",
@@ -3853,7 +3863,7 @@
                 "descrizione": "Le notizie e i commenti del giorno, le anteprime e l'attualita' con servizi, commenti, interviste e collegamenti."
             }
         ],
-        "aggiornato": "06:53"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Sky Sport Uno",
@@ -3905,7 +3915,7 @@
                 "descrizione": "WTA 1000 Cincinnati. - ... WTA 1000 Cincinnati. - ... WTA 1000 Cincinnati. - ... 1000 Cincinnati 2026 7a Giornata (Ss Uno) 19\/08\/2026 Tennis Atp&Wta. - Tennis Atp&Wta"
             }
         ],
-        "aggiornato": "06:53"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Sky Sport Calcio",
@@ -3987,7 +3997,7 @@
                 "descrizione": "Curiosita', commenti, notizie e anticipazioni sui possibili movimenti del calciomercato. Condotto dal trio Alessandro Bonan, Gianluca Di Marzio e Fayna."
             }
         ],
-        "aggiornato": "06:53"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Sky Sport Tennis",
@@ -4024,7 +4034,7 @@
                 "descrizione": "WTA 1000 Cincinnati. - Dal Lindner Family Tennis Center di Cincinnati, Stati Uniti."
             }
         ],
-        "aggiornato": "06:53"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Sky Sport F1",
@@ -4181,7 +4191,7 @@
                 "descrizione": "Riviviamo insieme tutte le forti emozioni che ci sono state trasmesse durante gli scorsi Gran Premi in attesa della gara di Formula 1."
             }
         ],
-        "aggiornato": "06:53"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Sky Sport Legend",
@@ -4248,7 +4258,7 @@
                 "descrizione": "Commento: Pero-Bertolucci."
             }
         ],
-        "aggiornato": "06:53"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Sky Sport MotoGP",
@@ -4395,7 +4405,7 @@
                 "descrizione": "Secondo appuntamento del mondiale 2026: a Goiania, in Brasile, si accendono i motori per la gara della MotoGP. Telecronaca Guido Meda e Mauro Sanchini"
             }
         ],
-        "aggiornato": "06:53"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Sky Sport Basket",
@@ -4467,7 +4477,7 @@
                 "descrizione": "Tra fine anni '80 e inizio '90 la Jugoslavia del basket domina il mondo, ma la guerra spezza squadra e Paese. Il regista Jure Pavlovic racconta quel sogno interrotto."
             }
         ],
-        "aggiornato": "06:53"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Sky Sport Arena",
@@ -4484,12 +4494,12 @@
                 "descrizione": "Curiosita', commenti, notizie e anticipazioni sui possibili movimenti del calciomercato. Condotto dal trio Alessandro Bonan, Gianluca Di Marzio e Fayna."
             },
             {
-                "ora": "07:00",
+                "ora": "06:55",
                 "titolo": "Vela Racing On The Edge 2026 Ep.4",
                 "descrizione": "Un'analisi delle leghe d'elite della vela mondiale, protagoniste di momenti memorabili."
             },
             {
-                "ora": "07:30",
+                "ora": "07:25",
                 "titolo": "Filo d'acqua: La leggenda della Pro Recco",
                 "descrizione": "Recco. - Filo D'acqua: La Leggenda Della Pro Recco"
             },
@@ -4545,8 +4555,8 @@
             },
             {
                 "ora": "22:00",
-                "titolo": "Icarus Ultra",
-                "descrizione": "Avventure, sfide, storie, imprese e tante curiosita' dal mondo degli sport all'aperto: dopo 15 anni alla ricerca del limite, Icarus si spinge oltre per trasformarsi in Icarus Ultra."
+                "titolo": "Io sono Varenne",
+                "descrizione": "Io sono Varenne"
             },
             {
                 "ora": "22:30",
@@ -4554,7 +4564,7 @@
                 "descrizione": "Da Birmingham, diretta integrale della finale di salto in lungo femminile, con immagini dedicate alla singola pedana. Tc: Gatti-Nocera"
             }
         ],
-        "aggiornato": "06:53"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Sky Sport Max",
@@ -4621,7 +4631,7 @@
                 "descrizione": "WTA 1000 Cincinnati. - Dal Lindner Family Tennis Center di Cincinnati, Stati Uniti."
             }
         ],
-        "aggiornato": "06:53"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Sky Sport Mix",
@@ -4708,7 +4718,7 @@
                 "descrizione": "Allo Stade de France di fronte le prime due squadre della stagione regolare. Tolosa ha vinto 5 delle ultime 6 edizioni, Montpellier nel 2022. Telecronaca Pierantozzi-Fusetti"
             }
         ],
-        "aggiornato": "06:53"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Sky Sport Golf",
@@ -4775,7 +4785,7 @@
                 "descrizione": "World Tour. - Dal Renaissance Club, a North Berwick, Scozia."
             }
         ],
-        "aggiornato": "06:53"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Sky Sport 251",
@@ -4945,7 +4955,7 @@
                 "descrizione": "Sul finire dell'Ottocento, Londra è una citt� affascinante e pericolosa. Le novit� tecnologiche attirano i cittadini più curiosi, ma il richiamo per l'occulto e il soprannaturale è altrettanto forte. Quando Sherlock Holmes e il fido dottor Watson consegnano l'assassino di giovani donne Lord Blackwood alla giustizia e, dopo aver assistito all'esecuzione capitale, assistono non di meno alla sua apparente resurrezione, Holmes è felice di potersi finalmente interessare di qualcosa alla sua portata. Tanto più che si è ripresentata a lui la bella Irene Adler, chiedendo il ritrovamento di un uomo che si scoprir� interrato nella bara di Blackwood. I casi si intrecciano, si aggrovigliano, sporcano gli abiti di fumo e di avventura."
             }
         ],
-        "aggiornato": "06:53"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Sky Cinema Uno +24",
@@ -5002,7 +5012,7 @@
                 "descrizione": "Tre case, tre ragazzi, lo stesso obiettivo: vincere il concorso per un posto da impiegato nell'ufficio legale del Comune. Federico, laureato in giurisprudenza, ma solo per compiacere il padre consigliere, spera in una sua raccomandazione; Fabrizio, avvocato sulla carta ma non praticante nella vita, tenta di superare l'ennesima prova stata- le e Luca che da quando è nato ha avuto sempre la strada spianata. Solo per uno di loro si realizzerà il sogno di una vita, fin quando le cose non prenderanno una piega inaspettata."
             }
         ],
-        "aggiornato": "06:53"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Sky Cinema Due",
@@ -5064,7 +5074,7 @@
                 "descrizione": "Celebre direttore d'orchestra, il quarantenne Thibaut scopre di essere malato di leucemia e di avere bisogno di un donatore di midollo osseo. Facendo indagini sulla compatibilit� dei familiari viene a sapere di essere stato adottato e di avere un fratello di sangue, Jimmy, più giovane e proveniente dal nord della Francia. Diversi per carattere ed estrazione sociale, i due impareranno a conoscersi e a volersi bene, uniti dalla passione per la musica. E quando Thibaut scopre che Jimmy ha l'orecchio assoluto, lo spinge a diventare il direttore della banda musicale nella quale suona il trombone..."
             }
         ],
-        "aggiornato": "06:53"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Sky Cinema Due +24",
@@ -5086,7 +5096,7 @@
                 "descrizione": "Roman Polanski e Ryszard Horowitz sono venuti in Polonia per condividere con noi i ricordi più personali della loro infanzia e giovinezza."
             }
         ],
-        "aggiornato": "06:53"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Sky Cinema Collection",
@@ -5148,7 +5158,7 @@
                 "descrizione": "Massimo è un ombroso barista, divorziato da poco, che si trova a indagare su alcuni delitti che avvengono nella sua cittadina toscana, Pineta. Il suo istinto d'investigatore trova sempre spunti in alcune conversazioni, che è costretto a sedare nel suo bar, ad opera di quattro arzilli vecchietti. Mentre indaga, Massimo si divide fra un amore per il commissario di polizia Vittoria Fusco, le vicende della sua barista Tiziana e la comparsa del suo fratellastro, Beppe."
             }
         ],
-        "aggiornato": "06:53"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Sky Cinema Family",
@@ -5215,7 +5225,7 @@
                 "descrizione": "Arturo Meraviglia, un impresario teatrale in difficolt� , deve improvvisamente prendersi cura di Giele e Rebecca, due bambini ricevuti \"in eredit� \" da un vecchio zio. Quando si accorge che Gioele è dotato di superpoteri, Arturo intuisce come potrebbe rivelarsi la sua carta vincente per evitare un imminente tracollo. Il talento del piccolo illusionista non sfugge però a un team di loschi scienziati che vogliono scoprire cosa si cela dietro queste grandi doti. Con l'aiuto di buffi e sconclusionati amici e di una bella ricercatrice, tra colpi di scena e avventurose situazioni, Arturo far� di tutto per proteggere Gioele e per rimettere in piedi il suo teatro e vivere così il giorno più bello del mondo."
             }
         ],
-        "aggiornato": "06:53"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Sky Cinema Action",
@@ -5272,7 +5282,7 @@
                 "descrizione": "Tobey ha un'officina in cui ripara macchine e non se la passa bene economicamente. Per salvarsi dalla bancarotta accetta di riparare una macchina per conto di Dino, pilota ricco e viziato. Finito il lavoro è chiaro che Tobey è in grado di spingere quella macchina molto più in l� di quel che è in grado di fare Dino, il quale per dimostrare il contrario lo sfida ad una corsa a tre nella quale un incidente scatenato da Dino stesso causer� la morte di un amico di Tobey che, ingiustamente incolpato, sconter� tre anni di carcere. Una volta uscito di galera l'unico obiettivo di Tobey è attraversare il paese in tempo per gareggiare in una corsa clandestina tra le più pericolose e battere Dino."
             }
         ],
-        "aggiornato": "06:54"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Sky Cinema Suspense",
@@ -5334,7 +5344,7 @@
                 "descrizione": "Investigando sulla scomparsa di una donna, avvenuta subito dopo la prima neve d’inverno, il detective a capo di una squadra speciale anticrimine teme che sia tornato a colpire un inafferrabile serial killer. Grazie all’aiuto di una brillante poliziotta appena trasferita, il detective si trova a riaprire casi irrisolti vecchi di decenni nella speranza di trovare indizi che li colleghino al nuovo efferato delitto e sconfiggere così una mente diabolica oltre ogni immaginazione prima della prossima nevicata."
             }
         ],
-        "aggiornato": "06:54"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Sky Cinema Romance",
@@ -5396,7 +5406,7 @@
                 "descrizione": "Le storie di quattro ragazze che vivono a Roma e dintorni: Eugenia Praticò, l’aspirante sceneggiatrice fuggita da Palermo per inseguire il successo, purché sia di nicchia; Uvetta Budini di Raso, l’aristocratica, bella e addormentata nel centro storico, che debutta nel mondo del lavoro; Michela Trezza che sta per sposarsi e ama la sua vita di provincia a Guidonia; Tazia De Tiberis, la bulletta di Roma nord che vuole avere tutto sotto controllo, anche i desideri del suo fidanzato. E tutte e quattro, a modo loro, cercano il loro posto nel mondo."
             }
         ],
-        "aggiornato": "06:54"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Sky Cinema Drama",
@@ -5453,7 +5463,7 @@
                 "descrizione": "Tratto da un romanzo (1955) del greco Nikos Kazantzakis, si alimenta di tre idee strutturali. La prima è di raccontare un uomo che tenta di opporsi alla scoperta della propria divinit� e che avrebbe potuto vivere una vita comune, ma è costretto ad accettare la sua missione ubbidendo a Dio padre. Questa è la parte che ha dato esca allo scandalo."
             }
         ],
-        "aggiornato": "06:54"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Sky Cinema Comedy",
@@ -5515,7 +5525,7 @@
                 "descrizione": "In una non precisata repubblica sudamericana, un bravo commerciante di banane svolge il suo lavoro e aiuta gli indigeni del villaggio. Guai in vista."
             }
         ],
-        "aggiornato": "06:54"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Sky Uno",
@@ -5627,7 +5637,7 @@
                 "descrizione": "La vita tranquilla dell'avvocato Elio viene sconvolta quando il corpo di Arianna, ragazza di cui era innamorato da adolescente, viene rinvenuto dopo trent'anni dalla sua scomparsa. L'uomo si trova in cima alla lista dei sospettati e dopo un incidente si risveglia nel 1990, nell'infermeria del campeggio. Cercando di scoprire cosa è successo ad Arianna, Elio porta avanti un'indagine tra passato e presente."
             }
         ],
-        "aggiornato": "06:54"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Sky Atlantic",
@@ -5754,7 +5764,7 @@
                 "descrizione": "Un gruppo di liceali si trova alle prime armi con droghe, sesso, identit� , traumi, amore e amicizia."
             }
         ],
-        "aggiornato": "06:54"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Sky Serie",
@@ -5891,7 +5901,7 @@
                 "descrizione": "Cavalcare il brivido emozionale attraverso il caos raccontanto giorno dopo giorno nell’ospedale più esplosivo della citt� , con la squadra coraggiosa dei medici che lo tengono insieme. Essi affronteranno nuovi casi unici ispirati dagli eventi di attualit� , creeranno relazioni di fuoco nel pandemonio cardiopalmo del pronto soccorso. La serie è di genere medical drama è uno spinoff di Chicago Fire, creata da by Dick Wolf e Matt Olmstead."
             }
         ],
-        "aggiornato": "06:54"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Sky Investigation",
@@ -6003,7 +6013,7 @@
                 "descrizione": "Law & Order è un media franchise creato da Dick Wolf per la NBC Universal e formato da varie serie televisive poliziesco-giudiziarie e un film per la televisione, trasmessi sul network NBC dal 13 settembre 1990. Il franchise Law & Order nel tempo ha ispirato anche una serie di adattamenti televisivi stranieri, un docu-reality e videogiochi ufficiali, oltre a generare una serie di crossover con altre serie tv statunitensi."
             }
         ],
-        "aggiornato": "06:54"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Sky Crime",
@@ -6120,7 +6130,7 @@
                 "descrizione": "Ep1 di 2 Sole nella nebbia - Modena, anni '80: appena fuori citta', nelle campagne, iniziano a comparire i corpi straziati di giovani ragazze. Sui giornali si comincia a parlare del 'mostro di Modena'."
             }
         ],
-        "aggiornato": "06:54"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Sky Adventure",
@@ -6257,7 +6267,7 @@
                 "descrizione": "I tornado sono tra i fenomeni naturali più potenti e distruttivi al mondo. Gli esperti ne spiegano la formazione, mentre gli abitanti del Kentucky e del Missouri raccontano le loro strazianti storie di sopravvivenza."
             }
         ],
-        "aggiornato": "06:54"
+        "aggiornato": "12:57"
     },
     {
         "canale": "MTV",
@@ -6274,72 +6284,87 @@
                 "descrizione": "Ep14 di 42 Sterling e Lolo Wood XXII - Rob, Steelo e Lolo Wood spezzano il pane in DINNER RUINERS e si congelano con DEEP FREEZES."
             },
             {
-                "ora": "06:30",
+                "ora": "06:25",
                 "titolo": "Ridiculousness: Veri American Idiots",
                 "descrizione": "Ep15 di 42 Sterling e Karrueche Tran XXV - Rob, Steelo e Karrueche Tran fanno spuntini notturni in CLUB GRUB e tifano per TINY FANS."
             },
             {
-                "ora": "06:55",
+                "ora": "06:45",
                 "titolo": "Ridiculousness: Veri American Idiots",
                 "descrizione": "Ep16 di 42 Sterling e Karrueche Tran XXVI - Rob, Steelo e Karrueche Tran scivolano mentre giocano a bowling in OVER THE LINE."
             },
             {
-                "ora": "07:20",
+                "ora": "07:10",
+                "titolo": "Ridiculousness: Veri American Idiots",
+                "descrizione": "Ep4 di 42 - In questo episodio Rob, Chanel e Steelo lucidano e mostrano i loro FLEX APPEAL, fanno un giro su ZIPLINE TO HELL e fanno un po' di TOUGH CALLS."
+            },
+            {
+                "ora": "07:35",
                 "titolo": "Catfish: False Identita'",
                 "descrizione": "Ep96 di 100 Leanna & Jordan - Armati solo di un identikit, Nev e Kamie si lanciano in una caccia all'uomo alla ricerca di Jordan."
             },
             {
-                "ora": "08:10",
+                "ora": "08:15",
                 "titolo": "Catfish: False Identita'",
                 "descrizione": "Ep97 di 100 Mohammed e Ashley - Mohammed chiama lo staff di Catfish e non appena gli mostra la sua foto, Nev e Kamie hanno notizie scioccanti!"
             },
             {
-                "ora": "09:00",
+                "ora": "09:05",
+                "titolo": "Catfish: False Identita'",
+                "descrizione": "Ep2 di 20 Jeanette e Derick - Non e' vero che la mamma sa sempre cosa fare. La madre di Shuntay, ad esempio, inizia a parlare di matrimonio a proposito di un uomo con il quale ha una relazione telematica e che si rifiuta di conoscerla di persona..."
+            },
+            {
+                "ora": "09:45",
+                "titolo": "Catfish: False Identita'",
+                "descrizione": "Ep6 di 20 Michael e Chanelle - Michael pensava di non aver tempo per una relazione fino a quando ha conosciuto Chanelle online. Poi, da un giorno all'altro, lei e' sparita nel nulla. Nev e Max lo aiuteranno a ritrovare l'amore perduto..."
+            },
+            {
+                "ora": "10:35",
                 "titolo": "Teen Mom OG",
                 "descrizione": "Maci tenta di spiegare il suo disturbo da stress post-traumatico a Bentley mentre Mackenzie e Josh ricevono consigli da un coordinatore genitoriale"
             },
             {
-                "ora": "09:55",
+                "ora": "11:15",
                 "titolo": "Teen Mom OG",
                 "descrizione": "Catelynn e Tyler spiegano l'adozione di Carly a Nova. Maci inizia a seguire una vita salutare. L'incontro tra Gary e Amber non va come previsto."
             },
             {
-                "ora": "10:50",
+                "ora": "12:00",
                 "titolo": "Teen Mom OG",
                 "descrizione": "Mackenzie cerca di tenere sotto controllo la glicemia. Cheyenne entra in travaglio. Maci vuole che Taylor veda un terapista."
             },
             {
-                "ora": "11:45",
+                "ora": "12:50",
                 "titolo": "Dallas Cowboys Cheerleaders: Making...",
                 "descrizione": "Ep11 di 13 Restare forti - La ballerina di Michael Jackson, Marcea Lane, arriva in citt� per scuotere un po' le cose."
             },
             {
-                "ora": "12:35",
+                "ora": "13:30",
                 "titolo": "Dallas Cowboys Cheerleaders: Making...",
                 "descrizione": "Ep12 di 13 Il tempo è scaduto - Judy diventa severa alle prove. Le candidate imparano come comportarsi sotto pressione durante il corso di galateo."
             },
             {
-                "ora": "13:30",
+                "ora": "14:15",
                 "titolo": "Caught In The Act",
                 "descrizione": "Ep23 di 30 - Romeo ha aiutato Briana a ritrovare l'amore. Ma ora Romeo sta forse trovando l'amore altrove?"
             },
             {
-                "ora": "14:20",
+                "ora": "15:00",
                 "titolo": "Caught In The Act",
                 "descrizione": "Ep24 di 30 - Jon e Joseph si sono ritrovati, ma Joseph si sta relazionando anche con qualcun'altra?"
             },
             {
-                "ora": "15:15",
+                "ora": "15:45",
                 "titolo": "Teen Mom 2",
                 "descrizione": "Ep18 di 15 Mentre non c'eri - Javi e Kailyn litigano furiosamente dopo che lui si presenta senza preavviso. Jenelle cerca di non far sapere a Barbara di essere incinta. Chelsea e Cole pensano di..."
             },
             {
-                "ora": "16:05",
+                "ora": "16:30",
                 "titolo": "Help! I am in a secret relationship!",
                 "descrizione": "Ep8 di 24 Robert e Chris - Robert e Chris sono innamorati, ma Robert non ha ancora conosciuto la famiglia di Chris e vuole sapere il perché."
             },
             {
-                "ora": "17:00",
+                "ora": "17:15",
                 "titolo": "Help! I am in a secret relationship!",
                 "descrizione": "Ep24 di 24 Help! I'm in a Secret Relationship! - Jake vorrebbe chiedere a Sarah di sposarlo, ma deve prima scopre il motivo per cui lei lo nasconde."
             },
@@ -6349,42 +6374,52 @@
                 "descrizione": "Ep1 di 15 - Jason sfida Anthony, mentre Jay sfida Joey."
             },
             {
-                "ora": "18:30",
-                "titolo": "Catfish: False Identita'",
+                "ora": "18:20",
+                "titolo": "Catfish: False identita'",
                 "descrizione": "Ep9 di 21 Artis e Jess - 5 mesi fa, Artis ha conosciuto Jess online. Entrambi avevano gia' una relazione, ma si son innamorati all'istante. Ora lui e' pronto ad incontrarla dal vivo. Ma Jess e' davver"
             },
             {
-                "ora": "19:15",
+                "ora": "19:05",
                 "titolo": "Catfish: False Identita'",
                 "descrizione": "Ep39 di 40 - Avion ha chiesto a Cherie di inviargli alcune foto hot, ma ora lei e' preoccupata di essersi fidata dell'uomo sbagliato."
             },
             {
-                "ora": "20:10",
+                "ora": "19:50",
                 "titolo": "Caught In The Act",
                 "descrizione": "Ep7 di 30 - Trey è preoccupato per il suo futuro con Alicia. Ha ragione di esserlo?"
             },
             {
-                "ora": "21:05",
+                "ora": "20:40",
                 "titolo": "Caught In The Act",
                 "descrizione": "Ep3 di 17 - La verit� che Tami scoprir� rischia di mandare all'aria i progetti nuziali di Melik per Izzy?"
             },
             {
-                "ora": "22:00",
+                "ora": "21:20",
                 "titolo": "The Challenge: Untold History",
                 "descrizione": "Ep4 di 6 - Mentre stringono amicizie, rivalit� e storie d'amore, i tosti concorrenti dei reality di tutto il mondo si affrontano in sfide spietate ed eliminazioni brutali, con la possibilit� di guadag"
             },
             {
-                "ora": "23:00",
+                "ora": "22:05",
                 "titolo": "MTV Floribama Shore",
                 "descrizione": "Ep25 di 27 - Gus fa di tutto per resistere all'uragano Tori-Tori e rimanere fedele alla sua ragazza. I ragazzi organizzano un baby shower per Nilsa e invitano le loro famiglie"
             },
             {
-                "ora": "23:55",
+                "ora": "22:55",
                 "titolo": "Ridiculousness: Veri American Idiots",
                 "descrizione": "Ep41 di 42 - In questa puntata Rob e Steelo sono affiancati da Lolo Wood."
+            },
+            {
+                "ora": "23:15",
+                "titolo": "Ridiculousness: Veri American Idiots",
+                "descrizione": "Ep2 di 42 - Ridiculousness è tornato con la trentatreesima stagione! Unitevi a Rob Dyrdek, Sterling Brim e ai loro ospiti speciali."
+            },
+            {
+                "ora": "23:35",
+                "titolo": "Ridiculousness: Veri American Idiots",
+                "descrizione": "Ep4 di 42 - Ridiculousness è tornato con la trentatreesima stagione! Unitevi a Rob Dyrdek, Sterling Brim e ai loro ospiti speciali."
             }
         ],
-        "aggiornato": "06:54"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Comedy Central",
@@ -6416,7 +6451,7 @@
                 "descrizione": "Dopo molti anni trascorsi al bar \"Cheers\", Frasier torna a casa a Seattle per lavorare come psichiatra radiofonico dopo che suo padre poliziotto è stato colpito all'anca in servizio."
             },
             {
-                "ora": "07:30",
+                "ora": "07:25",
                 "titolo": "Frasier",
                 "descrizione": "Dopo molti anni trascorsi al bar \"Cheers\", Frasier torna a casa a Seattle per lavorare come psichiatra radiofonico dopo che suo padre poliziotto è stato colpito all'anca in servizio."
             },
@@ -6426,122 +6461,122 @@
                 "descrizione": "Dopo molti anni trascorsi al bar \"Cheers\", Frasier torna a casa a Seattle per lavorare come psichiatra radiofonico dopo che suo padre poliziotto è stato colpito all'anca in servizio."
             },
             {
-                "ora": "08:20",
+                "ora": "08:15",
                 "titolo": "Frasier",
                 "descrizione": "Dopo molti anni trascorsi al bar \"Cheers\", Frasier torna a casa a Seattle per lavorare come psichiatra radiofonico dopo che suo padre poliziotto è stato colpito all'anca in servizio."
             },
             {
-                "ora": "08:45",
+                "ora": "08:35",
                 "titolo": "The King of Queens",
                 "descrizione": "Doug è un corriere del Queens. Mentre lui desidererebbe soltanto un televisore a 70 pollici, la sua casa è invasa da parenti. Carrie, la moglie, un giorno decide di sorprenderlo e gli sistema un impianto a grande schermo così che Doug possa seguire con gli amici le partite in tv. Le cose cambiano quando Arthur, suo suocero, rimasto vedovo da poco, si insedia a casa Hefferman trasformando la sala tv di Doug nella sua stanza da letto…Ma non basta, anche Sara, sorella di Carrie e aspirante attrice, si trasferisce nella casa…"
             },
             {
-                "ora": "09:05",
+                "ora": "08:55",
                 "titolo": "The King of Queens",
                 "descrizione": "Doug è un corriere del Queens. Mentre lui desidererebbe soltanto un televisore a 70 pollici, la sua casa è invasa da parenti. Carrie, la moglie, un giorno decide di sorprenderlo e gli sistema un impianto a grande schermo così che Doug possa seguire con gli amici le partite in tv. Le cose cambiano quando Arthur, suo suocero, rimasto vedovo da poco, si insedia a casa Hefferman trasformando la sala tv di Doug nella sua stanza da letto…Ma non basta, anche Sara, sorella di Carrie e aspirante attrice, si trasferisce nella casa…"
             },
             {
-                "ora": "09:30",
+                "ora": "09:20",
                 "titolo": "The King of Queens",
                 "descrizione": "Doug è un corriere del Queens. Mentre lui desidererebbe soltanto un televisore a 70 pollici, la sua casa è invasa da parenti. Carrie, la moglie, un giorno decide di sorprenderlo e gli sistema un impianto a grande schermo così che Doug possa seguire con gli amici le partite in tv. Le cose cambiano quando Arthur, suo suocero, rimasto vedovo da poco, si insedia a casa Hefferman trasformando la sala tv di Doug nella sua stanza da letto…Ma non basta, anche Sara, sorella di Carrie e aspirante attrice, si trasferisce nella casa…"
             },
             {
-                "ora": "09:55",
+                "ora": "09:45",
                 "titolo": "The Neighborhood",
                 "descrizione": "Il ragazzo più amichevole del Midwest trasferisce la sua famiglia in un quartiere di Los Angeles dove non tutti gli assomigliano."
             },
             {
-                "ora": "10:15",
+                "ora": "10:05",
                 "titolo": "The Neighborhood",
                 "descrizione": "Il ragazzo più amichevole del Midwest trasferisce la sua famiglia in un quartiere di Los Angeles dove non tutti gli assomigliano."
             },
             {
-                "ora": "10:35",
+                "ora": "10:25",
                 "titolo": "Hot In Cleveland",
                 "descrizione": "Hot in Cleveland\" si basa su tre favolose, eccentriche donne sopra i quarant'anni di Los Angeles, migliori amiche, le cui vite sono state cambiate per sempre quando il loro aereo è dovuto atterrare inaspettatamente a Cleveland e presto riscopriranno loro stesse in questa nuova \"terra promessa\"."
             },
             {
-                "ora": "11:00",
+                "ora": "10:50",
                 "titolo": "Hot In Cleveland",
                 "descrizione": "Hot in Cleveland\" si basa su tre favolose, eccentriche donne sopra i quarant'anni di Los Angeles, migliori amiche, le cui vite sono state cambiate per sempre quando il loro aereo è dovuto atterrare inaspettatamente a Cleveland e presto riscopriranno loro stesse in questa nuova \"terra promessa\"."
             },
             {
-                "ora": "11:20",
+                "ora": "11:10",
                 "titolo": "Becker",
                 "descrizione": "Il dottor John Becker è un tipo tutt'altro che facile da trattare... Certo è un medico in gamba e dedito alla sua professione e ai suoi pazienti come nessun altro, però ha un pessimo carattere ed un'espressione perennemente accigliata. Persino i suoi amici più cari, dalla bella barista Reggie al cieco Jake, proprietario del vicino chiosco dei giornali, non sempre riescono a far breccia nella sua dura scorza di misantropo di professione, ma non si arrendono mai perché sanno che, sotto sotto, Becker ha un cuore d'oro."
             },
             {
-                "ora": "11:45",
+                "ora": "11:35",
                 "titolo": "Becker",
                 "descrizione": "Il dottor John Becker è un tipo tutt'altro che facile da trattare... Certo è un medico in gamba e dedito alla sua professione e ai suoi pazienti come nessun altro, però ha un pessimo carattere ed un'espressione perennemente accigliata. Persino i suoi amici più cari, dalla bella barista Reggie al cieco Jake, proprietario del vicino chiosco dei giornali, non sempre riescono a far breccia nella sua dura scorza di misantropo di professione, ma non si arrendono mai perché sanno che, sotto sotto, Becker ha un cuore d'oro."
             },
             {
-                "ora": "12:10",
+                "ora": "11:55",
+                "titolo": "Most Ridiculous",
+                "descrizione": "Ep17 di 20 Episodio 17 - I video più demenziali e assurdi che navigano indisturbati sul web con il commento dissacrante di Edoardo Zaggia e Alberto Sacco."
+            },
+            {
+                "ora": "12:20",
                 "titolo": "Spin City",
                 "descrizione": "Il maniaco del lavoro Mike Flaherty è il vicesindaco di New York City, che serve come stratega chiave del sindaco Randall Winston e gestore tanto necessario. Mike gestisce la citt� con l'aiuto del suo strampalato staff: un addetto stampa ansioso e insicuro; un capo di stato maggiore sessista e maleducato; un attivista gay impeccabilmente curato che gestisce gli affari delle minoranze; un contabile acuto ed efficiente, pazzo per gli uomini; e un giovane scrittore di discorsi idealista. Come Mike, sono tutti professionalmente capaci ma sfidati personalmente."
             },
             {
-                "ora": "12:30",
+                "ora": "12:40",
                 "titolo": "Spin City",
                 "descrizione": "Il maniaco del lavoro Mike Flaherty è il vicesindaco di New York City, che serve come stratega chiave del sindaco Randall Winston e gestore tanto necessario. Mike gestisce la citt� con l'aiuto del suo strampalato staff: un addetto stampa ansioso e insicuro; un capo di stato maggiore sessista e maleducato; un attivista gay impeccabilmente curato che gestisce gli affari delle minoranze; un contabile acuto ed efficiente, pazzo per gli uomini; e un giovane scrittore di discorsi idealista. Come Mike, sono tutti professionalmente capaci ma sfidati personalmente."
             },
             {
-                "ora": "13:00",
+                "ora": "13:05",
                 "titolo": "Papà a tempo pieno",
                 "descrizione": "Quando la moglie Andi decide di riavviare la sua carriera professionale, Adam è costretto a passare più tempo a casa e assumersi maggiori responsabilit� nell'accudire i loro tre figli piccoli."
             },
             {
-                "ora": "13:20",
+                "ora": "13:25",
                 "titolo": "Papà a tempo pieno",
                 "descrizione": "Quando la moglie Andi decide di riavviare la sua carriera professionale, Adam è costretto a passare più tempo a casa e assumersi maggiori responsabilit� nell'accudire i loro tre figli piccoli."
             },
             {
-                "ora": "13:40",
+                "ora": "13:50",
                 "titolo": "The Neighborhood",
                 "descrizione": "Il ragazzo più amichevole del Midwest trasferisce la sua famiglia in un quartiere di Los Angeles dove non tutti gli assomigliano."
             },
             {
-                "ora": "14:05",
+                "ora": "14:10",
                 "titolo": "The Neighborhood",
                 "descrizione": "Il ragazzo più amichevole del Midwest trasferisce la sua famiglia in un quartiere di Los Angeles dove non tutti gli assomigliano."
             },
             {
-                "ora": "14:30",
+                "ora": "14:35",
                 "titolo": "Becker",
                 "descrizione": "Il dottor John Becker è un tipo tutt'altro che facile da trattare... Certo è un medico in gamba e dedito alla sua professione e ai suoi pazienti come nessun altro, però ha un pessimo carattere ed un'espressione perennemente accigliata. Persino i suoi amici più cari, dalla bella barista Reggie al cieco Jake, proprietario del vicino chiosco dei giornali, non sempre riescono a far breccia nella sua dura scorza di misantropo di professione, ma non si arrendono mai perché sanno che, sotto sotto, Becker ha un cuore d'oro."
             },
             {
-                "ora": "14:50",
+                "ora": "14:55",
                 "titolo": "Becker",
                 "descrizione": "Il dottor John Becker è un tipo tutt'altro che facile da trattare... Certo è un medico in gamba e dedito alla sua professione e ai suoi pazienti come nessun altro, però ha un pessimo carattere ed un'espressione perennemente accigliata. Persino i suoi amici più cari, dalla bella barista Reggie al cieco Jake, proprietario del vicino chiosco dei giornali, non sempre riescono a far breccia nella sua dura scorza di misantropo di professione, ma non si arrendono mai perché sanno che, sotto sotto, Becker ha un cuore d'oro."
             },
             {
-                "ora": "15:10",
+                "ora": "15:20",
                 "titolo": "Spin City",
                 "descrizione": "Il maniaco del lavoro Mike Flaherty è il vicesindaco di New York City, che serve come stratega chiave del sindaco Randall Winston e gestore tanto necessario. Mike gestisce la citt� con l'aiuto del suo strampalato staff: un addetto stampa ansioso e insicuro; un capo di stato maggiore sessista e maleducato; un attivista gay impeccabilmente curato che gestisce gli affari delle minoranze; un contabile acuto ed efficiente, pazzo per gli uomini; e un giovane scrittore di discorsi idealista. Come Mike, sono tutti professionalmente capaci ma sfidati personalmente."
             },
             {
-                "ora": "15:35",
+                "ora": "15:40",
                 "titolo": "Spin City",
                 "descrizione": "Il maniaco del lavoro Mike Flaherty è il vicesindaco di New York City, che serve come stratega chiave del sindaco Randall Winston e gestore tanto necessario. Mike gestisce la citt� con l'aiuto del suo strampalato staff: un addetto stampa ansioso e insicuro; un capo di stato maggiore sessista e maleducato; un attivista gay impeccabilmente curato che gestisce gli affari delle minoranze; un contabile acuto ed efficiente, pazzo per gli uomini; e un giovane scrittore di discorsi idealista. Come Mike, sono tutti professionalmente capaci ma sfidati personalmente."
             },
             {
-                "ora": "16:00",
+                "ora": "16:05",
                 "titolo": "Hot In Cleveland",
                 "descrizione": "Hot in Cleveland\" si basa su tre favolose, eccentriche donne sopra i quarant'anni di Los Angeles, migliori amiche, le cui vite sono state cambiate per sempre quando il loro aereo è dovuto atterrare inaspettatamente a Cleveland e presto riscopriranno loro stesse in questa nuova \"terra promessa\"."
             },
             {
-                "ora": "16:20",
+                "ora": "16:25",
                 "titolo": "Hot In Cleveland",
                 "descrizione": "Hot in Cleveland\" si basa su tre favolose, eccentriche donne sopra i quarant'anni di Los Angeles, migliori amiche, le cui vite sono state cambiate per sempre quando il loro aereo è dovuto atterrare inaspettatamente a Cleveland e presto riscopriranno loro stesse in questa nuova \"terra promessa\"."
-            },
-            {
-                "ora": "16:45",
-                "titolo": "Papà a tempo pieno",
-                "descrizione": "Quando la moglie Andi decide di riavviare la sua carriera professionale, Adam è costretto a passare più tempo a casa e assumersi maggiori responsabilit� nell'accudire i loro tre figli piccoli."
             }
         ],
-        "aggiornato": "06:54"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Sky Arte",
@@ -6668,7 +6703,7 @@
                 "descrizione": "Tra interviste e materiali di archivio, ripercorriamo la vita e la carriera della fotografa e fotoreporter palermitana impegnata contro la Mafia."
             }
         ],
-        "aggiornato": "06:54"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Sky Documentaries",
@@ -6780,7 +6815,7 @@
                 "descrizione": "Chris Packham esplora la peggiore estinzione di massa, quando il 90% delle specie è scomparso dalla Terra."
             }
         ],
-        "aggiornato": "06:54"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Sky Nature",
@@ -6897,7 +6932,7 @@
                 "descrizione": "Nel Giuria vive una famiglia di linci boreali. Seguendo la loro vita, scopriamo il ruolo essenziale di questi schivi e feroci predatori nel ristabilire l'equilibrio dell'ambiente."
             }
         ],
-        "aggiornato": "06:54"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Discovery Channel",
@@ -7014,7 +7049,7 @@
                 "descrizione": "In Inghilterra, Jess e Phil vanno alla ricerca di una creatura leggendaria."
             }
         ],
-        "aggiornato": "06:54"
+        "aggiornato": "12:57"
     },
     {
         "canale": "History Channel",
@@ -7136,7 +7171,7 @@
                 "descrizione": "Ivy ottiene del successo con il suo ruolo da supervisore a Stanton, Brandi cerca di aiutare Danielle a riempire il suo appartamento e Lisa decide di scommettere su un dipinto."
             }
         ],
-        "aggiornato": "06:54"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Cartoon Network",
@@ -7293,7 +7328,7 @@
                 "descrizione": "Ep15 di 44 Anais si e' fatta male - La famiglia Watterson porta Anais in ospedale perché, a causa della loro immaturit� , la ragazzina si è data troppe manate in fronte e rischia danni al cervello."
             }
         ],
-        "aggiornato": "06:54"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Dea Kids",
@@ -7450,7 +7485,7 @@
                 "descrizione": "Ninna e Matti non vedono l'ora di affrontare le sfide di oggi: trasformare in pecorelle Pippo e Samanta e creare una coreografia con dei palloni."
             }
         ],
-        "aggiornato": "06:54"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Nick Jr",
@@ -7467,7 +7502,7 @@
                 "descrizione": "Ep10 di 26 Competizione \/ Questione di piedi - Barbaforte e Barbottina si sfidano sulla neve. \/ Il robot pulitore costruito da Barbabravo dimostra una passione per il calcio."
             },
             {
-                "ora": "06:25",
+                "ora": "06:20",
                 "titolo": "Barbapapà: Una grande famiglia felice",
                 "descrizione": "Ep11 di 26 La casa dei sogni \/ Quando saro' grande - I barbabebe' immaginano la loro vita in una casa diversa. \/ Tutti i barbabebe' sanno che cosa faranno da grandi, tranne Barbazoo."
             },
@@ -7482,17 +7517,17 @@
                 "descrizione": "Ep13 di 26 I cuccioli salvano un cucciolo di polpo - Mamma piovra perde il suo cucciolo e affonda la Flounder. La Sea Patrol deve risolvere la situazione."
             },
             {
-                "ora": "07:25",
+                "ora": "07:20",
                 "titolo": "PAW Patrol",
                 "descrizione": "I gattini del sindaco Humdinger cadono in uno shampoo extra ammorbidente e volano via."
             },
             {
-                "ora": "07:50",
+                "ora": "07:45",
                 "titolo": "Rubble & Crew",
                 "descrizione": "Ep13 di 13 Rubble & Crew - Rubble, insieme alla sua famiglia di cuccioli esperti di costruzioni, si trasferisce nella vicina citt� di Builder Cove, dove ora vivono, giocano e costruiscono tutto..."
             },
             {
-                "ora": "08:15",
+                "ora": "08:10",
                 "titolo": "DORA",
                 "descrizione": "Continiuamo a esplorare con Dora! Segui la famosa explorer in una serie di fantastiche avventure con amici vecchi e nuovi mentre viaggia per la stravagante e meravigliosa Foresta Pluviale accompagnata dal suo migliore amico Boots."
             },
@@ -7502,19 +7537,24 @@
                 "descrizione": "Continiuamo a esplorare con Dora! Segui la famosa explorer in una serie di fantastiche avventure con amici vecchi e nuovi mentre viaggia per la stravagante e meravigliosa Foresta Pluviale accompagnata dal suo migliore amico Boots."
             },
             {
+                "ora": "08:40",
+                "titolo": "Santiago Dei Mari",
+                "descrizione": "Ep3 di 20 Al faro \/ Il gigante d'oro - Mami e Abuelo devono far ritorno sull'isola per portare i rifornimenti agli abitanti. \/ Una leggenda narra di un Gigante D'Oro..."
+            },
+            {
                 "ora": "09:05",
                 "titolo": "Tim Rex nello Spazio",
                 "descrizione": "Ep6 di 10 - I cuccioli col giocattolo.\/Kai e Tim alla fiera.\/Insetto Spaziale scovato."
             },
             {
                 "ora": "09:25",
-                "titolo": "Tim Rex in Space",
-                "descrizione": "S1 Ep9 - Tim Rex nello Spazio: Il T-Rex Tim, suo fratello maggiore Tommy, la sorellina Tia e la sua migliore amica Triceratopo Kai affrontano i problemi dei piu' piccoli con soluzioni da dinosauri..."
+                "titolo": "Tim Rex nello Spazio",
+                "descrizione": "Ep5 di 10 La Mucca Lunare\/Il Nuvolizzatore\/L'Insetto Spaziale - I cuccioli col giocattolo.\/Kai e Tim alla fiera.\/Insetto Spaziale scovato."
             },
             {
                 "ora": "09:35",
-                "titolo": "Tim Rex in Space",
-                "descrizione": "S1 Ep9 - Tim Rex nello Spazio: Il T-Rex Tim, suo fratello maggiore Tommy, la sorellina Tia e la sua migliore amica Triceratopo Kai affrontano i problemi dei piu' piccoli con soluzioni da dinosauri..."
+                "titolo": "Tim Rex nello Spazio",
+                "descrizione": "Ep5 di 10 La Mucca Lunare\/Il Nuvolizzatore\/L'Insetto Spaziale - I cuccioli col giocattolo.\/Kai e Tim alla fiera.\/Insetto Spaziale scovato."
             },
             {
                 "ora": "09:45",
@@ -7522,7 +7562,7 @@
                 "descrizione": "Ep12 di 20 - Quattro coraggiosi cerbiatti cercano di salvare la foresta dal perfido Steel. Grazie ai gadgets e ai veicoli super tecnologici sono pronti per grandi avventure!"
             },
             {
-                "ora": "10:10",
+                "ora": "10:05",
                 "titolo": "PAW Patrol",
                 "descrizione": "Ep21 di 26 I cuccioli salvano il pipistrello \/ Il dentino di Alex - Un piccolo pipistrello si e' addormentato appeso alla campana del municipio. Bisogna assolutamente aiutarlo!"
             },
@@ -7547,7 +7587,7 @@
                 "descrizione": "Ep13 di 26 Gli errori di Barbabravo\/Miliardari - Barbabravo spiega a Leon e Lulu perchè ha dovuto creare delle invenzioni così strane\/I Barbapap� fantasticano sulla ricchezza."
             },
             {
-                "ora": "11:45",
+                "ora": "11:40",
                 "titolo": "Kit & Sam - Misteri del regno animale",
                 "descrizione": "Ep10 di 20 Alla ricerca del formicaio delle formiche d'argento \/ Alla ricerca della creatura azzannatrice della palude - Una formica d'argento cerca di tornare a casa dopo essere stata travolta da un"
             },
@@ -7567,12 +7607,12 @@
                 "descrizione": "Ep4 di 13 Una fatina per amica \/ Coccodrillo fifone - Mister Coccodrillo perde un dente. \/ Mister Coccodrillo e Daisy ne capanno spaventoso."
             },
             {
-                "ora": "12:55",
+                "ora": "12:50",
                 "titolo": "Blaze e le Mega Macchine - Avventura nella giungla",
                 "descrizione": "S3 Ep8 Avventura nella giungla - Blaze, Aj e Gabby vanno a giocare a pallavolo nella giungla con il loro amico Stripes."
             },
             {
-                "ora": "13:20",
+                "ora": "13:15",
                 "titolo": "Blaze e le mega macchine",
                 "descrizione": "Ep9 di 20 Prendi la torta! - Darington sta organizzando la sua festa di compleanno e chiede a Blaze di andare a ritirare la torta dal pasticciere."
             },
@@ -7600,14 +7640,9 @@
                 "ora": "14:50",
                 "titolo": "Kit & Sam - Misteri del regno animale",
                 "descrizione": "Ep15 di 20 La iena in incognito \/ Una presenza estranea nella tana - Sam cerca di confondersi tra un branco di iene durante una missione nel deserto. \/ Alcune creature sotterranee sono spaventate dal"
-            },
-            {
-                "ora": "15:15",
-                "titolo": "Deer Squad",
-                "descrizione": "Ep13 di 20 - Quattro coraggiosi cerbiatti cercano di salvare la foresta dal perfido Steel. Grazie ai gadgets e ai veicoli super tecnologici sono pronti per grandi avventure!"
             }
         ],
-        "aggiornato": "06:54"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Boomerang",
@@ -7764,7 +7799,7 @@
                 "descrizione": "Ep74 Sempre piu' in alto - La gelatina che Grizzy e i Lemming si contendono finisce in posti sempre piu' inaccessibili. Chi sara' all'altezza della sfida?"
             }
         ],
-        "aggiornato": "06:54"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Sky TG 24",
@@ -7921,7 +7956,7 @@
                 "descrizione": "Previsioni meteo dettagliate e sempre aggiornate 24 ore al giorno. Le previsioni regionali, nazionali ed internazionali."
             }
         ],
-        "aggiornato": "06:54"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Rai News 24",
@@ -8019,8 +8054,8 @@
             },
             {
                 "ora": "10:00",
-                "titolo": "Filo Diretto Estate",
-                "descrizione": "Filo diretto estate - Puntata del 19\/08\/2026"
+                "titolo": "News",
+                "descrizione": "News"
             },
             {
                 "ora": "11:00",
@@ -8078,7 +8113,7 @@
                 "descrizione": "NEWS + SOMMARIO"
             }
         ],
-        "aggiornato": "06:54"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Sky Meteo 24",
