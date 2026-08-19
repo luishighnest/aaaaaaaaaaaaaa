@@ -144,7 +144,7 @@
                 "descrizione": "Amy, responsabile dello sviluppo di un'azienda specializzata in integratori alimentari, arriva a Venezia per convincere il celebre chef Marcello ad accettare una partnership. Di fronte ai suoi continui rifiuti, decide di iscriversi al suo corso di cucina. Tra sapori, sfide e affinit� inaspettate, il loro incontro prende una piega sorprendente."
             }
         ],
-        "aggiornato": "12:56"
+        "aggiornato": "18:41"
     },
     {
         "canale": "Rai 2",
@@ -217,8 +217,8 @@
             },
             {
                 "ora": "13:50",
-                "titolo": "TG2 Medicina 33",
-                "descrizione": "Direttore Antonio Preziosi A cura di Laura Berti"
+                "titolo": "Tg2 Medicina 33",
+                "descrizione": "Il quotidiano di medicina del Tg2. I migliori specialisti di ogni settore della medicina rispondono alle domande che ciascuno di noi vorrebbe fare. Consigli utili per star bene."
             },
             {
                 "ora": "14:00",
@@ -301,7 +301,7 @@
                 "descrizione": "Il detective del NYPD Danny Reagan accetta un incarico presso il Dipartimento di Polizia di Boston e viene affiancato alla detective Lena Silver; quest'ultima appartiene a una famiglia legata alle forze dell'ordine e alla giustizia, composta dal Procuratore Distrettuale Mae Silver, dal Sovrintendente di Polizia Sarah Silver, dall'agente alle prime armi Jonah Silver e dal Reverendo Edwin Peters. Reagan spera di ricostruire il rapporto con suo figlio Sean proprio a Boston."
             }
         ],
-        "aggiornato": "12:56"
+        "aggiornato": "18:41"
     },
     {
         "canale": "Rai 3",
@@ -448,7 +448,7 @@
                 "descrizione": "Renzo Arbore e Gegè Telesforo tornano con un nuovo appuntamento. Apre la nuova puntata il campione della musica italiana, Renato Carosone con \"Pigliate na pastiglia\", interpretata, in chiave cubana, insieme a L'Orchestra Italiana. Si prosegue, poi, con Gigi Proietti, Massimo Catalano e Renzo Arbore, con i divertenti e goliardici doppi sensi dei brani \"Sofia\", \"Jolanda\" e \"Ai romani piaceva la biga\". Tocca di nuovo a Renzo Arbore L'Orchestra Italiana, con la serenata \"Voce 'e Notte\" ripresa durante il China Tour del 2007, e ad un eccezionale Francesco De Gregori, ospite nel programma \"Doc\" del 1987, ed il grande classico \"La Donna Cannone\". Renzo Arbore e i suoi Swing Maniacs interpretano \"Bongo Bongo Bongo\", mentre a Piazza del Plebiscito a Napoli, durante un piovoso Capodanno 2010, sempre Renzo Arbore con la sua orchestra italiana, suonano una toccante \"Reginella\" di Roberto Murolo."
             }
         ],
-        "aggiornato": "12:56"
+        "aggiornato": "18:41"
     },
     {
         "canale": "Rai 4",
@@ -580,7 +580,7 @@
                 "descrizione": "Lanciato sulle orme di un serial killer, Adam, un poliziotto indurito ma ammirato, sopravvive miracolosamente dopo essere stato colpito alla testa. L'unico seguito, soffre di amnesia. Quando scopre una giovane donna legata e terrorizzata nella sua cantina, Adam si trova ad affrontare il più terribile dei dubbi: e se l'assassino che stava inseguendo non fosse altri che lui stesso?"
             }
         ],
-        "aggiornato": "12:56"
+        "aggiornato": "18:41"
     },
     {
         "canale": "Rai 5",
@@ -687,39 +687,44 @@
                 "descrizione": "Luigi Maria Perotti ci conduce alla scoperta di una Siena inedita, dove ogni strada, ogni pietra, ogni voce, racconta una storia antica e profondamente umana. Un viaggio emozionante che ci porta a riflettere sul senso della vita."
             }
         ],
-        "aggiornato": "12:56"
+        "aggiornato": "18:41"
     },
     {
         "canale": "Rete 4",
         "categoria": "Digitale Terrestre",
         "programmi": [
             {
-                "ora": "06:20",
+                "ora": "06:09",
+                "titolo": "Tg4 - ultima ora mattina",
+                "descrizione": "Informazione quotidiana con le notizie dall'Italia e dal mondo per il telegiornale di Rete 4."
+            },
+            {
+                "ora": "06:30",
                 "titolo": "4 di sera news",
                 "descrizione": "Il programma di Rete4 dedicato a politica, economia e i principali casi di cronaca ed attualita'."
             },
             {
-                "ora": "07:15",
+                "ora": "07:28",
                 "titolo": "La promessa",
                 "descrizione": "Cordoba, 1913. Mentre la Spagna è devastata da alcuni conflitti, c'è un luogo in cui, almeno in apparenza, regna la pace: è il Palazzo La Promesa, nella valle di Los Pedroches, di propriet� dei Marchesi di Lujan. E' proprio qui che Jana si fa assumere come cameriera per scoprire la verit� sull'omicidio di sua madre e di suo fratello. La situazione si complica quando Jana si innamora di uno dei figli dei ricchi marchesi, Manuel. Con Jordi Coll (Il Segreto)."
             },
             {
-                "ora": "07:46",
+                "ora": "08:06",
                 "titolo": "Terra Amara",
                 "descrizione": "La storia d'amore di Zuleyha, cresciuta senza padre e che lavora con Yilmaz come tessitrice ausiliaria per guadagnare soldi per suo fratello, un giocatore d'azzardo. La vita di questi due giovani, accecati dall'amore di una normale notte, si trasformer� in un oscuro incubo. Questo incubo li porter� prima da Istanbul e lontano, e poi nella tenuta della famiglia Yaman. Nel primo episodio della serie, Yilmaz e Zuleyha hanno deciso di lavorare nella tenuta di Yaman. Tuttavia, a causa di una delle bugie di Zuleyha, le vite di tutti loro cambieranno radicalmente."
             },
             {
-                "ora": "08:48",
+                "ora": "09:04",
                 "titolo": "Segreti di famiglia",
                 "descrizione": "La vita del rispettato procuratore Ilgaz Kaya, che ha appreso dal padre poliziotto valori come l'onest� e l'onore, si intreccia con quella di un'avvocata un pò spregiudicata, Ceylin Erguvan, che non si ferma davanti a nulla ed è avversa alle regole. Ma la verit� non è mai bianca o nera, e uniranno le loro forze per risolvere un complicato caso di omicidio."
             },
             {
-                "ora": "09:52",
+                "ora": "09:58",
                 "titolo": "Segreti di famiglia",
                 "descrizione": "La vita del rispettato procuratore Ilgaz Kaya, che ha appreso dal padre poliziotto valori come l'onest� e l'onore, si intreccia con quella di un'avvocata un pò spregiudicata, Ceylin Erguvan, che non si ferma davanti a nulla ed è avversa alle regole. Ma la verit� non è mai bianca o nera, e uniranno le loro forze per risolvere un complicato caso di omicidio."
             },
             {
-                "ora": "10:44",
+                "ora": "10:52",
                 "titolo": "Tempesta d'amore",
                 "descrizione": "Tempesta d'amore (Sturm der Liebe) è una soap opera tedesca trasmessa dal 26 settembre 2005 sull'emittente nazionale Das Erste e creata da Bea Schimdt."
             },
@@ -734,7 +739,7 @@
                 "descrizione": "Un'insegnante d'inglese in pensione, Jessica B. Fletcher, dopo essere rimasta vedova intorno ai cinquant'anni del marito Frank, diventa quasi per caso una scrittrice di successo. Nonostante la fama e la fortuna ottenute, Jessica continua a vivere una vita semplice e salutare, risiedendo nel piccolo paese di Cabot Cove, sulla costa del Maine, e coltivando le sue vecchie amicizie, che la portano spesso in giro per il mondo. La signora Fletcher avr� a che fare con una serie di omicidi che ne risvegliano l'insaziabile curiosit� , portandola a risolvere i casi della più varia natura."
             },
             {
-                "ora": "14:00",
+                "ora": "13:59",
                 "titolo": "Lo sportello di forum",
                 "descrizione": "Il processo tv che affronta vicende comuni e quotidiane con uno sguardo sempre attento ai temi piu' attuali. Conduce Barbara Palombelli."
             },
@@ -749,7 +754,7 @@
                 "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno."
             },
             {
-                "ora": "16:24",
+                "ora": "16:57",
                 "titolo": "Rosamunde Pilcher: Leggende e magia",
                 "descrizione": "Olivia si licenzia dall'agenzia di viaggi per realizzare il suo sogno di mettersi in proprio, restaurando un vecchio bus per intraprendere viaggi a tema per piccoli gruppi in Gran Bretagna. Primo obiettivo, la Cornovaglia. Ma i problemi non tarderanno ad arrivare. Con I. Krieger, M. Woelky."
             },
@@ -759,12 +764,12 @@
                 "descrizione": "Informazione quotidiana con le notizie dall'Italia e dal mondo per il telegiornale di Rete 4. A seguire, le previsioni metereologiche."
             },
             {
-                "ora": "19:35",
+                "ora": "19:32",
                 "titolo": "10 minuti",
                 "descrizione": "10 minuti focalizzati sui fatti principali della giornata, con interviste e dibattiti sui temi piu' rilevanti di attualita'."
             },
             {
-                "ora": "19:50",
+                "ora": "19:48",
                 "titolo": "La promessa",
                 "descrizione": "Cordoba, 1913. Mentre la Spagna è devastata da alcuni conflitti, c'è un luogo in cui, almeno in apparenza, regna la pace: è il Palazzo La Promesa, nella valle di Los Pedroches, di propriet� dei Marchesi di Lujan. E' proprio qui che Jana si fa assumere come cameriera per scoprire la verit� sull'omicidio di sua madre e di suo fratello. La situazione si complica quando Jana si innamora di uno dei figli dei ricchi marchesi, Manuel. Con Jordi Coll (Il Segreto)."
             },
@@ -774,12 +779,12 @@
                 "descrizione": "Il programma di Rete4 dedicato a politica, economia e i principali casi di cronaca ed attualita'."
             },
             {
-                "ora": "21:30",
+                "ora": "21:32",
                 "titolo": "Il Padrino - Parte II",
                 "descrizione": "Il film tratta della giovinezza e dei primi passi nel mondo del crimine di Vito Corleone, e delle difficolt� cinquant'anni più tardi di suo figlio, Michael, a mantenere in piedi l'impero Corleone. Il tutto tra vicende di emigrazione, tradimenti familiari, inchieste governative e affari."
             }
         ],
-        "aggiornato": "12:56"
+        "aggiornato": "18:41"
     },
     {
         "canale": "Canale 5",
@@ -936,7 +941,7 @@
                 "descrizione": "Gerry Scotti, Samira e la ruota piu' famosa della tv! I concorrenti devono scoprire le frasi nascoste. Serve bravura ma la fortuna ci mette del suo!"
             }
         ],
-        "aggiornato": "12:56"
+        "aggiornato": "18:41"
     },
     {
         "canale": "Italia 1",
@@ -1068,7 +1073,7 @@
                 "descrizione": "Le indagini dell'Unit� Vittime Speciali, una nuova squadra speciale della Polizia di New York che si occupa di crimini a sfondo sessuale. In ogni episodio si segue da una parte l'attivit� investigativa attuata dalla squadra e dall'altra l'aspetto giudiziario con l'iniziativa processuale condotta dalla procura distrettuale."
             }
         ],
-        "aggiornato": "12:56"
+        "aggiornato": "18:41"
     },
     {
         "canale": "La7",
@@ -1140,7 +1145,7 @@
                 "descrizione": "Nominato capo dell'FBI dal Presidente Calvin Coolidge, J. Edgar Hoover è un giovane uomo ambizioso nell'America proibizionista. Figlio di un padre debole e di una madre autoritaria, Edgar è ossessionato dalla sicurezza del Paese e dai criminali che la minacciano a suon di bombe e volantini. Avviata una lotta senza esclusione di colpi contro bolscevichi, radicali, gangster e delinquenti di ogni risma, il direttore federale attraversa la storia americana costruendosi una reputazione irreprensibile e inattaccabile. A farne le spese sono i suoi nemici, reali o supposti, tutti ugualmente ricattabili dai dossier confidenziali raccolti, archiviati e custoditi da Helen Gandy, fedele segretaria che rifiutò il suo corteggiamento e ne sposò la causa. Quarantotto anni di 'azioni' (il)legali, otto presidenti e un sentimento dissimulato dopo, quello per il collaboratore Clyde Tolson, Edgar detter� la sua biografia e le sue imprese."
             }
         ],
-        "aggiornato": "12:56"
+        "aggiornato": "18:41"
     },
     {
         "canale": "TV8",
@@ -1237,7 +1242,7 @@
                 "descrizione": "I palinsesti sono in via di definizione da parte emittente"
             }
         ],
-        "aggiornato": "12:56"
+        "aggiornato": "18:41"
     },
     {
         "canale": "Nove",
@@ -1344,7 +1349,7 @@
                 "descrizione": "Un misterioso monaco tibetano senza nome girovaga sessant' anni per il mondo per proteggere da un gruppo di nazisti determinati a conoscerne il contenuto un' antica pergamena ricevuta in dono dal suo predecessore. Secondo la profezia, infatti, chi legger� per intero le scritture acquisir� poteri prodigiosi che garantiranno il dominio sul mondo."
             }
         ],
-        "aggiornato": "12:56"
+        "aggiornato": "18:41"
     },
     {
         "canale": "20 Mediaset",
@@ -1466,7 +1471,7 @@
                 "descrizione": "The Equalizer, serie tv di Andrew W. Marlowe (l'ideatore di Castle) e Terri Edda Miller per la rete americana CBS, è il remake al femminile dell'omonimo crime drama degli anni '80, in Italia meglio conosciuto con il titolo Un giustiziere a New York. Queen Latifah (Chicago) interpreta Robyn McCall, una donna enigmatica e con un passato misterioso la quale usa le proprie ampie capacit� per aiutare chi non ha nessun altro cui rivolgersi. Robyn si presenta alla maggior parte delle persone come una qualunque madre single che sta crescendo tranquillamente la figlia adolescente, Delilah (Laya DeLeon Hayes). Ma per pochi fidati, lei è Il Giustiziere - un angelo custode e difensore degli oppressi che è anche ostinato nella sua ricerca di una redenzione."
             }
         ],
-        "aggiornato": "12:56"
+        "aggiornato": "18:41"
     },
     {
         "canale": "Twentyseven",
@@ -1573,7 +1578,7 @@
                 "descrizione": "Mac e Kelly Radner stanno per avere il loro secondo bambino e sono pronti a trasferirsi in periferia quando, prima di vendere la lro abitazione, scoprono che accanto alla loro casa si trasferiscono il gruppo di consorelle della Kappa Nu, ancora più folli di quanto fossero Teddy e il suo gruppo. Costretti a rivolgersi all'ex vicino di casa, i Radner affiancati dagli amici Jimmy e Paula sperano che Teddy possa essere la loro arma segreta per combattere il caos generato dalle consorelle."
             }
         ],
-        "aggiornato": "12:56"
+        "aggiornato": "18:41"
     },
     {
         "canale": "IRIS",
@@ -1635,7 +1640,7 @@
                 "descrizione": "Benjamin Button è un individuo molto particolare: nato con l'aspetto di un centenario, anziché invecchiare, ringiovanisce con gli anni. Innamoratosi di una donna di trent'anni, continua a diventare sempre più giovane mentre lei invecchia normalmente."
             }
         ],
-        "aggiornato": "12:56"
+        "aggiornato": "18:41"
     },
     {
         "canale": "Rai Movie",
@@ -1702,7 +1707,7 @@
                 "descrizione": "Hirayama conduce una vita semplice, scandita da una routine perfetta. Si dedica con cura e passione a tutte le attivit� della sua giornata, dal lavoro come addetto alle pulizie dei bagni pubblici di Tokyo all’amore per la musica, ai libri, alle piante, alla fotografia e a tutte le piccole cose a cui si può dedicare un sorriso. Nel ripetersi del quotidiano, una serie di incontri inaspettati rivela gradualmente qualcosa in più del suo passato."
             }
         ],
-        "aggiornato": "12:56"
+        "aggiornato": "18:41"
     },
     {
         "canale": "Rai Premium",
@@ -1799,7 +1804,7 @@
                 "descrizione": "La profiler Teresa Battaglia di Travenì viene incaricata di rintracciare un misterioso killer che si aggira sulle montagne della zona di Tarvisio in Friuli-Venezia Giulia, ma durante le sue indagini inizia ad accusare i primi sintomi della malattia di Alzheimer."
             }
         ],
-        "aggiornato": "12:56"
+        "aggiornato": "18:41"
     },
     {
         "canale": "La 5",
@@ -1896,7 +1901,7 @@
                 "descrizione": "I grandi nomi della musica arrivano nelle piazze piu' iconiche dell'Emilia-Romagna con Yoga Radio Estate, lo show musicale di Italia 1 condotto da Noemi ed Enrico Papi"
             }
         ],
-        "aggiornato": "12:56"
+        "aggiornato": "18:41"
     },
     {
         "canale": "Real Time",
@@ -1998,7 +2003,7 @@
                 "descrizione": "Un team di dermatologi aiuta alcuni pazienti affetti da patologie estreme."
             }
         ],
-        "aggiornato": "12:56"
+        "aggiornato": "18:41"
     },
     {
         "canale": "Food Network",
@@ -2140,7 +2145,7 @@
                 "descrizione": "Paride e Davide pedalano lungo la Via Verde della Costa dei Trabocchi."
             }
         ],
-        "aggiornato": "12:56"
+        "aggiornato": "18:41"
     },
     {
         "canale": "Focus",
@@ -2257,7 +2262,7 @@
                 "descrizione": "Saliamo a bordo del Sommergibile Pietro Venuti della Marina militare italiana. Come si vive e lavora dentro un sottomarino? Con quali sacrifici, tipi di organizzazione e preparazione fisica e mentale?"
             }
         ],
-        "aggiornato": "12:56"
+        "aggiornato": "18:41"
     },
     {
         "canale": "Giallo",
@@ -2329,7 +2334,7 @@
                 "descrizione": "L'ispettore capo Tom Barnaby della polizia di Midsomer e il suo fidato sergente, Gavin Troy, , devono investigare sugli omicidi che avvengono nei villaggi dell'immaginaria contea inglese di Midsomer. Le storie sono ambientate nel presente ed hanno una struttura di \"giallo classico\", in cui l'indagine e le deduzioni prevalgono sull'azione e sulla violenza."
             }
         ],
-        "aggiornato": "12:56"
+        "aggiornato": "18:41"
     },
     {
         "canale": "Boing",
@@ -2486,7 +2491,7 @@
                 "descrizione": "A Craig viene affidato un regalo speciale di anniversario per sua madre, e lo perde immediatamente nel ruscello"
             }
         ],
-        "aggiornato": "12:56"
+        "aggiornato": "18:41"
     },
     {
         "canale": "K2",
@@ -2643,7 +2648,7 @@
                 "descrizione": "4' Stagione Ep.22 - Le avventure di tre scoiattoli dalla voce incredibile, 'adottati' da Dave Seville, che diventano un fenomeno musicale."
             }
         ],
-        "aggiornato": "12:56"
+        "aggiornato": "18:41"
     },
     {
         "canale": "Rai Gulp",
@@ -2800,7 +2805,7 @@
                 "descrizione": "I Paladini sono venuti in possesso dell'Astrolibro, potente artefatto che permette di individuare le Uova di Drago. Ma decifrare il testo non è una cosa semplice, tanto che Arcana si dedica a tempo pieno alla faccenda, mentre i ragazzi si occupano del recupero delle Uova. La loro, però, non è una impresa facile."
             }
         ],
-        "aggiornato": "12:56"
+        "aggiornato": "18:41"
     },
     {
         "canale": "Frisbee",
@@ -2957,7 +2962,7 @@
                 "descrizione": "Un allegro jet e i suoi amici cercano soluzioni pacifiche ai problemi che incontrano, mentre consegnano pacchi a bambini di tutto il mondo."
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:41"
     },
     {
         "canale": "DMAX",
@@ -3044,7 +3049,7 @@
                 "descrizione": "Per essere competitivi bisogna rischiare. Ma spesso i risultati non ripagano subito."
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:41"
     },
     {
         "canale": "Rai Sport",
@@ -3131,7 +3136,7 @@
                 "descrizione": "Seconda parte della sessione serale dell'ultima giornata di gare agli Europei di atletica di Birmingham."
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:41"
     },
     {
         "canale": "Sportitalia",
@@ -3258,7 +3263,7 @@
                 "descrizione": "Il programma tratta le vicende del calciomercato sia nella sessione estiva che in quella invernale e va in onda alle ore 23.00 dal lunedì al venerdì"
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:41"
     },
     {
         "canale": "HGTV",
@@ -3365,7 +3370,7 @@
                 "descrizione": "La Lucas affronta una sfida quasi impossibile: trasformare un piccolo cortile di periferia in un nobile resort a cinque stelle con uno spazio dedicato alla piscina."
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:41"
     },
     {
         "canale": "RSI LA 1",
@@ -3522,7 +3527,7 @@
                 "descrizione": "Tutti i colori del tempo"
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:41"
     },
     {
         "canale": "RSI LA 2",
@@ -3624,7 +3629,7 @@
                 "descrizione": "Charles, giovane statunitense che abita in un paese dell'America Latina con la moglie Beth, si è sempre interessato alle condizioni sociali e politiche dello stato in cui vive. Quando questo viene sconvolto da un sanguinoso golpe, Charles scompare. Beth, insieme con alcuni amici, inizia le ricerche, senza risultati. Neppure l'arrivo del padre, un uomo d'affari di New York risolve la situazione."
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:41"
     },
     {
         "canale": "DAZN 1",
@@ -3706,7 +3711,7 @@
                 "descrizione": "Liga - 1a g. Dal trionfo in New Jersey al ritorno del calcio in Spagna: e' LaLiga EA Sports dei campioni del mondo."
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:41"
     },
     {
         "canale": "Sky Sport 24",
@@ -3863,7 +3868,7 @@
                 "descrizione": "Le notizie e i commenti del giorno, le anteprime e l'attualita' con servizi, commenti, interviste e collegamenti."
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:41"
     },
     {
         "canale": "Sky Sport Uno",
@@ -3915,7 +3920,7 @@
                 "descrizione": "WTA 1000 Cincinnati. - ... WTA 1000 Cincinnati. - ... WTA 1000 Cincinnati. - ... 1000 Cincinnati 2026 7a Giornata (Ss Uno) 19\/08\/2026 Tennis Atp&Wta. - Tennis Atp&Wta"
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:41"
     },
     {
         "canale": "Sky Sport Calcio",
@@ -3997,7 +4002,7 @@
                 "descrizione": "Curiosita', commenti, notizie e anticipazioni sui possibili movimenti del calciomercato. Condotto dal trio Alessandro Bonan, Gianluca Di Marzio e Fayna."
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:42"
     },
     {
         "canale": "Sky Sport Tennis",
@@ -4034,7 +4039,7 @@
                 "descrizione": "WTA 1000 Cincinnati. - Dal Lindner Family Tennis Center di Cincinnati, Stati Uniti."
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:42"
     },
     {
         "canale": "Sky Sport F1",
@@ -4191,7 +4196,7 @@
                 "descrizione": "Riviviamo insieme tutte le forti emozioni che ci sono state trasmesse durante gli scorsi Gran Premi in attesa della gara di Formula 1."
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:42"
     },
     {
         "canale": "Sky Sport Legend",
@@ -4258,7 +4263,7 @@
                 "descrizione": "Commento: Pero-Bertolucci."
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:42"
     },
     {
         "canale": "Sky Sport MotoGP",
@@ -4405,7 +4410,7 @@
                 "descrizione": "Secondo appuntamento del mondiale 2026: a Goiania, in Brasile, si accendono i motori per la gara della MotoGP. Telecronaca Guido Meda e Mauro Sanchini"
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:42"
     },
     {
         "canale": "Sky Sport Basket",
@@ -4477,7 +4482,7 @@
                 "descrizione": "Tra fine anni '80 e inizio '90 la Jugoslavia del basket domina il mondo, ma la guerra spezza squadra e Paese. Il regista Jure Pavlovic racconta quel sogno interrotto."
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:42"
     },
     {
         "canale": "Sky Sport Arena",
@@ -4564,7 +4569,7 @@
                 "descrizione": "Da Birmingham, diretta integrale della finale di salto in lungo femminile, con immagini dedicate alla singola pedana. Tc: Gatti-Nocera"
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:42"
     },
     {
         "canale": "Sky Sport Max",
@@ -4631,7 +4636,7 @@
                 "descrizione": "WTA 1000 Cincinnati. - Dal Lindner Family Tennis Center di Cincinnati, Stati Uniti."
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:42"
     },
     {
         "canale": "Sky Sport Mix",
@@ -4718,7 +4723,7 @@
                 "descrizione": "Allo Stade de France di fronte le prime due squadre della stagione regolare. Tolosa ha vinto 5 delle ultime 6 edizioni, Montpellier nel 2022. Telecronaca Pierantozzi-Fusetti"
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:42"
     },
     {
         "canale": "Sky Sport Golf",
@@ -4785,7 +4790,7 @@
                 "descrizione": "World Tour. - Dal Renaissance Club, a North Berwick, Scozia."
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:42"
     },
     {
         "canale": "Sky Sport 251",
@@ -4955,7 +4960,7 @@
                 "descrizione": "Sul finire dell'Ottocento, Londra è una citt� affascinante e pericolosa. Le novit� tecnologiche attirano i cittadini più curiosi, ma il richiamo per l'occulto e il soprannaturale è altrettanto forte. Quando Sherlock Holmes e il fido dottor Watson consegnano l'assassino di giovani donne Lord Blackwood alla giustizia e, dopo aver assistito all'esecuzione capitale, assistono non di meno alla sua apparente resurrezione, Holmes è felice di potersi finalmente interessare di qualcosa alla sua portata. Tanto più che si è ripresentata a lui la bella Irene Adler, chiedendo il ritrovamento di un uomo che si scoprir� interrato nella bara di Blackwood. I casi si intrecciano, si aggrovigliano, sporcano gli abiti di fumo e di avventura."
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:42"
     },
     {
         "canale": "Sky Cinema Uno +24",
@@ -5012,7 +5017,7 @@
                 "descrizione": "Tre case, tre ragazzi, lo stesso obiettivo: vincere il concorso per un posto da impiegato nell'ufficio legale del Comune. Federico, laureato in giurisprudenza, ma solo per compiacere il padre consigliere, spera in una sua raccomandazione; Fabrizio, avvocato sulla carta ma non praticante nella vita, tenta di superare l'ennesima prova stata- le e Luca che da quando è nato ha avuto sempre la strada spianata. Solo per uno di loro si realizzerà il sogno di una vita, fin quando le cose non prenderanno una piega inaspettata."
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:42"
     },
     {
         "canale": "Sky Cinema Due",
@@ -5074,7 +5079,7 @@
                 "descrizione": "Celebre direttore d'orchestra, il quarantenne Thibaut scopre di essere malato di leucemia e di avere bisogno di un donatore di midollo osseo. Facendo indagini sulla compatibilit� dei familiari viene a sapere di essere stato adottato e di avere un fratello di sangue, Jimmy, più giovane e proveniente dal nord della Francia. Diversi per carattere ed estrazione sociale, i due impareranno a conoscersi e a volersi bene, uniti dalla passione per la musica. E quando Thibaut scopre che Jimmy ha l'orecchio assoluto, lo spinge a diventare il direttore della banda musicale nella quale suona il trombone..."
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:42"
     },
     {
         "canale": "Sky Cinema Due +24",
@@ -5096,7 +5101,7 @@
                 "descrizione": "Roman Polanski e Ryszard Horowitz sono venuti in Polonia per condividere con noi i ricordi più personali della loro infanzia e giovinezza."
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:42"
     },
     {
         "canale": "Sky Cinema Collection",
@@ -5158,7 +5163,7 @@
                 "descrizione": "Massimo è un ombroso barista, divorziato da poco, che si trova a indagare su alcuni delitti che avvengono nella sua cittadina toscana, Pineta. Il suo istinto d'investigatore trova sempre spunti in alcune conversazioni, che è costretto a sedare nel suo bar, ad opera di quattro arzilli vecchietti. Mentre indaga, Massimo si divide fra un amore per il commissario di polizia Vittoria Fusco, le vicende della sua barista Tiziana e la comparsa del suo fratellastro, Beppe."
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:42"
     },
     {
         "canale": "Sky Cinema Family",
@@ -5225,7 +5230,7 @@
                 "descrizione": "Arturo Meraviglia, un impresario teatrale in difficolt� , deve improvvisamente prendersi cura di Giele e Rebecca, due bambini ricevuti \"in eredit� \" da un vecchio zio. Quando si accorge che Gioele è dotato di superpoteri, Arturo intuisce come potrebbe rivelarsi la sua carta vincente per evitare un imminente tracollo. Il talento del piccolo illusionista non sfugge però a un team di loschi scienziati che vogliono scoprire cosa si cela dietro queste grandi doti. Con l'aiuto di buffi e sconclusionati amici e di una bella ricercatrice, tra colpi di scena e avventurose situazioni, Arturo far� di tutto per proteggere Gioele e per rimettere in piedi il suo teatro e vivere così il giorno più bello del mondo."
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:42"
     },
     {
         "canale": "Sky Cinema Action",
@@ -5282,7 +5287,7 @@
                 "descrizione": "Tobey ha un'officina in cui ripara macchine e non se la passa bene economicamente. Per salvarsi dalla bancarotta accetta di riparare una macchina per conto di Dino, pilota ricco e viziato. Finito il lavoro è chiaro che Tobey è in grado di spingere quella macchina molto più in l� di quel che è in grado di fare Dino, il quale per dimostrare il contrario lo sfida ad una corsa a tre nella quale un incidente scatenato da Dino stesso causer� la morte di un amico di Tobey che, ingiustamente incolpato, sconter� tre anni di carcere. Una volta uscito di galera l'unico obiettivo di Tobey è attraversare il paese in tempo per gareggiare in una corsa clandestina tra le più pericolose e battere Dino."
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:42"
     },
     {
         "canale": "Sky Cinema Suspense",
@@ -5344,7 +5349,7 @@
                 "descrizione": "Investigando sulla scomparsa di una donna, avvenuta subito dopo la prima neve d’inverno, il detective a capo di una squadra speciale anticrimine teme che sia tornato a colpire un inafferrabile serial killer. Grazie all’aiuto di una brillante poliziotta appena trasferita, il detective si trova a riaprire casi irrisolti vecchi di decenni nella speranza di trovare indizi che li colleghino al nuovo efferato delitto e sconfiggere così una mente diabolica oltre ogni immaginazione prima della prossima nevicata."
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:42"
     },
     {
         "canale": "Sky Cinema Romance",
@@ -5406,7 +5411,7 @@
                 "descrizione": "Le storie di quattro ragazze che vivono a Roma e dintorni: Eugenia Praticò, l’aspirante sceneggiatrice fuggita da Palermo per inseguire il successo, purché sia di nicchia; Uvetta Budini di Raso, l’aristocratica, bella e addormentata nel centro storico, che debutta nel mondo del lavoro; Michela Trezza che sta per sposarsi e ama la sua vita di provincia a Guidonia; Tazia De Tiberis, la bulletta di Roma nord che vuole avere tutto sotto controllo, anche i desideri del suo fidanzato. E tutte e quattro, a modo loro, cercano il loro posto nel mondo."
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:42"
     },
     {
         "canale": "Sky Cinema Drama",
@@ -5463,7 +5468,7 @@
                 "descrizione": "Tratto da un romanzo (1955) del greco Nikos Kazantzakis, si alimenta di tre idee strutturali. La prima è di raccontare un uomo che tenta di opporsi alla scoperta della propria divinit� e che avrebbe potuto vivere una vita comune, ma è costretto ad accettare la sua missione ubbidendo a Dio padre. Questa è la parte che ha dato esca allo scandalo."
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:42"
     },
     {
         "canale": "Sky Cinema Comedy",
@@ -5525,7 +5530,7 @@
                 "descrizione": "In una non precisata repubblica sudamericana, un bravo commerciante di banane svolge il suo lavoro e aiuta gli indigeni del villaggio. Guai in vista."
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:42"
     },
     {
         "canale": "Sky Uno",
@@ -5637,7 +5642,7 @@
                 "descrizione": "La vita tranquilla dell'avvocato Elio viene sconvolta quando il corpo di Arianna, ragazza di cui era innamorato da adolescente, viene rinvenuto dopo trent'anni dalla sua scomparsa. L'uomo si trova in cima alla lista dei sospettati e dopo un incidente si risveglia nel 1990, nell'infermeria del campeggio. Cercando di scoprire cosa è successo ad Arianna, Elio porta avanti un'indagine tra passato e presente."
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:42"
     },
     {
         "canale": "Sky Atlantic",
@@ -5764,7 +5769,7 @@
                 "descrizione": "Un gruppo di liceali si trova alle prime armi con droghe, sesso, identit� , traumi, amore e amicizia."
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:42"
     },
     {
         "canale": "Sky Serie",
@@ -5901,7 +5906,7 @@
                 "descrizione": "Cavalcare il brivido emozionale attraverso il caos raccontanto giorno dopo giorno nell’ospedale più esplosivo della citt� , con la squadra coraggiosa dei medici che lo tengono insieme. Essi affronteranno nuovi casi unici ispirati dagli eventi di attualit� , creeranno relazioni di fuoco nel pandemonio cardiopalmo del pronto soccorso. La serie è di genere medical drama è uno spinoff di Chicago Fire, creata da by Dick Wolf e Matt Olmstead."
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:42"
     },
     {
         "canale": "Sky Investigation",
@@ -6013,7 +6018,7 @@
                 "descrizione": "Law & Order è un media franchise creato da Dick Wolf per la NBC Universal e formato da varie serie televisive poliziesco-giudiziarie e un film per la televisione, trasmessi sul network NBC dal 13 settembre 1990. Il franchise Law & Order nel tempo ha ispirato anche una serie di adattamenti televisivi stranieri, un docu-reality e videogiochi ufficiali, oltre a generare una serie di crossover con altre serie tv statunitensi."
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:42"
     },
     {
         "canale": "Sky Crime",
@@ -6130,7 +6135,7 @@
                 "descrizione": "Ep1 di 2 Sole nella nebbia - Modena, anni '80: appena fuori citta', nelle campagne, iniziano a comparire i corpi straziati di giovani ragazze. Sui giornali si comincia a parlare del 'mostro di Modena'."
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:42"
     },
     {
         "canale": "Sky Adventure",
@@ -6267,7 +6272,7 @@
                 "descrizione": "I tornado sono tra i fenomeni naturali più potenti e distruttivi al mondo. Gli esperti ne spiegano la formazione, mentre gli abitanti del Kentucky e del Missouri raccontano le loro strazianti storie di sopravvivenza."
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:42"
     },
     {
         "canale": "MTV",
@@ -6419,7 +6424,7 @@
                 "descrizione": "Ep4 di 42 - Ridiculousness è tornato con la trentatreesima stagione! Unitevi a Rob Dyrdek, Sterling Brim e ai loro ospiti speciali."
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:42"
     },
     {
         "canale": "Comedy Central",
@@ -6576,7 +6581,7 @@
                 "descrizione": "Hot in Cleveland\" si basa su tre favolose, eccentriche donne sopra i quarant'anni di Los Angeles, migliori amiche, le cui vite sono state cambiate per sempre quando il loro aereo è dovuto atterrare inaspettatamente a Cleveland e presto riscopriranno loro stesse in questa nuova \"terra promessa\"."
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:42"
     },
     {
         "canale": "Sky Arte",
@@ -6703,7 +6708,7 @@
                 "descrizione": "Tra interviste e materiali di archivio, ripercorriamo la vita e la carriera della fotografa e fotoreporter palermitana impegnata contro la Mafia."
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:42"
     },
     {
         "canale": "Sky Documentaries",
@@ -6815,7 +6820,7 @@
                 "descrizione": "Chris Packham esplora la peggiore estinzione di massa, quando il 90% delle specie è scomparso dalla Terra."
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:42"
     },
     {
         "canale": "Sky Nature",
@@ -6932,7 +6937,7 @@
                 "descrizione": "Nel Giuria vive una famiglia di linci boreali. Seguendo la loro vita, scopriamo il ruolo essenziale di questi schivi e feroci predatori nel ristabilire l'equilibrio dell'ambiente."
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:42"
     },
     {
         "canale": "Discovery Channel",
@@ -7049,7 +7054,7 @@
                 "descrizione": "In Inghilterra, Jess e Phil vanno alla ricerca di una creatura leggendaria."
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:42"
     },
     {
         "canale": "History Channel",
@@ -7171,7 +7176,7 @@
                 "descrizione": "Ivy ottiene del successo con il suo ruolo da supervisore a Stanton, Brandi cerca di aiutare Danielle a riempire il suo appartamento e Lisa decide di scommettere su un dipinto."
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:42"
     },
     {
         "canale": "Cartoon Network",
@@ -7328,7 +7333,7 @@
                 "descrizione": "Ep15 di 44 Anais si e' fatta male - La famiglia Watterson porta Anais in ospedale perché, a causa della loro immaturit� , la ragazzina si è data troppe manate in fronte e rischia danni al cervello."
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:42"
     },
     {
         "canale": "Dea Kids",
@@ -7485,7 +7490,7 @@
                 "descrizione": "Ninna e Matti non vedono l'ora di affrontare le sfide di oggi: trasformare in pecorelle Pippo e Samanta e creare una coreografia con dei palloni."
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:42"
     },
     {
         "canale": "Nick Jr",
@@ -7642,7 +7647,7 @@
                 "descrizione": "Ep15 di 20 La iena in incognito \/ Una presenza estranea nella tana - Sam cerca di confondersi tra un branco di iene durante una missione nel deserto. \/ Alcune creature sotterranee sono spaventate dal"
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:42"
     },
     {
         "canale": "Boomerang",
@@ -7799,7 +7804,7 @@
                 "descrizione": "Ep74 Sempre piu' in alto - La gelatina che Grizzy e i Lemming si contendono finisce in posti sempre piu' inaccessibili. Chi sara' all'altezza della sfida?"
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:42"
     },
     {
         "canale": "Sky TG 24",
@@ -7956,7 +7961,7 @@
                 "descrizione": "Previsioni meteo dettagliate e sempre aggiornate 24 ore al giorno. Le previsioni regionali, nazionali ed internazionali."
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:42"
     },
     {
         "canale": "Rai News 24",
@@ -8113,7 +8118,7 @@
                 "descrizione": "NEWS + SOMMARIO"
             }
         ],
-        "aggiornato": "12:57"
+        "aggiornato": "18:42"
     },
     {
         "canale": "Sky Meteo 24",
