@@ -24,7 +24,7 @@
                 "descrizione": "Notizie e attualit� in tempo reale dall'Italia e dal mondo. Approfondimenti, ospiti in studio, inviati del Tg1 e interviste ai protagonisti della cronaca, dello sport, della cultura e dello spettacolo. Conducono Greta Mauro e Gianpiero Scarpati."
             },
             {
-                "ora": "06:57",
+                "ora": "06:58",
                 "titolo": "Che Tempo Fa",
                 "descrizione": "L'appuntamento con le previsioni del tempo gestito dall'Aeronautica militare."
             },
@@ -129,17 +129,12 @@
                 "descrizione": "Yazid sogna fin da bambino di diventare un grande pasticciere. Cresciuto tra famiglie affidatarie e case famiglia, affronta ostacoli e sacrifici pur di lavorare con i migliori maestri. Una storia di talento, determinazione e riscatto, alla conquista di un posto nell'alta pasticceria. Ci riuscir� ?"
             }
         ],
-        "aggiornato": "06:56"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Rai 2",
         "categoria": "Digitale Terrestre",
         "programmi": [
-            {
-                "ora": "06:00",
-                "titolo": "Ritorno a Las Sabinas",
-                "descrizione": "Dopo molti anni di lontananza, le sorelle Molina tornano nella loro citt� natale per affrontare i problemi di salute del padre. Il loro ritorno significa una riunione con le vite, gli amori e i segreti che hanno cercato di dimenticare."
-            },
             {
                 "ora": "06:10",
                 "titolo": "La Grande Vallata",
@@ -177,8 +172,8 @@
             },
             {
                 "ora": "10:10",
-                "titolo": "TG2 Dossier",
-                "descrizione": "Approfondimento del Tg2. Direttore Antonio Preziosi Vicedirettore Elisabetta Migliorelli A cura di Francesco Vitale"
+                "titolo": "TG2 - Dossier",
+                "descrizione": "Approfondimento del Tg2."
             },
             {
                 "ora": "11:00",
@@ -273,10 +268,10 @@
             {
                 "ora": "23:45",
                 "titolo": "Taormina Film Festival",
-                "descrizione": "Dalla splendida cornice del Teatro Antico di Taormina (ME), lo speciale dedicato alla 72esima edizione del Taormina Film Festival, condotto da Tiziana Rocca. Tra film e anteprime assolute nelle quattro sezioni del festival, tantissime le star internazionali che hanno calcato il palco della manifestazione tra cui Helen Mirren, Russell Crowe, Clint Eastwood, Clive Owen. Moltissimi anche gli ospiti in rappresentanza del cinema italiano: oltre alla madrina di questa edizione Anna Valle, anche Franco Nero, Giancarlo Giannini, Michele Placido, Miriam Leone e molti altri ancora. Tra le esibizioni live on stage, invece, ad incantare il pubblico le voci di Tony Renis, Serena Brancale, Malika Ayane, Levante, Delia, Vittorio Grigolo, Giusy Ferreri, Alexia e Sarah Toscano."
+                "descrizione": "Dalla splendida cornice del Teatro Antico di Taormina, lo speciale dedicato alla 72esima edizione del Taormina Film Festival, condotto da Tiziana Rocca. Tra film e anteprime assolute nelle quattro sezioni del festival, tantissime le star internazionali che hanno calcato il palco della manifestazione tra cui Helen Mirren, Russell Crowe, Clint Eastwood, Clive Owen. Moltissimi anche gli ospiti in rappresentanza del cinema italiano: oltre alla madrina di questa edizione Anna Valle, anche Franco Nero, Giancarlo Giannini, Michele Placido, Miriam Leone e molti altri ancora. Tra le esibizioni live on stage, invece, ad incantare il pubblico le voci di Tony Renis, Serena Brancale, Malika Ayane, Levante, Delia, Vittorio Grigolo, Giusy Ferreri, Alexia e Sarah Toscano."
             }
         ],
-        "aggiornato": "06:56"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Rai 3",
@@ -289,8 +284,8 @@
             },
             {
                 "ora": "08:00",
-                "titolo": "Agorà Estate",
-                "descrizione": "L'approfondimento estivo del mattino di Rai3 condotto da Giulia Di Stefano con Marco Carrara, attraverso ospiti, inviati, inchieste e contributi video dai social."
+                "titolo": "Extraconflitti - Agorà Estate",
+                "descrizione": "$23"
             },
             {
                 "ora": "10:35",
@@ -320,7 +315,7 @@
             {
                 "ora": "13:15",
                 "titolo": "Passato E Presente - Senghor, Il Presidente Poeta - 24",
-                "descrizione": "$23"
+                "descrizione": "$24"
             },
             {
                 "ora": "14:00",
@@ -354,8 +349,8 @@
             },
             {
                 "ora": "15:05",
-                "titolo": "Il Provinciale",
-                "descrizione": "Federico Quaranta ci accompagna alla scoperta di luoghi affascinanti e sentieri impervi di un'Italia poco conosciuta."
+                "titolo": "Il Provinciale - Tutte Le Anime Dell'Elba",
+                "descrizione": "$25"
             },
             {
                 "ora": "15:45",
@@ -365,7 +360,7 @@
             {
                 "ora": "16:45",
                 "titolo": "Le Strade Di Overland - Somalia: Nuove Speranze In Somaliland",
-                "descrizione": "$24"
+                "descrizione": "$26"
             },
             {
                 "ora": "17:35",
@@ -418,7 +413,7 @@
                 "descrizione": "Venti minuti di televisione smontata, rimontata e messa a nudo attraverso il montaggio per raccontare il presente e rileggere la memoria collettiva. Blob ripercorre giorno per giorno gli eventi che hanno segnato la storia contemporanea, offrendo uno sguardo critico sulle immagini e sui loro protagonisti."
             }
         ],
-        "aggiornato": "06:56"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Rai 4",
@@ -540,7 +535,7 @@
                 "descrizione": "Film diretto da Jon Keeyes, racconta uno scenario apocalittico, causato da un virus che portato non solo alla morte di gran parte degli esseri umani, ma anche alla caduta della civilt� come la intendiamo oggi e al dilagare della criminalit� .\r Un anno e mezzo dopo l'inizio dell'epidemia virale, un agente dell'FBI (Jonathan Rhys Meyers) si vede costretto a proteggere una ragazza che ha un'importanza vitale per l'umanit� : è l'unica persona sulla faccia della Terra a essere immune al virus. Sulle tracce della donna vi è il capo di gang (John Malkovich), deciso ad avere il suo prezioso sangue..."
             }
         ],
-        "aggiornato": "06:56"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Rai 5",
@@ -652,7 +647,7 @@
                 "descrizione": "Quella di Elisa Girotto è una storia d’amore. Potente, indelebile. Di un amore che ha la forza di non arrendersi quando tutto intorno crolla. Elisa aveva solo quarant’anni quando un male incurabile l’ha tolta all’affetto dei suoi cari, a suo marito e alla sua famiglia, alla sua bambina di appena un anno. Prima che il suo cuore si fermasse, Elisa ha però trovato un modo di restarle accanto: un regalo per ogni compleanno fino alla sua maggiore et� . 18 regali per cercare di accompagnare, anno dopo anno, la crescita della sua bambina, per lasciarle il segno di una presenza spirituale, per farle capire che l’amore non si ferma davanti a nulla. Bambole, giochi, libri, vestiti, un mappamondo di sughero con l’indicazione dei luoghi che avrebbe voluto visitare con lei."
             }
         ],
-        "aggiornato": "06:56"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Rete 4",
@@ -744,7 +739,7 @@
                 "descrizione": "Avventura, scoperta, indagine. Un viaggio alla ricerca della conoscenza per scoprire l'ignoto e farsi stupire dalle meraviglie della natura e della storia. Conduce Roberto Giacobbo"
             }
         ],
-        "aggiornato": "06:56"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Canale 5",
@@ -896,7 +891,7 @@
                 "descrizione": "Le notizie piu' importanti, nazionali e internazionali, con approfondimenti e rubriche, a cura della redazione giornalistica di Canale 5."
             }
         ],
-        "aggiornato": "06:56"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Italia 1",
@@ -1013,7 +1008,7 @@
                 "descrizione": "I grandi nomi della musica arrivano nelle piazze piu' iconiche dell'Emilia-Romagna con Yoga Radio Estate, lo show musicale di Italia 1 condotto da Noemi ed Enrico Papi"
             }
         ],
-        "aggiornato": "06:56"
+        "aggiornato": "12:56"
     },
     {
         "canale": "La7",
@@ -1032,17 +1027,17 @@
             {
                 "ora": "08:00",
                 "titolo": "Omnibus Dibattito",
-                "descrizione": "Programma di informazione e approfondimento con rubriche, ospiti, rassegna stampa, aggiornamenti sul traffico, previsioni meteo, dibattito sul tema del giorno. 24a Edizione."
+                "descrizione": "Gerardo Greco con Massimo Giannini, Marianna Aprile, Francesco Delzio, Vincenzo Camporini, Giorgio Starace, Francesco Paolo Sisto, Giorgia Linardi, Janina Landau, Michele Silenzi"
             },
             {
                 "ora": "09:40",
                 "titolo": "Coffee Break",
-                "descrizione": "Lo spazio mattutino per l'approfondimento e l'attualit� condotto da Andrea Pancani. 14a Edizione."
+                "descrizione": "Marco Piccaluga con Gianluca Di Feo, Francesco Giubilei, Livio Gigliuto, Toni Ricciardi, Nicola Procaccini"
             },
             {
                 "ora": "11:00",
                 "titolo": "L'Aria Che Tira",
-                "descrizione": "Conduce Ludovica Ciriello"
+                "descrizione": "Ludovica Ciriello con Marino Sinibaldi, Silvia Sardone, Benedetta Scuderi, Francesco Borgonovo, Francesco Borgonovo, Carmen Lasorella, Alan Friedman, Rosario Trefiletti, Giorgia Pacione Di Bello, Antonio Misiani, Luca Squeri,..."
             },
             {
                 "ora": "13:30",
@@ -1080,7 +1075,7 @@
                 "descrizione": "New York, 1933. Il dottor Burt Berendsen e l'avvocato Harold Woodman sono amici fraterni e colleghi di lavoro, dal giorno in cui il generale Meekins li ha fatti conoscere, sul fronte europeo, durante la prima guerra mondiale. Ed è proprio al cospetto del cadavere di Meekins, con ogni probabilit� dovuto ad avvelenamento, che i due si trovano a dover nuovamente guardarsi le spalle, perché qualcuno li vuole morti, o per lo meno al fresco. Determinati a vendicare il loro superiore, Burt e Harold finiscono nella ricca tenuta dei Voze, dove incontrano Valérie, ex infermiera di guerra e grande amore di Harold, sparita nel nulla dodici anni prima. Ad Amsterdam, a quel tempo, i tre avevano giurato di proteggersi a vicenda, e ora rinnovano la promessa, mentre si addentrano tra le maglie di una cospirazione che minaccia di far saltare le fondamenta della democrazia americana."
             }
         ],
-        "aggiornato": "06:56"
+        "aggiornato": "12:56"
     },
     {
         "canale": "TV8",
@@ -1177,7 +1172,7 @@
                 "descrizione": "Bond ha abbandonato gli impegni in prima linea e si gode una tranquilla vita in Giamaica. La sua pace ha vita breve dopo che il vecchio amico Felix Leiter della CIA si palesa con una richiesta d’aiuto. La missione ha l’obiettivo di recuperare uno scienziato rapito e si rivela molto più complessa di quanto atteso: Bond sar� messo alla prova da un misterioso nemico dotato di una nuova arma tecnologica."
             }
         ],
-        "aggiornato": "06:56"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Nove",
@@ -1189,87 +1184,82 @@
                 "descrizione": "La polizia indaga sul terribile omicidio di un adolescente. I detective hanno in mano solo un misterioso numero da chiamare per chiedere aiuto."
             },
             {
-                "ora": "06:50",
+                "ora": "06:45",
                 "titolo": "Torbidi delitti",
                 "descrizione": "Dopo una notte passata nel bosco, il corpo di Jarret Clark, 18 anni, viene trovato in un lago. Un testimone davvero inaspettato potrebbe far luce sugli avvenimenti."
             },
             {
-                "ora": "07:45",
-                "titolo": "Alta infedelta'",
-                "descrizione": "Regina sta bene con suo marito Pietro ma quando incontra Gianni, un simpaticissimo allievo nel suo corso di acqua gym, scopre il vero amore. Quando Pietro lo scopre, decide di perdonarla, ma ormai e' troppo tardi."
-            },
-            {
-                "ora": "08:15",
+                "ora": "07:35",
                 "titolo": "Alta infedelta'",
                 "descrizione": "Lucia e Davide si amano ma lui non vuole avere figli. A causa di uno sciopero degli autobus Valerio, un vicino di casa, offre un passaggio a Lucia: tra i due inizia una relazione clandestina."
             },
             {
-                "ora": "08:45",
+                "ora": "08:05",
                 "titolo": "Alta infedelta'",
                 "descrizione": "Valeria, massaggiatrice 27enne e Giacomo, programmatore di 29 anni, si sono conosciuti ad una mostra fotografica. Ma la donna resta affascinata dal futuro suocero."
             },
             {
-                "ora": "09:20",
+                "ora": "08:35",
                 "titolo": "Alta infedelta'",
                 "descrizione": "Luigi e' sposato con Monica. Il loro e' un matrimonio di interesse tanto che Monica intreccia una relazione romantica e passionale con Antonio, uno dei fattorini che frequenta la loro villa."
             },
             {
-                "ora": "09:55",
+                "ora": "09:05",
                 "titolo": "Alta infedelta'",
                 "descrizione": "Come si reagisce quando si scopre un tradimento? Grazie alle testimonianze, tentiamo di ricostruire queste storie di bugie e inganni."
             },
             {
-                "ora": "10:30",
+                "ora": "09:40",
                 "titolo": "Alta infedelta'",
                 "descrizione": "Come si reagisce quando si scopre un tradimento? Grazie alle testimonianze, tentiamo di ricostruire queste storie di bugie e inganni."
             },
             {
-                "ora": "11:00",
+                "ora": "10:10",
                 "titolo": "Alta infedelta': nuovi modi di tradire",
                 "descrizione": "Per rendere piu' eccitante la loro relazione, Lidia e Boris si iscrivono a un'applicazione in cui si segnalanoi posti piu' strani dove fare sesso. Ma il gioco e' pericoloso."
             },
             {
-                "ora": "11:35",
+                "ora": "10:45",
                 "titolo": "Cash or Trash - Chi offre di piu'?",
                 "descrizione": "Cinque mercanti cercheranno di aggiudicarsi preziosi oggetti."
             },
             {
-                "ora": "12:45",
+                "ora": "12:05",
                 "titolo": "Cash or Trash - Chi offre di piu'?",
                 "descrizione": "Alcuni mercanti cercano di aggiudicarsi preziosi oggetti."
             },
             {
-                "ora": "14:00",
+                "ora": "13:30",
                 "titolo": "The Cage - Prendi e scappa",
                 "descrizione": "Due coppie di concorrenti si sfidano in una gara a tempo per aggiudicarsi i premi di diverso valore racchiusi dentro una enorme gabbia trasparente. Conduce Amadeus con Giulia Salemi."
             },
             {
-                "ora": "15:00",
+                "ora": "14:40",
                 "titolo": "The Cage - Prendi e scappa",
                 "descrizione": "Due coppie di concorrenti si sfidano in una gara a tempo per aggiudicarsi i premi di diverso valore racchiusi dentro una enorme gabbia trasparente. Conduce Amadeus con Giulia Salemi."
             },
             {
-                "ora": "15:55",
+                "ora": "15:45",
                 "titolo": "Il delitto della porta accanto",
                 "descrizione": "Una diciottenne di Sockton, in California, viene uccisa. Per una serie di coincidenze, il suo assassino sembra sempre un passo avanti alla polizia..."
             },
             {
-                "ora": "16:50",
+                "ora": "16:45",
                 "titolo": "Il delitto della porta accanto",
                 "descrizione": "I protagonisti dell'indagine sulla morte di Terence George, ucciso nel suo appartamento, raccontano come riuscirono a risalire al colpevole del delitto quasi senza indizi."
             },
             {
-                "ora": "17:50",
+                "ora": "17:40",
                 "titolo": "Little Big Italy",
                 "descrizione": "Francesco Panella torna in America, dove incontra tre italiani che lo porteranno a mangiare nel loro ristorante del cuore, il luogo che piu' li fa sentire a casa."
             },
             {
-                "ora": "19:20",
+                "ora": "19:25",
                 "titolo": "Cash or Trash - Chi offre di piu'?",
                 "descrizione": "Oggetti da ufficio, shaker, lampade e borse di lusso animano una puntata elegante. Design e funzionalita' si intrecciano."
             },
             {
-                "ora": "20:35",
+                "ora": "20:40",
                 "titolo": "Cash or Trash - Chi offre di piu'?",
                 "descrizione": "Lampade, scaldini, rinfrescatoi e giochi cult animano una puntata domestica e giocosa."
             },
@@ -1279,12 +1269,12 @@
                 "descrizione": "Uno spettacolo che paragona la vita a una partita a scacchi."
             },
             {
-                "ora": "23:55",
+                "ora": "23:50",
                 "titolo": "Alessandro Siani - Off Line",
                 "descrizione": "Tra comicita' e riflessioni, il nuovo show di Alessandro Siani."
             }
         ],
-        "aggiornato": "06:56"
+        "aggiornato": "12:56"
     },
     {
         "canale": "20 Mediaset",
@@ -1406,7 +1396,7 @@
                 "descrizione": "The Equalizer, serie tv di Andrew W. Marlowe (l'ideatore di Castle) e Terri Edda Miller per la rete americana CBS, è il remake al femminile dell'omonimo crime drama degli anni '80, in Italia meglio conosciuto con il titolo Un giustiziere a New York. Queen Latifah (Chicago) interpreta Robyn McCall, una donna enigmatica e con un passato misterioso la quale usa le proprie ampie capacit� per aiutare chi non ha nessun altro cui rivolgersi. Robyn si presenta alla maggior parte delle persone come una qualunque madre single che sta crescendo tranquillamente la figlia adolescente, Delilah (Laya DeLeon Hayes). Ma per pochi fidati, lei è Il Giustiziere - un angelo custode e difensore degli oppressi che è anche ostinato nella sua ricerca di una redenzione."
             }
         ],
-        "aggiornato": "06:56"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Twentyseven",
@@ -1508,7 +1498,7 @@
                 "descrizione": "Dopo un colpo di stato organizzato da Deng Tsin Qin, un principe traditore, l'Imperatrice della Cina è stata fatta prigioniera. Aiutata da Finalthesis, una mercante fenicia, e da una fedele guardia del corpo, Mai Wei, l'unica figlia dell'imperatrice, la principessa Sass-Yi, arriva in Gallia, per chiedere aiuto ad Asterix e Obelix e alla magica pozione del druido Panoramix capace di dargli una forza sovrumana. I due galli accettano di aiutare la principessa e sua madre e partono per il misterioso Oriente."
             }
         ],
-        "aggiornato": "06:56"
+        "aggiornato": "12:56"
     },
     {
         "canale": "IRIS",
@@ -1575,7 +1565,7 @@
                 "descrizione": "[Western] - Per il ciclo: C'ERA UNA VOLTA IL WESTERN.\nUna pattuglia di cavalleggeri in abiti civili viene formata per liberare due donne bianche, da anni prigioniere degli indiani Cheyenne. Con G. Madison, V. Miles. Regia di G. Douglas; USA 1953"
             }
         ],
-        "aggiornato": "06:56"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Rai Movie",
@@ -1637,7 +1627,7 @@
                 "descrizione": "Will Caster è uno stimato ricercatore nel campo dell'intelligenza artificiale, che sta lavorando a una macchina senziente, capace di ricreare, oltre all'intelligenza artificiale, anche l'intera gamma delle emozioni umane. I suoi esperimenti gli hanno tuttavia procurato molti nemici, specie nelle fila dei movimenti estremisti anti-tecnologia. Quando Will subisce un attentato da parte di questi ultimi, sua moglie Evelyn e il suo amico Max impiantano le sue sinapsi nella macchina da lui stesso creata, provocandone così la \"trascendenza\". Ma il nuovo Will diverr� un essere assetato di potere."
             }
         ],
-        "aggiornato": "06:56"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Rai Premium",
@@ -1724,7 +1714,7 @@
                 "descrizione": "Il commissario Vasco Benassi a Bologna ha la fama di “miglior sbirro”, ma dopo un errore viene mandato in Appennino, nel piccolo paesino di Muntagò, il luogo di origine che aveva abbandonato anni prima dopo un traumatico lutto. Le indagini sui vari casi lo aiuteranno a riprendere contatto con le sue origini, in un processo di “riapertura del cuore” che lo porter� a essere meno solitario, a creare relazioni nuove e ad approfondirne altre del passato."
             }
         ],
-        "aggiornato": "06:56"
+        "aggiornato": "12:56"
     },
     {
         "canale": "La 5",
@@ -1816,7 +1806,7 @@
                 "descrizione": "La liceale Reagan Willis ha solo un sogno: giocare a calcio come la sua eroina, Alex Morgan. La sua camera è una sorta di santuario dedicato ad Alex e ha persino un suo poster a grandezza naturale. In casa, però, Reagan vive nell'ombra del fratello Willis, un campione di football. Quando viene umiliata dalla rivale Claire, Reagan crede di non aver più speranze. Ma, dopo aver sbattuto accidentalmente la testa, il poster di Alex improvvisamente prende vita e nulla sar� come prima."
             }
         ],
-        "aggiornato": "06:56"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Real Time",
@@ -1918,7 +1908,7 @@
                 "descrizione": "A Morgan e Charlotte era stato detto che il peso era la causa dei loro problemi cutanei."
             }
         ],
-        "aggiornato": "06:56"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Food Network",
@@ -2055,7 +2045,7 @@
                 "descrizione": "Luca e' in provincia di Salerno per assaggiare i piatti tipici di questa magnifica terra."
             }
         ],
-        "aggiornato": "06:56"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Focus",
@@ -2177,7 +2167,7 @@
                 "descrizione": "Abusir e' una necropoli reale egizia che cela i segreti che testimoniano l'ascesa e la caduta dei Re Sole della quinta dinastia."
             }
         ],
-        "aggiornato": "06:56"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Giallo",
@@ -2249,7 +2239,7 @@
                 "descrizione": "Rimasto vedovo, il detective scozzese Jimmy Perez torna sulle isole Shetland e protegge gli abitanti da una inquietante serie di crimini. Insieme ai propri fidi colleghi, l'uomo lavora ad una serie di casi che turbano la popolazione locale. Telefilm basato sui romanzi della scrittrice Ann Cleeves."
             }
         ],
-        "aggiornato": "06:56"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Boing",
@@ -2406,7 +2396,7 @@
                 "descrizione": "La ricerca della mappa del ruscello da parte di Craig portera' lui e i suoi amici nell'insidioso bosco di edera velenosa."
             }
         ],
-        "aggiornato": "06:56"
+        "aggiornato": "12:56"
     },
     {
         "canale": "K2",
@@ -2563,7 +2553,7 @@
                 "descrizione": "1' Stagione Ep.40 - Le avventure di tre scoiattoli dalla voce incredibile, 'adottati' da Dave Seville, che diventano un fenomeno musicale."
             }
         ],
-        "aggiornato": "06:56"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Rai Gulp",
@@ -2720,7 +2710,7 @@
                 "descrizione": "Arcana e Alben, a bordo di Skidblandìr, affrontano Neikron nel cielo sopra Borgovecchio, mentre i Paladini combattono contro Vondhur. Ian, aiutato anche da Myrva e Gmor, è costretto a usare i suoi poteri da Dragonero. Il duello finale per la salvezza dell'Erond� r è finalmente cominciato!"
             }
         ],
-        "aggiornato": "06:56"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Frisbee",
@@ -2877,7 +2867,7 @@
                 "descrizione": "2' Stagione Ep.6 - Le avventure di tre scoiattoli dalla voce incredibile, 'adottati' da Dave Seville, che diventano un fenomeno musicale."
             }
         ],
-        "aggiornato": "06:56"
+        "aggiornato": "12:56"
     },
     {
         "canale": "DMAX",
@@ -2969,7 +2959,7 @@
                 "descrizione": "In Texas, la casa di una famiglia e' stata colpita da alcuni devastanti tornado."
             }
         ],
-        "aggiornato": "06:56"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Rai Sport",
@@ -3001,7 +2991,7 @@
                 "descrizione": "Seconda giornata delle finali di specialit� senior della ginnastica artistica, con le sfide al volteggio, alle parallele pari e alla sbarra."
             },
             {
-                "ora": "14:30",
+                "ora": "13:35",
                 "titolo": "Ciclismo: Gran Premio Capodarco 2026",
                 "descrizione": "Torna il Gran Premio di Capodarco con la sua 54a edizione."
             },
@@ -3011,12 +3001,17 @@
                 "descrizione": "Giochi del Mediterraneo Taranto - 4a giornata - seconda parte"
             },
             {
+                "ora": "22:00",
+                "titolo": "Memory - Rai Sport",
+                "descrizione": "Memory"
+            },
+            {
                 "ora": "22:30",
                 "titolo": "Europei Femminili Di Pallavolo 2026 - Gruppo D: Svezia - Croazia",
                 "descrizione": "La Svezia affronta la Croazia nella quarta giornata della Pool D degli Europei di volley femminile 2026."
             }
         ],
-        "aggiornato": "06:56"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Sportitalia",
@@ -3133,7 +3128,7 @@
                 "descrizione": "Il programma tratta le vicende del calciomercato sia nella sessione estiva che in quella invernale e va in onda alle ore 23.00 dal lunedì al venerdì"
             }
         ],
-        "aggiornato": "06:56"
+        "aggiornato": "12:56"
     },
     {
         "canale": "HGTV",
@@ -3275,7 +3270,7 @@
                 "descrizione": "Lo scultore Nick deve fare molta attenzione ad usare il trapano per sistemare un'urna del XIX secolo. L'esperta Jolene viene sfidata da Drew a riparare il display di un lunapark."
             }
         ],
-        "aggiornato": "06:56"
+        "aggiornato": "12:56"
     },
     {
         "canale": "RSI LA 1",
@@ -3432,7 +3427,7 @@
                 "descrizione": "$23"
             }
         ],
-        "aggiornato": "06:56"
+        "aggiornato": "12:56"
     },
     {
         "canale": "RSI LA 2",
@@ -3534,7 +3529,7 @@
                 "descrizione": "Il dottor Max Goodwin viene nominato direttore del più antico ospedale pubblico americano. Mentre i medici e il personale si dimostrano titubanti, l'uomo punta a restituire l'istituto alle sue vecchie glorie."
             }
         ],
-        "aggiornato": "06:56"
+        "aggiornato": "12:56"
     },
     {
         "canale": "DAZN 1",
@@ -3616,7 +3611,7 @@
                 "descrizione": "La storia di Antonio Esposito, noto come 'Bostik' nei Quartieri Spagnoli di Napoli che negli anni '90 fece realizzare un murales in onore del Pibe de Oro. Oggi la piazza dell'opera e' meta turistica."
             }
         ],
-        "aggiornato": "06:56"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Sky Sport 24",
@@ -3773,7 +3768,7 @@
                 "descrizione": "Tutte le notizie di calciomercato: le ultime news su acquisti, cessioni e trattative."
             }
         ],
-        "aggiornato": "06:56"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Sky Sport Uno",
@@ -3825,14 +3820,9 @@
                 "descrizione": "I granata non vincono la prima da 3 stagioni. In vantaggio 5 a 2 negli ultimi 13 precedenti a Torino, 6 pari. Milan con una sola sconfitta negli ultimi 6 esordi. TC: Borghi-Gobbi"
             },
             {
-                "ora": "15:45",
-                "titolo": "Studio Eurovolley",
-                "descrizione": "Studio Eurovolley"
-            },
-            {
                 "ora": "15:50",
                 "titolo": "Italia - Slovacchia",
-                "descrizione": "Dopo l'esordio vincente contro la Croazia, l'Italia di Velasco affronta a Goteborg il Montenegro. Tc Locatelli-Sangiuliano"
+                "descrizione": "Campionati Europei di pallavolo femminile. - Dalla Turchia, Cechia, Azerbaigian e Svezia."
             },
             {
                 "ora": "17:30",
@@ -3860,7 +3850,7 @@
                 "descrizione": "A un anno dal primo trionfo, Jannik Sinner e' ancora re di Wimbledon: il racconto della nuova impresa londinese, tra backstage, studi e immagini esclusive"
             }
         ],
-        "aggiornato": "06:56"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Sky Sport Calcio",
@@ -3942,7 +3932,7 @@
                 "descrizione": "Curiosita', commenti, notizie e anticipazioni sui possibili movimenti del calciomercato. Condotto dal trio Alessandro Bonan, Gianluca Di Marzio e Fayna."
             }
         ],
-        "aggiornato": "06:57"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Sky Sport Tennis",
@@ -3954,12 +3944,12 @@
                 "descrizione": "24\/08\/2026 Tennis: ATP & WTA. - Tutti i tornei di tennis internazionali del circuito maschile ATP e di quello femminile WTA, con l'attenzione puntata sui tennisti italiani."
             },
             {
-                "ora": "07:30",
+                "ora": "08:05",
                 "titolo": "Infinitamente Sinner: Ancora Wimbledon",
                 "descrizione": "A un anno dal primo trionfo, Jannik Sinner e' ancora re di Wimbledon: il racconto della nuova impresa londinese, tra backstage, studi e immagini esclusive"
             },
             {
-                "ora": "08:30",
+                "ora": "09:00",
                 "titolo": "Tennis Atp&Wta 2026",
                 "descrizione": "Tennis: ATP & WTA. - Tutti i tornei di tennis internazionali del circuito maschile ATP e di quello femminile WTA, con l'attenzione puntata sui tennisti italiani."
             },
@@ -3994,7 +3984,7 @@
                 "descrizione": "Giornata Tennis Us Open. - Dall'USTA Billie Jean King National Tennis Center di New York, Stati Uniti."
             }
         ],
-        "aggiornato": "06:57"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Sky Sport F1",
@@ -4126,7 +4116,7 @@
                 "descrizione": "Riviviamo i brividi del Gran Premio d'Olanda attraverso le immagini piu' spettacolari della corsa."
             }
         ],
-        "aggiornato": "06:57"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Sky Sport Legend",
@@ -4193,7 +4183,7 @@
                 "descrizione": "Tra fine anni '80 e inizio '90 la Jugoslavia del basket domina il mondo, ma la guerra spezza squadra e Paese. Il regista Jure Pavlovic racconta quel sogno interrotto."
             }
         ],
-        "aggiornato": "06:57"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Sky Sport MotoGP",
@@ -4350,7 +4340,7 @@
                 "descrizione": "Appuntamento settimanale con l'approfondimento dedicato al motomondiale, condotto da Marta Abiye con Paolo Beltramo."
             }
         ],
-        "aggiornato": "06:57"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Sky Sport Basket",
@@ -4409,7 +4399,7 @@
             {
                 "ora": "19:00",
                 "titolo": "Speciale Basket Mondiale Femminile - Andrea Capobianco",
-                "descrizione": "Andrea Capobianco 25\/08\/2026. - Speciale Basket Mondiale Femminile -..."
+                "descrizione": "Andrea Capobianco. - - ... Andrea Capobianco 25\/08\/2026. - Speciale Basket Mondiale Femminile -..."
             },
             {
                 "ora": "19:25",
@@ -4432,7 +4422,7 @@
                 "descrizione": "Valkyries WNBA. - Dal Target Center di Minneapolis, Minnesota, USA."
             }
         ],
-        "aggiornato": "06:57"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Sky Sport Arena",
@@ -4484,19 +4474,14 @@
                 "descrizione": "Dallo Stadion Slaski di Slaski, Polonia."
             },
             {
-                "ora": "15:25",
-                "titolo": "Codogno",
-                "descrizione": "Sports. - L'evoluzione sportiva di Codogno mette in luce il suo percorso come Comunita' Europea dello Sport 2023, valorizzando progetti locali, la crescita della cittadinanza e club storici come l'AC Codogno 1908."
-            },
-            {
-                "ora": "15:45",
+                "ora": "15:30",
                 "titolo": "Studio Eurovolley",
                 "descrizione": "Studio Eurovolley"
             },
             {
                 "ora": "15:50",
                 "titolo": "Italia - Slovacchia",
-                "descrizione": "Dopo l'esordio vincente contro la Croazia, l'Italia di Velasco affronta a Goteborg il Montenegro. Tc Locatelli-Sangiuliano"
+                "descrizione": "Campionati Europei di pallavolo femminile. - Dalla Turchia, Cechia, Azerbaigian e Svezia."
             },
             {
                 "ora": "17:30",
@@ -4511,7 +4496,7 @@
             {
                 "ora": "20:00",
                 "titolo": "Italia - Slovacchia",
-                "descrizione": "Dopo l'esordio vincente contro la Croazia, l'Italia di Velasco affronta a Goteborg il Montenegro. Tc Locatelli-Sangiuliano"
+                "descrizione": "Campionati Europei di pallavolo femminile. - Dalla Turchia, Cechia, Azerbaigian e Svezia"
             },
             {
                 "ora": "22:00",
@@ -4524,7 +4509,7 @@
                 "descrizione": "Dallo Stadion Slaski di Slaski, Polonia."
             }
         ],
-        "aggiornato": "06:57"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Sky Sport Max",
@@ -4596,7 +4581,7 @@
                 "descrizione": "Giornata Tennis Us Open. - Dall'USTA Billie Jean King National Tennis Center di New York, Stati Uniti."
             }
         ],
-        "aggiornato": "06:57"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Sky Sport Mix",
@@ -4643,12 +4628,7 @@
                 "descrizione": "Europei di pallavolo femminile. - Seconda uscita per la Polonia nel girone A di Istanbul contro la Lettonia. Tc Trezzi-Piccinini"
             },
             {
-                "ora": "14:30",
-                "titolo": "Laureus Spirit Of Sport Ep.18",
-                "descrizione": "01\/08\/2026 Laureus Spirit of Sport. - Interviste esclusive con i piu' grandi nomi dello sport, approfondimenti, analisi."
-            },
-            {
-                "ora": "14:55",
+                "ora": "15:05",
                 "titolo": "Infinitamente Sinner: Ancora Wimbledon",
                 "descrizione": "A un anno dal primo trionfo, Jannik Sinner e' ancora re di Wimbledon: il racconto della nuova impresa londinese, tra backstage, studi e immagini esclusive"
             },
@@ -4678,7 +4658,7 @@
                 "descrizione": "3a giornata del torneo che unisce i test di luglio e novembre. A Perth l'Italia, 10a nel ranking, cerca i primi punti contro l'Australia, 8a.Telecronaca Pierantozzi-De Rossi"
             }
         ],
-        "aggiornato": "06:57"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Sky Sport Golf",
@@ -4720,12 +4700,22 @@
                 "descrizione": "World Tour. - From Trump International Golf Links in Scotland."
             },
             {
+                "ora": "15:45",
+                "titolo": "Nexo Champioship",
+                "descrizione": "Tour. - Le sintesi dedicate alle partite del DP World Tour."
+            },
+            {
+                "ora": "16:00",
+                "titolo": "Speciale Golf Battle Twelve",
+                "descrizione": "Speciale Golf Battle Twelve"
+            },
+            {
                 "ora": "16:30",
                 "titolo": "Speciale Golf Pgai Championship 2026",
                 "descrizione": "03\/08\/2026. - - - Speciale Golf Pgai Championship 2026..."
             },
             {
-                "ora": "17:00",
+                "ora": "16:55",
                 "titolo": "Giorno 4",
                 "descrizione": "Dal Royal Birkdale Golf Club di Lancashire, Inghilterra."
             },
@@ -4740,7 +4730,7 @@
                 "descrizione": "Exhibition 26\/07\/2026. - Scopriamo insieme i giocatori piu' interessanti, vincenti e talentuosi del golf tedesco."
             },
             {
-                "ora": "20:30",
+                "ora": "20:35",
                 "titolo": "Speciale Golf Battle Twelve",
                 "descrizione": "Speciale Golf Battle Twelve"
             },
@@ -4750,7 +4740,7 @@
                 "descrizione": "World Tour. - Dal Renaissance Club, a North Berwick, Scozia."
             }
         ],
-        "aggiornato": "06:57"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Sky Sport 251",
@@ -4762,7 +4752,7 @@
                 "descrizione": "Calcio Champions league, Preliminari Play-Off (Ritorno). Calcio d'inizio ore 18:45."
             }
         ],
-        "aggiornato": "06:57"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Sky Sport 252",
@@ -4774,7 +4764,7 @@
                 "descrizione": "Tennis Atp&Wta 2026. ATP250 Winston-Salem, WTA500 Monterrey. Dalle ore 20:00."
             }
         ],
-        "aggiornato": "06:57"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Sky Sport 253",
@@ -4915,7 +4905,7 @@
                 "descrizione": "Una coppia benestante viene presa in ostaggio da alcuni crudeli malviventi durante una rapina. Le cose si complicano quando, in maniera del tutto inaspettata, vengono a galla una serie di tradimenti e inganni che coinvolgono marito e moglie."
             }
         ],
-        "aggiornato": "06:57"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Sky Cinema Uno +24",
@@ -4967,7 +4957,7 @@
                 "descrizione": "I palinsesti sono in via di definizione da parte emittente"
             }
         ],
-        "aggiornato": "06:57"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Sky Cinema Due",
@@ -5024,7 +5014,7 @@
                 "descrizione": "Ruby è l'unica persona udente nella sua famiglia e quando l'attivit� di pesca famigliare è minacciata, si ritrova combattuta tra perseguire il suo amore per la musica e la sua paura di abbandonare i suoi genitori non udenti."
             }
         ],
-        "aggiornato": "06:57"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Sky Cinema Due +24",
@@ -5046,7 +5036,7 @@
                 "descrizione": "La storia di Joan Stanley che, nata inglese ma simpatizzante del partito comunista e dell'Unione Sovietica, divenne funzionaria del governo britannico per essere poi reclutata come spia dal KGB a met� degli anni Trenta del Novecento e che riuscì a trasferire segreti militari e politici mantenendo la sua identit� segreta per oltre mezzo secolo."
             }
         ],
-        "aggiornato": "06:57"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Sky Cinema Collection",
@@ -5113,7 +5103,7 @@
                 "descrizione": "Massimo è un ombroso barista, divorziato da poco, che si trova a indagare su alcuni delitti che avvengono nella sua cittadina toscana, Pineta. Il suo istinto d'investigatore trova sempre spunti in alcune conversazioni, che è costretto a sedare nel suo bar, ad opera di quattro arzilli vecchietti. Mentre indaga, Massimo si divide fra un amore per il commissario di polizia Vittoria Fusco, le vicende della sua barista Tiziana e la comparsa del suo fratellastro, Beppe."
             }
         ],
-        "aggiornato": "06:57"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Sky Cinema Family",
@@ -5185,7 +5175,7 @@
                 "descrizione": "Dopo i capovolgimenti degli episodi precedenti - dall'abbandono della palude alle blasonate nozze con la principessa Fiona - l'orco verde dalle orecchie a forma di trombetta, torna nel più politicamente scorretto dei cartoon per assicurare un degno successore al regno di Molto Molto Lontano. In una Hollywood rovesciata a immagine e somiglianza del mondo delle favole, il povero Re Harold, suocero ranocchio di Shrek e padre di Fiona, viene a mancare improvvisamente alla corte dei suoi cari. L'unico erede al trono, dopo il rifiuto incondizionato di Shrek, sembra essere un ingenuo sbarbatello che risponde al nome di Arthur. Insieme al nobile Gatto con gli stivali e al logorroico Ciuchino, i tre eroi partono per una nuova avventura, proprio mentre il Principe Azzurro - stanco ormai di recitare in una platea indegna della sua bellezza - è pronto a meditar vendetta per riprendersi, insieme ai cattivi di tutti i tempi, il regno perduto."
             }
         ],
-        "aggiornato": "06:57"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Sky Cinema Action",
@@ -5242,7 +5232,7 @@
                 "descrizione": "Due anni fa sperava di essersi lasciato alle spalle quel passato che non poteva ricordare, ma che lo perseguitava con misteriose immagini di morte e violenza. Il destino però torna a bussare alla porta di Jason Bourne, killer professionista senza più memoria, quando viene accusato (ingiustamente?) di aver ucciso il premier cinese."
             }
         ],
-        "aggiornato": "06:57"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Sky Cinema Suspense",
@@ -5309,7 +5299,7 @@
                 "descrizione": "Per sottrarsi alla polizia, un ladro, Harry Lockhart, é costretto a scappare e involontariamente si ritrova nel mezzo dei provini di un film poliziesco. Nonostante questa non fosse la sua aspirazione, cerca di ottenere il ruolo per non finire in prigione, per farlo, si fa aiutare da un investigatore privato senza lavoro e da una aspirante attrice. Purtroppo per lui però, i tre si trovano immischiati in uno strano omicidio.."
             }
         ],
-        "aggiornato": "06:57"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Sky Cinema Romance",
@@ -5366,7 +5356,7 @@
                 "descrizione": "South Carolina, 1925. Dodge Connolly è un esuberante giocatore di football americano e un'adorabile canaglia. Irriverente delle regole e sfrontato con l'avversario, Dodge è capitano dei Duluth Bulldogs, una squadra di avvinazzati attaccabrighe che perde in una sola partita sponsor e ingaggio. Dopo aver sciolto a malincuore il proprio team, il capitano Connolly convince un agente maneggione a rilanciarli sul campo, reclutando il giovane e aitante Carter Rutherford. Eroe di guerra per caso e fuoriclasse del football per inclinazione, il ragazzo aiuta Doodge ad educare la squadra e a riempire gli stadi. Se una folla persuasa accorre a celebrare il giocatore combattente, una giornalista del Chicago Tribune non sembra credere all'avventura eroica di Carter nelle trincee delle Argonne. Indagando finir� per innamorare l'esordiente e il veterano. Soltanto uno conquister� il territorio, avanzando sulle linee delle yards e nel cuore della bionda Lexie Littleton."
             }
         ],
-        "aggiornato": "06:57"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Sky Cinema Drama",
@@ -5418,7 +5408,7 @@
                 "descrizione": "L'epopea del giudeo Ben-Hur, arrestato dall'amico Messala, tribuno dell'impero romano, inviato nelle galee come schiavo, riuscir� , dopo aver salvato il console Ario, a diventare un ricco romano e a tornare in patria per vendicarsi."
             }
         ],
-        "aggiornato": "06:57"
+        "aggiornato": "12:56"
     },
     {
         "canale": "Sky Cinema Comedy",
@@ -5485,7 +5475,7 @@
                 "descrizione": "Giovanni, intellettuale impegnato e profeta dell’integrazione sociale vive nel centro di Roma. Monica, ex cassiera, con l’integrazione ha a che fare tutti i giorni nella periferia dove vive. Non si sarebbero mai incontrati se i loro figli non avessero deciso di fidanzarsi. Sono le persone più diverse sulla faccia della terra, ma hanno un obiettivo in comune: la storia tra i loro figli deve finire. I due cominciano a frequentarsi e a entrare l’uno nel mondo dell’altro. Giovanni, abituato ai film nei cinema d’essai, si ritrover� a seguire sua figlia in una caotica multisala di periferia; Monica, abituata a passare le sue vacanze a Coccia di Morto, finir� nella scicchissima Capalbio. Ma all'improvviso qualcosa tra loro cambia..."
             }
         ],
-        "aggiornato": "06:57"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Sky Uno",
@@ -5572,7 +5562,7 @@
                 "descrizione": "Ep8 di 8 Non solo Matera - Al grido di 'non solo Matera' Bruno Barbieri sara' il giudice di una sfida alla scoperta della Basilicata. Chi avra' la meglio tra Claudia, Rossana, Gianluigi e Rocco?"
             }
         ],
-        "aggiornato": "06:57"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Sky Atlantic",
@@ -5689,7 +5679,7 @@
                 "descrizione": "Dopo un’imboscata nel deserto, il trafficante Max e l’ex jihadista JJ stringono un’alleanza per sopravvivere, ignari di trasportare materiale per una bomba atomica."
             }
         ],
-        "aggiornato": "06:57"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Sky Serie",
@@ -5816,7 +5806,7 @@
                 "descrizione": "La drammatica e avventurosa vita di Modesta, nata in Sicilia il primo gennaio del 1900 da una famiglia povera, in una terra ancora più povera. Fin dall’infanzia, animata da un insaziabile desiderio di conoscenza, di amore e di libert� , è disposta a tutto pur di perseguire la sua felicit� , senza piegarsi mai alle regole di una societ� oppressiva e patriarcale a cui sembra predestinata. Dopo un tragico incidente che la strappa alla sua famiglia, viene accolta in un convento e, grazie alla sua intelligenza e caparbiet� , diventa la protetta della Madre Superiora. Il suo cammino la conduce poi alla villa della Principessa Brandiforti, dove si render� indispensabile ottenendo sempre più potere nel palazzo. Questo suo incessante movimento di emancipazione si accompagna a un percorso di maturazione personale e sessuale, che la porta a varcare il confine tra lecito e illecito, conquistando giorno dopo giorno il suo diritto al piacere e alla gioia."
             }
         ],
-        "aggiornato": "06:57"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Sky Investigation",
@@ -5933,7 +5923,7 @@
                 "descrizione": "Petra Delicado, l'ispettrice della mobile creata dalla scrittrice Alicia Giménez-Bartlett. “Petra è una donna abile eppure imperfetta, che ha il coraggio di liberarsi dai cliché femminili, fra tutti il bisogno di piacere agli altri. Cerca una via d’uscita e non ha paura di pagarne il prezzo.”"
             }
         ],
-        "aggiornato": "06:57"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Sky Crime",
@@ -6055,7 +6045,7 @@
                 "descrizione": "S1 Ep3 di 4 L'espansione - Gli anni '80 sono segnati dall'espansione affaristica della Banda."
             }
         ],
-        "aggiornato": "06:57"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Sky Adventure",
@@ -6182,7 +6172,7 @@
                 "descrizione": "Ispirandosi ai pionieri dell'hot rodding, Ian sceglie uno stile vecchia scuola con un Model A e aggiunge il suo tocco personale a una costruzione in stile tradizionale."
             }
         ],
-        "aggiornato": "06:57"
+        "aggiornato": "12:57"
     },
     {
         "canale": "MTV",
@@ -6199,47 +6189,57 @@
                 "descrizione": "Ep21 di 42 Sterling e Carly Aquilino XXVII - Rob, Steelo e Carly Aquilino osservano donne che non volano in LOUSY LADY LEAPS."
             },
             {
-                "ora": "06:30",
+                "ora": "06:25",
                 "titolo": "Ridiculousness: Veri American Idiots",
                 "descrizione": "Ep27 di 42 Sterling e Karrueche Tran XXXIII - Rob, Steelo e Karrueche Tran scoprono che è una brutta idea rubare i cartelli in SIGN REVENGE."
             },
             {
-                "ora": "06:55",
+                "ora": "06:50",
                 "titolo": "Ridiculousness: Veri American Idiots",
                 "descrizione": "Ep28 di 42 Sterling e Karrueche Tran XXXIV - Rob, Steelo e Karrueche Tran incontrano bambini particolarmente forti in BABY GRIP."
             },
             {
-                "ora": "07:20",
+                "ora": "07:10",
+                "titolo": "Ridiculousness: Veri American Idiots",
+                "descrizione": "Ep30 di 42 Sterling e Carly Aquilino XXXIV - Rob, Steelo e Carly Aquilino si tirano fuori da INSTA-BURIED e naufragano chiss� dove vicino all'acqua con LAND BOATING."
+            },
+            {
+                "ora": "07:35",
                 "titolo": "Catfish: False Identita'",
                 "descrizione": "Ep4 di 50 Zahra e T - Nev e Max riuniscono le forze per aiutare Zahra a trovare il suo amore, un uomo che conosce come T!"
             },
             {
-                "ora": "08:10",
+                "ora": "08:15",
                 "titolo": "Catfish: False Identita'",
                 "descrizione": "Ep5 di 50 Cristian e Chantel - Cristian ama Chantel ma non si sono mai incontrati! Se lei lo ama perchè lo sta evitando?"
             },
             {
-                "ora": "09:00",
+                "ora": "09:05",
                 "titolo": "Teen Mom: The Next Chapter",
                 "descrizione": "Ep8 di 15 - I cast di Teen Mom OG e Teen Mom 2 uniscono le forze. Maci, Catelynn, Amber, Leah, Briana, Cheyenne, Ashley e Jade si aiutano a vicenda durante gioie e difficolt� della maternit� ."
             },
             {
-                "ora": "09:55",
+                "ora": "09:50",
                 "titolo": "Teen Mom: The Next Chapter",
                 "descrizione": "Ep9 di 15 - I cast di Teen Mom OG e Teen Mom 2 uniscono le forze. Maci, Catelynn, Amber, Leah, Briana, Cheyenne, Ashley e Jade si aiutano a vicenda durante gioie e difficolt� della maternit� ."
             },
             {
-                "ora": "10:50",
+                "ora": "10:30",
                 "titolo": "Teen Mom: The Next Chapter",
                 "descrizione": "Ep10 di 15 - I cast di Teen Mom OG e Teen Mom 2 uniscono le forze. Maci, Catelynn, Amber, Leah, Briana, Cheyenne, Ashley e Jade si aiutano a vicenda durante gioie e difficolt� della maternit� ."
             },
             {
-                "ora": "11:45",
+                "ora": "11:15",
+                "titolo": "Dallas Cowboys Cheerleaders: Making...",
+                "descrizione": "Ep5 di 13 Inizia la trasformazione - Il coreografo vincitore di un Emmy, Travis Wall, arriva alle prove per dare una scossa alla situazione."
+            },
+            {
+                "ora": "12:00",
                 "titolo": "Dallas Cowboys Cheerleaders: Making...",
                 "descrizione": "Ep6 di 13 Avventure nella danza - Torna Charm LaDonna e sottopone le DCC a un'audizione in stile hollywoodiano sul palco prima di scegliere le migliori 36."
             },
             {
-                "ora": "12:35",
+                "ora": "12:40",
                 "titolo": "Dallas Cowboys Cheerleaders: Making...",
                 "descrizione": "Ep7 di 13 Dimostrare di essere i migliori - Cheryl Burke interviene come giudice. Le DCC salgono sul palco per le audizioni per lo Show Group."
             },
@@ -6249,22 +6249,27 @@
                 "descrizione": "Ep1 di 17 La casa dei miei sogni - Quinn crede che Deonta sia la sua anima gemella, ma perché lo sente distante da lei?"
             },
             {
-                "ora": "14:20",
+                "ora": "14:15",
                 "titolo": "Caught In The Act",
                 "descrizione": "Ep2 di 17 Crollare o svenire - Dashaye sospetta della sua ragazza, Danielle, ma anche lei ha un segreto."
             },
             {
-                "ora": "15:15",
+                "ora": "15:00",
+                "titolo": "Caught In The Act",
+                "descrizione": "Ep3 di 17 - La verit� che Tami scoprir� rischia di mandare all'aria i progetti nuziali di Melik per Izzy?"
+            },
+            {
+                "ora": "15:45",
                 "titolo": "Teen Mom 2 7",
                 "descrizione": "S7 Ep30 Abbattere i muri - Jenelle affronta Nathan e la sua ragazza in tribunale. Aubree va a fare shopping per il matrimonio di Chelsea e Cole. Jeremy deve lasciare la citta'."
             },
             {
-                "ora": "16:05",
+                "ora": "16:30",
                 "titolo": "Help! I am in a secret relationship!",
                 "descrizione": "Ep11 di 24 Karl & Jasmine - Rahne Jones e Travis Mills aiutano partner disperati a scoprire perchè le loro dolci met� li nascondano a famiglia ed amici. Che cosa scopriranno?"
             },
             {
-                "ora": "17:00",
+                "ora": "17:10",
                 "titolo": "Help! I am in a secret relationship!",
                 "descrizione": "Ep4 di 10 - Dopo oltre un anno di frequentazione, Ed non ha ancora incontrato gli amici o la famiglia di Lynn. Lei, si rifiuta di postarlo sui social media o addirittura di seguirlo"
             },
@@ -6274,42 +6279,52 @@
                 "descrizione": "Ep11 di 13 - Jesse e Clint affrontano Ken e Bruce"
             },
             {
-                "ora": "18:30",
-                "titolo": "Catfish: False Identita'",
+                "ora": "18:20",
+                "titolo": "Catfish: False identita'",
                 "descrizione": "Ep16 di 20 - Catfish racconta le storie di ragazzi che non si sono mai incontrati di persona, ma che hanno una storia d'amore telematica. Aiyssha chiede aiuto a Nev e Max perche' e' ancora innamorata di Sydney."
             },
             {
-                "ora": "19:20",
+                "ora": "19:10",
                 "titolo": "Catfish: False Identita'",
                 "descrizione": "Ep20 di 40 - Nev e la co-conduttrice Kamie volano in Iowa per aiutare Rachael a incontrare Vance, la sua cotta decennale nata su Myspace."
             },
             {
-                "ora": "20:10",
+                "ora": "19:50",
                 "titolo": "Caught In The Act",
                 "descrizione": "Ep10 di 30 - Il comportamento di Jay ha portato la sua fidanzata Miniyah ad avere dubbi sul loro futuro."
             },
             {
-                "ora": "21:05",
+                "ora": "20:40",
                 "titolo": "Caught In The Act",
                 "descrizione": "Ep8 di 12 - Tami Roman aiuta gli amanti sospettosi a cogliere sul fatto i loro partner infedeli. Insieme alla sua squadra, Tami scoprir� la verit� che può rivelarsi decisiva per chi si affida a lei..."
             },
             {
-                "ora": "22:00",
+                "ora": "21:20",
                 "titolo": "Teen Mom UK - E' tutto finito",
                 "descrizione": "S1 Ep6 E' tutto finito - Sempre piu' drammi in Teen Mom UK! Mia ha un faccia a faccia con Erin. Amber e Ste provano la terapia. Chloe e Jordan si prendono una pausa e la festa di fidanzamento di Dylan..."
             },
             {
-                "ora": "23:00",
+                "ora": "22:10",
                 "titolo": "Ink Master: Revenge",
                 "descrizione": "Ep1 di 13 - In questa stagione di Ink Master, 16 tatuatori divisi tra concorrenti nuovi e veterani si sfideranno per dimostrare chi di loro è il numero 1 in assoluto e si aggiudicher� il premio di..."
             },
             {
-                "ora": "23:55",
+                "ora": "22:55",
                 "titolo": "Ridiculousness: Veri American Idiots",
                 "descrizione": "Ep1 di 42 - In questa puntata Rob e Steelo sono affiancati da Lolo Wood."
+            },
+            {
+                "ora": "23:20",
+                "titolo": "Ridiculousness: Veri American Idiots",
+                "descrizione": "Ep33 di 42 - Ridiculousness è tornato con la trentatreesima stagione! Unitevi a Rob Dyrdek, Sterling Brim e ai loro ospiti speciali."
+            },
+            {
+                "ora": "23:45",
+                "titolo": "Ridiculousness: Veri American Idiots",
+                "descrizione": "Ep34 di 42 Sterling e Camille Kostek VII - Rob, Steelo e Camille Kosteksi siedono in SPLASH ZONE, corrono in PERSONAL ROADBLOCKS e coprono le loro orecchie per SISTER SCREAMS."
             }
         ],
-        "aggiornato": "06:57"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Comedy Central",
@@ -6466,7 +6481,7 @@
                 "descrizione": "Hot in Cleveland\" si basa su tre favolose, eccentriche donne sopra i quarant'anni di Los Angeles, migliori amiche, le cui vite sono state cambiate per sempre quando il loro aereo è dovuto atterrare inaspettatamente a Cleveland e presto riscopriranno loro stesse in questa nuova \"terra promessa\"."
             }
         ],
-        "aggiornato": "06:57"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Sky Arte",
@@ -6593,7 +6608,7 @@
                 "descrizione": "Alla scoperta di Palermo e del suo patrimonio unico, attraverso l'esplorazione dei luoghi simbolo e interviste a personaggi dell'arte e della cultura, tra gli altri Simonetta Agnello Hornby."
             }
         ],
-        "aggiornato": "06:57"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Sky Documentaries",
@@ -6685,7 +6700,7 @@
                 "descrizione": "James Cameron svela tutti i retroscena di \"Titanic\", mostrando la sua cura quasi maniacale per i dettagli e illustrando le ultime scoperte relative alla tragedia."
             }
         ],
-        "aggiornato": "06:57"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Sky Nature",
@@ -6797,7 +6812,7 @@
                 "descrizione": "I grandi fiumi della Terra"
             }
         ],
-        "aggiornato": "06:57"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Discovery Channel",
@@ -6914,7 +6929,7 @@
                 "descrizione": "Scopriamo come vengono realizzati alcuni oggetti di uso quotidiano, tra cui i tamburi dei Nativi americani, l'uva passa, gli stereoscopi e i microfoni a nastro."
             }
         ],
-        "aggiornato": "06:57"
+        "aggiornato": "12:57"
     },
     {
         "canale": "History Channel",
@@ -7026,7 +7041,7 @@
                 "descrizione": "S1 Ep2 Il tiranno - Nel 1933 Hitler diventa cancelliere e rapidamente accresce il suo potere. Aumenta la censura, perseguita gli oppositori e ordina la creazione dei campi di concentramento."
             }
         ],
-        "aggiornato": "06:57"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Cartoon Network",
@@ -7183,7 +7198,7 @@
                 "descrizione": "Ep43 di 52 La muraglia di burro - I Titans scoprono che la Terra e' un grosso pancake circondato da una muraglia di burro che non fa riversare l'acqua nello spazio. La muraglia si sta sciogliendo."
             }
         ],
-        "aggiornato": "06:57"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Dea Kids",
@@ -7340,7 +7355,7 @@
                 "descrizione": "Izzy iscrive di sua iniziativa Chef al concorso del maestro dell'anno. I concorrenti devono superare delle prove complicatissime per aggiudicarsi il titolo. I bambini allenano uno Chef imbranatissimo e faranno di tutto per vincere."
             }
         ],
-        "aggiornato": "06:57"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Nick Jr",
@@ -7497,7 +7512,7 @@
                 "descrizione": "Ep17 di 26 Barbaforte senza torte \/ Quel mostro di gallina - Barbaforte vorrebbe mangiare una torta... \/ Barbalalla, Barbazoo e Barbaforte sentono degli strani rumori durante la notte."
             }
         ],
-        "aggiornato": "06:57"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Boomerang",
@@ -7654,7 +7669,7 @@
                 "descrizione": "Ep44 Nascondino coi Lemming - Grizzy rovina il nascondino ai Lemming rivelando dove sono nascosti, cosi' loro lo sfidano a giocare e trovano in lui un valido avversario."
             }
         ],
-        "aggiornato": "06:57"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Sky TG 24",
@@ -7727,8 +7742,8 @@
             },
             {
                 "ora": "10:30",
-                "titolo": "TG24 mezz'ora",
-                "descrizione": "Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo."
+                "titolo": "Sky Cube",
+                "descrizione": "Benzina, Dove Trovare Risorse Per Nuovi Sconti?. S1 Ep88 Sky Cube (2026) Ep.91 - Caro Benzina, Dove Trovare Risorse Per Nuovi Sconti? - Sky Cube"
             },
             {
                 "ora": "11:00",
@@ -7811,7 +7826,7 @@
                 "descrizione": "Previsioni meteo dettagliate e sempre aggiornate 24 ore al giorno. Le previsioni regionali, nazionali ed internazionali."
             }
         ],
-        "aggiornato": "06:57"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Rai News 24",
@@ -7968,7 +7983,7 @@
                 "descrizione": ",. - ,"
             }
         ],
-        "aggiornato": "06:57"
+        "aggiornato": "12:57"
     },
     {
         "canale": "Sky Meteo 24",
