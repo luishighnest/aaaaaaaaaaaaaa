@@ -11,7 +11,7 @@
             {
                 "ora": "06:55",
                 "titolo": "Gli Imperdibili",
-                "descrizione": "Backstage, anteprime, eventi e curiosit� dentro lo schermo. È il programma che offre informazione e approfondimento sulla programmazione dei canali che compongono il bouquet Rai."
+                "descrizione": "MAGAZINE - Backstage, anteprime, eventi e curiosit� dentro lo schermo. E' il programma che offre informazione e approfondimento sulla programmazione dei canali che compongono il bouquet Rai.. - di F. Pennacchia 2026 ITA"
             },
             {
                 "ora": "07:00",
@@ -151,10 +151,10 @@
             {
                 "ora": "21:30",
                 "titolo": "Ogni promessa è debito",
-                "descrizione": "Dall'Auditorium di Napoli, Vincenzo Salemme racconta la storia di un uomo che, per salvare la vita a sé stesso e alla famiglia, fa un voto alla patrona del suo paese, Sant'Anna. Tra situazioni comiche e riflessioni morali, la commedia affronta con ironia il peso delle promesse e dell'avidit� umana."
+                "descrizione": "In diretta dall'Auditorium di Napoli, Vincenzo Salemme racconta la storia di un uomo che, per salvare la vita a sé stesso e alla famiglia, fa un voto alla patrona del suo paese, Sant'Anna. Tra situazioni comiche e riflessioni morali, la commedia affronta con ironia il peso delle promesse e dell'avidit� umana."
             }
         ],
-        "aggiornato": "10:20"
+        "aggiornato": "14:55"
     },
     {
         "canale": "Rai 2",
@@ -173,7 +173,7 @@
             {
                 "ora": "07:00",
                 "titolo": "Gli Imperdibili",
-                "descrizione": "Backstage, anteprime, eventi e curiosit� dentro lo schermo. È il programma che offre informazione e approfondimento sulla programmazione dei canali che compongono il bouquet RAI."
+                "descrizione": "Backstage, anteprime, eventi e curiosit� dentro lo schermo. È il programma che offre informazione e approfondimento sulla programmazione dei canali che compongono il bouquet Rai."
             },
             {
                 "ora": "07:05",
@@ -197,8 +197,13 @@
             },
             {
                 "ora": "10:00",
-                "titolo": "Energia In Movimento",
-                "descrizione": "RUBRICA - Un viaggio alla scoperta di una mobilit� sostenibile che è gi� realt� . Bologna e Bolzano hanno scelto di guardare avanti, combinando tecnologia, rispetto per l'ambiente e valorizzazione del territorio.... - Conducono Barbara Politi, Angela Tuccia Produttore Loreb Angelo Silvestri Produttore esecutivo Rai Anna Rita De Camillis Regia di Andrea Cilento Un programma realizzato in collaborazione con Loreb Production e con il patrocinio morale del Ministero dell'Ambiente e della Sicurezza Energetica"
+                "titolo": "Energia In Movimento - Puntata 1 - Bologna",
+                "descrizione": "A Bologna, dove innovazione e tradizione si incontrano, Angela Tuccia e Barbara Politi raccontano la rivoluzione sostenibile di una citt� simbolo. Dai bus a biometano al futuro dell'idrogeno, un viaggio tra tecnologie pulite, tutela del patrimonio e nuove visioni urbane."
+            },
+            {
+                "ora": "10:25",
+                "titolo": "Energia In Movimento - Puntata 2 - Bolzano",
+                "descrizione": "A Bolzano, centro d'eccellenza per la mobilit� a idrogeno silenziosa, Barbara Politi e Angela Tuccia raccontano una citt� dove natura e innovazione convivono armoniosamente, aprendo la strada a un futuro sostenibile a impatto zero."
             },
             {
                 "ora": "10:55",
@@ -262,8 +267,8 @@
             },
             {
                 "ora": "17:50",
-                "titolo": "Polonia - Italia",
-                "descrizione": "SPORT. - Pallavolo. Campionato Europeo Femminile Semifinale Telecronaca Marco Fantasia Commento tecnico Antonella Del Core Interviste Edi Dembinski"
+                "titolo": "Europei Di Pallavolo Femminile 2026 - Semifinale: Polonia - Italia",
+                "descrizione": "Campionato Europeo femminili di Pallavolo 2026 - Semifinale: Polonia – Italia"
             },
             {
                 "ora": "20:30",
@@ -286,7 +291,7 @@
                 "descrizione": "La storica rubrica Rai che mostra tutti i gol e le azioni salienti degli anticipi di campionato di Serie A."
             }
         ],
-        "aggiornato": "10:20"
+        "aggiornato": "14:55"
     },
     {
         "canale": "Rai 3",
@@ -310,7 +315,7 @@
             {
                 "ora": "10:55",
                 "titolo": "Gli Imperdibili",
-                "descrizione": "RUBRICA - Backstage, anteprime, eventi e curiosit� dentro lo schermo. E' il programma che offre informazione e approfondimento sulla programmazione dei canali che compongono il bouquet RAI.. - Regia di Francesco Pennacchia Autrici Gabriella Belloni, Cinzia De Ponti, Rita Iocchi Produttore esecutivo Clelia Fasano"
+                "descrizione": "Backstage, anteprime, eventi e curiosit� dentro lo schermo. È il programma che offre informazione e approfondimento sulla programmazione dei canali che compongono il bouquet Rai."
             },
             {
                 "ora": "11:00",
@@ -413,7 +418,7 @@
                 "descrizione": "TG3 Sera"
             }
         ],
-        "aggiornato": "10:20"
+        "aggiornato": "14:55"
     },
     {
         "canale": "Rai 4",
@@ -482,12 +487,7 @@
             {
                 "ora": "15:57",
                 "titolo": "Gli Imperdibili",
-                "descrizione": "MAGAZINE - Backstage, anteprime, eventi e curiosit� dentro lo schermo. E' il programma che offre informazione e approfondimento sulla programmazione dei canali che compongono il bouquet Rai.. - di F. Pennacchia 2026 ITA"
-            },
-            {
-                "ora": "16:00",
-                "titolo": "Gli Imperdibili",
-                "descrizione": "Gli imperdibili"
+                "descrizione": "Backstage, anteprime, eventi e curiosit� dentro lo schermo. È il programma che offre informazione e approfondimento sulla programmazione dei canali che compongono il bouquet Rai."
             },
             {
                 "ora": "16:01",
@@ -550,7 +550,7 @@
                 "descrizione": "Terry, un ex ladro proprietario di una rivendita di auto d’epoca, viene avvicinato da una vecchia conoscenza, la bella Martine, che gli propone di fare “il colpo della vita”: una rapina nel cuore di Londra, più precisamente nel caveau della Lloyd Bank, dove sono depositate centinaia di cassette di sicurezza. In realt� la donna non svela del tutto le sue carte: è stata infatti costretta a stringere un accordo con un agente dei Servizi Segreti Britannici..."
             }
         ],
-        "aggiornato": "10:20"
+        "aggiornato": "14:55"
     },
     {
         "canale": "Rai 5",
@@ -608,8 +608,8 @@
             },
             {
                 "ora": "13:34",
-                "titolo": "GLI IMPERDIBILI 2026\/2027",
-                "descrizione": "MAGAZINE - Backstage, anteprime, eventi e curiosit� dentro lo schermo. E' il programma che offre informazione e approfondimento sulla programmazione dei canali che compongono il bouquet Rai.. - di F. Pennacchia 2026 ITA"
+                "titolo": "Gli Imperdibili",
+                "descrizione": "Backstage, anteprime, eventi e curiosit� dentro lo schermo. È il programma che offre informazione e approfondimento sulla programmazione dei canali che compongono il bouquet Rai."
             },
             {
                 "ora": "13:39",
@@ -657,7 +657,7 @@
                 "descrizione": "1979: i Supertramp pubblicano Breakfast In America, ed è un successo mondiale. Segue una tournée internazionale a sostegno dell'album, e l'audio di questa \"tappa\" al Pavillon di Parigi verr� pubblicato l'anno successivo, il live album \"Paris\"."
             }
         ],
-        "aggiornato": "10:20"
+        "aggiornato": "14:55"
     },
     {
         "canale": "Rete 4",
@@ -769,7 +769,7 @@
                 "descrizione": "Ispirato alla storia vera di Jan e Antonina Zabinski, La signora dello zoo di Varsavia è un racconto di eroismo civile in tempo di guerra, e insieme una dichiarazione d'amore per la natura e gli animali. Sul finire del 1939, le truppe naziste bombardano la capitale polacca, riducendo il famoso zoo a un cumulo di macerie. Il direttore della struttura e sua moglie (Jessica Chastain) assistono impotenti all'occupazione del Paese e alla costruzione del ghetto ebraico. Ma con l'inizio delle deportazioni, nel 1942, la coppia si mobilita per nascondere intere famiglie di Ebrei all'interno del giardino zoologico, mascherato da allevamento di maiali. La villa degli Zabinski e le vecchie gabbie ancora intatte diventano un rifugio segreto al riparo dai feroci nazisti. \"La casa sotto la folle stella\", com'era chiamato lo zoo al tempo del suo massimo splendore, viene ricordata per aver salvato circa trecento Ebrei dal genocidio."
             }
         ],
-        "aggiornato": "10:20"
+        "aggiornato": "14:55"
     },
     {
         "canale": "Canale 5",
@@ -921,7 +921,7 @@
                 "descrizione": "Le mille sfaccettature dell'uomo contemporaneo con l'obiettivo tutt'altro che scientifico: delineare i tratti distintivi dell'essere umano del nuovo millennio."
             }
         ],
-        "aggiornato": "10:20"
+        "aggiornato": "14:55"
     },
     {
         "canale": "Italia 1",
@@ -1063,7 +1063,7 @@
                 "descrizione": "Passati ben venticinque anni dalla morte del padre (vittima di uno dei più devastanti tornado della storia cui aveva sempre dato la caccia) Will è adesso un meteorologo del Governo americano. Si trova impegnato a studiare Tammy, un uragano che sta per arrivare sulle coste dell’Alabama e che si preannuncia essere il più violento nella storia degli USA. Gli abitanti per salvarsi si trovano costretti a scappare dalle loro case e cominciano ad evacuare la zona. Will, insieme a suo fratello Breeze e all’agente del Tesoro Casey si ritrovano soli in mezzo alla potente furia dell’uragano. Inoltre dovranno affrontare un gruppo di rapinatori che vuole approfittare della catastrofe e compiere il colpo del secolo."
             }
         ],
-        "aggiornato": "10:20"
+        "aggiornato": "14:55"
     },
     {
         "canale": "La7",
@@ -1140,7 +1140,7 @@
                 "descrizione": "Allegra famigliola in vacanza in Francia. Un brutto giorno la madre scompare misteriosamente e il figlio scopre che il tranquillo paparino era in realt� un agente della Cia. Finiscono tutti nella trappola ordita da un ex spia d'oltrecortina che ha qualche conto in sospeso con il rivale americano. Dopo l'iniziale sorpresa, il ragazzo collaborer� con il padre per salvare la mamma in pericolo."
             }
         ],
-        "aggiornato": "10:20"
+        "aggiornato": "14:55"
     },
     {
         "canale": "TV8",
@@ -1267,7 +1267,7 @@
                 "descrizione": "I palinsesti sono in via di definizione da parte emittente"
             }
         ],
-        "aggiornato": "10:20"
+        "aggiornato": "14:55"
     },
     {
         "canale": "Nove",
@@ -1275,76 +1275,71 @@
         "programmi": [
             {
                 "ora": "06:00",
-                "titolo": "Come fanno gli animali",
-                "descrizione": "Gli esperti analizzano perche' le formiche non affogano. Inoltre, perche' i picchi non hanno mal di testa? E come fa un enorme polipo a fuggire da un buco largo solo pochi centimetri?"
+                "titolo": "Indocina da scoprire",
+                "descrizione": "Esploriamo la Cambogia, una delle aree piu' ricche di biodiversita' del sud-est asiatico. La fauna e il clima sono regolati dall'impatto del ciclo annuale dei monsoni."
             },
             {
-                "ora": "06:30",
+                "ora": "06:55",
                 "titolo": "La grande barriera corallina - Il miracolo della natura",
                 "descrizione": "Un gruppo di esperti esplora la grande barriera corallina, una delle meraviglie del nostro pianeta che corre un grande rischio."
             },
             {
-                "ora": "07:30",
+                "ora": "07:55",
                 "titolo": "La grande barriera corallina - Il miracolo della natura",
                 "descrizione": "Un gruppo di esperti esplora la grande barriera corallina, una delle meraviglie del nostro pianeta che corre un grande rischio."
             },
             {
-                "ora": "08:30",
-                "titolo": "La grande barriera corallina - Il miracolo della natura",
-                "descrizione": "Un gruppo di esperti esplora la grande barriera corallina, una delle meraviglie del nostro pianeta che corre un grande rischio."
-            },
-            {
-                "ora": "09:30",
+                "ora": "09:05",
                 "titolo": "La magia della natura: Brasile",
                 "descrizione": "Raccontiamo la vita di un insieme eccezionale di animali immersi in condizioni climatiche estreme tra le vaste inondazioni della stagione umida e i fuochi devastanti della stagione secca in Brasile."
             },
             {
-                "ora": "10:30",
+                "ora": "10:00",
                 "titolo": "La magia della natura: Brasile",
                 "descrizione": "Raccontiamo la vita di un insieme eccezionale di animali immersi in condizioni climatiche estreme tra le vaste inondazioni della stagione umida e i fuochi devastanti della stagione secca in Brasile."
             },
             {
-                "ora": "11:30",
+                "ora": "11:05",
                 "titolo": "La magia della natura: Brasile",
                 "descrizione": "Raccontiamo la vita di un insieme eccezionale di animali immersi in condizioni climatiche estreme tra le vaste inondazioni della stagione umida e i fuochi devastanti della stagione secca in Brasile."
             },
             {
-                "ora": "12:35",
+                "ora": "12:05",
                 "titolo": "Cash or Trash - Chi offre di piu'?",
                 "descrizione": "Kartell, orologi, telefoni Ferrari e piatti Fornasetti compongono una puntata elegante. I mercanti si muovono tra design e cultura pop."
             },
             {
-                "ora": "13:50",
+                "ora": "13:30",
                 "titolo": "The Cage - Prendi e scappa",
                 "descrizione": "Due coppie di concorrenti si sfidano in una gara a tempo per aggiudicarsi i premi di diverso valore racchiusi dentro una enorme gabbia trasparente. Conduce Amadeus con Giulia Salemi."
             },
             {
-                "ora": "14:55",
+                "ora": "14:35",
                 "titolo": "The Cage - Prendi e scappa",
                 "descrizione": "Due coppie di concorrenti si sfidano in una gara a tempo per aggiudicarsi i premi di diverso valore racchiusi dentro una enorme gabbia trasparente. Conduce Amadeus con Giulia Salemi."
             },
             {
-                "ora": "16:00",
+                "ora": "15:40",
                 "titolo": "La Corrida",
                 "descrizione": "Amadeus conduce La Corrida. I dilettanti allo sbaraglio si esibiscono giudicati dal pubblico in studio."
             },
             {
-                "ora": "19:15",
+                "ora": "19:00",
                 "titolo": "Little Big Italy",
                 "descrizione": "Francesco Panella scopre i migliori ristoranti italiani all'estero."
             },
             {
-                "ora": "20:45",
+                "ora": "20:50",
                 "titolo": "Cash or Trash - La notte dei tesori",
                 "descrizione": "Un'atmosfera misteriosa avvolge questa puntata speciale. Tra venditori vip e oggetti tenebrosi, i mercanti dovranno affidarsi al loro sesto senso per aggiudicarsi tesori carichi di fascino e mistero."
             },
             {
-                "ora": "22:45",
+                "ora": "22:40",
                 "titolo": "Il delitto di Avetrana",
                 "descrizione": "Avetrana, Agosto 2010: Sarah Scazzi viene trovata senza vita. Attraverso testimonianze inedite, intercettazioni e verbali, ripercorriamo zone d'ombra e punti irrisolti della vicenda."
             }
         ],
-        "aggiornato": "10:20"
+        "aggiornato": "14:55"
     },
     {
         "canale": "20 Mediaset",
@@ -1456,7 +1451,7 @@
                 "descrizione": "Gerry Lane è in auto con la sua famiglia, nel traffico di Philadelphia, quando scoppia il caos. Orde di persone infette da un male sconosciuto si avventano su chiunque altro, contagiandolo in pochi secondi. Ex impiegato delle Nazioni Unite ritiratosi a vita privata, Lane accetta di tornare in servizio pur di mettere in salvo la propria famiglia su una nave del governo. Parte dunque alla ricerca del luogo del primo contagio, di scorta ad un promettente immunologo, nella speranza di isolare il virus e poter apprestare un vaccino."
             }
         ],
-        "aggiornato": "10:20"
+        "aggiornato": "14:55"
     },
     {
         "canale": "Twentyseven",
@@ -1558,7 +1553,7 @@
                 "descrizione": "Frank Slade, colonello in pensione, diventato cieco a causa di un incidente, si reca a New York per la festa del ringraziamento, deciso a trascorrere un week-end indimenticabile senza farsi mancare assolutamente nulla. In questa avventura lo accompagna Charlie, uno studente, il rapporto sar� difficile, divertente ed allo stesso tempo tragico, perchè il colonello ha deciso che quello sar� il suo ultimo week-end."
             }
         ],
-        "aggiornato": "10:20"
+        "aggiornato": "14:56"
     },
     {
         "canale": "IRIS",
@@ -1615,7 +1610,7 @@
                 "descrizione": "Il giovane Anthony Soprano cresce in una delle epoche più tumultuose della storia di Newark, e diventa un uomo proprio mentre gangster rivali iniziano a insorgere e a sfidare l’onnipotente famiglia criminale DiMeo sulla citt� sempre più lacerata dal conflitto razziale. Dickie Moltisanti, lo zio che Anthony idolatra, è profondamente coinvolto dai tempi che cambiano e lotta per gestire le sue responsabilit� , sia professionali che personali. La sua influenza sul nipote contribuir� a trasformare l’adolescente impressionabile nell’onnipotente boss mafioso che anni dopo arriveremo a conoscere: Tony Soprano."
             }
         ],
-        "aggiornato": "10:20"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Rai Movie",
@@ -1647,12 +1642,12 @@
                 "descrizione": "Backstage, anteprime, eventi e curiosit� dentro lo schermo. È il programma che offre informazione e approfondimento sulla programmazione dei canali che compongono il bouquet Rai."
             },
             {
-                "ora": "12:55",
+                "ora": "12:52",
                 "titolo": "The Wolf of Wall Street",
                 "descrizione": "Basato su una storia vera, The Wolf of Wall Street segue l’impressionante ascesa e la caduta di Jordan Belfort (interpretato dal tre volte candidato all’Academy Award® Leonardo DiCaprio), il broker di New York che conquista una fortuna incredibile truffando milioni di investitori. Il film segue la folle cavalcata di Belfort, un giovane “nuovo arrivato” a Wall Street che si trasforma via via in un corrotto manipolatore dei mercati e in un cowboy della Borsa. Avendo conquistato rapidamente una ricchezza enorme, Jordan la utilizza per comprarsi un’infinita gamma di afrodisiaci: donne, cocaina, automobili, la moglie supermodella e una vita leggendaria fatta di aspirazioni e acquisti senza limiti. Ma mentre la societ� di Belfort, la Stratton Oakmont, è sulla cresta dell’onda e sguazza nella gratificazione edonistica più estrema, la SEC e l’FBI tengono d’occhio il suo impero contrassegnato dagli eccessi."
             },
             {
-                "ora": "15:55",
+                "ora": "15:58",
                 "titolo": "Mother's day",
                 "descrizione": "Diverse storie con protagoniste madri e padri differenti si intrecciano durante il giorno della Festa della Mamma. Miranda, una conduttrice televisiva, ha scelto la carriera sacrificando la vita privata e la maternit� . Sandy è invece una mamma single, il cui ex marito ha sposato da poco una donna molto più giovane. Bradley sta crescendo da solo una figlia adolescente ma ciò per lui comporta talvolta dei grandi imbarazzi. Jesse, infine, sembra avere qualche problema con la madre che non accetta il passare degli anni, mentre Kristin è stata adottata e non ha mai conosciuto la madre biologica."
             },
@@ -1662,12 +1657,12 @@
                 "descrizione": "Walter Gulick inizia come sparring partner nella palestra di Willy Grogan. Ma è così bravo che comincia anche a disputare degli incontri e a vincerli. Poi s’innamora di lui Rose, la sorella di Willy, e lui decide di smettere. C’è ancora un match da fare e Willy vuole convincerlo a perdere…"
             },
             {
-                "ora": "19:30",
+                "ora": "19:33",
                 "titolo": "Chloe - Tra seduzione e inganno",
                 "descrizione": "Catherine, medico, e David, professore di musica, sono una bella coppia con un figlio di 17 anni, Michael: una famiglia che ha tutto, ma è stata spesso messa a dura prova dalle carriere e dall'educazione del figlio. Il giorno del compleanno di David, Catherine gli organizza una festa a sorpresa, ma l'uomo perde il volo da New York per tornare a casa e non arriva in tempo alla sua festa. Lei è costretta a mandare giù il boccone e qualsiasi sospetto, e tornare dai suoi ospiti... L'indomani mattina, quando scopre un sms mandato da una delle studentesse al telefono di David i suoi timori aumentano. Due settimane dopo la festa a sorpresa, Catherine e David sono a cena con amici. La donna si alza per andare in bagno e fa conoscenza con una donna giovane e molto sexy, Chloe..."
             },
             {
-                "ora": "21:10",
+                "ora": "21:08",
                 "titolo": "La terra promessa (1935)",
                 "descrizione": "Nel 1755, lo squattrinato capitano Ludvig Kahlen parte alla conquista delle aspre e desolate lande danesi con un obiettivo apparentemente impossibile: costruire una colonia in nome del Re. In cambio, riceverà per sé un titolo reale disperatamente desiderato. Ma l’unico sovrano della zona, lo spietato Frederik de Schinkel, ha la presuntuosa certezza che questa terra gli appartenga. Quando De Schinkel viene a sapere che la cameriera Ann Barbara e il marito servitore sono fuggiti per rifugiarsi da Kahlen, il privilegiato e perfido sovrano giura vendetta, facendo tutto ciò che è in suo potere per scoraggiare il capitano. Kahlen non si lascerà intimidire e ingaggerà una battaglia impari, rischiando non solo la sua vita, ma anche quella della famiglia di emarginati che si è venuta a formare intorno a lui."
             },
@@ -1682,7 +1677,7 @@
                 "descrizione": "Due fratelli orgogliosi e lontani, un’eredit� contesa e un passato che torna a bussare alla porta. Quando viene a sapere della morte di suo padre, con cui non ha rapporti da tanti anni, Salvo (Aldo Baglio) si imbarca in un viaggio nella natia Sicilia. L’obiettivo è convincere suo fratello Lillo a vendere il casale di famiglia per salvare la sua pizzeria sull’orlo del fallimento (un segreto che ha tenuto nascosto perfino a sua moglie e ai suoi figli). Ma il compito sar� tutt’altro che facile, e Salvo sar� costretto a fare i conti con tutte le sue scelte. Una commedia agrodolce sui rapporti familiari e su come non si finisca mai di crescere, anche a cinquant’anni."
             }
         ],
-        "aggiornato": "10:20"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Rai Premium",
@@ -1764,7 +1759,7 @@
                 "descrizione": "Laura Ruggiero ha una vita apparentemente tranquilla fino a quando non arriva la notizia della morte di suo marito Renato in un incendio. Da quel momento, si vede costretta a reinventare la sua esistenza e quella della sua famiglia, avviando una nuova impresa lavorativa tutta al femminile. Laura però porta dentro di sé anche un segreto che ha tenuto nascosto con tenacia e che, però, non smette di farla soffrire."
             }
         ],
-        "aggiornato": "10:20"
+        "aggiornato": "14:56"
     },
     {
         "canale": "La 5",
@@ -1856,7 +1851,7 @@
                 "descrizione": "Toula Portokalos e Ian Miller tremano all'idea che la loro adorata figlia adolescente, Paris, possa lasciare Chicago per frequentare l'universit� altrove. Mentre sperano che la loro piccola famiglia possa rimanere unita il più a lungo possibile, replicando senza volerlo i costumi della scomoda tribù d'origine di Toula, usa a presenziare in massa ogni piccolo evento e a discutere in gruppo ogni accadimento privato, una nuova urgenza si apre proprio sul fronte di mamma e pap� Portokalos. Sembra, infatti, che Maria e Kostas non risultino legalmente sposati e Maria, stanca di decenni di bisticci, considera l'ipotesi di cogliere al balzo l'occasione."
             }
         ],
-        "aggiornato": "10:20"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Real Time",
@@ -1868,47 +1863,47 @@
                 "descrizione": "Con nuovi protocolli di sicurezza per il COVID-19, la dottoressa Lee riapre il suo studio. Tra i pazienti c'e' Monica che ha un'enorme voglia sul viso."
             },
             {
-                "ora": "07:00",
+                "ora": "06:50",
                 "titolo": "Dr. Pimple Popper: la dottoressa schiacciabrufoli",
                 "descrizione": "La dottoressa si occupa di Reginald, che ha una rara protuberanza sulla schiena. Che'Re ha un bozzolo sul volto e Juan ha dolorosi foruncoli sul collo."
             },
             {
-                "ora": "08:00",
+                "ora": "07:40",
                 "titolo": "Sepolti in casa",
                 "descrizione": "La leader di una rock band, Kelly Jay ha accumulato un sacco di roba raccolta durante i suoi viaggi. Ora la donna deve scegliere fra i suoi oggetti e le persone che ama."
             },
             {
-                "ora": "09:00",
+                "ora": "08:40",
                 "titolo": "Sepolti in casa",
                 "descrizione": "L'ossessione di Ronda per l'accumulo le e' costata l'allontanamento dei figli mentre Bennie non riesce ad arrivare al letto ne' al divano a causa dell'assurdo mucchio di spazzatura."
             },
             {
-                "ora": "09:55",
+                "ora": "09:35",
                 "titolo": "Primo appuntamento",
                 "descrizione": "Con una nuova location torna il dating show condotto da Flavio Montrucchio."
             },
             {
-                "ora": "11:25",
+                "ora": "11:10",
                 "titolo": "Matrimonio a prima vista Italia",
-                "descrizione": "Nuovi single guidati da esperti cercano l'amore della loro vita."
+                "descrizione": "Inizia una nuova edizione di Matrimonio a Prima Vista, ecco i protagonisti!"
             },
             {
-                "ora": "12:55",
+                "ora": "12:40",
                 "titolo": "Matrimonio a prima vista Italia",
-                "descrizione": "Nuovi single guidati da esperti cercano l'amore della loro vita."
+                "descrizione": "Tra emozioni, nozze e viaggi, inizia l'esperimento d'amore delle coppie."
             },
             {
-                "ora": "14:25",
+                "ora": "14:00",
                 "titolo": "Cortesie per gli ospiti",
                 "descrizione": "In questa puntata partenopea i giudici saranno ospiti in due dimore davvero d'eccezione."
             },
             {
-                "ora": "15:30",
+                "ora": "15:10",
                 "titolo": "Cortesie per gli ospiti",
                 "descrizione": "Oggi si sfideranno una coppia amante delle cene a tema e due affiatatissime amiche."
             },
             {
-                "ora": "16:30",
+                "ora": "16:25",
                 "titolo": "Casa a prima vista",
                 "descrizione": "Chi tra Ida, Edoardo e Mariana trovera' la casa perfetta per Amanda e Michelangelo?"
             },
@@ -1928,17 +1923,17 @@
                 "descrizione": "Brenda Lodigiani accoglie nuovi pasticceri amatoriali sotto il tendone di Bake Off Italia!"
             },
             {
-                "ora": "21:40",
+                "ora": "21:50",
                 "titolo": "Vite al limite",
                 "descrizione": "Liz e' costretta a stare a letto a causa di un grave linfedema che non le permette di camminare. Isolata e senza amici, e' depressa e vive con sua madre che e' troppo malata per prendersi cura di lei."
             },
             {
-                "ora": "23:30",
+                "ora": "23:50",
                 "titolo": "Vite al limite",
                 "descrizione": "Geno e' stato cresciuto con grande affetto, ma ora vive con sua madre ed e' ossessionato dal cibo. Lui e suo cugino intraprendono un percorso per perdere peso."
             }
         ],
-        "aggiornato": "10:20"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Food Network",
@@ -1946,146 +1941,131 @@
         "programmi": [
             {
                 "ora": "06:00",
-                "titolo": "Fatto in casa per voi",
-                "descrizione": "Benedetta prepara 3 piatti per quei giorni in cui ha bisogno del 'comfort food': pizza rustica prosciutto cotto e formaggio, riso al latte in forno, torta versata cocco e cioccolato."
+                "titolo": "Spie al ristorante",
+                "descrizione": "Un calo delle vendite preoccupa molto Jimmy, proprietario del ristorante Rockabillies di Arvada, soprattutto durante la mostra estiva di auto d'epoca. C'entra forse il suo staff?"
             },
             {
-                "ora": "06:30",
-                "titolo": "Fatto in casa per voi",
-                "descrizione": "Benedetta prepara tre ricette che ha scoperto nei suoi viaggi all'Estero."
+                "ora": "06:25",
+                "titolo": "Puglia on the Road",
+                "descrizione": "Mary e Pino sono a Trani, pronti ad esplorare il perfetto equilibrio tra tradizione ed innovazione."
             },
             {
-                "ora": "07:05",
-                "titolo": "Fatto in casa per voi",
-                "descrizione": "In questa puntata Benedetta preparera' 3 piatti a base di patate: sbriciolata di patate, pasta e patate, torta dolce."
-            },
-            {
-                "ora": "07:35",
-                "titolo": "Fatto in casa per voi",
-                "descrizione": "Benedetta propone tre golose ricette per una romantica cena in riva al mare: pasta al pesto di sedano; polpette e zucchine fritte; coppettine di crema chantilly."
+                "ora": "07:20",
+                "titolo": "Puglia on the Road",
+                "descrizione": "Mary e Pino celebrano con gusto ed ironia una citta' dove cultura, musica e pasticciotti si fondono in un'esperienza irresistibile."
             },
             {
                 "ora": "08:10",
-                "titolo": "Fatto in casa per voi",
-                "descrizione": "Benedetta ci propone alcune ricette per utilizzare cio' che resta delle feste natalizie: pasta con ragu' di cotechino; pizza rustica con salmone; torta col panettone."
+                "titolo": "Puglia on the Road",
+                "descrizione": "Mary e Pino ci portano nel cuore di Bari, tra vicoli storici ed i segreti delle iconiche orecchiette fatte a mano."
             },
             {
-                "ora": "08:40",
-                "titolo": "Fatto in casa per voi",
-                "descrizione": "Benedetta Rossi e' pronta a deliziarci con due semplici e genuine: risotto alla zucca, pane alla zucca. In piu', un regalo per i bambini ad Halloween: le zucche di stoffa."
+                "ora": "09:00",
+                "titolo": "Puglia on the Road",
+                "descrizione": "Mary e Pino raccontano con gusto ed ironia le tradizioni piu' autentiche della Valle d'Itria."
             },
             {
-                "ora": "09:15",
-                "titolo": "Fatto in casa per voi",
-                "descrizione": "Benedetta propone delle ricette al vapore, leggere e gustose: insalata di merluzzo e patate; cipolle ripiene; dolcetti al vapore."
+                "ora": "09:55",
+                "titolo": "Puglia on the Road",
+                "descrizione": "Mary e Pino si innamorano delle canzoni di Domenico Modugno, tra scorci mozzafiato ed irresistibili panini col polpo vista mare."
             },
             {
-                "ora": "09:50",
-                "titolo": "Fatto in casa per voi",
-                "descrizione": "Benedetta mostra come riutilizzare con un po' di creativita' gli avanzi di tre piatti gia' preparati."
+                "ora": "10:55",
+                "titolo": "Puglia on the Road",
+                "descrizione": "Mary e Pino si lasciano incantare da tramonti mozzafiato e sapori genuini, raccontando la magia della citta' bianca."
             },
             {
-                "ora": "10:25",
+                "ora": "11:50",
                 "titolo": "Fatto in casa per voi",
-                "descrizione": "Benedetta prepara 3 ricette pratiche e gustose da portare con se' in una gita in bicicletta: frittata di spaghetti, cordon bleu di melanzane e zucchine, muffin al pistacchio."
+                "descrizione": "Protagoniste delle tre ricette proposte oggi da Benedetta sono... le uova!"
             },
             {
-                "ora": "11:00",
-                "titolo": "Fatto in casa per voi",
-                "descrizione": "In questa puntata il menu' proposto da Benedetta sara' a tema floreale."
-            },
-            {
-                "ora": "11:35",
-                "titolo": "Fatto in casa per voi",
-                "descrizione": "Benedetta usa il miele per preparare tre ricette semplici e golosissime."
-            },
-            {
-                "ora": "12:10",
-                "titolo": "Fatto in casa per voi",
-                "descrizione": "Benedetta ripensa a un weekend passato in Umbria e prepara tre ricette di quella regione."
-            },
-            {
-                "ora": "12:45",
+                "ora": "12:30",
                 "titolo": "Fatto in casa per voi",
                 "descrizione": "Benedetta Rossi e' pronta a deliziarci con tre ricette semplici e genuine ideali per la festa della mamma."
             },
             {
-                "ora": "13:20",
+                "ora": "13:10",
                 "titolo": "Fatto in casa per voi",
                 "descrizione": "Timballo, pasticcio e Sacher: Benedetta prepara tre ricette super golose."
             },
             {
-                "ora": "13:55",
+                "ora": "13:40",
                 "titolo": "Fatto in casa per voi",
                 "descrizione": "Benedetta Rossi e' pronta a deliziarci con tre ricette semplici e genuine: ciambella salsiccia e funghi, frittelle veloci abruzzesi, popcorn in tre versioni."
             },
             {
-                "ora": "14:30",
+                "ora": "14:10",
                 "titolo": "Fatto in casa per voi",
                 "descrizione": "Benedetta prepara la pasta fresca: 2 primi gustosi e un dolce sorprendente."
             },
             {
-                "ora": "15:05",
+                "ora": "14:55",
                 "titolo": "Fatto in casa per voi",
                 "descrizione": "Benedetta propone tre piatti 'sostanziosi' a base di polenta e patate."
             },
             {
-                "ora": "15:40",
+                "ora": "15:30",
                 "titolo": "Ci vediamo al bar. Sapori di Sicilia in sfida",
-                "descrizione": "Sfida all'ultimo cannolo tra Palermo e Piana degli Albanesi."
+                "descrizione": "A Salina, Giusina e Paolo inaugurano il viaggio tra i bar del messinese con una sfida dedicata alle eccellenze della pasticceria eoliana."
             },
             {
-                "ora": "16:40",
-                "titolo": "Giusina in cucina - Gusto e tradizione palermitana",
-                "descrizione": "In questa puntata, Giusina prepara tre ricette della tradizione palermitana: bucatini con le sarde a mare, le sarde a beccafico e la crostata al gelo d'anguria."
+                "ora": "16:30",
+                "titolo": "Giusina in cucina - La Sicilia a tavola",
+                "descrizione": "Giusina ci accompagna tra le province di Messina e Agrigento. Prepara: la focaccia messinese, lo sformato di broccoli e le Minni di Virgini, un dolce tipico di Sambuca di Sicilia."
             },
             {
-                "ora": "17:15",
-                "titolo": "Giusina in cucina - Gusto e tradizione palermitana",
-                "descrizione": "Giusina prepara tre ricette della tradizione palermitana: la rosticceria con calzoni, pizzette, rollo' con wurstel, rollo' con besciamella, pane fritto dolce e Iris con ricotta."
+                "ora": "17:10",
+                "titolo": "Giusina in cucina - La Sicilia a tavola",
+                "descrizione": "Viaggiando fra Trapani e Catania, Giusina prepara: il pane cunzato farcito con pomodori, origano e acciughe; le crespelle catanesi e una merenda deliziosa, i biscotti ca liffia."
             },
             {
-                "ora": "17:55",
-                "titolo": "La cucina di Angelica - e' na felicita'",
-                "descrizione": "Angelica ci propone Spaghetti Pan Grattato, Acciughe e Pomodori Secchi e in compagnia di Vito le Polpette al Limone."
+                "ora": "17:45",
+                "titolo": "I segreti di Nonna Pina",
+                "descrizione": "Nonna Pina in cucina: spaghetti alla trappitara e carciofi del contadino."
             },
             {
-                "ora": "18:30",
-                "titolo": "La cucina di Angelica - e' na felicita'",
-                "descrizione": "Angelica ci propone la sua Minestra Maritata e le Polpette di Melanzane fatte insieme a Vito."
+                "ora": "18:20",
+                "titolo": "I segreti di Nonna Pina",
+                "descrizione": "Nonna Pina in cucina: spaghetti alla trappitara e carciofi del contadino."
             },
             {
-                "ora": "19:05",
-                "titolo": "La cucina di Angelica - e' na felicita'",
-                "descrizione": "Angelica ci propone Le Salsicce e patate in padella e gli Spiedini alla napoletana."
+                "ora": "19:00",
+                "titolo": "I segreti di Nonna Pina",
+                "descrizione": "In tavola oggi patate al cestello e riso in forma."
             },
             {
                 "ora": "19:35",
-                "titolo": "La cucina di Angelica - e' na felicita'",
-                "descrizione": "Angelica prepara le Linguine Zucchine, Totani e Provola e in compagnia di Vito la Calamarata."
+                "titolo": "I segreti di Nonna Pina",
+                "descrizione": "Nonna Pina e Vincenzo ai fornelli: frittatine di zucchine e sapienze."
             },
             {
-                "ora": "20:10",
-                "titolo": "'O mare mio",
-                "descrizione": "Antonino Cannavacciuolo costeggia l'Italia a bordo di un peschereccio: oggi e' a Muggia, in Friuli Venezia Giulia. Tra risate e sonore \"pacche\", i cuochi del paese si sfidano nel tipico piatto locale."
+                "ora": "20:15",
+                "titolo": "I segreti di Nonna Pina",
+                "descrizione": "Spazio alle frittelle di nonna Pina e al timballo di carciofi."
             },
             {
-                "ora": "21:10",
-                "titolo": "'O mare mio",
-                "descrizione": "Lo chef Antonino Cannavacciuolo costeggia l'Italia a bordo di un peschereccio: oggi e' a Porticello, in Sicilia. Tra risate e sonore \"pacche\", i cuochi del paese si sfidano nel tipico piatto locale, la caponata di caponi."
+                "ora": "20:50",
+                "titolo": "I segreti di Nonna Pina",
+                "descrizione": "Nonna Pina porta in tavola i taralli e la pasta con i carciofi."
             },
             {
-                "ora": "22:10",
+                "ora": "21:25",
+                "titolo": "I segreti di Nonna Pina",
+                "descrizione": "Dalla tradizione: pasta alla tranese e melanzane alla parmigiana."
+            },
+            {
+                "ora": "22:00",
                 "titolo": "Food Advisor",
                 "descrizione": "Milano - Hamburger - Simone Rugiati e' in viaggio per il Bel Paese alla ricerca dei migliori food advisor."
             },
             {
-                "ora": "23:15",
+                "ora": "22:55",
                 "titolo": "Food Advisor",
                 "descrizione": "Simone Rugiati e' in viaggio per il Bel Paese alla ricerca dei migliori food advisor."
             }
         ],
-        "aggiornato": "10:20"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Focus",
@@ -2202,7 +2182,7 @@
                 "descrizione": "La straordinaria resilienza della natura. Il ritorno della vita e la rinascita della biodiversita'."
             }
         ],
-        "aggiornato": "10:20"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Giallo",
@@ -2210,61 +2190,56 @@
         "programmi": [
             {
                 "ora": "06:00",
-                "titolo": "L'investigatore Wolfe",
-                "descrizione": "Una donna assume Wolfe per scoprire se effettivamente suo marito la tradisce con la sua migliore amica. Wolfe scopre che un tradimento e' in atto, ma non del tipo che pensa la moglie..."
-            },
-            {
-                "ora": "06:30",
                 "titolo": "Murder comes to town",
                 "descrizione": "Murder Comes To Town"
             },
             {
-                "ora": "07:20",
+                "ora": "06:50",
                 "titolo": "SOKO - Misteri tra le montagne",
                 "descrizione": "SOKO - Misteri tra le montagne"
             },
             {
-                "ora": "08:15",
+                "ora": "07:45",
                 "titolo": "SOKO - Misteri tra le montagne",
                 "descrizione": "SOKO - Misteri tra le montagne"
             },
             {
-                "ora": "09:10",
+                "ora": "08:40",
                 "titolo": "SOKO - Misteri tra le montagne",
                 "descrizione": "SOKO - Misteri tra le montagne"
             },
             {
-                "ora": "10:10",
+                "ora": "09:40",
                 "titolo": "SOKO - Misteri tra le montagne",
                 "descrizione": "SOKO - Misteri tra le montagne"
             },
             {
-                "ora": "11:10",
+                "ora": "10:45",
                 "titolo": "L'ispettore Barnaby",
                 "descrizione": "L'ispettore capo Tom Barnaby della polizia di Midsomer e il suo fidato sergente, Gavin Troy, , devono investigare sugli omicidi che avvengono nei villaggi dell'immaginaria contea inglese di Midsomer. Le storie sono ambientate nel presente ed hanno una struttura di \"giallo classico\", in cui l'indagine e le deduzioni prevalgono sull'azione e sulla violenza."
             },
             {
-                "ora": "13:10",
+                "ora": "12:50",
                 "titolo": "Vera",
                 "descrizione": "L'Ispettore capo Vera Stanhope (Brenda Blethyn) è una detective alla soglia della pensione della fittizia Northumberland & City Police, che indaga sui delitti che avvengono nella sua giurisdizione. Lei è appassionata del suo lavoro e, nonostante un aspetto costantemente trasandato e una personalit� irascibile, ha una mente calcolatrice e si impegna profondamente nel suo lavoro. Suoi compagni di lavoro sono i sergenti Joe Ashworth (David Leon) e Aiden Healy (Kenny Doughty)."
             },
             {
-                "ora": "15:10",
-                "titolo": "Le Indagini di Roy Grace",
+                "ora": "14:55",
+                "titolo": "Le indagini di Roy Grace",
                 "descrizione": "La storia del sovrintendente investigativo Roy Grace, che vive a Brighton, un funzionario di polizia che lavora sodo e che ha dedicato la vita al lavoro."
             },
             {
-                "ora": "17:10",
+                "ora": "16:55",
                 "titolo": "Crociera con delitto",
                 "descrizione": "Jack Grayling ha mollato tutto e ora fa il cantante in una nave da crociera. Ma in passato è stato un detective della polizia. Quando cominciano a verificarsi degli omicidi è costretto a tornare alla sua vecchia professione aiutando il Primo ufficiale della nave, Kate Woods…"
             },
             {
-                "ora": "18:10",
+                "ora": "17:55",
                 "titolo": "Crociera con delitto",
                 "descrizione": "Jack Grayling ha mollato tutto e ora fa il cantante in una nave da crociera. Ma in passato è stato un detective della polizia. Quando cominciano a verificarsi degli omicidi è costretto a tornare alla sua vecchia professione aiutando il Primo ufficiale della nave, Kate Woods…"
             },
             {
-                "ora": "19:10",
+                "ora": "19:00",
                 "titolo": "L'ispettore Barnaby",
                 "descrizione": "L'ispettore capo Tom Barnaby della polizia di Midsomer e il suo fidato sergente, Gavin Troy, , devono investigare sugli omicidi che avvengono nei villaggi dell'immaginaria contea inglese di Midsomer. Le storie sono ambientate nel presente ed hanno una struttura di \"giallo classico\", in cui l'indagine e le deduzioni prevalgono sull'azione e sulla violenza."
             },
@@ -2274,17 +2249,17 @@
                 "descrizione": "La serie Miss Fisher's Murder Mysteries si basa sui racconti dell'autrice australiana Kerry Greenwood. La nostra investigatrice si muove con disinvoltura nei vicoli e nei club di jazz della Melbourne fine anni '20, combattendo l'ingiustizia con la sua pistola dal manico di madreperla e il suo acume affilato. Lasciandosi dietro una scia di ammiratori, la nostra modernissima eroina fa in modo di godersi ogni momento della sua fortunata esistenza."
             },
             {
-                "ora": "22:15",
+                "ora": "22:25",
                 "titolo": "Miss Fisher Delitti e Misteri",
                 "descrizione": "La serie Miss Fisher's Murder Mysteries si basa sui racconti dell'autrice australiana Kerry Greenwood. La nostra investigatrice si muove con disinvoltura nei vicoli e nei club di jazz della Melbourne fine anni '20, combattendo l'ingiustizia con la sua pistola dal manico di madreperla e il suo acume affilato. Lasciandosi dietro una scia di ammiratori, la nostra modernissima eroina fa in modo di godersi ogni momento della sua fortunata esistenza."
             },
             {
-                "ora": "23:20",
+                "ora": "23:35",
                 "titolo": "La stagista del crimine",
                 "descrizione": "La stagista del crimine"
             }
         ],
-        "aggiornato": "10:20"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Boing",
@@ -2441,7 +2416,7 @@
                 "descrizione": "Gumball è un simpatico gatto blu combina-guai che ogni giorno vive straordinarie avventure assieme a Darwin - un pesce domestico munito di zampe – sconvolgendo la routine quotidiana della sua bizzarra famiglia e della scuola elementare nella citt� di Elmore."
             }
         ],
-        "aggiornato": "10:20"
+        "aggiornato": "14:56"
     },
     {
         "canale": "K2",
@@ -2598,7 +2573,7 @@
                 "descrizione": "3' Stagione Ep.3 - Le avventure di tre scoiattoli dalla voce incredibile, 'adottati' da Dave Seville, che diventano un fenomeno musicale."
             }
         ],
-        "aggiornato": "10:20"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Rai Gulp",
@@ -2755,7 +2730,7 @@
                 "descrizione": "Mentre la tensione tra Arcana e Mekan raggiunge il punto di non ritorno a causa delle numerose sconfitte subite, i Paladini devono tornare nel Deserto del Sud per liberare lo spirito corrotto del Drago prigioniero del Tempio Abbandonato. E mentre Mekan prepara la sua controffensiva, i miasmi della corruzione raggiungono anche la tranquilla Silveridhe."
             }
         ],
-        "aggiornato": "10:20"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Frisbee",
@@ -2798,8 +2773,8 @@
             },
             {
                 "ora": "08:10",
-                "titolo": "Curioso come George: caccia alla scimmia",
-                "descrizione": "Film\/Animazione - USA 2009 70' di N. Virgien. Le avventure della scimmietta George, in giro per il mondo, per aiutare un elefante a ricongiungersi con la famiglia."
+                "titolo": "Curioso come George: Caccia alla scimmia",
+                "descrizione": "George incontra Kayla, un piccolo elefante, ad uno spettacolo di magia e l'aiuta a viaggiare attraverso il paese per riunirsi con la sua famiglia. Accompagnata dal suo amico di sempre, l'Uomo dal Cappello Giallo, George viaggia a piedi, in treno e con un camion per raggiungere la famiglia di Kayla in California, per poi essere accusato di rapimento di elefante ed essere portato nuovamente a New York."
             },
             {
                 "ora": "09:40",
@@ -2912,7 +2887,7 @@
                 "descrizione": "2' Stagione Ep.2 - Gioco, avventura e amici rendono la vita di Oggy Oggy divertente! Curioso e audace, questo adorabile gattino è sempre pronto ad aiutare un amico e a vivere nuove esperienze."
             }
         ],
-        "aggiornato": "10:20"
+        "aggiornato": "14:56"
     },
     {
         "canale": "DMAX",
@@ -3029,7 +3004,7 @@
                 "descrizione": "Seguiamo le attivita' di soccorso di Helsinki."
             }
         ],
-        "aggiornato": "10:20"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Rai Sport",
@@ -3041,7 +3016,7 @@
                 "descrizione": "Finali della settima e ultima giornata di gare di nuoto in vasca agli European Aquatics Championships di Parigi."
             },
             {
-                "ora": "09:00",
+                "ora": "08:50",
                 "titolo": "Atletica: Diamond League 2026 - Finali: 1a Giornata",
                 "descrizione": "A Bruxelles va in scena la prima giornata delle finali della Diamond League 2026. Al King Baudouin Stadium i migliori atleti della stagione si sfidano per conquistare i primi Diamond Trophy e i titoli del circuito."
             },
@@ -3051,14 +3026,14 @@
                 "descrizione": "Pallacanestro, Coppa del Mondo femminile. In diretta dalla Max-Schmeling-Halle di Berlino (GER) Telecronaca Maurizio Fanelli Commento tecnico Chiara Pastore In studio a Roma Conduce Alessandro Gargiulo Commento tecnico Giulia Rulli"
             },
             {
-                "ora": "13:10",
+                "ora": "13:00",
                 "titolo": "Canottaggio: Mondiali Amsterdam 2026 - Finali: 4a Giornata",
                 "descrizione": "Il meglio del canottaggio, con gli equipaggi protagonisti nelle principali competizioni della disciplina."
             },
             {
                 "ora": "14:45",
                 "titolo": "Gli Imperdibili",
-                "descrizione": "Backstage, anteprime, eventi e curiosit� dentro lo schermo. È il programma che offre informazione e approfondimento sulla programmazione dei canali che compongono il bouquet RAI."
+                "descrizione": "Backstage, anteprime, eventi e curiosit� dentro lo schermo. È il programma che offre informazione e approfondimento sulla programmazione dei canali che compongono il bouquet Rai."
             },
             {
                 "ora": "14:50",
@@ -3066,17 +3041,12 @@
                 "descrizione": "Nella semifinale degli Europei femminili di pallavolo 2026, Turchia e Serbia si sfidano a Istanbul per conquistare l'accesso alla finale per il titolo europeo."
             },
             {
-                "ora": "17:30",
-                "titolo": "Memory",
-                "descrizione": "Memory"
-            },
-            {
                 "ora": "17:50",
-                "titolo": "Basket: Mondiali Femminili 2026 - Cechia - Italia",
-                "descrizione": "Nel Girone D della Coppa del Mondo femminile di basket 2026, l'Italia affronta la Repubblica Ceca in una sfida importante per il cammino delle azzurre nella fase a gironi."
+                "titolo": "Basket Femminile: Coppa Del Mondo German",
+                "descrizione": "Basket Femminile: Coppa del Mondo Germania 2026 girone D: Rep. Ceca - ITALIA"
             },
             {
-                "ora": "20:30",
+                "ora": "20:00",
                 "titolo": "Atletica: Diamond League 2026 - Finali: 2a Giornata",
                 "descrizione": "A Bruxelles va in scena la seconda giornata delle finali della Diamond League 2026. Al King Baudouin Stadium i migliori atleti della stagione si sfidano per conquistare i primi Diamond Trophy e i titoli del circuito."
             },
@@ -3091,7 +3061,7 @@
                 "descrizione": "A Poznan entrano nel vivo i Mondiali di canoa sprint e paracanoa 2026. Prima giornata dedicata alle finali, con i migliori equipaggi internazionali in acqua per l'assegnazione dei primi titoli iridati."
             }
         ],
-        "aggiornato": "10:20"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Sportitalia",
@@ -3183,7 +3153,7 @@
                 "descrizione": "Calcio Weekend Live"
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:56"
     },
     {
         "canale": "HGTV",
@@ -3191,66 +3161,71 @@
         "programmi": [
             {
                 "ora": "06:00",
+                "titolo": "A caccia di occasioni",
+                "descrizione": "Due squadre si sfidano in un mercatino delle pulci. Tra oggetti casalinghi, posti a sedere moderni e tanti colori, chi vincera' la sfida?"
+            },
+            {
+                "ora": "06:20",
                 "titolo": "Sogni in costruzione",
                 "descrizione": "Dave e Jenny affrontano un progetto per una famiglia che vuole commemorare i propri cari."
             },
             {
-                "ora": "07:00",
+                "ora": "07:05",
                 "titolo": "Sogni in costruzione",
                 "descrizione": "Dave e Jenny devono trasformare il seminterrato di una casa sul lago."
             },
             {
-                "ora": "08:00",
+                "ora": "07:55",
                 "titolo": "Sogni in costruzione",
                 "descrizione": "Dave e Jenny devono rendere piu' moderna una casa con un budget ristretto."
             },
             {
-                "ora": "09:00",
+                "ora": "08:55",
                 "titolo": "Sogni in costruzione",
                 "descrizione": "Alcuni imprevisti potrebbero rallentare un progetto a cui Dave e Jenny stanno lavorando."
             },
             {
-                "ora": "10:00",
+                "ora": "09:45",
                 "titolo": "Sogni in costruzione",
                 "descrizione": "Un imprevisto rischia di far saltare un progetto su una ristrutturazione."
             },
             {
-                "ora": "11:00",
+                "ora": "10:40",
                 "titolo": "Sogni in costruzione",
                 "descrizione": "Dave e Jenny aiutano una famiglia che ha avuto difficolta' di salute."
             },
             {
-                "ora": "12:00",
+                "ora": "11:35",
                 "titolo": "Sogni in costruzione",
                 "descrizione": "Dave e Jenny trasformano una vecchia casa sul lago in una struttura moderna, usando come ispirazione i meravigliosi boschi che la circondano."
             },
             {
-                "ora": "13:00",
+                "ora": "12:35",
                 "titolo": "Sogni in costruzione",
                 "descrizione": "Dave e Jenny rendono piu' moderno un vecchio ranch ispirandosi allo stile australiano e creando uno spazio per i figli della coppia di proprietari."
             },
             {
-                "ora": "14:00",
+                "ora": "13:40",
                 "titolo": "Sogni in costruzione",
                 "descrizione": "Dave e Jenny trasformano una casa costruita nei primi anni del 2000. I due creano una meravigliosa cucina con un design intelligente e ricco di stile."
             },
             {
-                "ora": "15:00",
+                "ora": "14:45",
                 "titolo": "Sogni in costruzione",
                 "descrizione": "Dave e Jenny aiutano una coppia che vuole mantenere la storia della propria abitazione ma anche rendere funzionale la struttura per tutta la famiglia."
             },
             {
-                "ora": "16:00",
+                "ora": "15:45",
                 "titolo": "Casa su misura",
                 "descrizione": "Un'artista e un atleta cercano una casa spaziosa e briosa per la loro dinamica famiglia di cinque persone. Vorrebbero tantissimo spazio per farci giocare i loro figli."
             },
             {
-                "ora": "16:55",
+                "ora": "16:45",
                 "titolo": "Casa su misura",
                 "descrizione": "I Dansby vivono a Hillsboro, ma la loro casa e' troppo piccola per i tre figli in crescita. Chip e Jo trovano tre abitazioni che potrebbero fornire lo spazio e il brio necessari."
             },
             {
-                "ora": "17:55",
+                "ora": "17:45",
                 "titolo": "Casa su misura",
                 "descrizione": "Lori e Baron, ex allievi dell'Universita' di Baylor, vivono a Houston ma vogliono acquistare una seconda casa briosa a Waco sperando che il figlio 12enne prosegua la tradizione."
             },
@@ -3260,32 +3235,32 @@
                 "descrizione": "Due ex studenti della Baylor tornano alla loro 'alma mater' per sistemarsi li' e formarsi una famiglia. Acquisteranno la loro prima casa per meno di 235.000 dollari."
             },
             {
-                "ora": "19:50",
+                "ora": "19:45",
                 "titolo": "Casa su misura",
                 "descrizione": "Una famiglia di quattro membri vorrebbe una vecchia casa a McGregor per trasformarla in una spaziosa dimora moderna, sperando che Chip e Joanna riescano ad aiutarli a trovarla."
             },
             {
-                "ora": "20:45",
+                "ora": "20:40",
                 "titolo": "Casa su misura",
                 "descrizione": "Sterling e Casey hanno ereditato un ranch di 800 ettari con una casa abbandonata da dieci anni, e sperano che Chip e Joanna possano riportarla all'antico splendore."
             },
             {
-                "ora": "21:40",
+                "ora": "21:35",
                 "titolo": "La mia casa da sogno in 100 giorni",
                 "descrizione": "Una coppia e' pronta a costruire la propria casa, ma Brian e Mika devono trovare un compromesso tra gli stili diversi della coppia per creare un posto amato da entrambi."
             },
             {
-                "ora": "22:35",
+                "ora": "22:30",
                 "titolo": "La mia casa da sogno in 100 giorni",
                 "descrizione": "Due agenti di polizia hanno vissuto in una roulotte molto stretta. Brian e Mika tentano di costruire una casa da sogno per i futuri sposi."
             },
             {
-                "ora": "23:35",
+                "ora": "23:30",
                 "titolo": "La mia casa da sogno in 100 giorni",
                 "descrizione": "Una famiglia allargata vive in una casa molto piccola. La loro lista dei desideri include: quattro camere da letto e un'enorme area in cui potersi divertire."
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:56"
     },
     {
         "canale": "RSI LA 1",
@@ -3293,12 +3268,12 @@
         "programmi": [
             {
                 "ora": "06:20",
-                "titolo": "Il Quotidiano",
+                "titolo": "Il Quotidiano (R)",
                 "descrizione": "Attualit� della Svizzera italiana"
             },
             {
                 "ora": "07:00",
-                "titolo": "Siamo tutti fuori",
+                "titolo": "Siamo tutti fuori (R)",
                 "descrizione": "in diretta con Carlotta Gallino, Davide Riva e Christian Frapolli"
             },
             {
@@ -3393,7 +3368,7 @@
             },
             {
                 "ora": "12:55",
-                "titolo": "Falò",
+                "titolo": "Falò (R)",
                 "descrizione": ""
             },
             {
@@ -3403,12 +3378,12 @@
             },
             {
                 "ora": "14:30",
-                "titolo": "Tandem - L'ultima giostra",
-                "descrizione": "Il comandante Léa Soler viene traferita a Montpellier, a capo di una squadra di investigatori della quale fa parte anche il suo ex marito nonché padre dei suoi due figli adolescenti."
+                "titolo": "Tandem",
+                "descrizione": "Il comandante Lea Soler viene trasferito alla squadra del capitano Paul Marchal, il suo ex marito. Saranno costretti a incontrarsi anche fuori dal lavoro perché la coppia ha due adolescenti da gestire, Alice e Thomas."
             },
             {
                 "ora": "15:25",
-                "titolo": "... e alla fine arriva Polly",
+                "titolo": "... E Alla Fine Arriva Polly",
                 "descrizione": "Reuben Feffer è un uomo mite, che non ama i rischi e gli estremi. Rimane calmo anche quando i suoi sogni di tranquillit� sono scossi dal tradimento della moglie in piena luna di miele. Ma tutto cambier� dal momento in cui si ripresenta nella sua vita la vecchia amica d'infanzia Polly."
             },
             {
@@ -3442,7 +3417,7 @@
                 "descrizione": "L’estate è una stagione che muove turisti in cerca di natura e mare, ma che intercetta sempre più anche chi si muove in cerca d’arte, a neo scopriamo il turismo d’arte, poi Umberto Boccioni, esponente del futurismo italiano, che è in mostra al MASI di Lugano. Sempre a Lugano sta per arrivare la nuova edizione di Endorfine Festival e neo suggerisce tre incontri. Infine, i videoautori nella Svizzera italiana tra storia e futuro."
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:56"
     },
     {
         "canale": "RSI LA 2",
@@ -3470,7 +3445,7 @@
             },
             {
                 "ora": "08:55",
-                "titolo": "Atletica: Diamond League 2026",
+                "titolo": "Atletica: Diamond League 2026 (R)",
                 "descrizione": "da Bruxelles (BEL)"
             },
             {
@@ -3515,11 +3490,11 @@
             },
             {
                 "ora": "22:50",
-                "titolo": "Highlander - L'ultimo immortale",
+                "titolo": "Highlander - L'Ultimo Immortale",
                 "descrizione": "L'ultima sfida tra gli immortali vede due cavalieri piombare dal Medioevo alla moderna New York per decretare chi sar� il migliore, l'ultimo immortale!"
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:56"
     },
     {
         "canale": "DAZN 1",
@@ -3591,7 +3566,7 @@
                 "descrizione": "Tarik Muharemovic - Remember the name, un format che parla dell'identita', del peso specifico, della memoria e del futuro: ospite Tarik Muharemovic, difensore del Sassuolo."
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Sky Sport 24",
@@ -3748,7 +3723,7 @@
                 "descrizione": "Le notizie e i commenti del giorno, le anteprime e l'attualita' con servizi, commenti, interviste e collegamenti."
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Sky Sport Uno",
@@ -3760,12 +3735,17 @@
                 "descrizione": "PAOLINI-CIRSTEA (Boschetto-Reggi); BUBLIK- PAUL (Lupi-Cotto); BOLELLI\/VAVASSORI-HALYS\/HERBERT (Brunelli-Cotto); S.WILLIAMS\/V.WILLIAMS-CHAN\/JOINT, SHELTON-SHAPOVALOV (Bisti-Crugnola)"
             },
             {
-                "ora": "07:00",
+                "ora": "06:00",
+                "titolo": "Programmazione da definire",
+                "descrizione": "I palinsesti sono in via di definizione da parte emittente"
+            },
+            {
+                "ora": "08:30",
                 "titolo": "Tennis Us Open The Insider 2026 Ep.6",
                 "descrizione": "05\/09\/2026 The Insider: US Open. - Le storie dello US Open raccontate con interviste e immagini dietro le quinte, con Stefano Meloccaro nel ruolo di \"insider"
             },
             {
-                "ora": "07:15",
+                "ora": "08:45",
                 "titolo": "6a giornata",
                 "descrizione": "Dall'USTA Billie Jean King National Tennis Center di New York, Stati Uniti."
             },
@@ -3795,7 +3775,7 @@
                 "descrizione": "Supercup. - Segui l'evento di Porsche Super Cup in programma."
             },
             {
-                "ora": "11:20",
+                "ora": "11:35",
                 "titolo": "Highlights Show US Open",
                 "descrizione": "Il racconto per immagini dei match piu' importanti della giornata appena conclusa agli US Open di tennis"
             },
@@ -3875,7 +3855,7 @@
                 "descrizione": "Tutto il meglio degli US Open di tennis: da un campo all'altro per non perdere nulla della giornata"
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Sky Sport Calcio",
@@ -3977,7 +3957,7 @@
                 "descrizione": "I palinsesti sono in via di definizione da parte emittente"
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Sky Sport Tennis",
@@ -3989,27 +3969,32 @@
                 "descrizione": "Dall'USTA Billie Jean King National Tennis Center di New York, Stati Uniti."
             },
             {
-                "ora": "07:00",
+                "ora": "06:00",
+                "titolo": "Programmazione da definire",
+                "descrizione": "I palinsesti sono in via di definizione da parte emittente"
+            },
+            {
+                "ora": "08:25",
                 "titolo": "Tennis Us Open The Insider 2026 Ep.6",
                 "descrizione": "05\/09\/2026 The Insider: US Open. - Le storie dello US Open raccontate con interviste e immagini dietro le quinte, con Stefano Meloccaro nel ruolo di \"insider"
             },
             {
-                "ora": "07:15",
+                "ora": "08:30",
                 "titolo": "6a giornata",
                 "descrizione": "Dall'USTA Billie Jean King National Tennis Center di New York, Stati Uniti."
             },
             {
-                "ora": "08:30",
+                "ora": "09:50",
                 "titolo": "Highlights Show US Open",
                 "descrizione": "Il racconto per immagini dei match piu' importanti della giornata appena conclusa agli US Open di tennis"
             },
             {
-                "ora": "08:45",
+                "ora": "10:05",
                 "titolo": "Tennis Us Open The Insider 2026 Ep.6",
                 "descrizione": "05\/09\/2026 The Insider: US Open. - Le storie dello US Open raccontate con interviste e immagini dietro le quinte, con Stefano Meloccaro nel ruolo di \"insider"
             },
             {
-                "ora": "09:00",
+                "ora": "10:20",
                 "titolo": "6a giornata",
                 "descrizione": "Dall'USTA Billie Jean King National Tennis Center di New York, Stati Uniti."
             },
@@ -4049,7 +4034,7 @@
                 "descrizione": "POTAPOVA-ANISIMOVA (Boschetto-Furlan); BLOCKX-COBOLLI (Boschetto-Golarsa); KHACHANOV-BONZI (Cazzaniga-Reggi); JOVIC-EALA, ZVEREV-TABILO (Ramella-Pescosolido)"
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Sky Sport F1",
@@ -4101,7 +4086,7 @@
                 "descrizione": "Supercup. - Segui l'evento di Porsche Super Cup in programma."
             },
             {
-                "ora": "11:25",
+                "ora": "11:35",
                 "titolo": "Crazy Race",
                 "descrizione": "Crazy Race"
             },
@@ -4196,7 +4181,7 @@
                 "descrizione": "La sfida per la pole nel tempio della velocita': Q1, Q2 e Q3 con l'adrenalina che sale. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero."
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Sky Sport Legend",
@@ -4283,7 +4268,7 @@
                 "descrizione": "Chiamato a rifondare il calcio azzurro, dopo la disfatta del '74, il grande vecchio compone un indimenticabile capolavoro: guidare l'Italia al suo terzo titolo mondiale."
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Sky Sport MotoGP",
@@ -4440,7 +4425,7 @@
                 "descrizione": "Nono Round della stagione 2026. Dal circuito di Magny Cours, gara 1 della World Supersport. Telecronaca Vercellesi - Temporali"
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Sky Sport Basket",
@@ -4542,7 +4527,7 @@
                 "descrizione": "Mondiali femminili FIBA 2026. - Max-Schmeling-Halle"
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Sky Sport Arena",
@@ -4624,7 +4609,7 @@
                 "descrizione": "Baseball Mlb. - Dal Citi Field di New York City, USA."
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Sky Sport Max",
@@ -4681,7 +4666,7 @@
                 "descrizione": "Tutto il meglio degli US Open di tennis: da un campo all'altro per non perdere nulla della giornata"
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Sky Sport Mix",
@@ -4758,7 +4743,7 @@
                 "descrizione": "29\/08\/2026 Motonautica On Board. - Uno sguardo sul mondo della Motonautica per svelare cio' che si cela dietro ogni scia, dalle imbarcazioni piu' veloci alle moto d'acqua. Un'opportunita' unica di conoscere da vicino i veri protagonisti: i piloti, con le loro storie e la loro passione."
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Sky Sport Golf",
@@ -4825,7 +4810,7 @@
                 "descrizione": "Golf: DP World Tour. - Dal Crans-sur-Sierre Golf Club di Crans Montana, Svizzera."
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Sky Sport 251",
@@ -4857,7 +4842,7 @@
                 "descrizione": "Cod. 414818 - Serie A - 3a giornata. Calcio d'inizio ore 20:45."
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Sky Sport 252",
@@ -4870,11 +4855,11 @@
             },
             {
                 "ora": "16:30",
-                "titolo": "Tennis Us Open",
-                "descrizione": "Tennis Grand Slam Us Open 2026 8a Giornata. Dalle ore 16:30"
+                "titolo": "7a giornata",
+                "descrizione": "7a giornata: FRITZ - CERUNDOLO, BUCSA - GAUFF (Lettieri-Arnaboldi), KHACHANOV - BONZI, BERGS - V.D.ZANDSCHULP (Cazzaniga-Reggi)"
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Sky Sport 253",
@@ -4887,11 +4872,11 @@
             },
             {
                 "ora": "16:30",
-                "titolo": "Tennis Us Open",
-                "descrizione": "Tennis Grand Slam Us Open 2026 8a Giornata. Dalle ore 16:30"
+                "titolo": "7a giornata",
+                "descrizione": "7a giornata: KEYS - Q. ZHENG (Ferreo-Rossi), SWIATEK - BOUZKOVA, ZHENG - GEA (Voria-Crugnola), STARODUBTSEVA - RYBAKINA (Nicolodi-Cotto)"
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Sky Sport 254",
@@ -4923,7 +4908,7 @@
                 "descrizione": "Cod. 416810 - Serie C - 3a giornata. Calcio d'inizio ore 21:00."
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Sky Sport 255",
@@ -4940,7 +4925,7 @@
                 "descrizione": "Cod. 416887 - Serie C - 3a giornata. Calcio d'inizio ore 21:00."
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Sky Sport 256",
@@ -4957,7 +4942,7 @@
                 "descrizione": "Cod. 416592 - Serie C - 3a giornata. Calcio d'inizio ore 21:00."
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Sky Sport 257",
@@ -4974,7 +4959,7 @@
                 "descrizione": "Cod. 416865 - Serie C - 3a giornata. Calcio d'inizio ore 21:00."
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Sky Sport 258",
@@ -4991,7 +4976,7 @@
                 "descrizione": "Calcio Premier League 3a giornata. Calcio d'inizio ore 18:30"
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Sky Sport 259",
@@ -5008,7 +4993,7 @@
                 "descrizione": "Iaaf Diamond League 2026 Brussels Day 2. Dalle ore 20:00"
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Sky Cinema Uno",
@@ -5065,7 +5050,7 @@
                 "descrizione": "Il Dio dell’Amore è un viaggio, o un’esplorazione, nelle relazioni amorose. Una storia sui destini sentimentali di alcune persone, sui loro modi di amarsi, di sfiorarsi, di entrare in contatto uno con l’altro. È un racconto corale dal tono ironico, sorridente ma anche amaro, che disegna una umanit� impelagata nel caos dei sentimenti che da sempre ci agitano e ci meravigliano. I personaggi sono tutti collegati da relazioni amorose e, se visti tutti insieme, tutti parte di un fitto disegno, una tessitura dove ognuno è un nodo, un inizio e una fine. Il loro destino è in mano al Dio dell’Amore, una creatura capricciosa e imprevedibile, a volte benevolo e mite e a volte invece agguerrito e battagliero. A condurci in questo viaggio è il poeta Ovidio, l’eterno cantore dell’amore che, al di l� di ogni sentimentalismo e di ogni morale, torna dalla Roma Imperiale direttamente nella nostra contemporaneit� per raccontarci questa storia."
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Sky Cinema Uno +24",
@@ -5122,7 +5107,7 @@
                 "descrizione": "Nella Francia di oggi, un gruppo di sconosciuti viene riunito in quanto discendente di Adèle, donna di fine ottocento che dalla Normandia era partita alla volta di Parigi in cerca della madre che l'aveva abbandonata. Dovendo ispezionare la casa in rovina di Adèle per decidere cosa fare della propriet� , gli emissari del gruppo - Guy, Céline, Seb e Abdel - mettono insieme pezzo dopo pezzo il lontano passato della loro famiglia. Parallelamente, durante la Belle Époque, Adèle si avventura nella grande citt� assieme ai nuovi amici Lucien e Anatole, scoprendo una capitale nel vortice del cambiamento, tra zone ancora rurali e i salotti della borghesia moderna, e tra le arti figurative e l'avvento della fotografia."
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Sky Cinema Due",
@@ -5179,7 +5164,7 @@
                 "descrizione": "Ingrid e Martha sono amiche da anni, e non si sono mai dette mezze verit� . Ingrid è una scrittrice di successo il cui ultimo libro racconta la sua incapacit� di capire e accettare la morte. Martha è stata una corrispondente di guerra e ora è affetta da un tumore che potrebbe essere curabile con una terapia sperimentale, ma intanto si è preparata all'idea di morire, e ha gi� scelto, nel caso, come farlo: con una pillola comprata sul dark web. Ciò che vorrebbe però è non morire sola, e poiché il suo rapporto con la figlia le appare come irrimediabilmente compromesso chiede a Ingrid di soggiornare nella stanza accanto alla sua nel momento in cui dovesse decidere di \"abbandonare il party\"."
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Sky Cinema Due +24",
@@ -5201,7 +5186,7 @@
                 "descrizione": "Il film racconta la storia di un primo amore, quello che porta Maren, una giovane donna che impara a sopravvivere ai margini della societ� , e Lee, un reietto vagabondo dall’animo combattivo, a unirsi e intraprendere un’odissea di centinaia di chilometri nell'America di Ronald Reagan, tra botole, passaggi segreti e stradine di provincia. Tuttavia, per quanto si sforzino, qualunque strada sembra riportarli al loro tremendo passato, fino al momento finale che decider� se il loro amore sia realmente in grado di sopravvivere al loro essere altro rispetto al mondo che li circonda."
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Sky Cinema Collection",
@@ -5273,7 +5258,7 @@
                 "descrizione": "L'agente speciale Ethan Hunt è alle prese con una crisi internazionale di proporzioni gigantesche. Al fianco il genio dell'informatica Luther Stickell Ving Rhames e una bellissima ladra Thandie Newton nel cuore, Hunt attraversa l'Australia e la Spagna in una missione che sembra proprio essere impossibile: fermare un gruppo di terroristi tedeschi prima che riescano a mettere in atto il loro piano distruttivo: ossia il rilascio del virus \"Chimera\"."
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Sky Cinema Family",
@@ -5340,7 +5325,7 @@
                 "descrizione": "Nato con un'anomalia facciale che non gli ha mai consentito di frequentare una scuola normale, Auggie Pullman diventa il più improbabile degli eroi quando viene ammesso all'ultimo anno delle elementari. Mentre la sua famiglia, i suoi nuovi compagni di classe e tutta la comunit� lotta per scoprire la propria compassione e accettazione, la straordinaria storia di Auggie unir� tutti quanti e dimostrer� che non occorre nascondersi quando si è nati per differenziarsi dagli altri."
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Sky Cinema Action",
@@ -5397,7 +5382,7 @@
                 "descrizione": "Lo studente universitario Mitch Rapp è un giovane e promettente atleta. Quando la fidanzata perde la vita durante un attacco terroristico Mitch, sconvolto, decide che il suo unico scopo sar� vendicarsi. Assoldato prima clandestinamente e poi ufficialmente, inizia un duro allenamento in una sezione speciale della CIA per portare a termine il suo sanguinoso progetto sottoponendosi per mesi a incredibili sforzi fisici e dure prove psicologiche. Fino al giorno in cui il veterano della Guerra Fredda Stan Hurley lo arruola per un'operazione segreta, con l'obiettivo di indagare su una serie di attacchi previsti in Medio Oriente. Il giovane Mitch, ossessionato dal rancore e dal desiderio di vendetta, accetta il pericoloso incarico e sulle tracce di un agente turco entra nella più grande polveriera d'Europa."
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Sky Cinema Suspense",
@@ -5454,7 +5439,7 @@
                 "descrizione": "Un innocente incidente quotidiano si trasforma rapidamente in un incubo quando una donna suona il clacson nel momento sbagliato al tipo sbagliato. L'espressione \"rabbia al volante\" non rende l'idea di ciò che lo sconosciuto far� a lei e a tutti quelli che incontra."
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Sky Cinema Romance",
@@ -5511,7 +5496,7 @@
                 "descrizione": "Holly (alias Holiday Golightly) è una giovanissima ragazza di grande fascino e spontaneit� che per vivere fa la prostituta d'alto bordo e chiama le sue prestazioni \"fare la toletta\". Questa sua attivit� le permette una vita mondana e la frequentazione dell'alta societ� , e per risolvere definitivamente i suoi numerosi problemi economici è decisa a rinunciare all'amore (o almeno a viverne uno fittizio) sposando un uomo ricco, che la renda soprattutto felice materialmente regalandole gioielli dell'amato negozio Tiffany."
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Sky Cinema Drama",
@@ -5568,7 +5553,7 @@
                 "descrizione": "E' il racconto che Paul Edgecomb fa all'amica Elaine Connelly in una casa di riposo. Sono passati circa sessanta anni da quando lavorava come capo delle guardie del braccio della morte nel penitenziario di Could Mountain. Durante la grande depressione, nel carcere del sud degli Usa, Edgecomb si occupava di quattro assassini che attendevano di compiere la loro ultima passeggiata lungo il 'Miglio verde', il corridoio rivestito di linoleum verde che li avrebbe condotti nella stanza della sedia elettrica. Fra questi c'era anche John Coffrey, un ragazzone nero condannato per l'omicidio di due gemelline di nove anni. Nonostante avesse le dimensioni e la forza per uccidere chiunque, Coffrey aveva un carattere semplice e ingenuo: era davvero lui il colpevole?"
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Sky Cinema Comedy",
@@ -5630,7 +5615,7 @@
                 "descrizione": "Sul punto di perdere la casa della sua infanzia, Maddie scopre un intrigante annuncio di lavoro: ricchi proprietari di elicotteri cercano qualcuno con cui far \"frequentare\" il loro introverso figlio di diciannove anni, Percy, prima che parta per il college. Con sua grande sorpresa, Maddie scoprir� presto che con l'impacciato Percy non sar� un’impresa facile."
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Sky Uno",
@@ -5712,7 +5697,7 @@
                 "descrizione": "Entra nell'esclusivo backstage di #XF2026: scopri la nuova squadra all'opera, l'esordio di Irama e le emozioni di un cast gi� molto affiatato."
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Sky Atlantic",
@@ -5844,7 +5829,7 @@
                 "descrizione": "Twisted Metal è una action comedy basata su un'idea originale di Rhett Reese e Paul Wernick (Deadpool, Zombieland) e scritta da Michael Jonathan Smith (Cobra Kai), che racconta di un outsider chiacchierone a cui viene offerta la possibilit� di una vita migliore, ma solo se riesce a consegnare con successo un pacchetto misterioso attraverso un deserto post-apocalittico."
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Sky Serie",
@@ -5971,7 +5956,7 @@
                 "descrizione": "L'avvocato e alcolizzata in via di guarigione Abigail Bianchi sta lottando per rimettere insieme la sua carriera e la sua famiglia dopo aver toccato il fondo. Come condizione per la sua libert� vigilata, Abby è costretta a lavorare presso lo studio del padre separato, Svensson and Associates, e ad esercitarsi nel diritto di famiglia per la prima volta stringendo nuove relazioni con il fratellastro e la sorellastra che non ha mai incontrato. Il risultato è uno studio legale di famiglia disfunzionale che opera per aiutare altre famiglie con le proprie disfunzioni."
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Sky Investigation",
@@ -6083,7 +6068,7 @@
                 "descrizione": "Mickey Fox indaga su attivit� criminali e pattuglia le strade della piccola citt� di Edgewater mentre affronta il padre ex detenuto e un misterioso incidente che coinvolge la figlia ribelle."
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Sky Crime",
@@ -6220,7 +6205,7 @@
                 "descrizione": "S3 Ep4 di 16 Un bisogno improvviso - Una donna defeca in mezzo alla strada; un fuggitivo resta incastrato in un camino mentre tenta di nascondersi."
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Sky Adventure",
@@ -6347,7 +6332,7 @@
                 "descrizione": "Jeffrey rende il gioco più difficile. Qualcuno è costretto a ingannare i propri alleati più stretti. Quando finalmente si raggiunge la Destinazione X, il gruppo subisce lo shock più grande della stagione."
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:56"
     },
     {
         "canale": "MTV",
@@ -6504,7 +6489,7 @@
                 "descrizione": "Ep7 di 42 - In questa puntata Rob, Steelo e Lolo Wood si fanno male nei luoghi più pittoreschi con PHOTO DAMAGED, riescono a dormire un po' in palestra con BARBELL NAPS e scappano dal pericolo con..."
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Comedy Central",
@@ -6661,7 +6646,7 @@
                 "descrizione": "Il ragazzo più amichevole del Midwest trasferisce la sua famiglia in un quartiere di Los Angeles dove non tutti gli assomigliano."
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Sky Arte",
@@ -6743,7 +6728,7 @@
                 "descrizione": "Un documentario dal sapore crime che ripercorre la storia del mausoleo di Papa Giulio II, un’opera che ha messo a repentaglio l'eredit� e la reputazione di Michelangelo."
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:56"
     },
     {
         "canale": "Sky Documentaries",
@@ -6840,7 +6825,7 @@
                 "descrizione": "La storia della tragica notte della Costa Concordia, raccontata attraverso video e foto inediti, le testimonianze dei passeggeri e dei soccorritori che hanno salvato centinaia di persone."
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:57"
     },
     {
         "canale": "Sky Nature",
@@ -6962,7 +6947,7 @@
                 "descrizione": "Alla scoperta dei deserti del Messico settentrionale, la regione più arida del paese: un mondo arido che fa da habitat ad animali unici."
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:57"
     },
     {
         "canale": "Discovery Channel",
@@ -6971,90 +6956,110 @@
             {
                 "ora": "06:00",
                 "titolo": "Matto da pescare",
-                "descrizione": "Eric e' in Florida dove avra' un incontro ravvicinato con il predatore piu' pericoloso dell'intero Stato. Il pescatore ha intenzione di catturare la creatura con una canna da pesca e un enorme amo."
-            },
-            {
-                "ora": "06:25",
-                "titolo": "Matto da pescare",
                 "descrizione": "Armato solo di un fucile subacqueo, Eric e' pronto a pescare nelle acque oceaniche invase dagli squali a 40 Km al largo della costa di Porto Rico."
             },
             {
-                "ora": "06:50",
+                "ora": "06:20",
                 "titolo": "Matto da pescare",
                 "descrizione": "In Canada, Eric cerca di praticare l'ice boating, uno sport che vede intrepidi concorrenti gareggiare su un fiume ghiacciato. In seguito, tenta lui stesso di catturare un pesce. Ce la fara'?"
             },
             {
-                "ora": "07:15",
+                "ora": "06:45",
                 "titolo": "Animal Security: Louisiana",
                 "descrizione": "Gli agenti si occupano di un bambino ferito e di un cacciatore con precedenti."
             },
             {
-                "ora": "08:10",
+                "ora": "07:40",
                 "titolo": "I guardiani delle paludi",
                 "descrizione": "Dusty Crum, famoso cacciatore di serpenti, e' alla ricerca di una delle piu' grandi specie del pianeta: il pitone burmese. Dusty e la squadra sono pronti ad affrontare lo scontro."
             },
             {
-                "ora": "09:05",
+                "ora": "08:35",
                 "titolo": "I guardiani delle paludi",
                 "descrizione": "Un gruppo rivale dei cacciatori di serpenti sta lavorando nell'area di Dusty. Cosi', la squadra decide di andare a caccia durante la notte, che e' molto piu' pericoloso."
             },
             {
-                "ora": "10:00",
+                "ora": "09:30",
                 "titolo": "I guardiani delle paludi",
                 "descrizione": "Il selvaggio Dusty Crum ha un innato senso degli affari e ama il rischio. Cosi', quando Dusty vede un annuncio che cerca un cacciatore di serpenti, intravede un'opportunita'."
             },
             {
-                "ora": "10:55",
+                "ora": "10:25",
                 "titolo": "I guardiani delle paludi",
                 "descrizione": "Dusty guida la squadra in una fabbrica di missili abbandonati vicino un luogo infestato dai serpenti. Potrebbe trattarsi dei pitoni delle Everglades."
             },
             {
-                "ora": "11:50",
+                "ora": "11:25",
                 "titolo": "I guardiani delle paludi",
                 "descrizione": "Dusty e la squadra si avventurano in una zona pericolosa per impedire che i serpenti depositino le loro uova. Qui, trovano una spaventosa specie ibrida di pitone."
             },
             {
-                "ora": "12:45",
+                "ora": "12:25",
                 "titolo": "I guardiani delle paludi",
                 "descrizione": "Un pitone da record sfugge dalle mani di Dusty. La smania di catturarlo porta l'esperto a condurre una delle missioni solitarie piu' pericolose della sua carriera."
             },
             {
-                "ora": "13:45",
+                "ora": "13:30",
                 "titolo": "I guardiani delle paludi",
                 "descrizione": "Dusty continua a lottare contro l'invasione dei pitoni in Florida. La squadra individua nuove colonie a nord e scopre che i serpenti si stanno adattando al freddo."
             },
             {
-                "ora": "14:45",
+                "ora": "14:30",
                 "titolo": "Dual Survival Brasile",
                 "descrizione": "Tigre e Rene' si mettono alla prova nel deserto del Tatacoa affrontando la carenza d'acqua."
             },
             {
-                "ora": "15:45",
+                "ora": "15:25",
                 "titolo": "Dual Survival Brasile",
                 "descrizione": "Tigre e Rene' affrontano i pericoli estremi di alcune montagne nel nord della Colombia."
             },
             {
-                "ora": "16:40",
+                "ora": "16:25",
                 "titolo": "Dual Survival Brasile",
                 "descrizione": "Tigre e Rene' vengono abbandonati in una delle regioni piu' aride del mondo."
             },
             {
-                "ora": "17:35",
+                "ora": "17:20",
                 "titolo": "Dual Survival Brasile",
                 "descrizione": "Tigre e Rene' vengono lasciati nell'Amazzonia colombiana."
             },
             {
-                "ora": "18:30",
+                "ora": "18:20",
                 "titolo": "Dual Survival Brasile",
                 "descrizione": "Tigre e Rene' devono fuggire dalla regione di \"Los Llanos\", tra le Ande e l'Amazzonia."
             },
             {
-                "ora": "19:25",
+                "ora": "19:20",
                 "titolo": "Dual Survival Brasile",
                 "descrizione": "Tigre e Rene' sono intrappolati in una fitta e inospitale giungla tropicale in Colombia."
+            },
+            {
+                "ora": "20:20",
+                "titolo": "Dual Survival",
+                "descrizione": "Su un'isola disabitata della Nuova Scozia, Cody Lundin e Dave Canterbury sono prigionieri della morsa del gelo. Dalla loro zattera di salvataggio, ci mostrano come sopravvivere."
+            },
+            {
+                "ora": "21:10",
+                "titolo": "Ed Stafford: sfida nella giungla",
+                "descrizione": "Ed Stafford inizia la sua spedizione portando sei papa' e i loro figli in Belize."
+            },
+            {
+                "ora": "22:05",
+                "titolo": "Ed Stafford: sfida nella giungla",
+                "descrizione": "Ed comincia fa raccogliere ai papa' e ai figli il necessario per preparare la cena."
+            },
+            {
+                "ora": "22:55",
+                "titolo": "Ed Stafford: riti selvaggi",
+                "descrizione": "In Mongolia, Ed affronta i discendenti dei guerrieri di Gengis Khan per 'diventare uomo'."
+            },
+            {
+                "ora": "23:50",
+                "titolo": "Marchio di fabbrica",
+                "descrizione": "Come vengono costruite le campane per le cattedrali piu' grandi al mondo? Come si riordinano i resti di una delle piu' grandi tempeste in America? Inoltre, scopriamo come vengono coltivati i datteri."
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:57"
     },
     {
         "canale": "History Channel",
@@ -7161,7 +7166,7 @@
                 "descrizione": "S1 Ep11 di 20 Italia - Gli Alleati sbarcano in Sicilia, convinti di ottenere una rapida vittoria. La liberazione dell'Italia richiedera' invece due anni."
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:57"
     },
     {
         "canale": "Cartoon Network",
@@ -7318,7 +7323,7 @@
                 "descrizione": "Ep33 di 44 Un cuscino speciale - Brown non si dichiara e Scimmia se ne va. Poi i ragazzi fanno credere al preside che Scimmia si e' trasformata in un cuscino."
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:57"
     },
     {
         "canale": "Dea Kids",
@@ -7475,7 +7480,7 @@
                 "descrizione": "Una band decide di affidarsi alle sapienti mani di Pan Barbiere per avere un look heavy metal e conquistare il pubblico definitivamente."
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:57"
     },
     {
         "canale": "Nick Jr",
@@ -7632,7 +7637,7 @@
                 "descrizione": "Ep3 di 26 Boris \/ Nato selvaggio - I Barbabebe' stanno giocando nella foresta quando incontrano un elefantino smarrito. \/ Barbazoo si rende conto che l'elefante non e' felice; vorrebbe tornare in Africa."
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:57"
     },
     {
         "canale": "Boomerang",
@@ -7789,7 +7794,7 @@
                 "descrizione": "Ep41 Termitator - I Lemming adottano un insetto che si nutre solo di legno, e quando Grizzy scopre che sta divorando casa sua, prende misure drastiche per liberarsene."
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:57"
     },
     {
         "canale": "Sky TG 24",
@@ -7946,7 +7951,7 @@
                 "descrizione": "Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo."
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:57"
     },
     {
         "canale": "Rai News 24",
@@ -8103,7 +8108,7 @@
                 "descrizione": ",. - ,"
             }
         ],
-        "aggiornato": "10:21"
+        "aggiornato": "14:57"
     },
     {
         "canale": "Sky Meteo 24",
