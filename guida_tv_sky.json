@@ -105,8 +105,8 @@
             },
             {
                 "ora": "20:30",
-                "titolo": "Cinque Minuti: L'Ultima Intervista A Emma Bonino - 26",
-                "descrizione": "L'ultima intervista tv di Emma Bonino: un faccia a faccia a casa sua con Bruno Vespa il 19 maggio 2026."
+                "titolo": "Speciale Cinque Minuti: L'Ultima Intervista A Emma Bonino - 26",
+                "descrizione": "Bruno Vespa torna su Rai 1 con uno speciale di Cinque Minuti per ricordare Emma Bonino nel giorno della sua scomparsa: un faccia a faccia a casa della politica lo scorso 19 maggio 2026."
             },
             {
                 "ora": "20:35",
@@ -119,7 +119,7 @@
                 "descrizione": "La grande musica degli anni '80, '90 e 2000 torna protagonista all'Inalpi Arena di Torino. Antonella Clerici e Clementino conducono una grande festa tra ricordi e canzoni che hanno segnato più generazioni, insieme agli artisti e ai gruppi che le hanno portate al successo. Sul palco Cristina D'Avena, Dire Straits Legacy, Drupi, Filippo Graziani, Irene Grandi, Loredana Bertè, Lou Bega, Nek, Neri per Caso, Nino Buonocore, Patty Pravo e Sugarfree."
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:46"
     },
     {
         "canale": "Rai 2",
@@ -256,17 +256,17 @@
                 "descrizione": "Rubrica informativa del TG2. Direttore Antonio Preziosi"
             },
             {
-                "ora": "21:20",
-                "titolo": "L'Ispettore Coliandro",
-                "descrizione": "Coliandro è un ispettore in servizio alla questura di Bologna che si ritrova sempre invischiato, suo malgrado, in vicende più grandi di lui. Ma Coliandro non si tira mai indietro, anche se la sua sbadataggine e la sua incapacit� investigativa finiscono inevitabilmente per cacciarlo nei guai."
+                "ora": "21:45",
+                "titolo": "Emma Bonino - Belve 23",
+                "descrizione": "Chi la detesta la stima, chi la ama la venera. La sua è una vita di lotta. La Senatrice, leader radicale, Emma Bonino ospite di Francesca Fagnani si racconta: le sue scelte, la vita privata, la malattia e la guarigione e infine la delusione per la lite con Marco Pannella, il compagno di tante battaglie radicali."
             },
             {
-                "ora": "23:25",
-                "titolo": "Cronaca Di Un Crimine",
-                "descrizione": "1^ Visione Rai - Italia, anni '30: il ritrovamento di tre valigie con i resti smembrati di una donna fa emergere una vicenda di cronaca nera che diventa anche ritratto di un'epoca: controllo sociale, ruolo subordinato della donna e uso degli annunci matrimoniali come spazio di fiducia e inganno."
+                "ora": "22:15",
+                "titolo": "L'Ispettore Coliandro",
+                "descrizione": "Coliandro è un ispettore in servizio alla questura di Bologna che si ritrova sempre invischiato, suo malgrado, in vicende più grandi di lui. Ma Coliandro non si tira mai indietro, anche se la sua sbadataggine e la sua incapacit� investigativa finiscono inevitabilmente per cacciarlo nei guai."
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:46"
     },
     {
         "canale": "Rai 3",
@@ -354,16 +354,16 @@
             },
             {
                 "ora": "15:10",
-                "titolo": "Divine",
-                "descrizione": "Quello tra le donne e il vino è un rapporto simbiotico e viscerale. Il documentario racconta le storie, i sogni e la rinascita di cinque donne eccezionali: Susanna D'Amico, Carla Benini, Joy Kull, Domenica Luppino e Silvia Fuselli."
+                "titolo": "Biografie - Emma Bonino. Anima Liberale",
+                "descrizione": "Un ritratto di Emma Bonino, leader radicale, ministro, commissario Ue e fondatrice di + Europa."
             },
             {
-                "ora": "16:00",
+                "ora": "15:45",
                 "titolo": "Gli Imperdibili",
                 "descrizione": "Backstage, anteprime, eventi e curiosit� dentro lo schermo. È il programma che offre informazione e approfondimento sulla programmazione dei canali che compongono il bouquet Rai."
             },
             {
-                "ora": "16:05",
+                "ora": "15:50",
                 "titolo": "Geo",
                 "descrizione": "Sveva Sagramola ed Emanuele Biggi raccontano le persone, le meraviglie e le fragilit� del nostro pianeta, grazie agli esperti in studio e i grandi documentari di \"Geo\"."
             },
@@ -395,7 +395,7 @@
             {
                 "ora": "20:40",
                 "titolo": "Il Cavallo E La Torre",
-                "descrizione": "Marco Damilano racconta il fatto del giorno in 10 minuti: la politica, i poteri e le persone dei nostri tempi."
+                "descrizione": "Marco Damilano ricorda Emma Bonino, protagonista di una lunga stagione della politica italiana ed europea. Le sue battaglie civili, le sue lotte per i diritti."
             },
             {
                 "ora": "20:55",
@@ -423,7 +423,7 @@
                 "descrizione": "Venti minuti di televisione smontata, rimontata e messa a nudo attraverso il montaggio per raccontare il presente e rileggere la memoria collettiva. Blob ripercorre giorno per giorno gli eventi che hanno segnato la storia contemporanea, offrendo uno sguardo critico sulle immagini e sui loro protagonisti."
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:46"
     },
     {
         "canale": "Rai 4",
@@ -550,7 +550,7 @@
                 "descrizione": "Un allevatore che opera al confine con l'Arizona diventa l'improbabile difensore di un giovane ragazzo messicano che fugge disperatamente dagli assassini del cartello che lo hanno inseguito negli Stati Uniti."
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:46"
     },
     {
         "canale": "Rai 5",
@@ -677,7 +677,7 @@
                 "descrizione": "Umbria jazz è una manifestazione animata dalla direzione artistica visionaria di Carlo Pagnotta, sin dagli anni 70: nel 2026 a Perugia all'Arena Santa Giuliana, al Teatro Morlacchi, al Teatro del Pavone, e in altre location gratuite dal 3 al 12 luglio si sono esibiti moltissimi artisti: Sting, Zucchero, Christone Kighfish Ingram, Laurie Anderson, Gianni Coscia, Jacopo Fo ed Enrico Intra, Cécile Mc Lorin Salvant, Perigeo, Gilberto Gil, Terence Blanchard e Ravi Coltrane, Snarky Puppy e Metropol Orkest, Jon Batiste."
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:46"
     },
     {
         "canale": "Rete 4",
@@ -774,7 +774,7 @@
                 "descrizione": "Approfondimento giornalistico condotto da Gianluigi Nuzzi e Alessandra Viero su alcuni dei gialli irrisolti della cronaca."
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Canale 5",
@@ -926,7 +926,7 @@
                 "descrizione": "Serhat Yelduran è un chirurgo di grande successo che decide di cambiare il destino che la sua famiglia gli ha riservato per costruirsi una vita diversa a Istanbul. Questa decisione lo porta a incontrare Melek Özdel, di cui Serhat si innamora a prima vista e che sposa in segreto, all'insaputa della sua famiglia."
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Italia 1",
@@ -1053,7 +1053,7 @@
                 "descrizione": "Robert, un agente della Cia oramai in pensione, vive in un resort segreto in mezzo ai boschi. Un giorno, il figlio che non vede da tempo arriva a fargli visita ma è seguito da Balzary, un vecchio nemico con al seguito il suo gruppo di criminali. Padre e figlio si rinchiudono allora in un bunker dotato di moderna tecnologia…"
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:47"
     },
     {
         "canale": "La7",
@@ -1130,7 +1130,7 @@
                 "descrizione": "Documentario di Chris Martin, UK\/USA 2011 - Il giorno degli attacchi negli Stati Uniti, centinaia di ore di conversazioni militari e del controllo del traffico aereo furono registrate su nastro. Con l'aiuto di queste..."
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:47"
     },
     {
         "canale": "TV8",
@@ -1242,7 +1242,7 @@
                 "descrizione": "I viaggiatori devono raggiungere uno dei vulcani più imponenti di Giava, il monte Bromo. Le prime quattro coppie a classificarsi parteciperanno alla prima prova immunit�"
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Nove",
@@ -1349,7 +1349,7 @@
                 "descrizione": "Antonio Ornano in uno spettacolo che e' un flusso di coscienza esilarante."
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:47"
     },
     {
         "canale": "20 Mediaset",
@@ -1476,7 +1476,7 @@
                 "descrizione": "Reduce da un incidente che ha quasi chiuso la sua carriera, lo stuntman Colt Seavers deve rintracciare una star del cinema scomparsa, risolvere una cospirazione e cercare di riconquistare l'amore della sua vita, pur continuando a svolgere il suo lavoro quotidiano."
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Twentyseven",
@@ -1578,7 +1578,7 @@
                 "descrizione": "Il detective Hercule Poirot è a bordo di un affascinante battello in crociera sul fiume Nilo, di cui sono ospiti anche due giovani in viaggio di nozze. L'atmosfera idilliaca, però, è infranta presto da morti violente e da una spasmodica ricerca dell'assassino."
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:47"
     },
     {
         "canale": "IRIS",
@@ -1650,7 +1650,7 @@
                 "descrizione": "È passato del tempo dal \"giorno più brutto\", ma Oskar Schell non si d� pace. Suo padre lo ha lasciato con una missione incompiuta, con molte domande e una sola certezza: non deve smettere di cercare. Quando, nell'armadio del genitore, trova una chiave e un nome, Black, Oskar trova con essa anche la spinta e l'alibi che gli mancavano. Incontrare tutti i 472 Black di New York City per testare le loro serrature diventa per il bambino un modo di coltivare il sogno che quella chiave possa schiudergli un ultimo messaggio del padre e una maniera di scappare ancora il più a lungo possibile dall'evidenza."
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Rai Movie",
@@ -1717,7 +1717,7 @@
                 "descrizione": "Giacomo è il primogenito di una famiglia molto facoltosa. Quand'era bambino il padre ha commesso suicidio, lasciando un vuoto che il figlio ha cercato di colmare con studi approfonditi e un'attrazione verso l'esoterismo. Quando un guru gli comunica che il padre si è reincarnato in un certo Mario Pitagora, Giacomo, senza porsi troppe domande, va alla ricerca dell'uomo che dovr� dare un senso e una direzione alla sua vita. Ma Mario è tutto fuorché un padre modello: un imbroglione da quattro soldi pieno di debiti e alienato da moglie e figli."
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Rai Premium",
@@ -1829,7 +1829,7 @@
                 "descrizione": "Morgane Alvaro è una donna delle pulizie che, per caso, aiuta la polizia a risolvere un caso difficile, nonostante la diffidenza del'Ispettore Karadec. Morgane è una madre single di tre figli avuti da due uomini diversi, ma, soprattutto, è un soggetto ad alto potenziale cognitivo."
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:47"
     },
     {
         "canale": "La 5",
@@ -1921,7 +1921,7 @@
                 "descrizione": "Un sedicenne innamorato scappa di casa e scompare. Disperata e poco fiduciosa nell'intraprendenza del marito, la bella mammina si rivolge separatamente a due ex amanti, convincendo ognuno dei due che è il vero padre del fuggitivo. Rifacimento di Les compères-Noi siamo tuo padre (1983) di Francis Veber. La chiave della commedia è nella diversit� radicale dei 2 personaggi. Per la 1ª volta insieme, R. Williams e B. Crystal sono una coppia bene assortita per contrasto anche a livello recitativo: il 1° è un attore che mette anche troppo, il 2° è uno che toglie. Pur prolissa e tutta di maniera, funziona: ha ritmo, garbo ruffiano e qualche gag buffa che si rivede con piacere."
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Real Time",
@@ -2018,7 +2018,7 @@
                 "descrizione": "Ed vuole rimuovere un bozzolo sulla pancia prima che la sua fidanzata esca di prigione. Inoltre, James ha un'enorme protuberanza molliccia sulla testa."
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Food Network",
@@ -2145,7 +2145,7 @@
                 "descrizione": "Lo chef Cannavacciuolo e' a Pieve Torina, nelle Marche, un paese danneggiato dal terremoto del 2016. Dovra' incoraggiare Silvia, la titolare del Vecchio Molino, il cui locale non versa in buone acque."
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Focus",
@@ -2267,7 +2267,7 @@
                 "descrizione": "Salomone, figura mitica dell'Antico Testamento, terzo re d'Israele che regno' per 40 anni, e' davvero esistito?"
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Giallo",
@@ -2344,7 +2344,7 @@
                 "descrizione": "Jack Grayling ha mollato tutto e ora fa il cantante in una nave da crociera. Ma in passato è stato un detective della polizia. Quando cominciano a verificarsi degli omicidi è costretto a tornare alla sua vecchia professione aiutando il Primo ufficiale della nave, Kate Woods…"
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Boing",
@@ -2501,7 +2501,7 @@
                 "descrizione": "Craig e i suoi amici sono invitati a bere il te' con una torta squisita se riescono a restare fino alla fine della festa."
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:47"
     },
     {
         "canale": "K2",
@@ -2658,7 +2658,7 @@
                 "descrizione": "2' Stagione Ep.44 - Le avventure di tre scoiattoli dalla voce incredibile, 'adottati' da Dave Seville, che diventano un fenomeno musicale."
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Rai Gulp",
@@ -2815,7 +2815,7 @@
                 "descrizione": "Dopo aver parlato con il Grande Goblin, i ragazzi si preparano a forgiare la spada nella grotta di Baligan. Intanto Neel va nel bosco con le guardie per sconfiggere Fenrir e trovare Ulrich.Hugo, che doveva accompagnare Neel, se ne dimentica e, quando Turstin glielo ricorda, si precipita nel bosco con piccolo Gillo. Lungo la strada, Hugo ha delle visioni e capisce che Neel è in pericolo."
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Frisbee",
@@ -2972,7 +2972,7 @@
                 "descrizione": "2' Stagione Ep.38 - Le avventure di tre scoiattoli dalla voce incredibile, 'adottati' da Dave Seville, che diventano un fenomeno musicale."
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:47"
     },
     {
         "canale": "DMAX",
@@ -3054,7 +3054,7 @@
                 "descrizione": "Dipendenze, famiglie spezzate e criminalita' quotidiana si intrecciano tra Milano a Roma, Napoli e Bari."
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Rai Sport",
@@ -3121,7 +3121,7 @@
                 "descrizione": "Cross Country Olimpico - Elite Uomini"
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Sportitalia",
@@ -3233,7 +3233,7 @@
                 "descrizione": "Aspettando il week end"
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:47"
     },
     {
         "canale": "HGTV",
@@ -3385,7 +3385,7 @@
                 "descrizione": "A Cambridge, il moderno cacciatore di tesori Drew Pritchard inizia la sua scalata a un palazzo del XVII secolo. Poi, visita un enorme deposito di rottami, dove incontra un negoziatore molto tenace."
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:47"
     },
     {
         "canale": "RSI LA 1",
@@ -3527,7 +3527,7 @@
                 "descrizione": "Kenneth Feinberg è un avvocato di successo nominato Special Master del fondo per il risarcimento delle vittime dell'11 settembre. Incaricato dal Congresso americano, ha il compito di distribuire compensi finanziari alle vittime della tragedia e di quantificare perdite incalcolabili di fronte al cinismo, alla burocrazia e alle politiche di divisione."
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:47"
     },
     {
         "canale": "RSI LA 2",
@@ -3629,7 +3629,7 @@
                 "descrizione": "da Budapest (HUN)\rDifferita"
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:47"
     },
     {
         "canale": "DAZN 1",
@@ -3701,7 +3701,7 @@
                 "descrizione": "Le grandi coppie Giampaolo Pazzini - Giovanni Barsotti, Omar Aamoum e Cristian Brocchi ci portano alla scoperta delle storie legate alle coppie che hanno fatto la storia del calcio con l'ex attaccante Giampaolo Pazzini."
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Sky Sport 24",
@@ -3794,18 +3794,18 @@
             },
             {
                 "ora": "14:00",
-                "titolo": "Euro Show",
-                "descrizione": "Il meglio del calcio internazionale con tutte le notizie, i gol, le immagini e le voci dei protagonisti di Premier League, Bundesliga."
-            },
-            {
-                "ora": "14:30",
                 "titolo": "Sport 24 Today",
                 "descrizione": "Le notizie e i commenti del giorno, le anteprime e l'attualita' con servizi, commenti, interviste e collegamenti."
             },
             {
+                "ora": "14:30",
+                "titolo": "Euro Show",
+                "descrizione": "Il meglio del calcio internazionale con tutte le notizie, i gol, le immagini e le voci dei protagonisti di Premier League, Bundesliga."
+            },
+            {
                 "ora": "15:00",
-                "titolo": "Sport 24 Calciomercato",
-                "descrizione": "Gli ultimi aggiornamenti sul Calciomercato. Tutte le novita' e le indiscrezioni su trattative e trasferimenti del mercato calciatori in Italia e all'estero. Le notizie esclusive della \"squadra mercato\" di SkySport."
+                "titolo": "Sport 24 Today",
+                "descrizione": "Le notizie e i commenti del giorno, le anteprime e l'attualita' con servizi, commenti, interviste e collegamenti."
             },
             {
                 "ora": "15:30",
@@ -3828,9 +3828,9 @@
                 "descrizione": "Le notizie e i commenti del giorno, le anteprime e l'attualita' con servizi, commenti, interviste e collegamenti."
             },
             {
-                "ora": "17:30",
-                "titolo": "Sport 24 Today",
-                "descrizione": "Le notizie e i commenti del giorno, le anteprime e l'attualita' con servizi, commenti, interviste e collegamenti."
+                "ora": "17:40",
+                "titolo": "Sky Sport Watch 2026 Ep.2",
+                "descrizione": "Scopriamo il mondo dell'orologeria e il suo rapporto con lo sport e lo stile di vita relativo."
             },
             {
                 "ora": "18:00",
@@ -3858,7 +3858,7 @@
                 "descrizione": "Tutti gli aggiornamenti dalle squadre di Serie A con collegamenti live, interviste e ospiti in studio."
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Sky Sport Uno",
@@ -3990,7 +3990,7 @@
                 "descrizione": "Maschile US Open. - Dall'USTA Billie Jean King National Tennis Center di New York, Stati Uniti."
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Sky Sport Calcio",
@@ -4082,7 +4082,7 @@
                 "descrizione": "11\/09\/2026 Champions League Remix. - Rivediamo i gol e i momenti salienti delle partite di Champions League che hanno fatto la storia."
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Sky Sport Tennis",
@@ -4159,7 +4159,7 @@
                 "descrizione": "Maschile US Open. - Dall'USTA Billie Jean King National Tennis Center di New York, Stati Uniti."
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Sky Sport F1",
@@ -4197,7 +4197,7 @@
             },
             {
                 "ora": "09:50",
-                "titolo": "Gp Spagna Pl",
+                "titolo": "Gp Madrid prove libere",
                 "descrizione": "Segui la gara di Formula 3 in programma."
             },
             {
@@ -4227,7 +4227,7 @@
             },
             {
                 "ora": "13:25",
-                "titolo": "GP Spagna: Prove libere 1",
+                "titolo": "GP Madrid: Prove libere 1",
                 "descrizione": "Prima sessione di prove su un circuito completamente nuovo: 60 minuti per scoprire la pista di Madrid. Telecronaca di Carlo Vanzini e Roberto Chinchero."
             },
             {
@@ -4241,12 +4241,7 @@
                 "descrizione": "Segui l'appuntamento con la gara di Formula 2."
             },
             {
-                "ora": "15:40",
-                "titolo": "Budapest",
-                "descrizione": "Seguiamo l'intensa nona tappa del campionato all'Hungaroring, mettendo in luce la serrata lotta per il titolo, le strategie dei piloti e offrendo un accesso esclusivo all'area scuderie poco prima della pausa estiva."
-            },
-            {
-                "ora": "15:55",
+                "ora": "16:25",
                 "titolo": "Inside The Team - Un Gp con Kimi",
                 "descrizione": "Inside The Team - Un Gp con Kimi"
             },
@@ -4257,7 +4252,7 @@
             },
             {
                 "ora": "16:55",
-                "titolo": "GP Spagna: Prove libere 2",
+                "titolo": "GP Madrid: Prove libere 2",
                 "descrizione": "Seconda sessione di prove sul nuovo circuito di Madrid: 60 minuti per provare sia il giro da qualifica che il passo gara. Telecronaca di Carlo Vanzini, Ivan Capelli e Roberto Chinchero"
             },
             {
@@ -4282,7 +4277,7 @@
             },
             {
                 "ora": "20:25",
-                "titolo": "GP Spagna: Prove libere 2",
+                "titolo": "GP Madrid: Prove libere 2",
                 "descrizione": "Seconda sessione di prove sul nuovo circuito di Madrid: 60 minuti per provare sia il giro da qualifica che il passo gara. Telecronaca di Carlo Vanzini, Ivan Capelli e Roberto Chinchero"
             },
             {
@@ -4297,11 +4292,11 @@
             },
             {
                 "ora": "23:00",
-                "titolo": "GP Spagna: Prove libere 2",
+                "titolo": "GP Madrid: Prove libere 2",
                 "descrizione": "Seconda sessione di prove sul nuovo circuito di Madrid: 60 minuti per provare sia il giro da qualifica che il passo gara. Telecronaca di Carlo Vanzini, Ivan Capelli e Roberto Chinchero"
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Sky Sport Legend",
@@ -4393,7 +4388,7 @@
                 "descrizione": "Dieci anni dopo il trionfo allo US Open 2015, Flavia Pennetta rivive il sogno, l'impresa e l'addio che hanno segnato per sempre il tennis italiano."
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Sky Sport MotoGP",
@@ -4465,7 +4460,7 @@
                 "descrizione": "Rimini: Pre Qualifiche Moto3. - Quattordicesimo appuntamento del mondiale 2026: al Misano World Circuit si accendono i motori per le pre qualifiche della Moto3. Telecronaca Triolo-Pasini"
             },
             {
-                "ora": "14:00",
+                "ora": "14:05",
                 "titolo": "GP San Marino e Riviera di Rimini: Pre Qualifiche",
                 "descrizione": "Rimini: Pre Qualifiche Moto2. - Quattordicesimo appuntamento del mondiale 2026: al Misano World Circuit si accendono i motori per le pre qualifiche della Moto2. Telecronaca Triolo-Pasini"
             },
@@ -4525,7 +4520,7 @@
                 "descrizione": "Pre Qualifiche MotoGP. - Quattordicesimo appuntamento del mondiale 2026: al Misano World Circuit si accendono i motori per le pre qualifiche della MotoGP. Telecronaca Meda- Sanchini"
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Sky Sport Basket",
@@ -4637,7 +4632,7 @@
                 "descrizione": "Campionati Mondiali femminili FIBA 2026. - Sopravvissuta allo spareggio contro una commovente Italia, neanche 24 ore dopo l'Australia sfida le vice campionesse d'Europa della Spagna. In palio un posto in semifinale. TC: Andrea Solaini."
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Sky Sport Arena",
@@ -4699,11 +4694,6 @@
                 "descrizione": "Europei di pallavolo maschile. - EuroVolley 2026, day 2 per il gruppo C con la classica Olanda-Belgio. Tc Rudy Palermo"
             },
             {
-                "ora": "18:00",
-                "titolo": "The Boat Show",
-                "descrizione": "Regate, grandi eventi, saloni nautici e tutto il nuovo che arriva dal mondo della cantieristica, a vela e a motore. In ogni occasione, un personaggio del mondo della nautica si racconta al pubblico."
-            },
-            {
                 "ora": "18:30",
                 "titolo": "Speciale Marcialonga Running 2026",
                 "descrizione": "Migliaia di runners affrontano i percorsi (21 km, 26 km, staffetta) tra Moena e Cavalese, sui luoghi della Marcialonga dello sci di fondo. Commento: Nicola Roggero e Silvia Vaia."
@@ -4724,7 +4714,7 @@
                 "descrizione": "di pallavolo maschile. - EuroVolley 2026, day 2 per il gruppo C con la classica Olanda-Belgio. Tc Rudy Palermo"
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Sky Sport Max",
@@ -4811,7 +4801,7 @@
                 "descrizione": "Euro Series. - Dall'Autodrom Most, la finale della stagione regolare della NASCAR Euro Series 2026."
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Sky Sport Mix",
@@ -4883,7 +4873,7 @@
                 "descrizione": "Dallo Stadio Roi Baudoin di Bruxelles, Belgio."
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Sky Sport Golf",
@@ -4920,7 +4910,7 @@
                 "descrizione": "Golf: DP World Tour. - From Trump International Golf Links & Hotel in Doonbeg, Ireland."
             },
             {
-                "ora": "16:00",
+                "ora": "16:10",
                 "titolo": "19a Giornata",
                 "descrizione": "Le partite della TGL Golf League."
             },
@@ -4950,7 +4940,7 @@
                 "descrizione": "World Tour. - From Trump International Golf Links & Hotel in Doonbeg, Ireland."
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Sky Sport 251",
@@ -4962,7 +4952,7 @@
                 "descrizione": "Calcio Bundesliga 3a giornata. Calcio d'inizio ore 20:30"
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Sky Sport 252",
@@ -4974,7 +4964,7 @@
                 "descrizione": "Cod. 416901 - Serie C - 4a giornata. Calcio d'inizio ore 21:00."
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Sky Sport 253",
@@ -4986,7 +4976,7 @@
                 "descrizione": "Cod. 416978 - Serie C - 4a giornata. Calcio d'inizio ore 21:00."
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Sky Sport 254",
@@ -4998,7 +4988,7 @@
                 "descrizione": "Cod. 416923 - Serie C - 4a giornata. Calcio d'inizio ore 21:00."
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Sky Sport 255",
@@ -5010,7 +5000,7 @@
                 "descrizione": "Cod. 416912 - Serie C - 4a giornata. Calcio d'inizio ore 21:00."
             }
         ],
-        "aggiornato": "16:14"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Sky Sport 256",
@@ -5022,7 +5012,7 @@
                 "descrizione": "Calcio Bundesliga 3a giornata. Calcio d'inizio ore 20:30"
             }
         ],
-        "aggiornato": "16:15"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Sky Sport 257",
@@ -5125,7 +5115,7 @@
                 "descrizione": "Bombe di supposta matrice anarchica esplodono a Strasburgo e a Vienna, uno scandalo investe un magnate indiano del cotone mentre un industriale americano dell'acciaio muore misteriosamente. Eventi casuali, senza connessione? Non secondo Sherlock Holmes, che ha intuito dietro a tutto ciò un piano criminale, ideato dal professor Moriarty, uomo dall'intelligenza sopraffina e privo di qualsiasi coscienza morale. Holmes strappa dunque Watson alla sua luna di miele con Mary e lo trascina a Parigi, in Germania e infine in Svizzera. La partita a scacchi con Moriarty è tesissima, la posta in gioco niente meno che il corso della Storia."
             }
         ],
-        "aggiornato": "16:15"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Sky Cinema Uno +24",
@@ -5187,7 +5177,7 @@
                 "descrizione": "Una famiglia sull’orlo della crisi decide di scappare dalla citt� e di rifugiarsi in una vecchia fattoria in campagna, convinta che il ritorno alla natura sia l’unica vera soluzione. Ma il sogno bucolico si trasforma presto in un’esilarante lotta per la sopravvivenza. Scappare dalla citt� è facile. Scappare da sé stessi, un po’ meno."
             }
         ],
-        "aggiornato": "16:15"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Sky Cinema Due",
@@ -5249,7 +5239,7 @@
                 "descrizione": "È passato del tempo dal \"giorno più brutto\", ma Oskar Schell non si d� pace. Suo padre lo ha lasciato con una missione incompiuta, con molte domande e una sola certezza: non deve smettere di cercare. Quando, nell'armadio del genitore, trova una chiave e un nome, Black, Oskar trova con essa anche la spinta e l'alibi che gli mancavano. Incontrare tutti i 472 Black di New York City per testare le loro serrature diventa per il bambino un modo di coltivare il sogno che quella chiave possa schiudergli un ultimo messaggio del padre e una maniera di scappare ancora il più a lungo possibile dall'evidenza."
             }
         ],
-        "aggiornato": "16:15"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Sky Cinema Due +24",
@@ -5266,7 +5256,7 @@
                 "descrizione": "Nel III secolo a.C. l'ateniese Dario è in vacanza a Rodi dove cresce il malcontento popolare contro re Serse, costruttore del famoso colosso. Aiutati da un traditore, i Fenici invadono la citt� , ma scoppia un terremoto."
             }
         ],
-        "aggiornato": "16:15"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Sky Cinema Collection",
@@ -5323,7 +5313,7 @@
                 "descrizione": "La fine del mondo è vicina ma Ethan Hunt non è lontano e riparte da dove aveva lasciato. Recuperata una preziosa chiave crociata, deve raggiungere adesso il Sevastopol, un sottomarino nucleare russo, distrutto dall'Intelligenza Artificiale, che giace sotto la calotta polare. La chiave gli permetter� di recuperare il 'codice sorgente' dell'IA e di disinnescarla. Ormai autonoma e 'cosciente', l'Entit� accede a qualsiasi sistema operativo, manipola fatti, dati e persone ed è determinata a sterminare la razza umana. Mentre Hunt cerca una soluzione, l'IA prende progressivamente il controllo delle armi di distruzione di massa. Il tempo stringe, non resta che correre. Ancora e ancora."
             }
         ],
-        "aggiornato": "16:15"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Sky Cinema Family",
@@ -5385,7 +5375,7 @@
                 "descrizione": "Paolo, professore di filosofia, vedovo, ha cresciuto da solo sua figlia Simone - alla francese - , con cui ha un bellissimo rapporto. Ma quando la ragazza entra ufficialmente nella fase dell’adolescenza, l'idillio si rompe: come ogni teenager che si rispetti, infatti, Simone viene \"rapita\" dallo smartphone, tanto che matura l'idea di voler diventare influencer - come il suo idolo Ele-O-Nora - categoria che Paolo detesta. Pur di recuperare il rapporto con sua figlia, Paolo inizia una campagna contro l’abuso dei social, con l’aiuto della stessa Simone che diventa la sua web manager. La fama inaspettata lo trasformer� suo malgrado in un influencer... e gli far� scoprire che i social, anche se vanno maneggiati con cura, possono regalarti una possibilit� ."
             }
         ],
-        "aggiornato": "16:15"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Sky Cinema Action",
@@ -5442,7 +5432,7 @@
                 "descrizione": "Arma letale è il soprannome di Martin Riggs, un poliziotto che, reduce dal Vietnam e vedovo recente di una moglie adoratissima, ha ormai trasferito nella pistola il suo amore esclusivo, tanto è affascinato dalla morte e tanto spesso si trova alle soglie del suicidio e della follia. I suoi superiori lo mettono in addestramento sotto la guida del sergente Roger Murtaugh, un nero anziano, con moglie, figli ed un innato senso dell'ordine e della moderazione."
             }
         ],
-        "aggiornato": "16:15"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Sky Cinema Suspense",
@@ -5499,7 +5489,7 @@
                 "descrizione": "Tormentata da un violento incubo ricorrente, Stefanie torna a casa dal college per rintracciare l'unica persona in grado di interrompere un ciclo mortale che coinvolge i membri della sua famiglia, e salvarli dalla macabra fine che inevitabilmente li attende."
             }
         ],
-        "aggiornato": "16:15"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Sky Cinema Romance",
@@ -5561,7 +5551,7 @@
                 "descrizione": "Aurelio ha ereditato il mestiere di wedding-planner dal padre: guida l’azienda di famiglia, “Il giorno più bello”, e per tutta la vita ha sacrificato i propri sogni in nome di una missione: regalare la felicit� . Oggi, però, complice la crisi e un divorzio alle spalle, sente il bisogno di un cambiamento radicale. È innamorato di Serena, una sua collaboratrice, e con lei sogna di iniziare una nuova vita, mollando tutto per solcare gli oceani in barca a vela. Prima di assaporare la libert� , però, Aurelio deve risolvere due questioni non di poco conto: vendere “Il giorno più bello” e convincere Serena a divorziare da Giorgio, che di Aurelio è amico fraterno dai tempi del liceo."
             }
         ],
-        "aggiornato": "16:15"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Sky Cinema Drama",
@@ -5623,7 +5613,7 @@
                 "descrizione": "Per la prima volta una donna, Jane O'Neil, entra a far parte del più duro corso di addestramento dei Marines. Nonostante gli ostacoli grazie alla sua determinazione diventa la più brava del corso."
             }
         ],
-        "aggiornato": "16:15"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Sky Cinema Comedy",
@@ -5685,7 +5675,7 @@
                 "descrizione": "New York 1959. I tre gangster Al, John e Jack hanno il compito di uccidere Frankie per conto del boss. Sbagliano bersaglio e il boss da a loro un'altra possibilit� : tenere d'occhio una persona a lui cara. Ma la fortuna non è dalla loro parte...."
             }
         ],
-        "aggiornato": "16:15"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Sky Uno",
@@ -5772,7 +5762,7 @@
                 "descrizione": "Cominciano le Audition di X Factor 2026: i concorrenti si giocano il sogno davanti a Francesco Gabbani, Irama, Jake La Furia e Paola Iezzi. Conduce Giorgia."
             }
         ],
-        "aggiornato": "16:15"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Sky Atlantic",
@@ -5894,7 +5884,7 @@
                 "descrizione": "Joe Roag è un agente di polizia che si trova a bordo del treno come passeggero, e Abby Aysgarth, direttrice tecnica ad interim del National Cyber Security Centre (NCSC). Quando il treno viene hackerato e dirottato, i due sono costretti a collaborare in una corsa contro il tempo per salvare i passeggeri e scongiurare una catastrofe. Ma contro chi stanno combattendo? Di chi possono fidarsi? C'è qualcuno a bordo che sa più di quanto lasci intendere? E come possono avere la meglio sul misterioso \"Driver\", l'autoproclamato regista dell'operazione, che sembra sempre essere un passo avanti a qualsiasi tentativo di fermarlo?"
             }
         ],
-        "aggiornato": "16:15"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Sky Serie",
@@ -6021,7 +6011,7 @@
                 "descrizione": "A Natale nell’Outback, la squadra affronta emergenze critiche tra incidenti e segreti di famiglia. Intanto Pete trova il coraggio di confidare a Eliza i suoi veri sentimenti."
             }
         ],
-        "aggiornato": "16:15"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Sky Investigation",
@@ -6133,7 +6123,7 @@
                 "descrizione": "Il comandante della Police Nationale Mélissa Sainte-Rose, originaria della Martinica, viene trasferita dalla Francia continentale a Fort-de-France, dove trova alle sue dipendenze il capitano Gaëlle Crivelli. I rapporti sono tesi tra le due poliziotte, perché totalmente diverse nel loro comportamento, ma complementari per la risoluzione degli omicidi."
             }
         ],
-        "aggiornato": "16:15"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Sky Crime",
@@ -6240,7 +6230,7 @@
                 "descrizione": "S1 - ...Dozier: Il reporter Ben Montgomery e l'antropologa forense Erin Kimmerle indagano su uno dei misteri piu' macabri della Florida."
             }
         ],
-        "aggiornato": "16:15"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Sky Adventure",
@@ -6372,7 +6362,7 @@
                 "descrizione": "Scopriamo i segreti ingegneristici della MSC Bellissima, una delle navi da crociera più grandi al mondo che trasporta migliaia di passeggeri attraverso il Mediterraneo."
             }
         ],
-        "aggiornato": "16:15"
+        "aggiornato": "20:47"
     },
     {
         "canale": "MTV",
@@ -6519,7 +6509,7 @@
                 "descrizione": "Ep38 di 42 Sterling e Karrueche Tran XXXVI - Rob, Steelo e Karrueche Tran cercano di capire la strada di qualche IMPATIENT DRIVERS."
             }
         ],
-        "aggiornato": "16:15"
+        "aggiornato": "20:47"
     },
     {
         "canale": "Comedy Central",
@@ -6676,7 +6666,7 @@
                 "descrizione": "Hot in Cleveland\" si basa su tre favolose, eccentriche donne sopra i quarant'anni di Los Angeles, migliori amiche, le cui vite sono state cambiate per sempre quando il loro aereo è dovuto atterrare inaspettatamente a Cleveland e presto riscopriranno loro stesse in questa nuova \"terra promessa\"."
             }
         ],
-        "aggiornato": "16:15"
+        "aggiornato": "20:48"
     },
     {
         "canale": "Sky Arte",
@@ -6749,31 +6739,26 @@
             },
             {
                 "ora": "18:45",
-                "titolo": "Indie Jungle",
-                "descrizione": "Ep8 di 11 Tutti Fenomeni - Una serata esclusiva alla scoperta della sonorita' e delle storie dei protagonisti della scena indie italiana. In questa puntata: Tutti Fenomeni."
+                "titolo": "Womeness",
+                "descrizione": "Scopriamo l’audace femminilit� e i principi immortali di cinque grandi donne del nostro tempo: da Dacia Maraini e Emma Bonino a Sussan Deyhim e Tomaso Binga, fino a Setsuko Klossowska de Rola."
             },
             {
-                "ora": "19:35",
+                "ora": "19:50",
                 "titolo": "David Bowie: Nascita di una star",
                 "descrizione": "Cinque anni degli inizi della carriera di Bowie, dalla fine degli anni Sessanta fino alla morte di Ziggy Stardust, annunciata sul palco nel 1973. Interviste d'archivio inedite con alcuni dei primi collaboratori di Bowie"
             },
             {
-                "ora": "21:15",
+                "ora": "21:30",
                 "titolo": "Freddie Mercury: The Show Must Go On",
                 "descrizione": "L'ultimo capitolo della straordinaria vita di Freddie Mercury e il concerto tributo a Wembley, tra lo stigma della malattia e i racconti delle persone sieropositive."
             },
             {
-                "ora": "22:55",
-                "titolo": "Amy Winehouse: Anima ribelle",
-                "descrizione": "A oltre quindici anni dalla morte dell'icona britannica Amy Winehouse, Il volto più autentico e tormentato dell'artista viene svelato dai parenti e dagli amici più stretti."
-            },
-            {
-                "ora": "23:45",
-                "titolo": "Freddie Mercury: The Show Must Go On",
-                "descrizione": "L'ultimo capitolo della straordinaria vita di Freddie Mercury e il concerto tributo a Wembley, tra lo stigma della malattia e i racconti delle persone sieropositive."
+                "ora": "23:05",
+                "titolo": "Womeness",
+                "descrizione": "Scopriamo l’audace femminilit� e i principi immortali di cinque grandi donne del nostro tempo: da Dacia Maraini e Emma Bonino a Sussan Deyhim e Tomaso Binga, fino a Setsuko Klossowska de Rola."
             }
         ],
-        "aggiornato": "16:15"
+        "aggiornato": "20:48"
     },
     {
         "canale": "Sky Documentaries",
@@ -6865,7 +6850,7 @@
                 "descrizione": "11 settembre, il più grande fallimento della CIA e la lunga caccia al terrorista più ricercato al mondo, Osama Bin Laden."
             }
         ],
-        "aggiornato": "16:15"
+        "aggiornato": "20:48"
     },
     {
         "canale": "Sky Nature",
@@ -6972,7 +6957,7 @@
                 "descrizione": "Si ripercorre la nascita dell'isola e la formazione di un paesaggio unico al mondo: la monumentale fortezza dei Tsingy, regno dei lemuri."
             }
         ],
-        "aggiornato": "16:15"
+        "aggiornato": "20:48"
     },
     {
         "canale": "Discovery Channel",
@@ -7084,7 +7069,7 @@
                 "descrizione": "Stecche da biliardo, sculture di ghiaccio e filtri dell'aria: esaminiamo minuziosamente altri oggetti quotidiani per scoprire come sono stati fatti."
             }
         ],
-        "aggiornato": "16:15"
+        "aggiornato": "20:48"
     },
     {
         "canale": "History Channel",
@@ -7186,7 +7171,7 @@
                 "descrizione": "S1 Ep13 di 20 Operazione Overlord - Lo sbarco in Normandia e' una delle piu' complesse operazioni militari della storia. Il D-Day e' il 6 giugno 1944."
             }
         ],
-        "aggiornato": "16:15"
+        "aggiornato": "20:48"
     },
     {
         "canale": "Cartoon Network",
@@ -7343,7 +7328,7 @@
                 "descrizione": "Ep15 di 52 La rivincita dello squalo - Re Squalo svela di essere stato campione del biliardo, ma di essersi ritirato dopo una sconfitta contro un giocatore misterioso noto come \"Le Mani\"."
             }
         ],
-        "aggiornato": "16:15"
+        "aggiornato": "20:48"
     },
     {
         "canale": "Dea Kids",
@@ -7500,7 +7485,7 @@
                 "descrizione": "Per lo stress di aver ricevuto tante critiche dai clienti, Pan Barbiere inizia a perdere i capelli. Deve quindi trovare un'idea per nascondere la calvizie."
             }
         ],
-        "aggiornato": "16:15"
+        "aggiornato": "20:48"
     },
     {
         "canale": "Nick Jr",
@@ -7657,7 +7642,7 @@
                 "descrizione": "Ep6 di 26 Il detective Barbalock \/ Superbarbabebe' - Barbabella e Barbaforte giocano a fare i detective. \/ I barbabebe' leggono insieme un fumetto di supereroi e decidono di disegnarne uno."
             }
         ],
-        "aggiornato": "16:15"
+        "aggiornato": "20:48"
     },
     {
         "canale": "Boomerang",
@@ -7814,7 +7799,7 @@
                 "descrizione": "Ep12 Da tutte le parti - Grizzy e i Lemming fanno volare un vasetto di Yummy nella giungla. Sembra impossibile ritrovarlo, ma i Lemming trovano un bracciale magico che decuplica il senso dell'olfatto."
             }
         ],
-        "aggiornato": "16:15"
+        "aggiornato": "20:48"
     },
     {
         "canale": "Sky TG 24",
@@ -7971,7 +7956,7 @@
                 "descrizione": "Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo."
             }
         ],
-        "aggiornato": "16:15"
+        "aggiornato": "20:48"
     },
     {
         "canale": "Rai News 24",
@@ -8128,7 +8113,7 @@
                 "descrizione": ",. - ,"
             }
         ],
-        "aggiornato": "16:15"
+        "aggiornato": "20:48"
     },
     {
         "canale": "Sky Meteo 24",
