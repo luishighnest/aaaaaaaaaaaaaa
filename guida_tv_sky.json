@@ -81,7 +81,7 @@
             {
                 "ora": "12:40",
                 "titolo": "Musica Mia - Reggio Emilia, Officina Della Musica - 26",
-                "descrizione": "Un programma dedicato alla musica popolare. Giriamo l'Italia a bordo di un furgoncino, caricandolo di strumenti musicali e percorrendo la Nazione da Nord a Sud per comprendere quanto la musica sia capace di raccontare e tramandare le tradizioni di un luogo. Ad arricchire ogni puntata anche due interventi d'eccezione. Il primo è quello del musicista ed esperto di musica popolare Ambrogio Sparagna, il quale ci racconta, regione per regione, la storia della musica popolare italiana. Il secondo è quello dell'attore Edoardo Sylos Labini che racconta la storia di un brano rappresentativo del territorio. Conducono Lorella Boccia e Marco Conidi. Con la partecipazione di Ambrogio Sparagna ed Edoardo Sylos Labini."
+                "descrizione": "$24"
             },
             {
                 "ora": "13:30",
@@ -91,7 +91,7 @@
             {
                 "ora": "14:00",
                 "titolo": "Linea Blu Porti D'Italia - Savona - 26",
-                "descrizione": "Raccontiamo il nostro mare e le sue molteplici sfaccettature, esplorando il connubio tra innovazione e tradizione e dedicando uno sguardo speciale alla blue economy e alle attivit� che animano i porti italiani. Conducono Donatella Bianchi e Livio Beshir."
+                "descrizione": "$25"
             },
             {
                 "ora": "15:00",
@@ -144,7 +144,7 @@
                 "descrizione": "La grande musica degli anni '80, '90 e 2000 torna protagonista all'Inalpi Arena di Torino. Antonella Clerici e Clementino conducono una grande festa tra ricordi e canzoni che hanno segnato più generazioni, insieme agli artisti e ai gruppi che le hanno portate al successo. Sul palco Alberto Bertoli, Anna Oxa, Erminio Sinni, Francesco Renga, Gaetano Curreri e gli Stadio, Gazebo, Luca Dirisio, Mario Biondi, Paul Young, Sabrina Salerno, Spagna e Toploader."
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:26"
     },
     {
         "canale": "Rai 2",
@@ -161,12 +161,17 @@
                 "descrizione": "La storia, ambientata nella valle di San Joaquin, in California, narra delle avventure quotidiane della famiglia Barkley, proprietari di un ranch."
             },
             {
+                "ora": "07:20",
+                "titolo": "Gli Imperdibili",
+                "descrizione": "RUBRICA - Backstage, anteprime, eventi e curiosit� dentro lo schermo. E' il programma che offre informazione e approfondimento sulla programmazione dei canali che compongono il bouquet RAI. - Regia di Valerio Fagioli Autrici Gabriella Belloni, Cinzia De Ponti, Rita Iocchi Produttore esecutivo Clelia Fasano"
+            },
+            {
                 "ora": "07:25",
                 "titolo": "Baywatch",
                 "descrizione": "Il tenente Mitch Buchannon è il caposquadra dei bagnini delle spiagge di Emerald Bay, in Florida, assieme alle due fidate colleghe Stephanie Holden e C.J. Parker. Essendo rimasti liberi tre posti vengono indette delle selezioni, che vengono vinte dal borioso ex campione olimpico di nuoto Matt Brody, dall'intelligente Summer Quinn e dall'imbranato esperto di informatica Ronnie (al suo terzo tentativo e innamorato di C.J.). Nel frattempo giunge ad Emerald Bay la nuova proprietaria dell'esclusivo Huntley Club, Victoria Leeds, su cui pendono delle voci riguardo il fatto che sia a capo del traffico di una pericolosissima droga chiamata \"Flakka\"."
             },
             {
-                "ora": "08:06",
+                "ora": "08:07",
                 "titolo": "Baywatch",
                 "descrizione": "Il tenente Mitch Buchannon è il caposquadra dei bagnini delle spiagge di Emerald Bay, in Florida, assieme alle due fidate colleghe Stephanie Holden e C.J. Parker. Essendo rimasti liberi tre posti vengono indette delle selezioni, che vengono vinte dal borioso ex campione olimpico di nuoto Matt Brody, dall'intelligente Summer Quinn e dall'imbranato esperto di informatica Ronnie (al suo terzo tentativo e innamorato di C.J.). Nel frattempo giunge ad Emerald Bay la nuova proprietaria dell'esclusivo Huntley Club, Victoria Leeds, su cui pendono delle voci riguardo il fatto che sia a capo del traffico di una pericolosissima droga chiamata \"Flakka\"."
             },
@@ -261,7 +266,7 @@
                 "descrizione": "La storica rubrica Rai che mostra tutti i gol e le azioni salienti degli anticipi di campionato di Serie A."
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:26"
     },
     {
         "canale": "Rai 3",
@@ -383,7 +388,7 @@
                 "descrizione": "TG3 Mondo"
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:26"
     },
     {
         "canale": "Rai 4",
@@ -515,7 +520,7 @@
                 "descrizione": "Il netturbino Clean, provato da un passato violento da sicario, cerca di trascorrere una vita tranquilla, lavorando e prendendosi cura di chi ha bisogno. Quando però la brutalit� di un boss locale prende di mira persone a lui care deve presto tornare alla violenza del suo passato."
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:26"
     },
     {
         "canale": "Rai 5",
@@ -622,14 +627,14 @@
                 "descrizione": "Ciudad Deportiva dell'Avana: 25 marzo 2016, il concerto dei Rolling Stones con oltre 300 mila spettatori. Introdotto dalle note di Jumpin' Jack Flash, Mick Jagger e la sua band, si sono esibiti per oltre due ore per la prima volta a Cuba, con 18 dei loro brani più famosi."
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:26"
     },
     {
         "canale": "Rete 4",
         "categoria": "Digitale Terrestre",
         "programmi": [
             {
-                "ora": "06:31",
+                "ora": "06:30",
                 "titolo": "Tg4 - ultima ora mattina",
                 "descrizione": "Informazione quotidiana con le notizie dall'Italia e dal mondo per il telegiornale di Rete 4."
             },
@@ -714,22 +719,22 @@
                 "descrizione": "Cordoba, 1913. Mentre la Spagna è devastata da alcuni conflitti, c'è un luogo in cui, almeno in apparenza, regna la pace: è il Palazzo La Promesa, nella valle di Los Pedroches, di propriet� dei Marchesi di Lujan. E' proprio qui che Jana si fa assumere come cameriera per scoprire la verit� sull'omicidio di sua madre e di suo fratello. La situazione si complica quando Jana si innamora di uno dei figli dei ricchi marchesi, Manuel. Con Jordi Coll (Il Segreto)."
             },
             {
-                "ora": "21:58",
+                "ora": "21:53",
                 "titolo": "La promessa",
                 "descrizione": "Cordoba, 1913. Mentre la Spagna è devastata da alcuni conflitti, c'è un luogo in cui, almeno in apparenza, regna la pace: è il Palazzo La Promesa, nella valle di Los Pedroches, di propriet� dei Marchesi di Lujan. E' proprio qui che Jana si fa assumere come cameriera per scoprire la verit� sull'omicidio di sua madre e di suo fratello. La situazione si complica quando Jana si innamora di uno dei figli dei ricchi marchesi, Manuel. Con Jordi Coll (Il Segreto)."
             },
             {
-                "ora": "22:59",
+                "ora": "22:58",
                 "titolo": "La promessa",
                 "descrizione": "Cordoba, 1913. Mentre la Spagna è devastata da alcuni conflitti, c'è un luogo in cui, almeno in apparenza, regna la pace: è il Palazzo La Promesa, nella valle di Los Pedroches, di propriet� dei Marchesi di Lujan. E' proprio qui che Jana si fa assumere come cameriera per scoprire la verit� sull'omicidio di sua madre e di suo fratello. La situazione si complica quando Jana si innamora di uno dei figli dei ricchi marchesi, Manuel. Con Jordi Coll (Il Segreto)."
             },
             {
-                "ora": "23:36",
+                "ora": "23:34",
                 "titolo": "Changeling",
                 "descrizione": "Los Angeles, marzo 1928. Un sabato Christine Collins lascia a casa da solo il giudizioso figlio Walter che ha avuto da un uomo che li ha abbandonati. Al ritorno dal lavoro fa una terribile scoperta: il bambino non c'è più e di lui si è persa ogni traccia. Finché, 5 mesi dopo, la polizia locale sembra aver risolto il caso. Consegna infatti a Christine un bambino che dice di esser Walter e che un po' gli assomiglia. La madre è però certa che è suo figlio ed è supportata in questo anche da altre persone che lo conoscevano bene, a partire dalla maestra. Le autorit� di polizia, sostenute da un'opinione pubblica desiderosa di rassicuranti lieto fine, insistono nella loro versione fino a decidere di internare Christine attribuendole disturbi mentali che l'avrebbero spinta a non riconoscere nel sedicente Walter il proprio figlio. Christine però non si arrende e, sostenuta dal reverendo Guistav Briegleb, continua a lottare perché le ricerche di Walter continuino."
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:26"
     },
     {
         "canale": "Canale 5",
@@ -786,12 +791,22 @@
                 "descrizione": "Le notizie piu' importanti, nazionali e internazionali, con approfondimenti e rubriche, a cura della redazione giornalistica di Canale 5."
             },
             {
-                "ora": "10:18",
+                "ora": "08:48",
+                "titolo": "Alla scoperta dei parchi nazionali del Nord America",
+                "descrizione": "Parco Nazionale delle Great Smoky Mountains: il parco piu' visitato del Nord America, chiamato il \"luogo del fumo\" per il vapore acqueo emesso dagli alberi."
+            },
+            {
+                "ora": "09:49",
+                "titolo": "Viaggiatori - Uno sguardo sul mondo",
+                "descrizione": "Alla scoperta delle bellezze artistiche e naturali del mondo, dalla Polinesia all'Indonesia, dall'Africa ai Caraibi."
+            },
+            {
+                "ora": "10:26",
                 "titolo": "Melaverde - Le storie",
                 "descrizione": "Approfondimenti e curiosita' su luoghi, ricette, antichi e nuovi mestieri di ogni regione italiana in compagnia di Ellen Hidding."
             },
             {
-                "ora": "11:00",
+                "ora": "11:01",
                 "titolo": "Forum",
                 "descrizione": "Il processo tv che affronta vicende comuni e quotidiane con uno sguardo sempre attento ai temi piu' attuali. Conduce Barbara Palombelli."
             },
@@ -801,34 +816,59 @@
                 "descrizione": "Le notizie piu' importanti, nazionali e internazionali, con approfondimenti e rubriche, a cura della redazione giornalistica di Canale 5."
             },
             {
-                "ora": "13:35",
+                "ora": "13:41",
                 "titolo": "X-style festival del cinema di venezia",
                 "descrizione": "Il settimanale dedicato alle nuove tendenze della moda, costume, personaggi e lifestyle."
             },
             {
-                "ora": "13:40",
+                "ora": "13:46",
                 "titolo": "Beautiful",
-                "descrizione": "Alla Forrester, Ridge, Steffy e Eric discutono del licenziamento di Hope, avvenuto il giorno prima. Eric e' molto arrabbiato con Steffy."
+                "descrizione": "Dopo un clamoroso malinteso alla Forrester Creations, la situazione tra Hope e Steffy raggiunge il punto di non ritorno: Steffy e' convinta che Hope cercasse di sedurre suo marito Finn."
             },
             {
-                "ora": "14:10",
+                "ora": "14:18",
+                "titolo": "Beautiful",
+                "descrizione": "Dopo che Steffy l'ha sorpresa in una situazione con Finn ritenuta compromettente, Hope viene licenziata. Brooke e Carter ritengono che si tratti di un malinteso."
+            },
+            {
+                "ora": "14:50",
+                "titolo": "Beautiful",
+                "descrizione": "Hope e' sconvolta perche' Steffy l'ha licenziata dalla Forrester e ha eliminato la sua linea, che rappresentava la sua passione e la sua identita'."
+            },
+            {
+                "ora": "15:16",
                 "titolo": "Forbidden Fruit",
                 "descrizione": "Ender, sposata con il noto uomo d'affari Halit Argun, ingaggia Yildiz Yilmaz come cameriera personale del marito affinché lo seduca. Ender, in questo modo, pensa di poterne ricavare dei vantaggi economici dopo il divorzio da Halit. La situazione le sfuggir� di mano."
             },
             {
-                "ora": "15:10",
+                "ora": "15:33",
+                "titolo": "Forbidden Fruit",
+                "descrizione": "Ender, sposata con il noto uomo d'affari Halit Argun, ingaggia Yildiz Yilmaz come cameriera personale del marito affinché lo seduca. Ender, in questo modo, pensa di poterne ricavare dei vantaggi economici dopo il divorzio da Halit. La situazione le sfuggir� di mano."
+            },
+            {
+                "ora": "16:29",
                 "titolo": "Far Away",
                 "descrizione": "Alya Albora arriva a Mardin dal Canada insieme alla salma del defunto marito e al loro figlio di cinque anni per adempiere alle ultime volont� dell'uomo: essere sepolto nella terra natia degli Albora. Tuttavia, questo arrivo segna un punto di non ritorno, non c'è via d'uscita da Albora. Sebbene Cihan Albora, il capo clan degli Albora, non sia indifferente alle difficolt� di Alya, non le permette di partire con il figlio. Affrontando le tenebre del passato, i segreti nascosti e la dura realt� della regione, Alya Albora si trova coinvolta in una feroce lotta con la famiglia del suo defunto marito."
             },
             {
-                "ora": "16:10",
+                "ora": "16:44",
+                "titolo": "Far Away",
+                "descrizione": "Alya Albora arriva a Mardin dal Canada insieme alla salma del defunto marito e al loro figlio di cinque anni per adempiere alle ultime volont� dell'uomo: essere sepolto nella terra natia degli Albora. Tuttavia, questo arrivo segna un punto di non ritorno, non c'è via d'uscita da Albora. Sebbene Cihan Albora, il capo clan degli Albora, non sia indifferente alle difficolt� di Alya, non le permette di partire con il figlio. Affrontando le tenebre del passato, i segreti nascosti e la dura realt� della regione, Alya Albora si trova coinvolta in una feroce lotta con la famiglia del suo defunto marito."
+            },
+            {
+                "ora": "17:37",
+                "titolo": "Tutto per la mia famiglia",
+                "descrizione": "La famiglia Eren vive con poco, ma è unita e piena d'affetto. Veli e Hatice crescono con amore i loro quattro figli: Kadir, Omer, Asiye ed Emel affrontando ogni giorno difficolt� economiche e sacrifici. La loro fragile serenit� viene spezzata quando Hatice, domestica presso la facoltosa famiglia degli Atakul, si reca alla villa estiva su richiesta di Nebahat e sorprende Akif Atakul e Suzan, moglie del socio di lui, Kenan, in una relazione clandestina."
+            },
+            {
+                "ora": "17:53",
                 "titolo": "Tutto per la mia famiglia",
                 "descrizione": "La famiglia Eren vive con poco, ma è unita e piena d'affetto. Veli e Hatice crescono con amore i loro quattro figli: Kadir, Omer, Asiye ed Emel affrontando ogni giorno difficolt� economiche e sacrifici. La loro fragile serenit� viene spezzata quando Hatice, domestica presso la facoltosa famiglia degli Atakul, si reca alla villa estiva su richiesta di Nebahat e sorprende Akif Atakul e Suzan, moglie del socio di lui, Kenan, in una relazione clandestina."
             },
             {
                 "ora": "18:45",
-                "titolo": "Caduta libera - aut.",
-                "descrizione": "Max Giusti e' alla guida della nuova edizione. Al suo fianco, Isobel Fetiye. Il montepremi puo' raggiungere i 300.000 euro!!"
+                "titolo": "Caduta libera",
+                "descrizione": "Max Giusti conduce la nuova edizione insieme a Isobel Fetiyera: studio rinnovato, band dal vivo, nuova prova finale e un montepremi che puo' raggiungere i 500.000 euro."
             },
             {
                 "ora": "19:54",
@@ -836,12 +876,12 @@
                 "descrizione": "Sintesi delle notizie principali del giorno."
             },
             {
-                "ora": "20:01",
+                "ora": "20:00",
                 "titolo": "Tg5",
                 "descrizione": "Le notizie piu' importanti, nazionali e internazionali, con approfondimenti e rubriche, a cura della redazione giornalistica di Canale 5.\nQUESTO PROGRAMMA E' SOTTOTITOLATO."
             },
             {
-                "ora": "20:40",
+                "ora": "20:38",
                 "titolo": "La ruota della fortuna",
                 "descrizione": "Gerry Scotti, Samira e la ruota piu' famosa della tv! I concorrenti devono scoprire le frasi nascoste. Serve bravura ma la fortuna ci mette del suo!"
             },
@@ -849,14 +889,9 @@
                 "ora": "21:20",
                 "titolo": "Pooh60 - la nostra storia in arena",
                 "descrizione": "Dall'Arena di Verona, lo speciale evento musicale dedicato a una delle band piu' amate e longeve della musica italiana."
-            },
-            {
-                "ora": "23:57",
-                "titolo": "Tg5",
-                "descrizione": "Le notizie piu' importanti, nazionali e internazionali, con approfondimenti e rubriche, a cura della redazione giornalistica di Canale 5."
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:26"
     },
     {
         "canale": "Italia 1",
@@ -998,7 +1033,7 @@
                 "descrizione": "Finn e il suo aiutante Alfonz sono a caccia di tesori e proprio per questo i guai non mancano. Finn è convinto che sia possibile individuare la localizzazione di un antico galeone spagnolo carico di preziosi. Per fare questo però deve convincere qualcuno ad aiutarlo. Ci prova con l'ex moglie Tess con scarsi risultati fino a quando, per una rocambolesca vicenda, la incontra nuovamente sullo yacht di un riccone, Nigel Honeycut, il quale si interessa al possibile ritrovamento anche per movimentare un po' le giornate della figlia Gemma che è andata a trovarlo non certo di buon grado. La caccia può avere inizio. Ma ci sono altri interessati ai forzieri."
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:26"
     },
     {
         "canale": "La7",
@@ -1070,7 +1105,7 @@
                 "descrizione": "Grazie a un piano molto sofisticato, la Spectre è riuscita a impossessarsi di due missili a testata nucleare e minaccia di far saltare mezzo mondo. Usa e Gran Bretagna possono risolvere la crisi solo pagando. All’agente segreto inglese James Bond viene affidato l’incarico di rintracciare il nascondiglio dell’organizzazione criminale... Verso la fine dell’era Roger Moore, una parentesi con il ritorno dello 007 originale, un po’ invecchiato ma in fondo senza et� . Ironicamente, Connery gigioneggia e azzecca il confronto con la cattiva nicaraguegna Barbara Carrera. Un film fuori serie per ragioni contrattuali, senza logo e musica di rito, ma con l’inconfondibile marchio di fabbrica dell’attore scozzese."
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:26"
     },
     {
         "canale": "TV8",
@@ -1188,7 +1223,7 @@
             },
             {
                 "ora": "18:25",
-                "titolo": "GP Spagna: Qualifiche",
+                "titolo": "GP Madrid: Qualifiche",
                 "descrizione": "Sfida da brividi tra i muri del nuovo circuito cittadino: chi si pendera' la prima pole del \"Madring\"? Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero."
             },
             {
@@ -1212,7 +1247,7 @@
                 "descrizione": "Massimo è un ombroso barista, divorziato da poco, che si trova a indagare su alcuni delitti che avvengono nella sua cittadina toscana, Pineta. Il suo istinto d'investigatore trova sempre spunti in alcune conversazioni, che è costretto a sedare nel suo bar, ad opera di quattro arzilli vecchietti. Mentre indaga, Massimo si divide fra un amore per il commissario di polizia Vittoria Fusco, le vicende della sua barista Tiziana e la comparsa del suo fratellastro, Beppe."
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:26"
     },
     {
         "canale": "Nove",
@@ -1289,7 +1324,7 @@
                 "descrizione": "Luca Sommi e Andrea Scanzi conducono il talk show di informazione e attualita'."
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:26"
     },
     {
         "canale": "20 Mediaset",
@@ -1356,7 +1391,7 @@
                 "descrizione": "Un'avventura epica inizia quando un'enorme dolina si apre nel mezzo di Los Angeles, trascinando centinaia di persone ed edifici nelle sue profondit� . Coloro che sono caduti si ritrovano in una terra primordiale misteriosa e pericolosa, dove non hanno altra scelta che unirsi per sopravvivere. Nel frattempo, il resto del mondo cerca disperatamente di capire cosa sia successo. Alla ricerca di risposte, una famiglia dilaniata da questo disastro dovr� svelare i segreti di questo inspiegabile evento per ritrovare un modo per ricongiungersi."
             },
             {
-                "ora": "15:13",
+                "ora": "15:12",
                 "titolo": "La Brea",
                 "descrizione": "Un'avventura epica inizia quando un'enorme dolina si apre nel mezzo di Los Angeles, trascinando centinaia di persone ed edifici nelle sue profondit� . Coloro che sono caduti si ritrovano in una terra primordiale misteriosa e pericolosa, dove non hanno altra scelta che unirsi per sopravvivere. Nel frattempo, il resto del mondo cerca disperatamente di capire cosa sia successo. Alla ricerca di risposte, una famiglia dilaniata da questo disastro dovr� svelare i segreti di questo inspiegabile evento per ritrovare un modo per ricongiungersi."
             },
@@ -1396,7 +1431,7 @@
                 "descrizione": "Nei profondi abissi Lara Croft rinviene un codice per rintracciare il mitico vaso di Pandora, che secondo le leggende conterrebbe l’essenza del Male stesso e che ha il potere di catapultare il mondo nel Caos. La notizia non sfugge a Jonathan Reiss, un malvagio scienziato ricchissimo, che assolda una banda cinese, capitanata dal perfido Chen Lo, perché si impossessi del vaso. Inizia una corsa piena di mirabolanti avventure, tra i quattro angoli della Terra, per raggiungere il Kilimanjaro, dove secondo il codice pare trovarsi il conteso oggetto…"
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:26"
     },
     {
         "canale": "Twentyseven",
@@ -1423,42 +1458,42 @@
                 "descrizione": "La serie è ambientata nell'anno 1867 e si focalizza su una donna medico di Boston, Massachusetts, Michaela Quinn, semplicemente Dr. Mike . Dopo la morte del padre, Joseph Quinn, anche lui medico, si trasferisce in un piccolo paese di frontiera del west, Colorado Springs, per creare il proprio ambulatorio. Oltre al pregiudizio circa lo svolgimento del lavoro di medico da parte di una donna, Michaela deve inizialmente affrontare i problemi della vita nel Colorado con l'aiuto di amici indiani Cheyenne, e un'amica, Charlotte Cooper. Sul letto di morte per un morso di serpente a sonagli, Charlotte Cooper chiede a Michaela di prendersi cura dei suoi tre figli: Matthew, Coleen e Brian. In questa occasione avviene il primo incontro tra Michaela e Sully, il quale le offre la casetta in cui viveva con la prima moglie Abigail, morta durante il parto della figlia dei due, Hanna, anch'essa morta con la madre. Abigail era figlia del proprietario dell'emporio cittadino, Loren Bray."
             },
             {
-                "ora": "07:56",
+                "ora": "07:57",
                 "titolo": "La signora del West",
                 "descrizione": "La serie è ambientata nell'anno 1867 e si focalizza su una donna medico di Boston, Massachusetts, Michaela Quinn, semplicemente Dr. Mike . Dopo la morte del padre, Joseph Quinn, anche lui medico, si trasferisce in un piccolo paese di frontiera del west, Colorado Springs, per creare il proprio ambulatorio. Oltre al pregiudizio circa lo svolgimento del lavoro di medico da parte di una donna, Michaela deve inizialmente affrontare i problemi della vita nel Colorado con l'aiuto di amici indiani Cheyenne, e un'amica, Charlotte Cooper. Sul letto di morte per un morso di serpente a sonagli, Charlotte Cooper chiede a Michaela di prendersi cura dei suoi tre figli: Matthew, Coleen e Brian. In questa occasione avviene il primo incontro tra Michaela e Sully, il quale le offre la casetta in cui viveva con la prima moglie Abigail, morta durante il parto della figlia dei due, Hanna, anch'essa morta con la madre. Abigail era figlia del proprietario dell'emporio cittadino, Loren Bray."
             },
             {
-                "ora": "08:51",
+                "ora": "08:53",
                 "titolo": "La casa nella prateria",
                 "descrizione": "La serie narra le difficoltose vicissitudini di una tradizionale famiglia americana che vive in una sperduta fattoria, vicino a un paesino del Minnesota, nel periodo 1870-1890."
             },
             {
-                "ora": "09:44",
+                "ora": "09:46",
                 "titolo": "La casa nella prateria",
                 "descrizione": "La serie narra le difficoltose vicissitudini di una tradizionale famiglia americana che vive in una sperduta fattoria, vicino a un paesino del Minnesota, nel periodo 1870-1890."
             },
             {
-                "ora": "10:42",
+                "ora": "10:43",
                 "titolo": "La casa nella prateria",
                 "descrizione": "La serie narra le difficoltose vicissitudini di una tradizionale famiglia americana che vive in una sperduta fattoria, vicino a un paesino del Minnesota, nel periodo 1870-1890."
             },
             {
-                "ora": "11:40",
+                "ora": "11:41",
                 "titolo": "La signora del West",
                 "descrizione": "La serie è ambientata nell'anno 1867 e si focalizza su una donna medico di Boston, Massachusetts, Michaela Quinn, semplicemente Dr. Mike . Dopo la morte del padre, Joseph Quinn, anche lui medico, si trasferisce in un piccolo paese di frontiera del west, Colorado Springs, per creare il proprio ambulatorio. Oltre al pregiudizio circa lo svolgimento del lavoro di medico da parte di una donna, Michaela deve inizialmente affrontare i problemi della vita nel Colorado con l'aiuto di amici indiani Cheyenne, e un'amica, Charlotte Cooper. Sul letto di morte per un morso di serpente a sonagli, Charlotte Cooper chiede a Michaela di prendersi cura dei suoi tre figli: Matthew, Coleen e Brian. In questa occasione avviene il primo incontro tra Michaela e Sully, il quale le offre la casetta in cui viveva con la prima moglie Abigail, morta durante il parto della figlia dei due, Hanna, anch'essa morta con la madre. Abigail era figlia del proprietario dell'emporio cittadino, Loren Bray."
             },
             {
-                "ora": "12:39",
+                "ora": "12:40",
                 "titolo": "La signora del West",
                 "descrizione": "La serie è ambientata nell'anno 1867 e si focalizza su una donna medico di Boston, Massachusetts, Michaela Quinn, semplicemente Dr. Mike . Dopo la morte del padre, Joseph Quinn, anche lui medico, si trasferisce in un piccolo paese di frontiera del west, Colorado Springs, per creare il proprio ambulatorio. Oltre al pregiudizio circa lo svolgimento del lavoro di medico da parte di una donna, Michaela deve inizialmente affrontare i problemi della vita nel Colorado con l'aiuto di amici indiani Cheyenne, e un'amica, Charlotte Cooper. Sul letto di morte per un morso di serpente a sonagli, Charlotte Cooper chiede a Michaela di prendersi cura dei suoi tre figli: Matthew, Coleen e Brian. In questa occasione avviene il primo incontro tra Michaela e Sully, il quale le offre la casetta in cui viveva con la prima moglie Abigail, morta durante il parto della figlia dei due, Hanna, anch'essa morta con la madre. Abigail era figlia del proprietario dell'emporio cittadino, Loren Bray."
             },
             {
-                "ora": "13:35",
+                "ora": "13:36",
                 "titolo": "La signora del West",
                 "descrizione": "La serie è ambientata nell'anno 1867 e si focalizza su una donna medico di Boston, Massachusetts, Michaela Quinn, semplicemente Dr. Mike . Dopo la morte del padre, Joseph Quinn, anche lui medico, si trasferisce in un piccolo paese di frontiera del west, Colorado Springs, per creare il proprio ambulatorio. Oltre al pregiudizio circa lo svolgimento del lavoro di medico da parte di una donna, Michaela deve inizialmente affrontare i problemi della vita nel Colorado con l'aiuto di amici indiani Cheyenne, e un'amica, Charlotte Cooper. Sul letto di morte per un morso di serpente a sonagli, Charlotte Cooper chiede a Michaela di prendersi cura dei suoi tre figli: Matthew, Coleen e Brian. In questa occasione avviene il primo incontro tra Michaela e Sully, il quale le offre la casetta in cui viveva con la prima moglie Abigail, morta durante il parto della figlia dei due, Hanna, anch'essa morta con la madre. Abigail era figlia del proprietario dell'emporio cittadino, Loren Bray."
             },
             {
-                "ora": "14:31",
+                "ora": "14:32",
                 "titolo": "La casa nella prateria",
                 "descrizione": "La serie narra le difficoltose vicissitudini di una tradizionale famiglia americana che vive in una sperduta fattoria, vicino a un paesino del Minnesota, nel periodo 1870-1890."
             },
@@ -1473,7 +1508,7 @@
                 "descrizione": "La serie narra le difficoltose vicissitudini di una tradizionale famiglia americana che vive in una sperduta fattoria, vicino a un paesino del Minnesota, nel periodo 1870-1890."
             },
             {
-                "ora": "17:26",
+                "ora": "17:27",
                 "titolo": "Il ritorno di Colombo",
                 "descrizione": "Colombo (Columbo) è una serie televisiva statunitense di genere poliziesco interpretata da Peter Falk e prodotto negli Stati Uniti dal 1968 al 2003. La serie venne premiata quattro volte con l'Emmy Award; vi hanno partecipato molti attori noti quali Leonard Nimoy o Donald Pleasence e alcuni episodi sono stati diretti da famosi registi come Steven Spielberg, Ben Gazzara o Jonathan Demme.\n\nIn Italia è esordita il 16 novembre 1974 su TV Koper-Capodistria e tre anni dopo, dal 6 luglio 1977, esordisce anche su Rai 2; qualche anno dopo le nuovi stagioni vennero trasmesse per le prima volta su Rete 4. Nei decenni a seguire è stata replicata più volte, in particolare sui canali Mediaset."
             },
@@ -1483,7 +1518,7 @@
                 "descrizione": "Colombo (Columbo) è una serie televisiva statunitense di genere poliziesco interpretata da Peter Falk e prodotto negli Stati Uniti dal 1968 al 2003. La serie venne premiata quattro volte con l'Emmy Award; vi hanno partecipato molti attori noti quali Leonard Nimoy o Donald Pleasence e alcuni episodi sono stati diretti da famosi registi come Steven Spielberg, Ben Gazzara o Jonathan Demme.\n\nIn Italia è esordita il 16 novembre 1974 su TV Koper-Capodistria e tre anni dopo, dal 6 luglio 1977, esordisce anche su Rai 2; qualche anno dopo le nuovi stagioni vennero trasmesse per le prima volta su Rete 4. Nei decenni a seguire è stata replicata più volte, in particolare sui canali Mediaset."
             },
             {
-                "ora": "21:08",
+                "ora": "21:07",
                 "titolo": "Amore e vendetta - Zorro",
                 "descrizione": "1999, costa dell'Algeria. In una strana notte su una barca vediamo tre amici: Marco Damiani, Paolo Bianchi e Luca Calligaris; i tre nascondono, in una cassa, il cadavere di Rosaspina, accompagnare somigliante a Laura Castellani. Quest'ultima e la fidanzata di Andrea Damonte, il quarto amico. Uno dei tre amici, visto che Andrea aveva scoperto il cadavere, gli spara: Andrea cade in acqua e sembra scomparso in mare."
             },
@@ -1493,17 +1528,17 @@
                 "descrizione": "1999, costa dell'Algeria. In una strana notte su una barca vediamo tre amici: Marco Damiani, Paolo Bianchi e Luca Calligaris; i tre nascondono, in una cassa, il cadavere di Rosaspina, accompagnare somigliante a Laura Castellani. Quest'ultima e la fidanzata di Andrea Damonte, il quarto amico. Uno dei tre amici, visto che Andrea aveva scoperto il cadavere, gli spara: Andrea cade in acqua e sembra scomparso in mare."
             },
             {
-                "ora": "23:05",
+                "ora": "23:04",
                 "titolo": "Amore e vendetta - Zorro",
                 "descrizione": "1999, costa dell'Algeria. In una strana notte su una barca vediamo tre amici: Marco Damiani, Paolo Bianchi e Luca Calligaris; i tre nascondono, in una cassa, il cadavere di Rosaspina, accompagnare somigliante a Laura Castellani. Quest'ultima e la fidanzata di Andrea Damonte, il quarto amico. Uno dei tre amici, visto che Andrea aveva scoperto il cadavere, gli spara: Andrea cade in acqua e sembra scomparso in mare."
             },
             {
-                "ora": "23:56",
+                "ora": "23:55",
                 "titolo": "La stangata",
                 "descrizione": "Johnny Hooker e il suo amico Luther Coleman sono due truffatori di strada. Dopo aver raggirato il corriere del potente gangster Doyle Lonnegan, Luther viene ucciso per ritorsione e Hooker è costretto a fuggire e a nascondersi. Desiderando vendicare Luther, il giovane chiede aiuto ad un vecchio amico del defunto, Henry Gondorff, uno dei più bravi ed esperti truffatori degli Stati Uniti. Insieme organizzano una \"stangata\" ai danni di Lonnegan, creando una finta agenzia di scommesse in cui il boss crede di poter vincere facilmente delle ingenti somme di denaro, grazie a informazioni riservate."
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:26"
     },
     {
         "canale": "IRIS",
@@ -1550,7 +1585,7 @@
                 "descrizione": "Dopo aver preso ostaggi in una banca di Stoccolma, un ex detenuto chiede il rilascio di un vecchio complice. Con l'aggravarsi della situazione, l'uomo sviluppa uno strano legame con una delle donne sequestrate."
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:26"
     },
     {
         "canale": "Rai Movie",
@@ -1617,7 +1652,7 @@
                 "descrizione": "Jacopo, consulente di coppia, è perseguitato da un'insolita forma di sfortuna: quando comincia a uscire con una ragazza che gli piace, la sorte si accanisce... contro di lei. Per questo, dopo innumerevoli tragedie da lui involontariamente causate alle sue fidanzate, ha optato per la solitudine. Finché non incontra Sara, una giovane architetto che sembra essere la sua donna ideale. Proprio perché le vuole veramente bene, Jacopo cerca di starle lontano. Ma la passione reciproca è incontenibile, e presto le conseguenze sulla vita della ragazza diventano disastrose. In un'epoca di scarsa ispirazione e scarso coraggio produttivo, il cinema italiano attinge a quello francese per realizzare il rifacimento di una commedia romantica, Per sfortuna che ci sei, che oltralpe era stata campione di incassi, ma in Italia era passata quasi inosservata."
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:26"
     },
     {
         "canale": "Rai Premium",
@@ -1714,79 +1749,79 @@
                 "descrizione": "Pontedera, 1945. La fabbrica di Enrico Piaggio è in macerie. Piaggio avverte l'enorme responsabilit� che grava sulle sue spalle: la vita di tante famiglie dipende dalla sua capacit� di creare nuovo lavoro. Inizia a formarsi nella sua mente un progetto, un sogno: realizzare un mezzo di trasporto piccolo, agile ed economico..."
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:26"
     },
     {
         "canale": "La 5",
         "categoria": "Digitale Terrestre",
         "programmi": [
             {
-                "ora": "06:06",
+                "ora": "06:00",
                 "titolo": "Tempesta d'amore",
                 "descrizione": "Tempesta d'amore (Sturm der Liebe) è una soap opera tedesca trasmessa dal 26 settembre 2005 sull'emittente nazionale Das Erste e creata da Bea Schimdt."
             },
             {
-                "ora": "06:57",
+                "ora": "06:51",
                 "titolo": "Beautiful",
                 "descrizione": "Hope e' sconvolta dopo che Steffy accusandola di aver oltrepassato ancora una volta i limiti con Finn, l'ha licenziata su due piedi. Hope racconta a Katie la propria versione dei fatti."
             },
             {
-                "ora": "07:18",
+                "ora": "07:15",
                 "titolo": "Beautiful",
                 "descrizione": "Dopo un clamoroso malinteso alla Forrester Creations, la situazione tra Hope e Steffy raggiunge il punto di non ritorno: Steffy e' convinta che Hope cercasse di sedurre suo marito Finn."
             },
             {
-                "ora": "07:39",
+                "ora": "07:38",
                 "titolo": "Beautiful",
                 "descrizione": "Dopo che Steffy l'ha sorpresa in una situazione con Finn ritenuta compromettente, Hope viene licenziata. Brooke e Carter ritengono che si tratti di un malinteso."
             },
             {
-                "ora": "08:01",
+                "ora": "08:00",
                 "titolo": "Beautiful",
                 "descrizione": "Hope e' sconvolta perche' Steffy l'ha licenziata dalla Forrester e ha eliminato la sua linea, che rappresentava la sua passione e la sua identita'."
             },
             {
-                "ora": "08:33",
+                "ora": "08:31",
                 "titolo": "Beautiful",
                 "descrizione": "Alla Forrester, Ridge, Steffy e Eric discutono del licenziamento di Hope, avvenuto il giorno prima. Eric e' molto arrabbiato con Steffy."
             },
             {
-                "ora": "08:58",
+                "ora": "08:57",
                 "titolo": "Beautiful",
                 "descrizione": "Hope racconta a Zende il motivo per cui Steffy l'ha licenziata e ha deciso di eliminare la sua linea: mentre era da sola in ufficio, era inciampata e caduta rovinosamente su Finn."
             },
             {
-                "ora": "09:33",
+                "ora": "09:31",
                 "titolo": "La promessa",
                 "descrizione": "Cordoba, 1913. Mentre la Spagna è devastata da alcuni conflitti, c'è un luogo in cui, almeno in apparenza, regna la pace: è il Palazzo La Promesa, nella valle di Los Pedroches, di propriet� dei Marchesi di Lujan. E' proprio qui che Jana si fa assumere come cameriera per scoprire la verit� sull'omicidio di sua madre e di suo fratello. La situazione si complica quando Jana si innamora di uno dei figli dei ricchi marchesi, Manuel. Con Jordi Coll (Il Segreto)."
             },
             {
-                "ora": "10:35",
+                "ora": "10:34",
                 "titolo": "La promessa",
                 "descrizione": "Cordoba, 1913. Mentre la Spagna è devastata da alcuni conflitti, c'è un luogo in cui, almeno in apparenza, regna la pace: è il Palazzo La Promesa, nella valle di Los Pedroches, di propriet� dei Marchesi di Lujan. E' proprio qui che Jana si fa assumere come cameriera per scoprire la verit� sull'omicidio di sua madre e di suo fratello. La situazione si complica quando Jana si innamora di uno dei figli dei ricchi marchesi, Manuel. Con Jordi Coll (Il Segreto)."
             },
             {
-                "ora": "11:43",
+                "ora": "11:42",
                 "titolo": "Racconto di una notte",
                 "descrizione": "Mahir torna a Denizli vent'anni dopo l'assassinio del padre, deciso a vendicarlo. Ma la sua missione prende una piega inaspettata quando incontra Canfeza, la figlia di Kursat, l'uomo responsabile della morte di suo padre. Sar� l'amore o la vendetta a guidarlo?"
             },
             {
-                "ora": "12:46",
+                "ora": "12:38",
                 "titolo": "Racconto di una notte",
                 "descrizione": "Mahir torna a Denizli vent'anni dopo l'assassinio del padre, deciso a vendicarlo. Ma la sua missione prende una piega inaspettata quando incontra Canfeza, la figlia di Kursat, l'uomo responsabile della morte di suo padre. Sar� l'amore o la vendetta a guidarlo?"
             },
             {
-                "ora": "13:39",
+                "ora": "13:38",
                 "titolo": "The Royal Saga",
                 "descrizione": "Esploriamo la vita da favola di Meghan Markle e Lauren Sánchez, le americane che hanno sposato il Principe Azzurro, ma anche quella degli animali domestici \"reali\"."
             },
             {
-                "ora": "15:07",
+                "ora": "15:03",
                 "titolo": "Scene da un matrimonio",
                 "descrizione": "Anna Tatangelo narrera' la storia d'amore di due futuri sposi,dal loro primo incontro al gran giorno,quello delle nozze."
             },
             {
-                "ora": "16:49",
+                "ora": "16:43",
                 "titolo": "Temptation Island e poi..e poi..",
                 "descrizione": "Dopo il viaggio nei sentimenti, per i protagonisti di Temptation Island arriva il momento della verita'. Emozioni, confronti e sorprese nello speciale piu' atteso. Conduce Filippo Bisciglia"
             },
@@ -1811,7 +1846,7 @@
                 "descrizione": "Due amiche acquistano un magazzino all'asta e scoprono che è pieno di oggetti preziosi appartenuti a un serial killer appena uscito di prigione e deciso a riaverli."
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:26"
     },
     {
         "canale": "Real Time",
@@ -1898,7 +1933,7 @@
                 "descrizione": "Syreeta ha bisogno di aiuto ma crede che tutti abbiano un secondo fine. L'operazione sara' dura se non riuscira' a fidarsi del chirurgo."
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:26"
     },
     {
         "canale": "Food Network",
@@ -2015,7 +2050,7 @@
                 "descrizione": "Simone Rugiati e' in viaggio per il Bel Paese alla ricerca dei migliori food advisor."
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:26"
     },
     {
         "canale": "Focus",
@@ -2112,7 +2147,7 @@
                 "descrizione": "Balene, zebre, fiumi rinati e habitat rigenerati: un viaggio tra le straordinarie connessioni che permettono alla natura di prosperare."
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:26"
     },
     {
         "canale": "Giallo",
@@ -2166,12 +2201,12 @@
             {
                 "ora": "17:10",
                 "titolo": "Cooper & Fry",
-                "descrizione": "Cooper & Fry"
+                "descrizione": "Ambientata nel misterioso scenario del Peak District, la serie segue due giovani detective agli antipodi: l'affabile Ben Cooper, del posto, e la riservata Diane Fry, appena arrivata. Costretti a collaborare per indagare su una serie di morti misteriose, dovranno imparare a lavorare insieme per ottenere risultati. Mentre le loro vite private iniziano a intrecciarsi, nasce un'amicizia singolare... ma non sar� sempre facile."
             },
             {
                 "ora": "18:10",
                 "titolo": "Cooper & Fry",
-                "descrizione": "Cooper & Fry"
+                "descrizione": "Ambientata nel misterioso scenario del Peak District, la serie segue due giovani detective agli antipodi: l'affabile Ben Cooper, del posto, e la riservata Diane Fry, appena arrivata. Costretti a collaborare per indagare su una serie di morti misteriose, dovranno imparare a lavorare insieme per ottenere risultati. Mentre le loro vite private iniziano a intrecciarsi, nasce un'amicizia singolare... ma non sar� sempre facile."
             },
             {
                 "ora": "19:10",
@@ -2194,7 +2229,7 @@
                 "descrizione": "A causa di alcuni errori giudiziari che l'hanno condotta in carcere, Constance Meyer decide di diventare studentessa presso la Scuola Nazionale di Magistratura. Cinquantenne e dinamica, tenta di conciliare la vita familiare con questa nuova sfida."
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:26"
     },
     {
         "canale": "Boing",
@@ -2351,7 +2386,7 @@
                 "descrizione": "Gumball e Darwin vogliono farsi aiutare da Bobert per fare i compiti. Si rendono conto, pero', dell'enorme pericolosita' dell'amico per il pianeta Terra."
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:26"
     },
     {
         "canale": "K2",
@@ -2508,7 +2543,7 @@
                 "descrizione": "4' Stagione Ep.1 - Le avventure di tre scoiattoli dalla voce incredibile, 'adottati' da Dave Seville, che diventano un fenomeno musicale."
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:26"
     },
     {
         "canale": "Rai Gulp",
@@ -2665,7 +2700,7 @@
                 "descrizione": "Bloom compie sedici anni e scopre di avere dei poteri magici. Salvata da Stella e Flora arriva ad Alfea, dove le forze oscure la stanno gi� osservando"
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:26"
     },
     {
         "canale": "Frisbee",
@@ -2822,7 +2857,7 @@
                 "descrizione": "2' Stagione Ep.3 - Gioco, avventura e amici rendono la vita di Oggy Oggy divertente! Curioso e audace, questo adorabile gattino è sempre pronto ad aiutare un amico e a vivere nuove esperienze."
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:26"
     },
     {
         "canale": "DMAX",
@@ -2939,7 +2974,7 @@
                 "descrizione": "A 2.200 metri di quota, Gianluca, Manuel e Romina affrontano la demolizione e sostituzione del ponte del Pelles."
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:26"
     },
     {
         "canale": "Rai Sport",
@@ -3016,7 +3051,7 @@
                 "descrizione": "Allo Stadio Tommaso Fattori dell'Aquila, Valorugby Emilia e Petrarca Rugby si sfidano nella finale della Supercoppa Italiana 2026."
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:26"
     },
     {
         "canale": "Sportitalia",
@@ -3049,8 +3084,8 @@
             },
             {
                 "ora": "10:00",
-                "titolo": "Speciale Serie B",
-                "descrizione": "Speciale Serie B"
+                "titolo": "Play weekend",
+                "descrizione": "Play weekend"
             },
             {
                 "ora": "11:00",
@@ -3093,7 +3128,7 @@
                 "descrizione": "Calcio Weekend Live"
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:26"
     },
     {
         "canale": "HGTV",
@@ -3195,7 +3230,7 @@
                 "descrizione": "Un appassionato di viaggi e' finalmente pronto a fermarsi e a vivere con la sua fidanzata. Brian e Mika hanno solo 100 giorni per terminare il progetto."
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:26"
     },
     {
         "canale": "RSI LA 1",
@@ -3203,12 +3238,12 @@
         "programmi": [
             {
                 "ora": "06:15",
-                "titolo": "Il Quotidiano (R)",
+                "titolo": "Il Quotidiano",
                 "descrizione": "Attualit� della Svizzera italiana"
             },
             {
                 "ora": "07:00",
-                "titolo": "Siamo tutti fuori (R)",
+                "titolo": "Siamo tutti fuori",
                 "descrizione": "in diretta con Carlotta Gallino, Davide Riva e Christian Frapolli"
             },
             {
@@ -3313,17 +3348,17 @@
             },
             {
                 "ora": "12:55",
-                "titolo": "Falò (R)",
+                "titolo": "Falò",
                 "descrizione": "Castelli o Fortezza? È solo questione di termini o c'è anche altro in gioco? Il prossimo 27 settembre Bellinzona vota sul futuro del suo sito di architettura fortificata medievale, patrimonio dell'UNESCO, in un referendum che ha spaccato la citt� . Al centro del dibattito, un progetto da 19 milioni di franchi: valorizzare il sito per rilanciarlo turisticamente o preservarne intatta l'identit� storica? Con un reportage, Falò entra nel cuore della contesa, guardando anche al Castello di Chillon sul lago Lemano, per capire dove passa il confine tra tutela, trasformazione e turismo. A seguire faccia a faccia in studio con il sindaco di Bellinzona Mario Branda (favorevole al progetto) e Brenno Martignoni Polti (contrario), presidente de' Il Noce."
             },
             {
                 "ora": "14:10",
-                "titolo": "Tandem",
-                "descrizione": "Il comandante Lea Soler viene trasferito alla squadra del capitano Paul Marchal, il suo ex marito. Saranno costretti a incontrarsi anche fuori dal lavoro perché la coppia ha due adolescenti da gestire, Alice e Thomas."
+                "titolo": "Tandem - Profumo di mistero",
+                "descrizione": "Il comandante Léa Soler viene traferita a Montpellier, a capo di una squadra di investigatori della quale fa parte anche il suo ex marito nonché padre dei suoi due figli adolescenti."
             },
             {
                 "ora": "15:00",
-                "titolo": "Quattro Matrimoni E Un Funerale",
+                "titolo": "Quattro matrimoni e un funerale",
                 "descrizione": "Un impenitente single trentenne ha una vera e propria avversione per i matrimoni, tanto che riesce ad arrivare sempre in ritardo. Un giorno però proprio ad un matrimonio incontra la bella americana Carrie e ne rimane affascinato..."
             },
             {
@@ -3352,7 +3387,7 @@
                 "descrizione": "Attualit� della Svizzera italiana"
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:26"
     },
     {
         "canale": "RSI LA 2",
@@ -3360,7 +3395,7 @@
         "programmi": [
             {
                 "ora": "06:20",
-                "titolo": "Il Quotidiano (R)",
+                "titolo": "Il Quotidiano",
                 "descrizione": "Attualit� della Svizzera italiana"
             },
             {
@@ -3369,8 +3404,8 @@
                 "descrizione": "Le notizie di prima serata"
             },
             {
-                "ora": "07:15",
-                "titolo": "TG Notte (R)",
+                "ora": "07:25",
+                "titolo": "TG Notte",
                 "descrizione": "Le ultime notizie della giornata"
             },
             {
@@ -3434,7 +3469,7 @@
                 "descrizione": "Qualifiche\nda Madrid (ESP)"
             },
             {
-                "ora": "17:20",
+                "ora": "17:10",
                 "titolo": "Il prima e dopo sport",
                 "descrizione": "Immagini sportive"
             },
@@ -3469,7 +3504,7 @@
                 "descrizione": "Finale femminile\nda New York (USA)"
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:26"
     },
     {
         "canale": "DAZN 1",
@@ -3491,111 +3526,101 @@
                 "descrizione": "Serie A - 3a g. Ogni weekend una nuova storia. Ogni partita un'emozione da vivere fino all'ultimo minuto. La stagione 2026-27 di Serie A Enilive ti aspetta su DAZN."
             },
             {
-                "ora": "09:47",
+                "ora": "09:42",
                 "titolo": "Come l'Inter ha vinto lo Scudetto",
                 "descrizione": "I segreti dello Scudetto nerazzurro: con i nostri talent scopriamo le invenzioni tattiche che hanno fatto la differenza nella stagione."
             },
             {
-                "ora": "10:19",
+                "ora": "10:24",
                 "titolo": "Fiorentina - Torino",
                 "descrizione": "Serie A - 3a g. Ogni weekend una nuova storia. Ogni partita un'emozione da vivere fino all'ultimo minuto. La stagione 2026-27 di Serie A Enilive ti aspetta su DAZN."
             },
             {
-                "ora": "12:05",
+                "ora": "12:09",
                 "titolo": "Igor - L'eroe romantico del calcio",
                 "descrizione": "Un documentario sulla carriera unica di Igor Protti: l'umanita' di un campione capace di incarnare i sogni e la rivalsa delle province. Una storia fatta di gol, cuore e passione."
             },
             {
-                "ora": "13:49",
+                "ora": "13:53",
                 "titolo": "Ezequiel Lavezzi",
                 "descrizione": "Ezequiel Lavezzi - Giorgia's Secret conduce gli intervistati nel proprio tunnel interiore, un viaggio tra ferite, traumi, rinascite e segreti mai rivelati. L'ospite di Giorgia Rossi e' Ezequiel Lavezzi."
             },
             {
-                "ora": "15:00",
+                "ora": "14:30",
                 "titolo": "Genoa - Frosinone",
                 "descrizione": "Serie A - 4a g. Ogni weekend una nuova storia. Ogni partita un'emozione da vivere fino all'ultimo minuto. La stagione 2026-27 di Serie A Enilive ti aspetta su DAZN."
             },
             {
-                "ora": "17:20",
-                "titolo": "Here We Go: Storia di Fabrizio Romano",
-                "descrizione": "Un'intervista con il punto di riferimento del calciomercato internazionale."
-            },
-            {
-                "ora": "18:00",
+                "ora": "17:00",
                 "titolo": "Lazio - Milan",
                 "descrizione": "Serie A - 4a g. Ogni weekend una nuova storia. Ogni partita un'emozione da vivere fino all'ultimo minuto. La stagione 2026-27 di Serie A Enilive ti aspetta su DAZN."
             },
             {
-                "ora": "20:11",
-                "titolo": "Giuseppe Marotta",
-                "descrizione": "Giuseppe Marotta - Gli intervistati vengono accompagnati in un viaggio interiore tra ferite, traumi, conti in sospeso, rinascite, segreti non detti. Nel sesto episodio l'ospite di Giorgia Rossi e' Giuseppe Marotta."
-            },
-            {
-                "ora": "21:00",
+                "ora": "20:51",
                 "titolo": "Real Madrid - Rayo Vallecano",
                 "descrizione": "Liga - 5a g. Dal trionfo in New Jersey al ritorno del calcio in Spagna: e' LaLiga EA Sports dei campioni del mondo."
             },
             {
-                "ora": "23:11",
+                "ora": "23:01",
                 "titolo": "Giorgia's Secret - Alessandro Nesta",
                 "descrizione": "Alessandro Nesta - Gli intervistati attraversano il proprio tunnel interiore. Un viaggio tra ferite, traumi, conti in sospeso, rinascite, segreti. Nel terzo episodio l'ospite di Giorgia Rossi e' Alessandro Nesta."
+            },
+            {
+                "ora": "23:41",
+                "titolo": "Christian Pulisic: The Italian Dream",
+                "descrizione": "Christian Pulisic e il leggendario coach Dan Peterson in una chiacchierata, 1 to 1, parlano del momento del calciatore statunitense e di tutta la sua esperienza italiana e rossonera."
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:26"
     },
     {
         "canale": "Sky Sport 24",
         "categoria": "Sport",
         "programmi": [
             {
-                "ora": "05:30",
+                "ora": "05:40",
                 "titolo": "News Line",
                 "descrizione": "Tutto quello che è accaduto nel panorama sportivo delle ultime 24 ore, con analisi, notizie, e una lettura dei giornali che troveremo in edicola."
             },
             {
-                "ora": "06:00",
+                "ora": "06:15",
                 "titolo": "News Line",
                 "descrizione": "Tutto quello che è accaduto nel panorama sportivo delle ultime 24 ore, con analisi, notizie, e una lettura dei giornali che troveremo in edicola."
             },
             {
-                "ora": "06:30",
+                "ora": "06:45",
                 "titolo": "News Line",
                 "descrizione": "Tutto quello che è accaduto nel panorama sportivo delle ultime 24 ore, con analisi, notizie, e una lettura dei giornali che troveremo in edicola."
             },
             {
-                "ora": "07:00",
+                "ora": "07:15",
                 "titolo": "News Line",
                 "descrizione": "Tutto quello che è accaduto nel panorama sportivo delle ultime 24 ore, con analisi, notizie, e una lettura dei giornali che troveremo in edicola."
             },
             {
-                "ora": "07:30",
+                "ora": "07:50",
                 "titolo": "News Line",
                 "descrizione": "Tutto quello che è accaduto nel panorama sportivo delle ultime 24 ore, con analisi, notizie, e una lettura dei giornali che troveremo in edicola."
             },
             {
-                "ora": "08:00",
+                "ora": "08:20",
                 "titolo": "News Line",
                 "descrizione": "Tutto quello che è accaduto nel panorama sportivo delle ultime 24 ore, con analisi, notizie, e una lettura dei giornali che troveremo in edicola."
             },
             {
-                "ora": "08:30",
+                "ora": "08:50",
                 "titolo": "News Line",
                 "descrizione": "Tutto quello che è accaduto nel panorama sportivo delle ultime 24 ore, con analisi, notizie, e una lettura dei giornali che troveremo in edicola."
             },
             {
-                "ora": "09:00",
-                "titolo": "News Line",
-                "descrizione": "Tutto quello che è accaduto nel panorama sportivo delle ultime 24 ore, con analisi, notizie, e una lettura dei giornali che troveremo in edicola."
-            },
-            {
-                "ora": "09:30",
+                "ora": "09:25",
                 "titolo": "News Line",
                 "descrizione": "Tutto quello che è accaduto nel panorama sportivo delle ultime 24 ore, con analisi, notizie, e una lettura dei giornali che troveremo in edicola."
             },
             {
                 "ora": "10:00",
-                "titolo": "Tennis Us Open Today",
-                "descrizione": "Tennis Us Open Today. - Tennis Us Open Today"
+                "titolo": "Tennis: US Open Today",
+                "descrizione": "US Open Today"
             },
             {
                 "ora": "10:30",
@@ -3696,9 +3721,14 @@
                 "ora": "21:00",
                 "titolo": "Campo Aperto Speciale",
                 "descrizione": "Il racconto della giornata di sport e dellla Serie A nell'approfondimento condotto da Leo Di Bello."
+            },
+            {
+                "ora": "21:30",
+                "titolo": "Sport 24 Today",
+                "descrizione": "Le notizie e i commenti del giorno, le anteprime e l'attualita' con servizi, commenti, interviste e collegamenti."
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:26"
     },
     {
         "canale": "Sky Sport Uno",
@@ -3712,7 +3742,7 @@
             {
                 "ora": "06:00",
                 "titolo": "2a Semifinale Singolare Maschile",
-                "descrizione": "Tennis Us Open. - Dall'USTA Billie Jean King National Tennis Center di New York, Stati Uniti."
+                "descrizione": "Tennis Us Open. - TIAFOE (Usa)-SHELTON (Usa) - Tc: Ferrero-Rossi"
             },
             {
                 "ora": "08:00",
@@ -3751,7 +3781,7 @@
             },
             {
                 "ora": "12:25",
-                "titolo": "GP Spagna: Prove libere 3",
+                "titolo": "GP Madrid: Prove libere 3",
                 "descrizione": "Al \"Madring\" 60 minuti per le ultime modifiche e per trovare il feeling in vista delle qualifiche. Telecronaca di Carlo Vanzini, Ivan Capelli e Roberto Chinchero."
             },
             {
@@ -3781,7 +3811,7 @@
             },
             {
                 "ora": "15:55",
-                "titolo": "GP Spagna: Qualifiche",
+                "titolo": "GP Madrid: Qualifiche",
                 "descrizione": "Sfida da brividi tra i muri del nuovo circuito cittadino: chi si pendera' la prima pole del \"Madring\"? Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero."
             },
             {
@@ -3825,7 +3855,7 @@
                 "descrizione": "Calcio."
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:26"
     },
     {
         "canale": "Sky Sport Calcio",
@@ -3927,7 +3957,7 @@
                 "descrizione": "Calcio."
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:26"
     },
     {
         "canale": "Sky Sport Tennis",
@@ -3941,7 +3971,7 @@
             {
                 "ora": "06:00",
                 "titolo": "1a Semifinale Singolare Maschile",
-                "descrizione": "Tennis Us Open. - Dall'USTA Billie Jean King National Tennis Center di New York, Stati Uniti."
+                "descrizione": "Tennis Us Open. - ZVEREV (Ger)-KHACHANOV - Tc: Boschetto-Bertolucci"
             },
             {
                 "ora": "09:15",
@@ -3951,7 +3981,7 @@
             {
                 "ora": "09:30",
                 "titolo": "2a Semifinale Singolare Maschile",
-                "descrizione": "Tennis Us Open. - Dall'USTA Billie Jean King National Tennis Center di New York, Stati Uniti."
+                "descrizione": "Tennis Us Open. - TIAFOE (Usa)-SHELTON (Usa) - Tc: Ferrero-Rossi"
             },
             {
                 "ora": "12:45",
@@ -3964,14 +3994,9 @@
                 "descrizione": "Sessione Diurna Premier Padel. - Seguiamo le gare del Premier Padel Major."
             },
             {
-                "ora": "17:30",
+                "ora": "17:40",
                 "titolo": "Tennis Us Open The Insider 2026 Ep.13",
                 "descrizione": "Ep.13 11\/09\/2026 The Insider: US Open. - Le storie dello US Open raccontate con interviste e immagini dietro le quinte, con Stefano Meloccaro nel ruolo di \"insider"
-            },
-            {
-                "ora": "17:45",
-                "titolo": "Sky Tennis Show 2026",
-                "descrizione": "12\/09\/2026 Sky Tennis Show. - Lo show degli Us Open di tennis, commentati in studio da giornalisti e talent di Sky Sport, con interviste, analisi e curiosita'. Conduce Eleonora Cottarelli"
             },
             {
                 "ora": "18:00",
@@ -3989,36 +4014,31 @@
                 "descrizione": "Dall'USTA Billie Jean King National Tennis Center di New York, Stati Uniti."
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:26"
     },
     {
         "canale": "Sky Sport F1",
         "categoria": "Sport",
         "programmi": [
             {
-                "ora": "04:45",
-                "titolo": "GP Spagna: Prove libere 1",
+                "ora": "05:00",
+                "titolo": "GP Madrid: Prove libere 1",
                 "descrizione": "Prima sessione di prove su un circuito completamente nuovo: 60 minuti per scoprire la pista di Madrid. Telecronaca di Carlo Vanzini e Roberto Chinchero."
             },
             {
-                "ora": "06:00",
+                "ora": "06:10",
                 "titolo": "Madrid: Qualifiche",
                 "descrizione": "Qualifiche"
             },
             {
-                "ora": "06:50",
+                "ora": "07:15",
                 "titolo": "Madrid: Qualifiche",
                 "descrizione": "Segui l'appuntamento con la gara di Formula 2."
             },
             {
-                "ora": "07:35",
-                "titolo": "GP Spagna: Prove libere 2",
+                "ora": "08:05",
+                "titolo": "GP Madrid: Prove libere 2",
                 "descrizione": "Seconda sessione di prove sul nuovo circuito di Madrid: 60 minuti per provare sia il giro da qualifica che il passo gara. Telecronaca di Carlo Vanzini, Ivan Capelli e Roberto Chinchero"
-            },
-            {
-                "ora": "08:55",
-                "titolo": "F1 Paddock Live Show",
-                "descrizione": "La sintesi dei temi principali della giornata con le voci dei protagonisti. Conduce Davide Camicioli."
             },
             {
                 "ora": "09:25",
@@ -4027,7 +4047,7 @@
             },
             {
                 "ora": "09:45",
-                "titolo": "GP Spagna: Prove libere 2",
+                "titolo": "GP Madrid: Prove libere 2",
                 "descrizione": "Seconda sessione di prove sul nuovo circuito di Madrid: 60 minuti per provare sia il giro da qualifica che il passo gara. Telecronaca di Carlo Vanzini, Ivan Capelli e Roberto Chinchero"
             },
             {
@@ -4042,7 +4062,7 @@
             },
             {
                 "ora": "12:25",
-                "titolo": "GP Spagna: Prove libere 3",
+                "titolo": "GP Madrid: Prove libere 3",
                 "descrizione": "Al \"Madring\" 60 minuti per le ultime modifiche e per trovare il feeling in vista delle qualifiche. Telecronaca di Carlo Vanzini, Ivan Capelli e Roberto Chinchero."
             },
             {
@@ -4072,7 +4092,7 @@
             },
             {
                 "ora": "15:55",
-                "titolo": "GP Spagna: Qualifiche",
+                "titolo": "GP Madrid: Qualifiche",
                 "descrizione": "Sfida da brividi tra i muri del nuovo circuito cittadino: chi si pendera' la prima pole del \"Madring\"? Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero."
             },
             {
@@ -4097,7 +4117,7 @@
             },
             {
                 "ora": "19:45",
-                "titolo": "GP Spagna: Qualifiche",
+                "titolo": "GP Madrid: Qualifiche",
                 "descrizione": "Sfida da brividi tra i muri del nuovo circuito cittadino: chi si pendera' la prima pole del \"Madring\"? Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero."
             },
             {
@@ -4117,11 +4137,11 @@
             },
             {
                 "ora": "23:20",
-                "titolo": "GP Spagna: Qualifiche",
+                "titolo": "GP Madrid: Qualifiche",
                 "descrizione": "Sfida da brividi tra i muri del nuovo circuito cittadino: chi si pendera' la prima pole del \"Madring\"? Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero."
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:26"
     },
     {
         "canale": "Sky Sport Legend",
@@ -4238,7 +4258,7 @@
                 "descrizione": "Tennis Heroes. - Due leggende del tennis italiano, Adriano Panatta e Paolo Bertolucci, ripercorrono la storia del tennis mondiale attraverso il loro inconfondibile stile: un mix di competenza tecnica, aneddoti e ironia pungente."
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:26"
     },
     {
         "canale": "Sky Sport MotoGP",
@@ -4380,7 +4400,7 @@
                 "descrizione": "Qualifiche MotoGP. - Quattordicesimo appuntamento del mondiale 2026: al Misano World Circuit si accendono i motori per le qualifiche della MotoGP. Telecronaca Meda- Sanchini"
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:26"
     },
     {
         "canale": "Sky Sport Basket",
@@ -4438,8 +4458,8 @@
             },
             {
                 "ora": "16:20",
-                "titolo": "Semifinale 1: Spagna - Stati Uniti",
-                "descrizione": "Germania Campionati Mondiali femminili FIBA 2026. - Uber Arena"
+                "titolo": "Semifinale: Francia - Germania",
+                "descrizione": "Germania Campionati Mondiali femminili FIBA 2026. - Dall'Uber Arena di Berlino, Germania."
             },
             {
                 "ora": "18:30",
@@ -4458,16 +4478,16 @@
             },
             {
                 "ora": "19:50",
-                "titolo": "Semifinale 1: Spagna - Stati Uniti",
-                "descrizione": "Campionati Mondiali femminili FIBA 2026 - Uber Arena"
+                "titolo": "Semifinale: Spagna - Stati Uniti",
+                "descrizione": "Uniti Campionati Mondiali femminili FIBA 2026. - Sulla strada di Team USA, 11 volte campione del mondo, c'e' l'argento europeo del 2025, consapevole, grazie all'Italia, che Clark e compagne si possono anche battere. Telecronaca: Fumagalli-Tava."
             },
             {
                 "ora": "22:00",
-                "titolo": "Semifinale 1: Spagna - Stati Uniti",
-                "descrizione": "Campionati Mondiali femminili FIBA 2026. - Uber Arena"
+                "titolo": "Semifinale: Francia - Germania",
+                "descrizione": "Campionati Mondiali femminili FIBA 2026. - Dall'Uber Arena di Berlino, Germania."
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:26"
     },
     {
         "canale": "Sky Sport Arena",
@@ -4484,42 +4504,37 @@
                 "descrizione": "Gold Caorle: Finale Femminile Beach Volley. - La finale femminile decreta la vittoria di Valentina Gottardi e Reka Orsi Toth."
             },
             {
-                "ora": "07:00",
+                "ora": "06:50",
                 "titolo": "Icarus Ultra 2025 Ep.45",
                 "descrizione": "Avventure, sfide, imprese e curiosita' dal mondo degli sport outdoor: da 18 anni Icarus Ultra racconta storie straordinarie di donne e uomini ordinari."
             },
             {
-                "ora": "07:30",
-                "titolo": "Italia - Turchia Finale 1°\/2° Posto",
+                "ora": "07:15",
+                "titolo": "Italia - Turchia Finale 1^\/2^ Posto...",
                 "descrizione": "Campionati Europei di pallavolo femminile. - E' la Finale degli Europei femminili, l'Italia di Velasco affronta le campionesse in carica della Turchia. Tc Locatelli-Sangiuliano"
             },
             {
-                "ora": "10:00",
+                "ora": "09:45",
                 "titolo": "Speciale Marcialonga Running 2026",
                 "descrizione": "Migliaia di runners affrontano i percorsi (21 km, 26 km, staffetta) tra Moena e Cavalese, sui luoghi della Marcialonga dello sci di fondo. Commento: Nicola Roggero e Silvia Vaia."
             },
             {
-                "ora": "10:30",
+                "ora": "10:15",
                 "titolo": "Rally The Wrc Magazine 2026 Ep.12",
                 "descrizione": "08\/09\/2026 WRC Highlight Show. - Riviviamo le fasi piu' emozionanti delle gare del World Rally Championship."
             },
             {
-                "ora": "11:00",
+                "ora": "10:45",
                 "titolo": "Valencia",
                 "descrizione": "Sintesi e highlights della piu' spettacolare competizione velica internazionale dedicata ai catamarani foiling F50."
             },
             {
-                "ora": "12:00",
-                "titolo": "Sky Sport Watch 2026 Ep.2",
-                "descrizione": "Scopriamo il mondo dell'orologeria e il suo rapporto con lo sport e lo stile di vita relativo."
-            },
-            {
-                "ora": "12:15",
+                "ora": "11:40",
                 "titolo": "Olanda - Belgio",
                 "descrizione": "di pallavolo maschile. - EuroVolley 2026, day 2 per il gruppo C con la classica Olanda-Belgio. Tc Rudy Palermo"
             },
             {
-                "ora": "14:00",
+                "ora": "13:40",
                 "titolo": "Italia - Svezia",
                 "descrizione": "di pallavolo maschile. - Dall'Italia, la Bulgaria e la Finlandia."
             },
@@ -4540,8 +4555,8 @@
             },
             {
                 "ora": "20:25",
-                "titolo": "1a Semifinale: Juventus vs. Internazionale",
-                "descrizione": "Inter. - ... 1a Semifinale Juventus\/ Inter 12\/09\/2026 Calcio Women's Cup. - Calcio Women's Cup."
+                "titolo": "1a Semifinale: Juventus - Inter",
+                "descrizione": "Inter. - Entrambe imbattute in questa 2a edizione della Women's cup. Ed entrambe ancora in semifinale. Nel 2025 vinsero 2 a 1 le bianconere, che poi alzarono la coppa. TC: Gaia Brunelli"
             },
             {
                 "ora": "22:30",
@@ -4554,7 +4569,7 @@
                 "descrizione": "di pallavolo maschile. - EuroVolley 2026, nella Pool D i bi-campioni olimpici della Francia affrontano la Turchia. Tc Trezzi-Vullo"
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:27"
     },
     {
         "canale": "Sky Sport Max",
@@ -4651,7 +4666,7 @@
                 "descrizione": "Dall'Anfield di Liverpool, Inghilterra."
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:27"
     },
     {
         "canale": "Sky Sport Mix",
@@ -4713,7 +4728,7 @@
                 "descrizione": "Le gare del SailGP."
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:27"
     },
     {
         "canale": "Sky Sport Golf",
@@ -4780,7 +4795,7 @@
                 "descrizione": "World Tour. - From Trump International Golf Links & Hotel in Doonbeg, Ireland."
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:27"
     },
     {
         "canale": "Sky Sport 251",
@@ -4802,7 +4817,7 @@
                 "descrizione": "Cod. 414841 - Serie A - 4a giornata. Calcio d'inizio ore 20:45."
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:27"
     },
     {
         "canale": "Sky Sport 252",
@@ -4824,7 +4839,7 @@
                 "descrizione": "Calcio Premier League 4a giornata. Calcio d'inizio ore 21:00"
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:27"
     },
     {
         "canale": "Sky Sport 253",
@@ -4846,7 +4861,7 @@
                 "descrizione": "Cod. 416627 - Serie C - 4a giornata. Calcio d'inizio ore 21:00."
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:27"
     },
     {
         "canale": "Sky Sport 254",
@@ -4868,7 +4883,7 @@
                 "descrizione": "Cod. 416649 - Serie C - 4a giornata. Calcio d'inizio ore 21:00."
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:27"
     },
     {
         "canale": "Sky Sport 255",
@@ -4890,7 +4905,7 @@
                 "descrizione": "Cod. 416616 - Serie C - 4a giornata. Calcio d'inizio ore 21:00."
             }
         ],
-        "aggiornato": "04:04"
+        "aggiornato": "10:27"
     },
     {
         "canale": "Sky Sport 256",
@@ -4907,7 +4922,7 @@
                 "descrizione": "Cod. 416650 - Serie C - 4a giornata. Calcio d'inizio ore 18:00."
             }
         ],
-        "aggiornato": "04:05"
+        "aggiornato": "10:27"
     },
     {
         "canale": "Sky Sport 257",
@@ -4924,7 +4939,7 @@
                 "descrizione": "Calcio Bundesliga 3a giornata. Calcio d'inizio ore 18:30"
             }
         ],
-        "aggiornato": "04:03"
+        "aggiornato": "10:26"
     },
     {
         "canale": "Sky Sport 258",
@@ -4936,7 +4951,7 @@
                 "descrizione": "Calcio Premier League 4a giornata. Calcio d'inizio ore 16:00"
             }
         ],
-        "aggiornato": "04:03"
+        "aggiornato": "10:26"
     },
     {
         "canale": "Sky Sport 259",
@@ -4948,7 +4963,7 @@
                 "descrizione": "Calcio Premier League 4a giornata. Calcio d'inizio ore 16:00"
             }
         ],
-        "aggiornato": "04:03"
+        "aggiornato": "10:26"
     },
     {
         "canale": "Sky Cinema Uno",
@@ -5010,7 +5025,7 @@
                 "descrizione": "Settembre 2007, Trieste. Fred, diciottenne svedese esuberante e coraggiosa, arriva in citt� per frequentare l'ultimo anno di un Istituto Tecnico. Si ritrova ad essere l'unica ragazza in una classe di soli maschi e catalizza l'attenzione di tutti, in particolare quella di tre amici: Antero, affascinante e riservato; Pasini, seduttore istrionico; Mitis, bonaccione protettivo. I tre si appartengono da quando hanno memoria. L'arrivo di Fred sconvolge la loro omogeneit� , mettendo a dura prova la loro amicizia. Mentre ognuno di loro la desidera segretamente per sé, Fred vuole essere ammessa nel gruppo, ma le viene chiesto continuamente di sacrificare qualcosa di sé per diventare una di loro."
             }
         ],
-        "aggiornato": "04:05"
+        "aggiornato": "10:27"
     },
     {
         "canale": "Sky Cinema Uno +24",
@@ -5067,7 +5082,7 @@
                 "descrizione": "Bombe di supposta matrice anarchica esplodono a Strasburgo e a Vienna, uno scandalo investe un magnate indiano del cotone mentre un industriale americano dell'acciaio muore misteriosamente. Eventi casuali, senza connessione? Non secondo Sherlock Holmes, che ha intuito dietro a tutto ciò un piano criminale, ideato dal professor Moriarty, uomo dall'intelligenza sopraffina e privo di qualsiasi coscienza morale. Holmes strappa dunque Watson alla sua luna di miele con Mary e lo trascina a Parigi, in Germania e infine in Svizzera. La partita a scacchi con Moriarty è tesissima, la posta in gioco niente meno che il corso della Storia."
             }
         ],
-        "aggiornato": "04:05"
+        "aggiornato": "10:27"
     },
     {
         "canale": "Sky Cinema Due",
@@ -5124,7 +5139,7 @@
                 "descrizione": "Uno spietato serial killer e' l'obiettivo dell'ispettore Callaghan, che ricorre ai modi poco ortodossi della giustizia privata pur di arrestare il criminale."
             }
         ],
-        "aggiornato": "04:05"
+        "aggiornato": "10:27"
     },
     {
         "canale": "Sky Cinema Due +24",
@@ -5146,7 +5161,7 @@
                 "descrizione": "Giugno 1982, in una calda Sicilia che freme per la Nazionale Italiana ai Mondiali di calcio, due adolescenti, Gianni e Nino, si scontrano con i rispettivi motorini lungo una strada di campagna. Dallo scontro nasce una profonda amicizia, ma anche qualcosa di più, qualcosa che non viene visto di buon occhio dalle famiglie e dai ragazzi del paese. Coraggiosi e affamati di vita, Gianni e Nino non si curano dei pregiudizi, delle dicerie e vivono liberamente. Una libert� che gli altri non comprendono e non sono disposti ad accettare..."
             }
         ],
-        "aggiornato": "04:05"
+        "aggiornato": "10:27"
     },
     {
         "canale": "Sky Cinema Collection",
@@ -5198,7 +5213,7 @@
                 "descrizione": "Implicati loro malgrado in un gravissimo attentato terroristico al Cremlino l'agente Ethan Hunt e i suoi collaboratori sono messi al bando dal governo americano. Il Presidente lancia l'operazione \"Protocollo Fantasma\". Hunt e i suoi ufficialmente non agiscono più per conto degli Usa ma tocca a loro, senza alcuna copertura, cercare di fermare chi sta cercando di scatenare una guerra nucleare contando sulla mai sopita diffidenza tra russi e yankee."
             }
         ],
-        "aggiornato": "04:05"
+        "aggiornato": "10:27"
     },
     {
         "canale": "Sky Cinema Family",
@@ -5270,7 +5285,7 @@
                 "descrizione": "Sulla selvaggia isola di Berk, dove vichinghi e draghi sono stati acerrimi nemici per generazioni, Hiccup è diverso dagli altri. Figlio geniale ma sottovalutato dal capo Stoick l'Immenso, Hiccup sfida secoli di tradizione stringendo un'insolita amiciza con Sdentato, un temibile drago Furia Buia. Questo legame inaspettato rivela la vera natura dei draghi, mettendo in discussione le fondamenta stesse della societ� vichinga."
             }
         ],
-        "aggiornato": "04:05"
+        "aggiornato": "10:27"
     },
     {
         "canale": "Sky Cinema Action",
@@ -5327,7 +5342,7 @@
                 "descrizione": "A Londra, Riley (Toby Stephens), un ladro professionista d'alto profilo, viene contattato per mettere a segno un ultimo importante colpo in cui dimostrare le sue abilit� . Intrappolato tra Parker (Rufus Sewell), il capo di una unit� di polizia dai metodi anticonformisti, e Joseph Corso (Gabriel Byrne), un rinomato e spietato signore del crimine, Riley si ritrova suo malgrado coinvolto in un gioco mortale che lo spinger� a tirare fuori gli artigli per garantirsi la propria sopravvivenza."
             }
         ],
-        "aggiornato": "04:05"
+        "aggiornato": "10:27"
     },
     {
         "canale": "Sky Cinema Suspense",
@@ -5384,7 +5399,7 @@
                 "descrizione": "Nel Marocco del 1942, la spia canadese Max Vatan (Brad Pitt) e la spia francese Marianne Beauséjour (Marion Cottilard) sono complici in una missione: loro malgrado s'innamorano e Marianne accetta di sposare Max e andare a vivere con lui a Londra. Qualche tempo dopo, quando hanno dato luce a una bambina, il trauma: il comando avvisa Max che Marianne potrebbe essere una spia tedesca. Il cuore non accetta. Dove sar� la verit� ?"
             }
         ],
-        "aggiornato": "04:05"
+        "aggiornato": "10:27"
     },
     {
         "canale": "Sky Cinema Romance",
@@ -5441,7 +5456,7 @@
                 "descrizione": "Bologna, anni 70. Marzio, Samuele e Sandra sono giovanissimi e ognuno ha un suo sogno da realizzare. La musica, la moda, o forse la carriera. I due ragazzi, amici per la pelle, fondano il gruppo musicale I Leggenda e sognano il successo. Sandra è un fiore di bellezza e aspira a diventare indossatrice. Qualche anno dopo, nella quattordicesima domenica del tempo ordinario, Marzio sposa Sandra mentre Samuele suona l’organo. Quella ‘quattordicesima domenica’ diventa il titolo di una loro canzone, la sola da loro incisa, la sola ad essere diffusa da qualche radio locale. Poi un giorno di quei meravigliosi anni novanta in cui tutto sembra loro possibile, si appalesa all’improvviso la burrasca, un vento contrario e ostile che tutto spazza via. Li ritroviamo 35 anni dopo. Cosa è stato delle loro vite, dei loro rapporti? Ma soprattutto cosa ne è stato dei loro sogni?"
             }
         ],
-        "aggiornato": "04:05"
+        "aggiornato": "10:27"
     },
     {
         "canale": "Sky Cinema Drama",
@@ -5498,7 +5513,7 @@
                 "descrizione": "L'esplosione di tensioni razziali in un caldo pomeriggio in un quartiere di Brooklyn."
             }
         ],
-        "aggiornato": "04:05"
+        "aggiornato": "10:27"
     },
     {
         "canale": "Sky Cinema Comedy",
@@ -5565,7 +5580,7 @@
                 "descrizione": "Un ex galeotto in libert� vigilata, che suona il sax in un'orchestrina di jazz, e uno stuntman appassionato di windsurf, vengono assoldati per sostituirsi a due miliardari cugini brasiliani che sono stati più volte minacciati."
             }
         ],
-        "aggiornato": "04:05"
+        "aggiornato": "10:27"
     },
     {
         "canale": "Sky Uno",
@@ -5652,7 +5667,7 @@
                 "descrizione": "Cominciano le Audition di X Factor 2026: i concorrenti si giocano il sogno davanti a Francesco Gabbani, Irama, Jake La Furia e Paola Iezzi. Conduce Giorgia."
             }
         ],
-        "aggiornato": "04:05"
+        "aggiornato": "10:27"
     },
     {
         "canale": "Sky Atlantic",
@@ -5779,7 +5794,7 @@
                 "descrizione": "La serie segue le vicende di un'unit� d'élite dei Navy SEAL. La squadra è impegnata in operazioni militari non solo sul suolo statunitense, ma soprattutto in giro per il mondo dove affrontano terroristi, aiutano innocenti, e combattono in nome del loro Paese."
             }
         ],
-        "aggiornato": "04:05"
+        "aggiornato": "10:27"
     },
     {
         "canale": "Sky Serie",
@@ -5906,7 +5921,7 @@
                 "descrizione": "L'avvocato e alcolizzata in via di guarigione Abigail Bianchi sta lottando per rimettere insieme la sua carriera e la sua famiglia dopo aver toccato il fondo. Come condizione per la sua libert� vigilata, Abby è costretta a lavorare presso lo studio del padre separato, Svensson and Associates, e ad esercitarsi nel diritto di famiglia per la prima volta stringendo nuove relazioni con il fratellastro e la sorellastra che non ha mai incontrato. Il risultato è uno studio legale di famiglia disfunzionale che opera per aiutare altre famiglie con le proprie disfunzioni."
             }
         ],
-        "aggiornato": "04:05"
+        "aggiornato": "10:27"
     },
     {
         "canale": "Sky Investigation",
@@ -6013,7 +6028,7 @@
                 "descrizione": "Mickey Fox indaga su attivit� criminali e pattuglia le strade della piccola citt� di Edgewater mentre affronta il padre ex detenuto e un misterioso incidente che coinvolge la figlia ribelle."
             }
         ],
-        "aggiornato": "04:05"
+        "aggiornato": "10:27"
     },
     {
         "canale": "Sky Crime",
@@ -6150,7 +6165,7 @@
                 "descrizione": "S3 Ep8 di 16 Voglio uno sconto! - Un uomo tenta di sfuggire alla polizia; una cameriera flirta con gli agenti; una cliente si rifiuta di lasciare il negozio finche' non ottiene uno sconto."
             }
         ],
-        "aggiornato": "04:05"
+        "aggiornato": "10:27"
     },
     {
         "canale": "Sky Adventure",
@@ -6277,7 +6292,7 @@
                 "descrizione": "Lucy Shepherd e la sua squadra si addentrano nella giungla e sentono i sibili dei serpenti."
             }
         ],
-        "aggiornato": "04:05"
+        "aggiornato": "10:27"
     },
     {
         "canale": "MTV",
@@ -6434,7 +6449,7 @@
                 "descrizione": "Ep7 di 42 - In questa puntata Rob, Steelo e Lolo Wood si fanno male nei luoghi più pittoreschi con PHOTO DAMAGED, riescono a dormire un po' in palestra con BARBELL NAPS e scappano dal pericolo con..."
             }
         ],
-        "aggiornato": "04:05"
+        "aggiornato": "10:27"
     },
     {
         "canale": "Comedy Central",
@@ -6591,7 +6606,7 @@
                 "descrizione": "Marta e Gianluca sono pronti a vedere e commentare insieme al pubblico di Comedy Central le pubblicit� più divertenti, stravaganti e originali del mondo della tv. In ogni puntata faremo il giro del m"
             }
         ],
-        "aggiornato": "04:05"
+        "aggiornato": "10:27"
     },
     {
         "canale": "Sky Arte",
@@ -6683,7 +6698,7 @@
                 "descrizione": "Ep1 di 3 - È il 24 febbraio 1525. Al Parco Visconteo si muovevano le truppe imperiali di Carlo V: l’obiettivo era accerchiare gli accampamenti francesi di Francesco I."
             }
         ],
-        "aggiornato": "04:05"
+        "aggiornato": "10:27"
     },
     {
         "canale": "Sky Documentaries",
@@ -6695,42 +6710,47 @@
                 "descrizione": "Ep10 di 12 Martin Mystere - Un'incredibile serie in live-action e animazione che racconta la realta' quotidiana di un editor alle prese con collaboratori eccezionali. Il Detective dell'impossibile lavora sul nuovo numero."
             },
             {
+                "ora": "06:00",
+                "titolo": "Surviving Earth",
+                "descrizione": "La storia straziante di un gigantesco rettile marino che setaccia i mari morenti alla ricerca di cibo per il suo piccolo non ancora nato, prima di partorire nel bel mezzo di un super uragano."
+            },
+            {
                 "ora": "06:45",
                 "titolo": "Tabloid all'italiana: Nino Nutrizio e La (sua) Notte",
                 "descrizione": "La Notte, il primo tabloid italiano, fondato da Nino Nutrizio negli anni ’50: la cronaca popolare che ha cambiato per sempre il giornalismo."
             },
             {
-                "ora": "07:55",
+                "ora": "08:00",
                 "titolo": "L'Unità: Storia di un archivio",
                 "descrizione": "Ritrovato a Lentate sul Seveso l’archivio de \"L’Unit� \": un secolo di storia tra antifascismo, PCI, lotte sociali e grandi protagonisti del Novecento."
             },
             {
-                "ora": "09:55",
+                "ora": "10:00",
                 "titolo": "Womeness",
-                "descrizione": "Scopriamo l’audace femminilit� e i principi immortali di cinque grandi donne del nostro tempo: da Dacia Maraini e Emma Bonino a Sussan Deyhim e Tomaso Binga, fino a Setsuko Klossowska de Rola."
+                "descrizione": "Emma Bonino e altre quattro grandi donne del nostro tempo, in un documentario che ne indaga l’audace femminilit� e l’impegno per i diritti civili."
             },
             {
-                "ora": "11:00",
+                "ora": "11:10",
                 "titolo": "Food Markets. Profumi e sapori a km zero",
                 "descrizione": "Ep1 di 5 Torino - Porta Palazzo - Al piu' grande mercato alimentare all'aperto d'Europa c'e' un mondo da scoprire. Porta Palazzo con i suoi 1000 banchi e' una roccaforte di colori e persone."
             },
             {
-                "ora": "12:00",
+                "ora": "12:10",
                 "titolo": "Food Markets. Profumi e sapori a km zero",
                 "descrizione": "Ep3 di 5 Barcellona - La Boqueria - Alla bellezza artistica di Barcellona si aggiunge un altro gioiello, la Boqueria. Lasciatevi trasportare in un viaggio alla scoperta dei segreti gastronomici."
             },
             {
-                "ora": "13:00",
+                "ora": "13:10",
                 "titolo": "9\/11: Un giorno in America",
                 "descrizione": "Un aereo dirottato si schianta contro l'edificio più a nord tra le due Torri Gemelle. Un'analisi della cronologia degli eventi di quel giorno, inclusa la corsa contro il tempo per salvare i civili intrappolati nei piani."
             },
             {
-                "ora": "14:20",
+                "ora": "14:30",
                 "titolo": "9\/11: Un giorno in America",
                 "descrizione": "Le persone che in quel momento si trovano nella Torre Sud, ancora indenne, assistono impotenti a quanto accade nell'edificio gemello, colpito da un aereo dirottato. La priorit� di tutti è cercare il modo di salvarsi."
             },
             {
-                "ora": "15:10",
+                "ora": "15:25",
                 "titolo": "9\/11: Un giorno in America",
                 "descrizione": "Dopo l'impatto di due aerei contro le Torri Gemelle, l'orrore continua negli Stati Uniti. Mentre il volo 77 si schianta contro il Pentagono, il volo 93 viene dirottato e si dirige direttamente verso Washington."
             },
@@ -6740,7 +6760,7 @@
                 "descrizione": "La mattina dell'11 settembre 2001, sul Nord America ci sono circa 4.500 aerei in volo. Dopo gli incidenti, nessuno sa se altri velivoli siano stati dirottati."
             },
             {
-                "ora": "16:55",
+                "ora": "17:05",
                 "titolo": "9\/11: Sopravvivere al terrore",
                 "descrizione": "Venticinque anni dagli attentati dell'11 settembre: le storie delle vittime e delle famiglie in un racconto unico e profondo."
             },
@@ -6750,7 +6770,7 @@
                 "descrizione": "11 settembre, il più grande fallimento della CIA e la lunga caccia al terrorista più ricercato al mondo, Osama Bin Laden."
             },
             {
-                "ora": "20:20",
+                "ora": "20:25",
                 "titolo": "La caduta di Osama Bin Laden",
                 "descrizione": "Dopo gli attentati dell'11 settembre: la caccia al leader di al-Qaeda da parte della CIA e dei Navy SEAL, fino al blitz e alla morte di Osama Bin Laden."
             },
@@ -6770,7 +6790,7 @@
                 "descrizione": "Terremoti in Turchia, veleni in mare e l'alluvione di Valencia. Analisi orbitali mostrano come il passato e la natura si scontrano in eventi distruttivi senza precedenti."
             }
         ],
-        "aggiornato": "04:05"
+        "aggiornato": "10:27"
     },
     {
         "canale": "Sky Nature",
@@ -6882,7 +6902,7 @@
                 "descrizione": "Esploriamo il sud dell'isola, dove i paesaggi aridi richiedono ingegnosi metodi di sopravvivenza."
             }
         ],
-        "aggiornato": "04:05"
+        "aggiornato": "10:27"
     },
     {
         "canale": "Discovery Channel",
@@ -6989,7 +7009,7 @@
                 "descrizione": "Nella foresta dell'Ecuador, Ed scopre le tradizioni di una particolare popolazione."
             }
         ],
-        "aggiornato": "04:05"
+        "aggiornato": "10:27"
     },
     {
         "canale": "History Channel",
@@ -7096,7 +7116,7 @@
                 "descrizione": "Documenti e foto inedite svelano i segreti della più audace impresa compiuta dalle forze speciali: l'operazione Quercia per la liberazione di Mussolini. Ma cosa si nasconde dietro questa operazione militare?"
             }
         ],
-        "aggiornato": "04:05"
+        "aggiornato": "10:27"
     },
     {
         "canale": "Cartoon Network",
@@ -7253,7 +7273,7 @@
                 "descrizione": "Ep39 di 40 Cantando - In questo episodio, vari personaggi raccontano le loro vicissitudini quotidiane cantando."
             }
         ],
-        "aggiornato": "04:05"
+        "aggiornato": "10:27"
     },
     {
         "canale": "Dea Kids",
@@ -7410,7 +7430,7 @@
                 "descrizione": "Quando scoprono che Chef ha un passato da wrestler fallito, i ragazzi chiamano un suo vecchio partner per organizzare un glorioso rientro. Ma c'è qualcosa che non sanno..."
             }
         ],
-        "aggiornato": "04:05"
+        "aggiornato": "10:27"
     },
     {
         "canale": "Nick Jr",
@@ -7567,7 +7587,7 @@
                 "descrizione": "Ep3 di 20 Il mistero delle uova cadute \/ La principessa talpa è scomparsa - Sam e Kit cercano un uccello misterioso che disturba i nidi altrui. \/ Il duo insegue una talpa reale che ha lasciato il suo"
             }
         ],
-        "aggiornato": "04:05"
+        "aggiornato": "10:27"
     },
     {
         "canale": "Boomerang",
@@ -7724,7 +7744,7 @@
                 "descrizione": "Ep34 Pirati in vista - I Lemming giocano ai pirati su una barca trovata in spiaggia, ma Grizzy decide di rubargliela per andare a pesca."
             }
         ],
-        "aggiornato": "04:05"
+        "aggiornato": "10:27"
     },
     {
         "canale": "Sky TG 24",
@@ -7881,7 +7901,7 @@
                 "descrizione": "Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo."
             }
         ],
-        "aggiornato": "04:05"
+        "aggiornato": "10:27"
     },
     {
         "canale": "Rai News 24",
@@ -8038,7 +8058,7 @@
                 "descrizione": ",. - ,"
             }
         ],
-        "aggiornato": "04:05"
+        "aggiornato": "10:27"
     },
     {
         "canale": "Sky Meteo 24",
